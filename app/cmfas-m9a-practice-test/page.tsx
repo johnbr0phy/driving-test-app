@@ -58,7 +58,7 @@ const faqs = [
   },
   {
     q: "How are these practice tests built?",
-    a: "Each practice test is the real length: 50 questions in an hour, with 70% to pass. SCI does not publish chapter weights, so each test follows Tigertest's split across the six chapters: 9 on structured products, 8 on their risks, 10 on derivatives, 9 on Structured ILPs, 7 on portfolio insurance and the fund rules, and 7 case studies. No question appears in more than one test.",
+    a: "Each practice test is the real length: 50 questions in an hour, with 70% to pass. SCI does not publish chapter weights, so each test follows Tigertest's split across the six chapters: 9 on structured products, 8 on their risks, 10 on derivatives, 9 on Structured ILPs, 7 on chapter 5, Portfolio of Investments with an Insurance, and 7 case studies. SCI names chapter 5 but does not list its topics; Tigertest reads it as how structured funds protect capital (portfolio insurance methods such as CPPI and option-based protection) and the MAS rules for capital guaranteed and derivative-using funds. No question appears in more than one test.",
   },
   {
     q: "Are these the real SCI exam questions?",
@@ -102,7 +102,7 @@ const contentAreas = [
   { name: "Risk considerations of structured products", weight: "8 of 50" },
   { name: "Understanding derivatives", weight: "10 of 50" },
   { name: "Introduction to Structured ILPs", weight: "9 of 50" },
-  { name: "Portfolio insurance and fund rules", weight: "7 of 50" },
+  { name: "Portfolio of investments with an insurance", weight: "7 of 50" },
   { name: "Case studies", weight: "7 of 50" },
 ];
 

@@ -886,7 +886,7 @@
     "state": "ALL",
     "questionId": "SGM9A-RSK-028",
     "category": "sgm9aRisk",
-    "question": "A note's value falls after a big rise in market volatility, though the investor holds bought options. This is likely because the investor:",
+    "question": "A high-coupon yield note loses value after a big rise in market volatility, with the underlying unchanged. This is likely because, through the note, the investor:",
     "optionA": "Owns too many bonds",
     "optionB": "Has a currency hedge",
     "optionC": "Holds a capped deposit",
@@ -931,11 +931,11 @@
     "question": "A client sees a structured deposit labelled \"safe\". The adviser should explain that it is:",
     "optionA": "Fully insured and liquid",
     "optionB": "Identical to a fixed deposit",
-    "optionC": "Safe-ish, not risk-free",
+    "optionC": "Low-risk, not risk-free",
     "optionD": "Guaranteed by MAS",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "FAA-G09 calls a structured deposit relatively safe but notes variable returns, credit risk and possible loss of principal if not held to maturity."
+    "explanation": "FAA-G09 requires advisers to explain variable returns, the bank's credit risk and possible loss of principal if not held to maturity. A structured deposit is not covered by deposit insurance."
   },
   {
     "type": "SGM9A",
@@ -1128,7 +1128,7 @@
     "optionA": "European style",
     "optionB": "American style",
     "optionC": "Asian style",
-    "optionD": "Bermudan style",
+    "optionD": "Barrier style",
     "correctAnswer": "A",
     "correctIndex": 0,
     "explanation": "European options can be exercised only at expiry. American options can be exercised on any trading day up to expiry; Bermudan options on set dates."
@@ -1138,14 +1138,14 @@
     "state": "ALL",
     "questionId": "SGM9A-DER-014",
     "category": "sgm9aDeriv",
-    "question": "An option that can be exercised on any trading day up to expiry is:",
+    "question": "An issuer-callable note can be called only on its quarterly coupon dates. The embedded call is exercisable in which style?",
     "optionA": "European style",
-    "optionB": "American style",
-    "optionC": "Barrier style",
-    "optionD": "Digital style",
+    "optionB": "Bermudan style",
+    "optionC": "American style",
+    "optionD": "Asian style",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "American style gives the holder flexibility to exercise at any time before expiry, so it is worth at least as much as an otherwise equal European option."
+    "explanation": "Bermudan options can be exercised on a set list of dates before expiry, between European (expiry only) and American (any day). Callable notes often use them on coupon dates."
   },
   {
     "type": "SGM9A",

@@ -3065,16 +3065,16 @@
     "skill": "Notational systems",
     "difficulty": 2,
     "format": "single",
-    "stem": "What is the decimal number 37 in binary?",
-    "explanation": "37 is 32 + 4 + 1, so the 32s, 4s and 1s places are on: 100101. 101001 is 41, which puts the 8s place on instead of the 4s.",
+    "stem": "What is the decimal number 44 in binary?",
+    "explanation": "44 is 32 + 8 + 4, so the 32s, 8s and 4s places are on: 101100. 110100 is 52, which puts the 16s place on instead of the 8s.",
     "options": [
-      "100011",
-      "100101",
-      "101001",
-      "110001"
+      "100110",
+      "101010",
+      "101100",
+      "110100"
     ],
     "correct": [
-      1
+      2
     ],
     "lockedOrder": true
   },

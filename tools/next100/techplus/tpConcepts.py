@@ -81,9 +81,9 @@ ITEMS = [
            "A wearable is worn on the body and usually pairs with a phone. Exercise equipment means machines such as treadmills."),
     # ---------------- Drill only ----------------
     single(0, "Notational systems", 2,
-           "What is the decimal number 37 in binary?",
-           ["100101", "100011", "101001", "110001"],
-           "37 is 32 + 4 + 1, so the 32s, 4s and 1s places are on: 100101. 101001 is 41, which puts the 8s place on instead of the 4s."),
+           "What is the decimal number 44 in binary?",
+           ["101100", "100110", "110100", "101010"],
+           "44 is 32 + 8 + 4, so the 32s, 8s and 4s places are on: 101100. 110100 is 52, which puts the 16s place on instead of the 8s."),
     single(0, "Notational systems", 2,
            "What is the octal number 17 in decimal?",
            ["15", "17", "21", "23"],

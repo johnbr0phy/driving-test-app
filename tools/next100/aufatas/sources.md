@@ -107,3 +107,18 @@ National Firearms Safety Code items that repeated another bank were replaced wit
 (imitation firearms, chassis kits, renewals, definitions in s 3, s 158A). The remaining close pairs
 are category and prohibited pistol facts that every Australian state shares; their stems name
 Tasmanian law.
+
+## Second review (2026-11-23)
+
+Blind review of all 200 items against the Act (authorised version of 2 December 2024, still the
+current version on 2026-11-23, so the Strengthening Firearms Security amendments have not
+commenced) and the Firearms Regulations 2026. Eight findings, all fixed in the sources:
+seven items repeated a sibling bank's fact and answer (air rifle Category A and muzzle-loader
+Category B against South Australia; shotgun and rimfire combination Category A against South
+Australia; prohibited pistol over .38 inch against NSW; licence age 18 against WA, Victoria and
+CFSC; 90-day permit against NSW; 150 kg safe fixing threshold against Queensland), each rewritten
+from a different angle with a different answer; and the s 26(2) orientation item now states the
+"no more than 3 occasions in the preceding 6 months" test exactly. The renewal notice (about 6
+months before expiry), the midnight-on-the-14th-day surrender rule and the earliest new card (21
+days before expiry) were checked on the Tasmania Police renewing page on 2026-11-23; s 104(2)
+was checked in the Act.

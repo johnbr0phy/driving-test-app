@@ -1,9 +1,9 @@
 SEG = 'LIC'
 CAT = 'ftasLicence'
 Q = [
-    ("What is the minimum age to apply for a Tasmanian firearms licence?",
-     "18", ["16", "21", "17"],
-     "Section 28(1) of the Firearms Act 1996 (Tas) requires an applicant to be at least 18 and a natural person. Younger shooters use a minor's permit."),
+    ("Besides being at least 18, an applicant for a Tasmanian firearms licence must be:",
+     "A natural person", ["A Tasmanian landowner", "A registered business", "A rifle club member"],
+     "Section 28(1) of the Firearms Act 1996 (Tas) requires an applicant to be at least 18 and a natural person, so a company cannot hold a firearms licence. Younger shooters use a minor's permit."),
     ("Before Tasmania Police can grant a first firearms licence, the applicant must have:",
      "Passed an approved course", ["Joined an approved rifle club", "Bought a compliant gun safe", "Held a minor's permit"],
      "Section 29(1)(d) bars a licence unless the Commissioner is satisfied the applicant has satisfactorily completed an approved firearms safety course."),

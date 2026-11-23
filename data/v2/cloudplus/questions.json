@@ -3267,16 +3267,16 @@
     "skill": "Security controls",
     "difficulty": 3,
     "format": "single",
-    "stem": "Which control filters traffic at the virtual NIC or subnet with allow rules, and is stateful, so return traffic is allowed automatically?",
+    "stem": "Which control filters traffic at the virtual NIC or subnet with port and address rules, and is stateful, so return traffic is allowed automatically?",
     "explanation": "Security groups are stateful packet filters attached to instances or subnets.",
     "options": [
-      "Web application firewall",
       "Data loss prevention",
-      "Endpoint antivirus",
-      "Network security group"
+      "Web application firewall",
+      "Network security group",
+      "Endpoint antivirus"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {

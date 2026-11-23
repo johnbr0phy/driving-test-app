@@ -58,7 +58,7 @@ ITEMS = [
            ["Data loss prevention", "DDoS protection", "Endpoint protection"], [0, 1, 2],
            "DLP finds and blocks sensitive data leaving, DDoS protection absorbs attack traffic, and endpoint protection guards individual machines."),
     single(2, "Security controls", 3,
-           "Which control filters traffic at the virtual NIC or subnet with allow rules, and is stateful, so return traffic is allowed automatically?",
+           "Which control filters traffic at the virtual NIC or subnet with port and address rules, and is stateful, so return traffic is allowed automatically?",
            ["Network security group", "Web application firewall", "Data loss prevention", "Endpoint antivirus"],
            "Security groups are stateful packet filters attached to instances or subnets."),
     single(2, "Monitoring", 2,

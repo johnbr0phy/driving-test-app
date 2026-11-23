@@ -504,7 +504,7 @@
  "cans": [
   "https://novascotia.ca/sns/rmv/safe/handbook.asp",
   "https://www.novascotia.ca/documents/drivers-handbook",
-  "https://www.novascotia.ca/take-driver-knowledge-test-learners-licence-class-7"
+  "https://www.novascotia.ca/sites/default/files/documents/1-4388/nova-scotia-drivers-handbook-en.pdf"
  ],
  "caon": [
   "https://www.ontario.ca/document/official-mto-drivers-handbook",
@@ -923,8 +923,8 @@
   "https://www.fstyr.dk/erhverv/koereskoler-og-koerelaerere/frigivelse-og-afholdelse-af-proever"
  ],
  "dktruck": [
-  "https://www.fstyr.dk/Media/639041568193040740/Undervisningsplan%20kategori%20C%20(stor%20lastbil",
-  "https://www.fstyr.dk/Media/639041568080850919/Undervisningsplan%20kategori%20CE%20(stor%20lastbil%20med%20stort%20p%c3%a5h%c3%a6ngsk%c3%b8ret%c3%b8j",
+  "https://www.fstyr.dk/Media/639041568193040740/Undervisningsplan%20kategori%20C%20%28stor%20lastbil%29%20og%20kategori%20D%20%28stor%20bus%29%20-%20FS%2016.01.2026.pdf",
+  "https://www.fstyr.dk/Media/639041568080850919/Undervisningsplan%20kategori%20CE%20%28stor%20lastbil%20med%20stort%20p%c3%a5h%c3%a6ngsk%c3%b8ret%c3%b8j%29%20-%20FS%2016.01.2026.pdf",
   "https://cdn.fstyr.dk/faerdselsstyrelsen/Media/639159124710541258/undervisningsplan-kategori-b-almindelig-bil-version-11-maj-2026_pdf290526.pdf"
  ],
  "dp900": [
@@ -1625,9 +1625,9 @@
   "https://www.ncctinc.com/forms-and-documents"
  ],
  "nda": [
-  "https://www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026",
-  "https://www.defenceguru.co.in/assets/uploads/blog_gallery/Notif-NDA-II-2026.pdf",
-  "https://www.pw.live/news/upsc-nda-2-2026-notification-394-posts-apply-online-upsc-gov-in"
+  "https://upsc.gov.in/previous-exam-details/",
+  "https://www.upsc.gov.in/uploads/2026/06/Notif-NDA-II-2026-Engl-200526-1.pdf",
+  "https://www.defenceguru.co.in/assets/uploads/blog_gallery/Notif-NDA-II-2026.pdf"
  ],
  "neet": [
   "https://neet.nta.nic.in/",

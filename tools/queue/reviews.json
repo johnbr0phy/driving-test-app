@@ -1,8 +1,22 @@
 {
   "_": "Second-reviewer checks of whole banks: a reviewer that did not write the questions answered every one without the key and its findings were fixed. One entry per check. /build-tests adds an entry for each test it ships. Read by scripts/test-progress.ts. Tests built before 2026-11-14 are not listed: their reviews were not recorded per test.",
   "reviews": {
-  "aufatas": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1028, "findings": 8 }],
-    "nscacpt": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1030, "findings": 18 }],
+    "aufatas": [
+      {
+        "date": "2026-11-23",
+        "kind": "blind review at build",
+        "pr": 1028,
+        "findings": 8
+      }
+    ],
+    "nscacpt": [
+      {
+        "date": "2026-11-23",
+        "kind": "blind review at build",
+        "pr": 1030,
+        "findings": 18
+      }
+    ],
     "pesticide": [
       {
         "date": "2026-11-18",
@@ -1108,6 +1122,14 @@
         "pr": 993,
         "findings": 3
       }
+    ],
+    "aseg1": [
+      {
+        "date": "2026-11-23",
+        "kind": "blind review at build",
+        "pr": 1032,
+        "findings": 8
+      }
     ]
   },
   "pendingReviews": {
@@ -1745,13 +1767,62 @@
       "findings": 22
     }
   ],
-  "serverplus": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1006, "findings": 7 }],
-  "sgm9a": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1007, "findings": 4 }],
-  "aemt": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1008, "findings": 6 }],
-  "nzfirstaid": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1009, "findings": 10 }],
-  "nzforklift": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1017, "findings": 6 }],
-  "danbrhs": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1010, "findings": 2 }],
-  "wastewaterop": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1013, "findings": 18 }],
+  "serverplus": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1006,
+      "findings": 7
+    }
+  ],
+  "sgm9a": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1007,
+      "findings": 4
+    }
+  ],
+  "aemt": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1008,
+      "findings": 6
+    }
+  ],
+  "nzfirstaid": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1009,
+      "findings": 10
+    }
+  ],
+  "nzforklift": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1017,
+      "findings": 6
+    }
+  ],
+  "danbrhs": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1010,
+      "findings": 2
+    }
+  ],
+  "wastewaterop": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1013,
+      "findings": 18
+    }
+  ],
   "cloudplus": [
     {
       "date": "2026-11-23",
@@ -1784,17 +1855,108 @@
       "findings": 9
     }
   ],
-  "dp900": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1018, "findings": 10 }],
-  "danbice": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1016, "findings": 6 }],
-  "cnor": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1020, "findings": 91 }],
-  "gcppde": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1021, "findings": 3 }],
-  "cism": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1022, "findings": 8 }],
-  "emr": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1019, "findings": 14 }],
-  "carsrefrig": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1023, "findings": 9 }],
-  "masterelec": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1024, "findings": 6 }],
-  "esccse": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1025, "findings": 12 }],
-  "iegarda": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1026, "findings": 6 }],
-  "series24": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1027, "findings": 7 }],
-  "aufasa": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1029, "findings": 7 }],
-  "crisc": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1031, "findings": 14 }]
+  "dp900": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1018,
+      "findings": 10
+    }
+  ],
+  "danbice": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1016,
+      "findings": 6
+    }
+  ],
+  "cnor": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1020,
+      "findings": 91
+    }
+  ],
+  "gcppde": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1021,
+      "findings": 3
+    }
+  ],
+  "cism": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1022,
+      "findings": 8
+    }
+  ],
+  "emr": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1019,
+      "findings": 14
+    }
+  ],
+  "carsrefrig": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1023,
+      "findings": 9
+    }
+  ],
+  "masterelec": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1024,
+      "findings": 6
+    }
+  ],
+  "esccse": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1025,
+      "findings": 12
+    }
+  ],
+  "iegarda": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1026,
+      "findings": 6
+    }
+  ],
+  "series24": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1027,
+      "findings": 7
+    }
+  ],
+  "aufasa": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1029,
+      "findings": 7
+    }
+  ],
+  "crisc": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1031,
+      "findings": 14
+    }
+  ]
 }

@@ -1063,7 +1063,7 @@
       {
         "date": "2026-11-22",
         "kind": "blind review at build",
-        "pr": null,
+        "pr": 968,
         "findings": 12
       }
     ]

@@ -20,6 +20,7 @@ export const runner = {
   noCalculator: "No calculator",
   noGoingBack: "No going back",
   untimedPractice: "Untimed practice (recorded with your result)",
+  halfLengthPractice: "Half-length practice (half the questions, half the time)",
   directions: "Directions",
   clockStartsLinear: "The clock starts when you tap Start.",
   clockStartsReview: "The clock starts when you tap Start and keeps running on the review screen.",

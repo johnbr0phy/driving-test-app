@@ -29,6 +29,7 @@ export const HU: V2UiTranslation = {
     noCalculator: "Számológép nélkül",
     noGoingBack: "Nincs visszalépés",
     untimedPractice: "Gyakorlás időkorlát nélkül (az eredményeddel együtt rögzítjük)",
+    halfLengthPractice: "Fél hosszúságú gyakorlás (fele annyi kérdés, fele annyi idő)",
     directions: "Útmutató",
     clockStartsLinear: "Az óra akkor indul, amikor elindítod a modult.",
     clockStartsReview: "Az óra akkor indul, amikor elindítod a modult, és az ellenőrző képernyőn is tovább jár.",
@@ -255,6 +256,7 @@ export const HU: V2UiTranslation = {
     seeYourProgress: "Nézd meg a haladásod",
     reviewYourAnswers: "Nézd át a válaszaid",
     untimedNote: "Gyakorlás időkorlát nélkül. Ez a próbálkozás nem a vizsga időkorlátjával zajlott.",
+    halfLengthNote: "Fél hosszúságú gyakorlás. A részpontszámok a kérdések feléből becsültek.",
 
     correctOfTotal: (raw: number, total: number) => `${raw}/${total} helyes`,
     scoreBand: (low: number, high: number) => `(${low}-${high})`,

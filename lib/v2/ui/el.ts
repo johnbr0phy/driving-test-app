@@ -31,6 +31,7 @@ export const EL: V2UiTranslation = {
     noCalculator: "Χωρίς κομπιουτεράκι",
     noGoingBack: "Χωρίς επιστροφή",
     untimedPractice: "Εξάσκηση χωρίς χρονικό όριο (καταγράφεται μαζί με το αποτέλεσμά σου)",
+    halfLengthPractice: "Μισό μήκος (οι μισές ερωτήσεις, ο μισός χρόνος)",
     directions: "Οδηγίες",
     clockStartsLinear: "Το χρονόμετρο ξεκινά όταν ξεκινήσεις την ενότητα.",
     clockStartsReview: "Το χρονόμετρο ξεκινά όταν ξεκινήσεις την ενότητα και συνεχίζει να τρέχει στην οθόνη ελέγχου.",
@@ -259,6 +260,7 @@ export const EL: V2UiTranslation = {
     seeYourProgress: "Δες την πρόοδό σου",
     reviewYourAnswers: "Δες τις απαντήσεις σου",
     untimedNote: "Εξάσκηση χωρίς χρονικό όριο. Αυτή η προσπάθεια δεν προσομοίωσε το χρονικό όριο της εξέτασης.",
+    halfLengthNote: "Μισό μήκος. Οι βαθμολογίες ενοτήτων εκτιμώνται από τις μισές ερωτήσεις.",
 
     correctOfTotal: (raw: number, total: number) => `${raw} / ${total} σωστές`,
     scoreBand: (low: number, high: number) => `(${low} έως ${high})`,

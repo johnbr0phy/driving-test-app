@@ -31,6 +31,7 @@ export const IT: V2UiTranslation = {
     noCalculator: "Niente calcolatrice",
     noGoingBack: "Non si torna indietro",
     untimedPractice: "Esercitazione senza tempo (registrata con il risultato)",
+    halfLengthPractice: "Metà lunghezza (metà delle domande, metà del tempo)",
     directions: "Istruzioni",
     clockStartsLinear: "Il tempo parte quando tocchi Inizia.",
     clockStartsReview: "Il tempo parte quando tocchi Inizia e continua a scorrere nella schermata di revisione.",
@@ -284,6 +285,7 @@ export const IT: V2UiTranslation = {
     seeYourProgress: "Guarda i tuoi progressi",
     reviewYourAnswers: "Rivedi le tue risposte",
     untimedNote: "Esercitazione senza tempo. Questo tentativo non ha simulato il limite di tempo dell'esame.",
+    halfLengthNote: "Metà lunghezza. I punteggi delle sezioni sono stimati da metà delle domande.",
 
     // ResultsV2: section cards
     correctOfTotal: (raw: number, total: number) => `${raw} / ${total} corrette`,

@@ -27,6 +27,7 @@ export const ES: V2UiTranslation = {
     noCalculator: "Sin calculadora",
     noGoingBack: "Sin volver atrás",
     untimedPractice: "Práctica sin tiempo (se guarda con tu resultado)",
+    halfLengthPractice: "Media longitud (la mitad de las preguntas, la mitad del tiempo)",
     directions: "Instrucciones",
     clockStartsLinear: "El reloj empieza cuando tocas Empezar.",
     clockStartsReview: "El reloj empieza cuando tocas Empezar y sigue corriendo en la pantalla de revisión.",
@@ -253,6 +254,7 @@ export const ES: V2UiTranslation = {
     seeYourProgress: "Ver tu progreso",
     reviewYourAnswers: "Revisar tus respuestas",
     untimedNote: "Práctica sin tiempo. Este intento no simuló el límite de tiempo del examen.",
+    halfLengthNote: "Media longitud. Las puntuaciones por sección se estiman a partir de la mitad de las preguntas.",
 
     correctOfTotal: (raw: number, total: number) => `${raw} / ${total} correctas`,
     scoreBand: (low: number, high: number) => `(${low} a ${high})`,

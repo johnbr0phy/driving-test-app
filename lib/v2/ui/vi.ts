@@ -24,6 +24,7 @@ export const VI: V2UiTranslation = {
     noCalculator: "Không dùng máy tính",
     noGoingBack: "Không được quay lại",
     untimedPractice: "Luyện tập không giới hạn thời gian (được ghi cùng kết quả)",
+    halfLengthPractice: "Bài nửa độ dài (một nửa số câu, một nửa thời gian)",
     directions: "Hướng dẫn",
     clockStartsLinear: "Đồng hồ bắt đầu chạy khi bạn nhấn Bắt đầu.",
     clockStartsReview: "Đồng hồ bắt đầu chạy khi bạn nhấn Bắt đầu và vẫn chạy ở màn hình xem lại.",
@@ -227,6 +228,7 @@ export const VI: V2UiTranslation = {
     seeYourProgress: "Xem tiến độ của bạn",
     reviewYourAnswers: "Xem lại câu trả lời",
     untimedNote: "Luyện tập không giới hạn thời gian. Lần làm này không mô phỏng giới hạn thời gian của kỳ thi.",
+    halfLengthNote: "Bài nửa độ dài. Điểm từng phần được ước tính từ một nửa số câu hỏi.",
     correctOfTotal: (raw: number, total: number) => `Đúng ${raw} / ${total}`,
     scoreBand: (low: number, high: number) => `(${low} đến ${high})`,
     moduleLine: (module: number, variant: string | undefined, raw: number, total: number) =>

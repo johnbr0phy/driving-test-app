@@ -32,6 +32,7 @@ export const FR: V2UiTranslation = {
     noCalculator: "Sans calculatrice",
     noGoingBack: "Pas de retour en arrière",
     untimedPractice: "Entraînement sans limite de temps (indiqué avec votre résultat)",
+    halfLengthPractice: "Demi-épreuve (la moitié des questions, la moitié du temps)",
     directions: "Consignes",
     clockStartsLinear: "Le chrono démarre quand vous touchez Commencer.",
     clockStartsReview: "Le chrono démarre quand vous touchez Commencer et continue de tourner sur l'écran de relecture.",
@@ -285,6 +286,7 @@ export const FR: V2UiTranslation = {
     seeYourProgress: "Voir votre progression",
     reviewYourAnswers: "Revoir vos réponses",
     untimedNote: "Entraînement sans limite de temps. Cette tentative ne reproduisait pas la durée de l'examen.",
+    halfLengthNote: "Demi-épreuve. Les scores par section sont estimés à partir de la moitié des questions.",
 
     // ResultsV2: section cards
     correctOfTotal: (raw: number, total: number) => `${raw} / ${total} ${raw > 1 ? "justes" : "juste"}`,

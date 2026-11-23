@@ -31,6 +31,7 @@ export const FI: V2UiTranslation = {
     noCalculator: "Ei laskinta",
     noGoingBack: "Ei paluuta taaksepäin",
     untimedPractice: "Harjoittelu ilman aikarajaa (merkitään tulokseesi)",
+    halfLengthPractice: "Puolikas harjoitus (puolet kysymyksistä, puolet ajasta)",
     directions: "Ohjeet",
     clockStartsLinear: "Kello käynnistyy, kun aloitat moduulin.",
     clockStartsReview: "Kello käynnistyy, kun aloitat moduulin, ja käy myös tarkistusnäkymässä.",
@@ -259,6 +260,7 @@ export const FI: V2UiTranslation = {
     seeYourProgress: "Katso edistymisesi",
     reviewYourAnswers: "Tarkista vastauksesi",
     untimedNote: "Harjoittelu ilman aikarajaa. Tämä yritys ei jäljitellyt kokeen aikarajaa.",
+    halfLengthNote: "Puolikas harjoitus. Osioiden pisteet on arvioitu puolesta kysymyksistä.",
 
     correctOfTotal: (raw: number, total: number) => `${raw}/${total} oikein`,
     scoreBand: (low: number, high: number) => `(${low}-${high})`,

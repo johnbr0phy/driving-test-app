@@ -29,6 +29,7 @@ export const results = {
   seeYourProgress: "See your progress",
   reviewYourAnswers: "Review your answers",
   untimedNote: "Untimed practice. This attempt did not simulate the exam time limit.",
+  halfLengthNote: "Half-length practice. Section scores are estimated from half the questions.",
 
   // ResultsV2: section cards
   correctOfTotal: (raw: number, total: number) => `${raw} / ${total} correct`,

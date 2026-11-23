@@ -24,6 +24,7 @@ export const KO: V2UiTranslation = {
     noCalculator: "계산기 사용 불가",
     noGoingBack: "이전 문제로 돌아갈 수 없음",
     untimedPractice: "시간 제한 없는 연습 (결과에 함께 기록됨)",
+    halfLengthPractice: "절반 길이 연습 (문제 절반, 시간 절반)",
     directions: "안내",
     clockStartsLinear: "시작을 누르면 시간이 흐르기 시작합니다.",
     clockStartsReview: "시작을 누르면 시간이 흐르기 시작하며, 검토 화면에서도 계속 흐릅니다.",
@@ -226,6 +227,7 @@ export const KO: V2UiTranslation = {
     seeYourProgress: "진행 상황 보기",
     reviewYourAnswers: "답안 검토하기",
     untimedNote: "시간 제한 없는 연습입니다. 이번 응시는 시험의 시간 제한을 재현하지 않았습니다.",
+    halfLengthNote: "절반 길이 연습입니다. 영역 점수는 문제 절반으로 추정한 값입니다.",
     correctOfTotal: (raw: number, total: number) => `${raw} / ${total} 정답`,
     scoreBand: (low: number, high: number) => `(${low}~${high})`,
     moduleLine: (module: number, variant: string | undefined, raw: number, total: number) =>

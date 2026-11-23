@@ -28,8 +28,19 @@ export function questionsForStage(bank: QuestionV2[], testNumber: number, sectio
     .sort((a, b) => a.id.localeCompare(b.id));
 }
 
-function buildStage(bank: QuestionV2[], testNumber: number, section: SectionDef, module: number, timeLimit: number, variant?: "lower" | "upper"): StageState {
-  const questions = questionsForStage(bank, testNumber, section.key, module, variant);
+/** Half-length practice keeps every other item (in bank order, so domains stay spread) and half the time. */
+function halve<T>(items: T[]): T[] {
+  return items.filter((_, i) => i % 2 === 0);
+}
+
+export function stageTimeLimit(timeLimit: number, length?: "full" | "half"): number {
+  return length === "half" ? Math.ceil(timeLimit / 2) : timeLimit;
+}
+
+function buildStage(bank: QuestionV2[], testNumber: number, section: SectionDef, module: number, timeLimit: number, variant?: "lower" | "upper", length?: "full" | "half"): StageState {
+  const all = questionsForStage(bank, testNumber, section.key, module, variant);
+  const questions = length === "half" ? halve(all) : all;
+  timeLimit = stageTimeLimit(timeLimit, length);
   const optionOrder: Record<string, number[]> = {};
   for (const q of questions) optionOrder[q.id] = optionOrderFor(q);
   return {
@@ -51,12 +62,8 @@ export function sessionKey(examId: string, testNumber: number) {
 }
 
 /** New session: every non-adaptive stage is built now; adaptive stages are built when reached. */
-export function createSession(exam: ExamV2Config, bank: QuestionV2[], testNumber: number): TestSessionV2 {
-  const stages = stagesOf(exam).map(({ section, module }) =>
-    module.adaptive
-      ? buildStage(bank, testNumber, section, module.module, module.timeLimit, undefined)
-      : buildStage(bank, testNumber, section, module.module, module.timeLimit)
-  );
+export function createSession(exam: ExamV2Config, bank: QuestionV2[], testNumber: number, length: "full" | "half" = "full"): TestSessionV2 {
+  const stages = stagesOf(exam).map(({ section, module }) => buildStage(bank, testNumber, section, module.module, module.timeLimit, undefined, length));
   // Adaptive stages get their variant (and question list) when the previous
   // module is submitted; until then they hold the variant-free items only.
   return {
@@ -67,7 +74,14 @@ export function createSession(exam: ExamV2Config, bank: QuestionV2[], testNumber
     stage: 0,
     phase: "intro",
     stages,
+    ...(length === "half" ? { length } : {}),
   };
+}
+
+/** Switch a session that has not started between full and half length (keeps the timing choice). */
+export function withLength(exam: ExamV2Config, bank: QuestionV2[], session: TestSessionV2, length: "full" | "half"): TestSessionV2 {
+  const fresh = createSession(exam, bank, session.testNumber, length);
+  return { ...fresh, key: session.key, startedAt: session.startedAt, timing: session.timing, length };
 }
 
 /** Accuracy on a stage, used to pick the next adaptive variant. */
@@ -90,7 +104,7 @@ export function resolveAdaptive(exam: ExamV2Config, bank: QuestionV2[], session:
   const hasVariants = bank.some((q) => q.test === session.testNumber && q.section === stage.section && q.module === stage.module && q.variant);
   if (!hasVariants) return stage;
   const variant = prev && prev.section === stage.section && stageAccuracy(prev, byId) >= def.module.adaptive.threshold ? "upper" : "lower";
-  return buildStage(bank, session.testNumber, def.section, stage.module, def.module.timeLimit, variant);
+  return buildStage(bank, session.testNumber, def.section, stage.module, def.module.timeLimit, variant, session.length);
 }
 
 /** Seconds left right now, accounting for a running clock. */
@@ -102,6 +116,8 @@ export function remainingNow(stage: StageState, now = Date.now()): number {
 
 export function scoreSession(exam: ExamV2Config, session: TestSessionV2, byId: Map<string, QuestionV2>): TestResultV2 {
   const items: TestResultV2["items"] = [];
+  const half = session.length === "half";
+  const bank = half ? Array.from(byId.values()) : [];
   const sections: SectionResult[] = exam.sections.map((section) => {
     const byDomain: Record<string, { correct: number; total: number }> = {};
     for (const d of section.domains) byDomain[d] = { correct: 0, total: 0 };
@@ -128,7 +144,12 @@ export function scoreSession(exam: ExamV2Config, session: TestSessionV2, byId: M
       byModule.push({ module: stage.module, variant: stage.variant, raw: moduleRaw, total: stage.questionIds.length });
     }
     const scale = scaleFor(section, byModule);
-    const scaled = scale.table[Math.min(raw, scale.table.length - 1)] ?? scale.min;
+    // Half length: scale the raw score up to the full-length stages it stands for.
+    const fullTotal = half
+      ? byModule.reduce((n, m) => n + questionsForStage(bank, session.testNumber, section.key, m.module, m.variant as "lower" | "upper" | undefined).length, 0)
+      : total;
+    const scaleRaw = half && total > 0 ? Math.round((raw * fullTotal) / total) : raw;
+    const scaled = scale.table[Math.min(scaleRaw, scale.table.length - 1)] ?? scale.min;
     return { section: section.key, raw, total, scaled, byDomain, byModule };
   });
   return {
@@ -136,6 +157,7 @@ export function scoreSession(exam: ExamV2Config, session: TestSessionV2, byId: M
     examId: exam.id,
     testNumber: session.testNumber,
     timing: session.timing ?? "standard",
+    ...(half ? { length: "half" as const } : {}),
     completedAt: new Date().toISOString(),
     sections,
     composite: exam.composite.combine(sections),

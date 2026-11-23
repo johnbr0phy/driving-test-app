@@ -32,6 +32,7 @@ export const RO: V2UiTranslation = {
     noCalculator: "Fără calculator",
     noGoingBack: "Fără întoarcere",
     untimedPractice: "Exersare fără limită de timp (înregistrată odată cu rezultatul tău)",
+    halfLengthPractice: "Jumătate de lungime (jumătate din întrebări, jumătate din timp)",
     directions: "Instrucțiuni",
     clockStartsLinear: "Cronometrul pornește când începi modulul.",
     clockStartsReview: "Cronometrul pornește când începi modulul și merge în continuare pe ecranul de verificare.",
@@ -260,6 +261,7 @@ export const RO: V2UiTranslation = {
     seeYourProgress: "Vezi-ți progresul",
     reviewYourAnswers: "Revezi-ți răspunsurile",
     untimedNote: "Exersare fără limită de timp. Această încercare nu a simulat limita de timp a examenului.",
+    halfLengthNote: "Jumătate de lungime. Scorurile pe secțiuni sunt estimate din jumătate din întrebări.",
 
     correctOfTotal: (raw: number, total: number) => `${raw} / ${total} corecte`,
     scoreBand: (low: number, high: number) => `(între ${low} și ${high})`,

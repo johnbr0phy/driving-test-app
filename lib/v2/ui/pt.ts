@@ -28,6 +28,7 @@ export const PT: V2UiTranslation = {
     noCalculator: "Sem calculadora",
     noGoingBack: "Sem voltar atrás",
     untimedPractice: "Treino sem tempo (fica registado com o seu resultado)",
+    halfLengthPractice: "Metade da duração (metade das perguntas, metade do tempo)",
     directions: "Instruções",
     clockStartsLinear: "O relógio começa quando tocar em Começar.",
     clockStartsReview: "O relógio começa quando tocar em Começar e continua a contar no ecrã de revisão.",
@@ -254,6 +255,7 @@ export const PT: V2UiTranslation = {
     seeYourProgress: "Ver o seu progresso",
     reviewYourAnswers: "Rever as suas respostas",
     untimedNote: "Treino sem tempo. Esta tentativa não simulou o limite de tempo do exame.",
+    halfLengthNote: "Metade da duração. As pontuações das secções são estimadas a partir de metade das perguntas.",
 
     correctOfTotal: (raw: number, total: number) => `${raw} / ${total} certas`,
     scoreBand: (low: number, high: number) => `(${low} a ${high})`,

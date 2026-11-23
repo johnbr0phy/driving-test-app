@@ -27,6 +27,7 @@ export const NL: V2UiTranslation = {
     noCalculator: "Geen rekenmachine",
     noGoingBack: "Niet terug",
     untimedPractice: "Oefenen zonder tijd (wordt bij je resultaat vermeld)",
+    halfLengthPractice: "Halve lengte (de helft van de vragen, de helft van de tijd)",
     directions: "Instructies",
     clockStartsLinear: "De klok start zodra je op Starten tikt.",
     clockStartsReview: "De klok start zodra je op Starten tikt en loopt door op het overzichtsscherm.",
@@ -253,6 +254,7 @@ export const NL: V2UiTranslation = {
     seeYourProgress: "Bekijk je voortgang",
     reviewYourAnswers: "Bekijk je antwoorden",
     untimedNote: "Oefenen zonder tijd. Deze poging gebruikte de tijdslimiet van het examen niet.",
+    halfLengthNote: "Halve lengte. De sectiescores zijn geschat op basis van de helft van de vragen.",
 
     correctOfTotal: (raw: number, total: number) => `${raw} / ${total} goed`,
     scoreBand: (low: number, high: number) => `(${low} tot ${high})`,

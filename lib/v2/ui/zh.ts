@@ -24,6 +24,7 @@ export const ZH: V2UiTranslation = {
     noCalculator: "不可使用计算器",
     noGoingBack: "不能返回上一题",
     untimedPractice: "不限时练习（会随成绩一起记录）",
+    halfLengthPractice: "半长练习（一半题目，一半时间）",
     directions: "说明",
     clockStartsLinear: "点击开始后开始计时。",
     clockStartsReview: "点击开始后开始计时，在检查页面也会继续计时。",
@@ -225,6 +226,7 @@ export const ZH: V2UiTranslation = {
     seeYourProgress: "查看进度",
     reviewYourAnswers: "查看你的答案",
     untimedNote: "不限时练习。本次作答没有模拟考试的时间限制。",
+    halfLengthNote: "半长练习。各部分分数根据一半题目估算。",
     correctOfTotal: (raw: number, total: number) => `答对 ${raw} / ${total}`,
     scoreBand: (low: number, high: number) => `（${low} 至 ${high}）`,
     moduleLine: (module: number, variant: string | undefined, raw: number, total: number) =>

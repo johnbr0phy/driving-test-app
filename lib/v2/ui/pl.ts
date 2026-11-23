@@ -34,6 +34,7 @@ export const PL: V2UiTranslation = {
     noCalculator: "Bez kalkulatora",
     noGoingBack: "Bez powrotu do pytań",
     untimedPractice: "Ćwiczenie bez limitu czasu (zapisane razem z wynikiem)",
+    halfLengthPractice: "Połowa długości (połowa pytań, połowa czasu)",
     directions: "Instrukcje",
     clockStartsLinear: "Czas zaczyna biec, gdy dotkniesz Rozpocznij.",
     clockStartsReview: "Czas zaczyna biec, gdy dotkniesz Rozpocznij, i płynie dalej na ekranie przeglądu.",
@@ -239,6 +240,7 @@ export const PL: V2UiTranslation = {
     seeYourProgress: "Zobacz swoje postępy",
     reviewYourAnswers: "Przejrzyj odpowiedzi",
     untimedNote: "Ćwiczenie bez limitu czasu. To podejście nie odwzorowało limitu czasu egzaminu.",
+    halfLengthNote: "Połowa długości. Wyniki sekcji są szacowane na podstawie połowy pytań.",
     correctOfTotal: (raw: number, total: number) => `${raw} / ${total} poprawnie`,
     scoreBand: (low: number, high: number) => `(od ${low} do ${high})`,
     moduleLine: (module: number, variant: string | undefined, raw: number, total: number) =>

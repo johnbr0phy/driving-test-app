@@ -28,6 +28,7 @@ export const DA: V2UiTranslation = {
     noCalculator: "Ingen lommeregner",
     noGoingBack: "Ingen vej tilbage",
     untimedPractice: "Øvelse uden tid (noteres sammen med dit resultat)",
+    halfLengthPractice: "Halv længde (halvdelen af spørgsmålene, halvdelen af tiden)",
     directions: "Vejledning",
     clockStartsLinear: "Uret starter, når du trykker på Start.",
     clockStartsReview: "Uret starter, når du trykker på Start, og kører videre på oversigtsskærmen.",
@@ -254,6 +255,7 @@ export const DA: V2UiTranslation = {
     seeYourProgress: "Se dine fremskridt",
     reviewYourAnswers: "Gennemgå dine svar",
     untimedNote: "Øvelse uden tid. Dette forsøg brugte ikke prøvens tidsgrænse.",
+    halfLengthNote: "Halv længde. Sektionsscorerne er anslået ud fra halvdelen af spørgsmålene.",
 
     correctOfTotal: (raw: number, total: number) => `${raw} / ${total} rigtige`,
     scoreBand: (low: number, high: number) => `(${low} til ${high})`,

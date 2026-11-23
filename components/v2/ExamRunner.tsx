@@ -10,7 +10,7 @@ import { Flag, ChevronLeft, ChevronRight, Calculator as CalcIcon, BookOpen, X, S
 import { ExamV2Config, StageState, TestSessionV2, AnswerValue } from "@/lib/v2/types";
 import { getBank, getQuestionIndex, getStimulus } from "@/lib/v2/bank";
 import { stagesOf, v2Routes } from "@/lib/v2/registry";
-import { createSession, remainingNow, resolveAdaptive, scoreSession, sessionKey } from "@/lib/v2/session";
+import { createSession, remainingNow, resolveAdaptive, scoreSession, sessionKey, stageTimeLimit, withLength } from "@/lib/v2/session";
 import { isAnswered, isComplete } from "@/lib/v2/grading";
 import { useV2Store } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
@@ -153,7 +153,8 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
   const total = stage.questionIds.length;
   const answeredCount = stage.questionIds.filter((id) => isAnswered(stage.answers[id])).length;
   const stageTitle = def.section.modules.length > 1 ? t.moduleTitle(def.section.name, def.module.module) : def.section.name;
-  const timed = def.module.timeLimit > 0 && session.timing !== "untimed";
+  const limit = stageTimeLimit(def.module.timeLimit, session.length);
+  const timed = limit > 0 && session.timing !== "untimed";
   const linear = !!def.section.linear;
 
   function toggleMulti(cur: AnswerValue | undefined, orig: number): number[] {
@@ -215,7 +216,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
 
   // ---------- Intro ----------
   if (session.phase === "intro") {
-    const isResume = timed && stage.runningSince === undefined && stage.remaining < def.module.timeLimit;
+    const isResume = timed && stage.runningSince === undefined && stage.remaining < limit;
     return (
       <FocusMode className="v2-focus">
         <TopBar title={exam.shortName} onExit={() => setConfirm("exit")} />
@@ -226,7 +227,7 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
             <div className="mt-3 flex flex-wrap gap-2 text-sm">
               <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1 font-semibold">{t.questionCount(total)}</span>
               {timed ? (
-                <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1 font-semibold">{isResume ? t.timeLeft(formatClock(stage.remaining)) : `${formatClock(def.module.timeLimit)} `}</span>
+                <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1 font-semibold">{isResume ? t.timeLeft(formatClock(stage.remaining)) : `${formatClock(limit)} `}</span>
               ) : (
                 <span className="rounded-full bg-gray-100 dark:bg-gray-800 px-3 py-1 font-semibold">{t.untimed}</span>
               )}
@@ -238,11 +239,19 @@ export function ExamRunner({ exam, testNumber }: { exam: ExamV2Config; testNumbe
               )}
               {linear && <span className="rounded-full bg-amber-50 dark:bg-amber-950 px-3 py-1 font-semibold text-amber-800 dark:text-amber-300">{t.noGoingBack}</span>}
             </div>
-            {stagesOf(exam).some(({ module }) => module.timeLimit > 0) && session.stage === 0 && stage.remaining === def.module.timeLimit && !stage.runningSince && stage.current === 0 && Object.keys(stage.answers).length === 0 && (
-              <label className="mt-4 flex items-center gap-2 text-sm">
-                <input type="checkbox" checked={session.timing === "untimed"} onChange={(e) => update(s => ({ ...s, timing: e.target.checked ? "untimed" : "standard" }))} />
-                {t.untimedPractice}
-              </label>
+            {session.stage === 0 && stage.remaining === limit && !stage.runningSince && stage.current === 0 && Object.keys(stage.answers).length === 0 && (
+              <div className="mt-4 space-y-2 text-sm">
+                <label className="flex items-center gap-2">
+                  <input type="checkbox" checked={session.length === "half"} onChange={(e) => update((s) => withLength(exam, bank, s, e.target.checked ? "half" : "full"))} />
+                  {t.halfLengthPractice}
+                </label>
+                {stagesOf(exam).some(({ module }) => module.timeLimit > 0) && (
+                  <label className="flex items-center gap-2">
+                    <input type="checkbox" checked={session.timing === "untimed"} onChange={(e) => update((s) => ({ ...s, timing: e.target.checked ? "untimed" : "standard" }))} />
+                    {t.untimedPractice}
+                  </label>
+                )}
+              </div>
             )}
             <div className="mt-6 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5">
               <div className="mb-2 font-semibold">{t.directions}</div>

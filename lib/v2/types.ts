@@ -249,6 +249,8 @@ export interface ExamV2Config {
 export interface TestSessionV2 {
   /** Untimed practice is chosen before the first module starts. */
   timing?: "standard" | "untimed";
+  /** Half-length practice (every other item, half the time), chosen before the first module starts. */
+  length?: "full" | "half";
   key: string;
   examId: string;
   testNumber: number;
@@ -292,6 +294,8 @@ export interface SectionResult {
 
 export interface TestResultV2 {
   timing?: "standard" | "untimed";
+  /** A half-length sitting: section scores are estimated from half the items. */
+  length?: "full" | "half";
   key: string;
   examId: string;
   testNumber: number;

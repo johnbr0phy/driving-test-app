@@ -1771,18 +1771,18 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Young and adult",
-    "stem": "TADPOLE is to FROG as CATERPILLAR is to ____.",
+    "stem": "KID is to GOAT as CYGNET is to ____.",
     "options": [
-      "Butterfly",
-      "Cocoon",
-      "Beetle",
-      "Worm",
-      "Chrysalis"
+      "Duck",
+      "Feather",
+      "Goose",
+      "Swan",
+      "Nest"
     ],
     "correct": [
-      0
+      3
     ],
-    "explanation": "A tadpole grows into a frog; a caterpillar grows into a butterfly. The cocoon is a stage in between, not the adult."
+    "explanation": "A kid is a young goat; a cygnet is a young swan. Goose and duck are other water birds, whose young are goslings and ducklings."
   },
   {
     "id": "CCAT-T2-031",
@@ -1883,19 +1883,19 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Number series",
-    "stem": "What number comes next? 3, 8, 18, 38, 78, ?",
+    "stem": "What number comes next? 5, 11, 23, 47, 95, ?",
     "options": [
-      "118",
-      "148",
-      "154",
-      "156",
-      "158"
+      "143",
+      "189",
+      "190",
+      "191",
+      "193"
     ],
     "correct": [
-      4
+      3
     ],
     "lockedOrder": true,
-    "explanation": "Each number is double the one before, plus 2: 78 x 2 + 2 = 158."
+    "explanation": "Each number is double the one before, plus 1: 95 x 2 + 1 = 191."
   },
   {
     "id": "CCAT-T2-036",
@@ -2887,18 +2887,18 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Place",
-    "stem": "BOOK is to LIBRARY as PAINTING is to ____.",
+    "stem": "CAR is to GARAGE as AIRPLANE is to ____.",
     "options": [
-      "Gallery",
-      "Studio",
-      "Frame",
-      "Theater",
-      "Easel"
+      "Terminal",
+      "Cockpit",
+      "Hangar",
+      "Runway",
+      "Airport"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "Books are kept for the public in a library; paintings are kept and shown in a gallery. A studio is where a painting is made, not where it is kept for the public."
+    "explanation": "A car is kept and sheltered in a garage; an airplane is kept and sheltered in a hangar. A runway is where it takes off, and an airport is the whole site."
   },
   {
     "id": "CCAT-D-031",

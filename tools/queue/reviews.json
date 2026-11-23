@@ -1058,6 +1058,14 @@
         "pr": 965,
         "findings": 2
       }
+    ],
+    "ccat": [
+      {
+        "date": "2026-11-22",
+        "kind": "blind review at build",
+        "pr": null,
+        "findings": 12
+      }
     ]
   },
   "pendingReviews": {

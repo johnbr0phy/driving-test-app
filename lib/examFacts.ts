@@ -2126,6 +2126,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the NREMT Paramedic certification examination test plan (July 2024)",
     source: { name: "NREMT", url: "https://www.nremt.org/Pages/Examinations/AEMT-and-Paramedic-Certification-Examinations" },
   },
+  emr: {
+    answer:
+      "The NREMT Emergency Medical Responder (EMR) exam is a computer adaptive test of 90 to 110 questions, 30 of them unscored pilot items, in 1 hour 45 minutes at Pearson VUE or by online proctoring. The current version began on April 7, 2025. Scores run from 100 to 1500 and 950 passes. Primary Assessment is the largest domain at 37 to 41%, then Patient Treatment and Transport at 20 to 24%.",
+    rows: [
+      { label: "Questions", value: "90 to 110 (30 unscored pilot)" },
+      { label: "Time", value: "1 hour 45 minutes" },
+      { label: "Format", value: "Computer adaptive, no going back" },
+      { label: "Passing score", value: "950 on a 100 to 1500 scale" },
+      { label: "Fee", value: "$88 per attempt" },
+      { label: "Attempts", value: "3, at least 15 days apart; then a new EMR course" },
+      { label: "Given by", value: "NREMT, at Pearson VUE centers or online (OnVUE)" },
+    ],
+    basedOn: "the NREMT Emergency Medical Responder Examination Specifications (2023 BLS Practice Analysis, from April 7, 2025) and the EMR Candidate Handbook",
+    source: { name: "NREMT", url: "https://nremt.org/Pages/Examinations/EMR-and-EMT-Certification-Examinations" },
+  },
   aemt: {
     answer:
       "The NREMT Advanced EMT (AEMT) certification exam is one fixed-length linear test of 135 questions in 3 hours at Pearson VUE, 35 of them unscored pilot items, answered in order with no going back. Since July 1, 2024 there is no separate psychomotor exam. Scores run from 100 to 1500 and 950 passes. Clinical Judgment is the largest domain at 31 to 35%, then Medical, Obstetrics and Gynecology at 25 to 29%.",

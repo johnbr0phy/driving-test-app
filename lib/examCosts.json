@@ -159,6 +159,16 @@
     "url": "https://www.nremt.org/Handbooks/AEMT/About-The-Examination"
    }
   },
+  "emr": {
+   "fee": {
+    "value": "$88 application fee, charged for each attempt",
+    "url": "https://nremt.org/Handbooks/EMR/Certification-Process"
+   },
+   "retake": {
+    "value": "15 days after each attempt; 3 attempts, then a new full EMR course",
+    "url": "https://nremt.org/Handbooks/EMR/Cognitive-Exam"
+   }
+  },
   "emt": {
    "fee": {
     "value": "$104 application fee, charged for each attempt",

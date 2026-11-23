@@ -202,6 +202,7 @@ import "./series66";
 import "./acecpt";
 import "./aswb";
 import "./arrt";
+import "./arrtct";
 import "./lmrt";
 import "./nce";
 import "./texesppr";

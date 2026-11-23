@@ -1098,6 +1098,13 @@ export const ko: TranslationKeys = {
     arrtHead: "Head, Spine & Pelvis Procedures",
     arrtThorax: "Thorax & Abdomen Procedures",
     arrtExtrem: "Extremity Procedures",
+    arrtctCare: "Patient Care & Contrast",
+    arrtctSafety: "Radiation Safety & Dose",
+    arrtctForm: "Image Formation",
+    arrtctEval: "Image Evaluation & Archiving",
+    arrtctHead: "Head, Spine & Musculoskeletal",
+    arrtctNeck: "Neck & Chest",
+    arrtctAbd: "Abdomen & Pelvis",
     // nce
     nceEthics: "Professional Practice & Ethics",
     nceAssess: "Intake, Assessment & Diagnosis",

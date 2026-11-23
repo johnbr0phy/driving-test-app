@@ -180,6 +180,7 @@ KNOWN_BANKS = {
     "sweden-hunting-theory-questions.json": dict(rows=210, why="three real-length 70-question tests"),
     "dk-indfoedsret-questions.json": dict(rows=320, why="eight 40-question tests"),
     "de-motorrad-questions.json": dict(rows=210, why="seven 30-question tests"),
+    "de-einbuergerungstest-questions.json": dict(rows=198, why="six real-length 33-question tests (30 general + 3 on the Länder)"),
     "netherlands-driving-theory-questions.json": dict(rows=350, why="seven 50-question tests at the real 44/50 line"),
     "rbt-questions.json": dict(rows=400, why="200 originals plus 200 Premium work scenarios, eight 50-question tests"),
     "ase-questions.json": dict(rows=320, why="eight ASE A-test pools of 40; four mixed 50-question tests use 5 to 7 of each"),

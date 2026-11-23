@@ -99,6 +99,7 @@ const BORROWED_SETS: Record<string, string> = {
   backflow: "caplumb",
   pesticide: "epa608",
   bowhunter: "hunter",
+  cafsc: "hunter",
   trapper: "hunter",
   ieplumbt2: "caplumb",
   crc: "cpc",

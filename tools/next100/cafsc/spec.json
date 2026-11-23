@@ -1,0 +1,16 @@
+{
+  "id": "cafsc", "stateCode": "CAFSC", "idBase": 47300, "prefix": "CAFSC-",
+  "slug": "/california-fsc", "landingPath": "/california-firearm-safety-certificate-practice-test", "dataFile": "data/california-fsc-questions.json",
+  "testCount": 6, "questionsPerTest": 30, "passPct": 75,
+  "categories": [
+    {"key": "cafscRules", "perTest": 4, "pool": 28, "segment": "RUL"},
+    {"key": "cafscChildren", "perTest": 3, "pool": 20, "segment": "KID"},
+    {"key": "cafscOperation", "perTest": 4, "pool": 28, "segment": "OPR"},
+    {"key": "cafscAmmo", "perTest": 4, "pool": 24, "segment": "AMM"},
+    {"key": "cafscOwnership", "perTest": 4, "pool": 28, "segment": "OWN"},
+    {"key": "cafscTransfers", "perTest": 5, "pool": 32, "segment": "BUY"},
+    {"key": "cafscCarry", "perTest": 4, "pool": 24, "segment": "CAR"},
+    {"key": "cafscProhibited", "perTest": 2, "pool": 16, "segment": "PRO"}
+  ],
+  "notes": "California DOJ Firearm Safety Certificate written test: 30 true/false and multiple choice items, 75% (23 of 30) to pass. No topic weights are published; the split follows the 2025 study guide's chapters. Six real-length tests of 30; 20 training-only spares."
+}

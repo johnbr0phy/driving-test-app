@@ -1462,5 +1462,13 @@
       "pr": 969,
       "findings": 24
     }
+  ],
+  "cafsc": [
+    {
+      "date": "2026-11-22",
+      "kind": "blind review at build",
+      "pr": 970,
+      "findings": 3
+    }
   ]
 }

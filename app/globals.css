@@ -3094,6 +3094,20 @@
     --brand-gradient-to: 0 0% 98%;
   }
 
+  /* California Firearm Safety Certificate theme: deep forest green */
+  [data-theme="cafsc"] {
+    --brand: 115 100% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 115 45% 95%;
+    --brand-hover: 115 100% 14%;
+    --brand-dark: 115 100% 12%;
+    --brand-darker: 115 80% 9%;
+    --brand-muted: 115 25% 68%;
+    --brand-border: 115 25% 80%;
+    --brand-border-light: 115 22% 89%;
+    --brand-gradient-to: 45 70% 95%;
+  }
+
   /* France CACES R489 Forklift Theory Test theme */
   [data-theme="frcaces"] {
     --brand: 72 100% 18%;
@@ -9815,6 +9829,18 @@
     --brand-dark: 234 100% 70%;
     --brand-darker: 234 100% 78%;
   }
+  .dark [data-theme="cafsc"] {
+    --brand: 115 100% 26.7%;
+    --brand-hover: 115 100% 18.7%;
+    --brand-light: 115 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 115 22% 24%;
+    --brand-border: 115 25% 34%;
+    --brand-muted: 115 25% 45%;
+    --brand-dark: 115 100% 65%;
+    --brand-darker: 115 80% 78%;
+  }
+
   .dark [data-theme="frcaces"] {
     --brand: 72 100% 24.8%;
     --brand-hover: 72 100% 16.8%;

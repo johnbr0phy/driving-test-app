@@ -1743,13 +1743,62 @@
       "findings": 22
     }
   ],
-  "serverplus": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1006, "findings": 7 }],
-  "sgm9a": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1007, "findings": 4 }],
-  "aemt": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1008, "findings": 6 }],
-  "nzfirstaid": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1009, "findings": 10 }],
-  "nzforklift": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1017, "findings": 6 }],
-  "danbrhs": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1010, "findings": 2 }],
-  "wastewaterop": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1013, "findings": 18 }],
+  "serverplus": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1006,
+      "findings": 7
+    }
+  ],
+  "sgm9a": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1007,
+      "findings": 4
+    }
+  ],
+  "aemt": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1008,
+      "findings": 6
+    }
+  ],
+  "nzfirstaid": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1009,
+      "findings": 10
+    }
+  ],
+  "nzforklift": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1017,
+      "findings": 6
+    }
+  ],
+  "danbrhs": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1010,
+      "findings": 2
+    }
+  ],
+  "wastewaterop": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1013,
+      "findings": 18
+    }
+  ],
   "cloudplus": [
     {
       "date": "2026-11-23",
@@ -1782,6 +1831,28 @@
       "findings": 9
     }
   ],
-  "dp900": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1018, "findings": 10 }],
-  "danbice": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1016, "findings": 6 }]
+  "dp900": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1018,
+      "findings": 10
+    }
+  ],
+  "danbice": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1016,
+      "findings": 6
+    }
+  ],
+  "cnor": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1020,
+      "findings": 91
+    }
+  ]
 }

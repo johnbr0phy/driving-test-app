@@ -113,7 +113,7 @@ ITEMS = [
            "Legal holds override normal retention so data named in a subpoena or case is preserved."),
     matrix(0, "Permissions and access controls", 2,
            "Which access control approach does each case use?",
-           ["Help desk group gets password reset rights", "Logons allowed only from 7 a.m. to 7 p.m.", "Admin rights limited to one office's servers"],
+           ["DBA group may manage the SQL servers", "Logons allowed only from 7 a.m. to 7 p.m.", "Admin rights limited to one office's servers"],
            ["Role-based", "Rule-based", "Scope-based"],
            [0, 1, 2],
            "Role-based grants rights through a job role or group, rule-based applies conditions such as time of day, and scope-based limits rights to a set of objects."),

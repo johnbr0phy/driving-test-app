@@ -49,7 +49,7 @@ ITEMS = [
            ["Slower disk I/O", "Total data loss", "No change at all", "Faster reads from the spare"],
            "During a rebuild the controller rebuilds missing data from parity while also serving I/O, so performance drops until it finishes."),
     single(1, "Storage problems", 2,
-           "A server shows the message OS not found at boot after a USB stick was left plugged in. What is the first fix?",
+           'A server shows "OS not found" at boot after a USB stick was left plugged in. What is the first fix?',
            ["Fix the boot order", "Rebuild the RAID array", "Replace the system board", "Reinstall the OS from media"],
            "Firmware may be trying to boot the USB stick first. Removing it or putting the boot disk first in the order is the simplest fix."),
     single(1, "Tools and techniques", 2,

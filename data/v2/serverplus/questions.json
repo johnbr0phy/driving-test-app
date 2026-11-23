@@ -1683,16 +1683,16 @@
     "skill": "Storage problems",
     "difficulty": 2,
     "format": "single",
-    "stem": "A server shows the message OS not found at boot after a USB stick was left plugged in. What is the first fix?",
+    "stem": "A server shows \"OS not found\" at boot after a USB stick was left plugged in. What is the first fix?",
     "explanation": "Firmware may be trying to boot the USB stick first. Removing it or putting the boot disk first in the order is the simplest fix.",
     "options": [
-      "Fix the boot order",
-      "Replace the system board",
+      "Rebuild the RAID array",
       "Reinstall the OS from media",
-      "Rebuild the RAID array"
+      "Fix the boot order",
+      "Replace the system board"
     ],
     "correct": [
-      0
+      2
     ]
   },
   {
@@ -4339,7 +4339,7 @@
     "stem": "Which access control approach does each case use?",
     "explanation": "Role-based grants rights through a job role or group, rule-based applies conditions such as time of day, and scope-based limits rights to a set of objects.",
     "rows": [
-      "Help desk group gets password reset rights",
+      "DBA group may manage the SQL servers",
       "Logons allowed only from 7 a.m. to 7 p.m.",
       "Admin rights limited to one office's servers"
     ],

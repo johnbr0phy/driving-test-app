@@ -1,0 +1,4202 @@
+[
+  {
+    "id": "FAACAX-T1-001",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Commercial limitations",
+    "stem": "Your commercial certificate (airplane single-engine land) has no instrument rating. Which flight carrying passengers for hire may you make?",
+    "options": [
+      "A daytime cross-country of 70 nautical miles",
+      "A daytime cross-country of 40 nautical miles",
+      "A 20-minute local flight after dark"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Without an instrument rating in the same category and class, the certificate says carrying passengers for hire on cross-country flights of more than 50 nautical miles, or at night, is prohibited (14 CFR 61.133(b)(1)). A 40-mile daytime trip is within that limit."
+  },
+  {
+    "id": "FAACAX-T1-002",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Thunderstorm life cycle",
+    "stem": "Which event marks the start of the mature stage of a thunderstorm?",
+    "options": [
+      "Precipitation begins falling from the cloud base",
+      "The cloud top first reaches the tropopause",
+      "Updrafts form inside a growing cumulus cloud"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A thunderstorm grows in the cumulus stage with updrafts only. Precipitation reaching the ground marks the mature stage, with updrafts and downdrafts side by side. Downdrafts take over in the dissipating stage."
+  },
+  {
+    "id": "FAACAX-T1-003",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Load factor and stall speed",
+    "stem": "An airplane stalls at 60 knots in level flight. About what is its stall speed in a level 45 degree banked turn?",
+    "options": [
+      "About 71 knots",
+      "About 60 knots",
+      "About 85 knots"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Load factor in a 45 degree level turn is 1 / cos 45, about 1.41. Stall speed rises with the square root of the load factor: 60 x 1.19 = about 71 knots."
+  },
+  {
+    "id": "FAACAX-T1-004",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Constant-speed propeller",
+    "stem": "With a constant-speed propeller, how should you increase power for a climb?",
+    "options": [
+      "Increase both at once with the throttle only",
+      "Increase manifold pressure first, then RPM",
+      "Increase RPM first, then manifold pressure"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "To avoid high manifold pressure at low RPM, which overstresses the engine, raise RPM with the propeller control first and then add manifold pressure. To reduce power, lower manifold pressure first, then RPM (PHAK chapter 7)."
+  },
+  {
+    "id": "FAACAX-T1-005",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Center of gravity",
+    "stem": "Basic empty weight is 2,050 pounds with a moment of 75,850 pound-inches. You load 360 pounds in front seats at 37.0 inches, 180 pounds in rear seats at 73.0, 60 gallons of fuel at 48.0 and 40 pounds of baggage at 95.0. Where is the CG?",
+    "options": [
+      "About 39.8 inches aft of datum",
+      "About 41.3 inches aft of datum",
+      "About 42.6 inches aft of datum"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fuel is 60 x 6 = 360 pounds. Moments: 75,850 + 13,320 + 13,140 + 17,280 + 3,800 = 123,390. Weight: 2,050 + 360 + 180 + 360 + 40 = 2,990. CG = 123,390 / 2,990, about 41.3 inches."
+  },
+  {
+    "id": "FAACAX-T1-006",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speed limits",
+    "stem": "You fly VFR through a charted VFR corridor in a Class B airspace area. What is the maximum indicated airspeed?",
+    "options": [
+      "200 knots",
+      "250 knots",
+      "230 knots"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 91.117(c): no more than 200 knots (230 mph) indicated in the airspace underlying a Class B area or in a VFR corridor through it."
+  },
+  {
+    "id": "FAACAX-T1-007",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Wind correction",
+    "stem": "True course is 090, true airspeed is 120 knots and the wind is from 360 degrees at 20 knots. About what are the true heading and groundspeed?",
+    "options": [
+      "080 degrees and 120 knots",
+      "100 degrees and 118 knots",
+      "080 degrees and 118 knots"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The wind is directly off the left side. Wind correction angle = arcsin(20/120), about 9.6 degrees left, so heading is about 080. Groundspeed = square root of (120 squared minus 20 squared), about 118 knots."
+  },
+  {
+    "id": "FAACAX-T1-008",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chandelle",
+    "stem": "How should a chandelle end?",
+    "options": [
+      "Wings level at the 180 degree point, just above stall speed",
+      "In a 30 degree bank at the 180 degree point, at entry speed",
+      "Wings level at the 90 degree point, at cruise speed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The ACS (V.C) calls for completing the rollout at the 180 degree point, plus or minus 10 degrees, just above stall airspeed, and holding that airspeed momentarily without stalling."
+  },
+  {
+    "id": "FAACAX-T1-009",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time of useful consciousness",
+    "stem": "After a sudden loss of pressurization at 25,000 feet, about how long is the average time of useful consciousness for a seated pilot?",
+    "options": [
+      "20 to 30 minutes",
+      "30 to 60 seconds",
+      "3 to 5 minutes"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The PHAK (chapter 17) gives an average time of useful consciousness of about 3 to 5 minutes at 25,000 feet, 1 to 2 minutes at 30,000 and 30 to 60 seconds at 35,000. Don oxygen at once."
+  },
+  {
+    "id": "FAACAX-T1-010",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medical duration",
+    "stem": "You are 35 and get a second-class medical certificate on March 10, 2026. Through what date may you use it for commercial pilot privileges?",
+    "options": [
+      "March 31, 2027",
+      "September 30, 2026",
+      "March 10, 2027"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "For commercial privileges a second-class medical lasts to the end of the last day of the 12th month after the month of the exam (14 CFR 61.23(d)). The exam month is March 2026, so it runs through March 31, 2027."
+  },
+  {
+    "id": "FAACAX-T1-011",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Icing",
+    "stem": "You fly through freezing rain. What does that tell you about the air?",
+    "options": [
+      "There is warmer air above you, a temperature inversion",
+      "The air is unstable from the surface up",
+      "The freezing level is far above your altitude"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Freezing rain forms when rain falls from a warm layer above freezing into colder air below. It means warmer air exists at a higher altitude."
+  },
+  {
+    "id": "FAACAX-T1-012",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Maneuvering speed",
+    "stem": "Design maneuvering speed is 110 knots at maximum weight. About what is it when the airplane weighs 80 percent of maximum?",
+    "options": [
+      "About 88 knots",
+      "110 knots",
+      "About 98 knots"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Maneuvering speed varies with the square root of weight: 110 x square root of 0.8 = 110 x 0.894, about 98 knots. A lighter airplane reaches its limit load at a lower speed."
+  },
+  {
+    "id": "FAACAX-T1-013",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Turbocharging",
+    "stem": "What is the critical altitude of a turbocharged engine?",
+    "options": [
+      "The altitude at which the turbocharger first starts to work",
+      "The altitude above which supplemental oxygen is required",
+      "The highest altitude at which it can still hold rated manifold pressure"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A turbocharger can maintain sea-level manifold pressure up to its critical altitude. Above it the wastegate is fully closed and manifold pressure falls with altitude (PHAK chapter 7)."
+  },
+  {
+    "id": "FAACAX-T1-014",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Weight shift",
+    "stem": "The airplane weighs 3,100 pounds with its CG at 47.0 inches; the aft limit is 46.0. How much baggage must move from the 120-inch station to the 80-inch station?",
+    "options": [
+      "At least 78 pounds",
+      "At least 40 pounds",
+      "At least 31 pounds"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Weight moved = total weight x CG change / distance moved = 3,100 x 1.0 / 40 = 77.5 pounds, so move at least 78 pounds."
+  },
+  {
+    "id": "FAACAX-T1-015",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speed limits",
+    "stem": "Unless ATC authorizes otherwise, what is the speed limit at or below 2,500 feet AGL within 4 nm of the primary airport of a Class D area?",
+    "options": [
+      "200 knots indicated",
+      "250 knots indicated",
+      "156 knots indicated"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 91.117(b) limits aircraft at or below 2,500 feet above the surface within 4 nm of the primary airport of a Class C or D area to 200 knots indicated."
+  },
+  {
+    "id": "FAACAX-T1-016",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fuel planning",
+    "stem": "A day VFR leg is 280 nm at a groundspeed of 140 knots and the airplane burns 12 gallons per hour. Ignoring taxi and climb, what is the minimum fuel to depart with?",
+    "options": [
+      "24 gallons",
+      "30 gallons",
+      "33 gallons"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Flight time is 280 / 140 = 2.0 hours, or 24 gallons. Day VFR needs enough fuel to reach the destination plus 30 minutes at normal cruise (14 CFR 91.151): 6 more gallons, 30 in all."
+  },
+  {
+    "id": "FAACAX-T1-017",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lazy eight",
+    "stem": "In a lazy eight, where is the bank steepest?",
+    "options": [
+      "At the 45 degree point, at about 60 degrees",
+      "At the 180 degree point, at about 45 degrees",
+      "At the 90 degree point, at about 30 degrees"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bank increases to its maximum, about 30 degrees, at the 90 degree point of each 180 degree turn, where pitch passes through level and airspeed is lowest (ACS V.D, AFH chapter 7)."
+  },
+  {
+    "id": "FAACAX-T1-018",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Aeronautical experience",
+    "stem": "Which night requirement must a commercial single-engine applicant log as solo or as the person performing the duties of pilot in command?",
+    "options": [
+      "3 hours of night VFR with 10 full-stop landings at any airport",
+      "5 hours of night VFR with 3 takeoffs and 3 landings to a full stop",
+      "5 hours of night VFR with 10 takeoffs and 10 landings at an airport with an operating control tower"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "14 CFR 61.129(a)(4)(ii) requires 5 hours in night VFR conditions with 10 takeoffs and 10 landings, each in the traffic pattern, at an airport with an operating control tower."
+  },
+  {
+    "id": "FAACAX-T1-019",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pilot in command authority",
+    "stem": "Your employer tells you to take a charter flight in an airplane with an inoperative instrument required for the flight. Who has final authority over whether the flight goes?",
+    "options": [
+      "The customer who chartered the flight",
+      "You, as pilot in command",
+      "The employer, as operator of the airplane"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Under 14 CFR 91.3 the pilot in command is directly responsible for, and is the final authority as to, the operation of the aircraft. Pressure from an employer or customer does not change that."
+  },
+  {
+    "id": "FAACAX-T1-020",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "METAR",
+    "stem": "METAR KABC 121853Z 28015G28KT 1 1/2SM -SHRA BR BKN007 OVC015 12/11 A2971. What is the ceiling?",
+    "options": [
+      "700 feet AGL",
+      "1,500 feet AGL",
+      "15,000 feet AGL"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The ceiling is the lowest broken or overcast layer. BKN007 is a broken layer at 700 feet above ground level."
+  },
+  {
+    "id": "FAACAX-T1-021",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ground effect",
+    "stem": "What happens as an airplane climbs out of ground effect after takeoff?",
+    "options": [
+      "Induced drag increases, so more thrust is needed and it may settle",
+      "Induced drag decreases, so the airplane accelerates",
+      "Parasite drag doubles, so it must be held in ground effect"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Ground effect reduces wingtip vortices and induced drag. Climbing out of it brings induced drag back, so an airplane lifted off too slowly may sink back toward the runway (PHAK chapter 5)."
+  },
+  {
+    "id": "FAACAX-T1-022",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Retractable gear",
+    "stem": "What keeps the landing gear from retracting while the airplane is on the ground?",
+    "options": [
+      "A squat switch on the gear that senses the weight of the airplane",
+      "The gear warning horn, which locks the gear handle",
+      "The constant-speed propeller governor"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A safety (squat) switch on a main gear strut opens the retraction circuit while the strut is compressed by the airplane's weight (PHAK chapter 7)."
+  },
+  {
+    "id": "FAACAX-T1-023",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Overweight",
+    "stem": "Maximum takeoff weight is 3,400 pounds. Fully fueled and loaded, the airplane weighs 3,460 pounds. How much avgas must you remove to take off at the limit?",
+    "options": [
+      "10 gallons",
+      "6 gallons",
+      "60 gallons"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The airplane is 60 pounds over. Avgas weighs 6 pounds per gallon, so 60 / 6 = 10 gallons."
+  },
+  {
+    "id": "FAACAX-T1-024",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Part 119 exceptions",
+    "stem": "A local business pays you to fly its advertising banner along a beach. Which certificate does this operation need beyond your commercial pilot certificate?",
+    "options": [
+      "None, because banner towing is aerial work outside part 119",
+      "A part 119 air carrier certificate held by you",
+      "A part 135 operating certificate held by the business"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Part 119 does not apply to aerial work such as banner towing, crop dusting, aerial photography or pipeline patrol (14 CFR 119.1(e)(4)). A commercial pilot may fly it under part 91."
+  },
+  {
+    "id": "FAACAX-T1-025",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "LAHSO",
+    "stem": "According to the AIM, which pilot should not take part in land and hold short operations?",
+    "options": [
+      "A student pilot",
+      "A commercial pilot flying a charter",
+      "A pilot landing on a dry runway in daylight"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The AIM (4-3-11) says student pilots and pilots not familiar with LAHSO should not participate. Any pilot in command may decline a LAHSO clearance."
+  },
+  {
+    "id": "FAACAX-T1-026",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Off-course correction",
+    "stem": "After 60 nm you find yourself 4 nm left of course, with 80 nm to go. Using the 1-in-60 rule, how much must you turn to reach the destination directly?",
+    "options": [
+      "3 degrees right",
+      "7 degrees right",
+      "4 degrees right"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Drift so far is 4 nm in 60 nm, about 4 degrees. Converging on the destination needs 4 nm in 80 nm, about 3 degrees more. Turn 4 + 3 = 7 degrees right."
+  },
+  {
+    "id": "FAACAX-T1-027",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pivotal altitude",
+    "stem": "Your groundspeed is 100 knots at the point you start eights on pylons. Using the AFH formula, about what is the pivotal altitude?",
+    "options": [
+      "667 feet AGL",
+      "885 feet AGL",
+      "1,130 feet AGL"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Pivotal altitude = groundspeed squared / 11.3 with groundspeed in knots: 10,000 / 11.3, about 885 feet AGL. Dividing by 15 is only for miles per hour."
+  },
+  {
+    "id": "FAACAX-T1-028",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "TAF",
+    "stem": "In a terminal aerodrome forecast, what does TEMPO mean?",
+    "options": [
+      "A 30 percent chance of the stated conditions",
+      "A permanent change that occurs gradually over the period",
+      "Temporary changes, each lasting less than an hour and in total less than half the period"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "TEMPO forecasts temporary fluctuations expected to last less than an hour each and less than half of the period in total (FAA-H-8083-28A). PROB30 gives a 30 percent probability."
+  },
+  {
+    "id": "FAACAX-T1-029",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Vmc",
+    "stem": "In a light twin, which change raises the minimum control speed with the critical engine inoperative (Vmc)?",
+    "options": [
+      "Feathering the propeller of the failed engine",
+      "Operating at a higher density altitude",
+      "Moving the center of gravity aft"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An aft CG shortens the rudder's arm, so more speed is needed for rudder authority and Vmc rises. A feathered propeller and higher density altitude (less engine power) lower Vmc (AFH chapter 13)."
+  },
+  {
+    "id": "FAACAX-T1-030",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fuel injection",
+    "stem": "What problem is common when restarting a hot fuel-injected engine?",
+    "options": [
+      "Vapor lock in the fuel lines makes it hard to start",
+      "The engine runs too lean to idle once started",
+      "Carburetor ice blocks the fuel flow"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Heat soak after shutdown can vaporize fuel in the lines and injectors, making hot starts difficult. Fuel injection does not suffer carburetor ice (PHAK chapter 7)."
+  },
+  {
+    "id": "FAACAX-T1-031",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Takeoff weight",
+    "stem": "According to the PHAK, a 10 percent increase in takeoff weight increases the takeoff distance by about how much?",
+    "options": [
+      "About 5 percent",
+      "At least 21 percent",
+      "About 10 percent"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "More weight means a higher takeoff speed and slower acceleration. The PHAK (chapter 11) says a 10 percent weight increase raises takeoff distance by at least 21 percent."
+  },
+  {
+    "id": "FAACAX-T1-032",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stagnant hypoxia",
+    "stem": "Which type of hypoxia can high G loads in steep maneuvers cause?",
+    "options": [
+      "Hypemic hypoxia, from a drop in red blood cells",
+      "Stagnant hypoxia, from blood pooling away from the brain",
+      "Histotoxic hypoxia, from cells unable to use oxygen"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Stagnant hypoxia means oxygen-rich blood is not flowing to the tissues. Pulling excessive Gs can pool blood in the lower body (PHAK chapter 17)."
+  },
+  {
+    "id": "FAACAX-T1-033",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "100-hour inspection",
+    "stem": "An airplane used for hire is due its 100-hour inspection at 1,250.0 tach hours. You reach a shop at 1,256.0 and the inspection is done there. When is the next 100-hour inspection due?",
+    "options": [
+      "At 1,356.0 hours",
+      "At 1,360.0 hours",
+      "At 1,350.0 hours"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The 100-hour limit may be exceeded by up to 10 hours to reach a place where the inspection can be done, but the excess counts toward the next 100 hours (14 CFR 91.409(b)). The next one is due 100 hours after 1,250.0, at 1,350.0."
+  },
+  {
+    "id": "FAACAX-T1-034",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Special VFR",
+    "stem": "You want a special VFR clearance to take off at night from a Class D airport. What do you need?",
+    "options": [
+      "An instrument rating and an airplane equipped for IFR",
+      "A night currency endorsement from an instructor",
+      "Only a commercial certificate and 1 mile ground visibility"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 91.157(e): special VFR takeoffs and landings between sunset and sunrise need a pilot with an instrument rating and an aircraft equipped for IFR (Alaska excepted)."
+  },
+  {
+    "id": "FAACAX-T1-035",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lost procedures",
+    "stem": "You are unsure of your position on a VFR cross-country. If weather and fuel allow, which step helps most at first?",
+    "options": [
+      "Climb to improve radio and navaid reception and see more landmarks",
+      "Turn off the radios to save electrical power",
+      "Descend low enough to read signs on buildings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Climbing increases the range of radios, VORs and radar and widens the view. Then communicate with ATC, confess the problem and comply with instructions (AFH chapter on navigation, ACS VI.D)."
+  },
+  {
+    "id": "FAACAX-T1-036",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Steep spiral",
+    "stem": "Which limits apply to the commercial steep spiral?",
+    "options": [
+      "One 360 degree turn at 30 degrees of bank, finishing at pattern altitude",
+      "Two 180 degree turns at 45 degrees of bank, finishing at 1,000 feet AGL",
+      "At least three 360 degree turns, no more than 60 degrees of bank, finishing no lower than 1,500 feet AGL"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The ACS (V.B) requires a series of at least three 360 degree turns at a constant radius, bank not exceeding 60 degrees, completed no lower than 1,500 feet AGL."
+  },
+  {
+    "id": "FAACAX-T1-037",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Convective SIGMET",
+    "stem": "Which condition by itself is enough for a convective SIGMET?",
+    "options": [
+      "Hail 3/4 inch or larger at the surface",
+      "Ceilings below 1,000 feet over half the area",
+      "Moderate icing over a large area"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Convective SIGMETs cover tornadoes, lines of thunderstorms, embedded thunderstorms, areas of thunderstorms of high coverage, and hail of 3/4 inch or more or surface winds of 50 knots or more. Moderate icing and low ceilings are G-AIRMET items."
+  },
+  {
+    "id": "FAACAX-T1-038",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Critical engine",
+    "stem": "On a twin whose propellers both turn clockwise seen from the cockpit, which engine is critical, and why?",
+    "options": [
+      "The left engine, because its torque rolls the airplane right",
+      "The right engine, because it powers the hydraulic pump",
+      "The left engine, because the right engine's descending blade has the longer arm"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With both propellers turning clockwise, P-factor moves thrust to the right side of each disc. The right engine's thrust acts farther from the centerline, so losing the left engine leaves the larger yawing moment (AFH chapter 13)."
+  },
+  {
+    "id": "FAACAX-T1-039",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pressurization",
+    "stem": "In a pressurized airplane, what mainly controls the cabin altitude?",
+    "options": [
+      "The outflow valve, which lets air out of the cabin at a controlled rate",
+      "The safety valve, which opens at every altitude change",
+      "The inflow of outside air through the cabin vents"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Air is pumped into the cabin and the pressure controller sets cabin altitude by moving the outflow valve. The safety and dump valves are for overpressure and emergencies (PHAK chapter 7)."
+  },
+  {
+    "id": "FAACAX-T1-040",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Hydroplaning",
+    "stem": "The main tires are inflated to 36 psi. About what is the minimum dynamic hydroplaning speed?",
+    "options": [
+      "72 knots",
+      "54 knots",
+      "45 knots"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Minimum dynamic hydroplaning speed is about 9 times the square root of the tire pressure in psi: 9 x 6 = 54 knots (PHAK chapter 11)."
+  },
+  {
+    "id": "FAACAX-T1-041",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Complex airplane",
+    "stem": "Which airplane is a complex airplane under part 61?",
+    "options": [
+      "Retractable gear, flaps and a controllable-pitch propeller",
+      "Retractable gear, no flaps and a fixed-pitch propeller",
+      "Fixed gear, flaps and a 230-horsepower engine"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 61.1 defines a complex airplane as one with retractable landing gear, flaps and a controllable-pitch propeller (including one with FADEC), or a seaplane with flaps and a controllable-pitch propeller. Engine power alone makes an airplane high performance, not complex."
+  },
+  {
+    "id": "FAACAX-T1-042",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxHuman",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Decompression sickness",
+    "stem": "After a long flight at 25,000 feet in an unpressurized airplane, you have deep pain in your knees and elbows. What is the likely cause, and the right response?",
+    "options": [
+      "Hyperventilation: breathe into a bag and continue the flight",
+      "Decompression sickness: use 100 percent oxygen, descend and get medical help",
+      "Dehydration: drink water and climb to cooler air"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Nitrogen coming out of solution in the body causes decompression sickness, the bends, with joint pain. Breathe 100 percent oxygen, descend as low as practical and seek medical care; a hyperbaric chamber may be needed (PHAK chapter 17)."
+  },
+  {
+    "id": "FAACAX-T1-043",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "ADS-B",
+    "stem": "Which ADS-B Out equipment is required to fly in Class A airspace?",
+    "options": [
+      "A 978 MHz universal access transceiver",
+      "Either 1090 MHz or 978 MHz equipment",
+      "A 1090 MHz extended squitter system"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "14 CFR 91.225(a) requires 1090 ES equipment (TSO-C166b or c) in Class A. A 978 MHz UAT meets the rule only below 18,000 feet MSL."
+  },
+  {
+    "id": "FAACAX-T1-044",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Victor airways",
+    "stem": "How wide is a Victor airway within 51 nm of its navaids?",
+    "options": [
+      "8 nm on each side of the centerline",
+      "2 nm on each side of the centerline",
+      "4 nm on each side of the centerline"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A Victor airway includes the airspace within 4 nm of each side of its centerline, from 1,200 feet AGL up to but not including 18,000 feet MSL (AIM 1-1-3, 14 CFR 71)."
+  },
+  {
+    "id": "FAACAX-T1-045",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Power-off 180",
+    "stem": "To meet the commercial standard for a power-off 180 accuracy landing, where must you touch down?",
+    "options": [
+      "Within 100 feet before or after the specified point",
+      "Anywhere in the first third of the runway",
+      "On the specified point or within 200 feet beyond it"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The ACS (IV.M) calls for touching down at a proper pitch attitude within 200 feet beyond or on the specified point, with no side drift."
+  },
+  {
+    "id": "FAACAX-T1-046",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cloud base",
+    "stem": "The surface temperature is 18 degrees C and the dew point is 8 degrees C. Roughly what is the base of cumulus clouds?",
+    "options": [
+      "8,000 feet AGL",
+      "2,500 feet AGL",
+      "4,000 feet AGL"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In a convective layer the temperature and dew point converge about 2.5 degrees C per 1,000 feet. A 10 degree spread divided by 2.5 gives about 4,000 feet."
+  },
+  {
+    "id": "FAACAX-T1-047",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spins",
+    "stem": "What is happening to the wings in a fully developed spin?",
+    "options": [
+      "Both wings are stalled, one more deeply than the other",
+      "Neither wing is stalled; the airplane is in a steep spiral",
+      "Only one wing is stalled while the other flies normally"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A spin is an aggravated stall with autorotation. Both wings are stalled, but the more deeply stalled wing has less lift and more drag, keeping the rotation going (AFH chapter 5)."
+  },
+  {
+    "id": "FAACAX-T1-048",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxygen",
+    "stem": "Why should you use aviator's breathing oxygen rather than industrial oxygen?",
+    "options": [
+      "It is mixed with nitrogen to prevent oxygen toxicity",
+      "It is pressurized to a lower pressure for safety",
+      "It has very little water vapor, which could freeze in the system at altitude"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Aviator's breathing oxygen is at least 99.5 percent pure with almost no water. Moisture in other grades can freeze in valves and lines at low temperatures (PHAK chapter 17)."
+  },
+  {
+    "id": "FAACAX-T1-049",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Crosswind component",
+    "stem": "You will land on runway 27 with the wind from 300 degrees at 24 knots. What is the crosswind component?",
+    "options": [
+      "12 knots",
+      "24 knots",
+      "21 knots"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The wind is 30 degrees off the runway. Crosswind = 24 x sin 30 = 24 x 0.5 = 12 knots. The headwind component is 24 x cos 30, about 21 knots."
+  },
+  {
+    "id": "FAACAX-T1-050",
+    "section": "cax",
+    "test": 1,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pressurized aircraft training",
+    "stem": "You want to act as pilot in command of a pressurized airplane whose maximum operating altitude is FL300. What does part 61 require first?",
+    "options": [
+      "Ground and flight training on high-altitude operations and a logbook endorsement",
+      "A second-class medical and 50 hours in pressurized aircraft",
+      "An instrument rating and a type rating for the airplane"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "For a pressurized aircraft with a service ceiling or maximum operating altitude above 25,000 feet, 14 CFR 61.31(g) requires logged ground training on high-altitude topics, flight training in a pressurized aircraft or simulator, and an endorsement."
+  },
+  {
+    "id": "FAACAX-T2-001",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Eligibility",
+    "stem": "What is the minimum age for a commercial pilot certificate?",
+    "options": [
+      "18",
+      "21",
+      "17"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 61.123(a): a commercial pilot applicant must be at least 18 years old. The knowledge test itself may be taken earlier."
+  },
+  {
+    "id": "FAACAX-T2-002",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Microbursts",
+    "stem": "You fly into a microburst on final. What is the usual order of effects?",
+    "options": [
+      "A headwind with a climb, then a downdraft, then a strong tailwind",
+      "A tailwind with a sink, then a headwind with a climb",
+      "A steady downdraft only, with no change in wind"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Entering a microburst gives a performance-increasing headwind, then the core downdraft, then a tailwind that cuts airspeed. Downdrafts can reach about 6,000 feet per minute (AIM 7-1-24)."
+  },
+  {
+    "id": "FAACAX-T2-003",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Load limits",
+    "stem": "Under the part 23 category standards used in most light airplane manuals, what is the positive limit load factor of a normal category airplane?",
+    "options": [
+      "4.4 g",
+      "3.8 g",
+      "6.0 g"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Normal category is +3.8 g, utility +4.4 g and acrobatic +6.0 g (PHAK chapter 5). Exceeding the limit can permanently deform the structure."
+  },
+  {
+    "id": "FAACAX-T2-004",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Manifold pressure",
+    "stem": "With the engine stopped on the ramp, about what does the manifold pressure gauge read?",
+    "options": [
+      "Zero inches of mercury",
+      "The local atmospheric pressure, near the altimeter setting at sea level",
+      "The maximum takeoff manifold pressure"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With the engine off, the intake manifold is at outside air pressure, so the gauge shows about 29 to 30 inches at a sea-level airport, less at higher fields."
+  },
+  {
+    "id": "FAACAX-T2-005",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Center of gravity",
+    "stem": "An airplane weighs 2,800 pounds with its CG at 40.0 inches. You add 100 pounds at the 90-inch station. Where is the new CG?",
+    "options": [
+      "About 42.5 inches",
+      "About 40.9 inches",
+      "About 41.7 inches"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Old moment 2,800 x 40.0 = 112,000. Added moment 100 x 90 = 9,000. New CG = 121,000 / 2,900, about 41.7 inches."
+  },
+  {
+    "id": "FAACAX-T2-006",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Right-of-way",
+    "stem": "Your airplane is towing a glider and converging with an airship at about the same altitude. Who has the right-of-way?",
+    "options": [
+      "Your airplane, because it is towing another aircraft",
+      "The aircraft on the other's right",
+      "The airship, because it has right-of-way over airplanes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 91.113(d): an airship has the right-of-way over other powered aircraft, except an aircraft towing or refueling other aircraft, which has the right-of-way over all other powered aircraft."
+  },
+  {
+    "id": "FAACAX-T2-007",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "True airspeed",
+    "stem": "Your indicated airspeed is 130 knots at 8,000 feet. Using the rule of about 2 percent per 1,000 feet, what is the approximate true airspeed?",
+    "options": [
+      "About 140 knots",
+      "About 130 knots",
+      "About 151 knots"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "True airspeed rises about 2 percent per 1,000 feet. At 8,000 feet that is 16 percent: 130 x 1.16 = about 151 knots."
+  },
+  {
+    "id": "FAACAX-T2-008",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Steep turns",
+    "stem": "What bank angle does the commercial steep turn use, and how close must you hold altitude?",
+    "options": [
+      "About 60 degrees, plus or minus 50 feet",
+      "About 45 degrees, plus or minus 200 feet",
+      "About 50 degrees, plus or minus 100 feet"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The commercial ACS (V.A) uses a 360 degree turn at about 50 degrees of bank (plus or minus 5), holding altitude within 100 feet and airspeed within 10 knots, rolling out within 10 degrees of the entry heading."
+  },
+  {
+    "id": "FAACAX-T2-009",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxHuman",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Medications",
+    "stem": "FAA guidance says to wait at least five times the maximum dosing interval after a sedating over-the-counter medicine. For a medicine taken every 6 hours, how long is that?",
+    "options": [
+      "12 hours",
+      "8 hours",
+      "30 hours"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Five times the 6-hour dosing interval is 30 hours. The FAA's guidance on medications uses this rule for drugs that can impair performance."
+  },
+  {
+    "id": "FAACAX-T2-010",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Aeronautical experience",
+    "stem": "Of the 100 hours of pilot-in-command time required for a commercial single-engine rating, how much must be cross-country time?",
+    "options": [
+      "50 hours, at least 10 of them in airplanes",
+      "25 hours, all of them in airplanes",
+      "10 hours, at least 5 of them at night"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 61.129(a)(2): 100 hours of PIC time including 50 hours in airplanes and 50 hours of cross-country flight, of which at least 10 must be in airplanes."
+  },
+  {
+    "id": "FAACAX-T2-011",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mountain wave",
+    "stem": "Standing lens-shaped clouds over and downwind of a ridge tell you to expect what?",
+    "options": [
+      "A warm front within the next hour",
+      "Smooth, stable air with no wind",
+      "Mountain wave turbulence"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lenticular clouds form at the crests of mountain waves. Rotor clouds below them mark some of the most severe turbulence."
+  },
+  {
+    "id": "FAACAX-T2-012",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Center of gravity",
+    "stem": "How does an aft center of gravity affect an airplane compared with a forward one?",
+    "options": [
+      "It needs more elevator force to raise the nose",
+      "It is more stable and its stall speed is higher",
+      "It is less stable and harder to recover from a stall or spin"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An aft CG means less tail down force, a slightly lower stall speed and higher cruise speed, but weaker longitudinal stability and harder stall and spin recovery (PHAK chapter 10)."
+  },
+  {
+    "id": "FAACAX-T2-013",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Feathering",
+    "stem": "Why is the propeller of a failed engine feathered in a twin?",
+    "options": [
+      "To keep the failed engine turning so it can restart",
+      "To increase the thrust of the operating engine",
+      "To turn the blades edge-on and cut the drag of a windmilling propeller"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A windmilling propeller makes a lot of drag. Feathering aligns the blades with the airflow so the propeller stops and drag is greatly reduced, which also lowers Vmc (AFH chapter 13)."
+  },
+  {
+    "id": "FAACAX-T2-014",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Useful load",
+    "stem": "Maximum takeoff weight is 3,600 pounds and basic empty weight is 2,350. You carry 680 pounds of people and 50 pounds of baggage. About how much avgas can you load?",
+    "options": [
+      "About 120 gallons",
+      "About 86 gallons",
+      "About 104 gallons"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Useful load = 3,600 - 2,350 = 1,250 pounds. After 730 pounds of people and bags, 520 pounds are left for fuel: 520 / 6 = about 86 gallons."
+  },
+  {
+    "id": "FAACAX-T2-015",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mode C veil",
+    "stem": "Within what distance of a Class B primary airport must your airplane have an altitude-reporting transponder, even below the Class B floor?",
+    "options": [
+      "10 nautical miles",
+      "20 nautical miles",
+      "30 nautical miles"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Mode C veil extends 30 nm from the primary airport of a Class B area, from the surface to 10,000 feet MSL (14 CFR 91.215(b))."
+  },
+  {
+    "id": "FAACAX-T2-016",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time en route",
+    "stem": "A leg is 210 nm. True airspeed is 150 knots with a 25-knot headwind. About how long is the leg?",
+    "options": [
+      "1 hour 41 minutes",
+      "1 hour 53 minutes",
+      "1 hour 24 minutes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Groundspeed is 150 - 25 = 125 knots. 210 / 125 = 1.68 hours, about 1 hour 41 minutes."
+  },
+  {
+    "id": "FAACAX-T2-017",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Eights on pylons",
+    "stem": "During eights on pylons, the visual reference line appears to move ahead of the pylon (the pylon appears to move back). What should you do?",
+    "options": [
+      "Steepen the bank with rudder to yaw the wing back",
+      "Climb, because you are below the pivotal altitude",
+      "Descend, because you are above the pivotal altitude"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The AFH (chapter 7) says that when the reference line moves ahead of the pylon, the pilot should increase altitude; when it moves behind the pylon, decrease altitude. Using rudder to fix it is a common error."
+  },
+  {
+    "id": "FAACAX-T2-018",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Aeronautical experience",
+    "stem": "Which solo flight meets the long cross-country requirement for a commercial single-engine rating in the 48 contiguous states?",
+    "options": [
+      "280 nm total, landings at three points, one of them 250 nm straight-line from the start",
+      "300 nm total, landings at two points, one of them 250 nm straight-line from the start",
+      "320 nm total, landings at three points, one of them 255 nm straight-line from the start"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "14 CFR 61.129(a)(4)(i): at least 300 nm total, landings at a minimum of three points, one of them at least 250 nm straight-line from the original departure point (150 nm in Hawaii)."
+  },
+  {
+    "id": "FAACAX-T2-019",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ear and sinus block",
+    "stem": "You have a head cold. When is a painful ear or sinus block most likely?",
+    "options": [
+      "During descent, when outside pressure rises and cannot equalize",
+      "In cruise, after the pressure has equalized",
+      "During climb, when outside pressure falls"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "On descent the rising outside pressure must push air into the middle ear and sinuses. A cold can block the passages, causing pain. Do not fly with a cold that blocks them (PHAK chapter 17)."
+  },
+  {
+    "id": "FAACAX-T2-020",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Frost",
+    "stem": "Why must frost be removed from the wings before takeoff?",
+    "options": [
+      "It blocks the static ports and stops the airspeed indicator",
+      "It adds so much weight the airplane exceeds maximum takeoff weight",
+      "It disrupts airflow and can raise the stall speed and cut lift"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Even a thin layer of frost roughens the wing surface, spoiling the airflow. That reduces lift and increases drag and stall speed. 14 CFR 91.527 and AC 91-74 say to remove it before flight."
+  },
+  {
+    "id": "FAACAX-T2-021",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Turn performance",
+    "stem": "At a constant bank angle, what happens if you increase airspeed?",
+    "options": [
+      "The turn radius decreases and the rate of turn increases",
+      "The turn radius increases and the rate of turn decreases",
+      "Both radius and rate stay the same"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "At a given bank, turn radius rises with the square of airspeed and rate of turn falls in inverse proportion to airspeed (PHAK chapter 5)."
+  },
+  {
+    "id": "FAACAX-T2-022",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electrical system",
+    "stem": "The ammeter shows a steady discharge and the low-voltage light is on. What should you do?",
+    "options": [
+      "Shed nonessential electrical loads and land as soon as practical",
+      "Turn off the master switch and continue the flight",
+      "Increase RPM until the discharge stops"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "These signs point to an alternator or charging failure. The battery is now carrying the load, so turn off what you do not need and plan to land before it runs down (ACS IX.C)."
+  },
+  {
+    "id": "FAACAX-T2-023",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Landing weight",
+    "stem": "You take off at 4,600 pounds in an airplane with a 4,400-pound maximum landing weight. It burns 15 gallons of avgas an hour. About how long must you fly before landing at the limit?",
+    "options": [
+      "About 2 hours 13 minutes",
+      "About 1 hour 20 minutes",
+      "About 13 minutes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "You must burn 200 pounds, or 200 / 6 = 33.3 gallons. At 15 gallons per hour that takes about 2.22 hours, or 2 hours 13 minutes."
+  },
+  {
+    "id": "FAACAX-T2-024",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Aeronautical experience",
+    "stem": "Your commercial practical test is on June 20. Which flights with an instructor count toward the 3 hours of test preparation in 61.129?",
+    "options": [
+      "Flights on March 28 and May 30",
+      "Flights on March 2 and April 8",
+      "Flights on April 8 and May 30"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The 3 hours must be within the preceding 2 calendar months from the month of the test (14 CFR 61.129(a)(3)(v)). For a June test that means April, May or June, so March flights do not count."
+  },
+  {
+    "id": "FAACAX-T2-025",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Special use airspace",
+    "stem": "What is a warning area?",
+    "options": [
+      "Airspace around a national park where pilots are asked to fly above 2,000 feet AGL",
+      "Airspace beyond 3 nm from the U.S. coast that may hold hazardous activity",
+      "Airspace over land where flight is prohibited without a permit"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A warning area extends from 3 nm outward from the coast and contains activity hazardous to nonparticipating aircraft (AIM 3-4-4). Because it is over international waters, the U.S. cannot prohibit flight in it."
+  },
+  {
+    "id": "FAACAX-T2-026",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "VFR cruising altitudes",
+    "stem": "Your magnetic course is 175 degrees, but a crosswind gives a magnetic heading of 185. At more than 3,000 feet AGL, which VFR cruising altitude fits?",
+    "options": [
+      "5,500 feet, based on the course",
+      "6,000 feet, based on the course",
+      "6,500 feet, based on the heading"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "VFR cruising altitudes above 3,000 feet AGL go by magnetic course, not heading (14 CFR 91.159). For courses from 0 to 179 degrees use odd thousands plus 500: 5,500 feet."
+  },
+  {
+    "id": "FAACAX-T2-027",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Emergency descent",
+    "stem": "During an emergency descent, why do you bank 30 to 45 degrees?",
+    "options": [
+      "To keep a positive load factor while descending rapidly",
+      "To keep the airspeed below the flap extension speed",
+      "To slow the airplane to its best glide speed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The ACS (IX.A) calls for 30 to 45 degrees of bank to maintain positive load factors during the descent, while losing altitude quickly at the speed and configuration the scenario calls for."
+  },
+  {
+    "id": "FAACAX-T2-028",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Winds aloft",
+    "stem": "A winds and temperatures aloft forecast for FL340 reads 7525-45. What wind is forecast?",
+    "options": [
+      "750 degrees true at 25 knots, minus 45 C",
+      "250 degrees true at 25 knots, minus 45 C",
+      "250 degrees true at 125 knots, minus 45 C"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When speed is 100 to 199 knots, 50 is added to the direction code. Subtract 50 from 75 to get 25 (250 degrees) and add 100 to the speed: 125 knots. Temperatures above 24,000 feet are all negative (FAA-H-8083-28A)."
+  },
+  {
+    "id": "FAACAX-T2-029",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vmc demonstration",
+    "stem": "During a Vmc demonstration, the stall warning sounds before you reach Vmc. What do you do?",
+    "options": [
+      "Recover at once by reducing power on the operating engine and lowering the nose",
+      "Add full power on both engines and keep pulling up",
+      "Keep going until directional control is lost"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Recovery begins at the first sign of loss of directional control, stall warning or buffet: reduce power on the operating engine and lower the nose to regain airspeed (ACS X.B)."
+  },
+  {
+    "id": "FAACAX-T2-030",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deicing boots",
+    "stem": "According to current FAA guidance for most airplanes, when should you operate pneumatic deicing boots?",
+    "options": [
+      "Only on the ground before takeoff",
+      "As soon as icing begins, unless the manual says otherwise",
+      "Only after a quarter inch of ice has built up, to avoid ice bridging"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AC 91-74B says ice bridging is not a practical concern for modern boots and that they should be activated at the first sign of ice, unless the airplane's manual directs otherwise."
+  },
+  {
+    "id": "FAACAX-T2-031",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Range",
+    "stem": "In a propeller airplane, which speed gives the greatest range in still air?",
+    "options": [
+      "The speed for minimum power required",
+      "The maximum cruise speed",
+      "The speed for the maximum lift-to-drag ratio"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In a propeller airplane, maximum range is flown at the L/D max speed. Minimum power required gives maximum endurance, the longest time aloft (PHAK chapter 11)."
+  },
+  {
+    "id": "FAACAX-T2-032",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rapid decompression",
+    "stem": "The cabin suddenly fills with mist and there is a loud rush of air at FL230. What is your first action?",
+    "options": [
+      "Reduce power and turn back",
+      "Put on your oxygen mask",
+      "Check the outflow valve setting"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Fog, noise and a temperature drop are signs of rapid decompression. Time of useful consciousness is short, so don oxygen first, then begin an emergency descent (ACS VIII.B)."
+  },
+  {
+    "id": "FAACAX-T2-033",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Medical duration",
+    "stem": "You were 45 when you got a second-class medical in February 2025. In August 2026, what privileges does it support?",
+    "options": [
+      "Commercial pilot privileges",
+      "Private pilot privileges only",
+      "None, because it has expired"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Second-class privileges for commercial flying end after the 12th month (end of February 2026). For an applicant 40 or older it then serves as a third-class medical until the end of the 24th month, February 2027 (14 CFR 61.23(d))."
+  },
+  {
+    "id": "FAACAX-T2-034",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Airport signs",
+    "stem": "What does a runway distance remaining sign show?",
+    "options": [
+      "Black background with white numbers giving thousands of feet of runway left",
+      "Yellow background with black numbers giving the runway number ahead",
+      "Red background with white numbers marking a runway holding position"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Runway distance remaining signs have a black background with a white numeral showing the remaining runway in thousands of feet (AIM 2-3-13)."
+  },
+  {
+    "id": "FAACAX-T2-035",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Descent planning",
+    "stem": "You plan a 500-foot-per-minute descent from 9,500 feet to a 1,500-foot pattern altitude at a groundspeed of 150 knots. How far out should you start down?",
+    "options": [
+      "16 nm",
+      "40 nm",
+      "25 nm"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The descent is 8,000 feet / 500 = 16 minutes. At 150 knots you cover 2.5 nm a minute, so 16 x 2.5 = 40 nm."
+  },
+  {
+    "id": "FAACAX-T2-036",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Short-field landing",
+    "stem": "What is the commercial standard for touchdown on a short-field landing?",
+    "options": [
+      "Within 100 feet beyond or on the specified point",
+      "Within 400 feet beyond the threshold",
+      "Within 200 feet beyond or on the specified point"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The ACS (IV.F) requires a short-field touchdown within 100 feet beyond or on the specified point, threshold markings or runway numbers."
+  },
+  {
+    "id": "FAACAX-T2-037",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "G-AIRMET",
+    "stem": "Which G-AIRMET covers moderate icing and freezing levels?",
+    "options": [
+      "Sierra",
+      "Zulu",
+      "Tango"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "G-AIRMET Sierra is IFR conditions and mountain obscuration, Tango is turbulence, strong surface winds and low-level wind shear, and Zulu is icing and freezing levels."
+  },
+  {
+    "id": "FAACAX-T2-038",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "One engine inoperative",
+    "stem": "Which attitude gives the least drag when flying a light twin with one engine inoperative?",
+    "options": [
+      "About 2 to 3 degrees of bank toward the operating engine with the ball about half out toward it",
+      "Wings level with the ball centered",
+      "About 5 degrees of bank toward the inoperative engine"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Banking slightly toward the operating engine lets part of the lift oppose the rudder's side force, so the airplane flies with zero sideslip and least drag. The ball then sits about halfway toward the operating engine (AFH chapter 13)."
+  },
+  {
+    "id": "FAACAX-T2-039",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Emergency gear extension",
+    "stem": "The landing gear does not extend with the normal system. What should you use first?",
+    "options": [
+      "Full power and a steep climb to free the gear",
+      "A series of hard landings to shake the gear loose",
+      "The emergency extension procedure in the airplane's manual"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Run the checklist and use the airplane's emergency extension system, such as a hand crank, hand pump or free-fall release, as the manual describes (ACS IX.C)."
+  },
+  {
+    "id": "FAACAX-T2-040",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Runway slope",
+    "stem": "How does an upsloping runway affect takeoff?",
+    "options": [
+      "It does not affect the takeoff run",
+      "It shortens the takeoff run",
+      "It lengthens the takeoff run"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "On an upslope part of the airplane's weight acts against acceleration, so the takeoff run is longer. A downslope shortens takeoff but lengthens landings."
+  },
+  {
+    "id": "FAACAX-T2-041",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Holding out",
+    "stem": "A commercial pilot advertises that he will fly anyone anywhere in his own airplane for a fee. What does this require?",
+    "options": [
+      "Only a 100-hour inspection on the airplane",
+      "Only a commercial certificate and a second-class medical",
+      "A part 119 certificate, because it is common carriage offered to the public"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Holding out to carry persons or property for anyone who pays is common carriage. That needs an air carrier or operating certificate under part 119 (FAA AC 120-12A); a commercial pilot certificate alone does not allow it."
+  },
+  {
+    "id": "FAACAX-T2-042",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Histotoxic hypoxia",
+    "stem": "Why does alcohol cause hypoxia even when the blood carries enough oxygen?",
+    "options": [
+      "It interferes with the cells' ability to use oxygen",
+      "It lowers the number of red blood cells",
+      "It reduces the oxygen pressure in the lungs"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Alcohol and some drugs cause histotoxic hypoxia: oxygen reaches the tissues but the cells cannot use it properly (PHAK chapter 17)."
+  },
+  {
+    "id": "FAACAX-T2-043",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "PAPI",
+    "stem": "On final, the precision approach path indicator shows four red lights. What does this mean?",
+    "options": [
+      "You are slightly above the glide path",
+      "You are well below the glide path",
+      "You are on the glide path"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A PAPI shows two white and two red on glide path. Three or four white means above it; three red is slightly low, and four red is well below (AIM 2-1-2)."
+  },
+  {
+    "id": "FAACAX-T2-044",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DME",
+    "stem": "Flying directly over a VORTAC at 6,000 feet above it, what does the DME read?",
+    "options": [
+      "0 nm",
+      "About 6 nm",
+      "About 1 nm"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DME measures slant range. Directly above the station the distance is the height: 6,000 feet is about 1 nautical mile (6,076 feet)."
+  },
+  {
+    "id": "FAACAX-T2-045",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Engine failure in a twin",
+    "stem": "An engine fails in a light twin after takeoff. Using the 'dead foot, dead engine' rule, how do you identify the failed engine?",
+    "options": [
+      "The engine with the higher manifold pressure has failed",
+      "The foot that is not pressing a rudder pedal is on the failed engine's side",
+      "The foot pressing hardest on a rudder pedal is on the failed engine's side"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "You need rudder toward the operating engine to stay straight. The idle foot is on the side of the failed engine. Verify by closing its throttle, then feather (AFH chapter 13)."
+  },
+  {
+    "id": "FAACAX-T2-046",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Inversions",
+    "stem": "What flying conditions usually come with a low-level temperature inversion?",
+    "options": [
+      "Turbulent air with good visibility",
+      "Showers and gusty surface winds",
+      "Smooth air with poor visibility"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An inversion makes the air below it stable. Smoke, haze and fog are trapped near the ground, so the air is smooth but visibility is often poor."
+  },
+  {
+    "id": "FAACAX-T2-047",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Climb speeds",
+    "stem": "As altitude increases, how do the best angle (VX) and best rate (VY) of climb speeds change?",
+    "options": [
+      "VX decreases and VY increases",
+      "Both stay the same at every altitude",
+      "VX increases and VY decreases until they meet at the absolute ceiling"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Indicated VX rises slightly and VY falls with altitude. They meet at the absolute ceiling, where the airplane can no longer climb (PHAK chapter 11)."
+  },
+  {
+    "id": "FAACAX-T2-048",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cylinder head temperature",
+    "stem": "The cylinder head temperature is near the red line during a long climb. What helps cool the engine?",
+    "options": [
+      "Raise the nose to climb out of the heat faster",
+      "Open the cowl flaps, enrich the mixture and lower the nose for more airspeed",
+      "Close the cowl flaps and lean the mixture"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "More cooling air (cowl flaps open, higher airspeed), a richer mixture and less power all lower engine temperatures (PHAK chapter 7)."
+  },
+  {
+    "id": "FAACAX-T2-049",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Tailwind landing",
+    "stem": "According to the PHAK, a tailwind of about 10 percent of the landing airspeed increases the landing distance by about how much?",
+    "options": [
+      "About 50 percent",
+      "About 21 percent",
+      "About 10 percent"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Landing distance varies with the square of groundspeed at touchdown. A tailwind of 10 percent of the landing speed raises groundspeed 10 percent and landing distance about 21 percent (PHAK chapter 11)."
+  },
+  {
+    "id": "FAACAX-T2-050",
+    "section": "cax",
+    "test": 2,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Special flight permit",
+    "stem": "Your airplane's annual inspection has run out at a small field with no mechanic. How can it legally fly to a repair base?",
+    "options": [
+      "With passengers only if the flight is under 25 nm",
+      "Under a special flight permit issued by the FAA",
+      "With a logbook entry by the pilot saying it is safe"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An aircraft that does not meet airworthiness requirements but can fly safely may be ferried to a repair base under a special flight permit (14 CFR 21.197), obtained through the local Flight Standards office."
+  },
+  {
+    "id": "FAACAX-D-001",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "High-performance airplane",
+    "stem": "Which airplane needs a high-performance endorsement before you act as pilot in command?",
+    "options": [
+      "A twin with two 180-horsepower engines",
+      "A single-engine airplane with a 230-horsepower engine",
+      "A single-engine airplane with a 200-horsepower engine"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A high-performance airplane has an engine of more than 200 horsepower (14 CFR 61.31(f)). The threshold is per engine, so two 180-horsepower engines and one 200-horsepower engine do not qualify."
+  },
+  {
+    "id": "FAACAX-D-002",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fronts",
+    "stem": "What weather often comes ahead of a fast-moving cold front?",
+    "options": [
+      "Steady drizzle and stratus for several days",
+      "A squall line of thunderstorms",
+      "Calm winds and widespread radiation fog"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A fast-moving cold front lifts warm moist air quickly. A squall line of severe thunderstorms can form ahead of the front."
+  },
+  {
+    "id": "FAACAX-D-003",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Load factor and stall speed",
+    "stem": "An airplane stalls at 58 knots in level flight. About what is its stall speed in a level turn at the commercial steep-turn bank of 50 degrees?",
+    "options": [
+      "About 72 knots",
+      "About 64 knots",
+      "About 90 knots"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Load factor at 50 degrees is 1 / cos 50, about 1.56. Its square root is about 1.25, so stall speed is 58 x 1.25, about 72 knots."
+  },
+  {
+    "id": "FAACAX-D-004",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Chandelle",
+    "stem": "How do pitch and bank change in a chandelle?",
+    "options": [
+      "Constant bank and rising pitch for the first 90 degrees, then constant pitch and a steady rollout",
+      "Rising bank and constant pitch for the first 90 degrees, then falling pitch",
+      "Constant pitch and bank for the whole 180 degree turn"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The ACS (V.C) has you hold a constant bank (about 30 degrees) while pitch increases to the 90 degree point, then roll out at a constant rate with constant pitch to the 180 degree point."
+  },
+  {
+    "id": "FAACAX-D-005",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Percent MAC",
+    "stem": "The CG is at 45.0 inches. The leading edge of the mean aerodynamic chord is at 30.0 inches and the MAC is 60.0 inches long. Where is the CG in percent of MAC?",
+    "options": [
+      "50 percent",
+      "25 percent",
+      "75 percent"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Percent MAC = (CG - LEMAC) / MAC x 100 = (45.0 - 30.0) / 60.0 x 100 = 25 percent (FAA-H-8083-1B)."
+  },
+  {
+    "id": "FAACAX-D-006",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Temporary flight restrictions",
+    "stem": "Before a flight near a wildfire, how do you find out whether a temporary flight restriction is in effect?",
+    "options": [
+      "Check the NOTAMs for the route",
+      "Look for the restriction on the current sectional chart",
+      "Listen to the destination ATIS on arrival"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Disaster-area TFRs under 14 CFR 91.137 are issued by NOTAM. They are temporary, so they never appear on printed charts."
+  },
+  {
+    "id": "FAACAX-D-007",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Wind correction",
+    "stem": "True course is 180, true airspeed is 150 knots and the wind is from 270 at 30 knots. About what are the true heading and groundspeed?",
+    "options": [
+      "192 degrees and 150 knots",
+      "192 degrees and 147 knots",
+      "168 degrees and 147 knots"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The wind is directly off the right side. Wind correction angle = arcsin(30/150), about 11.5 degrees right, so heading is about 192. Groundspeed = square root of (150 squared minus 30 squared), about 147 knots."
+  },
+  {
+    "id": "FAACAX-D-008",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gear warning",
+    "stem": "When does the landing gear warning horn sound in most retractable-gear airplanes?",
+    "options": [
+      "When airspeed rises above the gear extension speed",
+      "Whenever the flaps are lowered with the gear up or down",
+      "When power is reduced below a set level with the gear not down and locked"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The horn sounds when the throttle is pulled back below a set manifold pressure, or the flaps are lowered past a set point, while the gear is not down and locked (PHAK chapter 7)."
+  },
+  {
+    "id": "FAACAX-D-009",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hypoxic hypoxia",
+    "stem": "What causes hypoxic hypoxia at altitude?",
+    "options": [
+      "A lower percentage of oxygen in the air above 10,000 feet",
+      "The lower partial pressure of oxygen in the thinner air",
+      "Carbon monoxide from the engine exhaust"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The air is still about 21 percent oxygen at altitude, but its lower pressure pushes less oxygen into the blood (PHAK chapter 17)."
+  },
+  {
+    "id": "FAACAX-D-010",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tailwheel endorsement",
+    "stem": "Which training does 61.31 require before you act as pilot in command of a tailwheel airplane?",
+    "options": [
+      "Short-field and soft-field landings in a complex airplane",
+      "Spins in both directions and recovery from unusual attitudes",
+      "Normal and crosswind takeoffs and landings, wheel landings and go-arounds"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "14 CFR 61.31(i) requires flight training in a tailwheel airplane including normal and crosswind takeoffs and landings, wheel landings (unless the manufacturer recommends against them) and go-arounds, plus an endorsement."
+  },
+  {
+    "id": "FAACAX-D-011",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fronts",
+    "stem": "Which weather is typical when stable moist air rises over a warm front?",
+    "options": [
+      "Towering cumulus and gusty showers",
+      "Clear skies and good visibility",
+      "Stratiform clouds with steady precipitation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Stable air lifted gradually along a shallow warm front produces layered stratus clouds and steady rain or drizzle over a wide area."
+  },
+  {
+    "id": "FAACAX-D-012",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Weight and stall speed",
+    "stem": "An airplane stalls at 55 knots at 2,500 pounds. About what is the stall speed at 2,000 pounds?",
+    "options": [
+      "About 49 knots",
+      "About 55 knots",
+      "About 44 knots"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Stall speed varies with the square root of weight: 55 x square root of (2,000 / 2,500) = 55 x 0.894, about 49 knots."
+  },
+  {
+    "id": "FAACAX-D-013",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Lazy eight",
+    "stem": "What is true at the 90 degree point of a lazy eight?",
+    "options": [
+      "Bank is steepest, pitch is lowest and airspeed is highest",
+      "Bank is level, pitch is highest and airspeed is highest",
+      "Bank is steepest, pitch passes through level and airspeed is lowest"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pitch is highest at the 45 degree point. At 90 degrees the nose crosses the horizon, bank is at its maximum and airspeed at its minimum; then the nose falls and bank decreases (AFH chapter 7)."
+  },
+  {
+    "id": "FAACAX-D-014",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ballast",
+    "stem": "An airplane weighs 2,500 pounds with its CG at 38.0 inches, forward of the 40.0-inch forward limit. How much ballast must you add at the 120-inch station to move the CG to 40.0?",
+    "options": [
+      "About 42 pounds",
+      "About 63 pounds",
+      "About 125 pounds"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Ballast = total weight x CG change / (ballast arm - new CG) = 2,500 x 2.0 / (120 - 40) = 5,000 / 80 = 62.5, about 63 pounds."
+  },
+  {
+    "id": "FAACAX-D-015",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National parks",
+    "stem": "Over a national park, at what height above the surface are VFR pilots asked to remain?",
+    "options": [
+      "At least 2,000 feet AGL",
+      "At least 500 feet AGL",
+      "At least 1,000 feet AGL"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "FAA Advisory Circular 91-36 asks pilots to keep at least 2,000 feet above the surface of noise-sensitive areas such as national parks. It is a voluntary request, not a regulation."
+  },
+  {
+    "id": "FAACAX-D-016",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Fuel planning",
+    "stem": "You have 48 gallons usable and burn 10.5 gallons per hour. For a night VFR flight, about how long may the planned flight be?",
+    "options": [
+      "3 hours 49 minutes",
+      "4 hours 34 minutes",
+      "4 hours 4 minutes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Endurance is 48 / 10.5 = 4.57 hours, about 4 hours 34 minutes. Night VFR needs a 45-minute reserve (14 CFR 91.151), leaving about 3 hours 49 minutes."
+  },
+  {
+    "id": "FAACAX-D-017",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pressurization",
+    "stem": "An airplane flies at 22,000 feet with a cabin altitude of 8,000 feet. What is the cabin differential pressure?",
+    "options": [
+      "The pressure the outflow valve adds above sea level",
+      "The difference between cabin pressure and outside air pressure",
+      "The difference between cabin altitude and flight altitude in feet"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Differential pressure is the cabin pressure minus the outside pressure, in psi. The structure is built for a maximum differential, which limits how low the cabin altitude can be held (PHAK chapter 7)."
+  },
+  {
+    "id": "FAACAX-D-018",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fatigue",
+    "stem": "What is the difference between acute and chronic fatigue?",
+    "options": [
+      "Acute fatigue lasts weeks; chronic fatigue passes with one good night's sleep",
+      "Acute fatigue follows short-term strain and passes with rest; chronic fatigue builds up and needs longer recovery",
+      "They are the same thing with different names"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Acute fatigue comes from a day's physical or mental strain and goes away with adequate rest. Chronic fatigue builds over a long period and may need extended rest or medical help (PHAK chapter 17)."
+  },
+  {
+    "id": "FAACAX-D-019",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Flight review",
+    "stem": "You passed your commercial pilot practical test 10 months ago. When must you complete a flight review?",
+    "options": [
+      "Within 12 calendar months of the practical test",
+      "Before your next flight carrying passengers for hire",
+      "Within 24 calendar months of the practical test"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Passing a practical test for a certificate or rating counts as a flight review (14 CFR 61.56(d)), so the next one is due by the end of the 24th calendar month after it."
+  },
+  {
+    "id": "FAACAX-D-020",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fog",
+    "stem": "Which fog forms when moist air moves over a colder surface?",
+    "options": [
+      "Radiation fog",
+      "Advection fog",
+      "Steam fog"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Advection fog forms when moist air is carried over colder ground or water, common along coasts. Radiation fog forms on clear, calm nights; steam fog when cold air moves over warmer water."
+  },
+  {
+    "id": "FAACAX-D-021",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Drag",
+    "stem": "At what speed is the total drag of an airplane lowest?",
+    "options": [
+      "At maximum cruise speed, where induced drag is least",
+      "Where induced drag equals parasite drag",
+      "At the stall speed, where parasite drag is least"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Induced drag falls and parasite drag rises with airspeed. Total drag is least where the two are equal, which is also the maximum lift-to-drag ratio (PHAK chapter 5)."
+  },
+  {
+    "id": "FAACAX-D-022",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Eights on pylons",
+    "stem": "What is the maximum bank allowed in commercial eights on pylons?",
+    "options": [
+      "60 degrees",
+      "30 degrees",
+      "40 degrees"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The ACS (V.E) says to establish the correct bank for the conditions, not to exceed 40 degrees."
+  },
+  {
+    "id": "FAACAX-D-023",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Weight shift",
+    "stem": "In a 2,600-pound airplane, a 170-pound passenger moves from the 73-inch seat to the 37-inch seat. How far does the CG move?",
+    "options": [
+      "About 2.4 inches aft",
+      "About 6.5 inches forward",
+      "About 2.4 inches forward"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "CG change = weight moved x distance / total weight = 170 x 36 / 2,600 = about 2.4 inches. Moving the weight forward moves the CG forward."
+  },
+  {
+    "id": "FAACAX-D-024",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Class C airspace",
+    "stem": "What is the usual shape of a Class C airspace area?",
+    "options": [
+      "A 4 nm surface core up to 2,500 feet above the airport",
+      "A 10 nm surface core up to 10,000 feet MSL",
+      "A 5 nm surface core and a 10 nm shelf from about 1,200 to 4,000 feet above the airport"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Class C usually has a 5 nm core from the surface to 4,000 feet above the airport and a 10 nm shelf from 1,200 feet up to the same top (AIM 3-2-4)."
+  },
+  {
+    "id": "FAACAX-D-025",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Latitude",
+    "stem": "How far is one minute of latitude?",
+    "options": [
+      "1 nautical mile",
+      "1 statute mile",
+      "6 nautical miles"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "One degree of latitude is 60 nautical miles everywhere, so one minute is 1 nautical mile. Longitude lines converge toward the poles, so a minute of longitude varies."
+  },
+  {
+    "id": "FAACAX-D-026",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxygen systems",
+    "stem": "Which oxygen system gives oxygen under pressure and is needed at very high altitudes, above about 40,000 feet?",
+    "options": [
+      "Diluter-demand",
+      "Pressure-demand",
+      "Continuous-flow"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Continuous-flow systems are common in light airplanes. Diluter-demand systems mix oxygen with cabin air on demand up to about 40,000 feet. Above that, oxygen must be delivered under positive pressure (PHAK chapter 17)."
+  },
+  {
+    "id": "FAACAX-D-027",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dehydration",
+    "stem": "How can a pilot avoid dehydration on a long summer flight?",
+    "options": [
+      "Drink water regularly before you feel thirsty",
+      "Drink coffee to stay alert",
+      "Wait until you feel thirsty, then drink a large amount"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Thirst is a late sign of dehydration, and caffeine adds to fluid loss. Drink water steadily through the day (PHAK chapter 17)."
+  },
+  {
+    "id": "FAACAX-D-028",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Currency",
+    "stem": "To carry passengers in a tailwheel airplane, what landing experience do you need in the preceding 90 days?",
+    "options": [
+      "Three takeoffs and three landings to a full stop in a tailwheel airplane",
+      "Three touch-and-go landings in any airplane of the same class",
+      "One takeoff and one full-stop landing in a tailwheel airplane"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 61.57(a)(1)(ii): for a tailwheel airplane the three takeoffs and landings must be to a full stop and in a tailwheel airplane."
+  },
+  {
+    "id": "FAACAX-D-029",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wind shear",
+    "stem": "Where is wind shear likely as a warm front approaches?",
+    "options": [
+      "Below the frontal surface, sometimes before the front reaches the airport",
+      "Only above 18,000 feet in the jet stream",
+      "Only after the front has passed the airport"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With a warm front, the shear zone is where the warm air rides over the cold air near the ground. It can exist ahead of the surface front for several hours."
+  },
+  {
+    "id": "FAACAX-D-030",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Best glide",
+    "stem": "How does best glide speed change when the airplane is lighter?",
+    "options": [
+      "It increases, and the glide distance increases",
+      "It decreases, though the glide ratio stays about the same",
+      "It stays the same, but the glide distance decreases"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Best glide speed is the L/D max speed, which falls with weight. Flown at the right speed, a lighter airplane has about the same glide ratio and covers about the same distance."
+  },
+  {
+    "id": "FAACAX-D-031",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pivotal altitude",
+    "stem": "During eights on pylons, how does the pivotal altitude change as you turn downwind?",
+    "options": [
+      "It rises, because groundspeed is higher",
+      "It falls, because groundspeed is lower",
+      "It stays the same, because airspeed is constant"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Pivotal altitude depends only on groundspeed. Turning downwind raises groundspeed, so pivotal altitude rises and you must climb; turning into the wind lowers it (AFH chapter 7)."
+  },
+  {
+    "id": "FAACAX-D-032",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Crosswind component",
+    "stem": "You will land on runway 04 with the wind from 090 at 18 knots. About what is the crosswind component?",
+    "options": [
+      "18 knots",
+      "14 knots",
+      "12 knots"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The wind is 50 degrees off runway heading 040. Crosswind = 18 x sin 50, about 0.77, or about 14 knots. The headwind is 18 x cos 50, about 12 knots."
+  },
+  {
+    "id": "FAACAX-D-033",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Parachutes",
+    "stem": "With a paying passenger on board, which maneuver requires everyone to wear an approved parachute?",
+    "options": [
+      "A turn with a 70 degree bank",
+      "A climb at 25 degrees nose-up",
+      "A turn with a 50 degree bank"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 91.307(c): with any occupant other than a crewmember, parachutes are required for intentional maneuvers exceeding 60 degrees of bank or 30 degrees nose-up or nose-down pitch (unless it is flight training for a certificate or rating)."
+  },
+  {
+    "id": "FAACAX-D-034",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Runway crossings",
+    "stem": "Ground control clears you to taxi to runway 27. Your route crosses runway 33. What must you do?",
+    "options": [
+      "Cross runway 33 only if no aircraft is on final for it",
+      "Cross runway 33, since the taxi clearance includes all runways on the way",
+      "Hold short of runway 33 until you get a specific clearance to cross it"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Since 2010 a clearance to taxi to a runway no longer authorizes crossing other runways. Each runway crossing needs an explicit clearance (AIM 4-3-18)."
+  },
+  {
+    "id": "FAACAX-D-035",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Flight plans",
+    "stem": "You forget to close a VFR flight plan. When does search and rescue begin?",
+    "options": [
+      "Two hours after your estimated time of arrival",
+      "Only after the destination tower reports you missing",
+      "About 30 minutes after your estimated time of arrival"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If a VFR flight plan is not closed within 30 minutes after the ETA, Flight Service starts search and rescue procedures (AIM 6-2-7)."
+  },
+  {
+    "id": "FAACAX-D-036",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pulse oximeter",
+    "stem": "What does a pulse oximeter tell you in flight?",
+    "options": [
+      "The oxygen pressure left in the bottle",
+      "The cabin altitude",
+      "The oxygen saturation of your blood"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A pulse oximeter on a finger shows blood oxygen saturation. It helps you notice hypoxia before symptoms are obvious (PHAK chapter 17)."
+  },
+  {
+    "id": "FAACAX-D-037",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Operational pitfalls",
+    "stem": "A commercial pilot keeps descending under lowering clouds to stay VFR and reach a customer's destination. What is this pitfall called?",
+    "options": [
+      "Loss of positional awareness",
+      "Scud running",
+      "Descent below the minimum safe altitude in IMC"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Scud running, pushing on beneath lowering ceilings, is one of the operational pitfalls in the PHAK (chapter 2). It often ends in controlled flight into terrain."
+  },
+  {
+    "id": "FAACAX-D-038",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Turbulence",
+    "stem": "Where is clear air turbulence most likely near a jet stream?",
+    "options": [
+      "On the polar side, near a sharp curve or trough",
+      "Directly in the jet core at its slowest point",
+      "On the equatorial side, far from any trough"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Clear air turbulence with a jet stream is most common on its polar (low-pressure) side and where the jet curves sharply around a deep trough (FAA-H-8083-28A)."
+  },
+  {
+    "id": "FAACAX-D-039",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Flaps",
+    "stem": "What does extending flaps do to stall speed?",
+    "options": [
+      "It lowers the stall speed",
+      "It raises the stall speed",
+      "It does not affect the stall speed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Flaps increase the wing's camber and maximum lift coefficient, so the wing can support the airplane at a lower speed. They also add drag."
+  },
+  {
+    "id": "FAACAX-D-040",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pivotal altitude",
+    "stem": "Your groundspeed is 120 mph. Using the AFH formula, about what is the pivotal altitude?",
+    "options": [
+      "1,274 feet AGL",
+      "960 feet AGL",
+      "800 feet AGL"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With groundspeed in miles per hour, pivotal altitude = groundspeed squared / 15 = 14,400 / 15 = 960 feet AGL."
+  },
+  {
+    "id": "FAACAX-D-041",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Kinds of operation",
+    "stem": "What does a Kinds of Operations Equipment List (KOEL) show?",
+    "options": [
+      "The equipment that must be checked during an annual inspection",
+      "The equipment that must work for each kind of operation, such as day VFR, night VFR or IFR",
+      "The equipment that may be inoperative under an approved MEL"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Many airplane flight manuals contain a KOEL listing the equipment required for each kind of operation the airplane is approved for (ACS CA.I.B.K3c, PHAK chapter 9)."
+  },
+  {
+    "id": "FAACAX-D-042",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pressure altitude",
+    "stem": "Field elevation is 4,250 feet and the altimeter setting is 29.72. What is the pressure altitude?",
+    "options": [
+      "4,450 feet",
+      "4,250 feet",
+      "4,050 feet"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Pressure altitude = elevation + (29.92 - altimeter setting) x 1,000 = 4,250 + 200 = 4,450 feet."
+  },
+  {
+    "id": "FAACAX-D-043",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wake turbulence",
+    "stem": "You depart behind a large jet that just lifted off. How do you avoid its wake?",
+    "options": [
+      "Rotate well beyond the jet's rotation point and stay below its flight path",
+      "Rotate before the jet's rotation point and climb above its flight path",
+      "Lift off at the same point and turn downwind of its path"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Vortices begin when the jet rotates and sink below its flight path. The AIM (7-4-6) advises rotating before that point and climbing above the jet's path until turning clear."
+  },
+  {
+    "id": "FAACAX-D-044",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Radar services",
+    "stem": "With VFR flight following from approach control, who is responsible for avoiding other traffic?",
+    "options": [
+      "ATC, but only from IFR traffic",
+      "You are; the service is advisory and workload permitting",
+      "ATC, which must separate you from all other aircraft"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Basic radar service for VFR aircraft gives traffic advisories as workload allows. The pilot keeps the duty to see and avoid (AIM 4-1-15)."
+  },
+  {
+    "id": "FAACAX-D-045",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Propeller governor",
+    "stem": "With the propeller control set, what keeps a constant-speed propeller at the same RPM as airspeed increases in a descent?",
+    "options": [
+      "The engine automatically reduces manifold pressure",
+      "The governor increases blade angle",
+      "The governor decreases blade angle"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "If RPM starts to rise, the governor's flyweights move outward and the blades go to a higher pitch, adding load until RPM returns to the set value (PHAK chapter 7)."
+  },
+  {
+    "id": "FAACAX-D-046",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Landing illusions",
+    "stem": "Approaching over featureless terrain such as water or snow, what illusion may you have and what may you do?",
+    "options": [
+      "You feel higher than you are and fly a lower approach",
+      "You feel lower than you are and fly a higher approach",
+      "You feel slower than you are and add speed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Without ground detail the eye judges height poorly. The usual result is the illusion of being higher than actual and a lower-than-normal approach (AIM 8-1-5)."
+  },
+  {
+    "id": "FAACAX-D-047",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Icing",
+    "stem": "Under which conditions does clear ice most often form?",
+    "options": [
+      "Dry snow at any temperature below freezing",
+      "Small drops at temperatures below -20 C",
+      "Large supercooled drops at temperatures from 0 to about -10 C"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Large supercooled drops freeze slowly, flowing back before freezing into clear, hard ice. Small drops freeze on impact as rime."
+  },
+  {
+    "id": "FAACAX-D-048",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gyroscopic precession",
+    "stem": "As you raise the tail during a tailwheel takeoff, which way does the airplane tend to yaw, and why?",
+    "options": [
+      "Left, from gyroscopic precession of the propeller",
+      "Left, from the spiraling slipstream hitting the right side of the fin",
+      "Right, from the torque of the engine"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Pitching the propeller disc forward acts on it 90 degrees ahead in the direction of rotation, yawing the airplane left (PHAK chapter 5)."
+  },
+  {
+    "id": "FAACAX-D-049",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Power-off 180",
+    "stem": "Where does the power-off 180 accuracy approach begin?",
+    "options": [
+      "At the start of the base leg, with flaps fully extended",
+      "Abeam the touchdown point on downwind, with power at idle",
+      "On a 2-mile final with partial power"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "From the downwind leg, abeam the chosen point, close the throttle and glide through a 180 degree turn to land on or just past the point (ACS IV.M, AFH chapter 9)."
+  },
+  {
+    "id": "FAACAX-D-050",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Restricted category",
+    "stem": "An airplane holds a special airworthiness certificate in the restricted category for agricultural work. What may it NOT do?",
+    "options": [
+      "Carry persons or property for hire outside its special purpose",
+      "Spray crops for compensation",
+      "Fly to and from the work site with its required crew"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 91.313 bars carrying persons or property for compensation or hire in a restricted-category aircraft, except as part of the special purpose operation for which it was certificated."
+  },
+  {
+    "id": "FAACAX-D-051",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Glide distance",
+    "stem": "An airplane has a glide ratio of 10 to 1 and is 6,000 feet above the ground with no wind. About how far can it glide?",
+    "options": [
+      "About 6 nm",
+      "About 16 nm",
+      "About 10 nm"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "It covers 10 feet forward for each foot down: 60,000 feet, about 9.9 nautical miles."
+  },
+  {
+    "id": "FAACAX-D-052",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Preventive maintenance",
+    "stem": "May a commercial pilot do preventive maintenance, such as changing an oil filter, on an airplane used in part 135 charter?",
+    "options": [
+      "Yes, if the pilot holds a second-class medical",
+      "Yes, if the pilot owns the airplane",
+      "No, unless done under an approved program with FAA authorization"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The pilot preventive maintenance privilege in 14 CFR 43.3(g) covers aircraft the pilot owns or operates that are not used under parts 121, 129 or 135. Part 135 aircraft need a mechanic or an approved procedure."
+  },
+  {
+    "id": "FAACAX-D-053",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wake turbulence",
+    "stem": "Which helicopter operation produces the strongest wake for a small airplane nearby?",
+    "options": [
+      "A helicopter in forward flight",
+      "A helicopter hovering in ground effect",
+      "A helicopter parked with rotors idling"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In forward flight a helicopter produces a pair of strong trailing vortices like a wing's. The AIM (7-4-2) warns these can be stronger than those of a fixed-wing aircraft of the same weight."
+  },
+  {
+    "id": "FAACAX-D-054",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Icing",
+    "stem": "Which two things are needed for structural icing?",
+    "options": [
+      "High humidity and an outside temperature above freezing",
+      "Clear air and an outside temperature below -20 C",
+      "Visible moisture and an airframe temperature at or below freezing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Structural icing needs visible moisture such as cloud or rain and a temperature at or below 0 degrees C at the airframe."
+  },
+  {
+    "id": "FAACAX-D-055",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time zones",
+    "stem": "You plan to arrive at 1530Z at an airport on Pacific Daylight Time, UTC minus 7. What is the local arrival time?",
+    "options": [
+      "0730 local",
+      "0830 local",
+      "2230 local"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Local time = UTC - 7 hours: 1530 - 0700 = 0830 Pacific Daylight Time."
+  },
+  {
+    "id": "FAACAX-D-056",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Stability",
+    "stem": "What causes spiral instability?",
+    "options": [
+      "Strong dihedral effect compared with weak directional stability",
+      "Strong directional stability compared with weak dihedral effect",
+      "A center of gravity forward of the limit"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "When directional stability is strong and the dihedral effect weak, a small bank leads to a slowly tightening descending spiral. The opposite balance produces Dutch roll (PHAK chapter 5)."
+  },
+  {
+    "id": "FAACAX-D-057",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Turbocharging",
+    "stem": "What is an overboost in a turbocharged engine?",
+    "options": [
+      "RPM above the red line",
+      "Turbine inlet temperature below normal",
+      "Manifold pressure above the engine's allowed limit"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Overboost means manifold pressure exceeds the limit, which can damage the engine. Advance the throttle slowly, especially in cold dense air (PHAK chapter 7)."
+  },
+  {
+    "id": "FAACAX-D-058",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Normal landing",
+    "stem": "On a commercial normal approach and landing, where must you touch down?",
+    "options": [
+      "Within 200 feet beyond or on the specified point",
+      "Anywhere within the first half of the runway",
+      "Within 100 feet beyond or on the specified point"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The commercial ACS (IV.B) requires touchdown within 200 feet beyond or on the specified point. The short-field standard is 100 feet."
+  },
+  {
+    "id": "FAACAX-D-059",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Landing illusions",
+    "stem": "What illusion can atmospheric haze cause on approach?",
+    "options": [
+      "The runway seems closer than it is",
+      "The runway seems to slope uphill",
+      "The runway seems farther away than it is"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Haze makes the runway appear farther away, so pilots tend to fly a low approach. Very clear air can make it seem closer (AIM 8-1-5)."
+  },
+  {
+    "id": "FAACAX-D-060",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Density altitude",
+    "stem": "How does high humidity affect density altitude and performance?",
+    "options": [
+      "It lowers density altitude and raises performance",
+      "It has no effect on density altitude",
+      "It raises density altitude and lowers performance"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Water vapor is lighter than dry air, so humid air is less dense. That raises density altitude and reduces engine, propeller and wing performance."
+  },
+  {
+    "id": "FAACAX-D-061",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "100-hour inspection",
+    "stem": "A student brings her own airplane and pays you only for instruction. Must the airplane have a 100-hour inspection?",
+    "options": [
+      "No, because the airplane is not provided by the person giving the instruction",
+      "Yes, because any airplane used for training needs one",
+      "Yes, because the instruction is given for hire"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "14 CFR 91.409(b) requires the 100-hour inspection for an aircraft carrying any person for hire, or for flight instruction for hire in an aircraft provided by the person giving the instruction."
+  },
+  {
+    "id": "FAACAX-D-062",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "METAR",
+    "stem": "A METAR includes VV004. What does this mean?",
+    "options": [
+      "There are scattered clouds at 400 feet",
+      "The sky is obscured and the ceiling is 400 feet",
+      "The visibility is 4 statute miles"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "VV is vertical visibility into an indefinite ceiling, such as fog or heavy snow. VV004 means a 400-foot ceiling."
+  },
+  {
+    "id": "FAACAX-D-063",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Critical engine",
+    "stem": "Why does a twin with counter-rotating propellers have no critical engine?",
+    "options": [
+      "Its rudder is large enough to cancel any yaw",
+      "Its engines are mounted on the centerline",
+      "The descending blades are both inboard, so either engine failing gives the same yaw"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Counter-rotating propellers turn in opposite directions, so the P-factor thrust lines are the same distance from the centerline on both sides (AFH chapter 13)."
+  },
+  {
+    "id": "FAACAX-D-064",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Slow flight",
+    "stem": "What airspeed tolerance applies to commercial slow flight?",
+    "options": [
+      "Plus 5, minus 0 knots",
+      "Plus or minus 5 knots",
+      "Plus or minus 10 knots"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The commercial ACS (VII.A) calls for altitude within 50 feet, heading within 10 degrees and airspeed within plus 5, minus 0 knots."
+  },
+  {
+    "id": "FAACAX-D-065",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "National security areas",
+    "stem": "How should a VFR pilot treat a National Security Area shown on a chart?",
+    "options": [
+      "Never enter it, because it is always prohibited airspace",
+      "Contact the controlling agency before entering, as in an MOA",
+      "Voluntarily avoid flying through it unless a temporary regulation prohibits flight"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pilots are asked to avoid flying through a National Security Area voluntarily. Flight may be temporarily prohibited by regulation, announced by NOTAM (AIM 3-5-6)."
+  },
+  {
+    "id": "FAACAX-D-066",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Off-course correction",
+    "stem": "After 50 nm you are 5 nm off course, with 100 nm to go. Using the 1-in-60 rule, how many degrees must you turn to fly directly to the destination?",
+    "options": [
+      "9 degrees",
+      "3 degrees",
+      "6 degrees"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Drift so far: 5 nm in 50 nm, or 6 degrees (5 / 50 x 60). Converging: 5 nm in 100 nm, or 3 degrees. Total correction is 9 degrees."
+  },
+  {
+    "id": "FAACAX-D-067",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ice protection",
+    "stem": "What is the difference between an anti-ice system and a deice system?",
+    "options": [
+      "Anti-ice prevents ice from forming; deice removes ice after it forms",
+      "They are two names for the same equipment",
+      "Anti-ice removes ice; deice prevents it"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Anti-ice equipment, such as heated pitot tubes or propeller heat, keeps ice from forming. Deice equipment, such as pneumatic boots, sheds ice that has already built up."
+  },
+  {
+    "id": "FAACAX-D-068",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ground lighting illusions",
+    "stem": "At night, a line of lights along a straight road can lead you to what error?",
+    "options": [
+      "Mistaking the road lights for runway lights",
+      "Thinking you are climbing when you are level",
+      "Believing the airport beacon is a star"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Lights along a straight road or on moving trains can be mistaken for runway and approach lights (AIM 8-1-5)."
+  },
+  {
+    "id": "FAACAX-D-069",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Center of gravity",
+    "stem": "Empty weight is 1,650 pounds with a moment/1000 of 62.7. Pilot and passenger weigh 340 pounds, moment/1000 12.6. Fuel weighs 240 pounds, moment/1000 11.5. Where is the CG?",
+    "options": [
+      "About 37.8 inches",
+      "About 38.9 inches",
+      "About 40.2 inches"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Total moment/1000 = 62.7 + 12.6 + 11.5 = 86.8, or 86,800 pound-inches. Total weight = 2,230. CG = 86,800 / 2,230, about 38.9 inches."
+  },
+  {
+    "id": "FAACAX-D-070",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "100-hour inspection",
+    "stem": "An airplane used for hire gets an annual inspection at 1,200 tach hours. When is the next 100-hour inspection due?",
+    "options": [
+      "At 1,250 hours",
+      "At 1,200 hours plus 12 calendar months",
+      "At 1,300 hours"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An annual inspection also meets the 100-hour requirement (14 CFR 91.409(b)), so the 100-hour clock restarts at 1,200 and the next one is due at 1,300."
+  },
+  {
+    "id": "FAACAX-D-071",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stability",
+    "stem": "A cold air mass moves over a much warmer surface. What weather do you expect?",
+    "options": [
+      "Cumuliform clouds, showers and good visibility outside them",
+      "Smooth air and widespread fog",
+      "Stratus, steady drizzle and poor visibility"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Heating from below makes the cold air unstable. That brings cumulus clouds, turbulence and showers, with good visibility between them."
+  },
+  {
+    "id": "FAACAX-D-072",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "One engine inoperative",
+    "stem": "A light twin loses one engine. About how much does climb performance drop?",
+    "options": [
+      "About 20 percent",
+      "About 80 percent or more",
+      "About 50 percent"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Losing half the power cuts climb performance by 80 percent or more, because climb depends on excess power and the airplane also carries drag from the failed side (AFH chapter 13)."
+  },
+  {
+    "id": "FAACAX-D-073",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spin recovery",
+    "stem": "What is the first step in the standard spin recovery for most light airplanes, after checking the airplane's manual?",
+    "options": [
+      "Apply full forward elevator",
+      "Reduce power to idle",
+      "Apply aileron against the rotation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The common sequence (PARE): Power to idle, Ailerons neutral, Rudder full opposite the rotation, Elevator briskly forward; then recover from the dive (AFH chapter 5)."
+  },
+  {
+    "id": "FAACAX-D-074",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Military operations areas",
+    "stem": "Can you fly VFR through an active military operations area?",
+    "options": [
+      "Yes, but use caution and consider contacting the controlling agency for traffic",
+      "No, VFR flight is prohibited while the MOA is active",
+      "Only with an IFR clearance from the controlling agency"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "MOAs separate military training from IFR traffic. VFR pilots may fly through but should exercise extreme caution and may contact the controlling agency (AIM 3-4-5)."
+  },
+  {
+    "id": "FAACAX-D-075",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compass deviation",
+    "stem": "The compass deviation card says: For 120, steer 117. To fly a magnetic heading of 120, what compass heading do you fly?",
+    "options": [
+      "123",
+      "120",
+      "117"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The card lists the compass heading to steer for each magnetic heading. For 120 magnetic, steer 117 on the compass."
+  },
+  {
+    "id": "FAACAX-D-076",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fuel crossfeed",
+    "stem": "In a light twin, what is fuel crossfeed used for?",
+    "options": [
+      "Feeding both engines from an auxiliary fuselage tank",
+      "Moving fuel from one wing's tanks to the other in flight",
+      "Letting an engine draw fuel from the tanks on the other wing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Crossfeed lets an engine use fuel from the opposite wing's tanks, for example to extend range with one engine inoperative. It does not transfer fuel between tanks (AFH chapter 13)."
+  },
+  {
+    "id": "FAACAX-D-077",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time of useful consciousness",
+    "stem": "About what is the time of useful consciousness at 35,000 feet?",
+    "options": [
+      "3 to 5 minutes",
+      "10 to 15 minutes",
+      "30 to 60 seconds"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The PHAK (chapter 17) lists 30 to 60 seconds at 35,000 feet. That is why a pilot above FL350 must wear an oxygen mask in many cases (14 CFR 91.211(b))."
+  },
+  {
+    "id": "FAACAX-D-078",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Part 119 exceptions",
+    "stem": "Under 119.1(e), when may you carry skydivers for hire without a part 119 certificate?",
+    "options": [
+      "On any flight under 50 nautical miles in daylight",
+      "Only when the jump aircraft has 9 seats or fewer",
+      "On a nonstop flight within 25 statute miles of the takeoff airport"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "14 CFR 119.1(e)(6) excepts nonstop flights within a 25-statute-mile radius of the airport of takeoff carrying persons for intentional parachute operations."
+  },
+  {
+    "id": "FAACAX-D-079",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hydroplaning",
+    "stem": "Which kind of hydroplaning comes from a locked wheel skidding on a wet runway?",
+    "options": [
+      "Reverted rubber",
+      "Dynamic",
+      "Viscous"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A locked wheel heats the water to steam under the tire, melting the rubber: reverted rubber hydroplaning. Dynamic hydroplaning comes from standing water at speed; viscous from a thin film on a smooth surface (PHAK chapter 11)."
+  },
+  {
+    "id": "FAACAX-D-080",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Surface winds",
+    "stem": "Why do surface winds cross isobars toward low pressure while winds aloft blow along them?",
+    "options": [
+      "Warm air near the surface always flows toward the low",
+      "The Coriolis force is stronger at the surface",
+      "Surface friction slows the wind and weakens the Coriolis force"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Aloft the pressure gradient and Coriolis force balance and the wind follows the isobars. Near the ground, friction slows the wind and reduces the Coriolis force, so the pressure gradient turns it toward the low."
+  },
+  {
+    "id": "FAACAX-D-081",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "V-speeds",
+    "stem": "What does the blue radial line on a twin's airspeed indicator mark?",
+    "options": [
+      "VMC, minimum control speed",
+      "VYSE, best rate of climb with one engine inoperative",
+      "VXSE, best angle of climb with one engine inoperative"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The blue line is VYSE. The red radial line marks VMC (AFH chapter 13)."
+  },
+  {
+    "id": "FAACAX-D-082",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Engine failure before Vmc",
+    "stem": "In a light twin, an engine fails on the takeoff roll before Vmc. What do you do?",
+    "options": [
+      "Close both throttles promptly and stop on the runway",
+      "Continue the takeoff and climb at Vyse",
+      "Feather the failed engine and lift off"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Below Vmc the airplane cannot be controlled with one engine at full power. The ACS (IX.E) calls for closing the throttles smoothly and promptly and stopping straight ahead."
+  },
+  {
+    "id": "FAACAX-D-083",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Aeronautical experience",
+    "stem": "Which airplane can be used for the 10 hours of training in 61.129(a)(3)(ii) for a single-engine commercial rating?",
+    "options": [
+      "Only a complex airplane with retractable gear",
+      "A complex airplane, a turbine-powered airplane or a technically advanced airplane",
+      "Any airplane with an engine of more than 200 horsepower"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Since 2018 the 10 hours may be in a complex airplane, a turbine-powered airplane or a technically advanced airplane (TAA), or any combination, appropriate to land or sea (14 CFR 61.129(a)(3)(ii))."
+  },
+  {
+    "id": "FAACAX-D-084",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Speed limits",
+    "stem": "What is the speed limit below a Class B shelf, outside the Class B area?",
+    "options": [
+      "250 knots indicated",
+      "200 knots indicated",
+      "No limit below 10,000 feet MSL"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Under 14 CFR 91.117(c), the airspace underlying a Class B area carries the same 200-knot limit as a VFR corridor."
+  },
+  {
+    "id": "FAACAX-D-085",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "VOR",
+    "stem": "Your OBS is set to 090, the CDI is centered and the flag shows TO. Which radial are you on?",
+    "options": [
+      "The 180 radial",
+      "The 270 radial",
+      "The 090 radial"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A centered needle with a TO flag on 090 means flying 090 takes you to the station, so you are west of it on the 270 radial."
+  },
+  {
+    "id": "FAACAX-D-086",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Glass cockpit",
+    "stem": "On an airplane with electronic flight displays, which unit supplies attitude and heading information?",
+    "options": [
+      "The air data computer (ADC)",
+      "The engine monitoring system",
+      "The attitude and heading reference system (AHRS)"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The AHRS uses solid-state sensors to give pitch, roll and heading. The air data computer supplies airspeed, altitude and vertical speed (PHAK chapter 8)."
+  },
+  {
+    "id": "FAACAX-D-087",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hypoxia training",
+    "stem": "What is a good way to learn your own hypoxia symptoms before flying high?",
+    "options": [
+      "Fly briefly above 18,000 feet without oxygen and note what happens",
+      "Read the symptoms in the airplane's manual",
+      "Take FAA physiology training with an altitude chamber or hypoxia trainer"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Symptoms differ from person to person. The FAA's Civil Aerospace Medical Institute offers physiology training where pilots can safely experience hypoxia (PHAK chapter 17)."
+  },
+  {
+    "id": "FAACAX-D-088",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Performance charts",
+    "stem": "A chart gives a ground roll of 1,200 feet at 2,000 feet pressure altitude and 1,500 feet at 4,000 feet, other conditions the same. About what is it at 3,000 feet?",
+    "options": [
+      "1,500 feet",
+      "1,300 feet",
+      "1,350 feet"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "3,000 feet is halfway between the chart values, so interpolate halfway: 1,200 + (1,500 - 1,200) / 2 = 1,350 feet."
+  },
+  {
+    "id": "FAACAX-D-089",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Weather advisories",
+    "stem": "What is a Center Weather Advisory?",
+    "options": [
+      "An unscheduled advisory for conditions now or soon to be hazardous, valid up to 2 hours",
+      "A routine forecast issued every 6 hours for each Center area",
+      "A pilot report relayed by a Center controller"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A CWA is an unscheduled short-term warning from a Center Weather Service Unit, often for conditions just below SIGMET levels, valid for up to 2 hours (FAA-H-8083-28A)."
+  },
+  {
+    "id": "FAACAX-D-090",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Accelerated stalls",
+    "stem": "Why can a wing stall at an airspeed above the published stall speed?",
+    "options": [
+      "The critical angle of attack becomes smaller at high speed",
+      "Higher load factor, as in a steep turn or abrupt pull-up, raises the stall speed",
+      "Ice on the static port makes the airspeed indicator read high"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The wing stalls at its critical angle of attack. A higher load factor needs a higher angle of attack at any speed, so the stall comes sooner: an accelerated stall (ACS VII.D)."
+  },
+  {
+    "id": "FAACAX-D-091",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Go-around",
+    "stem": "During a go-around with full flaps, how should the flaps be raised?",
+    "options": [
+      "Not until reaching pattern altitude",
+      "All at once, as soon as power is added",
+      "In steps, as the airplane gains airspeed and climbs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Raising all the flaps at once can cause the airplane to sink. Retract them in increments as airspeed builds, per the manual (AFH chapter 9)."
+  },
+  {
+    "id": "FAACAX-D-092",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Technically advanced airplane",
+    "stem": "For commercial training, what equipment makes an airplane a technically advanced airplane (TAA)?",
+    "options": [
+      "A turbocharged engine and an ADS-B In traffic display",
+      "A primary flight display, a multifunction display with GPS moving map, and a two-axis autopilot",
+      "Retractable gear, flaps and a controllable-pitch propeller"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "14 CFR 61.129(j): an electronically advanced avionics system with a PFD, an MFD including at least a moving map using GPS, and a two-axis autopilot integrated with the navigation and heading guidance."
+  },
+  {
+    "id": "FAACAX-D-093",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Class B airspace",
+    "stem": "What weather minimums apply to VFR flight in Class B airspace?",
+    "options": [
+      "3 statute miles visibility and clear of clouds",
+      "5 statute miles visibility and 1,000 feet from clouds",
+      "3 statute miles visibility, 500 feet below and 1,000 feet above clouds"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Class B is the one class where VFR needs only 3 statute miles visibility and to remain clear of clouds (14 CFR 91.155)."
+  },
+  {
+    "id": "FAACAX-D-094",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Groundspeed check",
+    "stem": "You pass two checkpoints 24 nm apart in 12 minutes. The destination is 90 nm farther. What is the time remaining?",
+    "options": [
+      "45 minutes",
+      "54 minutes",
+      "36 minutes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Groundspeed is 24 nm in 12 minutes, or 2 nm a minute (120 knots). 90 nm / 2 = 45 minutes."
+  },
+  {
+    "id": "FAACAX-D-095",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hydraulic systems",
+    "stem": "In many retractable-gear airplanes, what usually powers the gear?",
+    "options": [
+      "The vacuum pump that drives the gyros",
+      "An electrically driven hydraulic pump or an electric motor",
+      "Air from the pressurization system"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Light retractable-gear airplanes typically use an electrically driven hydraulic pump or an electric motor and gearbox to raise and lower the gear (PHAK chapter 7)."
+  },
+  {
+    "id": "FAACAX-D-096",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trapped gas",
+    "stem": "What happens to gas trapped in the stomach and intestines as an unpressurized airplane climbs?",
+    "options": [
+      "It dissolves into the blood",
+      "It contracts and can cause nausea",
+      "It expands and can cause pain"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "As outside pressure falls, trapped gas expands. Avoid gas-forming foods before high-altitude flights (PHAK chapter 17)."
+  },
+  {
+    "id": "FAACAX-D-097",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Empty weight",
+    "stem": "Under the current GAMA standard, what does basic empty weight include?",
+    "options": [
+      "Usable fuel and full engine oil",
+      "Unusable fuel and full engine oil",
+      "The pilot and unusable fuel only"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Basic empty weight is the standard empty weight plus optional equipment, including unusable fuel, full operating fluids and full engine oil (FAA-H-8083-1B)."
+  },
+  {
+    "id": "FAACAX-D-098",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "TAF",
+    "stem": "A TAF line contains PROB30 2006/2010 TSRA. What does it mean?",
+    "options": [
+      "Thunderstorms certain between 2006Z and 2010Z on the 30th",
+      "Thunderstorms expected for 30 minutes starting at 2006Z",
+      "A 30 percent chance of thunderstorms with rain between 0600Z and 1000Z on the 20th"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "PROB30 gives a 30 percent probability for the period that follows, written as day and hour: 2006/2010 is the 20th from 0600Z to 1000Z."
+  },
+  {
+    "id": "FAACAX-D-099",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Washout",
+    "stem": "What is the purpose of wing washout?",
+    "options": [
+      "The tip stalls before the root, so the stall is sharper",
+      "The root stalls before the tip, so the ailerons keep working",
+      "It reduces parasite drag at cruise speed"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Washout twists the wing so the tip meets the air at a lower angle of incidence than the root. The root reaches the critical angle first, keeping the outboard ailerons effective in a stall."
+  },
+  {
+    "id": "FAACAX-D-100",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Steep spiral",
+    "stem": "What is the steep spiral practice for?",
+    "options": [
+      "Climbing at the best angle while turning",
+      "Practising recovery from a spin",
+      "Losing altitude rapidly over a selected spot, as in an emergency landing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The steep spiral is a constant gliding turn around a point, used to descend steeply while staying over a chosen landing area (AFH chapter 7)."
+  },
+  {
+    "id": "FAACAX-D-101",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Aeronautical experience",
+    "stem": "How much of the 10 hours of commercial instrument training must be in a single-engine airplane for a single-engine rating?",
+    "options": [
+      "10 hours",
+      "5 hours",
+      "3 hours"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "14 CFR 61.129(a)(3)(i): 10 hours of instrument training with a view-limiting device, 5 of which must be in a single-engine airplane."
+  },
+  {
+    "id": "FAACAX-D-102",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAirspace",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "LAHSO",
+    "stem": "When you accept a land and hold short clearance, what landing distance should you check first?",
+    "options": [
+      "The full length of the landing runway",
+      "The available landing distance up to the hold-short point",
+      "The length of the crossing runway"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Before accepting LAHSO, the pilot must know the available landing distance, the distance from the threshold to the hold-short point, and be sure the airplane can stop within it (AIM 4-3-11)."
+  },
+  {
+    "id": "FAACAX-D-103",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Diversion",
+    "stem": "Weather forces a diversion to an alternate. What is a good first step?",
+    "options": [
+      "Continue toward the original destination while you plan the diversion",
+      "Hold over a landmark until you have planned the new leg in full",
+      "Turn toward the alternate promptly on an estimated heading, then work out distance, time and fuel"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The ACS (VI.C) and AFH call for turning promptly toward the alternate using a rough heading from the chart, then refining heading, distance, time and fuel once established."
+  },
+  {
+    "id": "FAACAX-D-104",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxSystems",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pressurization",
+    "stem": "What does the cabin rate-of-climb indicator in a pressurized airplane show?",
+    "options": [
+      "How fast the outflow valve is opening",
+      "How fast the airplane is climbing",
+      "How fast the cabin altitude is changing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The cabin rate of climb shows the change in cabin altitude, normally kept gentle for passenger comfort, separate from the airplane's own vertical speed."
+  },
+  {
+    "id": "FAACAX-D-105",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Commercial pressures",
+    "stem": "A paying passenger urges you to leave right away despite a thunderstorm moving toward the airport. What is the best response?",
+    "options": [
+      "Depart and plan to outrun the storm at low altitude",
+      "Explain the risk and wait until the storm has passed",
+      "Depart at once to keep the customer satisfied"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Passenger pressure is a classic external pressure. Risk management means you decide on the facts, not the schedule, and a thunderstorm near the airport brings wind shear and microburst risk (FAA-H-8083-2A)."
+  },
+  {
+    "id": "FAACAX-D-106",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxPerformance",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Overweight",
+    "stem": "What happens if you take off above maximum weight?",
+    "options": [
+      "Only a higher fuel burn, with no other change",
+      "Lower stall speed but a longer landing",
+      "Higher stall speed, longer takeoff run and lower climb rate"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Extra weight needs more lift: higher stall and takeoff speeds, a longer run, a lower climb rate and ceiling, and more structural load (PHAK chapter 10)."
+  },
+  {
+    "id": "FAACAX-D-107",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sea breeze",
+    "stem": "On a sunny afternoon at a coastal airport, which way does the local wind usually blow?",
+    "options": [
+      "From the sea toward the land",
+      "Parallel to the shore in either direction",
+      "From the land toward the sea"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Land heats faster than water during the day, so air rises over land and cooler sea air flows inland as a sea breeze. At night the flow reverses to a land breeze."
+  },
+  {
+    "id": "FAACAX-D-108",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxAero",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Induced drag",
+    "stem": "How does induced drag change as airspeed increases in level flight?",
+    "options": [
+      "It stays the same",
+      "It decreases",
+      "It increases"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "At higher speed the wing needs less angle of attack for the same lift, so wingtip vortices and induced drag shrink. Induced drag varies inversely with the square of airspeed."
+  },
+  {
+    "id": "FAACAX-D-109",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxManeuvers",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Accelerated stalls",
+    "stem": "For the commercial accelerated stall, which entry does the ACS describe?",
+    "options": [
+      "A coordinated 45 degree banked turn, completed no lower than 3,000 feet AGL",
+      "A wings-level stall entered at full power from cruise speed",
+      "A 60 degree banked turn at maneuvering speed, below 1,500 feet AGL"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The ACS (VII.D) calls for a coordinated turn in a 45 degree bank with smoothly increasing back pressure, airspeed not above maneuvering speed, completed no lower than 3,000 feet AGL."
+  },
+  {
+    "id": "FAACAX-D-110",
+    "section": "cax",
+    "test": 0,
+    "module": 1,
+    "domain": "caxRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medical class",
+    "stem": "You will fly cargo for hire as a commercial pilot. What is the lowest class of medical certificate you need?",
+    "options": [
+      "Second class",
+      "First class",
+      "Third class"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Commercial pilot privileges need at least a second-class medical (14 CFR 61.23(a)(2)). A first-class medical is needed only for airline transport pilot privileges."
+  }
+]

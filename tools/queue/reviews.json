@@ -1747,5 +1747,5 @@
   "sgm9a": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1007, "findings": 4 }],
   "aemt": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1008, "findings": 6 }],
   "nzfirstaid": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1009, "findings": 10 }],
-  "danbrhs": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 0, "findings": 2 }]
+  "danbrhs": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1010, "findings": 2 }]
 }

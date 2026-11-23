@@ -1,0 +1,4036 @@
+[
+  {
+    "id": "FAAIFR-T1-001",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Instrument currency",
+    "stem": "A pilot logged six approaches, holding and course tracking on January 20 and nothing since. Through what date may the pilot act as PIC under IFR?",
+    "options": [
+      "July 20",
+      "July 31",
+      "June 30"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "61.57(c) looks back 6 calendar months before the month of the flight. A flight in July looks back to January, so the January tasks keep the pilot current through July 31."
+  },
+  {
+    "id": "FAAIFR-T1-002",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Primary instruments",
+    "stem": "In straight-and-level flight, which is the primary instrument for pitch?",
+    "options": [
+      "Altimeter",
+      "Vertical speed indicator",
+      "Attitude indicator"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Instrument Flying Handbook names the altimeter as primary for pitch when holding an altitude. The attitude indicator is the control instrument and supports it."
+  },
+  {
+    "id": "FAAIFR-T1-003",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "En route altitudes",
+    "stem": "An airway segment shows an MEA of 6,000 and a MOCA of 4,800. When may you fly at 5,000 using a VOR?",
+    "options": [
+      "Within 22 NM of the VOR",
+      "Anywhere on the segment",
+      "Only in radar contact"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "91.177 allows flight below the MEA down to the MOCA, but for VOR navigation only within 22 NM of the VOR, where signal reception is assured."
+  },
+  {
+    "id": "FAAIFR-T1-004",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lost communications",
+    "stem": "In IMC with no radio, you were told to expect 7,000 ten minutes after departure, and you maintain 5,000 (MEA 4,000). What altitude do you fly?",
+    "options": [
+      "4,000, the MEA",
+      "5,000 for the rest of the flight",
+      "7,000 once the 10 minutes pass"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "91.185(c)(2) requires the highest of the last assigned altitude, the minimum IFR altitude and the altitude ATC said to expect. Once the expected time passes, that is 7,000.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T1-005",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Visual references",
+    "stem": "At DA you see only the approach lights, not the red terminating or side row bars. How low may you go?",
+    "options": [
+      "50 feet above TDZE",
+      "100 feet above TDZE",
+      "200 feet above TDZE"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "91.175(c)(3)(i): with the approach lights as the only reference, you may not descend below 100 feet above touchdown zone elevation unless the red terminating bars or red side row bars are also in sight.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T1-006",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Icing types",
+    "stem": "Which ice forms from small supercooled droplets that freeze the instant they strike the airplane?",
+    "options": [
+      "Hoar frost",
+      "Clear ice",
+      "Rime ice"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Rime ice is rough, milky and opaque, made by small supercooled droplets freezing on impact. Clear ice forms from large drops that freeze slowly and spread back over the surface."
+  },
+  {
+    "id": "FAAIFR-T1-007",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Flight categories",
+    "stem": "A METAR reports OVC007 and 4SM BR. Which flight category is that?",
+    "options": [
+      "MVFR",
+      "LIFR",
+      "IFR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "IFR is a ceiling of 500 to less than 1,000 feet and/or visibility of 1 to less than 3 miles. The 700-foot ceiling makes it IFR even though the visibility is MVFR."
+  },
+  {
+    "id": "FAAIFR-T1-008",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vestibular illusions",
+    "stem": "You enter a bank too slowly to sense, then level the wings abruptly and feel banked the other way. What is this?",
+    "options": [
+      "Elevator illusion",
+      "The leans",
+      "Inversion illusion"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Instrument Flying Handbook describes the leans: a slow bank goes unnoticed, and an abrupt correction makes the semicircular canals report a bank the other way."
+  },
+  {
+    "id": "FAAIFR-T1-009",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alternate requirement",
+    "stem": "No alternate is needed when, from 1 hour before to 1 hour after the ETA, the destination is forecast to have at least:",
+    "options": [
+      "2,000-foot ceiling and 5 SM",
+      "2,000-foot ceiling and 3 SM",
+      "1,000-foot ceiling and 3 SM"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "91.169(b) drops the alternate when the destination has a published approach and the forecast shows a ceiling of at least 2,000 feet and visibility of at least 3 SM for that 2-hour window, the 1-2-3 rule."
+  },
+  {
+    "id": "FAAIFR-T1-010",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Primary instruments",
+    "stem": "In straight-and-level flight, which is the primary instrument for bank?",
+    "options": [
+      "Attitude indicator",
+      "Turn coordinator",
+      "Heading indicator"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "While holding a heading, the heading indicator is primary for bank because any bank shows up at once as a heading change."
+  },
+  {
+    "id": "FAAIFR-T1-011",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "En route altitudes",
+    "stem": "What does the minimum reception altitude (MRA) at an intersection ensure?",
+    "options": [
+      "The fix can be identified",
+      "Two-way radio contact with ATC",
+      "Radar coverage at the fix"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An MRA is the lowest altitude at which the intersection can be determined from the navaids that define it."
+  },
+  {
+    "id": "FAAIFR-T1-012",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lost communications",
+    "stem": "You lose two-way radio in IMC while being radar vectored. Which route do you fly?",
+    "options": [
+      "The route you filed, from the departure fix",
+      "Direct to the fix in the vector clearance",
+      "The last assigned heading until VFR is found"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "91.185(c)(1)(ii): if being vectored, fly the direct route from the point of failure to the fix, route or airway specified in the vector clearance."
+  },
+  {
+    "id": "FAAIFR-T1-013",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Authorized minimums",
+    "stem": "Your authorized DA for an approach is which of these?",
+    "options": [
+      "The one your instructor endorsed",
+      "The highest that applies",
+      "The lowest printed on the chart"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "91.175(b) makes the authorized DA or MDA the highest of the procedure's, the pilot in command's and the one for the equipment available and used."
+  },
+  {
+    "id": "FAAIFR-T1-014",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Freezing rain",
+    "stem": "Freezing rain is falling at your cruise altitude. What does that tell you about the air above you?",
+    "options": [
+      "Colder air above, below freezing",
+      "A layer of dry air with no clouds",
+      "Warmer air above, above freezing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Freezing rain forms when rain from an above-freezing layer falls into a sub-freezing layer below. Climbing into the warmer layer is often the way out."
+  },
+  {
+    "id": "FAAIFR-T1-015",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Alternate from a TAF",
+    "stem": "Destination TAF for 1500Z to 1700Z: BKN015 OVC025, 4SM. Your ETA is 1600Z. Do you need an alternate?",
+    "options": [
+      "Yes, the ceiling is under 2,000",
+      "No, a broken layer isn't a ceiling",
+      "No, the visibility is over 3 SM"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A broken layer is a ceiling. With BKN015 inside the hour either side of the ETA, the 2,000-foot part of the 1-2-3 rule fails, so an alternate is required."
+  },
+  {
+    "id": "FAAIFR-T1-016",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Visual illusions",
+    "stem": "On a night approach over dark water or terrain with no lights, what is the usual error?",
+    "options": [
+      "Flying lower than intended",
+      "Landing long and fast",
+      "Flying higher than intended"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A featureless dark area before the runway makes pilots feel higher than they are, the black hole approach, so they tend to fly a low approach."
+  },
+  {
+    "id": "FAAIFR-T1-017",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alternate minimums",
+    "stem": "An alternate has only a nonprecision approach and no published alternate minimums. What forecast does it need at your ETA?",
+    "options": [
+      "400-foot ceiling and 1 SM",
+      "600-foot ceiling and 2 SM",
+      "800-foot ceiling and 2 SM"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When a procedure lists no alternate minimums, 91.169(c) uses the standard ones: 600 and 2 for a precision approach, 800 and 2 for a nonprecision approach.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T1-018",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scanning errors",
+    "stem": "A pilot stares at the altimeter while the heading drifts 20 degrees. Which scan error is that?",
+    "options": [
+      "Fixation",
+      "Emphasis",
+      "Omission"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Fixation is staring at one instrument and neglecting the rest. Omission leaves an instrument out of the cross-check; emphasis relies too heavily on one easy instrument."
+  },
+  {
+    "id": "FAAIFR-T1-019",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Changeover point",
+    "stem": "On an airway with no changeover point shown, where should you switch to the next VOR?",
+    "options": [
+      "At the next reporting point",
+      "Midway between the two VORs",
+      "Over the first VOR"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Instrument Procedures Handbook says to change frequencies midway between navaids unless a COP is charted with the distance to each one."
+  },
+  {
+    "id": "FAAIFR-T1-020",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Holding speeds",
+    "stem": "What is the maximum holding airspeed at 5,000 feet MSL, with no other speed charted?",
+    "options": [
+      "200 KIAS",
+      "230 KIAS",
+      "265 KIAS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AIM 5-3-8 gives 200 KIAS from the minimum holding altitude through 6,000 feet, 230 KIAS from 6,001 to 14,000, and 265 KIAS above 14,000.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T1-021",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Approach categories",
+    "stem": "Your airplane's VREF is 95 knots. Which approach category's minimums apply?",
+    "options": [
+      "Category C",
+      "Category A",
+      "Category B"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AIM 5-4-7: Category A is under 91 knots, B is 91 to under 121, C is 121 to under 141. At 95 knots the airplane is Category B."
+  },
+  {
+    "id": "FAAIFR-T1-022",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Warm front",
+    "stem": "Which conditions are typical ahead of a warm front with stable, moist air?",
+    "options": [
+      "Towering cumulus and short heavy showers",
+      "Low stratus and steady rain",
+      "Clear skies and gusty northwest winds"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Warm air gliding up over the cold air ahead of a warm front gives wide areas of stratiform cloud, steady precipitation, low ceilings and fog, often IFR for hundreds of miles."
+  },
+  {
+    "id": "FAAIFR-T1-023",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wind shear in a TAF",
+    "stem": "A TAF contains WS015/24045KT. What does it forecast?",
+    "options": [
+      "Wind shear up to 1,500 feet AGL",
+      "Gusts to 45 knots at the surface",
+      "Surface wind of 240 at 15 knots"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "WS followed by three digits gives the top of a low-level wind shear layer in hundreds of feet AGL, then the wind at that height: here 240 degrees at 45 knots at 1,500 feet."
+  },
+  {
+    "id": "FAAIFR-T1-024",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Personal minimums",
+    "stem": "Why set personal minimums above the legal approach minimums?",
+    "options": [
+      "To keep a margin for your own skill",
+      "Because legal minimums are advisory",
+      "To let ATC give you priority"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Legal minimums assume a proficient pilot. Personal minimums, set on the ground, add a margin that matches your recent experience, the airplane and the conditions."
+  },
+  {
+    "id": "FAAIFR-T1-025",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "IFR fuel",
+    "stem": "An airplane filed IFR with an alternate must carry fuel to the destination, then the alternate, then for:",
+    "options": [
+      "45 minutes at holding speed",
+      "45 minutes at normal cruise",
+      "30 minutes at normal cruise"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "91.167 requires fuel to the first airport of intended landing, on to the alternate, and then 45 minutes at normal cruising speed. The 30-minute figure applies to helicopters."
+  },
+  {
+    "id": "FAAIFR-T1-026",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Unusual attitudes",
+    "stem": "Nose high, airspeed falling. What is the recovery order?",
+    "options": [
+      "Add power, lower the nose, level the wings",
+      "Level the wings, add power, raise the nose",
+      "Reduce power, lower the nose, level the wings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "For a nose-high attitude with decreasing airspeed, the Instrument Flying Handbook gives: increase power, lower the nose to prevent a stall, then level the wings, almost at once."
+  },
+  {
+    "id": "FAAIFR-T1-027",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Localizer",
+    "stem": "A localizer course is normally 5 degrees wide. Full-scale deflection means you are about:",
+    "options": [
+      "2.5 degrees off course",
+      "5 degrees off course",
+      "10 degrees off course"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Full-scale deflection on a 5-degree localizer comes at 2.5 degrees either side of centerline, four times the sensitivity of a VOR's 10 degrees.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T1-028",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Holding entries",
+    "stem": "You reach a holding fix heading the same way as the inbound course. Which entry fits?",
+    "options": [
+      "Teardrop",
+      "Direct",
+      "Parallel"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Arriving roughly along the inbound course, you cross the fix and simply turn outbound in the direction of the pattern. Teardrop and parallel entries serve arrivals from the other sectors."
+  },
+  {
+    "id": "FAAIFR-T1-029",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Procedure turns",
+    "stem": "When may you skip the procedure turn without asking ATC?",
+    "options": [
+      "When vectored to the final course",
+      "Whenever you are high on the approach",
+      "When the weather is above 1,000 and 3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "91.175(j): no procedure turn is made when vectored to the final approach course or fix, on a timed approach from a holding fix, or when the route is marked NoPT, unless ATC clears one."
+  },
+  {
+    "id": "FAAIFR-T1-030",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fog formation",
+    "stem": "Fog seldom forms when the temperature-dewpoint spread is greater than about:",
+    "options": [
+      "2 degrees C",
+      "5 degrees C",
+      "10 degrees C"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Aviation Weather Handbook notes that fog seldom forms when the spread is more than 2 degrees C (4 degrees F). A shrinking spread at dusk is an early warning.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T1-031",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "SIGMET validity",
+    "stem": "An ordinary SIGMET for severe icing is normally valid for how long?",
+    "options": [
+      "1 hour",
+      "2 hours",
+      "4 hours"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AIM 7-1 says SIGMETs are unscheduled and valid for 4 hours, except those for tropical cyclones and volcanic ash, which run 6 hours.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T1-032",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "VOR check",
+    "stem": "Your VOR equipment was last checked 35 days ago and has no approved maintenance program. May you navigate IFR by VOR?",
+    "options": [
+      "Yes, if the VOR identifier is heard",
+      "No, it must be within 30 days",
+      "Yes, a check is good for 60 days"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "91.171 requires the VOR equipment to have been operationally checked within the preceding 30 days, unless it is maintained under an approved procedure. A 35-day-old check does not count."
+  },
+  {
+    "id": "FAAIFR-T1-033",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Static blockage",
+    "stem": "The static port ices over and you descend. How does the airspeed indicator read?",
+    "options": [
+      "Correctly",
+      "Too low",
+      "Too high"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With the static pressure trapped at the higher altitude, the difference between pitot and static pressure grows as you descend, so indicated airspeed reads higher than actual."
+  },
+  {
+    "id": "FAAIFR-T1-034",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Glide slope",
+    "stem": "Why intercept the glide slope from below at the published altitude?",
+    "options": [
+      "The signal is weaker from above it",
+      "False glide slopes lie above it",
+      "The localizer is unusable above it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Glide slope transmitters produce false courses at higher angles, the lowest near 9 to 12 degrees. Intercepting from the published altitude below avoids them."
+  },
+  {
+    "id": "FAAIFR-T1-035",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Required reports",
+    "stem": "Under 91.183, what must you report to ATC as soon as possible in controlled airspace?",
+    "options": [
+      "Every change of heading",
+      "Unforecast weather conditions",
+      "Each frequency change you make"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "91.183 requires reports of designated reporting points (when not in radar contact), any unforecast weather encountered and any other safety information."
+  },
+  {
+    "id": "FAAIFR-T1-036",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "RVR conversion",
+    "stem": "Minimums list RVR 2400, but RVR is not reported for that runway. What visibility applies?",
+    "options": [
+      "1/4 statute mile",
+      "1/2 statute mile",
+      "3/4 statute mile"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "91.175(h) converts RVR to ground visibility when RVR isn't reported: 1,600 is 1/4 mile, 2,400 is 1/2 mile, 4,000 is 3/4 mile and 5,000 is 1 mile.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T1-037",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Proficiency and currency",
+    "stem": "A pilot meets 61.57 currency entirely with approaches in clear skies. What risk remains?",
+    "options": [
+      "Current but not proficient in IMC",
+      "Losing the instrument rating itself",
+      "Needing a new medical certificate"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The ACS lists proficiency versus currency as a risk element. Meeting the minimum tasks doesn't guarantee skill in real cloud, turbulence and workload."
+  },
+  {
+    "id": "FAAIFR-T1-038",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Icing in clouds",
+    "stem": "Where is structural icing usually most severe in a large cumuliform cloud above the freezing level?",
+    "options": [
+      "In the updrafts",
+      "Only near the cloud base",
+      "In the thin anvil at the top"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Strong updrafts in cumuliform clouds carry large supercooled drops high above the freezing level, so icing there can be rapid and of the clear type."
+  },
+  {
+    "id": "FAAIFR-T1-039",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Convective SIGMET",
+    "stem": "Even when it doesn't say so, every convective SIGMET implies:",
+    "options": [
+      "Light icing and light turbulence only",
+      "Severe turbulence and icing, and LLWS",
+      "Fog and low ceilings below 500 feet AGL"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AIM 7-1 states that any convective SIGMET implies severe or greater turbulence, severe icing and low-level wind shear."
+  },
+  {
+    "id": "FAAIFR-T1-040",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Altimeter inspection",
+    "stem": "To fly IFR in controlled airspace, the static system and altimeter must have been tested within the preceding:",
+    "options": [
+      "6 calendar months",
+      "12 calendar months",
+      "24 calendar months"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "91.411 requires the static system, each altimeter and the altitude reporting system to be tested and inspected within the preceding 24 calendar months. The 30-day interval is the VOR check.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T1-041",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vacuum failure",
+    "stem": "The vacuum pump fails. Which group of instruments can you still trust?",
+    "options": [
+      "Attitude and heading indicators, airspeed",
+      "Turn coordinator, airspeed, altimeter",
+      "Heading indicator and VSI only"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In most light airplanes the attitude and heading indicators are vacuum driven. The electric turn coordinator and the pitot-static instruments remain for partial-panel flight."
+  },
+  {
+    "id": "FAAIFR-T1-042",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "GPS CDI scaling",
+    "stem": "In terminal mode within 30 NM of the airport, what is GPS full-scale CDI deflection?",
+    "options": [
+      "0.3 NM",
+      "1 NM",
+      "5 NM"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AIM 1-1 describes en route sensitivity of plus or minus 5 NM, terminal of 1 NM within 30 NM of the airport, and approach of 0.3 NM at the final approach waypoint.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T1-043",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "VFR-on-top",
+    "stem": "Cleared to maintain VFR-on-top on a magnetic course of 090, which altitude fits?",
+    "options": [
+      "6,500 MSL",
+      "7,000 MSL",
+      "7,500 MSL"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "VFR-on-top requires VFR cruising altitudes under 91.159: odd thousands plus 500 feet on courses from 0 to 179 degrees. 7,500 fits; 7,000 is an IFR altitude.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T1-044",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Visual descent point",
+    "stem": "A straight-in nonprecision approach shows a VDP. Before reaching it you should:",
+    "options": [
+      "Stay at or above the MDA",
+      "Start the missed approach",
+      "Descend below the MDA if you see lights"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AIM 5-4-5: the VDP is where a stabilized visual descent from the MDA can begin. Pilots should not descend below the MDA before reaching it."
+  },
+  {
+    "id": "FAAIFR-T1-045",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Automation",
+    "stem": "In IMC the autopilot begins a turn you didn't expect. What should you do first?",
+    "options": [
+      "Wait to see where it is going",
+      "Disconnect it and hand-fly",
+      "Reprogram the flight plan at once"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "When automation does something unexpected, fly the airplane first: disconnect, hand-fly to a safe attitude and heading, then sort out the modes."
+  },
+  {
+    "id": "FAAIFR-T1-046",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Thunderstorm avoidance",
+    "stem": "Why should you avoid flying under the anvil of a thunderstorm?",
+    "options": [
+      "Its updrafts carry you into the cloud tops",
+      "Hail can fall from it miles from the core",
+      "It is always surrounded by dense fog"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AIM 7-1-27 warns not to fly under a thunderstorm even if you can see through it. Hail may fall from the anvil, well away from the heavy rain."
+  },
+  {
+    "id": "FAAIFR-T1-047",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Datalink weather",
+    "stem": "Your cockpit shows FIS-B radar imagery. What is it suited for?",
+    "options": [
+      "Strategic route planning around storms",
+      "Picking a gap between nearby cells",
+      "Replacing a preflight weather briefing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AIM 7-1 says FIS weather supports strategic decisions about 20 minutes or more ahead. It is not for tactical avoidance, such as threading between cells, and never replaces a briefing."
+  },
+  {
+    "id": "FAAIFR-T1-048",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "IFR equipment",
+    "stem": "Which item does 91.205 require for IFR flight but not for day VFR?",
+    "options": [
+      "Magnetic direction indicator",
+      "Rate-of-turn indicator",
+      "Manifold pressure gauge"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Day VFR already needs a magnetic direction indicator and, for altitude engines, a manifold pressure gauge. IFR adds a rate-of-turn indicator, slip-skid indicator, sensitive altimeter, clock, attitude and heading gyros and adequate electrical power."
+  },
+  {
+    "id": "FAAIFR-T1-049",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Altimeter errors",
+    "stem": "Flying in air much colder than standard with the correct altimeter setting, your true altitude is:",
+    "options": [
+      "Equal to indicated",
+      "Lower than indicated",
+      "Higher than indicated"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cold air is denser, so pressure levels sit lower. The altimeter overreads, putting the airplane lower than it shows; that is why cold-temperature corrections exist."
+  },
+  {
+    "id": "FAAIFR-T1-050",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DME",
+    "stem": "A DME identifier is heard only about once every 30 seconds, with no VOR identifier. What does it mean?",
+    "options": [
+      "The VOR works but the DME doesn't",
+      "Both are under maintenance",
+      "DME works but the VOR doesn't"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The DME identifier comes about once for every three or four VOR identifiers. Hearing only the DME tone means the DME is working but the VOR is not."
+  },
+  {
+    "id": "FAAIFR-T1-051",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Departure procedures",
+    "stem": "Unless a procedure says otherwise, IFR departure obstacle clearance assumes what climb gradient?",
+    "options": [
+      "120 feet per NM",
+      "150 feet per NM",
+      "200 feet per NM"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AIM 5-2-9: obstacle clearance assumes crossing the runway end at 35 feet, climbing to 400 feet before turning, and at least 200 feet per NM to the minimum IFR altitude.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T1-052",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Circling",
+    "stem": "While circling at MDA you lose sight of the airport. What do you do first?",
+    "options": [
+      "Descend to find the runway lights",
+      "Turn to the missed approach heading at once",
+      "Climbing turn toward the landing runway"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AIM 5-4-21: if visual reference is lost while circling, make an initial climbing turn toward the landing runway and continue until established on the missed approach course."
+  },
+  {
+    "id": "FAAIFR-T1-053",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Hazardous attitudes",
+    "stem": "\"I've flown approaches lower than this; watch me get in.\" Which hazardous attitude, and what antidote?",
+    "options": [
+      "Invulnerability; it could happen to me",
+      "Impulsivity; not so fast, think first",
+      "Macho; taking chances is foolish"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Trying to prove oneself by taking risks is the macho attitude. The antidote is 'Taking chances is foolish.'"
+  },
+  {
+    "id": "FAAIFR-T1-054",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mountain obscuration",
+    "stem": "Moist, stable air pushed up a gently rising plain forms what kind of fog?",
+    "options": [
+      "Radiation fog",
+      "Steam fog",
+      "Upslope fog"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Upslope fog forms as stable, moist air is lifted and cooled adiabatically along rising terrain. It can be widespread and last for long periods."
+  },
+  {
+    "id": "FAAIFR-T1-055",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Winds aloft",
+    "stem": "A winds and temperatures aloft forecast shows 9900+02 for 6,000 feet. What wind is forecast?",
+    "options": [
+      "From 090 at 99 knots",
+      "Light and variable",
+      "Calm, temperature unknown"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In the FB forecast, 9900 means light and variable, a wind of less than 5 knots. The +02 is a temperature of plus 2 degrees C."
+  },
+  {
+    "id": "FAAIFR-T1-056",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Logging approaches",
+    "stem": "When logging approaches for 61.57 currency, what must the logbook record for each approach?",
+    "options": [
+      "The ATC facility that cleared it",
+      "Its decision altitude or MDA",
+      "Its location and type"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "61.51(g)(3) requires the location and type of each instrument approach and, when one was required, the safety pilot's name."
+  },
+  {
+    "id": "FAAIFR-T1-057",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Glass cockpit failures",
+    "stem": "On a glass panel, the air data computer fails. Which indications are lost?",
+    "options": [
+      "Attitude, heading and turn rate",
+      "GPS course, distance and groundspeed",
+      "Airspeed, altitude and vertical speed"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The ADC processes pitot-static data, so its failure removes airspeed, altitude and vertical speed. The AHRS supplies attitude and heading."
+  },
+  {
+    "id": "FAAIFR-T1-058",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "HSI interpretation",
+    "stem": "Your HSI is set to 090 and shows a TO flag with the needle left. Which way is the course?",
+    "options": [
+      "Behind the airplane",
+      "Left of the airplane",
+      "Right of the airplane"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "On an HSI the course needle shows where the selected course lies relative to the airplane symbol, so a needle left of center means the course is to the left."
+  },
+  {
+    "id": "FAAIFR-T1-059",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clearance void time",
+    "stem": "You are not airborne by your clearance void time. What must you do?",
+    "options": [
+      "Wait 30 minutes, then depart",
+      "Tell ATC your intentions soon",
+      "Depart anyway and call once airborne"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AIM 5-2-7: a pilot who doesn't depart before the void time must advise ATC as soon as possible, within the time ATC gives, which can't exceed 30 minutes."
+  },
+  {
+    "id": "FAAIFR-T1-060",
+    "section": "ira",
+    "test": 1,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Missed approach",
+    "stem": "On an ILS you reach DA without the visual references 91.175 requires. What must you do?",
+    "options": [
+      "Fly the missed approach",
+      "Level off at DA and keep looking",
+      "Continue to the runway threshold"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "91.175(e) requires an immediate missed approach on reaching the DA or MAP without the required visual references and flight visibility."
+  },
+  {
+    "id": "FAAIFR-T2-001",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Instrument proficiency check",
+    "stem": "A pilot last met the 61.57(c) tasks in March and has done none since. From what date is an IPC the only way back?",
+    "options": [
+      "March 31 of the next year",
+      "October 1 of the same year",
+      "April 1 of the next year"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Currency from March runs through September 30. During the next 6 calendar months (to March 31) the pilot can still log the tasks with a safety pilot or instructor. From April 1 an instrument proficiency check is required."
+  },
+  {
+    "id": "FAAIFR-T2-002",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Primary instruments",
+    "stem": "In a constant-airspeed climb, which instrument is primary for pitch?",
+    "options": [
+      "Vertical speed indicator",
+      "Altimeter",
+      "Airspeed indicator"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Once a constant-airspeed climb is set, the airspeed indicator is primary for pitch: a pitch error shows up first as an airspeed change."
+  },
+  {
+    "id": "FAAIFR-T2-003",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "En route altitudes",
+    "stem": "What does a minimum crossing altitude (MCA) require?",
+    "options": [
+      "Holding at the fix until cleared higher",
+      "Descending to it right after the fix",
+      "Crossing the fix at or above it"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "91.177(b) requires crossing the fix at or above the MCA when proceeding toward a segment with a higher MEA and obstructions intervene."
+  },
+  {
+    "id": "FAAIFR-T2-004",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Lost communications",
+    "stem": "No radio, IMC. You reach your clearance limit, an approach fix, with no EFC. When do you start the approach?",
+    "options": [
+      "After one full turn in the holding pattern",
+      "As close as possible to your ETA",
+      "At once on arrival over the fix"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "91.185(c)(3)(i): with the limit an approach fix and no EFC received, begin descent and approach as close as possible to the ETA from the filed or amended time en route."
+  },
+  {
+    "id": "FAAIFR-T2-005",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Approach types",
+    "stem": "Which approach minimums are published as a DA, not an MDA?",
+    "options": [
+      "LPV",
+      "LNAV",
+      "Circling"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "LPV and LNAV/VNAV are approaches with vertical guidance and use a decision altitude. LNAV and circling minimums are minimum descent altitudes."
+  },
+  {
+    "id": "FAAIFR-T2-006",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Icing types",
+    "stem": "Clear ice is most likely when you fly through:",
+    "options": [
+      "Dry snow at very cold temperatures",
+      "Large drops near freezing",
+      "Small droplets at minus 20 degrees C"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Clear ice forms from large supercooled drops at temperatures near freezing, where each drop freezes slowly and spreads back. It is glossy, heavy and hard to remove."
+  },
+  {
+    "id": "FAAIFR-T2-007",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Flight categories",
+    "stem": "A METAR reports BKN004 and 1 1/2SM. Which flight category is that?",
+    "options": [
+      "MVFR",
+      "IFR",
+      "LIFR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "LIFR is a ceiling below 500 feet and/or visibility below 1 mile. A 400-foot broken ceiling puts it in LIFR even though the visibility alone is IFR."
+  },
+  {
+    "id": "FAAIFR-T2-008",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vestibular illusions",
+    "stem": "After an abrupt level-off from a climb, you feel you are tumbling backward. What is the danger?",
+    "options": [
+      "Pushing the nose too low",
+      "Rolling into a steep bank",
+      "Pulling into a steep climb"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The inversion illusion follows an abrupt change from climb to level flight. The disoriented pilot may push the nose down abruptly, making the illusion worse."
+  },
+  {
+    "id": "FAAIFR-T2-009",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alternate minimums",
+    "stem": "Your planned alternate has only an ILS and lists no special alternate minimums. What forecast must it show?",
+    "options": [
+      "600-foot ceiling and 2 SM",
+      "800-foot ceiling and 2 SM",
+      "1,000-foot ceiling and 3 SM"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With no published alternate minimums, 91.169(c) sets 600 feet and 2 SM for a precision approach and 800 feet and 2 SM for a nonprecision approach.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T2-010",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Control and performance",
+    "stem": "In the control and performance method, which are the control instruments?",
+    "options": [
+      "Altimeter and airspeed indicator",
+      "Heading indicator and VSI",
+      "Attitude and power indicators"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Control instruments show attitude and power directly and are set first. Performance instruments, such as the altimeter, airspeed and heading, show the result."
+  },
+  {
+    "id": "FAAIFR-T2-011",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "En route altitudes",
+    "stem": "What is a maximum authorized altitude (MAA)?",
+    "options": [
+      "Top of Class E airspace on the route",
+      "Highest altitude allowed for VFR-on-top",
+      "Highest usable altitude on a route"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An MAA is the highest altitude on an airway or route for which an MEA is designated at which adequate navigation signal reception is assured."
+  },
+  {
+    "id": "FAAIFR-T2-012",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lost communications",
+    "stem": "Your radio fails in IMC, then you break out into VFR conditions. What does 91.185 require?",
+    "options": [
+      "Climb back into IMC and fly the filed route",
+      "Continue VFR and land when practicable",
+      "Squawk 7700 and hold at the next fix"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "91.185(b): if VFR conditions are met after the failure, continue the flight under VFR and land as soon as practicable."
+  },
+  {
+    "id": "FAAIFR-T2-013",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Visual approach",
+    "stem": "For ATC to issue a visual approach, what weather must the airport report?",
+    "options": [
+      "Ceiling 500 feet, visibility 1 mile",
+      "Ceiling 3,000 feet, visibility 5 miles",
+      "Ceiling 1,000 feet, visibility 3 miles"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AIM 5-4-23: a visual approach needs a reported ceiling of at least 1,000 feet and visibility of at least 3 miles, with the airport or the preceding aircraft in sight."
+  },
+  {
+    "id": "FAAIFR-T2-014",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stratiform icing",
+    "stem": "In widespread stratiform cloud above the freezing level, icing usually:",
+    "options": [
+      "Covers wide areas in shallow layers",
+      "Occurs only inside embedded showers",
+      "Is the most severe icing of any cloud type"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Stratiform clouds have weak vertical motion, so icing tends to be lighter but can extend over a wide area. A change of a few thousand feet often leaves the icing layer."
+  },
+  {
+    "id": "FAAIFR-T2-015",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Alternate from a TAF",
+    "stem": "Destination TAF around your 2100Z ETA: SCT020 BKN050, 3SM HZ. Do you need an alternate?",
+    "options": [
+      "No, ceiling 5,000, visibility 3 SM",
+      "Yes, visibility must be more than 3 SM",
+      "Yes, the scattered layer is at 2,000"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A scattered layer is not a ceiling, so the ceiling is the broken layer at 5,000 feet. Visibility of 3 SM meets the 'at least 3 SM' part of 91.169, so no alternate is needed."
+  },
+  {
+    "id": "FAAIFR-T2-016",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Vestibular illusions",
+    "stem": "A sudden updraft in cloud makes you feel you are climbing. What may you do wrongly?",
+    "options": [
+      "Pull the airplane into a stall",
+      "Roll into a steep bank",
+      "Lower the nose into a dive"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An abrupt upward acceleration stimulates the otolith organs and creates the elevator illusion of climbing, so a pilot may push the nose down. A downdraft has the opposite effect."
+  },
+  {
+    "id": "FAAIFR-T2-017",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Alternate without approach",
+    "stem": "An alternate airport has no instrument approach. When may you list it?",
+    "options": [
+      "When its ceiling is forecast at 2,000 feet or more",
+      "When descent from the MEA can be made in basic VFR",
+      "When a nearby airport within 5 miles has an ILS"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Under 91.169(c)(2), an alternate with no approach procedure needs weather that allows descent from the MEA, approach and landing under basic VFR."
+  },
+  {
+    "id": "FAAIFR-T2-018",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Altitude corrections",
+    "stem": "You are 200 feet below your assigned altitude. By the handbook rule of thumb, what climb rate should you use?",
+    "options": [
+      "400 fpm",
+      "600 fpm",
+      "1,000 fpm"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Instrument Flying Handbook suggests a vertical speed about double the altitude deviation: 2 x 200 feet = 400 fpm, but never more than the airplane's best rate.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T2-019",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "OROCA",
+    "stem": "Over non-mountainous terrain, how much obstacle clearance does an OROCA give?",
+    "options": [
+      "500 feet",
+      "1,000 feet",
+      "2,000 feet"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An OROCA gives 1,000 feet of obstruction clearance in non-mountainous areas and 2,000 feet in designated mountainous areas, without assuring signal or radar coverage.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T2-020",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Holding timing",
+    "stem": "At 16,000 feet MSL with no DME, how long is the inbound leg of a holding pattern?",
+    "options": [
+      "1 minute",
+      "1 1/2 minutes",
+      "2 minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AIM 5-3-8: inbound legs are 1 minute at or below 14,000 feet MSL and 1 1/2 minutes above 14,000 feet.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T2-021",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Contact approach",
+    "stem": "Which is true of a contact approach?",
+    "options": [
+      "Only the pilot can request it",
+      "It needs 3 miles of visibility",
+      "ATC offers it to save time"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AIM 5-4-25: a contact approach must be requested by the pilot, needs at least 1 mile reported ground visibility and clear of clouds, and only goes to an airport with an instrument approach."
+  },
+  {
+    "id": "FAAIFR-T2-022",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Occluded front",
+    "stem": "An occluded front often brings what mix of weather?",
+    "options": [
+      "Clear skies and light winds only",
+      "Stratus with embedded storms",
+      "A single line of fair-weather cumulus"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An occlusion combines cold-front and warm-front weather: widespread stratiform cloud and precipitation that can hide embedded thunderstorms, a serious IFR hazard."
+  },
+  {
+    "id": "FAAIFR-T2-023",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Convective SIGMET",
+    "stem": "Which condition alone qualifies for a convective SIGMET?",
+    "options": [
+      "A single cumulus over a lake",
+      "Moderate icing in widespread stratus",
+      "Hail of 3/4 inch at the surface"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Convective SIGMETs cover surface winds of 50 knots or more, hail of 3/4 inch or more at the surface, tornadoes, embedded or lines of thunderstorms, and heavy precipitation over 40 percent of a large area."
+  },
+  {
+    "id": "FAAIFR-T2-024",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Visual illusions",
+    "stem": "Breaking out on an approach to an upsloping runway, what illusion is likely?",
+    "options": [
+      "Feeling too fast, so slowing",
+      "Feeling too high, so flying low",
+      "Feeling too low, so flying high"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An upsloping runway looks like a steeper approach, so the pilot feels high and tends to fly lower than the correct glidepath."
+  },
+  {
+    "id": "FAAIFR-T2-025",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "VOR check",
+    "stem": "No VOT or ground checkpoint exists, so you use a designated airborne checkpoint. What error is allowed?",
+    "options": [
+      "Plus or minus 10 degrees",
+      "Plus or minus 6 degrees",
+      "Plus or minus 4 degrees"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "91.171(b)(3) allows plus or minus 6 degrees over an airborne checkpoint. Ground checks with a VOT or surface checkpoint allow 4 degrees."
+  },
+  {
+    "id": "FAAIFR-T2-026",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Unusual attitudes",
+    "stem": "Nose low, airspeed rising. What is the first step?",
+    "options": [
+      "Raise the nose",
+      "Reduce power",
+      "Add full power"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "For a nose-low attitude with increasing airspeed, reduce power first, then level the wings with coordinated controls, then raise the nose smoothly. Pulling first in a bank tightens the spiral."
+  },
+  {
+    "id": "FAAIFR-T2-027",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Glide slope",
+    "stem": "The glide slope beam is normally about how thick?",
+    "options": [
+      "1.4 degrees",
+      "3 degrees",
+      "5 degrees"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The glidepath is normally 1.4 degrees thick, about 1,500 feet vertically 10 NM from touchdown and narrowing to a few feet at the runway.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T2-028",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Holding speeds",
+    "stem": "When should you begin slowing for an expected holding pattern?",
+    "options": [
+      "10 minutes before the fix",
+      "After crossing the holding fix",
+      "3 minutes or less from the fix"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AIM 5-3-8 expects a speed reduction once within 3 minutes of the clearance limit, so the airplane crosses the fix at or below the maximum holding airspeed."
+  },
+  {
+    "id": "FAAIFR-T2-029",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Minimum safe altitude",
+    "stem": "What does the MSA on an approach chart provide?",
+    "options": [
+      "1,000 feet of obstacle clearance",
+      "Assured navigation signal reception",
+      "A vectoring altitude for ATC"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AIM 5-4-5: the MSA, for emergency use, gives 1,000 feet of clearance over obstacles, normally within 25 NM, but doesn't assure navigation signals."
+  },
+  {
+    "id": "FAAIFR-T2-030",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Steam fog",
+    "stem": "Very cold air moving over much warmer water tends to form:",
+    "options": [
+      "Steam fog",
+      "Advection fog",
+      "Ice fog"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Steam fog forms when water evaporates from a warm surface into cold air above it. Low-level turbulence and icing can occur in it."
+  },
+  {
+    "id": "FAAIFR-T2-031",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Convective SIGMET",
+    "stem": "Routine convective SIGMET bulletins are issued how often?",
+    "options": [
+      "Every 4 hours, on schedule",
+      "Hourly, at 55 past",
+      "Every 6 hours, on schedule"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AIM 7-1: convective SIGMET bulletins are issued hourly at H+55, with special bulletins as needed. A 'CONVECTIVE SIGMET...NONE' is sent when no area qualifies."
+  },
+  {
+    "id": "FAAIFR-T2-032",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dual VOR check",
+    "stem": "Two independent VOR receivers are tuned to one station. What is the largest difference allowed?",
+    "options": [
+      "4 degrees",
+      "6 degrees",
+      "8 degrees"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "91.171(c) lets a pilot check one VOR system against the other; the two indicated bearings may differ by no more than 4 degrees.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T2-033",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scanning errors",
+    "stem": "After rolling out of a steep turn, a pilot forgets to check heading. Which scan error is that?",
+    "options": [
+      "Emphasis",
+      "Omission",
+      "Fixation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Leaving an instrument out of the cross-check is omission. The handbook's example is a roll-out where the pilot checks only the attitude indicator and not the heading indicator."
+  },
+  {
+    "id": "FAAIFR-T2-034",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reverse sensing",
+    "stem": "You track inbound on a VOR with the OBS set to the reciprocal of your course. What happens?",
+    "options": [
+      "The DME stops reading distance",
+      "The flag shows OFF and stays",
+      "The needle senses in reverse"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With the OBS set opposite to the course flown, the CDI reverses: corrections must be made away from the needle. Set the OBS to the course you intend to fly."
+  },
+  {
+    "id": "FAAIFR-T2-035",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Required reports",
+    "stem": "Which report does the AIM require in or out of radar contact?",
+    "options": [
+      "Tuning each new VOR on the route",
+      "Leaving an assigned altitude",
+      "Passing every intersection"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AIM 5-3-3 lists reports required at all times, including vacating an assigned altitude, being unable to climb or descend at 500 fpm, a missed approach and a TAS change of 5% or 10 knots."
+  },
+  {
+    "id": "FAAIFR-T2-036",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Approach categories",
+    "stem": "A Category B airplane must circle at 145 knots in gusty wind. Which minimums should it use?",
+    "options": [
+      "Category D",
+      "Category C",
+      "Category B"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AIM 5-4-7 says to use the minimums of the category that matches the speed flown. At 145 knots that is Category D (141 to under 166)."
+  },
+  {
+    "id": "FAAIFR-T2-037",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Decision models",
+    "stem": "In the DECIDE model, what comes right after Detect?",
+    "options": [
+      "Evaluate",
+      "Estimate",
+      "Choose"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "DECIDE is Detect a change, Estimate the need to react, Choose a desirable outcome, Identify actions, Do the best action and Evaluate the effect."
+  },
+  {
+    "id": "FAAIFR-T2-038",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Frontal fog",
+    "stem": "Rain falling from warmer air into a cooler layer below can saturate that layer. What forms?",
+    "options": [
+      "Radiation fog",
+      "Upslope fog",
+      "Frontal fog"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Precipitation-induced (frontal) fog forms when warm rain evaporates into cooler air near the ground, often ahead of a warm front. It can be thick and widespread."
+  },
+  {
+    "id": "FAAIFR-T2-039",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AIRMET coverage",
+    "stem": "Which AIRMET covers ceilings below 1,000 feet and extensive mountain obscuration?",
+    "options": [
+      "Tango",
+      "Sierra",
+      "Zulu"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AIRMET Sierra covers IFR conditions and mountain obscuration. Tango covers turbulence, strong surface winds and LLWS; Zulu covers icing and freezing levels."
+  },
+  {
+    "id": "FAAIFR-T2-040",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Static system",
+    "stem": "A mechanic opened the static system to replace a line, then closed it. What is needed before IFR in controlled airspace?",
+    "options": [
+      "An operational check of the VOR",
+      "A static system test",
+      "A new transponder inspection"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "91.411(a)(2) requires a test and inspection after any opening and closing of the static system, except for drains and the alternate static valve."
+  },
+  {
+    "id": "FAAIFR-T2-041",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Alternate static",
+    "stem": "When you open the alternate static source in the cabin, the VSI briefly shows:",
+    "options": [
+      "A climb",
+      "No change",
+      "A descent"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cabin pressure is usually lower than outside static pressure, so the VSI shows a momentary climb, and the altimeter and airspeed read somewhat high."
+  },
+  {
+    "id": "FAAIFR-T2-042",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "GPS CDI scaling",
+    "stem": "When does the GPS CDI scale to 0.3 NM on an RNAV approach?",
+    "options": [
+      "Nearing the final approach waypoint",
+      "Passing the initial approach fix",
+      "Inside 30 NM of the airport"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sensitivity ramps from 1 NM to 0.3 NM over the last 2 NM to the final approach waypoint, if approach mode is armed. Inside 30 NM it first changes from 5 NM to 1 NM."
+  },
+  {
+    "id": "FAAIFR-T2-043",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "IFR cruising altitudes",
+    "stem": "IFR in uncontrolled airspace below 18,000 feet on a magnetic course of 200 degrees, which altitude fits?",
+    "options": [
+      "6,000 MSL",
+      "6,500 MSL",
+      "7,000 MSL"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "91.179(b): on magnetic courses of 180 to 359 degrees, fly even thousands. 6,000 fits; 6,500 is a VFR altitude.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T2-044",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Landing",
+    "stem": "At MDA the runway is in sight, but flight visibility is below the chart value. May you land?",
+    "options": [
+      "Yes, if the ceiling is above the MDA",
+      "Yes, once the runway is in sight",
+      "No, visibility must be at minimums"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "91.175(d) bars landing when the flight visibility is less than the visibility in the approach procedure being used."
+  },
+  {
+    "id": "FAAIFR-T2-045",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Hazardous attitudes",
+    "stem": "\"Ice won't build on us, it never does.\" Which antidote fits?",
+    "options": [
+      "Follow the rules; they are usually right",
+      "I'm not helpless; I can make a difference",
+      "It could happen to me"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Believing accidents happen only to others is the invulnerability attitude. Its antidote is 'It could happen to me.'"
+  },
+  {
+    "id": "FAAIFR-T2-046",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Embedded storms",
+    "stem": "Why are embedded thunderstorms a special hazard in IFR flight?",
+    "options": [
+      "Other cloud hides them from view",
+      "They form only above 30,000 feet",
+      "They never produce lightning"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Embedded thunderstorms are hidden inside layers of stratiform cloud, so a pilot in IMC cannot see them. Radar or ATC information is needed to stay clear."
+  },
+  {
+    "id": "FAAIFR-T2-047",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "TAF valid period",
+    "stem": "Most US TAFs cover what period?",
+    "options": [
+      "6 hours",
+      "12 hours",
+      "24 hours"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "TAFs are valid for 24 hours, and 30 hours at some major airports. They describe the area within 5 statute miles of the runway complex.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T2-048",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Safety pilot",
+    "stem": "A pilot practises under a view-limiting device. What must the safety pilot hold at minimum?",
+    "options": [
+      "Flight instructor certificate",
+      "Private certificate, same category and class",
+      "Current instrument rating in that airplane"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "91.109(c) requires a safety pilot with at least a private certificate with the right category and class ratings, adequate vision, and an airplane with dual controls."
+  },
+  {
+    "id": "FAAIFR-T2-049",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Glass cockpit failures",
+    "stem": "The AHRS fails on a glass panel. What should you fly by?",
+    "options": [
+      "The standby attitude indicator",
+      "The moving map and synthetic vision",
+      "The magnetic compass alone"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The AHRS supplies attitude and heading to the PFD. When it fails, fly the backup attitude instrument and use the compass for heading."
+  },
+  {
+    "id": "FAAIFR-T2-050",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "RAIM",
+    "stem": "Before a GPS-only approach without WAAS, what should you check?",
+    "options": [
+      "The localizer's frequency",
+      "The nearest VOR's Morse identifier",
+      "Predicted RAIM availability"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Without WAAS, integrity comes from RAIM. Check predicted RAIM availability for the ETA; flight service can give it for 1 hour either side of the ETA."
+  },
+  {
+    "id": "FAAIFR-T2-051",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cruise clearance",
+    "stem": "What does a cruise clearance to 8,000 feet allow you to do?",
+    "options": [
+      "Fly VFR-on-top below 8,000",
+      "Climb above 8,000 at your discretion",
+      "Choose any altitude up to 8,000"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A cruise clearance assigns a block from the minimum IFR altitude up to the stated altitude. Once you report leaving an altitude in the block, you can't return to it without a new clearance."
+  },
+  {
+    "id": "FAAIFR-T2-052",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Side-step",
+    "stem": "Cleared for an approach with a side-step to the parallel runway, when do you begin it?",
+    "options": [
+      "Only after the missed approach point",
+      "As soon as the runway is in sight",
+      "When ATC calls the side-step"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AIM 5-4-19: pilots begin the side-step as soon as possible after the runway or runway environment is in sight, still meeting any stepdown altitudes."
+  },
+  {
+    "id": "FAAIFR-T2-053",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "External pressures",
+    "stem": "How can you guard against pressing on into worsening weather to keep a schedule?",
+    "options": [
+      "Plan only the most direct route",
+      "Set a divert point before departure",
+      "Leave the alternate off the flight plan"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "External pressures drive plan-continuation errors. Deciding the divert criteria and alternates on the ground makes the decision easier in flight."
+  },
+  {
+    "id": "FAAIFR-T2-054",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Tailplane icing",
+    "stem": "Tailplane stall from ice is most likely right after you:",
+    "options": [
+      "Retract the gear after takeoff",
+      "Extend the flaps on approach",
+      "Level off at cruise altitude"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Extending flaps increases the downwash on the horizontal tail and its negative angle of attack, so an ice-contaminated tailplane may stall then. The nose pitches down abruptly."
+  },
+  {
+    "id": "FAAIFR-T2-055",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "RVR in a METAR",
+    "stem": "A METAR includes R09/2400FT. What does it report?",
+    "options": [
+      "Runway 9 visual range of 2,400 feet",
+      "Ceiling of 2,400 feet over runway 9",
+      "Runway 9 is 2,400 feet long"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "R09/2400FT is the runway visual range for runway 9: 2,400 feet. RVR is measured along the runway, unlike prevailing visibility."
+  },
+  {
+    "id": "FAAIFR-T2-056",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Instrument rating experience",
+    "stem": "Of the 40 hours of instrument time for the instrument-airplane rating, how many must come from an authorized instructor?",
+    "options": [
+      "5",
+      "10",
+      "15"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "61.65(d)(2) requires 40 hours of actual or simulated instrument time, of which 15 hours must be from an authorized instructor with an instrument-airplane rating.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-T2-057",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Altimeter setting",
+    "stem": "Why get the local altimeter setting before an approach?",
+    "options": [
+      "It recalibrates the VSI for descent",
+      "It corrects the compass card for the turn",
+      "Minimums assume the current setting"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Approach altitudes are MSL and assume the current local altimeter setting. An old setting from a higher-pressure area puts you lower than indicated."
+  },
+  {
+    "id": "FAAIFR-T2-058",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "DME arc",
+    "stem": "Flying a DME arc with the station off your left wingtip, the DME is increasing. What should you do?",
+    "options": [
+      "Turn left toward the station",
+      "Hold heading and wait for the DME",
+      "Turn right, away from it"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A rising DME on an arc means you are drifting outside it. Turning toward the station, here to the left, brings the airplane back to the arc distance."
+  },
+  {
+    "id": "FAAIFR-T2-059",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Minimum fuel",
+    "stem": "What does a 'minimum fuel' advisory tell ATC?",
+    "options": [
+      "You need priority to land now",
+      "You can accept no undue delay",
+      "You are declaring an emergency"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AIM 5-5-15: minimum fuel means you can't accept undue delay at the destination. It is not an emergency; if fuel becomes critical, declare one."
+  },
+  {
+    "id": "FAAIFR-T2-060",
+    "section": "ira",
+    "test": 2,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Hold in lieu of PT",
+    "stem": "Flying a hold-in-lieu-of-procedure-turn, what must you not exceed?",
+    "options": [
+      "The MSA for that sector",
+      "Three circuits of the holding pattern",
+      "The charted leg length or time"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AIM 5-4-9: in a hold in lieu of a procedure turn, fly the pattern as depicted and don't exceed the specified leg length or timing. Holding speed limits apply."
+  },
+  {
+    "id": "FAAIFR-D-001",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stepdown fixes",
+    "stem": "On a nonprecision final with a stepdown fix, when may you descend to the MDA?",
+    "options": [
+      "After passing the stepdown fix",
+      "Right after the final approach fix",
+      "Once the airport is in sight"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each stepdown altitude protects against an obstacle before its fix. Descend to the next lower altitude, or MDA, only after passing the stepdown fix."
+  },
+  {
+    "id": "FAAIFR-D-002",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Instrument rating required",
+    "stem": "When must a private pilot hold an instrument rating to act as PIC?",
+    "options": [
+      "Over water beyond gliding distance",
+      "Under IFR or in Class A airspace",
+      "At night above 10,000 feet MSL"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "61.3(e) requires an instrument rating to act as PIC under IFR, in weather below VFR minimums, or in Class A airspace."
+  },
+  {
+    "id": "FAAIFR-D-003",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Icing types",
+    "stem": "Mixed ice is best described as:",
+    "options": [
+      "Ice that forms only on the propeller",
+      "Rime and clear ice forming together",
+      "Frost that melts during the climb"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Mixed ice forms when drop sizes vary or snow and ice particles are caught in clear ice. It has the rough shape of rime and the hardness of clear ice."
+  },
+  {
+    "id": "FAAIFR-D-004",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Flight categories",
+    "stem": "Which METAR conditions are MVFR?",
+    "options": [
+      "OVC020 and 6SM",
+      "OVC008 and 6SM",
+      "SKC and 2SM"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "MVFR is a ceiling of 1,000 to 3,000 feet and/or visibility of 3 to 5 miles. OVC008 is IFR by ceiling and 2SM is IFR by visibility."
+  },
+  {
+    "id": "FAAIFR-D-005",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pitot heat",
+    "stem": "When should you turn on pitot heat?",
+    "options": [
+      "Before visible moisture near freezing",
+      "Only during the takeoff roll and climb",
+      "Only after the airspeed reads zero"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Pitot heat prevents ice from blocking the pitot tube. Turn it on before flying into visible moisture at or near freezing, not after the airspeed fails."
+  },
+  {
+    "id": "FAAIFR-D-006",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "En route altitudes",
+    "stem": "Which altitude assures both obstacle clearance and navigation signal coverage along an airway?",
+    "options": [
+      "MOCA",
+      "MEA",
+      "OROCA"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The MEA gives obstacle clearance and acceptable signal coverage between fixes. A MOCA assures signals only within 22 NM of a VOR, and an OROCA assures neither signal nor radar."
+  },
+  {
+    "id": "FAAIFR-D-007",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Holding speeds",
+    "stem": "From 6,001 to 14,000 feet MSL, the standard maximum holding airspeed is:",
+    "options": [
+      "200 KIAS",
+      "230 KIAS",
+      "265 KIAS"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AIM 5-3-8 sets 230 KIAS from 6,001 to 14,000 feet, though a charted pattern there may be limited to 210 KIAS.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-D-008",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vestibular system",
+    "stem": "Which part of the inner ear senses angular acceleration?",
+    "options": [
+      "Semicircular canals",
+      "Otolith organs",
+      "Eardrum"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The semicircular canals sense angular acceleration in pitch, roll and yaw. The otolith organs sense linear acceleration and gravity."
+  },
+  {
+    "id": "FAAIFR-D-009",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Timed approach",
+    "stem": "The FAF is 4.5 NM from the MAP and your groundspeed is 90 knots. How long to the MAP?",
+    "options": [
+      "3 minutes",
+      "4 minutes 30 seconds",
+      "6 minutes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "At 90 knots you cover 1.5 NM per minute: 4.5 / 1.5 = 3 minutes from the FAF to the MAP.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-D-010",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Instrument rating experience",
+    "stem": "The instrument cross-country flown with an instructor for the rating must be at least:",
+    "options": [
+      "250 NM, three kinds of approaches",
+      "150 NM, two kinds of approaches",
+      "250 NM, one approach at the end"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "61.65(d)(2)(ii) requires one IFR cross-country of 250 NM along airways or ATC routing, an approach at each airport, and three different kinds of approaches."
+  },
+  {
+    "id": "FAAIFR-D-011",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Supercooled large drops",
+    "stem": "Why are supercooled large drops especially dangerous?",
+    "options": [
+      "They run back past deicing boots",
+      "They freeze only on the windshield",
+      "They form only on the top surfaces"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Large drops do not freeze at once, so they flow aft and freeze behind the protected leading edges, where boots and heated surfaces cannot remove the ice."
+  },
+  {
+    "id": "FAAIFR-D-012",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AIRMET schedule",
+    "stem": "AIRMETs over the contiguous United States are issued on what schedule?",
+    "options": [
+      "Every 12 hours",
+      "Every 6 hours",
+      "Every hour"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AIM 7-1: AIRMETs are scheduled every 6 hours (every 8 in Alaska), with unscheduled updates as needed."
+  },
+  {
+    "id": "FAAIFR-D-013",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ice protection",
+    "stem": "What is the difference between anti-ice and deice equipment?",
+    "options": [
+      "Anti-ice prevents ice; deice removes it",
+      "Anti-ice removes ice; deice prevents it",
+      "Both only work on the windshield"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Anti-icing systems, such as heated surfaces and fluid, keep ice from forming. Deicing systems, such as pneumatic boots, remove ice after it builds."
+  },
+  {
+    "id": "FAAIFR-D-014",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Minimum IFR altitude",
+    "stem": "Off any published route in non-mountainous terrain, the minimum IFR altitude is how far above the highest obstacle within 4 NM?",
+    "options": [
+      "1,000 feet",
+      "1,500 feet",
+      "2,000 feet"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "91.177(a)(2) sets 1,000 feet above the highest obstacle within 4 NM of the course, or 2,000 feet in designated mountainous areas.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-D-015",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Holding instructions",
+    "stem": "Unless the pattern is charted, what must ATC give with a hold when delay is expected?",
+    "options": [
+      "Full instructions and an EFC",
+      "Only the holding fix and altitude",
+      "Only the inbound course and turns"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AIM 5-3-8: when delay is expected at a fix other than the destination, ATC issues complete holding instructions, an EFC time and an estimate of further delay."
+  },
+  {
+    "id": "FAAIFR-D-016",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Vestibular system",
+    "stem": "Why can't you feel a constant-rate turn held for a long time?",
+    "options": [
+      "Bank angle can't be sensed at all",
+      "The canal fluid stops moving",
+      "The otoliths tire after one minute"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In a sustained constant-rate turn the fluid in the semicircular canals reaches the canal's speed, so no motion is sensed, which sets up the graveyard spiral and Coriolis illusion."
+  },
+  {
+    "id": "FAAIFR-D-017",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Descent rate",
+    "stem": "About what descent rate holds a 3-degree glide path at 90 knots groundspeed?",
+    "options": [
+      "About 320 fpm",
+      "About 380 fpm",
+      "About 480 fpm"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A 3-degree path is about 318 feet per NM. At 90 knots, 1.5 NM per minute, that is about 477 fpm; a quick check is groundspeed x 5, or 450.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-D-018",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Instrument rating experience",
+    "stem": "The 3 hours of instrument training before the practical test must fall within what time?",
+    "options": [
+      "2 calendar months",
+      "6 calendar months",
+      "60 days"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "61.65(d)(2)(i) requires 3 hours of instrument flight training with an authorized instructor within 2 calendar months before the practical test.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-D-019",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Freezing level",
+    "stem": "On a climb through cloud, at what outside air temperature should you first expect structural icing?",
+    "options": [
+      "Only below minus 40 degrees C",
+      "At 0 degrees C or colder",
+      "Only below minus 15 degrees C"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Structural ice can form whenever the airframe is at or below freezing in visible moisture, starting at 0 degrees C. Below about minus 40 degrees C water is almost always frozen already."
+  },
+  {
+    "id": "FAAIFR-D-020",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "SPECI",
+    "stem": "A SPECI is issued when the surface visibility:",
+    "options": [
+      "Rises above 10 SM in clear air",
+      "Drops below an approach minimum",
+      "Changes by any amount at all"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The SPECI criteria include visibility dropping below 3, 2, 1, 1/2 or 1/4 SM or the lowest published approach minimum, so pilots learn of the change at once."
+  },
+  {
+    "id": "FAAIFR-D-021",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ice protection",
+    "stem": "Pneumatic deice boots shed ice by:",
+    "options": [
+      "Spraying a glycol-based fluid",
+      "Inflating to crack it off",
+      "Heating the leading edge"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Boots inflate briefly, changing the leading edge shape so accreted ice cracks and is carried away by the airflow. Heat and fluid are anti-ice methods."
+  },
+  {
+    "id": "FAAIFR-D-022",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "VOT",
+    "stem": "With a VOT tuned and the CDI centered, the OBS should read 0 degrees with which flag?",
+    "options": [
+      "TO",
+      "OFF",
+      "FROM"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A VOT radiates the 360 radial in all directions, so a centered needle should show 0 degrees FROM or 180 degrees TO."
+  },
+  {
+    "id": "FAAIFR-D-023",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Holding timing",
+    "stem": "When does timing of the outbound leg start?",
+    "options": [
+      "Over or abeam the fix, whichever is later",
+      "When the needle centers on the inbound course",
+      "When the turn outbound starts"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AIM 5-3-8: outbound timing begins over or abeam the fix, whichever occurs later; if abeam can't be found, start when the turn outbound is complete."
+  },
+  {
+    "id": "FAAIFR-D-024",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Visual illusions",
+    "stem": "At night, a single light stared at for some seconds seems to move. What is this?",
+    "options": [
+      "Flicker vertigo",
+      "False horizon",
+      "Autokinesis"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Autokinesis makes a stationary light appear to move in the dark. Keep scanning and refer to the instruments."
+  },
+  {
+    "id": "FAAIFR-D-025",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Glide slope out",
+    "stem": "The glide slope fails on an ILS. Which minimums do you use?",
+    "options": [
+      "The circling DA for the runway",
+      "The LOC minimums as an MDA",
+      "The ILS DA plus 200 feet"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Without the glide slope the approach becomes a localizer approach, flown to the published LOC minimums, an MDA, with stepdown altitudes observed."
+  },
+  {
+    "id": "FAAIFR-D-026",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Training devices",
+    "stem": "May the six approaches, holding and tracking for 61.57(c) be flown in an aviation training device?",
+    "options": [
+      "Yes, in a device for that category",
+      "No, only an airplane counts",
+      "Only with an instructor in the device"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "61.57(c)(2) allows a full flight simulator, flight training device or aviation training device representing the category, in any mix with flights in the aircraft."
+  },
+  {
+    "id": "FAAIFR-D-027",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Thunderstorm avoidance",
+    "stem": "When a thunderstorm can't be avoided, why fly a heading straight through it?",
+    "options": [
+      "To spend the least time in it",
+      "To keep the radar picture steady",
+      "To stay above its freezing level"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AIM 7-1-27 advises holding a heading that takes you through the storm in the least time, keeping attitude, not altitude, and turning the cockpit lights up to limit lightning blindness."
+  },
+  {
+    "id": "FAAIFR-D-028",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Winds aloft",
+    "stem": "Why do FB forecasts show no temperature at the 3,000-foot level?",
+    "options": [
+      "Temperatures start at 6,000 feet",
+      "Winds at that level are always calm",
+      "Only coastal stations report it"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The FB forecast gives no temperature for the 3,000-foot level; temperatures begin at 6,000 feet. Above 24,000 feet they are negative and the sign is left off."
+  },
+  {
+    "id": "FAAIFR-D-029",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rate instruments",
+    "stem": "What can a turn coordinator show that a turn-and-slip indicator can't?",
+    "options": [
+      "Bank angle in degrees",
+      "Rate of roll",
+      "Pitch attitude"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The turn coordinator's gyro is canted, so it senses roll rate as well as yaw. A turn-and-slip indicator shows rate of turn only."
+  },
+  {
+    "id": "FAAIFR-D-030",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "WAAS",
+    "stem": "What does WAAS add to GPS for approaches?",
+    "options": [
+      "Backup signals from VOR stations",
+      "Coverage only over the oceans",
+      "Vertical guidance and integrity"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "WAAS corrects GPS signals and monitors their integrity, making precise vertical guidance possible, as on LPV approaches, without a RAIM check."
+  },
+  {
+    "id": "FAAIFR-D-031",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Lost communications",
+    "stem": "No radio, IMC. Your clearance limit is not an approach fix and ATC gave an EFC. When do you leave it?",
+    "options": [
+      "On arrival over the fix",
+      "At the EFC time",
+      "At your filed ETA"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "91.185(c)(3)(ii): leave a clearance limit that is not an approach fix at the EFC time if one was received, then proceed to an approach fix and begin the approach near the ETA."
+  },
+  {
+    "id": "FAAIFR-D-032",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Visual illusions",
+    "stem": "Sloping cloud tops can lead you to roll the wings to match them. This is:",
+    "options": [
+      "Autokinesis",
+      "The leans",
+      "A false horizon"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A sloping cloud bank, an obscured horizon or patterns of ground lights can give a false horizon. Trust the attitude indicator."
+  },
+  {
+    "id": "FAAIFR-D-033",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Approach types",
+    "stem": "Which approach is a precision approach?",
+    "options": [
+      "LNAV/VNAV",
+      "ILS",
+      "VOR/DME"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An ILS is a precision approach. LNAV/VNAV and LPV are approaches with vertical guidance (APV), and VOR/DME is nonprecision."
+  },
+  {
+    "id": "FAAIFR-D-034",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Preflight action",
+    "stem": "Under 91.103, which item must a pilot learn about before any IFR flight?",
+    "options": [
+      "The en route center's sector frequencies",
+      "The tower's hours at every airport en route",
+      "Alternatives if it can't be completed"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "For IFR flights and flights away from the airport, 91.103 requires weather reports and forecasts, fuel requirements, alternatives if the flight cannot be completed, and known traffic delays."
+  },
+  {
+    "id": "FAAIFR-D-035",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Thunderstorm avoidance",
+    "stem": "In a thunderstorm, what does the AIM say to hold?",
+    "options": [
+      "A constant attitude",
+      "A constant airspeed of VNE",
+      "A constant altitude"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AIM 7-1-27 says to maintain a constant attitude and let the airplane ride the drafts. Chasing altitude adds stress to the airframe."
+  },
+  {
+    "id": "FAAIFR-D-036",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "TAF change groups",
+    "stem": "In a TAF, what does BECMG 1416/1418 mean?",
+    "options": [
+      "A brief change lasting under an hour",
+      "A gradual change from 1600Z to 1800Z",
+      "A 40 percent chance of the conditions"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "BECMG describes a gradual change expected during the period given, here from 1600Z to 1800Z on the 14th, with the new conditions lasting after it. TEMPO is for brief fluctuations."
+  },
+  {
+    "id": "FAAIFR-D-037",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Standard-rate turn",
+    "stem": "How long does a standard-rate 360-degree turn take?",
+    "options": [
+      "2 minutes",
+      "3 minutes",
+      "4 minutes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A standard-rate turn is 3 degrees per second: 360 / 3 = 120 seconds, or 2 minutes.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-D-038",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Navigation database",
+    "stem": "Why check the GPS database is current before an RNAV approach?",
+    "options": [
+      "Waypoints must match the chart",
+      "It updates the terrain warning colors",
+      "An old database drains the battery"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An approach can be flown only if it is retrieved from a current database, so waypoints and procedures match the published chart."
+  },
+  {
+    "id": "FAAIFR-D-039",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transponder codes",
+    "stem": "Which transponder code signals a radio failure?",
+    "options": [
+      "7500",
+      "7600",
+      "7700"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "7600 indicates lost communications, 7700 an emergency and 7500 unlawful interference. When changing codes, avoid passing through these by mistake.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-D-040",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Procedure turns",
+    "stem": "Where must a procedure turn be completed?",
+    "options": [
+      "On the charted side, within the distance",
+      "On either side, at or below the MSA",
+      "Anywhere within 25 NM of the fix"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The profile shows the distance within which the procedure turn must be completed, usually 10 NM, and the maneuver stays on the side depicted."
+  },
+  {
+    "id": "FAAIFR-D-041",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Risk assessment",
+    "stem": "In the FAA's risk matrix, which two factors set a hazard's risk?",
+    "options": [
+      "Likelihood and severity",
+      "Fuel load and distance flown",
+      "Altitude and airspeed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Risk Management Handbook assesses risk by the likelihood of an event and the severity of its outcome, from which a risk level follows."
+  },
+  {
+    "id": "FAAIFR-D-042",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Malfunction report",
+    "stem": "Which item must a 91.187 report of failed navigation equipment include?",
+    "options": [
+      "How far IFR capability is impaired",
+      "The time the failure first began",
+      "Who last serviced the failed equipment"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "91.187 requires the aircraft identification, equipment affected, degree to which IFR capability is impaired, and the nature and extent of assistance desired from ATC."
+  },
+  {
+    "id": "FAAIFR-D-043",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Turbulence",
+    "stem": "Clear air turbulence is most often found:",
+    "options": [
+      "Near the jet stream",
+      "Over calm warm oceans",
+      "Inside stratus layers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Clear air turbulence occurs in strong wind shear without cloud, most often near the jet stream and on its cold side, and near upper troughs."
+  },
+  {
+    "id": "FAAIFR-D-044",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "PIREPs",
+    "stem": "On an IFR flight, why give ATC a PIREP of ice?",
+    "options": [
+      "Forecasters can't measure it directly",
+      "It closes the airway to other traffic",
+      "It cancels the related AIRMET"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Icing, turbulence, cloud tops and bases are rarely observed any other way. AIM 7-1 asks pilots to report them, and 91.183 requires reports of unforecast weather."
+  },
+  {
+    "id": "FAAIFR-D-045",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Standard-rate turn",
+    "stem": "Using 15 percent of true airspeed, about what bank gives a standard-rate turn at 120 knots?",
+    "options": [
+      "12 degrees",
+      "15 degrees",
+      "18 degrees"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The handbook rule of thumb is 15 percent of TAS: 0.15 x 120 = 18 degrees, or 120 / 10 = 12 plus half of that, 6, for 18.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-D-046",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "ILS components",
+    "stem": "Under 91.175, which may substitute for the ILS outer marker?",
+    "options": [
+      "A DME fix in the procedure",
+      "A VOR radial chosen by the pilot",
+      "The middle marker"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "91.175(k) lists substitutes for the outer marker: compass locator, PAR or ASR, DME, VOR or NDB fixes authorized in the procedure, or a suitable RNAV fix."
+  },
+  {
+    "id": "FAAIFR-D-047",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Required reports",
+    "stem": "Your true airspeed differs from the filed TAS. When must you tell ATC?",
+    "options": [
+      "Only when it exceeds 50 knots",
+      "At any change of 2 knots or more",
+      "At 5 percent or 10 knots"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AIM 5-3-3 requires a report when the average TAS at cruise varies from the filed value by 5 percent or 10 knots, whichever is greater."
+  },
+  {
+    "id": "FAAIFR-D-048",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Visual references",
+    "stem": "Which is NOT one of the visual references 91.175 lists for descending below DA?",
+    "options": [
+      "Threshold markings",
+      "Taxiway centerline lights",
+      "Visual glideslope indicator"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "91.175(c)(3) lists the approach lights, threshold, its markings and lights, REILs, visual glideslope indicator, touchdown zone and its lights, and the runway with its markings and lights. Taxiway lights aren't on the list."
+  },
+  {
+    "id": "FAAIFR-D-049",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Automation",
+    "stem": "After selecting an autopilot mode, what guards against mode confusion?",
+    "options": [
+      "Confirm it on the annunciator",
+      "Look at the moving map only",
+      "Wait for ATC to point out errors"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Check the mode annunciator after every selection to confirm the autopilot is doing what you asked, and be ready to hand-fly if it isn't."
+  },
+  {
+    "id": "FAAIFR-D-050",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Emergency priority",
+    "stem": "ATC gave you priority in an emergency, though you broke no rule. When is a written report due within 48 hours?",
+    "options": [
+      "When ATC asks for one",
+      "Always, to the FSDO",
+      "Only if you declared Mayday"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "91.123(d) requires a detailed report within 48 hours to the ATC facility manager only if ATC requests it."
+  },
+  {
+    "id": "FAAIFR-D-051",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Low-level wind shear",
+    "stem": "On a clear night, a strong radiation inversion with strong winds above it can cause:",
+    "options": [
+      "Icing near the ground in clear air",
+      "A steady headwind all the way down",
+      "Wind shear near the inversion top"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Below a strong surface inversion the air is calm, while winds above may be strong. Climbing or descending through the inversion top can bring a sudden change in airspeed."
+  },
+  {
+    "id": "FAAIFR-D-052",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Surface analysis",
+    "stem": "On a surface analysis chart, a blue line with triangles shows:",
+    "options": [
+      "A cold front",
+      "A warm front",
+      "A stationary front"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cold fronts are blue lines with triangles pointing the way they move. Warm fronts are red with semicircles, and stationary fronts alternate the two."
+  },
+  {
+    "id": "FAAIFR-D-053",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scanning errors",
+    "stem": "A pilot relies on the VSI alone to hold altitude. Which scan error is that?",
+    "options": [
+      "Fixation",
+      "Emphasis",
+      "Omission"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Leaning on one instrument that seems easy to read, instead of the combination needed, is emphasis. The VSI lags and can't hold altitude by itself."
+  },
+  {
+    "id": "FAAIFR-D-054",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Back course",
+    "stem": "On a localizer back course with a conventional CDI, how do you correct?",
+    "options": [
+      "Away from the needle",
+      "Toward the needle",
+      "By centering the OBS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Flying the back course with a conventional CDI gives reverse sensing, so correct away from the needle. An HSI set to the front course reads normally."
+  },
+  {
+    "id": "FAAIFR-D-055",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Non-radar reports",
+    "stem": "Outside radar contact, which extra report does the AIM require on a nonprecision approach?",
+    "options": [
+      "Leaving the FAF inbound",
+      "Turning base for the runway",
+      "Seeing the approach lights"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AIM 5-3-3 lists added non-radar reports: leaving the FAF inbound on a nonprecision approach (or the outer marker on a precision approach) and corrected estimates off by more than 2 minutes."
+  },
+  {
+    "id": "FAAIFR-D-056",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Circling",
+    "stem": "When may you leave the MDA while circling to land?",
+    "options": [
+      "When a normal descent is possible",
+      "As soon as any airport light is seen",
+      "After one full circuit of the field"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "91.175(c)(1) allows descent below MDA only when the airplane is continuously in a position to descend to the intended runway at a normal rate with normal maneuvers."
+  },
+  {
+    "id": "FAAIFR-D-057",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Using resources",
+    "stem": "Overloaded in IMC, how can single-pilot resource management help?",
+    "options": [
+      "Turn off the autopilot to stay busy",
+      "Stop talking to ATC until things settle",
+      "Ask ATC for a delay or vectors"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SRM means using every resource. ATC can give holding, delay vectors or a different approach to reduce workload."
+  },
+  {
+    "id": "FAAIFR-D-058",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Supplemental oxygen",
+    "stem": "Between 12,500 and 14,000 feet cabin altitude, the required crew must use oxygen for time at those altitudes over:",
+    "options": [
+      "30 minutes",
+      "45 minutes",
+      "60 minutes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "91.211(a)(1): above 12,500 up to 14,000 feet MSL, the required crew must use oxygen for any part of the flight there longer than 30 minutes. Above 14,000 feet it is the entire time.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-D-059",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Volcanic ash",
+    "stem": "Why must volcanic ash clouds be avoided?",
+    "options": [
+      "It raises the stall speed slightly",
+      "It causes only light rime icing",
+      "It can stop the engines"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ash melts in hot engine sections and can flame out engines, abrades windscreens and blocks pitot tubes. It is a SIGMET hazard and should never be entered."
+  },
+  {
+    "id": "FAAIFR-D-060",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Convective outlook",
+    "stem": "On the SPC convective outlook, which risk is higher than SLGT?",
+    "options": [
+      "ENH",
+      "TSTM",
+      "MRGL"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The categories in rising order are TSTM (general thunder), MRGL, SLGT, ENH, MDT and HIGH."
+  },
+  {
+    "id": "FAAIFR-D-061",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Unusual attitudes",
+    "stem": "On partial panel, how can you tell that pitch is level during a recovery?",
+    "options": [
+      "The heading stops changing",
+      "The ball centers in the inclinometer",
+      "Airspeed and altimeter stop moving"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With the attitude indicator out, level pitch shows when the airspeed indicator and altimeter needles stop and reverse. The turn coordinator and ball show bank and coordination."
+  },
+  {
+    "id": "FAAIFR-D-062",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DME",
+    "stem": "What does DME measure?",
+    "options": [
+      "Radial from the station",
+      "Ground distance to the runway",
+      "Slant range to the station"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DME measures the line-of-sight slant range from the airplane to the ground station, not the horizontal distance over the ground."
+  },
+  {
+    "id": "FAAIFR-D-063",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "VFR-on-top",
+    "stem": "Under a VFR-on-top authorization, which rule still applies?",
+    "options": [
+      "Class A airspace entry",
+      "Your filed IFR altitude",
+      "Minimum IFR altitudes"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AIM 4-4-8: VFR-on-top pilots fly VFR altitudes and cloud clearances but must still follow IFR rules such as minimum IFR altitudes, reports and the clearance. It is not allowed in Class A."
+  },
+  {
+    "id": "FAAIFR-D-064",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Visual approach",
+    "stem": "On a visual approach, what must you have in sight?",
+    "options": [
+      "The final approach fix marker",
+      "The runway centerline lights",
+      "The airport or the aircraft ahead"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AIM 5-4-23: a visual approach needs the airport or the preceding identified aircraft in sight, and you proceed clear of clouds."
+  },
+  {
+    "id": "FAAIFR-D-065",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fitness for flight",
+    "stem": "Why check an over-the-counter cold medicine before an IFR flight?",
+    "options": [
+      "They make the altimeter misread",
+      "Many cause drowsiness",
+      "They lower your blood alcohol limit"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Many antihistamines and decongestants cause drowsiness or impaired judgment, which is dangerous in IMC. The IMSAFE check covers medication."
+  },
+  {
+    "id": "FAAIFR-D-066",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Altimeter inspection",
+    "stem": "An altimeter was tested only to 12,000 feet. What does 91.411 then limit?",
+    "options": [
+      "Any flight above 12,000 feet at night",
+      "VFR above 12,000 feet in Class E",
+      "IFR in controlled airspace above it"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "91.411(d) bars IFR operation in controlled airspace above the maximum altitude to which the altimeters and altitude reporting system were tested."
+  },
+  {
+    "id": "FAAIFR-D-067",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Air mass stability",
+    "stem": "Which feature points to unstable air on an IFR flight?",
+    "options": [
+      "Layered fog under an inversion",
+      "Steady drizzle and smooth air",
+      "Showers and turbulence"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Unstable air brings cumuliform clouds, showery precipitation, turbulence and good visibility outside showers. Stable air gives stratus, steady rain and smooth air."
+  },
+  {
+    "id": "FAAIFR-D-068",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ceiling",
+    "stem": "A METAR reports FEW008 SCT015 OVC030. What is the ceiling?",
+    "options": [
+      "800 feet",
+      "1,500 feet",
+      "3,000 feet"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A ceiling is the lowest broken or overcast layer, or a vertical visibility. FEW and SCT layers are not ceilings, so the ceiling is the overcast at 3,000 feet AGL.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-D-069",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Instrument redundancy",
+    "stem": "Why is a backup attitude indicator often powered differently from the primary?",
+    "options": [
+      "One failure can't take both out",
+      "It reads more accurately in turns",
+      "It is cheaper to maintain"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Using a different power source, electric instead of vacuum or a separate battery, means a single vacuum or electrical failure leaves one attitude source working."
+  },
+  {
+    "id": "FAAIFR-D-070",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Changeover point",
+    "stem": "A COP is charted between two VORs. What should you do there?",
+    "options": [
+      "Begin a climb to the next MEA",
+      "Report the fix to ATC",
+      "Change to the VOR ahead"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A charted changeover point marks where to switch to the facility ahead because the one behind can't be relied on beyond it."
+  },
+  {
+    "id": "FAAIFR-D-071",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deviation in emergency",
+    "stem": "You deviate from a clearance to avoid a TCAS resolution advisory. What must you do?",
+    "options": [
+      "File a NASA report within 10 days",
+      "Tell ATC as soon as possible",
+      "Squawk 7700 until landing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "91.123(c): a pilot who deviates from a clearance in an emergency or in response to a TCAS RA must notify ATC of the deviation as soon as possible."
+  },
+  {
+    "id": "FAAIFR-D-072",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "GPS approach",
+    "stem": "Your GPS loses integrity before the final approach waypoint on an LNAV approach. What should you do?",
+    "options": [
+      "Don't continue; tell ATC",
+      "Continue, it's only a warning",
+      "Descend to the MDA and look"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Without integrity monitoring the GPS position can't be trusted for the approach. Before the FAWP, don't start the final approach; tell ATC and get another plan."
+  },
+  {
+    "id": "FAAIFR-D-073",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrHuman",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Night vision",
+    "stem": "According to the AIM, above about what altitude does lack of oxygen begin to dim night vision?",
+    "options": [
+      "5,000 feet",
+      "10,000 feet",
+      "12,500 feet"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AIM 8-1-2 notes that night vision can be significantly reduced from as low as 5,000 feet without supplemental oxygen.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-D-074",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrRegs",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transponder inspection",
+    "stem": "How often must the transponder be tested and inspected under 91.413?",
+    "options": [
+      "Every 24 calendar months",
+      "At each annual inspection",
+      "Every 12 calendar months"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "91.413 requires the ATC transponder to have been tested and inspected within the preceding 24 calendar months, and after any work that could cause a data correspondence error."
+  },
+  {
+    "id": "FAAIFR-D-075",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWeather",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Frontal passage",
+    "stem": "Which pair of changes shows that a front has passed?",
+    "options": [
+      "Steady pressure and steady temperature",
+      "Rising humidity and calm winds",
+      "Wind shift and temperature change"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A front is a boundary between air masses, so its passage brings a shift in wind direction and a change in temperature, dewpoint and pressure trend."
+  },
+  {
+    "id": "FAAIFR-D-076",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrWxServices",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "LLWS alerts",
+    "stem": "After a report of wind shear, how long do ATIS broadcasts keep the alert?",
+    "options": [
+      "5 minutes",
+      "10 minutes",
+      "20 minutes"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Aviation Weather Handbook notes that LLWS or microburst information stays on the ATIS for 20 minutes after the last report.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-D-077",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrInstruments",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Gyroscopic principles",
+    "stem": "Which property of a gyro lets the attitude indicator hold its plane of rotation?",
+    "options": [
+      "Centripetal force",
+      "Rigidity in space",
+      "Precession"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A spinning rotor resists changes to its plane of rotation, which is rigidity in space. Precession is the deflection 90 degrees from an applied force and causes drift."
+  },
+  {
+    "id": "FAAIFR-D-078",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrNav",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Course intercept",
+    "stem": "Intercepting a VOR course inbound, a 30-degree intercept angle is used. Why turn before the needle centers?",
+    "options": [
+      "To reduce DME slant error",
+      "To keep the TO flag showing",
+      "To avoid overshooting"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Leading the turn as the needle starts to move keeps the airplane from overshooting, so it rolls out on the course rather than beyond it."
+  },
+  {
+    "id": "FAAIFR-D-079",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrAtc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Departure procedures",
+    "stem": "A SID climb gradient is 300 feet per NM and your groundspeed is 120 knots. About what climb rate is needed?",
+    "options": [
+      "360 fpm",
+      "400 fpm",
+      "600 fpm"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Climb rate equals gradient times groundspeed in NM per minute: 120 knots is 2 NM per minute, so 300 x 2 = 600 fpm.",
+    "lockedOrder": true
+  },
+  {
+    "id": "FAAIFR-D-080",
+    "section": "ira",
+    "test": 0,
+    "module": 1,
+    "domain": "ifrApproaches",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Approach categories",
+    "stem": "What speed sets an airplane's approach category?",
+    "options": [
+      "Its maximum flap extension speed",
+      "Its normal cruise speed",
+      "VREF, or 1.3 VSO if none"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AIM 5-4-7: the category depends on VREF, or 1.3 times the stall speed in landing configuration at maximum landing weight if no VREF is given."
+  }
+]

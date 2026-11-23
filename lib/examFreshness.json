@@ -51,6 +51,22 @@
       "source": "https://www.nasaa.org/exams/"
     },
     {
+      "exam": "series6",
+      "date": "2027-02-01",
+      "kind": "law",
+      "what": "FINRA Rule 2210 amendment (Regulatory Notice 26-24) allows specified projections of performance and targeted returns in communications.",
+      "action": "Consider items on the new projection exception once FINRA's Series 6 outline reflects it; until then no item asks whether projections are allowed.",
+      "source": "https://www.finra.org/rules-guidance/notices/26-24"
+    },
+    {
+      "exam": "series6",
+      "date": "2027-01-19",
+      "kind": "format",
+      "what": "FINRA cuts retake waits to 15 days after a first or second failure and 60 days after a third (Regulatory Notice 26-18).",
+      "action": "Update the retake line in lib/examCosts.json and any landing copy that gives the old waits.",
+      "source": "https://www.finra.org/registration-exams-ce/qualification-exams/series6"
+    },
+    {
       "exam": "series66",
       "date": "2027-02-01",
       "kind": "law",

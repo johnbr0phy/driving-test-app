@@ -1070,6 +1070,16 @@ export const en = {
     s66Securities: "Securities, Issuers & Remedies",
     s66Communication: "Communication with Clients",
     s66Ethics: "Ethical Practices & Fiduciary Obligations",
+    // series6
+    s6Comms: "Communications with the Public",
+    s6Offerings: "New Issues & Offering Rules",
+    s6Accounts: "Account Types & Retirement Plans",
+    s6Profile: "Customer Profile, Suitability & Reg BI",
+    s6Investments: "Securities, Analysis & Taxes",
+    s6Funds: "Investment Companies",
+    s6Variable: "Variable Contracts & 529 Plans",
+    s6Disclosure: "Disclosures, Records & Transfers",
+    s6Trading: "Orders, Settlement & Complaints",
     // acecpt
     aceScreening: "Health Screening & Readiness to Change",
     aceAssessment: "Posture, Movement & Fitness Assessments",

@@ -1526,5 +1526,13 @@
       "pr": 982,
       "findings": 5
     }
+  ],
+  "eppp": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 981,
+      "findings": 17
+    }
   ]
 }

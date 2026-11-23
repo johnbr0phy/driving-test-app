@@ -7,6 +7,9 @@ const { searchAllTests } = require("../lib/testSearch.ts");
 // The daily search-gaps run (.github/workflows/search-gaps.yml) adds a case here
 // for every alias it wires, so an alias never quietly stops working.
 const CASES = [
+  ["red seal refrigeration", "CA", "carsrefrig"],
+  ["313a", "CA", "carsrefrig"],
+  ["refrigeration mechanic exam", "CA", "carsrefrig"],
   ["frm exam", "US", "frm1"],
   ["frm part 1", "GB", "frm1"],
   ["financial risk manager exam", "IN", "frm1"],

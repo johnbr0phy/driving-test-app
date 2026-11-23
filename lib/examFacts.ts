@@ -120,6 +120,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the Red Seal Hairstylist exam breakdown and the Red Seal Exam Preparation Guide, checked November 2026",
     source: { name: "Red Seal: Hairstylist exam information", url: "https://red-seal.ca/eng/trades/hairstylists/exam-information.shtml" },
   },
+  carsrefrig: {
+    answer:
+      "The Red Seal Refrigeration and Air Conditioning Mechanic exam is the interprovincial certificate of qualification exam for the trade in Canada (trade code 313A in Ontario). It has 125 multiple-choice questions with four options each, a pass mark of 70%, and four hours to write it. Red Seal's exam breakdown spreads the questions over six Major Work Activities, led by maintenance and service (31 questions), installation (26) and commissioning (22). Red Seal says new exams on the 2024 standard are under development, so check with your apprenticeship authority which version you will write.",
+    rows: [
+      { label: "Questions", value: "125 multiple choice, 4 options each" },
+      { label: "Time", value: "4 hours" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Largest areas", value: "Maintenance and service 31, installation 26, commissioning 22" },
+      { label: "Other areas", value: "Routine trade activities 20, planning installation 16, common occupational skills 10" },
+      { label: "Standard", value: "Red Seal Occupational Standard for Refrigeration and Air Conditioning Mechanic" },
+      { label: "Booked through", value: "Your provincial or territorial apprenticeship authority" },
+    ],
+    basedOn: "the Red Seal exam information page for Refrigeration and Air Conditioning Mechanic and the Red Seal Exam Preparation Guide, checked November 2026",
+    source: { name: "Red Seal: Refrigeration and Air Conditioning Mechanic exam information", url: "https://red-seal.ca/eng/trades/refrig-ac-mech/exam-information.shtml" },
+  },
   carscook: {
     answer:
       "The Red Seal Cook exam is the interprovincial certificate of qualification exam for cooks in Canada (trade code 415A in Ontario). It has 150 multiple-choice questions with four options each, a pass mark of 70%, and up to four hours to write it. The questions follow the Red Seal Occupational Standard for Cook across 13 Major Work Activities, led by meats, game, poultry and variety meats (16 questions) and fish and seafood (15).",

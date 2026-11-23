@@ -366,6 +366,7 @@ import "./cahambasic";
 import "./hamgeneral";
 import "./cadronebasic";
 import "./cadroneadv";
+import "./nzfirstaid";
 import "./carscook";
 import "./carshair";
 import "./excpt";

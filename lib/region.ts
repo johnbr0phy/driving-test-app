@@ -166,6 +166,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   frmoto: "FR",
   nzrealestate: "NZ",
   nzsecurity: "NZ",
+  nzfirstaid: "NZ",
   chtheory: "CH",
   plteoria: "PL", plcpc: "PL", plaplik: "PL", pllek: "PL", plbron: "PL",
   nltheorie: "NL", nlbrom: "NL", nlmoto: "NL", nlvca: "NL", nlwft: "NL",
@@ -268,6 +269,7 @@ export const NON_DRIVING_TESTS = new Set([
   "iesafepass", "iespsv", "ieqfa", "iepsa", "nzsfe", "nzensf", "nziqn", "sgm5", "sgvl",
   "nzrealestate",
   "nzsecurity",
+  "nzfirstaid",
 ]);
 
 /** Every test not listed above is a US exam. */

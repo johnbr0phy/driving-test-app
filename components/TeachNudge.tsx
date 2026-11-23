@@ -110,7 +110,7 @@ const TEACHER_LED = new Set([
   "cdm", "cst", "crcst", "htl", "cna", "ptcb", "phleb", "ccma", "cet", "danb", "cpr", "nclex", "nclexpn", "emt", "aemt", "paramedic", "teas", "hesi", "vtne",
   "ukfaw", "ukcare",
   "rexpn", "capsw", "casfa",
-  "aufirstaid", "ausecurity",
+  "aufirstaid", "ausecurity", "nzfirstaid",
   "gulfrn",
   "aedhapharm",
   // High school, military and college classes

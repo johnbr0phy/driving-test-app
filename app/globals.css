@@ -5512,6 +5512,19 @@
     --brand-border-light: 287 25% 89%;
     --brand-gradient-to: 302 40% 95%;
   }
+  /* NZ workplace first aid theme: deep first aid crimson */
+  [data-theme="nzfirstaid"] {
+    --brand: 2 70% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 2 65% 95%;
+    --brand-hover: 2 70% 10%;
+    --brand-dark: 2 70% 9%;
+    --brand-darker: 2 70% 5%;
+    --brand-muted: 2 15% 70%;
+    --brand-border: 2 20% 80%;
+    --brand-border-light: 2 20% 89%;
+    --brand-gradient-to: 0 0% 98%;
+  }
   /* Transport Canada Advanced Exam (drone) theme: deep maple wine */
   [data-theme="cadroneadv"] {
     --brand: 344 35% 16%;
@@ -12422,6 +12435,18 @@
     --brand-muted: 287 20% 45%;
     --brand-dark: 287 45% 65%;
     --brand-darker: 287 40% 78%;
+  }
+
+  .dark [data-theme="nzfirstaid"] {
+    --brand: 2 70% 50%;
+    --brand-hover: 2 70% 42%;
+    --brand-light: 2 65% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 2 20% 24%;
+    --brand-border: 2 20% 34%;
+    --brand-muted: 2 15% 45%;
+    --brand-dark: 2 70% 65%;
+    --brand-darker: 2 70% 78%;
   }
 
   .dark [data-theme="cadroneadv"] {

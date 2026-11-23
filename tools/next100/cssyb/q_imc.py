@@ -1,6 +1,6 @@
 # Section V. Improve and Control Phases (14 of 80 scored; 9 per Tigertest test)
 CAT = "cssybImproveControl"; SEG = "IMC"
-assert 12000 / 3000 == 4
+assert 15000 / 2500 == 6
 assert 25000 - 20000 == 5000
 assert 8000 / 2000 == 4 and 3000 / 1500 == 2
 assert round(30.0 + 0.729 * 2.0, 2) == 31.46 and round(30.0 + 0.577 * 2.0, 2) == 31.15 and round(30.0 - 0.729 * 2.0, 2) == 28.54
@@ -39,9 +39,9 @@ Q = [
 ("How does PDCA support continuous improvement?",
  "Its cycle repeats again and again", ["It runs once per project", "It replaces DMAIC on every project", "It is used only in Control"],
  "Each turn of the cycle builds on the last, so improvement keeps going rather than stopping after one change."),
-("A fix costs $12,000 and saves $3,000 a month. What is the payback period?",
- "4 months", ["3 months", "9 months", "36 months"],
- "Payback = cost / monthly saving = 12,000 / 3,000 = 4 months."),
+("A fix costs $15,000 and saves $2,500 a month. What is the payback period?",
+ "6 months", ["5 months", "12 months", "72 months"],
+ "Payback = cost / monthly saving = 15,000 / 2,500 = 6 months. Multiplying by 12 as if the saving were yearly gives 72."),
 ("A change costs $20,000 and saves $25,000 in its first year. What is the first-year net benefit?",
  "$5,000", ["$45,000", "$25,000", "$1,250"],
  "Net benefit = savings - cost = 25,000 - 20,000 = 5,000. Adding them gives 45,000, which counts the cost as a gain."),

@@ -2454,14 +2454,14 @@
     "state": "ALL",
     "questionId": "CSSYB-IMC-012",
     "category": "cssybImproveControl",
-    "question": "A fix costs $12,000 and saves $3,000 a month. What is the payback period?",
-    "optionA": "3 months",
-    "optionB": "9 months",
-    "optionC": "36 months",
-    "optionD": "4 months",
+    "question": "A fix costs $15,000 and saves $2,500 a month. What is the payback period?",
+    "optionA": "5 months",
+    "optionB": "12 months",
+    "optionC": "72 months",
+    "optionD": "6 months",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Payback = cost / monthly saving = 12,000 / 3,000 = 4 months."
+    "explanation": "Payback = cost / monthly saving = 15,000 / 2,500 = 6 months. Multiplying by 12 as if the saving were yearly gives 72."
   },
   {
     "type": "CSSYB",

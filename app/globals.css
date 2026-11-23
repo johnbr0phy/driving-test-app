@@ -4685,6 +4685,20 @@
     --brand-gradient-to: 225 55% 96%;
   }
 
+  /* Singapore CMFAS Module 9A theme */
+  [data-theme="sgm9a"] {
+    --brand: 168 55% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 168 55% 96%;
+    --brand-hover: 168 55% 11%;
+    --brand-dark: 168 55% 10%;
+    --brand-darker: 168 50% 6%;
+    --brand-muted: 168 25% 70%;
+    --brand-border: 168 25% 80%;
+    --brand-border-light: 168 22% 89%;
+    --brand-gradient-to: 173 55% 96%;
+  }
+
   /* Singapore taxi and private hire vocational licence (TDVL / PDVL) theme */
   [data-theme="sgvl"] {
     --brand: 290 55% 22%;
@@ -11691,6 +11705,18 @@
     --brand-muted: 220 25% 45%;
     --brand-dark: 220 55% 65%;
     --brand-darker: 220 50% 78%;
+  }
+
+  .dark [data-theme="sgm9a"] {
+    --brand: 168 55% 33.1%;
+    --brand-hover: 168 55% 25.1%;
+    --brand-light: 168 45% 13%;
+    --brand-gradient-to: 173 40% 11%;
+    --brand-border-light: 168 22% 24%;
+    --brand-border: 168 25% 34%;
+    --brand-muted: 168 25% 45%;
+    --brand-dark: 168 55% 65%;
+    --brand-darker: 168 50% 78%;
   }
 
   .dark [data-theme="sgvl"] {

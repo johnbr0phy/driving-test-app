@@ -3165,6 +3165,13 @@ export const vi: TranslationKeys = {
     sgm9Service: "Underwriting, Policy Services & Claims",
     sgm9Law: "Insurance Contract & Law of Agency",
     sgm9TaxNom: "Income Tax & Nominations",
+    // sgm9a
+    sgm9aIntro: "Introduction to Structured Products",
+    sgm9aRisk: "Risk Considerations of Structured Products",
+    sgm9aDeriv: "Understanding Derivatives",
+    sgm9aSilp: "Introduction to Structured ILPs",
+    sgm9aFund: "Portfolio Insurance & Fund Rules",
+    sgm9aCase: "Case Studies",
     // sgvl
     sgvlRoadSafety: "On-the-Road Safety",
     sgvlPassenger: "Passenger Engagement & Handling",

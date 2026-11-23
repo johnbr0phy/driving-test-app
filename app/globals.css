@@ -5569,6 +5569,20 @@
     --brand-gradient-to: 20 25% 96%;
   }
 
+  /* Microsoft AZ-104 theme: deep Azure navy (v2 exam; matches lib/v2/exams/az104.ts theme) */
+  [data-theme="az104"] {
+    --brand: 221 85% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 221 85% 96%;
+    --brand-hover: 221 85% 11%;
+    --brand-dark: 221 85% 10%;
+    --brand-darker: 221 80% 7%;
+    --brand-muted: 221 30% 70%;
+    --brand-border: 221 30% 80%;
+    --brand-border-light: 221 30% 89%;
+    --brand-gradient-to: 200 50% 95%;
+  }
+
   /* Microsoft SC-200 theme: deep indigo (v2 exam; matches lib/v2/exams/sc200.ts theme) */
   [data-theme="sc200"] {
     --brand: 249 45% 22%;
@@ -12033,6 +12047,18 @@
     --brand-muted: 5 12% 45%;
     --brand-dark: 5 15% 65%;
     --brand-darker: 5 18% 78%;
+  }
+
+  .dark [data-theme="az104"] {
+    --brand: 221 85% 50%;
+    --brand-hover: 221 85% 42%;
+    --brand-light: 221 45% 13%;
+    --brand-gradient-to: 200 40% 11%;
+    --brand-border-light: 221 30% 24%;
+    --brand-border: 221 30% 34%;
+    --brand-muted: 221 30% 45%;
+    --brand-dark: 221 85% 65%;
+    --brand-darker: 221 80% 78%;
   }
 
   .dark [data-theme="sc200"] {

@@ -1,0 +1,4421 @@
+[
+  {
+    "id": "AZ104-T1-001",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Groups",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Contoso wants a group whose members are added automatically from each user's department attribute. Which license does this need?",
+    "explanation": "Dynamic membership groups need Microsoft Entra ID P1 (or higher) for each user who is a member. The Free tier supports only assigned membership.",
+    "options": [
+      "Microsoft Entra ID P1",
+      "Microsoft Entra ID Free",
+      "Azure subscription Owner role",
+      "Microsoft Entra External ID"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T1-002",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Metrics",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "For how many days does Azure Monitor keep platform metrics? Type the number only.",
+    "explanation": "Platform metrics are kept for 93 days. To keep or query them longer, send them to a Log Analytics workspace with a diagnostic setting.",
+    "numeric": {
+      "answers": [
+        "93"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "AZ104-T1-003",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "ARM templates",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A Complete mode deployment to RG1 omits RG1's existing storage account. What happens to that account?",
+    "explanation": "Complete mode deletes resources in the resource group that aren't in the template. Incremental mode, the default, leaves them alone.",
+    "options": [
+      "It is left unchanged",
+      "The deployment fails",
+      "It is deleted",
+      "It is added to the template"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T1-004",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Availability sets",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "What is the largest number of fault domains an availability set can have? Type the number only.",
+    "explanation": "An availability set has up to three fault domains, depending on the region, and up to 20 update domains.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "AZ104-T1-005",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "NSG rules",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An NSG gets a custom rule at priority 4000 denying all inbound traffic from VirtualNetwork. Can VMs in the same VNet still reach each other?",
+    "explanation": "Lower priority numbers are processed first, so the custom deny at 4000 matches before the default AllowVnetInBound rule at 65000.",
+    "options": [
+      "Yes, VNet traffic skips NSGs",
+      "Yes, AllowVnetInBound always wins",
+      "No, 4000 is processed before 65000",
+      "Only on ports below 1024"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T1-006",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Azure Policy",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Requests to create resources outside East US and West Europe must fail. Which policy effect does this?",
+    "explanation": "Deny stops a create or update request that breaks the rule. Audit only records non-compliance, and Append and Modify change properties rather than block the request.",
+    "options": [
+      "Append",
+      "Modify",
+      "Audit",
+      "Deny"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T1-007",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Storage tiers",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A storage account uses ZRS, and an attempt to move blobs to the Archive tier fails. What is the cause?",
+    "explanation": "The archive tier is supported only on LRS, GRS and RA-GRS accounts, not on ZRS, GZRS or RA-GZRS. Moving to a supported redundancy setting fixes it.",
+    "options": [
+      "Archive needs LRS, GRS or RA-GRS",
+      "Archive needs versioning on",
+      "Archive needs a hierarchical namespace",
+      "Archive needs a premium block blob account"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T1-008",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104StorageAccess",
+    "skill": "SAS",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which kind of shared access signature is signed with Microsoft Entra credentials rather than a storage account key?",
+    "explanation": "A user delegation SAS is signed with a user delegation key obtained with Entra credentials. Service and account SAS tokens are signed with the account key.",
+    "options": [
+      "Account SAS",
+      "User delegation SAS",
+      "Service SAS with a stored policy",
+      "Service SAS"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T1-009",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Vnet",
+    "skill": "Subnets",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "How many IP addresses can VMs use in a /28 subnet in Azure? Type the number only.",
+    "explanation": "A /28 has 16 addresses, and Azure reserves five in every subnet (the first four and the last), leaving 11.",
+    "numeric": {
+      "answers": [
+        "11"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "AZ104-T1-010",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Licenses",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A direct license assignment to a new cloud user fails. Which property must be filled in first?",
+    "explanation": "A license can't be assigned to a user who has no usage location, because some services aren't offered in every country. Job title and department are optional profile fields.",
+    "options": [
+      "Department",
+      "Usage location",
+      "Manager",
+      "Job title"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T1-011",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Log settings",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A key vault's audit events must be searchable with KQL alongside other logs. What should be configured?",
+    "explanation": "Resource logs aren't collected until a diagnostic setting routes them somewhere. A Log Analytics workspace makes them queryable with KQL.",
+    "options": [
+      "A diagnostic setting to a workspace",
+      "A Connection monitor test on the vault",
+      "A metric alert rule",
+      "An action group"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T1-012",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "Bicep",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An admin has an existing ARM JSON template and wants a Bicep file to start from. Which command does that?",
+    "explanation": "az bicep decompile converts ARM JSON into Bicep. az bicep build goes the other way, compiling Bicep into JSON.",
+    "options": [
+      "$\\texttt{az bicep build}$",
+      "$\\texttt{az group export}$",
+      "$\\texttt{az bicep build-params}$",
+      "$\\texttt{az bicep decompile}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T1-013",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Availability sets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An existing VM must be placed in an availability set. What has to be done?",
+    "explanation": "A VM can only join an availability set when it is created. To add an existing one, delete the VM, keep its disks, and create it again in the set.",
+    "options": [
+      "Move it into the set's resource group",
+      "Recreate the VM in the set",
+      "Resize the VM",
+      "Redeploy the VM into the set"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T1-014",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Effective rules",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A subnet NSG allows inbound TCP 80, and the NIC's NSG has only default rules. Is TCP 80 from the internet allowed?",
+    "explanation": "Inbound traffic is checked by the subnet NSG and then the NIC NSG, and both must allow it. The NIC's default DenyAllInBound blocks traffic from the internet.",
+    "options": [
+      "No, the NIC NSG blocks it",
+      "Yes, the subnet NSG allows it",
+      "Only after the VM restarts",
+      "Yes, NIC rules are skipped"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T1-015",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Resource locks",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Admins must keep changing settings on a production database, but nobody may delete it. Which lock fits?",
+    "explanation": "CanNotDelete allows reads and updates but blocks deletion. ReadOnly would also block the setting changes.",
+    "options": [
+      "CanNotDelete",
+      "An Audit policy",
+      "A deny assignment",
+      "ReadOnly"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T1-016",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Lifecycle management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A lifecycle rule must act on blobs that nobody has read for 60 days. What must be enabled first?",
+    "explanation": "Rules based on days since last access need access time tracking turned on, or the condition has no data. Rules on last modified or creation time need nothing extra.",
+    "options": [
+      "Point-in-time restore for blobs",
+      "Last access time tracking",
+      "Change feed",
+      "Blob versioning"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T1-017",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Groups",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "40 Windows laptops must go in one Microsoft Entra group for a policy. Which group type can hold devices?",
+    "explanation": "Security groups can contain users, devices and service principals. Microsoft 365 groups hold users only, so they can't target the laptops.",
+    "options": [
+      "Security",
+      "Mail-enabled Microsoft 365",
+      "Distribution",
+      "Microsoft 365"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T1-018",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Alerts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Alert notifications must be silenced during a Saturday maintenance window, while the alerts still fire. What should be used?",
+    "explanation": "Alert processing rules can suppress action groups on a schedule without changing the alert rules. Disabling the rules would stop the alerts as well.",
+    "options": [
+      "An action group",
+      "Disable each alert rule for the window",
+      "An alert processing rule",
+      "A resource lock"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T1-019",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104StorageAccess",
+    "skill": "Stored access policies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Contractors' service SAS tokens must be revoked without regenerating account keys. What should the tokens have referenced?",
+    "explanation": "A service SAS tied to a stored access policy can be revoked by changing or deleting that policy. An ad hoc SAS can only be revoked by rotating the key that signed it.",
+    "options": [
+      "A lifecycle management rule",
+      "An account SAS",
+      "A stored access policy",
+      "A SAS expiration policy"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T1-020",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Vnet",
+    "skill": "Peering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "VNet A peers with B, and B peers with C. A can't reach C. What is the simplest fix?",
+    "explanation": "Peering isn't transitive, so A and C need their own peering. Allowing forwarded traffic only helps if a network appliance in B routes the traffic.",
+    "options": [
+      "Add an NSG rule on B",
+      "Allow forwarded traffic on B",
+      "Peer A with C",
+      "Use one address space"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T1-021",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "App Service",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A web app needs a staging slot to swap into production. Which is the lowest plan tier with slots?",
+    "explanation": "Deployment slots start at the Standard tier, which allows five. Basic, Free and Shared plans have no slots.",
+    "options": [
+      "Basic",
+      "Standard",
+      "Free",
+      "Shared"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T1-022",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "VM sizes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A resize fails because the new size isn't available on the VM's current hardware cluster. What should be done?",
+    "explanation": "When the target size isn't offered on the current cluster, stopping and deallocating the VM lets Azure place it on hardware that has the size.",
+    "options": [
+      "Change its availability zone first",
+      "Detach its data disks first",
+      "Redeploy the VM, then resize",
+      "Deallocate the VM, then resize"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T1-023",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Azure Bastion",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What must the subnet for an Azure Bastion host (Basic SKU or higher) look like?",
+    "explanation": "Bastion needs a dedicated subnet named AzureBastionSubnet with a /26 or larger prefix. The Developer SKU runs without one.",
+    "options": [
+      "BastionSubnet, /26 or larger",
+      "Any name, /24 or larger",
+      "AzureBastionSubnet, /29 or larger",
+      "AzureBastionSubnet, /26 or larger"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T1-024",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "SSPR",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Fabrikam wants users to prove their identity twice before they reset their own password. Which SSPR setting controls this?",
+    "explanation": "The Authentication methods page of SSPR sets how many methods a user must pass, one or two. Registration and notification settings don't change how many checks a reset needs.",
+    "options": [
+      "Require users to register when signing in",
+      "Notify users on password resets",
+      "Days before users must re-confirm",
+      "Number of methods required to reset"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T1-025",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Tags",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Resource group RG1 has the tag CostCenter=42, but a VM created in RG1 shows no tags. Why?",
+    "explanation": "Resources don't inherit tags from their resource group or subscription. A policy such as one that inherits a tag from the resource group can add them.",
+    "options": [
+      "VMs can't hold tags",
+      "Tags reach new VMs only after a day",
+      "RG1 reached its tag limit",
+      "Tags aren't inherited"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T1-026",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Object replication",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An admin sets up object replication between two storage accounts. Which feature must be on in both accounts?",
+    "explanation": "Object replication needs blob versioning on the source and the destination, and change feed on the source only. Accounts with a hierarchical namespace aren't supported.",
+    "options": [
+      "Change feed",
+      "Blob soft delete",
+      "Blob versioning",
+      "Hierarchical namespace"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T1-027",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Alerts",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Several alert rules must email the on-call team and call a webhook. What do they share?",
+    "explanation": "An action group is a reusable list of notifications and actions, such as email, SMS, webhooks and runbooks, that alert rules call.",
+    "options": [
+      "An action group",
+      "An alert processing rule",
+      "A diagnostic setting",
+      "A data collection rule"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T1-028",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "Container registry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A container registry must replicate to two regions and be reachable through a private endpoint. Which ACR tier is needed?",
+    "explanation": "Geo-replication and private endpoints are Premium-only features of Azure Container Registry.",
+    "options": [
+      "Premium",
+      "Any tier with an add-on",
+      "Standard",
+      "Basic"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T1-029",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Disks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which managed disk type can't be used as a VM's OS disk?",
+    "explanation": "Premium SSD v2 and Ultra Disk are for data disks only. Premium SSD, Standard SSD and Standard HDD can all hold the OS.",
+    "options": [
+      "Premium SSD",
+      "Premium SSD v2",
+      "Standard HDD",
+      "Standard SSD"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T1-030",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Private endpoints",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A private endpoint was created for a storage account's blob service, but VMs still resolve its public IP. What is missing?",
+    "explanation": "VMs find the private IP through the privatelink.blob.core.windows.net private DNS zone linked to their virtual network. Without it, DNS returns the public address.",
+    "options": [
+      "A service endpoint on the subnet",
+      "A public IP on the private endpoint",
+      "A linked privatelink DNS zone",
+      "A route to the internet"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T1-031",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104StorageAccess",
+    "skill": "Firewalls and virtual networks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A storage firewall must admit VMs in subnet S1. What does S1 need for a virtual network rule?",
+    "explanation": "Virtual network rules on a storage account work with subnets that have the Microsoft.Storage service endpoint enabled. Public IPs and routes don't make a subnet eligible.",
+    "options": [
+      "A NAT gateway",
+      "A service endpoint for Storage",
+      "A public IP address on every VM's NIC",
+      "A route to the Storage public IPs"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T1-032",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Vnet",
+    "skill": "Routes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A route table must send a subnet's internet traffic through a firewall VM. Which next hop type is used?",
+    "explanation": "Virtual appliance sends traffic to the IP of a network virtual appliance such as a firewall VM.",
+    "options": [
+      "Internet",
+      "Virtual network gateway",
+      "Virtual network peering",
+      "Virtual appliance"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T1-033",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Built-in roles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician must start, stop and resize VMs but not manage their network or storage. Which role fits with least privilege?",
+    "explanation": "Virtual Machine Contributor manages virtual machines but not the network or storage account they connect to. Contributor covers every resource in the group, and the Administrator Login role only signs in to the guest OS.",
+    "options": [
+      "Contributor",
+      "Virtual Machine Administrator Login",
+      "Virtual Machine Data Access Administrator",
+      "Virtual Machine Contributor"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T1-034",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Recovery Services vault",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Azure VMs in West US must be backed up to a Recovery Services vault. Where must the vault be created?",
+    "explanation": "A Recovery Services vault protects VMs in its own region. The vault can be in a different resource group.",
+    "options": [
+      "In the VMs' region",
+      "In the same resource group",
+      "In the paired region",
+      "In any region"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T1-035",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Management groups",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new subscription is created and no default management group has been set. Where does it appear in the hierarchy?",
+    "explanation": "New subscriptions are placed under the root management group unless a different default management group is configured in the hierarchy settings.",
+    "options": [
+      "Under the root management group",
+      "In a group named Default",
+      "Outside the hierarchy",
+      "Under the newest management group"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T1-036",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Snapshots and soft delete",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A file share was deleted three days ago in an account with default settings. How can it be recovered?",
+    "explanation": "Soft delete for file shares is on by default for new accounts with 7 days of retention, so the share can be undeleted with its snapshots. The change feed covers blobs only.",
+    "options": [
+      "Rebuild the share from snapshots",
+      "Restore it from the blob change feed",
+      "It can't be, deletion is final",
+      "Undelete the share"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T1-037",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "Container Apps",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A containerized API must scale to zero when idle and add replicas when HTTP requests rise. Which service fits?",
+    "explanation": "Container Apps scale on HTTP, TCP or event rules and can scale to zero. Container Instances run container groups at a set size, and a registry only stores images.",
+    "options": [
+      "Azure Container Apps",
+      "Azure Container Instances",
+      "Azure Container Registry",
+      "App Service on a Basic plan"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T1-038",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Moving VMs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A VM and its dependent resources must be relocated to another Azure region. Which service is built for this?",
+    "explanation": "Azure Resource Mover moves resources such as VMs across regions, with their dependencies. A resource group or subscription move keeps the region.",
+    "options": [
+      "Azure Resource Mover",
+      "A resource group move",
+      "Azure Storage Explorer",
+      "Azure Advisor"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T1-039",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Azure DNS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "New VMs in VNet1 must get records in a private DNS zone automatically. What should be set on the zone's link?",
+    "explanation": "Turning on auto registration on a virtual network link makes Azure create and remove records for VMs in that VNet.",
+    "options": [
+      "A conditional forwarder",
+      "Auto registration",
+      "A CNAME record",
+      "Zone delegation"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T1-040",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Scopes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Ana has Reader on a subscription and Contributor on resource group RG1 in it. What can she do to virtual machines in RG1?",
+    "explanation": "Azure role assignments add up: the effective permissions are the union of every assignment that applies. Contributor at RG1 plus Reader inherited from the subscription lets her manage the VMs in RG1.",
+    "options": [
+      "Only read them",
+      "Change them but not read them",
+      "Neither, the roles conflict",
+      "Read and change them"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T1-041",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Backup vault",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which kind of vault is used to back up Azure Blobs and Azure Disks?",
+    "explanation": "Backup vaults cover newer workloads such as Azure Blobs, Azure Disks, Azure Database for PostgreSQL and AKS. Recovery Services vaults cover Azure VMs, SQL in VMs and Azure Files.",
+    "options": [
+      "Storage account",
+      "Recovery Services vault",
+      "Backup vault",
+      "Key vault"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T1-042",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104StorageAccess",
+    "skill": "Azure Files identity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "AD DS users must read and write files in an Azure file share. Which share-level role fits with least privilege?",
+    "explanation": "SMB Share Contributor allows read, write and delete over SMB. Elevated Contributor also lets users change Windows ACLs, which they don't need, and Reader can't write.",
+    "options": [
+      "Storage File Data Privileged Contributor",
+      "Storage File Data SMB Share Contributor",
+      "Storage Blob Data Contributor",
+      "Storage File Data SMB Share Elevated Contributor"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T1-043",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Vnet",
+    "skill": "Peering",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Peering VNet1 (10.1.0.0/16) with VNet2 (10.1.0.0/24) fails. Why?",
+    "explanation": "Peered virtual networks must have non-overlapping address spaces. Peering works within or across regions without a gateway.",
+    "options": [
+      "They are in one region",
+      "/24 is too small",
+      "The address spaces overlap",
+      "They need a VPN gateway between them"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T1-044",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Costs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When forecast spending hits 100% of a budget, a runbook must stop dev VMs. How is the runbook started?",
+    "explanation": "Budget alerts can call an action group, which can run an Automation runbook or a function. A budget on its own only notifies; it never stops resources.",
+    "options": [
+      "The budget stops the VMs itself",
+      "An Azure Advisor recommendation",
+      "An action group on the budget alert",
+      "A spending limit on the subscription"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T1-045",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A compliance rule needs infrastructure (double) encryption on a storage account. When can it be turned on?",
+    "explanation": "Infrastructure encryption adds a second layer of encryption and must be chosen when the account is created. It can't be enabled on an existing account.",
+    "options": [
+      "At any time on the Encryption page",
+      "After the access keys are rotated",
+      "Only when the account is created",
+      "Once customer-managed keys are set"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T1-046",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "App Service",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "www.contoso.com is being mapped to a web app with a CNAME. Which other DNS record proves domain ownership?",
+    "explanation": "App Service verifies a custom domain with a TXT record named asuid.<subdomain> that holds the app's verification ID.",
+    "options": [
+      "A TXT record named asuid.www",
+      "An MX record for www",
+      "A PTR record for the app",
+      "An SRV record pointing to the app"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T1-047",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Disk encryption",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Azure Disk Encryption is being set up on a VM. Where must the key vault that holds its keys be?",
+    "explanation": "Azure Disk Encryption needs the key vault in the same region and subscription as the VM. It uses BitLocker on Windows and DM-Crypt on Linux.",
+    "options": [
+      "A separate subscription",
+      "The VM's region and subscription",
+      "Any region, as long as it's one tenant",
+      "A paired region, for resilience"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T1-048",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Load balancing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A backend VM behind an Azure Load Balancer starts failing its health probe. What does the load balancer do?",
+    "explanation": "A backend that fails its probe stops receiving new connections until it passes again. The load balancer doesn't change the VM or the pool.",
+    "options": [
+      "Sends it every new flow",
+      "Removes it from the backend pool",
+      "Restarts the VM",
+      "Stops sending it new flows"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T1-049",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Built-in roles",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Is each statement about Azure built-in roles true?",
+    "explanation": "Contributor can manage resources but can't grant access. User Access Administrator manages access only. Assignments at a management group are inherited by the subscriptions, resource groups and resources under it.",
+    "rows": [
+      "A Contributor can assign roles to other users.",
+      "A User Access Administrator can grant access without managing the resources.",
+      "Reader assigned at a management group applies to its subscriptions."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      1,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T1-050",
+    "section": "az104",
+    "test": 1,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Site Recovery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An admin wants to prove Site Recovery failover works without affecting production or replication. What should be run?",
+    "explanation": "A test failover brings up VMs in the target region in a network you choose, while replication keeps running. Planned and unplanned failovers switch production.",
+    "options": [
+      "A commit on the latest point",
+      "A test failover",
+      "An unplanned failover",
+      "A planned failover"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T2-001",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "External users",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Contoso invites a partner by email so the partner can open one Azure resource. What is the userType of the new account?",
+    "explanation": "B2B collaboration invites create accounts with the userType Guest by default. Member is the usual type for people in the organization.",
+    "options": [
+      "Partner",
+      "Member",
+      "External",
+      "Guest"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T2-002",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Activity log",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An admin must find out who deleted a virtual network yesterday. Where is that recorded?",
+    "explanation": "The Activity log records control-plane operations such as create and delete, with the caller and time.",
+    "options": [
+      "Platform metrics",
+      "The Activity log",
+      "VM insights",
+      "Boot diagnostics"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T2-003",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "ARM templates",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A template's SKU must be chosen by whoever runs the deployment, differently for test and production. Which section holds it?",
+    "explanation": "Parameters take values at deployment time. Variables are computed inside the template, and outputs return values after it runs.",
+    "options": [
+      "outputs",
+      "parameters",
+      "resources",
+      "variables"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T2-004",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Availability zones",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An app's VMs must stay up if a whole datacenter in the region fails. What should be used?",
+    "explanation": "Availability zones are separate datacenters in a region, so spreading VMs across them survives a datacenter loss. An availability set spreads VMs inside one datacenter.",
+    "options": [
+      "VMs in a proximity placement group",
+      "VMs across availability zones",
+      "An availability set with 3 fault domains",
+      "A dedicated host"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T2-005",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Application security groups",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "SQL VMs must accept TCP 1433 only from web-tier VMs, without listing IP addresses in NSG rules. What should be used?",
+    "explanation": "Application security groups let NSG rules refer to groups of NICs, such as web and SQL tiers, instead of IP addresses. Service tags stand for Azure services.",
+    "options": [
+      "Application security groups",
+      "Service tags",
+      "Network Watcher",
+      "User-defined routes on the subnet"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T2-006",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Azure Policy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A required Owner tag must be added to existing resources that lack it, not only to new ones. What achieves this?",
+    "explanation": "Modify can add or change tags, and a remediation task applies it to resources that already exist. Deny and Audit never change a resource.",
+    "options": [
+      "Deny effect with a remediation task",
+      "Append effect with a remediation task",
+      "Audit effect with an exemption",
+      "Modify effect with a remediation task"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T2-007",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "AzCopy and Storage Explorer",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A local folder must be mirrored to a blob container, copying only what changed since the last run. Which AzCopy command fits?",
+    "explanation": "azcopy sync compares source and destination and copies only new or changed files. azcopy copy transfers everything it is given.",
+    "options": [
+      "azcopy remove",
+      "azcopy copy",
+      "azcopy sync",
+      "azcopy make"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T2-008",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104StorageAccess",
+    "skill": "Access keys",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Why does every storage account have two access keys?",
+    "explanation": "Two keys let you move apps to the second key, regenerate the first, and avoid downtime. Both keys give full access to the whole account.",
+    "options": [
+      "One key per region of a GRS account",
+      "One key for reads, one for writes",
+      "One for blobs, one for file shares",
+      "For rotation without downtime"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T2-009",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Vnet",
+    "skill": "Public IP addresses",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How is the address of a Standard SKU public IP allocated?",
+    "explanation": "Standard public IPs always use static allocation. Basic public IPs, which allowed dynamic allocation, were retired on September 30, 2025.",
+    "options": [
+      "Dynamic only",
+      "Static only",
+      "By the VM's DHCP",
+      "Static or dynamic"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T2-010",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Users",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "HR sends a spreadsheet of 300 new cloud-only employees. Which Microsoft Entra feature sets up their accounts fastest?",
+    "explanation": "Bulk create uploads a CSV of new internal users in one operation. Bulk invite is for external guests, and group-based licensing assigns licenses to accounts that already exist.",
+    "options": [
+      "Group-based licensing",
+      "Bulk create from a CSV template",
+      "New user, one at a time",
+      "Bulk invite from a CSV template"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T2-011",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Log queries",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which KQL operator groups rows by a column and counts them?",
+    "explanation": "summarize aggregates rows, for example summarize count() by Computer. project picks columns, extend adds them and where filters.",
+    "options": [
+      "where",
+      "project",
+      "extend",
+      "summarize"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T2-012",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "ARM templates",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An admin wants a template that describes resources already deployed in a resource group. What is the quickest way?",
+    "explanation": "Export template generates a template from a resource group's current resources, which can then be edited or converted to Bicep.",
+    "options": [
+      "Open the activity log",
+      "Write a template by hand",
+      "Run azcopy sync on the group",
+      "Export template on the group"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T2-013",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Scale sets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When a scale set scales in, the most recently created VM must be removed first. Which scale-in policy fits?",
+    "explanation": "NewestVM removes the newest instance first. Default balances across zones and fault domains, then removes the highest instance ID.",
+    "options": [
+      "Balanced",
+      "Default",
+      "NewestVM",
+      "OldestVM"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T2-014",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Effective rules",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A VM has NSGs on its subnet and on its NIC. Where can an admin see the combined rules that apply to it?",
+    "explanation": "Effective security rules show the merged rules from every NSG that applies to a network interface.",
+    "options": [
+      "The VNet's peering settings",
+      "The Activity log",
+      "Effective security rules",
+      "The subnet's route table"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T2-015",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Azure Policy",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A deployIfNotExists policy's remediation task fails with an authorization error. What does the policy assignment need?",
+    "explanation": "Remediation for deployIfNotExists and Modify runs as the assignment's managed identity, which needs a role that allows the deployment. Without it the task can't act.",
+    "options": [
+      "A managed identity",
+      "A resource lock on the scope",
+      "Enforcement mode set to disabled",
+      "An exclusion for the scope"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T2-016",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Storage tiers",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "With standard priority, up to how many hours can rehydrating a blob from the Archive tier take? Type the number only.",
+    "explanation": "Rehydration from archive can take up to 15 hours at standard priority. High priority can finish faster for smaller blobs at a higher cost.",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "AZ104-T2-017",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "SSPR",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Under the default SSPR policy for administrator roles, which method can a Global Administrator not use to reset a password?",
+    "explanation": "The administrator reset policy requires two methods and never allows security questions. Ordinary users can be allowed to use them.",
+    "options": [
+      "Mobile phone",
+      "Security questions",
+      "Authenticator app code",
+      "Alternate email address"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T2-018",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Insights",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "VM insights is being turned on for 50 VMs. What collects their performance data?",
+    "explanation": "VM insights uses the Azure Monitor Agent with a data collection rule, plus the Dependency agent if the Map feature is wanted. The older Log Analytics agent is retired.",
+    "options": [
+      "Azure Monitor Agent and a DCR",
+      "The legacy Log Analytics agent",
+      "Boot diagnostics",
+      "Network Watcher"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T2-019",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104StorageAccess",
+    "skill": "Firewalls and virtual networks",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A storage firewall IP rule allows a VM's public IP, yet the same-region VM is blocked. Why?",
+    "explanation": "Requests from Azure services in the same region use private Azure addresses, so IP network rules have no effect on them. Use a virtual network rule or private endpoint instead.",
+    "options": [
+      "IP rules need a range of at least /16",
+      "IP rules work only for file shares",
+      "Same-region traffic skips IP rules",
+      "IP rules take a day to apply"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T2-020",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Vnet",
+    "skill": "Peering",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Spoke VNets must use the VPN gateway in a peered hub VNet. Which peering setting is turned on in each spoke?",
+    "explanation": "The hub's peering allows gateway transit, and each spoke's peering uses the remote gateway. The spokes need no gateway of their own.",
+    "options": [
+      "Use remote gateways",
+      "Allow forwarded traffic",
+      "Use remote DNS servers",
+      "Allow gateway transit"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T2-021",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "Container Instances",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A one-time job runs in Azure Container Instances and must not restart, even if it fails. Which restart policy fits?",
+    "explanation": "Never runs the containers once. OnFailure restarts them after a non-zero exit, and Always, the default, restarts them whenever they stop.",
+    "options": [
+      "OnFailure",
+      "UnlessStopped",
+      "Always",
+      "Never"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T2-022",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Disks",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Is each statement about VM disks true?",
+    "explanation": "Data disks can be attached and detached while a VM runs. Managed disks can grow but not shrink, and Ultra Disk is for data disks only.",
+    "rows": [
+      "A data disk can be attached while the VM is running.",
+      "A managed disk can be shrunk to a smaller size.",
+      "Ultra Disk can be used as an OS disk."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T2-023",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Private endpoints",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A storage account must be reached on a private IP address from inside a virtual network. What should be created?",
+    "explanation": "A private endpoint puts a NIC with a private IP from the VNet in front of the service. A service endpoint keeps the service's public address.",
+    "options": [
+      "A private endpoint",
+      "A virtual network peering",
+      "A service endpoint",
+      "A NAT gateway"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T2-024",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Scopes",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A new Global Administrator can't see any of the company's subscriptions in the portal. What gives them access to all of them?",
+    "explanation": "A Global Administrator has no Azure resource access by default. The access management switch in Microsoft Entra properties elevates them to User Access Administrator at root scope, from which they can grant themselves roles.",
+    "options": [
+      "Assign the Global Reader role to them",
+      "Add them as Owner on every resource group",
+      "Create a new management group",
+      "Elevate access in Entra properties"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T2-025",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Resource locks",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "After a ReadOnly lock is put on a storage account, an app can no longer retrieve its access keys. Why?",
+    "explanation": "A ReadOnly lock blocks operations other than reads, and listing storage account keys is a POST request, so it is blocked. Ordinary reads still work.",
+    "options": [
+      "Listing keys is a POST operation",
+      "The storage firewall turned on",
+      "The lock blocks every read",
+      "The lock rotates both keys"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T2-026",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Encryption",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Where must customer-managed keys for Azure Storage encryption be kept?",
+    "explanation": "Customer-managed keys for Azure Storage must be stored in Azure Key Vault or Azure Key Vault Managed HSM. Without them, data is encrypted with Microsoft-managed keys.",
+    "options": [
+      "Key Vault or Managed HSM",
+      "In Azure App Configuration settings",
+      "In the storage account itself",
+      "In an Azure file share"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T2-027",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Network Watcher",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Admins must track latency and packet loss between a VM and an on-premises server, checked continuously over time. Which tool fits?",
+    "explanation": "Connection monitor runs ongoing tests between endpoints and reports latency, loss and topology. IP flow verify and next hop are one-time checks.",
+    "options": [
+      "IP flow verify",
+      "Next hop",
+      "Connection monitor",
+      "Packet capture on the VM"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T2-028",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "App Service",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "What is the most instances a Basic App Service plan can scale out to? Type the number only.",
+    "explanation": "Basic plans scale out manually to at most three instances. Standard allows up to ten and adds autoscale.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "AZ104-T2-029",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Scale sets",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A scale set must add instances when average CPU stays above 70% for 10 minutes. What should be configured?",
+    "explanation": "Autoscale rules act on metrics such as Percentage CPU over a time window. Scale-in policies only decide which instance is removed.",
+    "options": [
+      "A scale-in policy",
+      "A recurring scheduled scale profile",
+      "A metric-based autoscale rule",
+      "A larger VM size"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T2-030",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Load balancing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Requests from one user's device must keep going to the same backend VM. Which load balancer session persistence setting fits?",
+    "explanation": "Client IP persistence sends a client's traffic to the same backend. None, the default, spreads flows by a five-tuple hash.",
+    "options": [
+      "Client IP",
+      "Health probe",
+      "None",
+      "Floating IP"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T2-031",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104StorageAccess",
+    "skill": "Firewalls and virtual networks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Azure Backup must reach a storage account whose firewall allows selected networks only. Which exception helps?",
+    "explanation": "The trusted services exception lets listed Azure services, including Azure Backup, reach the account through the firewall. The other settings concern authorization and replication.",
+    "options": [
+      "Allow Azure services on the trusted list",
+      "Allow cross-tenant replication",
+      "Allow shared key access",
+      "Allow public blob access"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T2-032",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Vnet",
+    "skill": "Routes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Traffic from a subnet to 10.9.0.0/16 must be dropped. Which next hop type does that?",
+    "explanation": "A route with next hop None discards matching traffic.",
+    "options": [
+      "Virtual network",
+      "None",
+      "Internet",
+      "Virtual appliance"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T2-033",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Built-in roles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A project team must create and change resources in RG2 but must not give anyone else access. Which built-in role fits?",
+    "explanation": "Contributor grants full management of resources but no right to assign roles. Owner adds role assignment, which the team must not have.",
+    "options": [
+      "User Access Administrator",
+      "Owner",
+      "Contributor",
+      "Reader"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T2-034",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Backup policy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Azure VMs must be backed up every four hours. Which policy type supports that?",
+    "explanation": "The Enhanced policy can back up every 4, 6, 8, 12 or 24 hours. The Standard policy runs once a day.",
+    "options": [
+      "Archive tier policy",
+      "Enhanced policy",
+      "Instant restore policy",
+      "Standard policy"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T2-035",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Resource groups",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A VM is moved from resource group RG1 to RG2 in the same subscription. What happens to the VM during the move?",
+    "explanation": "Moving resources between resource groups doesn't stop them or change their region. Both groups are locked for writes and deletes while the move runs.",
+    "options": [
+      "It gets a new private IP",
+      "It is stopped",
+      "It moves to RG2's region",
+      "It keeps running"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T2-036",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Versioning",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Blob versioning is on, and a user overwrote an important blob an hour ago. How is the earlier content brought back?",
+    "explanation": "Each write creates a new version and keeps the old one read-only, so promoting the previous version makes it current again.",
+    "options": [
+      "Restore from a blob snapshot copy",
+      "Promote the previous version",
+      "Undelete the container",
+      "Rehydrate an older copy from archive"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T2-037",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "App Service",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A web app on a Basic plan must add instances by itself when CPU is high. What should be done first?",
+    "explanation": "Autoscale rules are available on Standard plans and above. Basic supports only manual scale-out.",
+    "options": [
+      "Add a deployment slot",
+      "Scale up to Standard or higher",
+      "Turn on Always On",
+      "Enable VNet integration on the app"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T2-038",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Disk encryption",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Azure Disk Encryption is scheduled for retirement. What does Microsoft recommend for new VMs instead?",
+    "explanation": "Azure Disk Encryption retires on September 15, 2028, and Microsoft recommends encryption at host, which also covers temp disks and caches.",
+    "options": [
+      "Encryption at host",
+      "A ReadOnly resource lock",
+      "Infrastructure encryption",
+      "BitLocker without a key vault"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T2-039",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Load balancing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An app tier must be load balanced but reachable only from inside the virtual network. Which load balancer fits?",
+    "explanation": "An internal load balancer uses a private frontend IP in the VNet. A public load balancer has a public frontend IP.",
+    "options": [
+      "Traffic Manager profile",
+      "Front Door profile",
+      "An internal load balancer",
+      "Public load balancer"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T2-040",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Interpreting access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An admin must see every role a user holds on a storage account, inherited ones included. Where is that shown?",
+    "explanation": "The Check access tab of Access control (IAM) lists a principal's role assignments at that scope, including those inherited from above. The activity log records operations, not current access.",
+    "options": [
+      "Azure Advisor recommendations",
+      "Storage account Activity log",
+      "IAM Check access tab",
+      "Microsoft Entra audit logs"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T2-041",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Backup and restore",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A protected VM's backup data was deleted, with default soft delete settings. How long is it kept before removal?",
+    "explanation": "Soft delete keeps deleted backup data for 14 more days by default, and enhanced soft delete can extend that to 180 days.",
+    "options": [
+      "30 extra days",
+      "Not at all",
+      "7 extra days",
+      "14 extra days"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T2-042",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104StorageAccess",
+    "skill": "Access keys",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A security team wants blob requests authorized only with Microsoft Entra ID, never with the account key. What should be set?",
+    "explanation": "Turning off shared key authorization rejects requests signed with the account key, including service and account SAS. Regenerated keys still work as keys.",
+    "options": [
+      "Disallow shared key access",
+      "Turn on infrastructure encryption",
+      "Use a stored access policy",
+      "Regenerate both access keys"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T2-043",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Vnet",
+    "skill": "Troubleshooting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An admin must see every route applied to a VM's NIC, system and user-defined alike. What shows this?",
+    "explanation": "Effective routes list the system routes, user-defined routes and BGP routes in force on a NIC. IP flow verify checks NSG rules, not routes.",
+    "options": [
+      "Effective routes on the NIC",
+      "Connection monitor test results",
+      "IP flow verify",
+      "Packet capture"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-T2-044",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Costs",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which Azure Advisor category recommends shutting down or resizing VMs that are rarely used?",
+    "explanation": "Cost recommendations flag underused resources such as idle VMs. Reliability and Performance focus on availability and speed.",
+    "options": [
+      "Operational excellence",
+      "Performance",
+      "Cost",
+      "Reliability"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T2-045",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Storage redundancy",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An app needs zone redundancy in the primary region and secondary reads during an outage. Which option fits?",
+    "explanation": "RA-GZRS replicates across zones in the primary region and gives read access to the secondary. GZRS has no secondary read access without failover, and RA-GRS has no zone redundancy in the primary.",
+    "options": [
+      "ZRS",
+      "GZRS",
+      "RA-GZRS",
+      "RA-GRS"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-T2-046",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "App Service",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A web app must call a SQL Server VM on its private IP in Azure. Which feature makes that outbound path?",
+    "explanation": "VNet integration gives the app outbound access into the virtual network. A private endpoint is for inbound traffic to the app.",
+    "options": [
+      "A private endpoint on the app",
+      "Virtual network integration on the app",
+      "A custom domain binding",
+      "Access restrictions"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-T2-047",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Moving VMs",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A VM is moved to another subscription. Which two resources must move with it? (Choose two.)",
+    "explanation": "A VM's disks and network interface must be moved together with it. Shared services such as a gateway or workspace can stay where they are.",
+    "options": [
+      "Its managed disks",
+      "Its virtual network gateway",
+      "Its Log Analytics workspace",
+      "Its network interface"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "AZ104-T2-048",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Azure Bastion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Admins want to RDP to VMs through Azure Bastion with the native Windows client. Which Bastion SKU is the lowest that allows it?",
+    "explanation": "Native client support needs the Standard or Premium SKU. Basic and Developer work through the browser only.",
+    "options": [
+      "Developer",
+      "Free",
+      "Basic",
+      "Standard"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-T2-049",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Scopes",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two items can an Azure role assignment be scoped to? (Choose two.)",
+    "explanation": "Azure RBAC scopes are management groups, subscriptions, resource groups and resources. A Microsoft Entra group is a security principal that receives a role, not a scope, and tags can't scope an assignment.",
+    "options": [
+      "Microsoft Entra group",
+      "Resource group",
+      "Resource tag",
+      "Management group"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "AZ104-T2-050",
+    "section": "az104",
+    "test": 2,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Site Recovery",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "Put the Site Recovery steps for moving a VM to the secondary region and protecting it again in order:",
+    "explanation": "After failover you commit it to finish the switch, then re-protect so the VM replicates back to the primary region, and fail back when it recovers.",
+    "options": [
+      "Fail over to the secondary region",
+      "Commit the failover",
+      "Re-protect the VM",
+      "Fail back when the primary recovers"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-001",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Activity log",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "For how many days is the Activity log kept in Azure Monitor before it must be exported? Type the number only.",
+    "explanation": "Activity log events are kept for 90 days. A diagnostic setting can send them to a workspace or storage to keep them longer.",
+    "numeric": {
+      "answers": [
+        "90"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "AZ104-D-002",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Licenses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A group is assigned a license, and one member has no usage location set. What happens for that member?",
+    "explanation": "With group-based licensing, a member who has no usage location inherits the directory's location. Direct assignment, by contrast, fails without one.",
+    "options": [
+      "The member is removed from the group",
+      "The assignment fails for everyone",
+      "The location defaults to the US",
+      "The tenant's location is used"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-003",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Resource locks",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A storage account has a CanNotDelete lock. Can a user with a blob data role still delete blobs in it?",
+    "explanation": "Locks apply to management operations through Azure Resource Manager, not to data operations. Deleting blobs is a data operation, so the lock doesn't stop it.",
+    "options": [
+      "Only with the account key",
+      "Only if versioning is off",
+      "No, the lock covers every blob",
+      "Yes, locks don't cover blob data"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-004",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Storage tiers",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A GPv2 blob is moved to Cool and deleted after 21 days. How many extra days of Cool storage are charged? Type the number only.",
+    "explanation": "Cool has a 30-day minimum, and early deletion is prorated: 30 minus 21 is 9 more days of Cool storage.",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "AZ104-D-005",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "ARM templates",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which section of an ARM template returns values, such as a public IP address, after the deployment finishes?",
+    "explanation": "outputs returns values from the deployment. parameters take input, and variables and functions are used inside the template.",
+    "options": [
+      "variables",
+      "parameters",
+      "functions",
+      "outputs"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-006",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Availability sets",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "If not changed, how many update domains does a new availability set use? Type the number only.",
+    "explanation": "An availability set has five update domains by default, and up to 20 can be configured.",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "AZ104-D-007",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "NSG rules",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "What is the lowest priority number a custom NSG rule can have? Type the number only.",
+    "explanation": "Custom rules take priorities from 100 to 4096, and lower numbers are processed first. Default rules sit at 65000 and above.",
+    "numeric": {
+      "answers": [
+        "100"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "AZ104-D-008",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageAccess",
+    "skill": "Stored access policies",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "How many stored access policies can one blob container have at the same time? Type the number only.",
+    "explanation": "A container, table, queue or file share can have up to five stored access policies.",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "AZ104-D-009",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vnet",
+    "skill": "Subnets",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "What is the longest IPv4 prefix length, giving the smallest subnet, that an Azure virtual network allows? Type the number only.",
+    "explanation": "The smallest IPv4 subnet is a /29, which leaves three usable addresses after Azure's five reserved ones.",
+    "numeric": {
+      "answers": [
+        "29"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "AZ104-D-010",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Alerts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An alert must fire when a specific error appears in a VM's logs in a workspace. Which alert type fits?",
+    "explanation": "Log search alerts run a KQL query on a schedule and fire on the results. Metric alerts watch numeric metrics.",
+    "options": [
+      "Service health alert",
+      "Metric alert",
+      "Activity log alert",
+      "Log search alert"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-011",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Groups",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A dynamic group's rule is (user.department -eq \"Sales\"). HR changes a user's department to Sales. What happens?",
+    "explanation": "Dynamic membership is re-evaluated when user attributes change, so the user is added without anyone acting. Members of a dynamic group can't be added by hand.",
+    "options": [
+      "An owner must approve the user",
+      "The admin adds the user by hand",
+      "They join automatically",
+      "The rule must be saved again"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-012",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Resource locks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Contributor can't add a lock to a resource group. Which built-in role can manage locks?",
+    "explanation": "Creating and deleting locks needs Microsoft.Authorization/locks permissions, held by Owner and User Access Administrator among the built-in roles. Contributor doesn't have them.",
+    "options": [
+      "Virtual Machine Contributor",
+      "Reader",
+      "User Access Administrator",
+      "Network Contributor"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-013",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Storage tiers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A user needs to read a blob stored in the Archive tier. What must happen first?",
+    "explanation": "Archived blobs are offline and can't be read until rehydrated to Hot, Cool or Cold. Their metadata can still be listed.",
+    "options": [
+      "It must be versioned",
+      "It must be rehydrated first",
+      "It must be snapshotted",
+      "It must be leased"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-014",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "ARM templates",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Resources in a template must go to the same region as the resource group being deployed to. Which expression gives it?",
+    "explanation": "resourceGroup().location returns the target group's region and is a common default for a location parameter.",
+    "options": [
+      "$\\texttt{uniqueString()}$",
+      "$\\texttt{resourceGroup().location}$",
+      "$\\texttt{subscription().id}$",
+      "$\\texttt{deployment().name}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-015",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Availability sets",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Is each statement about availability sets true?",
+    "explanation": "Update domains are rebooted one at a time during planned maintenance. An availability set sits in one datacenter, not across zones. A resize restarts the VM.",
+    "rows": [
+      "During planned maintenance, update domains reboot one at a time.",
+      "An availability set spans several availability zones.",
+      "Resizing a running VM restarts it."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-016",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "NSG rules",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which default inbound NSG rule lets the Azure Load Balancer's health probes reach VMs?",
+    "explanation": "AllowAzureLoadBalancerInBound, at priority 65001, permits traffic from the AzureLoadBalancer service tag.",
+    "options": [
+      "DenyAllInBound",
+      "AllowVnetInBound",
+      "AllowAzureLoadBalancerInBound",
+      "AllowInternetOutBound"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-017",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageAccess",
+    "skill": "SAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tool must call service-level operations such as Get Service Properties with a SAS. Which kind works?",
+    "explanation": "Only an account SAS can delegate service-level operations. Service and user delegation SAS tokens work on resources inside one service.",
+    "options": [
+      "User delegation SAS",
+      "Account SAS",
+      "Ad hoc service SAS",
+      "Service SAS"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-018",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vnet",
+    "skill": "Routes",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A UDR sends 10.0.0.0/16 to a firewall; a system route sends 10.0.1.0/24 to the VNet. Where does 10.0.1.5 go?",
+    "explanation": "Azure picks the route with the longest prefix that matches. The /24 is more specific than the /16, so it wins.",
+    "options": [
+      "To the internet",
+      "Inside the VNet",
+      "To the firewall",
+      "It is dropped"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-019",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Alerts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An on-call engineer got only one SMS in five minutes, though several alerts fired. Why?",
+    "explanation": "Azure Monitor sends no more than one SMS every five minutes to a phone number, and voice calls are limited the same way. Webhooks aren't limited.",
+    "options": [
+      "The action group is broken",
+      "Only the first alert fires",
+      "SMS is rate limited",
+      "SMS needs a Premium plan"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-020",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Groups",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An admin tries to add Ben to group G1 by hand, but the option isn't available. What is the likely reason?",
+    "explanation": "Members of a dynamic group come only from its rule, so manual add is turned off. Guests and unlicensed users can be added to assigned groups.",
+    "options": [
+      "G1 uses dynamic membership",
+      "G1 is a Microsoft 365 group",
+      "Ben is a guest from another tenant",
+      "Ben has no license"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-021",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Tags",
+    "difficulty": 1,
+    "format": "numeric",
+    "stem": "How many tag name and value pairs can one Azure resource hold? Type the number only.",
+    "explanation": "Each resource, resource group and subscription can have up to 50 tag name and value pairs.",
+    "numeric": {
+      "answers": [
+        "50"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "AZ104-D-022",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Storage tiers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which access tier can't be set as a storage account's default tier?",
+    "explanation": "The account default can be Hot, Cool or Cold. Archive can only be set on individual blobs.",
+    "options": [
+      "Cool",
+      "Cold",
+      "Archive",
+      "Hot"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-023",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "Bicep",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Bicep parameter must accept only the values Standard_LRS and Standard_GRS. Which decorator does that?",
+    "explanation": "@allowed lists the permitted values, and deployment fails on any other. @secure hides a value from logs.",
+    "options": [
+      "@description",
+      "@minLength",
+      "@allowed",
+      "@secure"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-024",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Scale sets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A scale set must mix several VM sizes and allow single VMs to be added to it. Which orchestration mode fits?",
+    "explanation": "Flexible orchestration supports mixed sizes and standard VM operations, and is the default in new deployments. Uniform uses one identical model for every instance.",
+    "options": [
+      "Manual",
+      "Uniform",
+      "Flexible",
+      "Spot"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-025",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Application security groups",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An admin adds a NIC from VNet2 to an application security group that already holds a NIC from VNet1. It fails. Why?",
+    "explanation": "All NICs in an application security group must be in the same virtual network as the first NIC added.",
+    "options": [
+      "An ASG can hold only one NIC",
+      "An ASG's NICs must share one VNet",
+      "ASGs work on subnets only",
+      "ASGs need a Standard public IP on each NIC"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-026",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageAccess",
+    "skill": "SAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An ad hoc service SAS with no stored access policy has leaked. How can it be revoked before it expires?",
+    "explanation": "An ad hoc SAS carries its own constraints in the URI, so it stays valid until the signing key changes. Its expiry can't be edited after it is issued.",
+    "options": [
+      "Shorten its expiry time",
+      "Rotate the account key that signed it",
+      "Turn off blob versioning",
+      "Delete its stored access policy"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-027",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vnet",
+    "skill": "Routes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user-defined route and a system route have the same address prefix. Which one is used?",
+    "explanation": "When prefixes are equal, a user-defined route beats a BGP route, which beats a system route.",
+    "options": [
+      "The user-defined route",
+      "Neither, they cancel each other",
+      "Whichever was created first",
+      "The system route"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-028",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Insights",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which Azure Monitor feature gives prebuilt views of capacity, transactions and latency across storage accounts?",
+    "explanation": "Insights for storage accounts give ready-made workbooks of availability, capacity, transactions and latency.",
+    "options": [
+      "Storage insights",
+      "VM insights",
+      "Connection monitor",
+      "Activity log"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-029",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "External users",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Only admins and holders of the Guest Inviter role should be able to invite guests. Where is this set?",
+    "explanation": "External collaboration settings control who can invite guests and what guests can see. Conditional Access governs sign-in conditions, not invitations.",
+    "options": [
+      "External collaboration settings",
+      "Group expiration policy",
+      "Self-service password reset properties",
+      "Conditional Access sign-in policies"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-030",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Azure Policy",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Ten related policies must be assigned and tracked together as one unit. What should be created?",
+    "explanation": "An initiative, or policy set, groups policy definitions so they're assigned and reported on together. An exemption removes a scope from evaluation.",
+    "options": [
+      "A policy initiative",
+      "A policy exemption for each policy",
+      "A management group hierarchy",
+      "A resource group"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-031",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Snapshots and soft delete",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user deleted a folder from an Azure file share mounted over SMB on Windows. A share snapshot from last night exists. How can the user get the folder back without an admin?",
+    "explanation": "Share snapshots appear on the Previous Versions tab of the mounted share in Windows, so a user can copy or restore the folder from there. Share undelete brings back a whole deleted share, and Archive and blob versions apply to blobs, not file shares.",
+    "options": [
+      "Undelete the share in the portal",
+      "Rehydrate the folder from the Archive tier",
+      "Promote the folder's previous blob version",
+      "Restore it from Previous Versions in File Explorer"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-032",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "ARM templates",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which deployment mode is used when none is given?",
+    "explanation": "Incremental is the default and leaves unlisted resources in place. What-if is a preview of changes, not a mode.",
+    "options": [
+      "Validate",
+      "Incremental",
+      "What-if",
+      "Complete"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-033",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Disks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A database VM needs the highest IOPS and must change disk performance without detaching the disk. Which type fits?",
+    "explanation": "Ultra Disk offers the highest IOPS and throughput, and its performance can be adjusted on the fly.",
+    "options": [
+      "Standard HDD",
+      "Premium SSD",
+      "Ultra Disk",
+      "Standard SSD"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-034",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Azure DNS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new Azure DNS public zone for contoso.com doesn't resolve on the internet. What must change at the registrar?",
+    "explanation": "Delegation means changing the domain's name server records at the registrar to the Azure DNS name servers assigned to the zone.",
+    "options": [
+      "Lower the zone's TTL",
+      "Add an MX record",
+      "Point the NS records to Azure DNS",
+      "Link the zone to a virtual network"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-035",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageAccess",
+    "skill": "SAS",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An app must create user delegation SAS tokens for blobs and needs nothing else. Which role fits?",
+    "explanation": "Creating a user delegation key needs the generateUserDelegationKey action, which Storage Blob Delegator grants. The key operator role works with account keys instead.",
+    "options": [
+      "Reader",
+      "Storage Queue Data Reader",
+      "Storage Blob Delegator",
+      "Storage Account Key Operator Service Role"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-036",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vnet",
+    "skill": "Peering",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Is each statement about virtual network peering true?",
+    "explanation": "Global peering connects VNets across regions, and peering works across subscriptions and tenants. Traffic uses Microsoft's backbone directly, with no gateway.",
+    "rows": [
+      "VNets in different regions can be peered.",
+      "VNets in different subscriptions can be peered.",
+      "Peering routes traffic through a VPN gateway by default."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-037",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Network Watcher",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An admin must check whether an NSG allows TCP 443 from a VM to one IP address. Which tool answers quickly?",
+    "explanation": "IP flow verify tests a packet's five-tuple against the NSG rules and names the rule that allows or denies it.",
+    "options": [
+      "IP flow verify",
+      "VPN troubleshoot",
+      "Effective routes",
+      "Connection monitor"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-038",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Users",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A user account was deleted by mistake 10 days ago. What can the admin do?",
+    "explanation": "Deleted users stay in a soft-deleted state for 30 days and can be restored with their memberships. A new account would get a new object ID.",
+    "options": [
+      "Nothing, deletion is final",
+      "Restore it from Deleted users",
+      "Undo it from the activity log",
+      "Recreate it with the same object ID"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-039",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Azure Policy",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A resource group meets a policy's goal through another control. How is it kept out of compliance results with that reason recorded?",
+    "explanation": "An exemption with category Mitigated records that the policy's intent is met another way. Waiver means the non-compliance is accepted, and an exclusion keeps no reason.",
+    "options": [
+      "Set the policy effect to Disabled",
+      "Exemption, category Waiver",
+      "An exclusion on the policy assignment",
+      "Exemption, category Mitigated"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-040",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Object replication",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "For object replication, which feature must be enabled on the source account only?",
+    "explanation": "Change feed on the source records the changes to replicate. Versioning is needed on both accounts.",
+    "options": [
+      "Change feed",
+      "Blob versioning",
+      "Static website",
+      "Last access tracking"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-041",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "Container registry",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new registry's Access keys page shows no username or password to log in with. Why?",
+    "explanation": "The admin user account is disabled on new registries. Microsoft recommends Entra identities or tokens, but the admin user can be enabled when needed.",
+    "options": [
+      "Logins need a private endpoint first",
+      "Basic tier has no access keys",
+      "The admin user is off by default",
+      "The registry has no images yet"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-042",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Create a VM",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A VM can't be reached, and support suggests moving it to a new host in the same region. Which action does that?",
+    "explanation": "Redeploy shuts down the VM, moves it to a new node and powers it back on, keeping its configuration. Temp disk data is lost.",
+    "options": [
+      "Redeploy",
+      "Resize",
+      "Capture an image",
+      "Reapply"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-043",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Azure DNS",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "VNet1 already has auto registration on with private zone zoneA. Can it also auto-register in zoneB?",
+    "explanation": "A virtual network can be a registration network for only one private DNS zone, though it can be linked to others for resolution.",
+    "options": [
+      "Yes, up to ten zones per network",
+      "Only with a resolver",
+      "Yes, if zoneB is public",
+      "No, only one zone per VNet"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-044",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Backup and restore",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "VM backups must be restorable in the paired region if the primary region fails. What must the vault use?",
+    "explanation": "Cross Region Restore needs a geo-redundant vault. It can be turned on for an existing GRS vault but can't be turned off.",
+    "options": [
+      "A Backup vault in each region",
+      "ZRS with immutability",
+      "LRS with soft delete",
+      "GRS with Cross Region Restore"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-045",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageAccess",
+    "skill": "Azure Files identity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "With no on-premises AD, Contoso joins Azure VMs to a managed domain. Which identity source fits its file share?",
+    "explanation": "Azure Files supports AD DS, Microsoft Entra Domain Services or Microsoft Entra Kerberos, and an account uses one. With VMs joined to a managed domain, Entra Domain Services fits.",
+    "options": [
+      "Microsoft Entra Kerberos",
+      "On-premises AD DS",
+      "The storage account key in a mount script",
+      "Microsoft Entra Domain Services"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-046",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vnet",
+    "skill": "Public IP addresses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Standard public IP is attached to a VM with no NSG anywhere. RDP from the internet fails. Why?",
+    "explanation": "Standard public IPs are secure by default: inbound traffic is closed until an NSG allows it.",
+    "options": [
+      "Standard IPs pass only HTTP and HTTPS",
+      "RDP needs a dynamic IP",
+      "Standard IPs block inbound by default",
+      "The VM needs a second NIC"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-047",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Users",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An employee leaves tonight. HR wants the account kept for a month but unusable at once. What is the simplest action?",
+    "explanation": "Blocking sign-in keeps the account and its data while preventing use. Deleting starts the 30-day removal, and a password reset doesn't stop someone who learns the new password.",
+    "options": [
+      "Remove all licenses",
+      "Block sign-in",
+      "Delete the user",
+      "Reset the password"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-048",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Azure Policy",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A policy must apply to a whole subscription except resource group RG-Lab. What should be done?",
+    "explanation": "An assignment can list excluded scopes, so one assignment at the subscription skips RG-Lab. Separate assignments work but are harder to keep up.",
+    "options": [
+      "Assign it to each other group",
+      "Add RG-Lab as an exclusion",
+      "Move RG-Lab to a new region",
+      "Put a lock on RG-Lab"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-049",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Storage redundancy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An Azure file share on a standard account needs copies in a secondary region. Which option is supported?",
+    "explanation": "Standard file shares support GRS and GZRS, but Azure Files doesn't support the read-access options. SSD file shares support LRS and ZRS only.",
+    "options": [
+      "SSD share with GZRS",
+      "RA-GZRS",
+      "GRS",
+      "RA-GRS"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-050",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "Container Instances",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two containers must start together, share a network namespace and mount the same volume. How should they be deployed in ACI?",
+    "explanation": "A container group schedules its containers on one host, where they share a lifecycle, network and storage.",
+    "options": [
+      "In one container group",
+      "In two container groups",
+      "In a registry task",
+      "In two App Service plans"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-051",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "VM sizes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A database VM needs a high ratio of memory to CPU. Which series fits?",
+    "explanation": "E-series sizes give more memory per vCPU for databases and in-memory analytics. F-series favour CPU.",
+    "options": [
+      "B-series, burstable",
+      "E-series, optimized for memory",
+      "N-series, GPU",
+      "F-series, compute optimized"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-052",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Load balancing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "VMs were added to a Standard load balancer's backend pool and their NICs have no NSGs. Inbound traffic doesn't arrive. Why?",
+    "explanation": "Standard Load Balancer is secure by default: inbound flows are blocked unless an NSG allows them. Basic SKU was retired on September 30, 2025.",
+    "options": [
+      "Standard balances TCP 80 only",
+      "Standard needs a Basic public IP to work",
+      "Standard pools need a scale set",
+      "Standard blocks inbound by default"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-053",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Recovery Services vault",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A vault's storage redundancy must change from GRS to LRS. When can that be done?",
+    "explanation": "The vault's backup storage redundancy can be changed only before the first item is protected. After that, create a new vault.",
+    "options": [
+      "Before any item is protected",
+      "After stopping backups for every item",
+      "Only through support",
+      "At any time"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-054",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "SSPR",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "SSPR is turned on, but few users have registered any methods. Which setting asks them the next time they log in?",
+    "explanation": "With the registration setting on, users are asked to register their methods the next time they sign in. Notifications only report resets.",
+    "options": [
+      "Notify users on password resets",
+      "Registration at sign-in",
+      "Allow writeback to on-premises",
+      "Notify all admins when others reset"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-055",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Management groups",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Is each statement about management groups true?",
+    "explanation": "Each management group or subscription has exactly one parent. Policy and role assignments flow down the hierarchy. The root management group is built in and can't be deleted.",
+    "rows": [
+      "A subscription can sit in two management groups at once.",
+      "Policies assigned to a management group apply to its subscriptions.",
+      "The root management group can be deleted by an admin."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-056",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageAccess",
+    "skill": "Azure Files identity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Share-level access is set for an Azure file share. How should one folder be limited to the HR team?",
+    "explanation": "After share-level RBAC, directory and file permissions are set with Windows ACLs, as on a Windows file server. RBAC roles apply to the whole share.",
+    "options": [
+      "A stored access policy",
+      "A second share-level role",
+      "Windows ACLs on the folder",
+      "The container access level"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-057",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vnet",
+    "skill": "Peering",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An address range was added to a peered VNet, and the other VNet can't reach the new range. What should be done?",
+    "explanation": "After a peered VNet's address space changes, the peering must be synced so the remote VNet learns the new ranges.",
+    "options": [
+      "Add a route table",
+      "Recreate the VNet",
+      "Sync the peering",
+      "Restart the VMs"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-058",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Backup reports",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Backup reports in Azure show no data. What must be set up on the vaults?",
+    "explanation": "Backup reports read vault data that diagnostic settings send to a Log Analytics workspace.",
+    "options": [
+      "A backup alert rule",
+      "Cross Region Restore on the vault",
+      "An Enhanced policy",
+      "Diagnostics sent to a workspace"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-059",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Lifecycle management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A lifecycle rule doesn't move any blobs in a premium block blob account. Why?",
+    "explanation": "Data in a premium block blob account can't be tiered with Set Blob Tier or lifecycle management. It must be copied to a standard account to use Hot, Cool, Cold or Archive.",
+    "options": [
+      "The rule runs once a year",
+      "Premium blobs can't be tiered",
+      "The rule needs blob versioning turned on",
+      "Premium needs Archive first"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-060",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "Container Apps",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A container app's HTTP traffic keeps rising, but it never runs more than 10 replicas and requests queue up. Its scale settings are the defaults. What should be done?",
+    "explanation": "If no limits are set, a container app scales between 0 and 10 replicas. Raising the maximum (up to 1,000) lets the HTTP scale rule add more replicas. The minimum already defaults to 0.",
+    "options": [
+      "Move it to Azure Container Instances",
+      "Set the minimum replica count to 0",
+      "Add a second container to the revision",
+      "Raise the maximum replica count"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-061",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Disks",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Before a risky update, an admin wants a point-in-time copy of a managed disk. What should be taken?",
+    "explanation": "A snapshot is a full, read-only copy of a managed disk at a point in time, from which a new disk can be made.",
+    "options": [
+      "A disk snapshot",
+      "A boot diagnostics capture",
+      "An image version",
+      "A scale set model"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-062",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Load balancing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Requests to /images must go to one pool and /api to another. Which service does this?",
+    "explanation": "Azure Load Balancer works at layer 4 and can't see URL paths. Application Gateway is a layer 7 balancer with path-based routing.",
+    "options": [
+      "An NSG",
+      "Application Gateway",
+      "Azure DNS",
+      "Azure Load Balancer"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-063",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "SSPR",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Contoso wants to pilot SSPR with the Finance group only. How should SSPR be enabled?",
+    "explanation": "SSPR can be set to None, Selected or All, and Selected scopes it to one group for a pilot. There is no per-user switch on profiles.",
+    "options": [
+      "All, then exclude other groups",
+      "None, with Finance as owner",
+      "Per user, on each user's profile page",
+      "Selected, with the Finance group"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-064",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Resource groups",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Resource group RG4 is in East US. Can it hold a VM located in West Europe?",
+    "explanation": "A resource group's location only stores its metadata. Resources in it can be in other regions.",
+    "options": [
+      "Yes, regions can differ",
+      "Only for global resources",
+      "No, the regions must match",
+      "Only after RG4 is moved"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-065",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageAccess",
+    "skill": "SAS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Admins should be warned when anyone creates a service or account SAS valid for more than 7 days. What should be configured?",
+    "explanation": "A SAS expiration policy sets a recommended upper limit for a SAS's validity, and longer ones produce a warning and a log entry. Stored access policies only govern SAS tokens that reference them.",
+    "options": [
+      "A stored access policy",
+      "A SAS expiration policy on the account",
+      "A lifecycle management rule",
+      "A key expiration policy"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-066",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vnet",
+    "skill": "Subnets",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In the subnet 10.0.1.0/24, which address does Azure reserve for the default gateway?",
+    "explanation": "Azure reserves .0 for the network, .1 for the default gateway, .2 and .3 for Azure DNS, and .255 for broadcast.",
+    "options": [
+      "10.0.1.0",
+      "10.0.1.4",
+      "10.0.1.255",
+      "10.0.1.1"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-067",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Backup and restore",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "One deleted file is needed from yesterday's backup of an Azure VM. What is the quickest restore?",
+    "explanation": "File Recovery mounts a recovery point as a drive so single files can be copied, without restoring the VM or its disks.",
+    "options": [
+      "Fail over with Site Recovery",
+      "Restore the disks only",
+      "Restore the whole VM",
+      "File Recovery"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-068",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Containers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Anonymous users must read individual blobs by URL but must not list the container. Which access level fits?",
+    "explanation": "The Blob level allows anonymous reads of blobs but not listing. Container also allows listing, and Private allows no anonymous access. Anonymous access must also be allowed on the account.",
+    "options": [
+      "Blob",
+      "Container",
+      "Account",
+      "Private"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-069",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "App Service",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A web app needs a free TLS certificate for its custom domain www.contoso.com. Which option fits?",
+    "explanation": "The free App Service managed certificate covers custom domains such as www.contoso.com, but it doesn't support wildcard domains.",
+    "options": [
+      "A wildcard certificate from Key Vault",
+      "A certificate on the App Service plan",
+      "App Service managed certificate",
+      "A self-signed certificate"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-070",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Create a VM",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A VM is stuck during startup. Which feature shows a screenshot of its console?",
+    "explanation": "Boot diagnostics captures serial log output and a screenshot of the VM's console. Run command needs a working guest agent.",
+    "options": [
+      "VM insights performance map",
+      "Boot diagnostics",
+      "Run command",
+      "Redeploy"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-071",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Service endpoints",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A subnet has a service endpoint for Azure Storage. What source address does the storage account see from its VMs?",
+    "explanation": "With a service endpoint, traffic reaches the service over the Azure backbone with the VM's private source address, while the service keeps its public endpoint.",
+    "options": [
+      "The VM's public IP",
+      "A NAT gateway IP",
+      "The load balancer's IP",
+      "The VM's private IP address"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-072",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Custom roles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which part of an Azure custom role definition limits where the role can be assigned?",
+    "explanation": "AssignableScopes lists the management groups, subscriptions or resource groups where the role is available. Actions, NotActions and DataActions describe what the role permits.",
+    "options": [
+      "AssignableScopes",
+      "Actions",
+      "NotActions",
+      "DataActions"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-073",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Costs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Managers want monthly costs broken down by project, and each project spans several resource groups. What should be used?",
+    "explanation": "Tagging resources with the project lets Cost Management group and filter charges by tag across resource groups and subscriptions.",
+    "options": [
+      "A separate management group",
+      "One budget for each resource group",
+      "A Project tag and a cost filter",
+      "An Azure Advisor cost recommendation"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-074",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Backup and restore",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is recovering a VM to a point from the last few days faster?",
+    "explanation": "Instant restore keeps recent snapshots with the VM's disks, so restores from them avoid copying data back from the vault.",
+    "options": [
+      "Archive-tier recovery points",
+      "Site Recovery replicas",
+      "Instant restore snapshots",
+      "Skipped vault integrity checks"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-075",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageAccess",
+    "skill": "SAS",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which SAS setting stops a token from being used over plain HTTP?",
+    "explanation": "Setting allowed protocols to HTTPS only rejects requests sent over HTTP. Microsoft recommends always using HTTPS with a SAS.",
+    "options": [
+      "Allowed IP addresses",
+      "Signed version",
+      "Signing key",
+      "Allowed protocols: HTTPS only"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-076",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vnet",
+    "skill": "Troubleshooting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An admin must check TCP from VM1 to VM2 on port 1433 and see where the path breaks. Which tool fits?",
+    "explanation": "Connection troubleshoot checks a connection end to end and reports the hop or rule that blocks it. Next hop shows only the route for one destination.",
+    "options": [
+      "Effective routes of VM1's NIC",
+      "Connection troubleshoot",
+      "Packet capture",
+      "Next hop"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-077",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Storage accounts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which storage account type is used for SSD (premium) Azure file shares?",
+    "explanation": "SSD file shares live in FileStorage accounts. BlockBlobStorage is the premium account type for block blobs, and standard GPv2 holds HDD shares.",
+    "options": [
+      "BlobStorage",
+      "FileStorage",
+      "BlockBlobStorage",
+      "Standard general-purpose v2"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-078",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "App Service",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A connection string must stay with the staging slot when slots are swapped. What should be done?",
+    "explanation": "Settings marked as deployment slot settings stick to their slot and don't move during a swap.",
+    "options": [
+      "Add it to both slots before the swap",
+      "Use a custom domain",
+      "Mark it as a slot setting",
+      "Store it in the code"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-079",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Create a VM",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Each new Windows VM must install a web server, unattended, right after deployment. Which feature does this?",
+    "explanation": "The Custom Script Extension downloads and runs scripts on a VM after it is provisioned, often from a storage account.",
+    "options": [
+      "Serial console",
+      "Boot diagnostics",
+      "Azure Policy with an Audit effect",
+      "Custom Script Extension"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-080",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Azure Bastion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Azure Bastion SKU, meant for dev and test, works without a dedicated AzureBastionSubnet?",
+    "explanation": "The Developer SKU is a lightweight shared option that doesn't need its own subnet. Basic, Standard and Premium need AzureBastionSubnet.",
+    "options": [
+      "Standard",
+      "Premium",
+      "Developer",
+      "Basic"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-081",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Custom roles",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A custom role lists VM delete in NotActions, and the same user has Contributor on the group. Can they delete VMs?",
+    "explanation": "NotActions only subtracts from that one role's Actions; it isn't a deny. Contributor grants delete, and permissions from all assignments add up.",
+    "options": [
+      "Only with an Owner approval",
+      "No, NotActions blocks it",
+      "Only after a new sign-in",
+      "Yes, Contributor still allows it"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-082",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Subscriptions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A test team needs its own bill and its own quota limits, apart from production. What should be created?",
+    "explanation": "Subscriptions are the unit of billing and of many quotas. Resource groups and tags organize resources but share the subscription's bill and limits.",
+    "options": [
+      "A management group",
+      "A separate resource group",
+      "A separate Azure subscription",
+      "A new tag value"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-083",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Site Recovery",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "How often, in minutes, does Site Recovery create crash-consistent recovery points for Azure VMs? Type the number only.",
+    "explanation": "Site Recovery takes crash-consistent recovery points every five minutes, and that can't be changed. App-consistent points are optional.",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "AZ104-D-084",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageAccess",
+    "skill": "Firewalls and virtual networks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A storage account must accept traffic only through its private endpoints. What should be set?",
+    "explanation": "Disabling public network access blocks all traffic to the public endpoint, leaving private endpoints. Selected networks still allows listed public IPs and subnets.",
+    "options": [
+      "Allow trusted Azure services",
+      "Public network access disabled",
+      "Enabled from selected networks",
+      "Secure transfer required"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-085",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vnet",
+    "skill": "Troubleshooting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Network Watcher tool shows the next hop type and IP for traffic from a VM to one destination address?",
+    "explanation": "Next hop returns the route type and next hop IP for a given source and destination. IP flow verify checks whether NSG rules allow a packet.",
+    "options": [
+      "Next hop",
+      "NSG diagnostics",
+      "VPN troubleshoot",
+      "IP flow verify"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-086",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Snapshots and soft delete",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A whole blob container was deleted by mistake. Which feature brings it back?",
+    "explanation": "Container soft delete keeps deleted containers for the retention period. Blob soft delete and versioning protect blobs inside a container that still exists.",
+    "options": [
+      "Blob versioning",
+      "Container soft delete",
+      "Object replication to a backup account",
+      "Blob soft delete"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-087",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "App Service",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which is the lowest App Service plan tier that supports app backups?",
+    "explanation": "Backup and restore work on Basic and higher. On Basic only the production slot can be backed up.",
+    "options": [
+      "Premium",
+      "Shared",
+      "Basic",
+      "Free"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-088",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Disk encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A VM's temp disk and disk caches must be encrypted too. Which option covers them?",
+    "explanation": "Encryption at host encrypts data on the VM host, including temp disks and caches, before it reaches storage. Server-side encryption covers the managed disks themselves.",
+    "options": [
+      "Storage account encryption",
+      "A TLS policy",
+      "Server-side encryption only",
+      "Encryption at host"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-089",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Load balancing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "RDP from the internet must reach one specific VM behind a public load balancer on port 50001. What should be created?",
+    "explanation": "An inbound NAT rule forwards a frontend port to a port on one backend instance. Load-balancing rules spread traffic across the pool.",
+    "options": [
+      "An inbound NAT rule for the VM",
+      "A load-balancing rule",
+      "A health probe",
+      "An outbound rule"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-090",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Built-in roles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user with Reader on a storage account gets access denied listing blobs with their Microsoft Entra sign-in. Which role is needed?",
+    "explanation": "Reader covers the management plane only. Reading blob data with Entra authorization needs a data role such as Storage Blob Data Reader.",
+    "options": [
+      "Storage Queue Data Reader",
+      "Contributor",
+      "Storage Blob Data Reader",
+      "Storage Account Contributor"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-091",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Costs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which budget alert warns that spending is likely to pass the budget before the month ends?",
+    "explanation": "Budgets can alert on actual cost or on forecasted cost. A forecasted threshold fires on the projected total, before the money is spent.",
+    "options": [
+      "Forecasted cost alert",
+      "Actual cost alert",
+      "Advisor cost recommendation alert",
+      "Service health alert"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-092",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Backup and restore",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Files on an on-premises Windows server must be backed up straight to Azure without a backup server. What should be installed?",
+    "explanation": "The Microsoft Azure Recovery Services (MARS) agent backs up files, folders and system state to a Recovery Services vault.",
+    "options": [
+      "The Azure Monitor Agent",
+      "The Dependency agent",
+      "The MARS agent",
+      "Azure File Sync"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-093",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageAccess",
+    "skill": "Azure Files identity",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Home users can't mount an Azure file share over SMB, though the share works inside the office. What is the likely cause?",
+    "explanation": "SMB uses TCP port 445, which many internet providers block. Port 443 is HTTPS, 3389 is RDP and 2049 is NFS.",
+    "options": [
+      "Their ISP blocks port 443",
+      "Their ISP blocks port 3389",
+      "Their ISP blocks port 445",
+      "Their ISP blocks port 2049"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-094",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vnet",
+    "skill": "Public IP addresses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A load balancer's public IP must keep working if any one zone fails. How is the Standard IP created?",
+    "explanation": "A zone-redundant Standard public IP is served from every zone and survives a single zone failure. A zonal IP depends on its zone.",
+    "options": [
+      "Zonal, in zone 1",
+      "Non-zonal",
+      "Zone-redundant",
+      "With dynamic allocation"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-095",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Lifecycle management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new lifecycle policy was saved an hour ago and no blobs have moved yet. Is that expected?",
+    "explanation": "Lifecycle policies run once a day, and a new or changed policy can take up to 24 hours before its first run.",
+    "options": [
+      "No, it runs every five minutes",
+      "Yes, it can take up to 24 hours",
+      "Yes, it waits for a reboot",
+      "No, it should apply as soon as saved"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-096",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "App Service",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A web app must only accept requests from the office IP range. Which feature fits?",
+    "explanation": "Access restrictions are inbound allow and deny rules by IP range or subnet. VNet integration and hybrid connections handle outbound traffic.",
+    "options": [
+      "VNet integration",
+      "Access restrictions",
+      "Deployment slots",
+      "Hybrid connections to the office"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-097",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Availability zones",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Three VMs must be spread so each sits in a different datacenter of the region. How are they deployed?",
+    "explanation": "Each availability zone is a physically separate group of datacenters. Placing one VM per zone spreads them across datacenters.",
+    "options": [
+      "One proximity placement group",
+      "One availability set",
+      "Three resource groups",
+      "Zones 1, 2 and 3"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-098",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Load balancing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Health probes fail on every backend VM after a new NSG rule denies all inbound traffic. What should the NSG allow?",
+    "explanation": "Probes come from the AzureLoadBalancer service tag (168.63.129.16). A custom deny rule above the default allow rule blocks them.",
+    "options": [
+      "TCP 443 from anywhere",
+      "The AzureLoadBalancer service tag",
+      "The Internet service tag, inbound only",
+      "The VirtualNetwork service tag"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-099",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Built-in roles",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which built-in role lets a user both manage resources and grant access to them in a resource group?",
+    "explanation": "Owner grants full access, including assigning roles. Contributor can't assign roles, and the two access roles can't manage the resources themselves.",
+    "options": [
+      "User Access Administrator",
+      "Contributor",
+      "Role Based Access Control Administrator",
+      "Owner"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "AZ104-D-100",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Azure Policy",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "New VMs may only use three approved sizes. Which built-in policy fits?",
+    "explanation": "The allowed VM size SKUs definition takes a list of sizes and denies others. Allowed locations restricts regions instead.",
+    "options": [
+      "Audit VMs that don't use managed disks",
+      "Allowed virtual machine size SKUs",
+      "Require a tag and its value on resources",
+      "Allowed locations"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-101",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Backup alerts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Admins want failed backup jobs reported through their existing action groups. What should be used?",
+    "explanation": "Azure Backup raises built-in Azure Monitor alerts that can be routed to action groups with alert processing rules.",
+    "options": [
+      "Email digests from Azure Advisor",
+      "Azure Monitor alerts for Backup",
+      "Activity log only",
+      "A storage lifecycle rule"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-102",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageAccess",
+    "skill": "Access keys",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A storage key was posted publicly. Which step kills it without breaking apps on the other key?",
+    "explanation": "Regenerating the leaked key makes it useless at once while apps on the second key keep working. Rotating both would break every app.",
+    "options": [
+      "Regenerate both keys",
+      "Delete the storage account",
+      "Regenerate the exposed key",
+      "Turn on soft delete"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "AZ104-D-103",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vnet",
+    "skill": "Virtual networks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A VNet uses 10.20.0.0/16 and needs more space for a new subnet. What can be done without recreating it?",
+    "explanation": "Address ranges can be added to an existing virtual network, and subnets created in them. Peerings then need a sync.",
+    "options": [
+      "Add another address range",
+      "Lower the DNS TTL",
+      "Delete and recreate the gateway",
+      "Change the region"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-104",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104StorageData",
+    "skill": "Versioning",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Is each statement about blob data protection true?",
+    "explanation": "Versioning isn't supported on accounts with a hierarchical namespace. Object replication copies blobs asynchronously. Lifecycle policies can't rehydrate archived blobs; use Copy Blob or Set Blob Tier.",
+    "rows": [
+      "Blob versioning works on accounts with a hierarchical namespace.",
+      "Object replication copies blobs asynchronously.",
+      "A lifecycle rule can rehydrate archived blobs to Hot."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-105",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Deploy",
+    "skill": "App Service",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "How many deployment slots does a Premium App Service plan allow per app? Type the number only.",
+    "explanation": "Premium plans allow 20 deployment slots per app. Standard allows five.",
+    "numeric": {
+      "answers": [
+        "20"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "AZ104-D-106",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Vms",
+    "skill": "Scale sets",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A scale set's instances must be removed on a schedule at 8 PM each weekday. What should be added?",
+    "explanation": "Autoscale profiles can run on a recurring schedule with their own instance counts. Instance protection stops chosen instances from being removed.",
+    "options": [
+      "A recurring autoscale profile",
+      "A larger instance size",
+      "An instance protection setting",
+      "A scale-in policy"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-107",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104NetSecure",
+    "skill": "Azure DNS",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The apex of contoso.com must point at an Azure public IP and follow it if the IP changes. Which record fits?",
+    "explanation": "An alias record set refers to an Azure resource such as a public IP and updates with it. A CNAME can't be placed at the zone apex.",
+    "options": [
+      "An alias record set",
+      "A CNAME record at the apex",
+      "A PTR record",
+      "An NS record for the apex"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-108",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Identity",
+    "skill": "Interpreting access",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An Owner can't delete a resource that a managed application created, even with no lock present. What explains this?",
+    "explanation": "Deny assignments block listed actions even when a role assignment grants them. Azure creates them to protect resources such as those of managed applications.",
+    "options": [
+      "A deny assignment applies",
+      "Tags protect the resource",
+      "Owners can't delete resources",
+      "The user also needs Contributor"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "AZ104-D-109",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Governance",
+    "skill": "Azure Policy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Deny policy is assigned, and 20 resources that already exist break its rule. What happens to them?",
+    "explanation": "Deny acts on new create and update requests. Existing resources that break the rule are reported as non-compliant but left as they are.",
+    "options": [
+      "They are deleted automatically",
+      "They are reported as non-compliant",
+      "They are stopped",
+      "They are moved"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "AZ104-D-110",
+    "section": "az104",
+    "test": 0,
+    "module": 1,
+    "domain": "az104Monitor",
+    "skill": "Network Watcher",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "New NSG flow logs can no longer be created. What should be used to log traffic flows instead?",
+    "explanation": "NSG flow logs can't be created since June 30, 2025 and retire on September 30, 2027. Virtual network flow logs replace them.",
+    "options": [
+      "Continuous packet capture",
+      "Virtual network flow logs",
+      "Connection troubleshoot",
+      "Activity log"
+    ],
+    "correct": [
+      1
+    ]
+  }
+]

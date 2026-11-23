@@ -1026,6 +1026,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the Microsoft Learn SC-900 study guide (skills measured as of October 21, 2026) and the Security, Compliance, and Identity Fundamentals certification page, checked November 2026",
     source: { name: "Microsoft Learn: Study guide for Exam SC-900", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900" },
   },
+  az104: {
+    answer:
+      "Exam AZ-104: Microsoft Azure Administrator is the exam for the Microsoft Certified: Azure Administrator Associate certification. Microsoft gives 100 minutes and a passing score of 700 on a scale of 1 to 1,000; it does not publish a fixed question count, and says most of its certification exams have 40 to 60 questions, with types that can include case studies and, on some role-based exams, labs. The skills measured as of October 26, 2023, still the current list in November 2026, are Manage Azure identities and governance 20-25%, Implement and manage storage 15-20%, Deploy and manage Azure compute resources 20-25%, Implement and manage virtual networking 15-20% and Monitor and maintain Azure resources 10-15%. The exam is proctored through Pearson VUE in 10 languages, and the certification is renewed every 12 months with a free online assessment.",
+    rows: [
+      { label: "Time", value: "100 minutes" },
+      { label: "Questions", value: "Not published (Microsoft: most exams have 40 to 60)" },
+      { label: "Pass mark", value: "700 on a scale of 1 to 1,000" },
+      { label: "Content", value: "Identities and governance 20-25%, storage 15-20%, compute 20-25%, virtual networking 15-20%, monitor and maintain 10-15%" },
+      { label: "Languages", value: "English, Chinese (Simplified and Traditional), Korean, Japanese, French, Spanish, German, Portuguese (Brazil), Italian" },
+      { label: "Where", value: "Proctored, scheduled through Pearson VUE" },
+      { label: "Renewal", value: "Every 12 months, free online assessment on Microsoft Learn" },
+      { label: "Run by", value: "Microsoft" },
+    ],
+    basedOn: "Microsoft Learn's AZ-104 study guide (skills measured as of October 26, 2023), the Azure Administrator Associate certification page and Microsoft's exam duration page, checked November 2026",
+    source: { name: "Microsoft Learn: AZ-104 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/az-104" },
+  },
   sc200: {
     answer:
       "Exam SC-200: Microsoft Security Operations Analyst is the exam for the Microsoft Certified: Security Operations Analyst Associate certification. Microsoft gives 100 minutes and a passing score of 700 on a scale of 1 to 1,000; it does not publish a fixed question count, and says most of its certification exams have 40 to 60 questions, with types that can include case studies and, on some role-based exams, labs. The skills measured as of October 21, 2026 are Manage a security operations environment 40-45%, Respond to security incidents 35-40% and Perform threat hunting 20-25%, across Microsoft Defender XDR, Microsoft Sentinel, Microsoft Entra ID, Microsoft Purview, Defender for Cloud and KQL. The exam is proctored through Pearson VUE in 10 languages, and the certification is renewed every 12 months with a free online assessment.",

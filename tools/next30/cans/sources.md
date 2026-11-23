@@ -9,6 +9,22 @@ Read October 30, 2026.
   April 1, 2015, learner licence valid 2 years, slow down and move over at 60 km/h, yield to transit
   buses at 60 km/h or less). Chapters used: 1 licence and demerit tables, 2 rules of the road,
   3 signs, markings and work zones, 4 safety, 5 adverse conditions and emergencies, 6 impairment.
+- (2026-11-23) Both handbook links above now serve a new edition, "Reprinted with revisions, 2026"
+  (Crown copyright 2026, 218 pages):
+  https://www.novascotia.ca/sites/default/files/documents/1-4388/nova-scotia-drivers-handbook-en.pdf
+  Read for the rules the bank uses; it agrees with the 2026 regulations below and with the bank:
+  learner wait 12 months, 9 with the long Approved Driver Education Course; 4 or more demerit points
+  on a learner's licence = 6 months without driving; 6 points in the newly licensed stage = 6-month
+  suspension; zero alcohol or drugs for learners; 80 km/h default, 50 km/h in business and
+  residential districts; school zone 30 km/h where the limit is 50 (50 where higher) when a child is
+  outdoors on or within 30 m of the road, whatever the time or day; slow to 60 km/h past a stopped
+  emergency vehicle; never within 150 m of a stopped emergency vehicle; yield to transit buses at
+  60 km/h or less; curbside wheels within 30 cm of the curb; no parking within 5 m of a crosswalk,
+  7.5 m of an intersection, 15 m of the nearest rail; unmarked stop no more than 1.5 m back; high
+  beams dimmed within 150 m oncoming, 60 m following; 30 m from a vehicle fire, 20 m from a downed
+  line; rest every 150-200 km. The handbook still lists 50 km/h within 30 m of a railway crossing,
+  which the 2026 Using the Road Regulations dropped; the bank has no item on it. Nothing in the bank
+  changes.
 - Take a driver knowledge test: Learner's Licence (class 7):
   https://www.novascotia.ca/take-driver-knowledge-test-learners-licence-class-7
   Two parts (Rules of the Road Test, Road Sign Recognition Test), 20 multiple-choice questions each,

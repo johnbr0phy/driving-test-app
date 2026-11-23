@@ -3,13 +3,19 @@
 Checked 1 November 2026.
 
 ## Official
-- Union Public Service Commission, National Defence Academy and Naval Academy Examination (II), 2026: exam page
-  https://www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026
-  (as listed by web search, 1 November 2026): notification dated 20/05/2026, examination from 13/09/2026, last date
-  11/06/2026 on that page (other sites give 9 June 2026). The page and the notification PDF on upsc.gov.in could not be
-  loaded from this environment (403 and connection reset).
+- Union Public Service Commission, Examination Notice No. 10/2026-NDA-II, English PDF on upsc.gov.in (linked from the
+  "National Defence Academy and Naval Academy Examination (II), 2026" entry of https://upsc.gov.in/previous-exam-details/),
+  downloaded and read 2026-11-23:
+  https://www.upsc.gov.in/uploads/2026/06/Notif-NDA-II-2026-Engl-200526-1.pdf
+  Confirms the notice facts below: last date 09.06.2026, examination 13.09.2026, Mathematics code 01, 2½ hours,
+  300 marks; General Ability Test 2½ hours, 600 marks; objective type questions only. Nothing in the bank changes.
+- UPSC exam list (new site layout, 2026-11-23): https://upsc.gov.in/previous-exam-details/
+- (2026-11-23) The old exam page (no longer linked, so the watcher drops it)
+  www.upsc.gov.in/examinations/National%20Defence%20Academy%20and%20Naval%20Academy%20Examination%20%28II%29%2C%202026
+  now returns 404 after UPSC moved its site; it is replaced by the two links above. As listed by web search on
+  1 November 2026 it gave notification 20/05/2026, examination from 13/09/2026, last date 11/06/2026.
 - Examination Notice No. 10/2026-NDA-II, full text read on 1 November 2026 from a copy of the official PDF hosted at
-  https://www.defenceguru.co.in/assets/uploads/blog_gallery/Notif-NDA-II-2026.pdf (the upsc.gov.in original still
+  https://www.defenceguru.co.in/assets/uploads/blog_gallery/Notif-NDA-II-2026.pdf (the upsc.gov.in original then
   refused connections). Confirmed from it: notification 20.05.2026, last date 09.06.2026 (the later 11 June on the
   exam page is an extension), examination 13.09.2026; scheme table Mathematics code 01, 2½ hours, 300 marks; General
   Ability Test code 02, 2½ hours, 600 marks; total 900; SSB Test/Interview 900; Part A English 200 marks, Part B

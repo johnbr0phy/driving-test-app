@@ -9,7 +9,7 @@ the student test, and were not opened or used.
 
 - Færdselsstyrelsen, Undervisningsplan kategori C (stor lastbil) og kategori D (stor bus),
   version 1.0 2026 (FS 16.01.2026), fetched 2026-11-15 (91 pages, full text read):
-  https://www.fstyr.dk/Media/639041568193040740/Undervisningsplan%20kategori%20C%20(stor%20lastbil)%20og%20kategori%20D%20(stor%20bus)%20-%20FS%2016.01.2026.pdf
+  https://www.fstyr.dk/Media/639041568193040740/Undervisningsplan%20kategori%20C%20%28stor%20lastbil%29%20og%20kategori%20D%20%28stor%20bus%29%20-%20FS%2016.01.2026.pdf
   Every truck rule and figure in the bank is from this plan (the "Særligt for kategori C" parts
   and the shared C/D parts; the D-only bus parts were not used). Used: 1.1 steering (hydraulic
   and electric power steering only with the engine running, failure makes steering too heavy to
@@ -55,7 +55,9 @@ the student test, and were not opened or used.
   without danger, more crashes in the dark).
 - Færdselsstyrelsen, Undervisningsplan kategori CE (stor lastbil med stort påhængskøretøj),
   FS 16.01.2026, fetched 2026-11-15 (64 pages, read for 1.8 and 6.2):
-  https://www.fstyr.dk/Media/639041568080850919/Undervisningsplan%20kategori%20CE%20(stor%20lastbil%20med%20stort%20p%c3%a5h%c3%a6ngsk%c3%b8ret%c3%b8j)%20-%20FS%2016.01.2026.pdf
+  https://www.fstyr.dk/Media/639041568080850919/Undervisningsplan%20kategori%20CE%20%28stor%20lastbil%20med%20stort%20p%c3%a5h%c3%a6ngsk%c3%b8ret%c3%b8j%29%20-%20FS%2016.01.2026.pdf
+  (2026-11-23: the source watcher cut this link at the first bracket and got a 404; brackets are now
+  percent-encoded. The full link still serves the same 2.5 MB PDF, HTTP 200. Nothing in the bank changes.)
   Used: 1.8.1 coupling (trailer parking brake applied before backing under; kingpin load over the
   permitted fifth-wheel load means taking load off the front), 6.2.2 (lorry and drawbar trailer at
   most 18.75 m), 6.2.5 (load the lorry first).

@@ -42,6 +42,14 @@ paraphrased. WASSCE past questions are widely posted online; none was opened for
   ("Last updated: September 5, 2026", fetched 2026-11-14). Same scheme and lists; states the total is 170 marks,
   that WAEC has issued no newer syllabus so it applies to the May/June 2027 WASSCE for School Candidates, and that in
   Nigeria Paper 2 is written first, then Paper 1 at the same sitting, with Paper 3 in the afternoon.
+  - Re-read 2026-11-23: the page says it is "An independent guide to the WAEC syllabus. Not affiliated with
+    the West African Examinations Council". It still gives the same three papers: Paper 1 80 questions
+    (40 lexis, 40 structure) in 1 hour for 40 marks; Paper 2 essay (one of five, 450 words, 50 marks),
+    comprehension (20) and summary (30) in 2 hours for 100 marks; Paper 3 60 items in 45 minutes for 30 marks,
+    total 170. Nothing in the bank changes. A search for an official WAEC page with the syllabus or paper
+    scheme (waecnigeria.org, waeconline.org.ng, waecgh.org) found none: WAEC's e-learning site
+    (https://www.waeconline.org.ng/e-learning/English/Englmain.html) carries Chief Examiners' reports but no
+    paper scheme. So this page stays the best available source, as noted above.
 - MySchool, "WAEC Syllabus: English Language", https://myschool.ng/classroom/waec-syllabus/english-language
   (labelled 2027, fetched 2026-11-14). Same text as the PDF.
 

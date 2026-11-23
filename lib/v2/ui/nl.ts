@@ -120,9 +120,9 @@ export const NL: V2UiTranslation = {
     selectN: (n: number) => `Kies er ${n}.`,
     selectAll: "Kies alle antwoorden die kloppen.",
     srCorrect: "Goed. ",
-    srNotQuite: "Niet helemaal. ",
+    srNotQuite: "Fout. ",
     correct: "Goed",
-    notQuite: "Niet helemaal",
+    notQuite: "Fout",
     skill: (skill: string) => `Vaardigheid: ${skill}`,
 
     stepsPlaced: (placed: number, total: number) => `${placed} van ${total} stappen geplaatst.`,

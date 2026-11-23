@@ -124,9 +124,9 @@ export const runner = {
   selectN: (n: number) => `Select ${n}.`,
   selectAll: "Select every answer that applies.",
   srCorrect: "Correct. ",
-  srNotQuite: "Not quite. ",
+  srNotQuite: "Incorrect. ",
   correct: "Correct",
-  notQuite: "Not quite",
+  notQuite: "Incorrect",
   skill: (skill: string) => `Skill: ${skill}`,
 
   // Order input

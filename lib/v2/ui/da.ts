@@ -121,9 +121,9 @@ export const DA: V2UiTranslation = {
     selectN: (n: number) => `Vælg ${n}.`,
     selectAll: "Vælg alle svar, der passer.",
     srCorrect: "Rigtigt. ",
-    srNotQuite: "Ikke helt. ",
+    srNotQuite: "Forkert. ",
     correct: "Rigtigt",
-    notQuite: "Ikke helt",
+    notQuite: "Forkert",
     skill: (skill: string) => `Færdighed: ${skill}`,
 
     stepsPlaced: (placed: number, total: number) => `${placed} af ${total} trin placeret.`,

@@ -125,9 +125,9 @@ export const EL: V2UiTranslation = {
     selectN: (n: number) => `Διάλεξε ${n}.`,
     selectAll: "Διάλεξε όλες τις απαντήσεις που ισχύουν.",
     srCorrect: "Σωστό. ",
-    srNotQuite: "Όχι ακριβώς. ",
+    srNotQuite: "Λάθος. ",
     correct: "Σωστό",
-    notQuite: "Όχι ακριβώς",
+    notQuite: "Λάθος",
     skill: (skill: string) => `Δεξιότητα: ${skill}`,
 
     stepsPlaced: (placed: number, total: number) => `${placed} από ${total} βήματα τοποθετήθηκαν.`,

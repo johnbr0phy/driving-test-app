@@ -134,9 +134,9 @@ export const DE: V2UiTranslation = {
     selectN: (n: number) => `Wähle ${n}.`,
     selectAll: "Wähle alle zutreffenden Antworten.",
     srCorrect: "Richtig. ",
-    srNotQuite: "Nicht ganz. ",
+    srNotQuite: "Falsch. ",
     correct: "Richtig",
-    notQuite: "Nicht ganz",
+    notQuite: "Falsch",
     skill: (skill: string) => `Fertigkeit: ${skill}`,
 
     // Order input

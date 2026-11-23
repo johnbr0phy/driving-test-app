@@ -125,9 +125,9 @@ export const FI: V2UiTranslation = {
     selectN: (c: number) => `Valitse ${c}.`,
     selectAll: "Valitse kaikki oikeat vastaukset.",
     srCorrect: "Oikein. ",
-    srNotQuite: "Ei aivan. ",
+    srNotQuite: "Väärin. ",
     correct: "Oikein",
-    notQuite: "Ei aivan",
+    notQuite: "Väärin",
     skill: (skill: string) => `Taito: ${skill}`,
 
     stepsPlaced: (placed: number, total: number) => `${placed}/${total} vaihetta sijoitettu.`,

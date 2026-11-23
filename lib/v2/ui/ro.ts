@@ -126,9 +126,9 @@ export const RO: V2UiTranslation = {
     selectN: (n: number) => `Alege ${n}.`,
     selectAll: "Selectează toate răspunsurile corecte.",
     srCorrect: "Corect. ",
-    srNotQuite: "Nu chiar. ",
+    srNotQuite: "Greșit. ",
     correct: "Corect",
-    notQuite: "Nu chiar",
+    notQuite: "Greșit",
     skill: (skill: string) => `Abilitate: ${skill}`,
 
     stepsPlaced: (placed: number, total: number) => `${placed} din ${cnt(total, "pas plasat", "pași plasați")}.`,

@@ -122,9 +122,9 @@ export const HU: V2UiTranslation = {
     selectN: (n: number) => `Válassz ki ${n} választ.`,
     selectAll: "Jelöld meg az összes helyes választ.",
     srCorrect: "Helyes. ",
-    srNotQuite: "Nem egészen. ",
+    srNotQuite: "Helytelen. ",
     correct: "Helyes",
-    notQuite: "Nem egészen",
+    notQuite: "Helytelen",
     skill: (skill: string) => `Készség: ${skill}`,
 
     stepsPlaced: (placed: number, total: number) => `${placed}/${total} lépés elhelyezve.`,

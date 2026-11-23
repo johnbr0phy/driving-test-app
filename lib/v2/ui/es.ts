@@ -120,9 +120,9 @@ export const ES: V2UiTranslation = {
     selectN: (n: number) => `Elige ${n}.`,
     selectAll: "Elige todas las respuestas correctas.",
     srCorrect: "Correcto. ",
-    srNotQuite: "No exactamente. ",
+    srNotQuite: "Incorrecto. ",
     correct: "Correcto",
-    notQuite: "No exactamente",
+    notQuite: "Incorrecto",
     skill: (skill: string) => `Habilidad: ${skill}`,
 
     stepsPlaced: (placed: number, total: number) => `${placed} de ${total} pasos colocados.`,

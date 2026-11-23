@@ -134,16 +134,16 @@
     "skill": "CIA",
     "difficulty": 2,
     "format": "single",
-    "stem": "A website goes down during a flood of traffic, so customers cannot order. Which CIA goal failed?",
-    "explanation": "Availability means systems and data are there when needed. Confidentiality keeps data private, and integrity keeps it unaltered.",
+    "stem": "A shop's only order server crashes, and staff cannot see orders until it is rebuilt. Which CIA goal suffered?",
+    "explanation": "Availability means systems and data can be reached when needed. Nothing was disclosed or altered, so confidentiality and integrity held.",
     "options": [
+      "Availability",
       "Confidentiality",
-      "Integrity",
       "Non-repudiation",
-      "Availability"
+      "Integrity"
     ],
     "correct": [
-      3
+      0
     ]
   },
   {
@@ -197,16 +197,16 @@
     "skill": "Notational systems",
     "difficulty": 2,
     "format": "single",
-    "stem": "What is the binary number 101101 in decimal?",
-    "explanation": "101101 is 32 + 8 + 4 + 1 = 45. Dropping the 8s place gives 37.",
+    "stem": "What is the binary number 1100011 in decimal?",
+    "explanation": "1100011 is 64 + 32 + 2 + 1 = 99. Dropping the 32s place gives 67, and forgetting the 2s place gives 97.",
     "options": [
-      "29",
-      "37",
-      "41",
-      "45"
+      "67",
+      "97",
+      "99",
+      "115"
     ],
     "correct": [
-      3
+      2
     ],
     "lockedOrder": true
   },
@@ -282,16 +282,16 @@
     "skill": "Virtualization and cloud",
     "difficulty": 2,
     "format": "single",
-    "stem": "A school uses an online word processor through a browser and manages nothing underneath. Which cloud model is this?",
-    "explanation": "Software as a Service delivers a finished application. The provider runs everything under it.",
+    "stem": "With SaaS, who patches the application itself?",
+    "explanation": "In Software as a Service the provider runs and updates the whole application; customers just use it and manage their own data and accounts.",
     "options": [
-      "IaaS",
-      "SaaS",
-      "PaaS",
-      "On premises"
+      "Customer",
+      "Customer's IT team",
+      "Provider",
+      "Each end user"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -324,13 +324,13 @@
     "skill": "AAA",
     "difficulty": 2,
     "format": "single",
-    "stem": "A user signs in with a password and then a code from a phone app. What is this?",
-    "explanation": "Two different factors (something known plus something owned) make multifactor authentication.",
+    "stem": "Which pair counts as two different authentication factors?",
+    "explanation": "Multifactor authentication combines different kinds of factor: something known (a password) with something the user is (a fingerprint). A password and a PIN are both things known.",
     "options": [
-      "Single-factor authentication",
-      "Multifactor authentication",
-      "Single sign-on",
-      "Least privilege"
+      "PIN and security question",
+      "Password and fingerprint",
+      "Two separate passwords",
+      "Password and PIN"
     ],
     "correct": [
       1
@@ -983,16 +983,16 @@
     "skill": "Social engineering",
     "difficulty": 2,
     "format": "single",
-    "stem": "An email claims a bank account is locked and asks the reader to sign in through a link. What is it most likely?",
-    "explanation": "Phishing uses urgent messages and fake links to steal sign-in details. Go to the bank's site directly instead.",
+    "stem": "A text from an unknown number says a parcel is held and asks the reader to tap a link and pay a fee. What is it most likely?",
+    "explanation": "Phishing by text message uses urgency and a link to steal money or details. Tailgating and shoulder surfing happen in person.",
     "options": [
       "Adware",
-      "Phishing",
-      "Software update",
-      "Spam filtering"
+      "Tailgating",
+      "Shoulder surfing",
+      "Phishing"
     ],
     "correct": [
-      1
+      3
     ]
   },
   {
@@ -1130,13 +1130,13 @@
     "skill": "Wireless security",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which Wi-Fi security option is strongest on a new home router?",
-    "explanation": "WPA3 is the current standard and resists password guessing better than WPA2. WEP is broken, and Open has no encryption.",
+    "stem": "Which Wi-Fi security setting leaves the wireless link with no encryption?",
+    "explanation": "An open network has no passphrase and no encryption. WEP encrypts, though weakly, and WPA2 and WPA3 use strong encryption.",
     "options": [
-      "WPA3",
-      "WPA2",
       "Open",
-      "WEP"
+      "WEP",
+      "WPA2-Personal",
+      "WPA3-Personal"
     ],
     "correct": [
       0
@@ -1319,13 +1319,13 @@
     "skill": "Wireless security",
     "difficulty": 2,
     "format": "single",
-    "stem": "What should be done first with a new router's admin login?",
-    "explanation": "Default router passwords are published online, so anyone nearby could take control.",
+    "stem": "A home router's admin login is still the factory default. What can a nearby attacker do?",
+    "explanation": "Default admin passwords are published online, so an attacker on the network can sign in and change DNS, Wi-Fi or firewall settings.",
     "options": [
-      "Write it on the router",
-      "Share it with guests",
-      "Leave it for support",
-      "Change the default password"
+      "Cut the ISP line",
+      "Break WPA3 instantly",
+      "Read HTTPS pages",
+      "Change router settings"
     ],
     "correct": [
       3
@@ -1425,13 +1425,13 @@
     "skill": "I/O interfaces",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which wireless technology pays at a store terminal when a phone is held a few centimeters away?",
-    "explanation": "Near-field communication works only over a few centimeters, which suits tap-to-pay.",
+    "stem": "Which technology lets two phones swap a contact card when they are touched together?",
+    "explanation": "Near-field communication works only over a few centimeters, so it suits touch-to-share and touch-to-pay.",
     "options": [
       "Infrared",
       "Wi-Fi",
       "NFC",
-      "Bluetooth"
+      "Cellular"
     ],
     "correct": [
       2
@@ -1572,16 +1572,16 @@
     "skill": "Virtualization and cloud",
     "difficulty": 2,
     "format": "single",
-    "stem": "A company rents virtual servers and installs its own operating systems on them. Which cloud model is this?",
-    "explanation": "Infrastructure as a Service provides compute, storage and networking; the customer manages the OS and above.",
+    "stem": "In IaaS, which layer does the customer manage?",
+    "explanation": "Infrastructure as a Service supplies the hardware and virtualization; the customer installs and patches the OS and everything above it.",
     "options": [
-      "IaaS",
-      "DaaS",
-      "PaaS",
-      "SaaS"
+      "Hypervisor",
+      "Data center power",
+      "Operating system",
+      "Physical servers"
     ],
     "correct": [
-      0
+      2
     ]
   },
   {
@@ -1677,16 +1677,16 @@
     "skill": "Notational systems",
     "difficulty": 2,
     "format": "single",
-    "stem": "What is the hexadecimal value 2F in decimal?",
-    "explanation": "2F is 2 x 16 + 15 = 47. Treating F as 30 or reading the digits as decimal gives the wrong values.",
+    "stem": "What is the hexadecimal value 5D in decimal?",
+    "explanation": "5D is 5 x 16 + 13 = 93. Adding the digits gives 18, and treating 5D as 5 x 16 alone gives 80.",
     "options": [
-      "32",
-      "47",
-      "62",
-      "215"
+      "18",
+      "80",
+      "93",
+      "513"
     ],
     "correct": [
-      1
+      2
     ],
     "lockedOrder": true
   },
@@ -1762,16 +1762,16 @@
     "skill": "Virtualization and cloud",
     "difficulty": 3,
     "format": "single",
-    "stem": "A company keeps payroll servers in its own building and runs its website in the cloud. Which deployment model is this?",
-    "explanation": "Hybrid combines on-premises systems with cloud services.",
+    "stem": "Which deployment model runs every system on hardware the company owns in its own building?",
+    "explanation": "On premises means the organization hosts and runs its own systems. Hybrid mixes those with cloud services.",
     "options": [
-      "On premises",
+      "Hybrid",
       "Public cloud",
-      "Community",
-      "Hybrid"
+      "On premises",
+      "Community"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -1993,16 +1993,16 @@
     "skill": "AAA",
     "difficulty": 3,
     "format": "single",
-    "stem": "A digital signature proves a manager approved a contract, so the manager cannot deny it later. What is this?",
-    "explanation": "Non-repudiation prevents someone from falsely denying an action. Digital signatures provide it.",
+    "stem": "Which tool gives non-repudiation for an approved document?",
+    "explanation": "A digital signature ties the approval to the signer's private key, so the signer cannot credibly deny it. A read receipt only shows a message was opened.",
     "options": [
-      "Non-repudiation",
-      "Availability",
-      "Authorization",
-      "Confidentiality"
+      "Read receipt",
+      "Digital signature",
+      "Spam filter",
+      "File compression"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -2666,16 +2666,16 @@
     "skill": "Small wireless networks",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which standard is the newest of these and can use the 6 GHz band?",
-    "explanation": "802.11ax (Wi-Fi 6) added 6 GHz operation. 802.11ac runs below 6 GHz, and 802.11n and 802.11g are older.",
+    "stem": "Which of these Wi-Fi standards is the oldest?",
+    "explanation": "IEEE approved 802.11n in 2009, 802.11ac in 2013, 802.11ax in 2021 and 802.11be in 2024. Newer standards are faster and handle more devices.",
     "options": [
-      "802.11g",
-      "802.11ax",
+      "802.11be",
       "802.11ac",
-      "802.11n"
+      "802.11n",
+      "802.11ax"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -3044,12 +3044,12 @@
     "skill": "Virtualization and cloud",
     "difficulty": 2,
     "format": "single",
-    "stem": "Developers upload code and the provider runs it without the team managing servers. Which model fits?",
-    "explanation": "Platform as a Service gives a ready environment to deploy code; the provider manages servers and OS.",
+    "stem": "A team wants a ready runtime and database service to build an app on, with no OS to maintain. Which model fits?",
+    "explanation": "Platform as a Service provides the runtime, database and tools; the provider maintains servers and the OS. IaaS would leave the OS to the team.",
     "options": [
       "IaaS",
-      "Hybrid",
       "SaaS",
+      "Hybrid",
       "PaaS"
     ],
     "correct": [
@@ -3065,16 +3065,16 @@
     "skill": "Notational systems",
     "difficulty": 2,
     "format": "single",
-    "stem": "What is the decimal number 13 in binary?",
-    "explanation": "13 is 8 + 4 + 1, so the 8s, 4s and 1s places are on: 1101. 1011 is 11.",
+    "stem": "What is the decimal number 37 in binary?",
+    "explanation": "37 is 32 + 4 + 1, so the 32s, 4s and 1s places are on: 100101. 101001 is 41, which puts the 8s place on instead of the 4s.",
     "options": [
-      "0111",
-      "1011",
-      "1101",
-      "1110"
+      "100011",
+      "100101",
+      "101001",
+      "110001"
     ],
     "correct": [
-      2
+      1
     ],
     "lockedOrder": true
   },
@@ -3213,16 +3213,16 @@
     "skill": "AAA",
     "difficulty": 2,
     "format": "single",
-    "stem": "A user is signed in but blocked from the admin settings. Which AAA step does the blocking?",
-    "explanation": "Authentication proves who someone is; authorization decides what that person may do.",
+    "stem": "Which AAA step checks a password against the stored record?",
+    "explanation": "Authentication proves who someone is, for example with a password. Authorization then decides what that person may do.",
     "options": [
-      "Accounting",
+      "Account auditing",
       "Authentication",
       "Authorization",
-      "Account auditing"
+      "Accounting"
     ],
     "correct": [
-      2
+      1
     ]
   },
   {
@@ -3403,16 +3403,16 @@
     "skill": "AAA",
     "difficulty": 2,
     "format": "single",
-    "stem": "Why should people use a standard user account rather than an administrator account day to day?",
-    "explanation": "Running with fewer rights means harmful software started by the user cannot change the whole system.",
+    "stem": "Which account type should be kept for installing software and changing system settings?",
+    "explanation": "Administrator rights are needed for installs and system changes, so they are used only then; everyday work uses a standard account.",
     "options": [
-      "Files back up",
-      "Apps load faster",
-      "Malware gets fewer rights",
-      "Updates install themselves"
+      "Standard user",
+      "Guest",
+      "Shared kiosk",
+      "Administrator"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {

@@ -37,9 +37,9 @@ ITEMS = [
            ["RJ45", "RJ11", "HDMI", "VGA"],
            "Ethernet uses the 8-pin RJ45 connector. RJ11 is the smaller telephone connector."),
     single(1, "I/O interfaces", 2,
-           "Which wireless technology pays at a store terminal when a phone is held a few centimeters away?",
-           ["NFC", "Wi-Fi", "Bluetooth", "Infrared"],
-           "Near-field communication works only over a few centimeters, which suits tap-to-pay."),
+           "Which technology lets two phones swap a contact card when they are touched together?",
+           ["NFC", "Wi-Fi", "Infrared", "Cellular"],
+           "Near-field communication works only over a few centimeters, so it suits touch-to-share and touch-to-pay."),
     # ---------------- Test 2 ----------------
     single(2, "Internal components", 1,
            "Which board connects the CPU, memory and expansion cards to each other?",

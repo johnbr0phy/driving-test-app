@@ -1590,5 +1590,13 @@
       "pr": 988,
       "findings": 10
     }
+  ],
+  "ncmhce": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 987,
+      "findings": 11
+    }
   ]
 }

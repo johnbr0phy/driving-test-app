@@ -1,0 +1,21 @@
+{
+  "id": "ncmhce", "stateCode": "NCMHCE", "idBase": 48400, "prefix": "NCMHCE-",
+  "slug": "/ncmhce", "landingPath": "/ncmhce-practice-test",
+  "dataFile": "data/ncmhce-questions.json",
+  "categories": [
+    {"key": "ncmhceEthics", "label": "Professional Practice & Ethics", "perTest": 8, "pool": 32, "segment": "ETH"},
+    {"key": "ncmhceAssess", "label": "Intake, Risk & Level of Care", "perTest": 6, "pool": 24, "segment": "ASM"},
+    {"key": "ncmhceDiagnosis", "label": "DSM-5-TR Diagnosis", "perTest": 6, "pool": 24, "segment": "DX"},
+    {"key": "ncmhcePlanning", "label": "Treatment Planning", "perTest": 7, "pool": 28, "segment": "PLN"},
+    {"key": "ncmhceInterventions", "label": "Theory-Based Interventions", "perTest": 8, "pool": 32, "segment": "INT"},
+    {"key": "ncmhceGroupFamily", "label": "Group, Family & Crisis Work", "perTest": 7, "pool": 28, "segment": "GRP"},
+    {"key": "ncmhceAttributes", "label": "Core Counseling Attributes", "perTest": 8, "pool": 32, "segment": "ATT"}
+  ],
+  "trainingSets": [
+    {"setNumber": 1, "id": 48401, "name": "Professional Practice & Ethics", "categories": ["ncmhceEthics"], "size": 32},
+    {"setNumber": 2, "id": 48402, "name": "Intake, Assessment & Diagnosis", "categories": ["ncmhceAssess", "ncmhceDiagnosis"], "size": 48},
+    {"setNumber": 3, "id": 48403, "name": "Treatment Planning & Interventions", "categories": ["ncmhcePlanning", "ncmhceInterventions"], "size": 60},
+    {"setNumber": 4, "id": 48404, "name": "Group, Family & Crisis Work", "categories": ["ncmhceGroupFamily"], "size": 28},
+    {"setNumber": 5, "id": 48405, "name": "Core Counseling Attributes", "categories": ["ncmhceAttributes"], "size": 32}
+  ]
+}

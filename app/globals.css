@@ -6606,6 +6606,20 @@
     --brand-gradient-to: 190 35% 96%;
   }
 
+  /* NCMHCE (clinical mental health counseling) theme */
+  [data-theme="ncmhce"] {
+    --brand: 120 25% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 120 25% 95%;
+    --brand-hover: 120 25% 15%;
+    --brand-dark: 120 25% 13%;
+    --brand-darker: 120 25% 10%;
+    --brand-muted: 120 15% 65%;
+    --brand-border: 120 15% 78%;
+    --brand-border-light: 120 15% 88%;
+    --brand-gradient-to: 135 25% 96%;
+  }
+
   /* ASWB Clinical (LCSW licensing) theme */
   [data-theme="aswbclin"] {
     --brand: 300 20% 34%;
@@ -12687,6 +12701,18 @@
     --brand-muted: 178 30% 45%;
     --brand-dark: 178 80% 65%;
     --brand-darker: 178 80% 78%;
+  }
+
+  .dark [data-theme="ncmhce"] {
+    --brand: 120 25% 40.4%;
+    --brand-hover: 120 25% 32.4%;
+    --brand-light: 120 25% 13%;
+    --brand-gradient-to: 135 25% 11%;
+    --brand-border-light: 120 15% 24%;
+    --brand-border: 120 15% 34%;
+    --brand-muted: 120 15% 45%;
+    --brand-dark: 120 25% 65%;
+    --brand-darker: 120 25% 78%;
   }
 
   .dark [data-theme="aswbclin"] {

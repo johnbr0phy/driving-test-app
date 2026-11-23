@@ -698,6 +698,22 @@
       "what": "ARRT's revised MRI Examination Content Specifications take effect (draft July 2026: Patient Care 20, Safety 40, Image Production 86, Procedures 54 of 200).",
       "action": "Read the approved 2028 specifications, re-weight the blueprint, pools and training sets, add the new safety topics, and update the landing, facts and docs.",
       "source": "https://www.arrt.org/news/article/2026/08/17/arrt-seeks-comments-on-mri-documents-2026"
+    },
+    {
+      "exam": "ncmhce",
+      "date": "2027-07-01",
+      "kind": "outline",
+      "what": "NBCC's new NCMHCE specifications take effect: six new domains (Professional Development & Counselor Self-Awareness 15, Intake & Assessment 18, Treatment Planning & Continuity of Care 15, Provision of Counseling Interventions 20, Indirect Client Care 12, Legal & Ethical Compliance 20), 10 case studies, 130-150 questions, scaled 100-500 with 360 to pass.",
+      "action": "Re-weight the blueprint and categories to the 2027 domains, add items for indirect client care and legal compliance, update the landing, examFacts and sources.md, rebuild.",
+      "source": "https://www.cce-global.org/Assets/exams/NCMHCE_exam_spec_2027.pdf"
+    },
+    {
+      "exam": "ncmhce",
+      "date": "2027-01-01",
+      "kind": "notice",
+      "what": "ACA is revising its 2014 Code of Ethics (task force since January 2025; ACA's project page lists a 2027 version, adoption planned at the Governing Board's fall 2026 meeting). Items cite 2014 section numbers (A.5.c five-year rule, A.11, A.12, B.2.c, B.6.c, C.2.h professional will, H distance counseling).",
+      "action": "When the revised Code is published, check every ncmhce item that cites an ACA section number or rule, update the numbers and any changed rule, record the new Code in sources.md, rebuild.",
+      "source": "https://manifold.counseling.org/projects/aca-code-of-ethics"
     }
   ]
 }

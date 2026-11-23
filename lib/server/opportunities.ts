@@ -6,7 +6,6 @@ import { examAnalyticsLabel, getExamById } from '@/lib/exams';
 import { isInternalEmail } from '@/lib/internal';
 import { shareDailyCounts } from '@/lib/shareCounts';
 import { paywallHitFeature, purchaseExam, purchaseLocationLabel } from '@/lib/purchaseAttribution';
-import { LOCK_ARMS, LOCK_TEST_ID } from '@/lib/lockTestIds';
 import { PAYWALL_HITS, PAYWALL_RETURN_ARMS, PAYWALL_TEST_ID, PAYWALL_VARIANTS } from '@/lib/paywallTestIds';
 import { REGIONS, regionFromCountry, regionOfTest, type TestRegion } from '@/lib/region';
 import { paymentNetUsdCents } from '@/lib/pricing';
@@ -133,14 +132,6 @@ export interface OpportunitiesPayload {
     /** Two-sided p-value for purchases per view on return visits, new message vs the first again. */
     returnPValue: number | null;
   } | null;
-  /** The v1 lock share test (lib/lockTest.ts): 25% vs 50% of each dashboard locked, null before its first view. */
-  lockTest: {
-    test: string;
-    since: string | null;
-    arms: { id: string; label: string; browsers: number; views: number; purchases: number; revenueCents: number }[];
-    /** Two-sided p-value for buyers per browser, 25% vs 50%; null until there are buyers. */
-    pValue: number | null;
-  } | null;
   /** John's "tell a friend" prompt (components/SharePromptStep), null before it is first shown. */
   sharePrompt: {
     since: string | null;
@@ -259,7 +250,7 @@ export async function buildOpportunities(
   now = Date.now(),
 ): Promise<OpportunitiesPayload> {
   const w = windows(now);
-  const [usersSnap, paymentsSnap, questionsDoc, funnelDoc, paywallsDoc, sharesDoc, originsSnap, studyTimesDoc, stripeFacts, paywallTestDoc, sharePromptDoc, lockTestDoc] = await Promise.all([
+  const [usersSnap, paymentsSnap, questionsDoc, funnelDoc, paywallsDoc, sharesDoc, originsSnap, studyTimesDoc, stripeFacts, paywallTestDoc, sharePromptDoc] = await Promise.all([
     db.collection('users').select('createdAt', 'activeDates', 'lastUpdated', 'subscription', 'paywallHits').get(),
     db.collection('payments').get(),
     db.doc('analytics/questions').get(),
@@ -271,7 +262,6 @@ export async function buildOpportunities(
     readStripe(stripe),
     db.doc('analytics/paywallTest').get(),
     db.doc('analytics/sharePrompt').get(),
-    db.doc('analytics/lockTest').get(),
   ]);
 
   // ── Users ──────────────────────────────────────────────────────────────
@@ -309,7 +299,6 @@ export async function buildOpportunities(
     paywallVariant?: string;
     paywallHit?: number;
     paywallReturn?: string;
-    lockArm?: string;
     source?: string;
     landing?: string;
   };
@@ -345,7 +334,6 @@ export async function buildOpportunities(
       ...(typeof p.paywallVariant === 'string' && { paywallVariant: p.paywallVariant }),
       ...(typeof p.paywallHit === 'number' && { paywallHit: p.paywallHit }),
       ...(typeof p.paywallReturn === 'string' && { paywallReturn: p.paywallReturn }),
-      ...(typeof p.lockArm === 'string' && { lockArm: p.lockArm }),
       ...(typeof p.source === 'string' && { source: p.source }),
       ...(typeof p.landing === 'string' && { landing: p.landing }),
     });
@@ -485,7 +473,6 @@ export async function buildOpportunities(
     })
     .sort((a, b) => b.revenueAllCents - a.revenueAllCents || b.hits30d - a.hits30d);
   const paywallTest = buildPaywallTest(paywallTestDoc.data(), payments);
-  const lockTest = buildLockTest(lockTestDoc.data(), payments);
   const sharePrompt = buildSharePrompt(sharePromptDoc.data(), w);
   const unattributed = payments.filter((p) => !p.location);
   if (unattributed.length > 0) {
@@ -850,7 +837,6 @@ export async function buildOpportunities(
     exams,
     paywalls,
     paywallTest,
-    lockTest,
     sharePrompt,
     sourcesSince: sourceSince,
     sources,
@@ -962,34 +948,6 @@ function buildPaywallTest(
     pValue: twoProportionP(a.purchases, a.browsers, b.purchases, b.browsers),
     hits,
     returnPValue,
-  };
-}
-
-const LOCK_ARM_LABELS: Record<string, string> = { '25': 'Last 25% locked', '50': 'Last 50% locked (shipped)' };
-
-function buildLockTest(
-  doc: Record<string, any> | undefined,
-  payments: { net: number; lockArm?: string }[],
-): OpportunitiesPayload['lockTest'] {
-  if (!doc || doc.test !== LOCK_TEST_ID) return null;
-  const stored = (doc.arms || {}) as Record<string, { views?: number; browsers?: number }>;
-  const arms = LOCK_ARMS.map((id) => {
-    const sold = payments.filter((p) => p.lockArm === id);
-    return {
-      id,
-      label: LOCK_ARM_LABELS[id] ?? id,
-      browsers: stored[id]?.browsers ?? 0,
-      views: stored[id]?.views ?? 0,
-      purchases: sold.length,
-      revenueCents: sold.reduce((n, p) => n + p.net, 0),
-    };
-  });
-  const [a, b] = arms;
-  return {
-    test: LOCK_TEST_ID,
-    since: typeof doc.since === 'string' ? doc.since : null,
-    arms,
-    pValue: twoProportionP(a.purchases, a.browsers, b.purchases, b.browsers),
   };
 }
 

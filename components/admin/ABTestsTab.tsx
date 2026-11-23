@@ -3,13 +3,13 @@
 import { CARD, TabHeader, fmtUpdated, useAdminFetch } from "@/components/admin/AdminTabParts";
 import { GuestPromptTestCard } from "@/components/admin/GuestPromptTestCard";
 import { LandingTryTestCard } from "@/components/admin/LandingTryTestCard";
-import { LockTestCard } from "@/components/admin/LockTestCard";
 import { PaywallTestCard } from "@/components/admin/PaywallTestCard";
 import { TopPrepperTestCard } from "@/components/admin/TopPrepperTestCard";
 import type { ConversionPayload } from "@/lib/server/conversion";
 import type { OpportunitiesPayload } from "@/lib/server/opportunities";
 
-// The A/B tests tab on /admin: every running experiment in one place. The
+// The A/B tests tab on /admin: the experiments still running, nothing else.
+// When a test ends, take its card off this tab rather than keeping final counts. The
 // Try one now and sign-up message cards fetch their own counts; the paywall
 // test rides the Today tab's payload and the top prepper holdout the
 // Conversion tab's (both served from lib/server/adminCache).
@@ -38,7 +38,6 @@ export function ABTestsTab() {
       ) : opp.data?.paywallTest ? (
         <PaywallTestCard t={opp.data.paywallTest} />
       ) : null}
-      {opp.data?.lockTest && <LockTestCard t={opp.data.lockTest} />}
       <GuestPromptTestCard />
       {conv.loading ? (
         <div className={`${CARD} mb-3 sm:mb-4 text-sm text-gray-500`}>Loading the top prepper email test...</div>

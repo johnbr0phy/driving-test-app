@@ -593,6 +593,14 @@
       "done": "2026-11-18"
     },
     {
+      "exam": "nzfirstaid",
+      "date": "2027-12-31",
+      "kind": "outline",
+      "what": "NZQA unit standards 6400, 6401 and 6402 expire on 31 December 2027; skill standards 41051, 41052 and 41053 (registered 27 November 2025) replace them, assessed to the ANZCOR guidelines since the April 2026 republication.",
+      "action": "Bank written to 41052 and 41053 and current ANZCOR guidelines; after the expiry date drop the 6401 and 6402 wording from the landing, facts and search copy, and re-check any ANZCOR guideline revised since November 2026.",
+      "source": "https://www.nzqa.govt.nz/nqfdocs/summaries/2025/nov25/revsumnov25-16.html"
+    },
+    {
       "exam": "cadroneadv",
       "date": "2025-11-04",
       "kind": "law",

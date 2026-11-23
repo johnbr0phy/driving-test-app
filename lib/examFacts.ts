@@ -152,6 +152,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Transport Canada's Small Basic Exam page and TP 15263, and CARs Part IX as amended by SOR/2025-70, checked November 2026",
     source: { name: "Transport Canada: Small Basic Exam", url: "https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/take-drone-pilot-online-exam/small-basic" },
   },
+  nzfirstaid: {
+    answer:
+      "Most New Zealand workplace first aid certificates are earned by passing NZQA first aid standards on a course run by an accredited training provider: unit standards 6401 Provide first aid and 6402 Provide basic life support, now replaced by skill standards 41052 Administer first aid and 41053 Administer basic life support (registered November 2025; the old unit standards expire on 31 December 2027). There is no national written exam or pass mark: the provider assesses you with simulated incidents, graded Achieved, and assessment must follow the ANZCOR guidelines. Basic life support covers DRSABCD, CPR and AED use on an adult or child and an infant, choking, severe bleeding including a tourniquet, shock and the recovery position.",
+    rows: [
+      { label: "Standards", value: "41052 Administer first aid and 41053 Administer basic life support (Level 2, 1 credit each)" },
+      { label: "Replaces", value: "Unit standards 6401 and 6402, which expire on 31 December 2027" },
+      { label: "Assessment", value: "Simulated incidents run by the training provider, graded Achieved" },
+      { label: "Exam", value: "No national exam, question count or pass mark" },
+      { label: "Guidelines", value: "ANZCOR guidelines (NZQA update, April 2026)" },
+      { label: "Emergency number", value: "111" },
+      { label: "Run by", value: "Accredited training providers; standards set by NZQA" },
+    ],
+    basedOn: "NZQA skill standards 41051, 41052 and 41053 and NZQA's November 2025 review summary and April 2026 change report, checked November 2026",
+    source: { name: "NZQA: Skill standard 41053 Administer basic life support", url: "https://www.nzqa.govt.nz/nqfdocs/skills/pdf/41053.pdf" },
+  },
   cadroneadv: {
     answer:
       "In Canada, flying a drone of 250 g to 150 kg in controlled airspace, closer than 30 m to people not involved, within 3 nautical miles of an airport or 1 nautical mile of a heliport, in extended visual line-of-sight or in a sheltered operation needs the Pilot Certificate - Advanced Operations from Transport Canada. To get it you pass the Advanced Exam online in Transport Canada's Drone Management Portal: 50 multiple-choice questions in 60 minutes, with 80% or higher to pass, open to people 16 and older. Then you complete an in-person flight review with a flight reviewer within the 12 months before applying. Questions are based on Transport Canada's knowledge requirements document TP 15263. Most advanced operations also need a drone whose model has a safety assurance declaration under Standard 922 for that operation, and flights in controlled airspace need an authorization from NAV CANADA or the air traffic services provider. The certificate does not expire, but pilots must show recent activity within 24 months.",

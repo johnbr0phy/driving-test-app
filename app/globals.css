@@ -4683,6 +4683,8 @@
     --brand-border: 220 25% 80%;
     --brand-border-light: 220 22% 89%;
     --brand-gradient-to: 225 55% 96%;
+  }
+
   /* Singapore CMFAS Module 9A theme */
   [data-theme="sgm9a"] {
     --brand: 168 55% 14%;
@@ -11703,6 +11705,8 @@
     --brand-muted: 220 25% 45%;
     --brand-dark: 220 55% 65%;
     --brand-darker: 220 50% 78%;
+  }
+
   .dark [data-theme="sgm9a"] {
     --brand: 168 55% 33.1%;
     --brand-hover: 168 55% 25.1%;

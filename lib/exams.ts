@@ -26323,17 +26323,6 @@ const sgm9: ExamConfig = {
   examLabel: "M9",
   fullName: "CMFAS M9: Life Insurance and Investment-Linked Policies",
   questionIdPrefix: "SGM9-",
-const sgm9a: ExamConfig = {
-  id: "sgm9a",
-  stateCode: "SGM9A",
-  idBase: 49600,
-  slug: "/cmfas-m9a",
-  landingPath: "/cmfas-m9a-practice-test",
-  name: "CMFAS M9A Practice Test",
-  shortName: "CMFAS M9A",
-  examLabel: "M9A",
-  fullName: "CMFAS Module 9A: Life Insurance and Investment-Linked Policies II",
-  questionIdPrefix: "SGM9A-",
   icon: "building",
   testCount: 4,
   questionsPerTest: 50,
@@ -26392,6 +26381,24 @@ const sgm9a: ExamConfig = {
     ],
     sourceLine: "Based on SCI's M9 chapter list, MAS Notice 307, the LIA Code of Life Insurance Practice and LIA consumer guides, and IRAS rules as of November 2026. Original questions; 50 per test at the real pace, chapter split by Tigertest. Not affiliated with SCI, MAS or LIA.",
     analyticsKey: "sgm9",
+  },
+};
+
+const sgm9a: ExamConfig = {
+  id: "sgm9a",
+  stateCode: "SGM9A",
+  idBase: 49600,
+  slug: "/cmfas-m9a",
+  landingPath: "/cmfas-m9a-practice-test",
+  name: "CMFAS M9A Practice Test",
+  shortName: "CMFAS M9A",
+  examLabel: "M9A",
+  fullName: "CMFAS Module 9A: Life Insurance and Investment-Linked Policies II",
+  questionIdPrefix: "SGM9A-",
+  icon: "building",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 70,
   // SCI M9A exam details (checked 2026-11-23): 50 multiple-choice questions in 1 hour, 70% to
   // pass, six chapters (structured products, their risks, derivatives, Structured ILPs, portfolio
   // of investments with an insurance, case studies). Each practice test is the real length and

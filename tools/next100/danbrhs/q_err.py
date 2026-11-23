@@ -2,9 +2,9 @@ CAT = "drhsErrors"; SEG = "ERR"
 # Outline I.D.7 and I.D.8: error correction (exposure, placement, alignment, artifacts, sensor
 # integrity, tubehead angulation, movement) and care of PSP, CMOS and CCD receptors.
 Q = [
-("Teeth on a periapical look longer than they really are. What caused it?",
- "Too little vertical angulation", ["Too much vertical angulation", "Wrong horizontal angulation", "Too much exposure time"],
- "Elongation comes from a beam angled too flat (underangulation); too steep an angle shortens the teeth instead."),
+("A bisecting image shows elongated teeth. How is it corrected?",
+ "Increase vertical angulation", ["Decrease vertical angulation", "Change horizontal angulation", "Lengthen the exposure time"],
+ "Elongation means the beam was too flat, so the vertical angle is raised; too steep an angle would shorten the teeth instead."),
 ("An image is too dark at the office's usual kVp. What is the usual fix?",
  "Reduce the exposure time", ["Raise the kilovoltage", "Increase the milliamperage", "Pull the PID back"],
  "Too much radiation darkens the image, so the time is lowered. Raising kV or mA would add even more exposure."),

@@ -1327,6 +1327,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       basedOn: "IC&RC's ADC Exam Candidate Guide (effective November 2022) and the IC&RC General Candidate Guide (2025), checked November 2026",
       source: { name: "IC&RC: credentials and candidate guides", url: "https://internationalcredentialing.org/icrc-credentials/credentials/" },
     },
+  uksqe1: {
+      answer:
+        "SQE1 is the first stage of the Solicitors Qualifying Examination, set by the Solicitors Regulation Authority (SRA) for qualifying as a solicitor in England and Wales. It is two closed book assessments of single best answer questions with five options: FLK1 (business law and practice, dispute resolution, contract, tort, the legal system with constitutional, administrative and EU law, and legal services) and FLK2 (property practice, wills and the administration of estates, solicitors accounts, land law, trusts, criminal liability and criminal law and practice), with ethics tested across both. From January 2027 each assessment has 170 questions, in two sessions of 85 questions of 2 hours 33 minutes each. The SRA sets the pass mark for each sitting as a number of correct answers, and you must pass FLK1 and FLK2 separately.",
+      rows: [
+        { label: "Assessments", value: "FLK1 and FLK2, each passed separately" },
+        { label: "Questions", value: "170 per assessment from January 2027 (180 before), single best answer from five options" },
+        { label: "Time", value: "Two sessions of 85 questions per assessment, 2 hours 33 minutes each" },
+        { label: "Pass mark", value: "Set by the SRA for each sitting; scores reported on 0 to 500 with the pass at 300" },
+        { label: "Attempts", value: "Three per assessment, within six years of your first SQE assessment" },
+        { label: "Format", value: "Closed book; ethics and professional conduct tested in both assessments" },
+        { label: "Run by", value: "Solicitors Regulation Authority (SRA)" },
+      ],
+      basedOn: "the SRA SQE1 Assessment Specification (applicable from 1 September 2026, updated April 2026), the SRA SQE Assessment Regulations and the SRA's September 2026 SQE update, checked November 2026",
+      source: { name: "SRA: SQE1 Assessment Specification", url: "https://sqe.sra.org.uk/docs/default-source/pdfs/sqe1-assessment-specification-(from-1-september-2026).pdf?sfvrsn=9a3f672d_2" },
+    },
   ukdrone: {
       answer:
         "In the UK, anyone flying a drone or model aircraft of 100g or more needs a Flyer ID from the Civil Aviation Authority (CAA), and the person responsible for one of 250g or more, or 100g or more with a camera, needs an Operator ID. To get a Flyer ID you pass the CAA's free online theory test: 40 multiple-choice questions with a pass mark of 30, open book with the Drone and Model Aircraft Code, based on the rules in force from 1 January 2026. A Flyer ID lasts five years and lets you fly in the Over People (A1) and Far from People (A3) subcategories. Flying a UK2 class drone near people in the Near People (A2) subcategory also needs the A2 Certificate of Competency, taken with a CAA-recognised assessment entity after self-practical training: a theory exam of at least 30 multiple-choice questions on meteorology, UAS flight performance and ground risk mitigations, passed at 75%.",

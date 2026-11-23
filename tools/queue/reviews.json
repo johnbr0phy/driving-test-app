@@ -1510,5 +1510,13 @@
       "pr": 974,
       "findings": 2
     }
+  ],
+  "uksqe1": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 980,
+      "findings": 3
+    }
   ]
 }

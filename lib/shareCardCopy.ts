@@ -5,6 +5,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   cpabar: { title: "Free CPA BAR Practice Test", description: "200 original multiple-choice questions on the AICPA's BAR blueprint: business analysis, technical accounting and reporting, and state and local governments. Free to start." },
   cehrs: { title: "Free CEHRS Practice Test", description: "200 original questions on the NHA CEHRS test plan for electronic health records specialists. Free to start." },
   cpcta: { title: "Free-to-Start CPCT/A Practice Test", description: "200 original questions on the NHA CPCT/A test plan for patient care technicians. Free to start." },
+  crat: { title: "Free-to-Start CRAT Practice Test", description: "200 original questions on the CCI CRAT outline: monitoring setup, normal and abnormal rhythms, paced rhythms, artifact and reporting. Free to start." },
   cct: { title: "Free-to-Start CCT Practice Test", description: "200 original questions on the CCI CCT outline: 12-lead ECG, stress testing, Holter monitoring and rhythm analysis. Free to start." },
   acls: { title: "Free-to-Start ACLS Practice Test", description: "200 original questions on the 2025 ACLS algorithms and guidelines. Free to start." },
   pals: { title: "Free-to-Start PALS Practice Test", description: "200 original questions on the 2025 pediatric algorithms and guidelines. Free to start." },

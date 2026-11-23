@@ -551,6 +551,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "PSI candidate bulletins for the Georgia (April 2025) and Hawaii (January 2026) Business and Law exams, checked November 2026",
     source: { name: "PSI: Georgia contractor candidate information bulletin", url: "https://test-takers.psiexams.com/api/content/bulletin/972" },
   },
+  crat: {
+    answer:
+      "The Certified Rhythm Analysis Technician (CRAT) exam is Cardiovascular Credentialing International's (CCI) credential for monitor and telemetry technicians who watch and interpret heart rhythms. It is a two-hour computer-based exam of 130 questions, 110 scored and 20 unscored, taken at Pearson VUE test centers. For exams after July 1, 2023 CCI weights it as analyzing abnormal rhythms 60%, analyzing normal rhythms 16%, initiating cardiac monitoring services 9%, administering cardiac tests 9% and processing test findings 6%. Scores run from 0 to 900 and 650 passes, which is not a percentage. Applicants need a high school diploma or GED plus a cardiovascular or allied health program, related work experience, or a science or health degree.",
+    rows: [
+      { label: "Questions", value: "130 (110 scored, 20 unscored)" },
+      { label: "Time", value: "2 hours (1 hour 50 minutes for questions)" },
+      { label: "Passing score", value: "650 on a 0 to 900 scale" },
+      { label: "Largest area", value: "Analyzing abnormal rhythms, 60%" },
+      { label: "Item types", value: "Single answer, multiple response, hot spot, drag and place" },
+      { label: "Eligibility", value: "Diploma or GED plus a program, related work or a science degree" },
+      { label: "Where", value: "Pearson VUE test centers" },
+      { label: "Renewal", value: "Every 3 years with 16 CEUs after the first renewal" },
+      { label: "Given by", value: "Cardiovascular Credentialing International (CCI)" },
+    ],
+    basedOn: "CCI's CRAT credential page and CRAT Examination Overview (June 2022, matrix for exams after July 1, 2023), checked November 2026",
+    source: { name: "CCI: Certified Rhythm Analysis Technician (CRAT)", url: "https://cci-online.org/credentials/certified-rhythm-analysis-technician/" },
+  },
   cct: {
     answer:
       "The Certified Cardiographic Technician (CCT) exam is Cardiovascular Credentialing International's (CCI) credential for ECG, Holter and stress test technicians. It is a two-hour computer-based exam of 130 questions, 110 scored and 20 unscored, taken at Pearson VUE test centers. CCI weights it as rhythm analysis 40%, analyzing the 12-lead ECG 22%, performing the resting ECG 14%, pre-procedural activities 10%, stress tests 10% and ambulatory monitoring 4%. Scores run from 0 to 900 and 650 passes, which is not a percentage. Applicants need a high school diploma or GED plus a cardiovascular or allied health program, related work experience, or a science or health degree.",

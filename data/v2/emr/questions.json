@@ -29,17 +29,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "CPR quality",
-    "stem": "How fast and how deep should you compress the chest of an adult in cardiac arrest?",
+    "stem": "Compressions on an adult should be at least 2 inches deep. What is the upper limit?",
     "options": [
-      "100 to 120 a minute, at least 2 inches",
-      "60 to 80 a minute, about 1 inch",
-      "Over 140 a minute, at least 3 inches",
-      "80 a minute, as deep as you possibly can push"
+      "About 4 inches",
+      "About 3.5 inches",
+      "About 2.4 inches",
+      "About 1.5 inches"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "Push hard and fast: 100 to 120 compressions a minute, at least 2 inches deep but not more than about 2.4 inches, letting the chest come all the way back up between each one."
+    "explanation": "Compress an adult at least 2 inches (5 cm) but not more than about 2.4 inches (6 cm), at 100 to 120 a minute. Deeper compressions add injury without more blood flow."
   },
   {
     "id": "EMR-T1-003",
@@ -238,18 +238,18 @@
     "domain": "emrTreatment",
     "difficulty": 3,
     "format": "single",
-    "skill": "AED in children",
-    "stem": "You must use an AED on a 5-year-old and have only adult pads. What should you do?",
+    "skill": "CPR scope",
+    "stem": "Under the national model, which resuscitation tool is listed at the EMT level and above, not for EMRs?",
     "options": [
-      "Skip the AED and do CPR until pediatric pads come",
-      "Cut the adult pads in half to fit the chest",
-      "Use the adult pads without letting them touch",
-      "Wait for pediatric pads to arrive before any shock"
+      "Automated external defibrillator",
+      "Bag-valve mask",
+      "Pocket mask with a one-way valve",
+      "Mechanical CPR device"
     ],
     "correct": [
-      2
+      3
     ],
-    "explanation": "Pediatric pads or a child setting are preferred for children under 8, but adult pads are better than no shock. Place them so they do not touch, front and back if needed."
+    "explanation": "The 2019 national model lists CPR, the AED, mouth-to-mask breathing and the BVM at every level from EMR up. Mechanical CPR devices start at the EMT level."
   },
   {
     "id": "EMR-T1-013",
@@ -323,17 +323,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Airborne precautions",
-    "stem": "A man with a long cough, night sweats and weight loss needs help. What should you wear in addition to gloves?",
+    "stem": "A man with a long cough, night sweats and weight loss needs care. If he can tolerate it, what goes on him?",
     "options": [
-      "A gown and booties",
-      "A fit-tested N95 respirator",
-      "A surgical mask worn by you alone",
-      "Nothing more, as long as he coughs into his elbow"
+      "A nonrebreather mask at 2 L/min",
+      "A surgical mask",
+      "Nothing, to avoid upsetting him",
+      "A fit-tested N95 respirator"
     ],
     "correct": [
       1
     ],
-    "explanation": "Those signs suggest tuberculosis, which spreads through the air. A fit-tested N95 or better respirator protects you; a surgical mask placed on the patient also helps limit spread."
+    "explanation": "Signs of possible tuberculosis call for source control: a surgical mask on the patient limits the droplets he breathes out, while you wear a fit-tested N95. An N95 is for the rescuer, and a nonrebreather needs a high flow to work at all."
   },
   {
     "id": "EMR-T1-017",
@@ -512,17 +512,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Tourniquet",
-    "stem": "Direct pressure does not stop heavy bleeding from a forearm wound. Where do you place a tourniquet?",
+    "stem": "A tourniquet is on a thigh and bright red blood still flows below it. What should you do?",
     "options": [
-      "Directly over the wound",
-      "2 to 3 inches above the wound",
-      "Over the elbow joint",
-      "Below the wound near the hand"
+      "Move it down over the wound",
+      "Take it off and use direct pressure",
+      "Loosen it to let blood return",
+      "Tighten it or add a second one above it"
     ],
     "correct": [
-      1
+      3
     ],
-    "explanation": "Place the tourniquet on bare skin 2 to 3 inches above the wound, not over a joint, and tighten it until the bleeding stops. Write down the time it went on."
+    "explanation": "Continued bleeding means the tourniquet is not tight enough. Tighten it further, and if bleeding still continues place a second tourniquet above the first. Thigh wounds often need two."
   },
   {
     "id": "EMR-T1-026",
@@ -680,17 +680,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Rescue breathing",
-    "stem": "An adult has a strong pulse but is not breathing. How often do you give a rescue breath?",
+    "stem": "You are giving rescue breaths to an adult who has a pulse. How often should you recheck the pulse?",
     "options": [
-      "Every 10 seconds",
-      "Every 6 seconds",
-      "Every 2 to 3 seconds",
-      "Every 15 seconds"
+      "About every 2 minutes",
+      "About every 10 minutes",
+      "Only when EMS arrives",
+      "After every single breath"
     ],
     "correct": [
-      1
+      0
     ],
-    "explanation": "An adult with a pulse who is not breathing gets 1 breath every 6 seconds, about 10 a minute, each just enough to make the chest rise. Children and infants get a breath every 2 to 3 seconds."
+    "explanation": "An adult with a pulse who is not breathing gets 1 breath every 6 seconds. Recheck the pulse about every 2 minutes and start CPR if it is gone."
   },
   {
     "id": "EMR-T1-034",
@@ -722,17 +722,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Splinting",
-    "stem": "How should you splint a suspected broken forearm?",
+    "stem": "Before you splint an injured wrist, why take off the patient's rings and watch?",
     "options": [
-      "Straighten it with force first",
-      "Include the wrist and elbow",
-      "Wrap it tightly around the fingers",
-      "Splint only the broken spot"
+      "They must be logged for the hospital",
+      "Swelling can trap them and cut off blood flow",
+      "They make the splint too heavy",
+      "They interfere with the AED"
     ],
     "correct": [
       1
     ],
-    "explanation": "Immobilize the joints above and below a long-bone injury so the bone ends cannot move, and check pulse, movement and sensation before and after."
+    "explanation": "Injured limbs swell, and a ring or watch can become a tourniquet that cuts off circulation to the hand. Remove them early and give them to the patient or family."
   },
   {
     "id": "EMR-T1-036",
@@ -1179,17 +1179,17 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Antidote auto-injector",
-    "stem": "At a farm call you and your partner develop drooling, pinpoint pupils and muscle twitching after a pesticide spill. What is within EMR scope under the national model?",
+    "stem": "After a chemical release at a plant, your partner has a runny nose, pinpoint pupils and muscle twitching. Which treatment is within EMR scope under the national model?",
     "options": [
-      "IV fluids started for the farmer",
-      "An inhaler borrowed from a bystander",
-      "Oral glucose for each person",
-      "An agency antidote auto-injector"
+      "Oral glucose in his cheek",
+      "Agency antidote auto-injector",
+      "An inhaler borrowed from a worker",
+      "IV fluids started at the scene"
     ],
     "correct": [
-      3
+      1
     ],
-    "explanation": "The national scope model lets EMRs use agency-supplied auto-injector antidotes for chemical exposures. IV fluids, inhalers and oral glucose are not EMR skills. Get clear of the spill and call hazmat as well."
+    "explanation": "The national scope model lets EMRs use agency-supplied auto-injector antidotes for chemical and hazardous material exposures. IV fluids, inhalers and oral glucose are not EMR skills. Move away from the release and call hazmat."
   },
   {
     "id": "EMR-T1-055",
@@ -1229,23 +1229,21 @@
     "domain": "emrOps",
     "difficulty": 2,
     "format": "order",
-    "skill": "Oxygen cylinder setup",
-    "stem": "Put the steps for preparing an oxygen cylinder in order.",
+    "skill": "Stopping oxygen",
+    "stem": "Put the steps for stopping oxygen after a patient no longer needs it in order.",
     "options": [
-      "Set the flow for the device",
-      "Check the pressure gauge",
-      "Remove the seal and crack the valve briefly",
-      "Open the cylinder valve",
-      "Attach the regulator with its washer"
+      "Close the cylinder valve",
+      "Turn the flowmeter off",
+      "Remove the device from the patient",
+      "Let the gauge fall to zero"
     ],
     "correct": [
       2,
-      4,
+      0,
       3,
-      1,
-      0
+      1
     ],
-    "explanation": "Cracking the valve blows dust from the outlet. Then attach the regulator, open the valve, confirm there is enough pressure and set the flow the device needs."
+    "explanation": "Take the device off the patient first, then close the cylinder valve, let the oxygen left in the regulator bleed out until the gauge reads zero, and turn the flowmeter off."
   },
   {
     "id": "EMR-T1-057",
@@ -1361,17 +1359,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Child CPR",
-    "stem": "How deep should you compress the chest of a 6-year-old in cardiac arrest?",
+    "stem": "For a small child in cardiac arrest, which hands may you use for compressions?",
     "options": [
-      "Just enough to move the skin, to protect the ribs",
-      "About one third of the chest, about 2 inches",
-      "About 1 inch",
-      "About half the depth of the chest"
+      "Only one finger",
+      "Only both thumbs",
+      "One or two hands, as needed",
+      "Only two fingers"
     ],
     "correct": [
-      1
+      2
     ],
-    "explanation": "Children are compressed about one third the depth of the chest, roughly 2 inches, using one or two hands. Shallow compressions do not move enough blood."
+    "explanation": "Use one or two hands, whatever it takes to press about one third of the depth of the chest. Finger and thumb techniques are for infants."
   },
   {
     "id": "EMR-T2-003",
@@ -1612,18 +1610,18 @@
     "domain": "emrOps",
     "difficulty": 2,
     "format": "single",
-    "skill": "Documentation error",
-    "stem": "You realize you wrote the wrong pulse rate on a paper report. How do you fix it?",
+    "skill": "Late entry",
+    "stem": "After you submit a report, you remember a finding you left out. What should you do?",
     "options": [
-      "Black it out completely",
-      "One line through it, then the correction, initialed and dated",
-      "Tear out the page and start over on a new one",
-      "Erase it and write over it"
+      "Start a new report and delete the first",
+      "Add a dated late entry or addendum",
+      "Leave it out to avoid confusion",
+      "Change the original entry quietly"
     ],
     "correct": [
       1
     ],
-    "explanation": "A single line keeps the original readable and shows a correction, not a cover-up. Add the correct value with your initials and the date."
+    "explanation": "Follow your agency's process for a late entry or addendum, dated and signed, that adds the finding. Never change or delete the original record."
   },
   {
     "id": "EMR-T2-015",
@@ -1805,17 +1803,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Choking infant",
-    "stem": "A 6-month-old is choking and cannot cry or cough. What does current AHA guidance say to do?",
+    "stem": "Under the 2025 AHA guidance, what do you use to give chest thrusts to a choking infant?",
     "options": [
-      "Hold the infant upside down by the ankles and shake",
-      "Do a blind finger sweep",
-      "Give abdominal thrusts",
-      "Alternate 5 back blows and 5 chest thrusts"
+      "Two fingers",
+      "Both palms stacked",
+      "Your whole fist",
+      "The heel of one hand"
     ],
     "correct": [
       3
     ],
-    "explanation": "For a choking infant, the 2025 AHA guidelines call for 5 back blows alternating with 5 chest thrusts using the heel of one hand. Abdominal thrusts are not used in infants because of injury risk."
+    "explanation": "For a choking infant the 2025 AHA guidelines call for 5 back blows alternating with 5 chest thrusts given with the heel of one hand. Abdominal thrusts are not used in infants."
   },
   {
     "id": "EMR-T2-024",
@@ -1889,17 +1887,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Heat stroke",
-    "stem": "A runner is confused and hot after a race in the heat. What is the most important treatment?",
+    "stem": "Which field method cools a patient with heat stroke the fastest?",
     "options": [
-      "Cool her rapidly",
-      "Give her a warm drink",
-      "Have her keep walking",
-      "Wrap her in a blanket"
+      "Cold-water immersion of the body",
+      "A fan with dry air only",
+      "Ice packs on the wrists alone",
+      "A cool drink sipped slowly"
     ],
     "correct": [
       0
     ],
-    "explanation": "Confusion with a high body temperature is heat stroke, a true emergency. Move her to shade and cool her fast, ideally by immersion in cold water or with wet towels and fanning."
+    "explanation": "Immersing the body in cold water removes heat fastest and is the preferred field method where available. Ice packs and fanning help, but more slowly."
   },
   {
     "id": "EMR-T2-028",
@@ -2404,18 +2402,18 @@
     "domain": "emrAirway",
     "difficulty": 2,
     "format": "single",
-    "skill": "Breathing assessment",
-    "stem": "How long should you look, listen and feel for breathing in an unresponsive adult before acting?",
+    "skill": "Breathing and pulse check",
+    "stem": "In an unresponsive adult, what should you check at the same time as breathing?",
     "options": [
-      "Until a second responder arrives",
-      "About 30 seconds",
-      "No more than 10 seconds",
-      "A full minute of watching and listening"
+      "The carotid pulse",
+      "The blood pressure",
+      "The pupils",
+      "The skin temperature"
     ],
     "correct": [
-      2
+      0
     ],
-    "explanation": "Check breathing, and the pulse at the same time if you are trained to, for no more than 10 seconds. Gasping is not normal breathing and calls for CPR."
+    "explanation": "Trained rescuers check breathing and the carotid pulse together, taking no more than 10 seconds, so CPR is not delayed. Pupils, pressure and skin come later."
   },
   {
     "id": "EMR-T2-049",
@@ -2447,17 +2445,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Eye injury",
-    "stem": "A worker splashed a cleaning chemical in her eye. What should you do?",
+    "stem": "You flush a chemical from one eye. Which way should the water run?",
     "options": [
-      "Put drops of milk in it",
-      "Rub it with a dry cloth",
-      "Flush it with water for a long time",
-      "Cover it and wait for EMS"
+      "Into the ear on that side",
+      "Across the nose into the other eye",
+      "Straight down onto the cornea",
+      "Away from the other eye"
     ],
     "correct": [
-      2
+      3
     ],
-    "explanation": "Flush the eye right away with plenty of clean water, away from the other eye, and keep going until EMS takes over. Eye irrigation is within EMR scope."
+    "explanation": "Tilt the head so water runs from the inner corner outward and away from the unaffected eye, so the chemical is not washed into it. Eye irrigation is within EMR scope."
   },
   {
     "id": "EMR-T2-051",
@@ -2467,18 +2465,18 @@
     "domain": "emrCirc",
     "difficulty": 2,
     "format": "single",
-    "skill": "Nosebleed",
-    "stem": "A conscious patient has a heavy nosebleed. How should she sit?",
+    "skill": "Pulse and perfusion",
+    "stem": "A responsive trauma patient has a carotid pulse but no radial pulse. What does this suggest?",
     "options": [
-      "Leaning forward while pinching the nose",
-      "Lying on her stomach",
-      "Leaning back with the head tilted toward the ceiling",
-      "Lying flat on her back with her head turned"
+      "A normal finding in adults",
+      "A pulse that is too strong",
+      "Seriously low blood pressure",
+      "Anxiety about the injury"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "Leaning forward keeps blood from running down the throat, where it can be swallowed or inhaled, and firm pinching of the soft part of the nose slows the bleeding."
+    "explanation": "When the radial pulse disappears while the carotid is still felt, blood pressure has likely dropped a long way. Treat it as a sign of shock that needs rapid transport."
   },
   {
     "id": "EMR-T2-052",
@@ -2690,17 +2688,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "CPR quality",
-    "stem": "Why must you let the chest come all the way back up after each compression?",
+    "stem": "Which error keeps the chest from recoiling fully between compressions?",
     "options": [
-      "It lets the patient take a breath on his own",
-      "It rests your arms",
-      "The heart refills with blood",
-      "It keeps the ribs from cracking"
+      "Locking your elbows",
+      "Kneeling close to the patient",
+      "Counting out loud",
+      "Leaning on the chest"
     ],
     "correct": [
-      2
+      3
     ],
-    "explanation": "Full chest recoil lets blood flow back into the heart before the next push. Leaning on the chest cuts blood flow."
+    "explanation": "Resting your weight on the chest between compressions stops it from coming all the way back up, so the heart cannot refill well. Locked elbows and counting aloud are good technique."
   },
   {
     "id": "EMR-D-002",
@@ -2817,17 +2815,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Interruptions",
-    "stem": "How long should pauses in chest compressions last?",
+    "stem": "Your partner wants to stop compressions every 30 seconds to feel for a pulse. What should you say?",
     "options": [
-      "As long as the AED needs",
-      "Under 10 seconds",
-      "About 20 seconds each time",
-      "About 30 seconds"
+      "Good idea, check every 30 seconds",
+      "Stop compressions until EMS arrives",
+      "Keep going until the 2-minute check",
+      "Check after every 5 compressions"
     ],
     "correct": [
-      1
+      2
     ],
-    "explanation": "Keep pauses for breaths, rhythm checks or shocks under 10 seconds. Blood flow stops the moment compressions stop."
+    "explanation": "Every pause stops blood flow. Keep pauses under 10 seconds and check only at the planned rhythm and pulse check about every 2 minutes."
   },
   {
     "id": "EMR-D-008",
@@ -2901,17 +2899,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Rescuer swap",
-    "stem": "Two rescuers are doing CPR. How often should they switch who compresses?",
+    "stem": "Why should rescuers trade the compression role regularly?",
     "options": [
-      "Only when one rescuer is fully exhausted",
-      "Never during the call",
-      "Every 10 minutes",
-      "About every 2 minutes"
+      "Tired rescuers push too shallow",
+      "It is required to count breaths",
+      "It keeps the AED charged",
+      "It lets the patient rest"
     ],
     "correct": [
-      3
+      0
     ],
-    "explanation": "Compression quality drops as rescuers tire, often before they notice. Swap about every 2 minutes, at the AED analysis, with a quick change."
+    "explanation": "Compression depth and rate drop as rescuers tire, often before they notice. Switching about every 2 minutes, at the AED analysis, keeps compressions strong."
   },
   {
     "id": "EMR-D-012",
@@ -3069,17 +3067,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Exposure",
-    "stem": "A patient's blood splashes into your eye. What should you do first?",
+    "stem": "You have flushed a patient's blood out of your eye. What must you do next?",
     "options": [
-      "Wait until the call ends, then rinse it",
-      "Flush the eye with plenty of water",
-      "Cover the eye with gauze until the call ends",
-      "Rub the eye gently to clear the blood out"
+      "Report it at the next shift meeting",
+      "Report the exposure right away",
+      "Keep it private to avoid testing",
+      "Wait to see if you feel sick"
     ],
     "correct": [
       1
     ],
-    "explanation": "Flush the eye at once with water or saline, then report the exposure to your supervisor so you can be evaluated quickly. Rubbing can push material deeper."
+    "explanation": "Report a blood exposure to your supervisor at once so you can be evaluated quickly. Some preventive treatments work best when started within hours."
   },
   {
     "id": "EMR-D-020",
@@ -3110,18 +3108,18 @@
     "domain": "emrCirc",
     "difficulty": 2,
     "format": "single",
-    "skill": "Direct pressure",
-    "stem": "Blood soaks through the gauze you are holding on a leg wound. What should you do?",
+    "skill": "Pressure bandage",
+    "stem": "You wrap a roller bandage over a dressing on a forearm. How do you know it is not too tight?",
     "options": [
-      "Rinse the wound with water",
-      "Add more gauze and press harder",
-      "Remove the gauze and start over",
-      "Lift the gauze to look"
+      "The bandage feels firm to your touch",
+      "Check fingers for color, warmth and feeling",
+      "The patient stops complaining of pain",
+      "Bleeding through the dressing stops"
     ],
     "correct": [
       1
     ],
-    "explanation": "Lifting or removing soaked gauze pulls away clots. Add gauze on top and press harder; if bleeding still will not stop on a limb, apply a tourniquet."
+    "explanation": "A bandage that is too tight cuts off circulation below it. Check the fingers for color, warmth, feeling and refill after wrapping, and loosen it if they turn pale, cold or numb."
   },
   {
     "id": "EMR-D-022",
@@ -3132,17 +3130,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Sharps",
-    "stem": "Where should a used sharp go?",
+    "stem": "Why should you never recap a used needle by hand?",
     "options": [
-      "Back into its cap by hand",
-      "Into a puncture-resistant sharps container",
-      "Into your pocket for later",
-      "Into a regular trash bag"
+      "It slows down the call too much",
+      "Recapped needles cannot be counted",
+      "Recapping causes many needlesticks",
+      "The cap must stay sterile"
     ],
     "correct": [
-      1
+      2
     ],
-    "explanation": "Put used sharps straight into a puncture-resistant container. Recapping by hand is a common cause of needlesticks."
+    "explanation": "Recapping by hand is a common cause of needlestick injuries. Drop used sharps straight into a puncture-resistant sharps container."
   },
   {
     "id": "EMR-D-023",
@@ -3237,17 +3235,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Pregnant patient",
-    "stem": "A woman 8 months pregnant feels faint lying flat on her back. How should you position her?",
+    "stem": "Why does a woman late in pregnancy often feel faint lying flat on her back?",
     "options": [
-      "Flat on her back",
-      "With her legs raised high on pillows",
-      "On her left side",
-      "Face down"
+      "The uterus presses on a large vein",
+      "The baby uses all her oxygen",
+      "Her lungs fill with fluid",
+      "Her blood sugar falls at once"
     ],
     "correct": [
-      2
+      0
     ],
-    "explanation": "In late pregnancy the uterus can press on the large vein that returns blood to the heart when she lies flat. Turning her onto her left side relieves it."
+    "explanation": "The heavy uterus presses on the large vein that returns blood to the heart, so less blood is pumped out. Turning her onto her left side relieves it."
   },
   {
     "id": "EMR-D-028",
@@ -3321,17 +3319,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Newborn care",
-    "stem": "Right after birth, a newborn is limp and not crying. What should you do first?",
+    "stem": "A newborn is still not breathing well after drying and rubbing. What should you do next?",
     "options": [
-      "Slap the baby's feet hard until it cries",
+      "Ventilate with a newborn-sized BVM",
+      "Slap the baby's feet hard",
       "Hold the baby upside down by the feet",
-      "Dry, warm and rub the baby",
-      "Wait 5 minutes to see if it cries"
+      "Wait 5 minutes for crying to start"
     ],
     "correct": [
-      2
+      0
     ],
-    "explanation": "Drying and rubbing the back keeps the baby warm and often starts breathing. If the baby still does not breathe well, start ventilations with a BVM sized for a newborn."
+    "explanation": "If drying and stimulation do not start good breathing, ventilations with a BVM sized for a newborn are the next step. Most newborns who need help need breathing support."
   },
   {
     "id": "EMR-D-032",
@@ -3661,17 +3659,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Seizure",
-    "stem": "A man is having a seizure on the floor. What should you do?",
+    "stem": "A man's seizure has stopped. He is breathing but drowsy. How should you position him?",
     "options": [
-      "Hold his arms and legs still",
-      "Put something between his teeth",
-      "Pour water in his mouth",
-      "Move things away and protect his head"
+      "Face down",
+      "Sitting up in a chair",
+      "Flat with legs raised",
+      "On his side"
     ],
     "correct": [
       3
     ],
-    "explanation": "Protect him from injury and do not restrain him or put anything in his mouth. When the jerking stops, roll him onto his side and check breathing."
+    "explanation": "Once the jerking stops, roll him onto his side so saliva or vomit can drain, and watch his breathing until he wakes."
   },
   {
     "id": "EMR-D-048",
@@ -3815,18 +3813,18 @@
     "domain": "emrTreatment",
     "difficulty": 2,
     "format": "single",
-    "skill": "Snakebite",
-    "stem": "A hiker was bitten on the ankle by a rattlesnake. What is the right care?",
+    "skill": "Bee sting",
+    "stem": "A bee stinger is still in a man's forearm. How should you remove it?",
     "options": [
-      "Put a tourniquet above the bite",
-      "Pack the leg in ice",
-      "Cut the bite and suck out venom",
-      "Keep him calm and the leg still"
+      "Squeeze the skin around it hard",
+      "Scrape or pull it out quickly",
+      "Leave it for the hospital",
+      "Cut the skin to lift it out"
     ],
     "correct": [
-      3
+      1
     ],
-    "explanation": "Keep the patient still and calm, remove rings or tight items, splint the limb loosely and get him to a hospital. Cutting, suction, ice and tourniquets cause harm."
+    "explanation": "Venom keeps entering while the stinger stays in, so remove it fast by scraping or pulling; speed matters more than the method. Then watch for an allergic reaction."
   },
   {
     "id": "EMR-D-055",
@@ -3960,18 +3958,18 @@
     "domain": "emrAirway",
     "difficulty": 2,
     "format": "single",
-    "skill": "Choking pregnant patient",
-    "stem": "A choking woman is visibly pregnant. Where do you give thrusts?",
+    "skill": "Choking child",
+    "stem": "A choking 5-year-old you have been treating suddenly cries loudly and breathes easily. What does this mean?",
     "options": [
-      "On the upper belly",
-      "On the chest",
-      "Only on the back",
-      "On the lower belly"
+      "She is about to lose consciousness",
+      "The object moved deeper",
+      "She needs abdominal thrusts now",
+      "The airway is now clear"
     ],
     "correct": [
-      1
+      3
     ],
-    "explanation": "In late pregnancy, and for people too large to encircle, chest thrusts replace abdominal thrusts so the uterus is not compressed."
+    "explanation": "Crying, talking and easy breathing show air is moving again. Stop the back blows and thrusts, keep watching her and have her checked, since thrusts can cause injury."
   },
   {
     "id": "EMR-D-061",
@@ -4197,18 +4195,18 @@
     "domain": "emrTreatment",
     "difficulty": 2,
     "format": "single",
-    "skill": "Amputated part",
-    "stem": "A finger was cut off in a saw accident. How should you care for the part?",
+    "skill": "Evisceration",
+    "stem": "Loops of bowel stick out of a stab wound in the belly. How should you cover them?",
     "options": [
-      "Throw it away since it cannot be saved",
-      "Wrap it in dry gauze, bag it and keep it cool",
-      "Put it straight onto ice",
-      "Soak it in water in a cup"
+      "Push them back inside first",
+      "Leave them uncovered",
+      "With a moist sterile dressing",
+      "With a dry, sticky bandage"
     ],
     "correct": [
-      1
+      2
     ],
-    "explanation": "Wrap the part in dry sterile gauze, seal it in a plastic bag and place the bag on ice or in cool water. Direct contact with ice or soaking damages the tissue."
+    "explanation": "Never push organs back in. Cover them with a sterile dressing moistened with sterile saline, then a covering to keep them warm, and treat for shock."
   },
   {
     "id": "EMR-D-072",

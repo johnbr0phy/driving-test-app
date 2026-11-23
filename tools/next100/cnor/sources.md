@@ -44,7 +44,7 @@ Practice (paywalled, not read), or from any review book, course, app or prep sit
   New CNOR exam content launches in 2027 (no date given) with six competency areas: plan of care
   42, intraoperative patient care and safety 49, personnel, services and materials 24,
   communication and documentation 20, infection prevention and control 33, emergency
-  identification and management 17 items (185). The bank follows the current eight areas; the
+  identification and management 17 items (185). The bank follows the current seven areas (3a and 3b as separate pools); the
   change is a freshness event.
 
 ## Clinical and regulatory sources read for this bank

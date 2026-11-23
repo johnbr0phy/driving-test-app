@@ -768,7 +768,7 @@
       "exam": "cnor",
       "date": "2027-01-01",
       "kind": "outline",
-      "what": "CCI's 2024 CNOR and CFPN Job Task Analysis was adopted: new CNOR exam content launches in 2027 (no exact date published) with six competency areas (plan of care 42, intraoperative patient care and safety 49, personnel, services and materials 24, communication and documentation 20, infection prevention and control 33, emergency identification and management 17 items of 185 scored), replacing the current eight subject areas.",
+      "what": "CCI's 2024 CNOR and CFPN Job Task Analysis was adopted: new CNOR exam content launches in 2027 (no exact date published) with six competency areas (plan of care 42, intraoperative patient care and safety 49, personnel, services and materials 24, communication and documentation 20, infection prevention and control 33, emergency identification and management 17 items of 185 scored), replacing the current seven subject areas (area 3 in two parts).",
       "action": "When CCI publishes the 2027 handbook and task statements, re-weight PLAN to the six areas (fold assessment and professional accountability items where the new outline puts them), update the config, landing, examFacts and sources.md, rebuild.",
       "source": "https://www.cc-institute.org/cnor_cfpn_job_analysis/"
     }

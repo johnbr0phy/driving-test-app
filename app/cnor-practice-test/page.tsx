@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: "What does the CNOR cover?",
-    a: "CCI's current outline has eight subject areas: patient care and safety 25%, infection prevention and control of environment, instrumentation and supplies 16%, pre/postoperative patient assessment and diagnosis 15%, communication and documentation 11%, emergency situations 10%, management of personnel, services and materials 9%, plan of care and expected outcomes 8%, and professional accountabilities 6%. These practice tests keep that balance across 50 questions. CCI plans new six-area exam content in 2027.",
+    a: "CCI's current outline has seven subject areas, with area 3 in two parts: patient care and safety 25%, infection prevention and control of environment, instrumentation and supplies 16%, pre/postoperative patient assessment and diagnosis 15%, communication and documentation 11%, emergency situations 10%, management of personnel, services and materials 9%, plan of care and expected outcomes 8%, and professional accountabilities 6%. These practice tests keep that balance across 50 questions. CCI plans new six-area exam content in 2027.",
   },
   {
     q: "How long is the CNOR credential valid?",

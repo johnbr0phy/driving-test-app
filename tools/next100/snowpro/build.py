@@ -14,7 +14,7 @@ Prints per-test domain and format counts, key positions, and the share of
 single/multi items whose longest option is a key (must stay at or under 25%).
 """
 from __future__ import annotations  # local python3 is 3.9
-import hashlib, json, os, random
+import hashlib, json, os, random, re
 from collections import Counter
 
 EXAM = "snowpro"
@@ -46,6 +46,13 @@ def MT(test, diff, skill, stem, columns, rows, exp):
             "rows": [r for r, _ in rows], "columns": columns, "correct": [c for _, c in rows], "explanation": exp}
 
 
+SLOT = 0
+
+
+def esc(s):
+    return re.sub(r"(?<!\\)\$", r"\\$", s)
+
+
 def shuffled(q):
     if q["format"] == "matrix":
         # Rows are written in source order (yes/no sets mostly Yes, Yes, No, No;
@@ -62,6 +69,13 @@ def shuffled(q):
     seed = int(hashlib.sha256(q["stem"].encode()).hexdigest()[:12], 16)
     order = list(range(len(q["options"])))
     random.Random(seed).shuffle(order)
+    if q["format"] == "single":
+        # Put the key in a rotating slot so A to D land evenly, then fill the
+        # other slots with the distractors in their seeded order.
+        global SLOT
+        rest = [i for i in order if i != 0]
+        order = rest[:SLOT % 4] + [0] + rest[SLOT % 4:]
+        SLOT += 1
     out = dict(q)
     out["options"] = [q["options"][i] for i in order]
     out["correct"] = sorted(order.index(c) for c in q["correct"])
@@ -122,6 +136,13 @@ def build():
                 if q.get("skill"):
                     item["skill"] = q["skill"]
                 item.update({k: v for k, v in q.items() if k not in SOURCE_ONLY})
+                # A bare $ opens KaTeX in RichText; SQL names such as
+                # METADATA$ACTION need it escaped.
+                for k in ("stem", "explanation"):
+                    item[k] = esc(item[k])
+                for k in ("options", "rows", "columns"):
+                    if k in item:
+                        item[k] = [esc(x) for x in item[k]]
                 out.append(item)
     dst = os.path.join(ROOT, f"data/v2/{EXAM}/questions.json")
     os.makedirs(os.path.dirname(dst), exist_ok=True)

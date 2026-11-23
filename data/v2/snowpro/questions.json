@@ -31,13 +31,13 @@
     "skill": "Architecture layers",
     "stem": "Which layer of Snowflake authenticates every connection before a query runs?",
     "options": [
-      "Cloud services",
       "Client driver",
+      "Cloud services",
       "Query processing",
       "Database storage"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "Authentication, metadata management, access control and query optimization all sit in the cloud services layer. Query processing is where virtual warehouses run the work."
   },
@@ -75,11 +75,11 @@
     "options": [
       "ORGADMIN",
       "SECURITYADMIN",
-      "USERADMIN",
-      "SYSADMIN"
+      "SYSADMIN",
+      "USERADMIN"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "USERADMIN manages users and roles and nothing else. SECURITYADMIN inherits it and adds MANAGE GRANTS for global grant control."
   },
@@ -94,13 +94,13 @@
     "skill": "Column-level security",
     "stem": "Which is the lowest edition that supports dynamic data masking?",
     "options": [
+      "Enterprise",
       "Standard",
       "Virtual Private Snowflake only",
-      "Business Critical",
-      "Enterprise"
+      "Business Critical"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "Column-level security, which includes dynamic data masking and external tokenization, needs Enterprise Edition or higher."
   },
@@ -115,13 +115,13 @@
     "skill": "Result cache",
     "stem": "If no one reuses it, how long is a persisted query result kept?",
     "options": [
-      "24 hours",
       "31 days",
+      "24 hours",
       "7 days",
       "48 hours"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "Persisted results expire 24 hours after the query runs. Each reuse resets that clock, up to 31 days from the first run."
   },
@@ -138,11 +138,11 @@
     "options": [
       "PARSE_JSON",
       "ARRAY_AGG",
-      "OBJECT_CONSTRUCT",
-      "FLATTEN"
+      "FLATTEN",
+      "OBJECT_CONSTRUCT"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "FLATTEN, usually with LATERAL, expands arrays or objects into rows. ARRAY_AGG goes the other way and gathers rows into an array."
   },
@@ -157,13 +157,13 @@
     "skill": "Secure Data Sharing",
     "stem": "A provider shares a table with another account. What data is copied to the consumer?",
     "options": [
-      "No data at all",
       "Only changed micro-partitions",
       "Nightly snapshot of the table",
-      "Full table to the consumer"
+      "Full table to the consumer",
+      "Nothing is copied"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "Secure Data Sharing copies nothing. The consumer reads the provider's data through Snowflake's services layer and metadata store."
   },
@@ -178,13 +178,13 @@
     "skill": "COPY options",
     "stem": "What is the default ON_ERROR setting for a bulk COPY INTO <table>?",
     "options": [
+      "ABORT_STATEMENT",
       "CONTINUE",
       "SKIP_FILE",
-      "'SKIP_FILE_10%'",
-      "ABORT_STATEMENT"
+      "'SKIP_FILE_10%'"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "Bulk COPY aborts the whole statement on the first error by default. Snowpipe defaults to SKIP_FILE instead."
   },
@@ -200,12 +200,12 @@
     "stem": "How much uncompressed data does a single micro-partition hold?",
     "options": [
       "1 to 5 GB",
-      "16 to 64 MB",
       "50 to 500 MB",
+      "16 to 64 MB",
       "100 to 250 MB"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "Each micro-partition holds 50 to 500 MB of uncompressed data, stored compressed and by column. 100 to 250 MB compressed is the advice for files you load, not the partition size."
   },
@@ -220,13 +220,13 @@
     "skill": "Fail-safe",
     "stem": "How long is the Fail-safe period for a permanent table?",
     "options": [
-      "7 days, not configurable",
-      "Same length as Time Travel",
+      "Equal to Time Travel",
       "Up to 90 days",
+      "7 days, not configurable",
       "1 day, configurable"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Fail-safe is a fixed 7-day period that begins when Time Travel retention ends. It cannot be changed."
   },
@@ -242,12 +242,12 @@
     "stem": "For how long does COPY INTO keep load metadata about which files it loaded into a table?",
     "options": [
       "14 days",
-      "64 days",
       "90 days",
-      "24 hours"
+      "24 hours",
+      "64 days"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Table load metadata lasts 64 days, which is how COPY skips files it already loaded. Snowpipe keeps its own metadata for 14 days per pipe."
   },
@@ -262,13 +262,13 @@
     "skill": "Role hierarchy",
     "stem": "Snowflake recommends that custom role hierarchies end at which system role?",
     "options": [
-      "ACCOUNTADMIN",
       "SYSADMIN",
+      "ACCOUNTADMIN",
       "USERADMIN",
       "PUBLIC"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Rolling custom roles up to SYSADMIN lets system administrators manage every object those roles create. Roles outside that chain can only be managed by a role with MANAGE GRANTS."
   },
@@ -283,13 +283,13 @@
     "skill": "Column-level security",
     "stem": "What does applying a masking policy to a column change in storage?",
     "options": [
-      "Nothing at all",
       "A masked copy is kept",
+      "Nothing at all",
       "Values are encrypted again",
       "Values are rewritten on load"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "Masking policies leave stored data as it is. At query time the policy conditions decide whether each user sees the real value or a masked one."
   },
@@ -304,7 +304,7 @@
     "skill": "Scaling",
     "stem": "At peak times many users queue for one warehouse while each query is small. What helps most?",
     "options": [
-      "A longer auto-suspend time",
+      "Longer auto-suspend",
       "A clustering key",
       "Multi-cluster auto-scale",
       "A bigger warehouse size"
@@ -325,13 +325,13 @@
     "skill": "Streams",
     "stem": "When does a stream's offset move forward?",
     "options": [
-      "When its source table is cloned",
+      "When its table is cloned",
       "Every 24 hours",
-      "When DML reads it and commits",
-      "Each time someone queries it"
+      "Each time someone queries it",
+      "When DML reads it and commits"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Only a DML statement that reads the stream, such as INSERT or MERGE, advances the offset when its transaction commits. A plain SELECT leaves it in place."
   },
@@ -346,13 +346,13 @@
     "skill": "Secure Data Sharing",
     "stem": "Who pays for compute when a consumer queries shared data?",
     "options": [
+      "Consumer",
       "Split evenly by both",
-      "Consumer, for its warehouse",
       "Nobody; shares are free",
       "Provider, for each consumer query"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Consumers pay only for the warehouses they use to query. The provider keeps paying for the storage of what it shares."
   },
@@ -368,12 +368,12 @@
     "stem": "Which is the lowest edition that offers multi-cluster virtual warehouses?",
     "options": [
       "Business Critical",
-      "Standard",
       "Enterprise",
+      "Standard",
       "Virtual Private Snowflake"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "Multi-cluster warehouses first appear in Enterprise Edition. Higher editions include everything below them, so Business Critical and VPS have them too, but they are not the lowest."
   },
@@ -409,13 +409,13 @@
     "skill": "Stages",
     "stem": "Which reference points to the current user's personal stage?",
     "options": [
-      "@~",
       "@%",
       "@user",
-      "@."
+      "@.",
+      "@~"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "@~ is the user stage that every user gets automatically. @% followed by a table name is that table's stage."
   },
@@ -430,13 +430,13 @@
     "skill": "Architecture design",
     "stem": "Snowflake's architecture combines which two traditional database designs?",
     "options": [
-      "Shared-memory and shared-disk",
       "Shared-disk and shared-nothing",
-      "Shared-memory and shared-nothing",
+      "Shared-memory and shared-disk",
+      "Shared-memory and federated",
       "Primary and replica clusters"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Snowflake keeps one central data store, as in shared-disk systems, and processes queries with independent compute clusters that each hold part of the data, as in shared-nothing systems."
   },
@@ -451,13 +451,13 @@
     "skill": "UNDROP",
     "stem": "A table was dropped an hour ago and its retention is 1 day. Which command brings it back?",
     "options": [
-      "UNDROP TABLE",
       "ALTER TABLE ... RECOVER",
+      "UNDROP TABLE",
       "CREATE TABLE ... LIKE",
       "RESTORE TABLE"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "UNDROP restores a dropped table, schema or database to its most recent state while it is still inside its Time Travel retention period."
   },
@@ -473,12 +473,12 @@
     "stem": "In a managed access schema, who can grant privileges on the objects inside it?",
     "options": [
       "Only ACCOUNTADMIN",
+      "Any role with USAGE",
       "Schema owner or MANAGE GRANTS",
-      "Any role with USAGE on the schema",
       "Each object's owning role"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Managed access takes grant decisions away from object owners. Only the schema owner or a role holding MANAGE GRANTS can grant privileges there."
   },
@@ -514,13 +514,13 @@
     "skill": "Snowpipe",
     "stem": "What compute does Snowpipe use to load files?",
     "options": [
+      "Snowflake-managed serverless compute",
       "An X-Small warehouse per pipe",
       "The client machine that staged files",
-      "Snowflake-managed serverless compute",
       "The account's default warehouse"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Snowpipe runs on serverless compute that Snowflake sizes and manages, billed per GB loaded. Bulk COPY uses a warehouse you choose."
   },
@@ -537,7 +537,7 @@
     "options": [
       "Turn off the result cache",
       "Run it on a larger warehouse",
-      "Add a clustering key to the table",
+      "Add a clustering key",
       "Raise the auto-suspend time"
     ],
     "correct": [
@@ -556,13 +556,13 @@
     "skill": "Tasks",
     "stem": "A task was just created with a schedule. What must happen before it runs on that schedule?",
     "options": [
-      "ALTER TASK ... RESUME",
       "GRANT USAGE ON TASK",
-      "CALL SYSTEM$START_TASK()",
+      "CALL SYSTEM\\$START_TASK()",
+      "ALTER TASK ... RESUME",
       "ALTER TASK ... ENABLE"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "New tasks start suspended. Resuming the task lets it follow its schedule."
   },
@@ -620,12 +620,12 @@
     "stem": "How much new storage does a zero-copy clone use at the moment it is created?",
     "options": [
       "One micro-partition per column",
+      "None at first",
       "Full copy of the source",
-      "Half the source size",
-      "None for data"
+      "Half the source size"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "A clone shares the source's micro-partitions, so it adds no data storage when created. Storage grows only as either copy is changed."
   },
@@ -642,11 +642,11 @@
     "options": [
       "FORCE = TRUE",
       "PURGE = TRUE",
-      "ON_ERROR = CONTINUE",
-      "VALIDATION_MODE"
+      "VALIDATION_MODE",
+      "ON_ERROR = CONTINUE"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "VALIDATION_MODE returns errors or sample rows instead of loading. ON_ERROR = CONTINUE loads the good rows and skips the bad ones."
   },
@@ -662,12 +662,12 @@
     "stem": "Which Snowflake feature offers built-in SQL functions that call large language models?",
     "options": [
       "Search optimization service",
-      "Cortex AI Functions",
       "Snowpark Container Services",
-      "Snowpipe Streaming"
+      "Snowpipe Streaming",
+      "Cortex AI Functions"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Cortex AI Functions run LLM tasks such as completion, classification and summarization from SQL on data in Snowflake. Container Services hosts your own containers instead."
   },
@@ -703,13 +703,13 @@
     "skill": "Network policies",
     "stem": "Which object limits the IP addresses users may connect from?",
     "options": [
-      "Network policy",
       "Password policy",
+      "Network policy",
       "Session policy",
       "Row access policy"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "A network policy holds allowed and blocked IP lists, often through network rules, and can be set on the account or a user. A session policy sets idle timeouts instead."
   },
@@ -726,7 +726,7 @@
     "options": [
       "INFORMATION_SCHEMA",
       "Query history in Snowsight",
-      "SNOWFLAKE.ACCOUNT_USAGE",
+      "ACCOUNT_USAGE",
       "RESULT_SCAN output"
     ],
     "correct": [
@@ -746,12 +746,12 @@
     "stem": "Which filter is least able to prune micro-partitions?",
     "options": [
       "Date range on a clustered column",
-      "One comparing to a subquery",
       "IN list on a low-overlap column",
-      "Equality on a sorted ID"
+      "Equality on a sorted ID",
+      "One comparing to a subquery"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Snowflake does not use predicates that contain a subquery for pruning, even when the subquery returns a constant. Simple filters on well-clustered columns prune well."
   },
@@ -766,13 +766,13 @@
     "skill": "Dynamic tables",
     "stem": "What does TARGET_LAG set on a dynamic table?",
     "options": [
+      "How far behind it may fall",
       "Delay before first build",
-      "How stale its data may get",
-      "Time Travel retention period",
+      "Time Travel retention",
       "Refresh warehouse size"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "TARGET_LAG says how far behind its base tables the dynamic table may fall, and Snowflake schedules refreshes to meet it. Actual lag can exceed it when refreshes run long."
   },
@@ -790,7 +790,7 @@
       "Direct share as it stands",
       "Listing with auto-fulfillment",
       "Larger consumer warehouse",
-      "Reader account in the same region"
+      "Reader account"
     ],
     "correct": [
       1
@@ -808,13 +808,13 @@
     "skill": "Unloading",
     "stem": "Which command unloads query results into a stage?",
     "options": [
-      "COPY INTO <location>",
       "PUT",
       "GET",
+      "COPY INTO <location>",
       "INSERT INTO @stage SELECT"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "COPY INTO <location> writes rows from a table or query to files in a stage. GET then downloads files from an internal stage to a local machine."
   },
@@ -831,11 +831,11 @@
     "options": [
       "Customer-managed block volumes",
       "Local disks of each warehouse",
-      "Cloud provider object storage",
-      "Cloud services metadata store"
+      "Cloud services metadata store",
+      "Cloud provider object storage"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Table data is reorganized into compressed, columnar micro-partitions and stored in cloud object storage that Snowflake manages. Warehouses only cache data while running."
   },
@@ -850,13 +850,13 @@
     "skill": "Views",
     "stem": "Why would you create a secure view instead of a standard view?",
     "options": [
-      "To make every query against it faster",
+      "To hide its definition from users",
+      "To make it run faster",
       "To allow inserts through it",
-      "To cache its results for a month",
-      "To hide its definition from users"
+      "To cache its results for a month"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "A secure view hides its SQL text from users who are not its owner and blocks optimizations that could expose hidden rows. It is often slower, not faster."
   },
@@ -872,12 +872,12 @@
     "stem": "A Java application needs to run SQL against Snowflake. Which client fits?",
     "options": [
       "Kafka connector",
-      "Python connector",
       "JDBC driver",
+      "Python connector",
       "Snowpipe REST API"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "Java programs connect through the Snowflake JDBC driver. The Kafka connector only streams topic data, and the Snowpipe REST API only submits files to a pipe."
   },
@@ -918,11 +918,11 @@
     "options": [
       "SECURITYADMIN",
       "Warehouse owner",
-      "SYSADMIN",
-      "ACCOUNTADMIN"
+      "ACCOUNTADMIN",
+      "SYSADMIN"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "Only ACCOUNTADMIN can create resource monitors. It can grant MONITOR and MODIFY on a monitor so other roles can view or change it."
   },
@@ -1034,7 +1034,7 @@
     "select": 2,
     "stem": "Which two clauses query a table as it was at an earlier point? (Choose two.)",
     "options": [
-      "WHERE METADATA$TIME < CURRENT_DATE()",
+      "WHERE METADATA\\$TIME < CURRENT_DATE()",
       "HISTORY (DAYS => 1)",
       "BEFORE (STATEMENT => '<query id>')",
       "AT (OFFSET => -3600)",
@@ -1082,12 +1082,12 @@
     "stem": "How long does a pipe keep metadata about the files it loaded?",
     "options": [
       "64 days",
-      "14 days",
       "7 days",
-      "1 year"
+      "1 year",
+      "14 days"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Each pipe remembers the files it processed for 14 days and skips a file with the same path and name. Bulk COPY metadata lasts 64 days on the table."
   },
@@ -1102,13 +1102,13 @@
     "skill": "Micro-partitions",
     "stem": "How are micro-partitions created for a table?",
     "options": [
+      "Automatically during loading",
       "By a nightly maintenance job",
       "With a CREATE PARTITION command",
-      "Automatically as data is loaded",
       "From a partition key on the table"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Micro-partitions are derived automatically from the order data arrives, so users never define or maintain them. A clustering key can guide co-location, but it does not define partitions."
   },
@@ -1146,11 +1146,11 @@
     "options": [
       "USERADMIN",
       "PUBLIC",
-      "SYSADMIN",
-      "SECURITYADMIN"
+      "SECURITYADMIN",
+      "SYSADMIN"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "SECURITYADMIN has MANAGE GRANTS, so it can grant or revoke any privilege in the account. SYSADMIN creates warehouses, databases and other objects."
   },
@@ -1165,13 +1165,13 @@
     "skill": "Tag-based masking",
     "stem": "A column has a directly assigned masking policy and a tag-based one. Which is applied?",
     "options": [
-      "Directly assigned policy",
       "Both, one after the other",
       "Tag-based policy",
-      "Whichever is newer"
+      "Whichever is newer",
+      "Directly assigned policy"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "A masking policy set directly on a column takes precedence over a policy that reaches the column through a tag."
   },
@@ -1186,13 +1186,13 @@
     "skill": "Scaling policies",
     "stem": "Under the Economy scaling policy, when does a multi-cluster warehouse start another cluster?",
     "options": [
-      "As soon as one query queues",
       "When load would keep it busy 6 minutes",
+      "As soon as one query queues",
       "Only when an admin starts it by hand",
       "Every 6 minutes regardless"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Economy favors keeping clusters full, so it adds one only for enough work to last about 6 minutes. The Standard policy starts clusters quickly to avoid queuing."
   },
@@ -1228,13 +1228,13 @@
     "skill": "Listings",
     "stem": "Which kind of listing is visible to many consumers on Snowflake Marketplace?",
     "options": [
-      "Public listing",
       "Reader account",
       "Direct share",
+      "Public listing",
       "Private listing"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Public listings appear on Snowflake Marketplace for any account to discover. Private listings go only to consumers the provider chooses."
   },
@@ -1250,12 +1250,12 @@
     "stem": "What is Snowpipe's default ON_ERROR behavior?",
     "options": [
       "SKIP_FILE_5",
-      "SKIP_FILE",
       "CONTINUE",
-      "ABORT_STATEMENT"
+      "ABORT_STATEMENT",
+      "SKIP_FILE"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Snowpipe skips a file that has errors by default, so one bad file does not hold up the rest. Bulk COPY aborts the statement instead."
   },
@@ -1270,13 +1270,13 @@
     "skill": "Editions",
     "stem": "Which feature requires Business Critical Edition or higher?",
     "options": [
-      "Materialized views",
       "Tri-Secret Secure",
+      "Materialized views",
       "Multi-cluster warehouses",
       "Row access policies"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Tri-Secret Secure, which combines a customer-managed key with Snowflake's key, starts at Business Critical. The other three start at Enterprise."
   },
@@ -1312,7 +1312,7 @@
     "skill": "COPY options",
     "stem": "What does FORCE = TRUE do in COPY INTO <table>?",
     "options": [
-      "Deletes the files after a successful load",
+      "Deletes loaded files",
       "Truncates the table first",
       "Reloads files loaded before",
       "Ignores file format errors"
@@ -1354,13 +1354,13 @@
     "skill": "Resource monitors",
     "stem": "What do resource monitors track?",
     "options": [
+      "Warehouse credit usage",
       "Storage bytes per database",
       "Serverless task credits",
-      "Warehouse credit usage",
       "Query counts per user"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Resource monitors work for warehouses only, including the cloud services credits that support them. Serverless features are tracked with budgets instead."
   },
@@ -1376,12 +1376,12 @@
     "stem": "What does a smaller clustering depth mean for a table?",
     "options": [
       "Slower pruning",
-      "More partition overlap",
       "Better clustering",
+      "More partition overlap",
       "Larger micro-partitions"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "Clustering depth is the average depth of overlapping micro-partitions for the given columns. Lower means less overlap, and an empty table has a depth of 0."
   },
@@ -1397,12 +1397,12 @@
     "stem": "Which object can run DDL and DML statements with procedural logic such as loops?",
     "options": [
       "Secure materialized view",
-      "UDTF",
-      "Scalar SQL UDF",
-      "Stored procedure"
+      "User-defined table function",
+      "Stored procedure",
+      "Scalar SQL UDF"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "Stored procedures run statements and control flow and are called with CALL. UDFs compute and return values inside a query."
   },
@@ -1419,11 +1419,11 @@
     "options": [
       "Share it onward",
       "Load new rows into it",
-      "Query it only",
-      "Update its rows"
+      "Update its rows",
+      "Query it only"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Reader account users can query imported data but cannot run DML such as loading, inserting or updating."
   },
@@ -1438,13 +1438,13 @@
     "skill": "Interfaces",
     "stem": "Which interface is Snowflake's browser-based UI for worksheets and administration?",
     "options": [
-      "Snowflake CLI",
       "Snowsight",
+      "Snowflake CLI",
       "Snowpark",
       "SnowSQL"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Snowsight is the web interface. SnowSQL and Snowflake CLI are command-line clients, and Snowpark is a developer library for DataFrame code."
   },
@@ -1481,12 +1481,12 @@
     "stem": "Which limitation applies to a table stage such as @%orders?",
     "options": [
       "Cannot hold CSV files",
-      "No transformations during load",
       "Must be created by hand",
-      "Shared by every table in a schema"
+      "No transformations during load",
+      "Shared across tables"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Table stages exist automatically, one per table, and cannot be altered or dropped. They do not support a SELECT transform as the COPY source."
   },
@@ -1522,13 +1522,13 @@
     "skill": "Cloning",
     "stem": "A database is cloned. Which grants on the source database itself carry over to the new database?",
     "options": [
+      "None of them",
       "All of them",
       "Only USAGE",
-      "Only OWNERSHIP",
-      "None of them"
+      "Only OWNERSHIP"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "Child objects in a cloned database keep the grants their sources had, but the cloned database does not inherit grants on the source container. Grant those again."
   },
@@ -1545,7 +1545,7 @@
     "options": [
       "Can own virtual warehouses",
       "Scoped to a single database",
-      "Span every database in the account",
+      "Account-wide in scope",
       "Activated with USE ROLE"
     ],
     "correct": [
@@ -1566,11 +1566,11 @@
     "options": [
       "STAGES",
       "LOGIN_HISTORY",
-      "WAREHOUSE_LOAD_HISTORY",
-      "ACCESS_HISTORY"
+      "ACCESS_HISTORY",
+      "WAREHOUSE_LOAD_HISTORY"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "ACCESS_HISTORY records the objects and columns each query read or wrote. It needs Enterprise Edition and has about 3 hours of latency."
   },
@@ -1586,12 +1586,12 @@
     "stem": "Which command uploads files from a local machine to an internal stage?",
     "options": [
       "COPY INTO",
-      "PUT",
       "GET",
-      "LIST"
+      "LIST",
+      "PUT"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "PUT uploads and by default compresses local files into an internal stage. GET downloads them, and LIST shows what is staged."
   },
@@ -1606,13 +1606,13 @@
     "skill": "Query acceleration",
     "stem": "Which feature offloads parts of large scans with selective filters to shared compute?",
     "options": [
+      "Query acceleration service",
       "Snowpark-optimized warehouse",
       "Search optimization service",
-      "Query acceleration service",
       "Result cache"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "The query acceleration service leases extra serverless compute for eligible outlier queries. Search optimization builds an access path for point lookups instead."
   },
@@ -1627,13 +1627,13 @@
     "skill": "Tasks",
     "stem": "How do you make a new task use serverless compute?",
     "options": [
+      "Grant EXECUTE TASK only",
       "Leave out the WAREHOUSE parameter",
-      "Grant only the EXECUTE TASK privilege",
       "Use SCHEDULE = 'SERVERLESS'",
       "Set WAREHOUSE = SERVERLESS"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "A task without a WAREHOUSE parameter runs on Snowflake-managed compute, which needs the EXECUTE MANAGED TASK privilege. Naming a warehouse makes it user-managed."
   },
@@ -1671,11 +1671,11 @@
     "options": [
       "Snowpipe Streaming",
       "Snowflake Marketplace",
-      "Streamlit in Snowflake",
-      "Snowflake Data Clean Rooms"
+      "Snowflake Data Clean Rooms",
+      "Streamlit in Snowflake"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Streamlit in Snowflake builds and runs Streamlit apps on Snowflake, with access controlled by Snowflake roles. Marketplace lists data products; it does not host your apps."
   },
@@ -1690,13 +1690,13 @@
     "skill": "Table types",
     "stem": "Which object lets you query files in cloud storage as if they were a table, without loading them?",
     "options": [
+      "External table",
       "Materialized view",
       "Table stage",
-      "External table",
       "Transient table"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "An external table stores file metadata and reads the files where they sit in external storage. A table stage only holds files waiting to be loaded."
   },
@@ -1711,13 +1711,13 @@
     "skill": "Snowpipe",
     "stem": "How does Snowpipe auto-ingest learn that a new file landed in an S3 bucket?",
     "options": [
-      "Polling the bucket each minute",
+      "Polling every minute",
+      "Cloud event notifications",
       "A scheduled task",
-      "Manual REFRESH calls",
-      "Cloud event notifications"
+      "Manual REFRESH calls"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "With AUTO_INGEST = TRUE, the cloud storage service sends event notifications that tell the pipe which new files to load."
   },
@@ -1732,13 +1732,13 @@
     "skill": "Architecture layers",
     "stem": "What is in the query processing layer?",
     "options": [
-      "Virtual warehouses",
       "Micro-partition files",
       "Authentication service",
+      "Virtual warehouses",
       "Optimizer statistics"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Queries run in virtual warehouses, the query processing layer. Micro-partitions live in the storage layer, and authentication and optimizer metadata belong to cloud services."
   },
@@ -1755,11 +1755,11 @@
     "options": [
       "Dynamic table",
       "External table",
-      "Hybrid table",
-      "Transient table"
+      "Transient table",
+      "Hybrid table"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Hybrid tables use row storage with indexes for low-latency point operations, alongside Snowflake's columnar analytics. Dynamic tables are refreshed from a query."
   },
@@ -1774,13 +1774,13 @@
     "skill": "Secondary roles",
     "stem": "A session has a primary role and secondary roles. Which role owns a table the user creates?",
     "options": [
+      "Primary role",
       "Each secondary role",
       "Highest role in the session",
-      "Primary role",
       "USERADMIN"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "CREATE statements are authorized by the primary role, which becomes the owner. Secondary roles can authorize other actions but never own new objects."
   },
@@ -1816,13 +1816,13 @@
     "skill": "Materialized views",
     "stem": "When is a materialized view a good fit?",
     "options": [
-      "Costly, often read, rarely changed",
-      "Base table changes every few seconds",
+      "Base table changes constantly",
       "Query needs window functions",
+      "Costly, often read, rarely changed",
       "Query joins five tables"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Materialized views pay off when results are expensive and read often but change rarely. They cannot join tables or use window functions."
   },
@@ -1837,15 +1837,15 @@
     "skill": "Streams",
     "stem": "In a stream, which column marks the delete and insert pair that one UPDATE produced?",
     "options": [
-      "METADATA$ISUPDATE",
-      "METADATA$ACTION",
-      "METADATA$FILENAME",
-      "METADATA$ROW_ID"
+      "METADATA\\$ACTION",
+      "METADATA\\$FILENAME",
+      "METADATA\\$ROW_ID",
+      "METADATA\\$ISUPDATE"
     ],
     "correct": [
-      0
+      3
     ],
-    "explanation": "An update appears as a DELETE and an INSERT record with METADATA$ISUPDATE set to TRUE. METADATA$ACTION only says INSERT or DELETE."
+    "explanation": "An update appears as a DELETE and an INSERT record with METADATA\\$ISUPDATE set to TRUE. METADATA\\$ACTION only says INSERT or DELETE."
   },
   {
     "id": "SNOWPRO-T2-038",
@@ -1858,13 +1858,13 @@
     "skill": "Listings",
     "stem": "A Marketplace listing offers 30 days of limited access before full access is requested. Which access type is this?",
     "options": [
+      "Limited trial",
       "Reader account",
       "Free listing",
-      "Private offer",
-      "Limited trial"
+      "Private offer"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "Limited trial listings give instant limited access for 1 to 90 days. The consumer can then ask the provider for full access."
   },
@@ -1879,13 +1879,13 @@
     "skill": "Streaming ingestion",
     "stem": "An application must send rows with seconds of latency, without staging files. Which option fits?",
     "options": [
-      "Snowpipe Streaming",
       "External tables",
+      "Snowpipe Streaming",
       "Bulk COPY INTO",
       "Snowpipe auto-ingest"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "Snowpipe Streaming writes rows through its SDK or REST API with no files in between. Snowpipe auto-ingest still loads staged files."
   },
@@ -1922,12 +1922,12 @@
     "stem": "Which object generates unique numbers, for example for surrogate keys?",
     "options": [
       "Object tag",
-      "Sequence",
       "Stage",
-      "Stream"
+      "Stream",
+      "Sequence"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "A sequence returns unique numbers each time NEXTVAL is called. A stream tracks table changes and a tag labels objects."
   },
@@ -1942,13 +1942,13 @@
     "skill": "Integrations",
     "stem": "Which object holds the cloud access identity for external stages, so users never handle secret keys?",
     "options": [
+      "Storage integration",
       "File format",
       "Network rule",
-      "API integration",
-      "Storage integration"
+      "API integration"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "A storage integration stores a generated IAM entity for the cloud provider. Stages reference it instead of embedding credentials."
   },
@@ -1987,13 +1987,13 @@
     "skill": "Object tagging",
     "stem": "What is an object tag mainly used for?",
     "options": [
-      "Labeling objects for tracking",
       "Encrypting a column again",
+      "Labeling objects for tracking",
       "Granting privileges to roles",
       "Speeding up partition pruning"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "Tags are key-value labels on objects and columns, used to track sensitive data and cost, and they can carry masking policies."
   },
@@ -2010,11 +2010,11 @@
     "options": [
       "It is copied into Fail-safe",
       "It moves to cloud services",
-      "It is kept for 24 hours",
-      "It is dropped"
+      "It is dropped",
+      "It is kept for 24 hours"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "The warehouse cache lives on the warehouse's compute, so it is lost on suspend. That is one trade-off when setting auto-suspend very short."
   },
@@ -2031,11 +2031,11 @@
     "options": [
       "PATH",
       "INDEX",
-      "VALUE",
-      "KEY"
+      "KEY",
+      "VALUE"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "FLATTEN returns SEQ, KEY, PATH, INDEX, VALUE and THIS. VALUE holds the element; INDEX gives its position in an array."
   },
@@ -2050,13 +2050,13 @@
     "skill": "Secure Data Sharing",
     "stem": "Which object can a provider add to a share?",
     "options": [
+      "Dynamic table",
       "Resource monitor",
       "Virtual warehouse",
-      "User",
-      "Dynamic table"
+      "User"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "Shares can hold databases, tables, dynamic tables, external and Iceberg tables, views and some UDFs. Warehouses, monitors and users are account objects that are never shared."
   },
@@ -2144,12 +2144,12 @@
     "stem": "Which COPY INTO option removes files from the stage after they load successfully?",
     "options": [
       "FORCE = TRUE",
+      "PURGE = TRUE",
       "SINGLE = TRUE",
-      "SIZE_LIMIT = 0",
-      "PURGE = TRUE"
+      "SIZE_LIMIT = 0"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "PURGE = TRUE asks Snowflake to remove successfully loaded files. If removal fails, no error is returned."
   },
@@ -2186,12 +2186,12 @@
     "stem": "An account sets MIN_DATA_RETENTION_TIME_IN_DAYS to 5 and a table sets retention to 2. What is the table's effective retention?",
     "options": [
       "3 days",
-      "5 days",
       "7 days",
-      "2 days"
+      "2 days",
+      "5 days"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "The effective retention is the greater of the table's setting and the account minimum, so 5 days. The minimum never lowers a longer setting."
   },
@@ -2206,13 +2206,13 @@
     "skill": "System roles",
     "stem": "Which system role encapsulates both SYSADMIN and SECURITYADMIN?",
     "options": [
+      "ACCOUNTADMIN",
       "USERADMIN",
       "GLOBALORGADMIN",
-      "ORGADMIN",
-      "ACCOUNTADMIN"
+      "ORGADMIN"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "ACCOUNTADMIN sits at the top of the account's system roles and inherits SYSADMIN and SECURITYADMIN. Snowflake advises granting it to as few users as possible."
   },
@@ -2228,12 +2228,12 @@
     "stem": "How many resource monitors below the account level can one warehouse be assigned to?",
     "options": [
       "Two",
-      "Unlimited",
       "One",
+      "Unlimited",
       "Five"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "A warehouse can have only one warehouse-level resource monitor. It can also fall under the single account-level monitor."
   },
@@ -2271,13 +2271,13 @@
     "options": [
       "WHEN STREAM_CHANGED(stream_name)",
       "SCHEDULE = 'ON CHANGE'",
-      "WHEN SYSTEM$STREAM_HAS_DATA",
-      "AFTER stream_name"
+      "AFTER stream_name",
+      "WHEN SYSTEM\\$STREAM_HAS_DATA"
     ],
     "correct": [
-      2
+      3
     ],
-    "explanation": "WHEN SYSTEM$STREAM_HAS_DATA('<stream>') skips a run when the stream is empty, which saves compute."
+    "explanation": "WHEN SYSTEM\\$STREAM_HAS_DATA('<stream>') skips a run when the stream is empty, which saves compute."
   },
   {
     "id": "SNOWPRO-D-008",
@@ -2312,12 +2312,12 @@
     "stem": "Which option loads Parquet fields into table columns that share their names?",
     "options": [
       "STRIP_OUTER_ARRAY",
-      "ERROR_ON_COLUMN_COUNT_MISMATCH",
-      "ENFORCE_LENGTH",
-      "MATCH_BY_COLUMN_NAME"
+      "MATCH_BY_COLUMN_NAME",
+      "SKIP_HEADER",
+      "ENFORCE_LENGTH"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "MATCH_BY_COLUMN_NAME maps file fields to columns by name, case-sensitive or not, for JSON, Avro, ORC, Parquet and CSV."
   },
@@ -2334,11 +2334,11 @@
     "options": [
       "Row heaps with indexes",
       "Uncompressed CSV blocks",
-      "One file per table",
-      "Compressed and columnar"
+      "Compressed and columnar",
+      "One file per table"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "Snowflake stores data in compressed, columnar micro-partitions and manages the layout itself. There are no indexes for users to build or maintain."
   },
@@ -2374,13 +2374,13 @@
     "skill": "Privileges",
     "stem": "Which grant covers tables that will be created later in a schema?",
     "options": [
-      "GRANT OWNERSHIP ON ALL TABLES",
       "GRANT SELECT ON FUTURE TABLES",
+      "GRANT OWNERSHIP ON ALL TABLES",
       "GRANT SELECT ON ALL TABLES",
       "GRANT USAGE ON SCHEMA"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "A future grant applies privileges to objects created later in the schema. ON ALL TABLES covers only the tables that exist when the grant runs."
   },
@@ -2441,12 +2441,12 @@
     "stem": "A scheduled task run is still going when the next run is due. What happens?",
     "options": [
       "Next run waits in a queue",
-      "Next run is skipped",
       "Both runs go in parallel",
+      "Next run is skipped",
       "First run is cancelled"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "Snowflake runs only one instance of a scheduled task at a time, so a run that would overlap is skipped."
   },
@@ -2461,13 +2461,13 @@
     "skill": "Failover",
     "stem": "During a regional outage, what does a failover group let an account do?",
     "options": [
-      "Promote a secondary account",
       "Move warehouses across clouds",
       "Clone the failed account",
-      "Undo the outage"
+      "Undo the outage",
+      "Promote a secondary"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "With failover groups, a secondary account in another region can be promoted to primary so work continues. Failover needs Business Critical Edition."
   },
@@ -2482,13 +2482,13 @@
     "skill": "File formats",
     "stem": "A JSON file is one large array of records. Which file format option loads each element as its own row?",
     "options": [
+      "STRIP_OUTER_ARRAY = TRUE",
       "SKIP_HEADER = 1",
       "MULTI_LINE = TRUE",
-      "STRIP_OUTER_ARRAY = TRUE",
       "STRIP_NULL_VALUES = TRUE"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "STRIP_OUTER_ARRAY removes the outer brackets so each element becomes a row, which also keeps each row well under the size limit."
   },
@@ -2504,12 +2504,12 @@
     "stem": "Which layer parses and optimizes a query before a warehouse runs it?",
     "options": [
       "Warehouse local cache",
-      "Storage layer",
       "Cloud services",
+      "Storage layer",
       "Client connector"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "Query parsing and optimization happen in the cloud services layer, which then hands the plan to a virtual warehouse to execute."
   },
@@ -2566,13 +2566,13 @@
     "skill": "Resource monitors",
     "stem": "Which resource monitor action cancels statements that are still running?",
     "options": [
+      "Suspend immediately",
       "Notify",
       "Notify, then suspend later",
-      "Suspend immediately",
       "Suspend"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Suspend lets running statements finish before suspending. Suspend immediately cancels them at once."
   },
@@ -2588,12 +2588,12 @@
     "stem": "Which feature speeds selective point lookups such as WHERE order_id = 4471 on a huge table?",
     "options": [
       "Materialized view",
+      "Search optimization service",
       "Query acceleration service",
-      "Larger multi-cluster warehouse",
-      "Search optimization service"
+      "Larger multi-cluster warehouse"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "Search optimization records which values may appear in each micro-partition, so equality and other selective lookups skip most partitions."
   },
@@ -2650,13 +2650,13 @@
     "skill": "Load metadata",
     "stem": "Files staged 70 days ago with an unknown load status are being skipped. Which option loads them?",
     "options": [
+      "LOAD_UNCERTAIN_FILES = TRUE",
       "PURGE = TRUE",
-      "VALIDATION_MODE = RETURN_ERRORS",
-      "ON_ERROR = CONTINUE",
-      "LOAD_UNCERTAIN_FILES = TRUE"
+      "VALIDATION_MODE",
+      "ON_ERROR = CONTINUE"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "After 64 days COPY cannot tell whether a file was loaded and skips it by default. LOAD_UNCERTAIN_FILES loads those files."
   },
@@ -2672,12 +2672,12 @@
     "stem": "Which COPY INTO <location> option writes all rows to one file?",
     "options": [
       "MAX_FILE_SIZE = 0",
+      "SINGLE = TRUE",
       "OVERWRITE = TRUE",
-      "HEADER = TRUE",
-      "SINGLE = TRUE"
+      "HEADER = TRUE"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "SINGLE = TRUE writes one file instead of many parallel ones. HEADER adds column names and OVERWRITE replaces files with the same names."
   },
@@ -2692,13 +2692,13 @@
     "skill": "Billing",
     "stem": "When is cloud services usage billed?",
     "options": [
-      "Beyond 10% of daily warehouse use",
       "Per query, at double the rate",
-      "Always, as a flat monthly fee per account",
+      "Flat monthly fee",
+      "Beyond 10% of daily warehouse use",
       "Never; it is always free"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Cloud services credits are billed only when daily usage exceeds 10% of that day's warehouse usage. The 10% adjustment is applied daily."
   },
@@ -2713,13 +2713,13 @@
     "skill": "Cloning",
     "stem": "How do you make a zero-copy copy of a table as it was two hours ago?",
     "options": [
-      "CLONE with AT (OFFSET => -7200)",
-      "UNDROP TABLE with a timestamp",
+      "UNDROP TABLE with an AT timestamp",
       "INSERT from RESULT_SCAN",
-      "COPY INTO from the Fail-safe copy"
+      "COPY INTO from the Fail-safe copy",
+      "CLONE with AT (OFFSET => -7200)"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "CREATE TABLE ... CLONE accepts AT or BEFORE, so the clone reflects the table at that point. OFFSET is in seconds, and 7,200 seconds is two hours."
   },
@@ -2734,13 +2734,13 @@
     "skill": "Organization roles",
     "stem": "Which role handles account lifecycle tasks for a whole organization, from the organization account?",
     "options": [
-      "ACCOUNTADMIN",
       "GLOBALORGADMIN",
+      "ACCOUNTADMIN",
       "SYSADMIN",
       "SECURITYADMIN"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "GLOBALORGADMIN performs organization-level tasks such as creating and managing accounts and exists only in the organization account. ACCOUNTADMIN manages a single account."
   },
@@ -2756,12 +2756,12 @@
     "stem": "Which feature tracks spending on serverless features that resource monitors cannot control?",
     "options": [
       "Auto-suspend",
+      "Budgets",
       "Query tags",
-      "Network policies",
-      "Budgets"
+      "Network policies"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "Resource monitors cover warehouses only. Budgets set spending limits and notifications that also cover serverless features."
   },
@@ -2776,13 +2776,13 @@
     "skill": "Scaling policies",
     "stem": "What does the Standard scaling policy favor?",
     "options": [
-      "Avoiding queued queries",
       "Fixed cluster counts",
       "Saving credits over speed",
+      "Avoiding queued queries",
       "Fully loading each cluster"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Standard is the default policy and starts clusters as soon as queries queue. Economy saves credits by keeping clusters fully loaded."
   },
@@ -2797,7 +2797,7 @@
     "skill": "Streams",
     "stem": "When does a stream become stale?",
     "options": [
-      "Nobody queries it for a day",
+      "Nobody queries it for a whole day",
       "Its source table is reclustered",
       "Its warehouse suspends",
       "Offset falls outside retention"
@@ -2840,12 +2840,12 @@
     "stem": "What is the default target size for each file that COPY INTO <location> writes?",
     "options": [
       "100 MB",
-      "5 GB",
       "16 MB",
+      "5 GB",
       "250 MB"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "MAX_FILE_SIZE defaults to 16 MB and can be raised to 5 GB. It is a target, so actual files can differ."
   },
@@ -2860,13 +2860,13 @@
     "skill": "AI features",
     "stem": "Which feature gives low-latency fuzzy search over text, for example to ground a chatbot?",
     "options": [
-      "Cortex Search",
       "Directory tables",
       "Search optimization service",
+      "Cortex Search",
       "Cortex Analyst"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Cortex Search indexes text for hybrid vector and keyword search, a common retrieval step for RAG apps. The search optimization service speeds selective SQL lookups instead."
   },
@@ -2902,13 +2902,13 @@
     "skill": "Authentication",
     "stem": "What does multi-factor authentication add to a password sign-in?",
     "options": [
-      "Longer minimum password",
       "Second factor such as a passkey",
+      "Longer minimum password",
       "Required IP allowlist",
-      "OAuth token replacing the password"
+      "OAuth access token"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "MFA asks for something besides the password, such as a passkey, authenticator code or push approval. IP allowlists come from network policies."
   },
@@ -2924,12 +2924,12 @@
     "stem": "How far behind real time can ACCOUNT_USAGE views be?",
     "options": [
       "Exactly 24 hours",
-      "Up to 7 days",
       "45 minutes to 3 hours",
-      "None; it updates in real time"
+      "Up to 7 days",
+      "No delay at all"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "ACCOUNT_USAGE latency depends on the view, from 45 minutes for QUERY_HISTORY to about 3 hours for ACCESS_HISTORY."
   },
@@ -2966,12 +2966,12 @@
     "stem": "To keep a stream from going stale, Snowflake can extend the source table's retention. What is the default cap?",
     "options": [
       "90 days",
-      "14 days",
       "7 days",
-      "1 day"
+      "1 day",
+      "14 days"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "MAX_DATA_EXTENSION_TIME_IN_DAYS defaults to 14 days. Retention is extended only when the table's own retention is shorter than that."
   },
@@ -2986,13 +2986,13 @@
     "skill": "Listings",
     "stem": "Which role can create a listing without extra grants?",
     "options": [
+      "ACCOUNTADMIN",
       "Database owner",
       "SECURITYADMIN",
-      "SYSADMIN",
-      "ACCOUNTADMIN"
+      "SYSADMIN"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "Creating listings needs ACCOUNTADMIN or a role that has been given provider privileges, plus accepting the provider terms."
   },
@@ -3008,12 +3008,12 @@
     "stem": "Which command downloads unloaded files from an internal stage to a laptop?",
     "options": [
       "PUT",
+      "GET",
       "REMOVE",
-      "UNLOAD",
-      "GET"
+      "UNLOAD"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "GET copies files from an internal stage to the local file system. REMOVE deletes staged files, and UNLOAD is not a Snowflake command."
   },
@@ -3051,11 +3051,11 @@
     "options": [
       "Copied to the cloned stream",
       "Merged into the source table",
-      "Inaccessible in the clone",
-      "Consumed in both schemas"
+      "Consumed in both schemas",
+      "Inaccessible in the clone"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Cloned streams cannot return records that were unconsumed at clone time. Change tracking in the clone starts when the clone is created."
   },
@@ -3070,13 +3070,13 @@
     "skill": "Authentication",
     "stem": "Which standard lets users sign in to Snowflake through a corporate identity provider such as Okta?",
     "options": [
-      "RADIUS",
       "SAML 2.0",
+      "RADIUS",
       "Kerberos",
       "LDAP bind"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Federated single sign-on in Snowflake uses SAML 2.0 with an identity provider, so users sign in with their company credentials."
   },
@@ -3092,12 +3092,12 @@
     "stem": "How can ACCOUNTADMIN let a reporting role read ACCOUNT_USAGE views?",
     "options": [
       "Grant it OWNERSHIP of SNOWFLAKE",
+      "Grant it a SNOWFLAKE database role",
       "Clone the SNOWFLAKE database for it",
-      "Grant it MONITOR on the account",
-      "Grant it a SNOWFLAKE database role"
+      "Grant it MONITOR on the account"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "Access to the SNOWFLAKE database's schemas comes from granting a SNOWFLAKE database role or IMPORTED PRIVILEGES. Database roles are recommended so less is exposed."
   },
@@ -3134,12 +3134,12 @@
     "stem": "What does a stream store?",
     "options": [
       "Copy of each changed row",
-      "Offset in table version history",
       "Snapshot of the whole table",
-      "Log of every query on the table"
+      "Log of every query on the table",
+      "Offset in table version history"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "A stream holds only an offset. It returns changes by comparing the table's versions, so it uses no table storage of its own."
   },
@@ -3154,13 +3154,13 @@
     "skill": "Native Apps",
     "stem": "Which framework lets a provider package code and data as an app that consumers install?",
     "options": [
-      "Snowpark Container Services",
       "Native App Framework",
+      "Snowpark Container Services",
       "Streamlit in Snowflake",
       "Data clean room"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "The Native App Framework bundles data, logic and interfaces into an application package that consumers install in their own accounts, often through a listing."
   },
@@ -3176,12 +3176,12 @@
     "stem": "A Windows reporting tool connects through a standard database driver API. Which Snowflake driver fits?",
     "options": [
       "Go driver",
-      "Node.js driver",
       "ODBC driver",
+      "Node.js driver",
       "Snowpark API"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "ODBC is the standard driver interface many reporting and spreadsheet tools use. The Node.js and Go drivers are libraries for programs in those languages."
   },
@@ -3238,13 +3238,13 @@
     "skill": "Semi-structured data",
     "stem": "Which expression reads the city field from a VARIANT column named info?",
     "options": [
-      "info$city",
+      "info:city",
+      "info\\$city",
       "info->city",
-      "info#city",
-      "info:city"
+      "info#city"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "Snowflake uses a colon after the column name for the first level of a semi-structured path, then dots or brackets for deeper levels."
   },
@@ -3282,11 +3282,11 @@
     "options": [
       "CURRENT_USER",
       "CURRENT_ACCOUNT",
-      "CURRENT_ROLE",
-      "IS_ROLE_IN_SESSION"
+      "IS_ROLE_IN_SESSION",
+      "CURRENT_ROLE"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "IS_ROLE_IN_SESSION checks the primary and secondary roles and their hierarchy. CURRENT_ROLE matches only the exact primary role name."
   },
@@ -3322,13 +3322,13 @@
     "skill": "Dynamic tables",
     "stem": "What does TARGET_LAG = DOWNSTREAM do on an intermediate dynamic table?",
     "options": [
-      "Copies its source table's target lag",
       "Refreshes only as dependents need",
+      "Copies its source's lag",
       "Refreshes every single minute",
       "Never refreshes again"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "DOWNSTREAM tells an intermediate table to refresh only as often as the dynamic tables that read from it require."
   },
@@ -3387,11 +3387,11 @@
     "options": [
       "Snowpark-optimized warehouses",
       "External functions",
-      "Snowpark Container Services",
-      "Native App Framework"
+      "Native App Framework",
+      "Snowpark Container Services"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Snowpark Container Services runs OCI container images on Snowflake-managed compute pools. Snowpark-optimized warehouses give more memory to Snowpark code but do not run containers."
   },
@@ -3406,13 +3406,13 @@
     "skill": "Semi-structured data",
     "stem": "Which semi-structured type stores key-value pairs?",
     "options": [
+      "OBJECT",
       "ARRAY",
       "GEOMETRY",
-      "BINARY",
-      "OBJECT"
+      "BINARY"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "OBJECT holds key-value pairs like a JSON object. ARRAY holds an ordered list of values."
   },
@@ -3428,12 +3428,12 @@
     "stem": "Which warehouse privilege lets a role run queries on it?",
     "options": [
       "MONITOR",
+      "USAGE",
       "MODIFY",
-      "OPERATE",
-      "USAGE"
+      "OPERATE"
     ],
     "correct": [
-      3
+      1
     ],
     "explanation": "USAGE lets a role use a warehouse to run queries. OPERATE lets it start, stop, suspend and resume, MONITOR lets it view usage, and MODIFY lets it change properties such as size."
   },
@@ -3450,11 +3450,11 @@
     "options": [
       "Row access filtering",
       "Tag-based masking",
-      "External tokenization",
-      "Conditional masking"
+      "Conditional masking",
+      "External tokenization"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "Conditional masking passes other columns of the same table or view to the policy and uses them to decide whether to mask."
   },
@@ -3470,12 +3470,12 @@
     "stem": "A warehouse resumes, runs 20 seconds of work, then suspends. How many seconds are billed?",
     "options": [
       "20",
-      "60",
       "3,600",
-      "30"
+      "30",
+      "60"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Warehouses bill per second with a 60-second minimum each time they start, so 20 seconds of work is billed as 60."
   },
@@ -3490,13 +3490,13 @@
     "skill": "Dynamic tables",
     "stem": "Which requirement rules out a dynamic table?",
     "options": [
+      "Freshness under 60 seconds",
       "Window functions",
-      "Multi-step pipeline of transforms",
-      "Data fresher than 60 seconds",
+      "Multi-step pipeline",
       "Joins across tables"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Dynamic tables suit declarative pipelines with joins, aggregates and window functions, but not workloads needing data fresher than about a minute or guaranteed refresh times."
   },
@@ -3512,12 +3512,12 @@
     "stem": "Which command lets a provider add a consumer account to an existing share?",
     "options": [
       "ALTER SHARE ... SET SECURE",
-      "GRANT IMPORTED PRIVILEGES",
       "ALTER SHARE ... ADD ACCOUNTS",
+      "GRANT IMPORTED PRIVILEGES",
       "CREATE DATABASE FROM SHARE"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "ALTER SHARE ... ADD ACCOUNTS makes the share visible to the named accounts. IMPORTED PRIVILEGES is what a consumer grants on the database it creates."
   },
@@ -3533,7 +3533,7 @@
     "stem": "What does a directory table on a stage give you?",
     "options": [
       "List of pipes using the stage",
-      "Index of rows already loaded",
+      "Index of all rows already loaded",
       "Catalog of the stage's files",
       "Copy of each file's contents"
     ],
@@ -3574,13 +3574,13 @@
     "skill": "Unstructured data",
     "stem": "Which URL type gives temporary file access only to the user who generated it?",
     "options": [
+      "Scoped URL",
       "Pre-signed URL",
       "External stage URL",
-      "File URL",
-      "Scoped URL"
+      "File URL"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "BUILD_SCOPED_FILE_URL returns a URL that only its creator can use and that expires with the result cache, currently 24 hours."
   },
@@ -3595,13 +3595,13 @@
     "skill": "User grants",
     "stem": "When do privileges granted directly to a user count toward authorization?",
     "options": [
-      "With USE SECONDARY ROLES ALL",
       "Never; users cannot hold them",
+      "With USE SECONDARY ROLES ALL",
       "Always, before any role grants",
       "Only for ACCOUNTADMIN users"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "Direct user grants are user-based access control. They take effect only when the session's secondary roles are set to ALL."
   },
@@ -3616,7 +3616,7 @@
     "skill": "Column-level security",
     "stem": "What does external tokenization need in the masking policy body?",
     "options": [
-      "Snowpipe REST call",
+      "Call to the Snowpipe REST API",
       "Stored procedure",
       "External function call",
       "Secure Java UDF handler"
@@ -3658,13 +3658,13 @@
     "skill": "UDTFs",
     "stem": "Which function type returns a set of rows for each call?",
     "options": [
+      "UDTF",
       "Scalar UDF",
       "Masking policy",
-      "Aggregate function",
-      "UDTF"
+      "Aggregate function"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "A user-defined table function returns tabular results and is used in the FROM clause. A scalar UDF returns one value per input row."
   },
@@ -3680,12 +3680,12 @@
     "stem": "Which grant lets a share expose objects in a provider's database?",
     "options": [
       "MONITOR on the database",
-      "IMPORTED PRIVILEGES to the share",
       "USAGE on the database",
+      "IMPORTED PRIVILEGES to the share",
       "OWNERSHIP of the database"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "A provider grants USAGE on the database and schema, then SELECT on objects, to the share. Database roles can also be granted to shares."
   },
@@ -3703,7 +3703,7 @@
       "Join two staged files on a key",
       "Aggregate with GROUP BY",
       "Reorder and omit file columns",
-      "Filter with a WHERE clause"
+      "Filter rows with a WHERE clause"
     ],
     "correct": [
       2
@@ -3722,12 +3722,12 @@
     "stem": "How is Snowpipe file loading billed?",
     "options": [
       "Flat monthly fee",
-      "Fixed credits per GB loaded",
       "Per file plus warehouse time",
-      "Warehouse credits per second"
+      "Warehouse credits per second",
+      "Fixed credits per GB loaded"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Snowpipe charges a fixed number of credits per GB, with no per-file charge and no warehouse time."
   },
@@ -3742,13 +3742,13 @@
     "skill": "Service model",
     "stem": "Which is true of Snowflake as a managed service?",
     "options": [
+      "No hardware or software to install",
       "Tables need manual vacuuming",
       "Runs on customer-owned servers",
-      "Customers apply upgrades quarterly",
-      "No hardware or software to install"
+      "Customers apply upgrades quarterly"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "Snowflake is software as a service: Snowflake handles hardware, software, upgrades and tuning. Users manage data, roles and warehouses."
   },
@@ -3785,12 +3785,12 @@
     "stem": "Which policy sets how long an idle session stays open?",
     "options": [
       "Network policy",
-      "Session policy",
       "Authentication policy",
+      "Session policy",
       "Password policy"
     ],
     "correct": [
-      1
+      2
     ],
     "explanation": "A session policy sets the idle timeout for sessions. Authentication policies control which sign-in methods and clients are allowed."
   },
@@ -3807,11 +3807,11 @@
     "options": [
       "Search optimization",
       "Query acceleration",
-      "Data classification",
-      "Access history"
+      "Access history",
+      "Classification"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Classification analyzes column contents and suggests semantic and privacy categories, which can then be set as system tags."
   },
@@ -3826,13 +3826,13 @@
     "skill": "Clustering",
     "stem": "When is defining a clustering key most worth its cost?",
     "options": [
+      "Huge table filtered on key",
       "Table rewritten every hour",
       "Table always fully scanned",
-      "Huge table filtered on key",
       "Small table under 1 GB"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Clustering helps multi-terabyte tables whose queries filter on the key. Reclustering costs credits, so small, fully scanned or constantly rewritten tables gain little."
   },
@@ -3869,12 +3869,12 @@
     "stem": "Why use a secure UDF when sharing logic with consumers?",
     "options": [
       "It skips privilege checks",
-      "It runs much faster",
-      "It allows writes",
-      "Its code stays hidden"
+      "It runs much faster for consumers",
+      "Its code stays hidden",
+      "It allows writes"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "A secure UDF hides its definition from users who do not own it, so consumers can call it without seeing the logic."
   },
@@ -3889,13 +3889,13 @@
     "skill": "Snowpipe",
     "stem": "Within 14 days, a file with the same name is staged again with new content. What does its pipe do?",
     "options": [
-      "Replaces the old rows",
+      "Replaces the rows loaded before",
       "Loads the new rows",
-      "Skips it as already loaded",
-      "Stops the pipe with an error"
+      "Stops the pipe with an error",
+      "Skips it as already loaded"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "A pipe skips files whose path and name it has already recorded, even if the content changed. Reload such a file another way."
   },
@@ -3910,13 +3910,13 @@
     "skill": "Object hierarchy",
     "stem": "What sits directly above databases in Snowflake's object hierarchy?",
     "options": [
-      "Schema",
       "Account",
+      "Schema",
       "Role",
       "Warehouse"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "The hierarchy runs organization, account, database, schema, then objects such as tables and views. Warehouses and roles are account-level objects, not containers for databases."
   },
@@ -3931,13 +3931,13 @@
     "skill": "Unstructured data",
     "stem": "Files in an internal stage must be readable through file URLs. Which encryption type must the stage use?",
     "options": [
-      "SNOWFLAKE_SSE",
       "NONE",
+      "SNOWFLAKE_SSE",
       "AWS_SSE_KMS",
       "SNOWFLAKE_FULL"
     ],
     "correct": [
-      0
+      1
     ],
     "explanation": "Internal stages use client-side encryption by default, and those files cannot be read through URLs. Create the stage with server-side SNOWFLAKE_SSE instead; it cannot be changed later."
   },
@@ -3953,7 +3953,7 @@
     "stem": "Who can create a custom account role?",
     "options": [
       "Only SYSADMIN",
-      "Any role with USAGE on a database",
+      "Any role with USAGE",
       "Any role with CREATE ROLE",
       "Only ACCOUNTADMIN"
     ],
@@ -3974,12 +3974,12 @@
     "stem": "Which Enterprise feature re-encrypts stored data with new keys once its keys are a year old?",
     "options": [
       "Client-side encryption",
-      "Periodic rekeying",
       "Tri-Secret Secure",
-      "Key pair rotation"
+      "Key pair rotation",
+      "Periodic rekeying"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "Periodic rekeying, an Enterprise feature, retires keys older than a year and re-encrypts the data with new keys. Tri-Secret Secure adds a customer key instead."
   },
@@ -3996,7 +3996,7 @@
     "options": [
       "Aggregates over a single table",
       "Window function over partitions",
-      "Join of two tables",
+      "Join of two base tables on a key",
       "ORDER BY with LIMIT"
     ],
     "correct": [
@@ -4059,11 +4059,11 @@
     "options": [
       "Dynamic table",
       "Transient table",
-      "Iceberg table",
-      "Hybrid table"
+      "Hybrid table",
+      "Iceberg table"
     ],
     "correct": [
-      2
+      3
     ],
     "explanation": "Iceberg tables store data and metadata in the open Apache Iceberg format in external cloud storage, so other engines can use them."
   },
@@ -4102,13 +4102,13 @@
     "skill": "UNDROP",
     "stem": "What happens if you UNDROP a table while another table with the same name exists?",
     "options": [
+      "It fails until one is renamed",
       "It overwrites the newer table",
       "It merges the two tables",
-      "It restores under a new name",
-      "It fails until one is renamed"
+      "It restores under a new name"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "UNDROP fails when an object of the same name already exists. Rename the existing table first, then run UNDROP."
   },
@@ -4169,12 +4169,12 @@
     "stem": "What does the query acceleration scale factor limit?",
     "options": [
       "Number of queries accelerated",
-      "Credits per month for the service",
-      "Days of acceleration history",
-      "Compute, as a multiple of size"
+      "Monthly credit budget",
+      "Compute, as a multiple of size",
+      "Days of acceleration history"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "The scale factor caps how much compute a warehouse can lease for acceleration, as a multiple of its size. The default is 8; 0 removes the cap."
   },
@@ -4189,13 +4189,13 @@
     "skill": "Stored procedures",
     "stem": "A stored procedure must run with the privileges of the user who calls it. Which clause sets that?",
     "options": [
-      "EXECUTE AS CALLER",
       "EXECUTE AS OWNER",
       "SECURE = TRUE",
-      "EXECUTE AS SYSADMIN"
+      "EXECUTE AS SYSADMIN",
+      "EXECUTE AS CALLER"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "Caller's rights procedures run with the caller's privileges and session. Owner's rights, the default, run with the owning role's privileges."
   },

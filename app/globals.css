@@ -1544,6 +1544,17 @@
     --brand-border: 308 35% 78%;
     --brand-border-light: 308 35% 88%;
     --brand-gradient-to: 320 45% 95%;
+  [data-theme="ukhs2"] {
+    --brand: 241 40% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 241 45% 95%;
+    --brand-hover: 241 40% 40%;
+    --brand-dark: 241 40% 36%;
+    --brand-darker: 241 45% 26%;
+    --brand-muted: 241 30% 70%;
+    --brand-border: 241 35% 78%;
+    --brand-border-light: 241 35% 88%;
+    --brand-gradient-to: 250 45% 95%;
   }
 
   /* Personal licence (APLH) theme (UK): wine */
@@ -9036,6 +9047,16 @@
     --brand-muted: 308 30% 45%;
     --brand-dark: 308 80% 65%;
     --brand-darker: 308 75% 78%;
+  .dark [data-theme="ukhs2"] {
+    --brand: 241 40% 50%;
+    --brand-hover: 241 40% 42%;
+    --brand-light: 241 45% 13%;
+    --brand-gradient-to: 250 40% 11%;
+    --brand-border-light: 241 35% 24%;
+    --brand-border: 241 35% 34%;
+    --brand-muted: 241 30% 45%;
+    --brand-dark: 241 40% 65%;
+    --brand-darker: 241 45% 78%;
   }
 
   .dark [data-theme="ukaplh"] {

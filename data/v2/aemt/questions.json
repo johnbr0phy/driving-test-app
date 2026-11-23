@@ -1315,17 +1315,17 @@
       "difficulty": 2,
       "format": "single",
       "skill": "CPR with an advanced airway",
-      "stem": "An adult in cardiac arrest now has a supraglottic airway. How should breaths be given?",
+      "stem": "During CPR through a supraglottic airway, your partner squeezes the bag every 2 seconds. What is the main harm?",
       "options": [
-        "1 every 3 seconds with pauses",
-        "2 breaths after every 30 compressions",
-        "1 every 6 seconds, no pauses",
-        "Only when the AED analyzes"
+        "The AED cannot read the rhythm",
+        "The airway device pops out",
+        "Oxygen runs out within minutes",
+        "Less blood returns to the heart"
       ],
       "correct": [
-        2
+        3
       ],
-      "explanation": "Once an advanced airway is in, compressions continue without pauses and one breath is given every 6 seconds. The 30:2 pause is for BVM ventilation without an advanced airway."
+      "explanation": "Each extra breath raises the pressure inside the chest, which cuts the blood returning to the heart and the flow that compressions create. NASEMSO warns against hyperventilation; with an advanced airway in place give one breath every 6 seconds without pausing compressions."
     },
     {
       "id": "AEMT-T1-057",
@@ -2077,10 +2077,10 @@
       "skill": "CPAP setup",
       "stem": "Place the steps for starting CPAP on an alert patient in order.",
       "options": [
-        "Start at a low pressure",
-        "Hold the mask on gently at first",
-        "Raise pressure; reassess often",
         "Secure the head straps",
+        "Turn it on at a low pressure",
+        "Raise pressure; reassess often",
+        "Hold the mask on gently at first",
         "Explain it and check the BP"
       ],
       "correct": [
@@ -2090,7 +2090,7 @@
         0,
         2
       ],
-      "explanation": "Coaching and a BP check come first, then let the patient feel the mask before strapping it, start low and adjust while watching breathing, saturation and blood pressure."
+      "explanation": "Coaching and a BP check come first. The device runs at a low pressure before the mask touches the face, so the patient never breathes against a closed mask; hold it on gently until it is tolerated, then strap it and adjust while watching breathing, saturation and blood pressure."
     },
     {
       "id": "AEMT-T2-015",
@@ -2176,17 +2176,17 @@
       "difficulty": 2,
       "format": "single",
       "skill": "Newborn resuscitation",
-      "stem": "A newborn is dried and stimulated but his heart rate is 80. What next?",
+      "stem": "After 30 seconds of BVM breaths, a newborn's heart rate is still 70 and his chest barely moves. What should you check first?",
       "options": [
-        "Keep rubbing his back",
-        "Begin chest compressions",
-        "Give blow-by oxygen only",
-        "Start BVM ventilation"
+        "Mask seal and head position",
+        "Stop and dry him again",
+        "Begin chest compressions now",
+        "Switch to blow-by oxygen"
       ],
       "correct": [
-        3
+        0
       ],
-      "explanation": "A heart rate under 100 after drying and stimulation means the baby needs positive pressure ventilation. Compressions start only if the rate stays under 60 despite good ventilation."
+      "explanation": "A rising heart rate is the main sign that newborn ventilation works, and a chest that barely moves means the breaths are not getting in. Reseal the mask, reposition the head and clear the airway before anything else; compressions start only if the rate stays under 60 despite effective ventilation."
     },
     {
       "id": "AEMT-T2-019",
@@ -2328,17 +2328,17 @@
       "difficulty": 2,
       "format": "single",
       "skill": "Amputation",
-      "stem": "How should an amputated finger be prepared for transport?",
+      "stem": "A finger is nearly cut off and hangs by a strip of skin. What should you do with it?",
       "options": [
-        "Soaked in a cup of saline",
-        "Bagged dry, bag set on ice",
-        "Wrapped in a warm towel",
-        "Packed directly in ice"
+        "Cut the skin strip to free it",
+        "Pack the finger in ice",
+        "Keep it attached; splint it",
+        "Pull it straight to test it"
       ],
       "correct": [
-        1
+        2
       ],
-      "explanation": "NASEMSO keeps the part cool but dry: in a plastic bag, which then sits on ice inside a second bag. Direct contact with ice or water damages the tissue."
+      "explanation": "A partial amputation stays attached: the skin bridge may carry blood flow that keeps the finger alive. Dress it with gentle pressure and splint it as it lies, then transport."
     },
     {
       "id": "AEMT-T2-026",
@@ -3463,11 +3463,11 @@
       "skill": "CPAP selection",
       "stem": "For each adult in respiratory distress, specify whether CPAP is appropriate.",
       "rows": [
-        "BP 76/40 with cool skin",
-        "Unresponsive after an overdose",
-        "Alert COPD patient, tiring",
-        "Alert, crackles, BP 172/100",
-        "Sudden chest pain, absent breath sounds on one side"
+        "SBP 82 with cool, clammy skin",
+        "Breathing 6 a minute, barely rousable",
+        "Alert dialysis patient who missed sessions, crackles",
+        "Alert after a near-drowning, crackles",
+        "Facial fractures from a fall"
       ],
       "columns": [
         "CPAP appropriate",
@@ -3480,7 +3480,7 @@
         0,
         1
       ],
-      "explanation": "Alert patients with pulmonary edema or a COPD flare who can keep a mask on benefit from CPAP. An unprotected airway, hypotension and a suspected pneumothorax are contraindications."
+      "explanation": "NASEMSO supports CPAP for awake drowning patients in distress and for fluid overload such as missed dialysis. A patient who cannot protect the airway or breathe adequately needs BVM ventilation, low blood pressure worsens with positive pressure, and facial fractures prevent a safe mask seal."
     },
     {
       "id": "AEMT-D-003",
@@ -4159,17 +4159,17 @@
       "difficulty": 3,
       "format": "single",
       "skill": "Cardiogenic shock",
-      "stem": "After a large heart attack, BP is 80/50 with crackles in both lungs. What fits the fluid plan?",
+      "stem": "After a large heart attack and a 250 mL bolus, BP is 80/50 and new crackles fill both lungs. What fits the fluid plan?",
       "options": [
-        "Fluids only if HR exceeds 150",
+        "Pull the IV out now",
+        "Hold more fluid; keep the IV",
         "Two liters wide open",
-        "No IV access at all",
-        "Small boluses, recheck lungs"
+        "A 1 L bolus over 10 minutes"
       ],
       "correct": [
-        3
+        1
       ],
-      "explanation": "A failing heart cannot handle large volumes, so any fluid goes in small boluses with frequent lung checks, while ALS and the receiving center are alerted. Withholding IV access removes a route for ALS drugs."
+      "explanation": "New crackles after fluid point to cardiogenic shock, and NASEMSO advises withholding further fluid when rales develop. Keep the IV in place as a route for ALS drugs, sit him up as his BP allows, and alert ALS and the PCI center."
     },
     {
       "id": "AEMT-D-035",

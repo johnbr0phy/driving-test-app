@@ -58,9 +58,9 @@ ITEMS = [
       "When a ventilated patient is struggling, take the machine out of the equation: disconnect it and bag through the tracheostomy, then look for displacement, obstruction or a pneumothorax."),
     # ---------- Drill only ----------
     X(0, 2, "CPAP selection", "For each adult in respiratory distress, specify whether CPAP is appropriate.",
-      ["Alert, crackles, BP 172/100", "Alert COPD patient, tiring", "Unresponsive after an overdose", "BP 76/40 with cool skin", "Sudden chest pain, absent breath sounds on one side"],
+      ["Alert after a near-drowning, crackles", "Alert dialysis patient who missed sessions, crackles", "Breathing 6 a minute, barely rousable", "SBP 82 with cool, clammy skin", "Facial fractures from a fall"],
       ["CPAP appropriate", "CPAP not appropriate"], [0, 0, 1, 1, 1],
-      "Alert patients with pulmonary edema or a COPD flare who can keep a mask on benefit from CPAP. An unprotected airway, hypotension and a suspected pneumothorax are contraindications."),
+      "NASEMSO supports CPAP for awake drowning patients in distress and for fluid overload such as missed dialysis. A patient who cannot protect the airway or breathe adequately needs BVM ventilation, low blood pressure worsens with positive pressure, and facial fractures prevent a safe mask seal."),
     S(0, 1, "Oral airway", "An oral airway should only be inserted in a patient who:",
       ["Has no gag reflex", "Is breathing over 20 a minute", "Has a suspected neck injury", "Can follow simple commands"],
       "An oral airway in a patient with a gag reflex can cause vomiting and aspiration. A patient who follows commands protects his own airway, and a neck injury does not decide the choice."),

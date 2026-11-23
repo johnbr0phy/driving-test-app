@@ -1207,7 +1207,7 @@ const crat: ExamConfig = {
   idBase: 48900,
   slug: "/crat",
   landingPath: "/crat-practice-test",
-  name: "CRAT Practice Test",
+  name: "CRAT Rhythm Analysis Technician Practice Test",
   shortName: "CRAT (CCI)",
   examLabel: "CRAT exam",
   fullName: "Certified Rhythm Analysis Technician (CRAT) exam",

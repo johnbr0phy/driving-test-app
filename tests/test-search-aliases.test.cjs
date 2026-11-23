@@ -309,6 +309,8 @@ const CASES = [
   ["cci crat", "US", "crat"],
   ["telemetry tech", "US", "crat"],
   ["cardiac monitor tech", "US", "crat"],
+  ["rhythm analysis technician", "US", "crat"],
+  ["monitor tech exam", "US", "crat"],
   ["excpt", "US", "excpt"],
   ["nha pharmacy technician", "US", "excpt"],
   ["cpht nha", "US", "excpt"],

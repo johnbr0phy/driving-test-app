@@ -46,14 +46,14 @@
     "state": "ALL",
     "questionId": "CRAT-INI-004",
     "category": "cratInit",
-    "question": "A patient's history lists a dual-chamber pacemaker. Why must the monitor's pacer detection be turned on?",
-    "optionA": "So the battery recharges",
-    "optionB": "So the alarms are all silenced",
-    "optionC": "So the lower rate rises",
-    "optionD": "So spikes are not counted",
+    "question": "A new telemetry patient has a permanent pacemaker. Which device details are most useful to have on file before reading the strips?",
+    "optionA": "Only the implant date",
+    "optionB": "Its battery serial number",
+    "optionC": "The lead wire color code",
+    "optionD": "Its mode and lower rate",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "With pacer detection on, the monitor flags spikes and does not count them as QRS complexes, which keeps the rate and rhythm analysis honest."
+    "explanation": "Knowing the pacing mode and programmed lower rate tells the reader when spikes should appear, so normal pacing is not mistaken for a fault and a real fault is not missed."
   },
   {
     "type": "CRAT",
@@ -1397,7 +1397,7 @@
     "optionD": "Sinoatrial node",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A low atrial focus activates the atria upward, inverting P in lead II, while the normal PR shows the impulse began above the junction."
+    "explanation": "A low atrial focus activates the atria upward, inverting P in lead II. A junctional focus usually gives a PR under 0.12 s; a PR of 0.14 s points to a focus in the low atrium, above the junction."
   },
   {
     "type": "CRAT",
@@ -1418,10 +1418,10 @@
     "state": "ALL",
     "questionId": "CRAT-ATR-034",
     "category": "cratAtrial",
-    "question": "Flutter waves are not visible, but the ventricular rhythm is regular at 75. Which maneuver result on the strip can reveal the waves?",
-    "optionA": "Raising the paper speed to 50",
-    "optionB": "Turning down the gain",
-    "optionC": "Removing the display filter",
+    "question": "Flutter waves are not visible, but the ventricular rhythm is regular at 75. Which change can bring the hidden waves into view?",
+    "optionA": "Turning down the gain",
+    "optionB": "Silencing the rate alarm",
+    "optionC": "Raising the paper speed to 50",
     "optionD": "Briefly slowing AV conduction",
     "correctAnswer": "D",
     "correctIndex": 3,

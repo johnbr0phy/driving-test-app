@@ -94,6 +94,21 @@ Basic ECG paper arithmetic (1 small box 0.04 s at 25 mm/s, 1 large box 0.20 s, 1
 small boxes, 300 divided by large boxes, a 6-second strip times 10) is the standard method in
 every reference above and is computed in `build.py`.
 
+## Reviewer re-check of guideline definitions (2026-11-23)
+
+The reviewer tried the AHA/ACC/HRS pages again: ahajournals.org, jacc.org and the hrsonline.org
+PDF of ECG standardization Part III returned 403, PubMed asked for cookies, Europe PMC has no
+full text and Claude in Chrome was not connected. The definitions the bank uses were confirmed
+from published excerpts of the same documents found by search:
+- ECG standardization Part III (Surawicz et al., Circulation 2009;119:e235, J Am Coll Cardiol
+  2009;53:976): a QRS over 110 ms in people over 16 is abnormal, and a QRS over 110 ms without
+  RBBB or LBBB morphology is a nonspecific intraventricular conduction delay (PAC-016 uses 0.12 s,
+  which meets it): https://hrsonline.org/guidance/clinical-resources/ahaaccfhrs-recommendations-standardization-and-interpretation-electrocardiogram-part-iii
+- 2018 ACC/AHA/HRS bradycardia guideline, definitions table as reproduced in the Guideline Central
+  pocket guide: sinus pause over 3 s, first-degree AV block (AV delay) PR over 200 ms with 1:1
+  conduction, 2:1 block not classed as Mobitz I or II:
+  https://guidelinecentral.com/guideline/6988/pocket-guide/450313
+
 ## Safety and privacy
 
 - CDC, Standard Precautions for All Patient Care, fetched 2026-11-19 for CCT and reused:

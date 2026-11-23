@@ -7,9 +7,9 @@ from helpers import single, multi
 ITEMS = [
     # ---------------- Test 1 ----------------
     single(1, "Operations management", 2,
-           "What is the MAIN difference between incident management and problem management?",
-           ["Incidents restore service; problems fix causes", "Problems cover outages and incidents cover only breaches", "Incidents are logged; problems are never recorded", "Problems are smaller than incidents"],
-           "Incident management gets service back quickly. Problem management finds and removes the underlying cause so incidents do not recur."),
+           "Outages keep recurring from one unknown cause. Which process should find and remove it?",
+           ["Problem management", "Incident management", "Release management", "Capacity management"],
+           "Incident management restores service each time. Problem management investigates the underlying cause so the outages stop."),
     single(1, "SDLC", 2,
            "In which SDLC phase is fixing a security flaw usually cheapest?",
            ["Requirements and design", "User acceptance testing", "Production operation", "Coding and unit testing"],
@@ -82,9 +82,9 @@ ITEMS = [
           n=2),
     # ---------------- Drill only ----------------
     single(0, "Operations management", 2,
-           "Why keep a configuration management database current?",
-           ["To see what a change will affect", "To replace the need for backups", "To set the risk appetite", "To count supplies"],
-           "A CMDB records components and their links, so the impact of a change or failure can be judged."),
+           "Where should known causes and workarounds for recurring incidents be recorded?",
+           ["Known error database", "Risk appetite statement", "Asset disposal log", "Vendor contract file"],
+           "Problem management records known errors with their workarounds, so service desks resolve repeat incidents faster until the cause is fixed."),
     single(0, "SDLC", 3,
            "Why should production data not be copied into test systems unmasked?",
            ["Test systems are less protected", "Tests would run more slowly with real data", "Production would stop", "Developers lose access"],
@@ -101,8 +101,8 @@ ITEMS = [
            "What risk does a sprawl of overlapping applications create?",
            ["More systems to secure and support", "Fewer copies of data to protect", "Lower licensing costs", "Simpler access control"],
            "Duplicate systems multiply patching, access and integration work, and often hold copies of the same data."),
-    single(0, "Project management", 2,
-           "Who should accept the residual risk of a new system before it goes live?",
-           ["Business owner of the system", "Project developer", "Test lead", "Software vendor"],
-           "The business owner will live with the system's risk, so they accept it formally before launch."),
+    single(0, "Project management", 3,
+           "A system owner accepts a residual risk above appetite without escalating it. What is the MAIN issue?",
+           ["It exceeds their authority", "The register will be too long", "The project will cost less", "Testing will take longer"],
+           "Risk above appetite needs a decision at a level that can accept it, usually senior management. An owner cannot accept it alone."),
 ]

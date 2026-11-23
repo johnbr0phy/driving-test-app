@@ -6,7 +6,7 @@ from helpers import single
 ITEMS = [
     # ---------------- Test 1 ----------------
     single(1, "Analysis methodologies", 3,
-           "A data center worth \\$500,000 would lose 30% of its value in a flood. What is the single loss expectancy in dollars?",
+           "Ransomware would destroy 30% of the value of a customer database worth \\$500,000. What is the single loss expectancy in dollars?",
            ["150000", "350000", "500000", "1666667"],
            "SLE = asset value x exposure factor = 500,000 x 0.30 = 150,000 dollars. 350,000 is the value that would survive; dividing by 0.30 gives 1,666,667."),
     single(1, "Analysis methodologies", 2,
@@ -40,7 +40,7 @@ ITEMS = [
     # ---------------- Test 2 ----------------
     single(2, "Analysis methodologies", 3,
            "A failure costs \\$40,000 each time and happens twice a year. A control would cut it to once every two years. How much ALE does the control remove, in dollars?",
-           ["20000", "40000", "60000", "80000"],
+           ["60000", "20000", "40000", "80000"],
            "ALE before = 40,000 x 2 = 80,000. ALE after = 40,000 x 0.5 = 20,000. The control removes 80,000 - 20,000 = 60,000 dollars a year."),
     single(2, "Business impact analysis", 2,
            "Who should approve the recovery priorities that come out of a BIA?",

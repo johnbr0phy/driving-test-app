@@ -50,16 +50,16 @@
     "skill": "Operations management",
     "difficulty": 2,
     "format": "single",
-    "stem": "What is the MAIN difference between incident management and problem management?",
-    "explanation": "Incident management gets service back quickly. Problem management finds and removes the underlying cause so incidents do not recur.",
+    "stem": "Outages keep recurring from one unknown cause. Which process should find and remove it?",
+    "explanation": "Incident management restores service each time. Problem management investigates the underlying cause so the outages stop.",
     "options": [
-      "Incidents restore service; problems fix causes",
-      "Problems are smaller than incidents",
-      "Incidents are logged; problems are never recorded",
-      "Problems cover outages and incidents cover only breaches"
+      "Capacity management",
+      "Incident management",
+      "Release management",
+      "Problem management"
     ],
     "correct": [
-      0
+      3
     ]
   },
   {
@@ -92,7 +92,7 @@
     "skill": "Analysis methodologies",
     "difficulty": 3,
     "format": "single",
-    "stem": "A data center worth \\$500,000 would lose 30% of its value in a flood. What is the single loss expectancy in dollars?",
+    "stem": "Ransomware would destroy 30% of the value of a customer database worth \\$500,000. What is the single loss expectancy in dollars?",
     "explanation": "SLE = asset value x exposure factor = 500,000 x 0.30 = 150,000 dollars. 350,000 is the value that would survive; dividing by 0.30 gives 1,666,667.",
     "options": [
       "150000",
@@ -408,16 +408,16 @@
     "skill": "Privacy principles",
     "difficulty": 2,
     "format": "single",
-    "stem": "A form asks for date of birth though the service never uses it. Which privacy principle is broken?",
-    "explanation": "Collect only the personal data needed for the stated purpose. Extra data adds risk without benefit.",
+    "stem": "A loyalty app stores full passport scans when a name check would do. Which privacy principle is broken?",
+    "explanation": "Collect only the personal data needed for the stated purpose. Holding whole identity documents adds risk without benefit.",
     "options": [
-      "Right of access for the customer",
-      "Data minimization",
       "Encryption of stored records",
-      "Data portability between services"
+      "Data portability between services",
+      "Data minimization",
+      "Right of access for the customer"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -450,16 +450,16 @@
     "skill": "Threat modeling",
     "difficulty": 2,
     "format": "single",
-    "stem": "When is threat modeling MOST useful for a new application?",
-    "explanation": "Modeling threats while the design can still change lets teams build in controls cheaply rather than retrofit them.",
+    "stem": "Which threat modeling output is MOST useful to the risk register?",
+    "explanation": "Threat modeling names the threats that could realistically hit each part of a system. Those become risk scenarios that can be rated and owned.",
     "options": [
-      "During design",
-      "Only after a breach",
-      "During decommissioning",
-      "After go-live"
+      "A list of developers on the project",
+      "Test cases for user interface layout",
+      "Credible threats to each component",
+      "The hosting provider's price sheet"
     ],
     "correct": [
-      0
+      2
     ]
   },
   {
@@ -807,13 +807,13 @@
     "skill": "Business resilience",
     "difficulty": 2,
     "format": "single",
-    "stem": "How do a disaster recovery plan and a business continuity plan differ?",
-    "explanation": "Disaster recovery focuses on restoring technology. Continuity planning keeps critical business processes going, which may include manual workarounds.",
+    "stem": "Which plan covers moving staff to manual workarounds while systems are down?",
+    "explanation": "Continuity planning keeps critical business processes going, including manual workarounds. Disaster recovery restores the technology itself.",
     "options": [
-      "DRP is optional; BCP is legally required",
-      "DRP restores IT; BCP keeps the business running",
-      "DRP covers staff safety; BCP covers systems",
-      "They are two names for one plan"
+      "Disaster recovery plan",
+      "Business continuity plan",
+      "Change management plan",
+      "Incident response plan"
     ],
     "correct": [
       1
@@ -1688,7 +1688,7 @@
       "80000"
     ],
     "correct": [
-      0
+      2
     ],
     "lockedOrder": true
   },
@@ -1764,16 +1764,16 @@
     "skill": "Privacy principles",
     "difficulty": 2,
     "format": "single",
-    "stem": "When should a privacy impact assessment be done for a new system?",
-    "explanation": "Assessing privacy risk before processing begins lets the design limit collection, access and retention from the start.",
+    "stem": "What does a privacy impact assessment MAINLY evaluate?",
+    "explanation": "A PIA looks at how collecting and using personal data could harm the people it describes, and which controls reduce that harm.",
     "options": [
-      "After a complaint",
-      "Before personal data are processed",
-      "Once the system retires",
-      "Only at year end"
+      "Risks the processing poses to individuals",
+      "Whether the system meets its budget",
+      "Which vendor gives the best price",
+      "How fast pages load for users"
     ],
     "correct": [
-      1
+      0
     ]
   },
   {
@@ -3333,13 +3333,13 @@
     "skill": "Operations management",
     "difficulty": 2,
     "format": "single",
-    "stem": "Why keep a configuration management database current?",
-    "explanation": "A CMDB records components and their links, so the impact of a change or failure can be judged.",
+    "stem": "Where should known causes and workarounds for recurring incidents be recorded?",
+    "explanation": "Problem management records known errors with their workarounds, so service desks resolve repeat incidents faster until the cause is fixed.",
     "options": [
-      "To replace the need for backups",
-      "To set the risk appetite",
-      "To count supplies",
-      "To see what a change will affect"
+      "Risk appetite statement",
+      "Asset disposal log",
+      "Vendor contract file",
+      "Known error database"
     ],
     "correct": [
       3
@@ -3502,16 +3502,16 @@
     "skill": "Monitoring techniques",
     "difficulty": 2,
     "format": "single",
-    "stem": "What is control self-assessment?",
-    "explanation": "In a self-assessment, control owners and staff evaluate their own controls. It builds ownership but needs independent checks.",
+    "stem": "What is the MAIN weakness of control self-assessment?",
+    "explanation": "People reviewing their own controls may overlook or downplay failures, so self-assessment results need independent checks.",
     "options": [
-      "Independent annual testing",
-      "Users choosing passwords",
-      "Vendors rating their prices",
-      "Owners reviewing their own controls"
+      "Owners may rate themselves too kindly",
+      "It needs costly outside consultants",
+      "It removes ownership from managers",
+      "It cannot cover manual controls"
     ],
     "correct": [
-      3
+      0
     ]
   },
   {
@@ -4277,15 +4277,15 @@
     "module": 1,
     "domain": "criscTech",
     "skill": "Project management",
-    "difficulty": 2,
+    "difficulty": 3,
     "format": "single",
-    "stem": "Who should accept the residual risk of a new system before it goes live?",
-    "explanation": "The business owner will live with the system's risk, so they accept it formally before launch.",
+    "stem": "A system owner accepts a residual risk above appetite without escalating it. What is the MAIN issue?",
+    "explanation": "Risk above appetite needs a decision at a level that can accept it, usually senior management. An owner cannot accept it alone.",
     "options": [
-      "Test lead",
-      "Project developer",
-      "Business owner of the system",
-      "Software vendor"
+      "The project will cost less",
+      "Testing will take longer",
+      "It exceeds their authority",
+      "The register will be too long"
     ],
     "correct": [
       2

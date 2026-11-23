@@ -79,6 +79,8 @@ All items are original, written from AWS's public DVA-C03 exam guide and AWS pro
   Runtime with session isolation; Identity with existing IdPs; Gateway turns APIs and Lambda functions into MCP tools; Policy intercepts every tool call through Gateway with Cedar-compatible rules; Observability on OpenTelemetry; Memory short and long term.
 - **Kiro documentation**, fetched 2026-11-23. https://kiro.dev/docs/
   Specs, steering, hooks (on file changes, tool use or task completion), MCP, chat in IDE and CLI.
+- **Kiro hooks**, fetched 2026-11-23. https://kiro.dev/docs/hooks/
+  Hooks run actions on events such as PostFileSave (for example running a linter or tests after a file is saved), PreToolUse, PostToolUse and Stop.
 - **Kiro specs**, fetched 2026-11-23. https://kiro.dev/docs/specs/
   Feature specs produce requirements.md, design.md and tasks.md; bugfix specs; property-based correctness checks; tasks run individually or in dependency-ordered waves.
 

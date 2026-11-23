@@ -131,6 +131,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   nccco: "US",
   bcrealestate: "CA",
   aufirearmswa: "AU",
+  aufasa: "AU",
   aufirearmsvic: "AU",
   aufirearmsnsw: "AU",
   nzham: "NZ",
@@ -185,6 +186,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
 
 /** A country's tests that are not driving tests: shown beside the worldwide ones, not in the driving grid. */
 export const NON_DRIVING_TESTS = new Set([
+  "aufasa",
   "frcaces",
   "nlvca",
   "nlwft",

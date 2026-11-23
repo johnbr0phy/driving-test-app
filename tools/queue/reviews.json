@@ -1792,5 +1792,6 @@
   "masterelec": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1024, "findings": 6 }],
   "esccse": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1025, "findings": 12 }],
   "iegarda": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1026, "findings": 6 }],
-  "series24": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1027, "findings": 7 }]
+  "series24": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1027, "findings": 7 }],
+  "aufasa": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1029, "findings": 7 }]
 }

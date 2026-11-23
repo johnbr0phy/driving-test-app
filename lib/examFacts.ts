@@ -1437,6 +1437,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Fortinet's NSE Certification Program Updates 2026 page, the Training Institute NSE 1 and FCF certification pages and the Cybersecurity and Cloud Fundamentals course page, checked November 2026",
     source: { name: "Fortinet Training Institute: NSE 1 in Cybersecurity", url: "https://training.fortinet.com/local/staticpage/view.php?page=nse_1" },
   },
+  aufasa: {
+    answer:
+      "In South Australia, the Registrar of Firearms (SAPOL Firearms Branch) may refuse a first firearms licence until the applicant has completed training in the safe handling, use, storage and transport of firearms (Firearms Act 2015 (SA), s 15), and may require a nominated course, a written examination and a practical examination (Firearms Regulations 2017, reg 28). You apply first with form PD303; an accepted application brings an approval letter saying what training is needed and who runs it. TAFE SA's SAPOL-approved category A and B course has online exercises followed by a day of theory, assessments and practical assessment. No question count or pass mark is published. A new licence cannot be granted until 28 days after the application.",
+    rows: [
+      { label: "Training", value: "SAPOL-approved firearm safety training named in your approval letter (TAFE SA runs the category A and B and category H courses)" },
+      { label: "Assessment", value: "Theory and practical assessment on the course day; no published question count or pass mark" },
+      { label: "Before you enrol", value: "Apply to SAPOL with form PD303 and receive an approval letter; TAFE SA training within 6 months of it" },
+      { label: "Eligibility", value: "Australian citizen or permanent resident usually resident in SA, fit and proper, with a genuine reason" },
+      { label: "Licence age", value: "18, with exceptions for juniors on club and primary production licences" },
+      { label: "First licence", value: "Not granted until at least 28 days after applying; up to 5 years for categories A, B and C only, 3 years otherwise" },
+      { label: "Licensing body", value: "South Australia Police, Firearms Branch (Registrar of Firearms)" },
+    ],
+    basedOn: "The Firearms Act 2015 (SA) and Firearms Regulations 2017 on legislation.sa.gov.au, SAPOL Firearms Branch licence pages and TAFE SA's firearm safety training course pages, checked November 2026",
+    source: { name: "SAPOL: Apply for a firearms licence", url: "https://www.police.sa.gov.au/services-and-events/firearms-and-weapons/firearm-licenses/apply-for-a-license" },
+  },
   aufirearmswa: {
     answer:
       "In Western Australia, anyone applying for a firearm authority (a licence, permit or approval, including approval as an authorised person) who has not held a licence or been an authorised person in the last 3 years must complete the Firearm Safety Training Course (Firearms Act 2024, s 166; Firearms Regulations 2024, r 224). Part 1 is an online theory course and assessment delivered by Central Regional TAFE: 40 questions drawn at random from a question bank, with at least 80% needed overall across three sections and 3 attempts. Part 2 is in-person practical training and assessment with a licensed firearms dealer or another approved firearms trainer. Licences are issued by the WA Police Force; a first licence cannot be granted until 42 days after applying.",

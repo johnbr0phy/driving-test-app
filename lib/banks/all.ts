@@ -373,6 +373,7 @@ import "./cadronebasic";
 import "./cadroneadv";
 import "./nzfirstaid";
 import "./nzforklift";
+import "./aufasa";
 import "./carscook";
 import "./carsrefrig";
 import "./carshair";

@@ -145,3 +145,11 @@ AORN-only numbers.
 Checked against the crat, cst, crcst, cbspd-cspdt, hspa-cis, hspa-cer, ccrn, cen, ascp-ht, cna,
 cpcta, ccma and danb banks and the v2 NCLEX banks for repeated stems and fact-and-answer pairs
 (stem and key word overlap); results and rewrites below.
+Builder pass (2026-11-23): stem and key word overlap against those banks, then an exact key-text
+match against every v1 bank. About 25 items were rewritten to a different fact or angle (patient
+identifiers, consent roles, interpreters, Braden, INR, nursing process, radiation, frozen
+section, wound classes, Spaulding, chemical indicators, scrubbed hands, MH signs and triggers,
+dantrolene, anaphylaxis, peroneal nerve, OSHA needle and vaccine rules, PDSA, IRB, teach-back).
+Remaining shared keys are different facts (for example "Bupivacaine" here is about lipid
+emulsion, elsewhere about duration). CCI publishes no public question catalogue; its practice
+tests were not opened, so no similarity check against official items was possible or needed.

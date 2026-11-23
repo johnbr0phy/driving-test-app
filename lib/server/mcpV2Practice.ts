@@ -46,6 +46,7 @@ import '@/lib/v2/banks/nswsel';
 import '@/lib/v2/banks/ocnsw';
 import '@/lib/v2/banks/osslt';
 import '@/lib/v2/banks/paramedic';
+import '@/lib/v2/banks/aemt';
 import '@/lib/v2/banks/sat';
 import '@/lib/v2/banks/secplus';
 import '@/lib/v2/banks/teas';

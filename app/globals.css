@@ -6499,6 +6499,19 @@
     --brand-border-light: 26 45% 90%;
     --brand-gradient-to: 0 0% 98%;
   }
+  /* NREMT Advanced EMT theme: muted dusky plum (v2 exam; matches lib/v2/exams/aemt.ts theme) */
+  [data-theme="aemt"] {
+    --brand: 280 15% 28%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 280 25% 95%;
+    --brand-hover: 280 15% 23%;
+    --brand-dark: 280 15% 21%;
+    --brand-darker: 280 15% 16%;
+    --brand-muted: 280 10% 70%;
+    --brand-border: 280 12% 80%;
+    --brand-border-light: 280 12% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
   /* FAA Instrument Rating theme: deep night navy (v2 exam; matches lib/v2/exams/faaifr.ts theme) */
   [data-theme="faaifr"] {
     --brand: 237 35% 14%;
@@ -14025,6 +14038,17 @@
     --brand-muted: 26 40% 45%;
     --brand-dark: 26 70% 65%;
     --brand-darker: 26 70% 78%;
+  }
+  .dark [data-theme="aemt"] {
+    --brand: 280 15% 50%;
+    --brand-hover: 280 15% 42%;
+    --brand-light: 280 15% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 280 12% 24%;
+    --brand-border: 280 12% 34%;
+    --brand-muted: 280 10% 45%;
+    --brand-dark: 280 15% 65%;
+    --brand-darker: 280 15% 78%;
   }
   .dark [data-theme="faaifr"] {
     --brand: 237 35% 50%;

@@ -149,6 +149,16 @@
     "url": "https://www.nclex.com/files/2026_NCLEX_Candidate_Bulletin_English.pdf"
    }
   },
+  "aemt": {
+   "fee": {
+    "value": "$159 application fee, charged for each attempt",
+    "url": "https://www.nremt.org/Handbooks/AEMT/Certification-Process"
+   },
+   "retake": {
+    "value": "15 days after each attempt; 6 attempts in all, with remedial education after 3 failures",
+    "url": "https://www.nremt.org/Handbooks/AEMT/About-The-Examination"
+   }
+  },
   "emt": {
    "fee": {
     "value": "$104 application fee, charged for each attempt",

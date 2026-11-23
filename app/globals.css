@@ -1852,6 +1852,20 @@
     --brand-gradient-to: 45 60% 96%;
   }
 
+  /* Gulf pharmacist licensing exam theme: grey sage */
+  [data-theme="aedhapharm"] {
+    --brand: 134 15% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 134 20% 95%;
+    --brand-hover: 134 15% 34%;
+    --brand-dark: 134 15% 28%;
+    --brand-darker: 134 15% 18%;
+    --brand-muted: 134 12% 70%;
+    --brand-border: 134 12% 80%;
+    --brand-border-light: 134 12% 89%;
+    --brand-gradient-to: 45 50% 96%;
+  }
+
   /* India RTO learner's licence theme: India green */
   [data-theme="inrto"] {
     --brand: 116 85% 28.5%;
@@ -9216,6 +9230,18 @@
     --brand-muted: 69 35% 45%;
     --brand-dark: 69 75% 65%;
     --brand-darker: 69 75% 78%;
+  }
+
+  .dark [data-theme="aedhapharm"] {
+    --brand: 134 15% 42.1%;
+    --brand-hover: 134 15% 34.1%;
+    --brand-light: 134 20% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 134 12% 24%;
+    --brand-border: 134 12% 34%;
+    --brand-muted: 134 12% 45%;
+    --brand-dark: 134 15% 65%;
+    --brand-darker: 134 15% 78%;
   }
 
   .dark [data-theme="inrto"] {

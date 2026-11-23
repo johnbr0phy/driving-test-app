@@ -62,7 +62,7 @@ ITEMS = [
     order(2, "Site Recovery", 3,
           "Put the Site Recovery steps for moving a VM to the secondary region and protecting it again in order:",
           ["Fail over to the secondary region", "Commit the failover", "Re-protect the VM", "Fail back when the primary recovers"],
-          "After failover you commit it, which removes the other recovery points, then re-protect so the VM replicates back to the primary region, and fail back later."),
+          "After failover you commit it to finish the switch, then re-protect so the VM replicates back to the primary region, and fail back when it recovers."),
     # ---------------- Drill only ----------------
     numeric(0, "Activity log", 1,
             "For how many days is the Activity log kept in Azure Monitor before it must be exported? Type the number only.",

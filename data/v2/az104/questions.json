@@ -2092,7 +2092,7 @@
     "difficulty": 3,
     "format": "order",
     "stem": "Put the Site Recovery steps for moving a VM to the secondary region and protecting it again in order:",
-    "explanation": "After failover you commit it, which removes the other recovery points, then re-protect so the VM replicates back to the primary region, and fail back later.",
+    "explanation": "After failover you commit it to finish the switch, then re-protect so the VM replicates back to the primary region, and fail back when it recovers.",
     "options": [
       "Fail over to the secondary region",
       "Commit the failover",
@@ -3541,7 +3541,7 @@
     "difficulty": 2,
     "format": "single",
     "stem": "A web app needs a free TLS certificate for its custom domain www.contoso.com. Which option fits?",
-    "explanation": "The free App Service managed certificate covers custom domains, but not wildcards. Imported certificates usually cost money.",
+    "explanation": "The free App Service managed certificate covers custom domains such as www.contoso.com, but it doesn't support wildcard domains.",
     "options": [
       "A wildcard certificate from Key Vault",
       "A certificate on the App Service plan",

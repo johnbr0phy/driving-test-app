@@ -86,7 +86,7 @@ ITEMS = [
     single(0, "App Service", 2,
            "A web app needs a free TLS certificate for its custom domain www.contoso.com. Which option fits?",
            ["App Service managed certificate", "A wildcard certificate from Key Vault", "A self-signed certificate", "A certificate on the App Service plan"],
-           "The free App Service managed certificate covers custom domains, but not wildcards. Imported certificates usually cost money."),
+           "The free App Service managed certificate covers custom domains such as www.contoso.com, but it doesn't support wildcard domains."),
     single(0, "App Service", 2,
            "A connection string must stay with the staging slot when slots are swapped. What should be done?",
            ["Mark it as a slot setting", "Store it in the code", "Add it to both slots before the swap", "Use a custom domain"],

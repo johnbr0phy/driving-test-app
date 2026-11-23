@@ -235,6 +235,7 @@ export const TEACHES: Record<string, string> = {
   cysa: "a cybersecurity analyst or CySA+ course",
   ceh: "a CEH or ethical hacking course",
   sc200: "an SC-200 or Microsoft security operations course",
+  az104: "an AZ-104 or Azure administrator course",
   isc2cc: "an ISC2 CC or entry-level cybersecurity course",
   cissp: "a CISSP or information security course",
   gcdl: "a cloud fundamentals course",

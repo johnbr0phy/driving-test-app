@@ -401,6 +401,8 @@ const CASES = [
   ["ceh v13", "US", "ceh"],
   ["isc2 cc", "US", "isc2cc"],
   ["certified in cybersecurity", "US", "isc2cc"],
+  ["az-104", "US", "az104"],
+  ["azure administrator", "US", "az104"],
   ["sc-200", "US", "sc200"],
   ["security operations analyst", "US", "sc200"],
   ["sc-900", "US", "sc900"],

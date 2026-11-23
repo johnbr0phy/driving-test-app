@@ -76,6 +76,7 @@ import { SECURITYX } from "./exams/securityx";
 import { PENTESTPLUS } from "./exams/pentestplus";
 import { CEH } from "./exams/ceh";
 import { SC200 } from "./exams/sc200";
+import { AZ104 } from "./exams/az104";
 import { SC900 } from "./exams/sc900";
 import { AI901 } from "./exams/ai901";
 import { AWSAIF } from "./exams/awsaif";
@@ -159,7 +160,7 @@ import { WONDERLIC } from "./exams/wonderlic";
 import { CCAT } from "./exams/ccat";
 import { V2_LOCKED_SHARE, lockedStepCount } from "../examLocks";
 
-export const EXAMS_V2: ExamV2Config[] = [GED, HISET, TABE, PRAXIS, CBEST, SAT, PSAT, ACT, MAPGROWTH, STAARBIO, STAARENG1, STAARALG1, SHSAT, HSPT, COGAT, SSAT, ISEE, APPSYCH, APUSH, APGOV, APWORLD, APHUG, APLANG, APBIO, APCALCAB, APITALIAN, APCSP, GRE, GMAT, LSAT, MCAT, DAT, IELTSREAD, TOEFLREAD, WONDERLIC, CCAT, SEHP, ITCILS, ITCELI, ITA2, ITCILSB2, TEAS, HESI, ASVAB, AFOQT, ACCUPLACER, NCLEX, NCLEXPN, REXPN, NAPLEX, UKNMC, NZENSF, NZIQN, EMT, PARAMEDIC, FAAPVT, SECPLUS, CYSA, PENTESTPLUS, FORTINSE, CISSP, NETPLUS, LINUXPLUS, SFPD1, SFAPPBUILDER, APLUS, AWS, AWSSAA, AWSAIF, AZ900, SC900, AI901, PL900, SC200, GCDL, GCPPCA, CCNA, CCNPENCOR, JNCIA, PMP, PMIACP, CAPM, PSM, PSPO, ITIL, ISTQB, COBIT, PRINCE2, UPSCSE, SSCCGL, SSCCHSL, SSCCPO, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, RRBALP, INRRN, RPFCONST, UPPOLICE, DELHIPOLICE, BIHARPOLICE, RAJPOLICE, MPPOLICE, TGSI, IBPSPO, SBIPO, IBPSCLERK, SBICLERK, IBPSRRB, NDA, AGNIVEER, AGNIVEERVAYU, JEEMAIN, NEET, MHTCET, KCET, CUET, IIMCAT, CTET, REET, UPTET, UGCNET, JNVST, AISSEE, OSSSC, VIDYAGYAN, JAMBENG, JAMBMATH, WASSCEMATH, JAMBBIO, JAMBCHEM, JAMBPHYS, JAMBLIT, WASSCEENG, PHCSE, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS, JKSSBJA, CEH, ISC2CC, SECURITYX, SERVICENOWCSA, SSCP];
+export const EXAMS_V2: ExamV2Config[] = [GED, HISET, TABE, PRAXIS, CBEST, SAT, PSAT, ACT, MAPGROWTH, STAARBIO, STAARENG1, STAARALG1, SHSAT, HSPT, COGAT, SSAT, ISEE, APPSYCH, APUSH, APGOV, APWORLD, APHUG, APLANG, APBIO, APCALCAB, APITALIAN, APCSP, GRE, GMAT, LSAT, MCAT, DAT, IELTSREAD, TOEFLREAD, WONDERLIC, CCAT, SEHP, ITCILS, ITCELI, ITA2, ITCILSB2, TEAS, HESI, ASVAB, AFOQT, ACCUPLACER, NCLEX, NCLEXPN, REXPN, NAPLEX, UKNMC, NZENSF, NZIQN, EMT, PARAMEDIC, FAAPVT, SECPLUS, CYSA, PENTESTPLUS, FORTINSE, CISSP, NETPLUS, LINUXPLUS, SFPD1, SFAPPBUILDER, APLUS, AWS, AWSSAA, AWSAIF, AZ900, AZ104, SC900, AI901, PL900, SC200, GCDL, GCPPCA, CCNA, CCNPENCOR, JNCIA, PMP, PMIACP, CAPM, PSM, PSPO, ITIL, ISTQB, COBIT, PRINCE2, UPSCSE, SSCCGL, SSCCHSL, SSCCPO, SSCGD, SSCMTS, RRBNTPC, RRBGROUPD, RRBALP, INRRN, RPFCONST, UPPOLICE, DELHIPOLICE, BIHARPOLICE, RAJPOLICE, MPPOLICE, TGSI, IBPSPO, SBIPO, IBPSCLERK, SBICLERK, IBPSRRB, NDA, AGNIVEER, AGNIVEERVAYU, JEEMAIN, NEET, MHTCET, KCET, CUET, IIMCAT, CTET, REET, UPTET, UGCNET, JNVST, AISSEE, OSSSC, VIDYAGYAN, JAMBENG, JAMBMATH, WASSCEMATH, JAMBBIO, JAMBCHEM, JAMBPHYS, JAMBLIT, WASSCEENG, PHCSE, TIMESTABLES, KS2, ELEVENPLUS, GCSEMATHS, GCSEHIGHER, GCSESCIENCE, GCSECS, FSMATHS, OSSLT, EQAO9, NAPLAN7, NAPLAN, OCNSW, NSWSEL, VICSEL, HSCMATHS, JKSSBJA, CEH, ISC2CC, SECURITYX, SERVICENOWCSA, SSCP];
 
 /**
  * The Premium tier on v2 exams (Nov 2026; half since Nov 22 2026, like v1):
@@ -177,7 +178,7 @@ export const PREMIUM_V2_IDS: string[] = [
   "osssc",
   "praxis", "cbest", "gre", "gmat", "lsat", "mcat", "dat", "ieltsread", "toeflread", "teas", "hesi", "asvab", "afoqt",
   "nclex", "nclexpn", "rexpn", "uknmc", "naplex", "nzensf", "nziqn", "emt", "paramedic", "faapvt",
-  "secplus", "cysa", "pentestplus", "fortinse", "cissp", "netplus", "linuxplus", "sfpd1", "sfappbuilder", "aplus", "aws", "awssaa", "awsaif", "az900", "ai901", "pl900", "sc900", "sc200", "gcdl", "gcppca", "ccna", "jncia",
+  "secplus", "cysa", "pentestplus", "fortinse", "cissp", "netplus", "linuxplus", "sfpd1", "sfappbuilder", "aplus", "aws", "awssaa", "awsaif", "az900", "az104", "ai901", "pl900", "sc900", "sc200", "gcdl", "gcppca", "ccna", "jncia",
   "pmp", "capm", "psm", "itil", "istqb", "cobit", "prince2", "wonderlic", "ccat",
   "secplus", "cysa", "pentestplus", "ceh", "fortinse", "cissp", "netplus", "aplus", "aws", "awssaa", "az900", "sc900", "sc200", "gcdl", "gcppca", "ccna",
   "secplus", "cysa", "pentestplus", "fortinse", "isc2cc", "cissp", "netplus", "aplus", "aws", "awssaa", "az900", "sc900", "sc200", "gcdl", "gcppca", "ccna",

@@ -135,6 +135,7 @@ const BORROWED_SETS: Record<string, string> = {
   cahambasic: "ham",
   hamgeneral: "ham",
   cadc: "nce",
+  ukdrone: "part107",
   nzdrone: "part107",
   cadronebasic: "part107",
   crfsc: "capal",

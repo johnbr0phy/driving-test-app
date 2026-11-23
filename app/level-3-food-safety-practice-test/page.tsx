@@ -175,7 +175,7 @@ export default function Level3FoodSafetyLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Mock Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four 50-question mock tests covering every learning outcome, with a 66 percent pass line like the 30 out of 45 many awarding bodies use, and an explanation of the right answer on every question.
+                Four 50-question mock tests covering every learning outcome, with a 66 percent pass line like Highfield&apos;s 30 out of 45, and an explanation of the right answer on every question.
               </p>
             </div>
           </div>

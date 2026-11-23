@@ -914,14 +914,14 @@
     "state": "ALL",
     "questionId": "UKFOOD3-MIC-006",
     "category": "uk3fsMicro",
-    "question": "Which pair of bacteria form spores that can survive normal cooking?",
-    "optionA": "Salmonella and Campylobacter",
-    "optionB": "C. perfringens and B. cereus",
-    "optionC": "Listeria and E. coli O157",
-    "optionD": "Norovirus and hepatitis A",
+    "question": "Which bacterium grows without oxygen, so it thrives deep in a large stew or rolled joint that cools slowly?",
+    "optionA": "Campylobacter",
+    "optionB": "Clostridium perfringens",
+    "optionC": "Staphylococcus aureus",
+    "optionD": "Bacillus cereus",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Spores survive cooking, then germinate and multiply if food cools slowly. This is why cooling and hot holding are controlled."
+    "explanation": "Clostridium perfringens is an anaerobe. The centre of a large stew, gravy or rolled joint has little oxygen, so its spores germinate and multiply there if the food cools slowly or is held warm."
   },
   {
     "type": "UKFOOD3",
@@ -1796,14 +1796,14 @@
     "state": "ALL",
     "questionId": "UKFOOD3-TMP-005",
     "category": "uk3fsTemp",
-    "question": "Where should a probe go when checking a chilled delivery without opening packs?",
-    "optionA": "Between two packs",
-    "optionB": "Through the film of one pack",
-    "optionC": "Into the delivery box lid",
-    "optionD": "On the van's floor",
+    "question": "How can a supervisor best check that a blast chiller cycle has worked?",
+    "optionA": "Probe the food core at the end",
+    "optionB": "Read the chiller's set point",
+    "optionC": "Time how long the fan runs",
+    "optionD": "Feel the outside of the tray",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Probing between packs checks the temperature without damaging packaging. If it is borderline, a pack can be opened and probed."
+    "explanation": "The set point and timer show what the chiller is meant to do. Probing the core of the food when the cycle ends, and recording it, shows whether the food actually reached the target."
   },
   {
     "type": "UKFOOD3",

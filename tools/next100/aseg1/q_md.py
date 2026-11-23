@@ -48,7 +48,7 @@ Q = [
  "GL-5 carries more extreme-pressure additive, which protects hypoid gears but can corrode the yellow-metal synchronizers some manual units use. The fluid the manufacturer names is used."),
 # D
 ("D", "A rear-wheel-drive car shakes only at highway speed. The tires are balanced and true. What is checked on a lift?",
- "Drive shaft runout and weights",
+ "Drive shaft runout",
  ["Clutch pedal free play", "Engine oil pressure", "Shift linkage bushings"],
  "With the wheels ruled out, a shake tied to road speed points to the drive shaft. It is checked for runout with a dial indicator, missing balance weights and dents."),
 ("D", "How is a U-joint with a grease fitting lubricated?",

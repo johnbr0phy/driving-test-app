@@ -122,7 +122,7 @@ Q = [
  "Aluminum expands more than the steel plug, and hot threads are easily pulled out with the plug. Remove plugs from a cool engine and install them to the specified torque."),
 ("E", "When should anti-seize be put on spark plug threads?",
  "Only if the maker allows it",
- ["On every plug, generously", "Only on the center electrode", "In place of torquing"],
+ ["On every plug, generously", "Only if the plugs are copper", "In place of torquing"],
  "Many plugs have a plated thread and the maker says not to use anti-seize, because it acts as a lubricant and the plug is overtightened at the normal torque."),
 ("E", "A coil-on-plug boot has a black carbon track down its side. What is done?",
  "Replace the boot or coil",

@@ -137,6 +137,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   nclexpn: { title: "NCLEX-PN Practice", description: "Review coordinated care, practical nursing responsibilities, pharmacology and patient safety." },
   rexpn: { title: "REx-PN: Ontario & British Columbia", description: "Review practical nursing care, pharmacology, consent, privacy and clinical decision-making." },
   aemt: { title: "NREMT Advanced EMT Practice", description: "Review supraglottic airways, IV and IO access, AEMT medications, trauma, OB and clinical judgment scenarios." },
+  emr: { title: "NREMT EMR Practice Test", description: "Review scene safety, airway and breathing, bleeding control, CPR and the AED, splinting and EMR scope of practice." },
   emt: { title: "NREMT EMT Practice", description: "Review scene assessment, patient evaluation, emergency treatment, transport and EMS operations." },
   paramedic: { title: "NREMT Paramedic Practice", description: "Review airway management, cardiology, trauma, medical emergencies and clinical judgment." },
   secplus: { title: "CompTIA Security+ SY0-701", description: "Review threats, vulnerabilities, security architecture, operations and program management." },

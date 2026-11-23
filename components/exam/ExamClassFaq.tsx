@@ -133,6 +133,7 @@ export const TEACHES: Record<string, string> = {
   capsw: "a personal support worker program",
   emt: "an EMT course",
   aemt: "an Advanced EMT course",
+  emr: "an Emergency Medical Responder course",
   paramedic: "a paramedic program",
   teas: "TEAS prep",
   hesi: "HESI A2 prep",

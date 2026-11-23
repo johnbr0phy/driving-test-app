@@ -26,7 +26,7 @@ export const AWSAIF: ExamV2Config = {
   fullName: "AWS Certified AI Practitioner (AIF-C01) exam",
   tagline: "65 questions in 90 minutes with choose-two items, like the real AIF-C01.",
   icon: "sparkles",
-  theme: { brand: "284 75% 18%", brandDark: "284 75% 12%", brandLight: "284 75% 96%" },
+  theme: { brand: "284 75% 18%", brandDark: "284 75% 10%", brandLight: "284 75% 96%" },
   breakSeconds: 0,
   sections: [
     {

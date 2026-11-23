@@ -6132,6 +6132,19 @@
     --brand-border-light: 258 40% 90%;
     --brand-gradient-to: 238 50% 96%;
   }
+  /* AWS AI Practitioner theme: deep violet (v2 exam; matches lib/v2/exams/awsaif.ts theme) */
+  [data-theme="awsaif"] {
+    --brand: 284 75% 18%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 284 75% 96%;
+    --brand-hover: 284 75% 14%;
+    --brand-dark: 284 75% 10%;
+    --brand-darker: 284 75% 7%;
+    --brand-muted: 284 40% 70%;
+    --brand-border: 284 45% 80%;
+    --brand-border-light: 284 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
   /* Cisco CCNP ENCOR theme: deep muted violet (v2 exam; matches lib/v2/exams/ccnpencor.ts theme) */
   [data-theme="ccnpencor"] {
     --brand: 276 40% 18%;
@@ -13185,6 +13198,17 @@
     --brand-muted: 258 35% 45%;
     --brand-dark: 258 55% 65%;
     --brand-darker: 258 50% 78%;
+  }
+  .dark [data-theme="awsaif"] {
+    --brand: 284 75% 50%;
+    --brand-hover: 284 75% 42%;
+    --brand-light: 284 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 284 35% 24%;
+    --brand-border: 284 40% 34%;
+    --brand-muted: 284 40% 45%;
+    --brand-dark: 284 75% 65%;
+    --brand-darker: 284 75% 78%;
   }
   .dark [data-theme="cobit"] {
     --brand: 324 100% 44.1%;

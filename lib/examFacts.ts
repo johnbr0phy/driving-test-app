@@ -3245,6 +3245,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the Motor Vehicles Act 1988 as amended in 2019, the Central Motor Vehicles Rules and the Motor Vehicles (Driving) Regulations 2017, checked October 2026",
     source: { name: "Sarathi Parivahan (Ministry of Road Transport and Highways)", url: "https://sarathi.parivahan.gov.in/" },
   },
+  awsaif: {
+    answer:
+      "AWS Certified AI Practitioner (AIF-C01) is Amazon Web Services' foundational exam for people who use AI and machine learning on AWS without building models themselves. It has 65 questions in 90 minutes: 50 count toward the score and 15 are unscored, unmarked questions AWS is testing. Questions are multiple choice (one correct answer of four) or multiple response (two or more correct of five or more), and there is no penalty for guessing. Results are a scaled score from 100 to 1,000 with 700 needed to pass, and the scoring is compensatory, so only the overall score must pass. The exam guide (version 1.2, published October 29, 2026) weights Fundamentals of AI and ML at 20 percent, Fundamentals of Generative AI at 24 percent, Applications of Foundation Models at 28 percent, Guidelines for Responsible AI at 14 percent and Security, Compliance, and Governance for AI Solutions at 14 percent. It costs 100 USD, is taken at a Pearson VUE test center or online, and the certification is valid for three years.",
+    rows: [
+      { label: "Questions", value: "65 (50 scored, 15 unscored)" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Passing score", value: "700 on a scale of 100 to 1,000" },
+      { label: "Question types", value: "Multiple choice and multiple response" },
+      { label: "Domains", value: "AI and ML 20%, generative AI 24%, foundation model applications 28%, responsible AI 14%, security and governance 14%" },
+      { label: "Fee", value: "100 USD" },
+      { label: "Delivery", value: "Pearson VUE test center or online proctored" },
+      { label: "Valid for", value: "3 years" },
+      { label: "Given by", value: "Amazon Web Services" },
+    ],
+    basedOn: "the AWS Certified AI Practitioner (AIF-C01) exam guide, version 1.2 (October 29, 2026), and the AWS certification page, checked November 2026",
+    source: { name: "AWS: AIF-C01 exam guide", url: "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html" },
+  },
   awssaa: {
     answer:
       "The AWS Certified Solutions Architect - Associate exam (SAA-C03) has 65 questions in 130 minutes, 50 of them scored. It is scored 100 to 1000 and 720 passes. It covers Design Secure Architectures 30%, Design Resilient Architectures 26%, Design High-Performing Architectures 24%, and Design Cost-Optimized Architectures 20%, mostly as scenario questions.",

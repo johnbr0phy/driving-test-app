@@ -12,7 +12,7 @@
     "options": [
       "Individual job roles",
       "Value streams",
-      "Departments",
+      "Business departments",
       "Individual stories"
     ],
     "correct": [
@@ -34,7 +34,7 @@
       "Job size divided by business value",
       "Risk reduction minus job size",
       "Cost of delay divided by job duration",
-      "Business value times time criticality"
+      "Business value times criticality"
     ],
     "correct": [
       2
@@ -215,20 +215,20 @@
     "test": 1,
     "module": 1,
     "domain": "safePI",
-    "skill": "PI Planning",
+    "skill": "PI objectives",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which two outputs come out of PI Planning?",
+    "stem": "Which two kinds of PI objective does SAFe describe?",
     "options": [
-      "A signed contract and a Gantt chart",
-      "A master test plan and a release checklist",
-      "Committed PI objectives and a planning board",
-      "A budget request and a hiring plan for next year"
+      "Committed and uncommitted",
+      "Internal and external objectives",
+      "Primary and secondary objectives",
+      "Funded and unfunded objectives"
     ],
     "correct": [
-      2
+      0
     ],
-    "explanation": "Teams leave PI Planning with committed PI objectives and an ART planning board showing feature delivery dates and dependencies between teams."
+    "explanation": "SAFe says PI objectives are either committed or uncommitted. They help the ART assess its performance and the business value it achieved."
   },
   {
     "id": "SAFE-T1-012",
@@ -404,20 +404,20 @@
     "test": 1,
     "module": 1,
     "domain": "safePI",
-    "skill": "PI objectives",
+    "skill": "Planning Interval",
     "difficulty": 2,
     "format": "single",
-    "stem": "Why do teams mark some PI objectives as uncommitted?",
+    "stem": "A PI usually has four or five development iterations plus an IP iteration. How firm is that pattern?",
     "options": [
-      "The Business Owners have not yet funded it",
-      "The work is outside the ART's mission",
-      "The outcome is too uncertain",
-      "The team plans to skip that work if busy"
+      "A common pattern, not a strict rule",
+      "Fixed for every ART",
+      "Required by each team's contract",
+      "Set once by the portfolio"
     ],
     "correct": [
-      2
+      0
     ],
-    "explanation": "Uncommitted objectives are planned and counted in capacity, but their outcome is uncertain, so the team does not promise them. They still give the business a fuller picture."
+    "explanation": "SAFe calls four or five development iterations and one IP iteration a typical structure and a suggestion, not a strict rule. There is no set number of iterations in a PI."
   },
   {
     "id": "SAFE-T1-021",
@@ -495,7 +495,7 @@
     "stem": "Which list gives the four aspects of the continuous delivery pipeline in order?",
     "options": [
       "Exploration, integration, deployment, release on demand",
-      "Plan, code, test, then release on one fixed yearly date",
+      "Plan, code, test, then release once a year",
       "Design, build, verify, hand over to operations",
       "Integration, exploration, release on demand, deployment"
     ],
@@ -552,20 +552,20 @@
     "test": 1,
     "module": 1,
     "domain": "safePI",
-    "skill": "ART Sync",
+    "skill": "System Demo",
     "difficulty": 2,
     "format": "single",
-    "stem": "A risk raised at ART Sync will be handled by a named person after the meeting. What is its ROAM status?",
+    "stem": "Who attends the System Demo besides the ART's own teams?",
     "options": [
-      "Accepted",
-      "Resolved",
-      "Owned",
-      "Mitigated"
+      "Only the RTE and the System Team",
+      "Nobody outside the Agile teams",
+      "Only finance and audit staff",
+      "Business Owners, stakeholders, customers"
     ],
     "correct": [
-      2
+      3
     ],
-    "explanation": "ROAM stands for Resolved, Owned, Accepted and Mitigated. An owned risk has someone who takes responsibility for handling it outside the meeting."
+    "explanation": "Besides the ART's teams, the System Demo is attended by Business Owners, key stakeholders and often customers. That makes it broader than a single team's Iteration Review."
   },
   {
     "id": "SAFE-T1-028",
@@ -599,7 +599,7 @@
     "format": "single",
     "stem": "Which group does SAFe often set up to coordinate a SAFe transformation?",
     "options": [
-      "A PMO",
+      "A project office",
       "A works council",
       "A steering vendor",
       "A LACE"
@@ -663,7 +663,7 @@
     "stem": "Which three levers does SAFe name for unlocking intrinsic motivation?",
     "options": [
       "Rules, audits and sign-offs",
-      "Overtime, targets and deadlines",
+      "Overtime and deadlines",
       "Autonomy, mastery and purpose",
       "Bonuses, rankings and titles"
     ],
@@ -683,7 +683,7 @@
     "format": "single",
     "stem": "In CALMR, what does the R stand for?",
     "options": [
-      "Release",
+      "Releasing",
       "Readiness",
       "Reporting",
       "Recovery"
@@ -707,7 +707,7 @@
       "Cheap, fast and fixed in scope",
       "Approved, documented and audited",
       "Desirable, profitable, sustainable",
-      "Complex, unique and fully patented"
+      "Complex, unique and patented"
     ],
     "correct": [
       2
@@ -809,7 +809,7 @@
     "format": "single",
     "stem": "A leader wants teams to use AI well. What does SAFe expect the leader to do first?",
     "options": [
-      "Measure people by prompts written",
+      "Count prompts written",
       "Mandate one tool for every task",
       "Ban AI until it is perfect",
       "Model responsible use themselves"
@@ -830,7 +830,7 @@
     "format": "single",
     "stem": "According to AI-Native SAFe, what role does AI play for Agile teams?",
     "options": [
-      "It removes the need for PI Planning",
+      "It removes PI Planning",
       "It augments the people on the team",
       "It replaces the Product Owner role",
       "It sets the team's PI objectives"
@@ -849,17 +849,17 @@
     "skill": "Principle 9",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which kind of decision does SAFe keep centralized under Principle #9?",
+    "stem": "Under Principle #9, who does SAFe say often has the local information that decisions need?",
     "options": [
-      "Frequent, time-critical team choices",
-      "Story estimates within an iteration",
-      "Daily task assignments within each team",
-      "Rare ones with big economies of scale"
+      "A central planning office",
+      "Outside auditors",
+      "The board of directors",
+      "Knowledge workers doing the work"
     ],
     "correct": [
       3
     ],
-    "explanation": "Decisions that are infrequent, long-lasting and have significant economies of scale stay central. Frequent, time-critical decisions that need local information are decentralized."
+    "explanation": "Principle #9 notes that decisions often sit with central authorities, though the knowledge workers doing the work have the local information and technical skills to make many of them."
   },
   {
     "id": "SAFE-T1-042",
@@ -875,7 +875,7 @@
       "Product Manager and System Team lead",
       "Product Owner and Scrum Master/Team Coach",
       "Business Owner and Epic Owner",
-      "Release Train Engineer and System Architect"
+      "RTE and System Architect"
     ],
     "correct": [
       1
@@ -893,7 +893,7 @@
     "format": "single",
     "stem": "How long should a SAFe story take to finish?",
     "options": [
-      "About one quarter",
+      "About one full quarter",
       "One full PI of 8 to 12 weeks",
       "Two or three iterations",
       "A few days or less"
@@ -936,7 +936,7 @@
     "stem": "When should the Strategic Portfolio Review take place?",
     "options": [
       "Quarterly, ahead of PI Planning",
-      "Daily, before the team stand-ups",
+      "Daily, before stand-ups",
       "Every two years, with the audit",
       "Weekly, after each ART Sync"
     ],
@@ -1000,7 +1000,7 @@
     "options": [
       "2 to 4 weeks",
       "8 to 12 weeks",
-      "One full year",
+      "One year",
       "6 to 9 months"
     ],
     "correct": [
@@ -1085,7 +1085,7 @@
       "Development value streams",
       "Functional departments",
       "Geographic sales regions",
-      "Annual project budget cycles"
+      "Annual budget cycles"
     ],
     "correct": [
       0
@@ -1124,7 +1124,7 @@
     "format": "single",
     "stem": "Which two guardrails are quantitative?",
     "options": [
-      "Business Owner engagement and epic approval",
+      "Business Owner engagement, epic approval",
       "Story points and velocity targets",
       "Release dates and bug counts",
       "Investment horizons and capacity allocation"
@@ -1190,7 +1190,7 @@
       "It has no budget limits",
       "It is a brand new idea",
       "It is moving toward retirement",
-      "It is the top funding priority"
+      "It gets top funding priority"
     ],
     "correct": [
       2
@@ -1206,17 +1206,17 @@
     "skill": "Empower agility with AI",
     "difficulty": 2,
     "format": "single",
-    "stem": "In AI-Native SAFe's outcome-driven product development, what does an outcome tree link outputs to?",
+    "stem": "What does SAFe CoPilot add to each AI-Empowered SAFe assessment?",
     "options": [
-      "Fixed release dates",
-      "Vendor contracts",
-      "Shared OKRs",
-      "Individual bonuses"
+      "A ranking of each team",
+      "A count of AI licences",
+      "A pass or fail grade",
+      "Specific next steps"
     ],
     "correct": [
-      2
+      3
     ],
-    "explanation": "AI-Native SAFe uses an outcome tree that ties outputs to shared OKRs, so teams and agents work toward the same measurable outcomes."
+    "explanation": "Each SAFe discipline has an AI-Empowered SAFe assessment, and SAFe CoPilot is built into each one to suggest specific next steps."
   },
   {
     "id": "SAFE-T2-014",
@@ -1384,7 +1384,7 @@
     "correct": [
       0
     ],
-    "explanation": "SAFe implements epics with the SAFe Lean Startup cycle: build an MVP, evaluate the hypothesis, then pivot or persevere."
+    "explanation": "SAFe implements epics with the SAFe Lean Startup cycle, and each epic needs a minimum viable product (MVP) to test its hypothesis."
   },
   {
     "id": "SAFE-T2-022",
@@ -1420,7 +1420,7 @@
     "options": [
       "Lengthen the queues",
       "Work in smaller batches",
-      "Start more work at once",
+      "Start more work",
       "Add more handoffs"
     ],
     "correct": [
@@ -1510,7 +1510,7 @@
     "correct": [
       2
     ],
-    "explanation": "Committed and uncommitted PI objectives, with the business value achieved, feed the ART predictability measure."
+    "explanation": "SAFe says PI objectives help an ART assess its performance and the business value achieved through the ART Predictability Measure."
   },
   {
     "id": "SAFE-T2-028",
@@ -1567,7 +1567,7 @@
     "options": [
       "A newly launched release train",
       "An outside auditor",
-      "The sales team",
+      "The sales department",
       "An existing PMO"
     ],
     "correct": [
@@ -1652,7 +1652,7 @@
       "Only in the first PI",
       "In the definition of done",
       "Only during audits",
-      "Only at the final release"
+      "Only at final release"
     ],
     "correct": [
       1
@@ -1752,17 +1752,17 @@
     "skill": "Continuous learning",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which SAFe structure helps people share knowledge across teams and ARTs?",
+    "stem": "Besides coordinating the change, what does SAFe say a LACE helps do?",
     "options": [
-      "Communities of practice",
-      "Formal approval boards",
-      "Locked document libraries",
-      "Annual performance reviews"
+      "Audit vendor contracts",
+      "Approve every story",
+      "Set each team's salaries",
+      "Communicate the change vision"
     ],
     "correct": [
-      0
+      3
     ],
-    "explanation": "Communities of practice bring together people with a shared interest across teams and ARTs to learn and share, which builds a continuous learning culture."
+    "explanation": "SAFe says a LACE is often set up to coordinate the change efforts, and it helps communicate the change vision across the organization."
   },
   {
     "id": "SAFE-T2-040",
@@ -1902,7 +1902,7 @@
     "stem": "According to SAFe, what usually decides which firms win in the digital age?",
     "options": [
       "Number of patents they already hold",
-      "Size of their capital reserves and credit",
+      "Size of their capital reserves",
       "Age and fame of their established brands",
       "Speed of response with digital solutions"
     ],
@@ -1920,17 +1920,17 @@
     "skill": "Core values",
     "difficulty": 2,
     "format": "single",
-    "stem": "A leader treats suppliers and partners as long-term partners. Which core value does this show?",
+    "stem": "How does SAFe say people in authority can help an organization embrace its core values?",
     "options": [
-      "Respect for people",
-      "Alignment",
-      "Relentless improvement",
-      "Transparency"
+      "By testing staff on them yearly",
+      "By showing them in words and actions",
+      "By posting them on every wall",
+      "By adding them to job contracts"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "Respect for people covers everyone in the value stream, including customers, suppliers and partners, and favours long-term relationships built on trust."
+    "explanation": "SAFe says leaders help the organization embrace the core values by exemplifying them in what they say and do."
   },
   {
     "id": "SAFE-D-003",
@@ -1965,7 +1965,7 @@
     "stem": "Why should each member of a SAFe Agile team usually belong to one team only?",
     "options": [
       "Dedication keeps focus and cuts delays",
-      "It lets managers track hours more easily",
+      "Managers can track hours more easily",
       "Pay grades depend on team membership",
       "SAFe forbids any shared specialists"
     ],
@@ -2088,17 +2088,17 @@
     "skill": "Core values",
     "difficulty": 3,
     "format": "single",
-    "stem": "Without which core value can teams not make decisions locally that still fit the strategy?",
+    "stem": "What does SAFe say happens to its practices if the core values are missing?",
     "options": [
-      "Respect for people",
-      "Alignment",
-      "Transparency",
-      "Relentless improvement"
+      "They need fewer roles",
+      "They work as designed, only more slowly",
+      "They speed up delivery",
+      "They fail to deliver the intended results"
     ],
     "correct": [
-      1
+      3
     ],
-    "explanation": "Alignment gives every team the shared mission and context it needs to decentralize decisions safely, so local choices still serve the strategy."
+    "explanation": "SAFe says that without the core values, the practices in the framework will fail to deliver the intended business results."
   },
   {
     "id": "SAFE-D-011",
@@ -2198,7 +2198,7 @@
       "Lean Portfolio Management",
       "The System Team",
       "Each Agile team",
-      "Each Scrum Master/Team Coach"
+      "Each Scrum Master"
     ],
     "correct": [
       0
@@ -2256,17 +2256,17 @@
     "skill": "Empower agility with AI",
     "difficulty": 3,
     "format": "single",
-    "stem": "An outcome tree in AI-Native SAFe mixes bold and nearer goals. What does SAFe call them?",
+    "stem": "In a human-centric AI culture, what does SAFe say stays the final loop for value, safety and purpose?",
     "options": [
-      "Themes and features",
-      "Epics and enablers",
-      "Stretch and safe bets",
-      "Moonshots and roofshots"
+      "The AI model's score",
+      "An automated test suite",
+      "Human judgment",
+      "The tool vendor's review"
     ],
     "correct": [
-      3
+      2
     ],
-    "explanation": "AI-Native SAFe's outcome trees include moonshots, bold long-range goals, and roofshots, nearer goals that are still ambitious."
+    "explanation": "SAFe's human-centric AI culture keeps human judgment as the final, non-negotiable check on value, safety and purpose, even as AI speeds up the work."
   },
   {
     "id": "SAFE-D-019",
@@ -2324,7 +2324,7 @@
       "Small jobs with a high cost of delay",
       "Jobs that have waited the longest",
       "Large jobs with any cost of delay",
-      "Jobs with the most money already spent"
+      "Jobs with the most money spent"
     ],
     "correct": [
       0
@@ -2518,7 +2518,7 @@
     "correct": [
       3
     ],
-    "explanation": "The 8 to 12 week timebox is a suggestion rather than a strict rule, and SAFe prefers shorter PIs because they give faster feedback."
+    "explanation": "SAFe calls 8 to 12 weeks a good starting point and prefers shorter PIs, so the length is a guide rather than a fixed rule."
   },
   {
     "id": "SAFE-D-031",
@@ -2639,7 +2639,7 @@
       "Yes, the role can span teams",
       "Only on Solution Trains",
       "No, never in any case",
-      "Only during the IP iteration"
+      "Only in the IP iteration"
     ],
     "correct": [
       0
@@ -2739,17 +2739,17 @@
     "skill": "Value streams",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which practice does SAFe use to see where delay builds up between process steps?",
+    "stem": "On an ART, who does SAFe say facilitates value stream mapping?",
     "options": [
-      "Earned value analysis",
-      "Value stream mapping",
-      "Root cause voting",
-      "Critical path scheduling"
+      "The Release Train Engineer",
+      "Each team's Product Owner",
+      "The finance controller",
+      "An outside auditor"
     ],
     "correct": [
-      1
+      0
     ],
-    "explanation": "Value stream mapping shows each step and the waiting between steps, so the organization can measure flow and target the biggest delays."
+    "explanation": "SAFe lists facilitating value stream mapping among the Release Train Engineer's tasks, along with using flow metrics and coaching teams on flow accelerators."
   },
   {
     "id": "SAFE-D-042",
@@ -2826,7 +2826,7 @@
     "stem": "Which practice does SAFe call key to steering how a product evolves?",
     "options": [
       "Customer demos",
-      "Fixed contracts",
+      "Fixed bids",
       "Annual audits",
       "Status reports"
     ],
@@ -2849,7 +2849,7 @@
       "It moves to wherever the team has spare capacity",
       "It is the last iteration",
       "It is the first iteration",
-      "It falls in the middle"
+      "It falls in the middle of the PI"
     ],
     "correct": [
       1
@@ -2870,7 +2870,7 @@
       "Every team's daily tasks",
       "Hiring requests for ARTs",
       "Business and enabler epics",
-      "Defects found in production"
+      "Production defects"
     ],
     "correct": [
       2
@@ -2910,7 +2910,7 @@
     "stem": "Organizational Agility in SAFe has three dimensions. Which is one of them?",
     "options": [
       "Strategy agility",
-      "Contract agility",
+      "Deal agility",
       "Vendor rotation",
       "Budget freezing"
     ],
@@ -3009,20 +3009,20 @@
     "test": 0,
     "module": 1,
     "domain": "safePI",
-    "skill": "ART Sync",
+    "skill": "IP iteration",
     "difficulty": 2,
     "format": "single",
-    "stem": "Who facilitates the Coach Sync?",
+    "stem": "Besides room for innovation, what does the IP iteration give an ART for meeting its PI objectives?",
     "options": [
-      "An Epic Owner",
-      "A Business Owner",
-      "The System Architect",
-      "The RTE"
+      "Extra planned feature work",
+      "A second PI Planning event",
+      "A code freeze for audits",
+      "An estimating buffer"
     ],
     "correct": [
       3
     ],
-    "explanation": "The Release Train Engineer facilitates the Coach Sync, also called a Scrum of Scrums, with the Scrum Masters/Team Coaches."
+    "explanation": "SAFe says the IP iteration gives an estimating buffer for meeting PI objectives, along with time for innovation, learning and planning. No work is planned into it."
   },
   {
     "id": "SAFE-D-055",
@@ -3099,7 +3099,7 @@
     "stem": "SAFe compares a mindset to a lens. What does it mean by that?",
     "options": [
       "It only matters for executives",
-      "It is fixed early in each career",
+      "It is fixed early in a career",
       "It shapes how people see and act",
       "It can be bought with new tools"
     ],
@@ -3177,20 +3177,20 @@
     "test": 0,
     "module": 1,
     "domain": "safePI",
-    "skill": "ART Sync",
+    "skill": "IP iteration",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which topic belongs in the PO Sync rather than the Coach Sync?",
+    "stem": "Which two ART events are held during the IP iteration so they do not interrupt the flow of work?",
     "options": [
-      "Scope and priority changes",
-      "Coaching practices for Scrum Masters",
-      "Cross-team blockers and delays",
-      "Team impediments"
+      "Daily stand-ups and reviews",
+      "PI Planning and Inspect and Adapt",
+      "System Demo and Iteration Review",
+      "Portfolio Sync and budget review"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "The PO Sync covers PI objective progress, feature status, scope and priority changes, and dependencies. The Coach Sync covers impediments and risks."
+    "explanation": "SAFe holds PI Planning and Inspect and Adapt in the IP iteration, the last iteration of the PI, so these events do not interrupt delivery."
   },
   {
     "id": "SAFE-D-063",
@@ -3330,7 +3330,7 @@
     "stem": "What are SAFe's four tiers of backlog items, from largest to smallest?",
     "options": [
       "Portfolio, train, team, member",
-      "Initiative, project, phase, task",
+      "Project, phase, task, subtask",
       "Theme, epic, task, bug",
       "Epic, capability, feature, story"
     ],
@@ -3345,20 +3345,20 @@
     "test": 0,
     "module": 1,
     "domain": "safePI",
-    "skill": "ART Sync",
+    "skill": "PI objectives",
     "difficulty": 2,
     "format": "single",
-    "stem": "A team takes action that lowers a risk's chance or impact. What is the ROAM status?",
+    "stem": "Besides the ART's own performance, what do PI objectives help show?",
     "options": [
-      "Owned",
-      "Accepted",
-      "Resolved",
-      "Mitigated"
+      "Which vendors to pay first",
+      "Which teams to disband next PI",
+      "Each team's contribution to business value",
+      "Each person's hours worked per week"
     ],
     "correct": [
-      3
+      2
     ],
-    "explanation": "A mitigated risk has a plan that reduces its likelihood or impact. A resolved risk is no longer a concern, and an accepted one is acknowledged without action."
+    "explanation": "SAFe says PI objectives help an ART assess its performance and the business value achieved, and they show each team's contribution to business value."
   },
   {
     "id": "SAFE-D-071",
@@ -3456,7 +3456,7 @@
     "stem": "What does research cited in Principle #8 say about adding pay rewards to heuristic work?",
     "options": [
       "It has no effect at all",
-      "It always doubles output",
+      "It doubles output",
       "It can lower performance",
       "It only helps beginners"
     ],
@@ -3476,7 +3476,7 @@
     "format": "single",
     "stem": "What is the main output of continuous exploration?",
     "options": [
-      "Deployable code running in production",
+      "Code running in production",
       "Test results for each story",
       "Vision, roadmap and feature backlog",
       "A signed requirements document"
@@ -3500,7 +3500,7 @@
       "Sales support",
       "Payroll and benefits",
       "Compliance",
-      "Marketing"
+      "Marketing campaigns"
     ],
     "correct": [
       2
@@ -3730,7 +3730,7 @@
     "options": [
       "A fixed five-year plan",
       "A Lean-Agile organization",
-      "A flatter salary structure",
+      "A flatter pay scale",
       "A single global office"
     ],
     "correct": [
@@ -3768,12 +3768,12 @@
     "skill": "Empower agility with AI",
     "difficulty": 2,
     "format": "single",
-    "stem": "According to AI-Native SAFe, which kind of work becomes the bottleneck as AI speeds up building?",
+    "stem": "As AI speeds up building, which kind of work does SAFe say becomes the bottleneck?",
     "options": [
       "Printing the program board",
       "Typing the code for each story",
       "Validating that work is safe and valuable",
-      "Booking rooms and travel for all team events"
+      "Booking rooms for team events"
     ],
     "correct": [
       2
@@ -3854,7 +3854,7 @@
     "format": "single",
     "stem": "What are Business Owners mainly responsible for on an ART?",
     "options": [
-      "Building the test environments",
+      "Building test environments",
       "Running each team's events",
       "ROI, governance and compliance",
       "Writing and sizing stories"
@@ -4017,20 +4017,20 @@
     "test": 0,
     "module": 1,
     "domain": "safePI",
-    "skill": "ART Sync",
+    "skill": "System Demo",
     "difficulty": 1,
     "format": "single",
-    "stem": "In which ART event is the ROAM board reviewed and updated during the PI?",
+    "stem": "Who leads the System Demo?",
     "options": [
-      "Iteration Retrospective",
-      "Iteration Planning",
-      "Strategic Portfolio Review",
-      "ART Sync"
+      "The RTE",
+      "The System Architect",
+      "Each team's Product Owner",
+      "The Business Owners"
     ],
     "correct": [
-      3
+      0
     ],
-    "explanation": "ART Sync takes the ROAM board as an input and updates it as risks are resolved, owned, accepted or mitigated during the PI."
+    "explanation": "SAFe says the System Demo is led by the Release Train Engineer. Teams show the integrated work of the ART from a production-like environment."
   },
   {
     "id": "SAFE-D-103",
@@ -4066,7 +4066,7 @@
     "options": [
       "Let the tool decide to save time",
       "Ban the tool from planning entirely",
-      "Let the RTE copy its plan as-is for speed",
+      "Let the RTE copy its plan as-is",
       "AI may advise; people decide and commit"
     ],
     "correct": [
@@ -4104,17 +4104,17 @@
     "skill": "Lean-Agile mindset",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which belief fits a growth mindset in a team member?",
+    "stem": "How does SAFe describe its four core values?",
     "options": [
-      "Mistakes prove a lack of natural ability",
-      "Feedback is best avoided when stakes are high",
-      "Skills grow with practice and feedback",
-      "Talent is set at birth"
+      "Optional tips for teams",
+      "A yearly survey score",
+      "Rules set by each ART",
+      "Its most deeply held beliefs"
     ],
     "correct": [
-      2
+      3
     ],
-    "explanation": "A growth mindset holds that abilities develop through effort, practice and feedback, so mistakes are chances to learn."
+    "explanation": "SAFe says that at its core it places the highest value on four deeply held beliefs: alignment, transparency, respect for people and relentless improvement."
   },
   {
     "id": "SAFE-D-107",
@@ -4127,7 +4127,7 @@
     "format": "single",
     "stem": "What does SAFe call the pairing of a value-stream network with the hierarchy?",
     "options": [
-      "Shared services model",
+      "Shared services",
       "Dual operating system",
       "Center of excellence",
       "Matrix organization"
@@ -4233,7 +4233,7 @@
     "stem": "Which approach does SAFe use so leaders make data-based decisions about the change?",
     "options": [
       "Annual surveys only",
-      "Vendor reports",
+      "Vendor progress reports",
       "Measure and grow",
       "Gut feeling of the most senior leader"
     ],

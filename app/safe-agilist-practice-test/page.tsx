@@ -232,7 +232,7 @@ export default function SafeLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">1. Know the lists cold</h3>
               <p>
-                Many questions turn on a named list: the four core values, the ten principles by number, the four parts of the continuous delivery pipeline, the four Lean budget guardrails and the ROAM categories. Write each list from memory until it comes without effort.
+                Many questions turn on a named list: the four core values, the ten principles by number, the four parts of the continuous delivery pipeline, the four Lean budget guardrails and the steps of the Implementation Roadmap. Write each list from memory until it comes without effort.
               </p>
             </div>
             <div>

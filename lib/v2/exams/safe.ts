@@ -66,7 +66,7 @@ export const SAFE: ExamV2Config = {
     { key: "principles", name: "Lean-Agile Principles", section: "safe", domains: ["safePrinciples"], blurb: "The ten principles: economics, systems thinking, set-based design, flow and Little's Law, cadence, motivation and decisions." },
     { key: "team", name: "Teams and Technical Agility", section: "safe", domains: ["safeTeam"], blurb: "Agile teams and ARTs, team roles, built-in quality, the continuous delivery pipeline, DevOps and architectural runway." },
     { key: "customer", name: "Customer-Centricity and WSJF", section: "safe", domains: ["safeCustomer"], blurb: "Customer-centricity, design thinking, features, stories and enablers, and ranking the ART backlog with WSJF." },
-    { key: "pi", name: "PI Planning and Execution", section: "safe", domains: ["safePI"], blurb: "The Planning Interval, PI Planning, PI objectives, ART Sync and ROAM, the System Demo, Inspect and Adapt and release on demand." },
+    { key: "pi", name: "PI Planning and Execution", section: "safe", domains: ["safePI"], blurb: "The Planning Interval, PI Planning, PI objectives, the IP iteration, ART Sync, the System Demo, Inspect and Adapt and release on demand." },
     { key: "lpm", name: "Lean Portfolio Management", section: "safe", domains: ["safeLPM"], blurb: "Lean budgets and guardrails, epics and the portfolio Kanban, strategic themes, portfolio vision and Strategic Investment Planning." },
     { key: "lead", name: "Lead the Change", section: "safe", domains: ["safeLead"], blurb: "Leading by example, the Implementation Roadmap, the LACE and change agents, and leading with AI." },
   ],

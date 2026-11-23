@@ -100,7 +100,7 @@ Each fetched 2026-11-23. Only facts stated in the readable text were used.
   (Planning Interval, 8 to 12 weeks, four or five iterations plus IP),
   https://framework.scaledagile.com/pi-objectives, https://framework.scaledagile.com/innovation-and-planning-iteration,
   https://framework.scaledagile.com/iteration-planning, https://framework.scaledagile.com/art-sync
-  (read in full: PO Sync, Coach Sync, ROAM), https://framework.scaledagile.com/system-demo,
+  (public part: ART Sync is a PO Sync and a Coach Sync, usually combined; the rest, ROAM included, is behind the login and not used), https://framework.scaledagile.com/system-demo,
   https://framework.scaledagile.com/inspect-and-adapt (three parts).
 - Portfolio: https://framework.scaledagile.com/lean-portfolio-management-discipline (read in
   full: value stream budgets, Epic Owners, VMO, Enterprise Architect, investment horizons,
@@ -137,3 +137,27 @@ repeated pmiacp and capm facts were replaced with AI-Native SAFe items.
 - Anything about the exam itself (questions, pass mark, fees, retakes): landing and examFacts only.
 - Prices, renewal fees and course costs; named people other than the authors the framework cites
   (Kotter, Little's Law); the AI-Native SAFe early-access guidance, which changes every two weeks.
+
+## Second review (2026-11-23)
+
+A second reviewer answered all 202 questions blind and agreed with every key (one disagreement,
+Iteration Planning time, was checked on the public iteration-planning article: about 90 minutes
+for a two-week iteration). Changes, each checked against the public text of the page named:
+- Facts that sit only behind the framework login were rewritten to public facts: the ROAM
+  categories (three items), uncommitted objectives counted in capacity, PI Planning outputs,
+  Coach Sync facilitation and PO Sync topics, the Principle #9 decisions that stay central,
+  respect for people covering suppliers, and alignment enabling local decisions. The new items use
+  the public parts of pi-objectives, program-increment, system-demo, innovation-and-planning-iteration,
+  release-train-engineer, decentralize-decision-making and safe-core-values (each fetched
+  2026-11-23). "Pivot or persevere" was taken out of an explanation (not in the public epic text).
+- AI items kept to the study guide's "Empower Agility with AI" and "Empower Leaders with AI"
+  topics: the outcome-tree and moonshot items were replaced with the public AI-Empowered SAFe
+  assessment (SAFe CoPilot suggests next steps) and human-centric AI culture facts from
+  https://framework.scaledagile.com/ai-empowered-agility.
+- Three items that repeated a fact and answer in pmiacp (communities of practice, value stream
+  mapping, growth mindset) were replaced.
+- Key length: the key was the second or third longest option in about 73% of items. 39 distractors
+  were shortened or lengthened so the key is now the shortest option in 25% of items, the longest
+  in 21%, and each middle rank about 24 to 30%.
+- Repeat check: stems and keys compared with psm, pspo, pmp, capm, pmiacp, itil, cobit and the two
+  Six Sigma banks (token overlap, key overlap, shared terms); no other near-duplicate found.

@@ -28,13 +28,19 @@ function copy(slug: string) {
   const label = shared ? test.name.replace(/ Practice Test$/, "") : test.shortName;
   const title = `${label} Practice for Your Class`;
   const description = `Teach ${course}? Make a free Tigertest class for the ${practiceLabel(test.shortName)} practice test: post one link, students join with a name, and you see scores and the topics the class misses.`;
+  const v1 = getExamById(test.id);
+  const v2 = EXAMS_V2.find((e) => e.id === test.id);
+  const topics = v1 ? [...new Set(Object.keys(v1.blueprint).map((k) => v1.categoryLabels[k]).filter(Boolean))] : v2 ? v2.drills.map((d) => d.name) : [];
+  // Each answer names this test and its own topics, so the 300+ teach pages do not
+  // share one FAQ (the SEO audit's faqBoilerplate).
+  const someTopics = topics.length > 3 ? `${topics.slice(0, 3).join(", ")} and the rest` : topics.join(", ");
   const faqs = [
-    { q: `Is the ${test.shortName} class free?`, a: `Yes. Classes are free for teachers. A student in your class also gets that test's full stats and every step of it at no charge.` },
-    { q: "Do my students need accounts?", a: "No. A student opens your class link, types the name you know them by and starts practicing. An account is optional and keeps their progress across devices." },
-    { q: "What do I see as the teacher?", a: `Who practiced and when, each student's practice test scores, the ${test.shortName} topics the class is weakest on, and every question the class answered with how many missed it and which wrong answer they picked.` },
-    { q: "Can I use my own questions too?", a: "Yes. Any account can turn its own material into a Tigertest quiz and limit it to one class, so only your students can play it." },
+    { q: `Is the ${test.shortName} class free?`, a: `Yes. Classes are free for teachers. A student in your ${test.shortName} class also gets that test's full stats and every step of it at no charge.` },
+    { q: `Do my ${test.shortName} students need accounts?`, a: `No. A student opens your class link, types the name you know them by and starts the ${practiceLabel(test.shortName)} practice right away. An account is optional and keeps their progress across devices.` },
+    { q: "What do I see as the teacher?", a: `Who practiced and when, each student's ${test.shortName} practice test scores, the topics the class is weakest on${someTopics ? ` (${someTopics})` : ""}, and every question the class answered with how many missed it and which wrong answer they picked.` },
+    { q: "Can I use my own questions too?", a: `Yes. Any account can turn its own ${course ?? test.shortName} material into a Tigertest quiz and limit it to one class, so only your students can play it alongside the ${test.shortName} practice.` },
   ];
-  return { test, course, title, description, faqs };
+  return { test, course, title, description, faqs, topics };
 }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
@@ -54,12 +60,9 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 export default async function TeachExamPage({ params }: Params) {
   const c = copy((await params).exam);
   if (!c) notFound();
-  const { test, course, title, description, faqs } = c;
+  const { test, course, title, description, faqs, topics } = c;
   const url = `${SITE_URL}${teachPagePath(test)}`;
   const facts = EXAM_FACTS[test.id];
-  const v1 = getExamById(test.id);
-  const v2 = EXAMS_V2.find((e) => e.id === test.id);
-  const topics = v1 ? [...new Set(Object.keys(v1.blueprint).map((k) => v1.categoryLabels[k]).filter(Boolean))] : v2 ? v2.drills.map((d) => d.name) : [];
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [

@@ -39,6 +39,18 @@ test("an answer that names and cites Tigertest is counted, with its rank among c
   assert.deepStrictEqual(r.citedHosts, ["dmv-written-test.com", "tigertest.io"]);
   assert.deepStrictEqual(r.ourPaths, ["/california-dmv-practice-test"]);
   assert.strictEqual(r.searches, 1);
+  assert.strictEqual(r.saidAboutUs.length, 1);
+  assert.match(r.saidAboutUs[0], /Tigertest offers 4 free practice tests\.$/);
+});
+
+test("the summary lists questions where our page was found but not cited", () => {
+  const base = { family: "DMV", mentioned: false, rank: 0, ourPaths: [], citedHosts: [], searches: 1, costUsd: 0, excerpt: "" };
+  const s = summarize([
+    { ...base, id: "found", inResults: true, cited: false },
+    { ...base, id: "used", inResults: true, cited: true },
+    { ...base, id: "absent", inResults: false, cited: false },
+  ]);
+  assert.deepStrictEqual(s.foundNotCited, ["found"]);
 });
 
 test("a page in the search results that the answer never used is not a citation", () => {

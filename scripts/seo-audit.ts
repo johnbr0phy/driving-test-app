@@ -61,6 +61,10 @@ const RULES: Record<string, { level: Level; why: string }> = {
   indexnow: { level: "error", why: "IndexNow key file problem" },
   soft404: { level: "error", why: "Unknown URL does not answer 404" },
   crawlerBlocked: { level: "error", why: "A search or AI crawler user agent is refused" },
+  fewContextLinks: { level: "warn", why: "Landing has under 3 links from other pages' main content (header and footer not counted)" },
+  factMismatch: { level: "warn", why: "FAQ answer states a different question count or pass mark than the ExamFacts answer" },
+  faqBoilerplate: { level: "warn", why: "Same FAQ answer on 30%+ of a page family (thin template: put the page's own facts in it or drop it)" },
+  aiCrawlerContent: { level: "warn", why: "An AI crawler gets less text than a browser (challenge page, cloaking or client-only content)" },
 };
 
 const args = process.argv.slice(2);
@@ -152,7 +156,16 @@ type Page = {
   desc?: string;
   alternates: Map<string, string>;
   links: Set<string>;
+  /** Links inside <main>: what a reader follows, not the site header or footer. */
+  mainLinks: Set<string>;
+  faqAnswers: string[];
+  /** The ExamFacts answer: the first paragraph of the "at a glance" section. */
+  facts?: string;
+  h1?: string;
+  textLength: number;
 };
+/** Exam and DMV state landings: the pages meant to rank. */
+const isLanding = (path: string) => /^\/[^/]+-practice-test$/.test(path);
 const pages = new Map<string, Page>();
 
 // ---------------------------------------------------------------- sitemaps
@@ -206,7 +219,7 @@ async function auditPage(loc: string) {
   }
   const html = res.body;
   const head = html.slice(0, html.indexOf("</head>") > 0 ? html.indexOf("</head>") : 200_000);
-  const page: Page = { url: loc, alternates: new Map(), links: new Set() };
+  const page: Page = { url: loc, alternates: new Map(), links: new Set(), mainLinks: new Set(), faqAnswers: [], textLength: 0 };
   pages.set(norm(loc), page);
 
   // robots
@@ -241,6 +254,7 @@ async function auditPage(loc: string) {
   // h1
   const h1s = (html.match(/<h1[\s>]/gi) ?? []).length;
   if (h1s !== 1) add("h1", loc, `${h1s} h1 elements`);
+  page.h1 = visibleText(html.match(/<h1[\s>][\s\S]*?<\/h1>/i)?.[0] ?? "").trim() || undefined;
 
   // language
   const homeLang = COUNTRY_HOME_LANGUAGES.find((c) => c.path === path)?.lang;
@@ -265,7 +279,10 @@ async function auditPage(loc: string) {
   if (!blocks.length) add("jsonldMissing", loc);
   const text = visibleText(html);
   const loose = looseText(text);
+  page.textLength = text.length;
   let refsOrg = false;
+  const factsAt = html.indexOf('aria-labelledby="exam-facts"');
+  if (factsAt >= 0) page.facts = visibleText(html.slice(factsAt).match(/<p[\s>][\s\S]*?<\/p>/i)?.[0] ?? "").trim() || undefined;
   for (const raw of blocks) {
     if (/&(apos|quot|#39|amp;apos);/.test(raw)) add("jsonldEntity", loc, raw.match(/.{0,40}&(apos|quot|#39|amp;apos);.{0,20}/)?.[0] ?? "");
     let data: unknown;
@@ -290,6 +307,11 @@ async function auditPage(loc: string) {
       if (type === "Question" && typeof n.name === "string") {
         const q = looseText(n.name);
         if (q && !loose.includes(q)) add("faqNotVisible", loc, n.name.slice(0, 100));
+        const a = (n.acceptedAnswer as Record<string, unknown> | undefined)?.text;
+        if (typeof a === "string") {
+          page.faqAnswers.push(a);
+          if (/how many questions|pass mark|passing score|score to pass/i.test(n.name)) pendingFacts.push([n.name, a]);
+        }
       }
       const mod = n.dateModified;
       if (typeof mod === "string") {
@@ -299,6 +321,7 @@ async function auditPage(loc: string) {
       }
     }
   }
+  for (const [q, a] of pendingFacts.splice(0)) compareFacts(page, q, a);
   if (refsOrg) orgRefPages++;
   else if (blocks.length) add("orgRef", loc);
 
@@ -309,7 +332,10 @@ async function auditPage(loc: string) {
   else ogImages.add(ogUrl);
 
   // internal links
+  const mainStart = html.search(/<main[\s>]/i);
+  const mainEnd = html.lastIndexOf("</main>");
   for (const m of html.matchAll(/<a\s[^>]*href="([^"#]+)/gi)) {
+    const inMain = mainStart >= 0 && m.index! > mainStart && m.index! < mainEnd;
     let href = decode(m[1]);
     if (/^(mailto|tel|javascript):/i.test(href)) continue;
     if (/^https?:/i.test(href)) {
@@ -320,7 +346,69 @@ async function auditPage(loc: string) {
     if (!isWww(href)) continue;
     href = href.split("?")[0];
     page.links.add(norm(href));
+    if (inMain) page.mainLinks.add(norm(href));
   }
+}
+
+// ---------------------------------------------------------------- facts
+// The FAQ and the ExamFacts answer must quote the same numbers: when they
+// disagree, search engines and AI answers trust neither. JSON-LD order puts the
+// FAQ before or after the facts node, so FAQ answers wait until the page is read.
+// The page is parsed without an await, so one page's answers never mix with another's.
+const pendingFacts: [string, string][] = [];
+// Prose holds many numbers (sections, domain weights, our own test length), so
+// only flag when the two texts share none: every count of "N ... questions", and
+// every percent within a few words after "pass" or "need".
+// "85 to 150 questions" gives both ends; the sum covers a total split by section.
+const counts = (s: string, withSum = false) => {
+  const out = new Set<string>();
+  let sum = 0;
+  for (const m of s.matchAll(/\b(\d{1,3})(?:\s*(?:to|and|or|-|\u2013)\s*(\d{1,3}))?\s+(?:[a-z-]+\s+){0,2}questions\b/gi)) {
+    out.add(m[1]);
+    if (m[2]) out.add(m[2]);
+    else sum += Number(m[1]);
+  }
+  if (withSum && out.size > 1) out.add(String(sum));
+  return out;
+};
+const passMarks = (s: string) => new Set([...s.matchAll(/\b(?:pass(?:es|ing)?|needs?)\b[^.%]{0,40}?\b(\d{1,3})\s?%/gi)].map((m) => m[1]));
+function compareFacts(page: Page, q: string, a: string) {
+  if (!page.facts) return;
+  const ours = /tigertest|practice test|mock|readiness/i;
+  const faqText = a.split(/(?<=\.)\s+/).filter((s) => !ours.test(s)).join(" ");
+  const pairs: [string, Set<string>, Set<string>][] = [
+    ["question count", counts(page.facts, true), counts(faqText)],
+    ["pass mark", passMarks(page.facts), passMarks(faqText)],
+  ];
+  for (const [what, facts, faq] of pairs) {
+    if (facts.size && faq.size && ![...faq].some((n) => facts.has(n))) {
+      add("factMismatch", page.url, `${what}: ExamFacts says ${[...facts].join("/")}, FAQ "${q.slice(0, 60)}" says ${[...faq].join("/")}`);
+    }
+  }
+}
+
+// ---------------------------------------------------------------- AI crawler parity
+// Most AI crawlers do not run JavaScript and some sites serve them a challenge
+// page. Fetch a sample of landings as GPTBot and ClaudeBot and compare the
+// server HTML text with what the audit's browser-like fetch got.
+async function aiCrawlerParity() {
+  const landings = [...pages.values()].filter((p) => isLanding(new URL(p.url).pathname) && p.textLength);
+  const step = Math.max(1, Math.floor(landings.length / 40));
+  const sample = landings.filter((_, i) => i % step === 0).slice(0, 40);
+  await pool(sample, CONCURRENCY, async (p) => {
+    for (const bot of ["GPTBot/1.2", "ClaudeBot/1.0"]) {
+      const r = await get(BASE + new URL(p.url).pathname, { ua: `Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; ${bot}; +https://example.com/bot)` });
+      if (r.status !== 200) {
+        add("aiCrawlerContent", p.url, `${bot} got ${r.status}`);
+        continue;
+      }
+      const text = visibleText(r.body);
+      const missing = [p.h1 && !text.includes(p.h1) ? "h1" : "", p.facts && !text.includes(p.facts.slice(0, 80)) ? "ExamFacts answer" : ""].filter(Boolean);
+      if (text.length < p.textLength * 0.8 || missing.length) {
+        add("aiCrawlerContent", p.url, `${bot}: ${text.length} of ${p.textLength} characters${missing.length ? `, missing ${missing.join(" and ")}` : ""}`);
+      }
+    }
+  });
 }
 
 // ---------------------------------------------------------------- site-wide
@@ -452,6 +540,39 @@ async function main() {
     const inbound = new Map<string, number>();
     for (const p of pages.values()) for (const l of p.links) if (l !== norm(p.url)) inbound.set(l, (inbound.get(l) ?? 0) + 1);
     for (const u of sitemapSet) if (u !== norm("https://www.tigertest.io/") && !inbound.has(u)) add("orphan", u);
+
+    // Landings need links from other pages' content, not only the header or footer.
+    const mainInbound = new Map<string, Set<string>>();
+    for (const p of pages.values()) {
+      for (const l of p.mainLinks) if (l !== norm(p.url)) (mainInbound.get(l) ?? mainInbound.set(l, new Set()).get(l)!).add(p.url);
+    }
+    for (const p of pages.values()) {
+      if (!isLanding(new URL(p.url).pathname)) continue;
+      const n = mainInbound.get(norm(p.url))?.size ?? 0;
+      if (n < 3) add("fewContextLinks", p.url, `${n} pages link to it from their main content`);
+    }
+  }
+
+  // FAQ answers repeated across a template family (/questions/<exam>/*, state pages ...).
+  // Top-level landings are one family of their own and share some answers on purpose.
+  const families = new Map<string, Page[]>();
+  for (const p of pages.values()) {
+    const segs = new URL(p.url).pathname.split("/").filter(Boolean);
+    if (segs.length < 2) continue;
+    const fam = "/" + [...segs.slice(0, -1), "*"].join("/");
+    families.set(fam, [...(families.get(fam) ?? []), p]);
+  }
+  // A family is flagged when shared answers are half or more of a page's FAQ:
+  // one shared "is it free" answer next to page-specific ones is fine.
+  for (const [fam, ps] of families) {
+    if (ps.length < 5) continue;
+    const seen = new Map<string, number>();
+    for (const p of ps) for (const a of new Set(p.faqAnswers.map(looseText))) if (a.length >= 80) seen.set(a, (seen.get(a) ?? 0) + 1);
+    const shared = [...seen].filter(([, n]) => n >= 3 && n / ps.length >= 0.3);
+    const perPage = ps.reduce((t, p) => t + p.faqAnswers.length, 0) / ps.length;
+    if (shared.length && shared.length >= perPage / 2) {
+      add("faqBoilerplate", "https://www.tigertest.io" + fam, `${shared.length} of about ${Math.round(perPage)} answers repeat across ${ps.length} pages, e.g. "${shared[0][0].slice(0, 80)}"`);
+    }
   }
   const linkTargets = new Map<string, string>();
   for (const p of pages.values()) for (const l of p.links) if (!sitemapSet.has(l) && !linkTargets.has(l)) linkTargets.set(l, p.url);
@@ -465,6 +586,7 @@ async function main() {
   });
 
   await siteChecks();
+  await aiCrawlerParity();
 
   // ---------------------------------------------------------------- report
   const errors = findings.filter((f) => f.level === "error");

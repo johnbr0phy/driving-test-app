@@ -155,6 +155,7 @@ const BORROWED_SETS: Record<string, string> = {
   cadronebasic: "part107",
   cadroneadv: "part107",
   nzfirstaid: "aufirstaid",
+  nzforklift: "auforklift",
   crfsc: "capal",
   ascppbt: "phleb",
   rpt: "phleb",

@@ -593,6 +593,14 @@
       "done": "2026-11-18"
     },
     {
+      "exam": "nzforklift",
+      "date": "2027-12-31",
+      "kind": "outline",
+      "what": "NZQA unit standards 10851 and 10852 expire on 31 December 2027; skill standards 40735 and 40736 (registered 24 July 2025) replace them, with 40737 for working platforms.",
+      "action": "Bank written to 40735, 40736 and 40737; after the expiry date drop the 10851 and 10852 wording from the landing, facts and search copy, and check WorkSafe's forklift training code of practice for any revision.",
+      "source": "https://www.nzqa.govt.nz/nqfdocs/skills/pdf/40735.pdf"
+    },
+    {
       "exam": "nzfirstaid",
       "date": "2027-12-31",
       "kind": "outline",

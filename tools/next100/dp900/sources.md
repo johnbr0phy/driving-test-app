@@ -43,3 +43,6 @@ All items are original, written from Microsoft's public DP-900 study guide and t
 - The newest tiers in the blob docs (Smart tier, Turbo tier in preview) are not in the DP-900 module and are not asked.
 - Prices, free-tier allowances, SLA figures beyond the module's Cosmos DB 99.999%, Copilot licensing and preview features are left out.
 - Fabric IQ (preview) is not asked.
+
+## Copyright check
+- Microsoft publishes no public DP-900 question catalogue. The practice assessments (legacy Learn and AI Skills Navigator) and the module assessments need sign-in and were never opened. Every item was written from the unit text and study guide above, with stems checked against the sibling banks (az900, sc900, az104, dataplus, pl900, gcdl, awsaif, ai901, snowpro, cloudplus) by sequence similarity and shared key-answer pairs; five close items were rewritten (ZRS definition, monthly-trend line chart, unstructured-data example, semi-structured definition and one JSON/structure item).

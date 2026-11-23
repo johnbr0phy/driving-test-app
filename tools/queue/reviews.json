@@ -1662,5 +1662,13 @@
       "pr": 996,
       "findings": 8
     }
+  ],
+  "corrections": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 0,
+      "findings": 5
+    }
   ]
 }

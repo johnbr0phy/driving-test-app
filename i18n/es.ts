@@ -1636,6 +1636,14 @@ export const es: TranslationKeys = {
     nptptOther: "Other Systems & System Interactions",
     nptptEquipModal: "Equipment, Devices & Modalities",
     nptptSafetyProf: "Safety, Professional Roles & Evidence",
+    // ncmhce
+    ncmhceEthics: "Professional Practice & Ethics",
+    ncmhceAssess: "Intake, Risk & Level of Care",
+    ncmhceDiagnosis: "DSM-5-TR Diagnosis",
+    ncmhcePlanning: "Treatment Planning",
+    ncmhceInterventions: "Theory-Based Interventions",
+    ncmhceGroupFamily: "Group, Family & Crisis Work",
+    ncmhceAttributes: "Core Counseling Attributes",
     // aswbclin
     aswbclinEthics: "Ethical Principles & Responsibilities",
     aswbclinService: "Ethical Service Delivery",

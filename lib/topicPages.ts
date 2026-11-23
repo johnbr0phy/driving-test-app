@@ -15,7 +15,7 @@ export const TOPIC_EXAM_IDS = [
   "realestate", "insurance", "pnc", "sie", "series7", "series63", "series65", "nmls", "txadjuster", "fladjuster", "notary",
   "cpafar", "cpareg", "cpaaud", "cpabar", "cpaisc", "dispatcher", "proserve", "ctec", "cfal1", "accafa", "phr", "cisa", "cssgb", "cssyb", "sfadmin", "llqp", "cemap", "ukcemap2",
   "cna", "ptcb", "phleb", "ccma", "cma", "cen", "cet", "danb", "cpc", "cca", "ccs", "rbt", "arrt", "nptepta", "nptept", "rdexam", "ccrn", "vtne", "nasm",
-  "aswb", "aswbclin", "nce",
+  "aswb", "aswbclin", "nce", "ncmhce",
   "cdl", "cdlx", "jelec", "nhie", "epa608", "foodmgr", "barber", "cosmetology", "moto", "civics", "part107",
 ] as const;
 

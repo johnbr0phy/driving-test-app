@@ -7705,6 +7705,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The ASWB Examination Guidebook (August 2026), Bachelors/Associate content outline, checked November 2026",
     source: { name: "ASWB: Examination Guidebook", url: "https://www.aswb.org/wp-content/uploads/2026/05/2026-Social-Work-Licensing-Exam-Guidebook-5.4.2026.pdf" },
   },
+  ncmhce: {
+    answer:
+      "The NCMHCE is the National Clinical Mental Health Counseling Examination from the National Board for Certified Counselors (NBCC), used by many state boards for the clinical counseling license and required for NBCC's CCMHC credential. It has 11 clinical case studies, one unscored; each case is an intake summary and two counseling sessions, each followed by four-option multiple-choice questions, 9 to 15 per case and 100 scored in all. Testing time is 225 minutes with one 15-minute break. The passing score is set by standard setting and equated across forms. From July 1, 2027 a new format applies: 10 case studies, 130 to 150 questions, 3 hours 45 minutes and scaled scores of 100 to 500 with 360 to pass.",
+    rows: [
+      { label: "Format", value: "11 case studies (1 unscored), 9 to 15 questions each" },
+      { label: "Scored questions", value: "100, four options, one correct answer" },
+      { label: "Time", value: "225 minutes of testing, one 15-minute break" },
+      { label: "Pass mark", value: "Set by standard setting; varies slightly by form" },
+      { label: "Content", value: "Counseling skills 30%, intake and diagnosis 25%, ethics 15%, treatment planning 15%, core attributes 15%" },
+      { label: "From July 1, 2027", value: "10 cases, 130-150 questions, 3 h 45 min, scaled 100-500, 360 to pass" },
+      { label: "Where", value: "Pearson VUE test center or online (OnVUE)" },
+      { label: "Run by", value: "National Board for Certified Counselors (NBCC)" },
+    ],
+    basedOn: "The NBCC NCMHCE Content Outline (revised October 2025), the NCMHCE Candidate Handbook (revised November 2025) and the NCMHCE Examination Specifications effective July 1, 2027, checked November 2026",
+    source: { name: "NBCC: NCMHCE Content Outline", url: "https://www.nbcc.org/assets/exam/ncmhce_content_outline.pdf" },
+  },
   aswbclin: {
     answer:
       "The ASWB Clinical exam is the Association of Social Work Boards licensing exam that most US states and several Canadian provinces use for the clinical social work license, often called the LCSW, usually after a master's degree in social work and about two years of supervised clinical experience. Since August 3, 2026 it has 122 multiple-choice questions in two sections of 61, with four hours to finish; 12 are unscored pretest questions, so 110 count. Questions have three or four options. The Clinical outline has three content areas: Values and Ethics 36%, Assessment and Planning 32%, and Intervention and Practice 32%. The result is pass or fail, with the number of correct answers needed set for each exam form.",

@@ -139,7 +139,7 @@ const TEACHER_LED = new Set([
   // Next-20 batch B (November 2026)
   "cma", "rma", "nbdhe", "inbde", "nptepta", "nptept", "aatl2", "accafa",
   // Next-20 batch C (November 2026)
-  "aswbclin", "phr", "shrmcp", "aphr", "ccs", "rhia", "rdexam", "cemap",
+  "aswbclin", "ncmhce", "phr", "shrmcp", "aphr", "ccs", "rhia", "rdexam", "cemap",
   // Build run (November 2026)
   "fpc",
   // Next-20 batch (November 2026)

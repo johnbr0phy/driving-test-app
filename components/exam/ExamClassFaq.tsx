@@ -196,6 +196,7 @@ export const TEACHES: Record<string, string> = {
   aatl2: "an AAT Level 2 accounting course",
   accafa: "an ACCA tuition class",
   aswbclin: "LCSW exam prep or clinical social work in an MSW program",
+  ncmhce: "clinical mental health counseling or an NCMHCE review course",
   phr: "a PHR exam prep class",
   shrmcp: "a SHRM-CP exam prep class",
   aphr: "an aPHR exam prep class",

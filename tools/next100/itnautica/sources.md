@@ -116,3 +116,29 @@ used. Fetched 2026-11-22 unless noted.
 - The quiz vela's real share of the exam is modelled as 5 of 30; the practical test, the
   carteggio on paper charts 5/D and 42/D (senza limiti licence) and three-option answers are not
   modelled (ours have four options).
+
+## Similarity check against the official quiz list (done 2026-11-22, before finishing the build)
+- Downloaded the Ministry's national list, Allegato A to D.D. 31 maggio 2022 n. 131 (1469 quiz base
+  and 250 quiz vela statements, V/F on three answers), from
+  https://mit.gov.it/nfsmitgov/files/media/normativa/2022-05/ALLEGATO%20A%20QUIZ%20PATENTI%20NAUTICHE%20DD%20131%20DEL%2031%20MAGGIO%202022.pdf
+  (linked from https://mit.gov.it/normativa/decreto-dirigenziale-numero-131-del-31052022), fetched
+  2026-11-22, plus the D1 list (D.D. 18 aprile 2025 n. 62) for a second pass. The carteggio quizzes
+  are drawn on charts 5/D and 42/D and are not in the text list; ours are generic computations in
+  words. Nothing from the list is stored in the repo.
+- Three scripts in this folder, run on the extracted PDF text: `sim_stems.py` (each stem against
+  the 928 catalogue questions that parse cleanly: word Jaccard and SequenceMatcher ratio, plus
+  options found on the matched page), `sim_containment.py` (share of each stem's word trigrams found
+  anywhere in the list, and options of 2+ words found verbatim) and `sim_windows.py` (the 45-word
+  catalogue passage sharing most stem and option words, printed beside each item for a manual read).
+- Every one of the 210 items was read beside its best catalogue passage. A close match was an item
+  asking the same fact in parallel wording, or one whose options repeated those of the catalogue
+  item. 68 items were close and were rewritten from a different angle with new distractors (mostly
+  as worked scenarios: a natante CE at 15 miles, a 17-year-old on a moto d'acqua, 1500 m from the
+  coast, licence expiry ages, 10 knots in km/h, longitude across 180°, points of sail from wind and
+  heading, reciprocal and beam bearings, cardinal marks read from topmark or light, leaving a green
+  mark when going out, the boom's side, the paterazzo, the winch, the two-stroke mixture) or replaced
+  with a different topic from the same programme line.
+- Result after the rewrite: no stem at a similarity of 0.70 or more with a catalogue question except
+  one false match (`Lascare una scotta significa:` against an unrelated anchoring item), no item
+  with 2 or more of its options on the matched catalogue page at a stem similarity of 0.40 or more,
+  and the remaining shared facts are asked in our own wording with our own distractors.

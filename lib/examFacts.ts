@@ -3711,6 +3711,19 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "APCO ANS 3.103.3-2025, APCO's PST1 8th edition course page and NENA-STA-020.2-2026, checked November 2026",
     source: { name: "APCO ANS 3.103.3-2025 Minimum Training Standards for Public Safety Telecommunicators", url: "https://www.apcointl.org/standards/3-103-3-2025-minimum-training-standards-for-public-safety-telecommunicators/" },
   },
+  corrections: {
+    answer:
+      "There is no single national correctional officer exam. State, county, city and federal agencies each set their own hiring steps, and many start with a multiple-choice written test. New York State's test guide for the Entry-Level Correction Officer Series covers observing and recalling facts, applying written rules in a correctional setting, preparing written material and understanding written material, in 3 hours. New York City's Correction Officer exam is taken at a computer, tests reasoning, math, spatial and written skills, and needs at least 70% to pass. Passing usually leads to a background check, medical and psychological exams and an academy.",
+    rows: [
+      { label: "Format", value: "Multiple choice, set by each agency" },
+      { label: "Sections", value: "Written rules, reading, writing, reasoning, math" },
+      { label: "Passing score", value: "Set by the agency (70% in NYC)" },
+      { label: "Given by", value: "State, county, city or federal agency" },
+      { label: "Next steps", value: "Background, medical, academy" },
+    ],
+    basedOn: "the New York State correction officer test guide and NYC DCAS Notice of Examination 6303, checked November 2026",
+    source: { name: "NYC DCAS: Correction Officer exam notice", url: "https://www.nyc.gov/assets/dcas/downloads/pdf/noes/20266303000.pdf" },
+  },
   police: {
     answer:
       "There is no single national police exam. Most US agencies start hiring with a multiple-choice written test, from a testing company, a state board such as California POST (the PELLETB) or a civil service commission, that checks reading comprehension, writing and grammar, report writing, basic math and judgment. Each agency sets its own passing score, often 70 percent, and many rank candidates by score. Passing leads to a physical ability test, an oral board, a background investigation and psychological and medical exams.",

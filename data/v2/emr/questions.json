@@ -1866,17 +1866,17 @@
     "difficulty": 3,
     "format": "single",
     "skill": "SALT triage",
-    "stem": "In the SALT individual assessment, a patient who is breathing has a pulse, follows commands and has bleeding controlled, but you judge he will likely not survive with the resources at hand. Which category fits?",
+    "stem": "In the SALT individual assessment, a patient is breathing but does not obey commands, and you judge he is unlikely to survive with the resources at hand. Which category fits?",
     "options": [
-      "Immediate",
-      "Delayed",
       "Expectant",
+      "Delayed",
+      "Immediate",
       "Minimal"
     ],
     "correct": [
-      2
+      0
     ],
-    "explanation": "SALT places a patient who meets the immediate criteria but is unlikely to survive given current resources in the expectant category. That patient is rechecked as resources arrive."
+    "explanation": "A breathing patient who fails a SALT check, such as obeying commands, is immediate if likely to survive with current resources and expectant if not. Expectant patients are rechecked as resources arrive."
   },
   {
     "id": "EMR-T2-027",
@@ -3469,14 +3469,14 @@
     "stem": "In SALT, a child is not breathing after you open the airway. What should you do?",
     "options": [
       "Move on without any action",
-      "Give two rescue breaths",
+      "Give rescue breaths",
       "Tag the child dead at once",
       "Start full CPR and stay"
     ],
     "correct": [
       1
     ],
-    "explanation": "SALT allows two rescue breaths for a child who is not breathing after the airway is opened, since a child's arrest often starts with breathing. If breathing does not start, the child is tagged dead and you move on."
+    "explanation": "SALT lists rescue breaths for a child as a lifesaving intervention, two in the original algorithm, since a child's arrest often starts with breathing. If breathing does not start, the child is triaged as dead and you move on."
   },
   {
     "id": "EMR-D-039",

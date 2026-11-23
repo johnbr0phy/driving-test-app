@@ -645,6 +645,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "DANB's RHS exam page, RHS Exam Outline and References (effective March 12, 2025) and 2026 Candidate Handbook, checked November 2026",
     source: { name: "DANB: Radiation Health and Safety (RHS) exam", url: "https://www.danb.org/exams/exam/rhs" },
   },
+  cnor: {
+    answer:
+      "The CNOR exam is the Competency & Credentialing Institute's (CCI) certification for perioperative registered nurses. It has 200 multiple-choice questions, 185 scored and 15 unscored pretest questions, with 3 hours 45 minutes to finish, at PSI test centers or by remote proctoring. The largest subject area is patient care and safety (25%), then infection prevention and control (16%), pre/postoperative assessment and diagnosis (15%), communication and documentation (11%), emergency situations (10%), management of personnel, services and materials (9%), plan of care (8%) and professional accountabilities (6%). Scores are scaled from 200 to 800 and 620 passes, which is not a percentage. Candidates need a current RN license and 2 years and 2,400 hours of perioperative experience, at least 1,200 of them intraoperative. CCI plans new CNOR exam content with six areas in 2027.",
+    rows: [
+      { label: "Questions", value: "200 (185 scored, 15 pretest)" },
+      { label: "Time", value: "3 hours 45 minutes" },
+      { label: "Passing score", value: "620 on a 200 to 800 scale" },
+      { label: "Largest area", value: "Patient care and safety, 25%" },
+      { label: "Eligibility", value: "RN license, 2 years and 2,400 perioperative hours (1,200 intraoperative)" },
+      { label: "Where", value: "PSI test centers or remote proctoring" },
+      { label: "Valid for", value: "5 years" },
+      { label: "Upcoming change", value: "New six-area content outline in 2027" },
+      { label: "Given by", value: "Competency & Credentialing Institute (CCI)" },
+    ],
+    basedOn: "CCI's CNOR page, CNOR Candidate Handbook (updated May 2026) and Task & Knowledge Statements (December 2023), checked November 2026",
+    source: { name: "CCI: Certified Perioperative Nurse (CNOR)", url: "https://www.cc-institute.org/cnor/" },
+  },
   crat: {
     answer:
       "The Certified Rhythm Analysis Technician (CRAT) exam is Cardiovascular Credentialing International's (CCI) credential for monitor and telemetry technicians who watch and interpret heart rhythms. It is a two-hour computer-based exam of 130 questions, 110 scored and 20 unscored, taken at Pearson VUE test centers. For exams after July 1, 2023 CCI weights it as analyzing abnormal rhythms 60%, analyzing normal rhythms 16%, initiating cardiac monitoring services 9%, administering cardiac tests 9% and processing test findings 6%. Scores run from 0 to 900 and 650 passes, which is not a percentage. Applicants need a high school diploma or GED plus a cardiovascular or allied health program, related work experience, or a science or health degree.",

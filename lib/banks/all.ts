@@ -375,6 +375,7 @@ import "./carshair";
 import "./excpt";
 import "./cct";
 import "./crat";
+import "./cnor";
 import "./danbrhs";
 import "./danbice";
 import "./contractorlaw";

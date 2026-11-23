@@ -763,6 +763,14 @@
       "what": "CompTIA estimates Cloud+ CV0-004 (V4, launched September 24, 2024) retires about three years after launch (estimated 2027). Draft CV0-005 V5 objectives (draft version 1.2) are published with new domains: Architecture and Design 16%, Life-cycle Management 17%, Operations 21%, Security 20%, Governance, Risk, and Compliance 12%, Artificial Intelligence 14%; count, length and pass mark TBD.",
       "action": "When CV0-005 launches, re-weight PLAN to the final V5 domains, add GRC and AI items, update the config, landing, examFacts and sources.md, rebuild.",
       "source": "https://www.comptia.org/en-us/certifications/cloud/"
+    },
+    {
+      "exam": "cnor",
+      "date": "2027-01-01",
+      "kind": "outline",
+      "what": "CCI's 2024 CNOR and CFPN Job Task Analysis was adopted: new CNOR exam content launches in 2027 (no exact date published) with six competency areas (plan of care 42, intraoperative patient care and safety 49, personnel, services and materials 24, communication and documentation 20, infection prevention and control 33, emergency identification and management 17 items of 185 scored), replacing the current seven subject areas (area 3 in two parts).",
+      "action": "When CCI publishes the 2027 handbook and task statements, re-weight PLAN to the six areas (fold assessment and professional accountability items where the new outline puts them), update the config, landing, examFacts and sources.md, rebuild.",
+      "source": "https://www.cc-institute.org/cnor_cfpn_job_analysis/"
     }
   ]
 }

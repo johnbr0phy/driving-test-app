@@ -6294,6 +6294,19 @@
     --brand-border-light: 274 15% 90%;
     --brand-gradient-to: 284 30% 96%;
   }
+  /* CNOR (CCI) theme: deep scrub teal */
+  [data-theme="cnor"] {
+    --brand: 192 100% 12%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 192 45% 96%;
+    --brand-hover: 192 100% 9%;
+    --brand-dark: 192 100% 7%;
+    --brand-darker: 192 95% 5%;
+    --brand-muted: 192 30% 68%;
+    --brand-border: 192 30% 80%;
+    --brand-border-light: 192 25% 90%;
+    --brand-gradient-to: 202 40% 96%;
+  }
   /* CRAT (CCI) theme: deep monitor green */
   [data-theme="crat"] {
     --brand: 116 70% 16%;
@@ -14463,6 +14476,18 @@
     --brand-muted: 274 15% 45%;
     --brand-dark: 274 25% 65%;
     --brand-darker: 274 25% 78%;
+  }
+
+  .dark [data-theme="cnor"] {
+    --brand: 192 100% 31.2%;
+    --brand-hover: 192 100% 23.2%;
+    --brand-light: 192 45% 13%;
+    --brand-gradient-to: 202 40% 11%;
+    --brand-border-light: 192 25% 24%;
+    --brand-border: 192 30% 34%;
+    --brand-muted: 192 30% 45%;
+    --brand-dark: 192 100% 65%;
+    --brand-darker: 192 95% 78%;
   }
 
   .dark [data-theme="crat"] {

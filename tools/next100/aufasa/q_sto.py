@@ -6,7 +6,7 @@ Q = [
      "Principal residence", ["Club armoury", "Holiday shack", "Nearest licensed dealer"],
      "Schedule 1 clause 11(3)(a) requires firearms not in use to be kept at the person's principal place of residence, or principal place of business for business firearms, unless the Registrar approves elsewhere."),
     ("You keep three category A and B firearms inside your house. What is the minimum SA storage?",
-     "Level 1 safe", ["Prescribed safe", "Level 2 safe", "Storage level 1"],
+     "Level 1 safe", ["Locked steel cabinet", "Level 2 safe", "Storage level 1"],
      "For fewer than 20 firearms with none in category C, D or H, clause 11(3)(b)(i) allows a level 1 safe under the main roof. An outbuilding would need a level 2 safe."),
     ("Your category A and B firearms, fewer than 20, are kept in a detached shed. The minimum is:",
      "A level 2 safe", ["A level 1 safe", "A locked steel cabinet", "Storage level 2"],

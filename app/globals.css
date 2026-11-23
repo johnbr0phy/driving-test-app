@@ -5539,6 +5539,19 @@
     --brand-gradient-to: 302 40% 95%;
   }
   /* NZ workplace first aid theme: deep first aid crimson */
+  /* NZ forklift operator certificate theme: deep forest green */
+  [data-theme="nzforklift"] {
+    --brand: 106 60% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 106 55% 95%;
+    --brand-hover: 106 60% 10%;
+    --brand-dark: 106 60% 9%;
+    --brand-darker: 106 60% 5%;
+    --brand-muted: 106 15% 70%;
+    --brand-border: 106 20% 80%;
+    --brand-border-light: 106 20% 89%;
+    --brand-gradient-to: 0 0% 98%;
+  }
   [data-theme="nzfirstaid"] {
     --brand: 2 70% 14%;
     --brand-foreground: 0 0% 100%;
@@ -12539,6 +12552,18 @@
     --brand-muted: 287 20% 45%;
     --brand-dark: 287 45% 65%;
     --brand-darker: 287 40% 78%;
+  }
+
+  .dark [data-theme="nzforklift"] {
+    --brand: 106 60% 50%;
+    --brand-hover: 106 60% 42%;
+    --brand-light: 106 55% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 106 20% 24%;
+    --brand-border: 106 20% 34%;
+    --brand-muted: 106 15% 45%;
+    --brand-dark: 106 60% 65%;
+    --brand-darker: 106 60% 78%;
   }
 
   .dark [data-theme="nzfirstaid"] {

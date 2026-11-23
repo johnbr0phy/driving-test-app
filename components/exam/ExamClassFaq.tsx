@@ -391,6 +391,7 @@ export const TEACHES: Record<string, string> = {
   aufirstaid: "HLTAID011 first aid courses",
   ausecurity: "a Certificate II in Security Operations course",
   nzfirstaid: "NZQA first aid courses",
+  nzforklift: "NZQA forklift operator courses",
   auforklift: "an LF forklift licence course",
   auwah: "working at heights courses",
   cscs: "a construction course or run CSCS test prep",

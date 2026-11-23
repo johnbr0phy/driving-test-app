@@ -116,6 +116,7 @@ import '@/lib/v2/banks/capm';
 import '@/lib/v2/banks/projectplus';
 import '@/lib/v2/banks/gcdl';
 import '@/lib/v2/banks/gcppca';
+import '@/lib/v2/banks/gcppde';
 import '@/lib/v2/banks/ssccgl';
 import '@/lib/v2/banks/rrbntpc';
 import '@/lib/v2/banks/ctet';

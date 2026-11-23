@@ -1,0 +1,4268 @@
+[
+  {
+    "id": "GCPPDE-T1-001",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deciding between persistent or job-based clusters",
+    "stem": "A Spark job runs for two hours each night, and nothing else uses the cluster. What is the most cost-effective setup?",
+    "options": [
+      "Larger persistent cluster shared later",
+      "Cluster with HDFS kept for results",
+      "Ephemeral cluster created per run",
+      "Persistent cluster left running"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A job-scoped cluster on Managed Service for Apache Spark (formerly Dataproc) is created for the run and deleted after it, with data in Cloud Storage, so nothing is paid for 22 idle hours. Results in HDFS would vanish with the cluster."
+  },
+  {
+    "id": "GCPPDE-T1-002",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identifying the services",
+    "stem": "Spark jobs moving from an on-premises Hadoop cluster read their input from HDFS today. Where should that data live on Google Cloud?",
+    "options": [
+      "Memorystore for Valkey",
+      "HDFS on a long-lived cluster",
+      "Cloud Storage, read through its connector",
+      "Persistent disks on each worker"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Cloud Storage connector lets Spark on Managed Service for Apache Spark (formerly Dataproc) read and write Cloud Storage like a file system, so clusters can be deleted without losing data. HDFS ties the data to one cluster's disks."
+  },
+  {
+    "id": "GCPPDE-T1-003",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "BigQuery features for business intelligence",
+    "stem": "A dashboard repeats the same daily sales aggregation many times an hour on a growing table. What cuts cost and latency?",
+    "options": [
+      "Export to CSV each hour",
+      "Materialized view of the aggregation",
+      "Logical view of the same query",
+      "Larger LIMIT on each query"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A materialized view stores the precomputed result and BigQuery refreshes it in the background as base tables change; smart tuning can also route matching queries to it. A logical view reruns the full query every time."
+  },
+  {
+    "id": "GCPPDE-T1-004",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Preparing and cleaning data",
+    "stem": "Analysts write SQL transformations in BigQuery and want version control, dependencies and data tests. Which service fits?",
+    "options": [
+      "Pub/Sub",
+      "Cloud Data Fusion",
+      "Dataform",
+      "Storage Transfer Service"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Dataform manages SQLX transformations in a Git repository, builds the dependency graph and runs assertions as data quality tests, all inside BigQuery. Cloud Data Fusion is a visual pipeline builder, and the others move data rather than transform it."
+  },
+  {
+    "id": "GCPPDE-T1-005",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transformations: streaming (windowing)",
+    "stem": "A dashboard needs clicks counted per user activity burst, where a burst ends after 30 idle minutes. Which window fits?",
+    "options": [
+      "Session window with a 30-minute gap",
+      "Fixed 30-minute window per user key",
+      "Sliding 30-minute window every minute",
+      "Global window"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Session windows group a key's elements that fall within a gap duration of each other, so a burst closes after 30 minutes with no activity. Fixed and sliding windows cut time into set intervals, splitting bursts."
+  },
+  {
+    "id": "GCPPDE-T1-006",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identity and Access Management",
+    "stem": "An analyst must run queries in project A against tables in project B. Which pair of roles grants the least access?",
+    "options": [
+      "Data Owner on the B dataset",
+      "Data Editor in both projects",
+      "Job User in A, Data Viewer on the tables",
+      "BigQuery Admin in project A and project B"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Running a query creates a job, so the analyst needs bigquery.jobs.create in the project that runs it (BigQuery Job User). Reading the tables needs only BigQuery Data Viewer on them. Data Editor and Owner add write and sharing rights the analyst does not need."
+  },
+  {
+    "id": "GCPPDE-T1-007",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Analyzing data access patterns",
+    "stem": "Millions of IoT devices write readings every second, and apps read recent values by device ID in milliseconds. Which store fits?",
+    "options": [
+      "Cloud SQL",
+      "BigQuery",
+      "Bigtable",
+      "Firestore"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bigtable handles very high write throughput with single-digit millisecond reads by row key, which suits time series keyed by device. BigQuery is built for analytic scans, not point lookups at that rate."
+  },
+  {
+    "id": "GCPPDE-T1-008",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Designing the data model",
+    "stem": "Invoices list many products. Which grain lets a sales fact table report revenue by product?",
+    "options": [
+      "One row per customer per month",
+      "One row per store per day",
+      "One row per invoice line",
+      "One row per invoice"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A fact row per invoice line keeps each product's quantity and amount, so revenue can be summed by product. One row per invoice would hide which products were sold."
+  },
+  {
+    "id": "GCPPDE-T1-009",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Capacity management",
+    "stem": "Production ETL in BigQuery slows down whenever analysts run heavy ad hoc queries. What isolates the two?",
+    "options": [
+      "Lower table expiration on analyst datasets",
+      "One shared on-demand project for everyone",
+      "More partitions on ETL tables",
+      "Separate reservations with assignments"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Capacity-based pricing lets an admin create a reservation for ETL and another for analysts, then assign each project to one, so analysts cannot take ETL's slots. On-demand projects share a common pool."
+  },
+  {
+    "id": "GCPPDE-T1-010",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Networking fundamentals",
+    "stem": "Dataflow workers have no external IP addresses and must call a partner API on the internet. What does the network need?",
+    "options": [
+      "VPC Network Peering",
+      "Private Service Connect endpoint",
+      "Private Google Access",
+      "Cloud NAT"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cloud NAT gives VMs without external IPs outbound access to the internet. Private Google Access reaches only Google APIs and services, not a partner's API."
+  },
+  {
+    "id": "GCPPDE-T1-011",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Troubleshooting poor performing queries",
+    "stem": "A query joins two large tables and one stage runs far longer than the rest. What does the execution graph most likely show?",
+    "options": [
+      "Skewed join keys",
+      "Too few columns in the SELECT list",
+      "An expired partition in one table",
+      "A missing label on the dataset"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When a few key values hold most of the rows, one worker gets most of the join work, and the execution details show that stage's slowest worker far above the average. Filtering or splitting those keys spreads the load."
+  },
+  {
+    "id": "GCPPDE-T1-012",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Making decisions related to ACID compliance and availability",
+    "stem": "A Spanner app can accept product reads up to 15 seconds old in return for lower latency. What should it use?",
+    "options": [
+      "Strong reads in every request",
+      "Bounded-staleness reads",
+      "A Cloud SQL read replica",
+      "Read-write transactions for reads"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Spanner stale reads, such as bounded staleness, can be served by the nearest replica without waiting for the leader, trading a little freshness for latency. Strong reads always return the latest committed data."
+  },
+  {
+    "id": "GCPPDE-T1-013",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Transformations: streaming (late arriving data)",
+    "stem": "Sensor readings can arrive up to 10 minutes after their window ends and must still be counted. What should be set?",
+    "options": [
+      "A shorter window size for every key",
+      "Allowed lateness of 10 minutes",
+      "A longer Pub/Sub acknowledgment deadline",
+      "Larger worker machines"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Data is late when the watermark has passed the end of its window. Allowed lateness keeps the window open for such data, and a late trigger can update the result. The ack deadline only controls Pub/Sub redelivery."
+  },
+  {
+    "id": "GCPPDE-T1-014",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Interactive or batch query jobs",
+    "stem": "A nightly report can wait for idle capacity and need not start at once. Which query priority fits?",
+    "options": [
+      "Batch",
+      "Interactive",
+      "Dry run",
+      "Cached"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Batch priority queues the query and starts it when idle resources are available, which suits work with no one waiting for it. Interactive queries start as soon as possible."
+  },
+  {
+    "id": "GCPPDE-T1-015",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Regional considerations",
+    "stem": "Company policy says no new data resources may be created outside the EU. How is this enforced across every project?",
+    "options": [
+      "Organization policy on resource locations",
+      "Label on each EU dataset",
+      "VPC firewall rules that block non-EU regions",
+      "IAM deny policies attached to every project"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The resource locations organization policy constraint (gcp.resourceLocations) limits where location-based resources can be created, and it inherits down the hierarchy. Firewall rules control traffic, not where data lives, and labels enforce nothing."
+  },
+  {
+    "id": "GCPPDE-T1-016",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Choosing managed services",
+    "stem": "Bigtable row keys start with a timestamp, and one node is overloaded. What is the best fix?",
+    "options": [
+      "Add more column families to the table",
+      "Put device ID before the timestamp",
+      "Shorten the column qualifiers",
+      "Increase garbage collection"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Keys that start with a timestamp send every new write to the end of the key range and so to one node. Leading with a high-cardinality value such as device ID spreads writes across nodes."
+  },
+  {
+    "id": "GCPPDE-T1-017",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Deciding the degree of data normalization",
+    "stem": "Each order has a varying list of line items, and queries always read them together. How should BigQuery store them?",
+    "options": [
+      "JSON text parsed in each query",
+      "One column for each possible line item",
+      "Repeated record inside each order row",
+      "Separate line items table joined each time"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Nested and repeated fields (an ARRAY of STRUCT) keep line items with their order, so queries avoid a join and read the data together. Joining two large tables on every query costs more slots and shuffle."
+  },
+  {
+    "id": "GCPPDE-T1-018",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Transformations: batch",
+    "stem": "A daily file has about 2% malformed rows that must not stop the Dataflow job. What is the best pattern?",
+    "options": [
+      "Route bad rows to a dead-letter output",
+      "Fail the job and fix the file",
+      "Drop bad rows with no record",
+      "Retry each bad row until it finally parses"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A dead-letter pattern sends records that fail parsing to a side output, such as an error table, so good rows load and bad ones can be fixed and replayed. Dropping them silently loses data, and retrying a malformed row never succeeds."
+  },
+  {
+    "id": "GCPPDE-T1-019",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Connecting to tools",
+    "stem": "Business users want to explore billions of BigQuery rows in a familiar spreadsheet, without exports. What fits?",
+    "options": [
+      "Cloud Shell editor",
+      "Connected Sheets",
+      "CSV download to a laptop",
+      "Firestore console"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Connected Sheets lets Google Sheets users run pivots, charts and formulas on BigQuery data in place, with BigQuery doing the work. Downloads hit row limits and go stale."
+  },
+  {
+    "id": "GCPPDE-T1-020",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Observability of data processes",
+    "stem": "A Pub/Sub subscriber falls behind and messages pile up. Which metric should trigger an alert?",
+    "options": [
+      "Oldest unacked message age",
+      "Subscription ack deadline",
+      "Number of IAM bindings",
+      "Topic publish request count"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The oldest unacknowledged message age shows how far behind a subscriber is. A rising value with a growing backlog means consumers are not keeping up, so a Cloud Monitoring alert on it catches the problem early."
+  },
+  {
+    "id": "GCPPDE-T1-021",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Planning migration to Google Cloud",
+    "stem": "A data center holds 900 TB of archives and its uplink is slow and shared. How should the data reach Cloud Storage?",
+    "options": [
+      "Transfer Appliance",
+      "gcloud storage cp from one server",
+      "Datastream to Cloud Storage",
+      "Storage Transfer Service over the uplink"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Transfer Appliance is a physical device that is filled on premises and shipped to Google, which suits hundreds of terabytes over a weak link. Online transfer of that volume would take months on a slow shared line."
+  },
+  {
+    "id": "GCPPDE-T1-022",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identifying the services: Pub/Sub",
+    "stem": "A subscriber crashed and its messages were acknowledged by a bug. How can the last six hours be reprocessed?",
+    "options": [
+      "Recreate the topic",
+      "Raise the ack deadline to the maximum",
+      "Turn on message ordering and redeliver",
+      "Seek the subscription to a past time"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "If the subscription retains acknowledged messages, a seek to a timestamp marks them unacknowledged again so they are redelivered. A new topic has none of the old messages."
+  },
+  {
+    "id": "GCPPDE-T1-023",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data security",
+    "stem": "A regulator requires that the company can revoke access to BigQuery data by disabling its own key. What should be used?",
+    "options": [
+      "Google-owned default keys",
+      "Column-level policy tags",
+      "Client-side gzip compression",
+      "CMEK in Cloud KMS"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Customer-managed encryption keys live in the customer's Cloud KMS project. Disabling or destroying the key version makes the protected data unreadable. Default encryption uses Google-owned keys the customer cannot revoke, and policy tags control who reads a column, not the key."
+  },
+  {
+    "id": "GCPPDE-T1-024",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data acquisition and import",
+    "stem": "Marketing wants Google Ads and YouTube channel data loaded into BigQuery every day with no code. What fits?",
+    "options": [
+      "Pub/Sub subscription that writes to BigQuery",
+      "Transfer Appliance shipped each day",
+      "Datastream",
+      "BigQuery Data Transfer Service"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The BigQuery Data Transfer Service has managed connectors for Google marketing sources and runs them on a schedule. Datastream replicates databases, and Pub/Sub carries events your own systems publish."
+  },
+  {
+    "id": "GCPPDE-T1-025",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lifecycle management of data",
+    "stem": "Logs in Cloud Storage are read often for 30 days, rarely for a year, then must be deleted. What automates this?",
+    "options": [
+      "Manual moves each month",
+      "Object versioning alone",
+      "Object Lifecycle Management rules",
+      "Larger bucket quota"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lifecycle rules can change an object's storage class by age, for example to Coldline after 30 days, and delete it after a year. Versioning keeps old versions; it does not move or delete objects by age."
+  },
+  {
+    "id": "GCPPDE-T1-026",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Managing the lake",
+    "stem": "Raw files in Cloud Storage must be found and queryable in BigQuery without someone defining each table. What fits?",
+    "options": [
+      "Manual external table definitions for each file",
+      "Automatic discovery in Knowledge Catalog",
+      "Load jobs that copy every file into BigQuery",
+      "A list of paths in a wiki"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Knowledge Catalog (formerly Dataplex Universal Catalog) can scan Cloud Storage, infer schemas and publish the files as tables that BigQuery can query. Hand-made definitions do not keep up as new folders appear."
+  },
+  {
+    "id": "GCPPDE-T1-027",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Security, data masking and IAM",
+    "stem": "Support staff should see only the last four digits of phone numbers in a BigQuery table. What should be used?",
+    "options": [
+      "Nightly copy of the table with phones nulled",
+      "Row access policy on the table",
+      "Masking rule on a policy tag",
+      "Separate authorized view for each staff member"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Dynamic data masking applies a data policy, here the last four characters rule, to a column through a policy tag, and users with the Masked Reader role see masked values. Row access policies filter rows, not values."
+  },
+  {
+    "id": "GCPPDE-T1-028",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Troubleshooting error messages, billing issues and quotas",
+    "stem": "One analyst's query scanned 80 TB by mistake on on-demand pricing. Which control stops a repeat?",
+    "options": [
+      "Maximum bytes billed",
+      "Shorter time travel window",
+      "Smaller BI Engine reservation for the user",
+      "More clustering columns"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Setting maximum bytes billed makes a query fail before running if it would bill more than the limit; custom quotas per user or project cap daily usage too. The other settings do not limit what a query scans."
+  },
+  {
+    "id": "GCPPDE-T1-029",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data validation",
+    "stem": "After migrating a warehouse to BigQuery, how can the team show the data arrived complete and unchanged?",
+    "options": [
+      "Compare the two schemas only",
+      "Sample ten rows from each table",
+      "Check every load job finished without errors",
+      "Compare row counts and column checksums"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Row counts catch missing records, and aggregates or checksums per column catch changed values, giving evidence for every table. A successful job only means it ran, and a schema match says nothing about the rows."
+  },
+  {
+    "id": "GCPPDE-T1-030",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Transformations: streaming (exactly once)",
+    "select": 2,
+    "stem": "Which two facts about Pub/Sub delivery should a pipeline design account for? (Choose two.)",
+    "options": [
+      "Order holds across the whole topic",
+      "Order holds only per ordering key",
+      "Delivery is at least once by default",
+      "Messages never expire unread",
+      "Every message arrives exactly once by default"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "By default Pub/Sub may redeliver a message, so consumers must handle duplicates. Ordering, when enabled, applies to messages with the same ordering key in the same region. Unacknowledged messages are kept only for the retention period, seven days by default."
+  },
+  {
+    "id": "GCPPDE-T1-031",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Designing system for fault tolerance and managing restarts",
+    "select": 2,
+    "stem": "A daily load job sometimes fails halfway and is rerun. Which two designs avoid duplicate rows? (Choose two.)",
+    "options": [
+      "Disable retries on the task",
+      "MERGE on a business key",
+      "Insert with a new random ID per run",
+      "Append every run to the table",
+      "Overwrite the day's partition"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "Overwriting one partition (WRITE_TRUNCATE on that partition) or using MERGE on a natural key both give the same result however many times the job runs. Appending, or adding fresh random IDs, duplicates rows on rerun."
+  },
+  {
+    "id": "GCPPDE-T1-032",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "CI/CD",
+    "stem": "How should a team test Apache Beam transforms before each deployment?",
+    "options": [
+      "Read the job graph in the console",
+      "Unit tests with TestPipeline in CI",
+      "Run the full job in production first",
+      "Wait for users to report errors"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Beam's TestPipeline runs transforms locally on small inputs and asserts on the output, so a CI step such as Cloud Build catches logic errors before a job is deployed. Testing in production finds errors after the data is wrong."
+  },
+  {
+    "id": "GCPPDE-T1-033",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Preparing data for feature engineering",
+    "select": 2,
+    "stem": "A churn model in BigQuery ML scores well in testing but poorly in production. Which two causes are likely? (Choose two.)",
+    "options": [
+      "Table stored in a multi-region",
+      "A feature only known after churn",
+      "Too few BigQuery slots",
+      "Training rows that leak the test period",
+      "Model saved in a dataset"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Using information that is only known after the outcome, or splitting data so the test period leaks into training, makes test scores look better than real use. Slots and storage location change speed, not accuracy."
+  },
+  {
+    "id": "GCPPDE-T1-034",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Multi-environment use cases",
+    "select": 2,
+    "stem": "A team runs development and production pipelines on the same datasets today. Which two changes separate them best? (Choose two.)",
+    "options": [
+      "Different labels on dev jobs",
+      "Service accounts per environment",
+      "Table name suffixes for each environment",
+      "One shared service account with Owner",
+      "Separate projects for dev and prod"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "Projects are the boundary for IAM, quotas and billing, so a separate production project keeps development jobs away from production data. A service account per environment means a dev job cannot write to prod. Suffixes and labels are naming conventions, not access boundaries."
+  },
+  {
+    "id": "GCPPDE-T1-035",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Planning for storage costs and performance",
+    "select": 2,
+    "stem": "Which two settings cut BigQuery storage cost for a large table of old events? (Choose two.)",
+    "options": [
+      "Let old partitions reach long-term storage",
+      "Partition expiration on the table",
+      "Clustering on four more columns",
+      "Turning on BI Engine",
+      "Copying the table each month"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Partition expiration deletes partitions past their useful age. Partitions not modified for 90 consecutive days move to the cheaper long-term storage rate automatically. Copies add storage, and BI Engine speeds queries."
+  },
+  {
+    "id": "GCPPDE-T1-036",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Building a federated governance model",
+    "select": 2,
+    "stem": "Several business domains own their data, but security rules must be the same everywhere. Which two choices fit? (Choose two.)",
+    "options": [
+      "Each domain sets its own IAM rules freely",
+      "All data copied into one shared project",
+      "Central policies applied across all domains",
+      "Domains publish and own their data products",
+      "One central team builds every pipeline"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Federated governance (a data mesh) lets domain teams own and publish their data, while shared policies for access, classification and quality apply everywhere. A single central team becomes a bottleneck, and fully free rules break consistency."
+  },
+  {
+    "id": "GCPPDE-T1-037",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Creating DAGs for Managed Service for Apache Airflow",
+    "stem": "Where are DAG files placed so a Managed Service for Apache Airflow environment picks them up?",
+    "options": [
+      "The environment's Pub/Sub notification topic",
+      "A Bigtable instance",
+      "The environment's Cloud Storage bucket",
+      "A BigQuery dataset in the environment's project"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each environment of Managed Service for Apache Airflow (formerly Cloud Composer) has a Cloud Storage bucket that holds its DAGs, plugins and logs, and files added to the DAGs folder are synced to the scheduler."
+  },
+  {
+    "id": "GCPPDE-T1-038",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Disaster recovery and fault tolerance",
+    "select": 2,
+    "stem": "A streaming pipeline must survive a zonal outage with no lost messages. Which two choices support this? (Choose two.)",
+    "options": [
+      "Pub/Sub as the durable source",
+      "Local SSD for message buffering",
+      "Dataflow job in a region, not a zone",
+      "Workers pinned to one zone",
+      "Single-zone Bigtable cluster as sink"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Pub/Sub stores messages across zones until they are acknowledged, so a restarted pipeline loses nothing. A Dataflow job placed by region (with Streaming Engine) can recreate its workers in another zone of that region if one zone fails. Pinning to one zone or buffering on local SSD ties the pipeline to the failed zone."
+  },
+  {
+    "id": "GCPPDE-T1-039",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Streaming into BigQuery",
+    "stem": "JSON events on a Pub/Sub topic must land in a BigQuery table as they are, with no transformation. What is simplest?",
+    "options": [
+      "Hourly load job",
+      "Cloud Run subscriber",
+      "Dataflow Pub/Sub to BigQuery template",
+      "BigQuery subscription"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A BigQuery subscription writes each message straight into an existing table, with no subscriber code or pipeline. Dataflow is worth adding only when messages need transforming, windowing or aggregating."
+  },
+  {
+    "id": "GCPPDE-T1-040",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Job automation and orchestration",
+    "select": 2,
+    "stem": "Which two needs suggest Workflows rather than Managed Service for Apache Airflow? (Choose two.)",
+    "options": [
+      "Hundreds of tasks across many systems",
+      "No always-on environment to pay for",
+      "A few serverless API calls in sequence",
+      "Backfilling a year of daily runs",
+      "Reusing a large set of Airflow operators"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Workflows runs short serverless sequences of HTTP and Google API calls and costs nothing while idle. Large DAGs, backfills and Airflow's operator library point to Managed Service for Apache Airflow (formerly Cloud Composer)."
+  },
+  {
+    "id": "GCPPDE-T1-041",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Preparing unstructured data for embeddings and RAG",
+    "stem": "Long policy documents will feed a retrieval-augmented assistant. What should happen before creating embeddings?",
+    "options": [
+      "Convert them to images",
+      "Remove all headings",
+      "Merge them into one large file",
+      "Split them into smaller chunks"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Chunking breaks documents into passages small enough to embed and retrieve precisely, so the assistant gets the paragraph that answers the question. One huge embedding blurs many topics together."
+  },
+  {
+    "id": "GCPPDE-T1-042",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data replication and failover",
+    "stem": "A Cloud SQL database must keep running if its zone fails. Which setting fits?",
+    "options": [
+      "Read replica in the same zone as primary",
+      "High availability setup",
+      "Larger machine type and disk",
+      "Daily export to a bucket"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A Cloud SQL HA instance keeps a standby in another zone of the region and fails over automatically if the primary's zone fails. Read replicas serve reads and must be promoted by hand."
+  },
+  {
+    "id": "GCPPDE-T1-043",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Privacy",
+    "stem": "Customer emails in a support table must stay joinable across tables, but analysts must never read them. Which approach fits?",
+    "options": [
+      "Masking all but the last four characters",
+      "Redacting the email column in every table",
+      "Deterministic encryption of the emails",
+      "Date shifting the records"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sensitive Data Protection's deterministic encryption turns the same email into the same token every time, so joins still work, and it can be reversed only with the key. Redaction removes the value, so nothing can be joined, and partial masking leaves different emails looking alike."
+  },
+  {
+    "id": "GCPPDE-T1-044",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Choosing managed services",
+    "stem": "Which AlloyDB for PostgreSQL feature speeds analytic queries on live transactional data?",
+    "options": [
+      "Columnar engine",
+      "Cross-region replication",
+      "Query insights dashboard",
+      "Point-in-time recovery"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AlloyDB's columnar engine keeps frequently scanned columns in an in-memory column format, so aggregates on live data run much faster. Query insights helps diagnose queries but does not speed them up."
+  },
+  {
+    "id": "GCPPDE-T1-045",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mapping business requirements",
+    "stem": "Finance needs account balances exactly as they stood at each month end, including past customer tiers. How should tiers be modelled?",
+    "options": [
+      "Store only the latest tier",
+      "Overwrite the tier in place each month",
+      "Slowly changing dimension, type 2",
+      "Drop the tier column"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A type 2 slowly changing dimension adds a new row with valid-from and valid-to dates when an attribute changes, so history is kept. Overwriting (type 1) loses past values."
+  },
+  {
+    "id": "GCPPDE-T1-046",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data staging, cataloging, profiling and discovery",
+    "stem": "Teams cannot find which tables hold customer data or who owns them. What should the platform use?",
+    "options": [
+      "Cloud Logging log buckets",
+      "A shared spreadsheet listing table owners",
+      "BigQuery slot reservations",
+      "Knowledge Catalog search"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Knowledge Catalog (formerly Dataplex Universal Catalog) indexes BigQuery, Cloud Storage and other assets so users can search them and attach business metadata such as owners and descriptions. A hand-kept spreadsheet goes stale."
+  },
+  {
+    "id": "GCPPDE-T1-047",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Deploying and operationalizing the pipelines",
+    "stem": "A streaming Dataflow job needs new code without losing in-flight data or window state. What should be done?",
+    "options": [
+      "Pause Pub/Sub publishing for a day",
+      "Update the job in place",
+      "Cancel it and start a new job",
+      "Delete the subscription first"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Updating a running streaming job replaces its code while keeping buffered data and state, as long as the new pipeline is compatible. Cancelling stops at once and can lose in-flight data."
+  },
+  {
+    "id": "GCPPDE-T1-048",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AI data enrichment",
+    "stem": "Product reviews in BigQuery need a sentiment label for each row using a Gemini model. What avoids moving the data out?",
+    "options": [
+      "Export reviews to a laptop script",
+      "Label them by hand in a sheet",
+      "Call the model from BigQuery SQL",
+      "Copy them into Memorystore first"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "BigQuery can call Gemini models hosted in Agent Platform (formerly Vertex AI) from SQL through a remote model or AI functions, writing the labels back to a table. Exporting the data adds copies, delays and risk."
+  },
+  {
+    "id": "GCPPDE-T1-049",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "BigQuery sharing",
+    "stem": "A company will publish a dataset to partners, who must not be able to copy or export it. What fits?",
+    "options": [
+      "Shared service account key for each partner",
+      "Public bucket with signed URLs per partner",
+      "Weekly CSV emails",
+      "BigQuery sharing with export limits"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "BigQuery sharing (formerly Analytics Hub) gives subscribers a read-only linked dataset without copying data, and the publisher can restrict copy, export and snapshot. Files and shared keys give no such control."
+  },
+  {
+    "id": "GCPPDE-T1-050",
+    "section": "pde",
+    "test": 1,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Preparing for data corruption and missing data",
+    "stem": "Before a risky bulk update, a team wants a cheap point-in-time copy of a BigQuery table kept for a month. What fits?",
+    "options": [
+      "Materialized view",
+      "Export to Nearline weekly",
+      "Full table copy each day",
+      "Table snapshot"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A table snapshot is a read-only copy of a table at a point in time, and it is charged only for data that differs from the base table. It can be kept longer than the time travel window."
+  },
+  {
+    "id": "GCPPDE-T2-001",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Minimizing costs per required business need",
+    "stem": "Secondary workers in a Spark cluster can be interrupted. Which work suits them best?",
+    "options": [
+      "Storing HDFS data",
+      "Running the cluster's master node",
+      "Fault-tolerant batch processing",
+      "Hosting a live database on the workers"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Spot or preemptible secondary workers cost less and can be taken back, so they suit batch tasks that Spark can retry. They do not store HDFS data, and the master must stay on standard VMs."
+  },
+  {
+    "id": "GCPPDE-T2-002",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Identifying the services",
+    "stem": "A new pipeline has no existing code and must run the same logic for batch backfills and live streams. Which service fits?",
+    "options": [
+      "Managed Service for Apache Spark",
+      "Cloud Data Fusion Wrangler",
+      "BigQuery Data Transfer Service",
+      "Dataflow"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Apache Beam's model treats batch and streaming the same way, so one Dataflow pipeline can process a backfill from files and a live feed from Pub/Sub. Spark Structured Streaming exists, but Dataflow is the serverless, unified choice for new code."
+  },
+  {
+    "id": "GCPPDE-T2-003",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "BigQuery features for business intelligence",
+    "stem": "A Looker Studio dashboard on BigQuery needs sub-second response for many users. Which feature accelerates it?",
+    "options": [
+      "Table snapshots",
+      "Pub/Sub ordering",
+      "Larger Cloud Storage bucket",
+      "BI Engine reservation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "BI Engine is an in-memory analysis service that caches data used by dashboards and speeds up their queries. Snapshots and buckets do not change dashboard latency."
+  },
+  {
+    "id": "GCPPDE-T2-004",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Planning migration to Google Cloud",
+    "stem": "A Teradata warehouse is moving to BigQuery, and its schema and data must be copied over. Which service is built for this?",
+    "options": [
+      "Database Migration Service for Teradata",
+      "Transfer Appliance",
+      "BigQuery Data Transfer Service",
+      "Cloud Data Fusion Wrangler"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The BigQuery Data Transfer Service has a Teradata migration that moves schema and data into BigQuery. Database Migration Service targets Cloud SQL and AlloyDB, not BigQuery."
+  },
+  {
+    "id": "GCPPDE-T2-005",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transformations: streaming (windowing)",
+    "stem": "Every minute a chart needs the average temperature over the last 10 minutes. Which window fits?",
+    "options": [
+      "Hopping window, 10 minutes every minute",
+      "Tumbling window of 1 minute",
+      "Tumbling window of 10 minutes",
+      "Session window with a 10-minute gap per key"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A hopping (sliding) window has a size and a period, so 10-minute windows starting every minute overlap and give a rolling average. Tumbling windows do not overlap, so a 10-minute one updates only every 10 minutes."
+  },
+  {
+    "id": "GCPPDE-T2-006",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Designing project, dataset and table architecture",
+    "stem": "Finance and marketing tables share one dataset, and each team must see only its own tables. What is the simplest fix?",
+    "options": [
+      "Rename the tables with a team prefix",
+      "Split them into one dataset per team",
+      "Move both teams to a new project",
+      "Add a row access policy to each table"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "BigQuery grants are easiest to manage at the dataset level, so putting each team's tables in its own dataset lets one grant cover them. Row access policies filter rows inside a table, and prefixes do not control access."
+  },
+  {
+    "id": "GCPPDE-T2-007",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Choosing managed services",
+    "stem": "User profiles each have different optional fields and are read by user ID from a web app. Which store fits?",
+    "options": [
+      "Spanner",
+      "Bigtable",
+      "Firestore",
+      "BigQuery"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Firestore stores documents whose fields can differ from one document to the next and reads them by ID with low latency. BigQuery is for analytic scans, not per-user lookups."
+  },
+  {
+    "id": "GCPPDE-T2-008",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Designing the data model",
+    "stem": "Which design choice usually makes BigQuery queries faster than a fully normalised schema?",
+    "options": [
+      "More small normalised tables joined at query time",
+      "Denormalised tables with nested fields",
+      "A separate dataset per column",
+      "Foreign key constraints declared on every table"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "BigQuery is columnar and distributed, so denormalised tables with nested and repeated fields avoid costly joins. Highly normalised schemas suit transactional systems more than analytic scans."
+  },
+  {
+    "id": "GCPPDE-T2-009",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Capacity management",
+    "stem": "Steady BigQuery usage needs predictable cost and fine-grained security. Which choice fits?",
+    "options": [
+      "Standard edition with on-demand",
+      "On-demand pricing with no reservation",
+      "Standard edition with a three-year commitment",
+      "Enterprise with a commitment"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Enterprise edition includes fine-grained security such as row-level and column-level controls, and capacity commitments give a discount for steady use. Standard edition has neither commitments nor fine-grained security."
+  },
+  {
+    "id": "GCPPDE-T2-010",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defining data sources and sinks",
+    "stem": "Raw daily files must be kept cheaply as received, then loaded and transformed in BigQuery. Where should they land first?",
+    "options": [
+      "Firestore collection",
+      "Persistent disk on a VM",
+      "Memorystore instance",
+      "Cloud Storage bucket"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Cloud Storage is the usual landing zone: cheap, durable and readable by BigQuery load jobs and external tables. A VM disk is tied to one machine and Memorystore is an in-memory cache."
+  },
+  {
+    "id": "GCPPDE-T2-011",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Troubleshooting poor performing queries",
+    "stem": "A query on a partitioned table filters with a function applied to the partition column and still scans everything. What is the fix?",
+    "options": [
+      "Increase the query timeout and slot quota",
+      "Filter the partition column directly",
+      "Add ORDER BY to the query",
+      "Use SELECT * explicitly"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Pruning works when the filter compares the partitioning column with constants; wrapping the column in some functions or comparing it to a subquery can stop pruning. ORDER BY and timeouts do not reduce bytes read."
+  },
+  {
+    "id": "GCPPDE-T2-012",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Planning migration to Google Cloud",
+    "stem": "An on-premises MySQL database must move to Cloud SQL with minimal downtime. Which service fits?",
+    "options": [
+      "Transfer Appliance",
+      "Storage Transfer Service",
+      "BigQuery Data Transfer Service",
+      "Database Migration Service"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Database Migration Service does an initial load and then replicates changes continuously, so the cutover is short. The other services move files or load BigQuery, not live MySQL databases."
+  },
+  {
+    "id": "GCPPDE-T2-013",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Transformations: streaming (watermarks)",
+    "stem": "What does a Dataflow watermark represent?",
+    "options": [
+      "Estimate that a window's input is complete",
+      "Time the job was last updated",
+      "Count of Pub/Sub messages still unacknowledged",
+      "Highest event time seen by any worker so far"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The watermark is Dataflow's estimate of the event time up to which all data has arrived. When it passes the end of a window, the default trigger emits that window's result."
+  },
+  {
+    "id": "GCPPDE-T2-014",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ensuring enough resources for critical processes",
+    "stem": "A month-end job must finish on time even when other work is busy. How should slots be arranged?",
+    "options": [
+      "Run it on on-demand with a low quota",
+      "Split it across many small projects",
+      "Rely only on idle slots",
+      "Baseline slots reserved for that job"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Baseline slots in a reservation are always available to it, so critical work is not squeezed. Idle slots borrowed from others may not be there at month end."
+  },
+  {
+    "id": "GCPPDE-T2-015",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data security",
+    "stem": "Security wants CMEK keys managed apart from the teams that own the data. Where should the keys live?",
+    "options": [
+      "Each data project's own key ring",
+      "A dedicated Cloud KMS project",
+      "A secret in the pipeline code",
+      "A bucket shared by all teams"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Holding keys in a separate project lets a security team manage and audit them while data owners only get permission to use them, which separates duties. Keys in each data project give data admins control of their own keys."
+  },
+  {
+    "id": "GCPPDE-T2-016",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Analyzing data access patterns",
+    "stem": "A pipeline looks up a few thousand exchange rates per second and needs sub-millisecond reads. Which store fits?",
+    "options": [
+      "BigQuery",
+      "Cloud Storage",
+      "Memorystore",
+      "Spanner"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Memorystore is a managed in-memory store (Redis or Valkey) with sub-millisecond reads, suited to small hot lookups. BigQuery and Cloud Storage are far slower for single-key reads."
+  },
+  {
+    "id": "GCPPDE-T2-017",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Defining architecture to support data access patterns",
+    "stem": "Data is kept in daily tables named events_YYYYMMDD and queried with wildcards. What does Google recommend instead?",
+    "options": [
+      "A view over every shard",
+      "More sharded tables per hour",
+      "A separate project per year",
+      "One date-partitioned table"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Date-sharded tables each carry their own schema and metadata and are slower to query. A single partitioned table prunes by date and is easier to manage."
+  },
+  {
+    "id": "GCPPDE-T2-018",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data encryption",
+    "stem": "A Dataflow job reads CMEK-protected tables. What must the Dataflow service accounts be granted on the key?",
+    "options": [
+      "Key Viewer role only",
+      "Encrypter/Decrypter role",
+      "Nothing, Dataflow bypasses KMS",
+      "Cloud KMS Admin role"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "To use a customer-managed key, the Dataflow service agent and the Compute Engine service agent need the Cloud KMS CryptoKey Encrypter/Decrypter role on it. Admin rights manage keys but are more than the job needs."
+  },
+  {
+    "id": "GCPPDE-T2-019",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Precalculating fields",
+    "stem": "Every dashboard query computes a customer's lifetime value from raw orders. What is a better approach?",
+    "options": [
+      "Store it in a Pub/Sub topic each night",
+      "Ask users to filter fewer rows",
+      "A precomputed summary table",
+      "Calculate it in each chart"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Precalculating a field in a scheduled summary table or materialized view computes it once, so dashboards read a small result instead of scanning raw orders on every load."
+  },
+  {
+    "id": "GCPPDE-T2-020",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Observability of data processes",
+    "stem": "A Dataflow job looks healthy, but its output in BigQuery has stopped updating. Which metric shows this best?",
+    "options": [
+      "Data freshness",
+      "Bytes read from Pub/Sub",
+      "Number of job versions",
+      "Worker CPU usage"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Data freshness measures how far behind real time the job's processing is. Workers can look busy and healthy while freshness grows, which shows the output is falling behind."
+  },
+  {
+    "id": "GCPPDE-T2-021",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Designing for data and application portability",
+    "stem": "A company must run the same Spark jobs on premises and in two clouds. Which design keeps them portable?",
+    "options": [
+      "Proprietary drag-and-drop ETL",
+      "Open-source Spark on managed clusters",
+      "Rewrite them as BigQuery stored procedures",
+      "Hard-code bucket names in each job"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Spark code runs on Managed Service for Apache Spark (formerly Dataproc) and on any other Spark platform, so the same job moves between environments. Stored procedures and vendor-only tools tie the logic to one platform."
+  },
+  {
+    "id": "GCPPDE-T2-022",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identifying the services: Pub/Sub",
+    "stem": "Some messages fail processing every time and block a push subscription with retries. What should be added?",
+    "options": [
+      "Second region",
+      "Dead-letter topic",
+      "Larger message size",
+      "Ordering key"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "After a set number of failed delivery attempts, 5 by default and up to 100, Pub/Sub forwards the message to the dead-letter topic so it can be inspected while the rest flow on."
+  },
+  {
+    "id": "GCPPDE-T2-023",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identity and Access Management",
+    "stem": "A Dataflow job reads a bucket and writes BigQuery tables. Which identity should hold those permissions?",
+    "options": [
+      "The Compute Engine default account",
+      "A shared Owner account for all jobs",
+      "A dedicated worker service account",
+      "The developer's user account"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Dataflow workers act as the worker service account, so a dedicated account with only Storage Object Viewer on the bucket and Data Editor on the target dataset follows least privilege. The default Compute Engine account often has the broad Editor role."
+  },
+  {
+    "id": "GCPPDE-T2-024",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Transformations: batch",
+    "stem": "A batch job joins a 2 TB orders file to a 5 MB currency table. Which Beam approach keeps the join cheap?",
+    "options": [
+      "CoGroupByKey on both inputs by currency",
+      "Repartition the small table to match the large",
+      "Pass the small table as a side input",
+      "Write both to Bigtable first"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A side input sends the small table to every worker, so each order is enriched without shuffling the 2 TB input. CoGroupByKey shuffles both sides by key, which is costly for a small lookup."
+  },
+  {
+    "id": "GCPPDE-T2-025",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Choosing managed services",
+    "stem": "Parquet files in Cloud Storage need row and column security in BigQuery without loading them. What fits?",
+    "options": [
+      "BigLake tables",
+      "Plain external tables",
+      "Bigtable replication",
+      "Load jobs each night"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "BigLake tables read files in Cloud Storage through a connection and support fine-grained security such as row-level and column-level controls. Plain external tables need users to have direct access to the files."
+  },
+  {
+    "id": "GCPPDE-T2-026",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Processing data",
+    "stem": "A data lake holds raw, cleaned and curated layers. Where should most users query?",
+    "options": [
+      "Staging scratch area",
+      "Curated layer",
+      "Source system backups",
+      "Raw landing layer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Curated data has been cleaned, joined and documented for use, so most analysts should query it. Raw layers keep the original data for replay and auditing, and are best limited to engineers."
+  },
+  {
+    "id": "GCPPDE-T2-027",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Preparing data for training and serving",
+    "select": 2,
+    "stem": "A BigQuery ML model applies scaling and one-hot encoding to features. Which two steps keep serving consistent with training? (Choose two.)",
+    "options": [
+      "Put preprocessing in a TRANSFORM clause",
+      "Train on already scaled exports only",
+      "Score with ML.PREDICT on raw columns",
+      "Scale features by hand at prediction",
+      "Rewrite preprocessing in each app"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "The TRANSFORM clause stores the preprocessing with the model, and ML.PREDICT applies it automatically to raw input, so training and serving match. Reimplementing the steps elsewhere risks small differences that skew predictions."
+  },
+  {
+    "id": "GCPPDE-T2-028",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Troubleshooting error messages, billing issues and quotas",
+    "stem": "A pipeline gets rateLimitExceeded errors from a BigQuery API. What is the right response?",
+    "options": [
+      "Retry immediately in a tight loop",
+      "Delete the dataset and retry",
+      "Switch the table to Bigtable",
+      "Exponential backoff retries"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rate limit errors are temporary, so retrying with exponential backoff and jitter lets requests through as the limit resets. Immediate retries add load and keep hitting the limit."
+  },
+  {
+    "id": "GCPPDE-T2-029",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Monitoring and orchestration of data pipelines",
+    "stem": "A nightly job must start only after three upstream loads finish, then retry on failure and alert. What fits?",
+    "options": [
+      "One large shell script",
+      "Three cron jobs at fixed times",
+      "Manual runs by the on-call engineer",
+      "Airflow DAG with task dependencies"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An Airflow DAG, run on Managed Service for Apache Airflow (formerly Cloud Composer), models the upstream tasks as dependencies, retries failed tasks and can alert. Fixed cron times break when an upstream load runs late."
+  },
+  {
+    "id": "GCPPDE-T2-030",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Identifying the services: Apache Kafka",
+    "select": 2,
+    "stem": "A company runs self-managed Kafka and wants Google to operate it with existing clients. Which two facts fit? (Choose two.)",
+    "options": [
+      "Clients keep the Kafka protocol",
+      "Managed Service for Apache Kafka exists",
+      "Topics must be rewritten for Pub/Sub",
+      "Kafka is supported only on premises",
+      "Kafka data must go to Bigtable"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Google Cloud Managed Service for Apache Kafka runs Kafka clusters for you, and producers and consumers keep using standard Kafka client libraries. Moving to Pub/Sub is an option but means changing the clients."
+  },
+  {
+    "id": "GCPPDE-T2-031",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Running jobs in multiple regions or zones",
+    "select": 2,
+    "stem": "Which two designs help a BigQuery-based platform recover from the loss of a region? (Choose two.)",
+    "options": [
+      "Use one zonal disk for exports",
+      "Store backups in the same region only",
+      "Keep pipeline code deployable in either region",
+      "Replicate key datasets to a second region",
+      "Rely on the time travel window"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Cross-region replication of datasets, or managed disaster recovery on Enterprise Plus, keeps a copy readable elsewhere, and pipelines that can be deployed in the second region can resume work. Time travel and same-region backups are lost with the region."
+  },
+  {
+    "id": "GCPPDE-T2-032",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Data cleansing",
+    "select": 2,
+    "stem": "Incoming customer records have inconsistent date formats and duplicate rows. Which two steps belong in the pipeline? (Choose two.)",
+    "options": [
+      "Cast all columns to STRING",
+      "Remove duplicates on a business key",
+      "Normalise dates to one format",
+      "Drop every row with a null field",
+      "Sort rows by arrival time only"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Cleansing standardises formats, such as one date format, and removes duplicates on a key that identifies a real record. Dropping all rows with any null loses valid data, and casting everything to text pushes the problem downstream."
+  },
+  {
+    "id": "GCPPDE-T2-033",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Preparing data for training and serving",
+    "stem": "Monthly sales for 500 stores must be forecast in BigQuery ML. Which model type fits?",
+    "options": [
+      "KMEANS",
+      "ARIMA_PLUS",
+      "LOGISTIC_REG",
+      "MATRIX_FACTORIZATION"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "ARIMA_PLUS is BigQuery ML's time series model and can forecast many series at once using a time series ID column. K-means finds clusters, and logistic regression predicts a class."
+  },
+  {
+    "id": "GCPPDE-T2-034",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Legal and regulatory compliance",
+    "select": 2,
+    "stem": "Health data in BigQuery must not be copied to projects outside the approved set, even with valid credentials. Which two controls help? (Choose two.)",
+    "options": [
+      "Shorter time travel window",
+      "Cloud Armor policy on the dataset",
+      "Object versioning on exports",
+      "VPC Service Controls perimeter",
+      "BigQuery sharing egress restrictions"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "A VPC Service Controls perimeter blocks API calls that would move data from protected projects to projects outside it, even for a valid identity. When data is shared through BigQuery sharing, the publisher can restrict copy and export from the linked dataset. Cloud Armor protects web traffic, not BigQuery APIs."
+  },
+  {
+    "id": "GCPPDE-T2-035",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Lifecycle management of data",
+    "select": 2,
+    "stem": "Financial records in a bucket must not be deleted or changed for seven years, even by admins. Which two settings apply? (Choose two.)",
+    "options": [
+      "Soft delete of seven days",
+      "Nearline storage class",
+      "Locked retention policy",
+      "Retention policy of seven years",
+      "Object versioning"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "A bucket retention policy stops objects from being deleted or replaced before they reach the set age, and locking it means no one can shorten or remove the policy. Versioning and soft delete help recovery but do not prevent deletion."
+  },
+  {
+    "id": "GCPPDE-T2-036",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Monitoring the data lake",
+    "select": 2,
+    "stem": "A team wants to know when lake data goes stale or its quality drops. Which two tools fit? (Choose two.)",
+    "options": [
+      "Cloud Monitoring alerts",
+      "Data quality scan results",
+      "Pub/Sub ordering keys",
+      "BigQuery slot commitments",
+      "Bucket requester pays"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Knowledge Catalog data quality scans record pass and fail results for rules such as freshness and nulls, and Cloud Monitoring alerts can notify the team when checks fail or data stops arriving."
+  },
+  {
+    "id": "GCPPDE-T2-037",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scheduling and orchestrating jobs",
+    "stem": "A single SQL statement must run every morning in BigQuery, with no dependencies. What is simplest?",
+    "options": [
+      "Airflow environment",
+      "Spark cluster",
+      "Dataflow template",
+      "Scheduled query"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "BigQuery scheduled queries run SQL on a schedule with no extra infrastructure. An Airflow environment is worth it when there are dependencies across several systems."
+  },
+  {
+    "id": "GCPPDE-T2-038",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Preparing and cleaning data",
+    "select": 2,
+    "stem": "An analyst asks Gemini in BigQuery to write SQL from a plain-language question. Which two habits keep the results trustworthy? (Choose two.)",
+    "options": [
+      "Run it straight into a production table",
+      "Give it the table and column descriptions",
+      "Review the generated SQL before using it",
+      "Turn off column metadata",
+      "Skip checks if the query runs"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Generated SQL can join or filter the wrong way, so a person should read it and check results before relying on them. Clear table and column descriptions give the model the context it needs to pick the right fields."
+  },
+  {
+    "id": "GCPPDE-T2-039",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Streaming into BigQuery",
+    "stem": "A Dataflow job must write to BigQuery with exactly-once semantics at high throughput. Which write method fits?",
+    "options": [
+      "DML INSERT per row",
+      "Legacy streaming inserts",
+      "Load jobs every second",
+      "Storage Write API"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The BigQuery Storage Write API offers exactly-once delivery through stream offsets and higher throughput at lower cost than legacy streaming inserts, which deduplicate only on a best-effort basis. DML per row hits quotas quickly."
+  },
+  {
+    "id": "GCPPDE-T2-040",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Job automation and orchestration",
+    "stem": "An Airflow task loads a partition and is sometimes retried. How should the task be written?",
+    "options": [
+      "So it runs only from the console",
+      "So it skips its retry settings",
+      "So a rerun gives the same result",
+      "So it appends rows on each run"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Idempotent tasks, such as overwriting one date partition, give the same result however many times they run, so retries and backfills are safe. Appending on each run duplicates data after a retry."
+  },
+  {
+    "id": "GCPPDE-T2-041",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Preparing unstructured data for embeddings and RAG",
+    "stem": "Product manuals have embeddings stored in BigQuery. How are the passages closest to a user's question found?",
+    "options": [
+      "LIKE match on keywords",
+      "APPROX_COUNT_DISTINCT on shared words",
+      "VECTOR_SEARCH on the embeddings",
+      "ORDER BY passage length"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "VECTOR_SEARCH compares the question's embedding with stored embeddings and returns the nearest passages by meaning, and a vector index speeds it up on large tables. A keyword match misses passages that use different words."
+  },
+  {
+    "id": "GCPPDE-T2-042",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data replication and failover",
+    "stem": "A Memorystore cache must keep serving if a zone fails. What should be set up?",
+    "options": [
+      "Larger single-node instance",
+      "Nightly RDB export only",
+      "Replicas in other zones",
+      "One shard with no replicas"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Memorystore for Redis Cluster and Valkey can place replicas in other zones and promote one if a primary's zone fails. A single node, even a large one, goes down with its zone."
+  },
+  {
+    "id": "GCPPDE-T2-043",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Privacy",
+    "stem": "Before loading a new vendor feed, a team wants to know which columns hold personal data. Which service helps most?",
+    "options": [
+      "Sensitive Data Protection discovery",
+      "Cloud Audit Logs for data access events",
+      "Cloud Monitoring uptime checks",
+      "BigQuery execution graph"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sensitive Data Protection inspects and profiles data to find infoTypes such as names, emails and card numbers. Audit logs record who read data, not what the data contains."
+  },
+  {
+    "id": "GCPPDE-T2-044",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Planning for storage costs and performance",
+    "stem": "Object access patterns in a bucket are unknown and change over time. Which option manages storage class for cost?",
+    "options": [
+      "Autoclass",
+      "Dual-region placement",
+      "Requester pays",
+      "Coldline default class"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Autoclass moves each object between storage classes based on its access, so rarely read objects get cheaper storage without lifecycle rules or retrieval surprises. A fixed Coldline default charges for retrieval on every read."
+  },
+  {
+    "id": "GCPPDE-T2-045",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Building a data platform",
+    "stem": "Teams define \"active customer\" three different ways. How can one agreed meaning be tied to the right columns?",
+    "options": [
+      "A comment in each SQL file",
+      "Column names in upper case",
+      "Separate tables per definition",
+      "Business glossary terms linked to columns"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A business glossary in Knowledge Catalog (formerly Dataplex Universal Catalog) holds agreed term definitions, and terms can be linked to the columns that carry them, so search and reports point to one meaning. Comments in code are scattered and drift."
+  },
+  {
+    "id": "GCPPDE-T2-046",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mapping current and future business requirements",
+    "stem": "Reports run hourly today, but the business plans minute-level alerts next year. Which ingestion choice keeps options open?",
+    "options": [
+      "Keep hourly CSV dumps to a bucket",
+      "Publish events to Pub/Sub now",
+      "Email files to the analysts",
+      "Load once a day with a cron job"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Landing events on Pub/Sub supports today's hourly batch and a future streaming consumer from the same feed. File dumps would need a redesign when minute-level alerts arrive."
+  },
+  {
+    "id": "GCPPDE-T2-047",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deploying and operationalizing the pipelines",
+    "stem": "A streaming job must be stopped for good, and every buffered element should still be written. What should be used?",
+    "options": [
+      "Drain",
+      "Delete the worker VMs",
+      "Force cancel",
+      "Cancel"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Drain stops reading new input but finishes processing what is buffered, closing open windows. Cancel halts at once and can lose in-flight data."
+  },
+  {
+    "id": "GCPPDE-T2-048",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "CI/CD",
+    "stem": "A team wants Dataflow pipelines launched with parameters from CI, using its own container image. What should it build?",
+    "options": [
+      "Cloud Shell script",
+      "Flex Template",
+      "Classic template",
+      "Notebook export"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A Flex Template packages the pipeline in a container image in Artifact Registry and is launched with parameters, which suits CI/CD. Classic templates build a job graph ahead of time and support fewer runtime choices."
+  },
+  {
+    "id": "GCPPDE-T2-049",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defining rules to share data",
+    "stem": "Before sharing a dataset outside the company, what should be agreed and documented first?",
+    "options": [
+      "The partner's slot reservation",
+      "Uses, access and retention",
+      "Number of columns to rename before sharing",
+      "Dashboard colours and fonts"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A data sharing agreement sets what the data may be used for, who may access it at what level, and how long it may be kept. These rules then drive the technical controls."
+  },
+  {
+    "id": "GCPPDE-T2-050",
+    "section": "pde",
+    "test": 2,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Preparing for data corruption and missing data",
+    "stem": "A feed sometimes arrives with half its rows missing. How can the pipeline catch this before publishing?",
+    "options": [
+      "Publish first, then wait for user complaints",
+      "Turn on object versioning",
+      "Row count range check",
+      "Increase the table expiration"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A volume check compares today's row count with an expected range, such as recent history, and stops publishing when it is far off. Versioning and expiration do nothing to detect a short file."
+  },
+  {
+    "id": "GCPPDE-D-001",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Minimizing costs per required business need",
+    "stem": "On on-demand pricing, what does a BigQuery query cost depend on?",
+    "options": [
+      "Bytes processed",
+      "Query run time",
+      "Number of users",
+      "Rows returned"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "On-demand pricing charges for the bytes a query processes. Capacity-based pricing charges for slot capacity instead."
+  },
+  {
+    "id": "GCPPDE-D-002",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Choosing managed services",
+    "stem": "Which service is built for SQL analytics over terabytes to petabytes?",
+    "options": [
+      "BigQuery",
+      "Cloud SQL",
+      "Memorystore",
+      "Firestore"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "BigQuery is a serverless analytic warehouse that scans large tables in parallel. Cloud SQL is an operational database for transactions."
+  },
+  {
+    "id": "GCPPDE-D-003",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Designing the data model",
+    "stem": "Which schema joins one central fact table directly to several denormalised dimension tables?",
+    "options": [
+      "Data vault",
+      "Star schema",
+      "Snowflake schema",
+      "Third normal form"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A star schema has one fact table with a direct join to each dimension. A snowflake schema normalises dimensions into further tables, adding joins."
+  },
+  {
+    "id": "GCPPDE-D-004",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Identity and Access Management",
+    "stem": "Fifty analysts need read access to a dataset, and staff change often. How should access be granted?",
+    "options": [
+      "With a service account key per user",
+      "To a Google group",
+      "To each user directly",
+      "Through one shared login"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Granting a role to a group means joiners and leavers are handled by group membership, and the IAM policy stays short. Per-user grants drift, and shared logins break auditing."
+  },
+  {
+    "id": "GCPPDE-D-005",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Preparing and cleaning data",
+    "stem": "A business user wants to clean and join CSV files visually, with no code. Which service fits?",
+    "options": [
+      "Dataform",
+      "Cloud Run jobs",
+      "Cloud Data Fusion",
+      "Bigtable"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cloud Data Fusion offers a visual pipeline designer and the Wrangler for interactive cleaning, with no code to write. Dataform needs SQLX, and Cloud Run jobs need container code."
+  },
+  {
+    "id": "GCPPDE-D-006",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Identifying the services",
+    "stem": "Data is already in BigQuery and the transform is a set of SQL joins and aggregates. What is usually simplest?",
+    "options": [
+      "Run it as BigQuery SQL",
+      "Export to Spark and back",
+      "Rewrite it in Beam",
+      "Stream it through Pub/Sub"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When data and logic both fit in BigQuery, transforming in place with SQL avoids moving data and running a separate engine. ELT in the warehouse is a common Google Cloud pattern."
+  },
+  {
+    "id": "GCPPDE-D-007",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Identifying the services: Pub/Sub",
+    "stem": "Many services must each get their own copy of every order event. How is this set up in Pub/Sub?",
+    "options": [
+      "One ack per publisher",
+      "One subscription per service",
+      "One topic per message",
+      "One shared subscription for all services"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each subscription receives every message published to the topic, so each service gets its own copy. Services sharing one subscription split the messages between them."
+  },
+  {
+    "id": "GCPPDE-D-008",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Connecting to tools",
+    "stem": "Which tool defines a governed semantic model in LookML on top of BigQuery?",
+    "options": [
+      "Cloud Shell",
+      "Connected Sheets",
+      "Looker",
+      "Pub/Sub"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Looker's LookML model defines dimensions, measures and joins once so every report uses the same definitions. Connected Sheets works directly from tables without a shared semantic layer."
+  },
+  {
+    "id": "GCPPDE-D-009",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Minimizing costs per required business need",
+    "stem": "A test query must show how many bytes it would scan without running. What should be used?",
+    "options": [
+      "Dry run",
+      "Batch priority",
+      "Query cache",
+      "LIMIT 10"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A dry run validates the query and returns the bytes it would process at no charge. LIMIT does not reduce bytes scanned on most tables."
+  },
+  {
+    "id": "GCPPDE-D-010",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Choosing managed services",
+    "stem": "Which statement about Bigtable is true?",
+    "options": [
+      "Its tables need a fixed set of columns",
+      "Transactions are atomic per row",
+      "It runs standard PostgreSQL",
+      "Rows support foreign keys"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Bigtable guarantees atomic operations within a single row only, so data that must change together belongs in one row. It is a wide-column store with no foreign keys, and rows can have different columns."
+  },
+  {
+    "id": "GCPPDE-D-011",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Designing the data model",
+    "stem": "What does the grain of a fact table describe?",
+    "options": [
+      "How often it is loaded",
+      "What one row represents",
+      "Which region stores it",
+      "How many columns it has"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The grain states exactly what a single row stands for, such as one line on one receipt. Deciding it first keeps measures from being double counted."
+  },
+  {
+    "id": "GCPPDE-D-012",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identity and Access Management",
+    "stem": "A contractor needs to read one table only, not the rest of its dataset. What should be granted?",
+    "options": [
+      "Data Viewer on that table",
+      "Metadata Viewer on the project",
+      "Job User on the dataset",
+      "Data Viewer on the dataset"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "BigQuery supports IAM on individual tables and views, so Data Viewer on the single table limits the contractor to it. A dataset grant exposes every table in it, and Metadata Viewer shows schemas but not rows."
+  },
+  {
+    "id": "GCPPDE-D-013",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data validation",
+    "stem": "A daily table must never contain a null order ID or duplicate rows. Where can this be checked automatically?",
+    "options": [
+      "Cloud KMS key rings",
+      "BigQuery labels",
+      "Dataform assertions",
+      "VPC flow logs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Dataform assertions are queries that look for rows breaking a rule, such as nulls or duplicate keys, and fail the run when they find any. Labels and key rings do not inspect data."
+  },
+  {
+    "id": "GCPPDE-D-014",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identifying the services",
+    "stem": "Which statement about Cloud Data Fusion is true?",
+    "options": [
+      "It stores data in its own warehouse",
+      "Pipelines run on Spark clusters",
+      "It needs Beam code for each pipeline",
+      "It only supports streaming sources"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cloud Data Fusion pipelines built in its visual designer run as Spark jobs on ephemeral clusters it creates. It supports batch and real-time pipelines and writes to sinks such as BigQuery."
+  },
+  {
+    "id": "GCPPDE-D-015",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identifying the services: Pub/Sub",
+    "stem": "What is the default message retention for a Pub/Sub subscription?",
+    "options": [
+      "31 days",
+      "7 days",
+      "24 hours",
+      "10 minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Unacknowledged messages are kept for 7 days by default; the setting can be from 10 minutes to 31 days. Retention beyond 24 hours adds cost."
+  },
+  {
+    "id": "GCPPDE-D-016",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Troubleshooting poor performing queries",
+    "stem": "On on-demand pricing, which change reduces the bytes a query is billed for?",
+    "options": [
+      "Selecting only the needed columns",
+      "Ordering by the primary column",
+      "Adding LIMIT 100",
+      "Running it twice to use the query cache"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "BigQuery is columnar, so bytes billed depend on the columns read. LIMIT does not reduce bytes scanned on a non-clustered table, and the cache helps only for identical repeated queries."
+  },
+  {
+    "id": "GCPPDE-D-017",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deciding between persistent or job-based clusters",
+    "stem": "Data scientists use a Spark cluster interactively all day with notebooks. Which fits?",
+    "options": [
+      "Single-node cluster for all users",
+      "New cluster created for each notebook cell",
+      "Cluster deleted and recreated after every query",
+      "Persistent cluster with autoscaling"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Interactive daily use suits a long-running cluster, and an autoscaling policy adds and removes workers as demand changes. Creating a cluster per cell would make users wait minutes each time."
+  },
+  {
+    "id": "GCPPDE-D-018",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Choosing managed services",
+    "stem": "Users must read the newest readings for a device first in Bigtable. How should the row key handle time?",
+    "options": [
+      "Store time only in a cell",
+      "Use a random UUID as each row's whole key",
+      "Put the timestamp first",
+      "Use a reversed timestamp after the ID"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bigtable sorts rows by key, so a reversed timestamp, such as a large constant minus the time, makes the newest rows sort first within each device. A random UUID loses the device grouping."
+  },
+  {
+    "id": "GCPPDE-D-019",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deciding the degree of data normalization",
+    "stem": "A small country table is joined to a huge events table in every query. What is a sensible choice?",
+    "options": [
+      "Store country in every events row as JSON",
+      "Split events by country into tables",
+      "Keep the join; it is cheap",
+      "Rebuild events nightly with no join"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A small dimension table joined to a large table is broadcast to workers and adds little cost, so keeping it separate is fine. Splitting a large table by country makes queries across countries harder."
+  },
+  {
+    "id": "GCPPDE-D-020",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data security",
+    "stem": "Which statement about BigQuery data at rest is true by default?",
+    "options": [
+      "It is encrypted only in multi-regions",
+      "It is encrypted with Google-owned keys",
+      "It needs a client library to encrypt",
+      "It is stored unencrypted until CMEK is set"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Google Cloud encrypts all customer data at rest by default with Google-owned and Google-managed keys. CMEK adds customer control over the key; it is not needed for encryption itself."
+  },
+  {
+    "id": "GCPPDE-D-021",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data validation",
+    "stem": "A team wants scheduled data quality rules, such as range and uniqueness checks, on BigQuery tables. What fits?",
+    "options": [
+      "Cloud Armor security rules",
+      "Cloud Scheduler jobs with no check step",
+      "Data quality scans",
+      "Data masking policies"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Data quality scans in Knowledge Catalog (formerly Dataplex Universal Catalog) run rules such as non-null, range and uniqueness on a schedule and record the results. Cloud Scheduler can start a job but checks nothing itself."
+  },
+  {
+    "id": "GCPPDE-D-022",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defining transformation and orchestration logic",
+    "stem": "Where should business logic for a pipeline live so it can be reviewed and tested?",
+    "options": [
+      "In a shared chat thread",
+      "In version-controlled code",
+      "In each engineer's notes",
+      "In console click paths and saved settings"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Keeping SQL, Beam code and DAGs in a Git repository gives review, history and automated tests. Steps done by hand in a console cannot be reviewed or repeated reliably."
+  },
+  {
+    "id": "GCPPDE-D-023",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identifying the services: Pub/Sub",
+    "stem": "A consumer needs more time than the default before Pub/Sub redelivers a message it is still processing. What helps?",
+    "options": [
+      "Add a dead-letter topic",
+      "Turn on retain acked messages",
+      "Extend the ack deadline",
+      "Shorten message retention"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The acknowledgment deadline defaults to 10 seconds and can be set up to 600, and clients can extend it per message while they work. Until it expires the message is not redelivered."
+  },
+  {
+    "id": "GCPPDE-D-024",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Troubleshooting poor performing queries",
+    "stem": "An exact distinct count of users is slow on a huge table, and a 1% error is acceptable. What helps?",
+    "options": [
+      "APPROX_COUNT_DISTINCT",
+      "COUNT(DISTINCT) with ORDER BY",
+      "A larger time travel window",
+      "SELECT DISTINCT into a temp table"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "APPROX_COUNT_DISTINCT uses a HyperLogLog sketch to estimate distinct values with little memory and much less work than an exact count."
+  },
+  {
+    "id": "GCPPDE-D-025",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Deciding between persistent or job-based clusters",
+    "stem": "Why should job-based Spark clusters keep data in Cloud Storage instead of HDFS?",
+    "options": [
+      "HDFS is faster for all jobs",
+      "Clusters cannot read their own local disks",
+      "Output survives cluster deletion",
+      "Cloud Storage needs no IAM"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cloud Storage separates storage from compute, so a cluster can be deleted after a job while its input and output remain. HDFS data lives on the cluster's disks and is lost with it."
+  },
+  {
+    "id": "GCPPDE-D-026",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Choosing managed services",
+    "stem": "A Bigtable instance with two clusters must keep serving reads if one cluster fails. Which setting fits?",
+    "options": [
+      "Single-cluster routing app profile",
+      "Garbage collection by age",
+      "Multi-cluster routing app profile",
+      "One column family per cluster"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An app profile with multi-cluster routing sends requests to the nearest available cluster and fails over automatically. Single-cluster routing gives stronger consistency for transactional writes but no automatic failover."
+  },
+  {
+    "id": "GCPPDE-D-027",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mapping business requirements",
+    "stem": "A report needs revenue by customer even after customers change region. Which key should the fact table use?",
+    "options": [
+      "Surrogate key for each customer version",
+      "Load timestamp",
+      "Region name",
+      "Customer email address"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With a type 2 dimension, each version of a customer gets its own surrogate key, and facts point to the version that was current when the sale happened. Emails change and regions are attributes, not keys."
+  },
+  {
+    "id": "GCPPDE-D-028",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data security",
+    "stem": "A company wants its CMEK keys rotated on a schedule with no pipeline changes. What should it configure?",
+    "options": [
+      "A script that re-encrypts and re-exports tables",
+      "New datasets with new keys each quarter",
+      "Automatic rotation on the Cloud KMS key",
+      "Customer-supplied keys per load"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cloud KMS can rotate a symmetric key automatically by creating a new primary key version. New data is encrypted with it while older versions stay available to decrypt, so pipelines need no change."
+  },
+  {
+    "id": "GCPPDE-D-029",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Disaster recovery and fault tolerance",
+    "stem": "A BigQuery table was overwritten by a bad job two days ago. What is the fastest recovery?",
+    "options": [
+      "Reload from source systems",
+      "Ask support for fail-safe data",
+      "Restore it from time travel",
+      "Recreate it from a dashboard cache"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "BigQuery time travel keeps changed and deleted data for the time travel window, seven days by default, so the table can be read as of before the bad job and copied back. Fail-safe is only for data past that window."
+  },
+  {
+    "id": "GCPPDE-D-030",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data acquisition and import",
+    "stem": "Storage Transfer Service must copy files from an on-premises NFS share. What must run on premises?",
+    "options": [
+      "Cloud VPN gateway only",
+      "Transfer Appliance",
+      "Transfer agents",
+      "Datastream connection profile"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "For file systems, Storage Transfer Service uses agents, run as containers on machines that can read the share, which send the files to Cloud Storage. Transfer Appliance is the offline option."
+  },
+  {
+    "id": "GCPPDE-D-031",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Transformations: streaming (exactly once)",
+    "stem": "Pub/Sub may redeliver a payment event. How can a pipeline avoid counting it twice?",
+    "options": [
+      "Lower the retention period",
+      "Deduplicate on a unique event ID",
+      "Use a longer fixed window",
+      "Add more subscribers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Including a unique ID in each event lets the pipeline drop repeats, for example with a dedup step keyed on that ID. Windows and subscriber counts do not change whether a message is delivered twice."
+  },
+  {
+    "id": "GCPPDE-D-032",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Troubleshooting poor performing queries",
+    "stem": "Where can an engineer see which users ran the most expensive queries last week in BigQuery?",
+    "options": [
+      "Pub/Sub metrics explorer",
+      "Table schema editor",
+      "INFORMATION_SCHEMA.JOBS views",
+      "Cloud Storage usage and access logs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The INFORMATION_SCHEMA.JOBS views record each job's user, bytes processed and slot time, so heavy queries can be found with SQL. Storage logs do not cover BigQuery jobs."
+  },
+  {
+    "id": "GCPPDE-D-033",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Capacity management",
+    "stem": "Which BigQuery edition lacks BigQuery ML and BI Engine?",
+    "options": [
+      "Every edition has both",
+      "Enterprise Plus",
+      "Standard",
+      "Enterprise"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Standard edition has no access to BigQuery ML, BI Engine or fine-grained security. Enterprise and Enterprise Plus include them."
+  },
+  {
+    "id": "GCPPDE-D-034",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Choosing managed services",
+    "stem": "A Spanner table's primary key is an auto-increasing order number, and writes hotspot. What helps?",
+    "options": [
+      "A secondary index on the number",
+      "UUID version 1 as the key",
+      "UUID version 4 as the key",
+      "Larger instance in one region"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Monotonically increasing keys send new rows to one split. UUID version 4 is random, so writes spread out; version 1 puts a timestamp in the high bits and still hotspots."
+  },
+  {
+    "id": "GCPPDE-D-035",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Defining architecture to support data access patterns",
+    "stem": "Queries on a partitioned table keep scanning every partition. Which table option prevents this?",
+    "options": [
+      "Require a partition filter",
+      "Add a label to the table",
+      "Turn on table clustering",
+      "Set a default table expiration"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With require partition filter set, BigQuery rejects queries on the table that do not filter on the partitioning column, so full scans cannot happen by accident."
+  },
+  {
+    "id": "GCPPDE-D-036",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Privacy",
+    "stem": "Ages in a research extract must be generalised so no exact age is shown. Which de-identification method fits?",
+    "options": [
+      "Bucketing into ranges",
+      "Format-preserving encryption",
+      "Character masking",
+      "Crypto hash"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Bucketing replaces a value with a range such as 30 to 39, keeping it useful for analysis while hiding the exact age. A hash or encryption produces tokens that cannot be grouped by age."
+  },
+  {
+    "id": "GCPPDE-D-037",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Disaster recovery and fault tolerance",
+    "stem": "Which statement about BigQuery fail-safe storage is true?",
+    "options": [
+      "Users can query it directly",
+      "It keeps data for 30 days",
+      "Its length is set per dataset by admins",
+      "Recovery needs Cloud Customer Care"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Fail-safe keeps deleted data for seven days after the time travel window. It cannot be queried or configured; recovery is requested through Cloud Customer Care."
+  },
+  {
+    "id": "GCPPDE-D-038",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data acquisition and import",
+    "stem": "A CSV load to BigQuery fails on a few bad lines. Which load option lets the rest load while capping bad rows?",
+    "options": [
+      "Partition expiration",
+      "Write disposition truncate",
+      "Allow jagged schema",
+      "Max bad records"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The max bad records setting lets a load job skip up to that many invalid rows and still succeed. Write disposition decides whether to append or overwrite, not how errors are handled."
+  },
+  {
+    "id": "GCPPDE-D-039",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transformations: streaming (triggers)",
+    "stem": "A dashboard wants early totals every minute while a one-hour window is still open. What should be used?",
+    "options": [
+      "Shorter allowed lateness",
+      "Early processing-time trigger",
+      "Larger ack deadline",
+      "Global window only"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Triggers decide when a window emits results. An early trigger on processing time fires partial results during the window, and the on-time pane still fires when the watermark passes."
+  },
+  {
+    "id": "GCPPDE-D-040",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Security, data masking and IAM",
+    "stem": "A table has row access policies by region. What does a user who is in no policy's grantee list see?",
+    "options": [
+      "No rows",
+      "Masked values in every row",
+      "Rows from the default region",
+      "Every row"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Once a table has row access policies, a user sees only rows from policies that grant them access. A user named in none of them sees no rows."
+  },
+  {
+    "id": "GCPPDE-D-041",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Capacity management",
+    "stem": "A reservation has spare slots while another reservation is busy. What lets the busy one use them?",
+    "options": [
+      "Idle slot sharing",
+      "Query cache",
+      "Dataset replication",
+      "Partition expiration"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With idle slot sharing, available on Enterprise and Enterprise Plus, slots unused by one reservation can serve queries in others. Baseline slots still go back to their owner when it needs them."
+  },
+  {
+    "id": "GCPPDE-D-042",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Choosing managed services",
+    "stem": "Order lines are almost always read with their order in Spanner. How should the tables be designed?",
+    "options": [
+      "Interleave lines in the orders table",
+      "Duplicate order fields into each line row",
+      "Put lines in Firestore",
+      "Store lines in a separate Spanner database"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Interleaving a child table in its parent stores child rows next to the parent row, so reading an order with its lines is fast. A separate database adds a cross-database join."
+  },
+  {
+    "id": "GCPPDE-D-043",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Defining architecture to support data access patterns",
+    "stem": "When does clustering alone usually beat partitioning for a BigQuery table?",
+    "options": [
+      "When each query must show its exact cost first",
+      "When queries never filter",
+      "When the table is under 1 MB",
+      "When filters use high-cardinality columns"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Clustering sorts data by the clustering columns, so filters on high-cardinality values such as user IDs read fewer blocks. Partitioning gives exact cost estimates before a query but suits low-cardinality columns like dates."
+  },
+  {
+    "id": "GCPPDE-D-044",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Privacy",
+    "stem": "Patient visit dates must be hidden, but the gaps between one patient's visits must stay accurate. Which method fits?",
+    "options": [
+      "Redaction of the date field",
+      "Time extraction of the year",
+      "Date shifting per patient",
+      "Replacement with a fixed date"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Date shifting moves dates by a random amount, and using a context such as the patient ID shifts all of one patient's dates by the same amount, so intervals survive. Keeping only the year loses the gaps between visits."
+  },
+  {
+    "id": "GCPPDE-D-045",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Making decisions related to ACID compliance and availability",
+    "stem": "An inventory app needs relational transactions in one region and standard PostgreSQL. Which service fits best?",
+    "options": [
+      "Bigtable",
+      "Cloud SQL for PostgreSQL",
+      "Spanner multi-region configuration",
+      "Memorystore for Redis"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cloud SQL runs standard PostgreSQL with full ACID transactions for a regional workload. Spanner's global scale is more than one region needs, and Bigtable and Memorystore are not relational."
+  },
+  {
+    "id": "GCPPDE-D-046",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Transformations: batch",
+    "stem": "A Beam GroupByKey is slow because one customer has far more records than the rest. What helps most?",
+    "options": [
+      "Combine values before the shuffle",
+      "Switch to a larger machine",
+      "Use a global window",
+      "Add more workers only"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A hot key sends most data to one worker. Using Combine, which pre-aggregates on each worker before the shuffle, or splitting the hot key, spreads the work. More workers do not help when one key goes to one worker."
+  },
+  {
+    "id": "GCPPDE-D-047",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Transformations: streaming (triggers)",
+    "stem": "A window fires several times. Each pane should hold only data new since the last firing. Which mode is this?",
+    "options": [
+      "Batching",
+      "Accumulating",
+      "Discarding",
+      "Retracting"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In discarding mode each pane contains only elements since the previous firing, so downstream code adds them up. Accumulating mode repeats earlier elements in every pane."
+  },
+  {
+    "id": "GCPPDE-D-048",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Security, data masking and IAM",
+    "stem": "A user holds Masked Reader and Fine-Grained Reader at different levels of a policy tag tree. How are a column's values shown?",
+    "options": [
+      "By the first role found up the tag tree",
+      "Always unmasked",
+      "Always masked",
+      "Not at all, it errors"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "BigQuery walks up the policy tag hierarchy and uses the first role it meets, so the result depends on where each role is granted. Users with neither role get an error."
+  },
+  {
+    "id": "GCPPDE-D-049",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Creating DAGs for Managed Service for Apache Airflow",
+    "stem": "Two Airflow tasks need to pass a small table name between them. What is the intended mechanism?",
+    "options": [
+      "Shared local file",
+      "Environment variable change",
+      "XCom",
+      "Global Python variable"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "XComs let tasks exchange small pieces of metadata such as a table name. Tasks may run on different workers, so globals and local files are not shared."
+  },
+  {
+    "id": "GCPPDE-D-050",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Analyzing data access patterns",
+    "stem": "Which workload fits Cloud SQL better than Spanner?",
+    "options": [
+      "Global writes across continents",
+      "Regional app on standard MySQL",
+      "Five nines across regions",
+      "Hundreds of terabytes of relational data"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cloud SQL suits a regional relational workload that fits on one primary and wants standard MySQL, PostgreSQL or SQL Server. Global scale-out writes and multi-region availability are Spanner's strengths."
+  },
+  {
+    "id": "GCPPDE-D-051",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Managing the lake",
+    "stem": "Users of a lake must see only some columns of the files in Cloud Storage. Which approach fits?",
+    "options": [
+      "BigLake tables",
+      "Signed URLs for each user",
+      "Separate bucket per column",
+      "Bucket ACLs set on each file and folder"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "BigLake tables let BigQuery enforce column-level and row-level security on files, and users do not need access to the bucket itself. Object ACLs work per file, not per column."
+  },
+  {
+    "id": "GCPPDE-D-052",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Creating DAGs for Managed Service for Apache Airflow",
+    "stem": "A flaky API call in one DAG task fails now and then. What should be set on that task?",
+    "options": [
+      "Retries with a retry delay",
+      "catchup set to true",
+      "A second identical DAG",
+      "A longer schedule interval on the DAG"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Task retries with a delay let Airflow try again after a short wait, which handles brief outages without failing the run. catchup controls missed schedule intervals."
+  },
+  {
+    "id": "GCPPDE-D-053",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Regional considerations",
+    "stem": "A BigQuery dataset was created in the US multi-region by mistake and must be in europe-west3. What must happen?",
+    "options": [
+      "Edit the location field in dataset settings",
+      "Copy it to a new dataset in that region",
+      "Add a regional label to the dataset",
+      "Change the project's default region setting"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A dataset's location is fixed when it is created. Moving data means creating a dataset in the new location and copying the tables, for example with a dataset copy. No setting changes the location in place."
+  },
+  {
+    "id": "GCPPDE-D-054",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Designing for data and application portability",
+    "stem": "Analysts in BigQuery must query data that stays in Amazon S3 for residency reasons. Which feature helps?",
+    "options": [
+      "Storage Transfer Service",
+      "BigQuery Omni",
+      "Datastream",
+      "Transfer Appliance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "BigQuery Omni runs BigQuery queries on data in AWS and Azure where it sits, so it does not need to be copied into Google Cloud. The other services move the data."
+  },
+  {
+    "id": "GCPPDE-D-055",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Integrating with new data sources",
+    "stem": "A partner can only push records by calling a webhook. How can they reach a streaming pipeline with little code?",
+    "options": [
+      "Cloud Run service publishing to Pub/Sub",
+      "Transfer Appliance each month",
+      "Email attachments parsed weekly",
+      "Partner writes to the warehouse directly"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A small Cloud Run service can accept the webhook calls and publish each record to a Pub/Sub topic that the pipeline reads. Giving a partner direct write access to the warehouse bypasses validation."
+  },
+  {
+    "id": "GCPPDE-D-056",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Transformations: streaming (windowing)",
+    "stem": "Revenue must be totalled per calendar hour, with no overlap between hours. Which window fits?",
+    "options": [
+      "Fixed one-hour window",
+      "Sliding one-hour window",
+      "Global window with a count trigger",
+      "Session window with one-hour gap"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Fixed (tumbling) windows are disjoint intervals, so each event counts in exactly one hour. Sliding windows overlap and would count events in several hours."
+  },
+  {
+    "id": "GCPPDE-D-057",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Preparing data for feature engineering",
+    "stem": "A model uses a timestamp column. Which feature is usually more useful than the raw value?",
+    "options": [
+      "Timestamp as a long string",
+      "Random ID for each row",
+      "Byte length of the field",
+      "Hour of day or day of week"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Extracting hour, weekday or month turns a timestamp into repeating patterns a model can learn. A raw timestamp keeps increasing and rarely generalises."
+  },
+  {
+    "id": "GCPPDE-D-058",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Planning for storage costs and performance",
+    "stem": "Which Cloud Storage class has no minimum storage duration and no retrieval fee?",
+    "options": [
+      "Standard",
+      "Archive",
+      "Nearline",
+      "Coldline"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Standard storage has no minimum duration and no retrieval charge. Nearline, Coldline and Archive have minimums of 30, 90 and 365 days and charge to read data."
+  },
+  {
+    "id": "GCPPDE-D-059",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Managing the lake",
+    "stem": "Lake costs are rising from many rarely read files. Which control helps most?",
+    "options": [
+      "Higher request quotas",
+      "More frequent full copies",
+      "Colder storage classes",
+      "Object versioning on all lake buckets"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lifecycle rules move objects that are no longer read to Nearline, Coldline or Archive, which cost less to store. Versioning and full copies add storage."
+  },
+  {
+    "id": "GCPPDE-D-060",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Observability of data processes",
+    "stem": "Where should an engineer look for a Dataflow worker's stack trace after a failed step?",
+    "options": [
+      "Cloud Logging worker logs",
+      "Billing reports",
+      "Pub/Sub schema list",
+      "IAM policy page"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Dataflow sends job and worker logs, including exceptions, to Cloud Logging, and the job page links to them. Billing and IAM pages show nothing about the failure."
+  },
+  {
+    "id": "GCPPDE-D-061",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Legal and regulatory compliance",
+    "stem": "Auditors ask who read rows from a sensitive BigQuery table last month. Where is that recorded?",
+    "options": [
+      "Data Access audit logs",
+      "Dataflow job logs",
+      "Admin Activity audit logs",
+      "Data quality scan results"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Reads of data are Data Access events in Cloud Audit Logs. For BigQuery these logs are written by default; for many other services they must be turned on. Admin Activity logs record configuration changes such as a new dataset, not reads."
+  },
+  {
+    "id": "GCPPDE-D-062",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data staging, cataloging, profiling and discovery",
+    "stem": "Before modelling a new table, engineers want null rates, distinct counts and value ranges per column. What gives this?",
+    "options": [
+      "Data lineage graph",
+      "Data profile scan",
+      "Query execution graph",
+      "Table snapshot"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A Knowledge Catalog data profile scan reports statistics per column such as null percentage, distinct values and min and max. The execution graph describes how a query ran, not the data."
+  },
+  {
+    "id": "GCPPDE-D-063",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Networking fundamentals",
+    "stem": "Dataflow workers in a Shared VPC subnet fail to start. What is a common cause?",
+    "options": [
+      "Too many BigQuery datasets",
+      "Bucket in a different storage class",
+      "Pub/Sub ordering keys turned on for the job",
+      "Missing Network User role on the subnet"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Workers in a host project's subnet need the Compute Network User role for the Dataflow service account on that subnet. Without it the job cannot create its workers."
+  },
+  {
+    "id": "GCPPDE-D-064",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Transformations: streaming (event time)",
+    "stem": "Mobile apps send events in batches when back online. Which timestamp should windows use?",
+    "options": [
+      "Time the event happened",
+      "Time the batch was sent",
+      "Time the worker processed it",
+      "Time Pub/Sub received it"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Windowing on event time places each event in the period it actually happened, even if it arrives hours later. Processing time would put offline events in the wrong windows."
+  },
+  {
+    "id": "GCPPDE-D-065",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Preparing data for training and serving",
+    "stem": "After CREATE MODEL in BigQuery ML, which function reports precision, recall and other metrics?",
+    "options": [
+      "ML.FORECAST",
+      "ML.EVALUATE",
+      "ML.EXPLAIN_FORECAST",
+      "ML.PREDICT"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "ML.EVALUATE returns evaluation metrics for a model on its held-out data or a given table. ML.PREDICT returns predictions, and the forecast functions are for time series models."
+  },
+  {
+    "id": "GCPPDE-D-066",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Planning for storage costs and performance",
+    "stem": "Backups are read about once a year but must be readable within milliseconds when needed. Which class fits?",
+    "options": [
+      "Nearline",
+      "Coldline",
+      "Standard",
+      "Archive"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Archive is the lowest cost class for data read less than once a year, and Cloud Storage returns it within milliseconds, not hours. Nearline suits monthly reads."
+  },
+  {
+    "id": "GCPPDE-D-067",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Processing data",
+    "stem": "Engineers want to run Spark on lake data with the same table definitions BigQuery uses. What helps?",
+    "options": [
+      "Separate Hive table definitions per engine",
+      "Shared metastore through BigLake",
+      "CSV exports for each engine",
+      "A second copy in Bigtable"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A shared metastore, such as the BigLake metastore, lets Spark and BigQuery read one set of table definitions over open formats like Iceberg. Separate definitions drift apart."
+  },
+  {
+    "id": "GCPPDE-D-068",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Monitoring planned usage",
+    "stem": "Leadership wants a monthly view of BigQuery slot use by project. Which source fits?",
+    "options": [
+      "Table descriptions",
+      "Pub/Sub snapshots",
+      "Cloud SQL insights",
+      "Admin resource charts"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "BigQuery's administrative resource charts and the INFORMATION_SCHEMA jobs and reservations views show slot usage over time by project and reservation."
+  },
+  {
+    "id": "GCPPDE-D-069",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Designing project, dataset and table architecture",
+    "stem": "Analysts need summary results from a dataset that also holds raw PII, without any access to the raw tables. What fits?",
+    "options": [
+      "Grant on the raw dataset with a filter",
+      "Authorized view in a separate dataset",
+      "Public dataset with a password",
+      "Table copy refreshed by hand"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An authorized view is allowed to read the source tables, so users with access to the view's dataset see only its results. They need no permission on the raw dataset. Manual copies go stale and duplicate data."
+  },
+  {
+    "id": "GCPPDE-D-070",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Analyzing current stakeholder needs",
+    "stem": "What should come first when planning a warehouse migration to BigQuery?",
+    "options": [
+      "Inventory workloads and users",
+      "Buy a three-year slot commitment",
+      "Pick a cutover date and freeze changes",
+      "Translate every query by hand"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Knowing which jobs, reports and users depend on the warehouse shapes the order of the move and the validation plan. Commitments and dates come after the scope is understood."
+  },
+  {
+    "id": "GCPPDE-D-071",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Job automation and orchestration",
+    "stem": "An Airflow task must wait until a partner file appears in a bucket. What fits?",
+    "options": [
+      "Larger Airflow worker",
+      "Manual trigger each morning",
+      "Fixed sleep in the task",
+      "Sensor for the object"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An Airflow sensor checks for a condition, such as an object existing in Cloud Storage, and lets downstream tasks start when it is met. A fixed sleep either waits too long or not long enough."
+  },
+  {
+    "id": "GCPPDE-D-072",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Identifying the services: Pub/Sub",
+    "stem": "A subscriber needs only messages whose region attribute is EU. What avoids reading the rest?",
+    "options": [
+      "Exactly-once delivery",
+      "Attribute filter",
+      "Smaller message batches from publishers",
+      "Separate topic schema"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A subscription filter matches on message attributes, and Pub/Sub acknowledges non-matching messages automatically. Filters cannot match the message body, and they cannot be changed once set."
+  },
+  {
+    "id": "GCPPDE-D-073",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Preparing unstructured data for embeddings and RAG",
+    "stem": "Image files in Cloud Storage must be analysed with SQL in BigQuery. What exposes them to queries?",
+    "options": [
+      "Snapshot table",
+      "Materialized view",
+      "Object table",
+      "Clustered table"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An object table is a read-only BigQuery table over unstructured files in Cloud Storage, giving each file's URI and metadata so SQL and AI functions can process them."
+  },
+  {
+    "id": "GCPPDE-D-074",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lifecycle management of data",
+    "stem": "A dataset holds scratch tables that should disappear on their own after a week. What should be set?",
+    "options": [
+      "A retention policy on the bucket",
+      "Time travel window of seven days",
+      "Weekly table snapshots kept a week",
+      "Default table expiration"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A dataset's default table expiration deletes each new table that age after creation. The time travel window controls how long changes can be undone, not when tables are deleted."
+  },
+  {
+    "id": "GCPPDE-D-075",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Building a data platform",
+    "stem": "Which statement about Knowledge Catalog is true?",
+    "options": [
+      "It was named Dataplex Universal Catalog",
+      "It works only for Cloud SQL",
+      "It replaced BigQuery storage",
+      "It needs all data copied into its own store"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Knowledge Catalog is the 2026 name for Dataplex Universal Catalog. It manages metadata in place; data stays in BigQuery, Cloud Storage and other sources, and its APIs still use the dataplex name."
+  },
+  {
+    "id": "GCPPDE-D-076",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Designing system for fault tolerance and managing restarts",
+    "stem": "A streaming job must restart after a crash and not skip messages. What makes this work?",
+    "options": [
+      "Short retention on the subscription",
+      "Acknowledging on receipt",
+      "Acknowledging only after processing",
+      "Deleting the subscription on restart"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If a subscriber acknowledges a message only after it is safely processed, Pub/Sub redelivers anything unacknowledged after a crash. Acknowledging on receipt loses messages that were in flight."
+  },
+  {
+    "id": "GCPPDE-D-077",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Designing project, dataset and table architecture",
+    "stem": "Salary columns must be hidden from most users of an HR table while other columns stay readable. What should be used?",
+    "options": [
+      "Table expiration on the dataset",
+      "Column policy tags",
+      "A second project for HR",
+      "Row access policy on the table"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Column-level access control attaches policy tags to columns, and only principals with Fine-Grained Reader on the tag can read them. Row access policies filter rows, not columns."
+  },
+  {
+    "id": "GCPPDE-D-078",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Planning migration to Google Cloud",
+    "stem": "Hundreds of Teradata SQL scripts must run in BigQuery. What reduces the manual rewrite?",
+    "options": [
+      "Datastream backfill",
+      "BigQuery SQL translation",
+      "Cloud SQL import",
+      "Storage Transfer Service"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The BigQuery Migration Service SQL translator converts many dialects, including Teradata, into GoogleSQL in batch or interactively. The other tools move data, not code."
+  },
+  {
+    "id": "GCPPDE-D-079",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Job automation and orchestration",
+    "stem": "A DAG was paused for a week. On unpausing, Airflow starts seven old runs at once. Which setting controls this?",
+    "options": [
+      "retries",
+      "catchup",
+      "email_on_failure",
+      "max_active_tasks"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With catchup on, Airflow creates runs for every missed schedule interval since the start date. Turning catchup off runs only the latest interval."
+  },
+  {
+    "id": "GCPPDE-D-080",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Deploying and operationalizing the pipelines",
+    "stem": "Before a risky change to a streaming job, the team wants to save its state to start from later. What fits?",
+    "options": [
+      "Persistent disk image",
+      "BigQuery table clone",
+      "Pub/Sub schema revision",
+      "Dataflow snapshot"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A Dataflow snapshot saves the state of a streaming pipeline so a new job can start from it without losing state. Table clones and disk images do not capture pipeline state."
+  },
+  {
+    "id": "GCPPDE-D-081",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Publishing datasets",
+    "stem": "A team publishes a curated dataset for internal use. What helps consumers trust and use it?",
+    "options": [
+      "No documentation",
+      "Cryptic column names",
+      "Frequent schema changes",
+      "Descriptions on tables and columns"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Clear table and column descriptions, kept with the data, tell consumers what each field means and appear in catalog search. Undocumented or changing schemas break downstream reports."
+  },
+  {
+    "id": "GCPPDE-D-082",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lifecycle management of data",
+    "stem": "Deleted objects in a bucket must be recoverable for a short time after an accident. Which feature covers this?",
+    "options": [
+      "Bucket Lock",
+      "Requester pays",
+      "Soft delete",
+      "Uniform bucket-level access"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Soft delete keeps deleted objects for a retention period, seven days by default, so they can be restored. Bucket Lock prevents shortening a retention policy; it does not undo deletes."
+  },
+  {
+    "id": "GCPPDE-D-083",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Building a data platform",
+    "stem": "A column will be dropped from a source table. How can engineers find every downstream table it feeds?",
+    "options": [
+      "Downstream lineage view",
+      "Slot autoscaling",
+      "Table clustering",
+      "Data masking"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Data lineage records which jobs read and wrote which tables, so the downstream graph shows every table and report built from the source. Masking and clustering change what is shown or how fast, not provenance."
+  },
+  {
+    "id": "GCPPDE-D-084",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Running jobs in multiple regions or zones",
+    "stem": "Where are BigQuery datasets stored for resilience against a single zone failing?",
+    "options": [
+      "On one zone's disks",
+      "Across zones of their location",
+      "On the user's machine",
+      "Only in a backup bucket"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "BigQuery stores data in a region or multi-region with copies across zones, so a zone failure does not take a dataset offline. A whole-region outage needs cross-region replication."
+  },
+  {
+    "id": "GCPPDE-D-085",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Multi-environment use cases",
+    "stem": "Testers need realistic data in development, but production holds customer PII. What is the best approach?",
+    "options": [
+      "Copy production tables as they are",
+      "Let testers query production through a view",
+      "Give testers read access to production",
+      "Load a de-identified copy into development"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A de-identified copy, made with Sensitive Data Protection transforms, gives realistic shapes and volumes without exposing PII outside production. Any route that reads production data still exposes it to the testers."
+  },
+  {
+    "id": "GCPPDE-D-086",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Google Cloud networking",
+    "stem": "Large nightly transfers from on premises keep saturating the VPN. What gives dedicated, high-bandwidth private links?",
+    "options": [
+      "Private Google Access",
+      "Dedicated Interconnect",
+      "Cloud NAT",
+      "A second Cloud VPN tunnel"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Dedicated Interconnect gives direct physical connections of 10 Gbps or more between the data center and Google. Cloud NAT and Private Google Access handle outbound and API access from inside Google Cloud, not on-premises links."
+  },
+  {
+    "id": "GCPPDE-D-087",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data encryption",
+    "stem": "A pipeline copies data from Cloud Storage to BigQuery inside Google Cloud. What protects it in transit?",
+    "options": [
+      "Nothing, unless a Cloud VPN tunnel is added",
+      "Google's default encryption in transit",
+      "Only client-side encryption",
+      "Customer-supplied keys sent on each API call"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Google Cloud encrypts data moving between its services and to its APIs by default, using TLS and Google's network protections. A VPN is for traffic from outside Google Cloud."
+  },
+  {
+    "id": "GCPPDE-D-088",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Streaming into BigQuery",
+    "stem": "Change events from a MySQL database must reach BigQuery within seconds, with no pipeline code. What fits?",
+    "options": [
+      "BigQuery scheduled queries",
+      "Datastream into BigQuery",
+      "Nightly mysqldump to a bucket",
+      "Transfer Appliance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Datastream captures inserts, updates and deletes from MySQL and applies them to BigQuery tables continuously. A nightly dump is a day behind."
+  },
+  {
+    "id": "GCPPDE-D-089",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Publishing reports and visualizations",
+    "stem": "A Looker Studio report must use the viewer's own BigQuery permissions, not the owner's. Which setting fits?",
+    "options": [
+      "Owner's credentials on the source",
+      "Viewer's credentials",
+      "Public link with editor rights",
+      "Export of the report to PDF"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With viewer's credentials, each viewer's own access decides what BigQuery data they can see. Owner's credentials let every viewer see what the owner can see."
+  },
+  {
+    "id": "GCPPDE-D-090",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Choosing managed services",
+    "stem": "A team needs one managed relational database across three continents with no manual sharding. Which fits?",
+    "options": [
+      "AlloyDB cluster",
+      "Bigtable with replication",
+      "Spanner multi-region instance",
+      "Cloud SQL with cross-region replicas"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A Spanner multi-region configuration replicates data across regions and serves strongly consistent reads and writes, scaling without manual sharding. Cloud SQL and AlloyDB replicas are read-only copies of one primary."
+  },
+  {
+    "id": "GCPPDE-D-091",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Building a federated governance model",
+    "stem": "Domains publish data for others to use. What makes a published dataset trustworthy to consumers?",
+    "options": [
+      "Named owner and quality checks",
+      "Daily full copies",
+      "A long table name",
+      "Open edit rights for every consumer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A data product needs a named owner, a described schema and visible quality checks so consumers know what they get and whom to ask. Open edit rights let anyone break it."
+  },
+  {
+    "id": "GCPPDE-D-092",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Preparing for data corruption and missing data",
+    "stem": "A bad deploy wrote wrong values to a table nine days ago. Time travel is set to seven days. What is the realistic route?",
+    "options": [
+      "Undo it with a dry run",
+      "Raise the time travel window to ten days now",
+      "Query the time travel history for day nine",
+      "Restore from a snapshot or the source"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Time travel only reaches back over its window, and raising it later does not bring back older history. A snapshot taken earlier, or a reload from the source, is needed; fail-safe recovery goes through support."
+  },
+  {
+    "id": "GCPPDE-D-093",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeSecurity",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Identity and Access Management",
+    "select": 2,
+    "stem": "A data platform team wants to stop anyone creating service account keys. Which two steps help? (Choose two.)",
+    "options": [
+      "Rotate keys every 90 days",
+      "Store keys in a private bucket",
+      "Enforce the disable key creation policy",
+      "Use Workload Identity Federation for outside jobs",
+      "Email keys to admins only"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "The organization policy constraint that disables service account key creation blocks new keys everywhere below it. Workload Identity Federation lets workloads outside Google Cloud get short-lived credentials without keys. Rotating or hiding keys still leaves long-lived secrets in use."
+  },
+  {
+    "id": "GCPPDE-D-094",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeDesign",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Planning migration to Google Cloud",
+    "select": 2,
+    "stem": "An Oracle database must keep feeding BigQuery during a long migration. Which two pieces fit? (Choose two.)",
+    "options": [
+      "Transfer Appliance shipments",
+      "Datastream change data capture",
+      "BigQuery as the Datastream target",
+      "Memorystore as a staging cache",
+      "Weekly full exports to CSV"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Datastream reads changes from Oracle and replicates them continuously, and it can write straight into BigQuery tables. Weekly exports leave the warehouse days behind."
+  },
+  {
+    "id": "GCPPDE-D-095",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeBatch",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "CI/CD",
+    "select": 2,
+    "stem": "Which two practices belong in a CI/CD process for SQL transformations? (Choose two.)",
+    "options": [
+      "Skip reviews for small changes",
+      "Run data tests before release",
+      "Promote the same code from dev to prod",
+      "Keep separate code copies per environment",
+      "Edit production queries in the console"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Data tests such as assertions catch bad logic before release, and promoting one reviewed version through environments keeps prod matching what was tested. Editing in production and forking code per environment both create drift."
+  },
+  {
+    "id": "GCPPDE-D-096",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStream",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Transformations: streaming",
+    "select": 2,
+    "stem": "A Dataflow streaming job's system lag keeps rising. Which two actions are reasonable first checks? (Choose two.)",
+    "options": [
+      "Switch every window to global",
+      "Check the autoscaling maximum",
+      "Look for a hot key or slow step",
+      "Lower the Pub/Sub retention",
+      "Turn off the dead-letter output"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Rising lag means the job cannot keep up: a slow step or hot key, or a worker cap reached by autoscaling, are common causes. Shorter retention risks losing messages and does nothing for throughput."
+  },
+  {
+    "id": "GCPPDE-D-097",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeAnalysis",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "BigQuery sharing",
+    "select": 2,
+    "stem": "Which two statements about a subscriber's linked dataset in BigQuery sharing are true? (Choose two.)",
+    "options": [
+      "It is read-only",
+      "The publisher pays for subscriber queries",
+      "No data is copied",
+      "Subscribers can edit the source tables",
+      "It must be in the subscriber's region only"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Subscribing creates a read-only linked dataset that points to the shared data without copying it. Subscribers pay for the queries they run on it."
+  },
+  {
+    "id": "GCPPDE-D-098",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeStorage",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Analyzing data access patterns",
+    "stem": "Analysts query a large events table by event date and filter often on customer ID. How should it be laid out?",
+    "options": [
+      "Partition by date, cluster by customer",
+      "Cluster by date, partition by customer",
+      "One dataset per day",
+      "One table per customer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Partitioning on the date column prunes whole days, and clustering on customer ID sorts data within each partition so filters read fewer blocks. Per-customer tables or per-day datasets are hard to query and manage."
+  },
+  {
+    "id": "GCPPDE-D-099",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeWarehouse",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mapping business requirements",
+    "stem": "Sales wants daily figures by noon, and finance wants monthly figures that never change after close. What does this suggest?",
+    "options": [
+      "Separate tables built for each need",
+      "Hourly rewrites of closed months",
+      "Monthly loads for sales too",
+      "One live view shared by both teams' reports"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Different freshness and stability needs call for separate outputs: a daily table for sales and a frozen month-end table for finance. Rewriting closed months breaks finance's requirement."
+  },
+  {
+    "id": "GCPPDE-D-100",
+    "section": "pde",
+    "test": 0,
+    "module": 1,
+    "domain": "pdeOps",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Monitoring and troubleshooting",
+    "select": 2,
+    "stem": "Which two signals should page the on-call team for a critical daily pipeline? (Choose two.)",
+    "options": [
+      "Output row count far below normal",
+      "A new column description",
+      "A single retry that then succeeded",
+      "The run did not finish by its deadline",
+      "CPU briefly above 60%"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Alerts should track what the business needs: whether the data arrived on time and whether it is complete. A retry that succeeded or a short CPU spike are not worth waking someone for."
+  }
+]

@@ -4850,6 +4850,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the Cloud Digital Leader exam guide launched August 12, 2026",
     source: { name: "Google Cloud", url: "https://cloud.google.com/learn/certification/cloud-digital-leader" },
   },
+  gcppde: {
+    answer:
+      "The Google Cloud Professional Data Engineer exam has 40 to 50 multiple choice and multiple select questions in 2 hours and costs 200 USD. Google reports pass or fail and does not publish a passing score. The exam guide weights Ingesting and processing the data at about 25 percent, Designing data processing systems at about 22 percent, Storing the data at about 20 percent, Maintaining and automating data workloads at about 18 percent, and Preparing and using data for analysis at about 15 percent. There are no case studies.",
+    rows: [
+      { label: "Questions", value: "40 to 50, multiple choice and multiple select" },
+      { label: "Time", value: "2 hours" },
+      { label: "Passing score", value: "Pass or fail; no published cut score" },
+      { label: "Fee", value: "200 USD" },
+      { label: "Languages", value: "English, Japanese" },
+      { label: "Valid for", value: "2 years" },
+      { label: "Given by", value: "Google Cloud, online or onsite proctored" },
+    ],
+    basedOn: "the Professional Data Engineer exam guide and certification page, checked November 2026",
+    source: { name: "Google Cloud", url: "https://cloud.google.com/learn/certification/data-engineer" },
+  },
   gcppca: {
     answer:
       "The Google Cloud Professional Cloud Architect exam has 50 to 60 multiple choice and multiple select questions in 2 hours and costs 200 USD. Each exam includes 2 case studies, and case study questions make up 20 to 30 percent of the exam. Google reports pass or fail and does not publish a passing score. The exam guide weights Designing and planning a cloud solution architecture at about 25 percent, Managing and provisioning a solution infrastructure and Designing for security and compliance at about 17.5 percent each, Analyzing and optimizing technical and business processes at about 15 percent, and Managing implementation and Ensuring solution and operations excellence at about 12.5 percent each.",

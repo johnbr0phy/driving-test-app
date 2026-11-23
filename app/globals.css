@@ -2714,6 +2714,20 @@
     --brand-gradient-to: 262 40% 96%;
   }
 
+  /* Google Cloud Professional Data Engineer theme (v2 exam; matches lib/v2/exams/gcppde.ts theme) */
+  [data-theme="gcppde"] {
+    --brand: 220 10% 26%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 220 10% 96%;
+    --brand-hover: 220 10% 22%;
+    --brand-dark: 220 10% 19%;
+    --brand-darker: 220 10% 12%;
+    --brand-muted: 220 10% 70%;
+    --brand-border: 220 10% 80%;
+    --brand-border-light: 220 10% 89%;
+    --brand-gradient-to: 205 10% 96%;
+  }
+
   /* SSC CGL theme (v2 exam; matches lib/v2/exams/ssccgl.ts theme) */
   [data-theme="ssccgl"] {
     --brand: 268 80% 37%;
@@ -10246,6 +10260,18 @@
     --brand-muted: 279 25% 45%;
     --brand-dark: 279 45% 65%;
     --brand-darker: 279 40% 78%;
+  }
+
+  .dark [data-theme="gcppde"] {
+    --brand: 220 10% 47.6%;
+    --brand-hover: 220 10% 39.6%;
+    --brand-light: 220 10% 13%;
+    --brand-gradient-to: 205 10% 11%;
+    --brand-border-light: 220 10% 24%;
+    --brand-border: 220 10% 34%;
+    --brand-muted: 220 10% 45%;
+    --brand-dark: 220 10% 65%;
+    --brand-darker: 220 10% 78%;
   }
 
   .dark [data-theme="ssccgl"] {

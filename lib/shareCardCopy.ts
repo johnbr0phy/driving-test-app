@@ -350,6 +350,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   sc900: { title: "Microsoft Security, Compliance, and Identity Fundamentals SC-900", description: "Review Zero Trust and identity concepts, Microsoft Entra, Defender, Sentinel and Purview." },
   ceh: { title: "EC-Council CEH v13", description: "Practise footprinting, scanning, system, network, web, wireless, mobile, cloud and crypto attacks, all explained." },
   cysa: { title: "CompTIA CySA+ CS0-004", description: "Practise security operations, vulnerability management, incident response and reporting." },
+  gcppde: { title: "Google Cloud Professional Data Engineer", description: "Practise data engineering on Google Cloud: BigQuery, Dataflow and Pub/Sub pipelines, storage choices, security, BI and ML, and operations." },
   gcppca: { title: "Google Cloud Professional Cloud Architect", description: "Practise architecture scenarios, case studies, security, AI and operations on Google Cloud." },
   gcdl: { title: "Google Cloud Digital Leader", description: "Study cloud transformation, data, AI, modernization, security and cloud operations." },
   rrbgroupd: { title: "RRB Group D CBT", description: "Full 100-question railway Level 1 mock tests on Maths, Reasoning, General Science and General Awareness, with every answer explained." },

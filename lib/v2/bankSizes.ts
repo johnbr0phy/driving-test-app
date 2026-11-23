@@ -110,6 +110,7 @@ export const BANK_SIZES: Record<string, number> = {
   apgov: 201,
   mapgrowth: 318,
   gcppca: 200,
+  gcppde: 200,
   jkssbja: 200,
   tgsi: 236,
   ieltsread: 212,

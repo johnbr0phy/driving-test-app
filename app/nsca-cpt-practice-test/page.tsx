@@ -17,7 +17,7 @@ const title = "Free NSCA-CPT Practice Test 2026 - Questions with Explanations";
 const metaDescription =
   "Free NSCA-CPT practice: 200 original questions on NSCA's July 2025 content outline, four 50-question mock tests weighted like the real exam, every answer explained.";
 const description =
-  "Free practice for the NSCA-Certified Personal Trainer exam: 200 original questions written from NSCA's detailed content outline (effective July 1, 2025) and public guidelines. Four 50-question mock tests weighted like the real exam and four training sets covering client consultation and assessment, program planning, exercise technique and coaching, and training adaptations, safety and legal issues.";
+  "Practice for the NSCA-Certified Personal Trainer exam, free to start: 200 original questions written from NSCA's detailed content outline (effective July 1, 2025) and public guidelines. Four 50-question mock tests weighted like the real exam and four training sets covering client consultation and assessment, program planning, exercise technique and coaching, and training adaptations, safety and legal issues.";
 
 export const metadata: Metadata = {
   title,

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "grdriving__GRDRV-REG-022",
+    "status": "fixed",
+    "note": "Stem now describes the end-of-limit sign correctly (white disc, no red border, grey \"50\" crossed by grey diagonal lines), the explanation says the same, and the Greek bank has the matching wording. Key B (end of 50 km/h limit) unchanged."
+  },
+  {
+    "id": "sgm5__SGM5-NOT-006",
+    "status": "fixed",
+    "note": "Stem now names FAA-N20's balanced scorecard and asks what is measured against the non-sales KPIs, and the explanation adds the at-least-60% rule for variable-only pay. Options and key B (all of it) unchanged."
+  }
+]

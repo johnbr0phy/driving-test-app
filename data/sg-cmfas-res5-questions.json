@@ -1138,14 +1138,14 @@
     "state": "ALL",
     "questionId": "SGM5-NOT-006",
     "category": "sgm5Notices",
-    "question": "A representative earns a fixed salary plus variable income. How much of the variable income is measured?",
+    "question": "Under FAA-N20's balanced scorecard, a representative earns a fixed salary plus variable income. How much of the variable income is measured against the non-sales KPIs?",
     "optionA": "60% of it",
     "optionB": "All of it",
     "optionC": "Half of it",
     "optionD": "None of it",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Where remuneration combines a fixed salary and variable income, FAA-N20 measures all of the variable income against the non-sales KPIs."
+    "explanation": "Where remuneration combines a fixed salary and variable income, FAA-N20 measures all of the variable income against the non-sales KPIs. (Where a representative receives only variable income, at least 60% of it is measured.)"
   },
   {
     "type": "SGM5",

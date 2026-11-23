@@ -2,7 +2,7 @@
 require("tsx/cjs");
 const test = require("node:test");
 const assert = require("node:assert");
-const { PURCHASES_SINCE, purchaseWindowStart, purchaseWeight, liveScore } = require("../lib/buildQueueScore.ts");
+const { PURCHASES_SINCE, purchaseWindowStart, purchaseWeight, liveScore, trendsBoost } = require("../lib/buildQueueScore.ts");
 
 const W = "2026-11-10";
 
@@ -28,4 +28,12 @@ test("a purchase is weighted by its dollars over the US $9.99 price", () => {
 test("score is answers / 100 + views + weighted purchases x 40", () => {
   assert.strictEqual(liveScore({ answers: 1000, views: 5, purchases: 1.5 }), 75);
   assert.strictEqual(liveScore({ answers: 0, views: 0, purchases: 0.5 }), 20);
+});
+
+test("Google Trends interest counts in full where tests sell, at a fifth where they have not", () => {
+  assert.strictEqual(trendsBoost(500, "US"), 100);
+  assert.strictEqual(trendsBoost(500, "FR"), 100);
+  assert.strictEqual(trendsBoost(500, "IN"), 20);
+  assert.strictEqual(trendsBoost(500, "PH"), 20);
+  assert.strictEqual(trendsBoost(undefined, "US"), 0);
 });

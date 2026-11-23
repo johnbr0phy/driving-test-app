@@ -1,0 +1,19 @@
+{
+  "id": "arrtct",
+  "stateCode": "ARRTCT",
+  "idBase": 47100,
+  "prefix": "ARRTCT-",
+  "slug": "/arrt-ct",
+  "landingPath": "/arrt-ct-practice-test",
+  "dataFile": "data/arrt-ct-questions.json",
+  "categories": [
+    {"key": "arrtctCare", "label": "Patient Care & Contrast", "perTest": 6, "pool": 24, "segment": "CAR"},
+    {"key": "arrtctSafety", "label": "Radiation Safety & Dose", "perTest": 6, "pool": 24, "segment": "SAF"},
+    {"key": "arrtctForm", "label": "Image Formation", "perTest": 9, "pool": 36, "segment": "FRM"},
+    {"key": "arrtctEval", "label": "Image Evaluation & Archiving", "perTest": 7, "pool": 28, "segment": "EVL"},
+    {"key": "arrtctHead", "label": "Head, Spine & Musculoskeletal", "perTest": 8, "pool": 32, "segment": "HSM"},
+    {"key": "arrtctNeck", "label": "Neck & Chest", "perTest": 7, "pool": 28, "segment": "NCH"},
+    {"key": "arrtctAbd", "label": "Abdomen & Pelvis", "perTest": 7, "pool": 28, "segment": "ABP"}
+  ],
+  "notes": "ARRT CT Examination Content Specifications, implemented September 1, 2026: 165 scored (21/21/30/22/25/22/24). Scaled to 50: 6/6/9/7/8/7/7."
+}

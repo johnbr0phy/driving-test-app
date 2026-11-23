@@ -3595,6 +3595,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "Responsible Service BC's Serving It Right FAQs and course page, and the Liquor Control and Licensing Regulation s. 184, checked November 2026",
     source: { name: "Responsible Service BC: Serving It Right FAQs", url: "https://www.responsibleservicebc.gov.bc.ca/serving-it-right-faqs" },
+  },
   cagas3: {
     answer:
       "The Gas Technician 3 (G.3) is Ontario's entry-level gas technician certificate, issued by the Technical Standards and Safety Authority (TSSA) under Ontario Regulation 215/01. Candidates complete a TSSA-accredited program of curriculum modules 1 to 9 (a suggested 180 hours) or the challenge route, then write a multiple-choice TSSA certification exam with the permitted references (the Technical Standards and Safety Act, the fuels regulations and code adoption documents, CSA B149.1 and B149.2) and pass a practical evaluation. TSSA requires 75% on the exam, in each module and on the practical. A G.3 works under the general supervision of a G.1, G.2 or DA holder on listed tasks once they are signed off, and under direct supervision for anything else in that holder's scope.",

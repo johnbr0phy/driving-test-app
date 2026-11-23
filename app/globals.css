@@ -5852,6 +5852,8 @@
     --brand-border: 8 20% 80%;
     --brand-border-light: 8 20% 89%;
     --brand-gradient-to: 350 25% 95%;
+  }
+
   [data-theme="cagas3"] {
     --brand: 16 70% 14%;
     --brand-foreground: 0 0% 100%;
@@ -12501,6 +12503,8 @@
     --brand-muted: 8 20% 45%;
     --brand-dark: 8 30% 65%;
     --brand-darker: 8 30% 78%;
+  }
+
   .dark [data-theme="cagas3"] {
     --brand: 16 70% 45.9%;
     --brand-hover: 16 70% 37.9%;

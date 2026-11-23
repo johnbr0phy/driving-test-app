@@ -4043,6 +4043,19 @@
     --brand-border-light: 355 35% 90%;
     --brand-gradient-to: 9 55% 96%;
   }
+  /* RRB JE theme: deep electric violet (v2 exam; matches lib/v2/exams/inrrn.ts theme) */
+  [data-theme="inrrn"] {
+    --brand: 271 85% 20%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 271 85% 96%;
+    --brand-hover: 271 85% 17%;
+    --brand-dark: 271 85% 15%;
+    --brand-darker: 271 80% 9%;
+    --brand-muted: 271 40% 72%;
+    --brand-border: 271 45% 80%;
+    --brand-border-light: 271 45% 90%;
+    --brand-gradient-to: 283 85% 96%;
+  }
 
   /* RPF Constable theme: steel slate (v2 exam; matches lib/v2/exams/rpfconst.ts theme) */
   [data-theme="rpfconst"] {
@@ -10625,6 +10638,18 @@
     --brand-muted: 355 30% 45%;
     --brand-dark: 355 55% 65%;
     --brand-darker: 355 50% 78%;
+  }
+
+  .dark [data-theme="inrrn"] {
+    --brand: 271 85% 50%;
+    --brand-hover: 271 85% 42%;
+    --brand-light: 271 45% 13%;
+    --brand-gradient-to: 283 40% 11%;
+    --brand-border-light: 271 35% 24%;
+    --brand-border: 271 40% 34%;
+    --brand-muted: 271 40% 45%;
+    --brand-dark: 271 85% 65%;
+    --brand-darker: 271 80% 78%;
   }
 
   .dark [data-theme="rpfconst"] {

@@ -286,6 +286,7 @@ export const TEACHES: Record<string, string> = {
   agniveer: "a defence exam coaching class",
   agniveervayu: "an Agniveer Vayu coaching batch",
   rrbalp: "a railway exam coaching class",
+  inrrn: "a railway JE coaching class",
   rpfconst: "an RPF or railway exam coaching batch",
   ssccpo: "an SSC CPO coaching batch",
   apworld: "AP World History: Modern",

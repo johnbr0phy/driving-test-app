@@ -1542,5 +1542,13 @@
       "pr": 977,
       "findings": 1
     }
+  ],
+  "dejagd": [
+    {
+      "date": "2026-11-22",
+      "kind": "blind review at build",
+      "pr": 978,
+      "findings": 32
+    }
   ]
 }

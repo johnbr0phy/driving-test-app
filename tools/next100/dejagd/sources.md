@@ -126,3 +126,34 @@ TierSchG, BNatSchG, Tier-LMHV, EU hygiene law), and the few Bavarian rules are l
   fees, fines, insurance sums; Falknerprüfung; anything about the exam itself.
 - Multiple-answer items: the real catalogue allows several correct answers; Tigertest asks one.
 - Picture questions and the oral and practical parts are not modelled.
+
+## Added at the blind review (2026-11-22)
+- Friedrich-Loeffler-Institut, FAQ Aujeszkysche Krankheit (Stand 22.03.2021, as republished by the
+  Landkreis Lüneburg), read 2026-11-22:
+  https://www.landkreis-lueneburg.de/_Resources/Persistent/1/9/b/3/19b38cc6765ae9b983e86473ac1c8ebae8a00002/FLI-FAQ-AK-2021-03-22_bf.pdf
+  (infection is always fatal for dogs; raw wild boar offal and meat are the commonest source; no
+  vaccine for dogs; do not feed raw Schwarzwild to hunting dogs) and AGES, Aujeszkysche Krankheit
+  bei Katzen und Hunden: https://www.ages.at/themen/krankheitserreger/aujeszkysche-krankheit/aujeszky-katzen-und-hunde/
+- SVLFG Unfallverhütungsvorschrift VSG 4.4 Jagd (revision 2024, summary from LJV Hessen), read
+  2026-11-22: https://ljv-hessen.de/wp-content/uploads/2024/07/2024-07-12_VSG_4_4_Revision.pdf
+  (clothing that stands out clearly in colour at Gesellschaftsjagden; signal-colour vests)
+- Faktenblatt Reform BayJG 2026 (above), page 4 read as text at review: "Zulassung der Fallen- und
+  Nachtjagd für die invasive Nutria".
+- BayJG read again 2026-11-22: Art. 8 "Die Mindestgröße eines Eigenjagdreviers beträgt 81,755 ha"
+  (German decimal comma: about 81.8 hectares, 300 ha in the Hochgebirge); Art. 6 Abs. 1 Nr. 4
+  Friedhöfe; Art. 39 Abs. 1; Art. 42 Abs. 1 Nr. 2 (300 m).
+- BJagdG § 11 Abs. 4 read 2026-11-22: "Die Pachtdauer soll mindestens neun Jahre betragen" (Länder
+  may set more); BJagdG § 19 and AWaffV § 13 read again the same day.
+
+## Copyright check at the blind review
+All 200 items were compared by machine (word overlap and string similarity on stem plus key)
+against 1,549 items of the Bavarian Fragenkatalog (Sachgebiete 1 to 6, wildtierportal.bayern.de,
+Stand 2017 to 2021) and the LMG's written papers 2024-4 and 2025-1 to 2025-4 with solutions,
+and the closest 70 pairs were read by hand. The reviewer opened these only for this check. Shared
+facts are expected (same syllabus); close rewordings of a catalogue question were rewritten:
+HUN-001, HUN-002 and HUN-028 (dog group and work items in the catalogue's form), HUN-010
+(spurlaut), HUN-015 (brauchbare Jagdhunde list), HEG-003 (hellroter, blasiger Schweiß), BIO-005
+(Rotwild rut dates in the catalogue's words), REC-024 (two Kurzwaffen) and NAT-024 (Zwischenfrucht
+definition). HEG-001 (Ausschlagen mit den Hinterläufen as a Kammerschuss sign) was replaced too:
+the catalogue reads the same sign, with a crooked back, as a Weidwundschuss, so a second answer
+was defensible.

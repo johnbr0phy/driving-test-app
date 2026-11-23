@@ -26,7 +26,7 @@ Q = [
  "Principes du PSC1 : on appuie fortement sur la plaie pour arrêter le saignement, on allonge la victime et on fait alerter les secours."),
 ("Une victime ne répond pas mais respire normalement. Vous :",
  "La mettez en PLS", ["La faites asseoir", "Lui donnez de l'eau", "La secouez fort"],
- "Principes du PSC1 : une personne inconsciente qui respire est placée en position latérale de sécurité pour garder les voies aériennes libres. Pour un motard casqué, on prévient les secours de ce geste."),
+ "Principes du PSC1 : une personne inconsciente qui respire est placée en position latérale de sécurité pour garder les voies aériennes libres."),
 ("Une victime ne répond pas et ne respire pas. En attendant les secours, vous :",
  "Commencez le massage cardiaque", ["La mettez sur le côté en PLS", "Lui donnez à boire lentement", "Attendez sans la toucher"],
  "Principes du PSC1 : face à une victime qui ne répond pas et ne respire pas, on fait alerter, on commence les compressions thoraciques et on fait chercher un défibrillateur."),

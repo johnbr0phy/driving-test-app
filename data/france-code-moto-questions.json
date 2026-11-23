@@ -109,7 +109,7 @@
     "optionD": "Le tramway",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Guidé par ses rails, le tramway ne peut pas vous éviter et freine sur une longue distance : sauf signalisation contraire, il a la priorité de passage sur les autres usagers."
+    "explanation": "Art. R422-3 : au croisement d'une route et d'une voie ferrée, la priorité revient aux matériels qui y circulent, tramways compris. Guidé par ses rails, le tramway ne peut pas vous éviter."
   },
   {
     "type": "FRMOTO",
@@ -424,14 +424,14 @@
     "state": "ALL",
     "questionId": "FRMOTO-CIR-031",
     "category": "frmotoCirculation",
-    "question": "Dans une zone de rencontre, les véhicules sont limités à :",
-    "optionA": "10 km/h",
-    "optionB": "20 km/h",
-    "optionC": "30 km/h",
-    "optionD": "50 km/h",
-    "correctAnswer": "B",
-    "correctIndex": 1,
-    "explanation": "Art. R110-2 : la zone de rencontre est ouverte à tous, piétons prioritaires et vitesse des véhicules limitée à 20 km/h."
+    "question": "À moto dans une zone de rencontre, un piéton marche au milieu de la chaussée devant vous. Vous :",
+    "optionA": "Klaxonnez pour qu'il se range",
+    "optionB": "Le contournez à 30 km/h",
+    "optionC": "Le laissez passer en roulant au pas",
+    "optionD": "Passez, la chaussée est à vous",
+    "correctAnswer": "C",
+    "correctIndex": 2,
+    "explanation": "Art. R110-2 : en zone de rencontre, les piétons peuvent circuler sur la chaussée et y sont prioritaires sur tous les véhicules, limités à 20 km/h. On ralentit et on le laisse passer."
   },
   {
     "type": "FRMOTO",
@@ -453,12 +453,12 @@
     "questionId": "FRMOTO-CIR-033",
     "category": "frmotoCirculation",
     "question": "Un agent lève le bras verticalement devant vous à un carrefour. Vous :",
-    "optionA": "Passez prudemment",
-    "optionB": "Tournez à droite",
-    "optionC": "Vous arrêtez",
+    "optionA": "Vous arrêtez",
+    "optionB": "Passez prudemment",
+    "optionC": "Tournez à droite",
     "optionD": "Accélérez pour dégager",
-    "correctAnswer": "C",
-    "correctIndex": 2,
+    "correctAnswer": "A",
+    "correctIndex": 0,
     "explanation": "Le bras levé verticalement d'un agent signifie attention, arrêt pour tous les usagers, sauf ceux déjà engagés dans le carrefour."
   },
   {
@@ -468,11 +468,11 @@
     "category": "frmotoCirculation",
     "question": "Les indications d'un agent et celles d'un feu se contredisent. Vous suivez :",
     "optionA": "Le feu tricolore",
-    "optionB": "Le panneau fixe",
-    "optionC": "L'agent",
+    "optionB": "L'agent",
+    "optionC": "Le panneau fixe",
     "optionD": "Le marquage au sol",
-    "correctAnswer": "C",
-    "correctIndex": 2,
+    "correctAnswer": "B",
+    "correctIndex": 1,
     "explanation": "Code de la route : les prescriptions des agents de la circulation l'emportent sur les feux, les panneaux et les règles de priorité."
   },
   {
@@ -483,10 +483,10 @@
     "question": "Vous arrivez à la fin d'un bouchon sur autoroute. Pour prévenir ceux qui suivent, vous :",
     "optionA": "Passez en feux de route",
     "optionB": "Klaxonnez longuement",
-    "optionC": "Roulez sur la bande d'arrêt",
-    "optionD": "Allumez les feux de détresse",
-    "correctAnswer": "D",
-    "correctIndex": 3,
+    "optionC": "Allumez les feux de détresse",
+    "optionD": "Roulez sur la bande d'arrêt",
+    "correctAnswer": "C",
+    "correctIndex": 2,
     "explanation": "Arrêté du 23 avril 2012, annexe I : le motard avertit les autres d'un risque en utilisant les feux de détresse lorsqu'il est le dernier d'une file ralentie ou arrêtée."
   },
   {
@@ -495,12 +495,12 @@
     "questionId": "FRMOTO-TRA-001",
     "category": "frmotoTrajectoire",
     "question": "Dans un virage à droite, où placez-vous la moto pour une trajectoire de sécurité ?",
-    "optionA": "Moitié gauche de la voie",
-    "optionB": "Contre le bord droit de la voie",
-    "optionC": "Sur la ligne médiane",
-    "optionD": "Au centre exact de la voie",
-    "correctAnswer": "A",
-    "correctIndex": 0,
+    "optionA": "Contre le bord droit de la voie",
+    "optionB": "Sur la ligne médiane",
+    "optionC": "Au centre exact de la voie",
+    "optionD": "Moitié gauche de la voie",
+    "correctAnswer": "D",
+    "correctIndex": 3,
     "explanation": "Arrêté du 23 avril 2012, annexe I : en virage à droite, le motard se place dans sa demi-voie de gauche en gardant un coussin de sécurité avec l'axe médian, pour voir plus loin."
   },
   {
@@ -578,14 +578,14 @@
     "state": "ALL",
     "questionId": "FRMOTO-TRA-007",
     "category": "frmotoTrajectoire",
-    "question": "En ligne droite sur une route à double sens, quelle position est la plus sûre ?",
-    "optionA": "Contre le bord droit",
-    "optionB": "Sur la ligne médiane",
-    "optionC": "Un peu à gauche de votre voie",
-    "optionD": "Au ras des voitures garées",
+    "question": "D'après les analyses d'accidents de moto, quel facteur est relevé dans près des deux tiers des collisions avec un autre usager ?",
+    "optionA": "Une panne de freins de la moto",
+    "optionB": "Un pneu de la moto éclaté",
+    "optionC": "La moto n'a pas été détectée",
+    "optionD": "Un excès de bruit de la moto",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Rouler dans le tiers gauche de sa voie, sans gêner les usagers d'en face, rend la moto visible dans les rétroviseurs de la voiture qui précède et éloigne des portières."
+    "explanation": "Arrêté du 23 avril 2012, fiche 5 : l'absence de détection est relevée dans près des deux tiers des accidents. Feux allumés, bonne position dans sa voie et se signaler aident à être vu."
   },
   {
     "type": "FRMOTO",
@@ -1222,14 +1222,14 @@
     "state": "ALL",
     "questionId": "FRMOTO-CON-023",
     "category": "frmotoConducteur",
-    "question": "Dans un groupe de motards, comment roulez-vous en ligne droite ?",
-    "optionA": "Côte à côte sur la voie",
-    "optionB": "En file serrée",
-    "optionC": "En quinconce, espacés",
-    "optionD": "Au milieu de la chaussée",
+    "question": "Une voiture venant en face attend pour tourner à gauche au moment où vous arrivez. Quel est le risque typique ?",
+    "optionA": "Qu'elle recule vers vous",
+    "optionB": "Qu'elle cale sur place",
+    "optionC": "Qu'elle vous coupe la route",
+    "optionD": "Qu'elle allume ses feux de route",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Le décalage en quinconce garde la distance de sécurité avec la moto qui précède tout en restant visible. Chacun conserve sa marge de freinage."
+    "explanation": "Arrêté du 23 avril 2012, fiche des accidents types : l'automobiliste qui tourne à gauche ne détecte pas le motard, ou apprécie mal sa vitesse, et lui coupe la route. On ralentit, prêt à freiner."
   },
   {
     "type": "FRMOTO",
@@ -2272,14 +2272,14 @@
     "state": "ALL",
     "questionId": "FRMOTO-MEC-003",
     "category": "frmotoMecanique",
-    "question": "Une chaîne de transmission trop détendue risque surtout de :",
-    "optionA": "Allumer le témoin d'huile",
-    "optionB": "Vider le réservoir",
-    "optionC": "Sauter de la couronne",
-    "optionD": "Bloquer la direction",
+    "question": "Un pneu de moto trop gonflé par rapport aux préconisations du constructeur :",
+    "optionA": "Freine mieux sur route mouillée",
+    "optionB": "Ne s'use plus du tout",
+    "optionC": "Tient moins bien sur route mouillée",
+    "optionD": "Consomme moins d'huile",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Une chaîne trop lâche fouette et peut sortir de la couronne ou du pignon, bloquant parfois la roue arrière. On contrôle sa tension et on la graisse."
+    "explanation": "Arrêté du 23 avril 2012, fiche 7 : le surgonflage accélère l'usure du pneumatique et défavorise la tenue de route sur chaussée détrempée. On suit le tableau de pressions du constructeur."
   },
   {
     "type": "FRMOTO",
@@ -2769,7 +2769,7 @@
     "optionD": "La mettez en PLS",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Principes du PSC1 : une personne inconsciente qui respire est placée en position latérale de sécurité pour garder les voies aériennes libres. Pour un motard casqué, on prévient les secours de ce geste."
+    "explanation": "Principes du PSC1 : une personne inconsciente qui respire est placée en position latérale de sécurité pour garder les voies aériennes libres."
   },
   {
     "type": "FRMOTO",

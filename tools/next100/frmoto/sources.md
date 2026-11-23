@@ -96,6 +96,34 @@ and situations are described in words. Fetched 2026-11-22 unless noted.
 - A B-licence holder's right to ride a 125 after two years and seven hours of training is on
   service-public F45, which did not load; the bank does not ask it.
 
+## Added at the second review (2026-11-22)
+- Code de la route art. R412-11-3 re-read on Légifrance 2026-11-22 (in Chrome): 50 km/h,
+  30 km/h if one queue is stopped (5°), no overtaking another rider between the lanes (6°),
+  warn others first (3°), not in roadworks, snow or ice (2°), L3e and L5e of at most one metre.
+- Code de la route art. R417-10, II, 1° (décret n° 2022-31), read on Légifrance 2026-11-22:
+  stopping or parking a motorcycle, motor tricycle or moped on a pavement is "gênant":
+  https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074228/LEGISCTA000006159604/
+- Code de la route art. R422-3 (priority at a crossing of a road and a railway goes to the
+  vehicles running on the rails; applied to tramways by the Cour de cassation unless signs or an
+  officer say otherwise), as reported 2026-11-22 by Le Monde du Droit, "Priorité au tramway":
+  https://www.lemondedudroit.fr/public/282-droit-public-general/90355-priorite-au-tramway.html
+- Panneau B3, "interdiction de dépasser tous les véhicules à moteur autres que ceux à deux roues
+  sans side-car" (arrêté du 24 novembre 1967), Cerema IISR panel list, June 2022, read 2026-11-22:
+  https://equipementsdelaroute.cerema.fr/IMG/pdf/01-panneaux_iisr_juin2022_cle26b686.pdf
+- Arrêté du 23 avril 2012, annexe (fiches de l'interrogation orale), read on Légifrance 2026-11-22
+  (https://www.legifrance.gouv.fr/loda/id/JORFTEXT000025803553): fiche 5 (absence of detection in
+  nearly two thirds of accidents; lights on, good position in the lane), the accident-types
+  fiche (a driver turning left fails to detect the rider and cuts across), fiche 6 (jacket with
+  back protector), fiche 7 (tyre wear markers, pressures, over-inflation hurts grip on wet roads,
+  brakes, ABS keeps control without shortening the stop), road surface clues (markings, manhole
+  covers, greasy road, gravel, leaves) and weather (strong wind pushes the bike off line).
+- Sécurité routière, leaflet "long trajet", July 2026, read 2026-11-22 (a break of at least a
+  quarter of an hour every two hours):
+  https://www.securite-routiere.gouv.fr/sites/default/files/2026-07/nv_depliant_long_trajet_3v-exe_bd.pdf
+- Removed at review as not supported by an official text: the left-third lane position, staggered
+  group riding and chain tension items (replaced by detection, left-turn and tyre-pressure items),
+  and a helmet sentence in the recovery-position explanation.
+
 ## Deliberately left out
 - Fines, fees, points removed per offence and anything about the test itself.
 - Helmet removal by a bystander and airbag vests (no official text read for them); daytime

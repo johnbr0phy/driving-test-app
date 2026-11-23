@@ -1,0 +1,4342 @@
+[
+  {
+    "id": "DP900-T1-001",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Microsoft Fabric",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which Microsoft offering is a unified SaaS analytics platform with data engineering, warehousing and Power BI in one workspace?",
+    "explanation": "Microsoft Fabric brings storage, data engineering, data warehousing, real-time analytics and Power BI together as one SaaS platform on OneLake. Azure Databricks is a Spark platform you run in your own subscription.",
+    "options": [
+      "Microsoft Fabric",
+      "Azure Stream Analytics",
+      "Azure SQL Database",
+      "Azure Databricks"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T1-002",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "Structured data",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A table stores every customer with exactly the same columns. What kind of data is this?",
+    "explanation": "Structured data follows a fixed schema, so every record has the same fields, usually as rows and columns. Semi-structured data lets fields vary from one record to the next.",
+    "options": [
+      "Unstructured",
+      "Vector",
+      "Semi-structured",
+      "Structured"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T1-003",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Transactional workloads",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A store's checkout system records thousands of sales a minute. What kind of workload is this?",
+    "explanation": "Recording many small, discrete units of work quickly is OLTP. OLAP serves aggregated, read-mostly queries over historical data.",
+    "options": [
+      "Online analytical processing",
+      "Extract, transform and load processing",
+      "Data visualization",
+      "Online transaction processing"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T1-004",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "Relational concepts",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a relational table, what does each row represent?",
+    "explanation": "A table models an entity type, each row is one instance (one customer, one order) and each column is an attribute.",
+    "options": [
+      "One query",
+      "One data type",
+      "One instance of an entity",
+      "One attribute of an entity"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T1-005",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Azure SQL family",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company must keep OS-level access to its database engine and lift and shift it unchanged. Which option fits?",
+    "explanation": "SQL Server on Azure Virtual Machines is IaaS: full compatibility and full control of the OS, but you manage patching and backups yourself.",
+    "options": [
+      "Azure SQL Managed Instance",
+      "Azure SQL Database",
+      "Azure Cosmos DB",
+      "SQL Server on Azure VMs"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T1-006",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Power BI capabilities",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In which Power BI tool does a report author usually import data, build a model and design reports?",
+    "explanation": "Power BI Desktop, a Windows app, is where authors import data, model it and build reports, which they then publish to the Power BI service to share.",
+    "options": [
+      "Power BI Desktop",
+      "Power BI phone app",
+      "Power BI service",
+      "Azure Data Studio"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T1-007",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Blob storage",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which type of blob is used for the virtual disks of Azure VMs?",
+    "explanation": "Page blobs are made of 512-byte pages for random reads and writes, which suits virtual disks. Block blobs suit large files that change infrequently.",
+    "options": [
+      "Page blob",
+      "Append blob",
+      "Archive blob",
+      "Block blob"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T1-008",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB APIs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An app's existing document-database drivers and MQL queries must keep working on Cosmos DB. Which API fits?",
+    "explanation": "Each Cosmos DB API is wire-protocol compatible with its engine, so the API for MongoDB lets existing MongoDB drivers and queries keep working.",
+    "options": [
+      "Azure Cosmos DB for MongoDB",
+      "Azure Cosmos DB for Table",
+      "Azure Cosmos DB for NoSQL",
+      "Azure Cosmos DB for Apache Gremlin"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T1-009",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Analytical data stores",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A data warehouse has a central table of sales amounts linked to tables of products, dates and stores. What is this design called?",
+    "explanation": "A star schema has one fact table of numeric measures joined to dimension tables. A snowflake schema adds further tables for dimension hierarchies.",
+    "options": [
+      "A star schema",
+      "A graph model",
+      "A snowflake schema",
+      "A key-value model"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T1-010",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "Semi-structured data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Some customer records hold two email addresses and others hold none. Which format suits this best?",
+    "explanation": "JSON lets each document carry its own set of fields and nested collections, which fits semi-structured data. CSV and fixed-width files expect every row to share the same fields.",
+    "options": [
+      "A CSV file",
+      "A bitmap image",
+      "JSON documents",
+      "Fixed-width text"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T1-011",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "ACID",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A transfer debits one account, then fails before crediting the other, and the debit is undone. Which ACID property is this?",
+    "explanation": "Atomicity treats a transaction as a single unit that succeeds or fails completely, so a half-finished transfer is rolled back.",
+    "options": [
+      "Durability",
+      "Isolation",
+      "Atomicity",
+      "Consistency"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T1-012",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "Normalization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Customer details are repeated on every order row. What does normalization do about this?",
+    "explanation": "Normalization puts each entity in its own table and links tables with keys, so a customer's details are stored once rather than on every order.",
+    "options": [
+      "Stores them as JSON",
+      "Moves them to their own table",
+      "Adds an index to the orders",
+      "Compresses the duplicate text"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-T1-013",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Azure SQL family",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which PaaS option offers near-100% compatibility with on-premises SQL Server for migrations with few code changes?",
+    "explanation": "SQL Managed Instance is PaaS with near-complete SQL Server compatibility and several databases per instance, so it suits most migrations. SQL Database supports most, but not all, instance features.",
+    "options": [
+      "Azure SQL Database Hyperscale",
+      "Azure SQL Managed Instance",
+      "Azure SQL Database",
+      "Azure Database for MySQL"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-T1-014",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Visualizations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which visual best shows how monthly revenue changed over two years?",
+    "explanation": "Line charts show trends over time. Pie charts show parts of a whole, and a card shows a single key figure.",
+    "options": [
+      "Pie chart",
+      "Card",
+      "Filled map",
+      "Line chart"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T1-015",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Ingestion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants Fabric to read files in Amazon S3 without copying them into OneLake. What should it use?",
+    "explanation": "A OneLake shortcut is a live reference to data in Data Lake Storage Gen2, Amazon S3, Google Cloud Storage or another OneLake location, with no copy.",
+    "options": [
+      "Fabric mirroring",
+      "A OneLake shortcut",
+      "An Eventstream",
+      "A Dataflow Gen2"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-T1-016",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Blob access tiers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Backups must be kept for years and are almost never read; a delay of hours to read them is acceptable. Which tier is cheapest?",
+    "explanation": "Archive has the lowest storage cost but is offline: a blob must be rehydrated, which can take up to 15 hours, before it can be read.",
+    "options": [
+      "Cool",
+      "Archive",
+      "Hot",
+      "Cold"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-T1-017",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "Data classification",
+    "difficulty": 1,
+    "format": "matrix",
+    "stem": "Match each item to the kind of data it is:",
+    "explanation": "Video has no field structure, so it is unstructured. A row in a table with fixed columns is structured, and a JSON entry whose fields can vary is semi-structured.",
+    "rows": [
+      "A video of a product demo",
+      "An order row in a sales table",
+      "A JSON log entry with optional fields"
+    ],
+    "columns": [
+      "Semi-structured",
+      "Unstructured",
+      "Structured"
+    ],
+    "correct": [
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "id": "DP900-T1-018",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB use cases",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A game stores player profiles that must be read and written with low latency in many regions. Which service fits?",
+    "explanation": "Cosmos DB is a globally distributed NoSQL database: you can add regions at any time, write in several regions and get single-digit millisecond reads and writes.",
+    "options": [
+      "Azure Data Explorer",
+      "Azure Cosmos DB",
+      "Azure Files",
+      "Azure SQL Managed Instance"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-T1-019",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Azure Databricks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which open-source engine is Azure Databricks built on?",
+    "explanation": "Azure Databricks is built on Apache Spark for large-scale data engineering, data science and SQL analytics over lakehouse formats, mainly Delta Lake.",
+    "options": [
+      "Apache Spark",
+      "Apache Kafka",
+      "Apache Cassandra",
+      "Apache Gremlin"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T1-020",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "ACID",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a transaction commits, the server loses power. On restart the change is still there. Which property is this?",
+    "explanation": "Durability means a committed transaction stays committed and is persisted, even if the system is switched off.",
+    "options": [
+      "Durability",
+      "Consistency",
+      "Isolation",
+      "Atomicity"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T1-021",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "SQL statements",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each statement to its group of SQL:",
+    "explanation": "Data definition language (CREATE, ALTER, DROP, RENAME) defines objects; data control language (GRANT, DENY, REVOKE) manages permissions; data manipulation language (SELECT, INSERT, UPDATE, DELETE) works with rows.",
+    "rows": [
+      "CREATE TABLE",
+      "GRANT",
+      "UPDATE"
+    ],
+    "columns": [
+      "DCL",
+      "DML",
+      "DDL"
+    ],
+    "correct": [
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "DP900-T1-022",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Azure SQL Database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Several small databases peak at different times of the month. Which Azure SQL Database option lets them share resources?",
+    "explanation": "An elastic pool lets multiple databases share a set of resources, which suits databases whose busy periods don't overlap.",
+    "options": [
+      "Serverless single database",
+      "Read replica",
+      "Hyperscale",
+      "Elastic pool"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T1-023",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Data models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a semantic model, what is a table of numeric values recorded for each sale called?",
+    "explanation": "Fact tables hold numeric measures, typically one row per event. Dimension tables describe the entities you aggregate by, such as product or date.",
+    "options": [
+      "A dimension table",
+      "A hierarchy",
+      "A slicer",
+      "A fact table"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T1-024",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "File formats",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which file format stores data by column and is widely used in data lakes and lakehouses?",
+    "explanation": "Parquet is a columnar format: each column's values are stored together in row groups, which suits analytical queries. Avro stores data by row with a JSON header.",
+    "options": [
+      "XML",
+      "Avro",
+      "CSV",
+      "Parquet"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T1-025",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Azure Files",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which protocol lets Windows, Linux and macOS clients all mount an Azure file share?",
+    "explanation": "Server Message Block (SMB) shares work from Windows, Linux and macOS. NFS shares are for Linux clients and need the SSD tier.",
+    "options": [
+      "NFS",
+      "HTTP range",
+      "SMB",
+      "FTP"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T1-026",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Batch and streaming",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A smoke alarm signal must trigger action within seconds. Which processing approach fits?",
+    "explanation": "Stream processing handles each event as it arrives, with latency of seconds or milliseconds, which time-critical alerts need. Batch processing waits to process data together.",
+    "options": [
+      "Stream processing",
+      "Manual export",
+      "Monthly reporting",
+      "Batch processing"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T1-027",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "Vector data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An AI app finds documents with a similar meaning to a question. What kind of data does it compare?",
+    "explanation": "Vector data, also called embeddings, is a numeric representation of content such as text or images, which AI apps compare to find semantically similar content.",
+    "options": [
+      "Relational keys",
+      "Delimited text",
+      "Binary large objects",
+      "Vector embeddings"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T1-028",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Analytical workloads",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which describes an analytical workload?",
+    "explanation": "Analytical systems are read-only or read-mostly and hold large volumes of historical data for reporting. Frequent small writes are typical of OLTP.",
+    "options": [
+      "Many small inserts and updates",
+      "Row-by-row CRUD from a web app",
+      "Read-mostly historical queries",
+      "Locking rows during each sale"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T1-029",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "Database objects",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which database object is a virtual table based on the result of a SELECT query?",
+    "explanation": "A view is a virtual table defined by a query; you can select from it and filter it like a table. A stored procedure runs SQL statements on command.",
+    "options": [
+      "A trigger log",
+      "A stored procedure",
+      "A view",
+      "An index"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T1-030",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Open-source databases",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team runs a LAMP stack web app and wants a managed database without changing the app. Which service fits?",
+    "explanation": "LAMP is Linux, Apache, MySQL and PHP, so Azure Database for MySQL lets the app move without significant changes.",
+    "options": [
+      "Azure Database for PostgreSQL",
+      "Azure SQL Database",
+      "Azure Database for MySQL",
+      "Azure Cosmos DB"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T1-031",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Data models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Users want to drill from year to month to day in a report. What should the model define?",
+    "explanation": "A hierarchy, such as year, month and day, lets users drill up and down between levels of a dimension.",
+    "options": [
+      "A hierarchy",
+      "A bookmark",
+      "A measure",
+      "A relationship"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T1-032",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Real-time services",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Azure service ingests high volumes of events and keeps them in order within each partition?",
+    "explanation": "Azure Event Hubs ingests large event streams, delivering events in order within a partition with at-least-once delivery.",
+    "options": [
+      "Azure Files",
+      "Azure Data Factory",
+      "Azure SQL Database",
+      "Azure Event Hubs"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T1-033",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB resource model",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Cosmos DB, at which level are the partition key and throughput set?",
+    "explanation": "The container is the unit of storage and scaling, where the partition key, throughput and indexing policy are set. Items live inside containers.",
+    "options": [
+      "Account",
+      "Item",
+      "Region",
+      "Container"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T1-034",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "Data stores",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which two broad categories of data store are in common use?",
+    "explanation": "Data is generally kept either as files in a file store or as records in a database. Tables and views are objects inside a relational database, not categories of store.",
+    "options": [
+      "Hot and cool tiers",
+      "File stores and databases",
+      "Message queues and caches",
+      "Tables and views"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-T1-035",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Table storage",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Azure Table Storage, which two values together identify a row uniquely?",
+    "explanation": "Each Table Storage row is identified by its partition key plus its row key. A timestamp column records the last change but is not part of the key.",
+    "options": [
+      "Timestamp and row key",
+      "Partition key and row key",
+      "Primary key and foreign key",
+      "Container and blob name"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-T1-036",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Analytical data stores",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each statement about analytical data stores, select Yes if it is true or No if it is false:",
+    "explanation": "A data lake is a file store with schema-on-read. A data warehouse is relational. A Fabric Lakehouse automatically creates a SQL analytics endpoint over its Delta tables.",
+    "rows": [
+      "A data lake applies the schema when data is read.",
+      "A data warehouse is mainly a store of unstructured files.",
+      "A Fabric Lakehouse gets a SQL analytics endpoint automatically."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "DP900-T1-037",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Data roles",
+    "difficulty": 1,
+    "format": "matrix",
+    "stem": "Match each task to the role that usually does it:",
+    "explanation": "Database administrators handle backup, recovery, availability and permissions. Data engineers build ingestion and transformation pipelines. Data analysts explore data and build reports and visualizations.",
+    "rows": [
+      "Restore a database after a failure",
+      "Build a pipeline that cleans source data",
+      "Design a dashboard of sales trends"
+    ],
+    "columns": [
+      "Data engineer",
+      "Data analyst",
+      "Database administrator"
+    ],
+    "correct": [
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "DP900-T1-038",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "Relational concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An Orders table holds a CustomerID that points to the Customers table. What is CustomerID in Orders?",
+    "explanation": "A foreign key in one table references the primary key of a related table, which links an order to the customer who placed it.",
+    "options": [
+      "A composite key",
+      "A foreign key",
+      "A view",
+      "A primary key"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-T1-039",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Azure SQL family",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each statement about the Azure SQL family, select Yes if it is true or No if it is false:",
+    "explanation": "SQL Database and Managed Instance are PaaS, so Microsoft patches the OS and SQL Server. The whole family is built on the SQL Server database engine.",
+    "rows": [
+      "Azure SQL Database is platform as a service.",
+      "On Azure SQL Managed Instance you patch the operating system yourself.",
+      "All three Azure SQL options use the SQL Server engine."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "DP900-T1-040",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Visualizations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which visual shows whether two measures, such as ad spend and sales, are related?",
+    "explanation": "A scatter plot compares two numeric measures and shows a relationship or correlation between them.",
+    "options": [
+      "Table",
+      "Pie chart",
+      "Column chart",
+      "Scatter plot"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T1-041",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "Azure datastores",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team needs a store for millions of product photos that apps fetch over HTTP. Which Azure service fits?",
+    "explanation": "Blob Storage holds unstructured binary objects such as images, video and documents. Table Storage keeps key-value entities, not large binary files.",
+    "options": [
+      "Azure Cosmos DB for Gremlin",
+      "Azure Table Storage",
+      "Azure Blob Storage",
+      "Azure SQL Database"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T1-042",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Real-time services",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Fabric Real-Time Intelligence, which item stores streaming data in KQL databases for fast queries?",
+    "explanation": "An eventhouse hosts KQL databases for querying streaming and time-series data. An eventstream captures and routes the events, and Activator triggers actions.",
+    "options": [
+      "Dataflow Gen2",
+      "Eventstream",
+      "Activator",
+      "Eventhouse"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T1-043",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB APIs",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each data model to the Cosmos DB API built for it:",
+    "explanation": "The Gremlin API stores graphs of vertices and edges, the Cassandra API stores column-family data, and the native NoSQL API stores JSON documents.",
+    "rows": [
+      "Nodes and edges",
+      "Column families",
+      "JSON documents"
+    ],
+    "columns": [
+      "Apache Gremlin",
+      "NoSQL",
+      "Apache Cassandra"
+    ],
+    "correct": [
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "id": "DP900-T1-044",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Data Lake Storage Gen2",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "For each statement about Azure Data Lake Storage Gen2, select Yes if it is true or No if it is false:",
+    "explanation": "Data Lake Storage Gen2 is Blob Storage with a hierarchical namespace, which adds folders and POSIX ACLs. Upgrading an account to it is one-way.",
+    "rows": [
+      "It is enabled by turning on the hierarchical namespace.",
+      "It supports POSIX-style access control lists on folders.",
+      "Once enabled, the hierarchical namespace can be turned off again."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "DP900-T1-045",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Analytical workloads",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In a medallion architecture, which layer holds raw data exactly as it arrived from source systems?",
+    "explanation": "Bronze keeps raw ingested data unchanged so it can be reprocessed. Silver holds cleansed, conformed data, and gold holds aggregated, business-ready data.",
+    "options": [
+      "Gold",
+      "Bronze",
+      "Silver",
+      "Platinum"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-T1-046",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "SQL statements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An admin runs an UPDATE with no WHERE clause. What happens?",
+    "explanation": "UPDATE, DELETE and SELECT apply to every row unless a WHERE clause filters them, and SQL does not ask for confirmation.",
+    "options": [
+      "Only the first row changes",
+      "The database asks you to confirm",
+      "The statement is rejected",
+      "Every row in the table changes"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T1-047",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Azure SQL Database",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Where do you manage firewall rules, logins and auditing for a group of Azure SQL databases?",
+    "explanation": "An Azure SQL Database logical server is the central admin point for its databases, logins, firewall rules, auditing rules and failover groups.",
+    "options": [
+      "The resource lock",
+      "Each table",
+      "The logical server",
+      "The storage account"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T1-048",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Power BI capabilities",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each statement about Power BI, select Yes if it is true or No if it is false:",
+    "explanation": "Authors publish from Desktop to the Power BI service, which schedules refreshes and shares reports, dashboards and apps. People view them in a browser or the phone app too.",
+    "rows": [
+      "Reports are published from Desktop to the Power BI service to share.",
+      "The Power BI service can schedule data refreshes.",
+      "Reports can only be viewed in Power BI Desktop."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "DP900-T1-049",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "File formats",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each statement about file formats, select Yes if it is true or No if it is false:",
+    "explanation": "CSV is plain text that people and many tools can read. Avro is row-based, with a JSON header describing the binary records. XML marks elements and attributes with tags in angle brackets.",
+    "rows": [
+      "CSV is readable by people without special software.",
+      "Avro is a column-based format.",
+      "XML uses tags in angle brackets to mark elements."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "DP900-T1-050",
+    "section": "dp900",
+    "test": 1,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Microsoft Fabric",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two Fabric items store data you can query with SQL? (Choose two.)",
+    "explanation": "A Fabric Warehouse is a relational warehouse queried with T-SQL, and a Lakehouse exposes its Delta tables through a SQL analytics endpoint. Eventstreams and pipelines move data rather than store it.",
+    "options": [
+      "Eventstream",
+      "Data pipeline",
+      "Fabric Lakehouse",
+      "Fabric Warehouse"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "DP900-T2-001",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Ingestion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Fabric team wants low-code data transformation with Power Query. Which item fits?",
+    "explanation": "Dataflows Gen2 are low-code transformations built with Power Query. Notebooks give code-first control with Spark.",
+    "options": [
+      "Dataflow Gen2",
+      "Notebook",
+      "Eventhouse",
+      "SQL analytics endpoint"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T2-002",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "Unstructured data",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of these is usually treated as unstructured data?",
+    "explanation": "Documents, images, audio, video and other binary files have no specific field structure, so they are unstructured. CSV and tables are structured, and JSON is semi-structured.",
+    "options": [
+      "A product price list table",
+      "Scanned PDF contracts",
+      "A JSON order document",
+      "An employee roster in CSV"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-T2-003",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "ACID",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "While a transfer runs, a balance check must not see one account updated and the other not. Which property ensures this?",
+    "explanation": "Isolation stops concurrent transactions from interfering, so another query sees either the state before the transfer or the state after it, never a mix.",
+    "options": [
+      "Durability",
+      "Availability",
+      "Isolation",
+      "Atomicity"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T2-004",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "Relational concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A LineItem row is unique only by OrderNo and ItemNo together. What is that pair called?",
+    "explanation": "A composite key is a unique combination of columns. LineItem rows are identified by the order number plus the item number together.",
+    "options": [
+      "A column family",
+      "A foreign key",
+      "A composite key",
+      "A surrogate index"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T2-005",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Azure SQL Database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A database is busy for a few hours a day and idle otherwise. Which compute option bills for compute used and can pause?",
+    "explanation": "The serverless compute tier scales within a range, bills for the compute it uses and can auto-pause when idle in General Purpose.",
+    "options": [
+      "Serverless",
+      "Hyperscale",
+      "Business Critical",
+      "Elastic pool"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T2-006",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Visualizations",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A manager wants one large number showing total sales on a dashboard. Which visual fits?",
+    "explanation": "A card displays a single key figure, such as total sales. Line and scatter charts show trends and relationships.",
+    "options": [
+      "Line chart",
+      "Card",
+      "Scatter plot",
+      "Matrix"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-T2-007",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Blob storage",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An app writes a new line to a log blob every few seconds and never changes earlier lines. Which blob type fits?",
+    "explanation": "Append blobs are block blobs optimized for append operations: you can only add blocks to the end, which suits logs.",
+    "options": [
+      "Block blob",
+      "Cold blob",
+      "Page blob",
+      "Append blob"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T2-008",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB APIs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is the native Cosmos DB API that queries JSON documents with a SQL-like syntax?",
+    "explanation": "The API for NoSQL, once called the SQL API, is Cosmos DB's native API: it stores JSON documents and queries them with SQL-like syntax.",
+    "options": [
+      "Azure Cosmos DB for Apache Cassandra",
+      "Azure Cosmos DB for NoSQL",
+      "Azure Cosmos DB for MongoDB",
+      "Azure Cosmos DB for Table"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-T2-009",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Ingestion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Fabric feature continuously replicates an Azure SQL Database into OneLake in near real time without a pipeline?",
+    "explanation": "Fabric mirroring keeps a near-real-time copy of sources such as Azure SQL Database, Azure Cosmos DB and Snowflake in OneLake, with no pipeline to build.",
+    "options": [
+      "Activator",
+      "Mirroring",
+      "Shortcuts",
+      "Lifecycle policies"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-T2-010",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "Entities and attributes",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a data model for customers, what is a customer's phone number?",
+    "explanation": "An entity is a thing the organization tracks, such as a customer, and attributes are its characteristics, such as name, address and phone number.",
+    "options": [
+      "An attribute",
+      "A transaction",
+      "A schema",
+      "An entity"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T2-011",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Analytical workloads",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the difference between ETL and ELT?",
+    "explanation": "ETL transforms data before loading it into the analytical store; ELT loads it first and transforms it afterward, a pattern common in lakehouses.",
+    "options": [
+      "How often data refreshes",
+      "When the data is transformed",
+      "Which tool runs the job",
+      "Whether data is encrypted"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-T2-012",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "Database objects",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which object speeds up queries that filter on a column but slows inserts and updates?",
+    "explanation": "An index keeps a sorted copy of column values with pointers to rows, which helps queries with WHERE clauses but must be maintained on every insert, update and delete.",
+    "options": [
+      "A view",
+      "A schema",
+      "A synonym",
+      "An index"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T2-013",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Azure SQL Database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Azure SQL Database service tier supports databases up to 128 TB with fast scaling and restores?",
+    "explanation": "Hyperscale supports databases up to 128 TB with rapid scaling and fast backup and restore. An elastic pool is a way to share resources, not a size tier.",
+    "options": [
+      "General Purpose",
+      "Basic",
+      "Hyperscale",
+      "Elastic pool"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T2-014",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Visualizations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which visual compares sales across a handful of product categories most clearly?",
+    "explanation": "Bar and column charts compare values across discrete categories. Line charts suit trends over continuous time.",
+    "options": [
+      "Card",
+      "Bar or column chart",
+      "Scatter plot",
+      "Line chart with markers"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-T2-015",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Analytical data stores",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A SQL team wants a fully managed relational store in Fabric with strict schema enforcement and T-SQL. Which item fits?",
+    "explanation": "A Fabric Warehouse is a managed relational warehouse queried with T-SQL and with strong schema enforcement. A Lakehouse suits mixed and semi-structured data and Spark work.",
+    "options": [
+      "Fabric Warehouse",
+      "Fabric Lakehouse",
+      "Eventhouse",
+      "OneLake shortcut"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T2-016",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Blob access tiers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which online tier has a 90-day minimum and suits short-term backups that are rarely read?",
+    "explanation": "The cold tier is online with a 90-day minimum. Cool has a 30-day minimum and archive, which is offline, 180 days.",
+    "options": [
+      "Cold",
+      "Hot",
+      "Premium",
+      "Cool"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T2-017",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "File formats",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which format adds a transaction log to Parquet files to give ACID transactions and versioning in file storage?",
+    "explanation": "Delta Lake is an open-source storage format built on Parquet. Its transaction log enables ACID transactions, data versioning and reliable updates on files in a data lake.",
+    "options": [
+      "Delta Lake",
+      "JSON Lines",
+      "ORC",
+      "Avro"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T2-018",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB use cases",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which workload is a poor fit for Cosmos DB, according to Microsoft's DP-900 guidance?",
+    "explanation": "Cosmos DB suits IoT, gaming, retail and web or mobile apps. Workloads with complex multi-table joins fit a relational service such as Azure SQL Database better.",
+    "options": [
+      "User profiles for a large mobile app",
+      "IoT telemetry from devices",
+      "Shopping carts for a web store",
+      "Complex joins across many tables"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T2-019",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Azure Databricks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Azure Databricks component handles governance, access control and lineage for data?",
+    "explanation": "Unity Catalog provides governance, access control, lineage and discovery in Azure Databricks. Lakeflow pipelines handle ingestion and transformation.",
+    "options": [
+      "Lakeflow",
+      "Databricks SQL",
+      "Unity Catalog",
+      "Genie"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T2-020",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Analytical workloads",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which store combines a data lake's flexible file storage with a warehouse's relational querying?",
+    "explanation": "A data lakehouse stores files in a data lake but exposes tables you can query with SQL, combining the strengths of both.",
+    "options": [
+      "OLTP database",
+      "Data mart",
+      "Data lakehouse",
+      "Key-value store"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T2-021",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "SQL statements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement removes a permission that was given earlier?",
+    "explanation": "REVOKE removes a permission previously granted. DENY explicitly refuses a permission, DROP removes an object and DELETE removes rows.",
+    "options": [
+      "REVOKE",
+      "DENY",
+      "DELETE",
+      "DROP"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T2-022",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Open-source databases",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An app stores geometric data such as polygons and uses an object-relational database. Which Azure service fits?",
+    "explanation": "PostgreSQL is a hybrid relational-object database that supports custom and geometric data types such as lines, circles and polygons.",
+    "options": [
+      "Azure Database for PostgreSQL",
+      "Azure Database for MySQL",
+      "Azure Table Storage",
+      "Azure SQL Managed Instance"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T2-023",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Data models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Most semantic models include a dimension table for which common attribute?",
+    "explanation": "Almost every analytical model has a time dimension, so measures can be aggregated by day, month, quarter or year.",
+    "options": [
+      "Font",
+      "Color theme",
+      "Time",
+      "Password"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T2-024",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "File formats",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An Avro file starts with a header that describes its data. In what format is that header?",
+    "explanation": "Avro is a row-based format whose header, stored as JSON, describes the structure; the records themselves are stored as binary blocks.",
+    "options": [
+      "XML",
+      "JSON",
+      "Parquet",
+      "Plain CSV"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-T2-025",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Blob storage",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Blobs are stored inside what, which also sets the level where access is controlled?",
+    "explanation": "Blobs live in containers, and access is controlled at the container level. Folders in plain Blob Storage are only virtual.",
+    "options": [
+      "Containers",
+      "Partitions",
+      "Queues",
+      "File shares"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T2-026",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Batch and streaming",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A credit card company prints each customer's bill once a month from all of that month's purchases. Which approach is this?",
+    "explanation": "Batch processing collects data and processes it together on a schedule, such as a monthly bill. It handles large volumes efficiently but adds delay.",
+    "options": [
+      "Change data capture",
+      "Event sourcing",
+      "Batch processing",
+      "Stream processing"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T2-027",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "Structured data",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two features describe structured data? (Choose two.)",
+    "explanation": "Structured data has a fixed schema, so all records have the same fields, most often in tables of rows and columns. Varying fields mark semi-structured data, and images are unstructured.",
+    "options": [
+      "A fixed schema shared by all records",
+      "Usually held as rows and columns",
+      "Mostly images and audio files",
+      "Fields that vary from record to record"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2
+  },
+  {
+    "id": "DP900-T2-028",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Data roles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who is usually responsible for granting and denying users access to a database?",
+    "explanation": "Database administrators manage security, granting and denying privileges, along with availability, performance and backups.",
+    "options": [
+      "Database administrator",
+      "Data scientist",
+      "Report consumer",
+      "Data analyst"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T2-029",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "SQL dialects",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which SQL dialect is used by Azure SQL Database and SQL Server?",
+    "explanation": "Transact-SQL (T-SQL) is the dialect for SQL Server, Azure SQL Database, Azure SQL Managed Instance and SQL Server on Azure VMs. PL/pgSQL is PostgreSQL's and PL/SQL is Oracle's.",
+    "options": [
+      "PL/pgSQL",
+      "PL/SQL",
+      "Cypher",
+      "Transact-SQL"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T2-030",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Azure SQL family",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which option best suits building a brand-new cloud app that wants the latest stable SQL Server features?",
+    "explanation": "Azure SQL Database is the PaaS option recommended for new cloud solutions. Managed Instance mainly targets migrations that need instance features.",
+    "options": [
+      "SQL Server on Azure VMs",
+      "Azure SQL Database",
+      "Azure Database for MySQL",
+      "Azure SQL Managed Instance"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-T2-031",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Data models",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which Power BI mode loads Delta tables from OneLake into memory without importing a copy?",
+    "explanation": "Direct Lake loads Delta tables from OneLake straight into memory with no separate import copy. Import mode copies data into the VertiPaq engine.",
+    "options": [
+      "Import",
+      "Dual",
+      "Direct Lake",
+      "DirectQuery to SQL"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T2-032",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Real-time services",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Fabric Real-Time Intelligence item watches data and triggers an alert or action when a condition is met?",
+    "explanation": "Activator turns insights into actions, such as alerts, when data meets a condition. The Real-Time hub is the catalog for discovering streaming data.",
+    "options": [
+      "Real-Time hub",
+      "Eventhouse",
+      "Eventstream",
+      "Activator"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T2-033",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB consistency",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which Cosmos DB consistency level is the most widely used?",
+    "explanation": "Cosmos DB offers five levels: strong, bounded staleness, session, consistent prefix and eventual. Session is the most widely used.",
+    "options": [
+      "Bounded staleness",
+      "Eventual",
+      "Session",
+      "Strong"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T2-034",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "File formats",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A legacy system sends records where each field takes a set number of characters. What format is this?",
+    "explanation": "In fixed-width data each field is allocated a fixed number of characters, so no delimiter is needed. TSV separates fields with tabs.",
+    "options": [
+      "Parquet",
+      "Fixed-width text",
+      "JSON",
+      "Tab-separated values"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-T2-035",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Azure Files",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Branch offices want fast local access to a cloud share. Which service caches it on their local servers?",
+    "explanation": "Azure File Sync caches Azure file shares on local Windows servers and keeps them synchronized. AzCopy copies files but does not keep a cache in sync.",
+    "options": [
+      "OneLake shortcuts",
+      "Azure Data Factory",
+      "AzCopy",
+      "Azure File Sync"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T2-036",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Batch and streaming",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each trait, select whether it describes batch or stream processing:",
+    "explanation": "Streaming works on the most recent data or a rolling window with very low latency. Batch processing covers the whole dataset and its latency is typically hours.",
+    "rows": [
+      "Latency of seconds or less",
+      "Processes all data in the set",
+      "Uses a rolling time window"
+    ],
+    "columns": [
+      "Batch",
+      "Stream"
+    ],
+    "correct": [
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "DP900-T2-037",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Transactional workloads",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two traits describe an OLTP system? (Choose two.)",
+    "explanation": "OLTP databases are tuned for both reads and writes so live line-of-business apps can create, retrieve, update and delete records. Preaggregated totals belong to analytical models.",
+    "options": [
+      "Supports CRUD operations",
+      "Optimized for reads and writes",
+      "Stores mostly preaggregated totals",
+      "Refreshes once each night"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2
+  },
+  {
+    "id": "DP900-T2-038",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "Normalization",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each statement about normalization, select Yes if it is true or No if it is false:",
+    "explanation": "Normalized schemas keep each attribute in its own column and each fact in one place, so an update touches one row. Normalization removes duplication rather than adding it.",
+    "rows": [
+      "Each discrete attribute goes in its own column.",
+      "A customer's address change is made in one row.",
+      "Normalization adds duplicate values to speed up writes."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "DP900-T2-039",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Azure SQL family",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each Azure SQL option to its service model or best use:",
+    "explanation": "SQL Server on VMs is IaaS with full control. Managed Instance is PaaS with near-complete compatibility for migrations. SQL Database is PaaS suited to new cloud solutions.",
+    "rows": [
+      "SQL Server on Azure VMs",
+      "Azure SQL Managed Instance",
+      "Azure SQL Database"
+    ],
+    "columns": [
+      "PaaS for new cloud apps",
+      "PaaS for instance migrations",
+      "IaaS with full OS control"
+    ],
+    "correct": [
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "DP900-T2-040",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Visualizations",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each question to the visual that answers it best:",
+    "explanation": "Pie charts show proportions of a total, maps compare values by geography, and tables list exact values.",
+    "rows": [
+      "What share of sales comes from each region?",
+      "Where are our customers located?",
+      "What exact values did each store report?"
+    ],
+    "columns": [
+      "Table",
+      "Pie chart",
+      "Map"
+    ],
+    "correct": [
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "id": "DP900-T2-041",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "Azure datastores",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Staff need a shared network drive in the cloud that Windows PCs map over SMB. Which service fits?",
+    "explanation": "Azure Files provides cloud file shares reached over SMB (or NFS from Linux), so it can replace an on-premises file server. Blob Storage is object storage reached over HTTP.",
+    "options": [
+      "Azure Blob Storage",
+      "Azure Files",
+      "Azure SQL Database",
+      "Azure Event Hubs"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-T2-042",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Real-time services",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company outside Fabric needs a PaaS job that runs a perpetual SQL-like query over an event stream. Which service fits?",
+    "explanation": "Azure Stream Analytics runs streaming jobs with a perpetual query from inputs to outputs, and suits standalone or hybrid solutions outside Fabric.",
+    "options": [
+      "Azure Data Factory",
+      "Microsoft Purview",
+      "Azure Stream Analytics",
+      "Azure SQL Managed Instance"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T2-043",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB features",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each statement about Azure Cosmos DB, select Yes if it is true or No if it is false:",
+    "explanation": "Cosmos DB is schema-agnostic, so items in one container can differ. It automatically indexes all properties by default, and you can add regions whenever you need them.",
+    "rows": [
+      "It indexes every property of every item by default.",
+      "Items in one container must all share the same schema.",
+      "Regions can be added to an account at any time."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "DP900-T2-044",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Non-relational storage",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each need to the Azure Storage service that fits:",
+    "explanation": "Azure Files provides network file shares, Table Storage holds key-value entities, and Blob Storage holds unstructured objects such as images.",
+    "rows": [
+      "Network share for an office",
+      "Key-value rows for app settings",
+      "Images served to a website"
+    ],
+    "columns": [
+      "Azure Blob Storage",
+      "Azure Files",
+      "Azure Table Storage"
+    ],
+    "correct": [
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "id": "DP900-T2-045",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Analytical workloads",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Business users explore sales totals by region, then drill down to city. What kind of store supports this best?",
+    "explanation": "A semantic (OLAP) model preaggregates measures across dimension hierarchies, so users can drill up and down quickly.",
+    "options": [
+      "An OLTP database",
+      "A file share",
+      "A semantic model",
+      "A message queue"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T2-046",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "Database objects",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants reusable logic that takes a parameter and runs several SQL statements on demand. What should it create?",
+    "explanation": "A stored procedure holds SQL statements that run on command, can take parameters and encapsulates logic. A view only returns the result of one query.",
+    "options": [
+      "An index",
+      "A view",
+      "A foreign key",
+      "A stored procedure"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-T2-047",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Open-source databases",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On Azure Database for MySQL, what is the default backup retention for point-in-time restore?",
+    "explanation": "Automatic backups support point-in-time restore for up to 35 days, with 7 days set by default.",
+    "options": [
+      "35 days",
+      "1 day",
+      "7 days",
+      "90 days"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-T2-048",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Power BI capabilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Power BI is a core workload of which Microsoft analytics platform?",
+    "explanation": "Power BI is a core workload of Microsoft Fabric, and in Fabric it builds on semantic models over OneLake data.",
+    "options": [
+      "Microsoft Fabric",
+      "Azure Stream Analytics",
+      "Microsoft Purview",
+      "Azure Databricks"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-T2-049",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "File formats",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each file format to how it stores data:",
+    "explanation": "Parquet groups each column's values together; Avro stores binary records row by row; CSV is human-readable text with comma delimiters.",
+    "rows": [
+      "Parquet",
+      "Avro",
+      "CSV"
+    ],
+    "columns": [
+      "Delimited text",
+      "Row-based binary",
+      "Columnar binary"
+    ],
+    "correct": [
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "DP900-T2-050",
+    "section": "dp900",
+    "test": 2,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Microsoft Fabric",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Microsoft Fabric stores all its data in which single logical data lake?",
+    "explanation": "Every Fabric tenant gets OneLake, a single logical data lake. Fabric items such as lakehouses and warehouses store their tables there in Delta format.",
+    "options": [
+      "Unity Catalog",
+      "OneLake",
+      "Azure Files",
+      "Azure Data Explorer"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-001",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Ingestion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Fabric team must orchestrate several copy and transform steps in sequence on a schedule. Which item fits?",
+    "explanation": "Pipelines in Fabric Data Factory orchestrate multi-step activities in sequence or in parallel. Semantic models and dashboards serve analysis, not orchestration.",
+    "options": [
+      "A SQL analytics endpoint",
+      "A data pipeline",
+      "A Real-Time dashboard",
+      "A semantic model"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-002",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "Semi-structured data",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a JSON document, what encloses a collection of objects?",
+    "explanation": "JSON wraps an object in curly braces and a collection (an array) in square brackets. Angle brackets mark XML tags.",
+    "options": [
+      "Square brackets",
+      "Curly braces",
+      "Angle brackets",
+      "Double quotation marks"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-003",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB APIs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A key-value app built on partition keys and row keys now needs global distribution. Which API fits?",
+    "explanation": "The API for Table uses the Table Storage model of partition and row keys, and adds turnkey global distribution and automatic indexing.",
+    "options": [
+      "Azure Cosmos DB for Apache Cassandra",
+      "Azure Cosmos DB for NoSQL",
+      "Azure Cosmos DB for Apache Gremlin",
+      "Azure Cosmos DB for Table"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-D-004",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "ACID",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which ACID property says a transaction can only move the database from one valid state to another?",
+    "explanation": "Consistency means every completed transaction leaves data in a valid state, such as money moved from one account and added to the other.",
+    "options": [
+      "Consistency",
+      "Integrity",
+      "Atomicity",
+      "Isolation"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-005",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "Relational concepts",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What uniquely identifies each row in a relational table?",
+    "explanation": "Each row is identified by its primary key, which other tables can reference as a foreign key.",
+    "options": [
+      "The first column",
+      "The primary key",
+      "The data type",
+      "The row number"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-006",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Azure SQL family",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On SQL Server on Azure VMs, who is responsible for applying SQL Server updates?",
+    "explanation": "With IaaS you manage the operating system, SQL Server updates and backups yourself. PaaS options hand those tasks to Microsoft.",
+    "options": [
+      "The customer",
+      "The SQL Server vendor",
+      "Microsoft",
+      "The Azure region"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-007",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Blob access tiers",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which access tier is the default for frequently read data?",
+    "explanation": "Hot is the default tier, with the highest storage cost and the lowest access cost, for data read often.",
+    "options": [
+      "Cool",
+      "Cold",
+      "Hot",
+      "Archive"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-008",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Data models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Power BI Desktop, where do you create relationships between tables?",
+    "explanation": "Model view in Power BI Desktop shows tables and lets you define relationships, hierarchies, data types and display formats.",
+    "options": [
+      "Model view",
+      "Report view",
+      "Power BI service",
+      "Phone app"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-009",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Ingestion",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A pipeline must load data to destinations outside Fabric, including on-premises systems. Which service suits it?",
+    "explanation": "Standalone Azure Data Factory, which uses linked services, suits destinations outside Fabric and hybrid on-premises work. Fabric Data Factory is built into Fabric.",
+    "options": [
+      "Azure Data Factory",
+      "Fabric Data Factory",
+      "Power BI Desktop",
+      "Azure Event Hubs"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-010",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "Semi-structured data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is semi-structured data?",
+    "explanation": "Semi-structured data has some organization, such as named fields, but individual records can add or drop fields. Fixed columns describe structured data.",
+    "options": [
+      "Data with some structure that varies",
+      "Data in tables with fixed column sets",
+      "Numbers that encode meaning",
+      "Binary media with no fields"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-011",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB APIs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A fraud team needs to follow chains of relationships between accounts and devices. Which API fits?",
+    "explanation": "Gremlin stores graphs of vertices and edges, which suits social networks, recommendations and fraud detection.",
+    "options": [
+      "Azure Cosmos DB for Apache Gremlin",
+      "Azure Cosmos DB for Apache Cassandra",
+      "Azure Cosmos DB for Table",
+      "Azure Cosmos DB for MongoDB"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-012",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Transactional workloads",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What do the letters in CRUD stand for?",
+    "explanation": "CRUD is create, retrieve (read), update and delete, the operations an OLTP system applies transactionally.",
+    "options": [
+      "Compute, replicate, use, destroy",
+      "Create, retrieve, update, delete",
+      "Commit, rollback, undo, drop",
+      "Copy, read, upload, deploy"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-013",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "Relational concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A customer has no middle name. What value does that column hold in the row?",
+    "explanation": "Every row has the same columns, but a value can be missing, which a relational database records as NULL.",
+    "options": [
+      "An empty table",
+      "Zero",
+      "A default key",
+      "NULL"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-D-014",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Azure SQL family",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A test team needs a database feature that only works with operating system access. Which option fits?",
+    "explanation": "Only the virtual machine option gives OS-level access, which suits dev and test work and features that depend on the OS.",
+    "options": [
+      "SQL Server on Azure VMs",
+      "Azure SQL Database",
+      "Azure SQL Managed Instance",
+      "Elastic pool"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-015",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Blob access tiers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What must happen before you can read a blob in the archive tier?",
+    "explanation": "Archive is offline. You rehydrate the blob by changing its tier to hot, cool or cold, which can take hours.",
+    "options": [
+      "It must be copied to Files",
+      "It must be decrypted",
+      "It must be reindexed",
+      "It must be rehydrated"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-D-016",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Data models",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In import mode, which in-memory columnar engine holds a semantic model's data?",
+    "explanation": "Import mode loads data into the VertiPaq in-memory columnar store, and aggregations are computed at query time.",
+    "options": [
+      "Kusto",
+      "Delta Lake",
+      "Spark",
+      "VertiPaq"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-D-017",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Ingestion",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A data engineer must clean data in a way no built-in connector supports. Which Fabric item gives code-first control?",
+    "explanation": "Fabric notebooks run Spark code in PySpark, Python, Scala, R or SQL, which suits work that low-code tools and connectors can't handle.",
+    "options": [
+      "A Dataflow Gen2",
+      "A notebook",
+      "Mirroring",
+      "A OneLake shortcut"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-018",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "File formats",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A query reads 3 of 200 columns across billions of rows. Which file layout suits it best?",
+    "explanation": "A columnar format reads only the columns a query needs and compresses each column well, so analytic queries over a few columns run fast. Row formats must read whole records.",
+    "options": [
+      "Columnar, like Parquet",
+      "Delimited text, like CSV",
+      "Row-based, like Avro",
+      "Markup, like XML"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-019",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB APIs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which query language does the Cosmos DB API for Apache Cassandra use?",
+    "explanation": "The Cassandra API uses Cassandra Query Language (CQL), which has a SQL-like syntax. MQL is the MongoDB query language.",
+    "options": [
+      "MQL",
+      "CQL",
+      "DAX",
+      "KQL"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-020",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Transactional workloads",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What are the live apps that OLTP systems usually support often called?",
+    "explanation": "OLTP systems typically back line-of-business (LOB) applications that process daily business data.",
+    "options": [
+      "Data lakes",
+      "Batch jobs",
+      "Line-of-business apps",
+      "Semantic models"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-021",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "Normalization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What stops the database from accepting an order for a customer who does not exist?",
+    "explanation": "Through foreign keys, a relational database enforces referential integrity, so an order can only reference a customer that exists.",
+    "options": [
+      "A view",
+      "Denormalization",
+      "Referential integrity",
+      "An index"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-022",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Azure SQL Managed Instance",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which tool helps move on-premises SQL Server databases to Azure SQL Managed Instance?",
+    "explanation": "Azure Database Migration Service migrates databases to Managed Instance with minimal code changes.",
+    "options": [
+      "Azure Stream Analytics",
+      "Azure Data Explorer",
+      "Azure File Sync",
+      "Azure Database Migration Service"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-D-023",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Blob access tiers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the minimum storage period for the cool tier?",
+    "explanation": "Cool has a 30-day minimum, cold 90 days and archive 180 days. Moving or deleting a blob sooner brings a prorated early-deletion charge.",
+    "options": [
+      "7 days",
+      "30 days",
+      "90 days",
+      "180 days"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "DP900-D-024",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Data models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a sales model, what kind of table is Product, with a unique key and descriptive attributes?",
+    "explanation": "Dimension tables hold a unique key and descriptive attributes for an entity, such as a product's name and category.",
+    "options": [
+      "A measure",
+      "A dimension table",
+      "A fact table",
+      "A visual"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-025",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Analytical data stores",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a snowflake schema, what is added beyond a star schema?",
+    "explanation": "A snowflake schema splits dimensions into extra tables for hierarchies, such as product linked to category. A star schema keeps each dimension in one table.",
+    "options": [
+      "A second primary key",
+      "Extra fact tables per day",
+      "Tables for dimension hierarchies",
+      "Extra columns for every measure in the fact"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-026",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "File formats",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What do data professionals call raw binary files such as images and audio?",
+    "explanation": "Binary Large Objects (BLOBs) are files stored as raw binary that apps must interpret, typical for images, video, audio and application documents.",
+    "options": [
+      "Schemas",
+      "Delimiters",
+      "Partitions",
+      "BLOBs"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-D-027",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB APIs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When is the API for a Cosmos DB account chosen?",
+    "explanation": "You choose the API when you create the account, and it fixes how apps talk to that account.",
+    "options": [
+      "When a region is added",
+      "When the account is created",
+      "When a query runs",
+      "When the first container is created"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-028",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Data roles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who usually works directly with files in a data lake to explore and model data?",
+    "explanation": "Data scientists often work with raw files in a data lake, while analysts query warehouse tables and business users read reports built on models.",
+    "options": [
+      "Help desk staff",
+      "Database administrators",
+      "Data scientists",
+      "Business users"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-029",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "SQL statements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement permanently removes a table and its rows from a database?",
+    "explanation": "DROP removes the object itself, and its rows are lost unless there is a backup. DELETE removes rows but keeps the table.",
+    "options": [
+      "REVOKE",
+      "DROP TABLE",
+      "DELETE",
+      "TRUNCATE TABLE"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-030",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Azure SQL Managed Instance",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Many small Managed Instances must share resources to cut cost. What feature does this?",
+    "explanation": "Instance pools let several smaller SQL Managed Instances share pre-provisioned resources. Elastic pools do the same for single databases in SQL Database.",
+    "options": [
+      "Instance pools",
+      "Elastic jobs",
+      "Failover groups",
+      "Read scale-out"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-031",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Blob access tiers",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which feature moves blobs to cooler tiers automatically based on days since they were last modified?",
+    "explanation": "Lifecycle management rules can move blobs from hot to cool, cold and archive by age, and delete outdated blobs.",
+    "options": [
+      "Soft delete",
+      "Lifecycle management policies",
+      "Object replication between accounts",
+      "Azure File Sync"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-032",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Data models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a semantic model, what are values such as total revenue that are aggregated across dimensions called?",
+    "explanation": "Measures are the numeric values to aggregate. Dimensions are the entities, such as customer or date, you aggregate them by.",
+    "options": [
+      "Measures",
+      "Hierarchies",
+      "Keys",
+      "Dimensions"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-033",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Analytical data stores",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which store suits structured, semi-structured and unstructured files analyzed with Apache Spark?",
+    "explanation": "A data lake is a file store on a distributed file system that holds any kind of data and is commonly processed with Spark.",
+    "options": [
+      "A data lake",
+      "An OLTP database",
+      "A semantic model",
+      "A data warehouse"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-034",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "File formats",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which format is row-based and good for compressing data to cut storage and network use?",
+    "explanation": "Avro stores binary records in blocks after a JSON header, which compresses well and reduces storage and bandwidth. Parquet is columnar rather than row-based.",
+    "options": [
+      "Avro",
+      "Fixed-width text",
+      "Parquet",
+      "XML"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-035",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB throughput",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What unit measures throughput in Azure Cosmos DB?",
+    "explanation": "Cosmos DB throughput is measured in request units per second (RU/s); one RU is roughly the cost of reading a 1 KB item by its ID and partition key.",
+    "options": [
+      "vCore seconds",
+      "Database transaction units",
+      "Request units per second",
+      "IOPS per container"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-036",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Data roles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A data engineer's work most often centres on what?",
+    "explanation": "Data engineers build and manage the pipelines and processes that ingest, cleanse and transform data into analytical stores.",
+    "options": [
+      "Backups, restores and index tuning jobs",
+      "Pipelines that move and shape data",
+      "Final charts for executives",
+      "Granting database logins"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-037",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "SQL statements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement adds a new column to an existing table?",
+    "explanation": "ALTER is a DDL statement that changes an existing object's definition, such as adding a column. INSERT adds rows, not columns.",
+    "options": [
+      "INSERT INTO",
+      "ALTER TABLE",
+      "CREATE TABLE",
+      "UPDATE"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-038",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Azure SQL Database",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two tasks does Microsoft handle for Azure SQL Database? (Choose two.)",
+    "explanation": "As PaaS, SQL Database patches itself and takes automated backups, with point-in-time restore. Schema design and queries remain your job.",
+    "options": [
+      "Taking automated backups",
+      "Designing your table schema",
+      "Writing your T-SQL queries",
+      "Patching the database software"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "DP900-D-039",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Blob storage",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team stores large video files that rarely change once uploaded. Which blob type fits?",
+    "explanation": "Block blobs are made of blocks uploaded separately and suit large, discrete binary objects that change infrequently.",
+    "options": [
+      "Table entity",
+      "Append blob",
+      "Block blob",
+      "Page blob"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-040",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Data models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which language is used to write measures in a Power BI semantic model?",
+    "explanation": "Measures in a tabular semantic model are written in DAX. KQL queries Eventhouse and Azure Data Explorer data.",
+    "options": [
+      "DAX",
+      "KQL",
+      "CQL",
+      "XML"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-041",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Analytical data stores",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In a data warehouse, what does a fact table usually hold?",
+    "explanation": "Fact tables hold numeric values, such as sales amounts, one row per event. Dimension tables hold the descriptive attributes, such as product details.",
+    "options": [
+      "Numeric values for events",
+      "User permissions",
+      "Descriptive attributes of each product",
+      "Report layouts"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-042",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "File formats",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which human-readable format was popular in the 1990s and 2000s but has largely given way to JSON?",
+    "explanation": "XML uses tags in angle brackets and is more verbose than JSON, which has largely replaced it, though some systems still use XML.",
+    "options": [
+      "XML",
+      "Parquet",
+      "Delta",
+      "Avro"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-043",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB throughput",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An app has short, unpredictable bursts of traffic and runs in one region. Which throughput option bills only for RUs used?",
+    "explanation": "Serverless bills per RU consumed and suits intermittent traffic, but it is single-region only.",
+    "options": [
+      "Dedicated provisioned",
+      "Shared database throughput",
+      "Serverless",
+      "Multi-region writes"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-044",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Data roles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which role uses services such as Microsoft Foundry to add features like chat over company data to apps?",
+    "explanation": "The DP-900 learning path names AI engineers, who build AI features and workflows that work with data, using services such as Microsoft Foundry.",
+    "options": [
+      "Network engineer",
+      "Data analyst",
+      "AI engineer",
+      "Database administrator"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-045",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "SQL statements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which clause sorts the rows a SELECT returns?",
+    "explanation": "ORDER BY sorts the result set. WHERE filters rows and JOIN combines rows from related tables.",
+    "options": [
+      "WHERE",
+      "GROUP BY",
+      "ORDER BY",
+      "JOIN"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-046",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Azure SQL Database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which feature alerts you to possible SQL injection attacks on Azure SQL Database?",
+    "explanation": "Microsoft Defender for SQL includes vulnerability assessment and Advanced Threat Protection, which flags SQL injection and anomalous access.",
+    "options": [
+      "Microsoft Defender for SQL",
+      "Geo replication",
+      "Transparent data encryption",
+      "Elastic pool"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-047",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Storage redundancy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which redundancy option keeps three copies of data across availability zones in one region?",
+    "explanation": "Zone-redundant storage (ZRS) copies data across three availability zones. LRS keeps three copies in one datacenter, and GRS also copies to a second region.",
+    "options": [
+      "LRS",
+      "ZRS",
+      "GRS",
+      "RA-GRS"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-048",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Power BI capabilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who mainly uses the Power BI phone app?",
+    "explanation": "The phone app is for consuming reports and dashboards. Authors build models and reports in Power BI Desktop.",
+    "options": [
+      "Authors modelling data",
+      "Admins patching servers",
+      "People consuming reports",
+      "Engineers writing pipelines"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-049",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Azure Databricks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Azure Databricks feature runs SQL queries for BI tools on serverless, pro or classic compute?",
+    "explanation": "Databricks SQL provides SQL warehouses, in serverless, pro and classic types, for BI and SQL analytics.",
+    "options": [
+      "Lakeflow pipelines",
+      "SQL warehouses",
+      "Notebooks",
+      "Unity Catalog"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-050",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "Data classification",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each statement, select Yes if it is true or No if it is false:",
+    "explanation": "JSON's flexible documents suit both kinds of data. Vectors (embeddings) are numbers that represent text or images. Unstructured data such as video is usually kept as files or blobs, not in tables.",
+    "rows": [
+      "JSON can hold both structured and semi-structured data.",
+      "Vector data is a numeric representation of content.",
+      "Unstructured data is always stored in relational tables."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-051",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB throughput",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "With shared throughput set at the database level, up to how many containers can share it?",
+    "explanation": "Shared database throughput can be spread across up to 25 containers. Dedicated throughput belongs to a single container.",
+    "options": [
+      "5",
+      "25",
+      "100",
+      "500"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "DP900-D-052",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Azure Databricks",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A team already uses Spark on several clouds and wants code-first notebooks. Which platform does Microsoft suggest?",
+    "explanation": "Microsoft points teams that want code-first Spark, multicloud portability or existing Databricks skills to Azure Databricks.",
+    "options": [
+      "Azure Databricks",
+      "Fabric Warehouse",
+      "Azure SQL Database",
+      "Azure Stream Analytics"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-053",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Data roles",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two tasks belong to a data analyst? (Choose two.)",
+    "explanation": "Data analysts explore and analyze data to find trends and build reports and visualizations. Patching and backups are database administrator work.",
+    "options": [
+      "Find trends in business data",
+      "Build reports and visuals",
+      "Patch the database server",
+      "Set up backup schedules"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2
+  },
+  {
+    "id": "DP900-D-054",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "SQL statements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A query must list each order with its customer's name. What links the two tables in the query?",
+    "explanation": "A JOIN combines rows from related tables, usually by matching a foreign key in one table to the primary key in the other.",
+    "options": [
+      "An ORDER BY clause",
+      "A JOIN on the key columns",
+      "A GROUP BY on customer name",
+      "A DROP statement"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-055",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Azure SQL Database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Azure SQL Database feature keeps a readable copy of a database in another region?",
+    "explanation": "Geo replication maintains a secondary copy in another region for availability and disaster recovery.",
+    "options": [
+      "Elastic pool",
+      "Serverless tier",
+      "Geo replication",
+      "Query store"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-056",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Data Lake Storage Gen2",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which data lake is built on Azure Data Lake Storage Gen2 and created automatically with every Microsoft Fabric tenant?",
+    "explanation": "OneLake is the single logical data lake for a Fabric tenant, built on Data Lake Storage Gen2 and provisioned automatically.",
+    "options": [
+      "Azure Files",
+      "OneLake",
+      "Azure Table Storage",
+      "Azure SQL Database"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-057",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Power BI capabilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Fabric, what lets several reports reuse the same measures and relationships?",
+    "explanation": "In Fabric, semantic models hold measures, relationships and hierarchies that many reports can share.",
+    "options": [
+      "A OneLake shortcut to the data",
+      "A shared semantic model",
+      "An eventstream",
+      "A Dataflow Gen2"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-058",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "Azure datastores",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An app keeps flexible JSON documents and needs fast reads in several regions. Which service fits?",
+    "explanation": "Azure Cosmos DB is a globally distributed NoSQL database for JSON documents and other non-relational data. SQL Managed Instance expects a relational schema.",
+    "options": [
+      "Azure SQL Managed Instance",
+      "Azure Files",
+      "Azure Data Factory",
+      "Azure Cosmos DB"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-D-059",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB partitioning",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What makes a good Cosmos DB partition key?",
+    "explanation": "A good partition key has many distinct values and spreads data and requests evenly, since a logical partition can hold at most 20 GB.",
+    "options": [
+      "One value used by all items",
+      "The item's creation date only",
+      "Many values with an even spread",
+      "A value that changes on each update"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-060",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Batch and streaming",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which architecture has no batch layer and treats all data as a stream that can be replayed?",
+    "explanation": "A kappa architecture processes all data as a stream. A lambda architecture runs a batch layer and a streaming layer side by side.",
+    "options": [
+      "Lambda",
+      "Kappa",
+      "Star",
+      "Medallion"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-061",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Analytical workloads",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which store is relational, optimized for read queries, and long used for reporting?",
+    "explanation": "A data warehouse stores data in a relational schema optimized for reads, mainly queries for reporting and visualization. A data lake is a file store.",
+    "options": [
+      "Key-value store",
+      "Message queue",
+      "Data lake",
+      "Data warehouse"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-D-062",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "SQL statements",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each statement to what it does:",
+    "explanation": "INSERT adds new rows, DELETE removes rows and SELECT reads rows. All three are data manipulation language.",
+    "rows": [
+      "INSERT",
+      "DELETE",
+      "SELECT"
+    ],
+    "columns": [
+      "Removes rows",
+      "Adds rows",
+      "Reads rows"
+    ],
+    "correct": [
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-063",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Azure SQL Database",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which feature lets you recover a database to how it looked at a moment two days ago?",
+    "explanation": "Azure SQL Database keeps automated backups so you can restore to a point in time within the retention period.",
+    "options": [
+      "Point-in-time restore",
+      "Row-level security",
+      "Hyperscale",
+      "Elastic pool"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-064",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Azure Files",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A Linux team wants an NFS file share in Azure. What does it need?",
+    "explanation": "NFS shares are for Linux clients and require the SSD tier, reached through a private or service endpoint in a virtual network.",
+    "options": [
+      "The SSD media tier",
+      "The archive tier",
+      "A page blob",
+      "A Windows domain controller"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-065",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Power BI capabilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Selecting a bar in one Power BI visual highlights related data in the others. What is this called?",
+    "explanation": "Power BI visuals interact: selecting a data point in one visual cross-filters or highlights the others on the page.",
+    "options": [
+      "Cross-filtering",
+      "Partitioning",
+      "Normalization",
+      "Rehydration"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-066",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "Azure datastores",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An order system needs tables, foreign keys and transactions in a managed service. Which fits?",
+    "explanation": "Azure SQL Database is a managed relational database with keys and ACID transactions. Table Storage is a key-value store with no foreign keys or relationships.",
+    "options": [
+      "Azure Blob Storage",
+      "Azure Stream Analytics",
+      "Azure SQL Database",
+      "Azure Table Storage"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-067",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB consistency",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which Cosmos DB consistency level is the weakest and gives the highest availability?",
+    "explanation": "Eventual consistency is the weakest of the five levels and offers the highest availability and lowest latency. Strong is the strictest.",
+    "options": [
+      "Strong",
+      "Eventual",
+      "Session",
+      "Consistent prefix"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-068",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Real-time services",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put the parts of a stream processing flow in order:",
+    "explanation": "Events are captured in a source such as Event Hubs, a perpetual query filters or aggregates them, and the results are written to a sink such as a table or dashboard.",
+    "options": [
+      "An event is generated",
+      "It reaches a source",
+      "A perpetual query processes it",
+      "Results go to a sink"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "DP900-D-069",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Analytical workloads",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In a medallion architecture, which layer holds aggregated data shaped for specific reports?",
+    "explanation": "Gold is the business-ready layer of aggregated data modelled for reporting. Silver is cleansed and conformed but not yet aggregated.",
+    "options": [
+      "Bronze",
+      "Silver",
+      "Gold",
+      "Raw"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-070",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "SQL dialects",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which procedural SQL dialect belongs to PostgreSQL?",
+    "explanation": "PostgreSQL's procedural language is PL/pgSQL. PL/SQL is Oracle's and Transact-SQL is Microsoft's.",
+    "options": [
+      "PL/SQL",
+      "MQL",
+      "Transact-SQL",
+      "PL/pgSQL"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-D-071",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Open-source databases",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which edition of MySQL is Azure Database for MySQL based on?",
+    "explanation": "Azure Database for MySQL is a PaaS service based on the free MySQL Community Edition.",
+    "options": [
+      "Community Edition",
+      "Cluster Edition",
+      "Enterprise Edition",
+      "Standard Edition"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-072",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Table storage",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two statements about Azure Table Storage are true? (Choose two.)",
+    "explanation": "Table Storage is a NoSQL key-value store: columns can vary by row and data is usually denormalized. It has no foreign keys, relationships, views or stored procedures.",
+    "options": [
+      "Rows in a table can have different columns",
+      "Tables support foreign keys",
+      "Tables support stored procedures",
+      "Data is usually denormalized"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "DP900-D-073",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Visualizations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which AI visual shows the factors that most affect an outcome, such as customer churn?",
+    "explanation": "The key influencers visual ranks the factors that drive a metric. A decomposition tree breaks a measure down across dimensions.",
+    "options": [
+      "Smart narrative",
+      "Card",
+      "Decomposition tree",
+      "Key influencers"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-D-074",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "Data stores",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two factors guide the choice of file format for stored data? (Choose two.)",
+    "explanation": "Format choice depends on the type of data, the applications and services that read and write it, and whether it must be human-readable or optimized for storage and processing.",
+    "options": [
+      "The storage account's region",
+      "How many users sign in",
+      "Whether people must read it",
+      "Apps that must read the data"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "DP900-D-075",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB resource model",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Order these Cosmos DB resources from the outermost to the innermost:",
+    "explanation": "An account holds databases, a database is a namespace for containers, and a container holds items such as documents, rows or graph nodes.",
+    "options": [
+      "Account",
+      "Database",
+      "Container",
+      "Item"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "DP900-D-076",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Real-time services",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which service is optimized for ingesting data from IoT devices?",
+    "explanation": "Azure IoT Hub is a streaming source optimized for IoT devices. Event Hubs is the general high-volume event ingestion service.",
+    "options": [
+      "Azure SQL Database",
+      "Microsoft Purview",
+      "Azure Files",
+      "Azure IoT Hub"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-D-077",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Analytical workloads",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why might analytical tables be denormalized compared with the OLTP source?",
+    "explanation": "Analytical schemas often add some duplication so queries need fewer joins and run faster. Normalization, by contrast, suits OLTP writes.",
+    "options": [
+      "To allow more writes",
+      "So queries run faster",
+      "To save storage space",
+      "To enforce foreign keys"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-078",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "Database objects",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A table holds 30 rows. Why might the query optimizer ignore an index on it?",
+    "explanation": "An index gives little benefit on a small table, so the optimizer may simply scan it. An index helps most when tables are large and queries are selective.",
+    "options": [
+      "The index has been dropped",
+      "Indexes only work on views",
+      "Scanning the table is as fast",
+      "Small tables can't be indexed"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-079",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Open-source databases",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which deployment option is the current choice for Azure Database for PostgreSQL?",
+    "explanation": "Azure Database for PostgreSQL flexible server is fully managed and gives more control over configuration and cost.",
+    "options": [
+      "Single server",
+      "Elastic pool",
+      "Flexible server",
+      "Instance pool"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-080",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Table storage",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why include the partition key in a Table Storage query?",
+    "explanation": "Partitions group related rows. A query that names the partition key reads only that partition, which reduces I/O.",
+    "options": [
+      "It enables joins",
+      "It sorts the result rows by their timestamp",
+      "It narrows the search to one partition",
+      "It locks the table"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-081",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Visualizations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A user wants to break total sales down by region, then store, then product, choosing each level as they go. Which visual fits?",
+    "explanation": "A decomposition tree lets users split a measure across dimensions one level at a time, choosing the next breakdown interactively.",
+    "options": [
+      "Key influencers",
+      "Card",
+      "Decomposition tree",
+      "Pie chart"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-082",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "Delimited text",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a typical CSV file, what does the first line often contain?",
+    "explanation": "A CSV file can optionally start with a header row of field names. A JSON header describing the data is a feature of Avro, not CSV.",
+    "options": [
+      "A row count",
+      "A JSON header",
+      "Field names",
+      "A checksum"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-083",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB use cases",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which workload is a classic fit for Azure Cosmos DB?",
+    "explanation": "IoT and telemetry, gaming, retail and web or mobile apps are Cosmos DB's typical use cases. Large-scale reporting belongs in an analytics platform.",
+    "options": [
+      "A Windows file share",
+      "Monthly payroll reports",
+      "IoT telemetry at global scale",
+      "A star-schema warehouse for BI reports"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "DP900-D-084",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Real-time services",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Fabric, what is the central catalog for finding and sharing streaming data?",
+    "explanation": "The Real-Time hub in Fabric Real-Time Intelligence is a centralized catalog to discover and share streaming data.",
+    "options": [
+      "Real-Time hub",
+      "Unity Catalog",
+      "OneLake catalog",
+      "Data map"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-085",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Analytical workloads",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put these steps of a common enterprise analytics flow in order:",
+    "explanation": "Operational data is extracted and loaded into the lake or warehouse, shaped into tables, aggregated into a semantic model, then queried for reports.",
+    "options": [
+      "Extract and load operational data",
+      "Load it into warehouse tables",
+      "Aggregate it into a semantic model",
+      "Query it in reports and dashboards"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "DP900-D-086",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "Relational concepts",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two statements about relational tables are true? (Choose two.)",
+    "explanation": "All rows in a table share the same columns, and each column holds values of one data type. Tables reference each other through keys.",
+    "options": [
+      "Each column has a data type",
+      "Every row has the same columns",
+      "Tables can't reference one another",
+      "Rows may each have different columns"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2
+  },
+  {
+    "id": "DP900-D-087",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Open-source databases",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Azure Database for MariaDB is on the retirement path. What does Microsoft recommend for its users?",
+    "explanation": "Azure Database for MariaDB is on the retirement path, and Microsoft recommends migrating to Azure Database for MySQL.",
+    "options": [
+      "Keep MariaDB on a single server",
+      "Migrate to Azure Database for MySQL",
+      "Move to Azure Database for PostgreSQL",
+      "Rebuild it on SQL Server on Azure VMs"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-088",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Table storage",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Within one partition of a Table Storage table, in what order are rows kept?",
+    "explanation": "Rows are stored in row key order within a partition, which makes point queries and range queries efficient.",
+    "options": [
+      "Random order",
+      "Row key order",
+      "Timestamp order",
+      "Insert order"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-089",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Visualizations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which visual adds a written summary of the data in plain sentences to a report?",
+    "explanation": "The smart narrative (Narrative) visual writes a text summary of the data shown in the report.",
+    "options": [
+      "Map",
+      "Smart narrative",
+      "Scatter plot",
+      "Slicer"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-090",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "Structured data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Structured data is often kept in tables that reference each other through what?",
+    "explanation": "Tables in a relational model link to one another through key values, so an order row can point to the customer row it belongs to.",
+    "options": [
+      "Key values",
+      "File paths",
+      "Embeddings",
+      "Tags"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-091",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB features",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What availability SLA does Microsoft give a Cosmos DB account with multi-region writes?",
+    "explanation": "With multi-region writes Cosmos DB offers a 99.999% availability SLA, along with reads and writes under 10 ms at the 99th percentile.",
+    "options": [
+      "99.999%",
+      "99.95%",
+      "99.99%",
+      "99.9%"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-092",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Real-time services",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why is Delta Lake useful for streaming in Spark?",
+    "explanation": "Delta Lake unifies batch and streaming: the same table can receive streaming writes and serve batch reads, with schema enforcement and reliable writes.",
+    "options": [
+      "It removes the need for any table schema at all",
+      "It replaces Event Hubs",
+      "It stores data only in memory",
+      "One table can be a stream sink and batch source"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-D-093",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Workloads",
+    "skill": "Analytical workloads",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each statement about analytical processing, select Yes if it is true or No if it is false:",
+    "explanation": "OLAP models, once called cubes and now usually semantic models, preaggregate data for fast queries. Analytics can run on one snapshot or a series of them. Frequent single-row updates are an OLTP pattern.",
+    "rows": [
+      "An OLAP model was historically called a cube.",
+      "Analytics can be based on a snapshot of data at one point in time.",
+      "OLAP models are optimized for frequent single-row updates."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-094",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Relational",
+    "skill": "SQL statements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which group of SQL statements do database administrators mostly use to manage permissions?",
+    "explanation": "Data control language (GRANT, DENY, REVOKE) manages who can do what, and it is generally used by database administrators.",
+    "options": [
+      "Data query extensions",
+      "Data control language",
+      "Data manipulation language",
+      "Data definition language"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-095",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900AzureSql",
+    "skill": "Open-source databases",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "For each statement about Azure's open-source database services, select Yes if it is true or No if it is false:",
+    "explanation": "The services offer high availability with automatic failover and firewall rules, but only a supported set of PostgreSQL extensions is available.",
+    "rows": [
+      "Azure Database for MySQL can fail over automatically for high availability.",
+      "Azure Database for PostgreSQL supports every PostgreSQL extension.",
+      "Both services let you set firewall rules."
+    ],
+    "columns": [
+      "Yes",
+      "No"
+    ],
+    "correct": [
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "DP900-D-096",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Storage",
+    "skill": "Blob storage",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which sign-in method does Microsoft recommend for access to blob data?",
+    "explanation": "Microsoft Entra ID with Azure role-based access control is the recommended way to authorize access to blob data.",
+    "options": [
+      "Shared account keys",
+      "A shared password file",
+      "Anonymous public read access for containers",
+      "Microsoft Entra ID with Azure RBAC"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "DP900-D-097",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900PowerBI",
+    "skill": "Power BI capabilities",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two things can you do in the Power BI service? (Choose two.)",
+    "explanation": "The Power BI service is the cloud side of Power BI: it shares reports, dashboards and apps and schedules data refreshes.",
+    "options": [
+      "Share dashboards and apps",
+      "Schedule data refreshes",
+      "Patch the SQL Server engine",
+      "Edit OneLake storage tiers"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2
+  },
+  {
+    "id": "DP900-D-098",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Data",
+    "skill": "Azure datastores",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A data engineer needs a scalable store for analytics files with folders and file permissions. Which service fits?",
+    "explanation": "Azure Data Lake Storage Gen2 adds a hierarchical namespace with folder operations and POSIX-style ACLs to Blob Storage, which suits data lakes.",
+    "options": [
+      "Azure Files on HDD",
+      "Data Lake Storage Gen2",
+      "Azure Table Storage",
+      "Azure SQL Database"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "DP900-D-099",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Cosmos",
+    "skill": "Cosmos DB features",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two settings are defined on a Cosmos DB container? (Choose two.)",
+    "explanation": "The partition key, throughput, indexing policy and optional time to live are set on the container. The API and regions belong to the account.",
+    "options": [
+      "Account API",
+      "Indexing policy",
+      "Account regions",
+      "Partition key"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "DP900-D-100",
+    "section": "dp900",
+    "test": 0,
+    "module": 1,
+    "domain": "dp900Analytics",
+    "skill": "Real-time services",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Azure service is a standalone big data analytics service for log and telemetry data with a timestamp?",
+    "explanation": "Azure Data Explorer gives high-performance queries over log and telemetry data, where records have a timestamp attribute.",
+    "options": [
+      "Azure SQL Database",
+      "Azure Data Factory",
+      "Azure Table Storage",
+      "Azure Data Explorer"
+    ],
+    "correct": [
+      3
+    ]
+  }
+]

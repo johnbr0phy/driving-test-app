@@ -176,13 +176,13 @@
     "skill": "Policy framework",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which document gives staff step-by-step instructions for disabling a leaver's accounts?",
-    "explanation": "A procedure describes how to carry out a task in order. The policy states that access must be removed; the procedure says how.",
+    "stem": "The company replaces its identity management tool. Which document is MOST likely to need rewriting?",
+    "explanation": "Procedures give tool-specific steps, so they change with the tool. The policy's intent and the standard's requirements, such as removing leaver access promptly, usually stay the same.",
     "options": [
+      "Program charter",
       "Policy statement",
-      "Standard",
       "Procedure",
-      "Program charter"
+      "Standard"
     ],
     "correct": [
       2
@@ -934,13 +934,13 @@
     "skill": "Plan testing",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which test walks key staff through a scenario in a meeting room without touching systems?",
-    "explanation": "A tabletop exercise talks through roles and decisions using a scenario. Parallel and full interruption tests actually run recovery systems.",
+    "stem": "What is the MAIN limitation of a tabletop exercise?",
+    "explanation": "A tabletop talks through roles and decisions without touching systems, so it is safe and cheap but cannot show that backups restore or sites fail over. Parallel and full interruption tests do that.",
     "options": [
-      "Parallel recovery test",
-      "Full interruption test",
-      "Penetration test",
-      "Tabletop exercise"
+      "It needs the whole company to stop",
+      "It always breaks production",
+      "It cannot include executives",
+      "It does not prove systems recover"
     ],
     "correct": [
       3
@@ -955,16 +955,16 @@
     "skill": "Post-incident review",
     "difficulty": 2,
     "format": "single",
-    "stem": "What is the MAIN goal of a post-incident review?",
-    "explanation": "Lessons learned identify what worked, what failed and which controls or plans to change, so the next incident is handled better.",
+    "stem": "Post-incident reviews keep turning into a search for someone to blame. What is the MAIN risk?",
+    "explanation": "When reviews punish people, they stop reporting errors and near misses, so the facts needed to improve the response are lost. Reviews should focus on causes and fixes.",
     "options": [
-      "Improve future response",
-      "Reduce next year's budget",
-      "Find someone to dismiss",
-      "Close the incident ticket quickly"
+      "Logs grow too large to keep",
+      "Staff hide mistakes next time",
+      "Reviews take too little time",
+      "Tickets close too quickly"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -997,13 +997,13 @@
     "skill": "Frameworks and standards",
     "difficulty": 2,
     "format": "single",
-    "stem": "A company wants certification of its security management system by an outside body. Which standard fits?",
-    "explanation": "ISO/IEC 27001 sets certifiable requirements for an ISMS. ISO/IEC 27002 is guidance on controls, and NIST CSF and COBIT are frameworks with no certification of their own.",
+    "stem": "Why can an organization be certified against ISO/IEC 27001 but not against ISO/IEC 27002?",
+    "explanation": "Certification audits check conformance with requirements. ISO/IEC 27001 states the requirements for an ISMS; ISO/IEC 27002 gives guidance on implementing controls, so there is nothing in it to certify against.",
     "options": [
-      "COBIT 2019",
-      "NIST CSF 2.0",
-      "ISO/IEC 27002",
-      "ISO/IEC 27001"
+      "27001 covers only cloud services",
+      "27002 was withdrawn in 2022",
+      "27002 applies only in Europe",
+      "27001 sets requirements; 27002 is guidance"
     ],
     "correct": [
       3
@@ -1838,16 +1838,16 @@
     "skill": "Risk assessment",
     "difficulty": 2,
     "format": "single",
-    "stem": "Inherent risk is BEST described as risk:",
-    "explanation": "Inherent risk is the exposure with no controls in place. What remains after controls is residual risk.",
+    "stem": "Why compare inherent and residual risk for the same scenario?",
+    "explanation": "Inherent risk ignores controls and residual risk is what remains with them, so the difference shows how much the controls reduce the risk and whether they are worth their cost.",
     "options": [
-      "After controls are applied",
-      "Covered by insurance",
-      "Before controls are considered",
-      "Formally accepted by management"
+      "To show what the controls achieve",
+      "To pick which insurer to use",
+      "To set the audit schedule",
+      "To decide who owns the asset"
     ],
     "correct": [
-      2
+      0
     ]
   },
   {

@@ -5141,6 +5141,21 @@
     --brand-border-light: 191 27% 89%;
     --brand-gradient-to: 205 60% 96%;
   }
+
+  /* ARRT Computed Tomography theme */
+  [data-theme="arrtct"] {
+    --brand: 244 90% 16%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 244 90% 96%;
+    --brand-hover: 244 90% 12%;
+    --brand-dark: 244 90% 10%;
+    --brand-darker: 244 90% 7%;
+    --brand-muted: 244 40% 70%;
+    --brand-border: 244 45% 80%;
+    --brand-border-light: 244 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
   /* ARRT Limited Scope theme: deep indigo (260 50% 18%) */
   [data-theme="lmrt"] {
     --brand: 260 50% 18%;
@@ -11579,6 +11594,17 @@
     --brand-muted: 191 30% 45%;
     --brand-dark: 191 100% 65%;
     --brand-darker: 191 95% 78%;
+  }
+  .dark [data-theme="arrtct"] {
+    --brand: 244 90% 50%;
+    --brand-hover: 244 90% 42%;
+    --brand-light: 244 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 244 35% 24%;
+    --brand-border: 244 40% 34%;
+    --brand-muted: 244 40% 45%;
+    --brand-dark: 244 90% 70%;
+    --brand-darker: 244 90% 78%;
   }
 
   .dark [data-theme="nce"] {

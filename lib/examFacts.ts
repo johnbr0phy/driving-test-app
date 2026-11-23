@@ -7170,6 +7170,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The ARRT Radiography Examination Content Specifications (2022) and ARRT's May 2026 notice of the 2027 revision, checked November 2026",
     source: { name: "ARRT: Updated Radiography Documents", url: "https://www.arrt.org/news/article/2026/05/01/updated-radiography-documents-2026" },
   },
+  arrtct: {
+    answer:
+      "The ARRT CT exam is the American Registry of Radiologic Technologists' certification exam in computed tomography, often taken through ARRT's postprimary pathway after a supporting credential such as radiography. It has 195 multiple-choice questions on a computer, 165 scored and 30 unscored pilot items, with 195 minutes of test time. Under the content specifications in effect from September 1, 2026, the scored questions are Patient Care 21, Safety 21, Image Production 52 and Procedures 71. Results are scaled scores from 1 to 99, and a scaled score of 75 passes.",
+    rows: [
+      { label: "Questions", value: "195 multiple choice (165 scored, 30 pilot)" },
+      { label: "Time", value: "195 minutes of test time, 215-minute appointment" },
+      { label: "Pass mark", value: "Scaled score of 75 (1 to 99)" },
+      { label: "Content", value: "Patient Care 21, Safety 21, Image Production 52, Procedures 71" },
+      { label: "Biggest category", value: "Procedures, 71 of 165" },
+      { label: "Attempts", value: "Three attempts within three years of the first exam window" },
+      { label: "Run by", value: "American Registry of Radiologic Technologists (ARRT)" },
+    ],
+    basedOn: "The ARRT Computed Tomography Examination Content Specifications (effective September 1, 2026) and ARRT's 2026 Postprimary Eligibility Pathway Handbook, checked November 2026",
+    source: { name: "ARRT: Computed Tomography Content Specifications", url: "https://assets-us-01.kc-usercontent.com:443/406ac8c6-58e8-00b3-e3c1-0c312965deb2/7e8095ab-e424-496d-a5d4-d1e951d5783b/CT_Content_Specifications_2026.pdf" },
+  },
   nce: {
     answer:
       "The National Counselor Examination (NCE) is the National Board for Certified Counselors' exam for entry-level professional counselors, required for counselor licensure in many states and one of two exam options for the National Certified Counselor (NCC) credential. It has 200 multiple-choice questions in 3 hours and 45 minutes, 160 scored and 40 unscored field-test items, with a 15-minute break after question 100, taken at a Pearson VUE test center or online through OnVUE. The content outline has six domains: professional practice and ethics, intake, assessment and diagnosis, areas of clinical focus, treatment planning, counseling skills and interventions, and core counseling attributes. NBCC sets the passing point for each form by a modified Angoff method. From July 1, 2027 a new version has 170 questions with three options each and six new domains.",

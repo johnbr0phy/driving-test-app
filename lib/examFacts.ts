@@ -538,6 +538,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "WPI's Water Treatment Operator Class I Need-to-Know Criteria (2025) and Formula/Conversion Table (2024), and North Carolina DEQ's operator FAQ, checked November 2026",
     source: { name: "WPI Water Treatment Class I Need-to-Know Criteria (PDF, hosted by ADEM)", url: "https://adem.alabama.gov/sites/default/files/2025-08/NTK%20WT2.pdf" },
   },
+  wastewaterop: {
+    answer:
+      "The Wastewater Treatment Operator Class I exam is the entry-level certification exam for wastewater treatment plant operators. Most US states certify operators themselves, and many use the standardized exam from Water Professionals International (WPI, formerly the Association of Boards of Certification, ABC). WPI's 2025 Need-to-Know Criteria give it 100 scored questions plus up to 10 unscored pre-test questions: Equipment Evaluation, Maintenance and/or Operation 39, Treatment Process Evaluation and Adjustment 38, Laboratory Analysis 10, and Security, Safety, and Administrative Procedures 13. About 10% are calculations, printed in US and metric units, with WPI's formula/conversion table provided. WPI reports a scaled score, and 70 scaled score units passes on its 2025 exams (not the same as 70% correct). Time limits and class names vary by state, and states that write their own exams set their own pass marks.",
+    rows: [
+      { label: "Questions", value: "100 scored + up to 10 unscored pre-test (WPI standardized exam)" },
+      { label: "Weights", value: "Equipment 39, Treatment process 38, Safety and admin 13, Lab 10" },
+      { label: "Calculations", value: "About 10%, with WPI's formula/conversion table provided" },
+      { label: "Passing score", value: "70 scaled score units on WPI's 2025 exams (not 70% correct); states with their own exams set their own" },
+      { label: "Given by", value: "State operator certification programs" },
+      { label: "Class names", value: "Vary by state (Class I, Grade 1, Class D and others)" },
+    ],
+    basedOn: "WPI's Wastewater Treatment Operator Class I Need-to-Know Criteria (2025) and Formula/Conversion Table, and Oregon DEQ's 2025 exam fact sheet, checked November 2026",
+    source: { name: "WPI Wastewater Treatment Class I Need-to-Know Criteria (PDF, hosted by ADEM)", url: "https://adem.alabama.gov/sites/default/files/2025-08/NTK%20WWT1.pdf" },
+  },
   natecore: {
     answer:
       "The NATE Core exam is the knowledge exam from North American Technician Excellence (NATE) that tests an HVACR technician's general knowledge, construction knowledge and HVACR knowledge in safety, tools, basic construction, basic science, achieving desired conditions, taking measurements and basic electricity. NATE says it is a requirement for most installation or service specialty certifications. It has 50 questions, is closed book with a 1.5 hour time limit, and is scored pass/fail; NATE sets the passing score through a Passing Score Study and does not publish a percentage. On the traditional pathway a technician passes the Core exam and a 100-question Specialty exam. NATE certifications are renewed every two years.",

@@ -67,7 +67,7 @@ Q = [
  "Slip-resistant soles", ["Smooth leather soles", "Open-toed sandals", "High-heeled boots"],
  "Slip-resistant soles give better grip on wet floors, and help where cleaning cannot keep floors dry."),
 ("What does a mobile tower scaffold need before anyone climbs it?",
- "Locked wheels and proper assembly", ["A fresh coat of paint", "A sign saying 'tower'", "A second ladder tied on"],
+ "Locked wheels and proper assembly", ["A fresh coat of bright paint", "A sign saying 'tower in use'", "A second ladder tied to its side"],
  "Towers must be assembled by a competent person, with wheels locked and guardrails fitted, before they are used."),
 ("Which hazard is most linked to working in a confined space?",
  "Lack of oxygen", ["Too much daylight", "Loud music", "Cold drinks"],

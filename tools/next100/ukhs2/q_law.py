@@ -1,7 +1,7 @@
 CAT = "hs2Law"; SEG = "LAW"
 Q = [
 ("Regulations such as COSHH and RIDDOR are made under which Act?",
- "Health and Safety at Work etc. Act 1974", ["Factories and Workshops Act 1961", "Workplace (Health, Safety and Welfare) Regulations 1992", "Management of Health and Safety Regulations 1999"],
+ "Health and Safety at Work etc. Act 1974", ["Factories Act 1961", "Offices, Shops and Railway Premises Act 1963", "Employment Rights Act 1996"],
  "The Health and Safety at Work etc. Act 1974 is the enabling Act: COSHH, RIDDOR, the Management Regulations and most other workplace regulations are made under it."),
 ("Under section 2 of the 1974 Act, an employer must protect employees' health, safety and welfare to what standard?",
  "So far as reasonably practicable", ["Only where a law names the risk", "Absolutely, whatever the cost", "Only once an accident has happened"],
@@ -40,7 +40,7 @@ Q = [
  "Stops a seriously dangerous activity", ["Gives 21 days to fix paperwork", "Sets the size of the fine to pay", "Warns of a future inspection visit"],
  "A prohibition notice stops the activity until the matter is put right. It can take effect immediately."),
 ("A firm appeals against an improvement notice. What happens to the notice meanwhile?",
- "It is suspended until the appeal", ["Its deadline is doubled in length", "It is cancelled for good", "It turns into a prohibition notice"],
+ "Suspended until the appeal ends", ["Its deadline is doubled in length", "It is cancelled for good", "It turns into a prohibition notice"],
  "An appeal suspends an improvement notice. A prohibition notice stays in force during an appeal unless the tribunal directs otherwise."),
 ("Where does a business appeal against an improvement or prohibition notice?",
  "An employment tribunal", ["The county court", "The local council", "The Health and Safety Executive"],

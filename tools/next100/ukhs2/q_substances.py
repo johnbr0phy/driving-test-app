@@ -76,7 +76,7 @@ Q = [
  "Biological hazards", ["Physical hazards", "Ergonomic hazards", "Mechanical hazards"],
  "Biological agents such as bacteria, viruses and fungi are covered by COSHH."),
 ("Which control best protects cleaners from used needles in bins?",
- "Sharps bins and no hands in bins", ["Thinner disposable gloves", "Emptying bins more often", "Pressing waste down by hand"],
+ "Sharps bins and no hands in bins", ["Thinner disposable gloves", "Emptying bins more often by hand", "Pressing the waste down firmly"],
  "Safe disposal in sharps containers and never pushing waste down by hand prevent needlestick injuries."),
 ("What is occupational asthma?",
  "Asthma caused by work exposure", ["Asthma that only affects office staff", "A cold caught from a colleague", "Breathlessness after climbing stairs"],

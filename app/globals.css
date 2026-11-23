@@ -3164,6 +3164,20 @@
     --brand-gradient-to: 0 0% 98%;
   }
 
+  /* Italian boat licence theory test (patente nautica entro 12 miglia): deep navy indigo, the sea at night. */
+  [data-theme="itnautica"] {
+    --brand: 253 85% 16%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 253 85% 96%;
+    --brand-hover: 253 85% 11%;
+    --brand-dark: 253 85% 6%;
+    --brand-darker: 253 85% 4%;
+    --brand-muted: 253 40% 70%;
+    --brand-border: 253 45% 80%;
+    --brand-border-light: 253 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
   /* Danish citizenship test (indfødsretsprøven) theme */
   [data-theme="dkindfoed"] {
     --brand: 350 90% 40%;
@@ -9968,6 +9982,17 @@
     --brand-muted: 128 40% 45%;
     --brand-dark: 128 80% 65%;
     --brand-darker: 128 80% 78%;
+  }
+  .dark [data-theme="itnautica"] {
+    --brand: 253 85% 50%;
+    --brand-hover: 253 85% 42%;
+    --brand-light: 253 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 253 35% 24%;
+    --brand-border: 253 40% 34%;
+    --brand-muted: 253 40% 45%;
+    --brand-dark: 253 85% 69%;
+    --brand-darker: 253 85% 78%;
   }
   .dark [data-theme="itcils"] {
     --brand: 146 90% 27.9%;

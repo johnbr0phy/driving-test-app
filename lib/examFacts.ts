@@ -4839,6 +4839,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Ministerial decree of 27 October 2021, Codice della Strada articles 121 and 122, the Motorizzazione civile guidance of Regione Friuli Venezia Giulia, and D.Lgs. 59/2011 Annex II, checked November 2026",
     source: { name: "Il Portale dell'Automobilista (Ministry of Infrastructure and Transport)", url: "https://www.ilportaledellautomobilista.it/" },
   },
+  itnautica: {
+    answer:
+      "The Italian boat licence within 12 miles of the coast (patente nautica di categoria A entro 12 miglia) starts with a written test of quizzes taken in one sitting: a chart-reading quiz of 5 questions (at least 4 right in 20 minutes), the base quiz of 20 three-option questions on hull, engines, safety, manoeuvres, COLREG, weather, navigation and boating law (at least 16 right in 30 minutes) and, for the sail and motor licence, a sailing quiz of 5 questions (at least 4 right in 15 minutes). Every quiz must be passed, then a practical test follows. The minimum age is 18 and the licence is valid ten years (five from age 60).",
+    rows: [
+      { label: "Run by", value: "Capitanerie di porto, uffici circondariali marittimi and uffici della Motorizzazione civile (Ministry of Infrastructure and Transport)" },
+      { label: "Chart-work quiz", value: "5 questions, at least 4 right, 20 minutes" },
+      { label: "Base quiz", value: "20 three-option questions, at least 16 right, 30 minutes" },
+      { label: "Sailing quiz", value: "5 questions, at least 4 right, 15 minutes (sail and motor only)" },
+      { label: "Minimum age", value: "18" },
+      { label: "Before the exam", value: "At least 5 hours of manoeuvres certified by a nautical school" },
+      { label: "Tigertest mock tests", value: "7 x 30 four-option questions in Italian (20 base, 5 chart, 5 sailing), 24 to pass" },
+    ],
+    basedOn: "Ministerial decree 10 August 2021 n. 323 (Gazzetta Ufficiale n. 232 of 28 September 2021), the Codice della nautica da diporto and its regulation (D.M. 146/2008), checked November 2026",
+    source: { name: "Ministero delle infrastrutture e dei trasporti: patenti nautiche", url: "https://www.mit.gov.it/temi/patenti-mezzi-abilitazioni/patenti-nautiche/normativa" },
+  },
   frcode: {
     answer:
       "The French theory test for a category B car licence (épreuve théorique générale, ETG, known as \"le code\") is taken in an exam centre run by one of the approved operators (La Poste, SGS, Dekra, Pearson VUE or Bureau Veritas): 40 multiple-choice questions, each shown with a photo or a video and some with more than one right answer, and you pass with at least 35 right. You can register from 15 with early supervised driving (apprentissage anticipé), otherwise from 16, and a pass stays valid for five years while you take the practical test.",

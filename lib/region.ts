@@ -156,7 +156,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   sgftt: "SG", sgrtt: "SG", sgres: "SG", sgm5: "SG", sgvl: "SG", sgsnb: "SG", hkiiqe1: "HK", hklesfi1: "HK", aesira: "AE", mypce: "MY", kenck: "KE", hknurse: "HK", aerera: "AE",
   detheorie: "DE", deeinb: "DE", demotorrad: "DE", deaevo: "DE", de34a: "DE", deheilpr: "DE",
   esdgt: "ES", escapcond: "ES", espolicia: "ES", esguardia: "ES", esvigilante: "ES", ptimt: "PT", ptmoto: "PT", ptcam: "PT", pttvde: "PT", ptvigil: "PT", rodrpciv: "RO", rocpi: "RO", rotaxi: "RO", roadmed: "RO", rorezid: "RO", setrafik: "SE", semoto: "SE", sejakt: "SE", semedb: "SE", sehp: "SE", grdriving: "GR", grmoto: "GR", grcitizen: "GR", grsecurity: "GR", grinsure: "GR", dkteori: "DK", dkmoto: "DK", dktruck: "DK", dkindfoed: "DK", dkmedborger: "DK", dkjagt: "DK", hukresz: "HU", hukreszmoto: "HU", hugki: "HU", huelsoseg: "HU", hubizt: "HU", bedriving: "BE", bemoto: "BE", bevracht: "BE", betoelating: "BE", befsmavz: "BE", fitheory: "FI", fimoto: "FI", fitruck: "FI", fihygiene: "FI", fihunt: "FI", mttheory: "MT", mtmoto: "MT", mtcpc: "MT", mttaxi: "MT", mtguard: "MT",
-  itpatente: "IT", itcils: "IT", itceli: "IT", ita2: "IT", itcilsb2: "IT",
+  itpatente: "IT", itnautica: "IT", itcils: "IT", itceli: "IT", ita2: "IT", itcilsb2: "IT",
   frcivique: "FR",
   frvtc: "FR",
   frcode: "FR",
@@ -222,7 +222,7 @@ export const NON_DRIVING_TESTS = new Set([
   "ptvigil",
   "mttaxi", "mtguard",
   "deaevo", "de34a", "deheilpr",
-  "itcils", "itceli", "ita2", "itcilsb2",
+  "itcils", "itceli", "ita2", "itcilsb2", "itnautica",
   "sejakt", "semedb", "sehp",
   "fihygiene", "fihunt",
   "huelsoseg", "hubizt",
@@ -499,7 +499,7 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     lead: "Esercitati per l'esame di teoria della patente B: domande originali su segnali, precedenze, limiti di velocità e guida sicura secondo il Codice della Strada, ogni risposta spiegata. Senza registrazione.",
     cta: { label: "Quiz patente B", href: "/it/quiz-patente-b" },
     testsTitle: "Test di pratica per l'Italia",
-    testsSub: "Il quiz di teoria per la patente B secondo il Codice della Strada, in km/h e con circolazione a destra. Inoltre le prove di lingua italiana: il test A2 per il permesso di soggiorno, CILS B1 Cittadinanza e CELI 2 (B1) per la cittadinanza e CILS DUE-B2.",
+    testsSub: "Il quiz di teoria per la patente B secondo il Codice della Strada, in km/h e con circolazione a destra, e i quiz della patente nautica entro 12 miglia, vela e motore. Inoltre le prove di lingua italiana: il test A2 per il permesso di soggiorno, CILS B1 Cittadinanza e CELI 2 (B1) per la cittadinanza e CILS DUE-B2.",
   },
   // Written in French (REGIONS[].lang).
   FR: {

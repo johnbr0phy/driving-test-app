@@ -1,0 +1,124 @@
+{
+  "metaTitle": "Quiz Patente Nautica 2026 - Esercitati gratis per la teoria entro 12 miglia",
+  "metaDescription": "Esercitati gratis per la prova scritta della patente nautica entro 12 miglia, vela e motore: 210 domande originali in italiano su sicurezza, Colreg, meteo, navigazione, carteggio e vela, ogni risposta spiegata. Senza registrazione.",
+  "keywords": "quiz patente nautica, patente nautica entro 12 miglia, quiz patente nautica 2026, esame patente nautica, quiz base patente nautica, quiz vela patente nautica, quiz carteggio patente nautica, simulazione esame patente nautica, patente nautica vela e motore",
+  "breadcrumb": {
+    "home": "Home",
+    "allTests": "Tutti i test",
+    "current": "Quiz Patente Nautica"
+  },
+  "h1": "Quiz Patente Nautica 2026: esercitati per la teoria entro 12 miglia",
+  "subtitle": "210 domande per la prova scritta della patente nautica entro 12 miglia, vela e motore, ogni risposta spiegata. Sette prove da 30 domande. Inizia gratis, senza registrazione.",
+  "facts": {
+    "h2": "La prova scritta della patente nautica in breve",
+    "answer": "Per la patente nautica entro 12 miglia dalla costa la prova scritta è fatta di quiz, in un'unica seduta. Si comincia con il quiz sugli elementi di carteggio: 5 domande sulla lettura della carta nautica, ne servono almeno 4 giuste in 20 minuti. Poi il quiz base: 20 domande con tre risposte, ne servono almeno 16 giuste in 30 minuti. Per la patente vela e motore si aggiunge il quiz vela: 5 domande, almeno 4 giuste in 15 minuti. Ogni quiz va superato, e una risposta non data conta come sbagliata. Dopo lo scritto c'è la prova pratica di manovra in mare o in un lago.",
+    "tigertest": "Tigertest ha 210 domande originali in italiano sugli argomenti del programma d'esame, e si inizia gratis senza registrazione. Le domande sono scritte da noi a partire dal Codice della nautica da diporto, dal suo regolamento, dal Colreg e dal D.M. 323/2021, non copiate dal database ministeriale. Ogni scheda ha 30 domande come la prova vela e motore: 20 del quiz base, 5 di carteggio e 5 di vela. Qui ogni domanda ha quattro risposte invece di tre, e la carta nautica è descritta a parole.",
+    "rows": [
+      {
+        "label": "Quiz di carteggio",
+        "value": "5 domande, almeno 4 giuste, 20 minuti"
+      },
+      {
+        "label": "Quiz base",
+        "value": "20 domande a tre risposte, almeno 16 giuste, 30 minuti"
+      },
+      {
+        "label": "Quiz vela",
+        "value": "5 domande, almeno 4 giuste, 15 minuti"
+      },
+      {
+        "label": "Età minima",
+        "value": "18 anni"
+      },
+      {
+        "label": "Prima dell'esame",
+        "value": "Almeno 5 ore di manovre attestate da una scuola nautica"
+      },
+      {
+        "label": "Validità",
+        "value": "10 anni, 5 anni dai 60 anni"
+      }
+    ],
+    "footnote": "Secondo il decreto ministeriale 10 agosto 2021 n. 323, il Codice della nautica da diporto e il suo regolamento (D.M. 146/2008), aggiornato a novembre 2026. Tigertest non è collegato al Ministero delle infrastrutture e dei trasporti né alle Capitanerie di porto. Verifica le regole aggiornate su",
+    "source": {
+      "name": "Ministero delle infrastrutture e dei trasporti: patenti nautiche",
+      "url": "https://www.mit.gov.it/temi/patenti-mezzi-abilitazioni/patenti-nautiche/normativa"
+    }
+  },
+  "howItWorks": {
+    "h2": "Come funziona",
+    "cards": [
+      {
+        "h3": "Prima ti alleni, poi ti metti alla prova",
+        "p": "Cinque set di esercizio per argomento: scafo, motore e manovre; sicurezza e normativa; Colreg, meteo e navigazione; elementi di carteggio; vela. Ricevi subito la spiegazione, e le domande sbagliate tornano finché non le sai. Poi ti metti alla prova con le schede d'esame."
+      },
+      {
+        "h3": "Schede d'esame come quella vera",
+        "p": "Sette prove da 30 domande, divise come la prova scritta vela e motore: 20 domande del quiz base con la stessa distribuzione per argomento, 5 di carteggio e 5 di vela. Per superarle qui ti servono 24 risposte giuste su 30, la somma dei minimi dei tre quiz."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "Tutti gli argomenti del programma d'esame",
+    "p": "Il programma è fissato dall'allegato A del D.M. 323/2021, e l'allegato C dice quante domande del quiz base vengono da ogni argomento. Ogni scheda qui contiene domande di tutti gli argomenti.",
+    "items": [
+      "Elementi di carteggio: latitudine, distanze, rotte, fari e segnali (5 domande su 30)",
+      "Teoria della vela: andature, manovre e precedenze (5 su 30)",
+      "Manovre e condotta (4 su 30)",
+      "Navigazione cartografica ed elettronica (4 su 30)",
+      "Sicurezza della navigazione (3 su 30)",
+      "Normativa diportistica e ambientale (3 su 30)",
+      "Teoria dello scafo e motori (2 su 30)",
+      "Colreg e segnalamento marittimo (2 su 30)",
+      "Meteorologia (2 su 30)"
+    ]
+  },
+  "howToPass": {
+    "h2": "Come superare la prova scritta",
+    "steps": [
+      {
+        "h3": "1. Conosci le regole della prova",
+        "p": "I quiz si fanno in una sola seduta, ma ognuno va superato da solo: al quiz base puoi sbagliare al massimo 4 domande su 20, al carteggio e alla vela al massimo 1 su 5. Una risposta lasciata in bianco conta come sbagliata."
+      },
+      {
+        "h3": "2. Allenati con i calcoli",
+        "p": "Velocità, tempo e distanza, primi di latitudine in miglia, declinazione con la variazione annua, prora vera e prora magnetica, autonomia del motore. Sono pochi calcoli, sempre gli stessi, e qui ogni spiegazione mostra il conto."
+      },
+      {
+        "h3": "3. Fissa le regole del Colreg",
+        "p": "Chi manovra tra due unità a motore, a vela e a motore, con le mure diverse; i fanali di via e i segnali sonori; i segnali cardinali, laterali e di pericolo isolato. Le precedenze tornano sia nel quiz base sia nel quiz vela."
+      },
+      {
+        "h3": "4. Ripeti i tuoi errori",
+        "p": "Tigertest ricorda le domande che sbagli e te le ripropone. Fai le schede quando i set di esercizio sono verdi e ripetile finché arrivi ad almeno 24 risposte giuste."
+      }
+    ]
+  },
+  "faqTitle": "Domande frequenti sulla patente nautica",
+  "faqs": [
+    {
+      "q": "Com'è fatta la prova scritta della patente nautica entro 12 miglia?",
+      "a": "Si fa a quiz, in un'unica seduta: il quiz sugli elementi di carteggio (5 domande, almeno 4 giuste in 20 minuti), il quiz base (20 domande a tre risposte, almeno 16 giuste in 30 minuti) e, per la patente vela e motore, il quiz vela (5 domande, almeno 4 giuste in 15 minuti). Lo stabilisce il decreto ministeriale 10 agosto 2021 n. 323."
+    },
+    {
+      "q": "Quando serve la patente nautica?",
+      "a": "Per il Codice della nautica da diporto serve per navigare oltre 6 miglia dalla costa, per condurre una moto d'acqua, e anche entro le 6 miglia quando il motore supera i limiti di legge, per esempio 30 kW (40,8 CV) di potenza. La patente di categoria A si prende a 18 anni."
+    },
+    {
+      "q": "Sono le domande del database ministeriale?",
+      "a": "No. Tutte le domande qui sono scritte da noi e trattano gli argomenti del programma d'esame secondo il Codice della nautica, il suo regolamento e il Colreg. Il database ufficiale dei quiz è pubblicato dal ministero: per l'esame conviene ripassarlo anche in scuola nautica."
+    },
+    {
+      "q": "Che cosa non riproduce Tigertest?",
+      "a": "All'esame ogni domanda ha tre risposte, e il quiz di carteggio si svolge su una carta nautica. Qui ogni domanda ha quattro risposte e una sola giusta, e la carta, i fari e i segnali sono descritti a parole. La prova pratica di manovra non è riprodotta."
+    },
+    {
+      "q": "Il quiz patente nautica di Tigertest è gratis?",
+      "a": "Inizi gratis e senza registrazione: sono gratuiti i set di esercizio su scafo e manovre, su sicurezza e normativa e su Colreg, meteo e navigazione, e le schede d'esame da 1 a 3. I set di carteggio e di vela e le schede da 4 a 7 fanno parte di Tigertest Premium (pagamento unico, nessun abbonamento). Con un account gratuito salvi i progressi su tutti i dispositivi."
+    }
+  ],
+  "finalCta": {
+    "h2": "Pronto per la prova scritta?",
+    "p": "Inizia gratis, senza registrazione. 210 domande in italiano su tutti gli argomenti della patente nautica entro 12 miglia."
+  }
+}

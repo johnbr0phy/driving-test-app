@@ -96,6 +96,8 @@ const CASES = [
   // Local words for "test", "exam" and "free" are dropped like the English ones (Nov 2026).
   ["τεστ κοκ", "GR", "grdriving"],
   ["quiz patente gratis", "IT", "itpatente"],
+  ["patente nautica entro 12 miglia", "IT", "itnautica"],
+  ["quiz vela patente nautica", "IT", "itnautica"],
   ["prova a2", "IT", "ita2"],
   ["kresz teszt", "HU", "hukresz"],
   ["führerschein prüfung", "DE", "detheorie"],

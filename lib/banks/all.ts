@@ -276,6 +276,7 @@ import "./sgm5";
 import "./sgvl";
 import "./itpatente";
 import "./deeinb";
+import "./itnautica";
 import "./frcivique";
 import "./frvtc";
 import "./frcode";

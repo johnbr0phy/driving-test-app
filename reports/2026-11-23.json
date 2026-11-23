@@ -1,0 +1,1703 @@
+{
+ "date": "2026-11-23",
+ "site": "sc-domain:tigertest.io",
+ "window": {
+  "start": "2026-10-24",
+  "end": "2026-11-20",
+  "prevStart": "2026-09-26",
+  "prevEnd": "2026-10-23"
+ },
+ "totals": {
+  "clicks": 2737,
+  "impressions": 61964,
+  "ctr": 0.044170808856755533,
+  "position": 12.951439545542573,
+  "prevClicks": 268,
+  "prevImpressions": 7714
+ },
+ "page2": [
+  {
+   "query": "crcst practice test",
+   "page": "/crcst-practice-test",
+   "impressions": 245,
+   "clicks": 5,
+   "position": 8.391836734693879
+  },
+  {
+   "query": "comptia security+ practice test",
+   "page": "/comptia-security-plus-practice-test",
+   "impressions": 159,
+   "clicks": 2,
+   "position": 17.371069182389938
+  },
+  {
+   "query": "lto mock exam",
+   "page": "/lto-exam-reviewer-practice-test",
+   "impressions": 136,
+   "clicks": 1,
+   "position": 8.882352941176471
+  },
+  {
+   "query": "ftt mock test",
+   "page": "/singapore-ftt-practice-test",
+   "impressions": 109,
+   "clicks": 1,
+   "position": 10.559633027522937
+  },
+  {
+   "query": "sterile processing practice test",
+   "page": "/crcst-practice-test",
+   "impressions": 98,
+   "clicks": 3,
+   "position": 10.224489795918368
+  },
+  {
+   "query": "osha 10 practice test",
+   "page": "/osha-10-practice-test",
+   "impressions": 97,
+   "clicks": 3,
+   "position": 10.927835051546392
+  },
+  {
+   "query": "hspa crcst practice test",
+   "page": "/crcst-practice-test",
+   "impressions": 94,
+   "clicks": 0,
+   "position": 9.425531914893616
+  },
+  {
+   "query": "hunter safety practice test",
+   "page": "https://tigertest.io/hunter-safety-practice-test",
+   "impressions": 83,
+   "clicks": 4,
+   "position": 9.493975903614459
+  },
+  {
+   "query": "epa 608 practice test free",
+   "page": "https://tigertest.io/epa-608-practice-test",
+   "impressions": 81,
+   "clicks": 2,
+   "position": 11.074074074074074
+  },
+  {
+   "query": "police written exam practice test free",
+   "page": "/police-exam-practice-test",
+   "impressions": 78,
+   "clicks": 6,
+   "position": 8.282051282051281
+  },
+  {
+   "query": "hunter safety course practice test",
+   "page": "https://tigertest.io/hunter-safety-practice-test",
+   "impressions": 69,
+   "clicks": 0,
+   "position": 9.492753623188406
+  },
+  {
+   "query": "hunters ed practice test",
+   "page": "https://tigertest.io/hunter-safety-practice-test",
+   "impressions": 63,
+   "clicks": 2,
+   "position": 8.80952380952381
+  },
+  {
+   "query": "motorcycle exam practice test",
+   "page": "/nz",
+   "impressions": 62,
+   "clicks": 0,
+   "position": 16.016129032258068
+  },
+  {
+   "query": "testes de código categoria b",
+   "page": "/pt/testes-codigo-imt",
+   "impressions": 62,
+   "clicks": 0,
+   "position": 8.048387096774194
+  },
+  {
+   "query": "ham radio technician practice test",
+   "page": "/ham-radio-technician-practice-test",
+   "impressions": 58,
+   "clicks": 0,
+   "position": 9.724137931034482
+  },
+  {
+   "query": "driving theory test",
+   "page": "/mt",
+   "impressions": 57,
+   "clicks": 0,
+   "position": 14.280701754385966
+  },
+  {
+   "query": "georgia permit practice test",
+   "page": "https://tigertest.io/georgia-dmv-practice-test",
+   "impressions": 56,
+   "clicks": 0,
+   "position": 17.857142857142858
+  },
+  {
+   "query": "mp police constable mock test free",
+   "page": "/mp-police-constable-practice-test",
+   "impressions": 55,
+   "clicks": 2,
+   "position": 14.218181818181819
+  },
+  {
+   "query": "cfsc practice test",
+   "page": "https://tigertest.io/canadian-firearms-safety-course-practice-test",
+   "impressions": 53,
+   "clicks": 1,
+   "position": 8.622641509433961
+  },
+  {
+   "query": "crcst practice exam",
+   "page": "/crcst-practice-test",
+   "impressions": 52,
+   "clicks": 3,
+   "position": 11.307692307692308
+  },
+  {
+   "query": "flhsmv practice test 50 questions",
+   "page": "/florida-dmv-practice-test",
+   "impressions": 51,
+   "clicks": 2,
+   "position": 11.431372549019608
+  },
+  {
+   "query": "ingyenes kresz teszt 2026",
+   "page": "/hu/kresz-teszt",
+   "impressions": 51,
+   "clicks": 1,
+   "position": 8.098039215686274
+  },
+  {
+   "query": "class 2 theory test practice",
+   "page": "/nz-class-2-licence-practice-test",
+   "impressions": 51,
+   "clicks": 0,
+   "position": 11.372549019607844
+  }
+ ],
+ "lowCtr": [],
+ "competing": [
+  {
+   "query": "tigertest",
+   "impressions": 1101,
+   "pages": [
+    {
+     "page": "tigertest.io",
+     "impressions": 164,
+     "position": 2.2621951219512195
+    },
+    {
+     "page": "/",
+     "impressions": 118,
+     "position": 2.4406779661016946
+    }
+   ]
+  },
+  {
+   "query": "tiger test",
+   "impressions": 276,
+   "pages": [
+    {
+     "page": "/",
+     "impressions": 105,
+     "position": 1.8952380952380952
+    },
+    {
+     "page": "tigertest.io",
+     "impressions": 104,
+     "position": 1.6826923076923077
+    },
+    {
+     "page": "/create",
+     "impressions": 37,
+     "position": 6.378378378378378
+    }
+   ]
+  },
+  {
+   "query": "nz road code test 35 questions free",
+   "impressions": 128,
+   "pages": [
+    {
+     "page": "/nz-learner-licence-practice-test",
+     "impressions": 102,
+     "position": 5.029411764705882
+    },
+    {
+     "page": "tigertest.io/nz-learner-licence-practice-test",
+     "impressions": 26,
+     "position": 5.461538461538462
+    }
+   ]
+  }
+ ],
+ "falling": [
+  {
+   "page": "https://tigertest.io/es/utah-examen-practica-dmv",
+   "clicks": 12,
+   "before": 26
+  }
+ ],
+ "sitemaps": [
+  {
+   "path": "https://www.tigertest.io/sitemap.xml",
+   "errors": 0,
+   "warnings": 0,
+   "lastDownloaded": "2026-11-22T03:08:40.191Z"
+  },
+  {
+   "path": "https://tigertest.io/sitemap.xml",
+   "errors": 0,
+   "warnings": 0,
+   "lastDownloaded": "2026-11-22T16:19:29.543Z"
+  }
+ ],
+ "indexing": {
+  "inspected": 509,
+  "notIndexed": [
+   {
+    "page": "/comptia-network-plus-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Alternate page with proper canonical tag",
+    "googleCanonical": "tigertest.io/comptia-network-plus-practice-test",
+    "lastCrawl": "2026-11-01"
+   },
+   {
+    "page": "/food-safety-supervisor-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Alternate page with proper canonical tag",
+    "googleCanonical": "tigertest.io/food-safety-supervisor-practice-test",
+    "lastCrawl": "2026-11-02"
+   },
+   {
+    "page": "/gcse-maths-foundation-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Alternate page with proper canonical tag",
+    "googleCanonical": "tigertest.io/gcse-maths-foundation-practice-test",
+    "lastCrawl": "2026-11-01"
+   },
+   {
+    "page": "/georgia-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Alternate page with proper canonical tag",
+    "googleCanonical": "tigertest.io/georgia-dmv-practice-test",
+    "lastCrawl": "2026-09-28"
+   },
+   {
+    "page": "/hsc-maths-standard-2-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Alternate page with proper canonical tag",
+    "googleCanonical": "tigertest.io/hsc-maths-standard-2-practice-test",
+    "lastCrawl": "2026-11-02"
+   },
+   {
+    "page": "/naplan-year-7-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Alternate page with proper canonical tag",
+    "googleCanonical": "tigertest.io/naplan-year-7-practice-test",
+    "lastCrawl": "2026-11-02"
+   },
+   {
+    "page": "/nevada-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Alternate page with proper canonical tag",
+    "googleCanonical": "tigertest.io/nevada-dmv-practice-test",
+    "lastCrawl": "2026-10-13"
+   },
+   {
+    "page": "/oc-test-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Alternate page with proper canonical tag",
+    "googleCanonical": "tigertest.io/oc-test-practice-test",
+    "lastCrawl": "2026-11-01"
+   },
+   {
+    "page": "/pmp-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Alternate page with proper canonical tag",
+    "googleCanonical": "tigertest.io/pmp-practice-test",
+    "lastCrawl": "2026-11-01"
+   },
+   {
+    "page": "/prometric-nursing-exam-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Alternate page with proper canonical tag",
+    "googleCanonical": "tigertest.io/prometric-nursing-exam-practice-test",
+    "lastCrawl": "2026-11-02"
+   },
+   {
+    "page": "/psm-1-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Alternate page with proper canonical tag",
+    "googleCanonical": "tigertest.io/psm-1-practice-test",
+    "lastCrawl": "2026-11-02"
+   },
+   {
+    "page": "/victorian-selective-entry-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Alternate page with proper canonical tag",
+    "googleCanonical": "tigertest.io/victorian-selective-entry-practice-test",
+    "lastCrawl": "2026-11-01"
+   },
+   {
+    "page": "/wyoming-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Crawled - currently not indexed",
+    "lastCrawl": "2026-08-15"
+   },
+   {
+    "page": "/911-dispatcher-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/aat-level-2-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/acca-fa-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/accuplacer-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/acls-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/adi-part-1-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/afoqt-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/agniveer-army-cee-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/aissee-class-6-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/alaska-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/alberta-class-7-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/annual-federal-tax-refresher-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ap-english-language-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/arizona-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/arrt-radiography-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ascp-mls-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ascp-mlt-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ase-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/aswb-masters-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/aws-solutions-architect-associate-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/backflow-tester-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/bc-real-estate-licensing-exam-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/bc-security-guard-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/bcaba-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/bcba-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/bihar-police-constable-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/canadian-restricted-firearms-safety-course-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/care-certificate-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/cbest-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ccrn-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ccs-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/cdcfib-recruitment-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ceh-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/cehrs-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/cemap-1-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/cen-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/cis-instrument-specialist-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/cma-aama-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/cobit-2019-foundation-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/cogat-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/colorado-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/comptia-pentest-plus-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/cpa-bar-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/cpa-reg-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/criminology-board-exam-reviewer-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/cst-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ctet-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/dat-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/delaware-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/dental-assistant-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/dsc1-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ekg-technician-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/enrolled-agent-part-1-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/enrolled-agent-part-3-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/first-aid-at-work-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/forklift-certification-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/fortigate-administrator-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/fortinet-nse-1-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/fpc-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/gcse-combined-science-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/gcse-computer-science-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/hawaii-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/hiset-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/hk-nursing-licensing-exam-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/home-health-aide-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/hvac-journeyman-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ibps-clerk-prelims-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ibps-po-prelims-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ibps-rrb-office-assistant-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/idaho-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/inbde-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/indiana-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/iowa-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/isc2-cc-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/isc2-sscp-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/isee-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/jamb-biology-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/jamb-literature-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/jnvst-class-6-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/kansas-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/kentucky-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ks2-sats-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/lcq-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/lifeguard-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/llqp-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/louisiana-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/maine-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/malta-private-guard-licence-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/map-growth-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/mblex-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/medtech-board-exam-reviewer-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/mht-cet-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/michigan-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/minnesota-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/mississippi-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/missouri-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/montana-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/naplex-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/nasm-cpt-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/nate-core-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/nbdhe-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/nce-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/nebraska-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/new-hampshire-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/new-mexico-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/nigeria-customs-recruitment-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/nigerian-army-recruitment-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/nle-reviewer-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/nmc-cbt-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/north-carolina-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/north-dakota-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/nova-scotia-learners-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/nsw-firearms-safety-test-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/nursing-council-nz-state-final-exam-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/nz-enrolled-nurse-state-final-exam-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/nz-iqn-theoretical-examination-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/nz-motorcycle-learner-licence-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/nz-real-estate-salesperson-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ontario-air-brake-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ontario-hunter-education-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/osssc-cre-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/pce-exam-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/pcoc-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/pesticide-applicator-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/pharmacist-board-exam-reviewer-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/phr-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/poland-driver-cpc-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/praxis-elementary-education-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/praxis-plt-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/prince2-foundation-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/psa-security-guard-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/psira-security-officer-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/psychometrician-board-exam-reviewer-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/punjab-police-constable-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/qaba-abat-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/qld-learner-licence-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/re5-exam-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/real-estate-broker-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/red-seal-automotive-service-technician-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/red-seal-carpenter-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/red-seal-cook-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/red-seal-electrician-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/red-seal-plumber-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/red-seal-welder-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/reet-level-1-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/registered-dietitian-exam-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/rera-broker-exam-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/rex-pn-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/rhode-island-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/romania-taxi-driver-attestation-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/rpf-constable-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/rrb-alp-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/rrb-ntpc-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/rsa-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/saaq-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/salesforce-administrator-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/saps-recruitment-test-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/saskatchewan-learners-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/sbi-clerk-prelims-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/sc-200-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/shrm-cp-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/singapore-btt-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/singapore-res-exam-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/singapore-rtt-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/singapore-snb-rn-licensure-exam-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/smart-serve-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/south-africa-firearm-competency-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/south-carolina-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/south-dakota-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/spsv-entry-test-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ssc-cgl-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ssc-chsl-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ssc-cpo-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ssc-gd-constable-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/standard-first-aid-canada-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/telangana-police-si-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/tennessee-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/texas-all-lines-adjuster-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/texas-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/trapper-education-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/upsc-prelims-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/vic-learner-permit-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/virginia-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/vtne-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/water-regulations-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/west-virginia-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/whmis-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/wisconsin-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/working-at-heights-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "Discovered - currently not indexed"
+   },
+   {
+    "page": "/ace-cpt-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/alberta-basic-security-training-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/ap-world-history-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/aphr-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/arkansas-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/arrt-ct-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/arrt-mri-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/australian-amateur-radio-foundation-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/aws-ai-practitioner-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/aws-developer-associate-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/az-104-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/boating-license-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/california-firearm-safety-certificate-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/canada-amateur-radio-basic-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/canada-drone-advanced-exam-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/canada-drone-basic-exam-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/cbspd-cspdt-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/ccat-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/ccst-networking-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/cfp-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/cmfas-m9-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/comptia-data-plus-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/comptia-linux-plus-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/comptia-tech-plus-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/corrections-officer-exam-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/crat-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/ctec-tax-preparer-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/dha-pharmacist-exam-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/district-of-columbia-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/epa-609-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/eppp-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/florida-6-20-adjuster-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/gas-technician-3-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/gcse-maths-higher-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/google-cloud-professional-cloud-architect-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/grol-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/iiqe-paper-1-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/jamb-mathematics-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/jamb-physics-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/jee-main-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/jncia-junos-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/manitoba-class-5-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/ncmhce-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/nsw-selective-test-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/nursing-aptitude-test-reviewer-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/oacp-certificate-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/oklahoma-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/oregon-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/osha-30-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/osslt-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/pals-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/personal-licence-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/plumbing-theory-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/ppsc-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/psw-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/rajasthan-police-constable-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/rcg-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/red-seal-hairstylist-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/registered-building-inspector-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/romania-driver-cpc-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/rrb-group-d-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/rrb-je-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/safe-agilist-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/salesforce-platform-developer-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/security-licence-course-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/series-6-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/series-66-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/seru-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/serving-it-right-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/sia-door-supervisor-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/six-sigma-yellow-belt-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/snowpro-core-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/sqe1-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/ssc-mts-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/staar-algebra-1-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/texes-ppr-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/title-insurance-agent-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/uk-drone-flyer-id-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/unvented-hot-water-g3-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/wa-firearm-safety-course-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   },
+   {
+    "page": "/washington-dmv-practice-test",
+    "verdict": "NEUTRAL",
+    "coverage": "URL is unknown to Google"
+   }
+  ]
+ }
+}

@@ -6336,6 +6336,19 @@
     --brand-border-light: 186 40% 90%;
     --brand-gradient-to: 0 0% 98%;
   }
+  /* AWS Developer Associate theme: dark burnt orange (v2 exam; matches lib/v2/exams/awsdva.ts theme) */
+  [data-theme="awsdva"] {
+    --brand: 26 70% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 26 70% 96%;
+    --brand-hover: 26 70% 11%;
+    --brand-dark: 26 70% 8%;
+    --brand-darker: 26 70% 6%;
+    --brand-muted: 26 40% 70%;
+    --brand-border: 26 45% 80%;
+    --brand-border-light: 26 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
   /* Cisco CCNP ENCOR theme: deep muted violet (v2 exam; matches lib/v2/exams/ccnpencor.ts theme) */
   [data-theme="ccnpencor"] {
     --brand: 276 40% 18%;
@@ -13694,6 +13707,17 @@
     --brand-muted: 186 35% 45%;
     --brand-dark: 186 60% 65%;
     --brand-darker: 186 60% 78%;
+  }
+  .dark [data-theme="awsdva"] {
+    --brand: 26 70% 41.1%;
+    --brand-hover: 26 70% 33.1%;
+    --brand-light: 26 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 26 35% 24%;
+    --brand-border: 26 40% 34%;
+    --brand-muted: 26 40% 45%;
+    --brand-dark: 26 70% 65%;
+    --brand-darker: 26 70% 78%;
   }
   .dark [data-theme="cobit"] {
     --brand: 324 100% 44.1%;

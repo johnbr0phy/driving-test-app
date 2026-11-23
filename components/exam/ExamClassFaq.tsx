@@ -174,6 +174,7 @@ export const TEACHES: Record<string, string> = {
   ai901: "an introduction to AI or Azure AI course",
   awsaif: "an AI or AWS cloud course",
   snowpro: "a data engineering or Snowflake course",
+  awsdva: "an AWS developer or cloud course",
   pl900: "a Power Platform or low-code course",
   ccna: "a CCNA or Cisco Networking Academy course",
   jncia: "a Junos or Juniper networking course",

@@ -60,7 +60,7 @@ ITEMS = [
       ["When he was last known well", "Who saw the symptoms start", "His favorite food", "Where he went to school", "The color of his car"],
       "Last known well and the person who saw the onset help the hospital decide on time-sensitive treatment. Bring or name the witness if you can."),
     S(0, 2, "Abdominal exam", "Where do you start when feeling a patient's belly for pain?",
-      ["Away from where it hurts", "Right on the painful spot", "With deep, hard pressure over the whole belly", "Only on the left side, where the spleen is"],
+      ["Away from where it hurts", "Right on the painful spot", "With deep, hard pressure over the whole belly", "In the middle, around the navel"],
       "Begin away from the painful area and move toward it last with gentle pressure, so the patient does not tense up and hide other findings."),
     S(0, 2, "Pediatric history", "A 4-year-old has a fever and a rash. Who is often the best source of her history?",
       ["Her parent or caregiver", "Her older siblings only", "A neighbor across the street", "Her school nurse's records"],

@@ -124,3 +124,16 @@ linear forms stand in for the adaptive exam.
 Fees inside questions, state-specific scope (every scope item follows the national model and says states
 may differ), drug doses, AED energy settings, the 2025 AHA changes that could not be read in full
 (cpr.heart.org returns 403), pulse oximetry and glucose values (not EMR skills), and the NREMT test itself.
+
+## Second review (2026-11-23)
+Blind review of all 200 items, then a repeat check against every bank in data/ and data/v2/. Fixed:
+an ambiguous AVPU stem (now says he is awake with eyes open), three build lists with more than one
+defensible order (mouth-to-mask steps, trauma primary assessment, scene size-up; steps merged or
+dropped so one order holds), a hand-hygiene item with two right answers, an awkward distractor on the
+abdominal exam, a key that differed only by lacking "only", and seven items repeating a fact and answer
+in the ACLS, PALS, Kenya nursing, NZ nursing, Philippine NAT, CPR and Canadian first aid banks (pulse
+recheck during rescue breathing, two-finger infant compressions, infant chest thrusts, systolic reading,
+newborn ventilation, normal breathing rate, agonal gasps). Scope items were rechecked against the skill
+tables of the 2019 Scope of Practice Model with Change Notices 1.0 and 2.0 (epinephrine auto-injector is
+EMT, AEMT and paramedic only; neither change notice adds anything at EMR level; the model says states may
+modify or expand scope). Format figures rechecked on nremt.org/Handbooks/EMR/Cognitive-Exam.

@@ -680,17 +680,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Rescue breathing",
-    "stem": "You are giving rescue breaths to an adult who has a pulse. How often should you recheck the pulse?",
+    "stem": "You are giving rescue breaths to an adult who had a pulse. At your next pulse check you cannot feel one. What should you do?",
     "options": [
-      "About every 2 minutes",
-      "About every 10 minutes",
-      "Only when EMS arrives",
-      "After every single breath"
+      "Start CPR, beginning with compressions",
+      "Change nothing until EMS arrives",
+      "Keep giving one breath every 6 seconds",
+      "Wait 10 minutes and check the pulse again"
     ],
     "correct": [
       0
     ],
-    "explanation": "An adult with a pulse who is not breathing gets 1 breath every 6 seconds. Recheck the pulse about every 2 minutes and start CPR if it is gone."
+    "explanation": "Rescue breathing is only for a patient with a pulse. Once the pulse is gone the patient is in cardiac arrest, so start CPR with compressions and get the AED on."
   },
   {
     "id": "EMR-T1-034",
@@ -1019,20 +1019,18 @@
     "skill": "Mouth-to-mask ventilation",
     "stem": "Put the steps for mouth-to-mask ventilation of an adult in order.",
     "options": [
-      "Place the mask on the face",
+      "Tilt the head and lift the jaw into the mask to seal it",
+      "Place the mask over the mouth and nose",
       "Let the chest fall before the next breath",
-      "Breathe in until the chest rises",
-      "Seal it with both hands",
-      "Open the airway"
+      "Breathe in until the chest rises"
     ],
     "correct": [
+      1,
       0,
       3,
-      4,
-      2,
-      1
+      2
     ],
-    "explanation": "Position and seal the mask, open the airway while holding the seal, give each breath over about a second until the chest just rises and let it fall before the next one."
+    "explanation": "Place the mask, then open the airway and seal it in one move by lifting the jaw into the mask. Give each breath over about a second until the chest just rises and let it fall before the next one."
   },
   {
     "id": "EMR-T1-049",
@@ -1380,15 +1378,15 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Level of consciousness",
-    "stem": "A man answers your questions but cannot tell you the day or where he is. How do you describe him on AVPU?",
+    "stem": "A man is awake with his eyes open and talks to you on his own, but cannot tell you the day or where he is. How do you describe him on AVPU?",
     "options": [
-      "Alert but disoriented",
+      "Unresponsive",
       "Responds to pain",
       "Responds to verbal stimulus",
-      "Unresponsive"
+      "Alert but disoriented"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "He is awake with eyes open and talking on his own, so he is Alert on AVPU. His confusion is described separately as disorientation to time and place."
   },
@@ -1464,15 +1462,15 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Infant CPR",
-    "stem": "Which method of infant chest compression does the 2025 AHA guidance drop?",
+    "stem": "Why does the 2025 AHA guidance no longer teach two-finger compressions for infants?",
     "options": [
-      "Two thumbs with hands encircling the chest",
-      "Compressions with a full ratio and breaths",
-      "Two fingers on the breastbone",
-      "The heel of one hand"
+      "They leave no hand free for breaths",
+      "They often fail to push deep enough",
+      "They break the infant's ribs too often",
+      "They take too long to learn"
     ],
     "correct": [
-      2
+      1
     ],
     "explanation": "The 2025 guidance dropped the two-finger technique because it often fails to reach the right depth. Rescuers use two thumbs with the hands around the chest, or the heel of one hand."
   },
@@ -1553,7 +1551,7 @@
       "A full face shield and gown",
       "Gloves and a respirator",
       "Gloves and a gown",
-      "Gloves"
+      "Gloves only"
     ],
     "correct": [
       3
@@ -1803,17 +1801,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Choking infant",
-    "stem": "Under the 2025 AHA guidance, what do you use to give chest thrusts to a choking infant?",
+    "stem": "You give back blows to a choking infant. How should you hold the infant?",
     "options": [
-      "Two fingers",
-      "Both palms stacked",
-      "Your whole fist",
-      "The heel of one hand"
+      "Face down on your forearm, head lower than the chest",
+      "Hanging upside down by the ankles",
+      "Flat on the floor, face up",
+      "Upright on your lap, facing you"
     ],
     "correct": [
-      3
+      0
     ],
-    "explanation": "For a choking infant the 2025 AHA guidelines call for 5 back blows alternating with 5 chest thrusts given with the heel of one hand. Abdominal thrusts are not used in infants."
+    "explanation": "Lay the infant face down along your forearm, resting it on your thigh, with the head lower than the chest and the jaw supported. Give 5 back blows, then turn the infant face up for 5 chest thrusts with the heel of one hand, as the 2025 AHA guidelines describe. Abdominal thrusts are not used in infants."
   },
   {
     "id": "EMR-T2-024",
@@ -2086,11 +2084,11 @@
     "skill": "Primary assessment",
     "stem": "Put the parts of the primary assessment of a responsive trauma patient in order.",
     "options": [
-      "Control major bleeding",
+      "Check the airway and breathing",
       "Check responsiveness",
       "Decide on transport priority",
       "Form a general impression",
-      "Check the airway and breathing"
+      "Check circulation and skin"
     ],
     "correct": [
       3,
@@ -2099,7 +2097,7 @@
       4,
       2
     ],
-    "explanation": "After the first look and a check of responsiveness, life-threatening bleeding is handled at once, then airway and breathing, and the findings set how urgent the patient is."
+    "explanation": "After the first look and a check of responsiveness, you assess airway and breathing, then circulation (pulse, skin and bleeding), and the findings set how urgent the patient is. Bleeding that is plainly life-threatening is controlled the moment you see it."
   },
   {
     "id": "EMR-T2-037",
@@ -2190,20 +2188,18 @@
     "skill": "Scene size-up",
     "stem": "Put the parts of a scene size-up in order as you arrive.",
     "options": [
-      "Request more resources if needed",
       "Count the patients",
       "Check the scene for hazards",
-      "Note the mechanism or nature of illness",
-      "Put on the PPE you need"
+      "Request more resources if needed",
+      "Note the mechanism or nature of illness"
     ],
     "correct": [
-      2,
-      4,
-      3,
       1,
-      0
+      3,
+      0,
+      2
     ],
-    "explanation": "You look for danger before you get out, choose PPE before contact, work out what happened, find every patient and then call for the help the scene needs."
+    "explanation": "You look for danger before you get out, work out what happened, find every patient and then call for the help the scene needs. PPE goes on before any patient contact."
   },
   {
     "id": "EMR-T2-041",
@@ -2841,7 +2837,7 @@
       "Only if you touched blood or vomit directly",
       "Only when they look dirty",
       "Before and after patient contact",
-      "After gloves come off"
+      "Once, at the end of the call"
     ],
     "correct": [
       2
@@ -2919,18 +2915,18 @@
     "domain": "emrAirway",
     "difficulty": 2,
     "format": "single",
-    "skill": "Agonal breathing",
-    "stem": "An unresponsive man takes a slow gasp every 10 seconds. How should you treat this?",
+    "skill": "Return of circulation",
+    "stem": "During CPR, the man you are treating starts to cough, move his arms and breathe normally. What should you do?",
     "options": [
-      "As a sign he is waking up",
-      "As a reason to wait and watch him",
-      "As adequate breathing for now",
-      "As no normal breathing"
+      "Give two more full cycles before stopping",
+      "Keep compressing until EMS takes over",
+      "Remove the AED pads at once",
+      "Stop compressions and check breathing and pulse"
     ],
     "correct": [
       3
     ],
-    "explanation": "Occasional gasps, called agonal breaths, are a sign of cardiac arrest, not real breathing. If he has no pulse, start CPR."
+    "explanation": "Purposeful movement and normal breathing are signs that circulation may have returned. Pause to check breathing and pulse, leave the AED pads on in case he arrests again, and keep watching him closely."
   },
   {
     "id": "EMR-D-013",
@@ -3277,15 +3273,15 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Manual blood pressure",
-    "stem": "When taking a manual blood pressure, what is the systolic reading?",
+    "stem": "When taking a manual blood pressure, where do you read the diastolic pressure?",
     "options": [
-      "The highest number you pumped to",
-      "The first tapping sound you hear",
       "The average of the two numbers",
-      "The point the sounds stop"
+      "The first tapping sound you hear",
+      "The highest number you pumped to",
+      "The point the sounds disappear"
     ],
     "correct": [
-      1
+      3
     ],
     "explanation": "As the cuff slowly deflates, the first clear tapping sound marks the systolic pressure. The point where the sounds disappear is the diastolic pressure."
   },
@@ -3319,17 +3315,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Newborn care",
-    "stem": "A newborn is still not breathing well after drying and rubbing. What should you do next?",
+    "stem": "A few minutes after birth, a newborn cries strongly and has a pink body, but bluish hands and feet. What does this usually mean?",
     "options": [
-      "Ventilate with a newborn-sized BVM",
-      "Slap the baby's feet hard",
-      "Hold the baby upside down by the feet",
-      "Wait 5 minutes for crying to start"
+      "An airway blockage that needs suction",
+      "A common finding that often clears",
+      "A sign the cord was cut too early",
+      "Cardiac arrest that needs compressions"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "If drying and stimulation do not start good breathing, ventilations with a BVM sized for a newborn are the next step. Most newborns who need help need breathing support."
+    "explanation": "Bluish hands and feet with a pink body and a strong cry are common in the first minutes after birth and often clear as circulation settles. Keep the baby warm and dry and watch breathing and color. A blue body or poor breathing is different and needs help with breathing."
   },
   {
     "id": "EMR-D-032",
@@ -3616,17 +3612,17 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Breathing rate",
-    "stem": "Which breathing rate is normal for a resting adult?",
+    "stem": "Which resting breathing rate in an adult is faster than the normal range?",
     "options": [
-      "6 a minute",
+      "12 a minute",
       "16 a minute",
-      "32 a minute",
-      "40 a minute"
+      "20 a minute",
+      "28 a minute"
     ],
     "correct": [
-      1
+      3
     ],
-    "explanation": "A resting adult normally breathes about 12 to 20 times a minute, so 16 is normal. Rates well below or above that range, along with poor chest rise, suggest inadequate breathing.",
+    "explanation": "A resting adult normally breathes about 12 to 20 times a minute, so 12, 16 and 20 are all inside the range and 28 is fast. A fast rate, with poor chest rise or other signs of distress, can mean the breathing is not adequate.",
     "lockedOrder": true
   },
   {
@@ -4051,7 +4047,7 @@
     "skill": "Abdominal exam",
     "stem": "Where do you start when feeling a patient's belly for pain?",
     "options": [
-      "Only on the left side, where the spleen is",
+      "In the middle, around the navel",
       "Away from where it hurts",
       "With deep, hard pressure over the whole belly",
       "Right on the painful spot"

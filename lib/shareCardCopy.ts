@@ -454,6 +454,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   iesafepass: { title: "Safe Pass Practice Test", description: "Practise site safety law, accident reporting, electricity, excavations, heights, plant and PPE." },
   iespsv: { title: "SPSV Entry Test Practice", description: "Practise SPSV licensing, vehicle rules, operating rules, fares, customers and safety." },
   ieqfa: { title: "QFA Regulation Practice Test", description: "Practise the Central Bank's rules, the Consumer Protection Code, AML, ethics and core products." },
+  iegarda: { title: "Garda Trainee Assessment Practice Test", description: "Timed verbal and numerical reasoning practice for Garda Trainee Stage 1, every answer explained." },
   iepsa: { title: "PSA Security Guard Practice Test", description: "Practise PSA licensing, arrest and force, access control, patrols, reports and emergencies." },
   nzmoto: { title: "NZ Motorcycle Learner Licence Test", description: "Practise learner conditions, gear, giving way, road position, braking and road hazards." },
   nzheavy: { title: "NZ Class 2 Licence Theory Test", description: "Practise work time and logbooks, loads, air brakes and heavy vehicle road rules." },

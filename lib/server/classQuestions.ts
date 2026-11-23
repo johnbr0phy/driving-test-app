@@ -69,6 +69,7 @@ import "@/lib/v2/banks/lsat";
 import "@/lib/v2/banks/afoqt";
 import "@/lib/v2/banks/wonderlic";
 import "@/lib/v2/banks/ccat";
+import "@/lib/v2/banks/iegarda";
 import "@/lib/v2/banks/iimcat";
 import "@/lib/v2/banks/sehp";
 import "@/lib/v2/banks/netplus";

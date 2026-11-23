@@ -12,7 +12,7 @@
     "options": [
       "A daytime cross-country of 70 nautical miles",
       "A daytime cross-country of 40 nautical miles",
-      "A 20-minute local flight after dark"
+      "A 20-minute local flight after dark over the airport"
     ],
     "correct": [
       1
@@ -152,7 +152,7 @@
     "options": [
       "Wings level at the 180 degree point, just above stall speed",
       "In a 30 degree bank at the 180 degree point, at entry speed",
-      "Wings level at the 90 degree point, at cruise speed"
+      "Wings level at the 90 degree point, back at the entry cruise speed"
     ],
     "correct": [
       0
@@ -210,7 +210,7 @@
     "skill": "Wind shear alerts",
     "stem": "What does a low-level wind shear alert system (LLWAS) at an airport do?",
     "options": [
-      "Forecasts wind shear and microbursts for the airport over the next 24 hours",
+      "Forecasts wind shear and microbursts for the airport and its approaches over the next 24 hours",
       "Measures turbulence in the clouds above the airport with radar",
       "Compares winds from sensors around the airport to detect shear near the runways"
     ],
@@ -251,7 +251,7 @@
     "stem": "What is the critical altitude of a turbocharged engine?",
     "options": [
       "The altitude at which the turbocharger first starts to add manifold pressure",
-      "The altitude above which supplemental oxygen is required",
+      "The altitude above which the crew must use supplemental oxygen under part 91",
       "The highest altitude at which it can still hold rated manifold pressure"
     ],
     "correct": [
@@ -350,7 +350,7 @@
     "skill": "Aeronautical experience",
     "stem": "Which night requirement must a commercial single-engine applicant log as solo or as the person performing the duties of pilot in command?",
     "options": [
-      "3 hours of night VFR with 10 full-stop takeoffs and landings at any public airport",
+      "3 hours of night VFR with 10 full-stop takeoffs and landings at any public-use airport, towered or not",
       "5 hours of night VFR with 3 takeoffs and 3 landings to a full stop at any airport",
       "5 hours of night VFR with 10 takeoffs and 10 landings at an airport with an operating control tower"
     ],
@@ -411,8 +411,8 @@
     "stem": "What happens as an airplane climbs out of ground effect after takeoff?",
     "options": [
       "Induced drag increases, so more thrust is needed and it may settle",
-      "Induced drag decreases, so the airplane accelerates",
-      "Parasite drag doubles, so it must be held in ground effect"
+      "Induced drag decreases, so the airplane accelerates and climbs more steeply",
+      "Parasite drag doubles, so the airplane must be held in ground effect longer"
     ],
     "correct": [
       0
@@ -471,8 +471,8 @@
     "stem": "A local business pays you to fly its advertising banner along a beach. Which certificate does this operation need beyond your commercial pilot certificate?",
     "options": [
       "None, because banner towing is aerial work outside part 119",
-      "A part 119 air carrier certificate held by you",
-      "A part 135 operating certificate held by the business"
+      "A part 119 air carrier certificate held by you as the pilot in command",
+      "A part 135 operating certificate held by the business that hired you"
     ],
     "correct": [
       0
@@ -550,7 +550,7 @@
     "skill": "TAF",
     "stem": "In a terminal aerodrome forecast, what does TEMPO mean?",
     "options": [
-      "A change that begins at the stated time and lasts the rest of the forecast period",
+      "A lasting change that begins at the stated time and continues for the rest of the forecast period",
       "A permanent change that occurs gradually over the period",
       "Temporary changes, each lasting less than an hour and in total less than half the period"
     ],
@@ -591,8 +591,8 @@
     "stem": "What problem is common when restarting a hot fuel-injected engine?",
     "options": [
       "Vapor lock in the fuel lines makes it hard to start",
-      "The engine runs too lean to idle once started",
-      "Carburetor ice blocks the fuel flow"
+      "The engine runs much too lean to idle once it has started",
+      "Carburetor ice forms in the induction system and blocks the fuel flow"
     ],
     "correct": [
       0
@@ -630,9 +630,9 @@
     "skill": "Stagnant hypoxia",
     "stem": "Which type of hypoxia can high G loads in steep maneuvers cause?",
     "options": [
-      "Hypemic hypoxia, from a drop in red blood cells",
+      "Hypemic hypoxia, from a sudden drop in working red blood cells",
       "Stagnant hypoxia, from blood pooling away from the brain",
-      "Histotoxic hypoxia, from cells unable to use oxygen"
+      "Histotoxic hypoxia, from body cells unable to use the oxygen"
     ],
     "correct": [
       1
@@ -671,7 +671,7 @@
     "stem": "You depart VFR from a nontowered satellite airport inside a Class C surface area. When must you contact Class C ATC?",
     "options": [
       "Only once you leave the Class C area",
-      "Before you start the engine",
+      "Before you start the engine on the ramp",
       "As soon as practicable after takeoff"
     ],
     "correct": [
@@ -711,7 +711,7 @@
     "stem": "Which limits apply to the commercial steep spiral?",
     "options": [
       "One 360 degree turn at 30 degrees of bank, finishing at pattern altitude",
-      "Two 360 degree turns, no more than 45 degrees of bank, finishing no lower than 1,000 feet AGL",
+      "Two complete 360 degree turns, with no more than 45 degrees of bank, finishing no lower than 1,000 feet AGL",
       "At least three 360 degree turns, no more than 60 degrees of bank, finishing no lower than 1,500 feet AGL"
     ],
     "correct": [
@@ -771,7 +771,7 @@
     "stem": "In a pressurized airplane, what mainly controls the cabin altitude?",
     "options": [
       "The outflow valve, which lets air out of the cabin at a controlled rate",
-      "The safety valve, which opens a little at every change of altitude",
+      "The safety valve, which opens a little at every change of altitude to bleed air",
       "The inflow of outside air through the cabin vents"
     ],
     "correct": [
@@ -811,8 +811,8 @@
     "stem": "Which airplane is a complex airplane under part 61?",
     "options": [
       "Retractable gear, flaps and a controllable-pitch propeller",
-      "Retractable gear, no flaps and a fixed-pitch propeller",
-      "Fixed gear, flaps and a 230-horsepower engine"
+      "Retractable gear, no flaps and a fixed-pitch metal propeller",
+      "Fixed gear, flaps and a 230-horsepower engine with a fixed-pitch propeller"
     ],
     "correct": [
       0
@@ -891,7 +891,7 @@
     "stem": "To meet the commercial standard for a power-off 180 accuracy landing, where must you touch down?",
     "options": [
       "Within 100 feet before or after the specified point",
-      "Anywhere in the first third of the runway",
+      "Anywhere in the first third of the runway past the threshold",
       "On the specified point or within 200 feet beyond it"
     ],
     "correct": [
@@ -951,7 +951,7 @@
     "stem": "Why should you use aviator's breathing oxygen rather than industrial oxygen?",
     "options": [
       "It is mixed with nitrogen to prevent oxygen toxicity",
-      "It is stored at a lower pressure, so the bottles are less likely to burst",
+      "It is stored at a much lower pressure, so the bottles are less likely to burst in flight",
       "It has very little water vapor, which could freeze in the system at altitude"
     ],
     "correct": [
@@ -991,8 +991,8 @@
     "stem": "You want to act as pilot in command of a pressurized airplane whose maximum operating altitude is FL300. What does part 61 require first?",
     "options": [
       "Ground and flight training on high-altitude operations and a logbook endorsement",
-      "A second-class medical and 50 hours in pressurized aircraft",
-      "An instrument rating, a type rating for the airplane and a second-class medical"
+      "A second-class medical certificate and at least 50 hours logged in pressurized aircraft",
+      "An instrument rating, a type rating for the airplane and a current second-class medical"
     ],
     "correct": [
       0
@@ -1150,7 +1150,7 @@
     "skill": "Steep turns",
     "stem": "What bank angle does the commercial steep turn use, and how close must you hold altitude?",
     "options": [
-      "About 60 degrees, plus or minus 50 feet",
+      "About 60 degrees, holding altitude within plus or minus 50 feet",
       "About 45 degrees, plus or minus 200 feet",
       "About 50 degrees, plus or minus 100 feet"
     ],
@@ -1170,8 +1170,8 @@
     "skill": "Task saturation",
     "stem": "On a busy approach you are overloaded with radio calls, checklists and traffic. What should come first?",
     "options": [
-      "Finishing the full checklist before anything else",
-      "Answering every radio call at once",
+      "Finishing the full checklist before doing anything else at all",
+      "Answering every radio call at once so that ATC is never kept waiting",
       "Flying the airplane, then navigating, then communicating"
     ],
     "correct": [
@@ -1191,8 +1191,8 @@
     "stem": "Of the 100 hours of pilot-in-command time required for a commercial single-engine rating, how much must be cross-country time?",
     "options": [
       "50 hours, at least 10 of them in airplanes",
-      "25 hours, all of them in airplanes",
-      "10 hours, at least 5 of them at night"
+      "25 hours, all of them in airplanes and at least 5 at night",
+      "10 hours, at least 5 of them at night in airplanes"
     ],
     "correct": [
       0
@@ -1212,7 +1212,7 @@
     "options": [
       "Parallel to it on the downwind side",
       "At about a 45 degree angle, so you can turn away easily",
-      "Straight at it, so you cross in the shortest time"
+      "Straight at it, at a right angle, so you cross in the shortest time"
     ],
     "correct": [
       1
@@ -1230,7 +1230,7 @@
     "skill": "Center of gravity",
     "stem": "How does an aft center of gravity affect an airplane compared with a forward one?",
     "options": [
-      "It needs more elevator force to raise the nose",
+      "It needs more elevator force to raise the nose for the landing flare",
       "It is more stable, with a higher stall speed and better spin recovery",
       "It is less stable and harder to recover from a stall or spin"
     ],
@@ -1351,7 +1351,7 @@
     "stem": "Which solo flight meets the long cross-country requirement for a commercial single-engine rating in the 48 contiguous states?",
     "options": [
       "280 nm total, landings at three points, one of them 250 nm straight-line from the start",
-      "300 nm total, landings at two points, one of them 250 nm straight-line from the start",
+      "300 nm total, with landings at two points, one of them 250 nm straight-line from the start",
       "320 nm total, landings at three points, one of them 255 nm straight-line from the start"
     ],
     "correct": [
@@ -1390,7 +1390,7 @@
     "skill": "Frost",
     "stem": "Why must frost be removed from the wings before takeoff?",
     "options": [
-      "It blocks the static ports and stops the airspeed indicator",
+      "It blocks the static ports and stops the airspeed indicator working",
       "It adds so much weight the airplane exceeds maximum takeoff weight",
       "It disrupts airflow and can raise the stall speed and cut lift"
     ],
@@ -1492,7 +1492,7 @@
     "options": [
       "Airspace around a national park where pilots are asked to fly above 2,000 feet AGL",
       "Airspace beyond 3 nm from the U.S. coast that may hold hazardous activity",
-      "Airspace over land where flight is prohibited without a permit"
+      "Airspace over land where all flight is prohibited without a written FAA permit"
     ],
     "correct": [
       1
@@ -1531,8 +1531,8 @@
     "stem": "During an emergency descent, why do you bank 30 to 45 degrees?",
     "options": [
       "To keep a positive load factor while descending rapidly",
-      "To keep the airspeed below the flap extension speed",
-      "To slow the airplane to its best glide speed"
+      "To keep the airspeed below the maximum flap extension speed",
+      "To slow the airplane quickly to its best glide speed for the descent"
     ],
     "correct": [
       0
@@ -1551,7 +1551,7 @@
     "stem": "A winds and temperatures aloft forecast for FL340 reads 7525-45. What wind is forecast?",
     "options": [
       "750 degrees true at 25 knots, minus 45 C",
-      "250 degrees true at 25 knots, minus 45 C",
+      "250 degrees magnetic at 125 knots, minus 45 C",
       "250 degrees true at 125 knots, minus 45 C"
     ],
     "correct": [
@@ -1571,7 +1571,7 @@
     "stem": "During a Vmc demonstration, the stall warning sounds before you reach Vmc. What do you do?",
     "options": [
       "Recover at once by reducing power on the operating engine and lowering the nose",
-      "Add full power on the operating engine and raise the nose to slow down",
+      "Add full power on the operating engine and raise the nose further to slow down quickly",
       "Keep going until directional control is lost"
     ],
     "correct": [
@@ -1671,7 +1671,7 @@
     "stem": "What does a runway distance remaining sign show?",
     "options": [
       "Black background with white numbers giving thousands of feet of runway left",
-      "Yellow background with black numbers giving the runway number ahead",
+      "Yellow background with black numbers giving the number of the runway that lies ahead",
       "Red background with white numbers marking a runway holding position"
     ],
     "correct": [
@@ -1711,7 +1711,7 @@
     "stem": "What is the commercial standard for touchdown on a short-field landing?",
     "options": [
       "Within 100 feet beyond or on the specified point",
-      "Within 400 feet beyond the threshold",
+      "Within 400 feet beyond the runway threshold markings",
       "Within 200 feet beyond or on the specified point"
     ],
     "correct": [
@@ -1730,7 +1730,7 @@
     "skill": "Cloud types",
     "stem": "In the morning you see altocumulus castellanus, turret-shaped middle clouds. What does that suggest?",
     "options": [
-      "Fog and low stratus forming at the surface by the evening",
+      "Fog and low stratus forming at the surface later in the evening",
       "Instability aloft and possible thunderstorms later in the day",
       "A stable atmosphere with smooth air all day"
     ],
@@ -1752,7 +1752,7 @@
     "options": [
       "About 2 to 3 degrees of bank toward the operating engine with the ball about half out toward it",
       "Wings level with the ball centered and rudder held toward the dead engine",
-      "About 5 degrees of bank toward the inoperative engine with the ball centered"
+      "About 5 degrees of bank toward the inoperative engine with the ball centered and rudder held neutral"
     ],
     "correct": [
       0
@@ -1791,7 +1791,7 @@
     "stem": "How does an upsloping runway affect takeoff?",
     "options": [
       "It does not affect the takeoff run",
-      "It shortens the takeoff run",
+      "It shortens the takeoff run, since the nose is already raised",
       "It lengthens the takeoff run"
     ],
     "correct": [
@@ -1831,8 +1831,8 @@
     "stem": "Why does alcohol cause hypoxia even when the blood carries enough oxygen?",
     "options": [
       "It interferes with the cells' ability to use oxygen",
-      "It lowers the number of red blood cells",
-      "It reduces the oxygen pressure in the lungs"
+      "It lowers the number of red blood cells able to carry oxygen",
+      "It reduces the partial pressure of oxygen in the lungs"
     ],
     "correct": [
       0
@@ -1892,7 +1892,7 @@
     "options": [
       "The engine with the higher manifold pressure has failed",
       "The foot that is not pressing a rudder pedal is on the failed engine's side",
-      "The foot pressing hardest on a rudder pedal is on the failed engine's side"
+      "The foot pressing hardest on a rudder pedal is on the failed engine's side of the airplane"
     ],
     "correct": [
       1
@@ -1910,9 +1910,9 @@
     "skill": "Automated stations",
     "stem": "A METAR from an automated station includes the remark AO2. What does it mean?",
     "options": [
-      "The report was edited by a weather observer",
+      "A weather observer has checked and edited the report",
       "The station has a precipitation discriminator",
-      "The station has no precipitation sensor"
+      "The station has no precipitation sensor of any kind"
     ],
     "correct": [
       1
@@ -1930,7 +1930,7 @@
     "skill": "Climb speeds",
     "stem": "As altitude increases, how do the best angle (VX) and best rate (VY) of climb speeds change?",
     "options": [
-      "VX decreases and VY increases until they meet at the service ceiling",
+      "VX decreases and VY increases until the two speeds meet at the service ceiling",
       "Both stay the same at every altitude",
       "VX increases and VY decreases until they meet at the absolute ceiling"
     ],
@@ -2010,7 +2010,7 @@
     "skill": "High-performance airplane",
     "stem": "Which airplane needs a high-performance endorsement before you act as pilot in command?",
     "options": [
-      "A twin with two 180-horsepower engines",
+      "A twin with two 180-horsepower engines, 360 horsepower in total",
       "A single-engine airplane with a 230-horsepower engine",
       "A single-engine airplane with a 200-horsepower engine"
     ],
@@ -2072,7 +2072,7 @@
     "options": [
       "Constant bank and rising pitch for the first 90 degrees, then constant pitch and a steady rollout",
       "Rising bank and constant pitch for the first 90 degrees, then falling pitch",
-      "Rising bank and constant pitch for the first 90 degrees, then a rollout while pitch falls"
+      "Rising bank and constant pitch for the first 90 degrees, then a steady rollout while the pitch falls"
     ],
     "correct": [
       0
@@ -2111,8 +2111,8 @@
     "stem": "As you approach a runway on a taxiway, red in-pavement runway entrance lights come on. What does that mean?",
     "options": [
       "Stop: it is unsafe to enter or cross the runway now",
-      "The runway is closed for the rest of the day",
-      "You are cleared to cross without stopping"
+      "The runway is closed to all traffic for the rest of the day",
+      "You are cleared to enter or cross the runway without stopping"
     ],
     "correct": [
       0
@@ -2172,7 +2172,7 @@
     "options": [
       "A lower percentage of oxygen in the air above 10,000 feet",
       "The lower partial pressure of oxygen in the thinner air",
-      "Carbon monoxide from the engine exhaust"
+      "Carbon monoxide leaking into the cabin from the engine exhaust system"
     ],
     "correct": [
       1
@@ -2212,7 +2212,7 @@
     "options": [
       "Ice raises the stall speed and lowers the critical angle of attack below the warning setting",
       "Ice on the stall warning vane makes the horn sound only at a lower angle of attack than normal",
-      "Ice blocks the static ports, so the airspeed indicator reads too high near the stall"
+      "Ice blocks the static ports, so the airspeed indicator reads far too high as you near the stall"
     ],
     "correct": [
       0
@@ -2291,7 +2291,7 @@
     "stem": "Over a national park, at what height above the surface are VFR pilots asked to remain?",
     "options": [
       "At least 2,000 feet AGL",
-      "At least 500 feet AGL",
+      "At least 500 feet above the highest obstacle",
       "At least 1,000 feet AGL"
     ],
     "correct": [
@@ -2330,7 +2330,7 @@
     "skill": "Pressurization",
     "stem": "An airplane flies at 22,000 feet with a cabin altitude of 8,000 feet. What is the cabin differential pressure?",
     "options": [
-      "The pressure the outflow valve adds above sea level",
+      "The pressure the outflow valve adds above standard sea level pressure",
       "The difference between cabin pressure and outside air pressure",
       "The difference between cabin altitude and flight altitude in feet"
     ],
@@ -2590,9 +2590,9 @@
     "skill": "Best glide",
     "stem": "How does best glide speed change when the airplane is lighter?",
     "options": [
-      "It increases, and the glide distance increases",
+      "It increases, and the glide distance increases by the same proportion",
       "It decreases, though the glide ratio stays about the same",
-      "It stays the same, but the glide distance decreases"
+      "It stays the same, but the glide distance decreases a little"
     ],
     "correct": [
       1
@@ -2611,7 +2611,7 @@
     "stem": "During eights on pylons, how does the pivotal altitude change as you turn downwind?",
     "options": [
       "It rises, because groundspeed is higher",
-      "It falls, because groundspeed is lower",
+      "It falls, because groundspeed is lower on the downwind side",
       "It stays the same, because airspeed is constant"
     ],
     "correct": [
@@ -2670,7 +2670,7 @@
     "skill": "Runway crossings",
     "stem": "Ground control clears you to taxi to runway 27. Your route crosses runway 33. What must you do?",
     "options": [
-      "Cross runway 33 only if no aircraft is on final for it",
+      "Cross runway 33 on your own judgment, but only if no aircraft is on final for it",
       "Cross runway 33, since the taxi clearance includes all runways on the way",
       "Hold short of runway 33 until you get a specific clearance to cross it"
     ],
@@ -2690,8 +2690,8 @@
     "skill": "Flight plans",
     "stem": "You forget to close a VFR flight plan. When does search and rescue begin?",
     "options": [
-      "Two hours after your estimated time of arrival",
-      "Only after the destination tower reports you missing",
+      "Two hours after your estimated time of arrival, if you do not call",
+      "Only after the destination tower reports you missing to the FAA",
       "About 30 minutes after your estimated time of arrival"
     ],
     "correct": [
@@ -2711,7 +2711,7 @@
     "stem": "What does a pulse oximeter tell you in flight?",
     "options": [
       "The oxygen pressure left in the bottle",
-      "The cabin altitude",
+      "The cabin altitude of a pressurized airplane",
       "The oxygen saturation of your blood"
     ],
     "correct": [
@@ -2751,8 +2751,8 @@
     "stem": "Where is clear air turbulence most likely near a jet stream?",
     "options": [
       "On the polar side, near a sharp curve or trough",
-      "Directly in the jet core at its slowest point",
-      "On the equatorial side, far from any trough"
+      "Directly in the jet core, at its slowest and smoothest point",
+      "On the equatorial side, far from any sharp curve or trough"
     ],
     "correct": [
       0
@@ -2812,7 +2812,7 @@
     "options": [
       "The equipment that must be checked during an annual inspection",
       "The equipment that must work for each kind of operation, such as day VFR, night VFR or IFR",
-      "The equipment that may stay inoperative under an approved minimum equipment list"
+      "The equipment that may stay inoperative under an approved minimum equipment list for the airplane"
     ],
     "correct": [
       1
@@ -2852,7 +2852,7 @@
     "options": [
       "Rotate well beyond the jet's rotation point and stay below its flight path",
       "Rotate before the jet's rotation point and climb above its flight path",
-      "Lift off at the same point and turn downwind of its path"
+      "Lift off at the same point as the jet and then turn downwind of its flight path"
     ],
     "correct": [
       1
@@ -2872,7 +2872,7 @@
     "options": [
       "ATC, but only from IFR traffic",
       "You are; the service is advisory and workload permitting",
-      "ATC, which must separate you from all other aircraft"
+      "ATC, which must separate you from all other aircraft in its airspace"
     ],
     "correct": [
       1
@@ -2912,7 +2912,7 @@
     "options": [
       "You feel higher than you are and fly a lower approach",
       "You feel lower than you are and fly a higher approach",
-      "You feel slower than you are and add speed"
+      "You feel slower than you are and add speed on final approach"
     ],
     "correct": [
       0
@@ -2931,7 +2931,7 @@
     "stem": "Under which conditions does clear ice most often form?",
     "options": [
       "Dry snow at any temperature below freezing",
-      "Small supercooled drops at temperatures colder than -20 C",
+      "Small supercooled drops at temperatures much colder than about -20 C",
       "Large supercooled drops at temperatures from 0 to about -10 C"
     ],
     "correct": [
@@ -2952,7 +2952,7 @@
     "options": [
       "Left, from gyroscopic precession of the propeller",
       "Left, from the spiraling slipstream hitting the right side of the fin",
-      "Right, from the torque of the engine"
+      "Right, from the torque of the engine as the power comes up"
     ],
     "correct": [
       0
@@ -2970,7 +2970,7 @@
     "skill": "Power-off 180",
     "stem": "Where does the power-off 180 accuracy approach begin?",
     "options": [
-      "At the start of the base leg, with flaps fully extended",
+      "At the start of the base leg, with the flaps already fully extended",
       "Abeam the touchdown point on downwind, with power at idle",
       "On a 2-mile final with partial power"
     ],
@@ -3031,7 +3031,7 @@
     "stem": "May a commercial pilot do preventive maintenance, such as changing an oil filter, on an airplane used in part 135 charter?",
     "options": [
       "Yes, if the pilot holds a second-class medical",
-      "Yes, as long as the pilot owns the airplane and logs the work",
+      "Yes, as long as the pilot owns the airplane and logs the work in its records",
       "No, unless done under an approved program with FAA authorization"
     ],
     "correct": [
@@ -3151,7 +3151,7 @@
     "stem": "On a commercial normal approach and landing, where must you touch down?",
     "options": [
       "Within 200 feet beyond or on the specified point",
-      "Anywhere within the first half of the runway",
+      "Anywhere within the first half of the available runway length",
       "Within 100 feet beyond or on the specified point"
     ],
     "correct": [
@@ -3190,7 +3190,7 @@
     "skill": "Leaning for takeoff",
     "stem": "Before takeoff at a high-elevation airport, why might the manual tell you to lean the mixture?",
     "options": [
-      "Leaning keeps the spark plugs from fouling at full power",
+      "Leaning keeps the spark plugs from fouling while you run at full power",
       "A full-rich mixture is too rich in thin air and loses power",
       "Leaning cools the engine for the climb"
     ],
@@ -3212,7 +3212,7 @@
     "options": [
       "No, because the airplane is not provided by the person giving the instruction",
       "Yes, because any airplane used for training needs one",
-      "Yes, because any instruction given for hire needs a 100-hour inspection"
+      "Yes, because any flight instruction given for hire needs a current 100-hour inspection"
     ],
     "correct": [
       0
@@ -3231,7 +3231,7 @@
     "stem": "A METAR remark reads PK WND 28045/15. What does it mean?",
     "options": [
       "A peak wind from 280 degrees at 45 knots at 15 minutes past the hour",
-      "Wind from 280 degrees at a steady 45 knots for the last 15 minutes",
+      "A wind from 280 degrees at a steady 45 knots for the last 15 minutes or more",
       "Wind from 280 degrees at 15 knots, gusting to 45"
     ],
     "correct": [
@@ -3290,7 +3290,7 @@
     "skill": "National security areas",
     "stem": "How should a VFR pilot treat a National Security Area shown on a chart?",
     "options": [
-      "Never enter it, because it is prohibited airspace at all times and altitudes",
+      "Never enter it, because it is prohibited airspace at all times and at all altitudes",
       "Contact the controlling agency before entering, as in an MOA",
       "Voluntarily avoid flying through it unless a temporary regulation prohibits flight"
     ],
@@ -3352,7 +3352,7 @@
     "options": [
       "Mistaking the road lights for runway lights",
       "Thinking you are climbing when you are level",
-      "Believing the airport beacon is a star"
+      "Believing the rotating airport beacon is a bright star"
     ],
     "correct": [
       0
@@ -3510,8 +3510,8 @@
     "skill": "Fuel crossfeed",
     "stem": "In a light twin, what is fuel crossfeed used for?",
     "options": [
-      "Feeding both engines from an auxiliary fuselage tank",
-      "Moving fuel from one wing's tanks to the other in flight",
+      "Feeding both engines at once from an auxiliary tank in the fuselage",
+      "Moving fuel from one wing's tanks to the other wing's tanks in flight",
       "Letting an engine draw fuel from the tanks on the other wing"
     ],
     "correct": [
@@ -3632,7 +3632,7 @@
     "options": [
       "Close both throttles promptly and stop on the runway",
       "Continue the takeoff, feather the failed engine and climb at Vyse",
-      "Feather the failed engine and lift off"
+      "Feather the failed engine and lift off, then climb at the blue line speed"
     ],
     "correct": [
       0
@@ -3772,7 +3772,7 @@
     "options": [
       "Severe turbulence in and near the storm",
       "A storm that is dissipating and safe to pass under",
-      "Light rain with no turbulence"
+      "Light rain below the anvil with no turbulence"
     ],
     "correct": [
       0
@@ -3811,7 +3811,7 @@
     "stem": "During a go-around with full flaps, how should the flaps be raised?",
     "options": [
       "Not until the airplane reaches traffic pattern altitude",
-      "All at once, as soon as power is added",
+      "All at once, as soon as full power is added for the climb",
       "In steps, as the airplane gains airspeed and climbs"
     ],
     "correct": [
@@ -3830,7 +3830,7 @@
     "skill": "Technically advanced airplane",
     "stem": "For commercial training, what equipment makes an airplane a technically advanced airplane (TAA)?",
     "options": [
-      "A turbocharged engine, a glass primary flight display and an ADS-B In traffic display",
+      "A turbocharged engine, a glass primary flight display and an ADS-B In traffic and weather display",
       "A primary flight display, a multifunction display with GPS moving map, and a two-axis autopilot",
       "Retractable gear, flaps and a controllable-pitch propeller"
     ],
@@ -3910,7 +3910,7 @@
     "skill": "Trapped gas",
     "stem": "What happens to gas trapped in the stomach and intestines as an unpressurized airplane climbs?",
     "options": [
-      "It dissolves into the blood",
+      "It dissolves into the blood and causes no symptoms",
       "It contracts and can cause nausea",
       "It expands and can cause pain"
     ],
@@ -3970,7 +3970,7 @@
     "skill": "Washout",
     "stem": "What is the purpose of wing washout?",
     "options": [
-      "The tip stalls before the root, so the stall is sharper",
+      "The tip stalls before the root, so the stall breaks more sharply",
       "The root stalls before the tip, so the ailerons keep working",
       "It reduces parasite drag at cruise speed"
     ],
@@ -4070,8 +4070,8 @@
     "skill": "Pressurization",
     "stem": "What does the cabin rate-of-climb indicator in a pressurized airplane show?",
     "options": [
-      "How fast the outflow valve is opening",
-      "How fast the airplane is climbing",
+      "How fast the outflow valve is opening or closing",
+      "How fast the airplane itself is climbing or descending",
       "How fast the cabin altitude is changing"
     ],
     "correct": [
@@ -4090,9 +4090,9 @@
     "skill": "Commercial pressures",
     "stem": "A paying passenger urges you to leave right away despite a thunderstorm moving toward the airport. What is the best response?",
     "options": [
-      "Depart and plan to outrun the storm at low altitude",
+      "Depart now and plan to outrun the storm by staying at low altitude",
       "Explain the risk and wait until the storm has passed",
-      "Depart at once to keep the customer satisfied"
+      "Depart at once, since the paying passenger has the final say on the trip"
     ],
     "correct": [
       1
@@ -4110,7 +4110,7 @@
     "skill": "Ramp weight",
     "stem": "Why is maximum ramp weight higher than maximum takeoff weight?",
     "options": [
-      "It allows for the weight of ice that may form in flight",
+      "It allows for the extra weight of ice that may form on the airplane in flight",
       "It allows for baggage loaded after takeoff",
       "It allows for fuel burned during engine start, taxi and runup"
     ],
@@ -4172,7 +4172,7 @@
     "options": [
       "A coordinated 45 degree banked turn, completed no lower than 3,000 feet AGL",
       "A wings-level stall entered at full power from cruise speed",
-      "A 60 degree banked turn at maneuvering speed, below 1,500 feet AGL"
+      "A 60 degree banked turn at maneuvering speed, entered below 1,500 feet AGL to save time"
     ],
     "correct": [
       0

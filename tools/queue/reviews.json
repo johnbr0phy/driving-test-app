@@ -1478,5 +1478,13 @@
       "pr": 973,
       "findings": 5
     }
+  ],
+  "deeinb": [
+    {
+      "date": "2026-11-22",
+      "kind": "blind review at build",
+      "pr": 971,
+      "findings": 42
+    }
   ]
 }

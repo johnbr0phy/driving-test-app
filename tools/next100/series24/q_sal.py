@@ -25,7 +25,7 @@ Q = [
  "The customer's written consent for each order", ['A negative consent letter sent once a year', 'Oral consent recorded only on the trade blotter', 'No consent at all if the price is disclosed'],
  'Rule 2124(b) requires written consent from a non-institutional customer on an order-by-order basis. Institutional customers may consent by negative consent letter or order by order.'),
 ("Rule 2122 requires a firm's charges for services such as custody or transfers to be:",
- 'Reasonable and not unfairly discriminatory', ['Approved by FINRA staff before they are charged', 'Identical across every member firm', 'Waived for customers over age 65'],
+ 'Reasonable and not unfairly discriminatory', ['Approved by FINRA before they are charged', 'Identical across every member firm', 'Waived for customers over age 65'],
  'Rule 2122 requires charges for services performed, including collection of funds, safekeeping and transfers, to be reasonable and not unfairly discriminatory.'),
 ("Which suitability obligation requires a representative to understand a product's risks and rewards before recommending it to anyone?",
  'Reasonable-basis suitability', ['Customer-specific suitability', 'Quantitative suitability', 'Institutional suitability'],

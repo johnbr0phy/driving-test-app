@@ -82,6 +82,6 @@ Q = [
  'Prohibited order splitting to raise pay', ['Acceptable working of a large customer order', 'A best execution practice the rule requires', 'Allowed as long as each order is filled'],
  'Rule 5290 prohibits splitting a customer order into multiple smaller orders, or otherwise handling it, for the primary purpose of maximizing execution-related compensation.'),
 ('A firm receives payment for routing customer orders to a market maker. It must disclose this:',
- 'At account opening, yearly, on confirmations and in 606 reports', ["Only to FINRA staff during the firm's annual audit", 'Only if a customer complains about a fill', 'Only to institutional customers that ask for it'],
+ 'At account opening, yearly, on confirmations and in 606 reports', ["Only to FINRA during the firm's annual audit", 'Only if a customer complains about a fill', 'Only to institutional customers that ask for it'],
  'SEC Rule 10b-10 requires the confirmation to state whether payment for order flow is received, Rule 607 requires disclosure at account opening and annually, and Rule 606 reports detail the amounts.'),
 ]

@@ -4,7 +4,7 @@ Q = [
  'Is reviewed under firm procedures, with no pre-use sign-off', ['Must be approved by a principal before it is sent', 'Must be filed with FINRA within 10 business days of first use', "Needs the CEO's signature before it is sent"],
  'Rule 2210(b)(2) subjects correspondence to the supervision and review requirements of Rules 3110(b) and 3110.06 to .09, which allow risk-based post-use review by a principal, rather than pre-use approval.'),
 ('A firm writes a brochure for its website describing its services to retail investors. Under Rule 2210 it generally needs:',
- 'Approval by a qualified principal before first use', ['Review by FINRA staff before it is posted', 'Only a review after publication', 'No review at all, since it names no specific security'],
+ 'Approval by a qualified principal before first use', ['Review by FINRA before it is posted', 'Only a review after publication', 'No review at all, since it names no specific security'],
  'Rule 2210(b)(1) requires an appropriately qualified registered principal to approve each retail communication before the earlier of its use or filing with FINRA, subject to listed exceptions.'),
 ("A firm's presentation is distributed only to pension plans and insurance companies. Under Rule 2210 this institutional communication:",
  'Needs written review procedures, not pre-use sign-off', ['Must be filed with FINRA at least 10 business days before use', 'Needs principal approval before first use', 'Is not subject to any FINRA content standards'],

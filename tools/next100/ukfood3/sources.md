@@ -90,3 +90,13 @@ All checked 2026-11-23.
   fihygiene (stem ratio over 0.6, or key ratio over 0.85 with a stem ratio over 0.35) was run on
   2026-11-23 and every close fact-and-answer match was rewritten.
 - The real exam's own format (45 questions, 90 minutes, 30 to pass) is on the landing only.
+
+## Second review (2026-11-23)
+- Blind review of all 200 items; no wrong keys. Two items repeated a fact and answer in another bank
+  (spore formers surviving cooking, fihygiene; probing between packs, aufss) and were replaced with
+  new items (C. perfringens as an anaerobe; verifying a blast chiller cycle). Schedule 4 defences
+  re-read on legislation.gov.uk; FSA less than thoroughly cooked burger guidance checked
+  (https://www.gov.uk/government/publications/less-than-thoroughly-cooked-beef-burgers-guidance-for-food-businesses-and-local-authorities/less-than-thoroughly-cooked-beef-burgers-guidance-for-food-businesses).
+  Highfield's 45 questions, 90 minutes, 30 to pass and 36 for distinction also appear in a training
+  provider's course document; the landing line that "many awarding bodies" use 30 of 45 was cut to
+  Highfield's alone.

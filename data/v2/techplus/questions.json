@@ -1,0 +1,4523 @@
+[
+  {
+    "id": "TECHPLUS-T1-001",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Basics of computing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A scanner turns a paper form into a file on a laptop. Which computing function is the scan itself?",
+    "explanation": "Scanning brings data into the computer, so it is input. Saving the file afterwards is storage.",
+    "options": [
+      "Storage",
+      "Output",
+      "Input",
+      "Processing"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-002",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "Internal components",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which component holds the programs and data a computer is using right now?",
+    "explanation": "RAM is the working memory for running programs. The SSD keeps files when the power is off.",
+    "options": [
+      "NIC",
+      "BIOS chip",
+      "SSD",
+      "RAM"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-003",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Language categories",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which kind of language is translated into machine code once, before the program runs?",
+    "explanation": "A compiler turns the whole program into machine code ahead of time. An interpreter translates as it runs.",
+    "options": [
+      "Query",
+      "Interpreted",
+      "Markup language",
+      "Compiled"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-004",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Value of data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A store studies sales records to decide which products to stock next season. What is this?",
+    "explanation": "Using collected data to guide business choices is data-driven decision making.",
+    "options": [
+      "Data monetization",
+      "Data persistence",
+      "Data at rest",
+      "Data-driven decision"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-005",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Virtualization and cloud",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What lets one physical computer run several operating systems side by side?",
+    "explanation": "A hypervisor creates and runs virtual machines, each with its own guest operating system.",
+    "options": [
+      "Hypervisor",
+      "Load balancer",
+      "Firewall",
+      "Router"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-006",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "Software types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which software is best for totaling monthly costs with formulas?",
+    "explanation": "Spreadsheets hold numbers in cells and recalculate formulas such as sums automatically.",
+    "options": [
+      "Spreadsheet",
+      "Presentation app",
+      "Word processor",
+      "Diagramming tool"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-007",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "CIA",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A shop's only order server crashes, and staff cannot see orders until it is rebuilt. Which CIA goal suffered?",
+    "explanation": "Availability means systems and data can be reached when needed. Nothing was disclosed or altered, so confidentiality and integrity held.",
+    "options": [
+      "Availability",
+      "Confidentiality",
+      "Non-repudiation",
+      "Integrity"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-008",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS purpose",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What is the main job of an operating system?",
+    "explanation": "The OS sits between applications and hardware, sharing out the CPU, memory, storage and devices.",
+    "options": [
+      "Block phishing email",
+      "Host public websites",
+      "Manage hardware for apps",
+      "Edit and print documents"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-009",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Passwords",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which change makes a password hardest to guess or crack?",
+    "explanation": "Length adds the most strength. Birth years, site names and predictable swaps are the first things attackers try.",
+    "options": [
+      "Adding the user's birth year",
+      "Using the site name",
+      "Swapping o for 0",
+      "Making it much longer"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-010",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Notational systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the binary number 1100011 in decimal?",
+    "explanation": "1100011 is 64 + 32 + 2 + 1 = 99. Dropping the 32s place gives 67, and forgetting the 2s place gives 97.",
+    "options": [
+      "67",
+      "97",
+      "99",
+      "115"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "TECHPLUS-T1-011",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "Internal components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which firmware runs first at power-on to check hardware and start the operating system?",
+    "explanation": "The system firmware (BIOS, or its successor UEFI) tests hardware and hands over to the OS loader.",
+    "options": [
+      "BIOS or UEFI",
+      "Bootable USB image",
+      "Hypervisor",
+      "Device driver"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-012",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Language categories",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "HTML describes the headings and links on a web page. Which category is it?",
+    "explanation": "Markup languages label the structure of content; they do not hold program logic.",
+    "options": [
+      "Assembly language",
+      "Markup language",
+      "Query language",
+      "Compiled language"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-013",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Value of data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which data would a business call critical?",
+    "explanation": "Critical data is data the business cannot run without or must protect by law, such as payment and customer records.",
+    "options": [
+      "Lunch order list",
+      "Customer payment records",
+      "Desktop wallpapers",
+      "Old menu drafts"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-014",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Virtualization and cloud",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "With SaaS, who patches the application itself?",
+    "explanation": "In Software as a Service the provider runs and updates the whole application; customers just use it and manage their own data and accounts.",
+    "options": [
+      "Customer",
+      "Customer's IT team",
+      "Provider",
+      "Each end user"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-015",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "Software types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A help desk agent takes control of a user's screen from another city. Which software allows this?",
+    "explanation": "Remote support tools let a technician view and control a distant computer, with the user's permission.",
+    "options": [
+      "Document sharing",
+      "Remote support",
+      "Instant messaging",
+      "Conferencing"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-016",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "AAA",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which pair counts as two different authentication factors?",
+    "explanation": "Multifactor authentication combines different kinds of factor: something known (a password) with something the user is (a fingerprint). A password and a PIN are both things known.",
+    "options": [
+      "PIN and security question",
+      "Password and fingerprint",
+      "Two separate passwords",
+      "Password and PIN"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-017",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A file is named report.xlsx. What does the .xlsx part tell the OS?",
+    "explanation": "The extension marks the file type, so the OS knows which program to open it with.",
+    "options": [
+      "Its size limit",
+      "Its owner",
+      "Its folder",
+      "Which app opens it"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-018",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Passwords",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is reusing one password across many sites risky?",
+    "explanation": "Attackers try leaked passwords on other sites, so a reused password spreads one breach everywhere.",
+    "options": [
+      "It expires sooner",
+      "One breach unlocks them all",
+      "It slows sign-in",
+      "Sites block shared passwords"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-019",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Notational systems",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How many bits does one hexadecimal digit stand for?",
+    "explanation": "Hex has 16 symbols (0 to 9, A to F), and 16 values fit in exactly 4 bits. Two hex digits make one byte.",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "16"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "TECHPLUS-T1-020",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "Internal components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A video editor needs faster rendering of effects. Which part matters most?",
+    "explanation": "The graphics processing unit handles the parallel work of rendering images and video.",
+    "options": [
+      "Power button",
+      "Sound card",
+      "NIC",
+      "GPU"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-021",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Data types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which data type holds only true or false?",
+    "explanation": "A Boolean has just two values, true and false, and is used for yes/no conditions.",
+    "options": [
+      "Char",
+      "Float",
+      "Boolean",
+      "Integer"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-022",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Database concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why move a shared contact list from a spreadsheet file into a database?",
+    "explanation": "Databases handle many concurrent users, scale further and query faster than a flat file.",
+    "options": [
+      "It works without power",
+      "Many users can edit at once",
+      "It needs no storage",
+      "It never needs any backups"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-023",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Internet service types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which internet service runs over the same copper phone line as a landline?",
+    "explanation": "Digital subscriber line uses telephone wiring. Cable internet uses the coaxial TV cable.",
+    "options": [
+      "Cellular",
+      "DSL",
+      "Fiber",
+      "Cable"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-024",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "Browser features",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which browser mode does not keep history or cookies after its window closes?",
+    "explanation": "Private browsing discards local history and cookies when closed. It does not hide activity from the network or websites.",
+    "options": [
+      "Kiosk mode",
+      "Profile sync",
+      "Private browsing",
+      "Reader view"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-025",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "AAA",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Staff get only the access their job needs and nothing more. Which principle is this?",
+    "explanation": "Least privilege limits the harm from mistakes or a stolen account.",
+    "options": [
+      "Least privilege",
+      "Open access",
+      "Non-repudiation",
+      "Single sign-on"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-026",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Units of measure",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "An internet plan is sold as 500 Mbps. What does that number measure?",
+    "explanation": "Mbps is megabits per second, a throughput unit. Storage uses bytes (MB, GB), and processor speed uses hertz.",
+    "options": [
+      "Throughput in bits",
+      "Storage in bytes",
+      "Refresh rate",
+      "Processor speed"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-027",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "Storage types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What happens to data in RAM when the computer loses power?",
+    "explanation": "RAM is volatile: it needs power to hold data. That is why unsaved work disappears in a power cut.",
+    "options": [
+      "It saves to the SSD",
+      "It moves to ROM",
+      "It is lost",
+      "It stays until reboot"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-028",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Data types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which data type suits a price such as 19.95?",
+    "explanation": "A float (floating-point number) stores decimals. An integer stores whole numbers only.",
+    "options": [
+      "Date",
+      "Float",
+      "Boolean",
+      "Integer"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-029",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Database concepts",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In a database table, what is one complete entry, such as one customer, called?",
+    "explanation": "Each row is a record. Each column is a field, such as Email or City.",
+    "options": [
+      "Schema",
+      "Key",
+      "Field",
+      "Record"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-030",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which small program lets the OS control a specific printer model?",
+    "explanation": "A driver translates OS requests into commands that one piece of hardware understands.",
+    "options": [
+      "Service",
+      "Driver",
+      "Utility",
+      "Plug-in"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-031",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Readable data before it is encrypted is called what?",
+    "explanation": "Plain text is readable; encryption turns it into ciphertext that needs a key to read.",
+    "options": [
+      "Key pair",
+      "Ciphertext",
+      "Hash value",
+      "Plain text"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-032",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Internet service types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A remote farm has no wired lines and no cell coverage. Which service is most likely to work?",
+    "explanation": "Satellite needs only a clear view of the sky, though its latency is high.",
+    "options": [
+      "DSL",
+      "Cable",
+      "Satellite",
+      "Fiber"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-033",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Units of measure",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which list runs from smallest to largest?",
+    "explanation": "Each step up (kilo, mega, giga, tera, peta) is about a thousand times the one before.",
+    "options": [
+      "KB, GB, MB, TB, PB",
+      "GB, KB, MB, TB, PB",
+      "KB, MB, GB, TB, PB",
+      "MB, KB, GB, PB, TB"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-034",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "Storage types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which internal drive type talks over PCIe lanes for the fastest storage?",
+    "explanation": "NVMe drives talk over PCIe, which is much faster than the SATA link that hard drives and older SSDs use.",
+    "options": [
+      "USB flash drive",
+      "NVMe SSD",
+      "Optical drive",
+      "SATA hard drive"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-035",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "Browser features",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A website still shows an old version after an update. What should the user try?",
+    "explanation": "The browser cache stores copies of pages and files. Clearing it forces the browser to download the current version.",
+    "options": [
+      "Turn on sync",
+      "Clear the cache",
+      "Add an extension",
+      "Change search engine"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-036",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Programming concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A program stores the tax rate in a value that must never change while it runs. What is that identifier?",
+    "explanation": "A constant is set once and cannot be reassigned. A variable can change as the program runs.",
+    "options": [
+      "Function",
+      "Array",
+      "Constant",
+      "Variable"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-037",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Database structures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which field uniquely identifies each row in a table?",
+    "explanation": "A primary key holds a unique value per row, such as an OrderID.",
+    "options": [
+      "Primary key",
+      "Constraint",
+      "Index",
+      "Foreign key"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-038",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "Privacy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is personally identifiable information?",
+    "explanation": "PII can identify a specific person, such as a name, home address or ID number.",
+    "options": [
+      "Browser version",
+      "Favorite color",
+      "Home address",
+      "Weather report"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-039",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Networking concepts",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which address is burned into a network card and identifies it on the local network?",
+    "explanation": "A media access control address is assigned to the network interface by its maker. IP addresses are assigned by the network.",
+    "options": [
+      "IP address",
+      "Port number",
+      "MAC address",
+      "URL"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-040",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS purpose",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A frozen program is closed from a list of running tasks. Which OS function is used?",
+    "explanation": "The OS tracks and can end running processes through a tool such as Task Manager or Activity Monitor.",
+    "options": [
+      "Disk management",
+      "Process management",
+      "Access control rules",
+      "Device management"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-041",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which protects a web form's data while it travels to the server?",
+    "explanation": "HTTPS encrypts traffic between the browser and the site. HTTP, FTP and Telnet send data in the clear.",
+    "options": [
+      "FTP",
+      "Telnet",
+      "HTTPS",
+      "HTTP"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-042",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Troubleshooting methodology",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put these troubleshooting steps in the order CompTIA teaches:",
+    "explanation": "Identify, theorize, test, plan and implement, verify, then document. Documenting last records what was found and done for next time.",
+    "options": [
+      "Identify the problem",
+      "Establish a theory of probable cause",
+      "Test the theory",
+      "Plan and implement the fix",
+      "Verify full functionality",
+      "Document the findings"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-043",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "Peripheral devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new USB mouse works the moment it is connected. What made that possible?",
+    "explanation": "Plug and play lets the OS detect the device and load a built-in driver with no extra steps.",
+    "options": [
+      "Plug and play",
+      "Web-based setup",
+      "Manual driver install",
+      "Static IP address"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-044",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Programming concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which structure holds a list of values under one name, reached by index number?",
+    "explanation": "An array stores many values of one kind in order; each is reached by its position, often starting at 0.",
+    "options": [
+      "Array",
+      "Constant",
+      "Comment",
+      "Boolean"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-045",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Database structures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which describes the tables, fields and links of a relational database?",
+    "explanation": "The schema is the design of the database: its tables, columns, types and relationships.",
+    "options": [
+      "Query",
+      "Record",
+      "Schema",
+      "Report"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-046",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "Browser features",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user's bookmarks and saved passwords should appear on a new laptop. Which feature does this?",
+    "explanation": "Signing in to the browser profile syncs bookmarks, settings and passwords across devices.",
+    "options": [
+      "Cache clearing",
+      "Profile sync",
+      "Private browsing",
+      "Pop-up blocker"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-047",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "Social engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An email that looks like it comes from a streaming service says a payment failed and links to a sign-in page. What is it most likely?",
+    "explanation": "Phishing uses a message that pretends to come from a trusted company, with urgency and a link to a fake sign-in page. Tailgating and shoulder surfing happen in person.",
+    "options": [
+      "Shoulder surfing",
+      "Phishing",
+      "Adware",
+      "Tailgating"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-048",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Networking concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which device forwards traffic between a home network and the internet?",
+    "explanation": "A router moves traffic between networks. A switch connects devices inside one network.",
+    "options": [
+      "Switch",
+      "Router",
+      "Repeater",
+      "Access point"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-049",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Troubleshooting methodology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user's monitor shows nothing. What does \"question the obvious\" suggest checking first?",
+    "explanation": "Question the obvious means ruling out simple causes, such as a loose cable or a monitor that is switched off, before deeper ones.",
+    "options": [
+      "Display firmware",
+      "Graphics drivers",
+      "Motherboard slots",
+      "Power and cable"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-050",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "Peripheral devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An office printer joins the network. How is it usually reached to change its settings?",
+    "explanation": "IP-based peripherals often host a small web page: typing the printer's IP address into a browser opens its settings.",
+    "options": [
+      "PC firmware settings menu",
+      "Serial console cable",
+      "Its driver disc",
+      "Its IP in a browser"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-051",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Programming concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In object-oriented code, what is an action an object can perform, such as car.start()?",
+    "explanation": "Methods are an object's behaviors. Properties and attributes describe its data, such as color.",
+    "options": [
+      "Attribute",
+      "Constant",
+      "Method",
+      "Property"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-052",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Database structures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Photos, voice recordings and videos with no fixed fields are which kind of data?",
+    "explanation": "Non-structured data has no set format. Structured data fits defined rows and columns.",
+    "options": [
+      "Tabular spreadsheet",
+      "Non-structured",
+      "Structured",
+      "Relational"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-053",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which OS type runs inside a smart TV or car dashboard with a fixed purpose?",
+    "explanation": "Embedded operating systems are built into devices that do one job and rarely change.",
+    "options": [
+      "Embedded",
+      "Workstation",
+      "Mobile",
+      "Server"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-054",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Wireless security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Wi-Fi security setting leaves the wireless link with no encryption?",
+    "explanation": "An open network has no passphrase and no encryption. WEP encrypts, though weakly, and WPA2 and WPA3 use strong encryption.",
+    "options": [
+      "Open",
+      "WEP",
+      "WPA2-Personal",
+      "WPA3-Personal"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-055",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "AI uses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A tool writes a first draft of a product description from a short prompt. Which use of AI is this?",
+    "explanation": "Generative AI creates new content such as text, images or code from a prompt. Its output still needs checking.",
+    "options": [
+      "Image recognition",
+      "Predictive keyboard text",
+      "Spam filtering",
+      "Generative content"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-056",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "Software sources",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where is the safest place to get a driver for a new graphics card?",
+    "explanation": "OEM websites provide genuine, current drivers. Third-party download sites may bundle malware.",
+    "options": [
+      "Pop-up ad",
+      "Email attachment",
+      "Manufacturer's website",
+      "File-sharing site"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-057",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Networking concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two laptops share files directly with no central server. Which networking model is this?",
+    "explanation": "In peer-to-peer networking each computer both offers and uses resources. Client/server relies on a central server.",
+    "options": [
+      "Peer-to-peer",
+      "Client/server",
+      "WAN",
+      "Mesh VPN"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-058",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Computing devices",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A smart thermostat on home Wi-Fi is an example of what?",
+    "explanation": "Internet of Things devices are everyday objects, such as thermostats and door locks, with network connections.",
+    "options": [
+      "Mainframe",
+      "File server",
+      "IoT device",
+      "Workstation"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-059",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "I/O interfaces",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which connector is used on a standard wired Ethernet cable?",
+    "explanation": "Ethernet uses the 8-pin RJ45 connector. RJ11 is the smaller telephone connector.",
+    "options": [
+      "RJ45",
+      "VGA",
+      "HDMI",
+      "RJ11"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-060",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Logic concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Code repeats a step for every row in a list. Which logic concept is this?",
+    "explanation": "A loop repeats instructions until a condition is met or the items run out.",
+    "options": [
+      "Sequence",
+      "Branching",
+      "Looping",
+      "Commenting"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-061",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Backups",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which backup copies the OS, settings and programs so the whole computer can be rebuilt?",
+    "explanation": "A system (image) backup captures everything needed to rebuild the computer. A file backup covers chosen files.",
+    "options": [
+      "Sync folder",
+      "Restore point only",
+      "System backup",
+      "File backup"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-062",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which file system feature shrinks files so they take less disk space?",
+    "explanation": "Compression stores data in fewer bytes. Encryption scrambles it instead, so only authorized users can read it.",
+    "options": [
+      "Encryption",
+      "Search indexing",
+      "Journaling",
+      "Compression"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-063",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Wireless security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A home router's admin login is still the factory default. What can a nearby attacker do?",
+    "explanation": "Default admin passwords are published online, so an attacker on the network can sign in and change DNS, Wi-Fi or firewall settings.",
+    "options": [
+      "Cut the ISP line",
+      "Break WPA3 instantly",
+      "Read HTTPS pages",
+      "Change router settings"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-064",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "AI uses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should AI-generated code be reviewed before it is used?",
+    "explanation": "AI tools can produce code that looks right but has bugs or security flaws, so a person must test and review it.",
+    "options": [
+      "It runs slower",
+      "It is always copyrighted",
+      "It never compiles",
+      "It can contain errors"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-065",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "Safe browsing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A browser warns that a site's certificate is invalid. What is the safest response?",
+    "explanation": "An invalid certificate means the site's identity cannot be confirmed, so the connection may be intercepted.",
+    "options": [
+      "Clear the cache",
+      "Leave the site",
+      "Turn off warnings",
+      "Enter details quickly"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-066",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Small wireless networks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Wi-Fi band gives longer range but more interference from older devices and microwaves?",
+    "explanation": "Lower frequencies travel farther and pass walls better, but 2.4 GHz is crowded by many devices and appliances.",
+    "options": [
+      "2.4 GHz",
+      "5 GHz",
+      "6 GHz",
+      "60 GHz"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "TECHPLUS-T1-067",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Computing devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which device mainly shares files and services with many other computers on a network?",
+    "explanation": "A server provides services to clients. A workstation is a powerful computer for one person's work.",
+    "options": [
+      "Server",
+      "Workstation",
+      "E-reader",
+      "Tablet"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-068",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "I/O interfaces",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which technology lets two phones swap a contact card when they are touched together?",
+    "explanation": "Near-field communication works only over a few centimeters, so it suits touch-to-share and touch-to-pay.",
+    "options": [
+      "Infrared",
+      "Wi-Fi",
+      "NFC",
+      "Cellular"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-069",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Organizational techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a flowchart, what does a diamond shape show?",
+    "explanation": "A diamond holds a yes/no question with a branch for each answer. Ovals mark start and end.",
+    "options": [
+      "A process step",
+      "A start or end",
+      "A decision",
+      "An input"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T1-070",
+    "section": "techplus",
+    "test": 1,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Backups",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why store one copy of a backup off-site or in the cloud?",
+    "explanation": "A local copy can be lost with the building or device; an off-site copy survives the same disaster.",
+    "options": [
+      "Restores much faster",
+      "Needs no password to open",
+      "Uses less disk space",
+      "Survives fire or theft"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-001",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Basics of computing",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which part of the computing cycle happens when the CPU adds two numbers?",
+    "explanation": "The CPU works on data during processing. The numbers arrived as input, and the result shown on screen is output.",
+    "options": [
+      "Output",
+      "Networking",
+      "Input",
+      "Processing"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-002",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "Internal components",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which board connects the CPU, memory and expansion cards to each other?",
+    "explanation": "The motherboard, or system board, carries the sockets, slots and circuits that link the main components.",
+    "options": [
+      "Motherboard",
+      "Riser",
+      "Backplane",
+      "Daughterboard"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-003",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Language categories",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which kind of language asks a database to return matching records?",
+    "explanation": "Query languages such as SQL retrieve and change data in a database.",
+    "options": [
+      "Markup",
+      "Scripting",
+      "Assembly",
+      "Query"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-004",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Value of data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A fitness app sells anonymous trend data to researchers. What is this an example of?",
+    "explanation": "Monetization turns data into income, by selling it or using it to sell other services.",
+    "options": [
+      "Data backup",
+      "Data correlation",
+      "Data capture",
+      "Data monetization"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-005",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Virtualization and cloud",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In IaaS, which layer does the customer manage?",
+    "explanation": "Infrastructure as a Service supplies the hardware and virtualization; the customer installs and patches the OS and everything above it.",
+    "options": [
+      "Hypervisor",
+      "Data center power",
+      "Operating system",
+      "Physical servers"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-006",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "Software types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team edits one document together in real time online. Which software category fits?",
+    "explanation": "Online workspaces and document sharing let several people work on the same file at once.",
+    "options": [
+      "Online workspace",
+      "Remote support",
+      "Email client",
+      "Diagramming tool"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-007",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "CIA",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A hash shows a downloaded file was changed in transit. Which CIA goal does the check protect?",
+    "explanation": "Integrity means data has not been altered. Comparing hashes reveals changes.",
+    "options": [
+      "Availability",
+      "Authorization",
+      "Integrity",
+      "Confidentiality"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-008",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which interface has users type commands rather than click icons?",
+    "explanation": "A console or command-line interface takes typed commands. A GUI uses windows, icons and a pointer.",
+    "options": [
+      "Graphical interface",
+      "Voice assistant",
+      "Touch screen",
+      "Command line"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-009",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Passwords",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a password manager do?",
+    "explanation": "A password manager creates and remembers a different strong password for every site behind one main password.",
+    "options": [
+      "Removes malware",
+      "Blocks phishing sites",
+      "Resets forgotten email accounts",
+      "Stores unique strong passwords"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-010",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Notational systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the hexadecimal value 5D in decimal?",
+    "explanation": "5D is 5 x 16 + 13 = 93. Adding the digits gives 18, and treating 5D as 5 x 16 alone gives 80.",
+    "options": [
+      "18",
+      "80",
+      "93",
+      "513"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "TECHPLUS-T2-011",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "Internal components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A desktop needs wired networking but has no built-in port. What can be added?",
+    "explanation": "A network interface card can be onboard or an expansion card in a PCIe slot.",
+    "options": [
+      "More RAM modules",
+      "NIC expansion card",
+      "Second CPU",
+      "GPU driver"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-012",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Language categories",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which language works closest to the CPU's own instructions?",
+    "explanation": "Assembly uses short mnemonics that map almost one to one onto machine instructions.",
+    "options": [
+      "Assembly",
+      "Python",
+      "HTML",
+      "JavaScript"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-013",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Value of data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does \"big data\" refer to?",
+    "explanation": "Big data is data so large, fast-arriving or varied that ordinary tools cannot process it well.",
+    "options": [
+      "Data too large for usual tools",
+      "Data in a spreadsheet",
+      "Backup archives",
+      "Any database over 1 GB"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-014",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Virtualization and cloud",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which deployment model runs every system on hardware the company owns in its own building?",
+    "explanation": "On premises means the organization hosts and runs its own systems. Hybrid mixes those with cloud services.",
+    "options": [
+      "Hybrid",
+      "Public cloud",
+      "On premises",
+      "Community"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-015",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "Software types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which software is built for drawing flowcharts and network maps?",
+    "explanation": "Diagramming tools provide shapes and connectors for charts, floor plans and network maps.",
+    "options": [
+      "Email client",
+      "Visual diagramming",
+      "Word processing",
+      "Spreadsheet"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-016",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "AAA",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "One login gives access to email, files and chat with no further prompts. What is this?",
+    "explanation": "Single sign-on lets one authentication cover many connected services.",
+    "options": [
+      "Password history",
+      "Single sign-on",
+      "Multifactor login",
+      "Least privilege"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-017",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user can open a shared folder but cannot save changes to it. What controls this?",
+    "explanation": "Folder and file permissions set who may read, change or delete. Read-only access blocks saving.",
+    "options": [
+      "Compression",
+      "File extension",
+      "Permissions",
+      "Naming rules"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-018",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Passwords",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A system will not accept any of a user's last five passwords. Which setting is this?",
+    "explanation": "Password history stops people cycling back to old passwords.",
+    "options": [
+      "Account lockout policy",
+      "Password length",
+      "Password expiration",
+      "Password history"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-019",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Notational systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which number system uses only the digits 0 through 7?",
+    "explanation": "Octal is base 8, so its digits run from 0 to 7. Binary uses 0 and 1, and hex adds A to F.",
+    "options": [
+      "Decimal",
+      "Binary",
+      "Hexadecimal",
+      "Octal"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-020",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "Storage types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which storage keeps firmware that is not changed in everyday use?",
+    "explanation": "Read-only memory is non-volatile and holds firmware. RAM and cache lose data without power.",
+    "options": [
+      "ROM",
+      "RAM",
+      "Swap file",
+      "Cache"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-021",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Data types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which data type holds a single letter such as Y?",
+    "explanation": "A char holds one character. A string holds a sequence of characters, such as a whole word.",
+    "options": [
+      "Float",
+      "Boolean",
+      "Char",
+      "String"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-022",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Database concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which database use pulls only the orders placed in March?",
+    "explanation": "A query asks the database for records that match conditions, such as an order date in March.",
+    "options": [
+      "Query",
+      "Import",
+      "Create",
+      "Backup"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-023",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Internet service types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which service sends data as pulses of light through glass strands?",
+    "explanation": "Fiber carries light, which gives very high speeds over long distances and resists electrical interference.",
+    "options": [
+      "DSL",
+      "Cellular",
+      "Coaxial cable",
+      "Fiber optic"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-024",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "Browser features",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An extension is suspected of slowing the browser. What is the quickest safe test?",
+    "explanation": "Disabling an extension keeps it installed but stops it running, so the user can see whether speed returns.",
+    "options": [
+      "Clear history",
+      "Reset the router",
+      "Disable it",
+      "Reinstall the OS"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-025",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "AAA",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which tool gives non-repudiation for an approved document?",
+    "explanation": "A digital signature ties the approval to the signer's private key, so the signer cannot credibly deny it. A read receipt only shows a message was opened.",
+    "options": [
+      "Read receipt",
+      "Digital signature",
+      "Spam filter",
+      "File compression"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-026",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Units of measure",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How many bits are in one byte?",
+    "explanation": "A byte is 8 bits. That is why a 100 Mbps link moves about 12.5 megabytes each second.",
+    "options": [
+      "8",
+      "16",
+      "32",
+      "64"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "TECHPLUS-T2-027",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "Storage types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which drive has spinning platters and a moving read/write head?",
+    "explanation": "A hard disk drive is magnetic, with moving parts. SSDs, NVMe drives and flash drives use memory chips.",
+    "options": [
+      "SSD",
+      "NVMe drive",
+      "HDD",
+      "Flash drive"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-028",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Data types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A form field stores a person's full name. Which data type fits?",
+    "explanation": "Names are text, which is stored as a string.",
+    "options": [
+      "Integer",
+      "Char",
+      "Array",
+      "String"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-029",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Database concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sales app keeps working on a laptop with no internet and syncs later. Which availability choice is this?",
+    "explanation": "Offline availability stores data locally so work continues, then syncs when a connection returns.",
+    "options": [
+      "Online",
+      "Read-only",
+      "Cloud only",
+      "Offline"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-030",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which runs in the background with no window, such as the print spooler?",
+    "explanation": "Services start with the OS and run without a user interface, supporting other programs.",
+    "options": [
+      "Widget",
+      "Driver",
+      "Service",
+      "Desktop shortcut"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-031",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which protects every file if a laptop's drive is removed and read in another computer?",
+    "explanation": "Disk-level encryption makes the whole drive unreadable without the key. A screen lock does not protect a removed drive.",
+    "options": [
+      "Screen lock",
+      "Hidden system folders",
+      "Full-disk encryption",
+      "File compression"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-032",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Networking concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which identifier tells a computer which application on a server should get the traffic?",
+    "explanation": "The IP address finds the host and the port number picks the service on it, such as 443 for HTTPS.",
+    "options": [
+      "Port number",
+      "SSID",
+      "Subnet mask",
+      "MAC address"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-033",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Units of measure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A CPU is listed at 3.6 GHz. What does the figure describe?",
+    "explanation": "Gigahertz measures cycles per second, the processor's clock speed. Cores and cache are separate specifications.",
+    "options": [
+      "Core count",
+      "Cache size",
+      "Memory speed",
+      "Clock speed"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-034",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "Storage types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A family wants one box on the home network that every PC can save files to. What fits?",
+    "explanation": "Network-attached storage is a storage device on the local network that many computers share.",
+    "options": [
+      "ROM chip",
+      "NAS",
+      "Optical drive",
+      "Internal SSD"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-035",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "Browser features",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which browser feature stops new windows from opening on their own?",
+    "explanation": "A pop-up blocker prevents sites from opening extra windows without the user asking.",
+    "options": [
+      "Zoom setting",
+      "Private mode",
+      "Password manager",
+      "Pop-up blocker"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-036",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Programming concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is a named, reusable block of code that can take inputs and return a result?",
+    "explanation": "A function groups steps under a name so they can be called many times with different inputs.",
+    "options": [
+      "Comment",
+      "Array",
+      "Function",
+      "Variable"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-037",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Database structures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An Orders table has a CustomerID that points to the Customers table. What is CustomerID in Orders?",
+    "explanation": "A foreign key refers to the primary key of another table, linking the two.",
+    "options": [
+      "Primary key",
+      "Foreign key",
+      "Schema",
+      "Constraint"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-038",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "AAA",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Logs record which account opened each file and when. Which part of AAA is this?",
+    "explanation": "Accounting tracks what users do, through logs, browser history or location tracking.",
+    "options": [
+      "Authentication",
+      "Accounting",
+      "Authorization",
+      "Encryption"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-039",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Networking concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which device connects wireless devices to a wired network?",
+    "explanation": "An access point bridges Wi-Fi clients onto the wired LAN. Many home routers have one built in.",
+    "options": [
+      "Patch panel",
+      "Modem",
+      "Firewall",
+      "Access point"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-040",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS purpose",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which OS function creates and formats partitions on a new drive?",
+    "explanation": "Disk management prepares storage: partitions, formats and drive letters or mount points.",
+    "options": [
+      "Task management",
+      "Application management",
+      "Disk management",
+      "Device management"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-041",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Staff on hotel Wi-Fi need a protected link to company servers. What should they use?",
+    "explanation": "A virtual private network encrypts all traffic between the device and the company network.",
+    "options": [
+      "Bluetooth",
+      "Private browsing",
+      "Pop-up blocker",
+      "VPN"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-042",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Troubleshooting methodology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician's first theory fails when tested. What comes next?",
+    "explanation": "If the theory is not confirmed, the technician sets up a new theory or escalates. Verifying and documenting come after a fix.",
+    "options": [
+      "Replace the whole device",
+      "Document the fix",
+      "Verify full functionality",
+      "New theory or escalate"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-043",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "Peripheral devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why plug a desktop into a UPS?",
+    "explanation": "An uninterruptible power supply keeps the computer running on battery long enough to save work and shut down.",
+    "options": [
+      "Battery power in outages",
+      "Faster laptop charging",
+      "Extra USB ports",
+      "Better Wi-Fi range"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-044",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Programming concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Customer object has a name and an email address. What are these called?",
+    "explanation": "Properties (attributes) are the data an object holds. Methods are what it can do.",
+    "options": [
+      "Methods",
+      "Loop counters",
+      "Properties",
+      "Functions"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-045",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Database structures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which non-relational database stores each item as a unique name paired with one value?",
+    "explanation": "Key/value stores look up a value by its key. Document databases store whole records, often as JSON.",
+    "options": [
+      "Document",
+      "Key/value",
+      "Relational",
+      "Flat file"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-046",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "Browser features",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A web app says it needs a supported browser. What is the best response?",
+    "explanation": "Some applications are tested only on certain browsers; using one from the vendor's list avoids errors.",
+    "options": [
+      "Use a listed browser",
+      "Turn on private mode",
+      "Clear cookies",
+      "Add a toolbar"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-047",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "Privacy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A website shows a banner asking to allow tracking cookies. Why does it ask?",
+    "explanation": "Laws such as the EU's GDPR require consent before most tracking cookies are set.",
+    "options": [
+      "Privacy laws need consent",
+      "Cookies speed the site",
+      "Browser is out of date",
+      "Cookies block malware"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-048",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Networking concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which network spans cities and links offices in different regions?",
+    "explanation": "A wide area network covers large distances. A LAN serves one building or home.",
+    "options": [
+      "WAN",
+      "PAN",
+      "WLAN",
+      "LAN"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-049",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Troubleshooting methodology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After fixing a printer, why does the technician run a test page and check other users can print?",
+    "explanation": "Verifying full system functionality confirms the fix worked and nothing else broke. Preventive measures belong in the same step.",
+    "options": [
+      "To identify the problem",
+      "To verify full functionality",
+      "To research the knowledge base",
+      "To establish a theory"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-050",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "Peripheral devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A scanner shows as an unknown device. What is the likely next step?",
+    "explanation": "Devices without a built-in OS driver need the manufacturer's driver before they work.",
+    "options": [
+      "Reset the BIOS to defaults",
+      "Enable casting",
+      "Install the vendor's driver",
+      "Replace the USB cable"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-051",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Logic concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Code runs one block if a user is logged in and another if not. Which logic concept is this?",
+    "explanation": "Branching (if/else) picks a path based on a condition.",
+    "options": [
+      "Looping",
+      "Branching",
+      "Compiling",
+      "Sequence"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-052",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Database structures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A rule makes the database reject an order with a negative quantity. What is this rule?",
+    "explanation": "Constraints enforce rules on data, such as required fields, unique values or allowed ranges.",
+    "options": [
+      "Constraint",
+      "Report",
+      "Schema design",
+      "Foreign key"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-053",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which OS type is built to share files and run services for many users at once?",
+    "explanation": "Server operating systems handle many network clients and run services such as file sharing.",
+    "options": [
+      "Real-time",
+      "Embedded",
+      "Server",
+      "Mobile"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-054",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Wireless security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A home Wi-Fi network asks every user for the same passphrase. Which type of security is this?",
+    "explanation": "WPA2-Personal and WPA3-Personal use a pre-shared key that everyone on the network types in.",
+    "options": [
+      "Pre-shared key",
+      "Captive portal",
+      "Open network",
+      "Single sign-on"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-055",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "AI uses",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A shopping site lists items \"you might also like\" from past orders. Which AI use is this?",
+    "explanation": "Recommendation features predict what a user wants from earlier behavior.",
+    "options": [
+      "AI chatbot",
+      "Code generation",
+      "Predictions",
+      "Generative content"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-056",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "Device security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which protects a laptop left in a library from being carried away?",
+    "explanation": "A cable lock ties the laptop to a desk. Software protections do not stop physical theft.",
+    "options": [
+      "Firewall",
+      "Screen saver",
+      "Anti-malware",
+      "Cable lock"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-057",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Small wireless networks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these Wi-Fi standards is the oldest?",
+    "explanation": "IEEE approved 802.11n in 2009, 802.11ac in 2013, 802.11ax in 2021 and 802.11be in 2024. Newer standards are faster and handle more devices.",
+    "options": [
+      "802.11be",
+      "802.11ac",
+      "802.11n",
+      "802.11ax"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-058",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Computing devices",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which device overlays digital images on the user's real surroundings?",
+    "explanation": "Augmented reality adds images to the real view. Virtual reality replaces the view with a fully digital scene.",
+    "options": [
+      "E-reader",
+      "AR headset",
+      "Smart TV stick",
+      "VR headset"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-059",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "I/O interfaces",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which video port carries only an analog signal?",
+    "explanation": "VGA is analog. HDMI, DisplayPort and video over USB-C are digital.",
+    "options": [
+      "DisplayPort",
+      "VGA",
+      "HDMI",
+      "USB-C"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-060",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Organizational techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why add comments to code?",
+    "explanation": "Comments are ignored by the computer; they document what the code does and why for other people.",
+    "options": [
+      "To speed it up",
+      "To compile it",
+      "To encrypt it",
+      "To explain it to readers"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-061",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Backups",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the best way to know a backup actually works?",
+    "explanation": "A backup is only proven when data is restored from it successfully.",
+    "options": [
+      "Test a restore",
+      "Encrypt it",
+      "Back up twice",
+      "Check the file size"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-062",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A file name with a colon is refused. Why?",
+    "explanation": "File systems reserve some characters. Windows, for example, does not allow a colon in a file name.",
+    "options": [
+      "Naming restriction",
+      "Missing permission",
+      "Wrong extension",
+      "Disk is full"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-063",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Wireless security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new router broadcasts a factory network name that includes its brand and model. Why rename it?",
+    "explanation": "A factory SSID can tell an attacker the maker and model, which points to its default login and known flaws. A new name gives less away, but it encrypts nothing, so WPA2 or WPA3 is still needed.",
+    "options": [
+      "It encrypts the wireless traffic",
+      "It doubles the network speed",
+      "It gives attackers less to go on",
+      "It blocks every guest device"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-064",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "AI uses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A support site answers typed questions in a small window at any hour. What is it most likely using?",
+    "explanation": "An AI chatbot answers questions in conversation. Hard cases are often passed to a person.",
+    "options": [
+      "Web cache",
+      "AI chatbot",
+      "Remote support",
+      "Email filter"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-065",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "Licensing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which license lets anyone view and change the source code?",
+    "explanation": "Open-source licenses publish the code for others to study, change and share under the license terms.",
+    "options": [
+      "Open source",
+      "OEM",
+      "Proprietary",
+      "Perpetual"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-066",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Small wireless networks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Wi-Fi is weak in a back bedroom behind a concrete wall. What causes the loss?",
+    "explanation": "Attenuation is the weakening of a signal as it passes through materials and distance.",
+    "options": [
+      "Latency",
+      "Attenuation",
+      "Encryption overhead",
+      "Throttling"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-067",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Computing devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A fitness band tracks heart rate and syncs to a phone. Which category fits it best?",
+    "explanation": "A wearable is worn on the body and usually pairs with a phone. Exercise equipment means machines such as treadmills.",
+    "options": [
+      "Exercise equipment",
+      "Wearable device",
+      "Medical device",
+      "Gaming console"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-068",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "I/O interfaces",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A presenter shows a laptop screen on a meeting room TV with no cable. What is this called?",
+    "explanation": "Casting sends video wirelessly to another display. Pairing is the Bluetooth step that links two devices.",
+    "options": [
+      "Tethering",
+      "Casting",
+      "Pairing",
+      "Docking"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-069",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Organizational techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which plain-language outline of a program's steps is written before real code?",
+    "explanation": "Pseudocode describes the logic in plain words, so it can be planned and checked before coding.",
+    "options": [
+      "Markup",
+      "Pseudocode",
+      "Machine code",
+      "Bytecode"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-T2-070",
+    "section": "techplus",
+    "test": 2,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Backups",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which local backup medium is small enough to sit inside a camera?",
+    "explanation": "A secure digital card is tiny flash storage used in cameras and phones, and a common local backup target.",
+    "options": [
+      "External hard drive",
+      "NAS box",
+      "SD card",
+      "Tape library"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-001",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where can a user see a file's size, type and date modified?",
+    "explanation": "The properties view shows a file's attributes such as size, type, dates and read-only status.",
+    "options": [
+      "Task list",
+      "File properties",
+      "Event log",
+      "Device Manager"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-002",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Passwords",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the safe way to recover a forgotten work password?",
+    "explanation": "Use the organization's reset process, which checks identity before issuing a new password.",
+    "options": [
+      "Guess until locked",
+      "Ask a coworker for theirs",
+      "Reuse an old one",
+      "Official reset process"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-003",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "Software types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which software is used to build slides for a talk?",
+    "explanation": "Presentation software arranges text, images and charts on slides for an audience.",
+    "options": [
+      "Email client",
+      "Presentation",
+      "Spreadsheet",
+      "Database"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-004",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "CIA",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Payroll files are encrypted so only HR can read them. Which CIA goal is this?",
+    "explanation": "Confidentiality keeps data from people who should not see it.",
+    "options": [
+      "Confidentiality",
+      "Integrity",
+      "Authentication",
+      "Availability"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-005",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Virtualization and cloud",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants a ready runtime and database service to build an app on, with no OS to maintain. Which model fits?",
+    "explanation": "Platform as a Service provides the runtime, database and tools; the provider maintains servers and the OS. IaaS would leave the OS to the team.",
+    "options": [
+      "IaaS",
+      "SaaS",
+      "Hybrid",
+      "PaaS"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-006",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Notational systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the decimal number 44 in binary?",
+    "explanation": "44 is 32 + 8 + 4, so the 32s, 8s and 4s places are on: 101100. 110100 is 52, which puts the 16s place on instead of the 8s.",
+    "options": [
+      "100110",
+      "101010",
+      "101100",
+      "110100"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "TECHPLUS-D-007",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "Internal components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which component carries out the program instructions in a computer?",
+    "explanation": "The central processing unit executes instructions. RAM holds them while they run.",
+    "options": [
+      "PSU",
+      "CPU",
+      "NIC",
+      "RAM"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-008",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Language categories",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which kind of language is often run line by line to automate small tasks?",
+    "explanation": "Scripting languages are usually interpreted and are used to automate tasks quickly.",
+    "options": [
+      "Machine code",
+      "Markup",
+      "Assembly",
+      "Scripting"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-009",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Value of data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A shop sees umbrella sales rise on rainy days. Which data activity found this link?",
+    "explanation": "Data correlation looks for relationships between two sets of data, such as weather and sales.",
+    "options": [
+      "Normalization",
+      "Correlation",
+      "Monetization",
+      "Encryption"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-010",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which built-in tool is a system utility rather than an application?",
+    "explanation": "System utilities help maintain the computer itself, such as freeing disk space or backing up.",
+    "options": [
+      "Disk cleanup",
+      "Web browser",
+      "Spreadsheet",
+      "Photo editor"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-011",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Passwords",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which practice keeps a password private?",
+    "explanation": "Passwords stay secret: no notes on the monitor, no messages and no sharing with others.",
+    "options": [
+      "Never sharing it",
+      "Emailing it to oneself",
+      "Using it as the Wi-Fi name",
+      "Saving it on a sticky note"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-012",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "Software types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool sends short typed messages that arrive at once?",
+    "explanation": "Instant messaging delivers messages in real time. Email is stored and read later.",
+    "options": [
+      "Word processor",
+      "Instant messaging",
+      "Email client",
+      "Shared file server"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-013",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "AAA",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which AAA step checks a password against the stored record?",
+    "explanation": "Authentication proves who someone is, for example with a password. Authorization then decides what that person may do.",
+    "options": [
+      "Account auditing",
+      "Authentication",
+      "Authorization",
+      "Accounting"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-014",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Virtualization and cloud",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the operating system running inside a virtual machine called?",
+    "explanation": "The host runs the hypervisor; each VM runs its own guest operating system.",
+    "options": [
+      "Host OS",
+      "Kernel module",
+      "Firmware",
+      "Guest OS"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-015",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Notational systems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the octal number 17 in decimal?",
+    "explanation": "Octal 17 is 1 x 8 + 7 = 15. Reading it as decimal leaves it at 17.",
+    "options": [
+      "15",
+      "17",
+      "21",
+      "23"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "TECHPLUS-D-016",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "Storage types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which storage choice puts files on a provider's servers over the internet?",
+    "explanation": "A cloud storage service is reached over the internet. A file server and NAS sit on the local network.",
+    "options": [
+      "External drive",
+      "File server",
+      "NAS",
+      "Cloud storage"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-017",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Data types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which data type stores a count of people, such as 42?",
+    "explanation": "Whole numbers with no fraction are integers.",
+    "options": [
+      "Integer",
+      "String",
+      "Float",
+      "Boolean"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-018",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Value of data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What makes a report meaningful to the managers who read it?",
+    "explanation": "Meaningful reporting turns data into clear answers for the decision at hand.",
+    "options": [
+      "Answers their question clearly",
+      "Runs the longest",
+      "Uses the most charts",
+      "Lists every raw record in full"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-019",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which file system feature protects a laptop's files if the drive is stolen?",
+    "explanation": "Encrypted files cannot be read without the key. A hidden attribute only keeps files out of normal view.",
+    "options": [
+      "Encryption",
+      "Hidden attribute",
+      "Shortcuts",
+      "Compression"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-020",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Passwords",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Under NIST's current password guidance (SP 800-63B-4), when should a user be made to change a password?",
+    "explanation": "NIST SP 800-63B-4 says to force a change only on evidence of compromise, since frequent forced changes lead to weaker passwords.",
+    "options": [
+      "After each login",
+      "Every 90 days",
+      "When compromise is suspected",
+      "Every 30 days"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-021",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "Software types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which software hosts a video meeting with screen sharing?",
+    "explanation": "Conferencing software runs audio and video meetings, often with screen sharing and chat.",
+    "options": [
+      "Web browser",
+      "Instant messaging",
+      "Remote support",
+      "Conferencing"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-022",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "AAA",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which account type should be kept for installing software and changing system settings?",
+    "explanation": "Administrator rights are needed for installs and system changes, so they are used only then; everyday work uses a standard account.",
+    "options": [
+      "Standard user",
+      "Guest",
+      "Shared kiosk",
+      "Administrator"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-023",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Internet service types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which service delivers home internet through the 5G phone network?",
+    "explanation": "Cellular internet uses the mobile network through a hotspot or fixed wireless receiver.",
+    "options": [
+      "Cellular",
+      "Satellite",
+      "DSL",
+      "Fiber"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-024",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is a running instance of a program called?",
+    "explanation": "When a program starts, the OS creates a process with its own memory and CPU time.",
+    "options": [
+      "Process",
+      "Folder",
+      "Library",
+      "Driver"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-025",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Passwords",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new smart camera came with the login admin/admin. What is the risk?",
+    "explanation": "Default usernames and passwords are widely published, so they should be changed during setup.",
+    "options": [
+      "Attackers know defaults",
+      "It slows streaming",
+      "It wastes storage",
+      "It blocks updates"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-026",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Notational systems",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "What is the binary number 11100110 in decimal? Type the number only.",
+    "explanation": "128 + 64 + 32 + 4 + 2 = 230.",
+    "numeric": {
+      "answers": [
+        "230"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "TECHPLUS-D-027",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "Peripheral devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A projector shows no image from a laptop. What is a simple first check?",
+    "explanation": "Projectors and TVs have several inputs; the wrong source selected shows a blank screen.",
+    "options": [
+      "Network cable",
+      "Projector firmware",
+      "Laptop RAM",
+      "Input source setting"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-028",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Programming concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a variable do in a program?",
+    "explanation": "A variable is a named place for a value that the program can read and update.",
+    "options": [
+      "Ends the program",
+      "Holds a changeable value",
+      "Explains the code",
+      "Repeats a block of code"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-029",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Database concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Saved data that stays after the app closes and the device restarts shows which property?",
+    "explanation": "Persistence means data survives after the program ends, because it is written to storage.",
+    "options": [
+      "Latency",
+      "Scalability",
+      "Persistence",
+      "Volatility"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-030",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "Browser features",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user wants searches typed in the address bar to go to a different search site. What should change?",
+    "explanation": "The default search engine setting decides where address-bar searches go.",
+    "options": [
+      "Default search engine",
+      "Home page",
+      "Cache size",
+      "Extension list"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-031",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "Social engineering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A caller claims to be from IT and asks for a user's password to fix a problem. What should the user do?",
+    "explanation": "Real IT staff never need a user's password; such calls are social engineering.",
+    "options": [
+      "Refuse and report it",
+      "Text it instead",
+      "Read it out slowly",
+      "Give it once, then change it"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-032",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Networking concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which device converts the provider's line signal into data for a home router?",
+    "explanation": "A modem modulates and demodulates the signal on the cable, DSL or other WAN line.",
+    "options": [
+      "Modem",
+      "Switch",
+      "Hub",
+      "Access point"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-033",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS purpose",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which OS function installs, updates and removes programs?",
+    "explanation": "Application management covers installing, updating and uninstalling software.",
+    "options": [
+      "App management",
+      "Disk management",
+      "Process management",
+      "Access control"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-034",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Encrypting a single spreadsheet before emailing it is which kind of encryption?",
+    "explanation": "File-level encryption protects one file wherever it goes; disk-level protects the whole drive.",
+    "options": [
+      "Disk level",
+      "Transport only",
+      "Network level",
+      "File level"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-035",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Units of measure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 400 MB file downloads over a steady 100 Mbps link. About how many seconds does it take?",
+    "explanation": "400 megabytes is 3,200 megabits, and 3,200 / 100 = 32 seconds. Forgetting the 8 bits per byte gives 4.",
+    "options": [
+      "3.2",
+      "4",
+      "32",
+      "320"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "TECHPLUS-D-036",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "Peripheral devices",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which devices are output devices? (Choose two.)",
+    "explanation": "Speakers and monitors send information out to the user. Keyboards and cameras bring data in.",
+    "options": [
+      "Keyboard",
+      "Monitor",
+      "Speakers",
+      "Web camera"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "TECHPLUS-D-037",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "Browser features",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user with low vision wants larger text on every site. Which settings help?",
+    "explanation": "Accessibility and appearance settings cover zoom, text size, contrast and screen readers.",
+    "options": [
+      "Pop-up settings",
+      "Privacy settings",
+      "Accessibility options",
+      "Sync settings"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-038",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Programming concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An array holds the scores 70, 85 and 90, and the first index is 0. What is at index 1?",
+    "explanation": "With zero-based indexing, index 0 is 70 and index 1 is 85.",
+    "options": [
+      "1",
+      "70",
+      "85",
+      "90"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "TECHPLUS-D-039",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Database concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a table of products, what is the Price column called?",
+    "explanation": "Columns are fields; each row is a record holding one product.",
+    "options": [
+      "Field",
+      "Record",
+      "Row",
+      "Report"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-040",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "Device security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why install operating system updates promptly?",
+    "explanation": "Patches close security holes that attackers already know about.",
+    "options": [
+      "They free disk space",
+      "They fix known flaws",
+      "They speed Wi-Fi",
+      "They reset passwords"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-041",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS purpose",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which OS function asks for a sign-in and keeps users out of each other's files?",
+    "explanation": "Access control authenticates users and enforces what each may open or change.",
+    "options": [
+      "Task management",
+      "Disk management",
+      "Device management",
+      "Access control"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-042",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Data sitting on a phone's storage is described as data in what state?",
+    "explanation": "Stored data is at rest. Data moving across a network is in transit.",
+    "options": [
+      "In use",
+      "In flight",
+      "In transit",
+      "At rest"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-043",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Networking concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which service turns a website name into an IP address?",
+    "explanation": "The Domain Name System resolves names to addresses. DHCP hands out addresses to devices.",
+    "options": [
+      "DNS",
+      "DHCP",
+      "NAT",
+      "SMTP"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-044",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "Browser features",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which built-in feature stores site logins and can suggest strong new ones?",
+    "explanation": "The browser's password manager saves credentials and can generate long random passwords.",
+    "options": [
+      "Reader mode",
+      "Autofill for forms",
+      "Bookmark bar",
+      "Password manager"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-045",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "Licensing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Software paid for monthly that stops working when payments end uses which model?",
+    "explanation": "A subscription grants use only while it is paid. A perpetual license is bought once and kept.",
+    "options": [
+      "Open source",
+      "Public domain",
+      "Subscription",
+      "Perpetual"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-046",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Units of measure",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which unit would measure the size of a large data center's total storage?",
+    "explanation": "A petabyte is about a thousand terabytes, the scale of data center storage. Megahertz and Gbps measure speed.",
+    "options": [
+      "Kilobytes",
+      "Megahertz",
+      "Gigabits per second",
+      "Petabytes"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-047",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "I/O interfaces",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool attaches an RJ45 connector to the end of network cable?",
+    "explanation": "A crimper presses the connector onto the wires. A cable tester then checks the result.",
+    "options": [
+      "Multimeter",
+      "Loopback plug",
+      "Cable tester",
+      "Crimper"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-048",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Logic concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "This pseudocode runs:\n\n$$\\begin{array}{l}\\texttt{SET total TO 0}\\\\\\texttt{FOR n FROM 1 TO 4}\\\\\\texttt{\\ \\ ADD n TO total}\\\\\\texttt{END FOR}\\\\\\texttt{PRINT total}\\end{array}$$\n\nWhat does it print?",
+    "explanation": "The loop adds 1, 2, 3 and 4, so total ends at 10. Stopping one step early gives 6.",
+    "options": [
+      "4",
+      "6",
+      "9",
+      "10"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "TECHPLUS-D-049",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Database structures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A product catalog stores each item as a JSON file with different attributes per item. Which database type fits?",
+    "explanation": "Document databases hold flexible records such as JSON, so items need not share the same fields.",
+    "options": [
+      "Document",
+      "Relational",
+      "Key/value",
+      "Spreadsheet"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-050",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS purpose",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new webcam appears in a list where it can be turned off or updated. Which OS function is this?",
+    "explanation": "Device management tracks attached hardware and its drivers.",
+    "options": [
+      "Disk management",
+      "Process management",
+      "Application management",
+      "Device management"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-051",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why turn on device encryption for a company phone?",
+    "explanation": "Mobile device encryption keeps stored data unreadable to whoever finds or steals the phone.",
+    "options": [
+      "Speeds apps",
+      "Protects data if lost",
+      "Blocks spam and robocalls",
+      "Saves battery"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-052",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Networking concepts",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which protocols are used to send or read email? (Choose two.)",
+    "explanation": "SMTP sends mail and IMAP lets a client read mail kept on the server. FTP moves files and SSH gives remote shells.",
+    "options": [
+      "SMTP",
+      "IMAP",
+      "FTP",
+      "SSH"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2
+  },
+  {
+    "id": "TECHPLUS-D-053",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "Browser features",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which feature saves a page's address so the user can return to it later?",
+    "explanation": "A bookmark (favorite) stores a page's URL for later. Cookies store site data, not the user's links.",
+    "options": [
+      "Cookie",
+      "Bookmark",
+      "Tab group",
+      "Cached page"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-054",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "Licensing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is installing paid software on more computers than the license allows?",
+    "explanation": "Using software beyond its license terms is piracy, which is illegal and can bring malware.",
+    "options": [
+      "Piracy",
+      "Sideloading",
+      "Open sourcing",
+      "Fair use"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-055",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which OS type is designed for touch use on phones and tablets?",
+    "explanation": "Mobile operating systems are built around touch, apps from a store and battery life.",
+    "options": [
+      "Embedded",
+      "Mobile",
+      "Server",
+      "Mainframe"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-056",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Wireless security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why avoid an open Wi-Fi network for banking?",
+    "explanation": "Open networks may not encrypt the radio link, so others nearby may see the traffic.",
+    "options": [
+      "It is always slower",
+      "Traffic may be unencrypted",
+      "It blocks HTTPS",
+      "It drains the battery"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-057",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Troubleshooting methodology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When should a technician search a vendor knowledge base?",
+    "explanation": "Researching the knowledge base or internet is part of establishing a theory of probable cause.",
+    "options": [
+      "After documenting",
+      "Only after escalating",
+      "While forming a theory",
+      "Before any testing"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-058",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "I/O interfaces",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which port shape is reversible and also used by many laptops for charging?",
+    "explanation": "USB-C can be plugged in either way up and carries data, video and power.",
+    "options": [
+      "USB-C",
+      "USB-A",
+      "USB-B",
+      "VGA"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-059",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Logic concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Steps that always run one after another in the written order show which concept?",
+    "explanation": "Sequence is the plain top-to-bottom order of instructions, with no decisions or repeats.",
+    "options": [
+      "Sequence",
+      "Branching",
+      "Recursion",
+      "Looping"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-060",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Database structures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Email messages have set headers but a free-text body. Which kind of data is this?",
+    "explanation": "Semistructured data has some tags or fields but no rigid table format.",
+    "options": [
+      "Semistructured",
+      "Non-structured",
+      "Structured",
+      "Relational"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-061",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Small wireless networks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which change usually raises Wi-Fi speed for a laptop near the router?",
+    "explanation": "5 GHz offers more channels and higher throughput at short range. Hiding the SSID changes nothing about speed.",
+    "options": [
+      "Hide the SSID",
+      "Move to the 2.4 GHz band",
+      "Use the 5 GHz band",
+      "Turn off encryption"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-062",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "AI uses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A phone sets a timer when its owner asks out loud. Which AI use is this?",
+    "explanation": "AI assistants carry out spoken or typed requests such as reminders, timers and searches.",
+    "options": [
+      "Data correlation",
+      "AI-generated content",
+      "AI assistant",
+      "Pop-up blocker"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-063",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "Software sources",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A toolbar appeared after a free game was installed and the user never wanted it. What should be done?",
+    "explanation": "Unwanted, unnecessary or malicious software should be removed; it often tracks users or shows ads.",
+    "options": [
+      "Share it",
+      "Pin it to the taskbar",
+      "Leave it running",
+      "Uninstall it"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-064",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which OS type is the usual choice for an office worker's PC?",
+    "explanation": "Desktop operating systems run a single user's applications on a PC or workstation.",
+    "options": [
+      "Server",
+      "Embedded",
+      "Real-time",
+      "Desktop"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-065",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Wireless security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Wi-Fi protocol is outdated and easily broken, so should never be used?",
+    "explanation": "Wired Equivalent Privacy has known flaws that let attackers recover the key quickly.",
+    "options": [
+      "SAE",
+      "WPA2",
+      "WPA3",
+      "WEP"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-066",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpConcepts",
+    "skill": "Computing devices",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which device is built mainly for reading digital books with long battery life?",
+    "explanation": "E-readers use low-power screens made for reading text for long stretches.",
+    "options": [
+      "Workstation",
+      "Smart TV",
+      "Laptop",
+      "E-reader"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-067",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpHardware",
+    "skill": "I/O interfaces",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A switch port takes a module for fiber cable. What is that module called?",
+    "explanation": "A small form-factor pluggable (SFP) transceiver connects fiber to a switch port.",
+    "options": [
+      "Lightning",
+      "SFP",
+      "RJ45",
+      "Thunderbolt"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-068",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpDev",
+    "skill": "Organizational techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which approach bundles data with the code that acts on it, as in a Customer or Order unit?",
+    "explanation": "Object-oriented programming bundles properties and methods into objects such as Customer or Order.",
+    "options": [
+      "Flowcharting",
+      "Pseudocode",
+      "Object-oriented",
+      "Sequential procedural"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-069",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpData",
+    "skill": "Backups",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which backup only saves the user's chosen documents and photos?",
+    "explanation": "File backups copy selected files and folders. A system image copies the whole drive.",
+    "options": [
+      "System image",
+      "Disk clone",
+      "File backup",
+      "Bare-metal backup"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-070",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpNetwork",
+    "skill": "Small wireless networks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why do older Wi-Fi devices on a network sometimes slow newer ones?",
+    "explanation": "Older standards send data more slowly, so they take more air time on the shared channel.",
+    "options": [
+      "They block DNS",
+      "They use slower standards",
+      "They change the SSID",
+      "They use more power"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "TECHPLUS-D-071",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpSoftware",
+    "skill": "AI uses",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which are sensible precautions when using a public AI chatbot at work? (Choose two.)",
+    "explanation": "Prompts may be stored by the provider, so sensitive data stays out, and answers can be wrong, so facts are checked.",
+    "options": [
+      "Trust its legal advice",
+      "Share client records",
+      "Check facts it gives",
+      "Keep confidential data out"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "TECHPLUS-D-072",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpSecurity",
+    "skill": "Privacy",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which habits protect privacy on social networking sites? (Choose two.)",
+    "explanation": "Restricting audiences and leaving out personal details reduce what strangers and scammers can learn.",
+    "options": [
+      "Post travel dates",
+      "Accept all friend requests",
+      "Limit who sees posts",
+      "Leave out home address"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "TECHPLUS-D-073",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpOs",
+    "skill": "OS components",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which are folders used for in a file system? (Choose two.)",
+    "explanation": "Folders organize files, and permissions set on a folder can apply to everything inside it.",
+    "options": [
+      "Speeding up the CPU",
+      "Setting shared permissions",
+      "Grouping related files",
+      "Raising Wi-Fi range"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "TECHPLUS-D-074",
+    "section": "techplus",
+    "test": 0,
+    "module": 1,
+    "domain": "tpProtect",
+    "skill": "Wireless security",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which steps secure a new home router? (Choose two.)",
+    "explanation": "Strong encryption and a changed admin password close the two easiest ways in.",
+    "options": [
+      "Change admin password",
+      "Use an open network",
+      "Keep the default login",
+      "Set WPA3 or WPA2"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "select": 2
+  }
+]

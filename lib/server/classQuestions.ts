@@ -82,6 +82,7 @@ import "@/lib/v2/banks/sc200";
 import "@/lib/v2/banks/isc2cc";
 import "@/lib/v2/banks/sc900";
 import "@/lib/v2/banks/ai901";
+import "@/lib/v2/banks/awsaif";
 import "@/lib/v2/banks/pl900";
 import "@/lib/v2/banks/jncia";
 import "@/lib/v2/banks/ccnpencor";

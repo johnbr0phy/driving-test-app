@@ -9,7 +9,7 @@ POOLS = {"iceTransmission": 20, "iceHandPpe": 20, "iceSurfaces": 28, "iceTrayWat
 
 CHECKS = {
     "what bleach dilution": "1:100",
-    "How many sections does a safety data sheet": f"{16}",
+    "how many days must the employee get": f"{15} days",
 }
 NUM = re.compile(r"^(About )?-?[0-9][0-9,]*(\.[0-9]+)?( |$)")
 NUMS = re.compile(r"-?\d+(?:\.\d+)?")

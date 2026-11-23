@@ -1,0 +1,4529 @@
+[
+  {
+    "id": "AWSDVA-T1-001",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Decoupling",
+    "stem": "An order service calls a shipping service directly and fails whenever shipping is down. Which change decouples them?",
+    "options": [
+      "Put an SQS queue between them",
+      "Retry the shipping call twice",
+      "Merge both into one function",
+      "Raise the HTTP client timeout"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A queue lets the order service hand off work and carry on while shipping is down; messages wait until shipping reads them. Longer timeouts and retries still fail while the other side is offline."
+  },
+  {
+    "id": "AWSDVA-T1-002",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deployment strategies",
+    "stem": "A team wants 10% of traffic on a new Lambda version, then the rest 15 minutes later. Which configuration fits?",
+    "options": [
+      "LambdaLinear10PercentEvery10Minutes",
+      "LambdaCanary10Percent15Minutes",
+      "LambdaAllAtOnce",
+      "LambdaLinear10PercentEvery1Minute"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A canary configuration shifts one slice of traffic and then the remainder after the wait. Linear configurations move 10% at each interval."
+  },
+  {
+    "id": "AWSDVA-T1-003",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Querying logs",
+    "stem": "A developer must find the 20 slowest requests in a log group over the last hour. What fits?",
+    "options": [
+      "S3 server access logs",
+      "A Logs Insights query",
+      "A metric filter alarm",
+      "CloudTrail event history"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "CloudWatch Logs Insights can filter, sort and limit log events with a query. A metric filter counts matches but does not list requests."
+  },
+  {
+    "id": "AWSDVA-T1-004",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Programmatic access",
+    "stem": "Code on an EC2 instance calls S3 through the SDK. How should it get credentials?",
+    "options": [
+      "Access keys in source code",
+      "Keys in instance user data",
+      "An instance profile role",
+      "Root user access keys"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An instance profile hands the SDK temporary role credentials that rotate automatically through the default credential chain. Long-term keys in code or user data can leak."
+  },
+  {
+    "id": "AWSDVA-T1-005",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "VPC access",
+    "stem": "A Lambda function must query an RDS database in private subnets. What must the function be given?",
+    "options": [
+      "A public IP address",
+      "Subnets and a security group",
+      "An internet gateway route",
+      "A larger memory and timeout setting"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Attaching the function to the VPC's subnets with a security group lets it reach private resources. Lambda functions in a VPC never get public IP addresses."
+  },
+  {
+    "id": "AWSDVA-T1-006",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data keys",
+    "stem": "An app must encrypt 50 MB files under a KMS key. What is the recommended pattern?",
+    "options": [
+      "Thousands of 4 KB Encrypt calls",
+      "Envelope encryption",
+      "Keep the KMS key on disk",
+      "Encrypt API on each file"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The app asks KMS for a data key, encrypts the file locally with it, and stores the encrypted data key alongside. The KMS Encrypt operation is meant for small data, and KMS keys never leave KMS."
+  },
+  {
+    "id": "AWSDVA-T1-007",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Container images",
+    "stem": "An ECR repository keeps filling with old untagged images. What removes them automatically?",
+    "options": [
+      "An ECR lifecycle policy",
+      "Scan on push",
+      "Tag immutability on the repository",
+      "An S3 Lifecycle rule on the registry"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ECR lifecycle policies expire images by rules such as untagged or older than a set age. Tag immutability only stops tags being overwritten."
+  },
+  {
+    "id": "AWSDVA-T1-008",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Concurrency",
+    "stem": "A latency-critical API on Lambda suffers cold starts at its daily peak. What removes them?",
+    "options": [
+      "Extra layers",
+      "Reserved concurrency on the function",
+      "Provisioned concurrency on an alias",
+      "More /tmp storage for each environment"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Provisioned concurrency keeps environments initialized and ready to respond. Reserved concurrency only caps or guarantees scaling and does not warm anything."
+  },
+  {
+    "id": "AWSDVA-T1-009",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaData",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Data lifecycle",
+    "stem": "Session records in DynamoDB should vanish 24 hours after creation without spending write capacity. What should be used?",
+    "options": [
+      "TTL on an expiry attribute",
+      "An S3 Lifecycle rule",
+      "A GSI on the creation date",
+      "Nightly Scan then delete"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DynamoDB Time to Live deletes items after the epoch time in a chosen attribute, at no write cost. A Scan and delete job consumes read and write capacity."
+  },
+  {
+    "id": "AWSDVA-T1-010",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaAiSec",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Model access",
+    "stem": "Security must stop every developer from invoking one Bedrock model. What blocks it reliably?",
+    "options": [
+      "Deny aws-marketplace:Subscribe only",
+      "Hide it from the console's model catalog",
+      "Deny bedrock actions on its ARN",
+      "Delete the model agreement"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A Deny on Bedrock actions for the model's ARN in IAM or an SCP blocks use. Denying the Marketplace subscription alone does not stop the first invocation, and a deleted agreement is recreated on use."
+  },
+  {
+    "id": "AWSDVA-T1-011",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sync and async",
+    "stem": "A web page must show a price lookup result before it renders. Which pattern fits?",
+    "options": [
+      "Synchronous API Gateway call",
+      "SQS message to a background worker",
+      "EventBridge rule with a schedule set",
+      "S3 event notification"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The page needs the answer before it can continue, so a synchronous request and response fits. Queues and events are for work the caller does not wait on."
+  },
+  {
+    "id": "AWSDVA-T1-012",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "IaC templates",
+    "stem": "In a SAM template, which property makes Lambda updates shift traffic gradually through CodeDeploy?",
+    "options": [
+      "Globals",
+      "AutoPublishCodeSha256",
+      "DeploymentPreference",
+      "Outputs"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DeploymentPreference, used with AutoPublishAlias, has SAM create a CodeDeploy application that shifts traffic between versions. Globals only sets shared defaults."
+  },
+  {
+    "id": "AWSDVA-T1-013",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Tracing",
+    "stem": "A slow request passes through API Gateway, Lambda and DynamoDB. Which tool shows where the time goes?",
+    "options": [
+      "CloudTrail events",
+      "VPC Flow Logs",
+      "AWS Config rules",
+      "AWS X-Ray traces"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "X-Ray traces show the time spent in each service and downstream call along one request. CloudTrail records who called which API, not latency."
+  },
+  {
+    "id": "AWSDVA-T1-014",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tokens",
+    "stem": "An API checks which OAuth scopes a signed-in Cognito user was granted. Which token carries them?",
+    "options": [
+      "ID token",
+      "Refresh token",
+      "Session cookie",
+      "Access token"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The user pool access token holds the scope claim and is meant to authorize API calls. The ID token describes the user's identity, and the refresh token only gets new tokens."
+  },
+  {
+    "id": "AWSDVA-T1-015",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "VPC access",
+    "stem": "A function in private subnets must now call a public SaaS API. What gives it outbound internet access?",
+    "options": [
+      "Moving it to public subnets",
+      "A route to a NAT gateway",
+      "An Elastic IP on its interface",
+      "A VPC gateway endpoint"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Private subnets reach the internet through a NAT gateway. A function in a public subnet still has no public IP, and gateway endpoints only reach S3 and DynamoDB."
+  },
+  {
+    "id": "AWSDVA-T1-016",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data keys",
+    "stem": "After encrypting a file with a plaintext data key, what should the app store with the file?",
+    "options": [
+      "The KMS key material",
+      "The key policy JSON",
+      "The plaintext data key",
+      "The encrypted data key"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The encrypted copy of the data key travels with the data and is decrypted by KMS when needed. The plaintext key should be wiped from memory after use."
+  },
+  {
+    "id": "AWSDVA-T1-017",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Container images",
+    "stem": "Production must never pull a different image under the same tag. What should be turned on?",
+    "options": [
+      "A lifecycle policy",
+      "Basic image scanning",
+      "Tag immutability",
+      "Pull through cache"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With immutable tags, pushing an image with an existing tag fails, so a tag always means one image. Scanning checks for vulnerabilities only."
+  },
+  {
+    "id": "AWSDVA-T1-018",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Connection pooling",
+    "stem": "Thousands of concurrent Lambda invocations exhaust an RDS database's connections. What helps?",
+    "options": [
+      "A shorter function timeout",
+      "A read replica alone",
+      "More function memory",
+      "Amazon RDS Proxy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "RDS Proxy pools and shares database connections across many invocations. Memory and timeouts do not change how many connections open."
+  },
+  {
+    "id": "AWSDVA-T1-019",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Retries",
+    "stem": "SDK calls to DynamoDB get ThrottlingException during bursts. How should the client retry?",
+    "options": [
+      "Exponential backoff with jitter",
+      "Catch and discard the request",
+      "Fixed one-second retry interval",
+      "Immediate retries in a tight loop"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Backoff spreads retries out over growing intervals and jitter stops clients retrying in step, which lets the table recover. Tight loops make throttling worse."
+  },
+  {
+    "id": "AWSDVA-T1-020",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DynamoDB keys",
+    "stem": "Which partition key spreads writes most evenly for an orders table?",
+    "options": [
+      "Order status",
+      "Store region",
+      "Order ID",
+      "Order date"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A key with many distinct values spreads items across partitions. Status, date or region have few values, so writes pile onto a few partitions."
+  },
+  {
+    "id": "AWSDVA-T1-021",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rollback",
+    "stem": "A CodeDeploy Lambda deployment should roll back on its own if errors rise. What triggers that?",
+    "options": [
+      "CloudWatch alarm on the group",
+      "An API stage variable",
+      "A longer function timeout setting",
+      "An email to the team when errors rise"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A deployment group can watch CloudWatch alarms and roll back automatically when one goes into ALARM. An email still needs someone to act."
+  },
+  {
+    "id": "AWSDVA-T1-022",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tracing",
+    "stem": "Traces must be searchable by customer ID in filter expressions. What should the code add?",
+    "options": [
+      "A log retention tag",
+      "X-Ray metadata",
+      "An X-Ray annotation",
+      "A longer segment name"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Annotations are indexed key-value pairs that filter expressions can search. Metadata holds any data but is not indexed."
+  },
+  {
+    "id": "AWSDVA-T1-023",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Presigned URLs",
+    "stem": "A customer with no AWS account must download a private S3 report for 15 minutes. What fits?",
+    "options": [
+      "An ACL granting everyone",
+      "A Cognito user pool group",
+      "A public bucket policy",
+      "A presigned GET URL"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A presigned URL grants time-limited access to one object using the signer's permissions. Making the bucket public exposes everything to everyone."
+  },
+  {
+    "id": "AWSDVA-T1-024",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaAiSec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data privacy",
+    "stem": "Can a Bedrock model provider see the prompts and completions an app sends through Bedrock?",
+    "options": [
+      "Yes, to train and improve its models",
+      "Only for open-weight model families",
+      "No, providers have no access",
+      "Yes, after 30 days"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bedrock runs models in AWS-operated deployment accounts that model providers cannot reach, so they cannot see customer prompts or completions."
+  },
+  {
+    "id": "AWSDVA-T1-025",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "API validation",
+    "stem": "A REST API must reject requests that lack a required JSON field before Lambda runs. What should be configured?",
+    "options": [
+      "Request validator with a model",
+      "Lambda reserved concurrency",
+      "Stage variable naming the required field",
+      "Usage plan with API keys per client"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "API Gateway request validation checks the body against a JSON schema model and returns 400 without invoking the backend. Usage plans limit request rates, not content."
+  },
+  {
+    "id": "AWSDVA-T1-026",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Layers",
+    "stem": "Several functions share one large dependency library. How can it be packaged once and reused?",
+    "options": [
+      "As a Lambda layer",
+      "As an event source mapping",
+      "As an environment variable",
+      "As a function alias"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A layer holds shared libraries that many functions attach, so each package stays small. Aliases point to versions, not code."
+  },
+  {
+    "id": "AWSDVA-T1-027",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Secret management",
+    "stem": "An app reads a secret that Secrets Manager rotates. Which version label returns by default?",
+    "options": [
+      "AWSPREVIOUS",
+      "AWSPENDING",
+      "LATEST",
+      "AWSCURRENT"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "GetSecretValue returns the AWSCURRENT version unless asked for another. AWSPENDING marks the new value only while rotation is in progress."
+  },
+  {
+    "id": "AWSDVA-T1-028",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Environment configuration",
+    "stem": "A feature flag must roll out gradually and roll back on a CloudWatch alarm. What fits?",
+    "options": [
+      "Lambda environment variables",
+      "AWS AppConfig",
+      "Secrets Manager",
+      "Parameter Store"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AppConfig validates configuration, deploys it in steps and rolls back when an alarm fires. Parameter Store changes take effect on the next read with no gradual rollout."
+  },
+  {
+    "id": "AWSDVA-T1-029",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Memory and compute",
+    "stem": "Doubling a function's memory cut its run time in half. What happened to its compute cost?",
+    "options": [
+      "It rose about four times",
+      "About the same",
+      "It halved",
+      "It doubled"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lambda bills memory times duration, so twice the memory for half the time is roughly the same cost, with a faster result. More memory also adds CPU."
+  },
+  {
+    "id": "AWSDVA-T1-030",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "IaC templates",
+    "stem": "A CloudFormation stack update fails partway through. What happens by default?",
+    "options": [
+      "It deletes the whole stack",
+      "It retries the update until it succeeds",
+      "It keeps the partial changes in place",
+      "It rolls back to the prior state"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "CloudFormation undoes the update and returns resources to the last working configuration. Deleting the stack is not the default for an update failure."
+  },
+  {
+    "id": "AWSDVA-T1-031",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Custom metrics",
+    "stem": "A Lambda function should publish a custom metric without an extra API call per invocation. What fits?",
+    "options": [
+      "PutMetricData call on each invoke",
+      "A CloudTrail trail",
+      "Embedded metric format logs",
+      "X-Ray metadata fields on each segment"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "With the embedded metric format the function writes structured log lines and CloudWatch extracts the metrics. PutMetricData adds a call and its permission."
+  },
+  {
+    "id": "AWSDVA-T1-032",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "API transformation",
+    "stem": "A legacy backend accepts only XML, but clients send JSON to a REST API. What converts the request?",
+    "options": [
+      "Integration request mapping template",
+      "CORS headers set on the method response",
+      "Gateway response template customization",
+      "Lambda proxy integration"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A mapping template on the integration request rewrites the payload before it reaches the backend. A proxy integration passes the request through unchanged."
+  },
+  {
+    "id": "AWSDVA-T1-033",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Consistency",
+    "stem": "A read right after a write must always return the new value. Which DynamoDB read fits?",
+    "options": [
+      "Strongly consistent read",
+      "Read from a GSI",
+      "Eventually consistent read",
+      "Read through DAX"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A strongly consistent read reflects all successful writes before it. Global secondary indexes support only eventually consistent reads."
+  },
+  {
+    "id": "AWSDVA-T1-034",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Presigned URLs",
+    "stem": "A Lambda function signs an S3 URL valid for 6 hours, but the URL stops working much sooner. Why?",
+    "options": [
+      "SigV4 URLs last only one hour at most",
+      "Its role session expired first",
+      "The bucket policy blocks GET calls",
+      "The URL was used twice"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A presigned URL made with temporary credentials ends when those credentials expire, whatever expiry was requested. A URL can be used many times until it expires."
+  },
+  {
+    "id": "AWSDVA-T1-035",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Container deployments",
+    "stem": "An ECS service on Fargate gets a new task definition revision. What does a rolling update do?",
+    "options": [
+      "Rebuilds the container image",
+      "Creates a new ECS cluster for the revision",
+      "Stops every old task before starting any new ones",
+      "Replaces tasks within health limits"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The rolling deployment starts new tasks and stops old ones while keeping the healthy count between the minimum and maximum percent settings."
+  },
+  {
+    "id": "AWSDVA-T1-036",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Structured logging",
+    "stem": "Why write application logs as JSON rather than free text?",
+    "options": [
+      "CloudWatch rejects plain text lines",
+      "Fields can be queried directly",
+      "It hides PII and secrets automatically",
+      "Logs are stored for free"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Structured logs let Logs Insights read fields such as orderId or latency without parsing. JSON does not remove sensitive data by itself."
+  },
+  {
+    "id": "AWSDVA-T1-037",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Destinations",
+    "stem": "An asynchronously invoked function sometimes fails every retry. The team wants the event and the error details kept. What should be configured?",
+    "options": [
+      "On-failure destination",
+      "Function URL",
+      "Dead-letter queue",
+      "Provisioned concurrency"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An on-failure destination receives an invocation record with the request and the function's response, including the error. A dead-letter queue gets only the event content."
+  },
+  {
+    "id": "AWSDVA-T1-038",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Certificates",
+    "stem": "A public HTTPS site on an Application Load Balancer needs a certificate that renews itself. What fits?",
+    "options": [
+      "Public certificate from ACM",
+      "Certificate from AWS Private CA",
+      "Certificate kept in Secrets Manager",
+      "Self-signed certificate on EC2"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ACM public certificates are free on integrated services such as load balancers and renew automatically. Private CA certificates are trusted only by your own clients."
+  },
+  {
+    "id": "AWSDVA-T1-039",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Testing",
+    "stem": "A developer wants to run a function on a laptop with a sample S3 event. What fits?",
+    "options": [
+      "sam local invoke with an event",
+      "cdk deploy to production",
+      "CloudFormation drift detection",
+      "A CodeDeploy canary"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SAM CLI runs the function locally in a container and passes it a JSON event file. Deploying to production is not a local test."
+  },
+  {
+    "id": "AWSDVA-T1-040",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Caching",
+    "stem": "Static assets in S3 load slowly for users around the world. What fits?",
+    "options": [
+      "A second S3 bucket in another Region",
+      "More EC2 instances behind a load balancer",
+      "A CloudFront distribution",
+      "An S3 Lifecycle rule"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "CloudFront caches content at edge locations near users. A lifecycle rule moves objects between storage classes."
+  },
+  {
+    "id": "AWSDVA-T1-041",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Streaming",
+    "stem": "A Lambda consumer of a Kinesis stream keeps failing on one bad record, and the shard stops advancing. Which setting helps isolate it?",
+    "options": [
+      "Raise the shard count",
+      "Turn on enhanced fan-out for the consumer",
+      "Split batch on function error",
+      "Shorten the stream's retention period"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bisecting the batch on error retries smaller halves until the bad record is isolated, so the good records get through. More shards or faster reads do not get past the failing record."
+  },
+  {
+    "id": "AWSDVA-T1-042",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaAiSec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Input and output filtering",
+    "stem": "Users try to talk a chatbot into ignoring its instructions. Which Bedrock Guardrails filter detects this?",
+    "options": [
+      "Custom word filter",
+      "Contextual grounding check on replies",
+      "Denied topic policy for instructions",
+      "Prompt attack content filter"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The content filters include a Prompt Attack category for jailbreaks and injected instructions. Grounding checks look at whether responses match source material."
+  },
+  {
+    "id": "AWSDVA-T1-043",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Assume role",
+    "stem": "A function in account A must write to a DynamoDB table in account B. What is the standard approach?",
+    "options": [
+      "Assume a role in account B",
+      "Make the table public",
+      "Share account B's access keys",
+      "Copy the table into account A"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A role in account B that trusts account A lets the function get temporary credentials for B. Sharing long-term keys breaks least privilege and auditing."
+  },
+  {
+    "id": "AWSDVA-T1-044",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pipelines",
+    "stem": "A pipeline must pause before production until a lead approves. What should be added?",
+    "options": [
+      "CodeBuild test action",
+      "Stage transition retry",
+      "Manual approval action",
+      "Source action filter"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A manual approval action stops the pipeline until someone approves or rejects. A test action runs automatically."
+  },
+  {
+    "id": "AWSDVA-T1-045",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Alerts",
+    "stem": "The team needs an email when a function's errors exceed 5 within 5 minutes. What fits?",
+    "options": [
+      "A CloudTrail Lake query",
+      "A saved Logs Insights query",
+      "X-Ray sampling rule",
+      "CloudWatch alarm with SNS"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A CloudWatch alarm on the Errors metric can notify an SNS topic that emails the team. A saved query runs only when someone opens it."
+  },
+  {
+    "id": "AWSDVA-T1-046",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaData",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Query and Scan",
+    "stem": "An app needs every order for one customer, and customer ID is the partition key. Which operation reads least?",
+    "options": [
+      "BatchGetItem across every possible key",
+      "Scan with a filter",
+      "Parallel Scan",
+      "Query on the partition key"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A Query reads only items with that partition key value. A Scan reads the whole table, and its filter is applied after the read is charged."
+  },
+  {
+    "id": "AWSDVA-T1-047",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Serialization",
+    "stem": "A Lambda function receives an SQS message whose body holds an order object. What must the code do before reading its fields?",
+    "options": [
+      "Call ReceiveMessage again",
+      "Decrypt the message body with KMS first",
+      "Parse the body string as JSON",
+      "Base64-decode the queue URL before reading"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SQS delivers the body as a string, so the code deserializes it into an object first. The function already has the message, so another receive is not needed."
+  },
+  {
+    "id": "AWSDVA-T1-048",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Event source mappings",
+    "stem": "A function reads an SQS queue in batches of 10. One bad message makes the whole batch return to the queue. What fixes this?",
+    "options": [
+      "Raise the batch size",
+      "Report batch item failures",
+      "Switch the source to a FIFO queue",
+      "Lower the visibility timeout"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With ReportBatchItemFailures the function returns only the failed message IDs, so the processed messages are not delivered again. A bigger batch makes the problem worse."
+  },
+  {
+    "id": "AWSDVA-T1-049",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Client-side encryption",
+    "stem": "Data must be encrypted before it leaves the app, so AWS never sees plaintext. Which approach fits?",
+    "options": [
+      "SSE-S3",
+      "Client-side encryption",
+      "SSE-KMS",
+      "TLS on every connection only"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With client-side encryption the app encrypts before upload and S3 stores only ciphertext. Server-side options encrypt after S3 receives the data."
+  },
+  {
+    "id": "AWSDVA-T1-050",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mock APIs",
+    "stem": "A frontend team needs a stub endpoint before the backend exists. What fits?",
+    "options": [
+      "Lambda proxy integration",
+      "API Gateway mock integration",
+      "HTTP proxy integration",
+      "VPC link integration"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A mock integration returns responses defined in mapping templates without any backend. The other integration types need a backend to call."
+  },
+  {
+    "id": "AWSDVA-T1-051",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Messaging",
+    "stem": "One order event must reach billing, shipping and analytics, each with its own queue. What fits?",
+    "options": [
+      "SNS topic with SQS subscribers",
+      "One shared queue read by all three teams",
+      "Three Lambda function URLs called in turn",
+      "One FIFO queue per order"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SNS fan-out copies each message to every subscribed queue, so each consumer works at its own pace. On a shared queue each message goes to only one consumer."
+  },
+  {
+    "id": "AWSDVA-T1-052",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Fine-grained access",
+    "stem": "Users may read only the DynamoDB items whose partition key is their own user ID. What enforces this?",
+    "options": [
+      "A filter in the application's own code",
+      "Condition on dynamodb:LeadingKeys",
+      "A larger IAM policy size",
+      "A separate GSI created for each user"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The dynamodb:LeadingKeys condition key limits access to items whose partition key matches a value such as the caller's identity. App-side filters can be bypassed."
+  },
+  {
+    "id": "AWSDVA-T1-053",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Deployment strategies",
+    "stem": "Which strategy keeps the old environment running so traffic can switch back at once?",
+    "options": [
+      "Rolling",
+      "Rolling with extra batch",
+      "In-place all at once",
+      "Blue/green"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Blue/green deploys to a separate environment and shifts traffic, so the original stays ready for a fast switch back. In-place updates change the running instances."
+  },
+  {
+    "id": "AWSDVA-T1-054",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Deployment failures",
+    "stem": "A CodeBuild stage in a pipeline fails. Where should the developer look first?",
+    "options": [
+      "The build's CloudWatch logs",
+      "The ECR image scan report for the build",
+      "The X-Ray trace map for the pipeline",
+      "S3 server access logs"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "CodeBuild streams each build's command output to CloudWatch Logs, where the failing command shows. The trace map covers running requests."
+  },
+  {
+    "id": "AWSDVA-T1-055",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Event-driven patterns",
+    "stem": "A thumbnail must be made each time a user uploads an image to a bucket. Which trigger is simplest?",
+    "options": [
+      "S3 event notification to Lambda",
+      "CloudTrail log subscription",
+      "CloudWatch alarm on bucket size",
+      "Cron job listing the bucket"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "S3 Event Notifications invoke a function for each new object as it lands. A scheduled listing adds delay and wasted calls."
+  },
+  {
+    "id": "AWSDVA-T1-056",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaAiSec",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Agent security",
+    "stem": "An AI agent can issue refunds through a tool. What control fits refunds above a set amount?",
+    "options": [
+      "Human review after the refund posts",
+      "Logging the refund only",
+      "Human approval before the call",
+      "Retrying refunds that fail at the bank"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sensitive actions need human-in-the-loop approval before the tool runs. Reviewing afterward or only logging leaves the money already gone."
+  },
+  {
+    "id": "AWSDVA-T1-057",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Choosing data stores",
+    "stem": "A game leaderboard needs top-10 scores kept in order while thousands of updates arrive each second. Which store fits?",
+    "options": [
+      "ElastiCache sorted set",
+      "EFS shared file",
+      "RDS read replica with an index on score",
+      "One S3 object written per score"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Sorted sets in ElastiCache keep members ranked by score in memory with fast updates. Rewriting files or objects cannot keep up with that update rate."
+  },
+  {
+    "id": "AWSDVA-T1-058",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Destinations",
+    "select": 2,
+    "stem": "Which two can receive records of failed asynchronous Lambda invocations? (Choose two.)",
+    "options": [
+      "SQS standard queue",
+      "Kinesis data stream in the account",
+      "DynamoDB table",
+      "SQS FIFO queue",
+      "EventBridge event bus"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "explanation": "Async destinations can be SQS standard queues, SNS standard topics, S3 for failures, Lambda functions and EventBridge buses. FIFO queues and topics are not supported."
+  },
+  {
+    "id": "AWSDVA-T1-059",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "In transit",
+    "select": 2,
+    "stem": "Which two protect data moving to an S3 bucket? (Choose two.)",
+    "options": [
+      "Bucket policy denying non-TLS",
+      "SSE-KMS default bucket encryption setting",
+      "Object Lock retention",
+      "Bucket versioning",
+      "Clients using HTTPS endpoints"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "explanation": "A deny on aws:SecureTransport false blocks plain HTTP, and HTTPS endpoints encrypt the traffic. Default encryption, Object Lock and versioning protect data at rest."
+  },
+  {
+    "id": "AWSDVA-T1-060",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Environments",
+    "select": 2,
+    "stem": "Which two let one Lambda function serve separate dev and prod stages of an API? (Choose two.)",
+    "options": [
+      "Reserved concurrency",
+      "Aliases for each environment",
+      "Stage variables naming an alias",
+      "One layer per stage",
+      "Provisioned throughput on each alias"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Aliases point to the version each environment should run, and a stage variable lets each API stage call its own alias. Concurrency settings do not separate environments."
+  },
+  {
+    "id": "AWSDVA-T1-061",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Memory and compute",
+    "select": 2,
+    "stem": "Which two cut cold start time for a Python 3.12 Lambda function? (Choose two.)",
+    "options": [
+      "Lambda SnapStart",
+      "A longer timeout",
+      "A smaller deployment package",
+      "Reserved concurrency",
+      "More environment variables for config"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "SnapStart resumes environments from a snapshot for supported runtimes such as Python 3.12, and a smaller package loads faster. Timeouts do not affect startup."
+  },
+  {
+    "id": "AWSDVA-T1-062",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Temporary credentials",
+    "select": 2,
+    "stem": "Which two give an application temporary AWS credentials? (Choose two.)",
+    "options": [
+      "KMS data key",
+      "Cognito identity pool",
+      "Cognito user pool ID token",
+      "IAM user access key",
+      "STS AssumeRole"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "AssumeRole and identity pools both return short-lived credentials with a session token. An IAM user key is long-term, and an ID token is not an AWS credential."
+  },
+  {
+    "id": "AWSDVA-T1-063",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "CodeDeploy",
+    "select": 2,
+    "stem": "Which two hooks can run validation functions in a CodeDeploy Lambda deployment? (Choose two.)",
+    "options": [
+      "ApplicationStart",
+      "BeforeAllowTraffic",
+      "AfterAllowTraffic",
+      "ValidateService",
+      "BeforeInstall"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Lambda deployments support only the BeforeAllowTraffic and AfterAllowTraffic hooks. The others belong to EC2 or ECS deployments."
+  },
+  {
+    "id": "AWSDVA-T1-064",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Debugging",
+    "select": 2,
+    "stem": "Which two signs point to throttling of a Lambda function? (Choose two.)",
+    "options": [
+      "IteratorAge staying at zero all day",
+      "Init duration in the logs",
+      "429 errors on synchronous calls",
+      "Duration rising slowly",
+      "The Throttles metric rising"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "When concurrency runs out, Lambda counts throttles and returns 429 TooManyRequestsException to synchronous callers. Init duration shows cold starts."
+  },
+  {
+    "id": "AWSDVA-T1-065",
+    "section": "dva",
+    "test": 1,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AI-assisted development",
+    "stem": "A team wants Kiro to follow its coding standards in every session without repeating them in chat. Which feature fits?",
+    "options": [
+      "Bugfix specs",
+      "Agent hooks",
+      "Steering files",
+      "MCP servers"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Steering files hold project rules and conventions that Kiro applies automatically. Hooks run actions on events, and MCP servers connect outside tools."
+  },
+  {
+    "id": "AWSDVA-T2-001",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sync and async",
+    "stem": "A checkout API must answer quickly while a slow fraud check runs. What should it do?",
+    "options": [
+      "Cache every fraud result",
+      "Run the fraud check inline before replying",
+      "Queue the check and return 202",
+      "Raise the integration timeout to the max"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Accepting the request and processing the check asynchronously keeps the API fast; 202 Accepted tells the client work continues. Running it inline keeps the caller waiting."
+  },
+  {
+    "id": "AWSDVA-T2-002",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deployment strategies",
+    "stem": "Which CodeDeploy configuration moves 10% of Lambda traffic every two minutes?",
+    "options": [
+      "LambdaAllAtOnce",
+      "LambdaCanary10Percent5Minutes",
+      "LambdaLinear10PercentEvery1Minute",
+      "LambdaLinear10PercentEvery2Minutes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Linear configurations shift equal slices at a steady interval until all traffic has moved. A canary moves one slice and then the rest."
+  },
+  {
+    "id": "AWSDVA-T2-003",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Health checks",
+    "stem": "An Application Load Balancer keeps routing traffic to an instance whose app has hung. What helps?",
+    "options": [
+      "A larger instance type for the app",
+      "Sticky sessions",
+      "A longer idle timeout on the load balancer",
+      "Health check on an app path"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A health check that calls the application itself marks a hung instance unhealthy so traffic stops. Sticky sessions keep users on it."
+  },
+  {
+    "id": "AWSDVA-T2-004",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Federation",
+    "stem": "Staff sign in through the company SAML identity provider and need AWS API access from a script. Which STS call fits?",
+    "options": [
+      "GetCallerIdentity",
+      "AssumeRoleWithWebIdentity",
+      "GetSessionToken",
+      "AssumeRoleWithSAML"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AssumeRoleWithSAML trades a SAML assertion for temporary role credentials. AssumeRoleWithWebIdentity is for OIDC tokens such as those from web identity providers."
+  },
+  {
+    "id": "AWSDVA-T2-005",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Configuration",
+    "stem": "A Node.js function's handler is set to app.process. What does Lambda call on each invocation?",
+    "options": [
+      "Function app in module process",
+      "Module process in folder app",
+      "Main function of index.js",
+      "Function process in module app"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The handler string names the file or module first and the exported function second. So app.process calls the process export of app."
+  },
+  {
+    "id": "AWSDVA-T2-006",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Certificates",
+    "stem": "Internal microservices need TLS certificates that only company clients trust. Which service issues them?",
+    "options": [
+      "Public ACM certificates",
+      "AWS Secrets Manager",
+      "AWS KMS",
+      "AWS Private CA"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AWS Private CA runs a private certificate authority whose certificates your own clients trust. Public certificates need public domain validation."
+  },
+  {
+    "id": "AWSDVA-T2-007",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "API stages",
+    "stem": "Clients call a REST API's v2 path while v1 keeps working at its own URL. What separates them?",
+    "options": [
+      "Two deployment stages",
+      "Two authorizers",
+      "Two mapping templates",
+      "Two usage plans"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each stage is a named snapshot of a deployment with its own invoke URL. Usage plans and authorizers control access, not versions."
+  },
+  {
+    "id": "AWSDVA-T2-008",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Messaging",
+    "stem": "A producer sends one SQS message per API call, and request costs keep rising. What cuts the calls?",
+    "options": [
+      "A FIFO queue",
+      "Message timers",
+      "A longer visibility timeout",
+      "SendMessageBatch"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SendMessageBatch sends up to 10 messages in one request. Visibility timeouts affect consumers, not how many calls producers make."
+  },
+  {
+    "id": "AWSDVA-T2-009",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DynamoDB capacity",
+    "stem": "Items are 6 KB. How many read capacity units does one strongly consistent read use?",
+    "options": [
+      "6 RCUs",
+      "2 RCUs",
+      "1 RCU",
+      "1.5 RCUs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Reads are rounded up to the next 4 KB, so 6 KB counts as 8 KB, and each 4 KB of a strongly consistent read is 1 RCU: 2 RCUs. 1.5 forgets the rounding."
+  },
+  {
+    "id": "AWSDVA-T2-010",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaAiSec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agent security",
+    "stem": "Which AgentCore capability checks every tool call against rules before the tool runs?",
+    "options": [
+      "AgentCore Observability",
+      "AgentCore Browser",
+      "AgentCore Memory",
+      "AgentCore Policy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Policy works with AgentCore Gateway to intercept each tool call and allow or deny it by deterministic rules. Observability records what happened but does not block it."
+  },
+  {
+    "id": "AWSDVA-T2-011",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Graceful degradation",
+    "stem": "A product page calls a recommendation service that is often slow. What keeps the page usable when that service fails?",
+    "options": [
+      "Retry until the service answers",
+      "Hold the page until the service recovers",
+      "Default items after a short timeout",
+      "More memory for the web server"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Graceful degradation serves a reduced but working page, such as popular items, when a dependency fails. Endless retries or blocking turn one slow service into a site outage."
+  },
+  {
+    "id": "AWSDVA-T2-012",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "CodeDeploy",
+    "stem": "In an EC2 in-place deployment, which hook should start the web service again?",
+    "options": [
+      "BlockTraffic",
+      "Install",
+      "ApplicationStart",
+      "DownloadBundle"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ApplicationStart is the scriptable hook for restarting services stopped in ApplicationStop. DownloadBundle, Install and BlockTraffic are reserved for the agent."
+  },
+  {
+    "id": "AWSDVA-T2-013",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Health checks",
+    "stem": "A pod on EKS needs a minute to load data before it can take traffic. Which probe should gate traffic?",
+    "options": [
+      "Liveness probe",
+      "Init container",
+      "Readiness probe",
+      "Pod anti-affinity rule"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A readiness probe keeps the pod out of service endpoints until it reports ready. A failing liveness probe restarts the container instead."
+  },
+  {
+    "id": "AWSDVA-T2-014",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Federation",
+    "stem": "A GitHub Actions workflow must deploy to AWS without stored access keys. What fits?",
+    "options": [
+      "An instance profile on GitHub",
+      "OIDC provider and a role",
+      "Root keys on the runner",
+      "IAM user keys as secrets"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Registering the CI system as an OIDC identity provider lets each run assume a role with web identity and get short-lived credentials. Stored keys are long-term secrets."
+  },
+  {
+    "id": "AWSDVA-T2-015",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Configuration",
+    "stem": "A function needs a different table name in dev and prod without code changes. What should it read?",
+    "options": [
+      "An environment variable",
+      "Its reserved concurrency",
+      "The function URL",
+      "A Lambda layer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Environment variables hold settings that change between environments while the code stays the same. Layers carry code and libraries."
+  },
+  {
+    "id": "AWSDVA-T2-016",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "SSH keys",
+    "stem": "EC2 creates a new key pair for a developer's test instance. Which part does the developer receive?",
+    "options": [
+      "Private key, once",
+      "Both keys at any time",
+      "Public key only",
+      "A KMS data key"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "EC2 keeps the public key and gives the private key for download only at creation, so it must be saved then. It cannot be fetched again later."
+  },
+  {
+    "id": "AWSDVA-T2-017",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Testing",
+    "stem": "A team writes CDK in TypeScript and wants unit tests that check the synthesized template. What fits?",
+    "options": [
+      "sam local start-api",
+      "CodeDeploy lifecycle hooks",
+      "CDK assertions on the template",
+      "CloudFormation change sets on each deploy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The CDK assertions module tests the generated CloudFormation template, for example that a bucket is encrypted. Change sets preview a live update instead."
+  },
+  {
+    "id": "AWSDVA-T2-018",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Concurrency",
+    "stem": "EC2 web servers slow down whenever CPU is high at peak. What adds instances automatically?",
+    "options": [
+      "Target tracking scaling policy",
+      "A larger EBS volume",
+      "A cluster placement group",
+      "Scheduled reboots of each instance at night"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Target tracking adjusts the Auto Scaling group to hold a metric such as average CPU near a target. Bigger disks do not add compute."
+  },
+  {
+    "id": "AWSDVA-T2-019",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Retries",
+    "select": 2,
+    "stem": "Which two HTTP responses from an AWS API should a client usually retry with backoff? (Choose two.)",
+    "options": [
+      "429 Too Many Requests",
+      "404 Not Found",
+      "403 Forbidden",
+      "503 Service Unavailable",
+      "400 Bad Request"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Throttling and temporary unavailability can succeed on a later attempt. A malformed request, a denied call or a missing resource fails the same way every time."
+  },
+  {
+    "id": "AWSDVA-T2-020",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Indexes",
+    "stem": "After launch, a table needs a new query pattern on a different partition key. What can be added?",
+    "options": [
+      "More read capacity",
+      "A second table sort key",
+      "Global secondary index",
+      "Local secondary index on the new key"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A GSI can use any partition key and can be added to an existing table. An LSI keeps the table's partition key and must be created with the table."
+  },
+  {
+    "id": "AWSDVA-T2-021",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "CodeDeploy",
+    "stem": "Why did the ApplicationStop hook not run on an instance's first deployment?",
+    "options": [
+      "It runs only on rollbacks",
+      "No earlier revision is there",
+      "It runs after ValidateService",
+      "It needs a load balancer"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "ApplicationStop runs scripts from the last successful revision, and a new instance has none yet. It works from the second deployment on."
+  },
+  {
+    "id": "AWSDVA-T2-022",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Custom metrics",
+    "stem": "EMF metrics use requestId as a dimension, and CloudWatch costs jump. Why?",
+    "options": [
+      "Logs are stored twice",
+      "Each ID makes a new metric",
+      "X-Ray samples every call",
+      "EMF also calls PutMetricData"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Every unique dimension combination creates a separate custom metric, so a per-request ID creates one per call. Keep such IDs as log fields."
+  },
+  {
+    "id": "AWSDVA-T2-023",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Signed requests",
+    "stem": "A developer calls an AWS service's HTTP API directly, without an SDK. What must each request carry?",
+    "options": [
+      "The account root email",
+      "An MFA code in a custom header field",
+      "A Signature Version 4 signature",
+      "A KMS key ID header"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AWS APIs authenticate requests signed with SigV4 using the caller's credentials. SDKs and the CLI sign requests automatically."
+  },
+  {
+    "id": "AWSDVA-T2-024",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaAiSec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agent security",
+    "stem": "One user's agent session must never see another user's data in memory or files. What provides this?",
+    "options": [
+      "One IAM user per customer",
+      "AgentCore Runtime session isolation",
+      "A larger model context window",
+      "A shared /tmp folder in one Lambda function"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AgentCore Runtime runs each session in its own isolated environment. A shared folder or a bigger context would mix users' data."
+  },
+  {
+    "id": "AWSDVA-T2-025",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "SDK",
+    "stem": "A Python app must list every object in a bucket with millions of keys. What should the SDK code use?",
+    "options": [
+      "A single ListBuckets call with a filter",
+      "MaxKeys set to one million",
+      "Paginator for ListObjectsV2",
+      "One GetObject call per prefix"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ListObjectsV2 returns at most a page of keys per call, so a paginator follows the continuation tokens. MaxKeys cannot raise the page size past its limit."
+  },
+  {
+    "id": "AWSDVA-T2-026",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Configuration",
+    "stem": "A vendor's monitoring agent must run alongside a function without changes to its handler. How is it delivered?",
+    "options": [
+      "As a function alias",
+      "As an event source mapping",
+      "As an environment variable",
+      "As a Lambda extension"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Extensions run as companion processes in the execution environment, for example to collect telemetry. They are usually added through a layer, but the extension is what runs."
+  },
+  {
+    "id": "AWSDVA-T2-027",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Server-side encryption",
+    "stem": "Auditors must see every use of the key that protects objects in S3. Which encryption fits?",
+    "options": [
+      "SSE-KMS, customer managed key",
+      "SSE-C",
+      "No default encryption",
+      "SSE-S3"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With SSE-KMS each use of the KMS key is logged in CloudTrail and governed by the key policy. SSE-S3 uses keys that S3 manages without per-use audit records."
+  },
+  {
+    "id": "AWSDVA-T2-028",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Test events",
+    "stem": "A developer wants to test a function in the console with an API Gateway proxy payload. What should be created?",
+    "options": [
+      "A new function alias",
+      "An on-success destination",
+      "A saved JSON test event",
+      "An event source mapping"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Console test events store JSON payloads, such as an API Gateway proxy request, to invoke the function on demand. Aliases and mappings change routing, not test input."
+  },
+  {
+    "id": "AWSDVA-T2-029",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Caching",
+    "stem": "An RDS-backed page runs the same costly query thousands of times a minute. What fits?",
+    "options": [
+      "Turn on RDS Multi-AZ for the instance",
+      "Raise the database volume's provisioned IOPS",
+      "Add a GSI to the table",
+      "Cache results in ElastiCache"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Keeping query results in an in-memory cache serves repeats without hitting the database. Multi-AZ adds availability, not read speed."
+  },
+  {
+    "id": "AWSDVA-T2-030",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pipelines",
+    "stem": "A pipeline should start whenever code is pushed to main in a GitHub repository. What does it use?",
+    "options": [
+      "CodeDeploy deployment group with a trigger",
+      "Manual approval action at the first stage",
+      "Source action with a connection",
+      "Scheduled CloudWatch alarm"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A CodePipeline source action that uses a connection to GitHub starts the pipeline on pushes to the chosen branch. A schedule adds delay."
+  },
+  {
+    "id": "AWSDVA-T2-031",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Custom metrics",
+    "stem": "A team wants a metric that counts ERROR lines in existing logs, without code changes. What fits?",
+    "options": [
+      "An X-Ray group",
+      "Subscription filter to a Lambda function",
+      "Metric filter on the log group",
+      "Embedded metric format"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A metric filter turns matching log events into a CloudWatch metric with no code change. EMF needs the app to write metric lines."
+  },
+  {
+    "id": "AWSDVA-T2-032",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "API transformation",
+    "stem": "An API should return a friendly JSON error when the backend times out. What should the developer customize?",
+    "options": [
+      "Gateway response for timeouts",
+      "Method request parameters and headers",
+      "Binary media types",
+      "Usage plan throttling for slow backends"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Gateway responses control the errors API Gateway itself returns, including the integration timeout response. Method request parameters only describe what callers send."
+  },
+  {
+    "id": "AWSDVA-T2-033",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Caching",
+    "stem": "Cached product data must not be stale after an update. Which caching pattern fits?",
+    "options": [
+      "No TTL on cached keys",
+      "Lazy loading with a long TTL",
+      "Caching only after misses",
+      "Write-through on each update"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Write-through updates the cache whenever the database is written, so readers see current data. Lazy loading fills the cache on misses and can serve stale values until the TTL ends."
+  },
+  {
+    "id": "AWSDVA-T2-034",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Permissions",
+    "stem": "An identity policy allows s3:GetObject, but the bucket policy explicitly denies it. What happens?",
+    "options": [
+      "Access is allowed",
+      "Access is denied",
+      "Allowed only with MFA",
+      "Allowed for one hour"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An explicit deny in any applicable policy overrides every allow. Access needs an allow and no deny."
+  },
+  {
+    "id": "AWSDVA-T2-035",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "IaC templates",
+    "stem": "Before updating a production stack, a developer wants to preview which resources will be replaced. What fits?",
+    "options": [
+      "Termination protection",
+      "Drift detection",
+      "A stack policy",
+      "A CloudFormation change set"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A change set shows the adds, changes and replacements an update would make before it runs. Drift detection compares the stack with manual changes."
+  },
+  {
+    "id": "AWSDVA-T2-036",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alerts",
+    "stem": "Developers want a warning before the account reaches a service quota. What fits?",
+    "options": [
+      "A Lambda destination",
+      "A CloudFormation output",
+      "Alarm on quota usage metric",
+      "X-Ray sampling rule"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Service quotas publish usage metrics, and a CloudWatch alarm on them can warn before the limit. Destinations handle invocation results."
+  },
+  {
+    "id": "AWSDVA-T2-037",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Event source mappings",
+    "stem": "SQS triggers a function. Where should messages that keep failing be redirected?",
+    "options": [
+      "DLQ set on the source queue",
+      "DLQ set on the function",
+      "A second event source mapping",
+      "An on-success destination"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With SQS as the event source, the dead-letter queue belongs on the queue's redrive policy. A function-level DLQ applies to asynchronous invocations only."
+  },
+  {
+    "id": "AWSDVA-T2-038",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Secret management",
+    "stem": "An app needs an encrypted config value that is not a credential, such as an account ID, at low cost. What fits?",
+    "options": [
+      "S3 object with an ACL",
+      "Plain environment variable in the task",
+      "Secrets Manager secret with rotation",
+      "Parameter Store SecureString"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SecureString parameters are encrypted with KMS, and the standard tier has no extra charge. AWS points to Secrets Manager for credentials that need rotation."
+  },
+  {
+    "id": "AWSDVA-T2-039",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Environments",
+    "stem": "Each Git feature branch of a web app should get its own preview environment. What fits?",
+    "options": [
+      "ECR lifecycle rules",
+      "Lambda layers per branch",
+      "One CloudFront distribution",
+      "Amplify branch deployments"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Amplify Hosting can connect branches and give each one its own deployed environment. A single distribution serves one version."
+  },
+  {
+    "id": "AWSDVA-T2-040",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Bottlenecks",
+    "stem": "Which Lambda metric shows a Kinesis consumer falling behind the stream?",
+    "options": [
+      "IteratorAge",
+      "Invocations",
+      "Throttles",
+      "Errors"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "IteratorAge is how old the last record read was; a rising value means the function is not keeping up. Invocations alone say nothing about lag."
+  },
+  {
+    "id": "AWSDVA-T2-041",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Streaming",
+    "stem": "A producer writes sensor readings to Kinesis Data Streams. Readings from one sensor must stay in order. What should it set?",
+    "options": [
+      "One stream per reading",
+      "A random key on each record",
+      "Timestamp as the stream name",
+      "Sensor ID as the partition key"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Records with the same partition key go to the same shard, which keeps them in sequence. A random key spreads one sensor's readings across shards."
+  },
+  {
+    "id": "AWSDVA-T2-042",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaAiSec",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sensitive data in logs",
+    "stem": "Bedrock invocation logs go to CloudWatch Logs and may contain customer PII. What reduces exposure?",
+    "options": [
+      "Cross-account log sharing",
+      "Metric filters on the log group for PII",
+      "Data protection masking on the group",
+      "Saved Logs Insights queries"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A log group data protection policy masks PII as logs arrive, leaving it visible only to principals with logs:Unmask. Metric filters and queries read the data but do not hide it."
+  },
+  {
+    "id": "AWSDVA-T2-043",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Presigned URLs",
+    "stem": "Paid videos are served through CloudFront and must be watchable only by buyers for one day. What fits?",
+    "options": [
+      "A public bucket with long keys",
+      "Geo restriction on the distribution",
+      "Origin access control alone",
+      "CloudFront signed URLs"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "CloudFront signed URLs or cookies limit who can fetch content and for how long. Origin access control keeps the bucket private but does not identify buyers."
+  },
+  {
+    "id": "AWSDVA-T2-044",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deployment strategies",
+    "stem": "Without CodeDeploy, how can 5% of calls go to Lambda version 8?",
+    "options": [
+      "Weighted alias routing",
+      "Reserved concurrency of 5%",
+      "A layer for version 8",
+      "Two separate function URLs"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An alias can split invocations between two versions by weight. Concurrency limits cap scaling, not routing."
+  },
+  {
+    "id": "AWSDVA-T2-045",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alerts",
+    "stem": "The team wants a chat message each time a CodeDeploy deployment finishes. What fits?",
+    "options": [
+      "A CloudFormation output",
+      "EventBridge rule on its state",
+      "Metric filter on function logs",
+      "An X-Ray annotation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "CodeDeploy sends state change events to EventBridge, and a rule can route them to SNS or a chat webhook. Metric filters read logs, not deployment events."
+  },
+  {
+    "id": "AWSDVA-T2-046",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data lifecycle",
+    "stem": "A versioned bucket keeps paying for old object versions nobody needs. What removes them after 30 days?",
+    "options": [
+      "Expiry rule for noncurrent versions",
+      "S3 Object Lock retention",
+      "S3 Transfer Acceleration",
+      "S3 event notifications"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A lifecycle rule can expire noncurrent versions a set number of days after they are replaced. Object Lock does the opposite and blocks deletion."
+  },
+  {
+    "id": "AWSDVA-T2-047",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Event-driven patterns",
+    "stem": "After fixing a consumer bug, a team must reprocess the last day's events from an EventBridge bus. What makes this possible?",
+    "options": [
+      "Archive and replay on the bus",
+      "Reserved concurrency",
+      "SQS message timers",
+      "SNS delivery retries on the topic"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An EventBridge archive keeps matching events, and a replay sends them to the bus again for the fixed consumer. Delivery retries only cover recent failures."
+  },
+  {
+    "id": "AWSDVA-T2-048",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Event source mappings",
+    "stem": "A function must react to every new item written to a DynamoDB table. Which integration fits?",
+    "options": [
+      "Scheduled Scan of the table each minute",
+      "CloudWatch alarm on writes",
+      "DynamoDB Streams event source",
+      "S3 event notification"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "DynamoDB Streams records each change, and an event source mapping reads the stream and invokes the function. A scheduled Scan is slow and costly."
+  },
+  {
+    "id": "AWSDVA-T2-049",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sensitive data",
+    "stem": "Application logs may contain credit card numbers. How can they be masked for most people who read the logs?",
+    "options": [
+      "Log group data protection policy",
+      "A subscription filter",
+      "A metric filter",
+      "Shorter log retention"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "CloudWatch Logs data protection policies detect and mask sensitive data as it is ingested; only principals with logs:Unmask see it. Retention only changes how long logs are kept."
+  },
+  {
+    "id": "AWSDVA-T2-050",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Dependencies",
+    "stem": "A Python function with large ML libraries no longer fits the .zip size limit. What fixes this?",
+    "options": [
+      "Split the handler into several smaller files",
+      "Package it as a container image",
+      "Raise the function's memory to the maximum",
+      "Add more environment variables"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Container image functions can be up to 10 GB, far above the 250 MB unzipped limit for .zip packages and layers. Memory does not change package limits."
+  },
+  {
+    "id": "AWSDVA-T2-051",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Memory and compute",
+    "stem": "How can a team find the cheapest memory setting for a function?",
+    "options": [
+      "Test several sizes and compare",
+      "Match it to the deployment package size",
+      "Always pick the minimum",
+      "Always pick the maximum"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cost depends on memory times duration, so measuring run time at several sizes finds the best balance. Extremes often cost more."
+  },
+  {
+    "id": "AWSDVA-T2-052",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tokens",
+    "stem": "Admins in a Cognito user pool group need extra rights in the app. Where can the API find their group?",
+    "options": [
+      "A header added by CloudFront",
+      "Groups claim in the ID token",
+      "A tag on the user pool",
+      "Scope list in the refresh token"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cognito puts the cognito:groups claim in user pool tokens, so the API reads group membership from the token. A refresh token is not sent to APIs."
+  },
+  {
+    "id": "AWSDVA-T2-053",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Source control",
+    "stem": "A team must later rebuild exactly what shipped as release 2.4. What should mark that commit?",
+    "options": [
+      "A Git tag",
+      "A draft pull request",
+      "A feature branch",
+      "A local stash"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A tag is a fixed label on one commit, unlike a branch that moves as new commits land. A stash never reaches the shared repository."
+  },
+  {
+    "id": "AWSDVA-T2-054",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AI troubleshooting",
+    "stem": "A developer pastes a stack trace into Kiro chat. What can Kiro do with it?",
+    "options": [
+      "Rotate the KMS keys",
+      "Roll back the stack itself",
+      "Raise the account's quotas",
+      "Suggest likely causes and fixes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An AI coding assistant can read the error and code and propose causes and changes for the developer to review. Account settings stay with the developer."
+  },
+  {
+    "id": "AWSDVA-T2-055",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AI-assisted development",
+    "stem": "A developer wants Kiro to run the unit tests each time a source file is saved. Which feature fits?",
+    "options": [
+      "MCP server",
+      "Feature spec",
+      "Steering file",
+      "Agent hook on file save"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Kiro hooks run an action when an event happens, such as saving a file. Specs plan work and steering files hold standing rules."
+  },
+  {
+    "id": "AWSDVA-T2-056",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaAiSec",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Input and output filtering",
+    "stem": "A RAG app should run its guardrail on the user's question, not on the retrieved documents. What does it use?",
+    "options": [
+      "A custom word filter",
+      "Input tags around user text",
+      "A second guardrail version for documents",
+      "A denied topic list"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Tagging the user input tells the guardrail to evaluate only that part of the prompt. Extra policies would still run on the whole input."
+  },
+  {
+    "id": "AWSDVA-T2-057",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "DynamoDB writes",
+    "stem": "Two users may update the same item at once. How can code avoid overwriting a newer version?",
+    "options": [
+      "A Scan of the table before each update",
+      "Condition on a version number",
+      "Strongly consistent reads before writing",
+      "More write capacity"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A condition expression that checks the expected version makes the write fail if someone else changed the item first, which is optimistic locking. Consistent reads do not stop a later overwrite."
+  },
+  {
+    "id": "AWSDVA-T2-058",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Event source mappings",
+    "select": 2,
+    "stem": "Which two sources does Lambda read through an event source mapping? (Choose two.)",
+    "options": [
+      "Amazon SNS",
+      "Amazon SQS",
+      "Amazon Kinesis Data Streams",
+      "Amazon API Gateway",
+      "Amazon S3"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Lambda polls queues and streams through event source mappings. S3, SNS and API Gateway push events by invoking the function themselves."
+  },
+  {
+    "id": "AWSDVA-T2-059",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Data keys",
+    "select": 2,
+    "stem": "Which two does a KMS GenerateDataKey response include? (Choose two.)",
+    "options": [
+      "Encrypted data key",
+      "The key policy",
+      "A certificate chain",
+      "KMS key material",
+      "Plaintext data key"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "explanation": "GenerateDataKey returns a plaintext copy to use right away and a copy encrypted under the KMS key to store. KMS key material never leaves KMS."
+  },
+  {
+    "id": "AWSDVA-T2-060",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Testing",
+    "select": 2,
+    "stem": "Which two belong in a CodeBuild buildspec for a test stage? (Choose two.)",
+    "options": [
+      "AppSpec lifecycle hooks",
+      "Commands that run the tests",
+      "A reports section for results",
+      "API Gateway stage variables",
+      "ECR lifecycle rules"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "A buildspec lists build phase commands and can publish test results through report groups. AppSpec files belong to CodeDeploy."
+  },
+  {
+    "id": "AWSDVA-T2-061",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Caching",
+    "select": 2,
+    "stem": "Which two reduce load on a DynamoDB table from repeated reads of the same items? (Choose two.)",
+    "options": [
+      "DAX in front of the table",
+      "Parallel Scan operations",
+      "Strongly consistent reads",
+      "An ElastiCache layer",
+      "Larger item sizes"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Both caches serve repeated reads from memory instead of the table. Strongly consistent reads cost more capacity, not less."
+  },
+  {
+    "id": "AWSDVA-T2-062",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Authorizers",
+    "select": 2,
+    "stem": "Which two can authorize calls to an API Gateway REST API? (Choose two.)",
+    "options": [
+      "Security group rule",
+      "Lambda authorizer",
+      "KMS key policy",
+      "S3 bucket policy",
+      "IAM with SigV4 signing"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "REST APIs can use IAM authorization, Lambda authorizers or Cognito user pool authorizers. Key policies and bucket policies govern other services."
+  },
+  {
+    "id": "AWSDVA-T2-063",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Container deployments",
+    "select": 2,
+    "stem": "Which two settings does an ECS task definition hold? (Choose two.)",
+    "options": [
+      "Container image and tag",
+      "Auto Scaling policy",
+      "Load balancer listener",
+      "Number of running tasks in the service",
+      "CPU and memory for the task"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "explanation": "The task definition describes containers, images and resources. Desired count, load balancer and scaling belong to the service."
+  },
+  {
+    "id": "AWSDVA-T2-064",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Debugging",
+    "select": 2,
+    "stem": "API Gateway returns 502 for a Lambda proxy integration. Which two steps help find the cause? (Choose two.)",
+    "options": [
+      "Rotate the API key",
+      "Read the function's logs",
+      "Raise the stage cache TTL setting",
+      "Check the response format",
+      "Add a usage plan"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "A 502 with proxy integration often means the function returned a malformed response or failed, which its logs show. Caching and keys do not cause it."
+  },
+  {
+    "id": "AWSDVA-T2-065",
+    "section": "dva",
+    "test": 2,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Managed AI services",
+    "stem": "A Lambda function must send the same chat request to different Bedrock models with one code path. Which API fits?",
+    "options": [
+      "Converse API",
+      "ApplyGuardrail API",
+      "ListFoundationModels",
+      "CreateModelCustomizationJob"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Converse gives one message format across supported models, so switching models changes only the model ID. InvokeModel needs each model's own request body."
+  },
+  {
+    "id": "AWSDVA-D-001",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Decoupling",
+    "stem": "Which sign shows that two services are tightly coupled?",
+    "options": [
+      "They share one VPC",
+      "They use different programming languages",
+      "One fails when the other is down",
+      "They write logs to one shared log group"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Tight coupling means one component depends on the other being available at that moment. Language, network or logging choices do not make that dependency."
+  },
+  {
+    "id": "AWSDVA-D-002",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Concurrency",
+    "stem": "During an incident, a team must stop a function from running without deleting it. What should it set?",
+    "options": [
+      "Reserved concurrency of zero",
+      "Timeout of one second",
+      "Memory of 128 MB",
+      "Provisioned concurrency of zero"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Reserved concurrency of zero throttles every invocation; async events then go to the DLQ or on-failure destination. A short timeout still starts the function."
+  },
+  {
+    "id": "AWSDVA-D-003",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DynamoDB capacity",
+    "stem": "An app writes 10 items a second, each 2.5 KB. How many write capacity units are needed?",
+    "options": [
+      "25 WCUs",
+      "30 WCUs",
+      "10 WCUs",
+      "20 WCUs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each write rounds up to the next 1 KB, so 2.5 KB uses 3 WCUs; 10 writes a second need 30. 25 forgets the rounding."
+  },
+  {
+    "id": "AWSDVA-D-004",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Programmatic access",
+    "stem": "A developer's CLI must use separate credentials for a test account. What fits?",
+    "options": [
+      "An EC2 key pair",
+      "A new IAM password",
+      "A second root user",
+      "A named CLI profile"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Named profiles keep several credential sets in the CLI config, chosen with --profile. Key pairs are for SSH, not API calls."
+  },
+  {
+    "id": "AWSDVA-D-005",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Data keys",
+    "stem": "A service creates data keys now but another host will encrypt with them hours later. Which call fits?",
+    "options": [
+      "GenerateRandom",
+      "CreateKey",
+      "ReEncrypt",
+      "GenerateDataKeyWithoutPlaintext"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "GenerateDataKeyWithoutPlaintext returns only the encrypted data key, so no plaintext key sits around until it is needed. The later host calls Decrypt to use it."
+  },
+  {
+    "id": "AWSDVA-D-006",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaAiSec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sensitive data in logs",
+    "stem": "A team assumes Bedrock automatically keeps every prompt and response for audits. What is the default?",
+    "options": [
+      "Logs go to S3 by default",
+      "Invocation logging is off",
+      "Logs kept for 30 days",
+      "Logs go to CloudTrail"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Model invocation logging is disabled until you configure it with an S3 or CloudWatch Logs destination. CloudTrail records API calls, not full prompt bodies."
+  },
+  {
+    "id": "AWSDVA-D-007",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AI-generated tests",
+    "stem": "A developer wants Kiro to write unit tests from a feature's acceptance criteria. Where are those criteria?",
+    "options": [
+      "design.md in the same spec folder",
+      "The buildspec file",
+      "requirements.md in the spec",
+      "A steering file"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A Kiro feature spec writes user stories with acceptance criteria in requirements.md, which tests can check. design.md holds the technical design."
+  },
+  {
+    "id": "AWSDVA-D-008",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "CodeDeploy",
+    "stem": "Which EC2 deployment configuration does CodeDeploy use when none is chosen?",
+    "options": [
+      "CodeDeployDefault.ECSAllAtOnce",
+      "CodeDeployDefault.HalfAtATime",
+      "CodeDeployDefault.AllAtOnce",
+      "CodeDeployDefault.OneAtATime"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "With no configuration set, CodeDeploy deploys to one EC2 instance at a time. AllAtOnce is the fastest but riskiest choice."
+  },
+  {
+    "id": "AWSDVA-D-009",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tracing",
+    "stem": "How does the X-Ray SDK on an EC2 instance send trace segments?",
+    "options": [
+      "Records on a Kinesis stream",
+      "UDP to the X-Ray daemon",
+      "HTTPS to CloudTrail",
+      "Writes to CloudWatch Logs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The SDK sends segment documents over UDP to the daemon, which batches them to X-Ray. CloudTrail is not part of tracing."
+  },
+  {
+    "id": "AWSDVA-D-010",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Connection pooling",
+    "stem": "A Lambda function opens a new database connection on every call. What should it do instead?",
+    "options": [
+      "Close it before returning",
+      "Raise the timeout setting",
+      "Reuse one made at init",
+      "Open two per invocation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A connection created during initialization is reused by warm invocations, cutting setup time and database load. Opening more makes the problem worse."
+  },
+  {
+    "id": "AWSDVA-D-011",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Serialization",
+    "stem": "Dates stored as strings in DynamoDB must sort correctly in a range query. Which format fits?",
+    "options": [
+      "Day/month/year text",
+      "ISO 8601 such as 2026-11-23",
+      "Locale-formatted date with month names",
+      "Month name then day"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "ISO 8601 strings sort lexically in date order, so a sort key range works. Day-first or month-name formats sort out of order."
+  },
+  {
+    "id": "AWSDVA-D-012",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Configuration",
+    "stem": "Logs show Task timed out for a file-processing function. What should the developer check first?",
+    "options": [
+      "Its timeout versus run time",
+      "The number of layers",
+      "The handler file name",
+      "The total size of variables"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The function ran longer than its configured timeout, so compare the setting with how long the work takes. The other settings do not end a running invocation."
+  },
+  {
+    "id": "AWSDVA-D-013",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DynamoDB capacity",
+    "stem": "Items are 4 KB. How many RCUs do 10 eventually consistent reads a second need?",
+    "options": [
+      "2.5 RCUs",
+      "20 RCUs",
+      "10 RCUs",
+      "5 RCUs"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An eventually consistent read of up to 4 KB costs half an RCU, so 10 reads need 5. Strongly consistent reads would need 10."
+  },
+  {
+    "id": "AWSDVA-D-014",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Permissions",
+    "stem": "A function only reads one DynamoDB table. Which policy follows least privilege?",
+    "options": [
+      "dynamodb:* on every table",
+      "Read actions on that table ARN",
+      "AdministratorAccess policy",
+      "Read actions on every table in the account"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Granting only the needed actions on the one resource limits damage if the function is misused. Wildcards give far more than it needs."
+  },
+  {
+    "id": "AWSDVA-D-015",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data keys",
+    "stem": "To read an envelope-encrypted file, what does the app send to KMS?",
+    "options": [
+      "Encrypted copy of the data key",
+      "The file's checksum",
+      "The whole encrypted file and its header",
+      "The KMS key material"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "KMS Decrypt returns the plaintext data key, which then decrypts the file locally. The file itself never goes to KMS."
+  },
+  {
+    "id": "AWSDVA-D-016",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaAiSec",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Agent security",
+    "stem": "An agent tool calls a CRM API on behalf of a signed-in user. What credentials should the tool use?",
+    "options": [
+      "One shared admin API key",
+      "No credentials inside a VPC",
+      "That user's delegated token",
+      "The account's root keys"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Acting with the user's own delegated OAuth token keeps the tool to what that user may do. A shared admin key lets any prompt reach any record."
+  },
+  {
+    "id": "AWSDVA-D-017",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Environments",
+    "stem": "An ECS app is managed with AWS Copilot. How does the team add a separate test environment?",
+    "options": [
+      "A new Lambda alias",
+      "A new ECR repository",
+      "A Copilot test environment",
+      "A new Amplify branch"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Copilot environments group the network and cluster for a stage such as test or prod, and services deploy into them. Repositories hold images, not environments."
+  },
+  {
+    "id": "AWSDVA-D-018",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Container deployments",
+    "stem": "How is a new image version rolled out on Amazon EKS?",
+    "options": [
+      "Edit the ECS task definition revision",
+      "Update the Deployment's image",
+      "Change a Lambda alias",
+      "Run an EC2 AppSpec hook"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Changing the image in a Kubernetes Deployment manifest triggers a rolling update of its pods. ECS task definitions belong to Amazon ECS."
+  },
+  {
+    "id": "AWSDVA-D-019",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tracing",
+    "stem": "Tracing every request costs too much at high volume. What reduces it?",
+    "options": [
+      "More function memory",
+      "Fewer subsegments",
+      "Sampling rules",
+      "Shorter log retention"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Sampling rules record a share of requests, such as one per second plus a percentage. Fewer subsegments still trace every request."
+  },
+  {
+    "id": "AWSDVA-D-020",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Concurrency",
+    "stem": "A Java service blocks while waiting on many slow HTTP calls. What improves throughput safely?",
+    "options": [
+      "A larger heap alone",
+      "A bounded thread pool",
+      "Unbounded thread creation",
+      "Sequential calls in a loop"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A bounded pool runs calls in parallel without exhausting memory or downstream limits. Unbounded threads can crash the service under load."
+  },
+  {
+    "id": "AWSDVA-D-021",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "AI-assisted development",
+    "select": 2,
+    "stem": "Besides requirements.md, which two files does a Kiro feature spec produce? (Choose two.)",
+    "options": [
+      "buildspec.yml",
+      "tasks.md",
+      "steering.md",
+      "design.md",
+      "appspec.yml"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "A feature spec captures requirements, a design and an implementation task list. Buildspec and AppSpec files belong to CodeBuild and CodeDeploy."
+  },
+  {
+    "id": "AWSDVA-D-022",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Configuration",
+    "stem": "A function needs a database password at runtime. Where should the password come from?",
+    "options": [
+      "A file in a shared layer",
+      "Secrets Manager at runtime",
+      "A plain environment variable",
+      "An API Gateway stage variable"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Reading the secret from Secrets Manager keeps it out of code and configuration and allows rotation. Stage variables are not meant for credentials."
+  },
+  {
+    "id": "AWSDVA-D-023",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaData",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "DynamoDB keys",
+    "stem": "Writes are throttled even though the table's total capacity is mostly unused. What is the likely cause?",
+    "options": [
+      "Strongly consistent reads",
+      "Items under 1 KB in size",
+      "A hot partition key value",
+      "TTL deleting old items"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Throttling with spare total capacity points to many requests for one key value. Choose a key with more distinct values or add a suffix to spread writes."
+  },
+  {
+    "id": "AWSDVA-D-024",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Assume role",
+    "stem": "A role must be assumable by the Lambda service. Which part of the role allows this?",
+    "options": [
+      "Its trust policy",
+      "Its permissions boundary",
+      "An inline permission policy",
+      "A service control policy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The trust policy names the principals allowed to assume the role, such as lambda.amazonaws.com. Permission policies say what the role can do once assumed."
+  },
+  {
+    "id": "AWSDVA-D-025",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Secret management",
+    "stem": "A custom third-party API token must rotate automatically in Secrets Manager. What performs the rotation?",
+    "options": [
+      "A parameter policy",
+      "A rotation Lambda function",
+      "Managed rotation",
+      "KMS key rotation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Secrets that are not managed by an AWS service rotate through a Lambda function that updates the secret and the service. Managed rotation covers managed secrets only."
+  },
+  {
+    "id": "AWSDVA-D-026",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaAiSec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agent security",
+    "stem": "An agent must recall one user's stated preferences in later sessions but never show them to other users. Which capability stores them?",
+    "options": [
+      "AgentCore Browser",
+      "Kiro steering files",
+      "A shared prompt template",
+      "AgentCore Memory"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AgentCore Memory keeps short-term and long-term memory that persists across sessions, scoped as the app sets it up. A shared template would expose one user's data to everyone."
+  },
+  {
+    "id": "AWSDVA-D-027",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Container images",
+    "stem": "Why tag container images with the Git commit SHA rather than latest?",
+    "options": [
+      "Each deploy maps to known code",
+      "ECR storage costs less",
+      "Images build much faster",
+      "Pulls skip registry authentication checks"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A unique tag ties each running image to the exact commit, which helps rollbacks and debugging. A moving latest tag hides what is deployed."
+  },
+  {
+    "id": "AWSDVA-D-028",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AI in CI/CD",
+    "stem": "A pipeline should use a model to summarize a failed build's logs for the team. What can a CodeBuild step call?",
+    "options": [
+      "Amazon Polly",
+      "AWS Snow Family",
+      "Amazon Bedrock",
+      "AWS Storage Gateway"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A build step can send the log text to a Bedrock model and post the summary. The other services do not generate text summaries."
+  },
+  {
+    "id": "AWSDVA-D-029",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Tracing",
+    "stem": "How is X-Ray tracing turned on for a Lambda function?",
+    "options": [
+      "Reserved concurrency",
+      "Active tracing in its settings",
+      "A VPC interface endpoint",
+      "A larger timeout"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Turning on active tracing has Lambda send trace data for each invocation. Network or concurrency settings do not affect tracing."
+  },
+  {
+    "id": "AWSDVA-D-030",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AI optimization",
+    "stem": "A team asks an AI assistant to find slow code paths. What should it be given?",
+    "options": [
+      "Profiling and trace data",
+      "Last month's invoice",
+      "Only the README and license files",
+      "Old commit messages"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Profiles and traces show where time is spent, which the assistant can relate to code. The other inputs do not measure performance."
+  },
+  {
+    "id": "AWSDVA-D-031",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Event-driven patterns",
+    "stem": "A web app must push live order updates to browsers without polling. Which API type fits?",
+    "options": [
+      "S3 static website",
+      "API Gateway WebSocket API",
+      "REST API with caching",
+      "SQS polling from the browser"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A WebSocket API keeps a two-way connection so the server can send messages to clients. A REST API answers only when the client asks."
+  },
+  {
+    "id": "AWSDVA-D-032",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Configuration",
+    "stem": "Where should a function create its SDK clients so warm invocations can reuse them?",
+    "options": [
+      "In a layer's README",
+      "In a destination",
+      "Outside the handler",
+      "Inside the handler"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Code outside the handler runs once per execution environment, so clients and connections carry over to later invocations. Creating them in the handler repeats the work."
+  },
+  {
+    "id": "AWSDVA-D-033",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Indexes",
+    "stem": "Queries on a GSI need only the key attributes, and table writes are heavy. Which projection fits?",
+    "options": [
+      "KEYS_ONLY",
+      "INCLUDE with every field",
+      "ALL",
+      "The table's full item"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "KEYS_ONLY keeps the index smallest, so each write costs the least to copy into it. ALL duplicates the whole item."
+  },
+  {
+    "id": "AWSDVA-D-034",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Permissions",
+    "stem": "S3 must be allowed to invoke a function for new uploads. Where is that permission granted?",
+    "options": [
+      "An S3 access point policy",
+      "Function's resource-based policy",
+      "Bucket's lifecycle rule",
+      "Function's execution role"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A resource-based policy on the function lets the S3 service invoke it. The execution role controls what the function itself may call."
+  },
+  {
+    "id": "AWSDVA-D-035",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Key rotation",
+    "stem": "What changes when a customer managed KMS key is rotated?",
+    "options": [
+      "All existing ciphertext",
+      "Its key policy",
+      "Its key ID, ARN and alias names",
+      "Only its key material"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Rotation adds new key material while the key ID, ARN and policy stay the same, and old ciphertext still decrypts. Nothing is re-encrypted."
+  },
+  {
+    "id": "AWSDVA-D-036",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaAiSec",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Model access",
+    "stem": "An organization must block one model in every member account. Where should the deny go?",
+    "options": [
+      "A Bedrock guardrail",
+      "Each developer's inline policy",
+      "A service control policy",
+      "The invocation logging setup"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An SCP applies the deny to every principal in the member accounts at once. Guardrails filter content, not who may call a model."
+  },
+  {
+    "id": "AWSDVA-D-037",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dependencies",
+    "stem": "A team needs a private npm registry that also caches public packages. Which service fits?",
+    "options": [
+      "Amazon S3 website",
+      "Amazon ECR",
+      "AWS CodeArtifact",
+      "AWS CodeBuild"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "CodeArtifact hosts private package repositories and can proxy public registries such as npmjs. ECR stores container images."
+  },
+  {
+    "id": "AWSDVA-D-038",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "IaC templates",
+    "stem": "Which CDK command turns app code into a CloudFormation template without deploying?",
+    "options": [
+      "cdk synth",
+      "cdk destroy",
+      "cdk bootstrap",
+      "cdk deploy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "cdk synth writes the CloudFormation template to the cloud assembly. cdk deploy synthesizes and then deploys."
+  },
+  {
+    "id": "AWSDVA-D-039",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Querying logs",
+    "stem": "Which Logs Insights command counts events in 5-minute bins?",
+    "options": [
+      "sort @timestamp desc",
+      "fields @timestamp, @message",
+      "limit 5",
+      "stats count(*) by bin(5m)"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The stats command aggregates, and bin() groups results into time buckets. fields only chooses which fields to show."
+  },
+  {
+    "id": "AWSDVA-D-040",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Caching",
+    "stem": "A CloudFront cache hit ratio is low because one query string changes on every request. What helps?",
+    "options": [
+      "Add more origins",
+      "Turn off compression on the behavior",
+      "Leave it out of the cache key",
+      "Set the TTL to zero"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If a changing parameter is in the cache key, every request looks new. Leaving it out lets requests share cached objects; a zero TTL disables caching."
+  },
+  {
+    "id": "AWSDVA-D-041",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "API management",
+    "stem": "Which REST API feature limits each customer to an agreed request rate and quota?",
+    "options": [
+      "Stage variables",
+      "Usage plan with API keys",
+      "Mapping template",
+      "Request validator"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Usage plans attach throttling and quotas to API keys given to each customer. Validators check request content, not volume."
+  },
+  {
+    "id": "AWSDVA-D-042",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "SDK",
+    "stem": "SDK code creates a DynamoDB table and must wait until it is ACTIVE before writing. What should it use?",
+    "options": [
+      "A Scan inside a loop",
+      "A CloudWatch alarm",
+      "A fixed one-minute sleep",
+      "The SDK's table waiter"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SDK waiters poll the resource state with sensible delays until it is ready. A fixed sleep may be too short or waste time."
+  },
+  {
+    "id": "AWSDVA-D-043",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Destinations",
+    "stem": "An async function must not retry failed events, because each retry sends a customer another email. What should be set?",
+    "options": [
+      "A longer timeout",
+      "Reserved concurrency of one",
+      "Retry attempts set to zero",
+      "A batch size of one"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Asynchronous invocation retries twice by default; setting retry attempts to zero sends failures straight to the destination or DLQ. Concurrency limits do not stop retries."
+  },
+  {
+    "id": "AWSDVA-D-044",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaData",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Choosing data stores",
+    "stem": "An app stores user-uploaded videos of several gigabytes each. Where should the files go?",
+    "options": [
+      "ElastiCache keys",
+      "DynamoDB items",
+      "RDS BLOB columns",
+      "Amazon S3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "S3 stores large objects durably at low cost; the database keeps only a pointer. DynamoDB items are limited to 400 KB."
+  },
+  {
+    "id": "AWSDVA-D-045",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "MFA",
+    "stem": "An IAM policy should allow deleting objects only when the caller signed in with MFA. Which condition key fits?",
+    "options": [
+      "aws:PrincipalTag",
+      "aws:SourceIp",
+      "aws:SecureTransport",
+      "aws:MultiFactorAuthPresent"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "aws:MultiFactorAuthPresent is true when the request used MFA-authenticated credentials. SecureTransport checks for TLS, not MFA."
+  },
+  {
+    "id": "AWSDVA-D-046",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Server-side encryption",
+    "stem": "An object was uploaded with SSE-C. What must a client send to download it?",
+    "options": [
+      "No key; S3 stores it",
+      "The same customer-provided key",
+      "Only the KMS key ID",
+      "A new random data key"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "S3 does not keep SSE-C keys, so every GET must include the key used at upload. A KMS key ID applies to SSE-KMS."
+  },
+  {
+    "id": "AWSDVA-D-047",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaAiSec",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Input and output filtering",
+    "stem": "A model's replies must never insult users. Which control fits?",
+    "options": [
+      "Lower max tokens",
+      "Content filter on model output",
+      "Content filter on input only",
+      "Word filter on the prompt"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Guardrails content filters can screen model responses for categories such as insults. Filtering only the input leaves the reply unchecked."
+  },
+  {
+    "id": "AWSDVA-D-048",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Environment configuration",
+    "stem": "An app loads every production setting stored under /myapp/prod/. Which Parameter Store call fits?",
+    "options": [
+      "GetSecretValue",
+      "DescribeParameters",
+      "GetParameter",
+      "GetParametersByPath"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "GetParametersByPath returns all parameters under a hierarchy path. GetParameter fetches one name, and DescribeParameters returns metadata, not values."
+  },
+  {
+    "id": "AWSDVA-D-049",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "IaC templates",
+    "stem": "Where does sam deploy put a .zip Lambda package before CloudFormation uses it?",
+    "options": [
+      "An Amazon EFS share",
+      "A Systems Manager document",
+      "An Amazon S3 bucket",
+      "A CodeArtifact repository"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SAM uploads .zip artifacts to S3 and points the template at them. Image packages go to ECR instead."
+  },
+  {
+    "id": "AWSDVA-D-050",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Debugging",
+    "stem": "A developer needs to know who deleted an S3 bucket yesterday. Where is that recorded?",
+    "options": [
+      "CloudWatch metrics",
+      "CloudTrail event history",
+      "S3 Lifecycle reports",
+      "X-Ray traces"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "CloudTrail records management API calls such as DeleteBucket with the caller's identity. Metrics show numbers, not who acted."
+  },
+  {
+    "id": "AWSDVA-D-051",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Messaging",
+    "stem": "Lambda reading from SQS overwhelms a downstream API. What caps the pollers on the queue?",
+    "options": [
+      "A larger batch size",
+      "A shorter visibility timeout on the queue",
+      "A second queue",
+      "Maximum concurrency on the mapping"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Maximum concurrency on the SQS event source mapping limits how many function instances it invokes. A larger batch sends even more work at once."
+  },
+  {
+    "id": "AWSDVA-D-052",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Managed AI services",
+    "stem": "A chat app should show a Bedrock model's answer word by word as it is generated. Which call fits?",
+    "options": [
+      "GetFoundationModel",
+      "Converse",
+      "ApplyGuardrail",
+      "ConverseStream"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "ConverseStream returns the response in chunks as tokens are produced. Converse returns only when the whole answer is ready."
+  },
+  {
+    "id": "AWSDVA-D-053",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Event source mappings",
+    "stem": "A function reading a Kinesis stream should skip records that failed and are now over an hour old. Which setting fits?",
+    "options": [
+      "Maximum record age",
+      "Parallelization factor",
+      "Batch window",
+      "Starting position"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Maximum record age tells the event source mapping to discard records older than the limit, ideally to an on-failure destination. The batch window only controls how long records are gathered."
+  },
+  {
+    "id": "AWSDVA-D-054",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaData",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Caching",
+    "stem": "A cache-aside design sometimes returns stale data after updates. What simple change limits how stale it gets?",
+    "options": [
+      "A bigger cache node",
+      "A TTL on cached keys",
+      "Reading from a replica",
+      "Turning off eviction"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A time to live makes entries expire so the next read reloads them from the database. A larger node keeps stale entries around longer."
+  },
+  {
+    "id": "AWSDVA-D-055",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Tokens",
+    "stem": "A backend service must call an API protected by Cognito with no user signed in. Which OAuth grant fits?",
+    "options": [
+      "Authorization code grant",
+      "Refresh token grant",
+      "Implicit grant",
+      "Client credentials grant"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Machine-to-machine access uses an app client with a secret and the client credentials grant, which returns only an access token. Authorization code needs a user to sign in."
+  },
+  {
+    "id": "AWSDVA-D-056",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Secret management",
+    "stem": "An ECS task needs a database password as an environment variable. What should the task definition use?",
+    "options": [
+      "A public S3 object URL",
+      "Plain value in the environment section",
+      "A Lambda layer ARN",
+      "secrets entry with a secret ARN"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The secrets section of a container definition injects a Secrets Manager or Parameter Store value when the task starts. A plain environment value shows in the task definition."
+  },
+  {
+    "id": "AWSDVA-D-057",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaAiSec",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Sensitive data in logs",
+    "stem": "Developers must not see raw prompts in invocation logs, but auditors must. What fits?",
+    "options": [
+      "A separate log group per developer",
+      "logs:Unmask for auditors only",
+      "Delete logs after a day",
+      "Disable model invocation logging entirely"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With a data protection policy masking the logs, only principals granted logs:Unmask see the original values. Disabling logging would remove the auditors' record too."
+  },
+  {
+    "id": "AWSDVA-D-058",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Testing",
+    "stem": "A developer wants to call API routes on localhost before deploying a SAM app. Which command fits?",
+    "options": [
+      "cdk synth",
+      "sam local start-api",
+      "sam sync",
+      "sam build"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "sam local start-api runs a local HTTP server that invokes the functions behind each route. sam build only prepares the artifacts."
+  },
+  {
+    "id": "AWSDVA-D-059",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deployment strategies",
+    "stem": "An Elastic Beanstalk update must launch new instances and keep the old ones until the new pass health checks. Which policy?",
+    "options": [
+      "Rolling",
+      "Rolling with additional batch",
+      "All at once",
+      "Immutable"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Immutable deployments start a second Auto Scaling group and switch only when the new instances are healthy. Rolling updates change existing instances."
+  },
+  {
+    "id": "AWSDVA-D-060",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Structured logging",
+    "stem": "How can logs from several services be tied to one user request?",
+    "options": [
+      "Raise log retention for every group",
+      "Use one new log group for each day",
+      "Log only the errors",
+      "Log a shared correlation ID"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Passing one ID through every service and logging it lets queries join the events for a request. Logging only errors loses the path."
+  },
+  {
+    "id": "AWSDVA-D-061",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Concurrency",
+    "stem": "A high-volume, short, idempotent workflow costs too much on Step Functions Standard. What fits?",
+    "options": [
+      "Map state on Standard",
+      "Activity workers",
+      "Express workflow",
+      "Standard with more retries"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Express workflows run up to five minutes and bill by executions and duration, which suits high-volume short work. Standard bills per state transition."
+  },
+  {
+    "id": "AWSDVA-D-062",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Streaming",
+    "stem": "Where does a Kinesis Client Library application keep its shard leases and checkpoints?",
+    "options": [
+      "An SQS queue",
+      "A DynamoDB table",
+      "The stream itself",
+      "An S3 object"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The KCL tracks which worker owns each shard and how far it has read in a DynamoDB lease table. The stream holds records, not consumer positions."
+  },
+  {
+    "id": "AWSDVA-D-063",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Invocation",
+    "stem": "A webhook needs a simple HTTPS endpoint for one function, with no API management features. What fits?",
+    "options": [
+      "Lambda function URL",
+      "API Gateway WebSocket API",
+      "CloudFront signed URL",
+      "Application Load Balancer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A function URL gives a dedicated HTTPS endpoint with no other resources to set up. A load balancer adds cost and setup the webhook does not need."
+  },
+  {
+    "id": "AWSDVA-D-064",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaData",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Choosing data stores",
+    "stem": "Heavy report queries slow an RDS database that also serves the app. What takes the reads off it?",
+    "options": [
+      "A read replica for the reports",
+      "Automated daily backups",
+      "A larger storage volume",
+      "Multi-AZ standby instance"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A read replica serves read-only queries from a copy of the data, so the primary keeps its capacity for the app. A Multi-AZ standby cannot serve reads."
+  },
+  {
+    "id": "AWSDVA-D-065",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Presigned URLs",
+    "stem": "In an unversioned bucket, a presigned PUT URL uploads to a key that already exists. What happens?",
+    "options": [
+      "A renamed copy is kept",
+      "Both files are merged",
+      "The upload is rejected",
+      "The old object is replaced"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "S3 overwrites an existing object with the same key when versioning is off. With versioning on, the old object becomes a previous version."
+  },
+  {
+    "id": "AWSDVA-D-066",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "In transit",
+    "stem": "How can a Lambda function make sure its RDS for PostgreSQL connection is encrypted?",
+    "options": [
+      "Turn on SSE-KMS for RDS",
+      "Use a larger instance class",
+      "Require TLS with the RDS CA",
+      "Add a security group rule"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Connecting with TLS and verifying the RDS certificate authority encrypts the traffic. Storage encryption protects data at rest, and security groups only filter traffic."
+  },
+  {
+    "id": "AWSDVA-D-067",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaAiSec",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Agent security",
+    "stem": "A web page retrieved by an agent tells it to email customer data elsewhere. What most reduces the risk?",
+    "options": [
+      "Log the page text in full",
+      "Limit which tools it may call",
+      "Retrieve more web pages to compare",
+      "Raise the model's temperature setting"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Indirect prompt injection is contained by allowing only the tools and actions a task needs. Logging records the attack but does not stop the email."
+  },
+  {
+    "id": "AWSDVA-D-068",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Environment configuration",
+    "stem": "A Parameter Store value is injected into ECS tasks as an environment variable and then changed. When do tasks see the new value?",
+    "options": [
+      "On the next request",
+      "After it is deleted",
+      "Within one minute",
+      "When new tasks start"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Environment variables from Parameter Store are resolved at task start, so running tasks need a new deployment. AppConfig Agent can serve live values instead."
+  },
+  {
+    "id": "AWSDVA-D-069",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "IaC templates",
+    "stem": "A stack update must never replace the production database resource. What protects it?",
+    "options": [
+      "Nested stacks",
+      "Drift detection",
+      "A change set",
+      "A stack policy denying it"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A stack policy can deny update actions such as Update:Replace on chosen resources. A change set only previews the update."
+  },
+  {
+    "id": "AWSDVA-D-070",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Deployment failures",
+    "stem": "A stack shows UPDATE_ROLLBACK_COMPLETE. Where is the root cause usually shown?",
+    "options": [
+      "First failed event in stack events",
+      "The default Logs Insights query results",
+      "The X-Ray trace map",
+      "The Outputs section of the template file"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The earliest FAILED event in the stack's event list names the resource and the reason. Later events are mostly the rollback."
+  },
+  {
+    "id": "AWSDVA-D-071",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Caching",
+    "stem": "A REST API returns the same catalog response for minutes at a time. What cuts backend calls?",
+    "options": [
+      "Request validation",
+      "Stage caching with a TTL",
+      "Usage plan throttling",
+      "Binary media types"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "API Gateway stage caching serves repeated GET responses until the TTL expires. Throttling limits callers but does not reuse responses."
+  },
+  {
+    "id": "AWSDVA-D-072",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Decoupling",
+    "stem": "Why does putting an SQS queue in front of a slow worker help during traffic spikes?",
+    "options": [
+      "It removes duplicate messages",
+      "It speeds up the worker's code",
+      "It encrypts the worker's disk",
+      "It buffers requests for later"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A queue absorbs bursts and lets the worker drain them at its own pace. A standard queue does not remove duplicates or make code faster."
+  },
+  {
+    "id": "AWSDVA-D-073",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaLambda",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "Packaging",
+    "select": 2,
+    "stem": "Which two deployment package types can a Lambda function use? (Choose two.)",
+    "options": [
+      ".zip file archive",
+      "AMI snapshot",
+      "EBS volume",
+      "Container image",
+      "CloudFormation stack"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Functions are deployed as .zip archives or as container images in Amazon ECR. AMIs and EBS volumes are for EC2."
+  },
+  {
+    "id": "AWSDVA-D-074",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaData",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Query and Scan",
+    "select": 2,
+    "stem": "Which two statements about a DynamoDB Scan are true? (Choose two.)",
+    "options": [
+      "Filters do not cut read cost",
+      "It is cheaper than a Query",
+      "It needs a partition key value",
+      "It reads every item in the table",
+      "It returns items in sort key order"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "A Scan reads the whole table or index and charges for everything it reads; a filter only removes items from the response. A Query needs a partition key value."
+  },
+  {
+    "id": "AWSDVA-D-075",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaAuth",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Presigned URLs",
+    "select": 2,
+    "stem": "Which two statements about S3 presigned URLs are true? (Choose two.)",
+    "options": [
+      "They need the user to sign in",
+      "They allow only one use",
+      "They grant access to the bucket",
+      "They work until they expire",
+      "They carry the signer's permissions"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "A presigned URL acts with the signer's rights for one object and operation, and can be reused until it expires. The person using it needs no AWS credentials."
+  },
+  {
+    "id": "AWSDVA-D-076",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaEncrypt",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Sensitive data",
+    "select": 2,
+    "stem": "Which two help limit who can read sensitive attributes in DynamoDB? (Choose two.)",
+    "options": [
+      "Fine-grained IAM conditions",
+      "Client-side attribute encryption",
+      "A TTL attribute",
+      "More read capacity",
+      "Global tables"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "IAM conditions can restrict items and attributes, and client-side encryption keeps values unreadable without the key. Capacity and replication do not control access."
+  },
+  {
+    "id": "AWSDVA-D-077",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaAiSec",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Agent security",
+    "select": 2,
+    "stem": "Which two help secure an AI agent's actions? (Choose two.)",
+    "options": [
+      "One shared admin key for all of its tools",
+      "Approval for high-impact actions",
+      "Public tool endpoints",
+      "Per-tool authorization rules",
+      "Unlimited agent memory"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Authorizing each tool call and requiring human approval for sensitive actions keep an agent within bounds. A shared admin key gives every tool every right."
+  },
+  {
+    "id": "AWSDVA-D-078",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaBuild",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Mock APIs",
+    "select": 2,
+    "stem": "Which two can stand in for an external HTTP dependency during tests? (Choose two.)",
+    "options": [
+      "Provisioned concurrency",
+      "An ECR lifecycle policy",
+      "A stubbed client in unit tests",
+      "A KMS key alias",
+      "API Gateway mock integration"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "A mock integration returns fixed responses with no backend, and a stub replaces the client inside unit tests. The other options do not simulate a service."
+  },
+  {
+    "id": "AWSDVA-D-079",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaDeploy",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Rollback",
+    "select": 2,
+    "stem": "Which two help undo a bad Lambda release quickly? (Choose two.)",
+    "options": [
+      "Delete and recreate the function",
+      "Alarm-based CodeDeploy rollback",
+      "Point the alias at the old version",
+      "Clear the /tmp folder",
+      "Raise the function's memory"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Callers using an alias move back as soon as it points at the earlier version, and CodeDeploy can roll back on an alarm. Recreating the function is slow and loses history."
+  },
+  {
+    "id": "AWSDVA-D-080",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaObserve",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Tracing",
+    "select": 2,
+    "stem": "Which two describe an X-Ray annotation? (Choose two.)",
+    "options": [
+      "A key-value pair on a segment",
+      "Indexed for filter expressions",
+      "Stores large objects and lists",
+      "Sent only to CloudTrail",
+      "Never searchable in traces"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Annotations are simple key-value pairs that X-Ray indexes for searching. Metadata is for larger values that do not need to be searched."
+  },
+  {
+    "id": "AWSDVA-D-081",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaOptimize",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Messaging",
+    "select": 2,
+    "stem": "Which two lower SQS request costs for a busy consumer? (Choose two.)",
+    "options": [
+      "DeleteMessageBatch after work",
+      "Shorter message retention",
+      "Receive up to 10 per call",
+      "Switching the queue to a FIFO queue type",
+      "Adding message timers"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Receiving and deleting in batches handles more messages per request. Retention and timers change storage and delivery, not the number of calls."
+  },
+  {
+    "id": "AWSDVA-D-082",
+    "section": "dva",
+    "test": 0,
+    "module": 1,
+    "domain": "dvaCode",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Retries",
+    "stem": "Several clients retry a failed call at exactly the same intervals and keep colliding. What fixes this?",
+    "options": [
+      "Retry with no delay",
+      "Lower the SDK timeout",
+      "Use a fixed short delay",
+      "Add random jitter to waits"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Jitter randomizes each client's wait so retries spread out instead of arriving together. A fixed delay keeps them in step."
+  }
+]

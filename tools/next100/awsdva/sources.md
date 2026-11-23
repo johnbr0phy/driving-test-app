@@ -82,6 +82,19 @@ All items are original, written from AWS's public DVA-C03 exam guide and AWS pro
 - **Kiro specs**, fetched 2026-11-23. https://kiro.dev/docs/specs/
   Feature specs produce requirements.md, design.md and tasks.md; bugfix specs; property-based correctness checks; tasks run individually or in dependency-ordered waves.
 
+- **AWS X-Ray concepts**, fetched 2026-11-23. https://docs.aws.amazon.com/xray/latest/devguide/xray-concepts.html
+  Segments and subsegments; sampling (default first request each second plus 5 percent); annotations are indexed key-value pairs for filter expressions, metadata is not indexed; errors 4xx, faults 5xx, throttles 429; X-Amzn-Trace-Id header.
+- **Rotate AWS KMS keys**, fetched 2026-11-23. https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html
+  Rotation changes only the key material; key ID, ARN and policy stay; old ciphertext is not re-encrypted and decrypts with its original material; data keys are not rotated.
+- **What's in a Secrets Manager secret**, fetched 2026-11-23. https://docs.aws.amazon.com/secretsmanager/latest/userguide/whats-in-a-secret.html
+  Staging labels AWSCURRENT (returned by default), AWSPREVIOUS, AWSPENDING during rotation.
+- **Elastic Beanstalk deployments**, fetched 2026-11-23. https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.deploy-existing-version.html
+  All at once, rolling, rolling with an additional batch, immutable (new Auto Scaling group, old kept until healthy), traffic splitting; blue/green by CNAME swap.
+- **Handling errors for an SQS event source in Lambda**, fetched 2026-11-23. https://docs.aws.amazon.com/lambda/latest/dg/services-sqs-errorhandling.html
+  By default a failed batch returns every message; ReportBatchItemFailures with batchItemFailures makes only failed messages visible again.
+- **Cognito access token**, fetched 2026-11-23. https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-user-pools-using-the-access-token.html
+  Access token carries scope and cognito:groups and authorizes API operations; M2M tokens have no username or groups.
+
 ## Not confirmed or left out
 - Prices, quotas that changed in 2026 (Lambda timeout, async payload, SQS message size) and per-request rates are not asked. Exam fees appear only on the landing.
 - AWS tools that are not on the in-scope list (Amazon Q Developer, CodeGuru, Amazon Comprehend, Amazon Macie) are never keyed. The bank's AI-tool items use Kiro, Bedrock, Bedrock AgentCore and CloudWatch.

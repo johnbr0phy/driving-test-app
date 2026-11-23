@@ -6986,6 +6986,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "SCI's RES5 exam page and MAS Notice FAA-N26, checked November 2026",
     source: { name: "Singapore College of Insurance: RES5 exam details", url: "https://www.scicollege.org.sg/Exam/ExamDetails/RES5" },
   },
+  sgm9: {
+    answer:
+      "CMFAS M9, Life Insurance and Investment-Linked Policies, is the module set by the Singapore College of Insurance (SCI) on life insurance products, investment-linked policies (ILPs) and how they work. MAS Notice FAA-N26 lists it, with RES5 and M9A, for representatives who advise on or arrange life policies, and the combined CM-LIP module covers M9 and M9A together. The paper is 100 multiple-choice questions in 2 hours with a passing grade of 70%, one mark for each correct answer and no marks taken off for wrong or blank answers. It is a closed-book computer screen examination in English, and its 17 chapters run from risk and premiums through traditional products, riders, participating policies and ILPs to claims, contract and agency law, income tax and nominations.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice" },
+      { label: "Time", value: "2 hours" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Marking", value: "1 mark each, no deduction for wrong or blank answers" },
+      { label: "Format", value: "Closed-book computer screen exam, in English" },
+      { label: "Syllabus", value: "17 chapters; study text 7th Edition for exams from 22 September 2026" },
+      { label: "Run by", value: "Singapore College of Insurance, under MAS Notice FAA-N26" },
+    ],
+    basedOn: "SCI's M9 exam page, SCI's study text notice and MAS Notice FAA-N26, checked November 2026",
+    source: { name: "Singapore College of Insurance: M9 exam details", url: "https://www.scicollege.org.sg/Exam/ExamDetails/M9" },
+  },
   sgvl: {
     answer:
       "In Singapore, anyone who drives a taxi or private hire car for hire needs a vocational licence from the Land Transport Authority (LTA): a Taxi Driver's Vocational Licence (TDVL), which covers taxis and private hire cars, or a Private Hire Car Driver's Vocational Licence (PDVL), which covers private hire cars only. Applicants must be Singapore Citizens aged at least 30 who have held a class 3 or 3A licence for more than a year. After LTA approves the application they attend the vocational licence course at an LTA-listed provider and sit an e-test at an LTA-appointed test centre: three papers on road safety and passenger engagement, rules and regulations, and routes. LTA does not publish the question count or pass mark. The licence is valid for three years.",

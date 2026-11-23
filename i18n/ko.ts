@@ -3147,6 +3147,17 @@ export const ko: TranslationKeys = {
     sgm5Products: "ILPs, CIS, Market Conduct & CPF",
     sgm5Ethics: "Ethics, Professionalism & Fair Dealing",
     sgm5Skills: "Advisory Skills & Financial Planning",
+    // sgm9
+    sgm9Risk: "Risk & Setting Premiums",
+    sgm9Traditional: "Classification & Traditional Products",
+    sgm9Riders: "Riders (Supplementary Benefits)",
+    sgm9Par: "Participating Policies",
+    sgm9Ilp: "ILPs & Investment-Linked Sub-Funds",
+    sgm9IlpCalc: "ILP Computations",
+    sgm9Annuity: "Annuities & Other Products",
+    sgm9Service: "Underwriting, Policy Services & Claims",
+    sgm9Law: "Insurance Contract & Law of Agency",
+    sgm9TaxNom: "Income Tax & Nominations",
     // sgvl
     sgvlRoadSafety: "On-the-Road Safety",
     sgvlPassenger: "Passenger Engagement & Handling",

@@ -1050,6 +1050,14 @@
         "pr": 963,
         "findings": 10
       }
+    ],
+    "osha30": [
+      {
+        "date": "2026-11-22",
+        "kind": "blind review at build",
+        "pr": null,
+        "findings": 2
+      }
     ]
   },
   "pendingReviews": {

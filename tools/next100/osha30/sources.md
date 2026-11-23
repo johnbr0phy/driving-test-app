@@ -118,6 +118,24 @@ says so. A separate General Industry bank could follow later.
 - OSHA, "Heat", https://www.osha.gov/heat-exposure: heat stroke is a medical emergency needing
   immediate attention.
 
+## Added at second review (2026-11-22)
+- 29 CFR 1903.14a, https://www.osha.gov/laws-regs/regulations/standardnumber/1903/1903.14A
+  (fetched 2026-11-22): petition for modification of abatement, filed by the close of the next
+  working day after the abatement date, showing good faith and factors beyond the employer's control.
+- OSHA Field Operations Manual, chapter 8, https://www.osha.gov/fom/chapter-8 (fetched 2026-11-22):
+  informal conference and settlement, generally within the 15-working-day contest period.
+- OSHA, "Electrocution: Work Safely with Ladders Near Power Lines" transcript,
+  https://www.osha.gov/vtools/construction/ladder-powerline-fnl-eng-web-transcript (fetched
+  2026-11-22): lower an extension ladder and carry it horizontally near overhead lines.
+- OSHA safety helmet Safety and Health Information Bulletin,
+  https://www.osha.gov/sites/default/files/publications/safety_helmet_shib.pdf (fetched 2026-11-22):
+  inspect the shell for cracks and dents and the suspension for wear.
+- OSHA toolbox talk on electrical safety, https://www.osha.gov/sites/default/files/publications/OSHA4496.pdf
+  (fetched 2026-11-22): test GFCIs regularly with their test buttons.
+- Not on osha.gov: the jump clear and shuffle rule for leaving an energized vehicle (ELE-015) is
+  utility safety guidance (for example https://www.midamericanenergy.com/contractor-safety-overhead,
+  fetched 2026-11-22); the explanation states the physics only, not an OSHA rule.
+
 ## Left out on purpose
 - Penalty amounts, citation counts and any figure OSHA indexes for inflation.
 - OSHA's proposed heat injury and illness prevention rule (not final as of 2026-11-22).

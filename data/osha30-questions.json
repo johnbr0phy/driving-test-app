@@ -1257,7 +1257,7 @@
     "optionD": "Plug it into another GFCI",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A GFCI can fail without warning, so manufacturers and OSHA guidance call for testing it with the test button before use. Removing a ground prong defeats protection."
+    "explanation": "A GFCI can fail without warning. Manufacturers' instructions call for testing it before use, and OSHA's toolbox talk on GFCIs says to test them regularly with the test button. Removing a ground prong defeats protection."
   },
   {
     "type": "OSHA30",
@@ -1313,7 +1313,7 @@
     "optionD": "Eye injuries",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "OSHA's electrical training notes that even a small shock can make a worker lose balance, so a fall to a lower level is often the injury that kills or disables."
+    "explanation": "Even a small shock can make a worker jerk and lose balance, so on a ladder or roof the fall that follows is often the injury that kills or disables. NIOSH case reports describe workers who were shocked on ladders and then fell."
   },
   {
     "type": "OSHA30",

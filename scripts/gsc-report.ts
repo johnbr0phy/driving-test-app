@@ -126,10 +126,9 @@ async function main() {
   console.error(`[gsc-report] signed in as ${key.client_email.replace(/@.*/, "@...")}`);
 
   const sites = (await call<{ siteEntry?: { siteUrl: string; permissionLevel: string }[] }>("/webmasters/v3/sites")).siteEntry ?? [];
-  const site =
-    sites.find((s) => s.siteUrl === "sc-domain:tigertest.io")?.siteUrl ??
-    sites.find((s) => s.siteUrl === `${SITE}/`)?.siteUrl ??
-    sites.find((s) => s.siteUrl.includes("tigertest.io"))?.siteUrl;
+  // Exact property names only, in order of preference (the domain property covers every host).
+  const PROPERTIES = ["sc-domain:tigertest.io", `${SITE}/`, "https://tigertest.io/"];
+  const site = PROPERTIES.find((p) => sites.some((s) => s.siteUrl === p));
   if (!site) {
     throw new Error(
       `The service account ${key.client_email} cannot see a tigertest.io property. In Search Console, Settings, Users and permissions, add it as a Restricted user. It sees: ${sites.map((s) => s.siteUrl).join(", ") || "nothing"}.`

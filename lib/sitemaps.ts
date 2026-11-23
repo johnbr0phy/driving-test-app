@@ -33,6 +33,7 @@ export interface SitemapEntry {
 
 export { SITE_URL } from "@/lib/siteUrl";
 import { SITE_URL } from "@/lib/siteUrl";
+import { REGIONS, regionHomePath } from "@/lib/region";
 import { landingUpdatedAt, latestLandingUpdate } from "@/lib/landingDates";
 import { allStateLandings } from "./stateLandings";
 import { teachPagePath, teachPageTests } from "./teachPages";
@@ -118,7 +119,9 @@ export async function buildSegment(segment: SitemapSegment): Promise<SitemapEntr
       return [
         { url: `${SITE_URL}/tests`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "weekly", priority: 0.8 },
         // Country homepages (lib/region.ts); "/" is the US one, in the dmv segment.
-        ...["uk", "ie", "ca", "au", "nz", "in", "ph", "my", "sg", "hk", "ae", "za", "ng", "ke", "pk", "es", "pt", "ro", "se", "gr", "dk", "hu", "be", "fi", "mt", "de", "it", "fr", "ch"].map((c) => ({ url: `${SITE_URL}/${c}`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "daily" as const, priority: 0.9 })),
+        // Every country homepage, from REGIONS, so a new country is never left out
+        // (Poland and the Netherlands were missing from a hand-typed list, Nov 2026).
+        ...REGIONS.filter((r) => r.code !== "US").map((r) => ({ url: `${SITE_URL}${regionHomePath(r.code)}`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "daily" as const, priority: 0.9 })),
         { url: `${SITE_URL}/teach`, lastModified: HUB_PAGES_UPDATED_AT, changeFrequency: "monthly", priority: 0.7 },
         { url: `${SITE_URL}/about`, lastModified: ABOUT_PAGE_UPDATED_AT, changeFrequency: "monthly", priority: 0.4 },
         // Each landing's own last change (lib/landingDates.ts), not one date for all.

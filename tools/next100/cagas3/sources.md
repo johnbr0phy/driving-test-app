@@ -100,6 +100,9 @@ practice exam (TSSA Cert and Exam FAQs). Checked 2026-11-23.
   range on the rating plate, manifold taps on the valve, 24 V gas valve, conversion by kit only,
   pipe capacity read from length and size, CFH = input / heating value, no derating by lowering
   manifold pressure. Every stem that uses a figure from instructions gives the figure in the stem.
+- U.S. Energy Information Administration, "British thermal units (Btu)", https://www.eia.gov/energyexplained/units-and-calculators/british-thermal-units.php,
+  fetched 2026-11-23: natural gas about 1,036 Btu per cubic foot (used as "about 1,000"); propane
+  per cubic foot is computed from ICSC densities and a heating value near 50 MJ/kg (about 2,500).
 - Unit conversions and combustion arithmetic (1 kW = 3412 Btu/h, 1 psi = 27.7 in w.c., methane
   and propane combustion equations) are computed in the explanations; NIST SI guide,
   https://www.nist.gov/pml/special-publication-811, checked 2026-11-23.

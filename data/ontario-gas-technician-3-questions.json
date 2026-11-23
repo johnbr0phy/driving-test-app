@@ -74,14 +74,14 @@
     "state": "ALL",
     "questionId": "CAGAS3-SAF-006",
     "category": "cagas3Safety",
-    "question": "Three-point contact on a ladder means:",
-    "optionA": "Both feet and one knee down",
-    "optionB": "Three limbs on the ladder",
-    "optionC": "Both hands on one side rail",
-    "optionD": "Hips leaning on the rails",
+    "question": "Keeping two hands and a foot, or two feet and a hand, on a ladder is called:",
+    "optionA": "The 4-to-1 rule",
+    "optionB": "Three-point contact",
+    "optionC": "Ladder tie-off",
+    "optionD": "Four-point grip",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Keep three of your four limbs on the ladder at all times. Carry tools in a belt or hoist them so both hands stay free to climb."
+    "explanation": "CCOHS describes three-point contact as two hands and one foot, or two feet and one hand, on the ladder at all times. The 4-to-1 rule is about the ladder's angle."
   },
   {
     "type": "CAGAS3",
@@ -2398,14 +2398,14 @@
     "state": "ALL",
     "questionId": "CAGAS3-PIP-028",
     "category": "cagas3Piping",
-    "question": "A ground-joint union near an appliance is installed to:",
-    "optionA": "Raises gas pressure",
-    "optionB": "Traps sediment",
-    "optionC": "Bonds the piping to ground",
-    "optionD": "Lets the appliance come off",
+    "question": "What does a ground-joint union near an appliance let you do?",
+    "optionA": "Raise the gas pressure",
+    "optionB": "Trap sediment",
+    "optionC": "Bond the piping to ground",
+    "optionD": "Take the appliance off",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A union lets the appliance or its controls be disconnected without unthreading the whole line. A sediment trap (drip leg) catches debris."
+    "explanation": "A union lets the appliance or its controls be disconnected without unthreading the whole line. A sediment trap (drip leg) is what catches debris."
   },
   {
     "type": "CAGAS3",

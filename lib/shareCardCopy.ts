@@ -324,6 +324,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   ccnpencor: { title: "Cisco CCNP ENCOR 350-401", description: "Practise SD-WAN and SD-Access, VRF and VXLAN, spanning tree, OSPF and BGP, assurance, security and automation, all explained." },
   jncia: { title: "Juniper JNCIA-Junos JN0-106", description: "Practise the Junos CLI, commit and rollback, configuration basics, monitoring, routing, policy and firewall filters, all explained." },
   pl900: { title: "Microsoft Power Platform Fundamentals PL-900", description: "Practise the PL-900 exam: Dataverse, environments and governance, Power Apps, Power Automate and Copilot Studio agents, all explained." },
+  awsaif: { title: "AWS Certified AI Practitioner AIF-C01", description: "Practise the AIF-C01 exam: AI and ML basics, generative AI, Amazon Bedrock, RAG and prompting, responsible AI and security on AWS." },
   ai901: { title: "Microsoft Azure AI Fundamentals AI-901", description: "Practise the AI-901 exam: responsible AI, models and deployments, prompts, agents, speech, vision and Content Understanding in Microsoft Foundry." },
   sc900: { title: "Microsoft Security, Compliance, and Identity Fundamentals SC-900", description: "Review Zero Trust and identity concepts, Microsoft Entra, Defender, Sentinel and Purview." },
   ceh: { title: "EC-Council CEH v13", description: "Practise footprinting, scanning, system, network, web, wireless, mobile, cloud and crypto attacks, all explained." },

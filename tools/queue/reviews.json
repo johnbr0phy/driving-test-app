@@ -1486,5 +1486,13 @@
       "pr": 971,
       "findings": 42
     }
+  ],
+  "awsaif": [
+    {
+      "date": "2026-11-22",
+      "kind": "blind review at build",
+      "pr": 972,
+      "findings": 6
+    }
   ]
 }

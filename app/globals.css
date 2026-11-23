@@ -14346,8 +14346,8 @@
     --brand-darker: 280 15% 78%;
   }
   .dark [data-theme="emr"] {
-    --brand: 196 10% 50%;
-    --brand-hover: 196 10% 42%;
+    --brand: 196 10% 45%;
+    --brand-hover: 196 10% 39%;
     --brand-light: 196 10% 13%;
     --brand-gradient-to: 0 0% 11%;
     --brand-border-light: 196 10% 24%;

@@ -1796,5 +1796,5 @@
   "series24": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1027, "findings": 7 }],
   "aufasa": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1029, "findings": 7 }],
   "crisc": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1031, "findings": 14 }],
-  "aufatas": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 0, "findings": 8 }]
+  "aufatas": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1028, "findings": 8 }]
 }

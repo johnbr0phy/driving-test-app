@@ -237,6 +237,7 @@ import "./aphr";
 import "./cisa";
 import "./fortigate";
 import "./cssgb";
+import "./cfp";
 import "./cssyb";
 import "./ccs";
 import "./rhia";

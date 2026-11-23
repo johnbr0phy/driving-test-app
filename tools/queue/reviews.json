@@ -1598,5 +1598,13 @@
       "pr": 987,
       "findings": 11
     }
+  ],
+  "cfp": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 989,
+      "findings": 7
+    }
   ]
 }

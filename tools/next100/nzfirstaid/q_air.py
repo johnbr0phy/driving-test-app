@@ -20,7 +20,7 @@ Q = [
  "5", ["2", "10", "20"],
  "ANZCOR gives up to 5 back blows, checking after each, then up to 5 chest thrusts if the airway is still blocked."),
 ("Why check for the object after every back blow?",
- "Stop once it clears", ["To count the blows", "To rest your arm", "To check the pulse"],
+ "To stop once it clears", ["To count the blows", "To rest your arm", "To check the pulse"],
  "ANZCOR says check after each back blow; the aim is to clear the blockage with each blow, not to finish all five."),
 ("A colleague trained overseas starts abdominal thrusts after back blows fail. What does ANZCOR use instead?",
  "Chest thrusts", ["More back blows only", "Blind finger sweeps", "Two rescue breaths"],

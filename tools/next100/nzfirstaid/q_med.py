@@ -1,8 +1,8 @@
 CAT = "nzfaidMedical"; SEG = "MED"
 # Heart attack, stroke, asthma, anaphylaxis, seizures and diabetic emergencies.
 Q = [
-("A worker has crushing chest pain spreading to the jaw. How long does ANZCOR say to wait before calling 111 if it keeps going?",
- "10 minutes at most", ["About 30 minutes", "About an hour", "Until they collapse"],
+("A worker's chest pain is not severe but will not settle. After how long does ANZCOR say to call an ambulance?",
+ "More than 10 minutes", ["More than 30 minutes", "More than an hour", "Only if they collapse"],
  "ANZCOR says warning signs that are severe, worsening quickly or lasting more than 10 minutes need an ambulance at once."),
 ("A man has chest pain not caused by injury and no aspirin allergy. What does ANZCOR suggest?",
  "300 mg aspirin", ["75 mg aspirin", "Two paracetamol", "An ibuprofen tablet"],

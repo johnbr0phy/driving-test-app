@@ -4066,6 +4066,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "theorytest.ie FAQs and the RSA Rules of the Road, checked October 2026",
     source: { name: "Official RSA Driver Theory Test", url: "https://www.theorytest.ie/" },
   },
+  faacax: {
+    answer:
+      "The FAA Commercial Pilot Airplane (CAX) knowledge test has 100 multiple-choice questions with three answer choices each, a 2.5-hour time limit and a passing score of 70 percent. You must be at least 16 to take it (18 for the commercial certificate) and have an instructor or home-study endorsement. Questions come from the Commercial Pilot for Airplane Category ACS (FAA-S-ACS-7B) and many use a figure supplement of charts and performance tables. A pass is valid for 24 calendar months.",
+    rows: [
+      { label: "Questions", value: "100, three choices each" },
+      { label: "Time", value: "2.5 hours" },
+      { label: "Passing score", value: "70%" },
+      { label: "Minimum age", value: "16 for the test, 18 for the certificate" },
+      { label: "Result valid", value: "24 calendar months" },
+      { label: "Given by", value: "FAA, at authorized testing centers" },
+    ],
+    basedOn: "the FAA Commercial Pilot for Airplane Category ACS (FAA-S-ACS-7B) and the FAA ACS knowledge test table",
+    source: { name: "FAA", url: "https://www.faa.gov/training_testing/testing/acs" },
+  },
   faapvt: {
     answer:
       "The FAA Private Pilot Airplane (PAR) knowledge test has 60 multiple-choice questions with three answer choices each, a 2-hour time limit and a passing score of 70 percent. You must be at least 15 and have an instructor or home-study endorsement to take it at an FAA testing center. Questions come from the Private Pilot Airplane ACS and many use a figure supplement of charts and performance tables. A pass is valid for 24 calendar months.",

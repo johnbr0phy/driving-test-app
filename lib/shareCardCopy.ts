@@ -210,6 +210,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   ccna: { title: "Cisco CCNA 200-301", description: "Practise subnetting, VLANs, OSPF, IP services, security and automation with router output." },
   uknmc: { title: "NMC CBT: UK Nursing Registration", description: "Review numeracy, the NMC Code, NEWS2, consent, safeguarding and safe UK nursing care." },
   pmp: { title: "PMP Project Management Professional", description: "Practice situational questions on people, process and business environment, with case studies and earned value math." },  barber: { title: "NIC Barber Theory", description: "Review infection control, tools, haircutting, chemical services, shaving and facials." },
+  faacax: { title: "FAA Commercial Pilot Written Test", description: "Practice commercial regulations, weather, aerodynamics, systems, performance, maneuvers and high-altitude flight." },
   faapvt: { title: "FAA Private Pilot Written Test", description: "Practice regulations, airspace, weather, aerodynamics, performance, navigation and human factors." },
   faaifr: { title: "FAA Instrument Rating Written Test", description: "Practice IFR regulations, weather, instruments, navigation, holding, approaches and human factors." },
   psat: { title: "Digital PSAT Practice Test", description: "A full adaptive PSAT/NMSQT with a 320 to 1520 score estimate, plus reading, writing and math drills for your phone." },

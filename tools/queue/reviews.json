@@ -1711,5 +1711,20 @@
       "findings": 8
     }
   ],
-  "sgm9": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1003, "findings": 1 }]
+  "sgm9": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1003,
+      "findings": 1
+    }
+  ],
+  "faacax": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1002,
+      "findings": 1
+    }
+  ]
 }

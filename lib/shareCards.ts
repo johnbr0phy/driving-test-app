@@ -601,6 +601,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(264, 65%, 14%)",
     "tint": "hsl(264, 65%, 96%)"
   },
+  "faacax": {
+    "color": "hsl(208, 10%, 42%)",
+    "tint": "hsl(208, 10%, 96%)"
+  },
   "techplus": {
     "color": "hsl(350, 60%, 14%)",
     "tint": "hsl(350, 60%, 96%)"

@@ -89,3 +89,20 @@ Every key and fact was checked against `data/nce-questions.json`, `data/aswb-cli
 `data/philippines-psychometrician-questions.json` and the EPPP bank in progress (wt-eppp) by
 normalized key text and stem words (script in the build notes); matches were rewritten to a different
 fact or angle.
+
+## Second review (2026-11-23)
+
+- ACA Code of Ethics revision: ACA's project page, https://manifold.counseling.org/projects/aca-code-of-ethics ,
+  fetched 2026-11-23, lists the revised Code as coming soon (a 2027 version; the task force is reviewing
+  comments, draft unavailable). The 2014 Code is still the one in force, so its section numbers stay;
+  a freshness event in `lib/examFreshness.json` asks for a recheck once the new Code is out.
+- Blind review of all 200 items: keys agreed. Fixed DX-020 (caffeine intoxication needs five signs;
+  the stem had four), ASM-009 (a distractor named a "2nd ed." of the Strong Interest Inventory that
+  does not exist). Rewrote nine items that repeated a fact and answer in the family banks
+  (ETH-009 and ETH-010 vs aswb-clinical, ASM-007 AUDIT vs adc, GRP-001 vs aswb-bachelors, GRP-012
+  vs nce, PLN-008 vs aswb-bachelors, PLN-011 vs aswb-masters, PLN-016 vs adc, PLN-026 vs nce), using
+  ACA A.2.b, A.2.c, A.11.c, A.12 and B.2.c and the CRAFFT adolescent screen. Repeat check re-run
+  against nce, aswb (bachelors, masters, clinical), adc, phpsychom, eppp, rbt, bcba and bcaba.
+- Checked against the 2027 specifications PDF and the handbook text: 10 cases, 130 to 150 questions,
+  30 to 50 field-test items, 225 minutes, 100 to 500 with 360 to pass; current form 11 cases, 225
+  minutes, one 15-minute break after the fifth case.

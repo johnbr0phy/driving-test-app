@@ -2,7 +2,7 @@
 CAT = "ncmhceGroupFamily"; SEG = "GRP"
 Q = [
 ("In a first group session, members are polite, ask the leader for direction and share little. The leader should:",
- "Set goals and ground rules", ["Push for deep disclosure", "Confront their resistance", "Pair members for homework"],
+ "Give structure, explain purpose", ["Push for deep disclosure", "Confront their resistance", "Pair members for homework"],
  "Early sessions are marked by dependence on the leader and testing safety. Structure and clear norms help trust form before deeper work."),
 ("In the fourth session, a member says the leader is useless. The leader's best response is to:",
  "Treat it as group material", ["Defend her training", "Ignore the remark", "Ask the member to leave"],
@@ -34,9 +34,9 @@ Q = [
 ("A family counselor asks the father to talk directly to his son instead of through the mother. This aims to:",
  "Shift a family pattern", ["Blame the mother", "Avoid the son entirely", "Diagnose the father"],
  "Asking members to speak directly to one another interrupts indirect communication and helps shift the family's patterns."),
-("In a blended family, the stepfather tries to discipline the children from day one and conflict grows. The counselor suggests:",
- "The birth parent leads it", ["The stepfather leads alone", "No discipline for a year", "The children choose rules"],
- "In new stepfamilies, the birth parent usually leads discipline at first while the stepparent builds a relationship with the children, then the stepparent takes on more as trust grows."),
+("A counselor asks each family member to place the others in poses showing how close or distant they feel. This technique is:",
+ "Family sculpting", ["A genogram", "Unbalancing", "A paradoxical directive"],
+ "Family sculpting, used by Satir and other experiential family therapists, has members arrange one another in space to show closeness, distance and roles. A genogram is drawn on paper; unbalancing is a structural move; a paradoxical directive is a strategic one."),
 ("A couple repeats one fight: he withdraws, she pursues harder. The counselor helps them see:",
  "The cycle they share", ["Which one is wrong", "That they should divorce", "His need for medication"],
  "Pursue-withdraw is a common couple pattern. Seeing the cycle as the shared problem reduces blame and opens change."),

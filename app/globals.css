@@ -6710,6 +6710,20 @@
     --brand-gradient-to: 205 60% 95%;
   }
 
+  /* GARP FRM Part I theme */
+  [data-theme="frm1"] {
+    --brand: 262 100% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 262 40% 96%;
+    --brand-hover: 262 100% 11%;
+    --brand-dark: 262 100% 10%;
+    --brand-darker: 262 90% 7%;
+    --brand-muted: 262 20% 70%;
+    --brand-border: 262 20% 80%;
+    --brand-border-light: 262 18% 89%;
+    --brand-gradient-to: 40 50% 95%;
+  }
+
   /* CFA Program Level I theme */
   [data-theme="cfal1"] {
     --brand: 220 25% 26%;
@@ -12976,6 +12990,18 @@
     --brand-muted: 238 35% 45%;
     --brand-dark: 238 80% 69%;
     --brand-darker: 238 75% 78%;
+  }
+
+  .dark [data-theme="frm1"] {
+    --brand: 262 100% 50%;
+    --brand-hover: 262 100% 42%;
+    --brand-light: 262 40% 13%;
+    --brand-gradient-to: 40 40% 11%;
+    --brand-border-light: 262 18% 24%;
+    --brand-border: 262 20% 34%;
+    --brand-muted: 262 20% 45%;
+    --brand-dark: 262 100% 69%;
+    --brand-darker: 262 90% 78%;
   }
 
   .dark [data-theme="cfal1"] {

@@ -1726,5 +1726,13 @@
       "pr": 1002,
       "findings": 1
     }
+  ],
+  "frm1": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1004,
+      "findings": 0
+    }
   ]
 }

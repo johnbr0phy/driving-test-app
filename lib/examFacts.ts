@@ -7771,6 +7771,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Salesforce Platform Administrator exam guide as quoted by study guides, checked November 2026",
     source: { name: "Trailhead: Salesforce Certified Platform Administrator", url: "https://trailhead.salesforce.com/credentials/platformadministrator" },
   },
+  frm1: {
+    answer:
+      "FRM Exam Part I is the first of two exams for GARP's Financial Risk Manager certification. It has 100 equally weighted multiple-choice questions in four hours, taken on computer at a test center in May, August or November. There is no penalty for wrong answers. Results are pass or fail with a percentile range against other candidates, and GARP does not publish a passing score. Under the 2026 FRM Study Guide the four topic areas are Foundations of Risk Management (20%), Quantitative Analysis (20%), Financial Markets and Products (30%) and Valuation and Risk Models (30%). Part I must be passed before Part II is graded.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice, equally weighted" },
+      { label: "Time", value: "4 hours" },
+      { label: "Wrong answers", value: "No penalty" },
+      { label: "Passing score", value: "Not published; pass or fail" },
+      { label: "Topics", value: "Foundations 20%, Quant 20%, Markets and Products 30%, Valuation and Risk Models 30%" },
+      { label: "Windows", value: "May, August and November" },
+      { label: "Calculators", value: "HP 12C, HP 10B II or II+, HP 20B, TI BA II Plus" },
+      { label: "Run by", value: "GARP" },
+    ],
+    basedOn: "GARP's 2026 FRM Study Guide and Candidate Guide and its FRM exams page, checked November 2026",
+    source: { name: "GARP: FRM Program Exams", url: "https://www.garp.org/frm/program-exams" },
+  },
   cfal1: {
     answer:
       "CFA Level I is the first of three exams in the CFA Program run by CFA Institute. It has 180 multiple-choice questions in two sessions of 90, each 135 minutes long, and every question has three answer choices. All questions count equally and there is no penalty for wrong answers. CFA Institute sets the minimum passing score after each exam and does not publish it; results are pass or do not pass. For exams from February 2027 the topic weights are Ethics 10 to 15%, Quantitative Methods 11 to 14%, Economics 6 to 9%, Financial Statement Analysis 11 to 14%, Corporate Finance 6 to 9%, Equities 11 to 14%, Fixed Income 11 to 14%, Derivatives and Risk Management 6 to 9%, Alternative Investments 6 to 9% and Portfolio Construction 8 to 12%.",

@@ -171,6 +171,14 @@
       "source": "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam"
     },
     {
+      "exam": "frm1",
+      "date": "2027-01-15",
+      "kind": "outline",
+      "what": "GARP publishes the 2027 FRM Study Guide and Learning Objectives (the curriculum is revised every year) before the May 2027 window.",
+      "action": "Check the 2027 Part I weights and chapter list against the bank, the landing, examFacts and the config comment; replace any topic GARP dropped.",
+      "source": "https://www.garp.org/frm/study-materials"
+    },
+    {
       "exam": "accafa",
       "date": "2027-09-01",
       "kind": "outline",

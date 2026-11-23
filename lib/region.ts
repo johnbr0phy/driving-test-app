@@ -178,7 +178,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   neet: "IN", jeemain: "IN", cuet: "IN", mhtcet: "IN", kcet: "IN", ugcnet: "IN", reet: "IN", uptet: "IN", aissee: "IN", iimcat: "IN",
   aplus: "GLOBAL", secplus: "GLOBAL", aws: "GLOBAL", awssaa: "GLOBAL", awsaif: "GLOBAL", awsdva: "GLOBAL", snowpro: "GLOBAL", az900: "GLOBAL", az104: "GLOBAL", techplus: "GLOBAL", ccst: "GLOBAL", dataplus: "GLOBAL", sc900: "GLOBAL", sc200: "GLOBAL", ccna: "GLOBAL", ccnpencor: "GLOBAL", pmp: "GLOBAL", gulfrn: "GLOBAL", aedhapharm: "GLOBAL", ai901: "GLOBAL", pl900: "GLOBAL", jncia: "GLOBAL",
   netplus: "GLOBAL", linuxplus: "GLOBAL", cysa: "GLOBAL", pentestplus: "GLOBAL", pmiacp: "GLOBAL", safe: "GLOBAL", securityx: "GLOBAL", servicenowcsa: "GLOBAL", sscp: "GLOBAL", fortinse: "GLOBAL", cissp: "GLOBAL", gcdl: "GLOBAL", gcppca: "GLOBAL", gre: "GLOBAL", gmat: "GLOBAL", ieltsread: "GLOBAL", toeflread: "GLOBAL", itil: "GLOBAL", istqb: "GLOBAL", prince2: "GLOBAL", psm: "GLOBAL", pspo: "GLOBAL", capm: "GLOBAL", ceh: "GLOBAL", isc2cc: "GLOBAL", cobit: "GLOBAL",
-  ccaf: "GLOBAL", sfadmin: "GLOBAL", sfpd1: "GLOBAL", sfappbuilder: "GLOBAL", cfal1: "GLOBAL", accafa: "GLOBAL", cisa: "GLOBAL", fortigate: "GLOBAL", cssgb: "GLOBAL", cssyb: "GLOBAL",
+  ccaf: "GLOBAL", sfadmin: "GLOBAL", sfpd1: "GLOBAL", sfappbuilder: "GLOBAL", cfal1: "GLOBAL", frm1: "GLOBAL", accafa: "GLOBAL", cisa: "GLOBAL", fortigate: "GLOBAL", cssgb: "GLOBAL", cssyb: "GLOBAL",
 };
 
 /** A country's tests that are not driving tests: shown beside the worldwide ones, not in the driving grid. */

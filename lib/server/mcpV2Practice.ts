@@ -86,6 +86,7 @@ import '@/lib/v2/banks/sscp';
 import '@/lib/v2/banks/ceh';
 import '@/lib/v2/banks/sc200';
 import '@/lib/v2/banks/az104';
+import '@/lib/v2/banks/techplus';
 import '@/lib/v2/banks/isc2cc';
 import '@/lib/v2/banks/sc900';
 import '@/lib/v2/banks/ai901';

@@ -1026,6 +1026,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the Microsoft Learn SC-900 study guide (skills measured as of October 21, 2026) and the Security, Compliance, and Identity Fundamentals certification page, checked November 2026",
     source: { name: "Microsoft Learn: Study guide for Exam SC-900", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900" },
   },
+  techplus: {
+    answer:
+      "CompTIA Tech+ (exam FC0-U71) is CompTIA's entry-level certification for people new to IT, and it replaced CompTIA IT Fundamentals+ (ITF+), whose FC0-U61 exam retired on July 31, 2025 in English. The exam has a maximum of 70 multiple-choice questions in 60 minutes, and the passing score is 650 on a scale of 100 to 900. The FC0-U71 objectives cover six domains: IT Concepts and Terminology 13%, Infrastructure 24%, Applications and Software 18%, Software Development Concepts 13%, Data and Database Fundamentals 13% and Security 19%. CompTIA recommends it for high school students and non-IT professionals, with no prior experience needed, and offers it in English and Japanese.",
+    rows: [
+      { label: "Exam code", value: "FC0-U71 (replaced ITF+ FC0-U61)" },
+      { label: "Questions", value: "Maximum of 70, multiple choice" },
+      { label: "Time", value: "60 minutes" },
+      { label: "Pass mark", value: "650 on a scale of 100 to 900" },
+      { label: "Content", value: "IT concepts 13%, infrastructure 24%, applications and software 18%, software development 13%, data and databases 13%, security 19%" },
+      { label: "Languages", value: "English, Japanese" },
+      { label: "Experience", value: "None required; aimed at high school students and non-IT professionals" },
+      { label: "Run by", value: "CompTIA" },
+    ],
+    basedOn: "the CompTIA Tech+ FC0-U71 exam objectives (document version 4.0) and the Tech+ certification page, checked November 2026",
+    source: { name: "CompTIA: Tech+ certification", url: "https://www.comptia.org/en-us/certifications/tech/" },
+  },
   az104: {
     answer:
       "Exam AZ-104: Microsoft Azure Administrator is the exam for the Microsoft Certified: Azure Administrator Associate certification. Microsoft gives 100 minutes and a passing score of 700 on a scale of 1 to 1,000; it does not publish a fixed question count, and says most of its certification exams have 40 to 60 questions, with types that can include case studies and, on some role-based exams, labs. The skills measured as of October 26, 2023, still the current list in November 2026, are Manage Azure identities and governance 20-25%, Implement and manage storage 15-20%, Deploy and manage Azure compute resources 20-25%, Implement and manage virtual networking 15-20% and Monitor and maintain Azure resources 10-15%. The exam is proctored through Pearson VUE in 10 languages, and the certification is renewed every 12 months with a free online assessment.",

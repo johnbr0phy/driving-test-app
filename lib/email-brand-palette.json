@@ -403,6 +403,7 @@
   "securityx": ["#6f5652","#f6f4f3","#3e302e","#e7e0df"],
   "pentestplus": ["#4c3a38","#f7f3f3","#241a19","#e7e0df"],
   "az104": ["#051942","#ecf2fd","#040d20","#dbe0eb"],
+  "techplus": ["#390e15","#fbeff1","#1c080b","#eadcde"],
   "sc200": ["#261f51","#f2f0f9","#141028","#dfdde9"],
   "ceh": ["#07551d","#f0f9f3","#05290f","#dceae0"],
   "isc2cc": ["#06314b","#ecf7fd","#031520","#dce5ea"],

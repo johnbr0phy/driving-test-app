@@ -637,6 +637,9 @@ const CASES = [
   ["नवोदय", "IN", "jnvst"],
   ["ohio cdl", "US", "cdl"],
   ["washinton", "US", "dmv"],
+  ["cmfas m9", "SG", "sgm9"],
+  ["module 9 life insurance", "SG", "sgm9"],
+  ["investment linked policy exam", "SG", "sgm9"],
 ];
 
 for (const [q, region, id] of CASES) {

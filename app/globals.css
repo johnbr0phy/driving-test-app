@@ -4657,6 +4657,20 @@
     --brand-gradient-to: 200 60% 96%;
   }
 
+  /* Singapore CMFAS M9 (Life Insurance and Investment-Linked Policies) theme */
+  [data-theme="sgm9"] {
+    --brand: 220 55% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 220 55% 96%;
+    --brand-hover: 220 55% 10%;
+    --brand-dark: 220 55% 10%;
+    --brand-darker: 220 50% 6%;
+    --brand-muted: 220 25% 70%;
+    --brand-border: 220 25% 80%;
+    --brand-border-light: 220 22% 89%;
+    --brand-gradient-to: 225 55% 96%;
+  }
+
   /* Singapore taxi and private hire vocational licence (TDVL / PDVL) theme */
   [data-theme="sgvl"] {
     --brand: 290 55% 22%;
@@ -11598,6 +11612,18 @@
     --brand-muted: 195 25% 45%;
     --brand-dark: 195 60% 65%;
     --brand-darker: 195 55% 78%;
+  }
+
+  .dark [data-theme="sgm9"] {
+    --brand: 220 55% 50%;
+    --brand-hover: 220 55% 42%;
+    --brand-light: 220 45% 13%;
+    --brand-gradient-to: 225 40% 11%;
+    --brand-border-light: 220 22% 24%;
+    --brand-border: 220 25% 34%;
+    --brand-muted: 220 25% 45%;
+    --brand-dark: 220 55% 65%;
+    --brand-darker: 220 50% 78%;
   }
 
   .dark [data-theme="sgvl"] {

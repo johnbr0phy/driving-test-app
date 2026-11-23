@@ -1042,6 +1042,14 @@
         "pr": null,
         "findings": 4
       }
+    ],
+    "frcaces": [
+      {
+        "date": "2026-11-22",
+        "kind": "blind review at build",
+        "pr": null,
+        "findings": 10
+      }
     ]
   },
   "pendingReviews": {

@@ -6083,7 +6083,7 @@ const frcaces: ExamConfig = {
       "Termine d'abord la série, puis fais le test blanc.",
       "Continue comme ça. Fais un test blanc pour voir où tu en es.",
       "Revois tes erreurs, puis refais le test blanc.",
-      "Tout est vert. Tu es prêt pour le test théorique du CACES.",
+      "Tout est vert. Revois tes erreurs avant le test théorique du CACES.",
     ],
     sourceLine: "D'après la recommandation R489 de la Cnam et les brochures de l'INRS. Questions originales, pas tirées des grilles officielles ; une seule bonne réponse sur quatre, plaques et pictogrammes décrits en mots.",
     analyticsKey: "frcaces",

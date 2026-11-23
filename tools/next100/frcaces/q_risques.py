@@ -65,7 +65,7 @@ Q = [
  "Heurt d'un obstacle", ["Crevaison des pneus", "Glissade sur le sol", "Surchauffe du moteur"],
  "INRS ED 766, § 3.5 : on tient compte de la hauteur de passage libre sous les portes ; le heurt d'un obstacle haut avec le mât ou la charge figure parmi les risques de la R489."),
 ("Selon les accidents recensés, quelle cause revient souvent dans les renversements ?",
- "L'absence de formation", ["La couleur du chariot", "Le poids du conducteur", "L'heure de la journée"],
+ "L'absence de formation", ["Le port de la ceinture", "Une vitesse trop basse", "Un éclairage trop fort"],
  "INRS ED 949, tableau 2 : l'absence de formation figure en tête des causes de renversement recensées, devant les virages, la fourche levée et la circulation sur obstacle."),
 ("Un chariot tombe d'un quai. Quelle mesure de prévention vise ce risque ?",
  "Marquer le bord du quai", ["Rouler fourche haute", "Accélérer près du bord", "Retirer les cales du camion"],

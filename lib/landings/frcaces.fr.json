@@ -82,7 +82,7 @@
       },
       {
         "h3": "2. Sache lire une plaque de charge",
-        "p": "La capacité baisse quand le centre de gravité s'éloigne et quand la hauteur augmente. Entre deux valeurs, prends la plus défavorable. L'abaque vaut 10 points sur 100."
+        "p": "La capacité baisse quand le centre de gravité s'éloigne et quand la hauteur augmente. Si la distance de ta charge n'est pas sur la plaque, ne lis jamais la valeur d'une distance plus courte. L'abaque vaut 10 points sur 100."
       },
       {
         "h3": "3. Retiens les règles de conduite",
@@ -106,7 +106,7 @@
     },
     {
       "q": "Ce sont les questions officielles du test ?",
-      "a": "Non. Toutes les questions ici sont écrites par nous à partir de la recommandation R489 et des brochures de l'INRS. Les organismes testeurs utilisent leurs propres grilles : entraîne-toi aussi pendant ta formation CACES."
+      "a": "Non. Toutes les questions ici sont écrites par nous à partir de la recommandation R489 et des brochures de l'INRS. Les organismes testeurs tirent leurs questions de grilles d'évaluation que nous n'utilisons pas : entraîne-toi aussi pendant ta formation CACES."
     },
     {
       "q": "Qu'est-ce que Tigertest ne reproduit pas ?",
@@ -114,7 +114,7 @@
     },
     {
       "q": "Le test CACES de Tigertest est-il gratuit ?",
-      "a": "Tu commences gratuitement et sans inscription. Les dernières étapes du tableau de bord font partie de Tigertest Premium (paiement unique, sans abonnement). Avec un compte gratuit, tu retrouves tes progrès sur tous tes appareils."
+      "a": "Tu commences gratuitement et sans inscription. Les deux premières séries d'entraînement et les tests blancs 1 et 2 sont gratuits ; les séries et tests blancs suivants font partie de Tigertest Premium (paiement unique, sans abonnement). Avec un compte gratuit, tu retrouves tes progrès sur tous tes appareils."
     }
   ],
   "finalCta": {

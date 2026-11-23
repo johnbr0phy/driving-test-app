@@ -15,6 +15,11 @@ bank is practice on the referential, not a copy of the test. Fetched 2026-11-22 
     3 (frontaux en porte-à-faux ≤ 6 t), 4 (> 6 t), 5 (mât rétractable, prise latérale d'un seul
     côté incluse), 6 (poste de conduite élevable, plancher > 1,20 m), 7 (conduite hors
     production). No option for R489 trucks.
+- INRS, "CACES : ce qu'il faut retenir", page mise à jour le 30/07/2026, fetched 2026-11-22 by
+  the reviewer: https://www.inrs.fr/accueil/demarche/caces-certificat-aptitude-conduite-securite/ce-qu-il-faut-retenir.html
+  - Official confirmation that every CACES except engins de chantier is valid 5 years, that CACES
+    are delivered by organismes testeurs certifiés through a testeur, and that R489 covers the
+    chariots de manutention automoteurs à conducteur porté.
 - Cnam, recommandation R489 "Certificat d'aptitude à la conduite en sécurité des chariots de
   manutention automoteurs à conducteur porté", adopted by the CTN B, C, D, F, G and I in 2017,
   reference from 1 January 2020 (R389 applicable until 31 December 2019). The ameli.fr copy
@@ -102,7 +107,11 @@ bank is practice on the referential, not a copy of the test. Fetched 2026-11-22 
 - Légifrance (Code du travail R4323-55, R4323-56, arrêté du 2 décembre 1998, arrêté du 1er mars
   2004) returned 403 to automated readers. The rules are taken as R489 and ED 766 state them,
   and explanations cite the article as those documents do.
-- The ameli.fr hosting of R489 returned 403; the text read is the copy named above.
+- The ameli.fr hosting of R489 (r489-v3.pdf) returned 403 again to the reviewer on 2026-11-22, and
+  the INRS media page for R 489 renders its links only by script; the text read is the copy named above.
+- Load plates: ED 949 (5.3.2) says to interpolate between two distances given by the maker. The bank
+  therefore never asks for a single figure between two plate distances; ABA-005 asks a yes/no that
+  holds either way.
 
 ## Left out on purpose
 - The test itself (question count, pass mark, testeur, UT, rooms, retakes) is on the landing and

@@ -10,7 +10,7 @@ Q = [
  "Qu'il est immobilisé", ["Qu'il a le moteur allumé", "Qu'il a son réservoir plein", "Qu'il a ses portes fermées"],
  "INRS ED 766, § 3.3 : on ne s'engage jamais sur un pont de liaison sans être certain que le moyen de transport (wagon, camion) ne peut pas se déplacer."),
 ("Avant d'entrer avec le chariot dans la remorque, que vérifiez-vous sur le plancher ?",
- "Sa résistance", ["Sa couleur", "Son âge", "Sa longueur"],
+ "Sa résistance", ["Son essence de bois", "Sa largeur seule", "Sa date de fabrication"],
  "R489, annexe 2, savoir-faire : on vérifie que le chariot est adapté au gabarit du véhicule et à la résistance de son plancher avant d'y entrer."),
 ("Vous déchargez depuis le sol une remorque à plateau. Comment répartissez-vous les prises ?",
  "En alternant les côtés", ["Tout d'un côté d'abord", "Par l'arrière seulement", "Au hasard des colis"],

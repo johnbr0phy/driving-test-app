@@ -41,7 +41,7 @@ Q = [
  "Dans le sens de la marche", ["Sur la charge en hauteur", "Sur le tableau de bord", "Vers le rayonnage voisin"],
  "INRS ED 766, § 3.3 : on regarde dans le sens de la marche pour conserver une bonne visibilité du parcours, tout en surveillant la charge dans les virages."),
 ("Quels sont les deux paramètres principaux qui allongent la distance de freinage d'un chariot ?",
- "Vitesse et état du sol", ["Couleur et âge", "Hauteur du mât et dosseret", "Klaxon et éclairage"],
+ "Vitesse et état du sol", ["Largeur de l'allée et éclairage", "Type de batterie et klaxon", "Couleur du sol et heure"],
  "R489, annexe 2 (G) : le cariste évalue la distance de freinage selon la vitesse du chariot et la nature du sol ; la charge transportée l'allonge aussi."),
 ("Si vous doublez la vitesse d'un chariot, sa distance de freinage est à peu près :",
  "Multipliée par 4", ["Multipliée par 2", "Inchangée", "Divisée par 2"],

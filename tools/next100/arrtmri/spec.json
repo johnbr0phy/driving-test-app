@@ -1,0 +1,20 @@
+{
+  "id": "arrtmri",
+  "stateCode": "ARRTMRI",
+  "idBase": 47800,
+  "prefix": "ARRTMRI-",
+  "slug": "/arrt-mri",
+  "landingPath": "/arrt-mri-practice-test",
+  "dataFile": "data/arrt-mri-questions.json",
+  "categories": [
+    {"key": "arrtmriCare", "label": "Patient Care & Contrast", "perTest": 4, "pool": 16, "segment": "CAR"},
+    {"key": "arrtmriSafety", "label": "MRI Screening & Safety", "perTest": 5, "pool": 20, "segment": "SAF"},
+    {"key": "arrtmriPhys", "label": "Physical Principles", "perTest": 10, "pool": 40, "segment": "PHY"},
+    {"key": "arrtmriParam", "label": "Sequence Parameters & Options", "perTest": 9, "pool": 36, "segment": "PAR"},
+    {"key": "arrtmriSeq", "label": "Pulse Sequences & Data", "perTest": 8, "pool": 32, "segment": "SEQ"},
+    {"key": "arrtmriNeuro", "label": "Neurological Procedures", "perTest": 6, "pool": 24, "segment": "NEU"},
+    {"key": "arrtmriBody", "label": "Body Procedures", "perTest": 4, "pool": 16, "segment": "BOD"},
+    {"key": "arrtmriMsk", "label": "Musculoskeletal Procedures", "perTest": 4, "pool": 16, "segment": "MSK"}
+  ],
+  "notes": "ARRT MRI Examination Content Specifications, implemented February 1, 2025: 200 scored (16/21/40/36/30/25/15/17). Scaled to 50: 4/5/10/9/8/6/4/4."
+}

@@ -1533,6 +1533,32 @@
     --brand-gradient-to: 325 60% 95%;
   }
 
+  [data-theme="ukfood3"] {
+    --brand: 308 85% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 308 45% 95%;
+    --brand-hover: 308 85% 10%;
+    --brand-dark: 308 80% 10%;
+    --brand-darker: 308 75% 7%;
+    --brand-muted: 308 30% 70%;
+    --brand-border: 308 35% 78%;
+    --brand-border-light: 308 35% 88%;
+    --brand-gradient-to: 320 45% 95%;
+  }
+
+  [data-theme="ukhs2"] {
+    --brand: 241 40% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 241 45% 95%;
+    --brand-hover: 241 40% 40%;
+    --brand-dark: 241 40% 36%;
+    --brand-darker: 241 45% 26%;
+    --brand-muted: 241 30% 70%;
+    --brand-border: 241 35% 78%;
+    --brand-border-light: 241 35% 88%;
+    --brand-gradient-to: 250 45% 95%;
+  }
+
   /* Personal licence (APLH) theme (UK): wine */
   [data-theme="ukaplh"] {
     --brand: 335 70% 30%;
@@ -5513,6 +5539,19 @@
     --brand-gradient-to: 302 40% 95%;
   }
   /* NZ workplace first aid theme: deep first aid crimson */
+  /* NZ forklift operator certificate theme: deep forest green */
+  [data-theme="nzforklift"] {
+    --brand: 106 60% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 106 55% 95%;
+    --brand-hover: 106 60% 10%;
+    --brand-dark: 106 60% 9%;
+    --brand-darker: 106 60% 5%;
+    --brand-muted: 106 15% 70%;
+    --brand-border: 106 20% 80%;
+    --brand-border-light: 106 20% 89%;
+    --brand-gradient-to: 0 0% 98%;
+  }
   [data-theme="nzfirstaid"] {
     --brand: 2 70% 14%;
     --brand-foreground: 0 0% 100%;
@@ -9026,6 +9065,30 @@
     --brand-darker: 305 65% 78%;
   }
 
+  .dark [data-theme="ukfood3"] {
+    --brand: 308 85% 44.7%;
+    --brand-hover: 308 85% 36.7%;
+    --brand-light: 308 45% 13%;
+    --brand-gradient-to: 320 40% 11%;
+    --brand-border-light: 308 35% 24%;
+    --brand-border: 308 35% 34%;
+    --brand-muted: 308 30% 45%;
+    --brand-dark: 308 80% 65%;
+    --brand-darker: 308 75% 78%;
+  }
+
+  .dark [data-theme="ukhs2"] {
+    --brand: 241 40% 50%;
+    --brand-hover: 241 40% 42%;
+    --brand-light: 241 45% 13%;
+    --brand-gradient-to: 250 40% 11%;
+    --brand-border-light: 241 35% 24%;
+    --brand-border: 241 35% 34%;
+    --brand-muted: 241 30% 45%;
+    --brand-dark: 241 40% 65%;
+    --brand-darker: 241 45% 78%;
+  }
+
   .dark [data-theme="ukaplh"] {
     --brand: 335 70% 50%;
     --brand-hover: 335 70% 42%;
@@ -12502,6 +12565,18 @@
     --brand-muted: 287 20% 45%;
     --brand-dark: 287 45% 65%;
     --brand-darker: 287 40% 78%;
+  }
+
+  .dark [data-theme="nzforklift"] {
+    --brand: 106 60% 32.6%;
+    --brand-hover: 106 60% 24.6%;
+    --brand-light: 106 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 106 20% 24%;
+    --brand-border: 106 20% 34%;
+    --brand-muted: 106 15% 45%;
+    --brand-dark: 106 60% 65%;
+    --brand-darker: 106 60% 78%;
   }
 
   .dark [data-theme="nzfirstaid"] {

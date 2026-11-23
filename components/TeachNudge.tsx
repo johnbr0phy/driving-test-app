@@ -112,7 +112,7 @@ const TEACHER_LED = new Set([
   "cdm", "cst", "crcst", "htl", "cna", "ptcb", "phleb", "ccma", "cet", "danb", "danbrhs", "danbice", "cpr", "nclex", "nclexpn", "emt", "aemt", "paramedic", "teas", "hesi", "vtne",
   "ukfaw", "ukcare",
   "rexpn", "capsw", "casfa",
-  "aufirstaid", "ausecurity", "nzfirstaid",
+  "aufirstaid", "ausecurity", "nzfirstaid", "nzforklift",
   "gulfrn",
   "aedhapharm",
   // High school, military and college classes
@@ -128,7 +128,7 @@ const TEACHER_LED = new Set([
   "cdl", "cdlx", "moto", "osha", "osha30", "forklift", "epa608", "epa609", "foodmgr", "security", "lifeguard", "hunter", "cosmetology",
   "realestate", "insurance", "pnc", "ham", "hamextra", "civics",
   "uksia", "uk18ed", "ukgas", "ukplumb", "ukwater", "ukbregs", "ukrbi", "ukplumb", "ukg3", "ukwater", "ukdsc1", "capal", "caelec", "auwhite",
-  "cscs", "ukfood", "ukaplh",
+  "cscs", "ukfood", "ukfood3", "ukhs2", "ukaplh",
   "caauto", "caplumb", "cagas3", "cacarp", "caweld", "carscook", "carshair", "cawhmis", "caguard", "caabguard", "oacp",
   "aursa", "aurcg", "aufss", "auforklift", "auwah",
   "uklitu", "cacit", "aucit",

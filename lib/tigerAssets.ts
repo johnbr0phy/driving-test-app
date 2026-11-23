@@ -155,6 +155,7 @@ const BORROWED_SETS: Record<string, string> = {
   cadronebasic: "part107",
   cadroneadv: "part107",
   nzfirstaid: "aufirstaid",
+  nzforklift: "auforklift",
   crfsc: "capal",
   ascppbt: "phleb",
   rpt: "phleb",
@@ -225,7 +226,7 @@ const BORROWED_SETS: Record<string, string> = {
   // AP Italian (Nov 2026): the AP English Language tiger.
   apitalian: "aplang",
   // Finland (Nov 2026): motorcycle the motorcycle tiger, truck and bus the CDL tiger, hygiene passport the UK food hygiene tiger, hunting the hunter tiger.
-  fimoto: "moto", fitruck: "cdl", fihygiene: "ukfood", fihunt: "hunter",
+  fimoto: "moto", fitruck: "cdl", fihygiene: "ukfood", ukfood3: "ukfood", fihunt: "hunter",
   // Hungary (Nov 2026): motorcycle the motorcycle tiger, GKI the CDL tiger, first aid the CPR tiger, insurance the life and health insurance tiger.
   hukreszmoto: "moto", hugki: "cdl", huelsoseg: "cpr", hubizt: "insurance",
   // Romania (Nov 2026): Driver CPC the CDL tiger, taxi the car tiger, medicine admission the SAT tiger.
@@ -282,7 +283,7 @@ const BORROWED_SETS: Record<string, string> = {
   zak53moto: "moto", zare5: "insurance", zasaps: "police", zapsira: "security",
   // International batch 4 reuses the construction, car, insurance, security, motorcycle, CDL, NCLEX
   // and Series 7 families.
-  iesafepass: "cscs", iespsv: "driving", ieqfa: "insurance", iepsa: "security", nzmoto: "moto", nzheavy: "cdl", iehcap: "hunter", caabguard: "caguard", oacp: "police", caairbrake: "cdl",
+  iesafepass: "cscs", ukhs2: "cscs", iespsv: "driving", ieqfa: "insurance", iepsa: "security", nzmoto: "moto", nzheavy: "cdl", iehcap: "hunter", caabguard: "caguard", oacp: "police", caairbrake: "cdl",
   // Smart Serve Ontario borrows the alcohol server tiger.
   smartserve: "alcohol",
   // SHRM-CP borrows the PHR human resources tiger.

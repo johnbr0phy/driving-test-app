@@ -1662,6 +1662,11 @@
   "https://www.nzqa.govt.nz/nqfdocs/skills/pdf/41051.pdf",
   "https://www.nzqa.govt.nz/nqfdocs/summaries/2025/nov25/revsumnov25-16.html"
  ],
+ "nzforklift": [
+  "https://www.nzqa.govt.nz/nqfdocs/skills/pdf/40735.pdf",
+  "https://www.nzqa.govt.nz/nqfdocs/skills/pdf/40736.pdf",
+  "https://www.nzqa.govt.nz/nqfdocs/skills/pdf/40737.pdf"
+ ],
  "nzham": [
   "https://nzart.org.nz/wp-content/uploads/2025/10/NZART-Study-Guide-2025.pdf",
   "https://nzart.org.nz/wp-content/uploads/2026/03/2025-NZART-Examination-Procedure.pdf",
@@ -2400,6 +2405,11 @@
   "https://centres.highfieldqualifications.com//Assets/DownloadArea/QualificationDownloads/[15042024_1449",
   "https://www.food.gov.uk/sites/default/files/media/document/hot-holding.pdf"
  ],
+ "ukfood3": [
+  "https://centres.highfieldqualifications.com/Assets/DownloadArea/QualificationDownloads/[25082021_1546",
+  "https://centres.highfieldqualifications.com//Assets/DownloadArea/QualificationDownloads/[15042024_1505",
+  "https://www.legislation.gov.uk/uksi/2013/2996/contents"
+ ],
  "ukg3": [
   "https://bpec.org.uk/qualification/domestic-hot-water-storage-systems/",
   "https://www.legislation.gov.uk/uksi/2010/2214/schedule/1",
@@ -2409,6 +2419,11 @@
   "https://www.igem.org.uk/technical/standard-setting-body.html",
   "https://www.igem.org.uk/technical/standard-setting-body/assessment.html",
   "https://www.igem.org.uk/technical/standard-setting-body/assessment-criteria-documents.html"
+ ],
+ "ukhs2": [
+  "https://www.rsph.org.uk/qualification/level-2-award-in-health-and-safety-in-the-workplace.html",
+  "https://aim-qualifications-documents.s3.dualstack.eu-west-1.amazonaws.com/documents/rqf/specifications/60043258.pdf",
+  "https://highfieldqualifications.com/products/qualifications/health-and-safety/level-2-workplace"
  ],
  "uklgv": [
   "https://www.gov.uk/become-lorry-bus-driver/driver-cpc-part-1-theory-test",

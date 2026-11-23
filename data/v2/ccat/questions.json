@@ -234,7 +234,7 @@
     "stem": "Which word is closest in meaning to ROUTINE?",
     "options": [
       "Habitual",
-      "Tedious",
+      "Occasional",
       "Lengthy",
       "Sudden",
       "Planned"
@@ -242,7 +242,7 @@
     "correct": [
       0
     ],
-    "explanation": "A routine task is one done regularly as a habit. Tedious describes how a routine can feel, not what the word means."
+    "explanation": "A routine task is one done regularly as a habit. Occasional means now and then, nearly the opposite."
   },
   {
     "id": "CCAT-T1-012",
@@ -436,7 +436,7 @@
     "options": [
       "Cool",
       "Humid",
-      "Misty",
+      "Evaporated",
       "Drenched",
       "Dry"
     ],
@@ -637,7 +637,7 @@
       "Obvious",
       "Workable",
       "Costly",
-      "Popular",
+      "Profitable",
       "Hopeful"
     ],
     "correct": [
@@ -839,7 +839,7 @@
       "Bicycle",
       "Rider",
       "Wheel",
-      "Garage"
+      "Handlebar"
     ],
     "correct": [
       1
@@ -859,7 +859,7 @@
     "options": [
       "inconsistent",
       "accurate",
-      "emotional",
+      "controversial",
       "honest",
       "official"
     ],
@@ -1017,7 +1017,7 @@
       "Flock",
       "Pod",
       "Herd",
-      "Swarm",
+      "Litter",
       "School"
     ],
     "correct": [
@@ -1039,7 +1039,7 @@
       "simplify ... complicated",
       "speed ... quickened",
       "explain ... clarified",
-      "replace ... improved",
+      "standardize ... streamlined",
       "secure ... protected"
     ],
     "correct": [
@@ -1351,7 +1351,7 @@
     "stem": "Which word is closest in meaning to VITAL?",
     "options": [
       "Urgent",
-      "Complex",
+      "Energetic",
       "Helpful",
       "Essential",
       "Lively"
@@ -1777,7 +1777,7 @@
       "Cocoon",
       "Beetle",
       "Worm",
-      "Larva"
+      "Chrysalis"
     ],
     "correct": [
       0
@@ -1799,7 +1799,7 @@
       "concise ... long-winded",
       "brief ... quick",
       "funny ... cheerful",
-      "nervous ... tense"
+      "lively ... enthusiastic"
     ],
     "correct": [
       1
@@ -1978,7 +1978,7 @@
       "boycott",
       "compromise",
       "victory",
-      "contract"
+      "declaration"
     ],
     "correct": [
       2
@@ -2153,7 +2153,7 @@
     "skill": "One blank",
     "stem": "The clerk was so ____ that he caught a one-cent error in a thousand-line ledger.",
     "options": [
-      "anxious",
+      "disorganized",
       "hasty",
       "generous",
       "talkative",
@@ -2315,7 +2315,7 @@
       "Song",
       "Drum",
       "Guitar",
-      "Note"
+      "Trumpet"
     ],
     "correct": [
       3
@@ -2336,7 +2336,7 @@
       "shout",
       "leave",
       "complain",
-      "celebrate",
+      "participate",
       "concentrate"
     ],
     "correct": [
@@ -2490,7 +2490,7 @@
     "stem": "ANCIENT is to MODERN as GUILTY is to ____.",
     "options": [
       "Accused",
-      "Proven",
+      "Sentenced",
       "Innocent",
       "Honest",
       "Sorry"
@@ -2692,12 +2692,12 @@
       "unexpected",
       "pleasant",
       "lengthy",
-      "scheduled"
+      "anticipated"
     ],
     "correct": [
       1
     ],
-    "explanation": "No time to prepare means it came without warning, so unexpected. A scheduled meeting gives time."
+    "explanation": "No time to prepare means it came without warning, so unexpected. A meeting that was anticipated gives time to prepare."
   },
   {
     "id": "CCAT-D-022",
@@ -2915,7 +2915,7 @@
       "forget",
       "guess",
       "hide",
-      "repeat"
+      "postpone"
     ],
     "correct": [
       0
@@ -3226,7 +3226,7 @@
     "stem": "Which word is closest in meaning to ADEQUATE?",
     "options": [
       "Sufficient",
-      "Equal",
+      "Exceptional",
       "Accurate",
       "Minimal",
       "Excellent"
@@ -3271,7 +3271,7 @@
     "options": [
       "humor ... tired",
       "honesty ... ahead",
-      "talent ... winning",
+      "teamwork ... celebrating",
       "speed ... rested",
       "persistence ... behind"
     ],
@@ -3449,7 +3449,7 @@
     "skill": "One blank",
     "stem": "The instructions were ____, so half the class built the model wrong.",
     "options": [
-      "detailed",
+      "comprehensive",
       "optional",
       "brief",
       "ambiguous",
@@ -3458,7 +3458,7 @@
     "correct": [
       3
     ],
-    "explanation": "Instructions open to more than one reading are ambiguous, which explains the mistakes. Detailed instructions would prevent them."
+    "explanation": "Instructions open to more than one reading are ambiguous, which explains the mistakes. Comprehensive instructions would make such mistakes less likely."
   },
   {
     "id": "CCAT-D-056",
@@ -3627,7 +3627,7 @@
     "options": [
       "economical",
       "expensive",
-      "dangerous",
+      "unreliable",
       "noisy",
       "slow"
     ],
@@ -3785,7 +3785,7 @@
       "Ruler",
       "Bricks",
       "Blueprint",
-      "Builder",
+      "Construction",
       "Office"
     ],
     "correct": [
@@ -3984,7 +3984,7 @@
     "skill": "Closest meaning",
     "stem": "Which word is closest in meaning to PRUDENT?",
     "options": [
-      "Proper",
+      "Ambitious",
       "Thrifty",
       "Shy",
       "Strict",
@@ -4166,7 +4166,7 @@
     "options": [
       "Average",
       "Hostile",
-      "Cautious",
+      "Unfortunate",
       "Harmful",
       "Favorable"
     ],
@@ -4211,7 +4211,7 @@
       "popular",
       "recent",
       "unfounded",
-      "harmless",
+      "widespread",
       "accurate"
     ],
     "correct": [
@@ -4342,7 +4342,7 @@
     "stem": "Which word is closest in meaning to TENACIOUS?",
     "options": [
       "Persistent",
-      "Careful",
+      "Affectionate",
       "Tender",
       "Anxious",
       "Gracious"
@@ -4386,7 +4386,7 @@
     "stem": "Her ____ remarks put the nervous guests at ease, and the room soon grew ____.",
     "options": [
       "witty ... silent",
-      "vague ... confused",
+      "condescending ... uneasy",
       "harsh ... tense",
       "reassuring ... relaxed",
       "formal ... stiff"

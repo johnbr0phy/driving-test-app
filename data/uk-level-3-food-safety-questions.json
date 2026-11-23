@@ -501,7 +501,7 @@
     "optionD": "80°C core",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A target level is set inside the critical limit to give a safety margin, so a small drift still keeps the food safe."
+    "explanation": "A target level such as 80°C is set inside the 75°C critical limit to give a safety margin, so a small drift still keeps the food safe."
   },
   {
     "type": "UKFOOD3",
@@ -753,7 +753,7 @@
     "optionD": "Below 20°C by next morning",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A limit must be specific and measurable. A time and temperature target can be checked and recorded, unlike how the rice looks."
+    "explanation": "A limit must be specific and measurable. Below 8°C within 90 minutes can be checked and recorded, unlike how the rice looks."
   },
   {
     "type": "UKFOOD3",

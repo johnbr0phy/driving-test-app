@@ -1791,5 +1791,6 @@
   "carsrefrig": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1023, "findings": 9 }],
   "masterelec": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1024, "findings": 6 }],
   "esccse": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1025, "findings": 12 }],
-  "iegarda": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1026, "findings": 6 }]
+  "iegarda": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1026, "findings": 6 }],
+  "series24": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1027, "findings": 7 }]
 }

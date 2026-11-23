@@ -5390,6 +5390,20 @@
     --brand-gradient-to: 0 0% 98%;
   }
 
+  /* Australian amateur radio Foundation (auham): dark outback ochre, clear of every theme within 8 degrees. */
+  [data-theme="auham"] {
+    --brand: 32 55% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 32 50% 95%;
+    --brand-hover: 32 55% 10%;
+    --brand-dark: 32 55% 9%;
+    --brand-darker: 32 55% 6%;
+    --brand-muted: 32 25% 70%;
+    --brand-border: 32 30% 78%;
+    --brand-border-light: 32 30% 88%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
   /* FCC GROL Elements 1 and 3 (grol): deep radio navy, clear of nzham (lighter, less saturated) and ukdrone. */
   [data-theme="grol"] {
     --brand: 233 100% 14%;
@@ -12204,6 +12218,18 @@
     --brand-muted: 330 30% 45%;
     --brand-dark: 330 60% 65%;
     --brand-darker: 330 60% 78%;
+  }
+
+  .dark [data-theme="auham"] {
+    --brand: 32 55% 40.1%;
+    --brand-hover: 32 55% 32.1%;
+    --brand-light: 32 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 32 30% 24%;
+    --brand-border: 32 30% 34%;
+    --brand-muted: 32 25% 45%;
+    --brand-dark: 32 55% 65%;
+    --brand-darker: 32 55% 78%;
   }
 
   .dark [data-theme="grol"] {

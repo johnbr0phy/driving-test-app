@@ -2408,6 +2408,14 @@ export const vi: TranslationKeys = {
     sqeTrusts: "Trusts",
     sqeCrimLiability: "Criminal liability",
     sqeCrimPractice: "Criminal practice",
+    // auham
+    auhamRegs: "Licence Conditions, Bands & Call Signs",
+    auhamTech: "Technical Basics",
+    auhamTxRx: "Transmitters & Receivers",
+    auhamAntennas: "Transmission Lines & Antennas",
+    auhamPropagation: "Propagation",
+    auhamInterference: "Interference & EMC",
+    auhamSafety: "Safety",
     // grol
     grolE1Rules: "Element 1: Rules & Regulations",
     grolE1Comms: "Element 1: Communications Procedures",

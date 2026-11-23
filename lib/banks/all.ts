@@ -310,6 +310,7 @@ import "./ascppbt";
 import "./crfsc";
 import "./ukdrone";
 import "./grol";
+import "./auham";
 import "./uksqe1";
 import "./nzdrone";
 import "./cadc";

@@ -57,6 +57,7 @@ export const TEACHES: Record<string, string> = {
   cbspd: "a sterile processing program",
   ascpmlt: "an MLT program",
   nzham: "an amateur radio club licence class",
+  auham: "a Foundation licence course at a radio club",
   cahambasic: "an amateur radio club Basic course",
   cadc: "an addiction counseling program",
   ascppbt: "a phlebotomy program",

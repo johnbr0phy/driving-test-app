@@ -1443,6 +1443,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       basedOn: "the SRA SQE1 Assessment Specification (applicable from 1 September 2026, updated April 2026), the SRA SQE Assessment Regulations and the SRA's September 2026 SQE update, checked November 2026",
       source: { name: "SRA: SQE1 Assessment Specification", url: "https://sqe.sra.org.uk/docs/default-source/pdfs/sqe1-assessment-specification-(from-1-september-2026).pdf?sfvrsn=9a3f672d_2" },
     },
+  auham: {
+    answer:
+      "The Foundation exam is the entry-level Australian amateur radio exam for an ACMA recognition certificate (Foundation). It has a 25-question multi-choice paper on theory and regulations, 30 minutes when sat in one session, and a practical assessment of operating a station. You need 70 percent, 18 of 25, plus competence in every practical element. Exams are run free by ACMA accredited assessors; after passing you apply to the ACMA for the certificate and a call sign. Foundation operators may use parts of the 80, 40, 15, 10 and 2 metre and 70 centimetre bands at up to 10 watts PEP under the Amateur Class Licence.",
+    rows: [
+      { label: "Multi-choice paper", value: "25 questions on theory and regulations, 30 minutes" },
+      { label: "Pass mark", value: "70% (18 of 25), plus every practical element" },
+      { label: "Practical", value: "Operating a station, mainly syllabus section 8" },
+      { label: "Run by", value: "ACMA accredited assessors (free to sit)" },
+      { label: "Resit", value: "At least 3 months later, on a different paper" },
+      { label: "Foundation power", value: "10 W peak envelope power (pX)" },
+    ],
+    basedOn: "the ACMA recognition certificate (Foundation) Syllabus and examination information (February 2024), ACMA's qualifications page and the Radiocommunications (Amateur Stations) Class Licence 2023, checked November 2026",
+    source: { name: "ACMA: Qualifications to operate amateur radio", url: "https://www.acma.gov.au/qualifications-operate-amateur-radio" },
+  },
   grol: {
     answer:
       "The FCC General Radiotelephone Operator License (GROL, license class PG) is the commercial license needed to adjust, maintain or internally repair FCC-licensed radiotelephone transmitters in the aviation, maritime and international fixed public services. You earn it by passing two written elements with a Commercial Operator License Examination Manager (COLEM): Element 1, basic radio law and operating practice, 24 questions with 18 correct to pass; and Element 3, general radiotelephone electronics, 100 questions with 75 correct to pass. Questions come from FCC pools approved in June 2009. You then file FCC Form 605 in ULS with your Proof of Passing Certificates, and the license is issued for your lifetime.",

@@ -1695,5 +1695,20 @@
       "findings": 9
     }
   ],
-  "ausecurity": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 999, "findings": 1 }]
+  "ausecurity": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 999,
+      "findings": 1
+    }
+  ],
+  "auham": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1000,
+      "findings": 8
+    }
+  ]
 }

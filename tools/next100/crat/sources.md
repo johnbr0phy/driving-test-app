@@ -113,3 +113,17 @@ every reference above and is computed in `build.py`.
 - Overlap: checked by script against the cct, cet, cen, ccrn, acls and pals banks and the v2
   nclex, nclexpn, paramedic and emt banks for repeated stems and number-and-answer pairs; matches
   were rewritten (method and result at the end of this file once run).
+
+## Overlap check (run 2026-11-23)
+
+Method: `~/tt-run100/crat-overlap.py` (kept out of the repo) compared every stem with every item
+in the cct, cet, cen, ccrn, acls and pals banks and the single-answer items of the v2 nclex,
+nclexpn, paramedic and emt banks, flagging stem word overlap (Jaccard) over 0.45, the same key
+with overlap over 0.25, or the same stem numbers with the same key. 35 hits on the first pass;
+14 items were rewritten with new numbers or a new angle (contact precautions, QT lead choice,
+rate from 50 small boxes, flutter rate from 0.24 s, focal AT P-wave shape, accelerated junctional
+by rate, first-degree block at 0.32 s, 3:1 block rate, ventricular escape in complete block,
+failure to capture, undersensing timing, paced rate from a 6-second count, RBBB lead, LBBB ST-T).
+The 13 hits left are rate-calculation stems with different numbers and answers, or rhythm-name
+keys (atrial fibrillation, MAT, junctional escape, idioventricular, sinus arrhythmia, first-degree
+block) on differently described strips, which a rhythm exam cannot avoid.

@@ -3276,6 +3276,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the Motor Vehicles Act 1988 as amended in 2019, the Central Motor Vehicles Rules and the Motor Vehicles (Driving) Regulations 2017, checked October 2026",
     source: { name: "Sarathi Parivahan (Ministry of Road Transport and Highways)", url: "https://sarathi.parivahan.gov.in/" },
   },
+  snowpro: {
+    answer:
+      "The SnowPro Core Certification (exam COF-C03) is Snowflake's foundational certification for people with about six months of hands-on Snowflake experience. The exam has 100 multiple choice and multiple select questions in 115 minutes, scored from 0 to 1,000 with 750 to pass, and covers Snowflake architecture, account management and governance, loading and unloading, performance and transformation, and data collaboration.",
+    rows: [
+      { label: "Questions", value: "100, multiple choice and multiple select (unscored items may be included)" },
+      { label: "Time", value: "115 minutes" },
+      { label: "Passing score", value: "750 on a scale of 0 to 1,000" },
+      { label: "Domains", value: "Features and architecture 31%, account management and governance 20%, loading, unloading and connectivity 18%, performance, querying and transformation 21%, data collaboration 10%" },
+      { label: "Fee", value: "175 USD (140 USD in India)" },
+      { label: "Languages", value: "English, Japanese, Korean, French, Spanish" },
+      { label: "Delivery", value: "Online proctoring or onsite testing center" },
+      { label: "Valid for", value: "2 years" },
+      { label: "Given by", value: "Snowflake Inc." },
+    ],
+    basedOn: "Snowflake's SnowPro Core Certification (COF-C03) exam page and its Continuing Education page, checked November 2026",
+    source: { name: "Snowflake: SnowPro Core Certification", url: "https://learn.snowflake.com/en/certifications/snowpro-core-c03/" },
+  },
   awsaif: {
     answer:
       "AWS Certified AI Practitioner (AIF-C01) is Amazon Web Services' foundational exam for people who use AI and machine learning on AWS without building models themselves. It has 65 questions in 90 minutes: 50 count toward the score and 15 are unscored, unmarked questions AWS is testing. Questions are multiple choice (one correct answer of four) or multiple response (two or more correct of five or more), and there is no penalty for guessing. Results are a scaled score from 100 to 1,000 with 700 needed to pass, and the scoring is compensatory, so only the overall score must pass. The exam guide (version 1.2, published October 29, 2026) weights Fundamentals of AI and ML at 20 percent, Fundamentals of Generative AI at 24 percent, Applications of Foundation Models at 28 percent, Guidelines for Responsible AI at 14 percent and Security, Compliance, and Governance for AI Solutions at 14 percent. It costs 100 USD, is taken at a Pearson VUE test center or online, and the certification is valid for three years.",

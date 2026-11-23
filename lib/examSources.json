@@ -2092,6 +2092,11 @@
   "https://smartserve.ca/full-course",
   "https://smartserve.ca/certificate-faqs/"
  ],
+ "snowpro": [
+  "https://learn.snowflake.com/en/certifications/snowpro-core-c03/",
+  "https://learn.snowflake.com/en/page-data/certifications/snowpro-core-c03/page-data.json",
+  "https://learn.snowflake.com/en/snowpro-continuing-education/"
+ ],
  "ssat": [
   "https://www.admission.org/help/whats-on-the-middle-level-ssat",
   "https://www.admission.org/help/whats-on-the-upper-level-ssat",

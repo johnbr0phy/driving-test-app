@@ -57,7 +57,7 @@ Q = [
 ("Running equipment above its normal full-load rating, with no fault present, is called:",
  "Overload", ["Short circuit", "Ground fault", "Arc fault"],
  "Article 100 defines overload as operation in excess of normal full-load rating that would cause damage if it persists. A short circuit or ground fault is a fault, not an overload."),
-("Chapter 8 communications systems are subject to the requirements of Chapters 1 through 7:",
+("In the 2023 NEC, Chapter 8 communications systems are subject to Chapters 1 through 7:",
  "Only where referenced", ["Always, without exception", "Never, in any installation", "Only in dwellings"],
- "Article 90 says Chapter 8 stands on its own and is not subject to Chapters 1 through 7 unless a Chapter 8 rule specifically refers to them."),
+ "Article 90 of the 2023 NEC says Chapter 8 stands on its own and is not subject to Chapters 1 through 7 unless a Chapter 8 rule specifically refers to them. The 2026 NEC folds communications into Chapter 7."),
 ]

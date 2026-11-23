@@ -270,14 +270,14 @@
     "state": "ALL",
     "questionId": "MELEC-GEN-020",
     "category": "melecGeneral",
-    "question": "Chapter 8 communications systems are subject to the requirements of Chapters 1 through 7:",
+    "question": "In the 2023 NEC, Chapter 8 communications systems are subject to Chapters 1 through 7:",
     "optionA": "Always, without exception",
     "optionB": "Never, in any installation",
     "optionC": "Only in dwellings",
     "optionD": "Only where referenced",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Article 90 says Chapter 8 stands on its own and is not subject to Chapters 1 through 7 unless a Chapter 8 rule specifically refers to them."
+    "explanation": "Article 90 of the 2023 NEC says Chapter 8 stands on its own and is not subject to Chapters 1 through 7 unless a Chapter 8 rule specifically refers to them. The 2026 NEC folds communications into Chapter 7."
   },
   {
     "type": "MASTERELEC",

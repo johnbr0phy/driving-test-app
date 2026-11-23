@@ -4646,6 +4646,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two DAT practice tests with the Survey of the Natural Sciences, Reading Comprehension and Quantitative Reasoning at half length and the real pace, and seven drills by topic. The picture-based Perceptual Ability Test is not included. It is free to start, with no account required.",
   },
+  iegarda: {
+    answer:
+      "Stage 1 of the Garda Trainee competition is a set of online assessments run by publicjobs for An Garda Síochána. An Garda Síochána's selection flowchart lists them as verbal and numerical reasoning tests and a written exercise, taken online and in English only (in 2024 they were remotely proctored by webcam). Candidates are ranked on their scores, and those highest on the order of merit go on to Stage 2, an online interview (with a roleplay in the 2026 competition). There is no published pass mark. publicjobs provides familiarisation material before the tests, so check it for what each test involves.",
+    rows: [
+      { label: "Stage 1", value: "Online verbal and numerical reasoning tests and a written exercise" },
+      { label: "Taken", value: "Online; in 2024, at any time in the testing window, remotely proctored by webcam" },
+      { label: "Language", value: "English only (2026 FAQ)" },
+      { label: "Scoring", value: "Ranked on an order of merit; no published pass mark" },
+      { label: "Stage 2", value: "Online interview on Zoom (with a roleplay in 2026)" },
+      { label: "Then", value: "Physical Competency Assessment, medical, substance misuse test and vetting by An Garda Síochána" },
+      { label: "Eligibility", value: "18 to under 50 on the closing date; Leaving Certificate or NFQ Level 5" },
+      { label: "Run by", value: "publicjobs, for An Garda Síochána" },
+    ],
+    basedOn: "An Garda Síochána's selection flowchart and 2026 FAQ, the publicjobs Garda Trainee 2026 page and the publicjobs description of its verbal and numerical reasoning tests (checked November 2026)",
+    source: { name: "publicjobs", url: "https://publicjobs.ie/en/garda-trainee" },
+    tigertest:
+      "Tigertest has two timed practice tests, each a verbal reasoning section of 30 questions in 25 minutes and a numerical reasoning section of 20 questions in 25 minutes, and four drills: True, False or Cannot Say, Reading for Meaning, Percentages and Change, and Totals, Averages and Ratios. Start for free, no account required; Practice Test 1 and the first two drills are free, and Practice Test 2 and the other two drills are part of Premium. Scores are percent correct, not a rank.",
+  },
   ccat: {
     answer:
       "The Criteria Cognitive Aptitude Test (CCAT) is Criteria Corp's pre-employment aptitude test, which employers use mostly for mid- to senior-level roles. It has 50 multiple-choice questions and a 15-minute time limit, and very few people finish all 50. The questions cover three abilities: verbal ability (vocabulary, sentence completion and word comparisons), math and logic (arithmetic, proportions, word problems and logic) and spatial reasoning (shape patterns, rotations and the odd one out). No calculator is allowed and a wrong answer costs nothing. Employers get the raw score out of 50 and a percentile, plus percentiles for the three abilities. There is no pass mark: each employer compares the score with a suggested range for the role, and Criteria reports a median of 24 out of 50.",

@@ -2522,6 +2522,20 @@
     --brand-gradient-to: 100 50% 95%;
   }
 
+  /* Garda Trainee Stage 1 assessments theme: dark slate blue-grey (v2 exam; matches lib/v2/exams/iegarda.ts theme) */
+  [data-theme="iegarda"] {
+    --brand: 192 20% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 192 30% 95%;
+    --brand-hover: 192 20% 11%;
+    --brand-dark: 192 20% 10%;
+    --brand-darker: 192 20% 7%;
+    --brand-muted: 192 15% 60%;
+    --brand-border: 192 20% 80%;
+    --brand-border-light: 192 20% 89%;
+    --brand-gradient-to: 200 30% 96%;
+  }
+
   /* CCAT (Criteria Cognitive Aptitude Test) theme: deep magenta (v2 exam; matches lib/v2/exams/ccat.ts theme) */
   [data-theme="ccat"] {
     --brand: 300 100% 20%;
@@ -10178,6 +10192,17 @@
     --brand-darker: 90 80% 78%;
   }
 
+  .dark [data-theme="iegarda"] {
+    --brand: 192 20% 42.9%;
+    --brand-hover: 192 20% 34.9%;
+    --brand-light: 192 30% 13%;
+    --brand-gradient-to: 200 30% 11%;
+    --brand-border-light: 192 20% 24%;
+    --brand-border: 192 20% 34%;
+    --brand-muted: 192 15% 45%;
+    --brand-dark: 192 20% 65%;
+    --brand-darker: 192 20% 78%;
+  }
   .dark [data-theme="ccat"] {
     --brand: 300 100% 40.6%;
     --brand-hover: 300 100% 32.6%;

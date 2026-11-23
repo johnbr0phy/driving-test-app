@@ -1646,7 +1646,14 @@ const RELATED_FALLBACK = ["dmv", "cdl", "teas", "cna"];
  */
 export function relatedTests(id: string, limit = 6): TestCatalogEntry[] {
   const group = TEST_GROUPS.find((g) => g.tests.some((t) => t.id === id));
-  const out: TestCatalogEntry[] = group ? group.tests.filter((t) => t.id !== id) : [];
+  // The group's first tests lead, then the tests that follow this one (wrapping
+  // round), so every test in a big group is linked from other landings, not only
+  // the first few (the SEO audit's fewContextLinks).
+  const others = group ? group.tests.filter((t) => t.id !== id) : [];
+  const head = Math.ceil(limit / 2);
+  const at = group ? group.tests.findIndex((t) => t.id === id) : 0;
+  const after = [...others.slice(at), ...others.slice(0, at)].filter((t) => !others.slice(0, head).includes(t));
+  const out: TestCatalogEntry[] = [...others.slice(0, head), ...after];
   for (const extra of [...(RELATED_OVERRIDES[id] ?? []), ...RELATED_FALLBACK]) {
     if (out.length >= 3) break;
     const entry = getCatalogEntry(extra);

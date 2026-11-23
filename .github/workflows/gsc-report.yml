@@ -1,0 +1,89 @@
+name: Search Console report
+
+# Weekly read of Google Search Console (free, read-only) by scripts/gsc-report.ts:
+# queries on page 2, low click rates for the position, our pages competing for
+# one query, falling pages, sitemap errors and landings Google has not indexed.
+# The report is the job summary, an artifact and a file on the data-only
+# gsc-data branch (reports/<date>.md and .json; never merge it), which the
+# seo-audit skill reads and acts on. gscReports/{date} in Firestore is the
+# watchdog heartbeat.
+#
+# Uses FIREBASE_SERVICE_ACCOUNT_KEY: that service account is a Restricted user
+# on the tigertest.io property, with the Search Console API enabled in its
+# Google Cloud project. GSC_SERVICE_ACCOUNT_KEY overrides it when set.
+
+on:
+  schedule:
+    - cron: "41 8 * * 1" # Mondays 08:41 UTC, after the SEO audit
+  workflow_dispatch:
+    inputs:
+      inspect:
+        description: "Landings to run through URL Inspection (0 to skip)"
+        default: "600"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gsc-report
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci --no-audit --no-fund
+
+      - name: Read Search Console
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+          GSC_SERVICE_ACCOUNT_KEY: ${{ secrets.GSC_SERVICE_ACCOUNT_KEY }}
+          INSPECT: ${{ github.event.inputs.inspect || '600' }}
+        run: |
+          case "$INSPECT" in *[!0-9]*) echo "inspect must be a whole number"; exit 1 ;; esac
+          npx tsx scripts/gsc-report.ts --out "$RUNNER_TEMP/gsc" --inspect "$INSPECT" > /dev/null
+
+      - name: Job summary
+        if: always()
+        run: |
+          shopt -s nullglob
+          for f in "$RUNNER_TEMP"/gsc/*.md; do head -c 900000 "$f" >> "$GITHUB_STEP_SUMMARY"; done
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: gsc-report-${{ github.run_id }}
+          path: ${{ runner.temp }}/gsc/
+          retention-days: 90
+          if-no-files-found: ignore
+
+      - name: Commit to the data branch
+        run: |
+          shopt -s nullglob
+          files=("$RUNNER_TEMP"/gsc/*)
+          [ ${#files[@]} -gt 0 ] || { echo "No report to commit"; exit 0; }
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          dir="$RUNNER_TEMP/data"
+          if git fetch --depth=1 origin gsc-data 2>/dev/null; then
+            git worktree add "$dir" FETCH_HEAD
+            git -C "$dir" checkout -B gsc-data
+          else
+            git worktree add --detach "$dir"
+            git -C "$dir" checkout --orphan gsc-data
+            git -C "$dir" rm -rqf .
+            printf '# Search Console reports\n\nOne report per run of .github/workflows/gsc-report.yml. Data only: never merge this branch.\n' > "$dir/README.md"
+          fi
+          mkdir -p "$dir/reports"
+          cp "${files[@]}" "$dir/reports/"
+          git -C "$dir" add -A
+          git -C "$dir" commit -qm "Search Console report $(date -u +%F)" || { echo "Nothing new"; exit 0; }
+          for i in 1 2 3; do git -C "$dir" push origin gsc-data && break; sleep $((i * 5)); done

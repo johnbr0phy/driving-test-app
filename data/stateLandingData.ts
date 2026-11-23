@@ -86,7 +86,7 @@ export const stateLandingData: Record<string, StateLandingInfo> = {
       "Provisional license holders under 18 cannot carry passengers under 20 for the first 12 months unless accompanied by a licensed driver 25 or older.",
       "California's written test for applicants under 18 has 46 questions, and you need to answer 38 correctly (83%) to pass."
     ],
-    neighboringSlugs: ["oregon", "nevada", "arizona"],
+    neighboringSlugs: ["oregon", "nevada", "arizona", "hawaii"],
     onlineTestInfo: "No, the California DMV written test must be taken in person at a DMV office. You can make an appointment online to reduce wait times.",
     seo: {
       title: "California DMV Practice Test 2026 - Free CA Permit Test | Tigertest",
@@ -212,7 +212,7 @@ export const stateLandingData: Record<string, StateLandingInfo> = {
       "New drivers under 18 cannot drive between 11:00 PM and 5:00 AM unless traveling to or from work.",
       "Hawaii allows learner's permits starting at age 15 years and 6 months."
     ],
-    neighboringSlugs: ["california"],
+    neighboringSlugs: ["california", "alaska"],
     onlineTestInfo: "No, the Hawaii written knowledge test must be taken in person at a county driver licensing office."
   },
   ID: {
@@ -342,7 +342,7 @@ export const stateLandingData: Record<string, StateLandingInfo> = {
       "Drivers under 18 hold a Junior Operator License (JOL) with restrictions on passengers and nighttime driving.",
       "JOL holders cannot drive between 12:30 AM and 5:00 AM and cannot carry passengers under 18 (except siblings) for the first 6 months."
     ],
-    neighboringSlugs: ["connecticut", "rhode-island", "new-hampshire", "new-york", "vermont"],
+    neighboringSlugs: ["connecticut", "rhode-island", "new-hampshire", "new-york", "vermont", "maine"],
     onlineTestInfo: "No, the Massachusetts RMV knowledge test must be taken in person at an RMV service center."
   },
   MI: {
@@ -566,7 +566,7 @@ export const stateLandingData: Record<string, StateLandingInfo> = {
       "Permit holders must log 50 hours of supervised driving (10 at night) and hold the permit for at least 6 months.",
       "Provisional license holders under 18 cannot carry passengers under 20 for the first 6 months."
     ],
-    neighboringSlugs: ["washington", "idaho", "nevada", "california"],
+    neighboringSlugs: ["washington", "idaho", "nevada", "california", "alaska"],
     onlineTestInfo: "No, the Oregon DMV knowledge test must be taken in person at a DMV office."
   },
   PA: {
@@ -670,7 +670,7 @@ export const stateLandingData: Record<string, StateLandingInfo> = {
       "New drivers under 18 cannot carry passengers under 20 (other than family) during the first 6 months.",
       "Vermont's road test includes a winter driving component when conditions warrant."
     ],
-    neighboringSlugs: ["new-hampshire", "massachusetts", "new-york"],
+    neighboringSlugs: ["new-hampshire", "massachusetts", "new-york", "maine"],
     onlineTestInfo: "No, the Vermont DMV knowledge test must be taken in person at a DMV office."
   },
   VA: {
@@ -696,7 +696,7 @@ export const stateLandingData: Record<string, StateLandingInfo> = {
       "Permit holders must hold the permit for at least 6 months and complete approved driver training.",
       "Washington requires a minimum of 50 hours of supervised driving practice (10 at night)."
     ],
-    neighboringSlugs: ["oregon", "idaho"],
+    neighboringSlugs: ["oregon", "idaho", "alaska", "hawaii"],
     onlineTestInfo: "No, the Washington DOL knowledge test must be taken in person at a DOL office or approved testing location."
   },
   WV: {

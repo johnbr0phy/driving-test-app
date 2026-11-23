@@ -109,6 +109,7 @@ async function main() {
       console.log(
         `[ai-answers] ${q.id}: ${found.mentioned ? "named" : "not named"}, ${found.cited ? `cited #${found.rank}` : "not cited"}${found.inResults ? ", in results" : ""} ($${costUsd.toFixed(3)})`,
       );
+      for (const said of found.saidAboutUs ?? []) console.log(`[ai-answers]   says: ${said}`);
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error);
       console.error(`[ai-answers] ${q.id} failed: ${message}`);
@@ -127,6 +128,7 @@ async function main() {
   console.log(
     `[ai-answers] ${summary.answered}/${summary.asked} answered, named in ${summary.mentioned}, cited in ${summary.cited}, in results for ${summary.inResults}, $${summary.costUsd.toFixed(2)}`,
   );
+  if (summary.foundNotCited.length) console.log(`[ai-answers] found but not cited (make the page answer plainly): ${summary.foundNotCited.join(", ")}`);
 
   if (db) {
     await recordSpend(db, AI_ANSWERS_JOB, spentUsd);

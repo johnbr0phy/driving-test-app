@@ -78,6 +78,12 @@ export interface AiAnswerResult {
   costUsd: number;
   /** The first 600 characters of the answer, for the report. */
   excerpt: string;
+  /**
+   * The sentences that name Tigertest (at most 3), so a run shows what AI says
+   * about us. A wrong fact here means the page that owns it does not state it
+   * plainly: fix the page, not the answer.
+   */
+  saidAboutUs?: string[];
   error?: string;
 }
 
@@ -157,6 +163,12 @@ export function analyzeAnswer(content: readonly Block[]): Omit<AiAnswerResult, '
     citedHosts,
     searches,
     excerpt: answer.slice(0, 600),
+    saidAboutUs: answer
+      .split(/(?<=[.!?])\s+|\n+/)
+      .map((x) => x.trim())
+      .filter((x) => NAME.test(x))
+      .slice(0, 3)
+      .map((x) => x.slice(0, 300)),
     blockTypes,
   };
 }
@@ -171,6 +183,12 @@ export interface AiAnswerSummary {
   /** Hosts cited most often across the run, with how many answers cited each. */
   topHosts: { host: string; answers: number }[];
   byFamily: Record<string, { asked: number; mentioned: number; cited: number }>;
+  /**
+   * Questions where search returned a tigertest.io page but the answer did not
+   * cite it: the page was found and passed over, so its first answer block
+   * should state the fact the question asks for, plainly and near the top.
+   */
+  foundNotCited: string[];
 }
 
 export function summarize(results: readonly AiAnswerResult[]): AiAnswerSummary {
@@ -196,5 +214,6 @@ export function summarize(results: readonly AiAnswerResult[]): AiAnswerSummary {
       .slice(0, 15)
       .map(([h, answers]) => ({ host: h, answers })),
     byFamily,
+    foundNotCited: answered.filter((r) => r.inResults && !r.cited).map((r) => r.id),
   };
 }

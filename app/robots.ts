@@ -5,7 +5,7 @@ import { MetadataRoute } from "next";
 // App routes with nothing to cite: practice sessions, accounts, admin. The
 // same list applies to every crawler, AI or not, so AI crawl budget goes to
 // the landing and state pages people actually ask about.
-const DISALLOW = [
+export const DISALLOW = [
   "/api/",
   "/test/", // not "/test": that would also block the /tests hub
   "/training",
@@ -23,9 +23,18 @@ const DISALLOW = [
   "/unsubscribe",
   "/request-test",
   "/upgrade",
-  // Exam app routes (/cdl/dashboard, /teas/test/...) are not listed
-  // here: they carry a noindex meta tag (lib/examSeo.ts), which
-  // crawlers only see when allowed to fetch the page.
+  // Exam app routes (/cdl/dashboard, /teas/practice/3?level=exam, /cdl/test/1/results).
+  // They are noindex (lib/examSeo.ts) and were left crawlable so Google could read
+  // that, but every landing links its dashboard and v2 dashboards link 10 to 20
+  // practice URLs each: thousands of noindex fetches while Search Console showed
+  // 214 landings "Discovered - currently not indexed" (Nov 23 2026). Blocking them
+  // sends that crawl to the landings. No sitemap URL may match these
+  // (tests/robots.test.cjs).
+  "/*/dashboard",
+  "/*/practice/",
+  "/*/test/",
+  "/*/stats",
+  "/*/drill",
 ];
 
 // AI crawlers, named so a future tightening of the "*" group never shuts them

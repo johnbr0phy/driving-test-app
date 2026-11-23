@@ -661,6 +661,11 @@
  "cissp": [
   "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline"
  ],
+ "cloudplus": [
+  "https://lecbyo.files.cmp.optimizely.com/download/1caf96e2bef111efba33a6b3d2c966cf",
+  "https://www.comptia.org/en-us/certifications/cloud/",
+  "https://lecbyo.files.cmp.optimizely.com/download/bc423452755311f18d10be1a1c935827"
+ ],
  "cma": [
   "https://www.aama-ntl.org/docs/default-source/about-profession-and-credential/cma-exam/exam-content-outline-effective.pdf",
   "https://www.aama-ntl.org/certification",

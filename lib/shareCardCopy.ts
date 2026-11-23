@@ -330,6 +330,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   fortinse: { title: "Fortinet NSE 1 (FCF)", description: "Practice all ten modules of NSE 1 Cybersecurity and Cloud Fundamentals, the course that replaced FCF." },
   pentestplus: { title: "CompTIA PenTest+ PT0-003", description: "Practise scoping, reconnaissance, vulnerability analysis, exploitation and post-exploitation, all explained." },
   isc2cc: { title: "ISC2 CC", description: "Practise ISC2 Certified in Cybersecurity questions on security principles, governance, IAM, networks, cloud and incident response." },
+  cloudplus: { title: "CompTIA Cloud+", description: "Practice cloud architecture, deployment, operations, security, DevOps and troubleshooting." },
   dataplus: { title: "CompTIA Data+", description: "Practice SQL queries, data cleaning, statistics, charts, reports and data governance." },
   serverplus: { title: "CompTIA Server+ SK0-005", description: "Practice racking, RAID and storage, server administration, virtualization, security, backups and troubleshooting." },
   techplus: { title: "CompTIA Tech+", description: "Practice computing basics, hardware, networking, software, coding concepts, databases and security." },

@@ -5762,6 +5762,20 @@
     --brand-gradient-to: 200 50% 95%;
   }
 
+  /* CompTIA Cloud+ theme: slate violet (v2 exam; matches lib/v2/exams/cloudplus.ts theme) */
+  [data-theme="cloudplus"] {
+    --brand: 262 40% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 262 40% 96%;
+    --brand-hover: 262 40% 40%;
+    --brand-dark: 262 40% 36%;
+    --brand-darker: 262 35% 28%;
+    --brand-muted: 262 20% 70%;
+    --brand-border: 262 20% 80%;
+    --brand-border-light: 262 20% 89%;
+    --brand-gradient-to: 282 40% 95%;
+  }
+
   /* CompTIA Data+ theme: deep green teal (v2 exam; matches lib/v2/exams/dataplus.ts theme) */
   [data-theme="dataplus"] {
     --brand: 152 75% 14%;
@@ -12690,6 +12704,18 @@
     --brand-muted: 221 30% 45%;
     --brand-dark: 221 85% 65%;
     --brand-darker: 221 80% 78%;
+  }
+
+  .dark [data-theme="cloudplus"] {
+    --brand: 262 40% 50%;
+    --brand-hover: 262 40% 42%;
+    --brand-light: 262 40% 13%;
+    --brand-gradient-to: 282 40% 11%;
+    --brand-border-light: 262 20% 24%;
+    --brand-border: 262 20% 34%;
+    --brand-muted: 262 20% 45%;
+    --brand-dark: 262 40% 65%;
+    --brand-darker: 262 35% 78%;
   }
 
   .dark [data-theme="dataplus"] {

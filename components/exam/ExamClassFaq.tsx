@@ -252,6 +252,7 @@ export const TEACHES: Record<string, string> = {
   techplus: "an intro to IT or CompTIA Tech+ course",
   serverplus: "a server administration or CompTIA Server+ course",
   dataplus: "a data analytics or CompTIA Data+ course",
+  cloudplus: "a cloud administration or CompTIA Cloud+ course",
   ccst: "a Cisco Networking Academy or CCST Networking course",
   az104: "an AZ-104 or Azure administrator course",
   isc2cc: "an ISC2 CC or entry-level cybersecurity course",

@@ -1,0 +1,4702 @@
+[
+  {
+    "id": "CLOUDPLUS-T1-001",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Service models",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A team moves its app from rented virtual machines to a platform service. Which task does the team stop doing?",
+    "explanation": "On a platform service the provider runs and patches the operating system and runtime. Code, access decisions and data stay with the customer.",
+    "options": [
+      "Protecting the data the app stores",
+      "Patching the operating system under the app",
+      "Deciding who may use the app",
+      "Writing and testing the application code"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-002",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Resource limits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A deployment script that creates hundreds of resources quickly starts failing with HTTP 429 responses from the provider API. What is the cause?",
+    "explanation": "HTTP 429 means Too Many Requests. Retrying with backoff or slowing the script fixes it.",
+    "options": [
+      "An expired TLS certificate",
+      "A missing route to the internet",
+      "API throttling",
+      "A DNS outage"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-003",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Storage tiers",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Moving rarely read files to the archive tier cuts the storage bill. What is the usual trade-off?",
+    "explanation": "Archive storage is the cheapest to keep data in, but reads can take hours and usually cost extra.",
+    "options": [
+      "Files must be deleted after one year",
+      "Higher monthly storage price",
+      "Slower retrieval, often with a fee to read the data",
+      "Files can no longer be encrypted"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-004",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Deployment models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What sets a community cloud apart from a public cloud?",
+    "explanation": "A community cloud is shared by a defined group with common needs, such as compliance rules, while a public cloud is open to anyone.",
+    "options": [
+      "It cannot use virtual machines",
+      "It always runs in a customer's own building",
+      "Only a group of organizations with shared requirements may use it",
+      "It has no service level agreement at all"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-005",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Vulnerability management",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put the vulnerability management steps in order:",
+    "explanation": "Set what to scan, find the weaknesses, judge their risk, then fix them and rescan to confirm.",
+    "options": [
+      "Define the scanning scope",
+      "Identify vulnerabilities with a scan",
+      "Assess and rank what was found",
+      "Remediate and confirm the fix"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-006",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "Source control",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put a typical Git change in order:",
+    "explanation": "Work happens on a branch, is committed, pushed, reviewed through a pull request and then merged.",
+    "options": [
+      "Create a feature branch",
+      "Commit the change locally",
+      "Push the branch to the remote",
+      "Open a pull request for review",
+      "Merge into the main branch"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-007",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Infrastructure as code",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Networks, VMs and load balancers are defined in template files in Git and built from them. What practice is this?",
+    "explanation": "Infrastructure as code describes resources in files that tools apply, so environments are built the same way every time.",
+    "options": [
+      "Cold standby",
+      "Infrastructure as code",
+      "Manual provisioning in the console",
+      "Configuration drift"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-008",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Logging",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Logs from 300 servers sit on each server's local disk, and engineers log in to each one to search. What should be set up first?",
+    "explanation": "Aggregation collects logs from every source into one place where they can be searched and correlated.",
+    "options": [
+      "Vertical scaling of every server",
+      "A second availability zone",
+      "Longer local log rotation on every server",
+      "Central log aggregation"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-009",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "Best practices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A network design trusts nothing by default: every request is authenticated, authorized and checked, even from inside the corporate network. What is this approach?",
+    "explanation": "Zero Trust verifies every request explicitly instead of trusting anything because of its network location.",
+    "options": [
+      "Perimeter security",
+      "Security through obscurity",
+      "Implicit trust",
+      "Zero Trust"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-010",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpBackup",
+    "skill": "Backup types",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which backup scheme makes each nightly job the smallest but needs the most backup sets for a full restore?",
+    "explanation": "Each incremental holds only one day's changes, so it is small, but a restore needs the full plus every incremental since it.",
+    "options": [
+      "A full backup plus differentials",
+      "A single mirror copy",
+      "A full backup plus incrementals",
+      "A full backup every night"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-011",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Shared responsibility",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company rents virtual machines on an IaaS platform. Under the shared responsibility model, who secures and patches the hypervisor that runs them?",
+    "explanation": "In IaaS the provider owns the physical hosts and the virtualization layer. The customer owns the guest operating system and everything above it.",
+    "options": [
+      "The internet service provider",
+      "The operating system vendor",
+      "The cloud provider",
+      "The customer"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-012",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Resource limits",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new region deployment fails with a message that the account may not launch more than 32 vCPUs of that family. What should the team do?",
+    "explanation": "Accounts have service quotas. Raising the quota through the provider allows more resources.",
+    "options": [
+      "Rotate the access keys",
+      "Change the DNS records",
+      "Request a service quota increase",
+      "Switch the VPC to a larger /16 block"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-013",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Storage types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Many Linux servers need to mount the same directory tree at once over the network with normal file permissions. Which storage type fits?",
+    "explanation": "File storage offers a shared file system over a network protocol such as NFS or SMB, so many servers can mount it together.",
+    "options": [
+      "Block storage",
+      "Ephemeral storage",
+      "File storage",
+      "Object storage"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-014",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Deployment strategies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A release reaches 5% of users first, then everyone if error rates stay low. Which strategy is this?",
+    "explanation": "A canary release exposes a small share of users to the new version first to catch problems early.",
+    "options": [
+      "Blue-green",
+      "Canary",
+      "Rolling",
+      "In-place"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-015",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Vulnerability management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A scanner reports CVE-2024-3094 on several hosts. What is a CVE?",
+    "explanation": "A CVE ID names one publicly disclosed vulnerability so tools and teams can refer to it the same way. CVSS is the scoring system.",
+    "options": [
+      "A public identifier for a specific known vulnerability",
+      "A vendor's patch file",
+      "A severity score from 0 to 10",
+      "A type of firewall rule that blocks known exploit traffic"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-016",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "Source control",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the purpose of a pull request?",
+    "explanation": "A pull request proposes merging a branch and is where code review happens.",
+    "options": [
+      "To roll back the last commit on main and push the result to everyone",
+      "To download the latest code from the remote",
+      "To delete an old branch",
+      "To have changes reviewed before merging"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-017",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Configuration as code",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After servers are created, a playbook in Git installs packages and sets file permissions on all of them. What practice is this?",
+    "explanation": "Configuration as code defines the settings inside systems (packages, files, services) in versioned files.",
+    "options": [
+      "Pass-through",
+      "Configuration as code",
+      "Data augmentation",
+      "Infrastructure as code for networks"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-018",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Tracing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "To find every service's log lines for one slow request, what should each service log?",
+    "explanation": "Passing one trace ID along with the request and logging it everywhere ties all the entries for that request together.",
+    "options": [
+      "The disk serial number",
+      "The request's trace or correlation ID",
+      "The server's uptime",
+      "The instance size"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-019",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "Secrets management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A developer has hard-coded a database password in application code stored in Git. What is the better practice?",
+    "explanation": "A secrets manager keeps credentials encrypted, access-controlled, audited and rotatable, outside the code.",
+    "options": [
+      "Keep it in a secrets manager fetched at run time",
+      "Move it to a comment",
+      "Email it to the team and delete it from the code afterward",
+      "Encode it in Base64 inside the code"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-020",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpBackup",
+    "skill": "Backup types",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Full backup Sunday, incrementals Monday to Friday nights, failure Saturday morning. How many backup sets must be restored? Type the number only.",
+    "explanation": "Restore the Sunday full and then each incremental in order, Monday through Friday: 1 + 5 = 6 sets.",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CLOUDPLUS-T1-021",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Service models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Code runs only when a file lands in a bucket, billed per millisecond of run time. Which service model is this?",
+    "explanation": "FaaS runs event-triggered functions with no server to manage and bills per execution time.",
+    "options": [
+      "Infrastructure as a service",
+      "Function as a service",
+      "Software as a service",
+      "Desktop as a service"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-022",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Deployment issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A template that worked last year now fails because it references an instance type the provider no longer offers. What is this issue?",
+    "explanation": "Templates must be updated when providers retire images, instance types or API versions they reference.",
+    "options": [
+      "An outdated component definition",
+      "An authentication failure",
+      "Data sovereignty",
+      "Clock drift between the build servers"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-023",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Cloud-native design",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "One order message is delivered to billing, shipping and email services at once. What pattern is this?",
+    "explanation": "Fan-out sends one event to many subscribers at the same time.",
+    "options": [
+      "Fan-out",
+      "Host affinity",
+      "Vertical scaling",
+      "Cold standby"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-024",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Deployment strategies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A release goes onto an idle twin environment, then all traffic switches over, keeping the old one for rollback. Which strategy is this?",
+    "explanation": "Blue-green keeps two full environments and switches traffic between them, so rollback is just switching back.",
+    "options": [
+      "Canary",
+      "Blue-green",
+      "In-place upgrade",
+      "Rolling"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-025",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Compliance",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Data about German customers stored in a German region is subject to German and EU law, wherever the company itself is based. Which concept is this?",
+    "explanation": "Data sovereignty means data is governed by the laws of the country where it is stored.",
+    "options": [
+      "Data ownership",
+      "Data sovereignty",
+      "Data lineage",
+      "Data classification"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-026",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "CI/CD",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Every push to the repository automatically builds the code and runs the unit tests within minutes. What practice is this?",
+    "explanation": "Continuous integration merges and tests changes often and automatically, catching breakage early.",
+    "options": [
+      "Manual deployment",
+      "Continuous integration",
+      "Rightsizing",
+      "Cold standby"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-027",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Drift detection",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A firewall port opened by hand makes the live resource differ from its IaC template. What is this called?",
+    "explanation": "Drift is any change to live resources made outside the code. Drift detection compares the real state with the declared state.",
+    "options": [
+      "Service discovery",
+      "Cloud bursting",
+      "Rightsizing of instances",
+      "Configuration drift"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-028",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Alerting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The on-call engineer gets hundreds of alerts a day, most of them minor, and starts ignoring them. What should the team change?",
+    "explanation": "Alert fatigue is fixed by triaging alerts: page only for actionable problems and route the rest to tickets or dashboards.",
+    "options": [
+      "Tune alerts so only actionable ones page someone",
+      "Turn monitoring off at night",
+      "Send every alert to more people on more channels",
+      "Delete the logs sooner"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-029",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "Hardening",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants a recognized, step-by-step configuration guide to harden its Ubuntu images. What should it use?",
+    "explanation": "Center for Internet Security Benchmarks give consensus hardening settings for operating systems and cloud services.",
+    "options": [
+      "A CVE list",
+      "A SOC 2 audit report",
+      "An RPO target",
+      "A CIS Benchmark"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-030",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Availability",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An app runs in two isolated data centers of one region to survive a site power loss. What is each data center called?",
+    "explanation": "Availability zones are isolated locations inside a region with their own power and networking, used to survive a single-site failure.",
+    "options": [
+      "Edge location",
+      "Availability zone",
+      "Point of presence",
+      "Tenant"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-031",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Deployment issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A managed service the design depends on is offered in some of the provider's locations but not in the one chosen for the deployment. What is the issue?",
+    "explanation": "Not every service or feature exists in every region, so the design must use a region that offers it.",
+    "options": [
+      "API throttling",
+      "Privilege escalation",
+      "Regional service availability",
+      "A VLAN tag mismatch"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-032",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Cloud-native design",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Containers in a cluster start and stop all day and their IP addresses keep changing. How do services find each other by name?",
+    "explanation": "Service discovery keeps a live registry of where each service is running, so callers look up a name instead of a fixed address.",
+    "options": [
+      "Service discovery",
+      "Data sovereignty",
+      "Static routes",
+      "Hardware pass-through"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-033",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpBackup",
+    "skill": "Backup locations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company's only backups are snapshots kept in the same region as its VMs. Which risk remains?",
+    "explanation": "Copies in the same region share its failures, so at least one copy should be kept in another region or off site.",
+    "options": [
+      "Snapshots cannot be restored to a new VM",
+      "Snapshots break the RTO by design",
+      "Snapshots cannot be encrypted",
+      "A regional outage could take out the VMs and the backups together"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-034",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Deployment strategies",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A web tier has 12 servers. A rolling update replaces 3 servers at a time. How many batches does the update take? Type the number only.",
+    "explanation": "12 servers divided into batches of 3 is 4 batches.",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CLOUDPLUS-T1-035",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Data retention",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "After a lawsuit, legal orders that case records be kept despite the normal deletion policy. What is this?",
+    "explanation": "A litigation hold suspends normal deletion for records relevant to a legal matter.",
+    "options": [
+      "A contractual retention period",
+      "A cold storage tier",
+      "Data masking",
+      "A litigation hold"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-036",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "CI/CD",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A pipeline step scans dependencies for known vulnerabilities and fails the build if a critical one is found. Which pipeline concern is this?",
+    "explanation": "Adding security checks to the pipeline stops vulnerable builds before they deploy.",
+    "options": [
+      "Code merge",
+      "Security",
+      "Branch naming",
+      "Artifact storage"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-037",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Availability",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A retailer runs its store in a private cloud and sends overflow traffic to a public cloud during holiday peaks. What is this called?",
+    "explanation": "Cloud bursting sends extra load from private capacity to public cloud capacity when demand spikes.",
+    "options": [
+      "Cloud bursting",
+      "Edge computing",
+      "Cloud bridging",
+      "Multicloud tenancy"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-038",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Deployment issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A host assigned far more vCPUs than it has cores, and with every VM busy, all run slowly. What is this?",
+    "explanation": "Oversubscribing CPU or memory works when VMs are mostly idle but causes contention when they are all busy.",
+    "options": [
+      "Hardware pass-through",
+      "Anti-affinity",
+      "Oversubscription",
+      "Rightsizing"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-039",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Formats",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which file format uses indentation and key: value lines, and is common for Kubernetes manifests and CI pipeline files?",
+    "explanation": "YAML relies on indentation and colons. JSON uses braces, brackets and quoted keys.",
+    "options": [
+      "XML",
+      "CSV",
+      "JSON",
+      "YAML"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-040",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Monitoring",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is a metric rather than a log entry?",
+    "explanation": "Metrics are numeric measurements over time. Logs are records of individual events.",
+    "options": [
+      "A stack trace from an exception",
+      "Average CPU use of 73% over five minutes",
+      "\"User jdoe signed in from 10.1.2.3\"",
+      "A record of an API call with its caller"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-041",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "Container security",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why should containers run unprivileged instead of in privileged mode?",
+    "explanation": "Privileged mode removes most isolation, so an attacker in the container can control the host.",
+    "options": [
+      "A compromised privileged container can take over the host",
+      "Privileged mode only affects logging",
+      "Privileged containers cannot use the network",
+      "Unprivileged containers cannot read their own files"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-042",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Containers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Uploads saved in a container's writable layer vanish when the container is replaced. What should it use instead?",
+    "explanation": "Data in a container's writable layer is ephemeral. A persistent volume lives outside the container and survives restarts and replacement.",
+    "options": [
+      "A persistent volume",
+      "A larger container image",
+      "A second port mapping",
+      "Ephemeral storage"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-043",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Disaster recovery",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Database changes are copied to a standby in another region with a lag of up to five minutes. Which recovery metric does that lag mainly decide?",
+    "explanation": "The lag is how much recent data could be lost in a failover, which is what the RPO measures.",
+    "options": [
+      "Service level indicator",
+      "Mean time between service failures",
+      "Recovery point objective",
+      "Recovery time objective"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-044",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Migration strategies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "VMs move to the cloud unchanged so a data center can close fast. Which strategy is this?",
+    "explanation": "Rehosting, often called lift and shift, moves workloads unchanged.",
+    "options": [
+      "Retire",
+      "Replatform",
+      "Refactor",
+      "Rehost"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-045",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpBackup",
+    "skill": "Backup testing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company has backed up nightly for two years but has never restored one. What is the main risk?",
+    "explanation": "Only a test restore proves recoverability and integrity.",
+    "options": [
+      "The RPO will shrink to zero",
+      "Backups may be corrupt or incomplete and nobody knows until a restore fails",
+      "Off-site copies will turn into hot sites that cost more each month",
+      "Backups will use too little storage"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-046",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Industry standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company wants a certification, recognized worldwide, that its information security management system meets an international standard. Which standard is it?",
+    "explanation": "ISO/IEC 27001 specifies requirements for an information security management system and can be certified by an accredited body.",
+    "options": [
+      "HIPAA",
+      "PCI DSS",
+      "ISO 27001",
+      "ISO 9001"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-047",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "Artifacts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A build produces a package to install on Red Hat Enterprise Linux servers. Which package format is it?",
+    "explanation": "RHEL and related distributions use RPM packages. Debian and Ubuntu use .deb packages.",
+    "options": [
+      "RPM",
+      "MSI",
+      "APK",
+      "Debian (.deb)"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-048",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Network issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Users get \"server not found\" for app.example.com, but the site loads when they use its IP address. What should be checked first?",
+    "explanation": "Reaching the IP but not the name points to name resolution.",
+    "options": [
+      "NTP",
+      "BGP",
+      "DNS",
+      "DHCP"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-049",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Containers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A container listens on port 3000 inside. It is started with $\\texttt{docker run -p 9000:3000 api}$. Which port do clients use on the host?",
+    "explanation": "With -p host:container, port 3000 in the container is reached through host port 9000.",
+    "options": [
+      "443",
+      "3000",
+      "8000",
+      "9000"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "CLOUDPLUS-T1-050",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Scripting logic",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A deployment script contains these lines:\n\n$$\\begin{array}{l}\\texttt{count = 3}\\\\\\texttt{env = \"prod\"}\\\\\\texttt{if env == \"prod\":}\\\\\\texttt{\\ \\ \\ \\ servers = count}\\\\\\texttt{else:}\\\\\\texttt{\\ \\ \\ \\ servers = 1}\\end{array}$$\n\nHow many web servers does it create?",
+    "explanation": "env is \"prod\", so the condition is true and servers takes the value of count, which is 3.",
+    "options": [
+      "0",
+      "1",
+      "3",
+      "4"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "CLOUDPLUS-T1-051",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Scaling",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An online shop knows traffic triples every weekday from noon to 2 p.m. Which scaling approach fits best?",
+    "explanation": "When the peak is predictable, scheduled scaling adds capacity before it arrives.",
+    "options": [
+      "Scheduled scaling before noon each weekday",
+      "No scaling, with a larger cache",
+      "Vertical scaling once a year",
+      "Manual scaling after customers complain"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-052",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "Security controls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Attackers send SQL injection strings in HTTP form fields to a public web app. Which control inspects and blocks them?",
+    "explanation": "A WAF inspects HTTP requests at layer 7 and blocks patterns such as SQL injection and cross-site scripting.",
+    "options": [
+      "Web application firewall",
+      "DHCP snooping",
+      "Port mapping on the host",
+      "Network ACL"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-053",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Disaster recovery",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each recovery site to its description:",
+    "explanation": "A hot site is fully running, a warm site needs data restored, and a cold site needs equipment brought in, so recovery time rises from hot to cold.",
+    "rows": [
+      "Running copies of systems with current data, ready to take traffic almost at once",
+      "Hardware and network ready, but recent data must be loaded before use",
+      "Space and power only, with equipment to be installed after the disaster"
+    ],
+    "columns": [
+      "Cold site",
+      "Hot site",
+      "Warm site"
+    ],
+    "correct": [
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-054",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Network issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "New VMs in a busy /27 subnet get no IP address, while older ones work. What is the likely cause?",
+    "explanation": "A /27 has only 32 addresses before any reserved ones, so a busy subnet can run out and new VMs get no address.",
+    "options": [
+      "The load balancer in front of the subnet is layer 7",
+      "The DNS zone is missing",
+      "The DHCP scope or subnet address space is exhausted",
+      "TLS 1.3 is disabled"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-055",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Migration strategies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "During migration, a team packages its app into containers and runs them on the provider's managed container service, with no code changes. Which strategy is this?",
+    "explanation": "Replatforming makes a few cloud optimizations, such as a managed container platform, without rewriting the application.",
+    "options": [
+      "Re-architect",
+      "Retain",
+      "Rehost",
+      "Replatform"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-056",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Access to resources",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Admins must reach private Linux servers that have no public IP addresses. What should they connect through?",
+    "explanation": "A bastion host is a hardened, monitored jump server in a public subnet that is the single entry point to private hosts.",
+    "options": [
+      "An object storage bucket",
+      "A bastion host",
+      "A public load balancer",
+      "A CDN edge"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-057",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "Integration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client asks one API endpoint for exactly the fields it needs in a single query. Which technology is this?",
+    "explanation": "GraphQL lets clients specify the shape of the data they want from one endpoint.",
+    "options": [
+      "SOAP",
+      "FTP",
+      "GraphQL",
+      "SNMPv3"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-058",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpBackup",
+    "skill": "Recovery types",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A backup is restored to a new server beside the damaged one, and users move over after a check. Which recovery type is this?",
+    "explanation": "A parallel recovery restores to a separate location alongside the original. An in-place recovery overwrites the original.",
+    "options": [
+      "Parallel recovery",
+      "Bulk deletion",
+      "In-place recovery",
+      "Cold boot"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-059",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Virtualization",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Two virtual machines run the primary and secondary database nodes. An outage of one physical host must not take down both. Which placement rule applies?",
+    "explanation": "Anti-affinity forces the two VMs onto separate hosts, so one host failure leaves the other node running. Affinity does the opposite.",
+    "options": [
+      "Anti-affinity across two hosts",
+      "Affinity, keeping the two together on one host",
+      "Cloning both from one shared golden template",
+      "Thin provisioning both disks"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-060",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Networking",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Two websites, shop.example.com and help.example.com, must share one public entry point and reach different server pools. Which load balancer can route on the Host header?",
+    "explanation": "Only a layer 7 load balancer reads the HTTP Host header. A network load balancer sees only IP addresses and ports.",
+    "options": [
+      "DNS round robin with health checks",
+      "Application load balancer",
+      "Network load balancer",
+      "Static route"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-061",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Network issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Peering between two VPCs fails to set up because both use 10.8.0.0/16. What is the problem?",
+    "explanation": "Networks with overlapping CIDR blocks cannot be routed to each other, so one must be renumbered.",
+    "options": [
+      "The address ranges overlap",
+      "Peering needs IPv6 only",
+      "The VPCs are in the same region",
+      "The route tables are too small"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-062",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Repeatability",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does a team run the same IaC template to build development, test and production?",
+    "explanation": "Building every environment from one template makes them repeatable and alike.",
+    "options": [
+      "So each environment gets its own hand-tuned configuration over time",
+      "So the template never needs version control",
+      "So production can skip testing",
+      "So the environments stay consistent with each other"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-063",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Scaling",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which scaling type has no single-machine size ceiling and usually needs no restart of the servers already running?",
+    "explanation": "Scaling out adds more instances alongside the running ones. Scaling up is limited by the largest instance size and often needs a restart.",
+    "options": [
+      "Diagonal",
+      "Horizontal",
+      "Manual only",
+      "Vertical"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-064",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "Security controls",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is the difference between an IDS and an IPS?",
+    "explanation": "Intrusion detection watches and alerts. Intrusion prevention is inline and can drop malicious traffic.",
+    "options": [
+      "An IDS blocks traffic, while an IPS only logs it",
+      "An IDS encrypts traffic at the edge, while an IPS decrypts it again inside the network",
+      "They are identical names for the same tool",
+      "An IDS detects and alerts, while an IPS sits inline and can block the traffic"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-065",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a merger, one of two duplicate apps is switched off instead of moved. Which strategy applies to it?",
+    "explanation": "Retiring switches off applications that are no longer needed instead of paying to move them.",
+    "options": [
+      "Retire",
+      "Rehost",
+      "Replatform",
+      "Refactor"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-066",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Authentication",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In SAML single sign-on to a SaaS app, which party checks the user's password and issues the signed assertion?",
+    "explanation": "The identity provider authenticates the user and issues the assertion; the SaaS app, as service provider, trusts it.",
+    "options": [
+      "The DNS resolver",
+      "The user's browser",
+      "The service provider",
+      "The identity provider"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-067",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "Integration",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A live sports app pushes score changes from the server to thousands of browsers the moment they happen, over one long-lived two-way connection. Which technology fits?",
+    "explanation": "WebSockets keep a persistent full-duplex connection, so the server can push updates at once.",
+    "options": [
+      "WebSockets",
+      "Email notifications",
+      "REST polling every hour",
+      "Batch file transfer"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-068",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Cost",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A batch job can stop and restart at any time without harm. Which billing model gives the deepest discount for it?",
+    "explanation": "Spot capacity is spare capacity sold cheaply that the provider can reclaim, which suits interruptible jobs.",
+    "options": [
+      "Spot instances",
+      "Dedicated hosts",
+      "Reserved instances",
+      "On-demand pay-as-you-go"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-069",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Networking",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "VPC A is peered with VPC B, and VPC B is peered with VPC C. Instances in A cannot reach C. What is the most likely reason?",
+    "explanation": "Traffic cannot pass through one peering to another. A needs its own peering with C, or all three can attach to a transit gateway.",
+    "options": [
+      "Peering only allows ICMP traffic",
+      "Route tables block all peered traffic",
+      "C and A use the same availability zone",
+      "Peering connections are not transitive"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-070",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Network issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Users intermittently get errors from a web app. The load balancer logs show:\n\n$$\\begin{array}{l}\\texttt{status=502 target=10.0.3.14:8080 reason=connection refused}\\\\\\texttt{status=200 target=10.0.3.15:8080}\\\\\\texttt{status=502 target=10.0.3.14:8080 reason=connection refused}\\end{array}$$\n\nWhat is the most likely cause?",
+    "explanation": "A 502 Bad Gateway with connection refused means the load balancer reached the target host but nothing answered on that port.",
+    "options": [
+      "The load balancer certificate expired",
+      "The client browsers are out of date",
+      "Nothing listens on 10.0.3.14 port 8080",
+      "DNS is returning the wrong name for the site"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-071",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpBackup",
+    "skill": "Life cycle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A vendor announces end of support for an operating system version used by 40 VMs. What does that mean for the team?",
+    "explanation": "After end of support the vendor stops fixes and patches, so the systems become a growing risk.",
+    "options": [
+      "The VMs will shut down on that same day",
+      "Nothing changes for the VMs until the vendor also announces end of life",
+      "The VMs will get faster updates",
+      "No more security patches will be issued, so the VMs must be upgraded or replaced"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-072",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Provisioning",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A new app must keep running if one availability zone fails, at the lowest cost that meets that rule. What should be provisioned?",
+    "explanation": "Spreading instances across zones meets the availability requirement, and two small instances cost less than oversizing.",
+    "options": [
+      "One large instance in a single zone with nightly snapshots to another zone",
+      "Two smaller instances in two zones behind a load balancer",
+      "Two instances in the same zone",
+      "One instance with a bigger disk"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-073",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Scaling",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "An autoscaling group runs 7 instances, maximum 10. Each high-CPU action adds 2. After two actions, how many run? Type the number only.",
+    "explanation": "The first action takes the group from 7 to 9. The second would reach 11, but the maximum caps it at 10.",
+    "numeric": {
+      "answers": [
+        "10"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CLOUDPLUS-T1-074",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "Attack types",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An idle account's bill jumps, and several new GPU instances show 100% CPU around the clock while making outbound connections to mining pools. What is happening?",
+    "explanation": "Attackers who steal credentials often launch instances to mine cryptocurrency at the victim's expense.",
+    "options": [
+      "A DDoS attack against the account",
+      "A phishing campaign",
+      "Normal autoscaling",
+      "Cryptojacking"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-075",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Migration considerations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company plans to build its new app around one provider's proprietary queue, database and function services. Which migration consideration does this raise most?",
+    "explanation": "Heavy use of proprietary services makes a later move to another provider costly, which is vendor lock-in.",
+    "options": [
+      "Power and cooling",
+      "Data locality",
+      "Vendor lock-in",
+      "Network overlap"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-076",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Authorization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Permissions are attached to job functions such as \"auditor\" and \"operator\", and users get the role that matches their job. Which model is this?",
+    "explanation": "RBAC grants permissions through roles mapped to job functions.",
+    "options": [
+      "Mandatory access control",
+      "Local user accounts",
+      "Role-based access control",
+      "Discretionary access control"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-077",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "DevOps tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool configures servers over SSH from YAML playbooks without installing an agent on them?",
+    "explanation": "Ansible is agentless and pushes configuration over SSH using YAML playbooks.",
+    "options": [
+      "Docker",
+      "Grafana",
+      "Ansible",
+      "Kibana"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-078",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Databases",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants a relational database but does not want to patch the engine, run backups or handle failover itself. Which deployment option fits?",
+    "explanation": "With a provider-managed database the provider runs patching, backups and high availability; the team manages schema and data.",
+    "options": [
+      "A provider-managed database service",
+      "A self-managed database on a VM",
+      "A database inside a stand-alone container",
+      "A flat file on block storage"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-079",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Networking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Nightly replication over a site-to-site VPN to the cloud runs at a different speed every night because the tunnel crosses the internet. What gives the data center steady bandwidth to the provider instead?",
+    "explanation": "A dedicated connection is a private circuit to the provider. A VPN is encrypted but still rides the public internet.",
+    "options": [
+      "A second VPN tunnel over the same internet link",
+      "A content delivery network",
+      "A dedicated connection",
+      "A larger public IP address block"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-080",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Security issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A scheduled scan flags that an internal API still accepts TLS 1.0 and old cipher suites. What should be done?",
+    "explanation": "Deprecated protocols and ciphers have known weaknesses and should be turned off in favor of current TLS.",
+    "options": [
+      "Ignore it because the API is only reachable internally",
+      "Disable the deprecated protocol versions and cipher suites",
+      "Turn off certificate checks",
+      "Lengthen the session timeout"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-081",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpBackup",
+    "skill": "Life cycle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before rolling a major database engine upgrade into production, what should the team do?",
+    "explanation": "Major updates can break compatibility, so they are tested in a lower environment first.",
+    "options": [
+      "Upgrade only the monitoring agent first",
+      "Skip the backup to save time on the night",
+      "Test it in staging first",
+      "Apply it to production at peak hours"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-082",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before an IaC change reaches production, a pipeline previews what will be created, changed or destroyed. Why?",
+    "explanation": "A plan or preview step shows the effect of the code so mistakes are caught before they touch live resources.",
+    "options": [
+      "To skip code review for small changes",
+      "To encrypt data at rest",
+      "To raise service quotas before every deployment runs",
+      "To catch unintended changes before they are applied"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-083",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Logging",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Auditors require access logs to be kept for one year. Which logging setting enforces this?",
+    "explanation": "A retention policy sets how long logs are kept before deletion.",
+    "options": [
+      "Retention policy",
+      "Sampling rate",
+      "Log level",
+      "Collection agent version"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-084",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "Attack types",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An attacker tricks a web app into requesting http://169.254.169.254/ from inside a VM and gets back temporary cloud credentials. Which attack target is this?",
+    "explanation": "The instance metadata endpoint can return role credentials, so server-side request forgery against it is a known cloud attack.",
+    "options": [
+      "The instance metadata service",
+      "The DNS resolver",
+      "The DHCP server for the subnet",
+      "The NTP server"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-085",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Migration considerations",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "An on-premises app is moving to the cloud. Which two checks belong in the compute and platform compatibility review? (Choose two.)",
+    "explanation": "Supported operating systems and CPU architecture decide whether the workload can run on the provider's compute.",
+    "options": [
+      "Whether the operating system version is supported by the provider",
+      "Whether the office has enough parking",
+      "Whether the app needs a CPU architecture the provider offers",
+      "Whether staff prefer a dark theme in the console"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "CLOUDPLUS-T1-086",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Accounting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After an incident, investigators need to know which identity deleted a storage bucket and when. What provides this?",
+    "explanation": "Audit logs record who did what, when and from where, which is the accounting part of identity management.",
+    "options": [
+      "A cost allocation tag",
+      "A CDN cache report",
+      "A load balancer health check",
+      "An audit trail of API calls"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-087",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "DevOps tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool builds infrastructure from declarative configuration files and keeps a state file of what it manages?",
+    "explanation": "Terraform uses declarative configuration and a state file to plan and apply infrastructure changes.",
+    "options": [
+      "Jenkins",
+      "Terraform",
+      "Git",
+      "Logstash"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T1-088",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Optimization",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A block volume is provisioned at 3 IOPS for every GiB. What IOPS does a 500 GiB volume get? Type the number only.",
+    "explanation": "500 GiB x 3 IOPS per GiB = 1,500 IOPS.",
+    "numeric": {
+      "answers": [
+        "1500"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CLOUDPLUS-T1-089",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Availability",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A service level agreement promises 99% availability over a 30-day month. How many minutes of downtime does that allow in the month? Type the number only.",
+    "explanation": "A 30-day month has 30 x 24 x 60 = 43,200 minutes. One percent of that is 432 minutes.",
+    "numeric": {
+      "answers": [
+        "432"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CLOUDPLUS-T1-090",
+    "section": "cloudplus",
+    "test": 1,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Security issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Access keys for a cloud account are found in a public code repository. What is the first thing to do?",
+    "explanation": "Leaked credentials must be disabled right away, then logs reviewed for misuse.",
+    "options": [
+      "Change the key's description",
+      "Delete the repository and do nothing else",
+      "Revoke and rotate the leaked keys at once",
+      "Wait to see whether anyone used them"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-001",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Service models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company subscribes to a hosted email and calendar product and only manages its users and settings. Which service model is this?",
+    "explanation": "SaaS delivers a finished application; the customer manages its own data, users and settings.",
+    "options": [
+      "Function as a service",
+      "Platform as a service",
+      "Software as a service",
+      "Infrastructure as a service"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-002",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Deployment issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A deployment fails because the service account running it cannot create load balancers, though it can create VMs. What is the issue?",
+    "explanation": "An access denied on one action points to missing permissions for that action.",
+    "options": [
+      "Regional service availability",
+      "Disk oversubscription on the hosts",
+      "A DNS failure",
+      "Missing IAM permissions"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-003",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Storage tiers",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each dataset to the most cost-effective tier:",
+    "explanation": "Constant reads belong in hot storage, occasional reads in cold storage, and records kept only for compliance in archive.",
+    "rows": [
+      "Product images served to shoppers every second",
+      "Last quarter's reports opened a few times a month",
+      "Seven-year tax records kept only for audits"
+    ],
+    "columns": [
+      "Archive",
+      "Cold",
+      "Hot"
+    ],
+    "correct": [
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-004",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Deployment models",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each setup to its deployment model:",
+    "explanation": "Your own dedicated infrastructure is private, a mix with public resources is hybrid, and a multi-tenant provider is public.",
+    "rows": [
+      "Servers in your own building used only by your company",
+      "Your on-premises systems linked with resources from a public provider",
+      "Resources rented from a provider that serves many unrelated customers"
+    ],
+    "columns": [
+      "Private",
+      "Public",
+      "Hybrid"
+    ],
+    "correct": [
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-005",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Vulnerability management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A CVSS 9.8 flaw is on an isolated lab VM. A CVSS 7.5 flaw on an internet-facing VPN gateway is being exploited. Which comes first?",
+    "explanation": "Assessment weighs the score with exposure, exploitation and asset value, so the exposed, attacked gateway comes first.",
+    "options": [
+      "Both together, because scores do not matter",
+      "The lab VM, because its score is higher",
+      "Neither, until the scores are recalculated",
+      "The VPN gateway, because exposure and active exploitation raise its real risk"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-006",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "Source control",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two developers changed the same line in the same file on different branches. What happens when the second branch is merged?",
+    "explanation": "Git cannot choose between two edits to the same line, so it marks a conflict to be resolved by hand.",
+    "options": [
+      "The repository is locked for a day",
+      "A merge conflict that someone must resolve",
+      "Git keeps both lines and deletes the file",
+      "The first change is lost silently every time"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-007",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Formats",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In JSON, which value is a list of two strings?",
+    "explanation": "JSON arrays use square brackets with comma-separated values. Braces hold key-value objects.",
+    "options": [
+      "(web, db)",
+      "[\"web\", \"db\"]",
+      "<web><db>",
+      "{\"web\", \"db\"}"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-008",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Scaling",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A database server is out of memory, and the database software cannot spread across several servers. Which scaling type helps?",
+    "explanation": "When the software cannot run on several nodes, the fix is a bigger instance, which is vertical scaling.",
+    "options": [
+      "Scheduled scale-in at night",
+      "Adding a CDN",
+      "Horizontal, adding more read-only web servers in front",
+      "Vertical, moving to an instance with more memory"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-009",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "Least privilege",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A function only needs to read objects from one bucket. Which permission set follows the principle of least privilege?",
+    "explanation": "Least privilege grants only the actions and resources the job needs.",
+    "options": [
+      "Administrator access to the account",
+      "Read and write access to every bucket",
+      "Full access to all storage",
+      "Read access to that one bucket"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-010",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpBackup",
+    "skill": "Backup types",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Full backup Sunday, differentials Monday to Thursday nights, failure Friday morning. How many backup sets must be restored? Type the number only.",
+    "explanation": "A differential holds every change since the last full, so restore the Sunday full plus only Thursday's differential: 2 sets.",
+    "numeric": {
+      "answers": [
+        "2"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CLOUDPLUS-T2-011",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Shared responsibility",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company uses a SaaS ticketing product. Under the shared responsibility model, which task belongs to the provider?",
+    "explanation": "In SaaS the provider runs and updates the whole application stack. The customer still manages users, data and its own settings.",
+    "options": [
+      "Deciding what data is entered",
+      "Patching and updating the application itself",
+      "Choosing which employees get accounts",
+      "Setting the company's password rules in the app"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-012",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Deployment issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An app is moved to a new VM size and now runs out of memory under normal load. What is the issue?",
+    "explanation": "Picking an instance smaller than the workload needs is a sizing misconfiguration.",
+    "options": [
+      "API throttling",
+      "An undersized instance",
+      "A deprecated cipher suite on the load balancer",
+      "A missing tag"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-013",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Disk types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A database with many small random reads and writes is slow on its current disks. Which disk type usually fixes this?",
+    "explanation": "SSDs deliver far more IOPS and lower latency for random access than spinning hard disks.",
+    "options": [
+      "Optical disc",
+      "Magnetic tape library",
+      "Solid-state drive",
+      "Hard disk drive"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-014",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Deployment strategies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An app is stopped on its only server, upgraded in place and restarted. Which strategy is this?",
+    "explanation": "An in-place deployment updates the existing servers directly, which usually means some downtime and a slower rollback.",
+    "options": [
+      "Canary",
+      "In-place",
+      "Blue-green",
+      "Rolling"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-015",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Industry standards",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Match each standard or framework to what it covers:",
+    "explanation": "SOC 2 is an auditor's report on controls, ISO 27001 certifies an ISMS, and the CSA publishes the Cloud Controls Matrix and the STAR registry.",
+    "rows": [
+      "Audit report on a service provider's controls for security and availability",
+      "International standard for an information security management system",
+      "Cloud-specific control matrix and assurance registry"
+    ],
+    "columns": [
+      "SOC 2",
+      "Cloud Security Alliance",
+      "ISO 27001"
+    ],
+    "correct": [
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-016",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "Source control",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command sends local commits to the shared remote repository?",
+    "explanation": "git commit records changes locally and git push uploads them to the remote.",
+    "options": [
+      "$\\texttt{git clone}$",
+      "$\\texttt{git status}$",
+      "$\\texttt{git commit}$",
+      "$\\texttt{git push}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-017",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Versioning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A template change breaks production. Because the templates are kept in Git, what can the team do quickly?",
+    "explanation": "Versioned code lets the team see what changed and roll back to a working version.",
+    "options": [
+      "Revert to the last good version",
+      "Rebuild every server by hand from memory",
+      "Delete the repository and start again",
+      "Turn off monitoring until the fix is found"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-018",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Scaling",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Each time a large file lands in a bucket, processing workers are started to handle it. Which trigger is this?",
+    "explanation": "Scaling in response to a specific event, such as a new file or a queue message, is event-triggered.",
+    "options": [
+      "Event-triggered scaling",
+      "Scheduled scaling",
+      "Trending-based scaling",
+      "Manual scaling"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-019",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "Encryption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which protects data in transit between a browser and a cloud API?",
+    "explanation": "TLS encrypts data moving over the network. Disk encryption protects data at rest.",
+    "options": [
+      "TLS",
+      "Object versioning",
+      "A retention policy",
+      "Disk encryption"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-020",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpBackup",
+    "skill": "Recovery options",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user deleted one spreadsheet from a file share. What is the best way to get it back?",
+    "explanation": "Granular recovery brings back individual items without overwriting everything else.",
+    "options": [
+      "A granular restore of that single file",
+      "A failover to the DR region",
+      "A bulk restore of the whole volume",
+      "Rebuilding the file server from scratch"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-021",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Service models",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each offering to its service model:",
+    "explanation": "Virtual machines are IaaS, a managed runtime is PaaS, and a finished application is SaaS.",
+    "rows": [
+      "Renting virtual machines and attaching your own disks and networks",
+      "Deploying code to a managed runtime that patches itself",
+      "Using a finished customer relationship management product in a browser"
+    ],
+    "columns": [
+      "PaaS",
+      "IaaS",
+      "SaaS"
+    ],
+    "correct": [
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-022",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Deployment issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A provider status page shows that its object storage service is down in one zone but working in others. Which kind of outage is this?",
+    "explanation": "When only some zones or features fail, the outage is partial.",
+    "options": [
+      "A partial outage",
+      "Planned maintenance on every region",
+      "API throttling",
+      "A full outage"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-023",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Storage security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which object storage feature keeps earlier copies of an object when it is overwritten or deleted, so a mistake can be undone?",
+    "explanation": "With versioning on, each overwrite or delete keeps the previous version, which can be restored.",
+    "options": [
+      "Port mapping",
+      "Tiering",
+      "Thin provisioning",
+      "Versioning"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-024",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Deployment strategies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Instances behind a load balancer are updated a few at a time, while the rest keep serving traffic. Which strategy is this?",
+    "explanation": "A rolling deployment updates instances in batches so capacity stays up throughout.",
+    "options": [
+      "In-place on every server at once",
+      "Cold standby",
+      "Rolling",
+      "Blue-green"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-025",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Compliance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Records are labeled public, internal, confidential or restricted so each label gets the right controls. What is this?",
+    "explanation": "Classification sorts data by sensitivity so protection matches risk.",
+    "options": [
+      "Data classification",
+      "Data augmentation for training",
+      "Data replication",
+      "Data locality"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-026",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "CI/CD",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is the difference between continuous delivery and continuous deployment?",
+    "explanation": "Continuous delivery stops at a release-ready artifact that someone approves. Continuous deployment pushes it to production automatically.",
+    "options": [
+      "Delivery skips testing, while deployment runs tests",
+      "Delivery keeps every build ready to release with a manual approval, while deployment releases every passing build automatically",
+      "They are two names for the same process",
+      "Deployment only builds container images for the cluster, while delivery only builds virtual machine images for the hypervisor"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-027",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Scripting logic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a template, which data type fits the value 443 for a listener port?",
+    "explanation": "A whole number such as a port is an integer.",
+    "options": [
+      "Float with decimals",
+      "Integer",
+      "String of letters",
+      "Boolean"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-028",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Scaling",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Over several weeks, traffic has grown steadily by about 5% a week. Which trigger uses this pattern to add capacity ahead of demand?",
+    "explanation": "Trending-based scaling uses the growth pattern over time to forecast and add capacity before limits are reached.",
+    "options": [
+      "Load spike only",
+      "Manual",
+      "Trending",
+      "Event"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-029",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "Storage security",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A scan finds an object storage bucket of customer exports that anyone on the internet can list and read. What is the right fix?",
+    "explanation": "Public storage must be closed with access controls. Hiding the name is not a control.",
+    "options": [
+      "Rename the bucket to something long and hard to guess",
+      "Turn on versioning",
+      "Move the files into a deeper folder",
+      "Block public access and grant only needed readers"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-030",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Availability",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A factory processes camera images on servers beside the line to decide within milliseconds. What is this?",
+    "explanation": "Edge computing moves processing close to where data is created to cut latency.",
+    "options": [
+      "Cloud bursting",
+      "Service discovery",
+      "Cold storage",
+      "Edge computing"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-031",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "HTTP status codes",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Match each HTTP status code to its meaning:",
+    "explanation": "401 means credentials are missing or invalid, 403 means the identity is known but lacks permission, and 503 means the service cannot handle the request right now.",
+    "rows": [
+      "401",
+      "403",
+      "503"
+    ],
+    "columns": [
+      "Not authenticated",
+      "Service unavailable",
+      "Authenticated but not allowed"
+    ],
+    "correct": [
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-032",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Cloud-native design",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why do architects put a message queue between an order service and an inventory service?",
+    "explanation": "A queue decouples the two: messages wait until the consumer is ready, so failures and spikes are absorbed.",
+    "options": [
+      "So both services must always run together on the same physical host with shared memory",
+      "So the order service no longer needs any storage",
+      "So the two are loosely coupled and one can fail without stopping the other",
+      "So the inventory service can skip authentication"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-033",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpBackup",
+    "skill": "Backup settings",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Backups are written to object storage in another region. What protects their contents if the bucket is ever exposed?",
+    "explanation": "Encryption keeps backup data unreadable without the key, wherever it is stored.",
+    "options": [
+      "Daily differentials",
+      "Shorter file names",
+      "Encrypting the backups",
+      "A larger retention window"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-034",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Deployment strategies",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A site serves 40,000 requests an hour, and a canary gets 5% of them. How many an hour reach the canary? Type the number only.",
+    "explanation": "5% of 40,000 is 40,000 x 0.05 = 2,000 requests an hour.",
+    "numeric": {
+      "answers": [
+        "2000"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CLOUDPLUS-T2-035",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Data retention",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A signed customer agreement says the provider must keep transaction records for five years. Which kind of retention is this?",
+    "explanation": "Retention required by an agreement between parties is contractual. Retention required by law is regulatory.",
+    "options": [
+      "Litigation hold",
+      "Ephemeral",
+      "Regulatory",
+      "Contractual"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-036",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "Artifacts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where should a pipeline keep the versioned packages and images it builds so later stages and environments use the same files?",
+    "explanation": "An artifact repository stores build outputs with versions, so the exact tested artifact is what deploys.",
+    "options": [
+      "The production database",
+      "An artifact repository",
+      "A spreadsheet",
+      "A developer's laptop"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-037",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Disaster recovery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company replaces its cold site with a hot site. Which recovery metric improves the most?",
+    "explanation": "A hot site is already running, so service is back far sooner, which shortens the recovery time.",
+    "options": [
+      "Recovery time objective",
+      "Error budget",
+      "Recovery point objective",
+      "Mean time between failures"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-038",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Network issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Users report that tokens are rejected as expired the moment they are issued, but only on one server. What should be checked?",
+    "explanation": "Token checks depend on time. A server clock drifting from NTP makes valid tokens look expired or not yet valid.",
+    "options": [
+      "The DHCP lease time",
+      "That server's clock and NTP sync",
+      "The CDN cache rules",
+      "The storage tier"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-039",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Scripting logic",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A script needs the same tagging steps for every resource type. What should the repeated steps become?",
+    "explanation": "Putting repeated logic in a function avoids copy and paste and keeps changes in one place.",
+    "options": [
+      "A new variable for each tag",
+      "A function called for each resource",
+      "A second copy of the script for each resource type",
+      "A comment block"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-040",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Scaling",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Each instance serves 500 requests a second. Six run, and demand will reach 4,200. How many more are needed? Type the number only.",
+    "explanation": "4,200 / 500 = 8.4, so 9 instances are needed. With 6 running, 3 more are needed.",
+    "numeric": {
+      "answers": [
+        "3"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CLOUDPLUS-T2-041",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "API security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A public API is hammered by one client making thousands of calls a second. Which control protects the back end?",
+    "explanation": "Rate limits cap requests per client so one caller cannot overwhelm the service.",
+    "options": [
+      "Rate limiting and throttling at the API gateway",
+      "Removing authentication",
+      "Longer log retention",
+      "A larger CDN cache in every region"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-042",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Containers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where do build pipelines store versioned container images so clusters can pull them at deploy time?",
+    "explanation": "An image registry stores and serves container images by name and tag.",
+    "options": [
+      "An image registry",
+      "A route table",
+      "A storage area network",
+      "A key escrow"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-043",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Disaster recovery",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Backups are copied to another region every six hours. The business sets an RPO of two hours. What is the problem?",
+    "explanation": "The worst case loses everything since the last copy, up to six hours, which is longer than the two-hour RPO.",
+    "options": [
+      "Copying to another region breaks the RPO by design",
+      "Recovery would take six hours to finish, which misses the RTO",
+      "Nothing, because six-hour copies meet a two-hour RPO",
+      "Up to six hours of data could be lost, which misses the RPO"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-044",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Migration strategies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A monolithic app cannot scale, so the team rebuilds it as microservices on managed container and function services. Which strategy is this?",
+    "explanation": "Re-architecting changes the application's structure to use cloud-native services, which costs the most effort and gains the most.",
+    "options": [
+      "Retain",
+      "Retire and replace",
+      "Rehost",
+      "Re-architect"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-045",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpBackup",
+    "skill": "Replication",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A team replicates its database to another region in near real time and believes it no longer needs backups. What is the flaw?",
+    "explanation": "A dropped table or ransomware encryption replicates within seconds. Backups give earlier points to go back to.",
+    "options": [
+      "Replication copies deletions too, so backups are still needed",
+      "Replication cannot cross regions",
+      "Replication encrypts data with its own key, so the copy cannot be restored later",
+      "Replication is always slower than backups"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-046",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Authentication",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Besides a password, administrators must approve a push notification on their phone. What is this?",
+    "explanation": "MFA combines something you know with something you have or are.",
+    "options": [
+      "Role-based access control",
+      "Single sign-on across all apps",
+      "Multifactor authentication",
+      "Federation"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-047",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "Integration",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Match each description to the web service style:",
+    "explanation": "REST uses resources and HTTP verbs, SOAP uses XML envelopes and contracts, and RPC invokes remote procedures.",
+    "rows": [
+      "Resources at URLs acted on with standard HTTP verbs",
+      "XML envelopes with a strict contract, often described by WSDL",
+      "Calling a function on a remote server as if it were local"
+    ],
+    "columns": [
+      "REST",
+      "RPC",
+      "SOAP"
+    ],
+    "correct": [
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-048",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Network issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Instances in a private subnet cannot download updates from the internet, though public instances can. What is most likely missing?",
+    "explanation": "Private instances reach the internet outbound only through NAT, which needs a route in their route table.",
+    "options": [
+      "A public DNS zone",
+      "A WAF rule",
+      "A second availability zone with its own subnets",
+      "A route to a NAT gateway"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-049",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Containers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team runs dozens of containers across many hosts and needs automatic restarts, scaling and rolling updates. What does it need?",
+    "explanation": "An orchestrator schedules containers across hosts, restarts failed ones and handles scaling and updates.",
+    "options": [
+      "A cold site",
+      "A larger single virtual machine",
+      "Workload orchestration such as Kubernetes",
+      "Stand-alone containers started by hand on one host"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-050",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Documentation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should an IaC module include a README listing its inputs, outputs and an example?",
+    "explanation": "Documentation explains how to use the code, which makes reuse safer.",
+    "options": [
+      "So the tool skips drift detection for that module entirely",
+      "So other teams can reuse it correctly",
+      "So it no longer needs testing in the pipeline",
+      "So it runs faster on every apply"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-051",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Observability",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each need to the observability signal:",
+    "explanation": "Logs hold event details, metrics hold numbers over time, and traces follow a request through services.",
+    "rows": [
+      "See the error message and stack trace from one failed request",
+      "Watch memory use trend over the last month",
+      "Find which downstream call slowed a request"
+    ],
+    "columns": [
+      "Logs",
+      "Traces",
+      "Metrics"
+    ],
+    "correct": [
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-052",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "Security controls",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Match each control to its job:",
+    "explanation": "DLP finds and blocks sensitive data leaving, DDoS protection absorbs attack traffic, and endpoint protection guards individual machines.",
+    "rows": [
+      "Stops employees from emailing files full of card numbers out of the company",
+      "Absorbs floods of traffic aimed at taking a site offline",
+      "Detects malware on a server or laptop"
+    ],
+    "columns": [
+      "Endpoint protection",
+      "DDoS protection",
+      "Data loss prevention"
+    ],
+    "correct": [
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-053",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Multicloud",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is a common drawback of running workloads across several public cloud providers?",
+    "explanation": "Multicloud reduces dependence on one provider but adds different consoles, services and skills to manage.",
+    "options": [
+      "No way to avoid any single provider outage",
+      "Data can never leave the first provider",
+      "Every workload must run in one region",
+      "More tools, skills and management overhead"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-054",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Network issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "After a change, traffic to an on-premises network 172.16.0.0/16 goes out the internet gateway and fails. What is the issue?",
+    "explanation": "Without a specific route to the on-premises range, the default route sends it to the internet.",
+    "options": [
+      "Too much log retention",
+      "A spot instance being reclaimed by the provider in the middle of the transfer",
+      "An expired certificate",
+      "A missing route to the on-premises link"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-055",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Migration strategies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A mainframe system has a strict regulatory reason to stay in the company's data center for now. What does the migration plan do with it?",
+    "explanation": "Retaining keeps a workload where it is, at least for now, often for compliance, cost or timing reasons.",
+    "options": [
+      "Retain it",
+      "Retire it",
+      "Replatform it",
+      "Rehost it"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-056",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Authentication",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which sign-in protocol, built on OAuth 2.0, gives a mobile app an ID token describing the user?",
+    "explanation": "OpenID Connect adds an identity layer and ID tokens on top of OAuth 2.0's authorization flows.",
+    "options": [
+      "RADIUS accounting",
+      "OpenID Connect",
+      "Kerberos",
+      "SAML 1.1"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-057",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "Integration",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A sign-up publishes a message, and separate services react on their own to email and bill the user. What architecture is this?",
+    "explanation": "In event-driven systems, producers publish events and consumers react independently.",
+    "options": [
+      "A cold site",
+      "A monolith with shared tables",
+      "Event-driven architecture",
+      "A single cron job"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-058",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpBackup",
+    "skill": "Life cycle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which change is usually a minor update rather than a major one?",
+    "explanation": "Minor updates fix bugs and add small improvements with backward compatibility. Major versions can break things.",
+    "options": [
+      "A patch release that fixes bugs without changing features",
+      "A move to a new database engine",
+      "A new major version that removes an old API",
+      "A full rewrite of the user interface and its settings"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-059",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Virtualization",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A machine learning VM needs direct access to a physical GPU for near-native performance. What feature provides it?",
+    "explanation": "Pass-through hands a physical device such as a GPU straight to a VM instead of emulating it.",
+    "options": [
+      "Cloning",
+      "Hardware pass-through",
+      "Memory ballooning on the host",
+      "An overlay network"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-060",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Networking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Fifty VPCs and two on-premises sites all need to reach each other without building a full mesh of peering links. What fits best?",
+    "explanation": "A transit gateway is a hub that each network attaches to once, so routing does not need a link for every pair.",
+    "options": [
+      "A peering link between every pair",
+      "A network load balancer",
+      "A transit gateway",
+      "A content delivery network"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-061",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Network issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A host carries VLANs 10 and 20, but VLAN 20 VMs are cut off. Its switch port is an access port in VLAN 10. What is wrong?",
+    "explanation": "An access port carries one untagged VLAN. A host with several VLANs needs a trunk port that passes tagged traffic.",
+    "options": [
+      "VLAN 20 needs a CDN",
+      "The VMs need public IP addresses",
+      "The port must be a trunk port",
+      "The host needs more memory for the VMs on VLAN 20"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-062",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Provisioning",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A deployment asks for 4 replicas, each requesting 2 vCPUs. How many vCPUs in total? Type the number only.",
+    "explanation": "4 replicas x 2 vCPUs each = 8 vCPUs.",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CLOUDPLUS-T2-063",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Logging",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "An app writes 20 GB of logs a day, kept for 90 days. How many GB are stored at most? Type the number only.",
+    "explanation": "20 GB a day x 90 days = 1,800 GB.",
+    "numeric": {
+      "answers": [
+        "1800"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CLOUDPLUS-T2-064",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "Security controls",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which cloud control allows or denies traffic to a VM's virtual NIC or a subnet by protocol, port and source address, and remembers connections so reply traffic is let back in?",
+    "explanation": "A network security group (called a security group or firewall rule set by different providers) is a stateful packet filter on a VM's interface or a subnet. A WAF inspects HTTP content, DLP watches data leaving, and endpoint antivirus runs on the machine itself.",
+    "options": [
+      "Data loss prevention",
+      "Endpoint antivirus",
+      "Network security group",
+      "Web application firewall"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-065",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company moves a workload from one public provider to another after a pricing change. Which migration type is this?",
+    "explanation": "Moving between two cloud providers is a cloud-to-cloud migration.",
+    "options": [
+      "Cloud-to-cloud",
+      "Cloud-to-on-premises",
+      "On-premises-to-cloud",
+      "Physical-to-virtual"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-066",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Authorization",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A photo printing site asks to read a user's cloud photo album without ever seeing the user's password. Which framework grants that limited access?",
+    "explanation": "OAuth 2.0 lets a user grant an app scoped access tokens to a resource without sharing credentials.",
+    "options": [
+      "Local user accounts",
+      "SAML",
+      "OAuth 2.0",
+      "Discretionary access control"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-067",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "DevOps tools",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each tool to its main job:",
+    "explanation": "Jenkins runs CI/CD pipelines, Kubernetes orchestrates containers, and Grafana builds dashboards.",
+    "rows": [
+      "Automating build and test pipelines with jobs and a Jenkinsfile",
+      "Running and scaling containers across a cluster",
+      "Showing metrics from many sources on dashboards"
+    ],
+    "columns": [
+      "Kubernetes",
+      "Jenkins",
+      "Grafana"
+    ],
+    "correct": [
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-068",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Cost",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Finance cannot tell which department caused a cloud bill spike. What should be applied to every resource?",
+    "explanation": "Tags label resources so the bill can be grouped and charged back by department or project.",
+    "options": [
+      "Spot pricing for every workload",
+      "Tags for department and cost center",
+      "Hardware pass-through",
+      "A separate overlay network for each team"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-069",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Networking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Users across five continents complain that large static images load slowly from a single region. What should be added?",
+    "explanation": "A CDN caches static content at edge locations close to users, cutting load time.",
+    "options": [
+      "A second route table",
+      "A content delivery network",
+      "A bastion host",
+      "A larger database instance"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-070",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Security issues",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A developer with read-only rights uses a misconfigured role to grant themselves administrator access. What is this?",
+    "explanation": "Gaining higher rights than intended is privilege escalation, often through overly broad permissions on roles.",
+    "options": [
+      "Cloud bursting",
+      "Privilege escalation",
+      "A partial outage",
+      "Data locality"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-071",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpBackup",
+    "skill": "Life cycle",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A team decommissions an application. Which step matters most for the data it held?",
+    "explanation": "Decommissioning includes handling data under retention rules and securely removing what is no longer needed.",
+    "options": [
+      "Stop billing alerts for the account",
+      "Leave the volumes attached to a stopped VM in case someone finds them useful later",
+      "Rename the resources",
+      "Handle the data under the retention policy and wipe the rest"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-072",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Provisioning",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A workload stores payment card data. Which requirement must drive where and how its resources are provisioned?",
+    "explanation": "Card data brings compliance rules on encryption, access and network separation that the build must meet.",
+    "options": [
+      "The cheapest region regardless of rules",
+      "The shortest resource names",
+      "The color of the dashboard",
+      "Compliance requirements such as PCI DSS"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-073",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Alerting",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An alert fires that disk space on a database volume is at 92%. What is the right first response?",
+    "explanation": "Triage confirms and sizes the problem before the response, so the fix is safe and in proportion.",
+    "options": [
+      "Ignore it until the disk is full",
+      "Restart every server in the region",
+      "Triage it: confirm it, size the impact, then act",
+      "Delete the database's oldest table at once"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-074",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "Monitoring",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An HTTPS-only web server also listens to the internet on TCP 3306 and 6379. What is the finding?",
+    "explanation": "Ports 3306 (MySQL) and 6379 (Redis) should never face the internet on a web server; they should be closed.",
+    "options": [
+      "An expired TLS certificate",
+      "A normal web server setup",
+      "A DDoS attack in progress against the web server",
+      "Unnecessary open ports"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-075",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Migration considerations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Customer data from an EU subsidiary must stay inside the EU after migration. Which consideration is this?",
+    "explanation": "Laws on where personal data may be stored and processed are regulatory considerations that limit which regions can be used.",
+    "options": [
+      "Platform compatibility",
+      "Regulatory requirements",
+      "Management overhead",
+      "Network throughput"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-076",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Access to management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A script running on a build server creates cloud resources. How should it authenticate?",
+    "explanation": "Automation uses programmatic credentials through the API, SDK or CLI, scoped to only what it needs.",
+    "options": [
+      "Programmatic access with a scoped API key or role, not a person's console password",
+      "With no authentication on a private network",
+      "With an administrator's web portal login and password saved in the script for convenience",
+      "Through RDP to a jump box"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-077",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "DevOps tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the ELK stack, which component collects and transforms log data before it is stored?",
+    "explanation": "Logstash ingests and processes logs, Elasticsearch stores and indexes them, and Kibana visualizes them.",
+    "options": [
+      "Kibana",
+      "Elasticsearch",
+      "Git",
+      "Logstash"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-078",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Cost",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A licence is priced per physical CPU core and its terms forbid sharing hardware with other customers. Which billing option fits?",
+    "explanation": "A dedicated host gives you a whole physical server, so per-core licences can be counted and the hardware is not shared.",
+    "options": [
+      "Spot instance",
+      "Dedicated host",
+      "Shared on-demand instance",
+      "Serverless function"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-079",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Networking",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A dedicated link to the cloud has a VPN backup, and routes must fail over on their own. Which protocol exchanges them?",
+    "explanation": "BGP advertises routes between networks and withdraws them when a link fails, so traffic shifts to the remaining path.",
+    "options": [
+      "Border Gateway Protocol",
+      "Simple Network Management Protocol",
+      "Dynamic Host Configuration Protocol",
+      "Network Time Protocol"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-080",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Security issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An inventory finds a remote access tool on several VMs that no one approved or installed through the normal process. What is the issue?",
+    "explanation": "Software installed outside the approved process is unauthorized and may be a sign of compromise.",
+    "options": [
+      "API throttling",
+      "A minor update",
+      "Regional availability",
+      "Unauthorized software"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-081",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpBackup",
+    "skill": "Data",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A container writes temporary cache files that can be rebuilt at any time. Which kind of data is this?",
+    "explanation": "Ephemeral data can be lost without harm when the container or instance goes away.",
+    "options": [
+      "Ephemeral",
+      "Regulated",
+      "Archived",
+      "Persistent"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-082",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Infrastructure as code",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A declarative IaC tool is run twice with no change to the code. What should the second run do?",
+    "explanation": "Declarative tools are idempotent: they change only what differs from the desired state.",
+    "options": [
+      "Create a second copy of every resource it declared",
+      "Delete everything and rebuild it from scratch",
+      "Make no changes, since nothing differs",
+      "Ignore the state file and guess"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-083",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Monitoring",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants to know when its public website stops answering, even if every server looks healthy from inside. What should it add?",
+    "explanation": "External checks test what users see, which catches DNS, certificate and network problems internal metrics can miss.",
+    "options": [
+      "External synthetic checks",
+      "A larger instance size",
+      "A longer retention period",
+      "More debug logging on the web servers"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-084",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "Attack types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A test VM built two years ago for a demo is still running, unpatched and unmonitored, with a public IP. What is this risk called?",
+    "explanation": "Forgotten, unmanaged instances are zombie instances: they cost money and give attackers an easy target.",
+    "options": [
+      "A canary release",
+      "A spot instance",
+      "A hot site",
+      "A zombie instance"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-085",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analytics cluster moves from the cloud back into the company's own data center to cut costs. Which migration type is this?",
+    "explanation": "Bringing a workload back from a provider into your own facility is a cloud-to-on-premises migration.",
+    "options": [
+      "On-premises-to-cloud",
+      "Cloud-to-on-premises",
+      "Edge-to-cloud",
+      "Cloud-to-cloud"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-086",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Authorization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Fifty data analysts need the same read-only access to a warehouse. What is easiest to manage?",
+    "explanation": "Group-based access control grants permissions once to a group, so joiners and leavers are handled by membership.",
+    "options": [
+      "Share one analyst account",
+      "Put them in a group and grant the access to the group",
+      "Grant each analyst the same access one person at a time",
+      "Give everyone administrator rights"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-087",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "DevOps tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where are GitHub Actions workflows defined?",
+    "explanation": "GitHub Actions reads YAML workflow files stored in the repository's .github/workflows folder.",
+    "options": [
+      "In YAML files in .github/workflows",
+      "In a Jenkinsfile on a separate build server",
+      "In a Terraform state file",
+      "In the Docker registry next to the images it builds"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-T2-088",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Optimization",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "How many hours does copying 900 GB over a steady 1 Gbps link take, ignoring overhead? Type the number only.",
+    "explanation": "900 GB is 900 x 8 = 7,200 gigabits. At 1 gigabit per second that takes 7,200 seconds, which is 2 hours.",
+    "numeric": {
+      "answers": [
+        "2"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CLOUDPLUS-T2-089",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Networking",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "How many IP addresses does the block 10.40.0.0/19 contain in total, before reserved ones? Type the number only.",
+    "explanation": "A /19 leaves 32 - 19 = 13 host bits, and 2 to the 13th power is 8,192 addresses.",
+    "numeric": {
+      "answers": [
+        "8192"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CLOUDPLUS-T2-090",
+    "section": "cloudplus",
+    "test": 2,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Network issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "App servers wait 180 ms per round trip to a database on another continent, so chatty queries crawl. What is the main issue?",
+    "explanation": "Every round trip pays the cross-continent delay, so moving the database closer or batching queries helps.",
+    "options": [
+      "A revoked access key",
+      "Latency between regions",
+      "A misconfigured VLAN tag on the trunk",
+      "An exhausted DHCP scope"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-001",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Networking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which object decides where traffic leaving a subnet is sent next, for example to an internet gateway or a VPN?",
+    "explanation": "Each subnet is associated with a route table whose entries map destination ranges to targets.",
+    "options": [
+      "The DNS zone",
+      "The route table",
+      "The security group",
+      "The load balancer listener"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-002",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Evolving technology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A support team wants to know whether incoming customer reviews are positive or negative, using a managed AI service. Which capability fits?",
+    "explanation": "Sentiment analysis classifies the tone of text as positive, negative or neutral.",
+    "options": [
+      "Sentiment analysis",
+      "Text-to-voice",
+      "Text translation",
+      "Visual recognition"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-003",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Deployment strategies",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Match each risk profile to the strategy that fits it best:",
+    "explanation": "Blue-green rolls back by switching environments, canary tests with a small share of users, and rolling updates a few servers at a time.",
+    "rows": [
+      "Must roll back in seconds by switching traffic",
+      "Wants real users to test the release on a small scale first",
+      "Has spare capacity for only a few servers at a time"
+    ],
+    "columns": [
+      "Blue-green",
+      "Rolling",
+      "Canary"
+    ],
+    "correct": [
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-004",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Formats",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Match each snippet to its format:",
+    "explanation": "Braces and quoted keys are JSON, key: value lines are YAML, and tags are XML.",
+    "rows": [
+      "{\"size\": \"small\"}",
+      "size: small",
+      "<size>small</size>"
+    ],
+    "columns": [
+      "YAML",
+      "JSON",
+      "XML"
+    ],
+    "correct": [
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-005",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Scaling",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator adds two instances by hand before a planned product launch. Which scaling approach is this?",
+    "explanation": "Changing capacity by hand is manual scaling.",
+    "options": [
+      "Event-triggered",
+      "Trending",
+      "Load-triggered",
+      "Manual"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-006",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpBackup",
+    "skill": "Backup types",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Match each backup type to what it captures:",
+    "explanation": "Full copies all data, incremental copies changes since the latest backup, and differential copies changes since the last full.",
+    "rows": [
+      "Everything selected, every time",
+      "Changes since the last backup of any kind",
+      "Changes since the last full backup"
+    ],
+    "columns": [
+      "Differential",
+      "Full",
+      "Incremental"
+    ],
+    "correct": [
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-007",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Compliance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A regulator requires that health records physically stay on servers inside the country. Which concept is this requirement about?",
+    "explanation": "Data locality is where the data physically resides.",
+    "options": [
+      "Data classification",
+      "Data locality",
+      "Data ownership",
+      "Data lineage"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-008",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "Monitoring",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A service account that normally makes 50 API calls a day makes 9,000 calls from a new country overnight. What should flag this?",
+    "explanation": "Comparing activity to the normal baseline catches unusual behavior that may be a compromise.",
+    "options": [
+      "A larger log retention period",
+      "A rolling deployment",
+      "Baseline deviation monitoring",
+      "A static route"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-009",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "Repositories",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company's base container images contain internal tools that must not be shared outside. Where should they be stored?",
+    "explanation": "Private repositories restrict who can pull internal artifacts.",
+    "options": [
+      "A public Git repository",
+      "A public registry",
+      "A shared download link with no login",
+      "A private registry"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-010",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Network issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Large file transfers between two regions are slow, though small requests return quickly. Which issue fits best?",
+    "explanation": "Fast small requests but slow large transfers point to limited throughput rather than latency or resolution.",
+    "options": [
+      "Bandwidth or throughput limits",
+      "Expired passwords",
+      "A missing cost allocation tag",
+      "Wrong DNS records"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-011",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Networking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which service checks the identity and rules of web traffic before it reaches the application servers, often adding TLS termination and URL routing in one place?",
+    "explanation": "An application gateway is a layer 7 entry point that routes and inspects HTTP traffic for back-end servers.",
+    "options": [
+      "Network-attached storage",
+      "DHCP relay",
+      "Application gateway",
+      "Hardware pass-through"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-012",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Evolving technology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Farm sensors send readings to a local device that batches them for the cloud. What is that device?",
+    "explanation": "An IoT gateway collects data from nearby sensors, often over short-range protocols, and relays it to the cloud.",
+    "options": [
+      "An IoT gateway",
+      "A load balancer",
+      "A bastion host",
+      "A hypervisor"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-013",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Migration strategies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which migration strategy rewrites much of the application's code to use cloud features, without necessarily redesigning the whole architecture?",
+    "explanation": "Refactoring changes the code itself, for example to use managed services or stateless sessions.",
+    "options": [
+      "Refactor",
+      "Retain",
+      "Retire",
+      "Rehost as is"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-014",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Scripting logic",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a script, the line max_nodes = 10 does what?",
+    "explanation": "A single equals sign assigns a value. A double equals sign compares.",
+    "options": [
+      "Compares max_nodes with 10",
+      "Starts a loop ten times",
+      "Assigns the value 10 to a variable",
+      "Calls a function named 10"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-015",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Logging",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which step of logging installs agents or uses provider services to gather log data from each source?",
+    "explanation": "Collection gathers logs at the source. Aggregation then centralizes them and retention decides how long they stay.",
+    "options": [
+      "Alerting",
+      "Retention",
+      "Collection",
+      "Decommissioning"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-016",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpBackup",
+    "skill": "Backup schedule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A business sets an RPO of 60 minutes for its order database. How often must backups or snapshots run at least?",
+    "explanation": "The backup interval must be no longer than the RPO, or more data than allowed could be lost.",
+    "options": [
+      "Every week",
+      "Every day",
+      "Every hour",
+      "Every month"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-017",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Access to resources",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two protocols do administrators commonly use to manage cloud VMs directly? (Choose two.)",
+    "explanation": "SSH and RDP give remote shells and desktops. SMTP sends mail and NTP keeps time.",
+    "options": [
+      "SSH for Linux",
+      "NTP for both",
+      "SMTP for both",
+      "RDP for Windows"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "CLOUDPLUS-D-018",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "Attack types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Files on several shared drives are encrypted and a note demands payment for the key. What attack is this?",
+    "explanation": "Ransomware encrypts data and demands payment for the decryption key.",
+    "options": [
+      "Cryptojacking",
+      "A zombie instance",
+      "Ransomware",
+      "Phishing"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-019",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "DevOps tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool packages an application and its dependencies into an image and runs it as a container?",
+    "explanation": "Docker builds images and runs containers from them.",
+    "options": [
+      "Ansible",
+      "Docker",
+      "Grafana",
+      "Kibana"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-020",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Network issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A client supports only HTTP/1.1, and the server accepts only HTTP/2 or later. What is this issue?",
+    "explanation": "Both ends must share a supported protocol version.",
+    "options": [
+      "Protocol incompatibility",
+      "Cloud bursting",
+      "Litigation hold",
+      "Data sovereignty"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-021",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Disaster recovery",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "A company wants the lowest recovery time and is willing to pay for it. Which two choices support that? (Choose two.)",
+    "explanation": "A running hot site and continuous replication shorten both the outage and the data loss. Cold sites and weekly tapes are cheap but slow.",
+    "options": [
+      "Keep a hot site running in a second region",
+      "Replicate data continuously to the recovery site",
+      "Ship backup tapes weekly to a vault",
+      "Rely on a cold site with no servers"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2
+  },
+  {
+    "id": "CLOUDPLUS-D-022",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Cost",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Monitoring shows a VM sized for 16 vCPUs never uses more than 3. What should the team do to save money?",
+    "explanation": "Rightsizing matches the instance size to real use, cutting cost without hurting performance.",
+    "options": [
+      "Buy a reserved instance of the same size",
+      "Rightsize it to a smaller instance",
+      "Add a second identical VM",
+      "Move it to a dedicated host"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-023",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Migration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before cutover, a team checks that the target region has enough vCPU quota and storage for every migrated workload. Which planning step is this?",
+    "explanation": "Resource allocation makes sure the target has the compute, storage and network capacity the workloads need.",
+    "options": [
+      "Resource allocation",
+      "Litigation hold",
+      "Peer code review",
+      "Drift detection"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-024",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Provisioning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A reporting job runs only at night and can tolerate interruption. Which requirement should guide its compute choice most?",
+    "explanation": "A flexible night job is best matched on cost, for example with spot capacity or scheduled shutdown.",
+    "options": [
+      "Hot site availability",
+      "Cost requirements",
+      "Low latency for users",
+      "Data sovereignty"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-025",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Scaling",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "A web tier scales out when CPU passes 70%. Which two settings stop it from adding and removing instances over and over? (Choose two.)",
+    "explanation": "Cooldowns and a gap between scale-out and scale-in thresholds prevent flapping.",
+    "options": [
+      "A shorter log retention period",
+      "A higher log level",
+      "A cooldown period after each scaling action",
+      "A scale-in threshold well below 70%"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "CLOUDPLUS-D-026",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpBackup",
+    "skill": "Life cycle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cloud provider says an instance type reaches end of life next quarter. What should the team plan?",
+    "explanation": "At end of life the offering is withdrawn, so workloads must move before it disappears.",
+    "options": [
+      "Moving the workloads to a current instance type before that date",
+      "Turning off monitoring for those instances",
+      "Buying more of that instance type",
+      "Nothing, because end of life only changes how the instances are billed each month"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-027",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Authentication",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After signing in once, an API client sends a signed, time-limited bearer token with each call instead of a password. Which authentication model is this?",
+    "explanation": "Token-based authentication issues a token after sign-in that the client presents on later requests until it expires.",
+    "options": [
+      "Token-based",
+      "Shared secret in the URL",
+      "Local users",
+      "Directory-based"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-028",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "Best practices",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two actions harden a new VM image? (Choose two.)",
+    "explanation": "Hardening shrinks the attack surface and starts from a patched baseline.",
+    "options": [
+      "Open all ports for easier troubleshooting",
+      "Apply current patches before saving the image",
+      "Enable the default administrator account with a shared password",
+      "Remove unused packages and services"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "CLOUDPLUS-D-029",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "Source control",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team keeps main always deployable and does all work on short-lived branches that are merged after review. What is this?",
+    "explanation": "A branching strategy controls how work is isolated and merged into main.",
+    "options": [
+      "Data sovereignty",
+      "Configuration drift",
+      "Branch management",
+      "Cloud bursting"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-030",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Deployment issues",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A provider announces that an old API version will stop working, and scripts that call it start failing after the date. What is this issue?",
+    "explanation": "Deprecated features are removed after notice, so code must move to the replacement.",
+    "options": [
+      "Oversubscription",
+      "Network overlap",
+      "A cold site",
+      "Deprecation of functionality"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-031",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpModels",
+    "skill": "Networking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which load balancer forwards TCP and UDP traffic by IP address and port with very low latency, without reading the HTTP content?",
+    "explanation": "A network load balancer works at layer 4, so it is fast and handles any TCP or UDP protocol, but it cannot route on URLs.",
+    "options": [
+      "Network load balancer",
+      "Reverse proxy cache",
+      "Web application firewall",
+      "Application load balancer"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-032",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpDesign",
+    "skill": "Databases",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two are non-relational database types? (Choose two.)",
+    "explanation": "Document and key-value stores are NoSQL models. Normalized tables and star schemas are relational designs.",
+    "options": [
+      "Key-value store",
+      "Normalized SQL tables",
+      "Document store",
+      "Star schema warehouse"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "CLOUDPLUS-D-033",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpDeploy",
+    "skill": "Deployment models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which deployment model runs on infrastructure dedicated to one organization, whether in its own building or hosted for it?",
+    "explanation": "A private cloud serves a single organization, on premises or hosted.",
+    "options": [
+      "Public",
+      "Community",
+      "Private",
+      "Multi-tenant"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-034",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpCode",
+    "skill": "Testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A linter flags a syntax error in a template before anything is deployed. What kind of check is this?",
+    "explanation": "Validation and linting check the code itself before it runs against real resources.",
+    "options": [
+      "A penetration test by an outside firm",
+      "Static validation of the code",
+      "A load test",
+      "A restore test"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-035",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpObserve",
+    "skill": "Alerting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which alert should page an engineer at 3 a.m.?",
+    "explanation": "Pages are for customer-facing, actionable problems. The others are informational.",
+    "options": [
+      "A development VM used 60% CPU for most of the afternoon",
+      "A log file rotated",
+      "The checkout service is returning errors to customers",
+      "A weekly report finished on time"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-036",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpBackup",
+    "skill": "Backup testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A restore test checks that file hashes match the originals. Which property is being tested?",
+    "explanation": "Matching hashes show the restored data is unchanged, which is integrity.",
+    "options": [
+      "Throughput",
+      "Latency",
+      "Elasticity",
+      "Integrity"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-037",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpIdentity",
+    "skill": "Authentication",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company's cloud accounts check users against its existing Active Directory instead of separate cloud-only accounts. Which model is this?",
+    "explanation": "Directory-based authentication uses a central directory service as the source of identities.",
+    "options": [
+      "Directory-based authentication",
+      "Local users",
+      "Shared accounts",
+      "Anonymous access"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-038",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpSecOps",
+    "skill": "Attack types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An employee enters cloud console credentials on a fake login page sent by email. Which attack type is this?",
+    "explanation": "Phishing is social engineering that tricks a person into giving up credentials.",
+    "options": [
+      "DDoS",
+      "Metadata abuse",
+      "Cryptojacking",
+      "Phishing"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CLOUDPLUS-D-039",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpDevops",
+    "skill": "Artifacts",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two are archive formats a pipeline might produce as flat artifacts? (Choose two.)",
+    "explanation": "ZIP and tar bundle files into one archive. SAML is an identity standard and CVE names vulnerabilities.",
+    "options": [
+      "CVE",
+      "tar",
+      "SAML",
+      "ZIP"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "CLOUDPLUS-D-040",
+    "section": "cloudplus",
+    "test": 0,
+    "module": 1,
+    "domain": "cpTrouble",
+    "skill": "Security issues",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "A user can open files in a storage bucket that their team should never see. Which two should be reviewed? (Choose two.)",
+    "explanation": "Unauthorized access comes from permissions on the resource or on the identity, so both need review.",
+    "options": [
+      "The CDN cache time",
+      "The user's role and group memberships",
+      "The bucket policy and access control settings",
+      "The VM instance size"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "select": 2
+  }
+]

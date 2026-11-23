@@ -1,0 +1,4250 @@
+[
+  {
+    "id": "SNOWPRO-T1-001",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "File sizing",
+    "stem": "What file size does Snowflake recommend for loading data efficiently?",
+    "options": [
+      "100 to 250 MB compressed",
+      "1 to 5 GB uncompressed",
+      "1 to 10 MB compressed",
+      "50 to 500 MB uncompressed"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Files of roughly 100 to 250 MB compressed balance parallel loading against per-file overhead. 50 to 500 MB uncompressed is the micro-partition size, not a file target."
+  },
+  {
+    "id": "SNOWPRO-T1-002",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Architecture layers",
+    "stem": "Which layer of Snowflake authenticates every connection before a query runs?",
+    "options": [
+      "Cloud services",
+      "Client driver",
+      "Query processing",
+      "Database storage"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Authentication, metadata management, access control and query optimization all sit in the cloud services layer. Query processing is where virtual warehouses run the work."
+  },
+  {
+    "id": "SNOWPRO-T1-003",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Time Travel",
+    "stem": "What is the default Time Travel retention for a new permanent table?",
+    "options": [
+      "0 days",
+      "90 days",
+      "1 day",
+      "7 days"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Time Travel is on by default with a 1-day retention period. Enterprise Edition can raise it to 90 days for permanent objects."
+  },
+  {
+    "id": "SNOWPRO-T1-004",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "System roles",
+    "stem": "Which system role is meant only for creating and managing users and roles?",
+    "options": [
+      "ORGADMIN",
+      "SECURITYADMIN",
+      "USERADMIN",
+      "SYSADMIN"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "USERADMIN manages users and roles and nothing else. SECURITYADMIN inherits it and adds MANAGE GRANTS for global grant control."
+  },
+  {
+    "id": "SNOWPRO-T1-005",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Column-level security",
+    "stem": "Which is the lowest edition that supports dynamic data masking?",
+    "options": [
+      "Standard",
+      "Virtual Private Snowflake only",
+      "Business Critical",
+      "Enterprise"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Column-level security, which includes dynamic data masking and external tokenization, needs Enterprise Edition or higher."
+  },
+  {
+    "id": "SNOWPRO-T1-006",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Result cache",
+    "stem": "If no one reuses it, how long is a persisted query result kept?",
+    "options": [
+      "24 hours",
+      "31 days",
+      "7 days",
+      "48 hours"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Persisted results expire 24 hours after the query runs. Each reuse resets that clock, up to 31 days from the first run."
+  },
+  {
+    "id": "SNOWPRO-T1-007",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Semi-structured functions",
+    "stem": "Which function turns each element of a JSON array into its own output row?",
+    "options": [
+      "PARSE_JSON",
+      "ARRAY_AGG",
+      "OBJECT_CONSTRUCT",
+      "FLATTEN"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "FLATTEN, usually with LATERAL, expands arrays or objects into rows. ARRAY_AGG goes the other way and gathers rows into an array."
+  },
+  {
+    "id": "SNOWPRO-T1-008",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Secure Data Sharing",
+    "stem": "A provider shares a table with another account. What data is copied to the consumer?",
+    "options": [
+      "No data at all",
+      "Only changed micro-partitions",
+      "Nightly snapshot of the table",
+      "Full table to the consumer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Secure Data Sharing copies nothing. The consumer reads the provider's data through Snowflake's services layer and metadata store."
+  },
+  {
+    "id": "SNOWPRO-T1-009",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "COPY options",
+    "stem": "What is the default ON_ERROR setting for a bulk COPY INTO <table>?",
+    "options": [
+      "CONTINUE",
+      "SKIP_FILE",
+      "'SKIP_FILE_10%'",
+      "ABORT_STATEMENT"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bulk COPY aborts the whole statement on the first error by default. Snowpipe defaults to SKIP_FILE instead."
+  },
+  {
+    "id": "SNOWPRO-T1-010",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Micro-partitions",
+    "stem": "How much uncompressed data does a single micro-partition hold?",
+    "options": [
+      "1 to 5 GB",
+      "16 to 64 MB",
+      "50 to 500 MB",
+      "100 to 250 MB"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each micro-partition holds 50 to 500 MB of uncompressed data, stored compressed and by column. 100 to 250 MB compressed is the advice for files you load, not the partition size."
+  },
+  {
+    "id": "SNOWPRO-T1-011",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Fail-safe",
+    "stem": "How long is the Fail-safe period for a permanent table?",
+    "options": [
+      "7 days, not configurable",
+      "Same length as Time Travel",
+      "Up to 90 days",
+      "1 day, configurable"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Fail-safe is a fixed 7-day period that begins when Time Travel retention ends. It cannot be changed."
+  },
+  {
+    "id": "SNOWPRO-T1-012",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Load metadata",
+    "stem": "For how long does COPY INTO keep load metadata about which files it loaded into a table?",
+    "options": [
+      "14 days",
+      "64 days",
+      "90 days",
+      "24 hours"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Table load metadata lasts 64 days, which is how COPY skips files it already loaded. Snowpipe keeps its own metadata for 14 days per pipe."
+  },
+  {
+    "id": "SNOWPRO-T1-013",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Role hierarchy",
+    "stem": "Snowflake recommends that custom role hierarchies end at which system role?",
+    "options": [
+      "ACCOUNTADMIN",
+      "SYSADMIN",
+      "USERADMIN",
+      "PUBLIC"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Rolling custom roles up to SYSADMIN lets system administrators manage every object those roles create. Roles outside that chain can only be managed by a role with MANAGE GRANTS."
+  },
+  {
+    "id": "SNOWPRO-T1-014",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Column-level security",
+    "stem": "What does applying a masking policy to a column change in storage?",
+    "options": [
+      "Nothing at all",
+      "A masked copy is kept",
+      "Values are encrypted again",
+      "Values are rewritten on load"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Masking policies leave stored data as it is. At query time the policy conditions decide whether each user sees the real value or a masked one."
+  },
+  {
+    "id": "SNOWPRO-T1-015",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scaling",
+    "stem": "At peak times many users queue for one warehouse while each query is small. What helps most?",
+    "options": [
+      "A longer auto-suspend time",
+      "A clustering key",
+      "Multi-cluster auto-scale",
+      "A bigger warehouse size"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Queuing from many concurrent users is a scale-out problem, solved by a multi-cluster warehouse. A bigger size mainly speeds up large individual queries."
+  },
+  {
+    "id": "SNOWPRO-T1-016",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Streams",
+    "stem": "When does a stream's offset move forward?",
+    "options": [
+      "When its source table is cloned",
+      "Every 24 hours",
+      "When DML reads it and commits",
+      "Each time someone queries it"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Only a DML statement that reads the stream, such as INSERT or MERGE, advances the offset when its transaction commits. A plain SELECT leaves it in place."
+  },
+  {
+    "id": "SNOWPRO-T1-017",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Secure Data Sharing",
+    "stem": "Who pays for compute when a consumer queries shared data?",
+    "options": [
+      "Split evenly by both",
+      "Consumer, for its warehouse",
+      "Nobody; shares are free",
+      "Provider, for each consumer query"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Consumers pay only for the warehouses they use to query. The provider keeps paying for the storage of what it shares."
+  },
+  {
+    "id": "SNOWPRO-T1-018",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Editions",
+    "stem": "Which is the lowest edition that offers multi-cluster virtual warehouses?",
+    "options": [
+      "Business Critical",
+      "Standard",
+      "Enterprise",
+      "Virtual Private Snowflake"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Multi-cluster warehouses first appear in Enterprise Edition. Higher editions include everything below them, so Business Critical and VPS have them too, but they are not the lowest."
+  },
+  {
+    "id": "SNOWPRO-T1-019",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Table types",
+    "stem": "Which table type persists until dropped and has Time Travel but no Fail-safe?",
+    "options": [
+      "Permanent",
+      "Temporary",
+      "Transient",
+      "External"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Transient tables persist across sessions like permanent ones but skip Fail-safe, which lowers storage cost. Temporary tables also lack Fail-safe but vanish when the session ends."
+  },
+  {
+    "id": "SNOWPRO-T1-020",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Stages",
+    "stem": "Which reference points to the current user's personal stage?",
+    "options": [
+      "@~",
+      "@%",
+      "@user",
+      "@."
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "@~ is the user stage that every user gets automatically. @% followed by a table name is that table's stage."
+  },
+  {
+    "id": "SNOWPRO-T1-021",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Architecture design",
+    "stem": "Snowflake's architecture combines which two traditional database designs?",
+    "options": [
+      "Shared-memory and shared-disk",
+      "Shared-disk and shared-nothing",
+      "Shared-memory and shared-nothing",
+      "Primary and replica clusters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Snowflake keeps one central data store, as in shared-disk systems, and processes queries with independent compute clusters that each hold part of the data, as in shared-nothing systems."
+  },
+  {
+    "id": "SNOWPRO-T1-022",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "UNDROP",
+    "stem": "A table was dropped an hour ago and its retention is 1 day. Which command brings it back?",
+    "options": [
+      "UNDROP TABLE",
+      "ALTER TABLE ... RECOVER",
+      "CREATE TABLE ... LIKE",
+      "RESTORE TABLE"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "UNDROP restores a dropped table, schema or database to its most recent state while it is still inside its Time Travel retention period."
+  },
+  {
+    "id": "SNOWPRO-T1-023",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Managed access",
+    "stem": "In a managed access schema, who can grant privileges on the objects inside it?",
+    "options": [
+      "Only ACCOUNTADMIN",
+      "Schema owner or MANAGE GRANTS",
+      "Any role with USAGE on the schema",
+      "Each object's owning role"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Managed access takes grant decisions away from object owners. Only the schema owner or a role holding MANAGE GRANTS can grant privileges there."
+  },
+  {
+    "id": "SNOWPRO-T1-024",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Row access policies",
+    "stem": "Which policy limits a table so each region's analysts see only their region's records?",
+    "options": [
+      "Projection policy",
+      "Aggregation policy",
+      "Masking policy",
+      "Row access policy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A row access policy returns TRUE or FALSE per row for the querying role, filtering what is returned. Masking policies change column values instead."
+  },
+  {
+    "id": "SNOWPRO-T1-025",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Snowpipe",
+    "stem": "What compute does Snowpipe use to load files?",
+    "options": [
+      "An X-Small warehouse per pipe",
+      "The client machine that staged files",
+      "Snowflake-managed serverless compute",
+      "The account's default warehouse"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Snowpipe runs on serverless compute that Snowflake sizes and manages, billed per GB loaded. Bulk COPY uses a warehouse you choose."
+  },
+  {
+    "id": "SNOWPRO-T1-026",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Query Profile",
+    "stem": "Query Profile shows bytes spilled to remote storage. What usually helps most?",
+    "options": [
+      "Turn off the result cache",
+      "Run it on a larger warehouse",
+      "Add a clustering key to the table",
+      "Raise the auto-suspend time"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Spilling means the query ran out of memory and local disk. A larger warehouse gives it more of both, as can processing less data at a time."
+  },
+  {
+    "id": "SNOWPRO-T1-027",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Tasks",
+    "stem": "A task was just created with a schedule. What must happen before it runs on that schedule?",
+    "options": [
+      "ALTER TASK ... RESUME",
+      "GRANT USAGE ON TASK",
+      "CALL SYSTEM$START_TASK()",
+      "ALTER TASK ... ENABLE"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "New tasks start suspended. Resuming the task lets it follow its schedule."
+  },
+  {
+    "id": "SNOWPRO-T1-028",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reader accounts",
+    "stem": "A provider's partner has no Snowflake account. What lets the partner query shared data?",
+    "options": [
+      "Secure view",
+      "External table",
+      "Public listing",
+      "Reader account"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A provider can create a reader account for a partner without its own Snowflake account. The provider owns and pays for it."
+  },
+  {
+    "id": "SNOWPRO-T1-029",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compute independence",
+    "stem": "Two virtual warehouses query the same table at the same time. How does one affect the other's speed?",
+    "options": [
+      "Not at all",
+      "Both slow down equally",
+      "Second waits for the first",
+      "Larger one takes priority"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each virtual warehouse is an independent compute cluster that shares no compute with other warehouses, so heavy work on one has no impact on another."
+  },
+  {
+    "id": "SNOWPRO-T1-030",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloning",
+    "stem": "How much new storage does a zero-copy clone use at the moment it is created?",
+    "options": [
+      "One micro-partition per column",
+      "Full copy of the source",
+      "Half the source size",
+      "None for data"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A clone shares the source's micro-partitions, so it adds no data storage when created. Storage grows only as either copy is changed."
+  },
+  {
+    "id": "SNOWPRO-T1-031",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "COPY options",
+    "stem": "Which COPY INTO option checks staged files for errors without loading any rows?",
+    "options": [
+      "FORCE = TRUE",
+      "PURGE = TRUE",
+      "ON_ERROR = CONTINUE",
+      "VALIDATION_MODE"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "VALIDATION_MODE returns errors or sample rows instead of loading. ON_ERROR = CONTINUE loads the good rows and skips the bad ones."
+  },
+  {
+    "id": "SNOWPRO-T1-032",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "AI features",
+    "stem": "Which Snowflake feature offers built-in SQL functions that call large language models?",
+    "options": [
+      "Search optimization service",
+      "Cortex AI Functions",
+      "Snowpark Container Services",
+      "Snowpipe Streaming"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cortex AI Functions run LLM tasks such as completion, classification and summarization from SQL on data in Snowflake. Container Services hosts your own containers instead."
+  },
+  {
+    "id": "SNOWPRO-T1-033",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Semi-structured data",
+    "stem": "Which data type holds JSON values in a single column?",
+    "options": [
+      "VARIANT",
+      "GEOGRAPHY",
+      "BINARY",
+      "TEXT"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "VARIANT stores semi-structured values such as JSON, Avro or Parquet records and can be queried with path notation. TEXT would store the JSON as a plain string."
+  },
+  {
+    "id": "SNOWPRO-T1-034",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Network policies",
+    "stem": "Which object limits the IP addresses users may connect from?",
+    "options": [
+      "Network policy",
+      "Password policy",
+      "Session policy",
+      "Row access policy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A network policy holds allowed and blocked IP lists, often through network rules, and can be set on the account or a user. A session policy sets idle timeouts instead."
+  },
+  {
+    "id": "SNOWPRO-T1-035",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Account usage",
+    "stem": "Which source keeps a year of history and includes dropped objects?",
+    "options": [
+      "INFORMATION_SCHEMA",
+      "Query history in Snowsight",
+      "SNOWFLAKE.ACCOUNT_USAGE",
+      "RESULT_SCAN output"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ACCOUNT_USAGE views keep one year of history and include dropped objects, with some latency. INFORMATION_SCHEMA has no latency but keeps 7 days to 6 months and no dropped objects."
+  },
+  {
+    "id": "SNOWPRO-T1-036",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pruning",
+    "stem": "Which filter is least able to prune micro-partitions?",
+    "options": [
+      "Date range on a clustered column",
+      "One comparing to a subquery",
+      "IN list on a low-overlap column",
+      "Equality on a sorted ID"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Snowflake does not use predicates that contain a subquery for pruning, even when the subquery returns a constant. Simple filters on well-clustered columns prune well."
+  },
+  {
+    "id": "SNOWPRO-T1-037",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dynamic tables",
+    "stem": "What does TARGET_LAG set on a dynamic table?",
+    "options": [
+      "Delay before first build",
+      "How stale its data may get",
+      "Time Travel retention period",
+      "Refresh warehouse size"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "TARGET_LAG says how far behind its base tables the dynamic table may fall, and Snowflake schedules refreshes to meet it. Actual lag can exceed it when refreshes run long."
+  },
+  {
+    "id": "SNOWPRO-T1-038",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cross-region sharing",
+    "stem": "A consumer is in a different region from the provider. Which option makes the data available there?",
+    "options": [
+      "Direct share as it stands",
+      "Listing with auto-fulfillment",
+      "Larger consumer warehouse",
+      "Reader account in the same region"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A direct share works only within one region. Listings can reach consumers in any region or cloud through auto-fulfillment."
+  },
+  {
+    "id": "SNOWPRO-T1-039",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Unloading",
+    "stem": "Which command unloads query results into a stage?",
+    "options": [
+      "COPY INTO <location>",
+      "PUT",
+      "GET",
+      "INSERT INTO @stage SELECT"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "COPY INTO <location> writes rows from a table or query to files in a stage. GET then downloads files from an internal stage to a local machine."
+  },
+  {
+    "id": "SNOWPRO-T1-040",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Storage layer",
+    "stem": "Where does Snowflake physically keep table data?",
+    "options": [
+      "Customer-managed block volumes",
+      "Local disks of each warehouse",
+      "Cloud provider object storage",
+      "Cloud services metadata store"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Table data is reorganized into compressed, columnar micro-partitions and stored in cloud object storage that Snowflake manages. Warehouses only cache data while running."
+  },
+  {
+    "id": "SNOWPRO-T1-041",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Views",
+    "stem": "Why would you create a secure view instead of a standard view?",
+    "options": [
+      "To make every query against it faster",
+      "To allow inserts through it",
+      "To cache its results for a month",
+      "To hide its definition from users"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A secure view hides its SQL text from users who are not its owner and blocks optimizations that could expose hidden rows. It is often slower, not faster."
+  },
+  {
+    "id": "SNOWPRO-T1-042",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Drivers",
+    "stem": "A Java application needs to run SQL against Snowflake. Which client fits?",
+    "options": [
+      "Kafka connector",
+      "Python connector",
+      "JDBC driver",
+      "Snowpipe REST API"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Java programs connect through the Snowflake JDBC driver. The Kafka connector only streams topic data, and the Snowpipe REST API only submits files to a pipe."
+  },
+  {
+    "id": "SNOWPRO-T1-043",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Authentication",
+    "select": 2,
+    "stem": "Which two sign-in methods suit a service account with no person at the keyboard? (Choose two.)",
+    "options": [
+      "Key pair authentication",
+      "Passkey on a phone",
+      "Password plus a Duo push approval",
+      "Workload identity federation",
+      "SAML browser login"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Programs authenticate without a person through key pairs or workload identity federation with their cloud identity. Push approvals, browser SSO and passkeys all need a human."
+  },
+  {
+    "id": "SNOWPRO-T1-044",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Resource monitors",
+    "stem": "Which role can create a resource monitor?",
+    "options": [
+      "SECURITYADMIN",
+      "Warehouse owner",
+      "SYSADMIN",
+      "ACCOUNTADMIN"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Only ACCOUNTADMIN can create resource monitors. It can grant MONITOR and MODIFY on a monitor so other roles can view or change it."
+  },
+  {
+    "id": "SNOWPRO-T1-045",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Warehouse sizing",
+    "select": 2,
+    "stem": "Which two are true when a running warehouse is resized larger? (Choose two.)",
+    "options": [
+      "Running queries restart",
+      "It must be suspended before resizing",
+      "Running queries keep the old size",
+      "Billing pauses during resize",
+      "Queued queries can use new capacity"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "explanation": "A warehouse can be resized while running. Queries already running are not affected; the added resources serve queued and new queries once provisioned."
+  },
+  {
+    "id": "SNOWPRO-T1-046",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 1,
+    "format": "multi",
+    "skill": "UDFs",
+    "select": 2,
+    "stem": "Which two languages can a UDF handler be written in? (Choose two.)",
+    "options": [
+      "Objective-C",
+      "C#",
+      "Go",
+      "JavaScript",
+      "Python"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "UDF handlers can be written in SQL, JavaScript, Python, Java and Scala."
+  },
+  {
+    "id": "SNOWPRO-T1-047",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Secure Data Sharing",
+    "select": 2,
+    "stem": "Which two are true for a consumer of a share? (Choose two.)",
+    "options": [
+      "One database per share",
+      "Can re-share it to others",
+      "Can run UPDATE on shared tables",
+      "Pays for the shared storage",
+      "Shared objects are read-only"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "explanation": "Every shared object is read-only to the consumer, and a consumer creates only one database from each share. The provider pays the storage."
+  },
+  {
+    "id": "SNOWPRO-T1-048",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Editions",
+    "select": 2,
+    "stem": "Which two features first appear in Enterprise Edition? (Choose two.)",
+    "options": [
+      "Materialized views",
+      "Tri-Secret Secure",
+      "Resource monitors",
+      "Search optimization",
+      "Zero-copy cloning of tables"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Materialized views and search optimization start at Enterprise. Tri-Secret Secure needs Business Critical, while resource monitors and cloning are in every edition."
+  },
+  {
+    "id": "SNOWPRO-T1-049",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Time Travel",
+    "select": 2,
+    "stem": "Which two clauses query a table as it was at an earlier point? (Choose two.)",
+    "options": [
+      "WHERE METADATA$TIME < CURRENT_DATE()",
+      "HISTORY (DAYS => 1)",
+      "BEFORE (STATEMENT => '<query id>')",
+      "AT (OFFSET => -3600)",
+      "AS OF VERSION 3"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Time Travel uses AT or BEFORE with TIMESTAMP, OFFSET in seconds, or STATEMENT with a query ID. AS OF VERSION and HISTORY are not Snowflake syntax."
+  },
+  {
+    "id": "SNOWPRO-T1-050",
+    "section": "core",
+    "test": 1,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Unloading",
+    "select": 2,
+    "stem": "Which two file formats can COPY INTO <location> write? (Choose two.)",
+    "options": [
+      "ORC",
+      "JSON",
+      "Apache Avro",
+      "XML",
+      "Parquet"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "Unloading writes CSV, JSON or Parquet files. Avro, ORC and XML can be loaded but are not unload targets."
+  },
+  {
+    "id": "SNOWPRO-T2-001",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Snowpipe",
+    "stem": "How long does a pipe keep metadata about the files it loaded?",
+    "options": [
+      "64 days",
+      "14 days",
+      "7 days",
+      "1 year"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each pipe remembers the files it processed for 14 days and skips a file with the same path and name. Bulk COPY metadata lasts 64 days on the table."
+  },
+  {
+    "id": "SNOWPRO-T2-002",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Micro-partitions",
+    "stem": "How are micro-partitions created for a table?",
+    "options": [
+      "By a nightly maintenance job",
+      "With a CREATE PARTITION command",
+      "Automatically as data is loaded",
+      "From a partition key on the table"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Micro-partitions are derived automatically from the order data arrives, so users never define or maintain them. A clustering key can guide co-location, but it does not define partitions."
+  },
+  {
+    "id": "SNOWPRO-T2-003",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Time Travel",
+    "stem": "On Enterprise Edition, what is the longest Time Travel retention for a permanent table?",
+    "options": [
+      "30 days",
+      "90 days",
+      "1 day",
+      "7 days"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Enterprise Edition and higher allow 0 to 90 days for permanent objects. Standard Edition stops at 1 day."
+  },
+  {
+    "id": "SNOWPRO-T2-004",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "System roles",
+    "stem": "Which system role holds the MANAGE GRANTS privilege by default?",
+    "options": [
+      "USERADMIN",
+      "PUBLIC",
+      "SYSADMIN",
+      "SECURITYADMIN"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SECURITYADMIN has MANAGE GRANTS, so it can grant or revoke any privilege in the account. SYSADMIN creates warehouses, databases and other objects."
+  },
+  {
+    "id": "SNOWPRO-T2-005",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Tag-based masking",
+    "stem": "A column has a directly assigned masking policy and a tag-based one. Which is applied?",
+    "options": [
+      "Directly assigned policy",
+      "Both, one after the other",
+      "Tag-based policy",
+      "Whichever is newer"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A masking policy set directly on a column takes precedence over a policy that reaches the column through a tag."
+  },
+  {
+    "id": "SNOWPRO-T2-006",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Scaling policies",
+    "stem": "Under the Economy scaling policy, when does a multi-cluster warehouse start another cluster?",
+    "options": [
+      "As soon as one query queues",
+      "When load would keep it busy 6 minutes",
+      "Only when an admin starts it by hand",
+      "Every 6 minutes regardless"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Economy favors keeping clusters full, so it adds one only for enough work to last about 6 minutes. The Standard policy starts clusters quickly to avoid queuing."
+  },
+  {
+    "id": "SNOWPRO-T2-007",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Streams",
+    "stem": "Which stream type records only inserted rows on a standard table?",
+    "options": [
+      "Insert-only",
+      "Append-only",
+      "Delta",
+      "Standard"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Append-only streams track inserts on standard tables, dynamic tables and views. Insert-only streams do the same for external and externally managed Iceberg tables."
+  },
+  {
+    "id": "SNOWPRO-T2-008",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Listings",
+    "stem": "Which kind of listing is visible to many consumers on Snowflake Marketplace?",
+    "options": [
+      "Public listing",
+      "Reader account",
+      "Direct share",
+      "Private listing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Public listings appear on Snowflake Marketplace for any account to discover. Private listings go only to consumers the provider chooses."
+  },
+  {
+    "id": "SNOWPRO-T2-009",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Snowpipe",
+    "stem": "What is Snowpipe's default ON_ERROR behavior?",
+    "options": [
+      "SKIP_FILE_5",
+      "SKIP_FILE",
+      "CONTINUE",
+      "ABORT_STATEMENT"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Snowpipe skips a file that has errors by default, so one bad file does not hold up the rest. Bulk COPY aborts the statement instead."
+  },
+  {
+    "id": "SNOWPRO-T2-010",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Editions",
+    "stem": "Which feature requires Business Critical Edition or higher?",
+    "options": [
+      "Materialized views",
+      "Tri-Secret Secure",
+      "Multi-cluster warehouses",
+      "Row access policies"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Tri-Secret Secure, which combines a customer-managed key with Snowflake's key, starts at Business Critical. The other three start at Enterprise."
+  },
+  {
+    "id": "SNOWPRO-T2-011",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Table types",
+    "stem": "Which table type disappears when the session that created it ends?",
+    "options": [
+      "Hybrid",
+      "Temporary",
+      "Transient",
+      "Dynamic"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A temporary table exists only for its session and is not visible to other sessions. A transient table persists until someone drops it."
+  },
+  {
+    "id": "SNOWPRO-T2-012",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "COPY options",
+    "stem": "What does FORCE = TRUE do in COPY INTO <table>?",
+    "options": [
+      "Deletes the files after a successful load",
+      "Truncates the table first",
+      "Reloads files loaded before",
+      "Ignores file format errors"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "FORCE ignores load metadata and loads every matching file again, which can duplicate rows. PURGE is the option that removes loaded files."
+  },
+  {
+    "id": "SNOWPRO-T2-013",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "System roles",
+    "stem": "Which role is granted automatically to every user and every role?",
+    "options": [
+      "SYSADMIN",
+      "ORGADMIN",
+      "USERADMIN",
+      "PUBLIC"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "PUBLIC is held by everyone, so anything it owns or is granted is open to all users in the account."
+  },
+  {
+    "id": "SNOWPRO-T2-014",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Resource monitors",
+    "stem": "What do resource monitors track?",
+    "options": [
+      "Storage bytes per database",
+      "Serverless task credits",
+      "Warehouse credit usage",
+      "Query counts per user"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Resource monitors work for warehouses only, including the cloud services credits that support them. Serverless features are tracked with budgets instead."
+  },
+  {
+    "id": "SNOWPRO-T2-015",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clustering",
+    "stem": "What does a smaller clustering depth mean for a table?",
+    "options": [
+      "Slower pruning",
+      "More partition overlap",
+      "Better clustering",
+      "Larger micro-partitions"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Clustering depth is the average depth of overlapping micro-partitions for the given columns. Lower means less overlap, and an empty table has a depth of 0."
+  },
+  {
+    "id": "SNOWPRO-T2-016",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Stored procedures",
+    "stem": "Which object can run DDL and DML statements with procedural logic such as loops?",
+    "options": [
+      "Secure materialized view",
+      "UDTF",
+      "Scalar SQL UDF",
+      "Stored procedure"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Stored procedures run statements and control flow and are called with CALL. UDFs compute and return values inside a query."
+  },
+  {
+    "id": "SNOWPRO-T2-017",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reader accounts",
+    "stem": "What can users of a reader account do with the data shared to them?",
+    "options": [
+      "Share it onward",
+      "Load new rows into it",
+      "Query it only",
+      "Update its rows"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Reader account users can query imported data but cannot run DML such as loading, inserting or updating."
+  },
+  {
+    "id": "SNOWPRO-T2-018",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Interfaces",
+    "stem": "Which interface is Snowflake's browser-based UI for worksheets and administration?",
+    "options": [
+      "Snowflake CLI",
+      "Snowsight",
+      "Snowpark",
+      "SnowSQL"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Snowsight is the web interface. SnowSQL and Snowflake CLI are command-line clients, and Snowpark is a developer library for DataFrame code."
+  },
+  {
+    "id": "SNOWPRO-T2-019",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Time Travel",
+    "stem": "What happens when DATA_RETENTION_TIME_IN_DAYS is set to 0 on a permanent table?",
+    "options": [
+      "Fail-safe is skipped as well",
+      "Time Travel is turned off",
+      "The table becomes read-only",
+      "It can no longer be cloned"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A retention of 0 turns off Time Travel, so a dropped table cannot be undropped. Changed data still moves into Fail-safe for a permanent table."
+  },
+  {
+    "id": "SNOWPRO-T2-020",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Stages",
+    "stem": "Which limitation applies to a table stage such as @%orders?",
+    "options": [
+      "Cannot hold CSV files",
+      "No transformations during load",
+      "Must be created by hand",
+      "Shared by every table in a schema"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Table stages exist automatically, one per table, and cannot be altered or dropped. They do not support a SELECT transform as the COPY source."
+  },
+  {
+    "id": "SNOWPRO-T2-021",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Developer features",
+    "stem": "Which feature lets Python DataFrame code be pushed down to run on Snowflake compute?",
+    "options": [
+      "External functions",
+      "Snowpipe",
+      "Snowsight notebooks only",
+      "Snowpark"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Snowpark translates DataFrame operations into SQL that runs in a warehouse, so data does not leave Snowflake. External functions call a service outside Snowflake instead."
+  },
+  {
+    "id": "SNOWPRO-T2-022",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cloning",
+    "stem": "A database is cloned. Which grants on the source database itself carry over to the new database?",
+    "options": [
+      "All of them",
+      "Only USAGE",
+      "Only OWNERSHIP",
+      "None of them"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Child objects in a cloned database keep the grants their sources had, but the cloned database does not inherit grants on the source container. Grant those again."
+  },
+  {
+    "id": "SNOWPRO-T2-023",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Database roles",
+    "stem": "Which is true of database roles?",
+    "options": [
+      "Can own virtual warehouses",
+      "Scoped to a single database",
+      "Span every database in the account",
+      "Activated with USE ROLE"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A database role limits access to objects in one database. It cannot be activated in a session directly; grant it to an account role instead."
+  },
+  {
+    "id": "SNOWPRO-T2-024",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Access history",
+    "stem": "Which ACCOUNT_USAGE view shows which columns each query read, for an audit?",
+    "options": [
+      "STAGES",
+      "LOGIN_HISTORY",
+      "WAREHOUSE_LOAD_HISTORY",
+      "ACCESS_HISTORY"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "ACCESS_HISTORY records the objects and columns each query read or wrote. It needs Enterprise Edition and has about 3 hours of latency."
+  },
+  {
+    "id": "SNOWPRO-T2-025",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Stages",
+    "stem": "Which command uploads files from a local machine to an internal stage?",
+    "options": [
+      "COPY INTO",
+      "PUT",
+      "GET",
+      "LIST"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "PUT uploads and by default compresses local files into an internal stage. GET downloads them, and LIST shows what is staged."
+  },
+  {
+    "id": "SNOWPRO-T2-026",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Query acceleration",
+    "stem": "Which feature offloads parts of large scans with selective filters to shared compute?",
+    "options": [
+      "Snowpark-optimized warehouse",
+      "Search optimization service",
+      "Query acceleration service",
+      "Result cache"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The query acceleration service leases extra serverless compute for eligible outlier queries. Search optimization builds an access path for point lookups instead."
+  },
+  {
+    "id": "SNOWPRO-T2-027",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tasks",
+    "stem": "How do you make a new task use serverless compute?",
+    "options": [
+      "Leave out the WAREHOUSE parameter",
+      "Grant only the EXECUTE TASK privilege",
+      "Use SCHEDULE = 'SERVERLESS'",
+      "Set WAREHOUSE = SERVERLESS"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A task without a WAREHOUSE parameter runs on Snowflake-managed compute, which needs the EXECUTE MANAGED TASK privilege. Naming a warehouse makes it user-managed."
+  },
+  {
+    "id": "SNOWPRO-T2-028",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reader accounts",
+    "stem": "Who pays for the compute a reader account uses?",
+    "options": [
+      "Snowflake itself",
+      "Reader account's users",
+      "Provider that created it",
+      "Consumer's parent company"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The provider that creates a reader account owns it and is billed for its usage, so providers often set resource monitors on it."
+  },
+  {
+    "id": "SNOWPRO-T2-029",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "App features",
+    "stem": "Which feature hosts interactive Python data apps inside a Snowflake account?",
+    "options": [
+      "Snowpipe Streaming",
+      "Snowflake Marketplace",
+      "Streamlit in Snowflake",
+      "Snowflake Data Clean Rooms"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Streamlit in Snowflake builds and runs Streamlit apps on Snowflake, with access controlled by Snowflake roles. Marketplace lists data products; it does not host your apps."
+  },
+  {
+    "id": "SNOWPRO-T2-030",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Table types",
+    "stem": "Which object lets you query files in cloud storage as if they were a table, without loading them?",
+    "options": [
+      "Materialized view",
+      "Table stage",
+      "External table",
+      "Transient table"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An external table stores file metadata and reads the files where they sit in external storage. A table stage only holds files waiting to be loaded."
+  },
+  {
+    "id": "SNOWPRO-T2-031",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Snowpipe",
+    "stem": "How does Snowpipe auto-ingest learn that a new file landed in an S3 bucket?",
+    "options": [
+      "Polling the bucket each minute",
+      "A scheduled task",
+      "Manual REFRESH calls",
+      "Cloud event notifications"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "With AUTO_INGEST = TRUE, the cloud storage service sends event notifications that tell the pipe which new files to load."
+  },
+  {
+    "id": "SNOWPRO-T2-032",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Architecture layers",
+    "stem": "What is in the query processing layer?",
+    "options": [
+      "Virtual warehouses",
+      "Micro-partition files",
+      "Authentication service",
+      "Optimizer statistics"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Queries run in virtual warehouses, the query processing layer. Micro-partitions live in the storage layer, and authentication and optimizer metadata belong to cloud services."
+  },
+  {
+    "id": "SNOWPRO-T2-033",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Table types",
+    "stem": "Which table type is built for many fast single-row lookups and updates?",
+    "options": [
+      "Dynamic table",
+      "External table",
+      "Hybrid table",
+      "Transient table"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Hybrid tables use row storage with indexes for low-latency point operations, alongside Snowflake's columnar analytics. Dynamic tables are refreshed from a query."
+  },
+  {
+    "id": "SNOWPRO-T2-034",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Secondary roles",
+    "stem": "A session has a primary role and secondary roles. Which role owns a table the user creates?",
+    "options": [
+      "Each secondary role",
+      "Highest role in the session",
+      "Primary role",
+      "USERADMIN"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "CREATE statements are authorized by the primary role, which becomes the owner. Secondary roles can authorize other actions but never own new objects."
+  },
+  {
+    "id": "SNOWPRO-T2-035",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Encryption",
+    "stem": "When is data at rest in Snowflake encrypted?",
+    "options": [
+      "Only in internal stages",
+      "Always, by default",
+      "Only on Business Critical",
+      "Only after a policy is set"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "All data stored in Snowflake is encrypted at rest by default with AES-256, in every edition. Business Critical adds customer-managed keys through Tri-Secret Secure."
+  },
+  {
+    "id": "SNOWPRO-T2-036",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Materialized views",
+    "stem": "When is a materialized view a good fit?",
+    "options": [
+      "Costly, often read, rarely changed",
+      "Base table changes every few seconds",
+      "Query needs window functions",
+      "Query joins five tables"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Materialized views pay off when results are expensive and read often but change rarely. They cannot join tables or use window functions."
+  },
+  {
+    "id": "SNOWPRO-T2-037",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Streams",
+    "stem": "In a stream, which column marks the delete and insert pair that one UPDATE produced?",
+    "options": [
+      "METADATA$ISUPDATE",
+      "METADATA$ACTION",
+      "METADATA$FILENAME",
+      "METADATA$ROW_ID"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An update appears as a DELETE and an INSERT record with METADATA$ISUPDATE set to TRUE. METADATA$ACTION only says INSERT or DELETE."
+  },
+  {
+    "id": "SNOWPRO-T2-038",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Listings",
+    "stem": "A Marketplace listing offers 30 days of limited access before full access is requested. Which access type is this?",
+    "options": [
+      "Reader account",
+      "Free listing",
+      "Private offer",
+      "Limited trial"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Limited trial listings give instant limited access for 1 to 90 days. The consumer can then ask the provider for full access."
+  },
+  {
+    "id": "SNOWPRO-T2-039",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Streaming ingestion",
+    "stem": "An application must send rows with seconds of latency, without staging files. Which option fits?",
+    "options": [
+      "Snowpipe Streaming",
+      "External tables",
+      "Bulk COPY INTO",
+      "Snowpipe auto-ingest"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Snowpipe Streaming writes rows through its SDK or REST API with no files in between. Snowpipe auto-ingest still loads staged files."
+  },
+  {
+    "id": "SNOWPRO-T2-040",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AI features",
+    "stem": "A team wants business users to ask questions in plain English and get SQL answers over structured tables. Which feature fits?",
+    "options": [
+      "Query history",
+      "Universal Search",
+      "Cortex Analyst",
+      "Cortex Search"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cortex Analyst turns natural language questions into SQL over structured data described by a semantic model. Cortex Search is for low-latency search over unstructured text."
+  },
+  {
+    "id": "SNOWPRO-T2-041",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Objects",
+    "stem": "Which object generates unique numbers, for example for surrogate keys?",
+    "options": [
+      "Object tag",
+      "Sequence",
+      "Stage",
+      "Stream"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A sequence returns unique numbers each time NEXTVAL is called. A stream tracks table changes and a tag labels objects."
+  },
+  {
+    "id": "SNOWPRO-T2-042",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Integrations",
+    "stem": "Which object holds the cloud access identity for external stages, so users never handle secret keys?",
+    "options": [
+      "File format",
+      "Network rule",
+      "API integration",
+      "Storage integration"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A storage integration stores a generated IAM entity for the cloud provider. Stages reference it instead of embedding credentials."
+  },
+  {
+    "id": "SNOWPRO-T2-043",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Ownership",
+    "select": 2,
+    "stem": "Which two statements about object ownership are true? (Choose two.)",
+    "options": [
+      "An object can have two owners",
+      "GRANT OWNERSHIP transfers it",
+      "Each object has one owning role",
+      "ACCOUNTADMIN owns all objects",
+      "Ownership belongs to users, not roles"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Every securable object is owned by exactly one role, by default the role that created it, and GRANT OWNERSHIP moves it to another role."
+  },
+  {
+    "id": "SNOWPRO-T2-044",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Object tagging",
+    "stem": "What is an object tag mainly used for?",
+    "options": [
+      "Labeling objects for tracking",
+      "Encrypting a column again",
+      "Granting privileges to roles",
+      "Speeding up partition pruning"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Tags are key-value labels on objects and columns, used to track sensitive data and cost, and they can carry masking policies."
+  },
+  {
+    "id": "SNOWPRO-T2-045",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Caching",
+    "stem": "What happens to a warehouse's local data cache when the warehouse suspends?",
+    "options": [
+      "It is copied into Fail-safe",
+      "It moves to cloud services",
+      "It is kept for 24 hours",
+      "It is dropped"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The warehouse cache lives on the warehouse's compute, so it is lost on suspend. That is one trade-off when setting auto-suspend very short."
+  },
+  {
+    "id": "SNOWPRO-T2-046",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Semi-structured functions",
+    "stem": "Which FLATTEN output column holds each element's contents?",
+    "options": [
+      "PATH",
+      "INDEX",
+      "VALUE",
+      "KEY"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "FLATTEN returns SEQ, KEY, PATH, INDEX, VALUE and THIS. VALUE holds the element; INDEX gives its position in an array."
+  },
+  {
+    "id": "SNOWPRO-T2-047",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Secure Data Sharing",
+    "stem": "Which object can a provider add to a share?",
+    "options": [
+      "Resource monitor",
+      "Virtual warehouse",
+      "User",
+      "Dynamic table"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Shares can hold databases, tables, dynamic tables, external and Iceberg tables, views and some UDFs. Warehouses, monitors and users are account objects that are never shared."
+  },
+  {
+    "id": "SNOWPRO-T2-048",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Virtual warehouses",
+    "select": 2,
+    "stem": "Which two are true of virtual warehouses? (Choose two.)",
+    "options": [
+      "Keep table data after suspending",
+      "Can suspend automatically when idle",
+      "Billed per second after a minute",
+      "Share compute with other warehouses",
+      "Needed for every SQL statement"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Warehouses bill per second with a 60-second minimum each time they start, and auto-suspend is on by default. They hold no permanent data, share no compute, and some metadata statements run without one."
+  },
+  {
+    "id": "SNOWPRO-T2-049",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "UNDROP",
+    "select": 2,
+    "stem": "Which two objects can be restored with UNDROP? (Choose two.)",
+    "options": [
+      "Database",
+      "Warehouse",
+      "Schema",
+      "Network policy",
+      "Role"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "UNDROP works for tables, schemas, databases and a few other objects such as tags. Warehouses, roles and network policies cannot be undropped."
+  },
+  {
+    "id": "SNOWPRO-T2-050",
+    "section": "core",
+    "test": 2,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Stages",
+    "select": 2,
+    "stem": "Which two are true of named internal stages? (Choose two.)",
+    "options": [
+      "They can be altered or dropped",
+      "Only the user who made one can use it",
+      "They reject compressed files",
+      "Privileges can be granted on them",
+      "One exists per table"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "Named stages are database objects, so roles can be granted access, ownership can move, and they can be altered or dropped. User and table stages are the fixed kinds."
+  },
+  {
+    "id": "SNOWPRO-D-001",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "COPY options",
+    "stem": "Which COPY INTO option removes files from the stage after they load successfully?",
+    "options": [
+      "FORCE = TRUE",
+      "SINGLE = TRUE",
+      "SIZE_LIMIT = 0",
+      "PURGE = TRUE"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "PURGE = TRUE asks Snowflake to remove successfully loaded files. If removal fails, no error is returned."
+  },
+  {
+    "id": "SNOWPRO-D-002",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Editions",
+    "stem": "A company needs a separate metadata store and compute that share no hardware with other accounts. Which edition fits?",
+    "options": [
+      "Business Critical",
+      "Standard with PrivateLink",
+      "Virtual Private Snowflake",
+      "Enterprise"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Virtual Private Snowflake gives a dedicated metadata store and pool of compute in an isolated environment. Business Critical adds compliance and private connectivity but still shares infrastructure."
+  },
+  {
+    "id": "SNOWPRO-D-003",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Time Travel",
+    "stem": "An account sets MIN_DATA_RETENTION_TIME_IN_DAYS to 5 and a table sets retention to 2. What is the table's effective retention?",
+    "options": [
+      "3 days",
+      "5 days",
+      "7 days",
+      "2 days"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The effective retention is the greater of the table's setting and the account minimum, so 5 days. The minimum never lowers a longer setting."
+  },
+  {
+    "id": "SNOWPRO-D-004",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "System roles",
+    "stem": "Which system role encapsulates both SYSADMIN and SECURITYADMIN?",
+    "options": [
+      "USERADMIN",
+      "GLOBALORGADMIN",
+      "ORGADMIN",
+      "ACCOUNTADMIN"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "ACCOUNTADMIN sits at the top of the account's system roles and inherits SYSADMIN and SECURITYADMIN. Snowflake advises granting it to as few users as possible."
+  },
+  {
+    "id": "SNOWPRO-D-005",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Resource monitors",
+    "stem": "How many resource monitors below the account level can one warehouse be assigned to?",
+    "options": [
+      "Two",
+      "Unlimited",
+      "One",
+      "Five"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A warehouse can have only one warehouse-level resource monitor. It can also fall under the single account-level monitor."
+  },
+  {
+    "id": "SNOWPRO-D-006",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Result cache",
+    "stem": "Each reuse resets a persisted result's 24-hour clock. What is the longest it can last from the first run?",
+    "options": [
+      "24 hours",
+      "90 days",
+      "31 days",
+      "7 days"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Reuse keeps extending the result, but it is purged 31 days after the query first ran."
+  },
+  {
+    "id": "SNOWPRO-D-007",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tasks",
+    "stem": "Which clause makes a scheduled task run only when a stream has new change records?",
+    "options": [
+      "WHEN STREAM_CHANGED(stream_name)",
+      "SCHEDULE = 'ON CHANGE'",
+      "WHEN SYSTEM$STREAM_HAS_DATA",
+      "AFTER stream_name"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "WHEN SYSTEM$STREAM_HAS_DATA('<stream>') skips a run when the stream is empty, which saves compute."
+  },
+  {
+    "id": "SNOWPRO-D-008",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Replication",
+    "stem": "Which feature copies a database to an account in another region?",
+    "options": [
+      "Database replication",
+      "Zero-copy cloning",
+      "Snowpipe auto-ingest",
+      "Reader account"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Replication keeps a secondary copy of a database in another account, region or cloud, refreshed from the primary. Cloning only works within one account."
+  },
+  {
+    "id": "SNOWPRO-D-009",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "COPY options",
+    "stem": "Which option loads Parquet fields into table columns that share their names?",
+    "options": [
+      "STRIP_OUTER_ARRAY",
+      "ERROR_ON_COLUMN_COUNT_MISMATCH",
+      "ENFORCE_LENGTH",
+      "MATCH_BY_COLUMN_NAME"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "MATCH_BY_COLUMN_NAME maps file fields to columns by name, case-sensitive or not, for JSON, Avro, ORC, Parquet and CSV."
+  },
+  {
+    "id": "SNOWPRO-D-010",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Storage layer",
+    "stem": "How does Snowflake organize data in its storage layer?",
+    "options": [
+      "Row heaps with indexes",
+      "Uncompressed CSV blocks",
+      "One file per table",
+      "Compressed and columnar"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Snowflake stores data in compressed, columnar micro-partitions and manages the layout itself. There are no indexes for users to build or maintain."
+  },
+  {
+    "id": "SNOWPRO-D-011",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time Travel",
+    "stem": "On Enterprise Edition, what is the longest Time Travel a transient table can have?",
+    "options": [
+      "30 days",
+      "14 days",
+      "90 days",
+      "1 day"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Transient and temporary tables are capped at 1 day of Time Travel in every edition. The 90-day maximum applies only to permanent objects."
+  },
+  {
+    "id": "SNOWPRO-D-012",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Privileges",
+    "stem": "Which grant covers tables that will be created later in a schema?",
+    "options": [
+      "GRANT OWNERSHIP ON ALL TABLES",
+      "GRANT SELECT ON FUTURE TABLES",
+      "GRANT SELECT ON ALL TABLES",
+      "GRANT USAGE ON SCHEMA"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A future grant applies privileges to objects created later in the schema. ON ALL TABLES covers only the tables that exist when the grant runs."
+  },
+  {
+    "id": "SNOWPRO-D-013",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Resource monitors",
+    "stem": "Can a resource monitor action trigger at 110% of its credit quota?",
+    "options": [
+      "No, 100% is the maximum",
+      "Yes, above 100% is allowed",
+      "Only for notify actions",
+      "Only on Enterprise Edition"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Thresholds can be set above 100%, for example to suspend only after a small overrun."
+  },
+  {
+    "id": "SNOWPRO-D-014",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Result cache",
+    "select": 2,
+    "stem": "Which two stop a query from reusing a cached result? (Choose two.)",
+    "options": [
+      "Table data has changed",
+      "Another warehouse is used",
+      "It runs two hours later",
+      "Same role runs it again",
+      "Query calls RANDOM()"
+    ],
+    "correct": [
+      0,
+      4
+    ],
+    "explanation": "Reuse needs unchanged data and no non-reusable functions such as RANDOM or UUID_STRING. The result cache does not depend on which warehouse runs the query."
+  },
+  {
+    "id": "SNOWPRO-D-015",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tasks",
+    "stem": "A scheduled task run is still going when the next run is due. What happens?",
+    "options": [
+      "Next run waits in a queue",
+      "Next run is skipped",
+      "Both runs go in parallel",
+      "First run is cancelled"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Snowflake runs only one instance of a scheduled task at a time, so a run that would overlap is skipped."
+  },
+  {
+    "id": "SNOWPRO-D-016",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Failover",
+    "stem": "During a regional outage, what does a failover group let an account do?",
+    "options": [
+      "Promote a secondary account",
+      "Move warehouses across clouds",
+      "Clone the failed account",
+      "Undo the outage"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With failover groups, a secondary account in another region can be promoted to primary so work continues. Failover needs Business Critical Edition."
+  },
+  {
+    "id": "SNOWPRO-D-017",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "File formats",
+    "stem": "A JSON file is one large array of records. Which file format option loads each element as its own row?",
+    "options": [
+      "SKIP_HEADER = 1",
+      "MULTI_LINE = TRUE",
+      "STRIP_OUTER_ARRAY = TRUE",
+      "STRIP_NULL_VALUES = TRUE"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "STRIP_OUTER_ARRAY removes the outer brackets so each element becomes a row, which also keeps each row well under the size limit."
+  },
+  {
+    "id": "SNOWPRO-D-018",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Architecture layers",
+    "stem": "Which layer parses and optimizes a query before a warehouse runs it?",
+    "options": [
+      "Warehouse local cache",
+      "Storage layer",
+      "Cloud services",
+      "Client connector"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Query parsing and optimization happen in the cloud services layer, which then hands the plan to a virtual warehouse to execute."
+  },
+  {
+    "id": "SNOWPRO-D-019",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fail-safe",
+    "stem": "How can a customer get data back from Fail-safe?",
+    "options": [
+      "Clone from the Fail-safe copy",
+      "Query it with an AT clause",
+      "Ask Snowflake Support",
+      "Run UNDROP with a FAILSAFE option"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Users cannot read Fail-safe data themselves. Snowflake recovers it on a best-effort basis when Support is asked, which can take hours or days."
+  },
+  {
+    "id": "SNOWPRO-D-020",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Privileges",
+    "stem": "A role has SELECT on a table but still cannot query it. Which grant is most likely missing?",
+    "options": [
+      "REFERENCES on every column of it",
+      "MONITOR on the schema",
+      "OWNERSHIP on the table",
+      "USAGE on its database and schema"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "To reach a table, a role needs USAGE on the containing database and schema as well as SELECT on the table itself."
+  },
+  {
+    "id": "SNOWPRO-D-021",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Resource monitors",
+    "stem": "Which resource monitor action cancels statements that are still running?",
+    "options": [
+      "Notify",
+      "Notify, then suspend later",
+      "Suspend immediately",
+      "Suspend"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Suspend lets running statements finish before suspending. Suspend immediately cancels them at once."
+  },
+  {
+    "id": "SNOWPRO-D-022",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Search optimization",
+    "stem": "Which feature speeds selective point lookups such as WHERE order_id = 4471 on a huge table?",
+    "options": [
+      "Materialized view",
+      "Query acceleration service",
+      "Larger multi-cluster warehouse",
+      "Search optimization service"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Search optimization records which values may appear in each micro-partition, so equality and other selective lookups skip most partitions."
+  },
+  {
+    "id": "SNOWPRO-D-023",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Tasks",
+    "stem": "Which command runs a task once right away, for example to test it?",
+    "options": [
+      "ALTER TASK ... RUN",
+      "CALL TASK",
+      "EXECUTE TASK",
+      "START TASK"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "EXECUTE TASK triggers a single run outside the schedule. CALL is for stored procedures."
+  },
+  {
+    "id": "SNOWPRO-D-024",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clean rooms",
+    "stem": "Which feature lets two companies match their customers without exposing each other's raw records?",
+    "options": [
+      "Direct share",
+      "Public listing",
+      "Reader account",
+      "Data clean room"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A data clean room runs approved analyses across both parties' data while keeping the underlying records hidden."
+  },
+  {
+    "id": "SNOWPRO-D-025",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Load metadata",
+    "stem": "Files staged 70 days ago with an unknown load status are being skipped. Which option loads them?",
+    "options": [
+      "PURGE = TRUE",
+      "VALIDATION_MODE = RETURN_ERRORS",
+      "ON_ERROR = CONTINUE",
+      "LOAD_UNCERTAIN_FILES = TRUE"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "After 64 days COPY cannot tell whether a file was loaded and skips it by default. LOAD_UNCERTAIN_FILES loads those files."
+  },
+  {
+    "id": "SNOWPRO-D-026",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Unloading",
+    "stem": "Which COPY INTO <location> option writes all rows to one file?",
+    "options": [
+      "MAX_FILE_SIZE = 0",
+      "OVERWRITE = TRUE",
+      "HEADER = TRUE",
+      "SINGLE = TRUE"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SINGLE = TRUE writes one file instead of many parallel ones. HEADER adds column names and OVERWRITE replaces files with the same names."
+  },
+  {
+    "id": "SNOWPRO-D-027",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Billing",
+    "stem": "When is cloud services usage billed?",
+    "options": [
+      "Beyond 10% of daily warehouse use",
+      "Per query, at double the rate",
+      "Always, as a flat monthly fee per account",
+      "Never; it is always free"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cloud services credits are billed only when daily usage exceeds 10% of that day's warehouse usage. The 10% adjustment is applied daily."
+  },
+  {
+    "id": "SNOWPRO-D-028",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cloning",
+    "stem": "How do you make a zero-copy copy of a table as it was two hours ago?",
+    "options": [
+      "CLONE with AT (OFFSET => -7200)",
+      "UNDROP TABLE with a timestamp",
+      "INSERT from RESULT_SCAN",
+      "COPY INTO from the Fail-safe copy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "CREATE TABLE ... CLONE accepts AT or BEFORE, so the clone reflects the table at that point. OFFSET is in seconds, and 7,200 seconds is two hours."
+  },
+  {
+    "id": "SNOWPRO-D-029",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Organization roles",
+    "stem": "Which role handles account lifecycle tasks for a whole organization, from the organization account?",
+    "options": [
+      "ACCOUNTADMIN",
+      "GLOBALORGADMIN",
+      "SYSADMIN",
+      "SECURITYADMIN"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "GLOBALORGADMIN performs organization-level tasks such as creating and managing accounts and exists only in the organization account. ACCOUNTADMIN manages a single account."
+  },
+  {
+    "id": "SNOWPRO-D-030",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Budgets",
+    "stem": "Which feature tracks spending on serverless features that resource monitors cannot control?",
+    "options": [
+      "Auto-suspend",
+      "Query tags",
+      "Network policies",
+      "Budgets"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Resource monitors cover warehouses only. Budgets set spending limits and notifications that also cover serverless features."
+  },
+  {
+    "id": "SNOWPRO-D-031",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scaling policies",
+    "stem": "What does the Standard scaling policy favor?",
+    "options": [
+      "Avoiding queued queries",
+      "Fixed cluster counts",
+      "Saving credits over speed",
+      "Fully loading each cluster"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Standard is the default policy and starts clusters as soon as queries queue. Economy saves credits by keeping clusters fully loaded."
+  },
+  {
+    "id": "SNOWPRO-D-032",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Streams",
+    "stem": "When does a stream become stale?",
+    "options": [
+      "Nobody queries it for a day",
+      "Its source table is reclustered",
+      "Its warehouse suspends",
+      "Offset falls outside retention"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A stream goes stale when its offset is older than the source table's data retention, so the changes it needs are gone. Consume streams regularly."
+  },
+  {
+    "id": "SNOWPRO-D-033",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Listings",
+    "stem": "Which listing is offered only to consumers the provider picks?",
+    "options": [
+      "Private listing",
+      "Open dataset",
+      "Marketplace trial",
+      "Public listing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Private listings go to specific accounts, in any region, without appearing on the Marketplace."
+  },
+  {
+    "id": "SNOWPRO-D-034",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Unloading",
+    "stem": "What is the default target size for each file that COPY INTO <location> writes?",
+    "options": [
+      "100 MB",
+      "5 GB",
+      "16 MB",
+      "250 MB"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "MAX_FILE_SIZE defaults to 16 MB and can be raised to 5 GB. It is a target, so actual files can differ."
+  },
+  {
+    "id": "SNOWPRO-D-035",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AI features",
+    "stem": "Which feature gives low-latency fuzzy search over text, for example to ground a chatbot?",
+    "options": [
+      "Cortex Search",
+      "Directory tables",
+      "Search optimization service",
+      "Cortex Analyst"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cortex Search indexes text for hybrid vector and keyword search, a common retrieval step for RAG apps. The search optimization service speeds selective SQL lookups instead."
+  },
+  {
+    "id": "SNOWPRO-D-036",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cloning",
+    "stem": "A schema that contains tasks is cloned. What state are the cloned tasks in?",
+    "options": [
+      "Deleted from the clone",
+      "Running on the old schedule",
+      "Paused until the source runs",
+      "Suspended"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Tasks in a cloned database or schema are suspended by default. Resume each one with ALTER TASK ... RESUME."
+  },
+  {
+    "id": "SNOWPRO-D-037",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Authentication",
+    "stem": "What does multi-factor authentication add to a password sign-in?",
+    "options": [
+      "Longer minimum password",
+      "Second factor such as a passkey",
+      "Required IP allowlist",
+      "OAuth token replacing the password"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "MFA asks for something besides the password, such as a passkey, authenticator code or push approval. IP allowlists come from network policies."
+  },
+  {
+    "id": "SNOWPRO-D-038",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Account usage",
+    "stem": "How far behind real time can ACCOUNT_USAGE views be?",
+    "options": [
+      "Exactly 24 hours",
+      "Up to 7 days",
+      "45 minutes to 3 hours",
+      "None; it updates in real time"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ACCOUNT_USAGE latency depends on the view, from 45 minutes for QUERY_HISTORY to about 3 hours for ACCESS_HISTORY."
+  },
+  {
+    "id": "SNOWPRO-D-039",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Multi-cluster warehouses",
+    "stem": "A multi-cluster warehouse has minimum and maximum clusters both set to 3. Which mode is it in?",
+    "options": [
+      "Economy",
+      "Standard",
+      "Maximized",
+      "Auto-scale"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "When minimum equals maximum and is above 1, all clusters start with the warehouse, which is maximized mode. Economy and Standard are scaling policies for auto-scale mode."
+  },
+  {
+    "id": "SNOWPRO-D-040",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Streams",
+    "stem": "To keep a stream from going stale, Snowflake can extend the source table's retention. What is the default cap?",
+    "options": [
+      "90 days",
+      "14 days",
+      "7 days",
+      "1 day"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "MAX_DATA_EXTENSION_TIME_IN_DAYS defaults to 14 days. Retention is extended only when the table's own retention is shorter than that."
+  },
+  {
+    "id": "SNOWPRO-D-041",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Listings",
+    "stem": "Which role can create a listing without extra grants?",
+    "options": [
+      "Database owner",
+      "SECURITYADMIN",
+      "SYSADMIN",
+      "ACCOUNTADMIN"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Creating listings needs ACCOUNTADMIN or a role that has been given provider privileges, plus accepting the provider terms."
+  },
+  {
+    "id": "SNOWPRO-D-042",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Stages",
+    "stem": "Which command downloads unloaded files from an internal stage to a laptop?",
+    "options": [
+      "PUT",
+      "REMOVE",
+      "UNLOAD",
+      "GET"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "GET copies files from an internal stage to the local file system. REMOVE deletes staged files, and UNLOAD is not a Snowflake command."
+  },
+  {
+    "id": "SNOWPRO-D-043",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AI features",
+    "stem": "Which feature turns natural language into SQL using a semantic model of the tables?",
+    "options": [
+      "Snowflake Scripting",
+      "Stored procedures",
+      "Cortex Analyst",
+      "Cortex Search"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cortex Analyst reads a semantic model that describes business terms and tables, then generates SQL to answer questions about structured data."
+  },
+  {
+    "id": "SNOWPRO-D-044",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Cloning",
+    "stem": "A schema with a stream is cloned. What happens to the stream's unconsumed records?",
+    "options": [
+      "Copied to the cloned stream",
+      "Merged into the source table",
+      "Inaccessible in the clone",
+      "Consumed in both schemas"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Cloned streams cannot return records that were unconsumed at clone time. Change tracking in the clone starts when the clone is created."
+  },
+  {
+    "id": "SNOWPRO-D-045",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Authentication",
+    "stem": "Which standard lets users sign in to Snowflake through a corporate identity provider such as Okta?",
+    "options": [
+      "RADIUS",
+      "SAML 2.0",
+      "Kerberos",
+      "LDAP bind"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Federated single sign-on in Snowflake uses SAML 2.0 with an identity provider, so users sign in with their company credentials."
+  },
+  {
+    "id": "SNOWPRO-D-046",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Account usage",
+    "stem": "How can ACCOUNTADMIN let a reporting role read ACCOUNT_USAGE views?",
+    "options": [
+      "Grant it OWNERSHIP of SNOWFLAKE",
+      "Clone the SNOWFLAKE database for it",
+      "Grant it MONITOR on the account",
+      "Grant it a SNOWFLAKE database role"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Access to the SNOWFLAKE database's schemas comes from granting a SNOWFLAKE database role or IMPORTED PRIVILEGES. Database roles are recommended so less is exposed."
+  },
+  {
+    "id": "SNOWPRO-D-047",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Credits",
+    "stem": "A Medium warehouse uses 4 credits an hour. Running 3 clusters for a full hour uses how many credits?",
+    "options": [
+      "4",
+      "16",
+      "12",
+      "7"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Credits scale with size times running clusters: 4 credits x 3 clusters = 12 credits for the hour."
+  },
+  {
+    "id": "SNOWPRO-D-048",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Streams",
+    "stem": "What does a stream store?",
+    "options": [
+      "Copy of each changed row",
+      "Offset in table version history",
+      "Snapshot of the whole table",
+      "Log of every query on the table"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A stream holds only an offset. It returns changes by comparing the table's versions, so it uses no table storage of its own."
+  },
+  {
+    "id": "SNOWPRO-D-049",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Native Apps",
+    "stem": "Which framework lets a provider package code and data as an app that consumers install?",
+    "options": [
+      "Snowpark Container Services",
+      "Native App Framework",
+      "Streamlit in Snowflake",
+      "Data clean room"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Native App Framework bundles data, logic and interfaces into an application package that consumers install in their own accounts, often through a listing."
+  },
+  {
+    "id": "SNOWPRO-D-050",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Drivers",
+    "stem": "A Windows reporting tool connects through a standard database driver API. Which Snowflake driver fits?",
+    "options": [
+      "Go driver",
+      "Node.js driver",
+      "ODBC driver",
+      "Snowpark API"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ODBC is the standard driver interface many reporting and spreadsheet tools use. The Node.js and Go drivers are libraries for programs in those languages."
+  },
+  {
+    "id": "SNOWPRO-D-051",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "File formats",
+    "stem": "Which object saves CSV parsing options for reuse across many COPY statements?",
+    "options": [
+      "Storage integration",
+      "Pipe definition",
+      "Named file format",
+      "Sequence"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A named file format stores options such as delimiter, header and compression, and COPY statements or stages can reference it."
+  },
+  {
+    "id": "SNOWPRO-D-052",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Editions",
+    "stem": "Which edition first offers private connectivity such as AWS PrivateLink?",
+    "options": [
+      "Every edition",
+      "Standard",
+      "Enterprise",
+      "Business Critical"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Private connectivity through AWS PrivateLink, Azure Private Link or Google Cloud Private Service Connect starts at Business Critical."
+  },
+  {
+    "id": "SNOWPRO-D-053",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Semi-structured data",
+    "stem": "Which expression reads the city field from a VARIANT column named info?",
+    "options": [
+      "info$city",
+      "info->city",
+      "info#city",
+      "info:city"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Snowflake uses a colon after the column name for the first level of a semi-structured path, then dots or brackets for deeper levels."
+  },
+  {
+    "id": "SNOWPRO-D-054",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "User provisioning",
+    "stem": "Which protocol syncs users and groups from an identity provider into Snowflake?",
+    "options": [
+      "OAuth",
+      "SCIM",
+      "LDAP",
+      "SAML"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SCIM provisioning creates, updates and removes users and roles in Snowflake as they change in the identity provider. SAML handles sign-in, not provisioning."
+  },
+  {
+    "id": "SNOWPRO-D-055",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Column-level security",
+    "stem": "Which function in a masking policy also honors roles inherited through the session's role hierarchy?",
+    "options": [
+      "CURRENT_USER",
+      "CURRENT_ACCOUNT",
+      "CURRENT_ROLE",
+      "IS_ROLE_IN_SESSION"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "IS_ROLE_IN_SESSION checks the primary and secondary roles and their hierarchy. CURRENT_ROLE matches only the exact primary role name."
+  },
+  {
+    "id": "SNOWPRO-D-056",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Credits",
+    "stem": "How many credits per hour does a standard X-Large warehouse use?",
+    "options": [
+      "32",
+      "10",
+      "8",
+      "16"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each size doubles the one before: X-Small 1, Small 2, Medium 4, Large 8, X-Large 16 credits per hour for standard Gen1 warehouses."
+  },
+  {
+    "id": "SNOWPRO-D-057",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Dynamic tables",
+    "stem": "What does TARGET_LAG = DOWNSTREAM do on an intermediate dynamic table?",
+    "options": [
+      "Copies its source table's target lag",
+      "Refreshes only as dependents need",
+      "Refreshes every single minute",
+      "Never refreshes again"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "DOWNSTREAM tells an intermediate table to refresh only as often as the dynamic tables that read from it require."
+  },
+  {
+    "id": "SNOWPRO-D-058",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Secure Data Sharing",
+    "stem": "How does a consumer start using a share sent to its account?",
+    "options": [
+      "COPY INTO from the share",
+      "CREATE DATABASE ... FROM SHARE",
+      "IMPORT SHARE INTO a new database",
+      "CLONE SHARE INTO DATABASE"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The consumer creates a read-only database from the share and grants access to it with IMPORTED PRIVILEGES."
+  },
+  {
+    "id": "SNOWPRO-D-059",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Stages",
+    "stem": "Which stage type points to an S3 bucket the customer owns?",
+    "options": [
+      "Table stage",
+      "User stage",
+      "External stage",
+      "Named internal stage"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An external stage references files in the customer's cloud storage, usually through a storage integration. Internal stages keep files inside Snowflake's storage."
+  },
+  {
+    "id": "SNOWPRO-D-060",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "App features",
+    "stem": "Which feature runs your own container images on compute pools in Snowflake?",
+    "options": [
+      "Snowpark-optimized warehouses",
+      "External functions",
+      "Snowpark Container Services",
+      "Native App Framework"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Snowpark Container Services runs OCI container images on Snowflake-managed compute pools. Snowpark-optimized warehouses give more memory to Snowpark code but do not run containers."
+  },
+  {
+    "id": "SNOWPRO-D-061",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Semi-structured data",
+    "stem": "Which semi-structured type stores key-value pairs?",
+    "options": [
+      "ARRAY",
+      "GEOMETRY",
+      "BINARY",
+      "OBJECT"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "OBJECT holds key-value pairs like a JSON object. ARRAY holds an ordered list of values."
+  },
+  {
+    "id": "SNOWPRO-D-062",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Privileges",
+    "stem": "Which warehouse privilege lets a role run queries on it?",
+    "options": [
+      "MONITOR",
+      "MODIFY",
+      "OPERATE",
+      "USAGE"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "USAGE lets a role use a warehouse to run queries. OPERATE lets it start, stop, suspend and resume, MONITOR lets it view usage, and MODIFY lets it change properties such as size."
+  },
+  {
+    "id": "SNOWPRO-D-063",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Column-level security",
+    "stem": "A policy masks email unless the same row's consent column is TRUE. What is this called?",
+    "options": [
+      "Row access filtering",
+      "Tag-based masking",
+      "External tokenization",
+      "Conditional masking"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Conditional masking passes other columns of the same table or view to the policy and uses them to decide whether to mask."
+  },
+  {
+    "id": "SNOWPRO-D-064",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Billing",
+    "stem": "A warehouse resumes, runs 20 seconds of work, then suspends. How many seconds are billed?",
+    "options": [
+      "20",
+      "60",
+      "3,600",
+      "30"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Warehouses bill per second with a 60-second minimum each time they start, so 20 seconds of work is billed as 60."
+  },
+  {
+    "id": "SNOWPRO-D-065",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Dynamic tables",
+    "stem": "Which requirement rules out a dynamic table?",
+    "options": [
+      "Window functions",
+      "Multi-step pipeline of transforms",
+      "Data fresher than 60 seconds",
+      "Joins across tables"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Dynamic tables suit declarative pipelines with joins, aggregates and window functions, but not workloads needing data fresher than about a minute or guaranteed refresh times."
+  },
+  {
+    "id": "SNOWPRO-D-066",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Secure Data Sharing",
+    "stem": "Which command lets a provider add a consumer account to an existing share?",
+    "options": [
+      "ALTER SHARE ... SET SECURE",
+      "GRANT IMPORTED PRIVILEGES",
+      "ALTER SHARE ... ADD ACCOUNTS",
+      "CREATE DATABASE FROM SHARE"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ALTER SHARE ... ADD ACCOUNTS makes the share visible to the named accounts. IMPORTED PRIVILEGES is what a consumer grants on the database it creates."
+  },
+  {
+    "id": "SNOWPRO-D-067",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directory tables",
+    "stem": "What does a directory table on a stage give you?",
+    "options": [
+      "List of pipes using the stage",
+      "Index of rows already loaded",
+      "Catalog of the stage's files",
+      "Copy of each file's contents"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A directory table lists the files in a stage with metadata such as size and URL, which is useful for unstructured data."
+  },
+  {
+    "id": "SNOWPRO-D-068",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Virtual warehouses",
+    "stem": "What happens to table data when its warehouse suspends?",
+    "options": [
+      "Exported to a stage",
+      "Deleted after 24 hours",
+      "Moved into Fail-safe",
+      "Kept in storage"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Storage and compute are separate. Suspending a warehouse stops compute billing but leaves every table untouched in the storage layer."
+  },
+  {
+    "id": "SNOWPRO-D-069",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Unstructured data",
+    "stem": "Which URL type gives temporary file access only to the user who generated it?",
+    "options": [
+      "Pre-signed URL",
+      "External stage URL",
+      "File URL",
+      "Scoped URL"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "BUILD_SCOPED_FILE_URL returns a URL that only its creator can use and that expires with the result cache, currently 24 hours."
+  },
+  {
+    "id": "SNOWPRO-D-070",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "User grants",
+    "stem": "When do privileges granted directly to a user count toward authorization?",
+    "options": [
+      "With USE SECONDARY ROLES ALL",
+      "Never; users cannot hold them",
+      "Always, before any role grants",
+      "Only for ACCOUNTADMIN users"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Direct user grants are user-based access control. They take effect only when the session's secondary roles are set to ALL."
+  },
+  {
+    "id": "SNOWPRO-D-071",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Column-level security",
+    "stem": "What does external tokenization need in the masking policy body?",
+    "options": [
+      "Snowpipe REST call",
+      "Stored procedure",
+      "External function call",
+      "Secure Java UDF handler"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "External tokenization detokenizes data by calling a third-party tokenization provider through an external function in the policy."
+  },
+  {
+    "id": "SNOWPRO-D-072",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Query Profile",
+    "stem": "Query Profile shows a join producing far more rows than either input. What is the likely cause?",
+    "options": [
+      "Search optimization turned off",
+      "Stale result cache",
+      "Too many clustering keys",
+      "Bad join condition"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An exploding join usually comes from a join condition that matches far too many rows, such as a missing key column. Fix the condition first."
+  },
+  {
+    "id": "SNOWPRO-D-073",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "UDTFs",
+    "stem": "Which function type returns a set of rows for each call?",
+    "options": [
+      "Scalar UDF",
+      "Masking policy",
+      "Aggregate function",
+      "UDTF"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A user-defined table function returns tabular results and is used in the FROM clause. A scalar UDF returns one value per input row."
+  },
+  {
+    "id": "SNOWPRO-D-074",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Secure Data Sharing",
+    "stem": "Which grant lets a share expose objects in a provider's database?",
+    "options": [
+      "MONITOR on the database",
+      "IMPORTED PRIVILEGES to the share",
+      "USAGE on the database",
+      "OWNERSHIP of the database"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A provider grants USAGE on the database and schema, then SELECT on objects, to the share. Database roles can also be granted to shares."
+  },
+  {
+    "id": "SNOWPRO-D-075",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "COPY transformations",
+    "stem": "Which can a SELECT transform inside COPY INTO <table> do?",
+    "options": [
+      "Join two staged files on a key",
+      "Aggregate with GROUP BY",
+      "Reorder and omit file columns",
+      "Filter with a WHERE clause"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Load transforms can reorder, omit and cast columns and truncate strings. Joins, aggregation and WHERE filtering belong in a later INSERT."
+  },
+  {
+    "id": "SNOWPRO-D-076",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Snowpipe",
+    "stem": "How is Snowpipe file loading billed?",
+    "options": [
+      "Flat monthly fee",
+      "Fixed credits per GB loaded",
+      "Per file plus warehouse time",
+      "Warehouse credits per second"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Snowpipe charges a fixed number of credits per GB, with no per-file charge and no warehouse time."
+  },
+  {
+    "id": "SNOWPRO-D-077",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Service model",
+    "stem": "Which is true of Snowflake as a managed service?",
+    "options": [
+      "Tables need manual vacuuming",
+      "Runs on customer-owned servers",
+      "Customers apply upgrades quarterly",
+      "No hardware or software to install"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Snowflake is software as a service: Snowflake handles hardware, software, upgrades and tuning. Users manage data, roles and warehouses."
+  },
+  {
+    "id": "SNOWPRO-D-078",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Unstructured data",
+    "stem": "Which URL lets someone without a Snowflake login download a staged file until it expires?",
+    "options": [
+      "Scoped URL",
+      "Pre-signed URL",
+      "Directory table path",
+      "File URL"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "GET_PRESIGNED_URL returns a URL that needs no Snowflake authentication, valid until its expiration time. Anyone holding it can download the file."
+  },
+  {
+    "id": "SNOWPRO-D-079",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Session policies",
+    "stem": "Which policy sets how long an idle session stays open?",
+    "options": [
+      "Network policy",
+      "Session policy",
+      "Authentication policy",
+      "Password policy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A session policy sets the idle timeout for sessions. Authentication policies control which sign-in methods and clients are allowed."
+  },
+  {
+    "id": "SNOWPRO-D-080",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Which feature scans columns and suggests tags such as email address or phone number?",
+    "options": [
+      "Search optimization",
+      "Query acceleration",
+      "Data classification",
+      "Access history"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Classification analyzes column contents and suggests semantic and privacy categories, which can then be set as system tags."
+  },
+  {
+    "id": "SNOWPRO-D-081",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Clustering",
+    "stem": "When is defining a clustering key most worth its cost?",
+    "options": [
+      "Table rewritten every hour",
+      "Table always fully scanned",
+      "Huge table filtered on key",
+      "Small table under 1 GB"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Clustering helps multi-terabyte tables whose queries filter on the key. Reclustering costs credits, so small, fully scanned or constantly rewritten tables gain little."
+  },
+  {
+    "id": "SNOWPRO-D-082",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Semi-structured functions",
+    "stem": "Which function converts a JSON string into a VARIANT value?",
+    "options": [
+      "TRY_TO_BINARY",
+      "PARSE_JSON",
+      "TO_JSON",
+      "FLATTEN"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "PARSE_JSON interprets a string as JSON and returns VARIANT. TO_JSON does the reverse, turning a VARIANT into a JSON string."
+  },
+  {
+    "id": "SNOWPRO-D-083",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Secure functions",
+    "stem": "Why use a secure UDF when sharing logic with consumers?",
+    "options": [
+      "It skips privilege checks",
+      "It runs much faster",
+      "It allows writes",
+      "Its code stays hidden"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A secure UDF hides its definition from users who do not own it, so consumers can call it without seeing the logic."
+  },
+  {
+    "id": "SNOWPRO-D-084",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Snowpipe",
+    "stem": "Within 14 days, a file with the same name is staged again with new content. What does its pipe do?",
+    "options": [
+      "Replaces the old rows",
+      "Loads the new rows",
+      "Skips it as already loaded",
+      "Stops the pipe with an error"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A pipe skips files whose path and name it has already recorded, even if the content changed. Reload such a file another way."
+  },
+  {
+    "id": "SNOWPRO-D-085",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Object hierarchy",
+    "stem": "What sits directly above databases in Snowflake's object hierarchy?",
+    "options": [
+      "Schema",
+      "Account",
+      "Role",
+      "Warehouse"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The hierarchy runs organization, account, database, schema, then objects such as tables and views. Warehouses and roles are account-level objects, not containers for databases."
+  },
+  {
+    "id": "SNOWPRO-D-086",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Unstructured data",
+    "stem": "Files in an internal stage must be readable through file URLs. Which encryption type must the stage use?",
+    "options": [
+      "SNOWFLAKE_SSE",
+      "NONE",
+      "AWS_SSE_KMS",
+      "SNOWFLAKE_FULL"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Internal stages use client-side encryption by default, and those files cannot be read through URLs. Create the stage with server-side SNOWFLAKE_SSE instead; it cannot be changed later."
+  },
+  {
+    "id": "SNOWPRO-D-087",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Custom roles",
+    "stem": "Who can create a custom account role?",
+    "options": [
+      "Only SYSADMIN",
+      "Any role with USAGE on a database",
+      "Any role with CREATE ROLE",
+      "Only ACCOUNTADMIN"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Creating account roles needs the CREATE ROLE privilege, which USERADMIN holds by default and can be granted to other roles."
+  },
+  {
+    "id": "SNOWPRO-D-088",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Encryption",
+    "stem": "Which Enterprise feature re-encrypts stored data with new keys once its keys are a year old?",
+    "options": [
+      "Client-side encryption",
+      "Periodic rekeying",
+      "Tri-Secret Secure",
+      "Key pair rotation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Periodic rekeying, an Enterprise feature, retires keys older than a year and re-encrypts the data with new keys. Tri-Secret Secure adds a customer key instead."
+  },
+  {
+    "id": "SNOWPRO-D-089",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Materialized views",
+    "stem": "Which can a materialized view's definition include?",
+    "options": [
+      "Aggregates over a single table",
+      "Window function over partitions",
+      "Join of two tables",
+      "ORDER BY with LIMIT"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Materialized views query one table and support a set of aggregates. Joins, window functions, ORDER BY and LIMIT are not allowed."
+  },
+  {
+    "id": "SNOWPRO-D-090",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Change processing",
+    "stem": "Which statement applies a stream's inserts, updates and deletes to a target table in one step?",
+    "options": [
+      "INSERT OVERWRITE",
+      "MERGE",
+      "UPSERT",
+      "COPY INTO"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "MERGE matches rows on a key and can insert, update and delete in one statement, which also consumes the stream. Snowflake has no UPSERT command."
+  },
+  {
+    "id": "SNOWPRO-D-091",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Secure Data Sharing",
+    "stem": "A provider updates a shared table. When do consumers see the change?",
+    "options": [
+      "After a nightly sync",
+      "Once the share is re-created",
+      "Right away",
+      "After they refresh the share"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Because consumers read the provider's live data, changes are visible as soon as they are committed. No copying or refresh is needed."
+  },
+  {
+    "id": "SNOWPRO-D-092",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Open table formats",
+    "stem": "Which table type keeps its data in an open format that engines such as Spark can also read?",
+    "options": [
+      "Dynamic table",
+      "Transient table",
+      "Iceberg table",
+      "Hybrid table"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Iceberg tables store data and metadata in the open Apache Iceberg format in external cloud storage, so other engines can use them."
+  },
+  {
+    "id": "SNOWPRO-D-093",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spArch",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Editions",
+    "select": 2,
+    "stem": "Which two first appear in Business Critical Edition? (Choose two.)",
+    "options": [
+      "Multi-cluster warehouses",
+      "Materialized views",
+      "Account failover and failback",
+      "HIPAA and PCI DSS support",
+      "Dynamic data masking on columns"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Business Critical adds account failover and failback and support for regulated data such as PHI and PCI DSS. The other three start at Enterprise."
+  },
+  {
+    "id": "SNOWPRO-D-094",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spObjects",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "UNDROP",
+    "stem": "What happens if you UNDROP a table while another table with the same name exists?",
+    "options": [
+      "It overwrites the newer table",
+      "It merges the two tables",
+      "It restores under a new name",
+      "It fails until one is renamed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "UNDROP fails when an object of the same name already exists. Rename the existing table first, then run UNDROP."
+  },
+  {
+    "id": "SNOWPRO-D-095",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spAccess",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Role hierarchy",
+    "stem": "Role ANALYST is granted to role MANAGER. What does MANAGER get?",
+    "options": [
+      "Ownership of ANALYST",
+      "All of ANALYST's privileges",
+      "Only ANALYST's future grants",
+      "Nothing until activated by ANALYST"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Granting one role to another puts it lower in the hierarchy, so the higher role inherits all its privileges. Ownership of the role is a separate grant."
+  },
+  {
+    "id": "SNOWPRO-D-096",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spGovern",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Resource monitors",
+    "select": 2,
+    "stem": "Which two actions can a resource monitor take when a threshold is reached? (Choose two.)",
+    "options": [
+      "Move queued work to another warehouse",
+      "Drop the warehouse",
+      "Resize the warehouse",
+      "Notify",
+      "Suspend after running queries end"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "Resource monitors can notify, suspend after running statements finish, or suspend immediately. They never resize, drop or reroute warehouses."
+  },
+  {
+    "id": "SNOWPRO-D-097",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spPerf",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Query acceleration",
+    "stem": "What does the query acceleration scale factor limit?",
+    "options": [
+      "Number of queries accelerated",
+      "Credits per month for the service",
+      "Days of acceleration history",
+      "Compute, as a multiple of size"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The scale factor caps how much compute a warehouse can lease for acceleration, as a multiple of its size. The default is 8; 0 removes the cap."
+  },
+  {
+    "id": "SNOWPRO-D-098",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spTransform",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Stored procedures",
+    "stem": "A stored procedure must run with the privileges of the user who calls it. Which clause sets that?",
+    "options": [
+      "EXECUTE AS CALLER",
+      "EXECUTE AS OWNER",
+      "SECURE = TRUE",
+      "EXECUTE AS SYSADMIN"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Caller's rights procedures run with the caller's privileges and session. Owner's rights, the default, run with the owning role's privileges."
+  },
+  {
+    "id": "SNOWPRO-D-099",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spShare",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Secure Data Sharing",
+    "select": 2,
+    "stem": "Which two object types can a provider put in a share? (Choose two.)",
+    "options": [
+      "Tables",
+      "Users",
+      "Secure views",
+      "Warehouses",
+      "Roles"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "explanation": "Tables and secure views are among the objects a share can hold. Warehouses, roles and users belong to the account and cannot be shared."
+  },
+  {
+    "id": "SNOWPRO-D-100",
+    "section": "core",
+    "test": 0,
+    "module": 1,
+    "domain": "spLoad",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Stages",
+    "select": 2,
+    "stem": "Which two clients can run PUT to upload local files? (Choose two.)",
+    "options": [
+      "Kafka connector",
+      "Python connector",
+      "Task with a schedule",
+      "SnowSQL",
+      "Snowpipe REST API"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "PUT runs from clients with access to the local file system, such as SnowSQL and the drivers and connectors. A task runs inside Snowflake and has no local files."
+  }
+]

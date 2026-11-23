@@ -4820,6 +4820,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the PMI CAPM Examination Content Outline (2023, current in 2026)",
     source: { name: "PMI", url: "https://www.pmi.org/certifications/certified-associate-capm" },
   },
+  cism: {
+    answer:
+      "The CISM (Certified Information Security Manager) exam from ISACA has 150 multiple-choice questions in 4 hours, each with four options and one best answer, and no penalty for wrong answers. Scores are reported on a scale of 200 to 800, and 450 or higher passes. The exam content outline in force from November 3, 2026 covers four domains: Information Security Governance 18%, Information Security Risk Management 20%, Information Security Program 33% and Incident Management 29%.",
+    rows: [
+      { label: "Questions", value: "150 multiple choice, four options, one best answer" },
+      { label: "Time", value: "4 hours (240 minutes)" },
+      { label: "Pass mark", value: "450 on a scale of 200 to 800" },
+      { label: "Content", value: "Governance 18%, risk management 20%, security program 33%, incident management 29%" },
+      { label: "Languages", value: "English, Chinese, Spanish, Japanese, French, German" },
+      { label: "Where", value: "PSI test center or remote proctoring" },
+      { label: "Retakes", value: "Up to four attempts in 12 months, waits of 30, 90 and 90 days" },
+      { label: "Experience", value: "5 years of security management work in at least three of the four domains, within 10 years of applying" },
+      { label: "Run by", value: "ISACA" },
+    ],
+    basedOn: "ISACA's CISM exam content outline and its September 2026 announcement of the updated exam, ISACA's 2026 Exam Candidate Guide and the Get CISM Certified page, checked November 2026",
+    source: { name: "ISACA: CISM exam content outline", url: "https://www.isaca.org/credentialing/cism/cism-exam-content-outline" },
+  },
   projectplus: {
     answer:
       "CompTIA Project+ (exam PK0-005, launched November 8, 2022) is CompTIA's entry-level project management certification for IT professionals. CompTIA's certification page gives a maximum of 90 multiple-choice and performance-based questions (the objectives document says up to 95) in 90 minutes, and the passing score is 710 on a scale of 100 to 900. The PK0-005 objectives cover four domains: Project Management Concepts 33%, Project Life Cycle Phases 30%, Tools and Documentation 19% and Basics of IT and Governance 18%, across both Waterfall and Agile methods. CompTIA recommends 6 to 12 months of hands-on experience managing projects in an IT environment, offers the exam in English, Japanese and Thai, and says the certification is good for life with no renewal.",

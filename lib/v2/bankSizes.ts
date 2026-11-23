@@ -175,4 +175,5 @@ export const BANK_SIZES: Record<string, number> = {
   projectplus: 203,
   cloudplus: 220,
   dp900: 200,
+  cism: 198,
 };

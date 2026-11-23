@@ -423,6 +423,7 @@
   "ccst": ["#1f0c3b","#f3eefb","#10071d","#e2dcea"],
   "serverplus": ["#1d202b","#f3f4f7","#0f1015","#e0e1e6"],
   "techplus": ["#390e15","#fbeff1","#1c080b","#eadcde"],
+  "cism": ["#270b3d","#f6eefc","#13061d","#e4dbeb"],
   "projectplus": ["#191434","#f2f0f9","#0d0b19","#dedcea"],
   "safe": ["#5a455e","#f6f3f6","#322735","#e5e0e6"],
   "sc200": ["#261f51","#f2f0f9","#141028","#dfdde9"],

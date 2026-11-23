@@ -1,8 +1,8 @@
 CAT = 'sgm9Risk'; SEG = 'RSK'
 Q = [
-('A risk that can only end in a loss or no loss, with no chance of gain, is a:',
- 'Pure risk', ['Speculative risk', 'Dynamic risk', 'Market risk'],
- 'Pure risks such as death or disability offer no chance of gain, so they can be insured. Speculative risks, like buying shares, can end in gain or loss and are not insurable.'),
+('Which of these is a pure risk?',
+ 'Premature death', ['Buying company shares', 'Betting on a horse race', 'Starting a new business'],
+ 'A pure risk can only end in loss or no loss, as with an early death. Shares, bets and business ventures are speculative: they may end in gain.'),
 ('Buying a life policy so that an insurer bears the cost of an early death is risk:',
  'Transfer', ['Avoidance', 'Retention', 'Reduction'],
  'Paying a premium so that the insurer pays the loss moves the financial cost of the risk to the insurer, which is risk transfer.'),
@@ -45,7 +45,7 @@ Q = [
 ('A dishonest tendency, such as a person planning to fake a claim, is an example of:',
  'Moral hazard', ['Morale hazard', 'Physical hazard', 'Fundamental risk'],
  'Moral hazard comes from dishonesty. Morale hazard is carelessness or indifference to loss because one is insured, and physical hazard is a tangible feature that raises risk.'),
-('People with health problems seeking cover more eagerly than healthy people is called:',
- 'Adverse selection', ['Moral hazard', 'Risk pooling', 'Lapse-supported pricing'],
- 'Adverse selection is the tendency of higher-risk people to buy more cover. Underwriting and disclosure questions protect the insurer and the pool against it.'),
+('Insurers ask detailed health questions on a life proposal mainly to:',
+ 'Guard against adverse selection', ["Set the agent's commission", 'Decide the free-look length', 'Choose the sub-funds'],
+ 'Underwriting checks each risk so that people in poor health, who tend to seek more cover, are charged fairly or offered modified terms.'),
 ]

@@ -1,8 +1,8 @@
 CAT = "nscaLegal"; SEG = "LEG"
 Q = [
-('A trainer fails to act as a reasonable trainer would. This is called:',
- 'Negligence', ['Assumption of risk', 'Informed consent', 'Scope of practice'],
- 'Negligence is failure to meet the standard of care a reasonable professional would provide.'),
+('The level of care a reasonably prudent trainer would give is called the:',
+ 'Standard of care', ['Scope of practice', 'Waiver of liability', 'Duty to warn only'],
+ 'Negligence is judged against the standard of care: what a reasonably prudent professional would do in the same situation.'),
 ('Failing to spot a client who then drops the bar is negligence by:',
  'Omission', ['Commission', 'Contract', 'Consent'],
  'Not doing something that should be done is an act of omission. Doing something wrong is commission.'),

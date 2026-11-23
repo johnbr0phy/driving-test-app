@@ -1,8 +1,8 @@
 CAT = "nscaAdapt"; SEG = "ADP"
 Q = [
-('Most strength gains in the first few weeks of training come from:',
- 'Neural adaptations', ['Larger muscle fibers', 'More fat stores', 'Longer bones in the limbs'],
- 'Early gains mostly reflect better motor unit recruitment and coordination. Hypertrophy adds more later.'),
+('The loss of muscle mass and strength that comes with aging is called:',
+ 'Sarcopenia', ['Hypertrophy', 'Osteopenia', 'Hyperplasia'],
+ 'Sarcopenia is age-related muscle loss. Resistance training slows it. Osteopenia is low bone density.'),
 ('An increase in the cross-sectional area of muscle fibers is called:',
  'Hypertrophy', ['Atrophy', 'Hyperplasia', 'Detraining'],
  'Hypertrophy is growth of existing fibers. Hyperplasia, an increase in fiber number, is not a major human adaptation.'),

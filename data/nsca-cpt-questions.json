@@ -200,14 +200,14 @@
     "state": "ALL",
     "questionId": "NSCA-INT-015",
     "category": "nscaIntake",
-    "question": "A client wants weight-loss help and reports eating very little and fainting. Who should they see?",
-    "optionA": "A supplement company salesperson",
-    "optionB": "Physician or registered dietitian",
-    "optionC": "A licensed massage therapist",
-    "optionD": "Another certified personal trainer",
+    "question": "A client asks if a supplement will cure their arthritis. Best response?",
+    "optionA": "Suggest a higher dose",
+    "optionB": "Tell them to ask their physician",
+    "optionC": "Say supplements are all useless",
+    "optionD": "Sell them a joint formula",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Fainting with very low intake is a medical and nutrition concern beyond a trainer's scope. A physician or registered dietitian is the right referral."
+    "explanation": "Claims about treating a disease belong with a physician. A trainer can share general, evidence-based information but does not recommend treatments."
   },
   {
     "type": "NSCACPT",
@@ -242,28 +242,28 @@
     "state": "ALL",
     "questionId": "NSCA-INT-018",
     "category": "nscaIntake",
-    "question": "Which question best opens an initial interview with active listening?",
-    "optionA": "What brings you in today?",
-    "optionB": "Can you train five days?",
-    "optionC": "Is your goal weight loss?",
-    "optionD": "Do you prefer free weights?",
+    "question": "Nodding and leaning slightly forward while a client talks is an example of:",
+    "optionA": "Nonverbal attending",
+    "optionB": "Closed questioning",
+    "optionC": "Giving advice",
+    "optionD": "Summarizing",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "An open question invites the client to explain in their own words. Closed or leading questions narrow the answer before the trainer understands the goal."
+    "explanation": "Posture, eye contact and nods are nonverbal attending behaviors that show the trainer is listening."
   },
   {
     "type": "NSCACPT",
     "state": "ALL",
     "questionId": "NSCA-INT-019",
     "category": "nscaIntake",
-    "question": "Restating a client's concern in your own words mainly shows:",
-    "optionA": "That you disagree with them",
-    "optionB": "That you are the expert here",
-    "optionC": "That you heard them",
-    "optionD": "That time is short",
+    "question": "At the end of an interview, briefly pulling together the client's main points is called:",
+    "optionA": "Interrupting",
+    "optionB": "Leading the witness",
+    "optionC": "Summarizing",
+    "optionD": "Closed questioning",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Paraphrasing is an active listening skill that confirms understanding and builds rapport."
+    "explanation": "A summary checks understanding and lets the client correct anything missed before goals are set."
   },
   {
     "type": "NSCACPT",
@@ -522,14 +522,14 @@
     "state": "ALL",
     "questionId": "NSCA-WEL-002",
     "category": "nscaWellness",
-    "question": "A client asks for a meal plan to manage kidney disease. The trainer should:",
-    "optionA": "Refer to a registered dietitian",
-    "optionB": "Write a low-protein meal plan",
-    "optionC": "Suggest a supervised fasting plan",
-    "optionD": "Recommend a kidney-safe protein powder",
+    "question": "A client asks whether their kidney medication changes how much water to drink. Best response?",
+    "optionA": "Ask the prescribing physician",
+    "optionB": "Drink twice the usual amount",
+    "optionC": "Cut fluids during workouts",
+    "optionD": "Follow a coach's rule of thumb",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Medical nutrition therapy for a disease is outside a trainer's scope. The trainer can share general guidance and refer."
+    "explanation": "Fluid needs on medication are a medical question. The trainer refers rather than guesses."
   },
   {
     "type": "NSCACPT",
@@ -634,14 +634,14 @@
     "state": "ALL",
     "questionId": "NSCA-DES-002",
     "category": "nscaDesign",
-    "question": "Changing loads and reps from session to session within a week is:",
-    "optionA": "Linear periodization",
-    "optionB": "Block detraining phase",
-    "optionC": "Undulating periodization",
-    "optionD": "Circuit weight training",
+    "question": "In a periodized year, which period has the highest volume and lowest intensity?",
+    "optionA": "Competition period",
+    "optionB": "Peaking phase",
+    "optionC": "Preparatory period",
+    "optionD": "Taper week",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Undulating (nonlinear) periodization varies volume and intensity day to day. Linear periodization changes them gradually across weeks."
+    "explanation": "The preparatory period builds a base with high volume and low intensity. Intensity rises and volume falls toward competition."
   },
   {
     "type": "NSCACPT",
@@ -662,14 +662,14 @@
     "state": "ALL",
     "questionId": "NSCA-DES-004",
     "category": "nscaDesign",
-    "question": "Which order is best within one resistance session?",
-    "optionA": "Biceps curl before row",
-    "optionB": "Squat before leg extension",
-    "optionC": "Leg extension before squat",
-    "optionD": "Calf raise before deadlift",
+    "question": "Doing leg extensions just before squats to tire the quadriceps on purpose is called:",
+    "optionA": "Post-activation",
+    "optionB": "Pre-exhaustion",
+    "optionC": "Compound training",
+    "optionD": "Active recovery",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Multi-joint, large-muscle exercises come before single-joint ones so the most demanding lifts are done fresh."
+    "explanation": "Pre-exhaustion places a single-joint exercise before a multi-joint one for the same muscle. It breaks the usual order on purpose."
   },
   {
     "type": "NSCACPT",
@@ -711,21 +711,21 @@
     "optionD": "Heavy, 1 to 6RM",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Maximal strength responds best to heavy loads of about 6RM or less with long rests."
+    "explanation": "Maximal strength responds best to heavy loads in the 1 to 6RM range with long rests. 8 to 12RM loads suit hypertrophy and novices."
   },
   {
     "type": "NSCACPT",
     "state": "ALL",
     "questionId": "NSCA-DES-008",
     "category": "nscaDesign",
-    "question": "For heavy sets in the 1 to 6RM range, how long should rest periods be?",
-    "optionA": "30 to 60 seconds",
-    "optionB": "3 to 5 minutes",
-    "optionC": "1 to 2 minutes",
-    "optionD": "Under 20 seconds",
+    "question": "How often should an intermediate lifter usually train with resistance?",
+    "optionA": "1 day every two weeks",
+    "optionB": "3 to 4 days a week",
+    "optionC": "1 to 2 days a week",
+    "optionD": "6 to 7 days a week",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Long rest restores energy so each heavy set can be lifted with good technique and load."
+    "explanation": "Intermediate trainees are usually advised to train 3 to 4 days a week, often with a split routine. Beginners start at 2 to 3."
   },
   {
     "type": "NSCACPT",
@@ -739,7 +739,7 @@
     "optionD": "40 to 60% of 1RM",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Light to moderate loads for 15 or more repetitions with short rests build local muscular endurance."
+    "explanation": "Light to moderate loads of 40 to 60% of 1RM for 15 or more repetitions with short rests build local muscular endurance."
   },
   {
     "type": "NSCACPT",
@@ -753,7 +753,7 @@
     "optionD": "100% of 1RM",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Light loads moved as fast as possible, such as jump squats, develop power. Heavier loads slow the movement."
+    "explanation": "Light loads of 0 to 60% of 1RM moved as fast as possible, such as jump squats, develop lower-body power. Heavier loads slow the movement."
   },
   {
     "type": "NSCACPT",
@@ -781,7 +781,7 @@
     "optionD": "Every day",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Two or three nonconsecutive days give enough stimulus and recovery for a beginner."
+    "explanation": "Two or three nonconsecutive days a week (2 to 3 days) give enough stimulus and recovery for a beginner."
   },
   {
     "type": "NSCACPT",
@@ -844,14 +844,14 @@
     "state": "ALL",
     "questionId": "NSCA-DES-017",
     "category": "nscaDesign",
-    "question": "A tempo of 4 seconds down, no pause and 1 second up mainly lengthens which phase?",
-    "optionA": "Concentric",
-    "optionB": "Isometric",
-    "optionC": "Rest interval",
-    "optionD": "Eccentric",
+    "question": "Which repetition tempo best fits a power goal?",
+    "optionA": "Slow 5-second lifting phase",
+    "optionB": "Long pause at the top",
+    "optionC": "Slow lowering, slow lifting",
+    "optionD": "Fast, explosive lifting phase",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The lowering phase is eccentric. Slowing it raises time under tension without adding load."
+    "explanation": "Power depends on speed, so the concentric (lifting) phase is done as fast as possible with control."
   },
   {
     "type": "NSCACPT",
@@ -956,14 +956,14 @@
     "state": "ALL",
     "questionId": "NSCA-DES-025",
     "category": "nscaDesign",
-    "question": "A soccer player wants faster acceleration. Which principle guides exercise choice?",
+    "question": "Two clients have the same goal but get different programs. Which principle explains this?",
     "optionA": "Reversibility",
-    "optionB": "Diminishing returns",
-    "optionC": "Specificity",
-    "optionD": "Individual variation",
+    "optionB": "Overload",
+    "optionC": "Individual differences",
+    "optionD": "Diminishing returns",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Training adaptations match the demands placed on the body, so sprint starts and power work fit acceleration goals."
+    "explanation": "Clients differ in training history, recovery, health and preferences, so programs are individualized."
   },
   {
     "type": "NSCACPT",
@@ -1061,7 +1061,7 @@
     "optionD": "Add 5 minutes to sessions",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Small increases in one variable, often duration first, let the client adapt without overload."
+    "explanation": "Small increases in one variable, such as adding 5 minutes to sessions, let the client adapt without overload. Duration usually rises before intensity."
   },
   {
     "type": "NSCACPT",
@@ -1194,14 +1194,14 @@
     "state": "ALL",
     "questionId": "NSCA-SPC-002",
     "category": "nscaSpecial",
-    "question": "During exercise, a client with diabetes turns shaky, sweaty and confused. This suggests:",
-    "optionA": "High blood pressure",
-    "optionB": "Low blood sugar",
-    "optionC": "Muscle cramps from heat",
-    "optionD": "Normal end-of-session fatigue",
+    "question": "A client with type 1 diabetes plans heavy leg work today. Where should insulin not be injected beforehand?",
+    "optionA": "Into the abdomen",
+    "optionB": "Into the thighs",
+    "optionC": "Into the upper arm",
+    "optionD": "Anywhere but the hands",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Shakiness, sweating and confusion are classic signs of hypoglycemia. Stop, give fast-acting sugar and call for help if it does not resolve."
+    "explanation": "Exercising muscle speeds absorption of insulin injected near it, raising the risk of low blood sugar. Insulin timing and sites are set with the client's physician."
   },
   {
     "type": "NSCACPT",
@@ -1474,14 +1474,14 @@
     "state": "ALL",
     "questionId": "NSCA-COA-002",
     "category": "nscaCoaching",
-    "question": "Telling a client \"your 5-mile time dropped by 40 seconds\" gives which feedback?",
-    "optionA": "Knowledge of performance",
-    "optionB": "Internal cueing",
-    "optionC": "Knowledge of results",
-    "optionD": "Negative punishment",
+    "question": "Giving feedback only when a client's error goes outside a set range is called:",
+    "optionA": "Summary feedback",
+    "optionB": "Concurrent feedback",
+    "optionC": "Bandwidth feedback",
+    "optionD": "Knowledge of results",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Knowledge of results reports the outcome. Knowledge of performance describes how the movement was done."
+    "explanation": "Bandwidth feedback ignores small errors and corrects larger ones, which builds the client's own error detection."
   },
   {
     "type": "NSCACPT",
@@ -1558,14 +1558,14 @@
     "state": "ALL",
     "questionId": "NSCA-COA-008",
     "category": "nscaCoaching",
-    "question": "Which order suits teaching a new lift?",
-    "optionA": "Practice, then explain it",
-    "optionB": "Load it heavy, then teach it",
-    "optionC": "Show it only after a failed rep",
-    "optionD": "Explain, show, then practice",
+    "question": "For learning a new skill, which practice schedule usually works better over time?",
+    "optionA": "Crammed into one long session",
+    "optionB": "Only practiced once",
+    "optionC": "Only watched, never practiced",
+    "optionD": "Spread across several sessions",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A brief explanation and a clear demonstration come before the client tries it with light load."
+    "explanation": "Distributed practice, with rest between bouts, usually leads to better retention than massed practice."
   },
   {
     "type": "NSCACPT",
@@ -1600,14 +1600,14 @@
     "state": "ALL",
     "questionId": "NSCA-COA-011",
     "category": "nscaCoaching",
-    "question": "What should a client do with their breath during most resistance exercises?",
-    "optionA": "Hold the breath on every rep",
-    "optionB": "Inhale while pushing hardest",
-    "optionC": "Breathe only between the sets",
-    "optionD": "Exhale through the sticking point",
+    "question": "During a body-weight squat, when should the client breathe in?",
+    "optionA": "During the ascent",
+    "optionB": "Only at the top",
+    "optionC": "Never, hold it throughout",
+    "optionD": "During the descent",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Exhaling through the hardest part and inhaling during the easier part is the usual guidance. Brief breath holding is reserved for trained lifters on heavy core-loaded lifts."
+    "explanation": "The usual pattern is to inhale on the easier lowering phase and exhale through the harder lifting phase."
   },
   {
     "type": "NSCACPT",
@@ -1642,14 +1642,14 @@
     "state": "ALL",
     "questionId": "NSCA-RES-002",
     "category": "nscaResistance",
-    "question": "Which grip has one palm facing up and one facing down?",
-    "optionA": "Alternated grip",
+    "question": "Which grip has the palms facing each other, as on a hammer curl?",
+    "optionA": "Neutral grip",
     "optionB": "Hook grip",
-    "optionC": "Neutral grip",
+    "optionC": "Supinated grip",
     "optionD": "Pronated grip on both hands",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The alternated (mixed) grip stops the bar rolling. It is common for heavy deadlifts and for spotters."
+    "explanation": "A neutral grip places the palms facing each other. Supinated is palms up and pronated is palms down."
   },
   {
     "type": "NSCACPT",
@@ -1768,14 +1768,14 @@
     "state": "ALL",
     "questionId": "NSCA-RES-011",
     "category": "nscaResistance",
-    "question": "Which exercise should not be spotted by hand?",
-    "optionA": "Dumbbell bench press",
-    "optionB": "Barbell back squat",
-    "optionC": "Incline bench press",
-    "optionD": "Barbell push jerk",
+    "question": "A client wants to squat heavy alone. What makes it safest?",
+    "optionA": "A thicker weight belt",
+    "optionB": "Faster reps near failure",
+    "optionC": "Lifting with eyes closed",
+    "optionD": "Power rack with safety bars set",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Explosive overhead power lifts are not spotted; the lifter learns to drop the bar away safely. Strength lifts are spotted."
+    "explanation": "Safety bars set just below the bottom position catch the bar if the lift fails. A belt does not."
   },
   {
     "type": "NSCACPT",
@@ -2097,7 +2097,7 @@
     "optionD": "Backpedaling over 20 yards",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Short sprints from a start teach acceleration in a straight line. Shuffles and carioca train lateral movement."
+    "explanation": "Short sprints from a start, such as over 10 yards, teach acceleration in a straight line. Shuffles and carioca train lateral movement."
   },
   {
     "type": "NSCACPT",
@@ -2230,28 +2230,28 @@
     "state": "ALL",
     "questionId": "NSCA-FLX-020",
     "category": "nscaFlexCardio",
-    "question": "In a medicine-ball chest pass, how should the ball be released?",
-    "optionA": "Explosively at full extension",
-    "optionB": "Slowly, with a pause",
-    "optionC": "With the elbows still bent",
-    "optionD": "After a long hold at the chest",
+    "question": "Depth jumps from a box are best kept for which clients?",
+    "optionA": "Those with advanced training",
+    "optionB": "Every beginner on day one",
+    "optionC": "Clients with knee pain",
+    "optionD": "Older adults with osteoporosis",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Releasing the ball fast trains upper-body power; slow throws train little power."
+    "explanation": "Depth jumps are high-intensity plyometrics that need a strength base and good landing skill first."
   },
   {
     "type": "NSCACPT",
     "state": "ALL",
     "questionId": "NSCA-ADP-001",
     "category": "nscaAdapt",
-    "question": "Most strength gains in the first few weeks of training come from:",
-    "optionA": "Larger muscle fibers",
-    "optionB": "More fat stores",
-    "optionC": "Longer bones in the limbs",
-    "optionD": "Neural adaptations",
+    "question": "The loss of muscle mass and strength that comes with aging is called:",
+    "optionA": "Hypertrophy",
+    "optionB": "Osteopenia",
+    "optionC": "Hyperplasia",
+    "optionD": "Sarcopenia",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Early gains mostly reflect better motor unit recruitment and coordination. Hypertrophy adds more later."
+    "explanation": "Sarcopenia is age-related muscle loss. Resistance training slows it. Osteopenia is low bone density."
   },
   {
     "type": "NSCACPT",
@@ -2608,14 +2608,14 @@
     "state": "ALL",
     "questionId": "NSCA-SAF-011",
     "category": "nscaSafety",
-    "question": "A client twists an ankle and it swells. Immediate care?",
-    "optionA": "Rest, ice, compression, elevation",
-    "optionB": "Heat and deep tissue massage",
-    "optionC": "Walk it off quickly",
-    "optionD": "Stretch the ankle hard right away",
+    "question": "A client may have broken a forearm in a fall. What first aid comes first?",
+    "optionA": "Immobilize it and get medical help",
+    "optionB": "Straighten the arm fully",
+    "optionC": "Test grip strength",
+    "optionD": "Massage the swelling",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Basic first aid for a sprain limits swelling. Refer for medical assessment if the client cannot bear weight."
+    "explanation": "A suspected fracture is kept still in the position found and the client is sent for medical care. Never try to realign it."
   },
   {
     "type": "NSCACPT",
@@ -2636,14 +2636,14 @@
     "state": "ALL",
     "questionId": "NSCA-LEG-001",
     "category": "nscaLegal",
-    "question": "A trainer fails to act as a reasonable trainer would. This is called:",
-    "optionA": "Assumption of risk",
-    "optionB": "Informed consent",
-    "optionC": "Scope of practice",
-    "optionD": "Negligence",
+    "question": "The level of care a reasonably prudent trainer would give is called the:",
+    "optionA": "Scope of practice",
+    "optionB": "Waiver of liability",
+    "optionC": "Duty to warn only",
+    "optionD": "Standard of care",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Negligence is failure to meet the standard of care a reasonable professional would provide."
+    "explanation": "Negligence is judged against the standard of care: what a reasonably prudent professional would do in the same situation."
   },
   {
     "type": "NSCACPT",

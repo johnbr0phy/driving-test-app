@@ -68,3 +68,11 @@ and Six Sigma Green Belt banks, with different numbers and angles where the topi
 example the Treynor, put-call parity, CPR, forward-on-stock, duration-convexity and binomial
 items in cfal1). `~/tt-run100/frm1-dup.py` compared every stem with every bank on disk for stem
 similarity and shared numbers (results below).
+
+Result (2026-11-23): a word-overlap and shared-number scan (`~/tt-run100/frm1-dup2.py`) over every
+v1 and v2 bank flagged five fact-and-answer repeats, all rewritten: defined contribution plan risk
+(ieqfa, Series 66), ETFs trading all day (SIE), Moody's lowest investment grade (Series 66 asks the
+S&P version), MBS prepayment risk when rates fall (Series 7, SIE) and the definition of test power
+(CSSGB). The Jensen's alpha and Sharpe ratio items were given new numbers because the old ones gave
+the same answers as CFP, Series 66 and Series 7 items. Remaining matches share only a formula (CAPM,
+covariance, duration) with different numbers and answers.

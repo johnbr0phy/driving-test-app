@@ -1,8 +1,8 @@
 CAT = "rsracPerformance"; SEG = "PRF"
 Q = [
-("Return air is 24 C and supply air leaving a cooling coil is 13 C. What is the temperature split?",
- "11 K", ["37 K", "13 K", "24 K"],
- "Temperature split, or delta T, is return minus supply: 24 - 13 = 11 K. It is compared with the expected range for the humidity and airflow."),
+("Chilled water enters an air handler coil at 7 C and leaves at 12 C. What is the water's temperature rise?",
+ "5 K", ["19 K", "12 K", "7 K"],
+ "The rise is leaving minus entering temperature: 12 - 7 = 5 K. Adding the two gives 19, and the other figures are the single temperatures."),
 ("A chiller leaves water at 7 C while its evaporator saturation is 5 C. What is the approach temperature?",
  "2 K", ["12 K", "5 K", "7 K"],
  "Evaporator approach is leaving water temperature minus refrigerant saturation temperature: 7 - 5 = 2 K. A rising approach over time points to fouling or low charge."),
@@ -31,7 +31,7 @@ Q = [
  "Coil frost and door seals", ["Thermostat brand", "Box lighting wattage", "Oil colour in the sight glass"],
  "Long run times at a held temperature point to extra load or a coil that cannot transfer heat: frosted coils, failed defrost, leaking door gaskets or doors left open."),
 ("Why does dehumidification drop when an evaporator fan runs at a very high speed?",
- "Coil surface runs above the dew point", ["Air carries refrigerant away", "Moisture turns into frost", "The compressor slows down"],
+ "Coil surface runs above the dew point", ["Coil runs below the dew point", "Moisture turns into frost", "The compressor slows down"],
  "Higher airflow warms the coil surface, so less of it is below the air's dew point and less moisture condenses. Lower airflow improves moisture removal."),
 ("What does verifying system integration on a heat pump with backup heat confirm?",
  "Stages work together as designed", ["The heat pump never runs", "The furnace uses no gas", "The refrigerant charge is weighed"],

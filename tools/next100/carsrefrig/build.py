@@ -18,7 +18,7 @@ assert 10.5 / 3 == 3.5                       # heat pump COP
 assert 12 - 4 == 8                           # superheat
 assert 41 - 34 == 7                          # subcooling
 avg = (600 + 588 + 612) / 3; assert round(max(abs(v - avg) for v in (600, 588, 612)) / avg * 100) == 2
-assert 24 - 13 == 11                         # temperature split
+assert 12 - 7 == 5                           # chilled water rise
 assert 7 - 5 == 2                            # chiller approach
 assert 1500 / 300 == 5                       # compression ratio
 assert 0.6 + 2.4 == 3.0                      # run to start resistance

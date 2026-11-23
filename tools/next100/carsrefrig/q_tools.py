@@ -19,7 +19,7 @@ Q = [
  "Far end, away from the pump", ["Directly on the pump inlet", "On the recovery cylinder", "On the charging scale's hose"],
  "A gauge at the pump reads the pump's pull, not the system's. Placing it on the system end, isolated from the pump during the decay test, shows what the system holds."),
 ("What does a digital refrigerant scale do during charging?",
- "Weighs the refrigerant charge added", ["Measures liquid line pressure", "Shows evaporator superheat", "Detects moisture in the oil"],
+ "Weighs the refrigerant charge added", ["Measures refrigerant line pressure", "Shows evaporator superheat", "Detects moisture in the oil"],
  "A charging scale tracks the weight of refrigerant leaving the cylinder, so the nameplate or calculated charge can be weighed in accurately."),
 ("Why must recovery equipment used on an A2L system be rated for A2L refrigerants?",
  "It must not ignite the refrigerant", ["It recovers faster at low temperature", "It separates the oil automatically", "It works without a cylinder"],

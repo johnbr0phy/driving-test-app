@@ -182,6 +182,8 @@ const CASES = [
   ["ham general", "US", "hamgeneral"],
   ["general class license", "US", "hamgeneral"],
   ["fcc element 3", "US", "hamgeneral"],
+  ["fcc grol", "US", "grol"],
+  ["general radiotelephone operator license", "US", "grol"],
   ["upgrade to general", "US", "hamgeneral"],
   ["ham extra", "US", "hamextra"],
   ["amateur extra practice test", "US", "hamextra"],

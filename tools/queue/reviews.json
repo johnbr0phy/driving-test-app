@@ -1574,5 +1574,13 @@
       "pr": 985,
       "findings": 7
     }
+  ],
+  "grol": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 986,
+      "findings": 7
+    }
   ]
 }

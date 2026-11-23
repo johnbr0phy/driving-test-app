@@ -92,6 +92,7 @@ const BORROWED_SETS: Record<string, string> = {
   cct: "cet",
   contractorlaw: "osha",
   natecore: "epa608",
+  osha30: "osha",
   hvacjourney: "epa608",
   waterop: "epa608",
   r410a: "epa608",

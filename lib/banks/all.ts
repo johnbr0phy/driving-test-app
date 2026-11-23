@@ -28,6 +28,7 @@ import "./lifeguard";
 import "./moto";
 import "./notary";
 import "./osha";
+import "./osha30";
 import "./part107";
 import "./phleb";
 import "./pnc";

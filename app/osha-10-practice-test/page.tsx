@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   title,
   description: metaDescription,
   keywords:
-    "OSHA 10 practice test, OSHA 10 final exam questions, OSHA 10 hour construction practice test, OSHA 10 general industry practice test, OSHA 30 practice questions, Focus Four quiz, free OSHA 10 practice test 2026",
+    "OSHA 10 practice test, OSHA 10 final exam questions, OSHA 10 hour construction practice test, OSHA 10 general industry practice test, Focus Four quiz, free OSHA 10 practice test 2026",
   alternates: {
     canonical: `${siteUrl}/osha-10-practice-test`,
     languages: examLandingAlternates("osha"),

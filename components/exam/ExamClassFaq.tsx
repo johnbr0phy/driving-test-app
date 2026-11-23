@@ -316,6 +316,7 @@ export const TEACHES: Record<string, string> = {
   cdlx: "CDL endorsement classes",
   moto: "a motorcycle safety course",
   osha: "OSHA 10 classes",
+  osha30: "OSHA 30 classes",
   forklift: "forklift operator training",
   epa608: "EPA 608 certification classes",
   epa609: "Section 609 refrigerant handling classes",

@@ -1,6 +1,6 @@
 CAT = "nptptCardio"; SEG = "CAR"
 Q = [
-("During a graded exercise test, which finding is an absolute reason to stop?",
+("In a symptom-limited exercise test, which finding means the test must end?",
  "Falling systolic pressure with angina", ["Heart rate at 85% of predicted", "Leg fatigue rated 15 on the Borg scale", "Diastolic rise of 5 mmHg"],
  "A fall in systolic pressure of more than 10 mmHg from baseline with other signs of ischemia is an absolute indication to end a test. Leg fatigue and a reached target rate are expected end points, not emergencies."),
 ("Which heart sound is most typical of a patient with systolic heart failure and volume overload?",

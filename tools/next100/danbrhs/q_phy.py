@@ -3,7 +3,7 @@ CAT = "drhsPhysics"; SEG = "PHY"
 # units. Units and quality factor from 10 CFR 20.1003-20.1004.
 Q = [
 ("What is the focal spot?",
- "Spot on the target hit by electrons", ["Center of the image receptor", "Open end of the long PID", "Window where the beam exits"],
+ "Target area struck by electrons", ["Center of the image receptor", "Open end of the long PID", "Window where the beam exits"],
  "The focal spot is the small part of the anode target where electrons strike and x-rays are made; a smaller spot gives a sharper image."),
 ("What happens to the beam when kVp is raised?",
  "More penetrating", ["Fewer photons made", "Longer in wavelength", "Slower moving"],

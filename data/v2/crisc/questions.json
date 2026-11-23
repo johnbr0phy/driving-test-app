@@ -177,16 +177,16 @@
     "skill": "Security concepts",
     "difficulty": 2,
     "format": "single",
-    "stem": "A hash value of a file is stored and later compared. Which security goal does this support?",
-    "explanation": "A changed file gives a different hash, so comparing hashes shows whether data were altered. Hashing does not hide or keep data available.",
+    "stem": "A security control is strong, but it stops staff doing routine work. What is the MOST likely result?",
+    "explanation": "Controls that block normal work invite workarounds, which can leave the risk higher than a balanced control would. Usability is part of control design.",
     "options": [
-      "Anonymity",
-      "Integrity",
-      "Confidentiality",
-      "Availability"
+      "Staff find ways around it",
+      "Audit closes the related risk",
+      "Productivity rises once staff adjust",
+      "Risk falls to zero for that process"
     ],
     "correct": [
-      1
+      0
     ]
   },
   {
@@ -408,16 +408,16 @@
     "skill": "Privacy principles",
     "difficulty": 2,
     "format": "single",
-    "stem": "A loyalty app stores full passport scans when a name check would do. Which privacy principle is broken?",
-    "explanation": "Collect only the personal data needed for the stated purpose. Holding whole identity documents adds risk without benefit.",
+    "stem": "A marketing team wants to keep every customer field in case it proves useful later. Which risk does this MAINLY raise?",
+    "explanation": "Personal data held without a need add exposure: a breach or misuse can harm more people. Data minimization limits collection and keeping to what the purpose needs.",
     "options": [
-      "Encryption of stored records",
-      "Data portability between services",
-      "Data minimization",
-      "Right of access for the customer"
+      "Fewer reports for the business",
+      "Slower marketing campaigns",
+      "Higher licence fees for the CRM",
+      "More harm if the data are breached"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -576,16 +576,16 @@
     "skill": "Risk appetite and tolerance",
     "difficulty": 2,
     "format": "single",
-    "stem": "Leadership will accept at most four hours of order system downtime a year. What is this?",
-    "explanation": "Tolerance is the acceptable variation for a specific objective or measure. Appetite is the broader amount of risk the enterprise is willing to pursue.",
+    "stem": "What is the MAIN purpose of setting a risk tolerance for a specific objective?",
+    "explanation": "Tolerance is the acceptable variation for a specific objective or measure. Appetite is the broader amount of risk the enterprise is willing to pursue, and a breach of tolerance flags where action is due.",
     "options": [
-      "Inherent risk of the system",
-      "Risk capacity of the enterprise",
-      "Risk tolerance",
-      "Control objective for availability"
+      "To set the cost of each control",
+      "To show when a deviation needs action",
+      "To replace the risk appetite statement",
+      "To raise inherent risk ratings"
     ],
     "correct": [
-      2
+      1
     ]
   },
   {
@@ -807,16 +807,16 @@
     "skill": "Business resilience",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which plan covers moving staff to manual workarounds while systems are down?",
-    "explanation": "Continuity planning keeps critical business processes going, including manual workarounds. Disaster recovery restores the technology itself.",
+    "stem": "Why should business managers, not IT alone, own the business continuity plan?",
+    "explanation": "Continuity keeps critical business processes going, so the people who run those processes decide priorities and workarounds. IT supports it by restoring the technology.",
     "options": [
-      "Disaster recovery plan",
-      "Business continuity plan",
-      "Change management plan",
-      "Incident response plan"
+      "They know which work must continue",
+      "It removes the need for disaster recovery",
+      "IT staff cannot follow the plan",
+      "Regulators ban IT from planning"
     ],
     "correct": [
-      1
+      0
     ]
   },
   {
@@ -996,16 +996,16 @@
     "skill": "Asset management",
     "difficulty": 2,
     "format": "single",
-    "stem": "Why should each information asset in the inventory have a named owner?",
-    "explanation": "An owner is accountable for the asset's protection and decides how risk to it is treated. Unowned assets tend to drift out of control.",
+    "stem": "Why should asset values in the inventory reflect business impact, not only purchase price?",
+    "explanation": "A cheap server can hold data whose loss would halt sales or bring fines. Valuing assets by impact puts protection where the harm would be greatest.",
     "options": [
-      "Owners can then skip reviews",
-      "Insurers require one per asset",
-      "It removes the need for classification",
-      "Someone answers for its risk"
+      "Purchase prices are rarely recorded",
+      "It lowers insurance premiums",
+      "Loss harm can far exceed cost",
+      "Accountants require impact values"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -1206,16 +1206,16 @@
     "skill": "Privacy principles",
     "difficulty": 3,
     "format": "single",
-    "stem": "Customer data collected for delivery is later used for advertising without notice. Which principle is broken?",
-    "explanation": "Personal data should be used only for the purposes people were told about, unless a new lawful basis applies.",
+    "stem": "A team wants to reuse recorded support calls to train a sales AI model. What should the risk practitioner check FIRST?",
+    "explanation": "Personal data should be used only for the purposes people were told about, unless a new lawful basis applies. A new use needs that check before any build starts.",
     "options": [
-      "Data accuracy",
-      "Breach notification",
-      "Purpose limitation",
-      "Storage limitation"
+      "Whether the new use fits the stated purpose",
+      "Whether the sales team has enough staff",
+      "Whether the recordings sit on fast storage",
+      "Whether the model vendor offers a discount"
     ],
     "correct": [
-      2
+      0
     ]
   },
   {
@@ -1995,16 +1995,16 @@
     "skill": "Security concepts",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which principle limits access to the information a person needs for their current task?",
-    "explanation": "Need to know restricts access to specific information required for a task, even among people with the same clearance.",
+    "stem": "Why should security requirements be set by data classification rather than by system type alone?",
+    "explanation": "Classification ranks data by the harm their loss would cause, so the strongest controls go where the data are most sensitive, whatever system holds them.",
     "options": [
-      "Need to know",
-      "Defense in depth",
-      "Fail safe",
-      "Separation of networks"
+      "Classification removes the need for encryption",
+      "All data then get the same controls",
+      "Systems then need no named owner",
+      "Protection then follows the data's value"
     ],
     "correct": [
-      0
+      3
     ]
   },
   {
@@ -2562,16 +2562,16 @@
     "skill": "Technology resilience",
     "difficulty": 3,
     "format": "single",
-    "stem": "Ransomware could encrypt online backups too. Which measure BEST protects recovery?",
-    "explanation": "Copies that attackers cannot change or reach survive an attack that encrypts connected systems.",
+    "stem": "A recovery test restores a system correctly but takes three days, and its RTO is one day. What does this show?",
+    "explanation": "The restore worked, but not within the time the business set. The gap is a risk to report and treat, not a reason to quietly change the objective.",
     "options": [
-      "More frequent online backups",
-      "Offline or immutable backup copies",
-      "A faster backup server",
-      "Longer online retention"
+      "The RTO should be raised to three days",
+      "Backups should be taken less often",
+      "Recovery falls short of the requirement",
+      "The backup software failed the test"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -2931,16 +2931,16 @@
     "skill": "Portfolio management",
     "difficulty": 3,
     "format": "single",
-    "stem": "How does portfolio management help control IT risk?",
-    "explanation": "Managing projects as a portfolio lets leaders fund those that best fit strategy and risk appetite and stop the rest.",
+    "stem": "What risk view does portfolio management add that managing each project alone lacks?",
+    "explanation": "Looking across the portfolio shows shared dependencies, concentration on the same people or vendors, and total exposure, which no single project plan shows.",
     "options": [
-      "Removes owners",
-      "Ranks projects by value and risk",
-      "Approves every project request that is funded",
-      "Fixes software flaws"
+      "Combined risk across all projects",
+      "Each developer's weekly workload",
+      "Vendor price lists",
+      "Detailed code review results"
     ],
     "correct": [
-      1
+      0
     ]
   },
   {
@@ -2952,16 +2952,16 @@
     "skill": "Policies and standards",
     "difficulty": 1,
     "format": "single",
-    "stem": "Which document states leadership's intent for managing IT risk at a high level?",
-    "explanation": "A policy states intent and direction. Procedures, baselines and work instructions carry out that intent in more detail.",
+    "stem": "A procedure conflicts with the approved IT risk policy. Which should prevail?",
+    "explanation": "Policy carries leadership's approved intent, and procedures carry it out. A conflicting procedure should be corrected, or the policy changed through approval.",
     "options": [
-      "Baseline",
-      "Work instruction",
-      "Procedure",
-      "Policy"
+      "The policy, until formally changed",
+      "The procedure, as it is more detailed",
+      "Whichever was written more recently",
+      "Whatever the team prefers"
     ],
     "correct": [
-      3
+      0
     ]
   },
   {
@@ -2994,16 +2994,16 @@
     "skill": "Security concepts",
     "difficulty": 3,
     "format": "single",
-    "stem": "A website stays online under a flood of traffic thanks to extra capacity. Which goal is protected?",
-    "explanation": "Keeping a service reachable when needed is availability. A traffic flood aims to deny service, not read or change data.",
+    "stem": "Which KRI BEST signals rising availability risk for an online ordering service?",
+    "explanation": "As peak load nears capacity, the chance of an outage rises before any failure happens. The other measures track different risks.",
     "options": [
-      "Integrity of the site content",
-      "Authenticity of the web server",
-      "Availability",
-      "Confidentiality of visitor data"
+      "Count of open policy exceptions",
+      "Peak load as a share of capacity",
+      "Awareness training completion rate",
+      "Number of password resets each month"
     ],
     "correct": [
-      2
+      1
     ]
   },
   {
@@ -3607,16 +3607,16 @@
     "skill": "Vulnerability management",
     "difficulty": 3,
     "format": "single",
-    "stem": "A penetration test and a vulnerability scan differ MAINLY because the test:",
-    "explanation": "A scan lists likely flaws; a penetration test tries to use them, showing what an attacker could actually reach.",
+    "stem": "Why should vulnerability management cover weak configurations, not only missing patches?",
+    "explanation": "Default passwords, open services and loose permissions give attackers a way in as surely as an unpatched flaw, so they belong in the same process.",
     "options": [
-      "Runs without any approval",
-      "Tries to exploit flaws",
-      "Never finds real issues",
-      "Checks only physical security"
+      "Configurations cannot be scanned",
+      "Auditors only test settings",
+      "Patches never fix real flaws",
+      "Weak settings can be exploited too"
     ],
     "correct": [
-      1
+      3
     ]
   },
   {
@@ -3733,16 +3733,16 @@
     "skill": "Security concepts",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which security goal is MOST at stake when payroll figures are changed without authority?",
-    "explanation": "Unauthorized changes damage the accuracy and trustworthiness of data, which is integrity.",
+    "stem": "A file share mixes data classified as internal with data classified as restricted. What is the MAIN risk?",
+    "explanation": "A shared location is usually protected to one level. Unless restricted data are separated or the whole share is raised, they get weaker controls than their class requires.",
     "options": [
-      "Confidentiality",
-      "Availability",
-      "Integrity",
-      "Privacy"
+      "Backups of the share take longer",
+      "Users cannot find their files",
+      "Internal data become restricted by law",
+      "Restricted data get only internal protection"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -4048,16 +4048,16 @@
     "skill": "Control frameworks",
     "difficulty": 2,
     "format": "single",
-    "stem": "Why might an enterprise combine controls from several frameworks?",
-    "explanation": "Different laws, customers and standards may each require controls. A combined set lets one control serve several requirements.",
+    "stem": "Which framework describes internal control through five components, including control environment and monitoring activities?",
+    "explanation": "COSO's Internal Control framework has five components: control environment, risk assessment, control activities, information and communication, and monitoring activities.",
     "options": [
-      "To lower appetite",
-      "To spread business risks across units",
-      "To meet different obligations at once",
-      "To avoid owning any of the controls"
+      "COSO Internal Control",
+      "NIST CSF 2.0",
+      "ISO 22301",
+      "ITIL 4"
     ],
     "correct": [
-      2
+      0
     ]
   },
   {

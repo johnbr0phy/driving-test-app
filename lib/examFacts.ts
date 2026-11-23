@@ -439,6 +439,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the DOJ Firearm Safety Certificate page, its FSC FAQ and the Firearm Safety Certificate Study Guide (2025, revised June 2025), checked November 2026",
     source: { name: "California DOJ: Firearm Safety Certificate FAQ", url: "https://oag.ca.gov/firearms/fscfaqs" },
   },
+  atvsafety: {
+    answer:
+      "ATV and snowmobile safety courses are run by each state, usually by its natural resources or parks agency, not as one national exam. Many states require young riders to pass a course before riding on public land or trails, and some require it of adults born after a set date; Minnesota, for example, requires an ATV safety certificate for anyone born after July 1, 1987, and Pennsylvania requires one for riders 8 to 15 off their family's land. Courses are online, in a classroom or hands-on with volunteer instructors, and each state sets its own written test and passing score (New York's snowmobile course asks for 75% on its final exam). Course outlines cover the machine and its controls, safety features, protective gear, riding skills, laws, loading and towing, ethics, hazards and the environment.",
+    rows: [
+      { label: "Who runs it", value: "Each state (usually the DNR or parks agency)" },
+      { label: "Who must take it", value: "Varies by state; often youth riders, sometimes adults" },
+      { label: "Question count and pass mark", value: "Set by each state's course" },
+      { label: "Formats", value: "Online, classroom or hands-on class" },
+      { label: "Machine standards", value: "CPSC youth ATV categories by age (Y-6+, Y-10+, Y-12+, T)" },
+      { label: "Covers", value: "Machine, gear, riding skills, hills, laws, ethics, ice and trailering" },
+    ],
+    basedOn: "Minnesota Rules 6102.0070 and 6100.5500, the NY State Parks snowmobile safety course guide (revised August 2024), CPSC's ATV safety pages and Pennsylvania DCNR's ATV safety page, checked November 2026",
+    source: { name: "Minnesota DNR: ATV safety training", url: "https://www.dnr.state.mn.us/safety/vehicle/atv/index.html" },
+  },
   bowhunter: {
     answer:
       "Bowhunter education is a course, not a single national exam. The National Bowhunter Education Foundation (NBEF) runs the International Bowhunter Education Program, which follows the IHEA-USA bowhunter education standards and is offered in every US state and Canadian province, online or in classes led mostly by volunteer instructors. Some states and provinces require the course before you can bowhunt or get a bowhunting license, so check your own. Each state sets its own course test, number of questions and passing score. The standards cover bow and arrow equipment, crossbows, archery and tree stand safety, shooting skills and distance judging, shot placement, game recovery, ethics and conservation.",

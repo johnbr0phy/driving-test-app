@@ -176,6 +176,7 @@ const TEACHER_LED = new Set([
   "backflow",
   "pesticide",
   "bowhunter",
+  "atvsafety",
   "trapper",
   "ieplumbt2",
   "cpb",

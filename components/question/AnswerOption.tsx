@@ -30,20 +30,18 @@ interface Props extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, "children"
   children: ReactNode;
   /** Hover and press feedback (off while the question is not ready or once answered). */
   interactive?: boolean;
-  /** Replaces the letter inside the badge, e.g. a tick on a picked multi-select choice. */
-  badge?: ReactNode;
   /** Screen-reader text for the revealed state ("Correct answer", "Incorrect answer"). */
   srLabel?: string;
 }
 
-export function AnswerOption({ letter, state, children, interactive = false, badge, srLabel, className = "", ...button }: Props) {
+export function AnswerOption({ letter, state, children, interactive = false, srLabel, className = "", ...button }: Props) {
   return (
     <button
       type="button"
       {...button}
       className={`flex w-full items-center gap-3 rounded-xl border-2 p-3 text-left transition-colors md:p-4 ${BOX[state]} ${interactive && state === "idle" ? HOVER : ""} ${className}`}
     >
-      <OptionLetter letter={letter} selected={state === "selected"} correct={state === "correct"}>{badge}</OptionLetter>
+      <OptionLetter letter={letter} />
       <span className="flex-1 text-[15px] md:text-base">{children}</span>
       {srLabel && <span className="sr-only">{srLabel}</span>}
       {state === "correct" && <CheckCircle2 aria-hidden className="h-5 w-5 shrink-0 text-green-600 dark:text-green-400 md:h-6 md:w-6" />}

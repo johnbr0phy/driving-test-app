@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState, useId, useRef, useEffect } from "react";
-import { Check, Eye, EyeOff } from "lucide-react";
+import { Eye, EyeOff } from "lucide-react";
 import { AnswerOption, type AnswerOptionState } from "@/components/question/AnswerOption";
 import { AnswerFeedback } from "@/components/question/AnswerFeedback";
 import { AnswerValue, QuestionV2, Stimulus } from "@/lib/v2/types";
@@ -163,7 +163,6 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
                   aria-pressed={selected(orig)}
                   aria-disabled={disabled || reveal || (atCap && !selected(orig))}
                   className={`v2-tap flex-1 ${struck && !reveal ? "v2-struck" : ""}`}
-                  badge={question.format === "multi" && selected(orig) && !reveal ? <><span className="sr-only">{OPTION_LETTERS[pos]}</span><Check className="h-4 w-4" /></> : undefined}
                   srLabel={struck && !reveal ? t.srEliminated : reveal ? (question.correct?.includes(orig) ? `${t.srCorrectAnswer}. ` : selected(orig) ? `${t.srIncorrectAnswer}. ` : undefined) : undefined}
                 >
                   <RichText text={question.options?.[orig] ?? ""} />

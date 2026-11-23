@@ -1363,6 +1363,15 @@ export const SEARCH_LEADS: Record<string, string> = {
   fsbpt: "nptept",
   "fsbpt npte": "nptept",
   "national physical therapy": "nptept",
+  // DANB's Radiation Health and Safety exam is its own test (danbrhs), though the CDA bank (danb)
+  // also covers it, so searches that name RHS lead with the standalone test.
+  "and health radiation safety": "danbrhs",
+  "and danb health radiation safety": "danbrhs",
+  "dental radiography": "danbrhs",
+  "danb radiography": "danbrhs",
+  "certification dental ray x": "danbrhs",
+  "certification dental radiology": "danbrhs",
+  rhs: "danbrhs",
 };
 
 /** Everything a test can be found by (names, org, blurb, aliases), lowercased. */

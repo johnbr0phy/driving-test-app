@@ -118,17 +118,17 @@
     "difficulty": 1,
     "format": "single",
     "skill": "LCM and HCF",
-    "stem": "What is the HCF of 96 and 156?",
+    "stem": "What is the HCF of 84 and 132?",
     "options": [
       "12",
       "24",
-      "48",
-      "1,248"
+      "42",
+      "924"
     ],
     "correct": [
       0
     ],
-    "explanation": "96 = 2⁵ × 3 and 156 = 2² × 3 × 13, so the HCF is 2² × 3 = 12. 1,248 is their LCM.",
+    "explanation": "84 = 2² × 3 × 7 and 132 = 2² × 3 × 11, so the HCF is 2² × 3 = 12. 924 is their LCM.",
     "lockedOrder": true
   },
   {
@@ -294,17 +294,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Algebra",
-    "stem": "If x + 1/x = 7, what is x² + 1/x²?",
+    "stem": "If x − 1/x = 6, what is x² + 1/x²?",
     "options": [
-      "47",
-      "49",
-      "51",
-      "53"
+      "34",
+      "36",
+      "38",
+      "40"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "Square both sides: x² + 2 + 1/x² = 49, so x² + 1/x² = 47. 51 adds the 2 instead of taking it away.",
+    "explanation": "Square both sides: x² − 2 + 1/x² = 36, so x² + 1/x² = 38. 34 takes the 2 away instead of adding it, and 36 forgets it.",
     "lockedOrder": true
   },
   {
@@ -338,17 +338,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Algebra",
-    "stem": "If a + b = 11 and ab = 24, what is a² + b²?",
+    "stem": "If a + b = 13 and ab = 40, what is a² + b²?",
     "options": [
-      "73",
-      "97",
-      "121",
-      "169"
+      "89",
+      "129",
+      "169",
+      "249"
     ],
     "correct": [
       0
     ],
-    "explanation": "a² + b² = (a + b)² − 2ab = 121 − 48 = 73. Adding 2ab instead gives 169, and 121 is just (a + b)².",
+    "explanation": "a² + b² = (a + b)² − 2ab = 169 − 80 = 89. Taking off ab only once gives 129, adding 2ab gives 249, and 169 is just (a + b)².",
     "lockedOrder": true
   },
   {
@@ -492,17 +492,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Average speed",
-    "stem": "A car goes 150 km at 50 km/h and comes back the same way at 75 km/h. What is its average speed for the round trip?",
+    "stem": "A car goes 90 km at 30 km/h and comes back the same way at 45 km/h. What is its average speed for the round trip?",
     "options": [
-      "55 km/h",
-      "60 km/h",
-      "62.5 km/h",
-      "65 km/h"
+      "36 km/h",
+      "37.5 km/h",
+      "40 km/h",
+      "42 km/h"
     ],
     "correct": [
-      1
+      0
     ],
-    "explanation": "Time = 150/50 + 150/75 = 3 + 2 = 5 h for 300 km, so 60 km/h. 62.5 km/h is the plain average of the two speeds, which is wrong when the distances are equal.",
+    "explanation": "Time = 90/30 + 90/45 = 3 + 2 = 5 h for 180 km, so 36 km/h. 37.5 km/h is the plain average of the two speeds, which is wrong when the distances are equal.",
     "lockedOrder": true
   },
   {
@@ -710,17 +710,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Number analogy",
-    "stem": "5 : 124 :: 7 : ?",
+    "stem": "6 : 215 :: 9 : ?",
     "options": [
-      "48",
-      "342",
-      "343",
-      "344"
+      "81",
+      "648",
+      "728",
+      "729"
     ],
     "correct": [
-      1
+      2
     ],
-    "explanation": "124 is 5³ − 1, so the answer is 7³ − 1 = 342. 343 forgets to subtract 1.",
+    "explanation": "215 is 6³ − 1, so the answer is 9³ − 1 = 728. 729 forgets to subtract 1, and 81 is only 9².",
     "lockedOrder": true
   },
   {
@@ -732,17 +732,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Directions",
-    "stem": "Anil faces south. He turns 135° anticlockwise and then 90° clockwise. Which direction does he face now?",
+    "stem": "Anil faces north. He turns 135° clockwise and then 90° anticlockwise. Which direction does he face now?",
     "options": [
+      "North-west",
       "South-east",
-      "North-east",
       "South-west",
-      "North-west"
+      "North-east"
     ],
     "correct": [
-      0
+      3
     ],
-    "explanation": "From south, 90° anticlockwise is east and 45° more is north-east. Turning 90° clockwise from north-east brings him to south-east."
+    "explanation": "From north, 90° clockwise is east and 45° more is south-east. Turning 90° anticlockwise from south-east brings him to north-east."
   },
   {
     "id": "RRBJE-T1-035",
@@ -774,17 +774,17 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Directions",
-    "stem": "A surveyor walks 24 km south and then 7 km west. How far is he from his starting point?",
+    "stem": "A surveyor walks 21 km south and then 20 km west. How far is he from his starting point?",
     "options": [
-      "17 km",
-      "24 km",
-      "25 km",
-      "31 km"
+      "21 km",
+      "29 km",
+      "31 km",
+      "41 km"
     ],
     "correct": [
-      2
+      1
     ],
-    "explanation": "The two legs are at right angles, so the distance is √(24² + 7²) = √625 = 25 km. 31 km is the distance walked, not the distance from the start.",
+    "explanation": "The two legs are at right angles, so the distance is √(21² + 20²) = √841 = 29 km. 41 km is the distance walked, not the distance from the start.",
     "lockedOrder": true
   },
   {
@@ -883,17 +883,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Number series",
-    "stem": "What comes next: 4, 9, 19, 39, 79, ?",
+    "stem": "What comes next: 3, 11, 35, 107, ?",
     "options": [
-      "119",
-      "158",
-      "159",
-      "160"
+      "214",
+      "321",
+      "323",
+      "325"
     ],
     "correct": [
       2
     ],
-    "explanation": "Each term is twice the one before plus 1: 4 × 2 + 1 = 9, 9 × 2 + 1 = 19, and so on, so 79 × 2 + 1 = 159.",
+    "explanation": "Each term is three times the one before plus 2: 3 × 3 + 2 = 11, 11 × 3 + 2 = 35, 35 × 3 + 2 = 107, so 107 × 3 + 2 = 323.",
     "lockedOrder": true
   },
   {
@@ -927,17 +927,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Alphabet series",
-    "stem": "What comes next: B, D, H, N, ?",
+    "stem": "What comes next: C, E, I, O, ?",
     "options": [
+      "X",
       "W",
       "U",
-      "V",
-      "T"
+      "V"
     ],
     "correct": [
-      2
+      1
     ],
-    "explanation": "The gaps grow by 2: B to D is +2, D to H +4, H to N +6, so the next is N + 8 = V."
+    "explanation": "The gaps grow by 2: C to E is +2, E to I +4, I to O +6, so the next is O + 8 = W (15 + 8 = 23)."
   },
   {
     "id": "RRBJE-T1-044",
@@ -1033,17 +1033,17 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Clock",
-    "stem": "What is the smaller angle between the hands of a clock at 9:15?",
+    "stem": "What is the smaller angle between the hands of a clock at 11:10?",
     "options": [
-      "172.5°",
-      "180°",
-      "187.5°",
-      "195°"
+      "85°",
+      "90°",
+      "95°",
+      "275°"
     ],
     "correct": [
       0
     ],
-    "explanation": "Angle = |30 × 9 − 5.5 × 15| = |270 − 82.5| = 187.5°, so the smaller angle is 360° − 187.5° = 172.5°. 180° forgets that the hour hand has moved a quarter of the way to 10.",
+    "explanation": "Angle = |30 × 11 − 5.5 × 10| = |330 − 55| = 275°, so the smaller angle is 360° − 275° = 85°. 90° forgets that the hour hand has moved a sixth of the way from 11 to 12.",
     "lockedOrder": true
   },
   {
@@ -1128,7 +1128,7 @@
       "Both I and II together are needed"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "I gives only the gap and II gives only Sunil's age. Together they give Vikram's age, 24, so both are needed.",
     "lockedOrder": true
@@ -1163,17 +1163,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Venn diagram",
-    "stem": "Of 80 workers in a workshop, 45 can weld, 38 can operate a lathe and 15 can do both. How many can do neither?",
+    "stem": "Of 90 workers in a workshop, 52 can weld, 41 can operate a lathe and 18 can do both. How many can do neither?",
     "options": [
-      "12",
       "15",
-      "27",
-      "35"
+      "33",
+      "38",
+      "49"
     ],
     "correct": [
       0
     ],
-    "explanation": "Those who can do at least one = 45 + 38 − 15 = 68, so 80 − 68 = 12 can do neither. 27 takes the 15 off twice, and 35 counts only those who cannot weld.",
+    "explanation": "Those who can do at least one = 52 + 41 − 18 = 75, so 90 − 75 = 15 can do neither. 33 takes the 18 off twice, 38 counts those who cannot weld, and 49 those who cannot work a lathe.",
     "lockedOrder": true
   },
   {
@@ -1757,17 +1757,18 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Life processes",
-    "stem": "Which blood vessel brings oxygen-rich blood from the lungs to the heart?",
+    "stem": "How many chambers does the heart of a fish have?",
     "options": [
-      "Pulmonary artery",
-      "Aorta",
-      "Vena cava",
-      "Pulmonary vein"
+      "1",
+      "2",
+      "3",
+      "4"
     ],
     "correct": [
-      3
+      1
     ],
-    "explanation": "The pulmonary veins are the only veins that carry oxygenated blood; they enter the left atrium. The pulmonary artery carries blood to the lungs."
+    "explanation": "A fish heart has one atrium and one ventricle, two chambers, and pumps blood through the gills once in each circuit. Amphibians have three chambers and birds and mammals four.",
+    "lockedOrder": true
   },
   {
     "id": "RRBJE-T1-083",
@@ -1969,17 +1970,17 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Sound",
-    "stem": "The loudness of a sound depends mainly on its:",
+    "stem": "The time a wave takes to complete one full oscillation is called its:",
     "options": [
       "Frequency",
+      "Amplitude",
       "Wavelength",
-      "Speed",
-      "Amplitude"
+      "Time period"
     ],
     "correct": [
       3
     ],
-    "explanation": "A larger amplitude means a louder sound. The frequency decides the pitch."
+    "explanation": "The time period is the time for one oscillation; the frequency is the number of oscillations each second, so frequency = 1 / time period."
   },
   {
     "id": "RRBJE-T1-093",
@@ -2011,17 +2012,17 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Health",
-    "stem": "Which disease is caused by the human immunodeficiency virus (HIV)?",
+    "stem": "Chickenpox is caused by a:",
     "options": [
-      "Polio",
-      "Tuberculosis",
-      "AIDS",
-      "Hepatitis B"
+      "Bacterium",
+      "Virus",
+      "Protozoan",
+      "Fungus"
     ],
     "correct": [
-      2
+      1
     ],
-    "explanation": "HIV weakens the immune system and causes AIDS. Tuberculosis is caused by a bacterium."
+    "explanation": "Chickenpox is caused by the varicella-zoster virus, which also causes shingles later in life."
   },
   {
     "id": "RRBJE-T1-095",
@@ -2509,17 +2510,17 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Time and work",
-    "stem": "12 men can finish a piece of work in 15 days. How many days will 20 men take?",
+    "stem": "15 men can finish a piece of work in 16 days. How many days will 24 men take?",
     "options": [
-      "9 days",
       "10 days",
       "12 days",
-      "25 days"
+      "15 days",
+      "25.6 days"
     ],
     "correct": [
       0
     ],
-    "explanation": "The work is 12 × 15 = 180 man-days, so 20 men need 180 / 20 = 9 days. 25 days comes from scaling the wrong way.",
+    "explanation": "The work is 15 × 16 = 240 man-days, so 24 men need 240 / 24 = 10 days. 25.6 days comes from scaling the wrong way.",
     "lockedOrder": true
   },
   {
@@ -3049,7 +3050,7 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Syllogism",
-    "stem": "Statements: All diesel engines are locomotives. All locomotives are vehicles. Some vehicles are old.\nConclusions: I. All diesel engines are vehicles. II. Some locomotives are old.",
+    "stem": "Statements: All diesel engines are locomotives. All locomotives are vehicles. Some vehicles are old.\nConclusions: I. All diesel engines are vehicles. II. Some vehicles are locomotives.",
     "options": [
       "Only conclusion I follows",
       "Only conclusion II follows",
@@ -3057,9 +3058,9 @@
       "Neither I nor II follows"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "Diesel engines sit inside locomotives, which sit inside vehicles, so I follows. The old vehicles may not include any locomotive, so II does not follow.",
+    "explanation": "Diesel engines sit inside locomotives, which sit inside vehicles, so I follows. Every locomotive is a vehicle, so some vehicles are locomotives and II follows too. The old vehicles say nothing either way.",
     "lockedOrder": true
   },
   {
@@ -3071,17 +3072,17 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Number series",
-    "stem": "What comes next: 2, 10, 30, 68, 130, ?",
+    "stem": "What comes next: 0, 6, 24, 60, 120, ?",
     "options": [
+      "180",
       "210",
       "216",
-      "222",
-      "228"
+      "222"
     ],
     "correct": [
-      2
+      1
     ],
-    "explanation": "The terms are n³ + n: 1 + 1, 8 + 2, 27 + 3, 64 + 4, 125 + 5. The next is 216 + 6 = 222.",
+    "explanation": "The terms are n³ − n: 1 − 1, 8 − 2, 27 − 3, 64 − 4, 125 − 5. The next is 216 − 6 = 210.",
     "lockedOrder": true
   },
   {
@@ -3456,17 +3457,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Polity",
-    "stem": "Under which Article can the President proclaim a financial emergency?",
+    "stem": "Since the 44th Amendment, the President can proclaim a national emergency under Article 352 only when the decision is communicated in writing by the:",
     "options": [
-      "Article 352",
-      "Article 360",
-      "Article 356",
-      "Article 368"
+      "Chief Election Commissioner",
+      "Union Cabinet",
+      "Chief Justice of India",
+      "Lok Sabha Speaker"
     ],
     "correct": [
       1
     ],
-    "explanation": "Article 360 covers a financial emergency. Article 352 is a national emergency, 356 President's rule in a state and 368 the amendment of the Constitution."
+    "explanation": "Article 352(3), added by the 44th Amendment (1978), lets the President proclaim a national emergency only after the Union Cabinet's decision is communicated in writing."
   },
   {
     "id": "RRBJE-T2-062",
@@ -3645,17 +3646,17 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Sports",
-    "stem": "The Ranji Trophy is India's domestic championship in which sport?",
+    "stem": "The Nehru Trophy, raced every August on Punnamada Lake in Kerala, is a contest for:",
     "options": [
-      "Cricket",
-      "Kabaddi",
-      "Hockey",
-      "Football"
+      "Bullock carts",
+      "Camel riders",
+      "Kite flyers",
+      "Snake boats"
     ],
     "correct": [
-      0
+      3
     ],
-    "explanation": "The Ranji Trophy is the first-class cricket championship between state teams. The Santosh Trophy is for football."
+    "explanation": "The Nehru Trophy Boat Race near Alappuzha is raced by long snake boats (chundan vallam), and is named after Jawaharlal Nehru, who watched a race there in 1952."
   },
   {
     "id": "RRBJE-T2-071",
@@ -3963,17 +3964,17 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Health",
-    "stem": "Dengue is spread by the bite of which mosquito?",
+    "stem": "Houseflies spread diseases such as cholera mainly by:",
     "options": [
-      "Culex",
-      "Aedes",
-      "Mansonia",
-      "Anopheles"
+      "Carrying germs from filth to food on their bodies",
+      "Laying their eggs under people's skin",
+      "Breathing out poisonous gases near food",
+      "Biting people and injecting germs into the blood"
     ],
     "correct": [
-      1
+      0
     ],
-    "explanation": "Dengue and chikungunya are spread by Aedes mosquitoes, which bite by day. Female Anopheles spread malaria."
+    "explanation": "Houseflies do not bite. They sit on faeces and garbage and then on food, carrying the germs with them, so covering food helps prevent such diseases."
   },
   {
     "id": "RRBJE-T2-086",
@@ -4454,17 +4455,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Relationships",
-    "stem": "Introducing a girl, Kabir says, \"She is the daughter of the only son of my paternal grandfather.\" How is the girl related to Kabir?",
+    "stem": "Pointing to a boy, Kabir says, \"His mother's brother is my father.\" How is the boy related to Kabir?",
     "options": [
-      "Niece",
-      "Cousin",
-      "Sister",
-      "Daughter"
+      "Uncle",
+      "Brother",
+      "Nephew",
+      "Cousin"
     ],
     "correct": [
-      2
+      3
     ],
-    "explanation": "The only son of Kabir's paternal grandfather is Kabir's father, so the girl is his father's daughter: his sister."
+    "explanation": "The boy's mother is the sister of Kabir's father, Kabir's aunt, so the boy is the son of Kabir's aunt: his cousin."
   },
   {
     "id": "RRBJE-D-009",
@@ -4475,17 +4476,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Alphabet series",
-    "stem": "What comes next: Z, W, S, N, ?",
+    "stem": "What comes next: Y, U, P, J, ?",
     "options": [
-      "J",
-      "G",
-      "I",
-      "H"
+      "E",
+      "C",
+      "D",
+      "B"
     ],
     "correct": [
-      3
+      1
     ],
-    "explanation": "The letters step back by 3, 4, 5 and then 6: Z, W, S, N, then N − 6 = H."
+    "explanation": "The letters step back by 4, 5, 6 and then 7: Y (25), U (21), P (16), J (10), then 10 − 7 = 3, which is C."
   },
   {
     "id": "RRBJE-D-010",
@@ -4539,7 +4540,7 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Conclusions",
-    "stem": "Statement: The new timetable adds three more trains between two cities.\nConclusions: I. More passengers are expected on this route. II. The older trains on the route will be withdrawn.",
+    "stem": "Statement: The new timetable adds three more trains between two cities.\nConclusions: I. Every seat on the new trains will be booked. II. The older trains on the route will be withdrawn.",
     "options": [
       "Only conclusion I follows",
       "Only conclusion II follows",
@@ -4547,9 +4548,9 @@
       "Neither I nor II follows"
     ],
     "correct": [
-      0
+      3
     ],
-    "explanation": "Adding trains suggests the railway expects demand to grow (I). Nothing in the statement says any train is being removed (II).",
+    "explanation": "Adding trains suggests more demand, but not that every seat will be filled (I is too strong). Nothing in the statement says any train is being removed (II).",
     "lockedOrder": true
   },
   {

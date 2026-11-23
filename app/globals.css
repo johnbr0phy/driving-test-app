@@ -13405,8 +13405,8 @@
     --brand-darker: 284 75% 78%;
   }
   .dark [data-theme="snowpro"] {
-    --brand: 186 60% 50%;
-    --brand-hover: 186 60% 42%;
+    --brand: 186 60% 34%;
+    --brand-hover: 186 60% 28%;
     --brand-light: 186 40% 13%;
     --brand-gradient-to: 0 0% 11%;
     --brand-border-light: 186 30% 24%;

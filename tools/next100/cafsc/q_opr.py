@@ -79,7 +79,7 @@ Q = [
     ("What does muzzle awareness mean in the study guide?",
      "Pointed safely, often down", ["Wiping the muzzle clean", "Capping the muzzle on storage", "Muzzle toward the target"],
      "Muzzle awareness means keeping the firearm pointed in a safe direction, preferably down at the ground."),
-    ("What is the chamber of a firearm?",
+    ("Which description fits the chamber, as the study guide's glossary uses the word?",
      "Rear of the barrel, holding the round", ["Front opening where the bullet exits", "Opening that holds the magazine", "Space under the hammer spur"],
      "The glossary defines the chamber as the rear part of the barrel where the cartridge sits when the firearm is loaded."),
     ("What is a dummy round, as used in a California safe handling demonstration?",

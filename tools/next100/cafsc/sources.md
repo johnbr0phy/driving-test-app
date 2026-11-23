@@ -71,7 +71,9 @@ items in the guide were read only to see which topics it treats as testable and 
   The site returned 403 to automated fetches and would not render in the browser tool, so the
   statute text itself could not be read. Every legal rule in the bank is the DOJ's own summary in
   the 2025 study guide, which is what the written test is built on, and the explanations cite the
-  Penal Code section the guide gives.
+  Penal Code section the guide gives. Retried 2026-11-22 at the review: Penal Code 25145 and the
+  AB 53 bill text in Chrome (blank page) and by fetch (403); the study guide's AB 53 section
+  (pages 38 to 39) quotes the 25145 definition of securely stored and was used instead.
 
 ## Left out on purpose
 

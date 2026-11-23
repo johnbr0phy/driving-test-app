@@ -2,8 +2,8 @@ SEG = "RUL"
 CAT = "cafscRules"
 
 Q = [
-    ("A friend hands you a pistol and says it is unloaded. What should you do?",
-     "Check it yourself", ["Take their word for it", "Dry fire it once", "Look down the barrel"],
+    ("Your uncle passes you his shotgun and tells you it is empty. Under rule 1 you should:",
+     "Check it yourself", ["Take his word for it", "Dry fire it once", "Look down the barrel"],
      "The first rule is to treat every firearm as loaded, and the study guide says to check that it is unloaded every time it is handled for any reason."),
     ("You find a firearm you do not know how to check. What does the study guide say to do?",
      "Leave it, get help", ["Pull the trigger to test", "Shake it to listen", "Open it by force"],
@@ -11,7 +11,7 @@ Q = [
     ("Under the safety rules, a safe direction is one where an accidental discharge would:",
      "Cause no injury or damage", ["Hit only the open ground", "Stay inside the same room", "Strike a wall or a floor"],
      "The guide defines a safe direction as one where an accidental discharge will not cause injury or damage. The ground or a wall is safe only if that holds."),
-    ("Where should your trigger finger rest until you are ready to shoot?",
+    ("At the range you are aiming at the target but have not decided to fire yet. Where should your trigger finger be?",
      "Outside the trigger guard", ["Resting lightly on the trigger", "Inside the trigger guard", "On the magazine release"],
      "Rule 3 says to keep your finger off the trigger and outside the trigger guard until you are ready to shoot, even when resting it on the trigger feels comfortable."),
     ("Why can a sudden loud noise cause an accidental discharge?",

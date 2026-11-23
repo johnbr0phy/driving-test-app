@@ -598,7 +598,7 @@
     "skill": "Resource request",
     "stem": "You arrive alone to find a bus on its side with many people injured. What is your first action?",
     "options": [
-      "Call for more resources",
+      "Request more resources",
       "Splint the closest open fracture",
       "Help the walking patients leave",
       "Begin CPR on the first patient"
@@ -2042,7 +2042,7 @@
     "stem": "While you assess a patient, a family member grows angry and picks up a kitchen knife. What should you do?",
     "options": [
       "Ask him to put the knife away in a kitchen drawer",
-      "Leave with your partner and call police",
+      "Leave the scene and contact police",
       "Take the knife away",
       "Keep treating and ignore him"
     ],
@@ -2387,7 +2387,7 @@
       "Borrow from the ambulance later",
       "Use bare hands on the next call",
       "Wait until the weekly equipment check",
-      "Restock before the next call"
+      "Restock it now"
     ],
     "correct": [
       3
@@ -3030,7 +3030,7 @@
       "Give him oral glucose gel between cheek and gum",
       "Check his blood sugar with his own meter",
       "Inject his own insulin",
-      "Protect his airway and call for EMS"
+      "Protect his airway and get EMS coming"
     ],
     "correct": [
       3
@@ -3386,7 +3386,7 @@
     "options": [
       "Cut the cord at once",
       "Pull the baby out quickly by the shoulders",
-      "Call for higher-level help",
+      "Get higher-level help coming now",
       "Push the cord back in yourself"
     ],
     "correct": [
@@ -3824,7 +3824,7 @@
     "correct": [
       1
     ],
-    "explanation": "Venom keeps entering while the stinger stays in, so remove it fast by scraping or pulling; speed matters more than the method. Then watch for an allergic reaction."
+    "explanation": "A stinger left in place can keep delivering venom, so remove it promptly without squeezing the venom sac. Then watch for an allergic reaction."
   },
   {
     "id": "EMR-D-055",
@@ -3838,7 +3838,7 @@
     "stem": "A worker has collapsed at the bottom of a sewer access hole. What should you do?",
     "options": [
       "Climb down quickly to check his pulse",
-      "Stay out and call a rescue team",
+      "Stay out and summon a rescue team",
       "Lower a rope and pull him up",
       "Send a coworker down a ladder to help"
     ],
@@ -4375,7 +4375,7 @@
     "stem": "Your oxygen cylinder gauge reads very low after a call. What should you do?",
     "options": [
       "Store it with the full cylinders for later",
-      "Replace it before the next call",
+      "Swap it for a full one now",
       "Keep using it until it is empty",
       "Mark it full to save time"
     ],

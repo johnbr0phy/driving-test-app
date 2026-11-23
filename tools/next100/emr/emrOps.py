@@ -45,7 +45,7 @@ ITEMS = [
       ["Incident commander", "Triage officer", "Logistics", "Public information officer"], [0, 1, 2, 3],
       "The incident commander leads and sets objectives, triage sorts patients, logistics finds supplies and equipment, and the public information officer speaks to the media."),
     S(2, 2, "Supply inventory", "After a call you used the last two pairs of gloves in your kit. What should you do?",
-      ["Restock before the next call", "Wait until the weekly equipment check", "Borrow from the ambulance later", "Use bare hands on the next call"],
+      ["Restock it now", "Wait until the weekly equipment check", "Borrow from the ambulance later", "Use bare hands on the next call"],
       "Restock right after a call so the next patient does not meet an empty kit. Ensuring enough supplies is part of an EMR's job."),
     S(2, 3, "Mandatory reporting", "While treating a child, you notice bruises of different ages and an unlikely story. What should you do?",
       ["Report your concern as your state requires", "Accuse the parents on scene and leave with the child", "Ignore it, since you are not a police officer", "Ask the child to keep it a secret from the parents"],
@@ -91,6 +91,6 @@ ITEMS = [
       ["Follow the order and your local protocol", "Start CPR anyway every time", "Ignore it unless a doctor is present on scene", "Ask a bystander at the scene to decide for you"],
       "A valid DNR order or similar form tells you the patient's wishes. Follow it as your state and local protocols direct; if you doubt it is valid, begin care and seek medical direction."),
     S(0, 2, "Restocking oxygen", "Your oxygen cylinder gauge reads very low after a call. What should you do?",
-      ["Replace it before the next call", "Keep using it until it is empty", "Store it with the full cylinders for later", "Mark it full to save time"],
+      ["Swap it for a full one now", "Keep using it until it is empty", "Store it with the full cylinders for later", "Mark it full to save time"],
       "Replace a low cylinder right away and mark the empty one so it is not grabbed by mistake. A cylinder that runs out mid-call puts the patient at risk."),
 ]

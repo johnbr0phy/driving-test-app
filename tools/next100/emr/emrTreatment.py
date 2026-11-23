@@ -121,7 +121,7 @@ ITEMS = [
       ["Ventilate with a newborn-sized BVM", "Hold the baby upside down by the feet", "Slap the baby's feet hard", "Wait 5 minutes for crying to start"],
       "If drying and stimulation do not start good breathing, ventilations with a BVM sized for a newborn are the next step. Most newborns who need help need breathing support."),
     S(0, 3, "Complicated delivery", "During a delivery, a loop of umbilical cord comes out before the baby. Under the national model, what is your role?",
-      ["Call for higher-level help", "Push the cord back in yourself", "Pull the baby out quickly by the shoulders", "Cut the cord at once"],
+      ["Get higher-level help coming now", "Push the cord back in yourself", "Pull the baby out quickly by the shoulders", "Cut the cord at once"],
       "Assisted complicated delivery is listed at the EMT level and above in the national model. Get the highest level of care coming now and help them; a prolapsed cord needs urgent hospital care."),
     S(0, 2, "Splinting", "A bone end is poking through the skin of the shin. How should you handle the wound?",
       ["Cover it with a sterile dressing and splint", "Push the bone back under the skin, then bandage", "Rinse the bone with soap", "Leave it open to the air"],

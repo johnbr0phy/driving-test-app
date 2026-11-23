@@ -39,7 +39,7 @@ ITEMS = [
       ["They hint at the patient's illnesses", "So you can give the patient a dose of each one", "To decide whether to wear gloves", "To check the patient's insurance before transport"],
       "A list of medicines tells you about conditions the patient may not mention, such as heart failure or diabetes. EMRs do not give the patient's own prescriptions."),
     S(0, 2, "Diabetic emergency", "A diabetic man is sweaty, shaky and confused. Under the national scope model, what can an EMR do?",
-      ["Protect his airway and call for EMS", "Check his blood sugar with his own meter", "Give him oral glucose gel between cheek and gum", "Inject his own insulin"],
+      ["Protect his airway and get EMS coming", "Check his blood sugar with his own meter", "Give him oral glucose gel between cheek and gum", "Inject his own insulin"],
       "Blood glucose checks and oral glucose are EMT-level skills in the national model. An EMR keeps him safe, protects the airway, gathers the history and gets EMS on the way. State protocols may add more."),
     S(0, 2, "Reassessment", "You placed a splint on a forearm. What must you recheck after it is on?",
       ["Pulse, movement and feeling in the hand", "The patient's blood type", "Lung sounds on both sides of the chest", "The patient's pupils only"],

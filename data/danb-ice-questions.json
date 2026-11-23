@@ -494,14 +494,14 @@
     "state": "ALL",
     "questionId": "DICE-HPE-016",
     "category": "iceHandPpe",
-    "question": "Which device removes the most aerosol at the source during handpiece use?",
-    "optionA": "Low-volume saliva ejector",
+    "question": "Which device best cuts spatter and aerosol during handpiece use?",
+    "optionA": "Air/water syringe",
     "optionB": "High-volume evacuator",
-    "optionC": "Air/water syringe",
-    "optionD": "Cotton roll",
+    "optionC": "Cotton roll",
+    "optionD": "Low-volume saliva ejector",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "High-volume evacuation, with a dental dam, keeps aerosol and spatter down; a saliva ejector moves too little air."
+    "explanation": "The CDC names high-volume evacuation, with a dental dam, as the way to minimize spatter and aerosol; a saliva ejector moves too little air."
   },
   {
     "type": "DANBICE",
@@ -830,14 +830,14 @@
     "state": "ALL",
     "questionId": "DICE-SRF-020",
     "category": "iceSurfaces",
-    "question": "How is a curing light used during treatment best protected?",
-    "optionA": "No protection is needed",
+    "question": "How is a curing light wand usually protected during treatment?",
+    "optionA": "Heat sterilized as a whole",
     "optionB": "Barrier sleeve on the wand",
-    "optionC": "Heat sterilized as a whole",
-    "optionD": "Soaked in a disinfectant",
+    "optionC": "Soaked in a disinfectant",
+    "optionD": "No protection is needed",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Electronic devices that cannot be immersed or heated are covered with a barrier and the barrier is changed between patients."
+    "explanation": "Equipment that cannot be immersed or heated is covered with a surface barrier that is changed between patients, as the CDC advises for hard-to-clean items."
   },
   {
     "type": "DANBICE",
@@ -900,11 +900,11 @@
     "state": "ALL",
     "questionId": "DICE-SRF-025",
     "category": "iceSurfaces",
-    "question": "An intraoral camera handpiece cannot be sterilized. How is it protected?",
-    "optionA": "Nothing; it is noncritical",
-    "optionB": "A rinse with tap water",
-    "optionC": "A cleared barrier sleeve",
-    "optionD": "A wipe with hand sanitizer",
+    "question": "An intraoral camera cannot be sterilized. What does the CDC advise at a minimum?",
+    "optionA": "A rinse with tap water",
+    "optionB": "A wipe with hand sanitizer",
+    "optionC": "Barrier, then disinfection",
+    "optionD": "Nothing; it is noncritical",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "Semicritical devices that cannot be heated are covered with an FDA-cleared barrier, then cleaned and disinfected after use."
@@ -1432,14 +1432,14 @@
     "state": "ALL",
     "questionId": "DICE-LAB-015",
     "category": "iceLabWaste",
-    "question": "An extracted tooth with an amalgam filling goes in which waste stream?",
-    "optionA": "Down the nearest sink drain",
-    "optionB": "Red bag sent for incineration",
-    "optionC": "Not one that is incinerated",
-    "optionD": "Household trash bin",
+    "question": "An extracted tooth with an amalgam filling is discarded. Where must it never go?",
+    "optionA": "A container per state rules",
+    "optionB": "A metal recycling service",
+    "optionC": "Red bag sent for incineration",
+    "optionD": "A sealed amalgam recycler",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Teeth with amalgam should not go in a medical waste container that is incinerated, because of mercury vapor."
+    "explanation": "Teeth with amalgam should not go in a medical waste container that is incinerated, because of mercury vapor; the CDC points to state and local rules and amalgam or metal recyclers."
   },
   {
     "type": "DANBICE",
@@ -1547,11 +1547,11 @@
     "question": "Instruments cannot be cleaned right away. What keeps debris from drying on them?",
     "optionA": "Wrapped in damp gauze",
     "optionB": "A detergent or enzyme soak",
-    "optionC": "A glutaraldehyde soak",
+    "optionC": "A dry towel cover",
     "optionD": "Left dry until later",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A puncture-resistant container with detergent or enzymatic cleaner keeps material moist; a sterilant is not a holding solution."
+    "explanation": "A puncture-resistant container with detergent, disinfectant/detergent or enzymatic cleaner keeps material moist."
   },
   {
     "type": "DANBICE",
@@ -1574,12 +1574,12 @@
     "category": "iceProcessing",
     "question": "Why is an ultrasonic cleaner or washer preferred over hand scrubbing?",
     "optionA": "It needs no rinse after",
-    "optionB": "Less contact with sharps",
+    "optionB": "Less exposure to blood",
     "optionC": "It sterilizes the load",
     "optionD": "It uses no chemicals",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Automated cleaning improves effectiveness and lowers worker exposure to blood and sharp instruments."
+    "explanation": "The CDC says automated cleaning improves effectiveness and decreases worker exposure to blood and body fluids."
   },
   {
     "type": "DANBICE",

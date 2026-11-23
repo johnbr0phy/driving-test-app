@@ -1,8 +1,8 @@
 CAT = "s24Discipline"; SEG = "DIS"
 Q = [
-('A firm learns that one of its representatives was indicted on a felony charge. Rule 4530 requires the firm to report it to FINRA within:',
- '30 calendar days after it knew or should have known', ['24 hours after the firm first learns of the felony charge', '10 business days after the trial has ended', "The firm's next quarterly statistical report"],
- 'Rule 4530(a) requires reporting of listed events, including felony indictments, promptly and in any event within 30 calendar days after the member knows or should have known of them.'),
+("A firm's own review concludes that a representative's misconduct violated securities rules and had widespread effect. Under Rule 4530(b) the firm must:",
+ 'Report it to FINRA within 30 calendar days', ['Report it only if a customer complains', 'Wait for FINRA to discover it on exam', 'Report it with the year-end audit'],
+ 'Rule 4530(b) requires a member to report, within 30 calendar days after it concludes or reasonably should have concluded, that it or an associated person violated securities laws or rules; Supplementary Material .01 limits this to conduct with widespread or potential widespread impact or other significant conduct.'),
 ('A customer sends a written complaint alleging that her representative forged her signature on a withdrawal form for $900. The firm must:',
  'Report it under Rule 4530 regardless of the amount', ['Report it only if the loss is over $5,000', 'Resolve it before deciding whether to report', 'Report it only if the customer files for arbitration'],
  'Rule 4530(a)(1)(B) requires reporting any written customer complaint alleging theft, misappropriation or forgery. No dollar threshold applies to that trigger.'),

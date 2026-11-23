@@ -273,6 +273,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   inbde: { title: "INBDE Dental Boards", description: "Practice the ten Foundation Knowledge areas with written patient cases, from anatomy to pharmacology and ethics." },
   nbdhe: { title: "NBDHE Dental Hygiene Boards", description: "Review sciences, assessment, radiography, periodontics, preventive care and patient cases." },
   nptepta: { title: "NPTE-PTA Exam", description: "Review musculoskeletal, neuromuscular and cardiopulmonary care, modalities and PTA scope." },
+  eppp: { title: "EPPP Part 1 (Psychology Licensing)", description: "Practice all eight EPPP content areas, from biological bases and assessment to treatment, research and ethics." },
   aswbclin: { title: "ASWB Clinical Exam (LCSW)", description: "Review clinical ethics, DSM-5-TR diagnosis, treatment planning and evidence-based therapies." },
   phr: { title: "HRCI PHR Exam", description: "Practice HR law, talent acquisition, total rewards, employee relations and HR metrics." },
   fortigate: { title: "NSE 4 FortiOS Administrator", description: "Practice FortiGate setup, HA, firewall policies and NAT, security profiles, SSL inspection, SD-WAN and IPsec VPN." },

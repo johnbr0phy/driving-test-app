@@ -636,6 +636,22 @@
       "source": "https://www.gov.wales/help-buy-wales/eligibility"
     },
     {
+      "exam": "eppp",
+      "date": "2027-10-01",
+      "kind": "format",
+      "what": "ASPPB plans to make the integrated EPPP operational in the fourth quarter of 2027; Part 1 closes to first-time takers then and to all candidates on April 1, 2028 (EPPP Candidate Handbook, November 2026).",
+      "action": "Check asppb.net for the launch date and the integrated EPPP blueprint; decide whether to rebuild the bank on the six-domain integrated outline or retire it after March 31, 2028; update the landing and examFacts.",
+      "source": "https://asppb.net/exams/asppb-examination-for-professional-psychology-eppp/eppp-handbook/"
+    },
+    {
+      "exam": "eppp",
+      "date": "2027-03-01",
+      "kind": "law",
+      "what": "APA's DSM page says revised DSM-5-TR criteria and text are expected in early 2027; APA's Ethics Code Task Force is also revising the Ethics Code.",
+      "action": "Check psychiatry.org for DSM criteria changes and apa.org/ethics for an adopted code; fix any affected assessment, diagnosis and ethics items and the standard numbers cited in explanations.",
+      "source": "https://www.psychiatry.org/psychiatrists/practice/dsm"
+    },
+    {
       "exam": "nlvca",
       "date": "2027-09-01",
       "kind": "outline",

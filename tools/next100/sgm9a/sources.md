@@ -130,3 +130,14 @@ sites turned up by search were not opened).
 - Generic ILP and life insurance topics that belong to M9 (`sgm9`) and FAA-N16 advice process
   details that belong to RES5 (`sgm5`).
 - Any figure that changes often (SDIC limits, rate levels).
+
+## Originality and repeat checks (2026-11-23)
+- SCI publishes no M9A question catalogue or sample paper, so there was no official list to run a
+  similarity check against. Unofficial practice banks (ProProfs, open-exam-prep) turned up in a
+  search and were not opened.
+- Every item was scanned against all 101,000 v1 questions in `data/*.json` and the in-progress
+  `sgm9` sources (stem word overlap over 0.45, or over 0.18 with the same key). Seven items close to
+  `cfa-level-1` and `sie` (margin call, option buyer's maximum loss, unlimited loss, call profit,
+  time value, CDS protection buyer and seller) were rewritten with new angles and numbers.
+- Topics `sgm9` asks (capital guaranteed redemption at maturity, the CIS Code as the ILP
+  investment guidelines, dealing frequency, suspension, redemption deadlines) are left out here.

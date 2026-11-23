@@ -23,7 +23,7 @@ ITEMS = [
     # ---------- Practice Test 2 ----------
     S(2, 2, "Overbanking tendency", "In a steep turn, why must you usually hold some aileron against the bank?",
       ["The outer wing travels faster and makes more lift, so the bank tends to steepen", "The inner wing travels faster and makes more lift, so the bank tends to steepen", "Adverse yaw from the rudder rolls the airplane out"],
-      "In bank angles above about 30 degrees the outside wing moves faster through the air and produces more lift, so the airplane tends to overbank (AFH chapter 3)."),
+      "In steep turns, above about 45 degrees of bank, the outside wing moves faster through the air and produces more lift, so the airplane tends to keep rolling into the turn (AFH chapter 3)."),
     S(2, 2, "Center of gravity", "How does an aft center of gravity affect an airplane compared with a forward one?",
       ["It is less stable and harder to recover from a stall or spin", "It is more stable, with a higher stall speed and better spin recovery", "It needs more elevator force to raise the nose"],
       "An aft CG means less tail down force, a slightly lower stall speed and higher cruise speed, but weaker longitudinal stability and harder stall and spin recovery (PHAK chapter 10)."),

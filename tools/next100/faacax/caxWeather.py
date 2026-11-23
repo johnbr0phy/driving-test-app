@@ -26,7 +26,7 @@ ITEMS = [
       "Entering a microburst gives a performance-increasing headwind, then the core downdraft, then a tailwind that cuts airspeed. Downdrafts can reach about 6,000 feet per minute (AIM 7-1-24)."),
     S(2, 2, "Mountain flying", "In mountain winds, how should you approach a ridge?",
       ["At about a 45 degree angle, so you can turn away easily", "Straight at it, so you cross in the shortest time", "Parallel to it on the downwind side"],
-      "Crossing a ridge at an angle of about 45 degrees lets you turn away quickly toward lower terrain if downdrafts are stronger than expected (FAA mountain flying guidance, PHAK chapter 12)."),
+      "Crossing a ridge at an angle of about 45 degrees lets you turn away quickly toward lower terrain if downdrafts are stronger than expected (FAA Tips on Mountain Flying, FAA-P-8740-60)."),
     S(2, 2, "Frost", "Why must frost be removed from the wings before takeoff?",
       ["It disrupts airflow and can raise the stall speed and cut lift", "It adds so much weight the airplane exceeds maximum takeoff weight", "It blocks the static ports and stops the airspeed indicator"],
       "Even a thin layer of frost roughens the wing surface, spoiling the airflow. That reduces lift and increases drag and stall speed. 14 CFR 91.527 and AC 91-74 say to remove it before flight."),

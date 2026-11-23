@@ -1057,7 +1057,7 @@
     "correct": [
       0
     ],
-    "explanation": "In bank angles above about 30 degrees the outside wing moves faster through the air and produces more lift, so the airplane tends to overbank (AFH chapter 3)."
+    "explanation": "In steep turns, above about 45 degrees of bank, the outside wing moves faster through the air and produces more lift, so the airplane tends to keep rolling into the turn (AFH chapter 3)."
   },
   {
     "id": "FAACAX-T2-004",
@@ -1217,7 +1217,7 @@
     "correct": [
       1
     ],
-    "explanation": "Crossing a ridge at an angle of about 45 degrees lets you turn away quickly toward lower terrain if downdrafts are stronger than expected (FAA mountain flying guidance, PHAK chapter 12)."
+    "explanation": "Crossing a ridge at an angle of about 45 degrees lets you turn away quickly toward lower terrain if downdrafts are stronger than expected (FAA Tips on Mountain Flying, FAA-P-8740-60)."
   },
   {
     "id": "FAACAX-T2-012",

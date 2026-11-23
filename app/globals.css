@@ -5840,6 +5840,20 @@
     --brand-gradient-to: 120 50% 95%;
   }
 
+  /* BC Serving It Right theme: dusty plum */
+  [data-theme="servingitright"] {
+    --brand: 290 15% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 290 20% 95%;
+    --brand-hover: 290 15% 26%;
+    --brand-dark: 290 15% 20%;
+    --brand-darker: 290 15% 14%;
+    --brand-muted: 290 12% 70%;
+    --brand-border: 290 12% 80%;
+    --brand-border-light: 290 12% 89%;
+    --brand-gradient-to: 330 25% 95%;
+  }
+
   [data-theme="proserve"] {
     --brand: 126 55% 18%;
     --brand-foreground: 0 0% 100%;
@@ -12464,6 +12478,18 @@
     --brand-muted: 105 25% 45%;
     --brand-dark: 105 75% 65%;
     --brand-darker: 105 70% 78%;
+  }
+
+  .dark [data-theme="servingitright"] {
+    --brand: 290 15% 49.1%;
+    --brand-hover: 290 15% 41.1%;
+    --brand-light: 290 20% 13%;
+    --brand-gradient-to: 330 25% 11%;
+    --brand-border-light: 290 12% 24%;
+    --brand-border: 290 12% 34%;
+    --brand-muted: 290 12% 45%;
+    --brand-dark: 290 15% 65%;
+    --brand-darker: 290 15% 78%;
   }
 
   .dark [data-theme="proserve"] {

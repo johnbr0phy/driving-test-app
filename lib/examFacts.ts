@@ -3580,6 +3580,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "NFPA 1010 (2024 edition) and state fire certification guidance, checked October 2026",
     source: { name: "NFPA 1010: Standard on Professional Qualifications for Firefighters", url: "https://www.nfpa.org/codes-and-standards/nfpa-1010-standard-development/1010" },
   },
+  servingitright: {
+    answer:
+      "Serving It Right is British Columbia's mandatory responsible beverage service program, run online by Responsible Service BC for the Province, with the Liquor and Cannabis Regulation Branch as regulator. The Liquor Control and Licensing Act and Regulation bar anyone from selling, serving or supervising liquor service without it, and Responsible Service BC says licensees, managers, servers and retail liquor store workers need it. The course is free and self-paced, about 4 hours, in English only. The exam is 35 randomly generated multiple-choice questions, untimed, with 80% (28 correct) to pass and three attempts per purchase. The certificate expires five years after completion.",
+    rows: [
+      { label: "Run by", value: "Responsible Service BC (Province of BC)" },
+      { label: "Who needs it", value: "Licensees, managers, servers, liquor store staff" },
+      { label: "Questions", value: "35, multiple choice" },
+      { label: "Pass mark", value: "80% (28 of 35)" },
+      { label: "Time limit", value: "None" },
+      { label: "Attempts", value: "Three per exam purchase" },
+      { label: "Language", value: "English" },
+      { label: "Certificate", value: "Expires five years after completion" },
+    ],
+    basedOn: "Responsible Service BC's Serving It Right FAQs and course page, and the Liquor Control and Licensing Regulation s. 184, checked November 2026",
+    source: { name: "Responsible Service BC: Serving It Right FAQs", url: "https://www.responsibleservicebc.gov.bc.ca/serving-it-right-faqs" },
+  },
   proserve: {
     answer:
       "ProServe is Alberta's responsible liquor service and sales program, run by Alberta Gaming, Liquor and Cannabis (AGLC). Anyone who sells or serves liquor, or provides security, at Class A, B, D, E, F or Duty-Free licensed premises must hold it, along with listed roles at public special events and liquor agency sampling staff. New hires must be certified within 30 days of starting. The online course ends with an exam that needs at least 80% to pass, with five attempts per registration; the certificate lasts five years from completion.",

@@ -331,6 +331,7 @@ import "./cpabar";
 import "./cpaisc";
 import "./dispatcher";
 import "./proserve";
+import "./servingitright";
 import "./ctec";
 import "./ea1";
 import "./nzboat";

@@ -1470,5 +1470,13 @@
       "pr": 970,
       "findings": 3
     }
+  ],
+  "ukdrone": [
+    {
+      "date": "2026-11-22",
+      "kind": "blind review at build",
+      "pr": 0,
+      "findings": 5
+    }
   ]
 }

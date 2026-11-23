@@ -1656,13 +1656,13 @@
     "skill": "Networking",
     "difficulty": 2,
     "format": "single",
-    "stem": "A company needs a private, consistent-bandwidth link from its data center to the cloud that does not cross the public internet. What should it order?",
+    "stem": "Nightly replication over a site-to-site VPN to the cloud runs at a different speed every night because the tunnel crosses the internet. What gives the data center steady bandwidth to the provider instead?",
     "explanation": "A dedicated connection is a private circuit to the provider. A VPN is encrypted but still rides the public internet.",
     "options": [
+      "A second VPN tunnel over the same internet link",
       "A content delivery network",
-      "A site-to-site VPN",
       "A dedicated connection",
-      "A public IP address"
+      "A larger public IP address block"
     ],
     "correct": [
       2
@@ -3267,16 +3267,16 @@
     "skill": "Security controls",
     "difficulty": 3,
     "format": "single",
-    "stem": "Which control filters traffic at the virtual NIC or subnet with port and address rules, and is stateful, so return traffic is allowed automatically?",
-    "explanation": "Security groups are stateful packet filters attached to instances or subnets.",
+    "stem": "Which cloud control allows or denies traffic to a VM's network interface or a subnet by protocol, port and source address, and remembers connections so reply traffic is let back in?",
+    "explanation": "A network security group (called a security group or firewall rule set by different providers) is a stateful packet filter on a VM's interface or a subnet. A WAF inspects HTTP content, DLP watches data leaving, and endpoint antivirus runs on the machine itself.",
     "options": [
-      "Data loss prevention",
       "Web application firewall",
       "Network security group",
-      "Endpoint antivirus"
+      "Endpoint antivirus",
+      "Data loss prevention"
     ],
     "correct": [
-      2
+      1
     ]
   },
   {

@@ -57,7 +57,7 @@ ITEMS = [
     S(2, 1, "PPE choice", "What PPE do you need to take a pulse on a calm patient with intact skin and no fluids present?",
       ["Gloves", "Gloves and a gown", "Gloves and a respirator", "A full face shield and gown"],
       "Gloves are the basic standard precaution for patient contact. Eye protection, gowns and respirators are added when splashes, heavy contamination or airborne disease are expected."),
-    S(2, 2, "Dispatch information", "Dispatch sends you to an unresponsive 2-year-old found in a backyard pool. What should you plan on the way?",
+    S(2, 2, "Dispatch information", "Dispatch sends you to an unresponsive 2-year-old pulled from a bathtub. What should you plan on the way?",
       ["Airway and breathing support right away", "Splinting both legs before any other care", "A long, slow search of the yard for other patients", "A slow, detailed history from the parents first"],
       "A child pulled from water needs immediate airway and breathing care, since drowning causes arrest through lack of oxygen. Ready your ventilation equipment and plan to start rescue breaths early."),
     M(2, 2, "Resource request", "Which findings should prompt a request for advanced life support? Select two.",

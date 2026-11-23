@@ -78,7 +78,7 @@ ITEMS = [
       "Leave an impaled object in place, since it may be plugging a bleeding vessel. Pad around it to keep it from moving and control bleeding around it. Removal happens at the hospital, except an object blocking the airway or CPR."),
     # ---------- Drill only ----------
     S(0, 2, "Pulse rate", "Which resting pulse is within the normal range for an adult?",
-      ["72 a minute", "40 a minute", "130 a minute", "150 a minute"],
+      ["72 a minute", "112 a minute", "130 a minute", "150 a minute"],
       "A normal adult resting pulse is about 60 to 100, so 72 is normal. Children and infants have faster normal rates."),
     S(0, 2, "Pediatric shock", "Which sign of shock in a child tends to appear last?",
       ["A falling blood pressure", "A fast heart rate that keeps climbing", "Cool hands and feet with mottled skin", "Slow capillary refill in the fingertips"],

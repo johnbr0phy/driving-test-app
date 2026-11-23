@@ -1653,15 +1653,15 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Dispatch information",
-    "stem": "Dispatch sends you to an unresponsive 2-year-old found in a backyard pool. What should you plan on the way?",
+    "stem": "Dispatch sends you to an unresponsive 2-year-old pulled from a bathtub. What should you plan on the way?",
     "options": [
-      "Airway and breathing support right away",
-      "Splinting both legs before any other care",
       "A slow, detailed history from the parents first",
+      "Splinting both legs before any other care",
+      "Airway and breathing support right away",
       "A long, slow search of the yard for other patients"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "A child pulled from water needs immediate airway and breathing care, since drowning causes arrest through lack of oxygen. Ready your ventilation equipment and plan to start rescue breaths early."
   },
@@ -2795,13 +2795,13 @@
     "skill": "Pulse rate",
     "stem": "Which resting pulse is within the normal range for an adult?",
     "options": [
-      "40 a minute",
       "72 a minute",
+      "112 a minute",
       "130 a minute",
       "150 a minute"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "A normal adult resting pulse is about 60 to 100, so 72 is normal. Children and infants have faster normal rates.",
     "lockedOrder": true
@@ -2962,17 +2962,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "AED pads",
-    "stem": "A patient in arrest has a hairy, wet chest. What should you do before placing AED pads?",
+    "stem": "The AED keeps saying check pads because a man's thick chest hair stops them sticking. What should you do?",
     "options": [
-      "Dry the chest and remove hair if needed",
-      "Place the pads over a shirt",
-      "Rub lotion on the skin so the pads slide",
-      "Place the pads on the belly, below the wet skin"
+      "Remove the hair, then use new pads",
+      "Stop and continue CPR without the AED",
+      "Move the pads onto his belly",
+      "Press the pads harder and keep going"
     ],
     "correct": [
       0
     ],
-    "explanation": "Pads need full skin contact. Wipe the chest dry and shave or pull away hair under the pads, using a spare set if needed."
+    "explanation": "Pads need skin contact. Shave quickly where the pads go, or pull the first set off to strip the hair and place a spare set. Keep pauses in compressions short."
   },
   {
     "id": "EMR-D-015",
@@ -3743,17 +3743,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Behavioral emergency",
-    "stem": "An agitated patient is pacing and shouting but not violent. What is the best approach?",
+    "stem": "Under the national model, which response to a combative patient is outside EMR scope?",
     "options": [
-      "Speak calmly and keep a clear exit",
-      "Argue with him until he calms down and sits",
-      "Restrain him at once with a sheet and tape",
-      "Stand between him and the door to keep him in"
+      "Leaving to a safe distance",
+      "Mechanical restraint",
+      "Talking in a calm voice",
+      "Calling law enforcement"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "Stay calm, use a quiet voice, keep a safe distance and never block your own way out. Mechanical restraint is not in the EMR scope; call police if he becomes violent."
+    "explanation": "The 2019 national model lists mechanical patient restraint at the EMT level and above. An EMR keeps a safe distance, talks calmly and calls police if the patient becomes violent."
   },
   {
     "id": "EMR-D-052",

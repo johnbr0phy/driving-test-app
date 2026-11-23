@@ -1,0 +1,36 @@
+CAT = "frmotoSecours"; SEG = "SEC"
+# Premiers secours après un accident de moto. Sources : arrêté du 20 avril 2012, art. 2, I.A
+# (gestes de premiers secours) ; service-public.gouv.fr F33954 (numéros d'urgence) ; Code de la
+# route R416-19 (gilet, feux de détresse) ; principes du PSC1 (protéger, alerter, secourir).
+Q = [
+("Vous êtes le premier sur les lieux d'une chute de moto. Votre première action :",
+ "Protéger la zone", ["Retirer le casque du motard", "Relever la moto", "Appeler sa famille"],
+ "Protéger, alerter, secourir : on balise d'abord les lieux pour éviter un sur-accident, avec feux de détresse et gilet, avant tout autre geste."),
+("Un motard blessé est allongé sur la chaussée, conscient. Vous évitez de :",
+ "Le déplacer", ["Lui parler", "Le couvrir", "Rester près de lui"],
+ "On ne déplace pas un blessé, sauf danger immédiat comme un incendie : un mouvement peut aggraver une lésion de la colonne. On le rassure et on le couvre."),
+("Quel numéro joint le SAMU pour une urgence médicale ?",
+ "15", ["17", "18", "115"],
+ "Service-public F33954 : le 15 joint le SAMU ; le 17 la police ou la gendarmerie ; le 18 les pompiers ; le 112 fonctionne dans toute l'Union européenne."),
+("Depuis un mobile, en France ou ailleurs dans l'Union européenne, quel numéro d'urgence fonctionne partout ?",
+ "112", ["114", "196", "3237"],
+ "Service-public F33954 : le 112 est le numéro d'urgence européen, joignable gratuitement depuis un fixe ou un mobile."),
+("Que dites-vous en premier quand vous appelez les secours ?",
+ "Le lieu de l'accident", ["La marque de la moto", "Le nom de votre assureur", "L'heure de votre départ"],
+ "Les secours doivent d'abord savoir où aller : route, sens, point kilométrique ou repère. On décrit ensuite le nombre de blessés et leur état."),
+("Pendant l'appel aux secours, à quel moment raccrochez-vous ?",
+ "Quand l'opérateur le dit", ["Dès le lieu donné", "Au bout d'une minute", "Avant de décrire les blessés"],
+ "On reste en ligne jusqu'à ce que l'opérateur mette fin à l'appel : il peut avoir des questions ou des consignes à donner."),
+("Un blessé saigne beaucoup d'une jambe. Que faites-vous ?",
+ "Comprimer fort la plaie", ["Lui donner à boire", "Le faire marcher un peu", "Rincer la plaie à l'eau"],
+ "Principes du PSC1 : on appuie fortement sur la plaie pour arrêter le saignement, on allonge la victime et on fait alerter les secours."),
+("Une victime ne répond pas mais respire normalement. Vous :",
+ "La mettez en PLS", ["La faites asseoir", "Lui donnez de l'eau", "La secouez fort"],
+ "Principes du PSC1 : une personne inconsciente qui respire est placée en position latérale de sécurité pour garder les voies aériennes libres."),
+("Une victime ne répond pas et ne respire pas. En attendant les secours, vous :",
+ "Commencez le massage cardiaque", ["La mettez sur le côté en PLS", "Lui donnez à boire lentement", "Attendez sans la toucher"],
+ "Principes du PSC1 : face à une victime qui ne répond pas et ne respire pas, on fait alerter, on commence les compressions thoraciques et on fait chercher un défibrillateur."),
+("Une moto accidentée fume près du blessé. Dans ce cas précis, vous pouvez :",
+ "Dégager la victime", ["Rallumer le moteur", "Attendre sans agir", "Arroser la moto d'eau"],
+ "Le dégagement d'urgence n'est fait que face à un danger réel et immédiat, comme un incendie, que l'on ne peut pas supprimer autrement."),
+]

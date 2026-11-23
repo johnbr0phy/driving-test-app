@@ -161,6 +161,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   frvtc: "FR",
   frcode: "FR",
   frcaces: "FR",
+  frmoto: "FR",
   nzrealestate: "NZ",
   nzsecurity: "NZ",
   chtheory: "CH",

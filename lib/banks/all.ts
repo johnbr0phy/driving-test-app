@@ -276,6 +276,7 @@ import "./frcivique";
 import "./frvtc";
 import "./frcode";
 import "./frcaces";
+import "./frmoto";
 import "./plteoria";
 import "./plcpc";
 import "./plaplik";

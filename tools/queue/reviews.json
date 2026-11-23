@@ -1422,5 +1422,13 @@
       "pr": null,
       "findings": 26
     }
+  ],
+  "frmoto": [
+    {
+      "date": "2026-11-22",
+      "kind": "blind review at build",
+      "pr": 964,
+      "findings": 7
+    }
   ]
 }

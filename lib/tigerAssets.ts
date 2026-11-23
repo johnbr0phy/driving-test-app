@@ -192,6 +192,7 @@ const BORROWED_SETS: Record<string, string> = {
   itpatente: "driving", itcils: "itlanguage", itceli: "itlanguage", ita2: "itlanguage", itcilsb2: "itlanguage",
   // France (Nov 2026): code de la route the car tiger.
   frcode: "driving",
+  frmoto: "moto",
   // Poland (Nov 2026): car theory the car tiger, Driver CPC the CDL tiger, the bar entrance exam the LSAT
   // tiger, LEK the EU doctor tiger, the firearms permit the Canadian firearms tiger.
   plteoria: "driving", plcpc: "cdl", plaplik: "lsat", pllek: "rorezid", plbron: "capal",

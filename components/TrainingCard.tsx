@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, XCircle } from "lucide-react";
-import { OptionLetter } from "@/components/OptionLetter";
+import { AnswerOption, type AnswerOptionState } from "@/components/question/AnswerOption";
+import { AnswerFeedback } from "@/components/question/AnswerFeedback";
 import { Question } from "@/types";
 import { useState, useEffect, useId, useRef } from "react";
 import { useTranslation } from "@/contexts/LanguageContext";
@@ -64,23 +64,11 @@ export function TrainingCard({
     { letter: "D", text: question.optionD },
   ];
 
-  const getOptionClasses = (optionLetter: string) => {
-    if (!answered) {
-      if (!isReady) {
-        return "border-gray-300 dark:border-gray-700";
-      }
-      return "border-gray-300 dark:border-gray-700 [@media(hover:hover)]:hover:border-brand [@media(hover:hover)]:hover:bg-brand-light active:border-brand active:bg-brand-light cursor-pointer";
-    }
-
-    if (optionLetter === question.correctAnswer) {
-      return "border-green-500 bg-green-50 dark:bg-green-950";
-    }
-
-    if (optionLetter === selectedAnswer && !isCorrect) {
-      return "border-red-500 bg-red-50 dark:bg-red-950";
-    }
-
-    return "border-gray-300 dark:border-gray-700 opacity-50";
+  const stateOf = (letter: string): AnswerOptionState => {
+    if (!answered) return "idle";
+    if (letter === question.correctAnswer) return "correct";
+    if (letter === selectedAnswer) return "wrong";
+    return "dim";
   };
 
   return (
@@ -93,28 +81,19 @@ export function TrainingCard({
 
         <div role="group" aria-labelledby={headingId} className="space-y-2 md:space-y-3 mb-4 md:mb-6">
           {options.map((option) => (
-            <button
+            <AnswerOption
               key={option.letter}
-              type="button"
+              letter={option.letter}
+              state={stateOf(option.letter)}
+              interactive={isReady}
+              srLabel={answered ? (option.letter === question.correctAnswer ? t("trainingCard.correct") : option.letter === selectedAnswer ? t("trainingCard.incorrect") : undefined) : undefined}
               aria-pressed={selectedAnswer === option.letter}
               aria-disabled={!isReady || answered}
               onPointerDown={() => { pressedAt.current = performance.now(); }}
               onClick={(e) => choose(option.letter, e)}
-              className={`w-full text-left border-2 rounded-lg p-3 md:p-4 transition-all ${getOptionClasses(option.letter)}`}
             >
-              <div className="flex items-center gap-2 md:gap-3">
-                <OptionLetter letter={option.letter} correct={answered && option.letter === question.correctAnswer} />
-                <span className="flex-1 text-sm md:text-base">{option.text}</span>
-                {answered && option.letter === question.correctAnswer && <span className="sr-only">{t("trainingCard.correct")}</span>}
-                {answered && option.letter === selectedAnswer && !isCorrect && <span className="sr-only">{t("trainingCard.incorrect")}</span>}
-                {answered && option.letter === question.correctAnswer && (
-                  <CheckCircle2 className="h-5 w-5 md:h-6 md:w-6 text-green-600 dark:text-green-400 flex-shrink-0" />
-                )}
-                {answered && option.letter === selectedAnswer && !isCorrect && (
-                  <XCircle className="h-5 w-5 md:h-6 md:w-6 text-red-600 dark:text-red-400 flex-shrink-0" />
-                )}
-              </div>
-            </button>
+              {option.text}
+            </AnswerOption>
           ))}
         </div>
 
@@ -125,20 +104,9 @@ export function TrainingCard({
               {t("trainingCard.nextQuestion")}
             </Button>
 
-            <div
-              className={`p-3 md:p-4 rounded-lg ${
-                isCorrect ? "bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800" : "bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800"
-              }`}
-            >
-              <div
-                className={`font-bold mb-1 md:mb-2 text-sm md:text-base ${
-                  isCorrect ? "text-green-700 dark:text-green-300" : "text-red-700 dark:text-red-300"
-                }`}
-              >
-                {isCorrect ? t("trainingCard.correct") : t("trainingCard.incorrect")}
-              </div>
-              <p className="text-gray-700 dark:text-gray-200 text-sm md:text-base">{question.explanation}</p>
-            </div>
+            <AnswerFeedback correct={isCorrect} title={isCorrect ? t("trainingCard.correct") : t("trainingCard.incorrect")}>
+              {question.explanation}
+            </AnswerFeedback>
             {reportExamId && (
               <ReportExamQuestion
                 key={question.questionId}

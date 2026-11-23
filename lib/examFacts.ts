@@ -7716,6 +7716,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Fortinet Training Institute FortiOS Administrator Exam page and the FCP - FortiGate 7.6 Administrator exam description (June 2025), checked November 2026",
     source: { name: "Fortinet Training Institute: FortiOS Administrator Exam", url: "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam" },
   },
+  cssyb: {
+    answer:
+      "The ASQ Certified Six Sigma Yellow Belt (CSSYB) exam is ASQ's entry-level Six Sigma certification for people new to process improvement who support projects led by Green or Black Belts. The computer-based exam has 90 multiple-choice questions, 80 of them scored, with 2 hours 18 minutes of exam time (a paper version has 80 questions in 2 hours); it is open book and in English only. Its 2022 Body of Knowledge sets the scored questions per section: Six Sigma Fundamentals 20, Define 14, Measure 15, Analyze 17, and Improve and Control 14. ASQ reports a pass as a scaled score of 550, asks for no education or work experience, and does not require recertification.",
+    rows: [
+      { label: "Questions", value: "90 (80 scored, 10 unscored)" },
+      { label: "Time", value: "2 hours 18 minutes (2.5-hour appointment)" },
+      { label: "Passing score", value: "550 (scaled)" },
+      { label: "Format", value: "Open book, multiple choice, on-screen calculator" },
+      { label: "Largest section", value: "Six Sigma Fundamentals, 20 questions" },
+      { label: "Requirements", value: "None; lifetime certification" },
+    ],
+    basedOn: "ASQ CSSYB certification page, 2022 Body of Knowledge and Certification Candidate Handbook, checked November 2026",
+    source: { name: "ASQ: Six Sigma Yellow Belt Certification", url: "https://www.asq.org/cert/six-sigma-yellow-belt" },
+  },
   cssgb: {
     answer:
       "The ASQ Certified Six Sigma Green Belt (CSSGB) exam is ASQ's certification for people who work on process improvement projects, usually supporting a Black Belt. The computer-based exam has 110 multiple-choice questions, 100 of them scored, with 4 hours 18 minutes of exam time; it is open book and in English. Its 2022 Body of Knowledge sets the scored questions per section: Overview 11, Define 20, Measure 20, Analyze 18, Improve 16 and Control 15. ASQ reports a pass as a scaled score of 550, needs three years of relevant work experience and does not require recertification.",

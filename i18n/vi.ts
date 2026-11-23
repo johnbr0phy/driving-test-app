@@ -1682,6 +1682,12 @@ export const vi: TranslationKeys = {
     cssgbAnalyze: "Analyze Phase",
     cssgbImprove: "Improve Phase",
     cssgbControl: "Control Phase",
+    // cssyb
+    cssybFundamentals: "Six Sigma Fundamentals",
+    cssybDefine: "Define Phase",
+    cssybMeasure: "Measure Phase",
+    cssybAnalyze: "Analyze Phase",
+    cssybImproveControl: "Improve & Control Phases",
     // ccs
     ccsInpatient: "Inpatient Diagnosis Coding",
     ccsPcs: "ICD-10-PCS Procedures",

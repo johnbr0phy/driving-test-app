@@ -1534,5 +1534,13 @@
       "pr": 981,
       "findings": 17
     }
+  ],
+  "cssyb": [
+    {
+      "date": "2026-11-22",
+      "kind": "blind review at build",
+      "pr": 977,
+      "findings": 1
+    }
   ]
 }

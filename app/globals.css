@@ -6622,6 +6622,20 @@
     --brand-gradient-to: 210 40% 95%;
   }
 
+  /* ASQ Six Sigma Yellow Belt theme: grey violet */
+  [data-theme="cssyb"] {
+    --brand: 270 20% 24%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 270 20% 96%;
+    --brand-hover: 270 20% 20%;
+    --brand-dark: 270 20% 17%;
+    --brand-darker: 270 18% 11%;
+    --brand-muted: 270 15% 68%;
+    --brand-border: 270 15% 80%;
+    --brand-border-light: 270 14% 89%;
+    --brand-gradient-to: 285 25% 95%;
+  }
+
   /* ASQ Six Sigma Green Belt theme */
   [data-theme="cssgb"] {
     --brand: 14 50% 26%;
@@ -12615,6 +12629,18 @@
     --brand-muted: 355 14% 45%;
     --brand-dark: 355 25% 65%;
     --brand-darker: 355 22% 78%;
+  }
+
+  .dark [data-theme="cssyb"] {
+    --brand: 270 20% 50%;
+    --brand-hover: 270 20% 42%;
+    --brand-light: 270 20% 13%;
+    --brand-gradient-to: 285 25% 11%;
+    --brand-border-light: 270 14% 24%;
+    --brand-border: 270 15% 34%;
+    --brand-muted: 270 15% 45%;
+    --brand-dark: 270 20% 65%;
+    --brand-darker: 270 18% 78%;
   }
 
   .dark [data-theme="cssgb"] {

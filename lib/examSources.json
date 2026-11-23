@@ -698,6 +698,11 @@
   "https://www.asq.org/cert/resource/pdf/certification/cssgb-cert-insert.pdf",
   "https://www.asq.org/cert/resource/pdf/certification/cert-fact-sheet-cssgb.pdf"
  ],
+ "cssyb": [
+  "https://www.asq.org/cert/resource/pdf/certification/cssyb-cert-insert.pdf",
+  "https://www.asq.org/cert/six-sigma-yellow-belt",
+  "https://www.asq.org/cert/resource/pdf/certification/cert-fact-sheet-cssyb.pdf"
+ ],
  "ctec": [
   "https://ctecstorage.blob.core.windows.net/public/CTEC%20-%20Qualifying%20Education%20%28QE%29%20Provider%20Application%20-%202026.pdf",
   "https://ctecstorage.blob.core.windows.net/public/CTEC%20-%20Continuing%20Education%20%28CE%29%20Provider%20Application%20-%202026.pdf",

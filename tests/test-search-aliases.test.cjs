@@ -497,6 +497,8 @@ const CASES = [
   ["ccst networking", "US", "ccst"],
   ["cisco certified support technician", "US", "ccst"],
   ["100-150", "US", "ccst"],
+  ["dp-900", "US", "dp900"],
+  ["azure data fundamentals", "US", "dp900"],
   ["az-104", "US", "az104"],
   ["azure administrator", "US", "az104"],
   ["sc-200", "US", "sc200"],

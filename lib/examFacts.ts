@@ -1236,6 +1236,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the CompTIA Tech+ FC0-U71 exam objectives (document version 4.0) and the Tech+ certification page, checked November 2026",
     source: { name: "CompTIA: Tech+ certification", url: "https://www.comptia.org/en-us/certifications/tech/" },
   },
+  dp900: {
+    answer:
+      "Exam DP-900: Microsoft Azure Data Fundamentals is the exam for the Microsoft Certified: Azure Data Fundamentals certification, a beginner exam for people starting to work with data in the cloud. Microsoft gives 45 minutes and a passing score of 700 on a scale of 1 to 1,000; it does not publish a question count. The skills measured as of July 21, 2026 are Describe core data concepts 25-30%, Identify considerations for relational data on Azure 20-25%, Describe considerations for working with non-relational data on Azure 15-20% and Describe an analytics workload 25-30%, which now names Azure Databricks and Microsoft Fabric. The exam is proctored, scheduled through Pearson VUE (or Certiport for students and educators) in 13 languages, and can be retaken 24 hours after a first failed attempt.",
+    rows: [
+      { label: "Time", value: "45 minutes" },
+      { label: "Questions", value: "Not published by Microsoft" },
+      { label: "Pass mark", value: "700 on a scale of 1 to 1,000" },
+      { label: "Content", value: "Core data concepts 25-30%, relational data 20-25%, non-relational data 15-20%, analytics workload 25-30%" },
+      { label: "Languages", value: "English, Japanese, Chinese (Simplified and Traditional), Korean, French, German, Spanish, Portuguese (Brazil), Russian, Indonesian, Arabic, Italian" },
+      { label: "Where", value: "Proctored, scheduled through Pearson VUE or Certiport" },
+      { label: "Retakes", value: "First retake after 24 hours" },
+      { label: "Run by", value: "Microsoft" },
+    ],
+    basedOn: "Microsoft Learn's DP-900 study guide (skills measured as of July 21, 2026) and the Azure Data Fundamentals certification page, checked November 2026",
+    source: { name: "Microsoft Learn: DP-900 study guide", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/dp-900" },
+  },
   az104: {
     answer:
       "Exam AZ-104: Microsoft Azure Administrator is the exam for the Microsoft Certified: Azure Administrator Associate certification. Microsoft gives 100 minutes and a passing score of 700 on a scale of 1 to 1,000; it does not publish a fixed question count, and says most of its certification exams have 40 to 60 questions, with types that can include case studies and, on some role-based exams, labs. The skills measured as of October 26, 2023, still the current list in November 2026, are Manage Azure identities and governance 20-25%, Implement and manage storage 15-20%, Deploy and manage Azure compute resources 20-25%, Implement and manage virtual networking 15-20% and Monitor and maintain Azure resources 10-15%. The exam is proctored through Pearson VUE in 10 languages, and the certification is renewed every 12 months with a free online assessment.",

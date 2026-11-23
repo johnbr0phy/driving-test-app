@@ -417,6 +417,7 @@
   "pentestplus": ["#4c3a38","#f7f3f3","#241a19","#e7e0df"],
   "az104": ["#051942","#ecf2fd","#040d20","#dbe0eb"],
   "cloudplus": ["#6946a4","#f4f1f9","#412e60","#e1dde9"],
+  "dp900": ["#103728","#effaf6","#091b14","#dceae4"],
   "dataplus": ["#093e25","#edfcf5","#051e13","#dceae3"],
   "ccst": ["#1f0c3b","#f3eefb","#10071d","#e2dcea"],
   "serverplus": ["#1d202b","#f3f4f7","#0f1015","#e0e1e6"],

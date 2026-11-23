@@ -109,7 +109,7 @@ const TEACHER_LED = new Set([
   // Malta: approved taxi training providers and private guard course providers
   "mttaxi", "mtguard",
   // Healthcare programs
-  "cdm", "cst", "crcst", "htl", "cna", "ptcb", "phleb", "ccma", "cet", "danb", "danbrhs", "cpr", "nclex", "nclexpn", "emt", "aemt", "paramedic", "teas", "hesi", "vtne",
+  "cdm", "cst", "crcst", "htl", "cna", "ptcb", "phleb", "ccma", "cet", "danb", "danbrhs", "danbice", "cpr", "nclex", "nclexpn", "emt", "aemt", "paramedic", "teas", "hesi", "vtne",
   "ukfaw", "ukcare",
   "rexpn", "capsw", "casfa",
   "aufirstaid", "ausecurity", "nzfirstaid",

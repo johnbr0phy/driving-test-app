@@ -788,6 +788,11 @@
  "cysa": [
   "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/"
  ],
+ "danbice": [
+  "https://danbsfprodassets.azureedge.net/assets/docs/default-source/exam-outlines/ice-exam-outline.pdf",
+  "https://danbsfprodassets.azureedge.net/assets/docs/default-source/national-application-packets/ice-application-packet.pdf",
+  "https://www.danb.org/exams/exam/ice"
+ ],
  "danbrhs": [
   "https://www.danb.org/exams/exam/rhs",
   "https://danbsfprodassets.azureedge.net/assets/docs/default-source/exam-outlines/rhs-exam-outline.pdf?sfvrsn=1749ebf2_16",

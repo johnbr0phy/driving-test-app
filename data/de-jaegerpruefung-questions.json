@@ -221,7 +221,7 @@
     "optionD": "Für den Fangschuss",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Kurzwaffen ab 200 Joule sind auf Wild nur bei der Bau- und Fallenjagd und für den Fangschuss erlaubt."
+    "explanation": "Pistolen und Revolver sind auf Wild nur bei der Bau- und Fallenjagd und für den Fangschuss erlaubt. Beim Fangschuss muss die Mündungsenergie mindestens 200 Joule betragen."
   },
   {
     "type": "DEJAGD",

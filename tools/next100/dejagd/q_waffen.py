@@ -49,7 +49,7 @@ Q = [
  "§ 19 BJagdG verbietet Schrot, Posten und gehacktes Blei auf Schalenwild ausdrücklich auch beim Fangschuss."),
 ("Wofür darf eine Pistole mit mehr als 200 J Mündungsenergie auf Wild verwendet werden?",
  "Für den Fangschuss", ["Für die Drückjagd auf Sauen", "Für den Ansitz auf Rehwild", "Für die Lockjagd auf Füchse"],
- "Kurzwaffen ab 200 Joule sind auf Wild nur bei der Bau- und Fallenjagd und für den Fangschuss erlaubt."),
+ "Pistolen und Revolver sind auf Wild nur bei der Bau- und Fallenjagd und für den Fangschuss erlaubt. Beim Fangschuss muss die Mündungsenergie mindestens 200 Joule betragen."),
 ("Warum braucht jeder Büchsenschuss einen sicheren Kugelfang?",
  "Es fliegt mehrere Kilometer weit", ["Sonst verliert das Geschoss unterwegs seinen Drall", "Sonst verformt sich das Geschoss nicht", "Der Kugelfang dämpft den Mündungsknall"],
  "Ein Büchsengeschoss trägt viele Kilometer und bleibt gefährlich. Nur gewachsener Boden hinter dem Wild fängt es sicher ab."),

@@ -3360,6 +3360,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Australian Citizenship: Our Common Bond and the Home Affairs citizenship test page, checked October 2026",
     source: { name: "Department of Home Affairs: Learn about the citizenship test", url: "https://immi.homeaffairs.gov.au/citizenship/test-and-interview/learn-about-citizenship-interview-and-test/learn-about-citizenship-test" },
   },
+  aedhapharm: {
+    answer:
+      "The Gulf pharmacist licensing exam, often called the DHA or Prometric exam for pharmacists, is a computer-based multiple-choice test that each Gulf health authority sets before it licenses a pharmacist: DHA in Dubai, DOH in Abu Dhabi, MOHAP elsewhere in the UAE, SCFHS in Saudi Arabia (the SPLE), the DHP in Qatar, and the authorities in Oman, Kuwait and Bahrain. Each sets its own number of questions, time and pass mark. Saudi Arabia's SPLE has 200 questions in two 120-minute parts with a scaled pass score of 536, and Qatar's National Pharmacist Qualifying Examination has 150 questions with a 60 percent pass mark. DHA reports only pass or fail and allows three attempts.",
+    rows: [
+      { label: "Format", value: "Computer-based, multiple choice, one best answer" },
+      { label: "Saudi Arabia (SPLE)", value: "200 questions, 2 x 120 min, 536 on 200-800" },
+      { label: "Qatar (DHP)", value: "150 questions, 60% to pass" },
+      { label: "Dubai (DHA)", value: "Pass or fail only, three attempts" },
+      { label: "Other authorities", value: "Check your authority's current guide" },
+      { label: "Content", value: "Biomedical, pharmaceutical, administrative and clinical sciences" },
+      { label: "Set by", value: "Each Gulf health authority" },
+    ],
+    basedOn: "the SCFHS SPLE Examination Content Guideline (2025), Qatar DHP's pharmacist blueprint and qualifying examination page, and the DHA Manual for Professional Assessment (2025), checked November 2026",
+    source: { name: "SCFHS: SPLE Examination Content Guideline", url: "https://scfhs.org.sa/sites/default/files/2025-09/SPLE%20Applicant%20Guide.docx_.pdf" },
+  },
   gulfrn: {
     answer:
       "The Gulf registered nurse licensing exam, often called the Prometric exam for nurses, is a computer-based multiple-choice test that each Gulf health authority sets for nurses who want to practise there: DHA in Dubai, DOH in Abu Dhabi, MOHAP elsewhere in the UAE, SCFHS in Saudi Arabia, the DHP in Qatar, and the authorities in Oman, Kuwait and Bahrain. Each sets its own number of questions, time and pass mark. Qatar's DHP lists 150 questions with a 50 percent pass mark, and Saudi Arabia's SNLE has 200 questions in two 120-minute parts with a scaled pass score of 500. The published blueprints weight adult nursing most, about 40 percent.",

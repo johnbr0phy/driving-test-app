@@ -5994,6 +5994,20 @@
     --brand-gradient-to: 10 45% 95%;
   }
 
+  /* ISACA CRISC theme: deep oxblood (v2 exam; matches lib/v2/exams/crisc.ts theme) */
+  [data-theme="crisc"] {
+    --brand: 8 35% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 8 35% 96%;
+    --brand-hover: 8 35% 11%;
+    --brand-dark: 8 35% 10%;
+    --brand-darker: 8 30% 7%;
+    --brand-muted: 8 20% 70%;
+    --brand-border: 8 20% 80%;
+    --brand-border-light: 8 20% 89%;
+    --brand-gradient-to: 28 35% 95%;
+  }
+
   /* ISACA CISM theme: deep violet (v2 exam; matches lib/v2/exams/cism.ts theme) */
   [data-theme="cism"] {
     --brand: 274 70% 14%;
@@ -13134,6 +13148,18 @@
     --brand-muted: 350 25% 45%;
     --brand-dark: 350 60% 65%;
     --brand-darker: 350 55% 78%;
+  }
+
+  .dark [data-theme="crisc"] {
+    --brand: 8 35% 50%;
+    --brand-hover: 8 35% 42%;
+    --brand-light: 8 35% 13%;
+    --brand-gradient-to: 28 35% 11%;
+    --brand-border-light: 8 20% 24%;
+    --brand-border: 8 20% 34%;
+    --brand-muted: 8 20% 45%;
+    --brand-dark: 8 35% 65%;
+    --brand-darker: 8 30% 78%;
   }
 
   .dark [data-theme="cism"] {

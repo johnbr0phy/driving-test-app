@@ -135,6 +135,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the Red Seal Hairstylist exam breakdown and the Red Seal Exam Preparation Guide, checked November 2026",
     source: { name: "Red Seal: Hairstylist exam information", url: "https://red-seal.ca/eng/trades/hairstylists/exam-information.shtml" },
   },
+  carstruck: {
+    answer:
+      "The Red Seal Truck and Transport Mechanic exam is the interprovincial certificate of qualification exam for the trade in Canada (Truck and Coach Technician, trade code 310T, in Ontario). It has 135 multiple-choice questions with four options each, a pass mark of 70%, and four hours to write it. Red Seal's exam breakdown spreads the questions over 11 blocks of the occupational standard, led by electrical and electronic systems (22 questions), engines and supporting systems (21), and steering, frames, suspension, tires, wheels and hubs (18).",
+    rows: [
+      { label: "Questions", value: "135 multiple choice, 4 options each" },
+      { label: "Time", value: "4 hours" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Largest areas", value: "Electrical and electronic 22, engines 21, steering, frames, suspension and wheels 18" },
+      { label: "Other areas", value: "Air systems and brakes 17, drive trains 17, common skills 8, trailers 8, hydraulics 8, climate control 7, cabs 5, hybrid and EV 4" },
+      { label: "Standard", value: "Red Seal Occupational Standard for Truck and Transport Mechanic" },
+      { label: "Booked through", value: "Your provincial or territorial apprenticeship authority" },
+    ],
+    basedOn: "the Red Seal exam information page for Truck and Transport Mechanic and the Red Seal Exam Preparation Guide, checked November 2026",
+    source: { name: "Red Seal: Truck and Transport Mechanic exam information", url: "https://red-seal.ca/eng/trades/trucktranspmech/exam-information.shtml" },
+  },
   carsrefrig: {
     answer:
       "The Red Seal Refrigeration and Air Conditioning Mechanic exam is the interprovincial certificate of qualification exam for the trade in Canada (trade code 313A in Ontario). It has 125 multiple-choice questions with four options each, a pass mark of 70%, and four hours to write it. Red Seal's exam breakdown spreads the questions over six Major Work Activities, led by maintenance and service (31 questions), installation (26) and commissioning (22). Red Seal says new exams on the 2024 standard are under development, so check with your apprenticeship authority which version you will write.",

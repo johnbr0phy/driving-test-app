@@ -1546,6 +1546,19 @@
     --brand-gradient-to: 320 45% 95%;
   }
 
+  /* Red Seal Truck and Transport Mechanic theme (Canada): deep diesel rust */
+  [data-theme="carstruck"] {
+    --brand: 26 85% 12%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 26 40% 96%;
+    --brand-hover: 26 85% 9%;
+    --brand-dark: 26 85% 7%;
+    --brand-darker: 26 80% 5%;
+    --brand-muted: 26 30% 68%;
+    --brand-border: 26 30% 80%;
+    --brand-border-light: 26 25% 90%;
+    --brand-gradient-to: 16 40% 96%;
+  }
   /* Red Seal Refrigeration and Air Conditioning Mechanic theme (Canada): deep refrigerant navy */
   [data-theme="carsrefrig"] {
     --brand: 206 55% 12%;
@@ -9291,6 +9304,18 @@
     --brand-muted: 308 30% 45%;
     --brand-dark: 308 80% 65%;
     --brand-darker: 308 75% 78%;
+  }
+
+  .dark [data-theme="carstruck"] {
+    --brand: 26 85% 39.6%;
+    --brand-hover: 26 85% 31.6%;
+    --brand-light: 26 40% 13%;
+    --brand-gradient-to: 16 40% 11%;
+    --brand-border-light: 26 25% 24%;
+    --brand-border: 26 30% 34%;
+    --brand-muted: 26 30% 45%;
+    --brand-dark: 26 85% 65%;
+    --brand-darker: 26 80% 78%;
   }
 
   .dark [data-theme="carsrefrig"] {

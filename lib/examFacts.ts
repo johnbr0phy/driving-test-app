@@ -4693,6 +4693,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the PMI CAPM Examination Content Outline (2023, current in 2026)",
     source: { name: "PMI", url: "https://www.pmi.org/certifications/certified-associate-capm" },
   },
+  projectplus: {
+    answer:
+      "CompTIA Project+ (exam PK0-005, launched November 8, 2022) is CompTIA's entry-level project management certification for IT professionals. CompTIA's certification page gives a maximum of 90 multiple-choice and performance-based questions (the objectives document says up to 95) in 90 minutes, and the passing score is 710 on a scale of 100 to 900. The PK0-005 objectives cover four domains: Project Management Concepts 33%, Project Life Cycle Phases 30%, Tools and Documentation 19% and Basics of IT and Governance 18%, across both Waterfall and Agile methods. CompTIA recommends 6 to 12 months of hands-on experience managing projects in an IT environment, offers the exam in English, Japanese and Thai, and says the certification is good for life with no renewal.",
+    rows: [
+      { label: "Exam code", value: "PK0-005 (V5)" },
+      { label: "Questions", value: "Up to 90, multiple choice and performance-based (the objectives say up to 95)" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Pass mark", value: "710 on a scale of 100 to 900" },
+      { label: "Content", value: "Project management concepts 33%, life cycle phases 30%, tools and documentation 19%, IT and governance 18%" },
+      { label: "Languages", value: "English, Japanese, Thai" },
+      { label: "Experience", value: "6 to 12 months managing IT projects recommended; no prerequisites" },
+      { label: "Valid for", value: "Life, no renewal" },
+      { label: "Run by", value: "CompTIA" },
+    ],
+    basedOn: "the CompTIA Project+ PK0-005 exam objectives (document version 7.0), the Project+ certification page and CompTIA's December 2024 Project+ article, checked November 2026",
+    source: { name: "CompTIA: Project+ certification", url: "https://www.comptia.org/en-us/certifications/project/" },
+  },
   gcdl: {
     answer:
       "The Google Cloud Digital Leader exam has 50 to 60 multiple choice and multiple select questions in 90 minutes and costs 99 USD. Google reports pass or fail and does not publish a passing score. The exam guide launched on August 12, 2026 weights Digital Transformation, Data Transformation, Innovating with AI, Modernize Infrastructure and Applications, and Trust and Security at about 18 percent each, and Scaling with Google Cloud Operations at about 10 percent.",

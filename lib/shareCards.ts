@@ -613,6 +613,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(350, 60%, 14%)",
     "tint": "hsl(350, 60%, 96%)"
   },
+  "projectplus": {
+    "color": "hsl(250, 45%, 14%)",
+    "tint": "hsl(250, 45%, 96%)"
+  },
   "dataplus": {
     "color": "hsl(152, 75%, 14%)",
     "tint": "hsl(152, 75%, 96%)"

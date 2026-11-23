@@ -1,0 +1,4301 @@
+[
+  {
+    "id": "PROJPLUS-T1-001",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Tracking charts",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which chart shows tasks as bars against a calendar?",
+    "explanation": "A Gantt chart lays task bars along a timeline, showing start, finish and often dependencies.",
+    "options": [
+      "Fishbone diagram",
+      "Scatter diagram",
+      "Gantt chart",
+      "Pareto chart"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-002",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "ESG factors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A data center project plans for its energy use and e-waste. Which ESG factor is this?",
+    "explanation": "Environmental factors cover a project's impact on the local and global environment, such as energy and waste.",
+    "options": [
+      "Environmental",
+      "Social",
+      "Financial performance",
+      "Governance"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-003",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Business case",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In which phase are the business case and ROI analysis prepared?",
+    "explanation": "The business case, ROI analysis and current versus future state belong to the discovery or concept phase, before the project is chartered in initiation.",
+    "options": [
+      "Discovery",
+      "Execution",
+      "Planning",
+      "Initiation"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-004",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Organizational change management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Users keep returning to the old spreadsheet after a new system goes live. What should the PM focus on?",
+    "explanation": "Organizational change management includes training, ensuring adoption and reinforcing it over time so people use the new process.",
+    "options": [
+      "Reinforcing adoption",
+      "Rebaselining the budget",
+      "Closing the vendor contract",
+      "Rerunning stress tests"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-005",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Change control process",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put these change control steps in order:",
+    "explanation": "A request is logged, assessed for impact on scope, time and cost, decided by the right approvers (the CCB when needed), and only then built into the plan and carried out.",
+    "options": [
+      "Log the change request",
+      "Assess its impact",
+      "Get a decision from the approvers",
+      "Update the project plan",
+      "Implement and validate the change"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-006",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppConcepts",
+    "skill": "Characteristics of a project",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which feature separates a project from routine operations?",
+    "explanation": "A project is temporary: it has a start and a finish and produces something unique. Operations also have budgets, staff and meetings, but they repeat with no planned end.",
+    "options": [
+      "Assigned budget code",
+      "Weekly status meetings",
+      "Named team members",
+      "Set start and finish"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-007",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppSchedule",
+    "skill": "Dependencies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Code must be written before it can be compiled. What kind of dependency is this?",
+    "explanation": "A mandatory (hard logic) dependency is built into the nature of the work. A discretionary (soft logic) one is a team preference.",
+    "options": [
+      "Mandatory",
+      "Preferential",
+      "External",
+      "Discretionary"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-008",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppPeople",
+    "skill": "Communication methods",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Team members in five time zones need updates they can read whenever they start work. Which method fits best?",
+    "explanation": "Asynchronous communication, such as a shared written update, lets people read it on their own schedule across time zones.",
+    "options": [
+      "Asynchronous written updates",
+      "In-person briefing",
+      "Daily live video call at noon",
+      "Phone tree each morning"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-009",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Tracking charts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which chart shows only key events and their target dates, with no task bars?",
+    "explanation": "A milestone chart lists major checkpoints, which suits executives who need dates, not task detail.",
+    "options": [
+      "Histogram",
+      "Gantt chart",
+      "Milestone chart",
+      "Release burnup chart"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-010",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "ESG factors",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why should a PM know the company's mission and values?",
+    "explanation": "Awareness of vision, mission and values helps the project protect the company's brand and fit its goals.",
+    "options": [
+      "To write the vendor contracts",
+      "To keep the project aligned",
+      "To approve the WBS",
+      "To set story point scales"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-011",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Financial concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company buys servers it will own and depreciate over five years. What kind of expense is this?",
+    "explanation": "Buying long-lived assets is a capital expense (CapEx). Monthly cloud fees are operational expenses (OpEx).",
+    "options": [
+      "Capital expense",
+      "Sunk cost",
+      "Operational expense",
+      "Contingency reserve"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-012",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Vendor management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A vendor delivers a module late and below standard. Which execution activity covers this?",
+    "explanation": "In execution the PM enforces vendor rules of engagement, monitors performance against the contract and approves deliverables.",
+    "options": [
+      "Writing the business case",
+      "Monitoring vendor performance",
+      "Defining the work packages",
+      "Building the RACI"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-013",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Tracking charts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which diagram shows tasks as boxes joined by arrows to show the order of work?",
+    "explanation": "A project network diagram shows activities and their dependencies, which is how the critical path is found.",
+    "options": [
+      "Histogram",
+      "Run chart",
+      "Organizational chart",
+      "Network diagram"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-014",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Physical security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Contractors may enter the server room only with an escort and a badge. Which security area is this?",
+    "explanation": "Facility access controls, such as badges and escorts, are physical security.",
+    "options": [
+      "Digital security",
+      "Data classification",
+      "Remote access",
+      "Physical security"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-015",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Change control process",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A requested change exceeds the project manager's authority. Where should it go?",
+    "explanation": "Changes beyond the PM's approval limit are escalated to the change control board, which decides and records the outcome.",
+    "options": [
+      "Help desk queue",
+      "Change control board",
+      "Vendor account manager",
+      "Project team vote"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-016",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Return on investment",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A project costs 80,000 dollars and returns 100,000 dollars in benefits. What is its ROI in percent? Type the number only.",
+    "explanation": "ROI = (benefit - cost) / cost = (100,000 - 80,000) / 80,000 = 0.25, so 25 percent. Dividing by the benefit instead gives 20.",
+    "numeric": {
+      "answers": [
+        "25"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "PROJPLUS-T1-017",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Vendor management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Who should formally accept a vendor's deliverable for the project?",
+    "explanation": "Deliverables are approved by whoever the plan or contract names, after checking them against the acceptance criteria.",
+    "options": [
+      "Vendor's own tester",
+      "Any team member",
+      "Help desk lead",
+      "Named approver"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-018",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Tracking charts",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A PERT estimate has optimistic 5 days, most likely 8 days and pessimistic 17 days. What is the expected duration in days? Type the number only.",
+    "explanation": "PERT expected time = (O + 4M + P) / 6 = (5 + 32 + 17) / 6 = 54 / 6 = 9 days. A plain average of the three gives 10.",
+    "numeric": {
+      "answers": [
+        "9"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "PROJPLUS-T1-019",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppConcepts",
+    "skill": "Characteristics of a project",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Several related projects are managed together so their combined benefits are realized. What is that grouping?",
+    "explanation": "A program groups related projects for benefits they deliver together. A portfolio holds projects and programs chosen to meet strategic goals, whether or not they are related.",
+    "options": [
+      "Phase",
+      "Work package",
+      "Portfolio",
+      "Program"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-020",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppSchedule",
+    "skill": "Successor/predecessor relationships",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Testing can start only after the build finishes. Which relationship is this?",
+    "explanation": "Finish-to-start, the most common link, means the successor begins after the predecessor ends.",
+    "options": [
+      "Start-to-start",
+      "Finish-to-finish",
+      "Start-to-finish",
+      "Finish-to-start"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-021",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppPeople",
+    "skill": "Meeting management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who records decisions and action items during a meeting?",
+    "explanation": "The scribe takes the minutes and records action items. The facilitator runs the meeting and keeps it on track.",
+    "options": [
+      "Scribe",
+      "Timekeeper",
+      "Facilitator",
+      "Sponsor"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-022",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Physical security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why might a project ban personal USB drives on work laptops?",
+    "explanation": "Removable media can carry malware in and sensitive data out, so many projects restrict it.",
+    "options": [
+      "To speed up the network",
+      "To save electricity",
+      "To stop data leaks and malware",
+      "To meet the carbon targets set"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-023",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Current and future state",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A business analyst maps how orders are handled today and how they should be handled after the project. What is this called?",
+    "explanation": "Comparing the current state with the desired future state shows the gap the project must close.",
+    "options": [
+      "Earned value analysis",
+      "Critical path method review",
+      "Current versus future state",
+      "Root cause analysis"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-024",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Project tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which document summarizes the project's overall risk picture for stakeholders?",
+    "explanation": "A risk report summarizes risk exposure, trends and top risks for stakeholders. The risk register holds the full detail behind it.",
+    "options": [
+      "Risk report",
+      "Issue log",
+      "Defect log",
+      "Change control log"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-025",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Conflict management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two engineers each give up part of their position to reach a quick agreement. Which approach is this?",
+    "explanation": "In compromise both sides give something up. Collaboration works toward a solution that fully meets both sides' needs.",
+    "options": [
+      "Collaboration",
+      "Forcing",
+      "Smoothing",
+      "Compromise"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-026",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Project change management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Developers keep adding small features users mention in hallways, with no approval. What is this?",
+    "explanation": "Scope creep is uncontrolled growth in scope without change control. Fast tracking and crashing are ways to shorten a schedule.",
+    "options": [
+      "Crashing",
+      "Fast tracking",
+      "Scope creep",
+      "Rolling wave planning"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-027",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Operational security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A defense project requires staff to hold a government clearance. Which security area is this?",
+    "explanation": "Background screening and clearance requirements are operational security controls on who may work on the project.",
+    "options": [
+      "Data archiving",
+      "Physical security",
+      "Network perimeter security",
+      "Operational security"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-028",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Project charter",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which initiation document holds the preliminary scope statement?",
+    "explanation": "The charter carries a preliminary scope with the objectives and success criteria. The detailed scope statement and WBS come later, in planning.",
+    "options": [
+      "Records management plan",
+      "Charter",
+      "Detailed scope statement",
+      "Work breakdown structure"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-029",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Project tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool links each requirement to the design, build and test work that meets it?",
+    "explanation": "The RTM traces requirements through to delivery and testing so nothing is missed or added without approval.",
+    "options": [
+      "Project dashboard",
+      "Responsibility assignment matrix",
+      "Requirements traceability matrix",
+      "Task board"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-030",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Digital security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which security area covers user permissions and remote access rules?",
+    "explanation": "Digital security covers resource access and permissions, remote access restrictions and multifactor authentication.",
+    "options": [
+      "Operational security",
+      "Facility access",
+      "Physical security",
+      "Digital security"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-031",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Conflict management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which conflict approach usually gives the most lasting result when there is time?",
+    "explanation": "Collaboration (problem solving) addresses the real causes and reaches consensus. Avoiding and smoothing only postpone the conflict.",
+    "options": [
+      "Forcing",
+      "Smoothing",
+      "Avoiding",
+      "Collaboration"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-032",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppConcepts",
+    "skill": "Methodologies and frameworks",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which framework pulls work through columns on a board and limits work in progress?",
+    "explanation": "Kanban visualizes flow on a board and caps work in progress per column. Scrum works in fixed sprints instead of continuous flow.",
+    "options": [
+      "Scrum",
+      "Kanban",
+      "PRINCE2",
+      "Waterfall"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-033",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppSchedule",
+    "skill": "Critical path analysis",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Path A takes 12 days, path B 15 days and path C 9 days. How many days long is the critical path? Type the number only.",
+    "explanation": "The critical path is the longest path through the network, so path B sets the project's shortest possible duration at 15 days.",
+    "numeric": {
+      "answers": [
+        "15"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "PROJPLUS-T1-034",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppPeople",
+    "skill": "Meeting management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which meeting type brings users and developers together to define requirements in a structured session?",
+    "explanation": "Joint application development (JAD) sessions are collaborative workshops where users and developers shape requirements together.",
+    "options": [
+      "Joint application development",
+      "Demonstration",
+      "Status meeting",
+      "Project steering committee"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-035",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Project tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Testers find a button that crashes the app. Where should they record it?",
+    "explanation": "A defect log tracks bugs found in the product. The issue log tracks problems affecting the project itself.",
+    "options": [
+      "Change log",
+      "Risk register",
+      "Defect log",
+      "Lessons learned"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-036",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Risk responses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A buyer signs a fixed-price contract so the vendor absorbs any cost overrun. Which risk response is this?",
+    "explanation": "A fixed price shifts the cost risk to the seller, which is a transfer. The risk still exists, but someone else carries its financial impact.",
+    "options": [
+      "Mitigate",
+      "Avoid",
+      "Accept",
+      "Transfer"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-037",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Project charter",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Where are the project's success criteria first set out?",
+    "explanation": "The charter lists the objectives and the success criteria the project will be judged by, along with a preliminary scope.",
+    "options": [
+      "Charter",
+      "Closeout report",
+      "Issue log",
+      "Defect log"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-038",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Data security",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A team member asks for the full customer database, but needs only a summary for the task. What principle applies?",
+    "explanation": "Need-to-know limits access to the data a person actually requires for their work.",
+    "options": [
+      "Least cost",
+      "Separation of duties",
+      "Need to know",
+      "Open by default"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-039",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Conflict management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A PM plays down a disagreement and stresses where the two sides agree. Which approach is this?",
+    "explanation": "Smoothing (accommodating) emphasizes common ground and downplays differences. It eases tension but rarely resolves the cause.",
+    "options": [
+      "Compromise",
+      "Smoothing",
+      "Avoiding",
+      "Collaboration"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-040",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Project tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool gives sponsors a one-page, at-a-glance view of key project measures?",
+    "explanation": "A dashboard shows high-level measures such as schedule, budget and risk status, often with color indicators.",
+    "options": [
+      "Project dashboard",
+      "Network diagram",
+      "Statement of work",
+      "Work breakdown structure"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-041",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Stakeholders",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When should stakeholders first be identified?",
+    "explanation": "Stakeholders are identified and assessed in initiation and revisited throughout, so their needs shape the plan.",
+    "options": [
+      "After the kickoff",
+      "During initiation",
+      "At project closure",
+      "During execution"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-042",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Data security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company's secret recipe for its product is which type of sensitive information?",
+    "explanation": "A trade secret is confidential business information that gives a competitive edge. It is protected by keeping it secret.",
+    "options": [
+      "Public record",
+      "Trade secret",
+      "National security information",
+      "Personal health information"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-043",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppConcepts",
+    "skill": "Methodologies and frameworks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team adds automated security scans to every stage of its build and release pipeline. Which approach is this?",
+    "explanation": "DevSecOps builds security into DevOps pipelines from the start rather than testing for it at the end.",
+    "options": [
+      "DevSecOps",
+      "Waterfall",
+      "Extreme programming",
+      "PRINCE2"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-044",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Risk responses",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A positive risk could cut costs if a new tool arrives early. The PM assigns the best engineer to make it certain. Which response is this?",
+    "explanation": "Exploit tries to make an opportunity certain to happen. Enhance only raises its probability or impact.",
+    "options": [
+      "Enhance",
+      "Mitigate",
+      "Exploit",
+      "Share"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-045",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppSchedule",
+    "skill": "Estimating techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An Agile team sizes backlog items by relative effort instead of hours. What unit is it using?",
+    "explanation": "Story points compare items against each other by effort, risk and complexity. A large group of stories is an epic.",
+    "options": [
+      "Story points",
+      "Work packages",
+      "Function points",
+      "Labor hours"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-046",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppPeople",
+    "skill": "Organizational structures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Team members report to their department heads and work on the project part time. Which structure is this?",
+    "explanation": "In a functional structure the department manager holds authority and the PM has little. In a projectized one the PM leads a dedicated team.",
+    "options": [
+      "Projectized",
+      "Matrix",
+      "Program",
+      "Functional"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-047",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Reporting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A sponsor asks a one-off question about costs between regular reports. What kind of report answers it?",
+    "explanation": "Ad hoc reports answer specific requests outside the regular reporting cycle.",
+    "options": [
+      "Closeout report",
+      "Status report",
+      "Ad hoc report",
+      "Risk report"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-048",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Productivity tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Several team members need to edit one document at the same time. Which tool fits?",
+    "explanation": "Real-time multi-authoring software lets several people edit together and see each other's changes.",
+    "options": [
+      "File transfer by email",
+      "Calendaring tool",
+      "Print media",
+      "Co-authoring software"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-049",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Compliance and privacy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A customer's name with home address and date of birth is which kind of data?",
+    "explanation": "PII is information that can identify a person, alone or combined with other details.",
+    "options": [
+      "Operational data",
+      "Trade secret",
+      "Personally identifiable information",
+      "Intellectual property"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-050",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Responsibility assignment matrix",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A RACI chart shows two people marked Accountable for one task. What is the problem?",
+    "explanation": "RACI gives each task a single Accountable person so one owner signs off. Two people marked A blur who owns the outcome.",
+    "options": [
+      "Too many are informed",
+      "Nobody is consulted",
+      "Ownership is unclear",
+      "Work is unassigned"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-051",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Productivity tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants one searchable place for how-to pages it can keep updating. Which tool fits?",
+    "explanation": "A wiki holds shared, editable pages that build up the team's knowledge over time.",
+    "options": [
+      "Real-time polling tool",
+      "Wiki knowledge base",
+      "Instant messaging",
+      "Video conferencing"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-052",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Phase gate review",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is decided at a phase gate review?",
+    "explanation": "A phase gate (kill point) reviews the phase's results and decides whether the project continues, changes course or stops.",
+    "options": [
+      "How to name the files",
+      "Which story points to use",
+      "Whether to continue",
+      "Who scribes the meetings"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-053",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Compliance and privacy",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A project will store data about users in several countries. What should the PM check?",
+    "explanation": "Privacy rules differ by country, state and province, so a project handling personal data must check each one that applies.",
+    "options": [
+      "Each region's privacy rules",
+      "Nothing if data is encrypted",
+      "Only the home country's law",
+      "Only the vendor's policy"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-054",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Records management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Who may view the project's contract files is decided in which initiation activity?",
+    "explanation": "Defining access requirements sets who can see project data and documents, part of the records management plan.",
+    "options": [
+      "Develop the WBS",
+      "Conduct the kickoff",
+      "Assess the available resource pool",
+      "Define access requirements"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-055",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Risk analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Ranking risks as high, medium or low by probability and impact is which kind of analysis?",
+    "explanation": "Qualitative analysis rates risks with scales and a probability-impact matrix. Quantitative analysis puts numbers on the effect, such as a simulation.",
+    "options": [
+      "Qualitative",
+      "Quantitative",
+      "Monte Carlo",
+      "Earned value"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-056",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Productivity tools",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Contracts must be routed for approval and signed electronically. Which tool fits?",
+    "explanation": "Workflow and e-signature platforms route documents to approvers in order and capture legal signatures.",
+    "options": [
+      "Enterprise social media",
+      "E-signature platform",
+      "Whiteboard",
+      "Shared spreadsheet"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-057",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppConcepts",
+    "skill": "Agile vs. Waterfall",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A government contract fixes scope, budget and the delivery date, and changes need formal approval. Which approach fits best?",
+    "explanation": "Fixed requirements and a low tolerance for change suit a predictive Waterfall plan. Agile methods suit work whose requirements are expected to change.",
+    "options": [
+      "Scrum",
+      "Kanban",
+      "Extreme programming",
+      "Waterfall"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-058",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppSchedule",
+    "skill": "Schedule maintenance",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Approved scope added three months of work. What should happen to the schedule baseline?",
+    "explanation": "A large approved change justifies a new baseline, keeping the old one for reference. Small adjustments are revisions within the existing baseline.",
+    "options": [
+      "Rebaseline it",
+      "Leave it unchanged",
+      "Delete the old one",
+      "Revise only the forecast"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-059",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppPeople",
+    "skill": "Team life cycle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team has agreed its working rules and trusts one another, but is not yet at full output. Which stage is it in?",
+    "explanation": "Norming follows storming: the team settles how it works together. Performing is when it works at full, largely self-directed output.",
+    "options": [
+      "Norming",
+      "Storming",
+      "Performing",
+      "Adjourning"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-060",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Budget and timeline updates",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Actual spending is recorded weekly against the plan during which phase?",
+    "explanation": "In execution the PM updates the budget and timeline with actuals so variances are seen early.",
+    "options": [
+      "Execution",
+      "Closing",
+      "Discovery",
+      "Initiation"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-061",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Cloud models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company uses a vendor's finished HR application in a browser. Which cloud model is this?",
+    "explanation": "Software as a service delivers a ready-made application; the vendor runs everything beneath it.",
+    "options": [
+      "SaaS",
+      "On-premises",
+      "PaaS",
+      "IaaS"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-062",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Quality charts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which chart ranks causes from most to least frequent to show the vital few?",
+    "explanation": "A Pareto chart sorts categories by frequency, often with a cumulative line, following the 80/20 idea.",
+    "options": [
+      "Pareto chart",
+      "Scatter diagram",
+      "Control chart",
+      "Run chart"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-063",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Scope",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which document breaks the total scope into smaller, manageable deliverables?",
+    "explanation": "The WBS decomposes the scope into deliverables and work packages. In Agile the backlog plays a similar role.",
+    "options": [
+      "Risk register",
+      "Work breakdown structure",
+      "Communication management plan",
+      "Project charter"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-064",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Cloud models",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Under SaaS, what does the customer still manage?",
+    "explanation": "With SaaS the provider runs the application and everything under it. The customer still owns its data and who may use the service.",
+    "options": [
+      "Its data and user access",
+      "Physical servers",
+      "Application source code",
+      "Operating system patches"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-065",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Known and unknown risks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What best describes an unknown risk?",
+    "explanation": "Unknown risks cannot be identified ahead of time, so they are covered by management reserves. Known risks sit in the register with planned responses.",
+    "options": [
+      "One with low probability",
+      "One not yet identified",
+      "One owned by an outside vendor",
+      "One already closed"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-066",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Closing activities",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "Put these closing steps in order:",
+    "explanation": "Each step needs the one before it: deliverables are validated before they can be signed off, the closeout report records that sign-off, and the finished report is then archived with the rest of the documentation.",
+    "options": [
+      "Validate the deliverables",
+      "Get sign-off on the validated deliverables",
+      "Write the closeout report recording the sign-off",
+      "Archive the closeout report with the project files"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-067",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Quality charts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants to see whether more overtime is related to more defects. Which chart fits?",
+    "explanation": "A scatter diagram plots two variables against each other to show whether they are correlated.",
+    "options": [
+      "Histogram",
+      "Scatter diagram",
+      "Gantt chart",
+      "Milestone chart"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-068",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Communication plan",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which plan sets who gets which project information, how often and by what channel?",
+    "explanation": "The communication plan covers audiences, content, frequency, methods and meeting cadence.",
+    "options": [
+      "Records management plan",
+      "Communication plan",
+      "Quality plan",
+      "Transition plan"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-069",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Enterprise software",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which system tracks sales leads, customer contacts and support history?",
+    "explanation": "A CRM system manages interactions with customers and prospects.",
+    "options": [
+      "Data warehouse",
+      "CRM system",
+      "ERP system",
+      "Content management system"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-070",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppConcepts",
+    "skill": "Agile vs. Waterfall",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Scrum, who decides the order of items in the product backlog?",
+    "explanation": "The product owner manages and orders the product backlog to maximize value. The scrum master coaches the team and removes impediments.",
+    "options": [
+      "Lead developer",
+      "Scrum master",
+      "Project sponsor",
+      "Product owner"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-071",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppSchedule",
+    "skill": "Cost and schedule performance",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Earned value is 52,000 dollars and actual cost is 58,500 dollars. By how many dollars is the project over budget? Type the number only.",
+    "explanation": "Cost variance = EV - AC = 52,000 - 58,500 = -6,500. A negative cost variance means 6,500 dollars over budget.",
+    "numeric": {
+      "answers": [
+        "6500"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "PROJPLUS-T1-072",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppPeople",
+    "skill": "Roles and responsibilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A department head refuses to release staff the charter promised. Who should the PM ask for help?",
+    "explanation": "The sponsor backs the project with senior leaders and helps clear organizational obstacles such as resources that are not released.",
+    "options": [
+      "Subject matter expert",
+      "Business analyst",
+      "Scrum master",
+      "Sponsor"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-073",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Quality charts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which chart adds upper and lower limits to show whether a process is stable?",
+    "explanation": "A control chart plots data over time with calculated limits. A run chart shows the same time series without limits.",
+    "options": [
+      "Control chart",
+      "Run chart",
+      "Pareto chart",
+      "Histogram"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-074",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Closing activities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When the project ends, what should happen to team members' access to project systems?",
+    "explanation": "Removing access is a closing task that protects project data once people no longer need it.",
+    "options": [
+      "Remove it",
+      "Make it read-write",
+      "Keep it for a year",
+      "Transfer it to the vendor"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-075",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Transition plan",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "The plan for training support staff and handing the system to operations is part of what?",
+    "explanation": "The transition or release plan covers operational training, go-live and the handoff to the teams who will run the product.",
+    "options": [
+      "Project charter",
+      "Transition plan",
+      "Procurement plan",
+      "Risk register"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-076",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Issue management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does an issue differ from a risk?",
+    "explanation": "A risk is an uncertain future event; an issue is a problem happening now. A risk that occurs becomes an issue.",
+    "options": [
+      "It needs sponsor approval",
+      "It always costs money",
+      "It cannot be resolved",
+      "It has already happened"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-077",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Infrastructure",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An application splits its interface, business logic and database onto separate layers. What is this called?",
+    "explanation": "A multitiered (n-tier) architecture separates presentation, application and data layers so each can scale or change on its own.",
+    "options": [
+      "Centralized mainframe",
+      "Data warehouse",
+      "Multitiered architecture",
+      "Single-tenant cloud"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-078",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Quality charts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which chart shows remaining work falling toward zero over a sprint?",
+    "explanation": "A burndown chart tracks work left. A burnup chart tracks work completed rising toward the total scope.",
+    "options": [
+      "Burnup chart",
+      "Pareto chart",
+      "Burndown chart",
+      "Velocity chart"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-079",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Closing activities",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Comparing final spending with the approved budget at closing is called what?",
+    "explanation": "Budget reconciliation confirms final costs against the budget and closes out project accounts.",
+    "options": [
+      "Cost estimating",
+      "Resource loading",
+      "Budget reconciliation",
+      "Earned value forecasting"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-080",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Baselines and milestones",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Approved scope, schedule and cost baselines are used for what?",
+    "explanation": "Baselines are the approved reference points that actual progress is compared with. They change only through change control.",
+    "options": [
+      "Assigning blame",
+      "Writing the project charter",
+      "Choosing vendors",
+      "Measuring performance"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-081",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Operational change control",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server upgrade is scheduled for Sunday at 2 a.m. when few people work. What is this slot called?",
+    "explanation": "Maintenance windows are agreed low-impact times for downtime, announced to customers in advance.",
+    "options": [
+      "Cutover rehearsal",
+      "Sprint review",
+      "Maintenance window",
+      "Phase gate review"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-082",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Quality charts",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A team completed 31, 27 and 35 story points in its last three sprints. At that average velocity, how many sprints will it need for the 124 points left in the backlog? Type the number only.",
+    "explanation": "Average velocity = (31 + 27 + 35) / 3 = 93 / 3 = 31 points per sprint, and 124 / 31 = 4 sprints.",
+    "numeric": {
+      "answers": [
+        "4"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "PROJPLUS-T1-083",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppConcepts",
+    "skill": "Agile vs. Waterfall",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two conditions favor an Agile approach over Waterfall? (Choose two.)",
+    "explanation": "Agile suits changing requirements and a customer who can review working increments often. A fixed regulated scope and one final delivery point to Waterfall.",
+    "options": [
+      "Customer available for frequent feedback",
+      "Single delivery at the end",
+      "Fixed regulatory scope",
+      "Requirements expected to change",
+      "Large distributed contract teams"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "PROJPLUS-T1-084",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppSchedule",
+    "skill": "Test plan and testing cycles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a bug fix, testers rerun older tests to confirm nothing else broke. Which testing is this?",
+    "explanation": "Regression testing checks that a change did not break features that worked before. Smoke testing is a quick check that a build runs at all.",
+    "options": [
+      "User acceptance testing",
+      "Smoke testing",
+      "Stress testing",
+      "Regression testing"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-085",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppPeople",
+    "skill": "Procurement and contracts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Scope is unclear, so the buyer pays the vendor's hourly rate plus materials. Which contract is this?",
+    "explanation": "Time and material contracts pay for hours and materials used, which suits work whose scope is not yet defined.",
+    "options": [
+      "Time and material",
+      "Fixed price",
+      "Cost plus fixed fee",
+      "Unit price"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-086",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Issue management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A recurring outage keeps returning after each quick fix. What should the PM do next?",
+    "explanation": "Repeated failures after fixes point to an underlying cause. Root cause analysis finds it so the issue stops recurring; a work-around only bypasses it.",
+    "options": [
+      "Run a root cause analysis",
+      "Raise the risk probability",
+      "Apply another work-around",
+      "Close the issue log entry"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-087",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Closing activities",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two belong in the closing phase? (Choose two.)",
+    "explanation": "Closing collects feedback, closes contracts, reconciles the budget, archives documents and celebrates. The charter and kickoff belong to initiation.",
+    "options": [
+      "Assign resources",
+      "Hold the kickoff",
+      "Develop the charter",
+      "Collect stakeholder feedback",
+      "Close contracts"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "PROJPLUS-T1-088",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Planning activities",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two are planning phase activities? (Choose two.)",
+    "explanation": "Planning builds the quality plan, the initial risk assessment, the schedule and budget. Closing archives documents; the charter is signed in initiation.",
+    "options": [
+      "Close vendor contracts",
+      "Develop a QA plan",
+      "Archive project documents",
+      "Perform an initial risk assessment",
+      "Sign the project charter"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "PROJPLUS-T1-089",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Operational change control",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Before a risky database change, what should be ready in case it fails?",
+    "explanation": "A rollback plan restores the previous working state if a change fails its validation checks.",
+    "options": [
+      "Rollback plan",
+      "Pareto chart",
+      "Charter amendment",
+      "Closeout report"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T1-090",
+    "section": "projectplus",
+    "test": 1,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Productivity tools",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two are synchronous communication tools? (Choose two.)",
+    "explanation": "Synchronous tools have people taking part at the same time. Email, wikis and shared files are read later.",
+    "options": [
+      "Shared file folder",
+      "Telephone call",
+      "Wiki page",
+      "Video conference",
+      "Email"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "PROJPLUS-T2-001",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Tracking charts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which chart shows planned spending against actual spending as the budget is used up?",
+    "explanation": "A budget burndown chart shows remaining budget over time so overspending is spotted early.",
+    "options": [
+      "Organizational chart",
+      "Ishikawa fishbone diagram",
+      "Network diagram",
+      "Budget burndown chart"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-002",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "ESG factors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A project's hiring and community impact fall under which ESG factor?",
+    "explanation": "The social factor covers people: employees, communities, customers and suppliers.",
+    "options": [
+      "Environmental",
+      "Technical",
+      "Social",
+      "Governance"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-003",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Financial concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team pays a monthly fee for hosted collaboration software. What kind of expense is this?",
+    "explanation": "Recurring service fees are operational expenses (OpEx). Bought hardware the company owns is a capital expense.",
+    "options": [
+      "Operational expense",
+      "Sunk cost",
+      "Fixed asset",
+      "Capital expense"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-004",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Organizational change management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new ordering process launches. Which step helps staff use it correctly from day one?",
+    "explanation": "Training is a core response in organizational change management, along with communication, documentation and new knowledge bases.",
+    "options": [
+      "Budget reconciliation",
+      "Phase gate",
+      "Training",
+      "Vendor bid review"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-005",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Change control process",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After a change is approved, what is updated before the work begins?",
+    "explanation": "Approved changes are written into the project management plan and the affected baselines, then implemented and validated.",
+    "options": [
+      "Plan and baselines",
+      "Lessons learned register",
+      "Vendor contract template",
+      "Kickoff agenda"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-006",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppConcepts",
+    "skill": "Characteristics of a project",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A help desk resets passwords every day with no end date. Why is this not a project?",
+    "explanation": "Projects are temporary and unique. Ongoing, repeated work is operations, even when it has a sponsor and costs money.",
+    "options": [
+      "It involves IT staff",
+      "It uses no budget",
+      "It has no sponsor",
+      "It is ongoing"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-007",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppSchedule",
+    "skill": "Dependencies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A team chooses to finish design before ordering hardware, though both could run at once. What kind of dependency is this?",
+    "explanation": "A discretionary (soft logic) dependency reflects a preference and can be changed to save time. Hard logic is fixed by the nature of the work.",
+    "options": [
+      "Mandatory",
+      "External",
+      "Start-to-finish",
+      "Discretionary"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-008",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppPeople",
+    "skill": "Communication methods",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A PM must tell a sponsor a key vendor has gone bankrupt. Which method is best first?",
+    "explanation": "Urgent, sensitive news goes to the decision maker directly, then is confirmed in writing. A newsletter or wiki is too slow and too public.",
+    "options": [
+      "Wiki page update",
+      "Team chat channel post",
+      "Monthly newsletter item",
+      "Direct conversation"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-009",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Tracking charts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which chart shows who reports to whom on the project team?",
+    "explanation": "A project organizational chart shows the team's reporting lines and roles.",
+    "options": [
+      "Network diagram",
+      "Responsibility matrix chart",
+      "Organizational chart",
+      "Milestone chart"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-010",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "ESG factors",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A project must follow a new industry standard for accessibility. What does the PM need first?",
+    "explanation": "A PM needs to know which regulations and standards apply before planning the work, so the project can be built to meet them.",
+    "options": [
+      "A new sponsor",
+      "Awareness of the standard",
+      "A larger project budget",
+      "A vendor bid"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-011",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Preexisting contracts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A client hands the vendor its own statement of work at discovery. What does this give the project?",
+    "explanation": "A client SOW (or terms of reference) already sets out what the client expects, so the project starts from those deliverables.",
+    "options": [
+      "Signed project charter",
+      "Approved change requests",
+      "Finished risk register",
+      "Defined deliverables"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-012",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Organizational change management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why publish new knowledge base articles when a system changes?",
+    "explanation": "New knowledge bases and documentation support adoption by giving users answers when they need them.",
+    "options": [
+      "To satisfy the vendor contract",
+      "To close the change log",
+      "To replace the communication plan",
+      "So users can help themselves"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-013",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Tracking charts",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "A PERT estimate has optimistic 3 days, most likely 10 days and pessimistic 23 days. What is the expected duration in days? Type the number only.",
+    "explanation": "PERT expected time = (3 + 4 x 10 + 23) / 6 = 66 / 6 = 11 days. A plain average gives 12.",
+    "numeric": {
+      "answers": [
+        "11"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "PROJPLUS-T2-014",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Mobile device security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Project staff carry laptops with client data on trains. Which control lowers the risk if one is stolen?",
+    "explanation": "Encrypting the drive keeps data unreadable if a device is lost or stolen.",
+    "options": [
+      "Full-disk encryption",
+      "Bigger screen privacy",
+      "Faster processor",
+      "Longer battery life"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-015",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Change control process",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Where is each change request and its approval status recorded?",
+    "explanation": "The change control log tracks every request, its assessment and decision. The issue log tracks current problems.",
+    "options": [
+      "Change control log",
+      "Risk register report",
+      "Defect log",
+      "Issue log"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-016",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Business case",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why might a business case name a prequalified vendor?",
+    "explanation": "Prequalified vendors have already passed the organization's checks, which can shorten procurement and lower risk.",
+    "options": [
+      "Vendors must sign it",
+      "Vendor already approved",
+      "It replaces procurement law",
+      "Vendor wrote the charter"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-017",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Vendor management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A vendor's staff keep contacting users directly against the agreed process. What should the PM enforce?",
+    "explanation": "Vendor rules of engagement set how the vendor works with the project, including who they contact and how.",
+    "options": [
+      "Kickoff agenda",
+      "Story point estimates",
+      "Phase gate criteria",
+      "Rules of engagement"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-018",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Project tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool shows each work item as a card whose column tells its status?",
+    "explanation": "A task board makes the status of work visible at a glance, as in Kanban and Scrum.",
+    "options": [
+      "Gantt chart",
+      "Task board",
+      "Risk register",
+      "Change log"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-019",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppConcepts",
+    "skill": "Characteristics of a project",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which grouping is chosen to meet strategic goals, even when its projects are unrelated?",
+    "explanation": "A portfolio is a set of projects and programs selected for strategy. A program groups related projects for shared benefits.",
+    "options": [
+      "Program",
+      "Portfolio",
+      "Sprint backlog",
+      "Release"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-020",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppSchedule",
+    "skill": "Dependencies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The project cannot go live until a regulator approves it. What kind of dependency is this?",
+    "explanation": "An external dependency relies on a party outside the project team, such as a regulator or vendor.",
+    "options": [
+      "Start-to-start",
+      "Discretionary",
+      "Internal",
+      "External"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-021",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppPeople",
+    "skill": "Meeting management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is a meeting timeboxed?",
+    "explanation": "Timeboxing sets a fixed duration so the meeting stays focused and ends on time.",
+    "options": [
+      "To fix its attendee list",
+      "To record its decisions",
+      "To cap its length",
+      "To publish its agenda"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-022",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Digital security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Contractors may connect from home only through the company VPN. What kind of control is this?",
+    "explanation": "Remote access restrictions limit how and from where people can connect to project systems.",
+    "options": [
+      "Physical access control",
+      "Corporate branding restriction",
+      "Remote access restriction",
+      "Data archiving rule"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-023",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Project charter",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these is produced earliest in a project?",
+    "explanation": "The charter is signed in initiation. The detailed scope statement, WBS and communication plan are planning documents built from it.",
+    "options": [
+      "Detailed scope statement",
+      "Work breakdown structure",
+      "Project charter",
+      "Communication plan"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-024",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Project tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where does the team track current problems that need resolution?",
+    "explanation": "The issue log records active problems with an owner, priority and resolution status.",
+    "options": [
+      "Defect log",
+      "Requirements matrix",
+      "Issue log",
+      "Risk register"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-025",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Conflict management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A PM must resolve a safety disagreement immediately and imposes a decision. Which approach is this?",
+    "explanation": "Forcing (directing) imposes one view. It is fast and suits emergencies, but can hurt relationships if overused.",
+    "options": [
+      "Smoothing",
+      "Avoiding",
+      "Forcing",
+      "Compromise"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-026",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Project change management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A product's login page gets a new color scheme, with no effect on the project plan. What type of change is this?",
+    "explanation": "A product change alters the deliverable itself. A project change alters how the project is run, such as its schedule, budget or resources.",
+    "options": [
+      "Project change",
+      "Scope creep",
+      "Product change",
+      "Baseline change"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-027",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Digital security",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A contractor leaves the project early. What should happen to their system permissions?",
+    "explanation": "Resource access and permissions should match current need, so access is removed when the person leaves.",
+    "options": [
+      "Remove them promptly",
+      "Upgrade to read-only for a year",
+      "Keep them until closing",
+      "Give them to the vendor"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-028",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Stakeholders",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A stakeholder has little power but strong interest in the project. How should the PM treat them?",
+    "explanation": "On a power and interest grid, low power with high interest means keeping the person informed. High power with low interest calls for keeping them satisfied.",
+    "options": [
+      "Keep them satisfied",
+      "Manage them closely",
+      "Keep them informed",
+      "Monitor occasionally"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-029",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Project tools",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Developers need to see who changed a file and roll back to an earlier copy. Which tool fits?",
+    "explanation": "Version control keeps a history of every change with its author, so earlier versions can be restored.",
+    "options": [
+      "Polling tool",
+      "Version control",
+      "Time-tracking tool",
+      "Calendaring tool"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-030",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Data classification",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why classify data by sensitivity at the start of a project?",
+    "explanation": "Classification decides how each type of data must be stored, shared and protected.",
+    "options": [
+      "To pick a delivery methodology",
+      "To apply suitable protection",
+      "To lower licensing costs",
+      "To speed up backups"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-031",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Conflict management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "When is avoiding (withdrawing) a reasonable conflict approach?",
+    "explanation": "Stepping back briefly can help when emotions are high or the issue is trivial. It does not solve the underlying problem.",
+    "options": [
+      "When tempers need to cool",
+      "When safety is at stake",
+      "When a deadline is today",
+      "When the sponsor asks for it"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-032",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppConcepts",
+    "skill": "Methodologies and frameworks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which framework is built on controlled stages, a business case and management by exception?",
+    "explanation": "PRojects IN Controlled Environments (PRINCE2) runs a project in stages with a continuing business case, and the board steps in only when tolerances are exceeded.",
+    "options": [
+      "PRINCE2",
+      "Kanban",
+      "Extreme programming",
+      "DevOps"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-033",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppSchedule",
+    "skill": "Successor/predecessor relationships",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Documentation cannot finish until coding finishes. Which relationship is this?",
+    "explanation": "Finish-to-finish means the successor cannot finish until the predecessor finishes; both may run at the same time before that.",
+    "options": [
+      "Start-to-start",
+      "Start-to-finish",
+      "Finish-to-start",
+      "Finish-to-finish"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-034",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppPeople",
+    "skill": "Organizational structures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The PM has full authority, and the team works only on this project. Which structure is this?",
+    "explanation": "A projectized structure gives the PM control of a dedicated team. Matrix structures split authority with functional managers.",
+    "options": [
+      "Projectized",
+      "Weak matrix",
+      "Balanced matrix",
+      "Functional"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-035",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Project tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Hours worked per task are needed for billing a client. Which tool collects them?",
+    "explanation": "Time-tracking tools record hours by person and task for billing, payroll and actual cost.",
+    "options": [
+      "Wiki",
+      "Time-tracking tool",
+      "Version control tool",
+      "Task board"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-036",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Risk responses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team drops a risky new database and keeps the proven one. Which risk response is this?",
+    "explanation": "Avoiding removes the threat by changing the plan. Mitigating keeps the plan but lowers the chance or impact.",
+    "options": [
+      "Exploit",
+      "Transfer",
+      "Mitigate",
+      "Avoid"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-037",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Responsibility assignment matrix",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a RACI chart, who must be asked for input before work is done?",
+    "explanation": "Consulted people give input in two-way communication. Informed people are only told the result.",
+    "options": [
+      "Consulted",
+      "Informed",
+      "Accountable",
+      "Responsible"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-038",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Data classification",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A design for a patented chip is which type of sensitive information?",
+    "explanation": "Intellectual property covers creations such as designs and inventions protected by patents, copyright or trademarks.",
+    "options": [
+      "Personally identifiable information",
+      "Personal health information",
+      "Public information",
+      "Intellectual property"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-039",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Reporting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which report summarizes progress, risks and issues for stakeholders on a regular schedule?",
+    "explanation": "Status reports give regular snapshots of progress, upcoming work, risks and issues.",
+    "options": [
+      "Defect log",
+      "Ad hoc report",
+      "Status report",
+      "Closeout report"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-040",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Productivity tools",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A team has no server room and wants to avoid installing software. Which scheduling tool fits?",
+    "explanation": "Cloud-based tools run on the provider's infrastructure and are reached through a browser, with nothing to install or host.",
+    "options": [
+      "On-premises solution",
+      "Desktop spreadsheet",
+      "Local installation",
+      "Cloud-based solution"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-041",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Kickoff",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When is the project kickoff usually held?",
+    "explanation": "The kickoff is held in initiation, after the charter authorizes the project, so the team and stakeholders start aligned.",
+    "options": [
+      "After the first status report",
+      "At project closure",
+      "Once the charter is signed",
+      "Before the business case"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-042",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Corporate security policies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team wants to put the company logo on a new public app. What might limit this?",
+    "explanation": "Corporate policies may restrict how the brand and logo are used on project deliverables.",
+    "options": [
+      "Risk appetite",
+      "Sprint length",
+      "Story point scale",
+      "Branding restrictions"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-043",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppConcepts",
+    "skill": "Methodologies and frameworks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Agile method stresses pair programming, test-first coding and small frequent releases?",
+    "explanation": "Extreme programming (XP) is known for engineering practices such as pairing and test-driven development. SAFe scales Agile across many teams.",
+    "options": [
+      "SAFe",
+      "Extreme programming",
+      "PRINCE2",
+      "Kanban"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-044",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Risk responses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two companies team up to win a contract neither could win alone. Which positive risk response is this?",
+    "explanation": "Sharing gives part of an opportunity to a partner better placed to capture it. Transfer is the response for negative risks.",
+    "options": [
+      "Accept",
+      "Transfer",
+      "Exploit",
+      "Share"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-045",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppSchedule",
+    "skill": "Estimating techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why add a contingency reserve to an estimate?",
+    "explanation": "Contingency reserves (buffers) cover known risks with planned responses. Unapproved scope is handled through change control, not reserves.",
+    "options": [
+      "To cover identified risks",
+      "To raise the team bonuses",
+      "To fund new features",
+      "To pay for scope creep"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-046",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppPeople",
+    "skill": "Team life cycle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team works smoothly at high output with little supervision. Which stage is it in?",
+    "explanation": "Performing is the stage of steady, largely self-directed output. Norming comes before it, when the team settles its working rules.",
+    "options": [
+      "Performing",
+      "Norming",
+      "Forming",
+      "Storming"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-047",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Reporting",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A PM compares planned features with what has been delivered so far. What is this?",
+    "explanation": "Gap analysis shows the difference between where the project is and where it should be.",
+    "options": [
+      "Pareto analysis",
+      "Gap analysis",
+      "Make-or-buy analysis",
+      "Root cause analysis"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-048",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Productivity tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Customer problems must be logged, assigned and tracked to closure. Which tool fits?",
+    "explanation": "A ticketing or case management system tracks each request from report to resolution.",
+    "options": [
+      "Charting tool",
+      "Whiteboard",
+      "Presentation software",
+      "Ticketing system"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-049",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Compliance and privacy",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Patient diagnosis records held by a clinic are which kind of data?",
+    "explanation": "Personal health information is health data tied to an individual, which carries strict privacy rules.",
+    "options": [
+      "Public records data",
+      "Personal health information",
+      "Trade secrets",
+      "Intellectual property"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-050",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Solution design",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Reviewing old project documents and system diagrams before choosing a design is part of which phase?",
+    "explanation": "Reviewing existing artifacts and determining the solution design are initiation activities.",
+    "options": [
+      "Monitoring",
+      "Closing",
+      "Initiation",
+      "Execution"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-051",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Productivity tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A PM wants instant votes from a large audience during a town hall. Which tool fits?",
+    "explanation": "Real-time surveys and polling tools collect responses while the meeting is running.",
+    "options": [
+      "Real-time polling",
+      "E-signature platform",
+      "File sharing",
+      "Wiki knowledge base"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-052",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Project meetings",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Short, regular team touch points during execution mainly help with what?",
+    "explanation": "Frequent touch points, such as stand-ups, surface blockers and keep the team aligned.",
+    "options": [
+      "Approving the budget",
+      "Spotting blockers early",
+      "Writing the charter",
+      "Signing vendor contracts"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-053",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Compliance and privacy",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A payment app will store card numbers. What should the PM check early?",
+    "explanation": "Organization- or industry-specific compliance, such as card industry rules, shapes design and testing from the start.",
+    "options": [
+      "Office ESG goals",
+      "Card industry rules",
+      "Kickoff agenda",
+      "Team coding style"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-054",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Scope",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "How does the detailed scope statement differ from the preliminary one?",
+    "explanation": "The preliminary scope in the charter is high level. The detailed scope statement in planning sets deliverables, exclusions, constraints and acceptance criteria.",
+    "options": [
+      "It replaces the charter",
+      "It assigns the RACI roles",
+      "It lists all vendor prices",
+      "It adds exclusions and criteria"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-055",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Risk responses",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A low risk is accepted, but a fallback is written in case it happens. What is that fallback?",
+    "explanation": "Active acceptance keeps a contingency plan ready to use if the risk occurs, with no action taken beforehand.",
+    "options": [
+      "Formal change request",
+      "Mitigation plan",
+      "Risk register",
+      "Contingency plan"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-056",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Quality charts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which diagram is also called an Ishikawa diagram?",
+    "explanation": "The fishbone diagram, named after Kaoru Ishikawa, sorts possible causes of a problem into branches.",
+    "options": [
+      "Burnup chart",
+      "Pareto chart",
+      "Fishbone diagram",
+      "Scatter diagram"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-057",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppConcepts",
+    "skill": "Methodologies and frameworks",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Twenty Agile teams must plan and deliver together on one large product. Which framework is designed for this?",
+    "explanation": "SAFe coordinates many Agile teams on shared planning increments. XP and Kanban are team-level practices.",
+    "options": [
+      "DevOps",
+      "SAFe",
+      "Extreme programming",
+      "Kanban"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-058",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppSchedule",
+    "skill": "Critical path analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A task on the critical path slips two days. What happens to the project end date?",
+    "explanation": "Critical path tasks have zero float, so any delay to them delays the project by the same amount.",
+    "options": [
+      "It slips one day",
+      "It slips two days",
+      "It moves earlier",
+      "It stays the same"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-059",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppPeople",
+    "skill": "Roles and responsibilities",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Who sets standards, templates and governance for projects across the company?",
+    "explanation": "The PMO standardizes project management practices and may support or oversee projects across the organization.",
+    "options": [
+      "PMO",
+      "Subject matter expert",
+      "CCB",
+      "Product owner"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-060",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Budget and timeline updates",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An approved change adds two weeks of work. What should the PM update during execution?",
+    "explanation": "Approved changes flow into the timeline and budget so the plan reflects the real work.",
+    "options": [
+      "Lessons learned only",
+      "Vendor references",
+      "Business case",
+      "Project timeline"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-061",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Cloud models",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Under IaaS, who patches the guest operating system?",
+    "explanation": "With infrastructure as a service the provider runs the physical hosts and network; the customer manages the operating system and everything above it.",
+    "options": [
+      "Cloud provider",
+      "Internet provider",
+      "Hardware maker",
+      "Customer"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-062",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Quality charts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which chart shows how often values fall into ranges, such as tickets by hours to resolve?",
+    "explanation": "A histogram shows the distribution of data across ranges as bars.",
+    "options": [
+      "Decision tree",
+      "Histogram",
+      "Gantt chart",
+      "Run chart"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-063",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Resources",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before assigning people to tasks, what does the PM review?",
+    "explanation": "Assessing the resource pool shows who is available with which skills, and whether anything must be procured.",
+    "options": [
+      "Closeout report",
+      "Resource pool",
+      "Defect log",
+      "Lessons learned"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-064",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Enterprise software",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which system ties together finance, purchasing, inventory and HR in one platform?",
+    "explanation": "ERP systems integrate core business processes in a single system.",
+    "options": [
+      "Customer relationship management",
+      "Enterprise resource planning",
+      "Content management system",
+      "Ticketing system"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-065",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Risk analysis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A PM runs thousands of simulated schedules to see the chance of finishing by June. What is this?",
+    "explanation": "A Monte Carlo simulation is quantitative risk analysis: it puts probabilities on outcomes such as finish dates.",
+    "options": [
+      "Gap analysis",
+      "Qualitative analysis",
+      "Root cause analysis",
+      "Quantitative analysis"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-066",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Closing activities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does formal project sign-off confirm?",
+    "explanation": "Sign-off records that the sponsor or customer accepts the deliverables and the project can close.",
+    "options": [
+      "Deliverables are accepted",
+      "Budget is approved",
+      "Team is hired",
+      "All risks are identified"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-067",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Quality charts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which chart plots a measure over time in order, without control limits, to spot trends?",
+    "explanation": "A run chart shows data points in time order. A control chart adds statistically calculated limits.",
+    "options": [
+      "Scatter diagram",
+      "Histogram",
+      "Run chart",
+      "Control chart"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-068",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Schedule",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An Agile team agrees to release every two weeks. What is this planning step?",
+    "explanation": "Planning a schedule includes setting cadences, such as sprint length and release rhythm.",
+    "options": [
+      "Rebaselining",
+      "Crashing",
+      "Phase gating",
+      "Establishing a cadence"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-069",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Infrastructure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which system combines data from many sources for reporting and analysis?",
+    "explanation": "A data warehouse gathers historical data from several systems so it can be analyzed together.",
+    "options": [
+      "Load balancer",
+      "Web browser cache",
+      "Data warehouse",
+      "File server"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-070",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppConcepts",
+    "skill": "Agile vs. Waterfall",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Compared with Waterfall, how does Agile usually handle communication?",
+    "explanation": "Agile teams rely on short daily meetings and constant collaboration. Formal reports at set points are typical of Waterfall.",
+    "options": [
+      "Sponsor briefings at phase gates",
+      "Formal monthly status reports",
+      "Communication plan sign-off only",
+      "Frequent informal touch points"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-071",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppSchedule",
+    "skill": "Cost and schedule performance",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "Planned value is 31,600 dollars and earned value is 26,400 dollars. By how many dollars of work is the project behind schedule? Type the number only.",
+    "explanation": "Schedule variance = EV - PV = 26,400 - 31,600 = -5,200. Negative SV means 5,200 dollars of planned work has not been done.",
+    "numeric": {
+      "answers": [
+        "5200"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "PROJPLUS-T2-072",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppPeople",
+    "skill": "Procurement and contracts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A buyer knows exactly what it needs and wants vendors' prices only. Which document should it send?",
+    "explanation": "A request for quote asks for prices on a clearly defined need. A request for information gathers general details about what vendors can do.",
+    "options": [
+      "Memorandum of understanding",
+      "Request for proposal",
+      "Request for quote",
+      "Request for information"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-073",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Quality charts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "On a burnup chart, the total scope line rises partway through. What does that show?",
+    "explanation": "A burnup chart shows the scope line separately, so added scope is visible instead of being hidden in the remaining work.",
+    "options": [
+      "Velocity dropped",
+      "Work was completed",
+      "Defects were fixed",
+      "Scope was added"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-074",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Closing activities",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which closing document summarizes results against objectives, final costs and lessons learned?",
+    "explanation": "The closeout report records how the project performed against its objectives, schedule and budget.",
+    "options": [
+      "Issue log",
+      "Change log",
+      "Status report",
+      "Closeout report"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-075",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Minimum viable product",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why release a minimum viable product early?",
+    "explanation": "An MVP has just enough features to be usable, so real users can give feedback before the team invests in more.",
+    "options": [
+      "To skip acceptance testing",
+      "To get user feedback sooner",
+      "To close the project faster",
+      "To avoid change control"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-076",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "General risks",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two are common sources of risk for IT projects? (Choose two.)",
+    "explanation": "Mergers, reorganizations, regulatory changes, end-of-life infrastructure and major cybersecurity events can all disrupt a project.",
+    "options": [
+      "Daily stand-up meeting",
+      "Infrastructure end-of-life",
+      "Weekly status report",
+      "Approved project charter",
+      "Merger or acquisition"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "PROJPLUS-T2-077",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Operational change control",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In a CI/CD pipeline, what happens each time code is merged?",
+    "explanation": "Continuous integration builds and tests every change automatically; continuous deployment then releases changes that pass.",
+    "options": [
+      "Budget reconciliation",
+      "Automated build and tests",
+      "Phase gate review",
+      "Charter update"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-078",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Quality charts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which tool maps choices and their possible outcomes with probabilities to compare options?",
+    "explanation": "A decision tree branches each choice into outcomes with probabilities and values, so the expected value of each option can be compared.",
+    "options": [
+      "Decision tree",
+      "Histogram",
+      "Run chart",
+      "Task board"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-079",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Closing activities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why archive project documentation at closing?",
+    "explanation": "Archived records support audits, legal needs and planning of future projects.",
+    "options": [
+      "To restart the project",
+      "To reset the baselines",
+      "For audits and future projects",
+      "To reopen the closed contracts"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-080",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Budget",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which step comes first when building a project budget?",
+    "explanation": "Planning estimates the cost of work packages and resources, then adds reserves to form the budget. Reconciliation happens at closing.",
+    "options": [
+      "Approve change requests",
+      "Release the contingency",
+      "Estimate the work's cost",
+      "Reconcile the final costs"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-081",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Operational change control",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where should a new release be tested before real users see it?",
+    "explanation": "Staging (or beta) mirrors production so changes can be checked safely before release.",
+    "options": [
+      "Staging environment",
+      "Production environment",
+      "Customer's laptop",
+      "Help desk queue"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-082",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Quality charts",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Match each need to the chart that fits:",
+    "explanation": "A velocity chart compares points finished across sprints, a burndown shows work remaining, and a Pareto chart ranks causes by frequency.",
+    "rows": [
+      "Story points finished per sprint",
+      "Work left in this sprint",
+      "Top causes of returns"
+    ],
+    "columns": [
+      "Pareto chart",
+      "Velocity chart",
+      "Burndown chart"
+    ],
+    "correct": [
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-083",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppConcepts",
+    "skill": "Agile vs. Waterfall",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two are environmental factors that can steer the choice between Agile and Waterfall? (Choose two.)",
+    "explanation": "Organizational culture, development practices and industry standards all shape the choice. A strict, regulated industry often leans toward Waterfall.",
+    "options": [
+      "Organizational culture",
+      "Industry standards",
+      "Office floor layout",
+      "Team lunch schedule",
+      "Color of the Gantt chart"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2
+  },
+  {
+    "id": "PROJPLUS-T2-084",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppSchedule",
+    "skill": "Quality concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A vendor promises 99.9 percent uptime and a four-hour response. Which document sets these terms?",
+    "explanation": "A service-level agreement defines measurable service targets such as uptime and response time.",
+    "options": [
+      "Project charter",
+      "Statement of work",
+      "Service-level agreement",
+      "Requirements traceability matrix"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-085",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppPeople",
+    "skill": "Procurement and contracts",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Match each situation to the resource procurement method:",
+    "explanation": "Unique needs are built, short-term equipment is leased, and services billed per user or per use are subscriptions (pay as you go).",
+    "rows": [
+      "Custom software no vendor sells",
+      "Laptops needed for two months",
+      "Email paid per user each month"
+    ],
+    "columns": [
+      "Subscription",
+      "Lease",
+      "Build"
+    ],
+    "correct": [
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-086",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Issue management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which factor helps set an issue's priority?",
+    "explanation": "Issues are prioritized by severity, impact on the project, urgency and the scope of impact on the organization.",
+    "options": [
+      "Who reported it",
+      "Severity of impact",
+      "Time of day reported",
+      "Length of description"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-087",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Closing activities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why hold a celebration or give rewards when a project closes?",
+    "explanation": "Rewards and celebration recognize contributions and help morale before people move to new work.",
+    "options": [
+      "To close open issues",
+      "To approve the next budget",
+      "To meet contract terms",
+      "To recognize the team"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-088",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Initiation activities",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two happen in the initiation phase? (Choose two.)",
+    "explanation": "Initiation develops the charter, identifies stakeholders, builds the RACI and holds the kickoff. Validation and releasing resources come at closing.",
+    "options": [
+      "Release resources",
+      "Manage vendor performance",
+      "Develop the charter",
+      "Identify stakeholders",
+      "Validate deliverables"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "PROJPLUS-T2-089",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Cloud models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does anything as a service (XaaS) describe?",
+    "explanation": "XaaS is the broad idea that almost any IT capability can be delivered over the network as a service.",
+    "options": [
+      "A company's own private data center",
+      "A hardware lease with on-site support",
+      "Software installed on each user's own PC",
+      "Any IT capability delivered as a service"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-T2-090",
+    "section": "projectplus",
+    "test": 2,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Project tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which document lists each identified risk with its owner, probability, impact and planned response?",
+    "explanation": "The risk register holds the detail for every identified risk: its owner, probability and impact ratings and the planned response. The issue log tracks problems that have already happened.",
+    "options": [
+      "Defect log",
+      "Issue log",
+      "Risk register",
+      "Change log"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-001",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Issue management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server failure stops testing, so the team tests on a borrowed machine while it is repaired. What is this?",
+    "explanation": "A work-around keeps work moving around a problem without fixing it. The repair still needs to happen.",
+    "options": [
+      "Risk transfer",
+      "Work-around",
+      "Phase gate",
+      "Root cause analysis"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-002",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppConcepts",
+    "skill": "Methodologies and frameworks",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which approach completes each phase, such as design or build, before the next begins?",
+    "explanation": "Waterfall is sequential: requirements, design, build, test and deploy follow one another. Scrum repeats all of these inside each sprint.",
+    "options": [
+      "Scrum",
+      "Waterfall",
+      "DevOps",
+      "Kanban"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-003",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppSchedule",
+    "skill": "Test plan and testing cycles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which test pushes a system beyond normal load to find where it breaks?",
+    "explanation": "Stress testing loads a system past its expected peak to find its breaking point. Performance testing checks speed under normal and peak loads.",
+    "options": [
+      "Smoke testing",
+      "Acceptance testing",
+      "Regression testing",
+      "Stress testing"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-004",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppPeople",
+    "skill": "Procurement and contracts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A buyer pays an agreed rate for each workstation the vendor installs, however many that turns out to be. Which contract type is this?",
+    "explanation": "A unit price contract sets a price per unit delivered, so the total depends on the quantity. Time and material pays for hours worked, cost plus reimburses costs plus a fee, and fixed price sets one total for the whole job.",
+    "options": [
+      "Fixed price",
+      "Cost plus",
+      "Time and material",
+      "Unit price"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-005",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Responsibility assignment matrix",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In a RACI chart, who actually does the work on a task?",
+    "explanation": "Responsible people complete the work. The Accountable person owns the outcome and signs off.",
+    "options": [
+      "Informed",
+      "Accountable",
+      "Responsible",
+      "Consulted"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-006",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Reporting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "External stakeholders need progress updates. What should the PM keep out of them?",
+    "explanation": "External status reporting shares progress suited to the audience and leaves out confidential internal information.",
+    "options": [
+      "Overall progress",
+      "Sensitive internal details",
+      "Milestone dates",
+      "Next steps"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-007",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Productivity tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team brainstorms with sticky notes in the same room. Which tool are they using?",
+    "explanation": "A physical or virtual whiteboard supports visual, collaborative sessions such as brainstorming.",
+    "options": [
+      "E-signature platform",
+      "Ticketing system",
+      "Whiteboard",
+      "Version control"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-008",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Operational change control",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why notify customers before a planned change to a live system?",
+    "explanation": "Customer notifications warn users about downtime or changes so they are not caught off guard.",
+    "options": [
+      "To approve the code",
+      "To reset the baselines",
+      "So they can plan ahead",
+      "To close the change"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-009",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Risk responses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team adds extra code reviews to lower the chance of defects. Which risk response is this?",
+    "explanation": "Mitigation reduces the probability or impact of a threat while the plan stays the same.",
+    "options": [
+      "Accept",
+      "Mitigate",
+      "Avoid",
+      "Share"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-010",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppConcepts",
+    "skill": "Methodologies and frameworks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which approach joins development and operations teams to release software often and reliably?",
+    "explanation": "DevOps breaks down the wall between building and running software, using automation to release often.",
+    "options": [
+      "Earned value",
+      "PRINCE2",
+      "DevOps",
+      "Waterfall"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-011",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppSchedule",
+    "skill": "Verification and validation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Checking that a build matches its written specification is called what?",
+    "explanation": "Verification asks whether the product was built to the specification. Validation asks whether it meets the users' real needs.",
+    "options": [
+      "Smoke testing",
+      "Validation",
+      "Verification",
+      "Benchmarking"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-012",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppPeople",
+    "skill": "Team performance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When should a PM give a team member feedback on performance?",
+    "explanation": "Timely, regular feedback lets people adjust while the project is still running.",
+    "options": [
+      "Only at project closure",
+      "Only during annual reviews",
+      "Only after a failure",
+      "Promptly and regularly"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-013",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Records management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which plan sets how project data and documents are stored, versioned and retained?",
+    "explanation": "The records management plan covers storage, naming, access and retention of project data and documents.",
+    "options": [
+      "Records management plan",
+      "Quality management plan",
+      "Risk management plan",
+      "Release plan"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-014",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Closing activities",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Team members finish their last tasks. Which closing activity frees them for other work?",
+    "explanation": "Releasing resources returns people and equipment to their departments or the resource pool.",
+    "options": [
+      "Removing access",
+      "Releasing resources",
+      "Closing contracts",
+      "Collecting feedback"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-015",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Risk analysis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which qualitative factor rates how easily a risk will be noticed before it strikes?",
+    "explanation": "Detectability measures how easily a risk can be spotted in time. Interconnectivity looks at how risks affect each other.",
+    "options": [
+      "Detectability",
+      "Interconnectivity",
+      "Proximity",
+      "Velocity"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-016",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppTools",
+    "skill": "Quality charts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team's velocity chart shows points falling for three sprints. What should the PM do first?",
+    "explanation": "A falling trend is a signal to investigate, often in the retrospective, before changing plans.",
+    "options": [
+      "Rebaseline the budget",
+      "Add more scope",
+      "End the project",
+      "Ask the team why"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-017",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppGovernance",
+    "skill": "Software change control",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two belong in software change control? (Choose two.)",
+    "explanation": "Software change control defines requirements, assesses risk, tests (automated or manual), gets approval, notifies customers and releases.",
+    "options": [
+      "Approval before release",
+      "Celebrating the team",
+      "Writing the business case",
+      "Testing the change",
+      "Holding the kickoff"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "PROJPLUS-D-018",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppConcepts",
+    "skill": "Agile vs. Waterfall",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Scrum team for a small product usually has how many people?",
+    "explanation": "Scrum teams are small, typically ten or fewer people, so they can stay nimble and communicate easily.",
+    "options": [
+      "Ten or fewer",
+      "About twenty-five",
+      "At least fifty",
+      "Exactly three"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-019",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppSchedule",
+    "skill": "Quality concepts",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two happen at the end of a Scrum sprint? (Choose two.)",
+    "explanation": "The sprint review shows the increment to stakeholders, and the retrospective looks at how the team can work better next sprint.",
+    "options": [
+      "Project charter signing",
+      "Sprint review",
+      "Phase gate audit",
+      "Vendor bid opening",
+      "Retrospective"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "PROJPLUS-D-020",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppPeople",
+    "skill": "Vendor evaluation",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two are vendor evaluation techniques? (Choose two.)",
+    "explanation": "Buyers compare vendors on references, demonstrations, technical approach, capacity and best value.",
+    "options": [
+      "Sprint retrospective",
+      "Daily stand-up",
+      "Burndown review",
+      "Product demonstration",
+      "Checking references"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "PROJPLUS-D-021",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppInitPlan",
+    "skill": "Scope",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "How small should a WBS work package be?",
+    "explanation": "Work packages are decomposed until they can be estimated, scheduled, assigned and tracked. Splitting by phase or person is a different structure.",
+    "options": [
+      "One per reporting period",
+      "One per team member",
+      "Small enough to estimate and assign",
+      "One per project phase"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-022",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppExecClose",
+    "skill": "Closing activities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why close a vendor contract formally?",
+    "explanation": "Contract closure confirms delivery and payment terms are complete and settles any open claims.",
+    "options": [
+      "To start a new phase gate",
+      "To raise a change request",
+      "To change the scope",
+      "To confirm terms are met"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "PROJPLUS-D-023",
+    "section": "projectplus",
+    "test": 0,
+    "module": 1,
+    "domain": "ppChange",
+    "skill": "Issue management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who should own an issue once it is logged?",
+    "explanation": "Every issue gets one owner responsible for driving it to resolution, with an escalation path if it stalls.",
+    "options": [
+      "Change control board",
+      "One named person",
+      "Whole project team",
+      "Nobody until escalated"
+    ],
+    "correct": [
+      1
+    ]
+  }
+]

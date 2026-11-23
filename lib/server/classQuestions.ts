@@ -105,6 +105,7 @@ import "@/lib/v2/banks/prince2";
 import "@/lib/v2/banks/psm";
 import "@/lib/v2/banks/pspo";
 import "@/lib/v2/banks/capm";
+import "@/lib/v2/banks/projectplus";
 import "@/lib/v2/banks/gcdl";
 import "@/lib/v2/banks/gcppca";
 import "@/lib/v2/banks/ssccgl";

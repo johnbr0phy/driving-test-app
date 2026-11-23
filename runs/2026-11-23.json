@@ -1,0 +1,717 @@
+{
+  "date": "2026-11-23",
+  "model": "claude-sonnet-5-5",
+  "maxSearches": 2,
+  "summary": {
+    "asked": 25,
+    "answered": 25,
+    "mentioned": 1,
+    "cited": 1,
+    "inResults": 1,
+    "costUsd": 1.5364,
+    "topHosts": [
+      {
+        "host": "driving-tests.org",
+        "answers": 7
+      },
+      {
+        "host": "dmv.org",
+        "answers": 3
+      },
+      {
+        "host": "uniontestprep.com",
+        "answers": 3
+      },
+      {
+        "host": "allhealthcarecareers.com",
+        "answers": 2
+      },
+      {
+        "host": "test-guide.com",
+        "answers": 2
+      },
+      {
+        "host": "appily.com",
+        "answers": 1
+      },
+      {
+        "host": "asvabprogram.com",
+        "answers": 1
+      },
+      {
+        "host": "asvabtutor.com",
+        "answers": 1
+      },
+      {
+        "host": "civicspass.com",
+        "answers": 1
+      },
+      {
+        "host": "collegeboard.org",
+        "answers": 1
+      },
+      {
+        "host": "diamondnursingschool.com",
+        "answers": 1
+      },
+      {
+        "host": "dmv-test-pro.com",
+        "answers": 1
+      },
+      {
+        "host": "dmv-written-test.com",
+        "answers": 1
+      },
+      {
+        "host": "dmv.ca.gov",
+        "answers": 1
+      },
+      {
+        "host": "dmv.ny.gov",
+        "answers": 1
+      }
+    ],
+    "byFamily": {
+      "DMV": {
+        "asked": 6,
+        "mentioned": 0,
+        "cited": 0
+      },
+      "CDL": {
+        "asked": 2,
+        "mentioned": 0,
+        "cited": 0
+      },
+      "Healthcare": {
+        "asked": 6,
+        "mentioned": 0,
+        "cited": 0
+      },
+      "Military and civics": {
+        "asked": 2,
+        "mentioned": 0,
+        "cited": 0
+      },
+      "School": {
+        "asked": 2,
+        "mentioned": 0,
+        "cited": 0
+      },
+      "Licensing": {
+        "asked": 2,
+        "mentioned": 1,
+        "cited": 1
+      },
+      "International": {
+        "asked": 4,
+        "mentioned": 0,
+        "cited": 0
+      },
+      "General": {
+        "asked": 1,
+        "mentioned": 0,
+        "cited": 0
+      }
+    },
+    "foundNotCited": []
+  },
+  "results": [
+    {
+      "id": "dmv-ca",
+      "family": "DMV",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "dmv.ca.gov",
+        "driving-tests.org"
+      ],
+      "searches": 1,
+      "excerpt": "My top pick is the **official California DMV practice tests** on dmv.ca.gov. Search for \"DMV practice tests\" there. I didn't open that page in this search, so I'm going from what I know of the site. The tests are free, and they come from the agency that writes the real exam. The DMV also has a free handbook, and the actual test is based on it.\n\n**Driving-Tests.org** is a good second option. Its free California tests mirror the official knowledge test and give immediate feedback on missed questions. The site offers several test types, including road-sign drills and \"complex situations\" sets. So",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 3,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 2,
+        "text": 7
+      },
+      "costUsd": 0.0569
+    },
+    {
+      "id": "dmv-tx",
+      "family": "DMV",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "parenttaught.com",
+        "txdps.texas.gov",
+        "dmv.org",
+        "driversed.com",
+        "driving-tests.org"
+      ],
+      "searches": 1,
+      "excerpt": "Here are some places to find free Texas permit practice questions:\n\n- **ParentTaught.com**: It has a free 30-question practice test for the Texas learner permit, with no signup or email. It gives instant feedback and unlimited retakes, and it uses the same 70% passing bar as the real exam.\n- **Texas DPS (txdps.texas.gov)**: This is the official source. I didn't pull its pages in this search, so check the site for the Texas Driver Handbook. The handbook is free, and the real test is based on it.\n- **Well-known practice-test sites**: DMV.org, DriversEd.com, and Driving-Tests.org usually offer fr",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 3,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 2,
+        "text": 5
+      },
+      "costUsd": 0.0552
+    },
+    {
+      "id": "dmv-fl",
+      "family": "DMV",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "stateofflorida.com",
+        "highwaytrafficschool.com",
+        "firsttimedriver.com"
+      ],
+      "searches": 1,
+      "excerpt": "Here are some free options for a Florida learner's permit practice test:\n\n1. **StateofFlorida.com – Florida DMV Practice Test** (https://www.stateofflorida.com/dmv-practice-test/): The quiz has 20 questions and gives full answers and explanations once you finish.\n\n2. **Highway Traffic School** (https://www.highwaytrafficschool.com/florida/free-permit-practice-test/): It has 20 exam-style questions drawn from the Official Florida Driver's Handbook. It says there's no account or email needed, and you get unlimited free attempts.\n\n3. **FirstTimeDriver.com** (https://www.firsttimedriver.com/florid",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 3,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 2,
+        "text": 7
+      },
+      "costUsd": 0.0569
+    },
+    {
+      "id": "dmv-ny",
+      "family": "DMV",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "driving-tests.org",
+        "dmv-test-pro.com",
+        "dmv.ny.gov"
+      ],
+      "searches": 1,
+      "excerpt": "Here are some good free options for a NY permit practice test:\n\n1. **Driving-Tests.org** is my top pick. It's a free practice test with answers and explanations, based on the 2026 NYS Driver's Manual. It also has several tests. The page describes itself as \"One of 4 free online New York tests.\"\n2. **SafeMotorist** is a good choice if you don't want to sign up. Its full practice test is free, with no sign-up or credit card required.\n3. **DMV-Test-Pro.com** has multiple practice tests. One example is a 30-question test, \"Practice Test 7.\"\n4. **EPermitTest** offers 20 new questions for the 2026 p",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 5,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 4,
+        "thinking": 1,
+        "text": 13
+      },
+      "costUsd": 0.0892
+    },
+    {
+      "id": "dmv-any",
+      "family": "DMV",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "driving-tests.org",
+        "dmv.org"
+      ],
+      "searches": 1,
+      "excerpt": "Here are the sites I'd start with. I didn't run a full comparison, so treat this as a short list rather than a ranking.\n\n- **Driving-Tests.org** has free practice tests for each state. Its California tests offer instant feedback, progress tracking, unlimited attempts, and no registration. They're based on the official state driver's manual. It's a good first stop because it covers every state.\n- **Your state DMV's website** is the most reliable source. Many states publish the official driver's handbook there, and some post sample questions. The real test is drawn from the handbook. Search for ",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 3,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 2,
+        "text": 5
+      },
+      "costUsd": 0.0571
+    },
+    {
+      "id": "motorcycle",
+      "family": "DMV",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "driving-tests.org",
+        "driverslicensetest.net",
+        "permittestpractice.com",
+        "epermittest.com"
+      ],
+      "searches": 1,
+      "excerpt": "Here are some free options for motorcycle permit practice tests:\n\n- **Driving-Tests.org** has free state-specific motorcycle permit tests. These include New York, Pennsylvania, Iowa and Ohio, and there are likely more states. The New York test has 20 multiple-choice questions based on the official state motorcycle manual.\n- **DriversLicenseTest.net** has a free motorcycle practice test with permit-style questions and answers.\n- **Quibank** has a free 60-question motorcycle permit practice test.\n- **PermitTestPractice.com** has free motorcycle questions.\n- **ePermitTest.com** has a simulator, f",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 5,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 4,
+        "text": 3
+      },
+      "costUsd": 0.0879
+    },
+    {
+      "id": "cdl",
+      "family": "CDL",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "driving-tests.org"
+      ],
+      "searches": 1,
+      "excerpt": "I'd start with **Driving-Tests.org**. Of the free options I found, it has the broadest coverage. This is based on a quick search, not a head-to-head comparison of every site.\n\n- **Driving-Tests.org**: Its free CDL practice tests cover General Knowledge, Air Brakes, HazMat, Tanker, and all endorsements. The General Knowledge test covers vehicle inspection, loading cargo, safe driving practices, and prohibited practices. It also helps you see which parts of your state's CDL manual you need to review. It has a Premium upsell, but the free tests are available without it.\n- **Roehl Transport (roehl",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 3,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 2,
+        "text": 3
+      },
+      "costUsd": 0.0566
+    },
+    {
+      "id": "cdl-hazmat",
+      "family": "CDL",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "driving-tests.org"
+      ],
+      "searches": 1,
+      "excerpt": "Here are some places to practice for free:\n\n1. **Driving-Tests.org** has a free HazMat practice test with 30 questions and a study guide. It says you can take it online as many times as you want, with no signup. It also has state-specific versions, such as one for Florida.\n\n2. **Your state's CDL manual.** Your state DMV publishes it as a free PDF. The HazMat section is the source material for the real test. The federal rules behind it come from FMCSA and PHMSA.\n\n3. **Your state DMV website.** Many DMVs post sample questions or practice quizzes. Search \"[your state] CDL manual\".\n\nSome other poi",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 3,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 2,
+        "text": 5
+      },
+      "costUsd": 0.0562
+    },
+    {
+      "id": "teas",
+      "family": "Healthcare",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "allhealthcarecareers.com",
+        "testprepreview.com"
+      ],
+      "searches": 1,
+      "excerpt": "There isn't one single best free TEAS 7 test, but these are good places to start. The search results didn't show their quality or accuracy, so this list rests on what the sites say about themselves.\n\n- **All Healthcare Careers** (allhealthcarecareers.com/teas-practice-tests): It offers free TEAS 7 practice tests with answers, covering Reading, Math, English & Language Usage, and Science. It has three full-length mock exams plus section-specific tests, so it's the most complete free option I found.\n- **Test Prep Review** (testprepreview.com/teas_practice.htm): It offers a free TEAS 7 practice t",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 3,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 2,
+        "text": 3
+      },
+      "costUsd": 0.057
+    },
+    {
+      "id": "hesi",
+      "family": "Healthcare",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "study.com"
+      ],
+      "searches": 1,
+      "excerpt": "Yes, there are a few free options:\n\n- **Mometrix**: a free HESI A2 practice test with 310 questions covering math, reading, science, and more. It includes a score report and detailed explanations, and it's based on the official outline. This is probably the best place to start because it's long and covers every section.\n- **Study.com**: offers a free HESI A2 practice test with questions meant to show you what to expect on test day. It also has a study guide with lessons and flashcards for each exam area. Some of its content may require signing up.\n\nOther tips:\n- Check which sections your nursi",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 3,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 2,
+        "text": 5
+      },
+      "costUsd": 0.0563
+    },
+    {
+      "id": "nclex-rn",
+      "family": "Healthcare",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [],
+      "searches": 1,
+      "excerpt": "**Nurseslabs** is the best fully free option I found. Its NCLEX test bank has 1,000+ free NCLEX-RN questions with rationales, and it covers the Next Generation NCLEX (NGN) question types. You don't need to sign up or pay.\n\n**UWorld** is the best free sample of a paid question bank. The free trial gives you 50 sample practice questions with detailed rationales. It also covers the newer item types, including case studies, bow-tie and matrix questions. Many people consider UWorld the closest to real exam difficulty. The free portion is small, though, and the full bank is paid.\n\n**Suggested approa",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 3,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 2,
+        "text": 5
+      },
+      "costUsd": 0.0563
+    },
+    {
+      "id": "cna",
+      "family": "Healthcare",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "practicecnatest.com",
+        "allhealthcarecareers.com",
+        "tests.com",
+        "nursetogether.com",
+        "diamondnursingschool.com",
+        "practicetestgeeks.com"
+      ],
+      "searches": 1,
+      "excerpt": "Here are several places that offer free CNA practice tests, based on my search:\n\n- **CNA Plus (cna.plus):** It has a free practice test with 20 questions on basic nursing skills. It also has a free timed exam simulator with 60+ questions that match the real exam format and shows your score instantly.\n- **PracticeCNATest.com:** It says its free CNA practice test has 180 questions, with answers and explanations.\n- **AllHealthcareCareers.com:** It offers a 60-question practice test with answers. Its page says you can take a full test free with no card.\n- **Tests.com:** It has a free sample Nursin",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 4,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 3,
+        "text": 7
+      },
+      "costUsd": 0.0751
+    },
+    {
+      "id": "ptcb",
+      "family": "Healthcare",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "pharmacytechscholar.com",
+        "trade-schools.net",
+        "ptcb.org"
+      ],
+      "searches": 1,
+      "excerpt": "Yes. There are several free options, though none of them are official PTCB tests.\n\n- **Pharmacy Tech Scholar:** It offers a free practice test with 90 PTCE-style questions in a timed session of 1 hour and 50 minutes. It then shows which content areas need more work. The site says it is independent practice and not a PTCB product. You can find it at pharmacytechscholar.com/ptcb-practice-test.\n- **Trade-Schools.net:** It has a free PTCB practice test covering medication safety, pharmacy math, prescriptions, drug classes, inventory, and pharmacy law basics. It isn't an official exam, isn't endors",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 3,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 2,
+        "text": 7
+      },
+      "costUsd": 0.0564
+    },
+    {
+      "id": "emt",
+      "family": "Healthcare",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "nremtpracticetest.org",
+        "nremt.org"
+      ],
+      "searches": 1,
+      "excerpt": "Here are some good free options, based on what I found:\n\n- **Mometrix Academy** has a free EMT practice test. It's a full-length test based on the official outline, with a score report and detailed explanations. It's a good place to start for realistic question formats. The real exam has 70–120 questions, including technology-enhanced items like drag-and-drop, and a 2-hour limit.\n- **NREMTPracticeTest.org** offers six free practice tests covering airway, cardiology, trauma and more, with no sign-up required. It shows your score and lets you review answers. It's useful if you want several tests",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 3,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 2,
+        "text": 7
+      },
+      "costUsd": 0.0567
+    },
+    {
+      "id": "asvab",
+      "family": "Military and civics",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "test-ninjas.com",
+        "militarytoolkit.com",
+        "asvabtutor.com",
+        "asvabprogram.com"
+      ],
+      "searches": 1,
+      "excerpt": "There isn't one objectively best free ASVAB practice test. These are the options that came up in my search, and the right one depends on what you need:\n\n- **Test Ninjas** (test-ninjas.com/asvab-practice-test): It offers a 20-question guided sampler with worked answers, or two full timed tests with 135 questions covering all 10 CAT-ASVAB subtests, with no signup. This is a good choice if you want a full-length run-through with no account. It also has an AFQT-only test.\n- **Military Toolkit** (militarytoolkit.com): Its listing describes timed tests of all 10 subtests with no signup.\n- **ASVAB Tu",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 5,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 4,
+        "text": 3
+      },
+      "costUsd": 0.0894
+    },
+    {
+      "id": "civics",
+      "family": "Military and civics",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "uscis.gov",
+        "civicspass.com"
+      ],
+      "searches": 1,
+      "excerpt": "The best free approach is to start with the official government materials, then use a practice site to quiz yourself.\n\n**1. Check which test version you'll take.** This decides what to study. According to U.S. Language Services, the 2025 test applies if you filed Form N-400 on or after Oct 20, 2025. It has 128 questions to study, the officer asks up to 20, and you need 12 correct. If you filed earlier, the 2008 test applies. It has 100 questions, the officer asks up to 10, and you need 6 correct. There is also a 65/20 exception, which uses 20 starred questions.\n\n**2. Use the official USCIS mat",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 3,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 2,
+        "text": 5
+      },
+      "costUsd": 0.059
+    },
+    {
+      "id": "ged",
+      "family": "School",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "ged.com",
+        "test-guide.com"
+      ],
+      "searches": 1,
+      "excerpt": "Yes. Which one is best depends on what you need.\n\n**Best free option: the official GED.com preview tests.**\n- GED.com offers a free sample tutorial test in each GED subject. Those subjects are Math, Language Arts, Social Studies and Science.\n- The questions are similar to the real exam and include several formats, such as multiple-choice, drop-down and fill-in-the-blank.\n- The Math preview also comes with a calculator reference sheet, a formula sheet and answer explanations.\n- Spanish versions are available.\n- You can find them at ged.com/study/free-online-ged-test.html.\n\n**Best for volume: Te",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 3,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 2,
+        "text": 9
+      },
+      "costUsd": 0.0586
+    },
+    {
+      "id": "sat",
+      "family": "School",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "collegeboard.org",
+        "appily.com"
+      ],
+      "searches": 1,
+      "excerpt": "Here are the best free places to practice SAT questions online:\n\n1. **Khan Academy (Official Digital SAT Prep).** Khan Academy says its Official Digital SAT Prep is free and built with the College Board, which makes the SAT. It includes practice questions, videos, lessons, hints, and test-taking tips. It's the best place to start.\n\n2. **College Board's Bluebook app.** The College Board offers official full-length practice tests through Bluebook. Use it to simulate the real digital test. The SAT is taken in this app, so it also gets you used to the format.\n\n3. **College Board's SAT Suite Questi",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 3,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 2,
+        "thinking": 1,
+        "text": 7
+      },
+      "costUsd": 0.0562
+    },
+    {
+      "id": "real-estate",
+      "family": "Licensing",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "uniontestprep.com",
+        "kapre.com"
+      ],
+      "searches": 1,
+      "excerpt": "Good enough; I'll answer from what I saw.\n\nHere are some places to start. I only looked at a quick search, so check each site for your state.\n\n- **Union Test Prep** (uniontestprep.com) has free practice tests for the Real Estate License Exam, starting with 205 practice questions. They're split by topic, including contracts, financing, property ownership laws, and appraisal.\n- **Kaplan Real Estate Education** (kapre.com) has free sample questions. These include a free 5-question Texas practice test and a short math quiz. They're a quick way to gauge your level, but they aren't a full exam.\n\n**T",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 4,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 3,
+        "text": 5
+      },
+      "costUsd": 0.0712
+    },
+    {
+      "id": "security-plus",
+      "family": "Licensing",
+      "mentioned": true,
+      "cited": true,
+      "inResults": true,
+      "rank": 2,
+      "ourPaths": [
+        "/comptia-security-plus-practice-test"
+      ],
+      "citedHosts": [
+        "uniontestprep.com",
+        "tigertest.io"
+      ],
+      "searches": 1,
+      "excerpt": "There isn't one best option. Which is best depends on what you need, and these are the free ones I found for the current SY0-701 exam:\n\n- **Security+ Studio (securityplus.studio):** This is the largest free set I found. It has 12 full practice exams with 1,080 questions, timed mode, instant scoring, and explanations for every answer. Its FAQ says no account or credit card is needed. It also has study guides and flashcards. Use it for full-length practice.\n- **Union Test Prep (uniontestprep.com):** It offers 105 free questions split by exam domain (General Security Concepts, Security Architectu",
+      "saidAboutUs": [
+        "- **Tigertest (tigertest.io):** It has 200 free questions with explanations and no account required."
+      ],
+      "blockTypes": {
+        "server_tool_use": 3,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 2,
+        "text": 11
+      },
+      "costUsd": 0.0584
+    },
+    {
+      "id": "uk-theory",
+      "family": "International",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "drivingtheorytest.uk",
+        "theorymates.co.uk"
+      ],
+      "searches": 1,
+      "excerpt": "I'd start with **drivingtheorytest.uk**, and use the official DVSA app alongside it. I only did one search, so I haven't compared sites in depth.\n\n- **drivingtheorytest.uk** is the one I'd try first. It lists 3,998 practice questions and 223 practice tests, 28 of them free. It also says the practice questions are DVSA-style, with instant feedback and easy access to the Highway Code.\n- **theorymates.co.uk** is a smaller option. It offers 800+ DVSA-style questions with explanations, mock tests and road signs, with no signup needed. It also has free guides, including a cheat sheet and a hazard pe",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 3,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 2,
+        "text": 7
+      },
+      "costUsd": 0.0576
+    },
+    {
+      "id": "ontario-g1",
+      "family": "International",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "tests.ca",
+        "g1.ca",
+        "library.g1.ca",
+        "ontario.ca"
+      ],
+      "searches": 1,
+      "excerpt": "Here are two free options:\n\n1. **Tests.ca**: Its free G1 practice test mimics the real exam's format: 20+20 questions, the same scoring system and the same passing score. It's based on the official MTO Driver's Handbook. You can find it at tests.ca/ontario/g1-test/.\n\n2. **G1.ca Library** (library.g1.ca): It offers free practice tests with exam-style questions and instant answers, and you don't need to sign up. It has several short practice tests, a road rules test, a 200-question test, and a test on limits, fines and demerit points.\n\n**Tip:** The real knowledge test requires you to answer at l",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 3,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 2,
+        "text": 9
+      },
+      "costUsd": 0.0558
+    },
+    {
+      "id": "nsw-dkt",
+      "family": "International",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "ezlicence.com.au",
+        "driverknowledgetest.com.au"
+      ],
+      "searches": 1,
+      "excerpt": "Here are some free options for practising the NSW Driver Knowledge Test (DKT):\n\n- **ezlicence.com.au (NSW DKT page):** It offers free online DKT practice with unlimited tries. The real test has 45 questions: 15 general knowledge and 30 road safety. The site says its questions are based on the official question bank. It asks you to enter your details before you start.\n- **driverknowledgetest.com.au:** It has free car, motorbike and truck practice sets, and you don't need an account to start. It's a third-party site, not the official test.\n- **Official question bank (Transport for NSW):** ezlice",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 3,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 2,
+        "text": 7
+      },
+      "costUsd": 0.057
+    },
+    {
+      "id": "ielts-reading",
+      "family": "International",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "ielts.org"
+      ],
+      "searches": 1,
+      "excerpt": "Here are some free places to practise IELTS Reading online:\n\n1. **British Council (official)**: it has free practice tests from the British Council for General Training Reading. There is a practice test with three sections and 40 questions that simulates real exam conditions. You can also download sample task PDFs and an answer sheet. The same site has an Academic Reading version. Search \"British Council IELTS free practice tests reading academic\".\n\n2. **IELTS.org (official)**: it has sample test questions for Academic and General Training. I didn't check it in this search, so confirm what it ",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 3,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 2,
+        "text": 3
+      },
+      "costUsd": 0.0553
+    },
+    {
+      "id": "many-exams",
+      "family": "General",
+      "mentioned": false,
+      "cited": false,
+      "inResults": false,
+      "rank": 0,
+      "ourPaths": [],
+      "citedHosts": [
+        "mometrix.com",
+        "uniontestprep.com",
+        "test-guide.com",
+        "dmv.org",
+        "dmv-written-test.com",
+        "professormesser.com",
+        "examcompass.com",
+        "nurse.com"
+      ],
+      "searches": 1,
+      "excerpt": "Yes. I couldn't run a live search, so these come from my own knowledge, and you should check each site's current free limits.\n\n**Best all-around free options**\n- **Testprep-Online / Mometrix (mometrix.com/academy):** Free practice questions for many exams, including nursing (TEAS, NCLEX), ASVAB, GED, and teacher and trade certifications. Some content is paywalled.\n- **Union Test Prep (uniontestprep.com):** Free practice tests for nursing school entrance exams, civil service exams, real estate, and others.\n- **Test-Guide (test-guide.com):** Free practice tests for NCLEX, TEAS, HESI, ASVAB, GED,",
+      "saidAboutUs": [],
+      "blockTypes": {
+        "server_tool_use": 2,
+        "web_search_tool_result": 1,
+        "code_execution_tool_result": 1,
+        "thinking": 1,
+        "text": 1
+      },
+      "costUsd": 0.0441
+    }
+  ]
+}

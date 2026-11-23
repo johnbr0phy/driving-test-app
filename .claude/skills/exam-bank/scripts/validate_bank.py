@@ -184,6 +184,7 @@ KNOWN_BANKS = {
     "de-einbuergerungstest-questions.json": dict(rows=198, why="six real-length 33-question tests (30 general + 3 on the Länder)"),
     "netherlands-driving-theory-questions.json": dict(rows=350, why="seven 50-question tests at the real 44/50 line"),
     "rbt-questions.json": dict(rows=400, why="200 originals plus 200 Premium work scenarios, eight 50-question tests"),
+    "ase-g1-questions.json": dict(rows=220, why="four 50-question tests at ASE G1's real 9/4/6/13/11/8/4 content counts; each pool is four times its count"),
     "ase-questions.json": dict(rows=320, why="eight ASE A-test pools of 40; four mixed 50-question tests use 5 to 7 of each"),
     "cdl-questions.json": dict(rows=600, max_avg=43,
         why="six tests from a 600-question bank; long-form options average 43 chars after the Nov 2026 key-length fix"),

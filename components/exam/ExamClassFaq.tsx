@@ -230,6 +230,7 @@ export const TEACHES: Record<string, string> = {
   jelec: "an electrical apprenticeship or NEC code class",
   masterelec: "a master electrician exam prep or NEC code class",
   ase: "an automotive technology program or ASE prep class",
+  aseg1: "an automotive technology program or ASE G1 prep class",
   barber: "at a barber school",
   ffi: "a fire academy",
   police: "a criminal justice or police exam prep course",

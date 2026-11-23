@@ -255,6 +255,7 @@ import "./fladjuster";
 import "./aafcs";
 import "./mblex";
 import "./ase";
+import "./aseg1";
 import "./llqp";
 import "./cemap";
 import "./ukcemap2";

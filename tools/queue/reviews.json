@@ -1108,6 +1108,14 @@
         "pr": 993,
         "findings": 3
       }
+    ],
+    "aseg1": [
+      {
+        "date": "2026-11-23",
+        "kind": "blind review at build",
+        "pr": 1032,
+        "findings": 8
+      }
     ]
   },
   "pendingReviews": {

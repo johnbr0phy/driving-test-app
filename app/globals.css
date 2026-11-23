@@ -7464,6 +7464,20 @@
     --brand-gradient-to: 35 50% 95%;
   }
 
+  /* ASE G1 Auto Maintenance and Light Repair theme: warm shop graphite */
+  [data-theme="aseg1"] {
+    --brand: 26 10% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 26 15% 95%;
+    --brand-hover: 26 10% 36%;
+    --brand-dark: 26 10% 29%;
+    --brand-darker: 26 10% 17%;
+    --brand-muted: 26 8% 66%;
+    --brand-border: 26 8% 78%;
+    --brand-border-light: 26 8% 88%;
+    --brand-gradient-to: 40 30% 95%;
+  }
+
   /* CEN (BCEN Certified Emergency Nurse) theme: dark olive yellow.
      59 85% 34% failed white-text contrast (2.9:1); 18% clears it and stays 8 points
      darker than rotaxi and caelec. */
@@ -13923,6 +13937,17 @@
     --brand-muted: 70 18% 45%;
     --brand-dark: 70 25% 65%;
     --brand-darker: 70 22% 78%;
+  }
+  .dark [data-theme="aseg1"] {
+    --brand: 26 10% 45.6%;
+    --brand-hover: 26 10% 37.6%;
+    --brand-light: 26 15% 13%;
+    --brand-gradient-to: 40 30% 11%;
+    --brand-border-light: 26 8% 24%;
+    --brand-border: 26 8% 34%;
+    --brand-muted: 26 8% 45%;
+    --brand-dark: 26 10% 65%;
+    --brand-darker: 26 10% 78%;
   }
 
   .dark [data-theme="cen"] {

@@ -8666,6 +8666,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "FSMTB MBLEx Content Outline and the MBLEx Candidate Handbook effective August 2026, checked November 2026",
     source: { name: "FSMTB: MBLEx", url: "https://www.fsmtb.org/mblex/" },
   },
+  aseg1: {
+    answer:
+      "The ASE G1 Auto Maintenance and Light Repair test is the National Institute for Automotive Service Excellence certification for entry-level and maintenance technicians. It has 55 scored multiple-choice questions plus 10 unscored research questions in 90 minutes, across seven content areas from the study guide's task list: engine systems, automatic transmission/transaxle, manual drive train and axles, suspension and steering, brakes, electrical, and heating, ventilation and air conditioning. ASE does not publish a passing score. Certification also needs one year of documented work experience (up to half from vocational training) and lasts five years, with a shorter G1R recertification test of 28 questions in 45 minutes. The first G1 test can be taken at a test center or remotely through Prometric ProProctor, and each question can be shown side by side in Spanish.",
+    rows: [
+      { label: "Questions", value: "55 scored, plus 10 unscored" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Content areas", value: "Engine, transmissions, drive train, suspension and steering, brakes, electrical, HVAC" },
+      { label: "Passing score", value: "Not published by ASE" },
+      { label: "Experience", value: "1 year (up to half from training)" },
+      { label: "Where", value: "Test center or remote proctoring" },
+      { label: "Valid for", value: "5 years, then the G1R recertification test" },
+    ],
+    basedOn: "The Official ASE Study Guide for the G1 test (2026), the ASE G1 test page and ASE Certification: Need to Know (January 2026), checked November 2026",
+    source: { name: "ASE: G1 Auto Maintenance and Light Repair", url: "https://ase.com/tests/g1/" },
+  },
   ase: {
     answer:
       "The ASE A1 to A8 tests are the eight Automobile and Light Truck certification tests from the National Institute for Automotive Service Excellence: A1 Engine Repair, A2 Automatic Transmission/Transaxle, A3 Manual Drive Train and Axles, A4 Suspension and Steering, A5 Brakes, A6 Electrical/Electronic Systems, A7 Heating and Air Conditioning and A8 Engine Performance. Each is a separate multiple-choice test: A1, A2 and A5 have 45 scored questions in 75 minutes, A3 and A4 40 in 60 minutes, A6 50 in 90 minutes, and A7 and A8 50 in 75 minutes, and every certification test adds 10 unscored research questions. ASE does not publish a passing score. Certification also needs two years of documented work experience (up to half from vocational training), lasts five years, and passing all eight earns Master Automobile Technician status. A first-time certification test is taken at a test center, while recertification tests can also be taken remotely, and the A-series tests can show each question side by side in Spanish.",

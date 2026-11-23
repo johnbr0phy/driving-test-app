@@ -1911,6 +1911,13 @@ export const es: TranslationKeys = {
     aseElectrical: "A6 Electrical/Electronic Systems",
     aseHvac: "A7 Heating & Air Conditioning",
     asePerformance: "A8 Engine Performance",
+    g1Engine: "Engine Systems",
+    g1Automatic: "Automatic Transmission/Transaxle",
+    g1Manual: "Manual Drive Train & Axles",
+    g1Steering: "Suspension & Steering",
+    g1Brakes: "Brakes",
+    g1Electrical: "Electrical",
+    g1Hvac: "Heating, Ventilation & A/C",
     // llqp
     llqpLifeProducts: "Life Insurance Products & Riders",
     llqpLifeContract: "Life Contracts, Underwriting & Beneficiaries",

@@ -84,6 +84,7 @@ const TEACHER_LED = new Set([
   "mblex",
   // US: automotive technology programs (ASE A1-A8)
   "ase",
+  "aseg1",
   // US: emergency nursing CEN review courses
   "cen",
   // Spain: academias de oposiciones and accredited security training centres

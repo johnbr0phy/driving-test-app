@@ -8,7 +8,7 @@ Q = [
  "Milliamp-hours measure capacity: how much charge the battery stores."),
 ("Which battery type suffers most from memory effect?",
  "Nickel-cadmium", ["Lithium polymer", "Lithium-ion", "Solid-state"],
- "Memory effect is mainly a nickel-cadmium problem; lithium batteries are hardly affected."),
+ "Battery makers say memory effect mainly occurs in nickel-cadmium (NiCd) batteries; lithium-ion batteries are almost unaffected."),
 ("A LiPo battery is swollen after a crash. What should you do?",
  "Stop using it", ["Charge it fully", "Press it flat", "Fly it once more"],
  "A swollen lithium battery is damaged and can catch fire; take it out of use and dispose of it safely."),
@@ -43,6 +43,6 @@ Q = [
  "The manufacturer's", ["Any online forum's", "The insurer's only", "The local council's"],
  "Point 35 of the Drone Code and the A2 syllabus say maintain the aircraft by the manufacturer's instructions."),
 ("How should lithium batteries be kept between flying days?",
- "Cool, dry, part charged", ["Fully charged in the sun", "Flat and frozen", "Wet and wrapped up"],
- "Lithium batteries last longer stored cool and dry at a partial charge, away from heat."),
+ "Dry, part charged, out of sun", ["Fully charged in the sun", "Flat and frozen", "Wet and wrapped up"],
+ "Battery makers advise storing lithium-ion batteries dry, out of direct sunlight and at a partial charge of about 40 to 60%."),
 ]

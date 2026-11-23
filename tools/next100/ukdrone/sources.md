@@ -120,6 +120,29 @@ needs a Flyer ID first, so it builds on the same rules; one bank serves both ste
   capacity) are concept-level as the AMC lists them; the Drone Code's point 15 gives the cold
   battery fact.
 
+## Added at review (2026-11-22)
+
+- Met Office, How wind speeds are measured (blog, 2025), fetched 2026-11-22:
+  https://www.metoffice.gov.uk/blog/2025/why-do-we-measure-wind-at-less-than-500m
+  "Wind speed typically increases with height above the Earth's surface" (MET-006).
+- Met Office, The atmospheric boundary layer, fetched 2026-11-22:
+  https://acct.metoffice.gov.uk/research/foundation/parametrizations/boundary-layer
+  Turbulence is generated partly by thermals rising off land heated by the sun (MET-020).
+- STIHL UK (battery manufacturer), Memory effect in batteries, fetched 2026-11-22:
+  https://www.stihl.co.uk/en/garden-ideas-and-advice/power-tool-maintenance/battery-care/memory-effect-in-batteries
+  Memory effect mainly occurs in NiCd batteries; Li-ion almost completely unaffected (PRF-003).
+- STIHL UK, Top ten battery tips, fetched 2026-11-22:
+  https://www.stihl.co.uk/en/garden-ideas-and-advice/power-tool-maintenance/battery-care/top-ten-battery-tips
+  Store at 40 to 60% charge in a clean, dry place out of direct sunlight (PRF-015).
+- Rittal, Protection categories (IP code, IEC 60529), fetched 2026-11-22:
+  https://www.rittal.com/nz-en/Services/Knowledge-Base/Protection-categories
+  IP43: 4 = solid foreign objects of 1.0mm and larger, 3 = spraying water (MET-014, MET-015).
+- CAA, Drone Code points 3 to 9 re-read 2026-11-22: low-flying military aircraft, staying below
+  120m reduces the risk of meeting other aircraft (AIR-024), royal palaces among restricted sites
+  and permission needed for restricted airspace (AIR-025), UK0, under 250g, C0 and C1 to
+  31 December 2027 over uninvolved people; regulatory library UAS.OPEN.020 lists UK1 for A1
+  overflight (WHR-008).
+
 ## Format facts (landing and examFacts only, never in the bank)
 
 Flyer ID: 40 questions, pass mark 30 (75%), open book, free, at least 30 minutes, valid five years.

@@ -1306,28 +1306,28 @@
     "state": "ALL",
     "questionId": "UKDRONE-AIR-024",
     "category": "ukdrAirspace",
-    "question": "Do military low-flying aircraft still matter far from airports?",
-    "optionA": "No, only near air bases",
-    "optionB": "Only at night",
-    "optionC": "Only above 120m",
-    "optionD": "Yes, they can be anywhere",
+    "question": "The Code warns of low-flying military aircraft. How does the 120m limit help?",
+    "optionA": "It hides the drone from radar",
+    "optionB": "It keeps the drone inside an FRZ",
+    "optionC": "It switches Remote ID off",
+    "optionD": "Fewer aircraft fly that low",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The Drone Code lists other aircraft among the hazards to check and act on, and its updates name low-flying military aircraft."
+    "explanation": "Points 3 to 9 say staying below 120m (400ft) reduces the risk of meeting other aircraft, and tell you to look and listen for low-flying military aircraft."
   },
   {
     "type": "UKDRONE",
     "state": "ALL",
     "questionId": "UKDRONE-AIR-025",
     "category": "ukdrAirspace",
-    "question": "Flying over a royal palace needs what first?",
-    "optionA": "Site permission",
+    "question": "A royal palace has restricted airspace around it. What do you need to fly there?",
+    "optionA": "Permission to enter it",
     "optionB": "A UK2 class mark",
     "optionC": "A model club pass",
     "optionD": "A green flashing light",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Restricted sites such as royal palaces need permission from the relevant authority before you fly in their restricted airspace."
+    "explanation": "Point 8 lists royal palaces among sites where flying may be restricted, and says you need permission to fly in restricted airspace."
   },
   {
     "type": "UKDRONE",
@@ -2146,14 +2146,14 @@
     "state": "ALL",
     "questionId": "UKDRONE-MET-004",
     "category": "ukdrWeather",
-    "question": "Moist air drifts over a cold sea and fog forms. What type is it?",
-    "optionA": "Radiation fog",
-    "optionB": "Valley mist",
-    "optionC": "Freezing drizzle",
-    "optionD": "Advection fog",
+    "question": "Radiation fog covers your site at dawn. What does it usually do after sunrise?",
+    "optionA": "Thickens all day long",
+    "optionB": "Turns into a thunderstorm",
+    "optionC": "Spreads out to sea",
+    "optionD": "Clears as the ground warms",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Advection fog forms when moist, warmer air moves over a colder surface and cools."
+    "explanation": "The Met Office says radiation fog forms on clear, calm nights and usually clears after sunrise as the sun warms the ground, so waiting can give you back direct sight."
   },
   {
     "type": "UKDRONE",
@@ -2181,7 +2181,7 @@
     "optionD": "Always reversed",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Friction slows the wind near the ground, so wind usually strengthens with height. The Drone Code warns ground wind often differs from wind aloft."
+    "explanation": "The Met Office says wind speed typically increases with height, as the ground slows the air near it. The Drone Code warns that ground wind often differs from wind at height."
   },
   {
     "type": "UKDRONE",
@@ -2293,7 +2293,7 @@
     "optionD": "Camera resolution",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "An IP rating under IEC/EN 60529 states protection against solids (first digit) and water (second digit); IP43 is in the A2 syllabus."
+    "explanation": "An IP rating under IEC/EN 60529 states protection against solid objects (first digit) and water (second digit); in IP43, 4 means objects of 1mm and larger and 3 means spraying water."
   },
   {
     "type": "UKDRONE",
@@ -2370,14 +2370,14 @@
     "state": "ALL",
     "questionId": "UKDRONE-MET-020",
     "category": "ukdrWeather",
-    "question": "Warm sunshine over a car park creates rising air. What may the drone feel?",
+    "question": "Strong sunshine heats a large car park. What may a drone flying over it meet?",
     "optionA": "Steady sinking air",
     "optionB": "Ice on propellers",
     "optionC": "Lower signal range",
-    "optionD": "Thermal bumps",
+    "optionD": "Turbulence from rising air",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Uneven heating makes rising air, so a small drone can be bumped up and around over hot surfaces."
+    "explanation": "The Met Office explains that thermals rising off ground heated by the sun stir up turbulence near the surface, which can bump a small drone around."
   },
   {
     "type": "UKDRONE",
@@ -2419,7 +2419,7 @@
     "optionD": "Solid-state",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Memory effect is mainly a nickel-cadmium problem; lithium batteries are hardly affected."
+    "explanation": "Battery makers say memory effect mainly occurs in nickel-cadmium (NiCd) batteries; lithium-ion batteries are almost unaffected."
   },
   {
     "type": "UKDRONE",
@@ -2583,11 +2583,11 @@
     "question": "How should lithium batteries be kept between flying days?",
     "optionA": "Fully charged in the sun",
     "optionB": "Flat and frozen",
-    "optionC": "Cool, dry, part charged",
+    "optionC": "Dry, part charged, out of sun",
     "optionD": "Wet and wrapped up",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Lithium batteries last longer stored cool and dry at a partial charge, away from heat."
+    "explanation": "Battery makers advise storing lithium-ion batteries dry, out of direct sunlight and at a partial charge of about 40 to 60%."
   },
   {
     "type": "UKDRONE",

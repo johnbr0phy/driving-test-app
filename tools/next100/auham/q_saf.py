@@ -25,7 +25,7 @@ Q = [
  "The rating the maker specifies", ["The largest that fits the holder", "Any fuse of the right size", "Double the original rating"],
  "The syllabus says to select a fuse rated to the equipment manufacturer's specification or the electricity authority's requirements, and to remove power first."),
 ("Long power and coax leads lie across the shack floor. What is the main hazard?",
- "A trip hazard", ["Lower antenna gain", "Higher VSWR on the line", "Weaker squelch action"],
+ "Someone tripping over the leads", ["Someone getting a shock from the coax", "Someone getting an RF burn from the coax", "Lightning striking the leads indoors"],
  "The syllabus says the station layout should take account of physical safety, and trailing cables are trip hazards."),
 ("A mains lead to your power supply is frayed. You should:",
  "Have it replaced", ["Tape over the frayed section", "Keep using it if it works", "Use it only for receiving"],

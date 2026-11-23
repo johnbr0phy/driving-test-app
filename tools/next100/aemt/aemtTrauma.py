@@ -64,7 +64,7 @@ ITEMS = [
       "A flail segment is two or more ribs broken in two or more places, so it is sucked inward on inhalation, the opposite of the rest of the chest. Crepitus alone shows a fracture, not a flail."),
     S(0, 2, "Pediatric trauma fluids", "A 20 kg child with trauma has poor perfusion. What is the first fluid bolus?",
       ["20 mL/kg", "5 mL/kg", "10 mL/kg", "15 mL/kg"],
-      "Children with signs of shock get 20 mL/kg of crystalloid, here 400 mL, then reassessment before any repeat. 10 mL/kg is used for cardiogenic shock in children, and 40 mL/kg at once is too much."),
+      "Children with signs of shock get 20 mL/kg of crystalloid, here 400 mL, then reassessment before any repeat. Smaller 10 mL/kg boluses are kept for children in cardiogenic shock."),
     S(0, 1, "Burn dressing", "Once the burning has stopped, how does NASEMSO advise covering a large burn?",
       ["Dry dressing or clean sheet", "Wet towels changed often", "Thick layer of burn gel", "Antibiotic ointment"],
       "Cover burns with a dry dressing or a clean sheet to limit contamination and heat loss, and leave blisters intact. Gels and ointments are avoided, and wet coverings over a large area chill the patient."),

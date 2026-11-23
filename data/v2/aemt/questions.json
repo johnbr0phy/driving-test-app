@@ -4190,7 +4190,7 @@
       "correct": [
         3
       ],
-      "explanation": "Children with signs of shock get 20 mL/kg of crystalloid, here 400 mL, then reassessment before any repeat. 10 mL/kg is used for cardiogenic shock in children, and 40 mL/kg at once is too much.",
+      "explanation": "Children with signs of shock get 20 mL/kg of crystalloid, here 400 mL, then reassessment before any repeat. Smaller 10 mL/kg boluses are kept for children in cardiogenic shock.",
       "lockedOrder": true
     },
     {

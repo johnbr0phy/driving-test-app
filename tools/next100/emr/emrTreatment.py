@@ -137,7 +137,7 @@ ITEMS = [
       "The 2019 national model lists mechanical patient restraint at the EMT level and above. An EMR keeps a safe distance, talks calmly and calls police if the patient becomes violent."),
     S(0, 2, "Bee sting", "A bee stinger is still in a man's forearm. How should you remove it?",
       ["Scrape or pull it out quickly", "Leave it for the hospital", "Squeeze the skin around it hard", "Cut the skin to lift it out"],
-      "Venom keeps entering while the stinger stays in, so remove it fast by scraping or pulling; speed matters more than the method. Then watch for an allergic reaction."),
+      "A stinger left in place can keep delivering venom, so remove it promptly without squeezing the venom sac. Then watch for an allergic reaction."),
     M(0, 2, "Cardiac arrest", "Which actions improve survival in adult cardiac arrest? Select two.",
       ["Starting compressions quickly", "Using an AED as soon as it arrives", "Checking the pulse for a full minute", "Pausing compressions to find a vein", "Giving breaths before every compression"],
       "Early, high-quality compressions and early defibrillation are what most improve survival. Long pulse checks and other pauses take blood flow away."),

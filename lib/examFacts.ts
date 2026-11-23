@@ -1996,6 +1996,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the NREMT Paramedic certification examination test plan (July 2024)",
     source: { name: "NREMT", url: "https://www.nremt.org/Pages/Examinations/AEMT-and-Paramedic-Certification-Examinations" },
   },
+  aemt: {
+    answer:
+      "The NREMT Advanced EMT (AEMT) certification exam is one fixed-length linear test of 135 questions in 3 hours at Pearson VUE, 35 of them unscored pilot items, answered in order with no going back. Since July 1, 2024 there is no separate psychomotor exam. Scores run from 100 to 1500 and 950 passes. Clinical Judgment is the largest domain at 31 to 35%, then Medical, Obstetrics and Gynecology at 25 to 29%.",
+    rows: [
+      { label: "Questions", value: "135 (100 scored, 35 unscored pilot)" },
+      { label: "Time", value: "3 hours" },
+      { label: "Format", value: "Fixed-length linear, no going back" },
+      { label: "Passing score", value: "950 on a 100 to 1500 scale" },
+      { label: "Fee", value: "$159 per attempt" },
+      { label: "Attempts", value: "6, at least 15 days apart; remedial education after 3" },
+      { label: "Given by", value: "NREMT, at Pearson VUE centers" },
+    ],
+    basedOn: "the NREMT Advanced Emergency Medical Technician Examination Specifications (administered from July 1, 2024) and the AEMT Candidate Handbook",
+    source: { name: "NREMT", url: "https://www.nremt.org/Pages/Examinations/AEMT-and-Paramedic-Certification-Examinations" },
+  },
   foodmgr: {
     answer:
       "Certified Food Protection Manager exams (ServSafe Manager, NRFSP, Prometric and other ANAB-accredited exams) test the FDA Food Code. The ServSafe Manager exam has 90 questions, 80 scored, with 2 hours and a 75% pass line; the others are similar. The exam is proctored and accepted by health departments nationwide.",

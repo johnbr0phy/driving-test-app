@@ -170,4 +170,5 @@ export const BANK_SIZES: Record<string, number> = {
   ccst: 208,
   faacax: 210,
   serverplus: 207,
+  aemt: 200,
 };

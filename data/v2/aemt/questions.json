@@ -1,0 +1,4529 @@
+{
+  "stimuli": [
+    {
+      "id": "AEMT-CS1",
+      "title": "Scenario: a woman with COPD who cannot catch her breath",
+      "text": "Dispatch, 0710: a 71-year-old woman with trouble breathing. En route, dispatch adds that she uses home oxygen at 2 L/min.\n\nShe sits in a kitchen chair leaning on the table, breathing through pursed lips. Her husband says she has COPD, has coughed up green sputum for 3 days and has used her inhaler every hour since last night."
+    },
+    {
+      "id": "AEMT-CS2",
+      "title": "Scenario: a motorcycle rider down",
+      "text": "Dispatch, 1530: motorcycle versus car on a two-lane road. Police are on scene and traffic is stopped.\n\nA 24-year-old man lies 15 feet from his motorcycle, helmet on, awake and moaning. Bright red blood is spurting from a deep wound on his left thigh and pooling under him."
+    },
+    {
+      "id": "AEMT-CS3",
+      "title": "Scenario: a wheezing 4-year-old",
+      "text": "Dispatch, 2140: a 4-year-old boy with trouble breathing.\n\nHe sits upright on the sofa, leaning forward, with wheezing you can hear from the door. His mother says he has asthma and a cold, and he has used his inhaler twice in the last hour without relief. He weighs about 16 kg. The children's hospital is 12 minutes away; an ALS unit is 15 minutes out."
+    },
+    {
+      "id": "AEMT-CS4",
+      "title": "Scenario: a man down in a restroom",
+      "text": "Dispatch, 1215: an unresponsive man in a fast food restaurant restroom. Police have cleared the scene.\n\nA man about 30 years old lies on the floor with a syringe and a bent spoon near his hand. He is breathing about 4 times a minute with snoring sounds, and his lips are blue."
+    },
+    {
+      "id": "AEMT-CS5",
+      "title": "Scenario: early morning chest pain",
+      "text": "Dispatch, 0545: a 61-year-old man with chest pain. No ALS unit is available; you are the highest level on the call, and a PCI center is 25 minutes away.\n\nHe is pale and sweaty on the couch and has had crushing chest pressure and nausea for 40 minutes. He has high blood pressure and smokes."
+    },
+    {
+      "id": "AEMT-CS6",
+      "title": "Scenario: an older woman more confused than usual",
+      "text": "Dispatch, 1100: an 84-year-old woman at an assisted living facility is \"more confused than usual.\"\n\nStaff say she has been treated for a urinary infection for 3 days and stopped eating yesterday. She has dementia and heart failure. She weighs about 60 kg."
+    },
+    {
+      "id": "AEMT-CS7",
+      "title": "Scenario: a reaction at a restaurant",
+      "text": "Dispatch, 1930: a 35-year-old woman with an allergic reaction at a restaurant.\n\nShe learned after eating that her dish contained shrimp. She has hives across her chest, swollen lips and says her throat feels tight. She weighs about 70 kg and has no auto-injector with her."
+    },
+    {
+      "id": "AEMT-CS8",
+      "title": "Scenario: a crash with several patients",
+      "text": "Dispatch, 1645: a van and a pickup have collided on a county road. Your unit, with you and one EMT, is the first to arrive.\n\nYou count six patients. Three are walking around. One is screaming with an open lower leg fracture. One is lying in the road breathing fast. One is slumped in the van and not moving."
+    },
+    {
+      "id": "AEMT-CS9",
+      "title": "Scenario: sudden trouble speaking",
+      "text": "Dispatch, 0820: a 71-year-old woman \"can't talk right,\" per her husband.\n\nShe woke at 0600 feeling normal and ate breakfast. At 0745 her coffee cup fell from her right hand and her speech became garbled; her husband saw it happen. She has atrial fibrillation and high blood pressure."
+    },
+    {
+      "id": "AEMT-CS10",
+      "title": "Scenario: a baby on the way at home",
+      "text": "Dispatch, 0310: a woman in labor at home, 40 minutes from the nearest hospital.\n\nShe is 29, in her third pregnancy and at full term. Contractions are 2 minutes apart, her water broke an hour ago with clear fluid, and she says she has to push."
+    }
+  ],
+  "questions": [
+    {
+      "id": "AEMT-T1-001",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Hypoglycemia",
+      "stem": "An unresponsive adult has a glucose of 44 mg/dL and an IV line. What should you give?",
+      "options": [
+        "Glucagon IV push, then oral glucose",
+        "One full liter of saline first",
+        "D10 in small doses, up to 25 g",
+        "Oral glucose gel in the cheek"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "NASEMSO treats glucose of 60 mg/dL or less with IV dextrose given in increments, D10 preferred, to a field maximum of 25 g. Oral glucose needs a patient who can protect the airway, and glucagon is the option when no IV is possible."
+    },
+    {
+      "id": "AEMT-T1-002",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Aspirin for ACS",
+      "stem": "Which form of aspirin does NASEMSO prefer for suspected acute coronary syndrome?",
+      "options": [
+        "A suppository given rectally",
+        "Enteric-coated, swallowed whole",
+        "Chewable, not enteric-coated",
+        "Dissolved in a full glass of water"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Chewable, non-enteric-coated aspirin is absorbed fastest; an enteric coating delays release until the tablet passes the stomach. The dose is 162 to 325 mg."
+    },
+    {
+      "id": "AEMT-T1-003",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Supraglottic airway",
+      "stem": "After placing a supraglottic airway, which finding best confirms that the lungs are being ventilated?",
+      "options": [
+        "SpO2 rising over 2 minutes",
+        "Fog inside the airway tube",
+        "No gurgling over the stomach",
+        "Waveform capnography"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A square, repeating capnography waveform shows exhaled CO2 with each breath, which only happens when air reaches the lungs. Oxygen saturation lags behind by minutes, and tube fogging or quiet epigastric sounds can mislead."
+    },
+    {
+      "id": "AEMT-T1-004",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 2,
+      "format": "order",
+      "skill": "Wound packing",
+      "stem": "Place the steps for packing a deep, bleeding wound high in the groin in order.",
+      "options": [
+        "Hold firm pressure over the packing",
+        "Keep packing until it is full",
+        "Push gauze into the wound's depth",
+        "Wrap a pressure bandage over it",
+        "Expose and find the bleeding point"
+      ],
+      "correct": [
+        4,
+        2,
+        1,
+        0,
+        3
+      ],
+      "explanation": "Packing works only when gauze reaches the bleeding vessel, so find the source, feed gauze deep, fill the wound, hold firm pressure and then bind it. A tourniquet cannot fit above a wound this high."
+    },
+    {
+      "id": "AEMT-T1-005",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Dextrose volume",
+      "stem": "How many mL of 10 percent dextrose contain 25 g of dextrose?",
+      "numeric": {
+        "answers": [
+          "250"
+        ],
+        "wholeNumber": true
+      },
+      "explanation": "D10 holds 10 g in every 100 mL, so 25 g takes 250 mL. The same 25 g is 50 mL of D50 or 100 mL of D25."
+    },
+    {
+      "id": "AEMT-T1-006",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtOps",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Patient privacy",
+      "stem": "For each disclosure of patient information, specify whether HIPAA permits it.",
+      "rows": [
+        "His diagnosis to his boss",
+        "Report to the receiving nurse",
+        "Abuse report required by state law",
+        "His name to a TV reporter",
+        "Scene photo on social media"
+      ],
+      "columns": [
+        "Permitted",
+        "Not permitted"
+      ],
+      "correct": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "explanation": "Sharing information for treatment, and reports the law requires, are permitted. Telling the media, posting photos or informing an employer without the patient's authorization are not."
+    },
+    {
+      "id": "AEMT-T1-007",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Glucagon",
+      "stem": "A 15 kg child with low blood sugar has no IV access. What glucagon dose fits?",
+      "options": [
+        "0.5 mg",
+        "1 mg",
+        "2 mg",
+        "3 mg"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "NASEMSO gives 0.5 mg IM or IN to children under 20 kg (or under 5 years) and 1 mg to those 20 kg or more. 3 mg is the dry-powder nasal product's dose, not an IM dose for a small child.",
+      "lockedOrder": true
+    },
+    {
+      "id": "AEMT-T1-008",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Recognize cues",
+      "stimulusId": "AEMT-CS1",
+      "passage": "RR 30, HR 112, BP 152/88, SpO2 84% on her home oxygen, temperature 38.1 C. Wheezes in all fields and quiet bases. Barrel-shaped chest. She speaks 3 to 4 words at a time and is alert.",
+      "stem": "For each finding, specify whether it needs action now or fits her usual baseline.",
+      "rows": [
+        "Breathing 30 a minute",
+        "SpO2 84% on her usual 2 L",
+        "Speaking 3 to 4 words at a time",
+        "Barrel-shaped chest",
+        "Uses home oxygen every day"
+      ],
+      "columns": [
+        "Needs action now",
+        "Fits her baseline"
+      ],
+      "correct": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "explanation": "A saturation well below her usual on home oxygen, short phrases and a rate of 30 show she is failing to keep up. A barrel chest and daily home oxygen are part of her chronic disease."
+    },
+    {
+      "id": "AEMT-T1-009",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Define hypothesis",
+      "stimulusId": "AEMT-CS1",
+      "stem": "Which explanation best fits her presentation?",
+      "options": [
+        "COPD flare from a chest infection",
+        "Heart attack without chest pain",
+        "Clot in the lungs",
+        "Panic attack"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Three days of colored sputum and fever on top of COPD, with wheezing and a falling saturation, point to an exacerbation triggered by infection. Nothing here suggests a sudden clot or a cardiac cause."
+    },
+    {
+      "id": "AEMT-T1-010",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "multi",
+      "skill": "Generate solutions",
+      "stimulusId": "AEMT-CS1",
+      "stem": "Which treatments fit now? Select two.",
+      "options": [
+        "Oxygen raised toward about 90 percent",
+        "Lay her flat to rest",
+        "Stop all oxygen to be safe",
+        "Oral glucose gel",
+        "Nebulized albuterol"
+      ],
+      "select": 2,
+      "correct": [
+        0,
+        4
+      ],
+      "explanation": "A bronchodilator nebulizer opens her airways, and her oxygen is raised to a modest target. Lying flat makes breathing harder, and stopping oxygen in a hypoxic patient is never safe."
+    },
+    {
+      "id": "AEMT-T1-011",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Evaluation",
+      "stimulusId": "AEMT-CS1",
+      "passage": "After two nebulizer treatments she is drowsy and hard to rouse. RR 10, SpO2 92%, ETCO2 72 mm Hg with a sloping waveform.",
+      "stem": "What do her new findings most likely mean?",
+      "options": [
+        "She is falling asleep from relief",
+        "She is improving",
+        "CO2 is building up",
+        "Her infection has cleared"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Drowsiness with a slow rate and an ETCO2 of 72 mm Hg means she is no longer moving enough air and CO2 is rising. A better saturation alone does not show better ventilation."
+    },
+    {
+      "id": "AEMT-T1-012",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Take action",
+      "stimulusId": "AEMT-CS1",
+      "stem": "What should you do for her now?",
+      "options": [
+        "Ventilate her with a BVM",
+        "Nasal cannula at 1 L/min",
+        "Let her rest and recheck later",
+        "Start CPAP at once"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A drowsy patient who is not ventilating needs breaths from a BVM with oxygen, timed to her own effort. CPAP needs an alert patient who can protect her airway."
+    },
+    {
+      "id": "AEMT-T1-013",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Communication",
+      "stimulusId": "AEMT-CS1",
+      "stem": "Which detail about her oxygen is most useful to the receiving hospital?",
+      "options": [
+        "How old her tubing is",
+        "Her usual home flow and saturation",
+        "The brand of her oxygen tank",
+        "Who refills her tanks"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Knowing her normal flow and usual saturation lets the team set her target and judge how far she is from baseline. The equipment details do not change her care."
+    },
+    {
+      "id": "AEMT-T1-014",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Nitroglycerin",
+      "stem": "A man with chest pain took tadalafil for erectile dysfunction last night. What about nitroglycerin?",
+      "options": [
+        "Give it if SBP is over 90",
+        "Give it by spray only",
+        "Withhold it",
+        "Give half a dose"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Nitrates are avoided within 48 hours of a phosphodiesterase inhibitor such as tadalafil or sildenafil, because together they can drop the blood pressure dangerously. A smaller dose or another form does not remove that risk."
+    },
+    {
+      "id": "AEMT-T1-015",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Oral glucose",
+      "stem": "Oral glucose should not be given to a diabetic patient who:",
+      "options": [
+        "Has a glucose of 55 mg/dL",
+        "Cannot swallow on command",
+        "Is confused but talking",
+        "Takes insulin by pump"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Oral glucose is for a conscious patient with a patent airway who can swallow. A low reading, mild confusion or an insulin pump do not stop it; a patient who cannot swallow may aspirate."
+    },
+    {
+      "id": "AEMT-T1-016",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Capnography",
+      "stem": "Capnography on a patient with wheezing shows a rounded, sloping upstroke like a shark fin. This pattern suggests:",
+      "options": [
+        "Rebreathing of exhaled gas",
+        "Return of a pulse",
+        "A displaced airway device",
+        "Narrowed lower airways"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A slow, sloping rise in exhaled CO2 means air leaves the lungs slowly through narrowed bronchioles, as in asthma or COPD. A flat line suggests a displaced device, and a rising baseline points to rebreathing."
+    },
+    {
+      "id": "AEMT-T1-017",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Burn fluids",
+      "stem": "A 60 kg adult has burns over about 30 percent of the body and is not in shock. Using the Rule of 10, what is the starting fluid rate in mL per hour?",
+      "numeric": {
+        "answers": [
+          "300"
+        ],
+        "wholeNumber": true
+      },
+      "explanation": "The Rule of 10 multiplies the burned percentage, rounded to the nearest 10, by 10 for adults of 40 to 80 kg: 30 x 10 = 300 mL per hour. Add 100 mL per hour for each 10 kg over 80 kg."
+    },
+    {
+      "id": "AEMT-T1-018",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Opioid overdose",
+      "stem": "A man with pinpoint pupils is breathing 4 times a minute and is blue. What comes first?",
+      "options": [
+        "Place him in recovery position",
+        "Ventilate him with a BVM",
+        "Check a blood glucose",
+        "Give IN naloxone, then wait"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "NASEMSO puts airway and breathing support before naloxone: oxygenate with a BVM, then give naloxone. Waiting for the drug to work leaves him hypoxic, and a glucose check comes after ventilation."
+    },
+    {
+      "id": "AEMT-T1-019",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Inferior STEMI",
+      "stem": "The hospital reads your transmitted 12-lead as an inferior STEMI. BP is 98/62. What fits best?",
+      "options": [
+        "Place him sitting bolt upright",
+        "Hold nitroglycerin",
+        "Give nitroglycerin now",
+        "Give a second aspirin"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Inferior infarcts often involve the right ventricle, which depends on preload, and NASEMSO gives nitroglycerin only when SBP is over 100. A second aspirin adds nothing, and an upright position lowers preload further."
+    },
+    {
+      "id": "AEMT-T1-020",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtOps",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Infection control",
+      "stem": "Which mask should you wear for a patient with suspected tuberculosis?",
+      "options": [
+        "Face shield alone",
+        "No mask if he coughs into a tissue",
+        "Simple surgical mask",
+        "N95 respirator"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Tuberculosis spreads through airborne droplet nuclei, so the crew needs a fitted N95 or higher respirator; a surgical mask goes on the patient if he can tolerate it."
+    },
+    {
+      "id": "AEMT-T1-021",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Naloxone",
+      "stem": "When titrating IV naloxone for an opioid overdose, what is the goal?",
+      "options": [
+        "Pupils that are wide",
+        "Adequate breathing",
+        "Full alertness",
+        "A heart rate over 100"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Naloxone is given to restore breathing, not to wake the patient completely. Large doses that wake him fully can bring on sudden withdrawal, vomiting and agitation."
+    },
+    {
+      "id": "AEMT-T1-022",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "CPAP",
+      "stem": "How does CPAP help a patient with acute pulmonary edema?",
+      "options": [
+        "It dries the lungs out",
+        "It replaces the need for oxygen",
+        "It slows the heart rate",
+        "It keeps alveoli open"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Steady positive pressure splints the alveoli open so oxygen can cross, reduces the work of breathing and lowers the return of blood to the congested lungs."
+    },
+    {
+      "id": "AEMT-T1-023",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 1,
+      "format": "multi",
+      "skill": "Stroke recognition",
+      "stem": "Which findings suggest an acute stroke? Select three.",
+      "options": [
+        "Fever and a stiff neck",
+        "Muscle cramps in both legs",
+        "One side of the face droops",
+        "Words come out slurred",
+        "Hiccups for an hour",
+        "One arm drifts down"
+      ],
+      "select": 3,
+      "correct": [
+        2,
+        3,
+        5
+      ],
+      "explanation": "Sudden facial droop, arm drift and slurred speech are the core stroke screen findings. Bilateral cramps, fever with a stiff neck and hiccups point elsewhere."
+    },
+    {
+      "id": "AEMT-T1-024",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 2,
+      "format": "order",
+      "skill": "12-lead acquisition",
+      "stem": "Place the steps for acquiring and sending a 12-lead ECG in order.",
+      "options": [
+        "Clean and dry the skin sites",
+        "Attach the four limb electrodes",
+        "Have him hold still; acquire",
+        "Attach V1 through V6",
+        "Transmit it to the hospital",
+        "Explain it and position him supine"
+      ],
+      "correct": [
+        5,
+        0,
+        1,
+        3,
+        2,
+        4
+      ],
+      "explanation": "Explain and position first, prepare the skin so the electrodes stick, place limb leads then precordial leads, record while the patient is still, and transmit early so the receiving center can activate its team."
+    },
+    {
+      "id": "AEMT-T1-025",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Hemorrhagic shock",
+      "stem": "A stab wound to the abdomen has left the radial pulse absent and SBP 80. How much fluid should you give?",
+      "options": [
+        "Fluid wide open to SBP 140",
+        "A single 2 L bolus right away",
+        "Boluses to an SBP near 90",
+        "None until he is in surgery"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Trauma resuscitation aims for an SBP near 90 mm Hg, a palpable radial pulse or an alert patient, given as 500 mL boluses. Pushing higher dilutes clotting factors and can restart bleeding."
+    },
+    {
+      "id": "AEMT-T1-026",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Stroke history",
+      "stem": "For a suspected stroke, which time matters most to report?",
+      "options": [
+        "When the family found her",
+        "When you arrived on scene",
+        "When last known well",
+        "When she last ate a meal"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Treatment windows are measured from the last time the patient was known to be normal. Time found can be hours later and would falsely shorten or lengthen the window."
+    },
+    {
+      "id": "AEMT-T1-027",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Take action",
+      "stimulusId": "AEMT-CS2",
+      "stem": "What is your first action?",
+      "options": [
+        "Tourniquet on the thigh",
+        "Apply a cervical collar",
+        "Take off his helmet",
+        "Take a blood pressure"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Spurting arterial bleeding kills in minutes, so a tourniquet high and tight on the thigh comes before anything else, including airway checks in a patient who is talking. Vitals and spine care follow."
+    },
+    {
+      "id": "AEMT-T1-028",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Recognize cues",
+      "stimulusId": "AEMT-CS2",
+      "passage": "The tourniquet has stopped the bleeding. HR 128, BP 86/54, RR 24, SpO2 95%. Skin pale and cool. Pupils equal and reactive. His left thigh is deformed and painful.",
+      "stem": "With the bleeding controlled, specify whether each finding is a sign of shock.",
+      "rows": [
+        "Pupils equal and reactive",
+        "Pale, cool skin",
+        "HR 128",
+        "Pain in the left thigh",
+        "BP 86/54"
+      ],
+      "columns": [
+        "Sign of shock",
+        "Not a sign of shock"
+      ],
+      "correct": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "explanation": "A fast pulse, pale cool skin and a low pressure show blood loss the body can no longer make up for. Reactive pupils and thigh pain are findings, but not signs of shock."
+    },
+    {
+      "id": "AEMT-T1-029",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Analyze cues",
+      "stimulusId": "AEMT-CS2",
+      "stem": "He is breathing well and talking. What should you do about his full-face helmet?",
+      "options": [
+        "Have him take it off himself",
+        "Cut the strap and tip it back",
+        "Pull it off before moving him",
+        "Leave it on; hold the head"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A helmet that fits and does not block the airway can stay on, with the head kept still, until the airway needs access. Removing it roughly can move an injured neck."
+    },
+    {
+      "id": "AEMT-T1-030",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Generate solutions",
+      "stimulusId": "AEMT-CS2",
+      "stem": "Which destination fits best?",
+      "options": [
+        "The closest small hospital",
+        "Whichever ED he prefers",
+        "His family doctor's clinic",
+        "The nearest trauma center"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A systolic pressure under 90 and a thigh wound needing a tourniquet are field triage criteria for the highest level of trauma center available. A small hospital may have to transfer him."
+    },
+    {
+      "id": "AEMT-T1-031",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Evaluation",
+      "stimulusId": "AEMT-CS2",
+      "passage": "After 500 mL of saline: radial pulse present, BP 94/60, alert. Blood is seeping from beneath the tourniquet.",
+      "stem": "After a 500 mL bolus his radial pulse returns, but blood is oozing again from under the tourniquet. What should you do?",
+      "options": [
+        "Give another 1,000 mL bolus",
+        "Loosen it to check the wound",
+        "Tighten it or add a second one above",
+        "Remove it and use a pressure dressing"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "As pressure improves, a tourniquet that was just tight enough may start to leak. Tighten it, or place a second one above it; never loosen one to inspect the wound in the field."
+    },
+    {
+      "id": "AEMT-T1-032",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Communication",
+      "stimulusId": "AEMT-CS2",
+      "stem": "Which radio report best prepares the trauma team?",
+      "options": [
+        "Everything he said on scene",
+        "Your arrival time only",
+        "Mechanism, injuries, vitals, care",
+        "The motorcycle's make and damage"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A short structured report of age, mechanism, injuries, vital signs, treatment and arrival time lets the team activate. Details of the vehicle or social history can wait for the handoff."
+    },
+    {
+      "id": "AEMT-T1-033",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtOps",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Scope of practice",
+      "stem": "A paramedic on scene asks you to push IV midazolam for a seizure. What should you do?",
+      "options": [
+        "Give half the dose",
+        "Give it, since he is senior",
+        "Say it is outside your scope",
+        "Call medical direction and give it"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Benzodiazepines are not in the AEMT scope model, and neither a senior provider's request nor a radio order widens your license. Offer the help you can give, such as airway support, and let the paramedic give the drug."
+    },
+    {
+      "id": "AEMT-T1-034",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Stroke mimics",
+      "stem": "Before calling a stroke alert, which test should you do on scene?",
+      "options": [
+        "Pulse oximetry only",
+        "Body temperature",
+        "Blood glucose",
+        "Pupil size"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Low blood sugar can cause one-sided weakness and slurred speech that clears with dextrose, so NASEMSO checks glucose in every suspected stroke."
+    },
+    {
+      "id": "AEMT-T1-035",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ventilation rate",
+      "stem": "A 4-year-old is breathing 6 times a minute with a strong pulse. How often should you give a BVM breath?",
+      "options": [
+        "Every 10 seconds",
+        "Once every 1 second",
+        "Every 2 to 3 seconds",
+        "Every 6 seconds"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Children who need assisted ventilation with a pulse get a breath every 2 to 3 seconds, 20 to 30 a minute. Every 6 seconds is the adult rate, and faster breaths cause gastric distension."
+    },
+    {
+      "id": "AEMT-T1-036",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Lead placement",
+      "stem": "Where does the V1 electrode go?",
+      "options": [
+        "5th intercostal space, midclavicular line",
+        "4th intercostal space, right sternal border",
+        "2nd intercostal space, right sternal border",
+        "4th intercostal space, left sternal border"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "V1 sits in the fourth intercostal space just right of the sternal border and V2 mirrors it on the left. The fifth space at the midclavicular line is V4."
+    },
+    {
+      "id": "AEMT-T1-037",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Anaphylaxis",
+      "stem": "An 18 kg child is wheezing with hives and vomiting after eating cashews. What IM epinephrine dose fits?",
+      "options": [
+        "0.15 mg",
+        "0.3 mg",
+        "0.5 mg",
+        "1 mg"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "NASEMSO gives 0.15 mg of 1 mg/mL epinephrine IM in the thigh to children under 25 kg and 0.3 mg to patients 25 kg or more.",
+      "lockedOrder": true
+    },
+    {
+      "id": "AEMT-T1-038",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Head injury",
+      "stem": "For an adult with a serious head injury, NASEMSO advises keeping the SBP above:",
+      "options": [
+        "70 mm Hg",
+        "90 mm Hg",
+        "100 mm Hg",
+        "110 mm Hg"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Even one episode of low blood pressure worsens brain injury, so the target for a head-injured adult is above 110 mm Hg, higher than the 90 mm Hg used for other bleeding trauma.",
+      "lockedOrder": true
+    },
+    {
+      "id": "AEMT-T1-039",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Repeat epinephrine",
+      "stem": "Signs of anaphylaxis persist after the first IM epinephrine dose. When can it be repeated?",
+      "options": [
+        "Not within 1 hour",
+        "After 5 to 15 minutes",
+        "Only after a fluid bolus",
+        "Every minute until improved"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "IM epinephrine may be repeated every 5 to 15 minutes while signs of anaphylaxis and poor perfusion persist, alongside a 20 mL/kg fluid bolus if perfusion is poor."
+    },
+    {
+      "id": "AEMT-T1-040",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "CPR quality",
+      "stem": "During CPR, ETCO2 reads 8 mm Hg and has stayed there for several minutes. What does this most likely show?",
+      "options": [
+        "The patient has a pulse again",
+        "Compressions need to improve",
+        "The airway device is in the esophagus",
+        "Ventilations are too slow"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "During CPR, ETCO2 reflects the blood flow compressions create, and readings under about 10 mm Hg suggest poor compressions, so push harder and faster and change compressors. A waveform that is present shows the airway is in place."
+    },
+    {
+      "id": "AEMT-T1-041",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 2,
+      "format": "order",
+      "skill": "Supraglottic airway insertion",
+      "stem": "Place the steps for inserting a supraglottic airway in an apneic adult in order.",
+      "options": [
+        "Oxygenate with a BVM and adjunct",
+        "Lubricate the back of the device",
+        "Secure the device in place",
+        "Ventilate and confirm with ETCO2",
+        "Size the device to the patient",
+        "Slide it along the hard palate"
+      ],
+      "correct": [
+        0,
+        4,
+        1,
+        5,
+        3,
+        2
+      ],
+      "explanation": "Oxygenate first so the attempt does not cause hypoxia, then choose the size, lubricate, insert along the palate until resistance, confirm with waveform capnography and secure it so it cannot move during transport."
+    },
+    {
+      "id": "AEMT-T1-042",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Anaphylaxis versus allergy",
+      "stem": "For each patient, specify whether the findings fit anaphylaxis or a simple allergic reaction.",
+      "rows": [
+        "Hives only after a new soap",
+        "Hives and wheezing after a sting",
+        "Itchy eyes and sneezing in spring",
+        "BP 78/40 after a bee sting",
+        "Lip swelling and vomiting after peanuts"
+      ],
+      "columns": [
+        "Anaphylaxis",
+        "Simple allergic reaction"
+      ],
+      "correct": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "explanation": "Anaphylaxis involves two or more body systems, or low blood pressure after exposure. Hives alone or itchy eyes and sneezing involve one system and are a simple allergic reaction."
+    },
+    {
+      "id": "AEMT-T1-043",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtOps",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Medical direction",
+      "stem": "Who is responsible for the protocols an EMS agency's AEMTs follow?",
+      "options": [
+        "Each receiving ED nurse",
+        "The senior paramedic on duty",
+        "The ambulance's owner",
+        "The agency's medical director"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Every EMS clinician practices under a physician medical director, who writes or approves the protocols and standing orders and oversees quality review."
+    },
+    {
+      "id": "AEMT-T1-044",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Sepsis",
+      "stem": "An adult with suspected sepsis has a MAP of 58. How does NASEMSO guide the fluids?",
+      "options": [
+        "Boluses toward a MAP of 65",
+        "A slow rate of 100 mL per hour",
+        "Fluids only if SBP falls below 70",
+        "Boluses to a MAP of 100"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Adults in septic shock get rapid boluses, such as 500 mL, toward a MAP of 65, up to about 30 mL/kg unless pulmonary edema develops. Waiting for a lower pressure delays care, and a MAP of 100 is not the goal."
+    },
+    {
+      "id": "AEMT-T1-045",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "multi",
+      "skill": "Recognize cues",
+      "stimulusId": "AEMT-CS3",
+      "passage": "RR 44, HR 150, SpO2 89%. Retractions between the ribs and above the collarbones. He speaks two words at a time and watches his mother.",
+      "stem": "Which findings are most worrying? Select three.",
+      "options": [
+        "Alert, watching his mother",
+        "Speaking only 2 words at a time",
+        "Runny nose for 2 days",
+        "Retractions between his ribs",
+        "SpO2 of 89 percent",
+        "Temperature of 37.4 C"
+      ],
+      "select": 3,
+      "correct": [
+        1,
+        3,
+        4
+      ],
+      "explanation": "Low saturation, retractions and short phrases show severe distress in a child. Being alert is reassuring for now, and a mild fever and runny nose explain the trigger, not the danger."
+    },
+    {
+      "id": "AEMT-T1-046",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Generate solutions",
+      "stimulusId": "AEMT-CS3",
+      "stem": "Which treatment fits first?",
+      "options": [
+        "Nasal airway and BVM breaths",
+        "Nebulized albuterol",
+        "Oral diphenhydramine",
+        "IV fluid bolus of 20 mL/kg"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A child with bronchospasm who is still breathing on his own needs a bronchodilator nebulized with oxygen. BVM breaths are for a child who is tiring out, and antihistamines do not open the airways."
+    },
+    {
+      "id": "AEMT-T1-047",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Communication",
+      "stimulusId": "AEMT-CS3",
+      "stem": "His mother wants to hold him during the treatment. What is best?",
+      "options": [
+        "Hold the mask on him firmly",
+        "Let her hold him upright",
+        "Ask her to wait in the kitchen",
+        "Lay him flat on the stretcher"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A calm child breathes more easily, and sitting up in a parent's lap is the best position for him. Separating him or forcing a mask on him makes him cry and breathe harder."
+    },
+    {
+      "id": "AEMT-T1-048",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Evaluation",
+      "stimulusId": "AEMT-CS3",
+      "passage": "Ten minutes later his wheezing is barely audible. RR 16, drowsy, SpO2 84%.",
+      "stem": "What does this change most likely mean?",
+      "options": [
+        "His asthma attack is over",
+        "He is tiring and failing",
+        "The albuterol is working",
+        "He is falling asleep normally"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A quiet chest with a slow rate, drowsiness and falling saturation in a child who was working hard means he is running out of energy and moving little air. It is not improvement."
+    },
+    {
+      "id": "AEMT-T1-049",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Take action",
+      "stimulusId": "AEMT-CS3",
+      "stem": "What should you do now?",
+      "options": [
+        "Assist breaths with a BVM",
+        "Switch to blow-by oxygen",
+        "Give him water to drink",
+        "Let him sleep undisturbed"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A child who is tiring needs assisted ventilation with a BVM and oxygen, timed to his own breaths if he still has any. Letting him sleep invites respiratory arrest."
+    },
+    {
+      "id": "AEMT-T1-050",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Leadership",
+      "stimulusId": "AEMT-CS3",
+      "stem": "Where should this child go?",
+      "options": [
+        "The children's hospital, now",
+        "The adult hospital 25 minutes away",
+        "His pediatrician's office",
+        "Wait at home for ALS"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "With a deteriorating child, waiting 15 minutes for ALS on scene loses time when a pediatric center is 12 minutes away. Start transport and let ALS meet you if they can."
+    },
+    {
+      "id": "AEMT-T1-051",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Scalp bleeding",
+      "stem": "A scalp wound is bleeding briskly over a spot where the skull feels soft. How should you control it?",
+      "options": [
+        "Pack gauze into the wound",
+        "Press around the edges",
+        "Leave it to clot alone",
+        "Press hard on the center"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Pressure directly on a possible depressed skull fracture can push bone fragments inward, so press around the edges with a bulky dressing. Scalp wounds bleed heavily and do need control."
+    },
+    {
+      "id": "AEMT-T1-052",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 2,
+      "format": "multi",
+      "skill": "Withholding resuscitation",
+      "stem": "Which findings allow you to withhold resuscitation in a pulseless adult? Select three.",
+      "options": [
+        "Fixed, dilated pupils",
+        "Dependent lividity",
+        "No pulse for 2 minutes",
+        "Cold, pale skin",
+        "Rigor mortis",
+        "Decomposition"
+      ],
+      "select": 3,
+      "correct": [
+        1,
+        4,
+        5
+      ],
+      "explanation": "Rigor mortis, dependent lividity and decomposition are signs of obvious death in NASEMSO's guidance. Cold skin, fixed pupils and a missing pulse occur in arrests that can still be reversed, so resuscitation starts."
+    },
+    {
+      "id": "AEMT-T1-053",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "multi",
+      "skill": "Sepsis recognition",
+      "stem": "An older adult has a fever. Which findings raise concern for sepsis? Select three.",
+      "options": [
+        "Breathing 26 a minute",
+        "New confusion",
+        "SpO2 of 98 percent",
+        "SBP of 86",
+        "Heart rate of 78",
+        "Glucose of 112"
+      ],
+      "select": 3,
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "explanation": "A fast respiratory rate, new confusion and low blood pressure are signs that an infection is affecting the whole body. A normal saturation, heart rate and glucose do not add to the concern."
+    },
+    {
+      "id": "AEMT-T1-054",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Nasopharyngeal airway",
+      "stem": "Which finding makes a nasopharyngeal airway a poor choice?",
+      "options": [
+        "An intact gag reflex",
+        "Clear fluid from the nose",
+        "Clenched teeth during a seizure",
+        "Snoring respirations at 10/min"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Clear fluid from the nose after head trauma suggests a skull base fracture, and a nasal airway could pass through it. A gag reflex, clenched teeth and snoring are reasons a nasal airway is chosen."
+    },
+    {
+      "id": "AEMT-T1-055",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Status epilepticus",
+      "stem": "A seizure that continues without stopping is status epilepticus once it has lasted about:",
+      "options": [
+        "15 minutes",
+        "5 minutes",
+        "1 minute",
+        "30 minutes"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "NASEMSO treats seizure activity lasting more than 5 minutes, or seizures without recovery between them, as needing active treatment. Waiting 15 or 30 minutes risks brain injury; benzodiazepines are given by ALS."
+    },
+    {
+      "id": "AEMT-T1-056",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "CPR with an advanced airway",
+      "stem": "During CPR through a supraglottic airway, your partner squeezes the bag every 2 seconds. What is the main harm?",
+      "options": [
+        "The AED cannot read the rhythm",
+        "The airway device pops out",
+        "Oxygen runs out within minutes",
+        "Less blood returns to the heart"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Each extra breath raises the pressure inside the chest, which cuts the blood returning to the heart and the flow that compressions create. NASEMSO warns against hyperventilation; with an advanced airway in place give one breath every 6 seconds without pausing compressions."
+    },
+    {
+      "id": "AEMT-T1-057",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtOps",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Medication safety",
+      "stem": "Online medical direction orders a drug over the radio. What prevents an error?",
+      "options": [
+        "Have your partner guess",
+        "Write it down after the call",
+        "Give it before confirming",
+        "Repeat the order back"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Echoing the drug, dose and route back to the physician confirms the order was heard correctly before you give it. Writing it later or acting before confirming invites errors."
+    },
+    {
+      "id": "AEMT-T1-058",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Organophosphates",
+      "stem": "A farm worker sprayed with pesticide is drooling, wheezing and has pinpoint pupils. What is in AEMT scope?",
+      "options": [
+        "IV atropine titration",
+        "Antidote auto-injector",
+        "Nebulized albuterol only",
+        "Oral activated charcoal"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The scope model lets every level use auto-injector antidotes for chemical exposures. Titrating IV atropine is a paramedic skill, and albuterol does not reverse the excess secretions."
+    },
+    {
+      "id": "AEMT-T1-059",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Open chest wound",
+      "stem": "After you seal a chest stab wound, the patient becomes more short of breath and his BP falls. What should you do?",
+      "options": [
+        "Place a second dressing on top",
+        "Decompress with a needle",
+        "Lift the dressing to vent air",
+        "Lay him flat on that side"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Rising distress after an occlusive dressing suggests air trapped under pressure. Briefly lifting a corner lets it escape; needle decompression is a paramedic skill, so call for ALS as you transport."
+    },
+    {
+      "id": "AEMT-T1-060",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Pulse oximetry",
+      "stem": "A family is found sleeping in a garage with a running generator. Why might pulse oximetry mislead you?",
+      "options": [
+        "It cannot detect cyanosis",
+        "Cold fingers make it read high",
+        "It reads CO as oxygen",
+        "It drops whenever HR rises"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Standard pulse oximeters cannot tell carboxyhemoglobin from oxyhemoglobin, so a poisoned patient may show a normal SpO2. Cold fingers usually cause a failed or low reading, not a falsely high one."
+    },
+    {
+      "id": "AEMT-T1-061",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Heat stroke",
+      "stem": "A runner is confused and hot after a race, temperature 41.2 C. What is the priority?",
+      "options": [
+        "Shade and rest first",
+        "Oral sports drink",
+        "Wrap him in a blanket",
+        "Rapid cooling"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Altered mental status with a high core temperature is heat stroke, and cooling quickly, ideally by cold water immersion, is the treatment that saves the brain. Oral fluids are unsafe in a confused patient."
+    },
+    {
+      "id": "AEMT-T1-062",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Pulmonary edema",
+      "stem": "An alert patient with acute pulmonary edema has BP 188/104. Which drug best lowers preload?",
+      "options": [
+        "Nitroglycerin",
+        "A 500 mL saline bolus",
+        "Oral glucose",
+        "Nebulized albuterol"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Nitroglycerin dilates veins and pools blood away from the lungs, and it pairs with CPAP in hypertensive pulmonary edema. A fluid bolus adds to the congestion, and albuterol treats bronchospasm."
+    },
+    {
+      "id": "AEMT-T1-063",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Severe hypothermia",
+      "stem": "A hypothermic patient with a slow pulse is found in snow. How should he be moved?",
+      "options": [
+        "With his legs rubbed for warmth",
+        "Quickly, walking him out",
+        "Sitting upright",
+        "Gently and kept level"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A very cold heart is irritable, and rough handling can trigger ventricular fibrillation. Move the patient gently and horizontally and do not rub the limbs."
+    },
+    {
+      "id": "AEMT-T1-064",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Recognize cues",
+      "stimulusId": "AEMT-CS4",
+      "stem": "Before kneeling beside him, what is the main hazard to deal with?",
+      "options": [
+        "Opioid fumes in the air",
+        "Spilled water on the tiles",
+        "A risk of fire in the room",
+        "Uncapped needles"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "NASEMSO notes opioids do not give off vapor that harms rescuers unless aerosolized; the real risk is a needlestick. Look for and secure sharps, and wear gloves."
+    },
+    {
+      "id": "AEMT-T1-065",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "order",
+      "skill": "Take action",
+      "stimulusId": "AEMT-CS4",
+      "stem": "Place your first actions for this patient in order.",
+      "options": [
+        "Ventilate with BVM and oxygen",
+        "Reassess his breathing",
+        "Insert a nasal airway",
+        "Give naloxone",
+        "Open the airway"
+      ],
+      "correct": [
+        4,
+        2,
+        0,
+        3,
+        1
+      ],
+      "explanation": "Open the airway, place an adjunct for the snoring, and breathe for him with oxygen before naloxone, as NASEMSO advises. Then reassess, since naloxone takes minutes to work."
+    },
+    {
+      "id": "AEMT-T1-066",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Analyze cues",
+      "stimulusId": "AEMT-CS4",
+      "passage": "With BVM ventilation started, capnography shows a clear waveform with an ETCO2 of 68 mm Hg.",
+      "stem": "What does the first ETCO2 of 68 mm Hg show?",
+      "options": [
+        "He has been retaining CO2",
+        "His breathing is normal",
+        "The airway is in the esophagus",
+        "His heart has stopped"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A value well above 45 mm Hg means CO2 has built up from slow, shallow breathing. A good waveform also shows air is reaching the lungs, so the airway is working."
+    },
+    {
+      "id": "AEMT-T1-067",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Evaluation",
+      "stimulusId": "AEMT-CS4",
+      "passage": "After IV naloxone he breathes 14 times a minute, is groggy and rouses to voice.",
+      "stem": "He is breathing 14 times a minute and is groggy. Why keep watching him closely?",
+      "options": [
+        "He is allergic to naloxone",
+        "Naloxone may wear off first",
+        "Naloxone causes low blood sugar",
+        "His pupils will widen too far"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Many opioids last longer than naloxone, so breathing can slow again after the dose wears off. Repeat checks of rate, depth and ETCO2 catch it early."
+    },
+    {
+      "id": "AEMT-T1-068",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Recognize cues",
+      "stimulusId": "AEMT-CS4",
+      "stem": "For each finding, specify whether it is a sign of withdrawal or an effect of the opioid.",
+      "rows": [
+        "Agitation",
+        "Slow breathing",
+        "Gooseflesh and sweating",
+        "Vomiting",
+        "Pinpoint pupils"
+      ],
+      "columns": [
+        "Withdrawal",
+        "Opioid effect"
+      ],
+      "correct": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "explanation": "A large naloxone dose can cause sudden withdrawal with vomiting, agitation, sweating and gooseflesh. Small pupils and slow breathing are the opioid itself."
+    },
+    {
+      "id": "AEMT-T1-069",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Communication",
+      "stimulusId": "AEMT-CS4",
+      "stem": "He wakes, is angry and says he is leaving. What is the best approach?",
+      "options": [
+        "Give more naloxone first",
+        "Let him leave without talking",
+        "Check capacity; explain risks",
+        "Hold him down until police arrive"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A patient who has just been revived may still lack capacity. Assess his decision-making, explain that the overdose can return, and involve medical direction and police if he cannot safely refuse."
+    },
+    {
+      "id": "AEMT-T1-070",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtOps",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Incident command",
+      "stem": "At a large incident run under the Incident Command System, where do arriving ambulances usually report?",
+      "options": [
+        "The command post's radio",
+        "The staging area",
+        "The nearest patient",
+        "Treatment area tents"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Units report to staging and wait for an assignment, which keeps the scene from clogging with vehicles and lets command send each crew where it is needed."
+    },
+    {
+      "id": "AEMT-T1-071",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Breech birth",
+      "stem": "During a breech birth the body has delivered, but the head has not. What should you do?",
+      "options": [
+        "Push the body back inside",
+        "Make an air space with a V of fingers",
+        "Wait for the next hour",
+        "Pull firmly on the baby's legs"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "NASEMSO has you place a gloved hand in the vagina with two fingers forming a V on either side of the baby's face to keep an air space, while you prepare for rapid transport. Never pull on the body."
+    },
+    {
+      "id": "AEMT-T1-072",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Pediatric extrication",
+      "stem": "A toddler strapped in a harnessed car seat needs spinal motion restriction after a crash. How is he removed?",
+      "options": [
+        "Still strapped in the car seat",
+        "Lifted out onto a long board",
+        "Pulled out by the arms",
+        "Carried out by a parent"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "NASEMSO extricates infants and toddlers already in a harnessed car seat while still strapped in it; the seat keeps the spine aligned. Older children in boosters may climb out with a collar on."
+    },
+    {
+      "id": "AEMT-T1-073",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Bronchodilators",
+      "stem": "An adult with severe asthma is getting nebulized albuterol. Which medication is often added to it?",
+      "options": [
+        "Aspirin",
+        "Ipratropium",
+        "Ondansetron",
+        "Diphenhydramine"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Ipratropium, an anticholinergic, works with albuterol to open the airways in a severe attack and is within AEMT scope by protocol. Diphenhydramine treats itching and hives, not bronchospasm."
+    },
+    {
+      "id": "AEMT-T1-074",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Aortic dissection",
+      "stem": "Sudden tearing chest pain spreads to the back, and the BP is 30 mm Hg higher in the right arm. What fits?",
+      "options": [
+        "Give a 1 L fluid bolus",
+        "Give aspirin and nitroglycerin",
+        "Withhold aspirin; transport",
+        "Walk him to the ambulance"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Tearing pain to the back with unequal arm pressures suggests aortic dissection, where aspirin can worsen bleeding. He needs gentle handling and rapid transport, not exertion or large fluid volumes."
+    },
+    {
+      "id": "AEMT-T1-075",
+      "section": "aemt",
+      "test": 1,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Shoulder dystocia",
+      "stem": "The head has delivered but the body will not follow with pushing. What should you try first?",
+      "options": [
+        "Flex her hips sharply to her chest",
+        "Push on the top of the belly",
+        "Pull down hard on the head",
+        "Have her stand and walk"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Shoulder dystocia is treated by hyperflexing the mother's hips (McRoberts maneuver), with firm pressure just above the pubic bone if needed. Never pull on the head or push on the fundus."
+    },
+    {
+      "id": "AEMT-T2-001",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "order",
+      "skill": "IV setup",
+      "stem": "Place the steps for preparing an IV bag and tubing in order.",
+      "options": [
+        "Check fluid, clarity and expiry",
+        "Spike the bag",
+        "Close the roller clamp",
+        "Run fluid to clear the tubing",
+        "Squeeze to fill the drip chamber"
+      ],
+      "correct": [
+        0,
+        2,
+        1,
+        4,
+        3
+      ],
+      "explanation": "Check the bag first, close the clamp so fluid does not run out when you spike, fill the drip chamber about halfway, then flush the line to clear air before it goes near the patient."
+    },
+    {
+      "id": "AEMT-T2-002",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "12-lead selection",
+      "stem": "For each patient, specify whether an early 12-lead ECG should be acquired.",
+      "rows": [
+        "Age 72 with diabetes, weak and short of breath",
+        "Chest pressure, age 50",
+        "Sprained ankle, age 20",
+        "Fainted while seated, age 64",
+        "Sore throat and fever, age 15"
+      ],
+      "columns": [
+        "Acquire a 12-lead",
+        "Not needed"
+      ],
+      "correct": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "explanation": "Chest pain, atypical symptoms in older or diabetic patients and syncope can all be ACS or an arrhythmia, so a 12-lead is acquired early. An ankle sprain or sore throat gives no reason for one."
+    },
+    {
+      "id": "AEMT-T2-003",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Tracheostomy care",
+      "stem": "Before suctioning a patient's tracheostomy tube, what should you do?",
+      "options": [
+        "Insert the catheter with suction on",
+        "Deflate the cuff fully",
+        "Remove the inner cannula",
+        "Preoxygenate the patient"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Suctioning removes oxygen along with secretions, so preoxygenate first. Suction is applied only while withdrawing the catheter, and the cuff and inner cannula are left alone unless the tube is blocked."
+    },
+    {
+      "id": "AEMT-T2-004",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 2,
+      "format": "multi",
+      "skill": "Occlusive dressings",
+      "stem": "Which wounds need an occlusive dressing? Select two.",
+      "options": [
+        "Open wound to the chest",
+        "Abrasion on the knee",
+        "Deep cut on the palm",
+        "Large cut over a neck vein",
+        "Forearm laceration"
+      ],
+      "select": 2,
+      "correct": [
+        0,
+        3
+      ],
+      "explanation": "Open chest wounds can let air into the chest, and open neck veins can draw in air that travels to the heart, so both are sealed. Limb wounds are dressed and pressed."
+    },
+    {
+      "id": "AEMT-T2-005",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Mean arterial pressure",
+      "stem": "A patient with suspected sepsis has a BP of 96/60. What is the MAP, in mm Hg?",
+      "numeric": {
+        "answers": [
+          "72"
+        ],
+        "wholeNumber": true
+      },
+      "explanation": "NASEMSO calculates MAP as (2 x diastolic + systolic) / 3: (120 + 96) / 3 = 72 mm Hg, above the 65 target for septic shock."
+    },
+    {
+      "id": "AEMT-T2-006",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtOps",
+      "difficulty": 2,
+      "format": "order",
+      "skill": "Medication administration",
+      "stem": "Place the steps for giving a medication in order.",
+      "options": [
+        "Ask about allergies",
+        "Confirm the order or protocol",
+        "Give the medication",
+        "Reassess and document",
+        "Check drug, dose and expiration"
+      ],
+      "correct": [
+        1,
+        0,
+        4,
+        2,
+        3
+      ],
+      "explanation": "Confirm the indication and order, check allergies, verify the drug, dose, route and expiration, give it, then reassess the effect and record it. Documenting before giving invites errors."
+    },
+    {
+      "id": "AEMT-T2-007",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "multi",
+      "skill": "Preeclampsia",
+      "stem": "A woman 34 weeks pregnant has a BP of 168/112. Which findings suggest severe preeclampsia? Select three.",
+      "options": [
+        "Heart rate of 58",
+        "Low-grade fever",
+        "Glucose of 60",
+        "Severe headache",
+        "Spots in her vision",
+        "Pain under the right ribs"
+      ],
+      "select": 3,
+      "correct": [
+        3,
+        4,
+        5
+      ],
+      "explanation": "Headache, visual changes and right upper quadrant pain with high blood pressure point to severe preeclampsia, which can progress to seizures. A slow pulse, borderline glucose and mild fever do not."
+    },
+    {
+      "id": "AEMT-T2-008",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "multi",
+      "skill": "Recognize cues",
+      "stimulusId": "AEMT-CS5",
+      "passage": "HR 48, BP 88/56, RR 20, SpO2 95%. Lungs clear. Skin cool and diaphoretic.",
+      "stem": "Which findings need attention right away? Select three.",
+      "options": [
+        "Breathing 20 a minute",
+        "BP of 88/56",
+        "SpO2 of 95 percent",
+        "Clear lungs",
+        "Heart rate of 48",
+        "Cool, sweaty skin"
+      ],
+      "select": 3,
+      "correct": [
+        1,
+        4,
+        5
+      ],
+      "explanation": "A slow heart rate, low blood pressure and cool, sweaty skin show the heart is not pumping enough. A normal saturation, clear lungs and a normal rate are reassuring."
+    },
+    {
+      "id": "AEMT-T2-009",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Take action",
+      "stimulusId": "AEMT-CS5",
+      "stem": "Which action comes first?",
+      "options": [
+        "Walk him to the stretcher",
+        "Give a 2 L fluid bolus",
+        "Send a 12-lead ECG",
+        "Give nitroglycerin"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Chest pain with these findings needs a 12-lead within minutes so a STEMI can be found and the PCI center alerted. Nitroglycerin is unsafe at this pressure and exertion strains his heart."
+    },
+    {
+      "id": "AEMT-T2-010",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Analyze cues",
+      "stimulusId": "AEMT-CS5",
+      "stem": "The PCI center reads an inferior STEMI and, with clear lungs, advises a small fluid bolus. Why?",
+      "options": [
+        "It dilutes the clot in the artery",
+        "It prevents vomiting",
+        "Fluid lowers his heart rate",
+        "The right ventricle needs volume"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Inferior infarcts often injure the right ventricle, which needs enough return of blood to pump. A small bolus with clear lungs can raise the pressure."
+    },
+    {
+      "id": "AEMT-T2-011",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Generate solutions",
+      "stimulusId": "AEMT-CS5",
+      "stem": "For this patient, specify whether each intervention is indicated.",
+      "rows": [
+        "250 mL saline bolus",
+        "Transport to the PCI center",
+        "Walking to the ambulance",
+        "Sublingual nitroglycerin",
+        "Chewed aspirin"
+      ],
+      "columns": [
+        "Indicated",
+        "Not indicated"
+      ],
+      "correct": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "explanation": "Aspirin, a cautious bolus and direct transport to the PCI center help him. Nitroglycerin is withheld with SBP under 100, and walking adds strain to an injured heart."
+    },
+    {
+      "id": "AEMT-T2-012",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Communication",
+      "stimulusId": "AEMT-CS5",
+      "stem": "Which detail in your radio report helps the PCI center most?",
+      "options": [
+        "His insurance carrier",
+        "Time his pain began",
+        "Where he bought cigarettes",
+        "Name of his family doctor"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The time of symptom onset guides reperfusion decisions, along with the ECG and vital signs. The rest does not change his care."
+    },
+    {
+      "id": "AEMT-T2-013",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Take action",
+      "stimulusId": "AEMT-CS5",
+      "stem": "En route he becomes unresponsive with no pulse. What do you do?",
+      "options": [
+        "Compressions and the AED",
+        "Give a nitroglycerin tablet",
+        "Check his glucose first",
+        "Pull over and wait for ALS"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Start high-quality compressions at once and attach the AED; an early shock for a shockable rhythm is the most important intervention. Glucose and other checks wait."
+    },
+    {
+      "id": "AEMT-T2-014",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 2,
+      "format": "order",
+      "skill": "CPAP setup",
+      "stem": "Place the steps for starting CPAP on an alert patient in order.",
+      "options": [
+        "Secure the head straps",
+        "Turn it on at a low pressure",
+        "Raise pressure; reassess often",
+        "Hold the mask on gently at first",
+        "Explain it and check the BP"
+      ],
+      "correct": [
+        4,
+        1,
+        3,
+        0,
+        2
+      ],
+      "explanation": "Coaching and a BP check come first. The device runs at a low pressure before the mask touches the face, so the patient never breathes against a closed mask; hold it on gently until it is tolerated, then strap it and adjust while watching breathing, saturation and blood pressure."
+    },
+    {
+      "id": "AEMT-T2-015",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 3,
+      "format": "multi",
+      "skill": "AEMT IV medications",
+      "stem": "Which drugs does the national scope model allow AEMTs to give IV? Select two.",
+      "options": [
+        "Naloxone",
+        "Amiodarone",
+        "Dextrose",
+        "Adenosine",
+        "Midazolam"
+      ],
+      "select": 2,
+      "correct": [
+        0,
+        2
+      ],
+      "explanation": "The scope model limits AEMT IV drugs to analgesia, antiemetics, dextrose, epinephrine, glucagon, naloxone and others set by state protocol. Amiodarone, midazolam and adenosine are paramedic drugs."
+    },
+    {
+      "id": "AEMT-T2-016",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Oxygen in COPD",
+      "stem": "An alert COPD patient has an SpO2 of 91 percent and mild distress. What is the best oxygen approach?",
+      "options": [
+        "BVM breaths every 6 seconds",
+        "Titrate to a modest target",
+        "Nonrebreather at 15 L/min",
+        "No oxygen at all"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Oxygen is a drug with a dose: patients with chronic lung disease often do well at a saturation around 90 percent, and high flows can worsen CO2 retention. Withholding it is also wrong when the patient is hypoxic."
+    },
+    {
+      "id": "AEMT-T2-017",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Spinal motion restriction",
+      "stem": "For each patient, specify whether a cervical collar and spinal motion restriction are indicated.",
+      "rows": [
+        "Smells of alcohol after a crash",
+        "Tingling in both hands after a dive",
+        "Alert, sober, no pain or deficit",
+        "Stab wound to the side of the neck",
+        "Midline neck tenderness after a fall"
+      ],
+      "columns": [
+        "Indicated",
+        "Not indicated"
+      ],
+      "correct": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "explanation": "Midline tenderness, intoxication and neurologic signs call for a collar. An alert, sober patient with no pain or deficit does not need one, and a penetrating neck wound should not be collared because it hides bleeding and airway swelling."
+    },
+    {
+      "id": "AEMT-T2-018",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Newborn resuscitation",
+      "stem": "After 30 seconds of BVM breaths, a newborn's heart rate is still 70 and his chest barely moves. What should you check first?",
+      "options": [
+        "Mask seal and head position",
+        "Stop and dry him again",
+        "Begin chest compressions now",
+        "Switch to blow-by oxygen"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A rising heart rate is the main sign that newborn ventilation works, and a chest that barely moves means the breaths are not getting in. Reseal the mask, reposition the head and clear the airway before anything else; compressions start only if the rate stays under 60 despite effective ventilation."
+    },
+    {
+      "id": "AEMT-T2-019",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Post-resuscitation ventilation",
+      "stem": "After ROSC, how should you ventilate a patient who is not breathing on his own?",
+      "options": [
+        "Only when SpO2 drops below 85",
+        "As fast as the bag refills",
+        "To an ETCO2 under 25 mm Hg",
+        "To an ETCO2 of 35 to 45"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "After ROSC, aim for normal ventilation: an ETCO2 of 35 to 45 mm Hg and an SpO2 in the 90s. Hyperventilation lowers CO2, narrows brain vessels and reduces return of blood to the heart."
+    },
+    {
+      "id": "AEMT-T2-020",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtOps",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Hazardous materials",
+      "stem": "At a chemical spill, where should an AEMT treat decontaminated patients?",
+      "options": [
+        "Downwind of the spill",
+        "Hot zone",
+        "Warm zone",
+        "Cold zone"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Patient care happens in the cold zone after decontamination in the warm zone. The hot zone is for trained hazmat teams, and downwind exposes the crew."
+    },
+    {
+      "id": "AEMT-T2-021",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Newborn compressions",
+      "stem": "During newborn resuscitation, what ratio of compressions to breaths is used?",
+      "options": [
+        "30 to 2",
+        "15 to 2",
+        "3 to 1",
+        "5 to 1"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Newborns get coordinated compressions and breaths at 3:1, since their arrests are almost always from lack of oxygen. 15:2 is for two-rescuer child CPR and 30:2 for adults."
+    },
+    {
+      "id": "AEMT-T2-022",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 2,
+      "format": "multi",
+      "skill": "Inadequate breathing",
+      "stem": "Which findings show an adult needs assisted ventilation? Select three.",
+      "options": [
+        "Rate of 6 with shallow breaths",
+        "Drowsy with bluish lips",
+        "Speaks in full sentences",
+        "Uses pursed lips at rest",
+        "ETCO2 climbing to 62 mm Hg",
+        "Rate of 22 with SpO2 95 percent"
+      ],
+      "select": 3,
+      "correct": [
+        0,
+        1,
+        4
+      ],
+      "explanation": "A slow, shallow rate, a rising ETCO2 and falling mental status with cyanosis all show the patient is not moving enough air. Full sentences, a good saturation and pursed-lip breathing show the patient is still compensating."
+    },
+    {
+      "id": "AEMT-T2-023",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Prolapsed cord",
+      "stem": "During labor the cord is seen in the vagina ahead of the baby. What should you do?",
+      "options": [
+        "Hold the baby off the cord",
+        "Have her push hard",
+        "Push the cord back in",
+        "Clamp the cord twice"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "With a gloved hand, hold the baby's presenting part off the cord to keep blood flowing, cover the cord with moist sterile gauze, and raise her hips or use knee-chest position during rapid transport."
+    },
+    {
+      "id": "AEMT-T2-024",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Scope of practice",
+      "stem": "A patient with HR 36 is pale and hypotensive. Which treatment is outside AEMT scope?",
+      "options": [
+        "Oxygen by nasal cannula",
+        "Peripheral IV access",
+        "12-lead acquisition",
+        "Transcutaneous pacing"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Transcutaneous pacing, like manual defibrillation and cardioversion, is a paramedic skill in the national scope model. An AEMT can give oxygen, start an IV, acquire the 12-lead and request ALS."
+    },
+    {
+      "id": "AEMT-T2-025",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Amputation",
+      "stem": "A finger is nearly cut off and hangs by a strip of skin. What should you do with it?",
+      "options": [
+        "Cut the skin strip to free it",
+        "Pack the finger in ice",
+        "Keep it attached; splint it",
+        "Pull it straight to test it"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A partial amputation stays attached: the skin bridge may carry blood flow that keeps the finger alive. Dress it with gentle pressure and splint it as it lies, then transport."
+    },
+    {
+      "id": "AEMT-T2-026",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Miscarriage",
+      "stem": "A woman bleeding early in pregnancy has passed tissue. What should you do with it?",
+      "options": [
+        "Discard it at the scene",
+        "Leave it with the family",
+        "Bring it to the hospital",
+        "Ask her to flush it"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Tissue passed during a miscarriage is placed in a container or bag and brought with her so the hospital can examine it. Treat her for blood loss and offer emotional support."
+    },
+    {
+      "id": "AEMT-T2-027",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Define hypothesis",
+      "stimulusId": "AEMT-CS6",
+      "passage": "Temperature 38.9 C, HR 118, RR 28, BP 86/48, SpO2 93%. She knows her name but not where she is.",
+      "stem": "Which explanation best fits?",
+      "options": [
+        "A new stroke",
+        "Sepsis",
+        "Worsening of her dementia",
+        "Plain dehydration only"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Fever, fast heart and breathing rates, low blood pressure and new confusion during a known infection point to sepsis. Dementia does not cause fever or low blood pressure."
+    },
+    {
+      "id": "AEMT-T2-028",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Communication",
+      "stimulusId": "AEMT-CS6",
+      "stem": "Which information from the staff matters most for the hospital?",
+      "options": [
+        "Her usual mental status",
+        "Her room number",
+        "What she ate last week",
+        "Which aide is on shift today"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Knowing she normally talks in full sentences shows today's confusion is new, which is key to recognizing sepsis. Ask the staff and record their description."
+    },
+    {
+      "id": "AEMT-T2-029",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Generate solutions",
+      "stimulusId": "AEMT-CS6",
+      "stem": "NASEMSO's fluid goal for adult septic shock is up to 30 mL/kg. What is the most she would get, in mL?",
+      "numeric": {
+        "answers": [
+          "1800"
+        ],
+        "wholeNumber": true
+      },
+      "explanation": "30 mL/kg x 60 kg = 1,800 mL, given in rapid boluses such as 500 mL and stopped early if the MAP reaches 65 or her lungs fill with fluid."
+    },
+    {
+      "id": "AEMT-T2-030",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Evaluation",
+      "stimulusId": "AEMT-CS6",
+      "passage": "After 1,000 mL: BP 98/58, MAP 71, HR 104. New crackles at both lung bases; SpO2 89%.",
+      "stem": "What should you do about the fluid now?",
+      "options": [
+        "Speed the IV to wide open",
+        "Stop the bolus; support her",
+        "Give the rest of the fluid",
+        "Lay her flat"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Her pressure has reached the goal, and new crackles with a falling saturation mean her failing heart is not handling more fluid. Stop the bolus and support her breathing."
+    },
+    {
+      "id": "AEMT-T2-031",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Take action",
+      "stimulusId": "AEMT-CS6",
+      "stem": "She is alert with crackles and an SpO2 of 89 percent. What helps her breathing most simply?",
+      "options": [
+        "No oxygen, to avoid harm",
+        "Sit her up; give oxygen",
+        "Another 500 mL bolus",
+        "Lay her flat, legs raised"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Raising the head of the stretcher and giving oxygen to an SpO2 of 94 to 98 percent eases her breathing. Lying flat lets fluid move into more of the lungs."
+    },
+    {
+      "id": "AEMT-T2-032",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Communication",
+      "stimulusId": "AEMT-CS6",
+      "stem": "Which phrase best alerts the receiving hospital?",
+      "options": [
+        "Elderly female, weak",
+        "Confused, needs a ride",
+        "Urinary infection, stable",
+        "Sepsis with low BP"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Naming suspected sepsis and hypotension lets the hospital prepare for antibiotics and cultures on arrival. Vague phrases delay that."
+    },
+    {
+      "id": "AEMT-T2-033",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtOps",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Vehicle operations",
+      "stem": "What is the safest way to back up an ambulance?",
+      "options": [
+        "With a spotter behind it",
+        "With the siren running",
+        "Using the mirrors alone",
+        "Quickly with lights on"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Backing is a common cause of ambulance collisions. A spotter at the rear, kept in view in the mirror, sees the blind spots that mirrors leave."
+    },
+    {
+      "id": "AEMT-T2-034",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Placental abruption",
+      "stem": "Late in pregnancy, which finding points to placental abruption rather than previa?",
+      "options": [
+        "Painful, rigid uterus",
+        "Painless bright red bleeding",
+        "Soft, non-tender uterus",
+        "Bleeding after sex only"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Abruption, where the placenta tears away from the wall, causes pain and a tense uterus, and bleeding may be hidden. Placenta previa typically bleeds bright red without pain."
+    },
+    {
+      "id": "AEMT-T2-035",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Epiglottitis",
+      "stem": "A drooling 6-year-old with a high fever is sitting forward and will not lie down. What should you avoid?",
+      "options": [
+        "Looking in the throat",
+        "Letting her sit upright",
+        "A parent riding along",
+        "Blow-by oxygen"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "These are signs of epiglottitis, and a tongue blade or a forced position can trigger complete obstruction. Keep the child calm and upright with a parent and give oxygen she will tolerate."
+    },
+    {
+      "id": "AEMT-T2-036",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Ventricular assist device",
+      "stem": "A patient with an LVAD is alert and talking, but you cannot feel a pulse. How do you judge perfusion?",
+      "options": [
+        "Radial pulse at both wrists",
+        "Capillary refill alone",
+        "Mental status and skin",
+        "Start chest compressions"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Continuous-flow LVADs often leave no palpable pulse, so an alert patient with warm, dry skin is perfusing. Listen for the pump hum, check for alarms and call the VAD coordinator whose number is on the device."
+    },
+    {
+      "id": "AEMT-T2-037",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Eclampsia",
+      "stem": "A pregnant woman with high BP has a seizure. Which drug treats eclamptic seizures, given by ALS?",
+      "options": [
+        "Magnesium sulfate",
+        "Oral glucose gel",
+        "Nitroglycerin spray",
+        "Naloxone"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Magnesium sulfate treats and prevents eclamptic seizures and is a paramedic-level drug. The AEMT protects her from injury, positions her on her left side and gets ALS en route."
+    },
+    {
+      "id": "AEMT-T2-038",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Evisceration",
+      "stem": "Bowel protrudes from a deep abdominal cut. What is the right care?",
+      "options": [
+        "Moist sterile dressing",
+        "Push the bowel back in",
+        "Pack it with dry gauze",
+        "Leave it open to the air"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Cover the organs with moist sterile dressing and an occlusive layer to keep them moist and warm. Pushing them back adds contamination, and dry gauze sticks to the tissue."
+    },
+    {
+      "id": "AEMT-T2-039",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Diabetic ketoacidosis",
+      "stem": "Which finding fits diabetic ketoacidosis?",
+      "options": [
+        "Slow, shallow breathing",
+        "Cool, sweaty skin",
+        "Pinpoint pupils",
+        "Deep, rapid breathing"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "In DKA the body blows off acid as CO2 with deep, rapid Kussmaul breaths, often with fruity breath and dehydration. Cool, sweaty skin is more typical of low blood sugar."
+    },
+    {
+      "id": "AEMT-T2-040",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Atypical ACS",
+      "stem": "Which patient is most likely to have a heart attack with no chest pain at all?",
+      "options": [
+        "A 35-year-old with asthma",
+        "A 52-year-old smoker",
+        "A 40-year-old marathon runner",
+        "A 74-year-old with diabetes"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Older adults, people with diabetes and women often present with weakness, shortness of breath or nausea instead of chest pain. Smoking raises risk but does not make the pain atypical."
+    },
+    {
+      "id": "AEMT-T2-041",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Gastric distension",
+      "stem": "During BVM ventilation the patient's abdomen swells. What most often causes this?",
+      "options": [
+        "Breaths too fast or too big",
+        "Oxygen flow set at 15 L/min",
+        "A jaw thrust held too firmly",
+        "An oral airway sized too small"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Large or rapid breaths open the esophagus and push air into the stomach, raising the risk of vomiting and aspiration. Slow breaths of just enough volume to raise the chest prevent it."
+    },
+    {
+      "id": "AEMT-T2-042",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Antiemetics",
+      "stem": "Which drug is used for nausea and vomiting within AEMT protocols?",
+      "options": [
+        "Diphenhydramine",
+        "Aspirin",
+        "Albuterol",
+        "Ondansetron"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Ondansetron is an antiemetic, a class the scope model lets AEMTs give IV by protocol. NASEMSO avoids it in patients with a known prolonged QT interval."
+    },
+    {
+      "id": "AEMT-T2-043",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtOps",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Documentation",
+      "stem": "Which entry is written correctly for a patient care report?",
+      "options": [
+        "Patient was drunk",
+        "Seemed like a drug seeker",
+        "Speech slurred; smells of alcohol",
+        "He was being a jerk"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Reports record what you see, hear and smell, not labels or opinions. Objective findings protect the patient and the crew; judgments can be wrong and look biased."
+    },
+    {
+      "id": "AEMT-T2-044",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Nitrous oxide",
+      "stem": "A self-administered nitrous oxide mask would be unsafe for which patient?",
+      "options": [
+        "Kidney stone pain, alert",
+        "Shoulder dislocation, alert",
+        "Possible pneumothorax",
+        "Ankle fracture, alert and calm"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Nitrous oxide expands into trapped air spaces, so a possible pneumothorax or bowel obstruction rules it out. Alert patients with painful injuries who can hold the mask are the usual candidates."
+    },
+    {
+      "id": "AEMT-T2-045",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "multi",
+      "skill": "Recognize cues",
+      "stimulusId": "AEMT-CS7",
+      "passage": "HR 124, BP 84/52, RR 26, audible wheeze, hoarse voice.",
+      "stem": "Which findings show this is anaphylaxis, not a mild reaction? Select three.",
+      "options": [
+        "Wheezing",
+        "Itchy skin",
+        "BP of 84/52",
+        "Ate shrimp an hour ago",
+        "Hives on the chest",
+        "Hoarse voice"
+      ],
+      "select": 3,
+      "correct": [
+        0,
+        2,
+        5
+      ],
+      "explanation": "Hoarseness, wheezing and low blood pressure show the reaction has reached the airway and circulation. Hives and itching occur in mild reactions too, and the exposure alone does not show severity."
+    },
+    {
+      "id": "AEMT-T2-046",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Take action",
+      "stimulusId": "AEMT-CS7",
+      "stem": "Which drug and route come first?",
+      "options": [
+        "Albuterol 5 mg nebulized",
+        "Epinephrine 0.3 mg IM",
+        "Diphenhydramine 50 mg IV",
+        "Epinephrine 0.3 mg IV push"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Epinephrine 0.3 mg of the 1 mg/mL strength, IM in the outer thigh, is the first treatment for anaphylaxis in an adult. The 1 mg/mL strength must never be pushed IV, and antihistamines and albuterol are add-ons."
+    },
+    {
+      "id": "AEMT-T2-047",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "numeric",
+      "skill": "Generate solutions",
+      "stimulusId": "AEMT-CS7",
+      "stem": "She stays hypotensive after epinephrine. At NASEMSO's 20 mL/kg, what bolus volume in mL fits her weight?",
+      "numeric": {
+        "answers": [
+          "1400"
+        ],
+        "wholeNumber": true
+      },
+      "explanation": "20 mL/kg x 70 kg = 1,400 mL of isotonic fluid, given rapidly, while IM epinephrine can be repeated every 5 to 15 minutes."
+    },
+    {
+      "id": "AEMT-T2-048",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Evaluation",
+      "stimulusId": "AEMT-CS7",
+      "stem": "Her BP is now 106/68, but she is still wheezing. What may be added?",
+      "options": [
+        "Nebulized albuterol",
+        "Oral glucose",
+        "A tourniquet on the arm",
+        "Nitroglycerin"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "NASEMSO adds nebulized albuterol for wheezing in anaphylaxis once epinephrine is given. Nitroglycerin would drop the pressure that has just recovered."
+    },
+    {
+      "id": "AEMT-T2-049",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Communication",
+      "stimulusId": "AEMT-CS7",
+      "stem": "She feels better and asks why she still has to go to the hospital. What do you tell her?",
+      "options": [
+        "Symptoms can return hours later",
+        "Epinephrine needs a doctor's note",
+        "She needs an allergy skin test",
+        "Her insurance requires it"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Anaphylaxis can recur after the epinephrine wears off, sometimes hours later, so she needs observation. Honest reasons help her agree to go."
+    },
+    {
+      "id": "AEMT-T2-050",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Leadership",
+      "stimulusId": "AEMT-CS7",
+      "stem": "Your EMT partner is about to inject the next dose into her upper arm. What should you say?",
+      "options": [
+        "Wait 30 minutes first",
+        "Use the outer thigh",
+        "The arm is fine; go ahead",
+        "Inject it into the hip"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The anterolateral thigh absorbs IM epinephrine faster and more reliably, which is why guidelines name it. Speaking up clearly is part of leading the crew."
+    },
+    {
+      "id": "AEMT-T2-051",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Impaled object",
+      "stem": "A rod is impaled in a patient's thigh and the airway is clear. What should you do with it?",
+      "options": [
+        "Pull it out to stop bleeding",
+        "Cut it flush with the skin",
+        "Stabilize it where it is",
+        "Twist it to check depth"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "An impaled object is stabilized in place with bulky dressings because it may be plugging the bleeding it caused. Removal is only for an object blocking the airway or chest compressions."
+    },
+    {
+      "id": "AEMT-T2-052",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "STEMI destination",
+      "stem": "Why transmit a 12-lead showing a possible STEMI before arrival?",
+      "options": [
+        "The center can ready its cath lab",
+        "It lets you give thrombolytics",
+        "It replaces the hospital's own ECG",
+        "It is required to give aspirin"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Advance notification lets a PCI center activate its team so the artery opens sooner. AEMTs do not give thrombolytics, and aspirin does not wait for an ECG."
+    },
+    {
+      "id": "AEMT-T2-053",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "GI bleeding",
+      "stem": "A patient vomits dark material that looks like coffee grounds. What does it suggest?",
+      "options": [
+        "A kidney stone",
+        "A bowel obstruction",
+        "Food poisoning",
+        "Upper GI bleeding"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Blood that sits in the stomach turns dark and grainy, so coffee-ground vomit points to bleeding in the upper GI tract. Watch for signs of shock and save a description."
+    },
+    {
+      "id": "AEMT-T2-054",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Capnography",
+      "stem": "ETCO2 suddenly drops to zero in an apneic patient ventilated through a supraglottic airway. What should you suspect first?",
+      "options": [
+        "Lung compliance has improved",
+        "Cardiac output has risen",
+        "Displaced or blocked device",
+        "The patient is hyperventilating"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A sudden flat line means no CO2 is coming back, most often from a dislodged, kinked or disconnected airway. Check the device and tubing at once; hyperventilation lowers ETCO2 gradually, it does not erase it."
+    },
+    {
+      "id": "AEMT-T2-055",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Carbon monoxide",
+      "stem": "A patient from a house fire has a headache and an SpO2 of 99 percent. What oxygen does she need?",
+      "options": [
+        "None, since SpO2 is normal",
+        "High flow oxygen",
+        "Titrate to 94 percent",
+        "Nasal cannula at 2 L/min"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "NASEMSO gives high-flow oxygen to everyone rescued from an enclosed space fire. A normal SpO2 can hide carbon monoxide, and high oxygen speeds its removal."
+    },
+    {
+      "id": "AEMT-T2-056",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Angina",
+      "stem": "Chest pain began while shoveling snow and went away with rest within 5 minutes. This pattern suggests:",
+      "options": [
+        "Stable angina",
+        "Pulmonary embolism",
+        "Pericarditis",
+        "Aortic dissection"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Pain brought on by exertion and relieved by rest is the classic pattern of stable angina. A dissection tears suddenly, pericarditis changes with position, and an embolism brings sudden shortness of breath."
+    },
+    {
+      "id": "AEMT-T2-057",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtOps",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mandated reporting",
+      "stem": "An older woman you transport has bruises in many stages and seems afraid of her caregiver. What fits?",
+      "options": [
+        "Report it only if she asks",
+        "Report it per state law",
+        "Leave it off the chart",
+        "Confront the caregiver"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "EMS providers are mandated reporters of suspected abuse in most states. Report through the required channel, document objective findings and avoid confronting the suspected abuser."
+    },
+    {
+      "id": "AEMT-T2-058",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Restraint",
+      "stem": "When a violent patient must be physically restrained, which position must never be used?",
+      "options": [
+        "On the side with straps across",
+        "Seated with the head up",
+        "Face down on the stretcher",
+        "Supine with all four limbs held"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Prone, face down or hog-tied restraint can stop a patient from breathing and has caused deaths. Restrain supine or on the side and watch breathing closely."
+    },
+    {
+      "id": "AEMT-T2-059",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Anticoagulants",
+      "stem": "An 82-year-old on a blood thinner fell from standing and hit her head. She seems fine. Why is she high risk?",
+      "options": [
+        "Delayed bleeding in the skull",
+        "Her glucose is likely low",
+        "Her neck is certainly fractured",
+        "Blood thinners raise her BP"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Anticoagulants make delayed bleeding inside the skull more likely after even a low fall, so the 2022 field triage guideline flags these patients for trauma center care. A normal first exam does not rule it out."
+    },
+    {
+      "id": "AEMT-T2-060",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Oxygen devices",
+      "stem": "When is a Venturi mask the best oxygen device?",
+      "options": [
+        "When the patient is apneic",
+        "When a precise FiO2 is needed",
+        "When the patient breathes by mouth",
+        "When the patient needs maximum oxygen"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A Venturi mask mixes air and oxygen through a fixed port to give an exact concentration, useful in chronic lung disease. Apnea needs a BVM, and a nonrebreather gives the most oxygen to a breathing patient."
+    },
+    {
+      "id": "AEMT-T2-061",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Envenomation",
+      "stem": "A hiker was bitten on the ankle by a rattlesnake. What is right?",
+      "options": [
+        "Keep the leg still",
+        "Tie a band above the bite",
+        "Apply ice to the bite",
+        "Cut and suction the wound"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "NASEMSO forbids tourniquets, constricting bands, incision, suction and ice for envenomation. Keep the limb still, remove rings and tight items and transport to a center with antivenom."
+    },
+    {
+      "id": "AEMT-T2-062",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Exertional syncope",
+      "stem": "A 16-year-old athlete fainted while sprinting and recovered quickly. Why is this concerning?",
+      "options": [
+        "It is a sign of dehydration",
+        "It shows a seizure disorder",
+        "It suggests low blood sugar",
+        "It may be cardiac"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Fainting during exertion, unlike fainting after standing up, can come from a structural heart problem or an arrhythmia and needs a cardiac workup. Dehydration usually causes fainting after effort or when standing."
+    },
+    {
+      "id": "AEMT-T2-063",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Drowning",
+      "stem": "A swimmer pulled from a pool is pulseless. What does resuscitation emphasize?",
+      "options": [
+        "Abdominal thrusts first",
+        "Rewarming before CPR",
+        "Early ventilation",
+        "Shock before compressions"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Drowning arrests come from lack of oxygen, so early rescue breaths are central along with compressions. Abdominal thrusts delay CPR and do not remove water from the lungs."
+    },
+    {
+      "id": "AEMT-T2-064",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Leadership",
+      "stimulusId": "AEMT-CS8",
+      "stem": "As the first crew on scene, what should you do first?",
+      "options": [
+        "Start CPR on the van patient",
+        "Treat the screaming patient",
+        "Size up; call for help",
+        "Splint the open fracture"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Six patients outnumber one crew, so the first job is scene size-up, a call for more resources and starting triage. Treating one patient first leaves the rest unsorted."
+    },
+    {
+      "id": "AEMT-T2-065",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "order",
+      "skill": "Recognize cues",
+      "stimulusId": "AEMT-CS8",
+      "stem": "Your system uses SALT triage. Place the global sort and first steps in order.",
+      "options": [
+        "Assign each a category",
+        "Ask the rest to wave or move",
+        "Ask those who can walk to move",
+        "Assess the still ones first",
+        "Give lifesaving interventions"
+      ],
+      "correct": [
+        2,
+        1,
+        3,
+        4,
+        0
+      ],
+      "explanation": "SALT sorts first: walkers are assessed last, wavers next, and those who are still or have obvious threats first. Quick lifesaving steps such as bleeding control come before each patient is categorized."
+    },
+    {
+      "id": "AEMT-T2-066",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 3,
+      "format": "matrix",
+      "skill": "Analyze cues",
+      "stimulusId": "AEMT-CS8",
+      "stem": "Assign each patient a SALT category.",
+      "rows": [
+        "Open fracture, obeys, radial pulse, no distress",
+        "In the van, no breathing after airway opened",
+        "In the road, in respiratory distress",
+        "Walking, small cuts to the arms"
+      ],
+      "columns": [
+        "Immediate",
+        "Delayed",
+        "Minimal",
+        "Dead"
+      ],
+      "correct": [
+        1,
+        3,
+        0,
+        2
+      ],
+      "explanation": "Minor injuries go to minimal, respiratory distress makes a patient immediate, and an adult who does not breathe after the airway is opened is dead in SALT. A patient who obeys, has a pulse and no distress but has a serious fracture is delayed."
+    },
+    {
+      "id": "AEMT-T2-067",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Communication",
+      "stimulusId": "AEMT-CS8",
+      "stem": "Which message to dispatch is most useful?",
+      "options": [
+        "Send everyone you have",
+        "Count, priorities, units needed",
+        "Call back in ten minutes",
+        "We are very busy here"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A clear report of how many patients, how many are immediate and what resources you need lets dispatch send the right help. Vague or open-ended requests waste units."
+    },
+    {
+      "id": "AEMT-T2-068",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Leadership",
+      "stimulusId": "AEMT-CS8",
+      "stem": "A second ambulance arrives with two EMTs. How should you use them?",
+      "options": [
+        "Assign them to immediate patients",
+        "Let them choose a patient",
+        "Send them home",
+        "Have them treat the minor patients"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Give clear assignments to the patients who need care most, the immediate ones. Minor patients can wait or be watched by fewer people."
+    },
+    {
+      "id": "AEMT-T2-069",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Evaluation",
+      "stimulusId": "AEMT-CS8",
+      "stem": "A walking patient you tagged minimal is now pale, sweaty and confused. What should you do?",
+      "options": [
+        "Have him sit and wait",
+        "Retriage as immediate",
+        "Keep his minimal tag",
+        "Tag him expectant"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Triage is repeated because patients change. New signs of shock and altered mental status move him to immediate."
+    },
+    {
+      "id": "AEMT-T2-070",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtOps",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Exposure",
+      "stem": "You are stuck by a used needle while starting an IV. What comes first?",
+      "options": [
+        "Squeeze to make it bleed",
+        "Wash with soap and water",
+        "Apply bleach to the wound",
+        "Finish the call, then report"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Wash the site with soap and water at once, then report the exposure right away so testing and preventive treatment can start in time. Bleach and squeezing do not help."
+    },
+    {
+      "id": "AEMT-T2-071",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Intoxication mimics",
+      "stem": "A man who smells of alcohol is found confused on a sidewalk. Why not assume he is just drunk?",
+      "options": [
+        "Smell proves he drank recently",
+        "Alcohol never causes confusion",
+        "Drunk patients cannot refuse care",
+        "Low sugar or a head injury can mimic it"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Hypoglycemia, a head injury, a stroke or an overdose can all look like intoxication, and alcohol makes them easier to miss. Check glucose, look for trauma and assess fully."
+    },
+    {
+      "id": "AEMT-T2-072",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Trauma in pregnancy",
+      "stem": "A woman 30 weeks pregnant is strapped flat to a long board and becomes dizzy and pale. What helps?",
+      "options": [
+        "Put her legs up on pillows",
+        "Loosen her collar",
+        "Raise the head end of the board",
+        "Tilt the board to her left"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Lying flat lets the uterus press on the vena cava and cut blood return to the heart. Tilting the whole board to the left, or displacing the uterus by hand, relieves it."
+    },
+    {
+      "id": "AEMT-T2-073",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Home ventilator",
+      "stem": "A patient on a home ventilator through a tracheostomy is in distress and the alarm sounds. What first?",
+      "options": [
+        "Remove the tracheostomy tube",
+        "Disconnect; ventilate with a BVM",
+        "Silence the alarm; reassess later",
+        "Turn up the ventilator rate"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "When a ventilated patient is struggling, take the machine out of the equation: disconnect it and bag through the tracheostomy, then look for displacement, obstruction or a pneumothorax."
+    },
+    {
+      "id": "AEMT-T2-074",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Nitroglycerin effects",
+      "stem": "After a nitroglycerin tablet, the patient says his head pounds. What explains this?",
+      "options": [
+        "An allergic reaction",
+        "Low blood sugar from fasting",
+        "A stroke in progress",
+        "Dilated blood vessels"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Nitroglycerin dilates vessels, including those in the head, so a throbbing headache is a common, expected effect. Recheck the BP because the same dilation can cause hypotension."
+    },
+    {
+      "id": "AEMT-T2-075",
+      "section": "aemt",
+      "test": 2,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Seizure care",
+      "stem": "A man is in the middle of a generalized seizure on a tile floor. What should you do?",
+      "options": [
+        "Put a bite block between his teeth",
+        "Give oral glucose gel",
+        "Hold his arms and legs still",
+        "Move hard objects away from him"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Protect him from injury and time the seizure. Nothing goes in the mouth, holding the limbs can cause fractures, and oral glucose is unsafe while he is seizing."
+    },
+    {
+      "id": "AEMT-D-001",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Glucose route",
+      "stem": "Each adult has a glucose under 60 mg/dL. Specify the right treatment route.",
+      "rows": [
+        "Alert and swallowing on command",
+        "Confused but can sip and swallow",
+        "Unresponsive, no IV possible",
+        "Seizing on the floor"
+      ],
+      "columns": [
+        "Oral glucose",
+        "IV dextrose or IM glucagon"
+      ],
+      "correct": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "explanation": "Oral glucose is for a conscious patient with a patent airway. A patient who is unresponsive or seizing needs IV dextrose, or IM or IN glucagon when no IV can be placed."
+    },
+    {
+      "id": "AEMT-D-002",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "CPAP selection",
+      "stem": "For each adult in respiratory distress, specify whether CPAP is appropriate.",
+      "rows": [
+        "SBP 82 with cool, clammy skin",
+        "Breathing 6 a minute, barely rousable",
+        "Alert dialysis patient who missed sessions, crackles",
+        "Alert after a near-drowning, crackles",
+        "Facial fractures from a fall"
+      ],
+      "columns": [
+        "CPAP appropriate",
+        "CPAP not appropriate"
+      ],
+      "correct": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "explanation": "NASEMSO supports CPAP for awake drowning patients in distress and for fluid overload such as missed dialysis. A patient who cannot protect the airway or breathe adequately needs BVM ventilation, low blood pressure worsens with positive pressure, and facial fractures prevent a safe mask seal."
+    },
+    {
+      "id": "AEMT-D-003",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 3,
+      "format": "multi",
+      "skill": "Aortic dissection",
+      "stem": "Which findings point toward aortic dissection rather than a heart attack? Select two.",
+      "options": [
+        "Pain eased by leaning forward",
+        "Arm pressures differ by 25 mm Hg",
+        "Pain you reproduce by pressing",
+        "Tearing pain that goes to the back",
+        "Pressure relieved by nitroglycerin"
+      ],
+      "select": 2,
+      "correct": [
+        1,
+        3
+      ],
+      "explanation": "Sudden tearing pain radiating to the back and unequal arm pressures suggest a dissection. Relief by leaning forward points to pericarditis, and pain reproduced by palpation suggests a chest wall cause."
+    },
+    {
+      "id": "AEMT-D-004",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Burn fluids",
+      "stem": "A 100 kg adult has burns over about 30 percent of the body and is not in shock. Using the Rule of 10, what is the starting fluid rate in mL per hour?",
+      "numeric": {
+        "answers": [
+          "500"
+        ],
+        "wholeNumber": true
+      },
+      "explanation": "30 x 10 = 300 mL per hour for the burns, then add 100 mL per hour for each 10 kg over 80 kg: 100 kg is 20 kg over, so 300 + 200 = 500 mL per hour."
+    },
+    {
+      "id": "AEMT-D-005",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtOps",
+      "difficulty": 2,
+      "format": "multi",
+      "skill": "Refusal of care",
+      "stem": "Which elements are needed for a patient's refusal to be valid? Select two.",
+      "options": [
+        "The patient is over 65",
+        "Decision-making capacity",
+        "Understanding of the risks",
+        "A relative agrees",
+        "A police officer signs"
+      ],
+      "select": 2,
+      "correct": [
+        1,
+        2
+      ],
+      "explanation": "A valid refusal needs a patient with capacity who has been told and understands the risks of refusing. A relative's agreement or a police signature does not make it valid."
+    },
+    {
+      "id": "AEMT-D-006",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "order",
+      "skill": "IV start",
+      "stem": "Place the steps for starting a peripheral IV in order.",
+      "options": [
+        "Connect tubing; check the flow",
+        "Clean the site",
+        "Insert bevel up; watch for flash",
+        "Advance the catheter; release tourniquet",
+        "Apply the tourniquet; pick a vein"
+      ],
+      "correct": [
+        4,
+        1,
+        2,
+        3,
+        0
+      ],
+      "explanation": "Find the vein under a tourniquet, prepare the skin, enter bevel up until blood flashes, slide the catheter in and release the tourniquet before removing the needle, then connect and confirm free flow."
+    },
+    {
+      "id": "AEMT-D-007",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 3,
+      "format": "numeric",
+      "skill": "Drip rate",
+      "stem": "You must give 300 mL over 60 minutes with a 10 drop/mL set. How many drops per minute?",
+      "numeric": {
+        "answers": [
+          "50"
+        ],
+        "wholeNumber": true
+      },
+      "explanation": "Drops per minute = volume x drop factor / minutes: 300 x 10 / 60 = 50 drops per minute."
+    },
+    {
+      "id": "AEMT-D-008",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Oral airway",
+      "stem": "An oral airway should only be inserted in a patient who:",
+      "options": [
+        "Is breathing over 20 a minute",
+        "Can follow simple commands",
+        "Has a suspected neck injury",
+        "Has no gag reflex"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "An oral airway in a patient with a gag reflex can cause vomiting and aspiration. A patient who follows commands protects his own airway, and a neck injury does not decide the choice."
+    },
+    {
+      "id": "AEMT-D-009",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Lead placement",
+      "stem": "Where is the V4 electrode placed?",
+      "options": [
+        "5th intercostal space, midclavicular line",
+        "4th intercostal space, right of the sternum",
+        "5th intercostal space, midaxillary line",
+        "6th intercostal space, anterior axillary line"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "V4 sits in the fifth intercostal space at the midclavicular line, V5 at the anterior axillary line on that level and V6 at the midaxillary line."
+    },
+    {
+      "id": "AEMT-D-010",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Burn size",
+      "stem": "In an adult, how much body surface does one whole arm plus the front of the torso cover?",
+      "options": [
+        "18 percent",
+        "27 percent",
+        "36 percent",
+        "45 percent"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "By the Rule of Nines one arm is 9 percent and the front of the torso is 18 percent, so together they are 27 percent. Only partial and full thickness burns count toward the total.",
+      "lockedOrder": true
+    },
+    {
+      "id": "AEMT-D-011",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "IV infiltration",
+      "stem": "The skin around an IV site is swollen, cool and pale, and the drip has slowed. What should you do?",
+      "options": [
+        "Raise the bag higher",
+        "Speed up the drip",
+        "Flush the line hard",
+        "Stop it; restart elsewhere"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Swelling, coolness and pallor show the fluid is going into the tissue. Stop the infusion, remove the catheter and start a new line in another site; flushing pushes more fluid out of the vein."
+    },
+    {
+      "id": "AEMT-D-012",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtOps",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Handoff",
+      "stem": "What makes the best hospital handoff?",
+      "options": [
+        "Only the vital signs",
+        "The chart left on the bed",
+        "A brief structured report",
+        "Every detail of the call"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "A brief structured format, such as mechanism, injuries, signs and treatment, keeps key facts from being missed. Leaving only paperwork or listing every detail loses the message."
+    },
+    {
+      "id": "AEMT-D-013",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Analyze cues",
+      "stimulusId": "AEMT-CS9",
+      "stem": "What time should you report as her last known well?",
+      "options": [
+        "0600",
+        "0745",
+        "0820",
+        "0830"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Her husband saw her normal right up to 0745, when the symptoms began, so that is both her onset time and her last known well. 0600 is when she woke, and 0820 is the call.",
+      "lockedOrder": true
+    },
+    {
+      "id": "AEMT-D-014",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 3,
+      "format": "multi",
+      "skill": "Recognize cues",
+      "stimulusId": "AEMT-CS9",
+      "passage": "Right facial droop, right arm drift, garbled speech; she cannot find words and ignores things on her right. BP 178/96, glucose 118 mg/dL, SpO2 96%.",
+      "stem": "Which findings on a stroke severity screen suggest a large vessel occlusion? Select two.",
+      "options": [
+        "Ignores her right side",
+        "Glucose of 118 mg/dL",
+        "Cannot find her words",
+        "Mild headache",
+        "BP of 178/96"
+      ],
+      "select": 2,
+      "correct": [
+        0,
+        2
+      ],
+      "explanation": "Severity scales look for cortical signs such as neglect of one side, aphasia and vision changes, which point to a large vessel stroke. High BP and a normal glucose are expected findings."
+    },
+    {
+      "id": "AEMT-D-015",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Take action",
+      "stimulusId": "AEMT-CS9",
+      "stem": "Her systolic pressure is 178. How should the stretcher be set?",
+      "options": [
+        "Sitting straight up",
+        "Head lower than feet",
+        "Head up 15 to 30 degrees",
+        "Flat with legs raised"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "NASEMSO raises the head 15 to 30 degrees when SBP is over 100 to lower aspiration risk, with the neck kept straight. Legs-up or head-down positions are for shock."
+    },
+    {
+      "id": "AEMT-D-016",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Generate solutions",
+      "stimulusId": "AEMT-CS9",
+      "stem": "Within protocol times, which destination fits a likely large vessel stroke?",
+      "options": [
+        "Any clinic with a scanner",
+        "Her doctor's office",
+        "Thrombectomy center",
+        "Nearest urgent care"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "NASEMSO advises considering a center that can remove the clot for a positive severity screen within 24 hours of last known well, as the local stroke plan allows."
+    },
+    {
+      "id": "AEMT-D-017",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Communication",
+      "stimulusId": "AEMT-CS9",
+      "stem": "Her medicine list includes apixaban. Why report it early?",
+      "options": [
+        "It must be given before arrival",
+        "It lowers her glucose",
+        "It causes her speech problem",
+        "It affects clot-busting drugs"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Anticoagulant use is pertinent history in suspected stroke because it changes whether clot-dissolving drugs are safe. Reporting it early speeds the stroke team's decisions."
+    },
+    {
+      "id": "AEMT-D-018",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Leadership",
+      "stimulusId": "AEMT-CS9",
+      "stem": "Her husband is the only witness. What is best?",
+      "options": [
+        "Bring him or get his number",
+        "Tell him to stay home",
+        "Have him drive behind you fast",
+        "Ask him to call her doctor"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "The hospital team needs the witness for the timeline and decisions, so NASEMSO advises bringing him or getting a number they can call."
+    },
+    {
+      "id": "AEMT-D-019",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Fluid overload",
+      "stem": "After 2 L of saline an older patient has new crackles and worse breathing. What do you suspect?",
+      "options": [
+        "Circulatory overload",
+        "An allergic reaction",
+        "Air embolism",
+        "Infiltration"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Crackles and rising distress after large volumes show fluid backing up into the lungs. Slow the IV to keep-open, sit the patient up and report it."
+    },
+    {
+      "id": "AEMT-D-020",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "IO access",
+      "stem": "Which finding rules out the proximal tibia as an IO site?",
+      "options": [
+        "Fracture of that tibia",
+        "An adult patient",
+        "Cardiac arrest",
+        "Shock with no IV veins"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "IO needles are not placed in a fractured bone, a site with infection, or a bone with a recent IO attempt, because fluid leaks out. Shock and arrest with no IV access are why IO is used."
+    },
+    {
+      "id": "AEMT-D-021",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Ventilation volume",
+      "stem": "What volume should each BVM breath deliver to an adult?",
+      "options": [
+        "Enough to make the belly rise",
+        "Enough to see the chest rise",
+        "Half the bag every 3 seconds",
+        "The full bag squeezed hard"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Guidelines call for about 6 to 8 mL/kg, which is the volume that makes the chest start to rise. Squeezing the whole bag raises chest pressure, lowers blood return to the heart and fills the stomach."
+    },
+    {
+      "id": "AEMT-D-022",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Compression pauses",
+      "stem": "Why keep the pause before an AED shock as short as possible?",
+      "options": [
+        "The AED cannot analyze after a pause",
+        "The pads cool while paused",
+        "Coronary flow drops each pause",
+        "Long pauses drain the AED battery"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Blood flow to the heart builds slowly during compressions and drops quickly when they stop, so long pauses make a shock less likely to work. Battery and pad temperature are not the reason."
+    },
+    {
+      "id": "AEMT-D-023",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Crush injury",
+      "stem": "A worker's leg has been pinned under a beam for 3 hours. What should happen before the beam is lifted?",
+      "options": [
+        "Oral fluids by mouth",
+        "A tourniquet placed and left on",
+        "IV saline running",
+        "Lactated Ringer's bolus"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Releasing a crushed limb floods the blood with potassium and acid, so NASEMSO starts normal saline before release. Lactated Ringer's is avoided because it contains potassium."
+    },
+    {
+      "id": "AEMT-D-024",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtOps",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Consent",
+      "stem": "An unresponsive adult needs care and no family is present. Which consent applies?",
+      "options": [
+        "Minor's consent",
+        "Expressed consent",
+        "Informed refusal",
+        "Implied consent"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "The law assumes an unresponsive person would agree to emergency care, so implied consent applies. Expressed consent comes from a patient who can speak for himself."
+    },
+    {
+      "id": "AEMT-D-025",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Glucagon",
+      "stem": "When is IM glucagon the best choice for a hypoglycemic adult?",
+      "options": [
+        "Before any glucose check",
+        "When no IV can be placed",
+        "When the patient can eat a meal",
+        "When glucose is above 100 mg/dL"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "NASEMSO uses glucagon 1 mg IM or IN when an IV cannot be started. A patient who can swallow gets oral glucose, and treatment follows a glucose check."
+    },
+    {
+      "id": "AEMT-D-026",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Insulin pump",
+      "stem": "An altered patient with an insulin pump has a glucose of 38. ALS is far away and he cannot swallow. What about the pump?",
+      "options": [
+        "Turn the rate up",
+        "Stop or disconnect it",
+        "Leave it running",
+        "Raise the basal rate slightly"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "NASEMSO stops, disconnects or removes the pump when the patient cannot take oral glucose and ALS is not available, so it stops delivering insulin. A patient who can eat keeps it running."
+    },
+    {
+      "id": "AEMT-D-027",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Anaphylaxis airway",
+      "stem": "A patient stung by a wasp has stridor and hives. What treats the stridor first?",
+      "options": [
+        "Nebulized albuterol",
+        "Oral diphenhydramine",
+        "IM epinephrine",
+        "A nasal airway and BVM"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Stridor in anaphylaxis is upper airway swelling, and IM epinephrine is the first treatment. Albuterol helps wheezing, not upper airway edema, and an antihistamine works too slowly."
+    },
+    {
+      "id": "AEMT-D-028",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Mechanical CPR",
+      "stem": "When is a mechanical CPR device most helpful?",
+      "options": [
+        "While moving him to the ambulance",
+        "In the first minute of a witnessed arrest",
+        "When the AED advises a shock",
+        "Before the airway is opened"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "A device keeps compressions steady on stairs and in a moving ambulance, where manual CPR is poor and unsafe. Applying it should not delay early compressions or a shock."
+    },
+    {
+      "id": "AEMT-D-029",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Flail chest",
+      "stem": "Which finding defines a flail chest segment?",
+      "options": [
+        "It cracks when pressed lightly",
+        "It moves in as he breathes in",
+        "It stays still while breathing",
+        "It bulges out as he breathes in"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A flail segment is two or more ribs broken in two or more places, so it is sucked inward on inhalation, the opposite of the rest of the chest. Crepitus alone shows a fracture, not a flail."
+    },
+    {
+      "id": "AEMT-D-030",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtOps",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Advance directives",
+      "stem": "A patient in cardiac arrest has a valid DNR order at the bedside. What is appropriate?",
+      "options": [
+        "Shock only once",
+        "Withhold CPR; support family",
+        "Start CPR until a doctor arrives",
+        "Call the police first"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "A valid DNR means resuscitation is withheld, while you still offer comfort and support to the family. Confirm the document follows your state's rules and local protocol."
+    },
+    {
+      "id": "AEMT-D-031",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Anaphylactic shock",
+      "stem": "After IM epinephrine, a patient with anaphylaxis still has a BP of 80/50. What should be added?",
+      "options": [
+        "Nitroglycerin",
+        "Oral diphenhydramine",
+        "A 20 mL/kg fluid bolus",
+        "Nothing for 30 minutes"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "NASEMSO adds 20 mL/kg of isotonic fluid given rapidly for poor perfusion in anaphylaxis and repeats IM epinephrine every 5 to 15 minutes."
+    },
+    {
+      "id": "AEMT-D-032",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Abdominal pain",
+      "stem": "A woman of childbearing age has lower abdominal pain. Which question is most important early?",
+      "options": [
+        "Her blood type",
+        "Date of her last period",
+        "Her favorite foods",
+        "Time of her last workout"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Any woman who could be pregnant with abdominal pain may have an ectopic pregnancy, so the last menstrual period guides the assessment."
+    },
+    {
+      "id": "AEMT-D-033",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Capnography",
+      "stem": "A teen in diabetic ketoacidosis is breathing deep and fast, with an ETCO2 of 20 mm Hg. What does the low reading reflect?",
+      "options": [
+        "A blocked airway",
+        "Breathing off acid as CO2",
+        "Rising CO2 retention",
+        "A failing capnography sensor"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "In DKA the body compensates for acid by blowing off CO2, so ETCO2 falls well below the normal 35 to 45 mm Hg. Do not try to slow this breathing; it is the patient's own correction."
+    },
+    {
+      "id": "AEMT-D-034",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Cardiogenic shock",
+      "stem": "After a large heart attack and a 250 mL bolus, BP is 80/50 and new crackles fill both lungs. What fits the fluid plan?",
+      "options": [
+        "Pull the IV out now",
+        "Hold more fluid; keep the IV",
+        "Two liters wide open",
+        "A 1 L bolus over 10 minutes"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "New crackles after fluid point to cardiogenic shock, and NASEMSO advises withholding further fluid when rales develop. Keep the IV in place as a route for ALS drugs, sit him up as his BP allows, and alert ALS and the PCI center."
+    },
+    {
+      "id": "AEMT-D-035",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Pediatric trauma fluids",
+      "stem": "A 20 kg child with trauma has poor perfusion. What is the first fluid bolus?",
+      "options": [
+        "5 mL/kg",
+        "10 mL/kg",
+        "15 mL/kg",
+        "20 mL/kg"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Children with signs of shock get 20 mL/kg of crystalloid, here 400 mL, then reassessment before any repeat. Smaller 10 mL/kg boluses are kept for children in cardiogenic shock.",
+      "lockedOrder": true
+    },
+    {
+      "id": "AEMT-D-036",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Sickle cell crisis",
+      "stem": "A teen with sickle cell disease has pain. Which finding is most urgent?",
+      "options": [
+        "Chest pain, fever and low SpO2",
+        "Mild yellowing of the eyes",
+        "Pain like his usual crises",
+        "Aching knees and elbows"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Chest pain with fever, cough or low oxygen in sickle cell disease suggests acute chest syndrome, a leading cause of death in these patients. Joint pain is the common crisis."
+    },
+    {
+      "id": "AEMT-D-037",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtOps",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Abandonment",
+      "stem": "Which act could be called abandonment?",
+      "options": [
+        "Leaving him with an EMR without a report",
+        "Handing over to a paramedic with a report",
+        "Transferring care at the ED",
+        "Leaving after a signed refusal"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Abandonment is ending care without transferring it to someone with equal or higher training. A documented transfer or a valid refusal is not abandonment."
+    },
+    {
+      "id": "AEMT-D-038",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Analyze cues",
+      "stimulusId": "AEMT-CS10",
+      "passage": "The baby's head is visible at the vaginal opening with each contraction.",
+      "stem": "Should you transport now or prepare to deliver?",
+      "options": [
+        "Load and drive fast",
+        "Have her walk to the ambulance",
+        "Ask her to cross her legs",
+        "Prepare to deliver here"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "Crowning with strong contractions in a woman with prior births means birth is minutes away, far less than the 40-minute drive. Delivering in a controlled setting is safer than in a moving ambulance."
+    },
+    {
+      "id": "AEMT-D-039",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Take action",
+      "stimulusId": "AEMT-CS10",
+      "stem": "The baby is born limp. After drying and stimulating, how do you check his heart rate best?",
+      "options": [
+        "Count his breaths",
+        "Listen over the chest",
+        "Feel the radial pulse",
+        "Watch the pulse oximeter first"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Listening over the chest gives a fast, accurate newborn heart rate; feeling the cord base works but often undercounts. A radial pulse is not reliable in a newborn, and oximetry takes time to read."
+    },
+    {
+      "id": "AEMT-D-040",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "matrix",
+      "skill": "Recognize cues",
+      "stimulusId": "AEMT-CS10",
+      "stem": "While you wait for the placenta, specify whether each finding is a sign it is separating.",
+      "rows": [
+        "The mother shivers",
+        "The baby starts crying",
+        "A small gush of blood",
+        "The uterus firms and rises",
+        "The cord lengthens"
+      ],
+      "columns": [
+        "Sign of separation",
+        "Not a sign"
+      ],
+      "correct": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "explanation": "A lengthening cord, a small gush of blood and a uterus that firms and rises mean the placenta is separating. Never pull on the cord to speed it."
+    },
+    {
+      "id": "AEMT-D-041",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Generate solutions",
+      "stimulusId": "AEMT-CS10",
+      "passage": "Ten minutes after the placenta delivers she is bleeding steadily. The uterus feels soft. HR 118, BP 96/60.",
+      "stem": "Besides fundal massage, what helps the uterus contract?",
+      "options": [
+        "Packing gauze inside",
+        "Breastfeeding the baby",
+        "Pulling on the cord",
+        "Raising her head high"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Nursing releases oxytocin, which makes the uterus contract. Packing and pulling on the cord can cause serious injury."
+    },
+    {
+      "id": "AEMT-D-042",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 3,
+      "format": "single",
+      "skill": "Take action",
+      "stimulusId": "AEMT-CS10",
+      "stem": "Bleeding continues and her BP falls to 88/50. What else should you do?",
+      "options": [
+        "Give her water to drink",
+        "Wait on scene for it to stop",
+        "IV access; transport now",
+        "Seat her upright in a chair"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Ongoing bleeding with falling pressure needs IV access, fluid toward a palpable pulse, continued massage and rapid transport. Waiting on scene lets the blood loss grow."
+    },
+    {
+      "id": "AEMT-D-043",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtJudgment",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Communication",
+      "stimulusId": "AEMT-CS10",
+      "stem": "Which details matter most in your radio report?",
+      "options": [
+        "How long labor lasted",
+        "Birth time and blood loss",
+        "Who cut the cord",
+        "The baby's name"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "The receiving team needs the time of birth, estimated blood loss, her vital signs and the newborn's condition to prepare. The rest can wait."
+    },
+    {
+      "id": "AEMT-D-044",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Hypothermia",
+      "stem": "A mildly hypothermic hiker is shivering and alert. What helps first?",
+      "options": [
+        "Give a hot alcoholic drink",
+        "Remove wet clothes",
+        "Rub his arms and legs",
+        "Have him exercise to warm"
+      ],
+      "correct": [
+        1
+      ],
+      "explanation": "Remove wet clothing, dry him and wrap him in blankets in a warm space. Alcohol widens vessels and speeds heat loss, and exertion or rubbing can stress a cold heart."
+    },
+    {
+      "id": "AEMT-D-045",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Heat exhaustion",
+      "stem": "Which finding separates heat stroke from heat exhaustion?",
+      "options": [
+        "Thirst, fatigue and headache",
+        "Muscle cramps",
+        "Altered mental status",
+        "Heavy sweating"
+      ],
+      "correct": [
+        2
+      ],
+      "explanation": "Confusion, seizures or unresponsiveness with a high temperature mark heat stroke. Sweating, cramps and fatigue occur in heat exhaustion, and some heat stroke patients still sweat."
+    },
+    {
+      "id": "AEMT-D-046",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtAirway",
+      "difficulty": 2,
+      "format": "single",
+      "skill": "Suctioning",
+      "stem": "While suctioning a vomiting patient, when should suction be applied?",
+      "options": [
+        "As the catheter comes out",
+        "Before turning the patient",
+        "Only while it is inserted",
+        "For 30 seconds at a time"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Suction is applied as the tip is withdrawn and kept brief, about 15 seconds or less in an adult, with oxygen between passes. Rolling the patient onto the side first lets gravity clear most of the vomit."
+    },
+    {
+      "id": "AEMT-D-047",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtCardio",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "STEMI destination",
+      "stem": "Where should a patient with a transmitted STEMI usually be taken?",
+      "options": [
+        "Any hospital with a lab",
+        "The nearest urgent care",
+        "His cardiologist's office",
+        "PCI-capable center"
+      ],
+      "correct": [
+        3
+      ],
+      "explanation": "A center that can open the artery in the cath lab shortens time to reperfusion. Urgent care centers and offices cannot treat a STEMI, so the patient would need a second transfer."
+    },
+    {
+      "id": "AEMT-D-048",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtTrauma",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Burn dressing",
+      "stem": "Once the burning has stopped, how does NASEMSO advise covering a large burn?",
+      "options": [
+        "Dry dressing or clean sheet",
+        "Wet towels changed often",
+        "Antibiotic ointment",
+        "Thick layer of burn gel"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Cover burns with a dry dressing or a clean sheet to limit contamination and heat loss, and leave blisters intact. Gels and ointments are avoided, and wet coverings over a large area chill the patient."
+    },
+    {
+      "id": "AEMT-D-049",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtOps",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Safe lifting",
+      "stem": "How should you lift a loaded stretcher?",
+      "options": [
+        "Keep it close; use your legs",
+        "Bend at the waist; lift fast",
+        "Hold it at arm's length",
+        "Twist to face the ambulance"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Keep the load close, back straight, and lift with the legs. Twisting or reaching while holding weight is a common cause of back injury in EMS."
+    },
+    {
+      "id": "AEMT-D-050",
+      "section": "aemt",
+      "test": 0,
+      "module": 1,
+      "domain": "aemtMedical",
+      "difficulty": 1,
+      "format": "single",
+      "skill": "Newborn care",
+      "stem": "Right after birth a newborn is breathing and crying. What comes next?",
+      "options": [
+        "Dry and warm the baby",
+        "Suction deeply",
+        "Give blow-by oxygen",
+        "Hold him upside down"
+      ],
+      "correct": [
+        0
+      ],
+      "explanation": "Newborns lose heat fast, so dry, warm and keep them skin to skin. Routine deep suctioning is not needed for a baby who is breathing and crying."
+    }
+  ]
+}

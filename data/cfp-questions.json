@@ -494,14 +494,14 @@
     "state": "ALL",
     "questionId": "CFP-GEN-020",
     "category": "cfpGeneral",
-    "question": "Earnings in a 529 withdrawal not used for qualified expenses are generally:",
-    "optionA": "Tax-free after five years",
-    "optionB": "Taxed only at capital gain rates",
-    "optionC": "Returned to the state",
-    "optionD": "Taxed plus a 10% additional tax",
+    "question": "A 529 beneficiary dies, and the balance is paid out to her estate. The earnings in that payout are:",
+    "optionA": "Tax-free in full",
+    "optionB": "Taxed plus a 10% additional tax",
+    "optionC": "Taxed only as capital gain",
+    "optionD": "Taxed, with no 10% additional tax",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The earnings portion of a nonqualified 529 distribution is ordinary income and usually owes a 10% additional tax. Exceptions include death, disability and scholarships."
+    "explanation": "Publication 970: earnings in a 529 distribution not spent on qualified expenses are ordinary income, but the 10% additional tax does not apply when the distribution is paid to the estate of a beneficiary who died."
   },
   {
     "type": "CFP",
@@ -690,7 +690,7 @@
     "state": "ALL",
     "questionId": "CFP-RSK-002",
     "category": "cfpRisk",
-    "question": "A client with a large emergency fund chooses a $5,000 health deductible to cut premiums. This is risk:",
+    "question": "A client with a large emergency fund chooses a $5,000 health deductible to cut premiums. Keeping that first $5,000 of each loss is:",
     "optionA": "Risk avoidance",
     "optionB": "Partial risk retention",
     "optionC": "Full risk transfer",
@@ -704,7 +704,7 @@
     "state": "ALL",
     "questionId": "CFP-RSK-003",
     "category": "cfpRisk",
-    "question": "Installing a monitored smoke alarm system to cut fire losses is an example of risk:",
+    "question": "Installing a monitored smoke alarm system to cut fire losses is an example of which risk technique?",
     "optionA": "Transfer",
     "optionB": "Avoidance",
     "optionC": "Reduction",
@@ -984,14 +984,14 @@
     "state": "ALL",
     "questionId": "CFP-INV-003",
     "category": "cfpInvest",
-    "question": "With a 3.5% risk-free rate, a 9.5% market return and a beta of 0.8, CAPM gives a required return of:",
-    "optionA": "7.6%",
-    "optionB": "11.1%",
-    "optionC": "8.3%",
-    "optionD": "10.3%",
+    "question": "With a 2.5% risk-free rate, a 9.0% expected market return and a beta of 0.8, CAPM gives a required return of:",
+    "optionA": "7.2%",
+    "optionB": "9.7%",
+    "optionC": "7.7%",
+    "optionD": "11.5%",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Required return = 3.5 + 0.8 x (9.5 - 3.5) = 3.5 + 4.8 = 8.3%. Multiplying beta by the whole 9.5% and adding 3.5% gives 11.1%."
+    "explanation": "Required return = 2.5 + 0.8 x (9.0 - 2.5) = 2.5 + 5.2 = 7.7%. Multiplying beta by the whole 9.0% and adding 2.5% gives 9.7%."
   },
   {
     "type": "CFP",
@@ -1068,14 +1068,14 @@
     "state": "ALL",
     "questionId": "CFP-INV-009",
     "category": "cfpInvest",
-    "question": "A client in the 24% bracket compares a 3.6% municipal bond with taxable bonds. The tax-equivalent yield is about:",
-    "optionA": "4.74%",
-    "optionB": "4.46%",
-    "optionC": "2.74%",
-    "optionD": "3.60%",
+    "question": "A client in the 35% bracket compares a 3.9% municipal bond with taxable bonds. The tax-equivalent yield is:",
+    "optionA": "6.0%",
+    "optionB": "5.3%",
+    "optionC": "2.5%",
+    "optionD": "3.9%",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Taxable equivalent = 3.6% / (1 - 0.24) = 4.74%. Multiplying 3.6% by 1.24 gives 4.46%, which understates it."
+    "explanation": "Taxable equivalent = 3.9% / (1 - 0.35) = 3.9% / 0.65 = 6.0%. Multiplying 3.9% by 1.35 gives about 5.3%, which understates it."
   },
   {
     "type": "CFP",
@@ -1280,8 +1280,8 @@
     "category": "cfpInvest",
     "question": "Under the semi-strong form of the efficient market hypothesis, which analysis cannot earn excess returns?",
     "optionA": "Insider information",
-    "optionB": "Private research only",
-    "optionC": "No analysis at all",
+    "optionB": "Material nonpublic research",
+    "optionC": "Trading on a nonpublic merger tip",
     "optionD": "Fundamental analysis",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -1579,7 +1579,7 @@
     "optionD": "$52,000",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Distributable net income caps the amount taxed to beneficiaries. The extra $8,000 is treated as a tax-free distribution of principal."
+    "explanation": "Distributable net income caps the amount taxed to beneficiaries, so they report $22,000. The extra $8,000 is treated as a tax-free distribution of principal."
   },
   {
     "type": "CFP",
@@ -1649,7 +1649,7 @@
     "optionD": "$170,000",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Property acquired from a decedent takes a basis equal to its fair market value at death, a step-up that wipes out the $170,000 of gain."
+    "explanation": "Property acquired from a decedent takes a basis equal to its fair market value at death, $210,000, a step-up that wipes out the $170,000 of gain."
   },
   {
     "type": "CFP",
@@ -2251,7 +2251,7 @@
     "optionD": "$0",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Only the plan's cost basis is taxed now. The $220,000 of net unrealized appreciation is taxed as long-term capital gain when the shares are sold."
+    "explanation": "Only the plan's cost basis, $40,000, is taxed now. The $220,000 of net unrealized appreciation is taxed as long-term capital gain when the shares are sold."
   },
   {
     "type": "CFP",

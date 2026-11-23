@@ -3,13 +3,13 @@ CAT = "cfpInvest"; SEG = "INV"
 import math
 sharpe = (9.8 - 2.6) / 12; assert round(sharpe, 2) == 0.6
 capm_alpha = 12.4 - (3 + 1.2 * (10 - 3)); assert round(capm_alpha, 2) == 1.0
-req = 3.5 + 0.8 * (9.5 - 3.5); assert round(req, 2) == 8.3
+req = 2.5 + 0.8 * (9.0 - 2.5); assert round(req, 2) == 7.7
 cv = 18 / 12; assert cv == 1.5
 hpr = (46 - 40 + 1.20) / 40; assert round(hpr, 4) == 0.18
 geo = math.sqrt(1.25 * 0.80) - 1; assert abs(geo) < 1e-12
 ddm = 1.60 * 1.06 / (0.10 - 0.06); assert round(ddm, 2) == 42.4
 cy = 45 / 900; assert cy == 0.05
-tey = 3.6 / (1 - 0.24); assert round(tey, 2) == 4.74
+tey = 3.9 / (1 - 0.35); assert round(tey, 2) == 6.0
 call = 60 * (1 - 0.5) / (1 - 0.30); assert round(call, 2) == 42.86
 var = 0.6**2 * 20**2 + 0.4**2 * 10**2 + 2 * 0.6 * 0.4 * 0.5 * 20 * 10; assert round(math.sqrt(var), 2) == 14.42
 dur = -7 * 0.5; assert dur == -3.5
@@ -21,9 +21,9 @@ Q = [
 ("A manager earned 12.4% with a beta of 1.2. The market returned 10% and the risk-free rate was 3%. Jensen's alpha is:",
  "1.0%", ["2.4%", "-1.6%", "0.4%"],
  "Expected return = 3 + 1.2 x (10 - 3) = 11.4%. Alpha = 12.4 - 11.4 = 1.0%. Comparing 12.4 with 10 gives 2.4%, which skips beta."),
-("With a 3.5% risk-free rate, a 9.5% market return and a beta of 0.8, CAPM gives a required return of:",
- "8.3%", ["7.6%", "11.1%", "10.3%"],
- "Required return = 3.5 + 0.8 x (9.5 - 3.5) = 3.5 + 4.8 = 8.3%. Multiplying beta by the whole 9.5% and adding 3.5% gives 11.1%."),
+("With a 2.5% risk-free rate, a 9.0% expected market return and a beta of 0.8, CAPM gives a required return of:",
+ "7.7%", ["7.2%", "9.7%", "11.5%"],
+ "Required return = 2.5 + 0.8 x (9.0 - 2.5) = 2.5 + 5.2 = 7.7%. Multiplying beta by the whole 9.0% and adding 2.5% gives 9.7%."),
 ("An asset has a 12% mean return and an 18% standard deviation. Its coefficient of variation is:",
  "1.5", ["0.67", "6.0", "2.16"],
  "CV = standard deviation / mean = 18 / 12 = 1.5, the risk per unit of return. Inverting it gives 0.67."),
@@ -39,9 +39,9 @@ Q = [
 ("A bond with a 4.5% coupon and $1,000 face value trades at $900. Its current yield is:",
  "5.0%", ["4.5%", "4.1%", "5.6%"],
  "Current yield = annual coupon / price = $45 / $900 = 5.0%. 4.5% is the coupon rate on face value."),
-("A client in the 24% bracket compares a 3.6% municipal bond with taxable bonds. The tax-equivalent yield is about:",
- "4.74%", ["4.46%", "2.74%", "3.60%"],
- "Taxable equivalent = 3.6% / (1 - 0.24) = 4.74%. Multiplying 3.6% by 1.24 gives 4.46%, which understates it."),
+("A client in the 35% bracket compares a 3.9% municipal bond with taxable bonds. The tax-equivalent yield is:",
+ "6.0%", ["5.3%", "2.5%", "3.9%"],
+ "Taxable equivalent = 3.9% / (1 - 0.35) = 3.9% / 0.65 = 6.0%. Multiplying 3.9% by 1.35 gives about 5.3%, which understates it."),
 ("Stock is bought at $60 with 50% initial margin. With 30% maintenance margin, a call comes when the price falls to about:",
  "$42.86", ["$42.00", "$30.00", "$39.00"],
  "Call price = loan / (1 - maintenance) = $30 / 0.70 = $42.86. At that price equity is $12.86, which is 30% of value."),
@@ -85,7 +85,7 @@ Q = [
  "Utilities and consumer staples", ["Autos and homebuilders", "Airlines and hotels", "Steel and chemicals"],
  "Defensive sectors sell necessities whose demand changes little with the economy. Cyclical sectors such as autos and travel fall hardest."),
 ("Under the semi-strong form of the efficient market hypothesis, which analysis cannot earn excess returns?",
- "Fundamental analysis", ["Insider information", "Private research only", "No analysis at all"],
+ "Fundamental analysis", ["Insider information", "Material nonpublic research", "Trading on a nonpublic merger tip"],
  "Semi-strong efficiency says prices reflect all public information, so neither technical nor fundamental analysis beats the market. Only private information might."),
 ("Holding maturity fixed, which change makes a bond's price less sensitive to interest rates?",
  "A higher coupon rate", ["A lower coupon rate", "Removing the coupon", "A lower credit rating"],

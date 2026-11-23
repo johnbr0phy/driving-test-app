@@ -15,9 +15,9 @@ const siteUrl = SITE_URL;
 
 const title = "CFP Exam Practice Test 2026 - Free CFP Certification Exam Questions";
 const metaDescription =
-  "Free CFP exam practice: 200 original questions on CFP Board's eight Principal Knowledge Domains, from ethics and the planning process to tax, retirement and estate planning, with every calculation explained.";
+  "CFP exam practice, free to start: 200 original questions on CFP Board's eight Principal Knowledge Domains, from ethics and the planning process to tax, retirement and estate planning, with every calculation explained.";
 const description =
-  "Free practice for the CFP Board CFP Certification Examination: 200 original questions written to the eight Principal Knowledge Domains. Four 50-question practice tests weighted like the real exam, and five training sets covering professional conduct, planning principles, insurance, investments, tax, retirement, estate planning and the psychology of financial planning, with every calculation shown step by step.";
+  "Practice for the CFP Board CFP Certification Examination, free to start: 200 original questions written to the eight Principal Knowledge Domains. Four 50-question practice tests weighted like the real exam, and five training sets covering professional conduct, planning principles, insurance, investments, tax, retirement, estate planning and the psychology of financial planning, with every calculation shown step by step.";
 
 export const metadata: Metadata = {
   title,

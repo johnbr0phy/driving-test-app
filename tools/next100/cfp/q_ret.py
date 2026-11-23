@@ -95,7 +95,7 @@ Q = [
  "Only one 60-day IRA-to-IRA rollover is allowed in any 12-month period. Direct trustee-to-trustee transfers are not limited."),
 ("Ed takes a lump sum of employer stock with $40,000 basis and $260,000 value from his 401(k). At distribution his ordinary income is:",
  "$40,000", ["$260,000", "$220,000", "$0"],
- "Only the plan's cost basis is taxed now. The $220,000 of net unrealized appreciation is taxed as long-term capital gain when the shares are sold."),
+ "Only the plan's cost basis, $40,000, is taxed now. The $220,000 of net unrealized appreciation is taxed as long-term capital gain when the shares are sold."),
 ("A Roth IRA distribution is qualified when the five-year period is met and the owner is at least:",
  "59 1/2", ["55", "62", "70 1/2"],
  "A qualified Roth distribution needs the five-tax-year period plus age 59 1/2, death, disability or a first-time home purchase up to the lifetime limit."),

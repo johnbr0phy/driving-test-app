@@ -34,6 +34,11 @@ top of its source file before the bank is built.
 - Exam statistics, https://www.cfp.net/certification-process/exam-requirement/about-the-cfp-exam/scoring-and-results/exam-statistics,
   fetched 2026-11-23: July 2026 administration pass rate 66% (2,388 of 3,621).
 
+- About the CFP exam, https://www.cfp.net/get-certified/certification-process/exam-requirement/about-the-cfp-exam,
+  checked 2026-11-23 (review): taken at more than 265 Prometric testing centers. Exam requirement page,
+  https://www.cfp.net/get-certified/certification-process/exam-requirement, checked 2026-11-23: three
+  administrations a year, each window about eight days (2027 windows listed).
+
 ## Professional conduct (official, CFP Board)
 - Code of Ethics and Standards of Conduct, https://www.cfp.net/ethics/code-of-ethics-and-standards-of-conduct,
   fetched 2026-11-23: the six Code of Ethics duties, fiduciary duty (loyalty, care, follow client

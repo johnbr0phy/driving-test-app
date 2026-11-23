@@ -1694,5 +1694,6 @@
       "pr": 1001,
       "findings": 9
     }
-  ]
+  ],
+  "ausecurity": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 0, "findings": 1 }]
 }

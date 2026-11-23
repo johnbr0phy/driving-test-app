@@ -395,6 +395,7 @@ export const TEACHES: Record<string, string> = {
   auwah: "working at heights courses",
   cscs: "a construction course or run CSCS test prep",
   ukfood: "Level 2 food hygiene courses",
+  ukfood3: "Level 3 food safety supervisor courses",
   ukaplh: "a personal licence course",
   nzlcq: "an LCQ course",
   aerera: "a DREI certified real estate broker course",

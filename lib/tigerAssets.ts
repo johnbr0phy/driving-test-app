@@ -225,7 +225,7 @@ const BORROWED_SETS: Record<string, string> = {
   // AP Italian (Nov 2026): the AP English Language tiger.
   apitalian: "aplang",
   // Finland (Nov 2026): motorcycle the motorcycle tiger, truck and bus the CDL tiger, hygiene passport the UK food hygiene tiger, hunting the hunter tiger.
-  fimoto: "moto", fitruck: "cdl", fihygiene: "ukfood", fihunt: "hunter",
+  fimoto: "moto", fitruck: "cdl", fihygiene: "ukfood", ukfood3: "ukfood", fihunt: "hunter",
   // Hungary (Nov 2026): motorcycle the motorcycle tiger, GKI the CDL tiger, first aid the CPR tiger, insurance the life and health insurance tiger.
   hukreszmoto: "moto", hugki: "cdl", huelsoseg: "cpr", hubizt: "insurance",
   // Romania (Nov 2026): Driver CPC the CDL tiger, taxi the car tiger, medicine admission the SAT tiger.

@@ -1533,6 +1533,19 @@
     --brand-gradient-to: 325 60% 95%;
   }
 
+  [data-theme="ukfood3"] {
+    --brand: 308 85% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 308 45% 95%;
+    --brand-hover: 308 85% 10%;
+    --brand-dark: 308 80% 10%;
+    --brand-darker: 308 75% 7%;
+    --brand-muted: 308 30% 70%;
+    --brand-border: 308 35% 78%;
+    --brand-border-light: 308 35% 88%;
+    --brand-gradient-to: 320 45% 95%;
+  }
+
   /* Personal licence (APLH) theme (UK): wine */
   [data-theme="ukaplh"] {
     --brand: 335 70% 30%;
@@ -9011,6 +9024,18 @@
     --brand-muted: 305 35% 45%;
     --brand-dark: 305 70% 65%;
     --brand-darker: 305 65% 78%;
+  }
+
+  .dark [data-theme="ukfood3"] {
+    --brand: 308 85% 44.7%;
+    --brand-hover: 308 85% 36.7%;
+    --brand-light: 308 45% 13%;
+    --brand-gradient-to: 320 40% 11%;
+    --brand-border-light: 308 35% 24%;
+    --brand-border: 308 35% 34%;
+    --brand-muted: 308 30% 45%;
+    --brand-dark: 308 80% 65%;
+    --brand-darker: 308 75% 78%;
   }
 
   .dark [data-theme="ukaplh"] {

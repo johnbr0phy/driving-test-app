@@ -3390,6 +3390,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the Level 2 Food Safety in Catering unit and Food Standards Agency guidance, checked October 2026",
     source: { name: "Food Standards Agency: Safer food, better business", url: "https://www.food.gov.uk/business-guidance/safer-food-better-business" },
   },
+  ukfood3: {
+    answer:
+      "The Level 3 Award in Food Safety (Supervising) for Catering is a regulated UK qualification for supervisors, head chefs and kitchen managers, covering food safety law and enforcement, HACCP-based food safety management, contamination, temperature control, hygiene, training, cleaning and pests. Each awarding body sets its own exam; Highfield's, for example, is 45 multiple-choice questions in 90 minutes, with a pass at 30 (66 percent) and a distinction at 36. The law requires supervision and suitable training, not this certificate itself.",
+    rows: [
+      { label: "Exam (Highfield)", value: "45 multiple-choice questions" },
+      { label: "Time (Highfield)", value: "90 minutes" },
+      { label: "Pass mark (Highfield)", value: "30 of 45 (66%); distinction 36" },
+      { label: "Course length", value: "About 20 guided learning hours" },
+      { label: "Legally required?", value: "Training and supervision yes; this certificate no" },
+      { label: "Core topics", value: "HACCP, enforcement, due diligence, supervising staff" },
+      { label: "Regulated by", value: "Ofqual and Qualifications Wales" },
+    ],
+    basedOn: "the Highfield Level 3 Award in Food Safety for Catering specification, UK food hygiene law and Food Standards Agency guidance, checked November 2026",
+    source: { name: "Highfield: Level 3 Award in Food Safety for Catering specification", url: "https://centres.highfieldqualifications.com/Assets/DownloadArea/QualificationDownloads/[25082021_1546]_L3_FSC_(RQF)_Qualification_specification_v1.2_Aug21.pdf" },
+  },
   ukaplh: {
     answer:
       "The Level 2 Award for Personal Licence Holders (APLH) is the accredited qualification you need before applying for a personal licence to sell alcohol in England and Wales. It is a one-unit course on the Licensing Act 2003, usually taught in a day, ending in a 40-question multiple-choice exam where you need 28 correct (70%). You then apply to the licensing authority where you live; the licence lasts indefinitely.",

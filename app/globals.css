@@ -5840,18 +5840,18 @@
     --brand-gradient-to: 120 50% 95%;
   }
 
-  /* BC Serving It Right theme: dusty plum */
+  /* BC Serving It Right theme: muted wine */
   [data-theme="servingitright"] {
-    --brand: 290 15% 32%;
+    --brand: 8 30% 48%;
     --brand-foreground: 0 0% 100%;
-    --brand-light: 290 20% 95%;
-    --brand-hover: 290 15% 26%;
-    --brand-dark: 290 15% 20%;
-    --brand-darker: 290 15% 14%;
-    --brand-muted: 290 12% 70%;
-    --brand-border: 290 12% 80%;
-    --brand-border-light: 290 12% 89%;
-    --brand-gradient-to: 330 25% 95%;
+    --brand-light: 8 30% 95%;
+    --brand-hover: 8 30% 40%;
+    --brand-dark: 8 30% 30%;
+    --brand-darker: 8 30% 20%;
+    --brand-muted: 8 20% 70%;
+    --brand-border: 8 20% 80%;
+    --brand-border-light: 8 20% 89%;
+    --brand-gradient-to: 350 25% 95%;
   }
 
   [data-theme="proserve"] {
@@ -12481,15 +12481,15 @@
   }
 
   .dark [data-theme="servingitright"] {
-    --brand: 290 15% 49.1%;
-    --brand-hover: 290 15% 41.1%;
-    --brand-light: 290 20% 13%;
-    --brand-gradient-to: 330 25% 11%;
-    --brand-border-light: 290 12% 24%;
-    --brand-border: 290 12% 34%;
-    --brand-muted: 290 12% 45%;
-    --brand-dark: 290 15% 65%;
-    --brand-darker: 290 15% 78%;
+    --brand: 8 30% 50%;
+    --brand-hover: 8 30% 42%;
+    --brand-light: 8 30% 13%;
+    --brand-gradient-to: 350 25% 11%;
+    --brand-border-light: 8 20% 24%;
+    --brand-border: 8 20% 34%;
+    --brand-muted: 8 20% 45%;
+    --brand-dark: 8 30% 65%;
+    --brand-darker: 8 30% 78%;
   }
 
   .dark [data-theme="proserve"] {

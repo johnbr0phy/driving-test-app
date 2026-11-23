@@ -4744,6 +4744,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Cnam recommendation R489 (adopted 2017, in force from 1 January 2020), annex A3/1, and the INRS CACES categories page, checked November 2026",
     source: { name: "INRS: catégories de CACES", url: "https://www.inrs.fr/accueil/demarche/caces-certificat-aptitude-conduite-securite/categories-caces.html" },
   },
+  frmoto: {
+    answer:
+      "The French motorcycle theory test for licence categories A1 and A2 (épreuve théorique moto, ETM, known as \"le code moto\") replaces the car code de la route for motorcycle candidates and is taken in an approved exam centre: 40 multiple-choice questions on traffic rules, riding a motorcycle and safe rider behaviour, and you pass with at least 35 right. A pass stays valid for five years while you take the practical test, and an A1 holder of under five years does not retake it for A2.",
+    rows: [
+      { label: "Run by", value: "Approved private operators, for the Interior Ministry" },
+      { label: "Licences", value: "A1 and A2 (A after two years of A2 and a 7-hour course)" },
+      { label: "Format", value: "40 multiple-choice questions" },
+      { label: "Pass mark", value: "At least 35 of 40 right" },
+      { label: "Valid for", value: "5 years after the pass" },
+      { label: "Tigertest mock tests", value: "5 x 40 four-option questions in French, 35 to pass" },
+    ],
+    basedOn: "The arrêté du 20 avril 2012, article 2, and Service-public.gouv.fr (fiches F31083 and F2832, checked November 2025), read November 2026",
+    source: { name: "Service-public.gouv.fr: permis moto A2", url: "https://www.service-public.gouv.fr/particuliers/vosdroits/F31083" },
+  },
   plteoria: {
     answer:
       "The Polish theory test for a category B car licence (część teoretyczna egzaminu państwowego) is taken on a computer at a regional road traffic centre (WORD). You get 32 questions drawn at random: 20 basic questions answered yes or no (TAK/NIE), with 20 seconds to read and 15 seconds to answer, and 12 specialist questions with three answers (A, B, C) and 50 seconds each. Every question comes with a photo or video clip and is worth 1, 2 or 3 points depending on its importance for road safety, 74 points in all, and you pass with at least 68. The test lasts 25 minutes and you cannot go back to a confirmed answer. Besides Polish it can be taken in English, German and sign language, and for category B also in Ukrainian. The Ministry of Infrastructure plans a smaller, public question catalogue, not yet in force.",

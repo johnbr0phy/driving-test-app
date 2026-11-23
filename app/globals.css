@@ -3094,6 +3094,20 @@
     --brand-gradient-to: 0 0% 98%;
   }
 
+  /* French motorcycle theory test (code moto, ETM): deep magenta, distinct from frcode blue. */
+  [data-theme="frmoto"] {
+    --brand: 309 100% 22%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 309 100% 96%;
+    --brand-hover: 309 100% 17%;
+    --brand-dark: 309 100% 12%;
+    --brand-darker: 309 100% 8%;
+    --brand-muted: 309 40% 70%;
+    --brand-border: 309 45% 80%;
+    --brand-border-light: 309 45% 90%;
+    --brand-gradient-to: 0 0% 98%;
+  }
+
   /* Italian Driving Theory Test (Patente B) theme */
   [data-theme="itpatente"] {
     --brand: 128 80% 18%;
@@ -9744,6 +9758,17 @@
     --brand-muted: 72 40% 45%;
     --brand-dark: 72 100% 65%;
     --brand-darker: 72 100% 78%;
+  }
+  .dark [data-theme="frmoto"] {
+    --brand: 309 100% 42.1%;
+    --brand-hover: 309 100% 34.1%;
+    --brand-light: 309 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 309 35% 24%;
+    --brand-border: 309 40% 34%;
+    --brand-muted: 309 40% 45%;
+    --brand-dark: 309 100% 65%;
+    --brand-darker: 309 100% 78%;
   }
   .dark [data-theme="itpatente"] {
     --brand: 128 80% 29.6%;

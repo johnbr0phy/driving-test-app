@@ -1,23 +1,23 @@
 CAT = "cfpInvest"; SEG = "INV"
 # D. Investment Planning (D.27-D.35). Every computed key is asserted below.
 import math
-sharpe = (11 - 3) / 16; assert sharpe == 0.5
+sharpe = (9.8 - 2.6) / 12; assert round(sharpe, 2) == 0.6
 capm_alpha = 12.4 - (3 + 1.2 * (10 - 3)); assert round(capm_alpha, 2) == 1.0
 req = 3.5 + 0.8 * (9.5 - 3.5); assert round(req, 2) == 8.3
 cv = 18 / 12; assert cv == 1.5
 hpr = (46 - 40 + 1.20) / 40; assert round(hpr, 4) == 0.18
 geo = math.sqrt(1.25 * 0.80) - 1; assert abs(geo) < 1e-12
-ddm = 2.00 * 1.05 / (0.1025 - 0.05); assert round(ddm, 2) == 40.0
+ddm = 1.60 * 1.06 / (0.10 - 0.06); assert round(ddm, 2) == 42.4
 cy = 45 / 900; assert cy == 0.05
-tey = 3.6 / (1 - 0.32); assert round(tey, 2) == 5.29
+tey = 3.6 / (1 - 0.24); assert round(tey, 2) == 4.74
 call = 60 * (1 - 0.5) / (1 - 0.30); assert round(call, 2) == 42.86
 var = 0.6**2 * 20**2 + 0.4**2 * 10**2 + 2 * 0.6 * 0.4 * 0.5 * 20 * 10; assert round(math.sqrt(var), 2) == 14.42
 dur = -7 * 0.5; assert dur == -3.5
 dca_cost = 1800 / (30 + 40 + 25); assert round(dca_cost, 2) == 18.95
 Q = [
-("A fund returned 11% with a 16% standard deviation while T-bills paid 3%. Its Sharpe ratio is:",
- "0.50", ["0.69", "0.19", "2.00"],
- "Sharpe = (11 - 3) / 16 = 0.50. Dividing the full 11% return by 16 gives 0.69, which ignores the risk-free rate."),
+("A fund returned 9.8% with a 12% standard deviation while T-bills paid 2.6%. Its Sharpe ratio is:",
+ "0.60", ["0.82", "0.22", "1.67"],
+ "Sharpe = (9.8 - 2.6) / 12 = 0.60. Dividing the full 9.8% return by 12 gives 0.82, which ignores the risk-free rate."),
 ("A manager earned 12.4% with a beta of 1.2. The market returned 10% and the risk-free rate was 3%. Jensen's alpha is:",
  "1.0%", ["2.4%", "-1.6%", "0.4%"],
  "Expected return = 3 + 1.2 x (10 - 3) = 11.4%. Alpha = 12.4 - 11.4 = 1.0%. Comparing 12.4 with 10 gives 2.4%, which skips beta."),
@@ -33,15 +33,15 @@ Q = [
 ("An investment gains 25% one year and loses 20% the next. Its geometric average return is:",
  "0%", ["2.5%", "5%", "-2.5%"],
  "(1.25 x 0.80)^(1/2) - 1 = 0%: the investor is back to the start. The arithmetic mean of 2.5% overstates the result."),
-("A stock just paid $2.00. Dividends grow 5% a year and investors require 10.25%. Its value under the constant growth model is:",
- "$40.00", ["$38.10", "$19.51", "$42.00"],
- "V = D1 / (r - g) = (2.00 x 1.05) / (0.1025 - 0.05) = 2.10 / 0.0525 = $40.00. Using D0 instead of D1 gives $38.10."),
+("A stock just paid $1.60. Dividends grow 6% a year and investors require 10%. Its value under the constant growth model is:",
+ "$42.40", ["$40.00", "$16.96", "$26.67"],
+ "V = D1 / (r - g) = (1.60 x 1.06) / (0.10 - 0.06) = 1.696 / 0.04 = $42.40. Using D0 instead of D1 gives $40.00."),
 ("A bond with a 4.5% coupon and $1,000 face value trades at $900. Its current yield is:",
  "5.0%", ["4.5%", "4.1%", "5.6%"],
  "Current yield = annual coupon / price = $45 / $900 = 5.0%. 4.5% is the coupon rate on face value."),
-("A client in the 32% bracket compares a 3.6% municipal bond with taxable bonds. The tax-equivalent yield is about:",
- "5.29%", ["4.75%", "2.45%", "3.60%"],
- "Taxable equivalent = 3.6% / (1 - 0.32) = 5.29%. Multiplying 3.6% by 1.32 gives 4.75%, which understates it."),
+("A client in the 24% bracket compares a 3.6% municipal bond with taxable bonds. The tax-equivalent yield is about:",
+ "4.74%", ["4.46%", "2.74%", "3.60%"],
+ "Taxable equivalent = 3.6% / (1 - 0.24) = 4.74%. Multiplying 3.6% by 1.24 gives 4.46%, which understates it."),
 ("Stock is bought at $60 with 50% initial margin. With 30% maintenance margin, a call comes when the price falls to about:",
  "$42.86", ["$42.00", "$30.00", "$39.00"],
  "Call price = loan / (1 - maintenance) = $30 / 0.70 = $42.86. At that price equity is $12.86, which is 30% of value."),
@@ -66,15 +66,15 @@ Q = [
 ("Two assets with a correlation coefficient of -1.0 combined in the right weights can produce:",
  "A portfolio with zero risk", ["Double the risk", "No diversification", "Higher returns than either"],
  "Perfectly negatively correlated assets offset each other completely, so a portfolio with zero standard deviation is possible."),
-("A sale of stock at a loss is followed 20 days later by a purchase of the same stock. The loss is:",
- "Disallowed and added to basis", ["Deductible in full now", "Lost permanently", "Treated as a short-term gain"],
- "Under the wash sale rule a purchase within 30 days before or after the sale disallows the loss. It is added to the new shares' basis, so it is postponed, not lost."),
-("To be qualified, a common stock dividend requires the shares to be held more than how many days in the 121-day window?",
- "60", ["30", "90", "45"],
- "Publication 550 requires holding the stock more than 60 days during the 121-day period that begins 60 days before the ex-dividend date."),
-("Interest on a U.S. Treasury note is:",
- "Exempt from state income tax", ["Exempt from federal tax", "Exempt from all income tax", "Taxed as capital gain"],
- "Treasury interest is federally taxable but exempt from state and local income tax. General obligation municipal interest is the reverse."),
+("After a wash sale, the holding period of the replacement shares:",
+ "Includes the old period", ["Starts on the new purchase", "Starts 30 days after the sale", "Is always short-term"],
+ "Publication 550: the disallowed loss is added to the new shares' basis, and their holding period includes the period the sold shares were held."),
+("A mutual fund distribution labeled a return of capital is generally:",
+ "A reduction in cost basis", ["Taxed as ordinary income", "A qualified dividend", "A short-term capital gain"],
+ "A nondividend distribution is not taxed when received. It lowers the shareholder's basis, and once basis reaches zero further amounts are capital gain."),
+("A cash-basis owner of Series EE savings bonds who does not elect yearly reporting pays tax on the interest:",
+ "At redemption or final maturity", ["Every year as it accrues", "Never, it is tax-exempt", "Only if over $1,500"],
+ "Publication 550 lets a cash-basis owner defer EE bond interest until the bond is cashed or reaches final maturity, whichever is first."),
 ("Which bond carries no reinvestment rate risk if held to maturity?",
  "Zero-coupon bond", ["Callable corporate bond", "High-coupon Treasury", "Mortgage-backed security"],
  "A zero pays no coupons to reinvest, so its yield to maturity is locked in. Coupon bonds and prepaying securities face reinvestment risk."),
@@ -87,18 +87,18 @@ Q = [
 ("Under the semi-strong form of the efficient market hypothesis, which analysis cannot earn excess returns?",
  "Fundamental analysis", ["Insider information", "Private research only", "No analysis at all"],
  "Semi-strong efficiency says prices reflect all public information, so neither technical nor fundamental analysis beats the market. Only private information might."),
-("Which bond's price is most sensitive to a change in interest rates?",
- "Long-term, low-coupon bond", ["Short-term, high-coupon bond", "Long-term, high-coupon bond", "Short-term, low-coupon bond"],
- "Longer maturity and lower coupon both raise duration, so a long, low-coupon bond moves most for a given change in rates."),
+("Holding maturity fixed, which change makes a bond's price less sensitive to interest rates?",
+ "A higher coupon rate", ["A lower coupon rate", "Removing the coupon", "A lower credit rating"],
+ "A higher coupon returns more cash sooner, which shortens duration and lowers price sensitivity. A zero coupon is the most sensitive for its maturity."),
 ("A bond's coupon rate is higher than current market yields for similar bonds. The bond trades:",
  "At a premium", ["At a discount", "At par", "Below its coupon"],
  "Buyers pay more than face value for a coupon above market rates. Its yield to maturity is below its coupon rate."),
-("The duration of a zero-coupon bond is:",
- "Equal to its maturity", ["Shorter than its maturity", "Longer than its maturity", "Always one year"],
- "With a single payment at maturity, a zero's weighted average time to cash flow is its maturity. Coupon bonds have durations shorter than maturity."),
-("Which return measure is used to judge a portfolio manager because it ignores client deposits and withdrawals?",
- "Time-weighted return", ["Dollar-weighted return", "Internal rate of return", "Holding period return"],
- "Time-weighted return links period returns so the timing of client cash flows does not distort it. Dollar-weighted (IRR) reflects the client's own timing."),
+("Two bonds have the same duration. When rates fall sharply, the one with more convexity will:",
+ "Rise more in price", ["Rise less in price", "Fall in price", "Not change in price"],
+ "Positive convexity means price gains on falling rates exceed what duration predicts and losses on rising rates are smaller. More convexity helps in both directions."),
+("Which return measure reflects the timing and size of a client's own deposits and withdrawals?",
+ "Dollar-weighted return", ["Time-weighted return", "Geometric mean return", "Arithmetic mean return"],
+ "The dollar-weighted return is the internal rate of return on the account's cash flows, so it shows the client's experience. Time-weighted return strips those flows out."),
 ("An investor owns 500 shares and writes calls on them to earn income. This strategy:",
  "Limits upside above the strike", ["Protects fully against any price drop", "Requires a margin loan", "Gives unlimited upside"],
  "A covered call collects a premium but caps gains at the strike price. The premium cushions only part of a price fall."),

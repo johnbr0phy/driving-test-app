@@ -178,4 +178,5 @@ export const BANK_SIZES: Record<string, number> = {
   cism: 198,
   emr: 200,
   iegarda: 200,
+  crisc: 204,
 };

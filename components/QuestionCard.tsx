@@ -4,6 +4,7 @@ import { useId, useEffect, useRef } from "react";
 import { Question } from "@/types";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2, XCircle } from "lucide-react";
+import { OptionLetter } from "@/components/OptionLetter";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { QuestionImage } from "@/components/QuestionImage";
 
@@ -74,7 +75,7 @@ export function QuestionCard({
                 className={`w-full text-left border-2 rounded-lg p-4 transition-all ${getOptionClasses(option.value)}`}
               >
                 <div className="flex items-center justify-between gap-2">
-                  <span className="font-bold text-lg w-6 shrink-0">{option.value})</span>
+                  <OptionLetter letter={option.value} selected={isSelected && !showResult} correct={showResult && isThisCorrect} />
                   <span className="flex-1">{option.label}</span>
                   {showResult && option.value === question.correctAnswer && <span className="sr-only">{t("trainingCard.correct")}</span>}
                   {showResult && option.value === selectedAnswer && !isCorrect && <span className="sr-only">{t("trainingCard.incorrect")}</span>}

@@ -1372,6 +1372,9 @@ export const SEARCH_LEADS: Record<string, string> = {
   "certification dental ray x": "danbrhs",
   "certification dental radiology": "danbrhs",
   rhs: "danbrhs",
+  // A bare "danb" or "cda" still opens the CDA test, which covers all three DANB components.
+  danb: "danb",
+  cda: "danb",
 };
 
 /** Everything a test can be found by (names, org, blurb, aliases), lowercased. */

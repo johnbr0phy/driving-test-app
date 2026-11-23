@@ -63,7 +63,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest AWS AI Practitioner practice test free?",
-    a: "It is free to start, with no account required. Practice Test 1 and the first six drills are free; Practice Test 2 and the Responsible AI and Security and Governance drills are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.",
+    a: "It is free to start, with no account required. Practice Test 1 and four drills (AI and ML Basics, ML Lifecycle, GenAI Concepts and GenAI on AWS) are free; Practice Test 2 and the FM Apps and Prompting, Fine-Tuning and Evaluation, Responsible AI and Security and Governance drills are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.",
   },
 ];
 

@@ -124,7 +124,7 @@ ITEMS = [
       "A factory needs a defect check that runs in milliseconds on a small device with no network. Which approach fits best?",
       "Small task-specific ML model",
       ["Large multimodal foundation model", "Cloud chatbot called per part", "Text generation model with RAG"],
-      "Tight latency, small hardware and no network favour a compact model trained for one task. Large foundation models need much more compute and usually a network call."),
+      "Tight latency, small hardware and no network favor a compact model trained for one task. Large foundation models need much more compute and usually a network call."),
     M(0, 2, "AWS managed AI services",
       "Which two services work with images or video? (Choose two.)",
       ["Amazon Rekognition", "Amazon Textract"],

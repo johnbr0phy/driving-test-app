@@ -17,7 +17,7 @@ ITEMS = [
       "Why do teams retrain a deployed model on a schedule or when monitoring shows drift?",
       "Live data drifts over time",
       ["Each retrain lowers the model's storage cost", "Endpoints expire after a year", "Training data is deleted on deploy"],
-      "Customer behaviour and data patterns shift over time, so a model trained on old data loses accuracy. Monitoring detects the drift and retraining restores performance."),
+      "Customer behavior and data patterns shift over time, so a model trained on old data loses accuracy. Monitoring detects the drift and retraining restores performance."),
     S(1, 3, "Model in production",
       "A startup wants to use a foundation model without managing servers or GPUs. Which approach fits?",
       "Call it through a managed API",

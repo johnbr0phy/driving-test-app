@@ -36,7 +36,9 @@ All items are original, written from AWS's public AIF-C01 exam guide and AWS pro
 - **Amazon Bedrock evaluations**, fetched 2026-11-22. https://docs.aws.amazon.com/bedrock/latest/userguide/evaluation.html
   Programmatic jobs with built-in or custom prompt datasets, human worker jobs, judge-model (LLM-as-a-judge) jobs, RAG evaluations with ground truth.
 - **Provisioned Throughput in Amazon Bedrock**, fetched 2026-11-22. https://docs.aws.amazon.com/bedrock/latest/userguide/prov-throughput.html
-  Fixed hourly cost in model units; required to use a customized model; no commitment, 1-month or 6-month terms, longer term cheaper.
+  Fixed hourly cost in model units; no commitment, 1-month or 6-month terms, longer term cheaper.
+- **Set up inference for a custom model (Amazon Bedrock)**, fetched 2026-11-22 by the reviewer. https://docs.aws.amazon.com/bedrock/latest/userguide/model-customization-use.html
+  A custom model is served either through purchased Provisioned Throughput or through a custom model deployment for on-demand inference, paying only for what is used. So Provisioned Throughput is no longer required for every custom model; the bank keys this.
 - **Deploy models for inference (SageMaker AI)**, fetched 2026-11-22. https://docs.aws.amazon.com/sagemaker/latest/dg/deploy-model.html
   Real-time for interactive low latency; serverless for idle periods that tolerate cold starts; asynchronous queues requests with payloads up to 1 GB and up to one hour of processing; JumpStart for low-code deployment of pre-trained models.
 - **Amazon SageMaker Model Cards**, fetched 2026-11-22. https://docs.aws.amazon.com/sagemaker/latest/dg/model-cards.html

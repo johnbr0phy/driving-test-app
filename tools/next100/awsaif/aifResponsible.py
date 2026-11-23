@@ -55,7 +55,7 @@ ITEMS = [
       "A model keeps working correctly when inputs contain typos and odd formatting. Which responsible AI feature is this?",
       "Robustness",
       ["Fairness", "Inclusivity", "Transparency"],
-      "Robustness is reliable behaviour under unexpected, noisy or adversarial input."),
+      "Robustness is reliable behavior under unexpected, noisy or adversarial input."),
     S(2, 2, "Guardrails",
       "A call center app must mask customers' phone numbers in model responses. Which Guardrails policy fits?",
       "Sensitive information filter",

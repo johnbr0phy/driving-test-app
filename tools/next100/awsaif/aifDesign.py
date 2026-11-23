@@ -5,10 +5,10 @@
 ITEMS = [
     # ---- Test 1 ----
     S(1, 1, "Inference parameters",
-      "A legal team wants the model's answers to be as consistent and focused as possible. How should they set temperature?",
-      "Low, near 0",
-      ["High, near 1", "Exactly 0.5", "Random each call"],
-      "Low temperature makes the model favour the most likely tokens, giving consistent output. High temperature adds variety, useful for creative writing."),
+      "A marketing team wants a wide range of different slogan ideas each time it sends the same prompt. Which setting change helps?",
+      "Raise the temperature",
+      ["Set temperature near 0", "Lower maximum output tokens", "Turn on prompt caching"],
+      "Higher temperature lets the model pick less likely tokens, so outputs vary more, which suits brainstorming. A temperature near 0 makes answers consistent and focused."),
     S(1, 2, "RAG",
       "What does Retrieval Augmented Generation add to an FM response?",
       "Passages retrieved from company data",
@@ -30,7 +30,7 @@ ITEMS = [
       ["Pre-training a new model", "Continued pre-training", "Full fine-tuning on the data"],
       "RAG changes only what goes into the prompt at run time. Pre-training and fine-tuning need compute, data preparation and hosting for a custom model."),
     S(1, 2, "Prompt techniques",
-      "A prompt asks the model to rate a ticket's urgency and gives no examples. What technique is this?",
+      "A developer sends only the instruction 'Translate this message into French', with no sample translations. Which prompting technique is this?",
       "Zero-shot prompting",
       ["Few-shot prompting", "Chain-of-thought prompting", "Single-shot prompting"],
       "Zero-shot gives only the instruction. Single-shot adds one example and few-shot adds several to show the pattern."),

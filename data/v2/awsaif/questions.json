@@ -8,17 +8,17 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Inference parameters",
-    "stem": "A legal team wants the model's answers to be as consistent and focused as possible. How should they set temperature?",
+    "stem": "A marketing team wants a wide range of different slogan ideas each time it sends the same prompt. Which setting change helps?",
     "options": [
-      "Exactly 0.5",
-      "Low, near 0",
-      "Random each call",
-      "High, near 1"
+      "Turn on prompt caching",
+      "Lower maximum output tokens",
+      "Raise the temperature",
+      "Set temperature near 0"
     ],
     "correct": [
-      1
+      2
     ],
-    "explanation": "Low temperature makes the model favour the most likely tokens, giving consistent output. High temperature adds variety, useful for creative writing."
+    "explanation": "Higher temperature lets the model pick less likely tokens, so outputs vary more, which suits brainstorming. A temperature near 0 makes answers consistent and focused."
   },
   {
     "id": "AWSAIF-T1-002",
@@ -449,15 +449,15 @@
     "difficulty": 1,
     "format": "single",
     "skill": "AWS GenAI services",
-    "stem": "Which AWS service gives API access to foundation models from Amazon and other providers without managing infrastructure?",
+    "stem": "A startup wants to try models from Amazon, Anthropic and Meta through one serverless API, switching between them by changing the model ID. Which service fits?",
     "options": [
-      "Amazon Lex",
       "Amazon Bedrock",
+      "Amazon Lex",
       "Amazon EC2",
       "Amazon SageMaker Ground Truth"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Amazon Bedrock is a fully managed service offering foundation models from Amazon and third parties through one API, with tools for RAG, agents and guardrails."
   },
@@ -669,7 +669,7 @@
     "correct": [
       2
     ],
-    "explanation": "Customer behaviour and data patterns shift over time, so a model trained on old data loses accuracy. Monitoring detects the drift and retraining restores performance."
+    "explanation": "Customer behavior and data patterns shift over time, so a model trained on old data loses accuracy. Monitoring detects the drift and retraining restores performance."
   },
   {
     "id": "AWSAIF-T1-033",
@@ -722,15 +722,15 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Prompt techniques",
-    "stem": "A prompt asks the model to rate a ticket's urgency and gives no examples. What technique is this?",
+    "stem": "A developer sends only the instruction 'Translate this message into French', with no sample translations. Which prompting technique is this?",
     "options": [
-      "Chain-of-thought prompting",
-      "Few-shot prompting",
       "Zero-shot prompting",
-      "Single-shot prompting"
+      "Chain-of-thought prompting",
+      "Single-shot prompting",
+      "Few-shot prompting"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "Zero-shot gives only the instruction. Single-shot adds one example and few-shot adds several to show the pattern."
   },
@@ -1428,7 +1428,7 @@
     "correct": [
       3
     ],
-    "explanation": "Robustness is reliable behaviour under unexpected, noisy or adversarial input."
+    "explanation": "Robustness is reliable behavior under unexpected, noisy or adversarial input."
   },
   {
     "id": "AWSAIF-T2-003",
@@ -2174,17 +2174,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Cost tradeoffs",
-    "stem": "What must a company buy to run a model it has customized on Amazon Bedrock?",
+    "stem": "A team fine-tuned a model on Amazon Bedrock and expects light, uneven traffic. How can it pay only for the requests it sends?",
     "options": [
-      "AWS Business Support",
-      "A SageMaker Savings Plan",
-      "An Amazon EC2 Reserved Instance",
-      "Provisioned Throughput"
+      "Buy AWS Business Support",
+      "Buy six-month Provisioned Throughput",
+      "Run it on an EC2 Reserved Instance",
+      "Deploy it for on-demand inference"
     ],
     "correct": [
       3
     ],
-    "explanation": "Bedrock requires Provisioned Throughput to invoke a customized model. It is billed hourly by model units."
+    "explanation": "Bedrock can serve a custom model through a custom model deployment for on-demand inference, billed for what is used. Provisioned Throughput buys dedicated capacity, billed hourly, which suits steady heavy traffic."
   },
   {
     "id": "AWSAIF-T2-039",
@@ -3969,7 +3969,7 @@
     "correct": [
       3
     ],
-    "explanation": "Tight latency, small hardware and no network favour a compact model trained for one task. Large foundation models need much more compute and usually a network call."
+    "explanation": "Tight latency, small hardware and no network favor a compact model trained for one task. Large foundation models need much more compute and usually a network call."
   },
   {
     "id": "AWSAIF-D-058",

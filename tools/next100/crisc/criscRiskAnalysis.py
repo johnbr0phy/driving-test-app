@@ -39,9 +39,9 @@ ITEMS = [
            "Controls that are poorly designed or not operating leave more risk than planned. Testing them shows where the gap comes from."),
     # ---------------- Test 2 ----------------
     single(2, "Analysis methodologies", 3,
-           "A failure costs \\$40,000 each time and happens twice a year. A control would cut it to once every two years. How much ALE does the control remove, in dollars?",
-           ["60000", "20000", "40000", "80000"],
-           "ALE before = 40,000 x 2 = 80,000. ALE after = 40,000 x 0.5 = 20,000. The control removes 80,000 - 20,000 = 60,000 dollars a year."),
+           "A failure costs \\$50,000 each time and happens twice a year. A control would cut it to once every two years. How much ALE does the control remove, in dollars?",
+           ["75000", "25000", "50000", "100000"],
+           "ALE before = 50,000 x 2 = 100,000. ALE after = 50,000 x 0.5 = 25,000. The control removes 100,000 - 25,000 = 75,000 dollars a year."),
     single(2, "Business impact analysis", 2,
            "Who should approve the recovery priorities that come out of a BIA?",
            ["Senior business management", "IT operations and backup teams", "Help desk team lead", "Network engineers"],

@@ -1679,13 +1679,13 @@
     "skill": "Analysis methodologies",
     "difficulty": 3,
     "format": "single",
-    "stem": "A failure costs \\$40,000 each time and happens twice a year. A control would cut it to once every two years. How much ALE does the control remove, in dollars?",
-    "explanation": "ALE before = 40,000 x 2 = 80,000. ALE after = 40,000 x 0.5 = 20,000. The control removes 80,000 - 20,000 = 60,000 dollars a year.",
+    "stem": "A failure costs \\$50,000 each time and happens twice a year. A control would cut it to once every two years. How much ALE does the control remove, in dollars?",
+    "explanation": "ALE before = 50,000 x 2 = 100,000. ALE after = 50,000 x 0.5 = 25,000. The control removes 100,000 - 25,000 = 75,000 dollars a year.",
     "options": [
-      "20000",
-      "40000",
-      "60000",
-      "80000"
+      "25000",
+      "50000",
+      "75000",
+      "100000"
     ],
     "correct": [
       2

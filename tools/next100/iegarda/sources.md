@@ -69,3 +69,15 @@ on for numerical reasoning, since publicjobs lists a calculator among things a c
 - No Garda law, powers or procedure: Stage 1 tests reasoning, not knowledge of policing. Passages
   state everything a question needs, and no question asks for outside facts.
 - No fees, pay figures, ages or eligibility rules as questions (they are on the landing only).
+
+## Copyright and repeat checks (2026-11-23)
+
+- No official question catalogue or past paper exists for these tests (publicjobs says past papers are
+  not available, and its familiarisation material goes only to candidates), so there was nothing to
+  compare item by item. No familiarisation or provider practice material was read.
+- Every stem and passage was scanned for shared 8-word runs against every bank in `data/` and
+  `data/v2/`: the only matches were stock phrases ("what is the main point of the passage", "at the
+  start and end of the day").
+- Every numerical key is computed in `numerical.py`; build.py checks the formatted key appears in its
+  explanation, that the five options differ, and sorts and locks them. Key positions after sorting
+  are spread over all five slots (16/12/13/14/16).

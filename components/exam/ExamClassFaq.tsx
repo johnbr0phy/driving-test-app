@@ -358,6 +358,7 @@ export const TEACHES: Record<string, string> = {
   caelec: "an electrical apprenticeship program",
   caauto: "an automotive service technician apprenticeship class",
   caplumb: "a plumbing apprenticeship class",
+  cagas3: "a gas technician (G3) class",
   cacarp: "a carpentry apprenticeship or pre-apprenticeship program",
   caweld: "a welding program",
   carscook: "a culinary apprenticeship program",

@@ -332,6 +332,7 @@ import "./cpaisc";
 import "./dispatcher";
 import "./proserve";
 import "./servingitright";
+import "./cagas3";
 import "./ctec";
 import "./ea1";
 import "./nzboat";

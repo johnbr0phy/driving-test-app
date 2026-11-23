@@ -3595,6 +3595,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     ],
     basedOn: "Responsible Service BC's Serving It Right FAQs and course page, and the Liquor Control and Licensing Regulation s. 184, checked November 2026",
     source: { name: "Responsible Service BC: Serving It Right FAQs", url: "https://www.responsibleservicebc.gov.bc.ca/serving-it-right-faqs" },
+  cagas3: {
+    answer:
+      "The Gas Technician 3 (G.3) is Ontario's entry-level gas technician certificate, issued by the Technical Standards and Safety Authority (TSSA) under Ontario Regulation 215/01. Candidates complete a TSSA-accredited program of curriculum modules 1 to 9 (a suggested 180 hours) or the challenge route, then write a multiple-choice TSSA certification exam with the permitted references (the Technical Standards and Safety Act, the fuels regulations and code adoption documents, CSA B149.1 and B149.2) and pass a practical evaluation. TSSA requires 75% on the exam, in each module and on the practical. A G.3 works under the general supervision of a G.1, G.2 or DA holder on listed tasks once they are signed off, and under direct supervision for anything else in that holder's scope.",
+    rows: [
+      { label: "Run by", value: "TSSA (Ontario)" },
+      { label: "Certificate", value: "Gas Technician 3 (G.3), O. Reg. 215/01" },
+      { label: "Training", value: "Curriculum modules 1 to 9, suggested 180 hours" },
+      { label: "Pass mark", value: "75% on the exam, each module and the practical" },
+      { label: "Format", value: "Multiple choice, open book with permitted references" },
+      { label: "Question count", value: "Not published (TSSA exams run 50 to 165)" },
+      { label: "Gas code", value: "CSA B149.1-25 with Ontario amendments, from June 1, 2026" },
+      { label: "Failed three times", value: "An accredited program before another attempt" },
+    ],
+    basedOn: "TSSA's Gas Technician/Oil Burner Technician Policies and Procedures (March 2025), TSSA Certification Examination Preparation Guide (March 2026), O. Reg. 215/01 and the Gaseous Fuels CAD amendment FS-279-26, checked November 2026",
+    source: { name: "TSSA Gas Technician/Oil Burner Technician Policies and Procedures", url: "https://tssa.org/sites/default/files/2025-04/Gas%20and%20Oil%20Policy%20and%20Procedure_G3-G2%20changes%20and%20H2%20Additions_April%202%202025.pdf" },
   },
   proserve: {
     answer:

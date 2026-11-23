@@ -161,4 +161,5 @@ export const BANK_SIZES: Record<string, number> = {
   inrrn: 224,
   awsaif: 201,
   az104: 210,
+  snowpro: 200,
 };

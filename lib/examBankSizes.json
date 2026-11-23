@@ -208,7 +208,6 @@
   "ukseru": 200,
   "ukfood": 200,
   "ukfood3": 200,
-  "ukhs2": 200,
   "ukaplh": 200,
   "ukfaw": 200,
   "ukcare": 200,
@@ -440,5 +439,6 @@
   "afsp": 200,
   "ctec": 200,
   "cafsc": 200,
-  "servingitright": 200
+  "servingitright": 200,
+  "ukhs2": 200
 }

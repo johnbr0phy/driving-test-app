@@ -4929,6 +4929,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the PMI CAPM Examination Content Outline (2023, current in 2026)",
     source: { name: "PMI", url: "https://www.pmi.org/certifications/certified-associate-capm" },
   },
+  crisc: {
+    answer:
+      "The CRISC (Certified in Risk and Information Systems Control) exam from ISACA has 150 multiple-choice questions in 4 hours, each with four options and one best answer, and no penalty for wrong answers. Scores are reported on a scale of 200 to 800, and 450 or higher passes. The exam content outline in force from November 3, 2025 covers four domains: Governance 26%, IT Risk Assessment 22%, Risk Response and Reporting 32% and Technology and Security 20%.",
+    rows: [
+      { label: "Questions", value: "150 multiple choice, four options, one best answer" },
+      { label: "Time", value: "4 hours (240 minutes)" },
+      { label: "Pass mark", value: "450 on a scale of 200 to 800" },
+      { label: "Content", value: "Governance 26%, risk assessment 22%, risk response and reporting 32%, technology and security 20%" },
+      { label: "Languages", value: "English, Spanish, Japanese" },
+      { label: "Where", value: "PSI test center or remote proctoring" },
+      { label: "Retakes", value: "Up to four attempts in 12 months, waits of 30, 90 and 90 days" },
+      { label: "Experience", value: "3 years of IT risk and control work in at least two of the four domains, within 10 years of applying, no waivers" },
+      { label: "Run by", value: "ISACA" },
+    ],
+    basedOn: "ISACA's CRISC exam content outline and its April 2025 announcement of the updated exam, ISACA's 2026 Exam Candidate Guide and the Get CRISC Certified page, checked November 2026",
+    source: { name: "ISACA: CRISC exam content outline", url: "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline" },
+  },
   cism: {
     answer:
       "The CISM (Certified Information Security Manager) exam from ISACA has 150 multiple-choice questions in 4 hours, each with four options and one best answer, and no penalty for wrong answers. Scores are reported on a scale of 200 to 800, and 450 or higher passes. The exam content outline in force from November 3, 2026 covers four domains: Information Security Governance 18%, Information Security Risk Management 20%, Information Security Program 33% and Incident Management 29%.",

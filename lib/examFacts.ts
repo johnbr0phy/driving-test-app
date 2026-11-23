@@ -7825,6 +7825,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Fortinet Training Institute FortiOS Administrator Exam page and the FCP - FortiGate 7.6 Administrator exam description (June 2025), checked November 2026",
     source: { name: "Fortinet Training Institute: FortiOS Administrator Exam", url: "https://training.fortinet.com/local/staticpage/view.php?page=fortios_administrator_exam" },
   },
+  cfp: {
+    answer:
+      "The CFP Certification Examination is the exam CFP Board requires, with education, experience and ethics requirements, to become a CERTIFIED FINANCIAL PLANNER professional. It has 170 multiple-choice questions in two 3-hour sections, including stand-alone questions, short scenarios and longer case studies, and is given three times a year in 8-day windows at Prometric test centers. It is pass or fail on the total score, with no published percentage pass mark; the July 2026 pass rate was 66%. Questions follow CFP Board's eight Principal Knowledge Domains from its 2021 practice analysis, led by retirement savings and income planning (18%) and investment planning (17%).",
+    rows: [
+      { label: "Questions", value: "170 multiple choice" },
+      { label: "Time", value: "Two 3-hour sections, 40-minute break" },
+      { label: "Passing score", value: "Pass/fail on total score (no published percentage)" },
+      { label: "Format", value: "Stand-alone items, short scenarios, case studies" },
+      { label: "Largest domain", value: "Retirement Savings and Income Planning, 18%" },
+      { label: "Pass rate", value: "66% (July 2026)" },
+    ],
+    basedOn: "CFP Board exam pages (format, topics, scoring, exam statistics), checked November 2026",
+    source: { name: "CFP Board: What you'll be tested on", url: "https://www.cfp.net/get-certified/certification-process/exam-requirement/about-the-cfp-exam/what-youll-be-tested-on" },
+  },
   cssyb: {
     answer:
       "The ASQ Certified Six Sigma Yellow Belt (CSSYB) exam is ASQ's entry-level Six Sigma certification for people new to process improvement who support projects led by Green or Black Belts. The computer-based exam has 90 multiple-choice questions, 80 of them scored, with 2 hours 18 minutes of exam time (a paper version has 80 questions in 2 hours); it is open book and in English only. Its 2022 Body of Knowledge sets the scored questions per section: Six Sigma Fundamentals 20, Define 14, Measure 15, Analyze 17, and Improve and Control 14. ASQ reports a pass as a scaled score of 550, asks for no education or work experience, and does not require recertification.",

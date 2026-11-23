@@ -6718,6 +6718,20 @@
     --brand-gradient-to: 210 40% 95%;
   }
 
+  /* CFP Certification Exam theme: ledger green */
+  [data-theme="cfp"] {
+    --brand: 138 45% 36%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 138 45% 96%;
+    --brand-hover: 138 45% 31%;
+    --brand-dark: 138 45% 26%;
+    --brand-darker: 138 40% 17%;
+    --brand-muted: 138 30% 68%;
+    --brand-border: 138 30% 80%;
+    --brand-border-light: 138 28% 89%;
+    --brand-gradient-to: 150 40% 95%;
+  }
+
   /* ASQ Six Sigma Yellow Belt theme: grey violet */
   [data-theme="cssyb"] {
     --brand: 270 20% 24%;
@@ -12797,6 +12811,16 @@
     --brand-muted: 355 14% 45%;
     --brand-dark: 355 25% 65%;
     --brand-darker: 355 22% 78%;
+  }
+
+  .dark [data-theme="cfp"] {
+    --brand-light: 138 45% 13%;
+    --brand-gradient-to: 150 40% 11%;
+    --brand-border-light: 138 28% 24%;
+    --brand-border: 138 30% 34%;
+    --brand-muted: 138 30% 45%;
+    --brand-dark: 138 45% 65%;
+    --brand-darker: 138 40% 78%;
   }
 
   .dark [data-theme="cssyb"] {

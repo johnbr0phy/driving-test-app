@@ -278,6 +278,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   phr: { title: "HRCI PHR Exam", description: "Practice HR law, talent acquisition, total rewards, employee relations and HR metrics." },
   fortigate: { title: "NSE 4 FortiOS Administrator", description: "Practice FortiGate setup, HA, firewall policies and NAT, security profiles, SSL inspection, SD-WAN and IPsec VPN." },
   cisa: { title: "ISACA CISA", description: "Practice the IS audit process, IT governance, development, operations and resilience, and protecting information assets." },
+  cfp: { title: "CFP Certification Exam", description: "Practice ethics, insurance, investments, tax, retirement, estate planning and planner psychology, every calculation explained." },
   cssyb: { title: "Six Sigma Yellow Belt (CSSYB)", description: "Practice DMAIC basics, lean tools, team roles, DPMO and RTY, FMEA, PDCA and control charts." },
   cssgb: { title: "Six Sigma Green Belt (CSSGB)", description: "Practice DMAIC, lean tools, process capability, hypothesis tests, DOE and control charts." },
   ccs: { title: "AHIMA CCS Exam", description: "Review inpatient and outpatient coding, ICD-10-PCS, MS-DRGs, queries and compliance." },

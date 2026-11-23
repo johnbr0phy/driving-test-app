@@ -1708,6 +1708,15 @@ export const es: TranslationKeys = {
     cssgbAnalyze: "Analyze Phase",
     cssgbImprove: "Improve Phase",
     cssgbControl: "Control Phase",
+    // cfp
+    cfpConduct: "Professional Conduct & Regulation",
+    cfpGeneral: "General Principles of Financial Planning",
+    cfpRisk: "Risk Management & Insurance Planning",
+    cfpInvest: "Investment Planning",
+    cfpTax: "Tax Planning",
+    cfpRetire: "Retirement Savings & Income Planning",
+    cfpEstate: "Estate Planning",
+    cfpPsych: "Psychology of Financial Planning",
     // cssyb
     cssybFundamentals: "Six Sigma Fundamentals",
     cssybDefine: "Define Phase",

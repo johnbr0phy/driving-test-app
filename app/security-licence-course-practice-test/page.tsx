@@ -18,7 +18,7 @@ const title = "Security Licence Course Practice Test 2026 - Free CPP20218 Questi
 const metaDescription =
   "Free practice test for the Australian security licence course (CPP20218 Certificate II in Security Operations): 200 original questions on arrest and use of force, trespass, evidence, WHS, counter-terrorism, patrols, screening and crowd control. Four 50-question tests, every answer explained.";
 const description =
-  "Practice for the Australian security licence course, CPP20218 Certificate II in Security Operations, the qualification behind the unarmed guard and crowd controller licences in every state and territory: 200 original multiple-choice questions written from the 14 core units, the citizen's arrest and use of force provisions of the Victorian Crimes Act 1958 and the Queensland Criminal Code, and the Australian Government's crowded places guidelines. Four 50-question practice tests and four training sets: the law, arrest and use of force; communication, WHS and risk; counter-terrorism, patrols and escorts; and screening, crowds and removals.";
+  "Practice for the Australian security licence course, CPP20218 Certificate II in Security Operations, a national qualification that aligns with the unarmed guard and crowd controller licences that each state and territory issues: 200 original multiple-choice questions written from the 14 core units, the citizen's arrest and use of force provisions of the Victorian Crimes Act 1958 and the Queensland Criminal Code, and the Australian Government's crowded places guidelines. Four 50-question practice tests and four training sets: the law, arrest and use of force; communication, WHS and risk; counter-terrorism, patrols and escorts; and screening, crowds and removals.";
 
 export const metadata: Metadata = {
   title,
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What course do I need for a security licence in Australia?",
-    a: "For an unarmed guard or crowd controller licence, most states and territories build on CPP20218 Certificate II in Security Operations, a national qualification of 14 core units, from communication and the law to screening, crowd control, removing people from premises and first aid (HLTAID011). It is the current release on training.gov.au. Each state and territory licenses its own security workers and decides which units, extra training and checks each licence class needs, so check with your state's regulator before you enrol.",
+    a: "The national qualification for this work is CPP20218 Certificate II in Security Operations, which training.gov.au says aligns with unarmed guard and crowd controller licences. It has 14 core units, from communication and the law to screening, crowd control, removing people from premises and first aid (HLTAID011). It is the current release on training.gov.au. Each state and territory licenses its own security workers and decides which units, extra training and checks each licence class needs, so check with your state's regulator before you enrol.",
   },
   {
     q: "Is there a pass mark for the security licence course?",

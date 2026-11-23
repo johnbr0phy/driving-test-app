@@ -77,7 +77,7 @@ Q = [
  "Detaining someone without lawful authority is false imprisonment, both a civil wrong and in some cases a crime. Only detain under a lawful arrest, then hand to police."),
 ("When must a person under citizen's arrest be told why they are being arrested?",
  "At the time of the arrest", ["Only later, once in court", "Only when police arrive", "Never; it is not required"],
- "A person is entitled to know they are under arrest and the reason at the time, unless it is obvious or impossible. This also helps them comply."),
+ "Under the common law (Christie v Leachinsky), a person must be told they are under arrest and why at the time, or as soon as practicable if they make that impossible, unless the reason is obvious. This also helps them comply."),
 ("Who may ask a security officer to assist in an arrest, making that help lawful?",
  "A police officer", ["Any patron at the venue", "The venue's DJ", "A passing taxi driver"],
  "Queensland's s 546 and Victoria's s 458 make it lawful to help a police officer who asks for assistance with an arrest."),

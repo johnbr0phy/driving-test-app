@@ -136,11 +136,18 @@ refusal, language barrier, first step with an upset patron, and others). All 21 
 a different fact or angle. Final run: 14 flags, all on different facts or different answers
 (for example Escape, Hide, Tell against the UK's Run, Hide, Tell).
 
-## Not confirmed from a primary page
+## Second review (2026-11-23)
 
-- Safety sign colours (yellow warning, blue mandatory, red prohibition, green emergency
-  information) follow AS 1319, which is paywalled and was not read; CPPSEC2103 lists "range and
-  meanings of common WHS signs and symbols". The reviewer should confirm these four items
-  (AUSEC-WHS-012 to -014 and the replaced 013) against a public WHS regulator page.
-- The rule that an arrested person must be told the reason (AUSEC-POW-025) is common law
-  (CPPSEC2106 "procedures for effecting an arrest"); no statute page was read for it.
+- Safety sign colours (AUSEC-WHS-012 to -014) confirmed against WorkSafe ACT, Signage (summary of
+  AS 1319-1994: warning signs are a black triangle on yellow; prohibition a red circle with a slash;
+  mandatory a blue circle; emergency information green), read in a browser 2026-11-23:
+  https://www.worksafe.act.gov.au/health-and-safety-portal/managing-safety/signage
+- AUSEC-POW-025 (tell the person the reason for arrest) rests on the common law, Christie v
+  Leachinsky [1947] AC 573; the explanation now says so and allows "as soon as practicable".
+- AUSEC-POW-026 confirmed against the Criminal Code (Qld) s 546(b) (lawful to assist a police officer
+  who calls on you) and the Crimes Act 1958 (Vic) s 458(1)(b), both re-read 2026-11-23.
+- AUSEC-LAW-019, -020 and CRD-019 re-read against the Private Security Act 2004 (Vic) version 027
+  ss 128(1) and (4), 176(1) and 138; AUSEC-POW-001 and -012 against the Crimes Act 1958 (Vic)
+  ss 458(1)(a) and 461(1). AUSEC-TER-003 against the National Terrorism Threat Advisory System page.
+- NSW legislation (legislation.nsw.gov.au) still showed a bot check in a browser on 2026-11-23 and was
+  not read. No item states a NSW rule; the landing says the questions are not based on NSW law.

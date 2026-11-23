@@ -4109,17 +4109,17 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Choosing data stores",
-    "stem": "Heavy report queries slow an RDS database that also serves the app. What takes the reads off it?",
+    "stem": "Several Lambda functions must read and write the same large files through a shared file system. What fits?",
     "options": [
-      "A read replica for the reports",
-      "Automated daily backups",
-      "A larger storage volume",
-      "Multi-AZ standby instance"
+      "Amazon EFS mounted to them",
+      "ElastiCache keys per file",
+      "One Lambda layer per file",
+      "Each function's /tmp folder"
     ],
     "correct": [
       0
     ],
-    "explanation": "A read replica serves read-only queries from a copy of the data, so the primary keeps its capacity for the app. A Multi-AZ standby cannot serve reads."
+    "explanation": "Lambda can mount an EFS file system so many functions share files that persist between invocations. Each /tmp folder is private to one execution environment."
   },
   {
     "id": "AWSDVA-D-065",

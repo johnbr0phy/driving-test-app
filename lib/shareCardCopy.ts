@@ -333,6 +333,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   pl900: { title: "Microsoft Power Platform Fundamentals PL-900", description: "Practise the PL-900 exam: Dataverse, environments and governance, Power Apps, Power Automate and Copilot Studio agents, all explained." },
   awsaif: { title: "AWS Certified AI Practitioner AIF-C01", description: "Practise the AIF-C01 exam: AI and ML basics, generative AI, Amazon Bedrock, RAG and prompting, responsible AI and security on AWS." },
   snowpro: { title: "Snowflake SnowPro Core COF-C03", description: "Practice the COF-C03 exam: Snowflake architecture, Time Travel, roles and governance, loading with COPY and Snowpipe, performance, streams and tasks, and data sharing." },
+  awsdva: { title: "AWS Certified Developer - Associate DVA-C03", description: "Practise the DVA-C03 exam: Lambda, DynamoDB, API Gateway, IAM and KMS, AI service security, CodeDeploy and CI/CD, CloudWatch and X-Ray." },
   ai901: { title: "Microsoft Azure AI Fundamentals AI-901", description: "Practise the AI-901 exam: responsible AI, models and deployments, prompts, agents, speech, vision and Content Understanding in Microsoft Foundry." },
   sc900: { title: "Microsoft Security, Compliance, and Identity Fundamentals SC-900", description: "Review Zero Trust and identity concepts, Microsoft Entra, Defender, Sentinel and Purview." },
   ceh: { title: "EC-Council CEH v13", description: "Practise footprinting, scanning, system, network, web, wireless, mobile, cloud and crypto attacks, all explained." },

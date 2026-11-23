@@ -3390,6 +3390,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the AWS Certified AI Practitioner (AIF-C01) exam guide, version 1.2 (October 29, 2026), and the AWS certification page, checked November 2026",
     source: { name: "AWS: AIF-C01 exam guide", url: "https://docs.aws.amazon.com/aws-certification/latest/ai-practitioner-01/ai-practitioner-01.html" },
   },
+  awsdva: {
+    answer:
+      "AWS Certified Developer - Associate is Amazon Web Services' exam for developers who build, test, deploy and debug applications on AWS. DVA-C03 replaces DVA-C02: registration opened on October 27, 2026, the last day for DVA-C02 is November 30, 2026, and DVA-C03 is the exam from December 1, 2026. It has 65 questions in 130 minutes: 50 count toward the score and 15 are unscored, unmarked questions AWS is testing. Questions are multiple choice (one correct answer of four) or multiple response (two or more correct of five or more), and there is no penalty for guessing. Results are a scaled score from 100 to 1,000 with 720 needed to pass, and the scoring is compensatory. The DVA-C03 exam guide weights Development with AWS Services at 30 percent, Security at 26 percent, Testing and Deployment at 22 percent and Troubleshooting and Optimization at 22 percent, and adds AI-assisted development and securing AI services. It costs 150 USD, is taken at a Pearson VUE test center or online, and the certification is valid for three years.",
+    rows: [
+      { label: "Questions", value: "65 (50 scored, 15 unscored)" },
+      { label: "Time", value: "130 minutes" },
+      { label: "Passing score", value: "720 on a scale of 100 to 1,000" },
+      { label: "Question types", value: "Multiple choice and multiple response" },
+      { label: "Domains", value: "Development 30%, security 26%, testing and deployment 22%, troubleshooting and optimization 22%" },
+      { label: "Exam version", value: "DVA-C03 from December 1, 2026 (DVA-C02 until November 30, 2026)" },
+      { label: "Fee", value: "150 USD" },
+      { label: "Delivery", value: "Pearson VUE test center or online proctored" },
+      { label: "Valid for", value: "3 years" },
+      { label: "Given by", value: "Amazon Web Services" },
+    ],
+    basedOn: "the AWS Certified Developer - Associate (DVA-C03) exam guide and the AWS certification page, checked November 2026",
+    source: { name: "AWS: DVA-C03 exam guide", url: "https://docs.aws.amazon.com/aws-certification/latest/developer-associate-03/developer-associate-03.html" },
+  },
   awssaa: {
     answer:
       "The AWS Certified Solutions Architect - Associate exam (SAA-C03) has 65 questions in 130 minutes, 50 of them scored. It is scored 100 to 1000 and 720 passes. It covers Design Secure Architectures 30%, Design Resilient Architectures 26%, Design High-Performing Architectures 24%, and Design Cost-Optimized Architectures 20%, mostly as scenario questions.",

@@ -123,7 +123,24 @@ two state laws below share and the CPP units require, and words every state diff
 
 ## Similarity and copyright check
 
-No official question catalogue exists for this qualification. Stems were checked against
-`uksia`, `caguard`, `cabcguard`, `iepsa`, `mtguard`, `zapsira`, `aesira`, `security`,
-`nzsecurity`, `aursa` and `aufirstaid` with `tools/next100/ausecurity/simcheck.py`; method and
-result are at the end of this file once run.
+No official question catalogue exists for this qualification (RTOs write their own assessments,
+which were not read). Method: `python3 -I tools/next100/ausecurity/simcheck.py` compares every
+stem, and every stem plus key, with the alberta-security, bc-security-worker, ie-psa-security,
+malta-private-guard, nz-security, ontario-security-guard, psira-security, security-guard,
+sia-door-supervisor, sira-security, gr-security, au-rsa and au-first-aid banks (difflib stem ratio
+over 0.7 or word overlap over 0.5). First run 2026-11-23: 44 flags, of which 21 were the same fact
+with the same answer (phonetic M, Roger, note-taking timing, notebook corrections, continuity,
+duty of care definition, citizen's arrest equal to the public, hand to police, hazard and
+dynamic risk definitions, blue mandatory sign, varied patrols, checkpoint scanners, bag-check
+refusal, language barrier, first step with an upset patron, and others). All 21 were rewritten to
+a different fact or angle. Final run: 14 flags, all on different facts or different answers
+(for example Escape, Hide, Tell against the UK's Run, Hide, Tell).
+
+## Not confirmed from a primary page
+
+- Safety sign colours (yellow warning, blue mandatory, red prohibition, green emergency
+  information) follow AS 1319, which is paywalled and was not read; CPPSEC2103 lists "range and
+  meanings of common WHS signs and symbols". The reviewer should confirm these four items
+  (AUSEC-WHS-012 to -014 and the replaced 013) against a public WHS regulator page.
+- The rule that an arrested person must be told the reason (AUSEC-POW-025) is common law
+  (CPPSEC2106 "procedures for effecting an arrest"); no statute page was read for it.

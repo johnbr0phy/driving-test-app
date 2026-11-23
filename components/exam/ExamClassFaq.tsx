@@ -190,6 +190,7 @@ export const TEACHES: Record<string, string> = {
   nbdhe: "a dental hygiene program",
   inbde: "a dental school or board review course",
   nptepta: "a PTA program",
+  nptept: "a DPT program",
   aatl2: "an AAT Level 2 accounting course",
   accafa: "an ACCA tuition class",
   aswbclin: "LCSW exam prep or clinical social work in an MSW program",

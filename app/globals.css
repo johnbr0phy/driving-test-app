@@ -6468,6 +6468,20 @@
     --brand-gradient-to: 120 25% 96%;
   }
 
+  /* NPTE-PT theme */
+  [data-theme="nptept"] {
+    --brand: 178 80% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 178 60% 95%;
+    --brand-hover: 178 80% 11%;
+    --brand-dark: 178 80% 10%;
+    --brand-darker: 178 80% 7%;
+    --brand-muted: 178 30% 65%;
+    --brand-border: 178 30% 78%;
+    --brand-border-light: 178 25% 88%;
+    --brand-gradient-to: 190 35% 96%;
+  }
+
   /* ASWB Clinical (LCSW licensing) theme */
   [data-theme="aswbclin"] {
     --brand: 300 20% 34%;
@@ -12414,6 +12428,18 @@
     --brand-muted: 100 20% 45%;
     --brand-dark: 100 30% 65%;
     --brand-darker: 100 30% 78%;
+  }
+
+  .dark [data-theme="nptept"] {
+    --brand: 178 80% 28.5%;
+    --brand-hover: 178 80% 20.5%;
+    --brand-light: 178 45% 13%;
+    --brand-gradient-to: 190 35% 11%;
+    --brand-border-light: 178 25% 24%;
+    --brand-border: 178 30% 34%;
+    --brand-muted: 178 30% 45%;
+    --brand-dark: 178 80% 65%;
+    --brand-darker: 178 80% 78%;
   }
 
   .dark [data-theme="aswbclin"] {

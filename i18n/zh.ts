@@ -1613,6 +1613,13 @@ export const zh: TranslationKeys = {
     ptaEquip: "Equipment, Devices & Technologies",
     ptaModal: "Therapeutic Modalities",
     ptaProf: "Safety, Professional Roles & Evidence",
+    // nptept
+    nptptCardio: "Cardiovascular & Pulmonary",
+    nptptMsk: "Musculoskeletal",
+    nptptNeuro: "Neuromuscular & Nervous",
+    nptptOther: "Other Systems & System Interactions",
+    nptptEquipModal: "Equipment, Devices & Modalities",
+    nptptSafetyProf: "Safety, Professional Roles & Evidence",
     // aswbclin
     aswbclinEthics: "Ethical Principles & Responsibilities",
     aswbclinService: "Ethical Service Delivery",

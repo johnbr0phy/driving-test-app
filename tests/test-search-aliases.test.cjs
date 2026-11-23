@@ -10,6 +10,19 @@ const CASES = [
   ["california fsc", "US", "cafsc"],
   ["firearm safety certificate", "US", "cafsc"],
   ["fsc test", "US", "cafsc"],
+  ["npte pt", "US", "nptept"],
+  ["pt board exam", "US", "nptept"],
+  ["dpt boards", "US", "nptept"],
+  // Plain NPTE is the physical therapist exam (SEARCH_LEADS); "pta" or "assistant" keeps NPTE-PTA.
+  ["npte", "US", "nptept"],
+  ["npte exam", "US", "nptept"],
+  ["nptept", "US", "nptept"],
+  ["physical therapist exam", "US", "nptept"],
+  ["physical therapy board exam", "US", "nptept"],
+  ["npte pta", "US", "nptepta"],
+  ["pta exam", "US", "nptepta"],
+  ["physical therapist assistant exam", "US", "nptepta"],
+  ["npte assistant", "US", "nptepta"],
   ["coc", "US", "coc"],
   ["certified outpatient coder", "US", "coc"],
   ["aapc coc", "US", "coc"],
@@ -556,3 +569,9 @@ for (const [q, region, id] of CASES) {
     assert.equal(res.hits[0]?.test.id, id, `first hit for "${q}" is ${res.hits[0]?.test.id}`);
   });
 }
+
+// A lead holds even when the other test is busier this week.
+test("plain npte opens nptept over a popular nptepta", () => {
+  const res = searchAllTests("npte", "US", { nptepta: 5000 });
+  assert.equal(res.hits[0]?.test.id, "nptept");
+});

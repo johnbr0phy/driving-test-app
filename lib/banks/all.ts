@@ -221,6 +221,7 @@ import "./aatl2";
 import "./nbdhe";
 import "./inbde";
 import "./nptepta";
+import "./nptept";
 import "./aswbclin";
 import "./aswbbach";
 import "./titleagent";

@@ -1494,5 +1494,13 @@
       "pr": 972,
       "findings": 6
     }
+  ],
+  "nptept": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 975,
+      "findings": 25
+    }
   ]
 }

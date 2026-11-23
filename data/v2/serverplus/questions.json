@@ -74,11 +74,11 @@
     "skill": "Backup methods",
     "difficulty": 2,
     "format": "numeric",
-    "stem": "A full backup runs Sunday night and incrementals run Monday to Thursday nights. The server fails Friday morning. How many backup sets are needed to restore it? Type the number only.",
-    "explanation": "An incremental holds only changes since the previous backup, so the restore needs the full plus all four incrementals: 1 + 4 = 5 sets.",
+    "stem": "A weekly full backup is 3000 GB and each of the six daily incrementals after it is 150 GB. How many GB does one week's set hold? Type the number only.",
+    "explanation": "One full plus six incrementals: 3000 GB + 6 x 150 GB = 3900 GB. Capacity planning for backup targets starts from sums like this.",
     "numeric": {
       "answers": [
-        "5"
+        "3900"
       ],
       "tolerance": 0,
       "wholeNumber": true
@@ -156,11 +156,11 @@
     "skill": "Racking",
     "difficulty": 2,
     "format": "numeric",
-    "stem": "A 42U rack already holds four 2U servers and one 4U storage shelf. How many rack units are still free? Type the number only.",
-    "explanation": "Four 2U servers use 8U and the shelf uses 4U, so 12U are taken. 42 minus 12 leaves 30U.",
+    "stem": "A 48U rack holds three 4U storage shelves and six 2U servers. How many rack units are free? Type the number only.",
+    "explanation": "Three 4U shelves use 12U and six 2U servers use 12U, so 24U are taken. 48 minus 24 leaves 24U.",
     "numeric": {
       "answers": [
-        "30"
+        "24"
       ],
       "tolerance": 0,
       "wholeNumber": true
@@ -236,13 +236,13 @@
     "skill": "Causes of OS problems",
     "difficulty": 2,
     "format": "single",
-    "stem": "A service's memory use climbs steadily for days until the server slows to a crawl. What is the likely cause?",
-    "explanation": "A memory leak is software that keeps allocating memory and never frees it. Restarting the service clears it until a fix arrives.",
+    "stem": "Restarting a service frees several GB of RAM, which then slowly fills again over a week. What is the lasting fix?",
+    "explanation": "Steadily growing memory that only a restart frees is a memory leak. Restarts and extra RAM only delay it; a fixed version of the software ends it.",
     "options": [
-      "Memory leak",
-      "Clock skew",
-      "Bad cable",
-      "Buffer overrun"
+      "Patch the leaking software",
+      "Schedule weekly restarts",
+      "Add more RAM to the host",
+      "Enlarge the page file"
     ],
     "correct": [
       0
@@ -656,16 +656,16 @@
     "skill": "Media rotation",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which media rotation keeps daily, weekly and monthly backup sets?",
-    "explanation": "Grandfather-father-son keeps daily (son), weekly (father) and monthly (grandfather) sets, giving long history with a set number of tapes.",
+    "stem": "In grandfather-father-son rotation, which backup sets are kept the longest?",
+    "explanation": "Grandfather-father-son keeps daily (son), weekly (father) and monthly (grandfather) sets. The monthly grandfather sets are kept longest.",
     "options": [
-      "Round robin rotation",
-      "Tower of Hanoi",
-      "Grandfather-father-son",
-      "First in, first out (FIFO)"
+      "Daily sets",
+      "Weekly sets",
+      "Incremental sets",
+      "Monthly sets"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -719,16 +719,16 @@
     "skill": "Partition types",
     "difficulty": 2,
     "format": "single",
-    "stem": "A new 6 TB boot disk must be fully usable on a UEFI server. Which partition style is needed?",
-    "explanation": "MBR cannot address more than about 2 TB per disk. GPT has no such practical limit and is what UEFI firmware boots from.",
+    "stem": "Why can a 6 TB disk not be fully used with an MBR partition table?",
+    "explanation": "MBR stores sector addresses in 32 bits, which tops out near 2 TB with 512-byte sectors. GPT removes that limit and is what UEFI boots from.",
     "options": [
-      "Extended partition",
-      "MBR",
-      "Logical drive",
-      "GPT"
+      "MBR cannot hold NTFS volumes",
+      "MBR addresses only about 2 TB",
+      "MBR allows only one partition",
+      "MBR needs a UEFI firmware"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -803,16 +803,16 @@
     "skill": "Network cabling",
     "difficulty": 2,
     "format": "single",
-    "stem": "A fiber link must run 8 km between two buildings. Which fiber type fits?",
-    "explanation": "Single-mode fiber carries light down one narrow path and reaches many kilometers. Multimode is meant for shorter runs inside a building or data center.",
+    "stem": "Which fiber type uses a very narrow core so a link can run tens of kilometers?",
+    "explanation": "Single-mode fiber carries light down one narrow path and reaches many kilometers. Multimode has a wider core and is meant for shorter runs inside a building.",
     "options": [
-      "Twinax",
-      "Cat 6a twisted pair",
+      "Single-mode",
+      "Twinax copper",
       "Multimode",
-      "Single-mode"
+      "Cat 6a twisted pair"
     ],
     "correct": [
-      3
+      0
     ]
   },
   {
@@ -1160,16 +1160,16 @@
     "skill": "Virtual networking",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which virtual network mode puts a VM directly on the physical LAN with its own address there?",
-    "explanation": "Bridged mode connects the vNIC to the physical network through the virtual switch, so the VM is a peer on the LAN. NAT hides it behind the host's address.",
+    "stem": "Which virtual network mode lets VMs reach outside networks through the host's own address?",
+    "explanation": "With NAT the host translates the VMs' private addresses to its own, so they can reach out but are not directly reachable. Bridged makes each VM a peer on the LAN.",
     "options": [
-      "Host-only",
-      "Bridged",
-      "Internal",
-      "NAT behind the host"
+      "Bridged to the physical LAN",
+      "Isolated internal",
+      "NAT",
+      "Host-only"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -1556,19 +1556,19 @@
     "test": 1,
     "module": 1,
     "domain": "spOsNet",
-    "skill": "Addressing protocols",
+    "skill": "MAC addresses",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which address is in an RFC 1918 private range?",
-    "explanation": "The private blocks are 10.0.0.0/8, 172.16.0.0/12 (172.16 to 172.31) and 192.168.0.0/16. 172.20.4.9 falls in the second block.",
+    "stem": "What does the first half of a NIC's MAC address identify?",
+    "explanation": "The first 24 bits of a 48-bit MAC address are the organizationally unique identifier assigned to the maker. The rest is the device's own number.",
     "options": [
-      "172.20.4.9",
-      "172.32.4.9",
-      "11.4.9.1",
-      "192.169.4.9"
+      "Its subnet",
+      "Its manufacturer",
+      "Its VLAN",
+      "Its switch port"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -2755,16 +2755,16 @@
     "skill": "Password policies",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which change makes server passwords hardest to crack by brute force?",
-    "explanation": "Each extra character multiplies the number of guesses needed, so length adds the most strength.",
+    "stem": "Which password policy setting stops users from cycling back to a recent password?",
+    "explanation": "Password history remembers a set number of previous passwords and refuses them, so a reset cannot just reuse the old one.",
     "options": [
-      "Shorter expiry period",
-      "Allowing password hints",
-      "Longer minimum length",
-      "Reusing old passwords"
+      "Password history",
+      "Account lockout",
+      "Minimum length",
+      "Complexity rules"
     ],
     "correct": [
-      2
+      0
     ]
   },
   {
@@ -2818,16 +2818,16 @@
     "skill": "Administrative interfaces",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which admin interface gives an encrypted command line to a remote Linux server?",
-    "explanation": "SSH encrypts the session, including the password. Telnet sends everything in clear text.",
+    "stem": "Which remote admin interface sends passwords in clear text and should be replaced?",
+    "explanation": "Telnet sends the whole session, password included, unencrypted. SSH is its encrypted replacement.",
     "options": [
-      "Serial cable",
+      "RDP with TLS",
       "Telnet",
-      "SSH",
-      "VNC"
+      "HTTPS web console",
+      "SSH"
     ],
     "correct": [
-      2
+      1
     ]
   },
   {
@@ -2923,16 +2923,16 @@
     "skill": "Site types",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which recovery site is staffed and configured to take over within minutes or hours?",
-    "explanation": "A hot site has the hardware, software, connections and people ready, so it is fastest but the most costly to keep.",
+    "stem": "Which site type is a fully redundant copy of the primary, kept current in real time?",
+    "explanation": "NIST SP 800-34 describes a mirrored site as identical to the primary with real-time mirroring. It is the most expensive and the fastest to take over.",
     "options": [
-      "Cold site",
       "Warm site",
-      "Off-site vault",
-      "Hot site"
+      "Mirrored site",
+      "Mobile site",
+      "Cold site"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -2944,8 +2944,8 @@
     "skill": "Network cabling",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which connector is the small, latch-style fiber connector common on SFP modules?",
-    "explanation": "LC is the small form factor fiber connector used on most SFP and SFP+ optics. SC is the larger square push-pull connector.",
+    "stem": "Which fiber connector is the larger, square, push-pull type?",
+    "explanation": "SC is the square push-pull fiber connector. LC is the smaller latching connector used on most SFP optics.",
     "options": [
       "RJ45",
       "SC",
@@ -2953,7 +2953,7 @@
       "LC"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -3175,16 +3175,16 @@
     "skill": "Shared storage",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which protocol carries block storage commands over a normal Ethernet IP network?",
-    "explanation": "iSCSI wraps SCSI commands in TCP/IP so a SAN can run on Ethernet. Fibre Channel needs its own fabric, and NFS and CIFS are file protocols.",
+    "stem": "Which protocol carries Fibre Channel frames directly over Ethernet instead of over IP?",
+    "explanation": "Fibre Channel over Ethernet puts FC frames on a lossless Ethernet network. iSCSI instead wraps SCSI commands in TCP/IP.",
     "options": [
       "NFS",
       "CIFS",
       "iSCSI",
-      "Fibre Channel"
+      "FCoE"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -3866,16 +3866,16 @@
     "test": 0,
     "module": 1,
     "domain": "spOsNet",
-    "skill": "Volume types",
+    "skill": "Installations",
     "difficulty": 2,
     "format": "order",
-    "stem": "A new disk is added to grow a full LVM volume on Linux. In what order are the steps done?",
-    "explanation": "The disk becomes a physical volume (pvcreate), joins the volume group (vgextend), the logical volume is extended (lvextend), then the file system is resized to use the new space.",
+    "stem": "A new bare-metal server will get its OS from a USB stick. In what order are the steps done?",
+    "explanation": "Confirm the hardware is supported, boot the install media, install the OS with any extra drivers, then patch it before it goes into service.",
     "options": [
-      "Initialize the disk as a physical volume",
-      "Add it to the volume group",
-      "Extend the logical volume",
-      "Grow the file system to fill it"
+      "Check the OS is on the server's HCL",
+      "Set the firmware to boot from USB",
+      "Run the installer and load drivers",
+      "Apply the latest patches"
     ],
     "correct": [
       0,
@@ -4059,19 +4059,19 @@
     "test": 0,
     "module": 1,
     "domain": "spOsNet",
-    "skill": "Default gateways",
+    "skill": "Name resolution",
     "difficulty": 2,
     "format": "single",
-    "stem": "A server reaches hosts on its own subnet but nothing beyond it. What is the most likely setting to check?",
-    "explanation": "Traffic for other networks goes through the default gateway. Without one, only the local subnet answers.",
+    "stem": "Which is a fully qualified domain name?",
+    "explanation": "An FQDN gives the host name with its full domain path to the root. A bare host name, an IP address or a NetBIOS-style name is not one.",
     "options": [
-      "Hosts file entries",
-      "Default gateway",
-      "NIC duplex and speed mode",
-      "Subnet's DHCP scope"
+      "10.20.30.40",
+      "db01",
+      "corp\\db01",
+      "db01.corp.example.com"
     ],
     "correct": [
-      1
+      3
     ]
   },
   {
@@ -4141,25 +4141,25 @@
     "test": 0,
     "module": 1,
     "domain": "spRecovery",
-    "skill": "Site types",
+    "skill": "Replication",
     "difficulty": 2,
     "format": "matrix",
-    "stem": "Which site type fits each description?",
-    "explanation": "NIST SP 800-34 ranks them from basic to advanced: cold (space and infrastructure), warm (partly equipped), hot (configured with staff).",
+    "stem": "Which replication type fits each description?",
+    "explanation": "Synchronous replication waits for the remote write, asynchronous sends it after the local commit, and bidirectional replication copies changes both ways.",
     "rows": [
-      "Space and power only",
-      "Some hardware, needs data loaded",
-      "Fully configured and staffed"
+      "Write confirmed only once the remote copy has it",
+      "Write confirmed locally, sent on shortly after",
+      "Both sites accept changes and copy them to each other"
     ],
     "columns": [
-      "Hot site",
-      "Cold site",
-      "Warm site"
+      "Synchronous",
+      "Bidirectional",
+      "Asynchronous"
     ],
     "correct": [
-      1,
+      0,
       2,
-      0
+      1
     ]
   },
   {
@@ -4333,27 +4333,25 @@
     "test": 0,
     "module": 1,
     "domain": "spSecurity",
-    "skill": "Multifactor authentication",
+    "skill": "Permissions and access controls",
     "difficulty": 2,
     "format": "matrix",
-    "stem": "Which factor type is each item?",
-    "explanation": "A PIN and a security answer are things you know, a smart card is something you have, and a retina scan is something you are.",
+    "stem": "Which access control approach does each case use?",
+    "explanation": "Role-based grants rights through a job role or group, rule-based applies conditions such as time of day, and scope-based limits rights to a set of objects.",
     "rows": [
-      "PIN",
-      "Smart card",
-      "Retina scan",
-      "Security question answer"
+      "Help desk group gets password reset rights",
+      "Logons allowed only from 7 a.m. to 7 p.m.",
+      "Admin rights limited to one office's servers"
     ],
     "columns": [
-      "Something you have",
-      "Something you know",
-      "Something you are"
+      "Scope-based",
+      "Rule-based",
+      "Role-based"
     ],
     "correct": [
-      1,
-      0,
       2,
-      1
+      1,
+      0
     ]
   },
   {

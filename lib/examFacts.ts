@@ -44,6 +44,21 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  esccse: {
+    answer:
+      "Spain's CCSE (conocimientos constitucionales y socioculturales de España) is the test of constitutional and sociocultural knowledge required for Spanish nationality by residence, designed and run by the Instituto Cervantes. It has 25 closed questions in five tasks: 15 on government, law, rights and geography and 10 on culture, history and society. Most questions have three options with one correct; task 2 is true or false. Candidates have 45 minutes and pass (APTO) with 15 correct; wrong answers cost nothing. Minors are exempt. The Instituto Cervantes publishes a free manual with every question that can appear.",
+    rows: [
+      { label: "Questions", value: "25 closed questions in 5 tasks" },
+      { label: "Options", value: "Three options, one correct; true or false in task 2" },
+      { label: "Time", value: "45 minutes" },
+      { label: "Pass mark", value: "15 of 25 (60%), no penalty for wrong answers" },
+      { label: "Split", value: "Task 1: 10, task 2: 3, task 3: 2, task 4: 3, task 5: 7" },
+      { label: "Run by", value: "Instituto Cervantes; certificate valid four years" },
+    ],
+    basedOn: "the Instituto Cervantes Guía para la prueba CCSE and Manual de preparación CCSE 2026, checked November 23, 2026",
+    source: { name: "Instituto Cervantes: prueba CCSE", url: "https://cervantes.org/es/examenes/ccse" },
+    tigertest: "200 original Spanish-language questions in eight real-length 25-question tests, split by task like the real test. Free to start. Questions have four options instead of three, and none is copied from the official manual, which candidates should also study. Model language review only.",
+  },
   deeinb: {
     answer:
       "Germany's Einbürgerungstest proves the knowledge of the legal and social order that naturalisation requires under § 10 of the Nationality Act (StAG). It has 33 multiple-choice questions with four answers each, one right, and three of them are about the candidate's own federal state. Candidates have 60 minutes under supervision and pass with at least 17 correct. The questions come from a public catalogue of 310 (300 general and 10 for each Land). The Leben in Deutschland test at the end of the integration course's orientation course uses the same catalogue: 15 correct pass the course, and 17 also count for naturalisation.",

@@ -3148,6 +3148,20 @@
   }
 
   /* French examen civique: deep brick red, distinct from frvtc violet and frcode blue. */
+  /* Prueba CCSE: very dark Spanish gold, beside the black-red of deeinb. */
+  [data-theme="esccse"] {
+    --brand: 40 100% 12%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 40 100% 96%;
+    --brand-hover: 40 100% 8%;
+    --brand-dark: 40 100% 6%;
+    --brand-darker: 40 100% 4%;
+    --brand-muted: 40 30% 65%;
+    --brand-border: 40 30% 78%;
+    --brand-border-light: 40 30% 90%;
+    --brand-gradient-to: 40 30% 98%;
+  }
+
   /* Einbürgerungstest: deep black-red, the dark end of the German flag. */
   [data-theme="deeinb"] {
     --brand: 0 100% 14%;
@@ -7974,6 +7988,18 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+  }
+
+  .dark [data-theme="esccse"] {
+    --brand: 40 100% 31.2%;
+    --brand-hover: 40 100% 23.2%;
+    --brand-light: 40 45% 13%;
+    --brand-gradient-to: 40 30% 11%;
+    --brand-border-light: 40 30% 24%;
+    --brand-border: 40 30% 34%;
+    --brand-muted: 40 30% 45%;
+    --brand-dark: 40 100% 65%;
+    --brand-darker: 40 100% 78%;
   }
 
   .dark [data-theme="deeinb"] {

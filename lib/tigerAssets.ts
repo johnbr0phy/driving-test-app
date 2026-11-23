@@ -73,6 +73,7 @@ const BORROWED_SETS: Record<string, string> = {
   masterelec: "jelec",
   faaifr: "faapvt",
   faacax: "faapvt",
+  esccse: "aplang",
   deeinb: "aplang",
   carshair: "cosmetology",
   carscook: "foodhandler",

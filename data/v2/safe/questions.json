@@ -446,20 +446,20 @@
     "test": 1,
     "module": 1,
     "domain": "safeMindset",
-    "skill": "Agile Manifesto",
-    "difficulty": 1,
+    "skill": "Empower agility with AI",
+    "difficulty": 2,
     "format": "single",
-    "stem": "The Agile Manifesto values responding to change over which item?",
+    "stem": "Which is one of the Lean-Agile shifts that AI-Native SAFe describes?",
     "options": [
-      "Detailed documentation",
-      "Contract negotiation",
-      "Processes and tools",
-      "Following a plan"
+      "Faster learning and experimentation",
+      "Central approval of each AI prompt",
+      "Longer planning before any build",
+      "Fewer customer conversations"
     ],
     "correct": [
-      3
+      0
     ],
-    "explanation": "The manifesto values responding to change over following a plan. The other three items are the right-hand sides of its other values."
+    "explanation": "AI-Native SAFe names shifts to outcome-driven flow of human effort, teams augmented with AI, faster learning and experimentation, and innovation at scale."
   },
   {
     "id": "SAFE-T1-023",
@@ -1203,20 +1203,20 @@
     "test": 2,
     "module": 1,
     "domain": "safeMindset",
-    "skill": "Agile Manifesto",
-    "difficulty": 1,
+    "skill": "Empower agility with AI",
+    "difficulty": 2,
     "format": "single",
-    "stem": "What does the Agile Manifesto value over comprehensive documentation?",
+    "stem": "In AI-Native SAFe's outcome-driven product development, what does an outcome tree link outputs to?",
     "options": [
-      "Responding to change",
-      "Working software",
-      "Customer collaboration",
-      "Individuals and interactions"
+      "Fixed release dates",
+      "Vendor contracts",
+      "Shared OKRs",
+      "Individual bonuses"
     ],
     "correct": [
-      1
+      2
     ],
-    "explanation": "Working software is valued over comprehensive documentation. The other options are the left-hand sides of the manifesto's other three values."
+    "explanation": "AI-Native SAFe uses an outcome tree that ties outputs to shared OKRs, so teams and agents work toward the same measurable outcomes."
   },
   {
     "id": "SAFE-T2-014",
@@ -2253,20 +2253,20 @@
     "test": 0,
     "module": 1,
     "domain": "safeMindset",
-    "skill": "Agile Manifesto",
-    "difficulty": 1,
+    "skill": "Empower agility with AI",
+    "difficulty": 3,
     "format": "single",
-    "stem": "What does the Agile Manifesto value over processes and tools?",
+    "stem": "An outcome tree in AI-Native SAFe mixes bold and nearer goals. What does SAFe call them?",
     "options": [
-      "Individuals and interactions",
-      "Working software",
-      "Negotiating the contract terms",
-      "Following a plan"
+      "Themes and features",
+      "Epics and enablers",
+      "Stretch and safe bets",
+      "Moonshots and roofshots"
     ],
     "correct": [
-      0
+      3
     ],
-    "explanation": "The first manifesto value is individuals and interactions over processes and tools. Following a plan and contract negotiation are right-hand items."
+    "explanation": "AI-Native SAFe's outcome trees include moonshots, bold long-range goals, and roofshots, nearer goals that are still ambitious."
   },
   {
     "id": "SAFE-D-019",
@@ -2421,20 +2421,20 @@
     "test": 0,
     "module": 1,
     "domain": "safeMindset",
-    "skill": "Agile Manifesto",
-    "difficulty": 1,
+    "skill": "Empower agility with AI",
+    "difficulty": 2,
     "format": "single",
-    "stem": "What does the Agile Manifesto value over contract negotiation?",
+    "stem": "How can an organization gauge how AI-ready each SAFe discipline is?",
     "options": [
-      "Customer collaboration",
-      "Comprehensive documentation",
-      "Responding to change",
-      "Working software"
+      "A count of AI licences bought",
+      "An annual staff survey",
+      "An AI-Empowered assessment",
+      "A vendor demo"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "Customer collaboration is valued over contract negotiation. Comprehensive documentation is the item that working software is valued over."
+    "explanation": "SAFe offers an AI-Empowered assessment for every discipline, so teams can see where AI is helping and where to grow next."
   },
   {
     "id": "SAFE-D-027",

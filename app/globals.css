@@ -5693,6 +5693,19 @@
     --brand-gradient-to: 10 45% 95%;
   }
 
+  [data-theme="safe"] {
+    --brand: 290 15% 32%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 290 15% 96%;
+    --brand-hover: 290 15% 28%;
+    --brand-dark: 290 15% 24%;
+    --brand-darker: 290 15% 18%;
+    --brand-muted: 290 12% 70%;
+    --brand-border: 290 12% 80%;
+    --brand-border-light: 290 12% 89%;
+    --brand-gradient-to: 310 12% 95%;
+  }
+
   /* Microsoft SC-200 theme: deep indigo (v2 exam; matches lib/v2/exams/sc200.ts theme) */
   [data-theme="sc200"] {
     --brand: 249 45% 22%;
@@ -12360,6 +12373,18 @@
     --brand-muted: 350 25% 45%;
     --brand-dark: 350 60% 65%;
     --brand-darker: 350 55% 78%;
+  }
+
+  .dark [data-theme="safe"] {
+    --brand: 290 15% 49.1%;
+    --brand-hover: 290 15% 41.1%;
+    --brand-light: 290 15% 13%;
+    --brand-gradient-to: 310 12% 11%;
+    --brand-border-light: 290 12% 24%;
+    --brand-border: 290 12% 34%;
+    --brand-muted: 290 12% 45%;
+    --brand-dark: 290 15% 65%;
+    --brand-darker: 290 15% 78%;
   }
 
   .dark [data-theme="sc200"] {

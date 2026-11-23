@@ -226,6 +226,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   prince2: { title: "PRINCE2 7 Foundation", description: "Practise the 60-question PRINCE2 7 Foundation exam: principles, people, the seven practices and the seven processes." },
   itil: { title: "ITIL 4 Foundation", description: "Practice the 40-question ITIL 4 Foundation exam: guiding principles, the value chain and the ITIL practices." },
   pspo: { title: "PSPO I Professional Scrum Product Owner", description: "Practice product value, backlog ordering, stakeholders and Evidence-Based Management in 80 questions in 60 minutes." },
+  safe: { title: "SAFe Agilist", description: "Practice SAFe core values and principles, ARTs, WSJF, PI Planning and Lean Portfolio Management in 45-question tests." },
   psm: { title: "PSM I Professional Scrum Master", description: "Practice the 2020 Scrum Guide: accountabilities, events, artifacts and commitments, in 80 questions in 60 minutes." },
   capm: { title: "CAPM Certified Associate in Project Management", description: "Practice questions on project management fundamentals, predictive and agile methods, and business analysis." },
   ssccgl: { title: "SSC CGL Tier 1 Mock Test", description: "Practice reasoning, general awareness, quantitative aptitude and English in full 100-question, 60-minute mock tests." },

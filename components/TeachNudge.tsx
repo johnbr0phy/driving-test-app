@@ -17,7 +17,7 @@ import { trackTeachNudge } from "@/lib/teachTracking";
 
 // Families by id; state versions count as their family (variantOf).
 const TEACHER_LED = new Set([
-  "ccnpencor", "pspo", "pmiacp", "hvacjourney", "waterop", "ukcemap2",
+  "ccnpencor", "pspo", "pmiacp", "safe", "hvacjourney", "waterop", "ukcemap2",
   "dispatcher",
   "realestatebroker",
   "frcivique",

@@ -7504,6 +7504,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "The FSBPT NPTE-PTA Test Content Outline (effective January 2024) and the NPTE Candidate Handbook (version 2025.02), checked November 2026",
     source: { name: "FSBPT: NPTE Content", url: "https://www.fsbpt.org/Free-Resources/NPTE-Development/NPTE-Content" },
   },
+  nptept: {
+    answer:
+      "The NPTE-PT is the National Physical Therapy Examination for Physical Therapists, developed by the Federation of State Boards of Physical Therapy (FSBPT) and used by every US jurisdiction to license physical therapists. It has 225 multiple-choice questions in five sections of 45, with 5 hours of testing time; 180 are scored and 45 are unscored pretest items. The content outline in effect since January 2024 weights musculoskeletal (44 to 54 scored items), neuromuscular and nervous (39 to 48) and cardiovascular and pulmonary (22 to 27) most, each split into examination, evaluation and diagnosis, and interventions. Scores are scaled from 200 to 800, and the passing standard in every jurisdiction is 600.",
+    rows: [
+      { label: "Questions", value: "225 multiple choice (180 scored, 45 pretest)" },
+      { label: "Time", value: "5 hours of testing, 5 sections of 45" },
+      { label: "Pass mark", value: "Scaled score of 600 (200 to 800)" },
+      { label: "Biggest areas", value: "Musculoskeletal 44-54, neuromuscular 39-48, cardiopulmonary 22-27" },
+      { label: "Test dates", value: "Fixed dates in January, April, July and October" },
+      { label: "Where", value: "Computer-based at Prometric test centers" },
+      { label: "Run by", value: "Federation of State Boards of Physical Therapy (FSBPT)" },
+    ],
+    basedOn: "The FSBPT NPTE-PT Test Content Outline (effective January 2024) and the NPTE Candidate Handbook (version 2025.02), checked November 2026",
+    source: { name: "FSBPT: NPTE Content", url: "https://www.fsbpt.org/Free-Resources/NPTE-Development/NPTE-Content" },
+  },
   fpc: {
     answer:
       "The FPC (Fundamental Payroll Certification) is PayrollOrg's entry-level payroll certification. The exam has 150 multiple-choice questions (125 scored, 25 unscored pre-test) with four choices each, taken in 3 hours at a Pearson VUE center or online through OnVUE in North America. There are no eligibility requirements. PayrollOrg sets each form's passing raw score with the Bookmark method and reports it as a scaled 300; no percentage is published. Exams from September 2026 to September 2027 test federal law in effect January 1, 2026.",

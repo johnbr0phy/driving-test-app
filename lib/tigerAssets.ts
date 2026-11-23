@@ -101,6 +101,7 @@ const BORROWED_SETS: Record<string, string> = {
   pesticide: "epa608",
   bowhunter: "hunter",
   cafsc: "hunter",
+  nptept: "nptepta",
   trapper: "hunter",
   ieplumbt2: "caplumb",
   crc: "cpc",

@@ -124,6 +124,14 @@ Each fetched 2026-11-23. Only facts stated in the readable text were used.
 - The ART backlog and LACE articles returned 404 at the URLs tried; their facts come from the
   ART Sync, Leadership and Culture, VMO and feature articles that mention them.
 
+## Similarity check
+
+Scaled Agile publishes no public question catalogue: its practice test and course workbook sit
+behind the course login and were not opened, so there was nothing to compare the bank against.
+The bank was instead checked against the sibling Tigertest banks (psm, pspo, pmiacp, pmp, capm,
+itil, cobit) for repeated fact-and-answer pairs on 2026-11-23; four Agile Manifesto items that
+repeated pmiacp and capm facts were replaced with AI-Native SAFe items.
+
 ## Left out on purpose
 
 - Anything about the exam itself (questions, pass mark, fees, retakes): landing and examFacts only.

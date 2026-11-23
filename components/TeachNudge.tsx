@@ -38,6 +38,8 @@ const TEACHER_LED = new Set([
   "nzboat",
   // High school and intro IT courses (CompTIA Tech+)
   "techplus",
+  // Data analytics courses and bootcamps (CompTIA Data+)
+  "dataplus",
   // Azure administrator courses and bootcamps (AZ-104)
   "az104",
   // Microsoft security operations courses and SOC bootcamps (SC-200)

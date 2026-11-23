@@ -1090,6 +1090,14 @@
         "pr": 990,
         "findings": 20
       }
+    ],
+    "dataplus": [
+      {
+        "date": "2026-11-23",
+        "kind": "blind review at build",
+        "pr": 994,
+        "findings": 10
+      }
     ]
   },
   "pendingReviews": {

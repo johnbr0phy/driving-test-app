@@ -1060,6 +1060,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Scaled Agile's exam study guide for the AI-Empowered SA - SAFe Agilist exam (October 20, 2026) and the Scaled Agile Framework articles, checked November 2026",
     source: { name: "Scaled Agile: SAFe Agilist exam study guide", url: "https://support.scaledagile.com/en/articles/13835858-exam-study-guide-ai-empowered-sa-safe-agilist-exam-for-leading-safe" },
   },
+  dataplus: {
+    answer:
+      "CompTIA Data+ (exam DA0-002) is CompTIA's certification for data analysts. DA0-002 launched on October 14, 2025 and replaced DA0-001, which has now retired. The exam has a maximum of 90 multiple-choice and performance-based questions in 90 minutes, and the passing score is 675 on a scale of 100 to 900. The DA0-002 objectives cover five domains: Data Concepts and Environments 20%, Data Acquisition and Preparation 22%, Data Analysis 24%, Visualization and Reporting 20% and Data Governance 14%. CompTIA recommends 18 to 24 months of experience as a data analyst or in a similar role and offers the exam in English and Japanese.",
+    rows: [
+      { label: "Exam code", value: "DA0-002 (replaced DA0-001)" },
+      { label: "Questions", value: "Maximum of 90, multiple choice and performance-based" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Pass mark", value: "675 on a scale of 100 to 900" },
+      { label: "Content", value: "Data concepts and environments 20%, acquisition and preparation 22%, data analysis 24%, visualization and reporting 20%, data governance 14%" },
+      { label: "Languages", value: "English, Japanese" },
+      { label: "Experience", value: "18 to 24 months as a data analyst or in a similar role, recommended" },
+      { label: "Run by", value: "CompTIA" },
+    ],
+    basedOn: "the CompTIA Data+ DA0-002 exam objectives and the Data+ certification page, checked November 2026",
+    source: { name: "CompTIA: Data+ certification", url: "https://www.comptia.org/en-us/certifications/data/" },
+  },
   techplus: {
     answer:
       "CompTIA Tech+ (exam FC0-U71) is CompTIA's entry-level certification for people new to IT, and it replaced CompTIA IT Fundamentals+ (ITF+), whose FC0-U61 exam retired on July 31, 2025 in English. The exam has a maximum of 70 multiple-choice questions in 60 minutes, and the passing score is 650 on a scale of 900. The FC0-U71 objectives cover six domains: IT Concepts and Terminology 13%, Infrastructure 24%, Applications and Software 18%, Software Development Concepts 13%, Data and Database Fundamentals 13% and Security 19%. CompTIA recommends it for high school students and non-IT professionals, with no prior experience needed, and offers it in English and Japanese.",

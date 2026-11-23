@@ -324,6 +324,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   fortinse: { title: "Fortinet NSE 1 (FCF)", description: "Practice all ten modules of NSE 1 Cybersecurity and Cloud Fundamentals, the course that replaced FCF." },
   pentestplus: { title: "CompTIA PenTest+ PT0-003", description: "Practise scoping, reconnaissance, vulnerability analysis, exploitation and post-exploitation, all explained." },
   isc2cc: { title: "ISC2 CC", description: "Practise ISC2 Certified in Cybersecurity questions on security principles, governance, IAM, networks, cloud and incident response." },
+  dataplus: { title: "CompTIA Data+", description: "Practice SQL queries, data cleaning, statistics, charts, reports and data governance." },
   techplus: { title: "CompTIA Tech+", description: "Practice computing basics, hardware, networking, software, coding concepts, databases and security." },
   az104: { title: "Microsoft AZ-104", description: "Practise Entra ID, RBAC, Azure Policy, storage, VMs, App Service, networking, Azure Monitor and Backup." },
   sc200: { title: "Microsoft SC-200", description: "Practise Defender XDR, Microsoft Sentinel, detections, incident response and KQL threat hunting." },

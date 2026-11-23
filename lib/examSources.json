@@ -1072,6 +1072,11 @@
   "https://docs.cloud.google.com/architecture/framework/operational-excellence",
   "https://cloud.google.com/learn/certification/cloud-architect"
  ],
+ "gcppde": [
+  "https://services.google.com/fh/files/misc/professional_data_engineer_exam_guide_english.pdf",
+  "https://cloud.google.com/learn/certification/data-engineer",
+  "https://docs.cloud.google.com/pubsub/docs/subscription-properties"
+ ],
  "gcsecs": [
   "https://www.gov.uk/government/publications/gcse-computer-science/gcse-subject-content-for-computer-science",
   "https://www.aqa.org.uk/subjects/computer-science/gcse/computer-science-8525/specification/scheme-of-assessment",

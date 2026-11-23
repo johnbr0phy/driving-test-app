@@ -1247,6 +1247,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       { label: "Languages", value: "English, Japanese, Chinese (Simplified and Traditional), Korean, French, German, Spanish, Portuguese (Brazil), Russian, Indonesian, Arabic, Italian" },
       { label: "Where", value: "Proctored, scheduled through Pearson VUE or Certiport" },
       { label: "Retakes", value: "First retake after 24 hours" },
+      { label: "Renewal", value: "None: Fundamentals certifications do not expire" },
       { label: "Run by", value: "Microsoft" },
     ],
     basedOn: "Microsoft Learn's DP-900 study guide (skills measured as of July 21, 2026) and the Azure Data Fundamentals certification page, checked November 2026",

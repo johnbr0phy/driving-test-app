@@ -323,16 +323,16 @@
     "skill": "Blob access tiers",
     "difficulty": 2,
     "format": "single",
-    "stem": "Backups must be kept for years and are almost never read; a delay of hours to read them is acceptable. Which tier is cheapest?",
-    "explanation": "Archive has the lowest storage cost but is offline: a blob must be rehydrated, which can take up to 15 hours, before it can be read.",
+    "stem": "Which blob access tier keeps data offline, so a blob cannot be read until it is moved to another tier?",
+    "explanation": "Archive is the only offline tier: it has the lowest storage cost, and a blob must be rehydrated to hot, cool or cold, which can take up to 15 hours, before it can be read.",
     "options": [
+      "Cold",
       "Cool",
       "Archive",
-      "Hot",
-      "Cold"
+      "Hot"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -1424,16 +1424,16 @@
     "skill": "Blob access tiers",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which online tier has a 90-day minimum and suits short-term backups that are rarely read?",
+    "stem": "Which online tier has a 90-day minimum and suits rarely read data that must still be readable at once?",
     "explanation": "The cold tier is online with a 90-day minimum. Cool has a 30-day minimum and archive, which is offline, 180 days.",
     "options": [
-      "Cold",
       "Hot",
-      "Premium",
-      "Cool"
+      "Cold",
+      "Cool",
+      "Premium"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -1508,16 +1508,16 @@
     "skill": "Analytical workloads",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which store combines a data lake's flexible file storage with a warehouse's relational querying?",
+    "stem": "Data scientists must run Spark on the same tables that analysts query with SQL, in one store. Which kind of store fits?",
     "explanation": "A data lakehouse stores files in a data lake but exposes tables you can query with SQL, combining the strengths of both.",
     "options": [
-      "OLTP database",
-      "Data mart",
+      "Key-value store",
       "Data lakehouse",
-      "Key-value store"
+      "Data mart",
+      "OLTP database"
     ],
     "correct": [
-      2
+      1
     ]
   },
   {
@@ -1975,16 +1975,16 @@
     "skill": "Azure datastores",
     "difficulty": 2,
     "format": "single",
-    "stem": "Staff need a shared network drive in the cloud that Windows PCs map over SMB. Which service fits?",
-    "explanation": "Azure Files provides cloud file shares reached over SMB (or NFS from Linux), so it can replace an on-premises file server. Blob Storage is object storage reached over HTTP.",
+    "stem": "Which Azure service keeps data as files in shares with folders, rather than as blobs or table entities?",
+    "explanation": "Azure Files provides cloud file shares reached over SMB (or NFS from Linux), so it can replace an on-premises file server. Blob Storage holds objects in containers and Table Storage holds key-value entities.",
     "options": [
-      "Azure Blob Storage",
-      "Azure Files",
+      "Azure Cosmos DB",
       "Azure SQL Database",
+      "Azure Files",
       "Azure Event Hubs"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -2115,14 +2115,15 @@
     "stem": "On Azure Database for MySQL, what is the default backup retention for point-in-time restore?",
     "explanation": "Automatic backups support point-in-time restore for up to 35 days, with 7 days set by default.",
     "options": [
-      "35 days",
-      "1 day",
       "7 days",
+      "14 days",
+      "35 days",
       "90 days"
     ],
     "correct": [
-      2
-    ]
+      0
+    ],
+    "lockedOrder": true
   },
   {
     "id": "DP900-T2-048",
@@ -3978,7 +3979,7 @@
       "Real-Time hub",
       "Unity Catalog",
       "Purview data map",
-      "Data map"
+      "Lakeflow"
     ],
     "correct": [
       0
@@ -3996,8 +3997,8 @@
     "stem": "Put these steps of a common enterprise analytics flow in order:",
     "explanation": "Operational data is extracted and loaded into the lake or warehouse, shaped into tables, aggregated into a semantic model, then queried for reports.",
     "options": [
-      "Extract and load operational data",
-      "Load it into warehouse tables",
+      "Extract operational data from source systems",
+      "Load and shape it into warehouse tables",
       "Aggregate it into a semantic model",
       "Query it in reports and dashboards"
     ],
@@ -4040,16 +4041,16 @@
     "skill": "Open-source databases",
     "difficulty": 2,
     "format": "single",
-    "stem": "Azure Database for MariaDB is on the retirement path. What does Microsoft recommend for its users?",
-    "explanation": "Azure Database for MariaDB is on the retirement path, and Microsoft recommends migrating to Azure Database for MySQL.",
+    "stem": "Microsoft retired Azure Database for MariaDB in September 2025. Which service does it point MariaDB users to?",
+    "explanation": "Azure Database for MariaDB was retired on 19 September 2025, and Microsoft directs its users to Azure Database for MySQL flexible server, the closest compatible engine.",
     "options": [
-      "Keep MariaDB on a single server",
-      "Migrate to Azure Database for MySQL",
-      "Move to Azure Database for PostgreSQL",
-      "Rebuild it on SQL Server on Azure VMs"
+      "Azure SQL Managed Instance",
+      "Azure Database for PostgreSQL",
+      "Azure Database for MySQL",
+      "SQL Server on Azure VMs"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {

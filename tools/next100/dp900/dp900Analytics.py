@@ -132,7 +132,7 @@ ITEMS = [
            "Azure IoT Hub is a streaming source optimized for IoT devices. Event Hubs is the general high-volume event ingestion service."),
     single(0, "Real-time services", 2,
            "In Fabric, what is the central catalog for finding and sharing streaming data?",
-           ["Real-Time hub", "Purview data map", "Unity Catalog", "Data map"],
+           ["Real-Time hub", "Purview data map", "Unity Catalog", "Lakeflow"],
            "The Real-Time hub in Fabric Real-Time Intelligence is a centralized catalog to discover and share streaming data."),
     single(0, "Real-time services", 3,
            "Why is Delta Lake useful for streaming in Spark?",

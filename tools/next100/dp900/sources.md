@@ -39,6 +39,12 @@ All items are original, written from Microsoft's public DP-900 study guide and t
 - **Azure Database for MariaDB overview** (archived, previous-versions), fetched 2026-11-23. https://learn.microsoft.com/en-us/previous-versions/azure/mariadb/overview
   On the retirement path, migrate to Azure Database for MySQL. MariaDB is therefore not asked as a current service.
 
+## Reviewer checks (2026-11-23)
+- **Microsoft Certification Renewal**, Microsoft Learn, fetched 2026-11-23. https://learn.microsoft.com/en-us/credentials/certifications/renew-your-microsoft-certification
+  "Fundamentals certifications do not expire." Added as the Renewal row in examFacts.
+- **Azure Database for MariaDB will be retired on 19 September 2025** (Azure Updates), searched 2026-11-23. https://azure.microsoft.com/updates/azure-database-for-mariadb-will-be-retired-on-19-september-2025-migrate-to-azure-database-for-mysql-flexible-server
+  Retirement date and the migration target, Azure Database for MySQL flexible server. The MariaDB item now says the service was retired.
+
 ## Not confirmed or left out
 - The newest tiers in the blob docs (Smart tier, Turbo tier in preview) are not in the DP-900 module and are not asked.
 - Prices, free-tier allowances, SLA figures beyond the module's Cosmos DB 99.999%, Copilot licensing and preview features are left out.

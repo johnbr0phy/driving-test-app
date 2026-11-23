@@ -57,7 +57,7 @@ ITEMS = [
            "SQL Server on VMs is IaaS with full control. Managed Instance is PaaS with near-complete compatibility for migrations. SQL Database is PaaS suited to new cloud solutions."),
     single(2, "Open-source databases", 2,
            "On Azure Database for MySQL, what is the default backup retention for point-in-time restore?",
-           ["7 days", "1 day", "35 days", "90 days"],
+           ["7 days", "14 days", "35 days", "90 days"],
            "Automatic backups support point-in-time restore for up to 35 days, with 7 days set by default."),
 
     # ---------------- Drill only ----------------
@@ -103,9 +103,9 @@ ITEMS = [
            ["Flexible server", "Single server", "Elastic pool", "Instance pool"],
            "Azure Database for PostgreSQL flexible server is fully managed and gives more control over configuration and cost."),
     single(0, "Open-source databases", 2,
-           "Azure Database for MariaDB is on the retirement path. What does Microsoft recommend for its users?",
-           ["Migrate to Azure Database for MySQL", "Rebuild it on SQL Server on Azure VMs", "Keep MariaDB on a single server", "Move to Azure Database for PostgreSQL"],
-           "Azure Database for MariaDB is on the retirement path, and Microsoft recommends migrating to Azure Database for MySQL."),
+           "Microsoft retired Azure Database for MariaDB in September 2025. Which service does it point MariaDB users to?",
+           ["Azure Database for MySQL", "SQL Server on Azure VMs", "Azure SQL Managed Instance", "Azure Database for PostgreSQL"],
+           "Azure Database for MariaDB was retired on 19 September 2025, and Microsoft directs its users to Azure Database for MySQL flexible server, the closest compatible engine."),
     yn(0, "Open-source databases", 2,
        "For each statement about Azure's open-source database services, select Yes if it is true or No if it is false:",
        [("Azure Database for MySQL can fail over automatically for high availability.", True),

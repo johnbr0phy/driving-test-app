@@ -163,7 +163,7 @@ export default function Dp900LandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Practice Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Two 50-question tests in 45 minutes with flagging and review, at the pace of the real exam. Pick the right Azure data service, classify data, judge yes or no statements and match Cosmos DB APIs to data models. Practice Test 2 is held out of the drills, so it measures readiness.
+                Two 50-question tests in 45 minutes with flagging and review, at the pace of the real exam. Pick the right Azure data service, classify data, judge yes or no statements and match Cosmos DB APIs to data models. Practice Test 2 is held out of the drills, so its questions are new to you.
               </p>
             </div>
           </div>

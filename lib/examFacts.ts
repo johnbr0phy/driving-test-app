@@ -1296,6 +1296,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       basedOn: "IC&RC's ADC Exam Candidate Guide (effective November 2022) and the IC&RC General Candidate Guide (2025), checked November 2026",
       source: { name: "IC&RC: credentials and candidate guides", url: "https://internationalcredentialing.org/icrc-credentials/credentials/" },
     },
+  ukdrone: {
+      answer:
+        "In the UK, anyone flying a drone or model aircraft of 100g or more needs a Flyer ID from the Civil Aviation Authority (CAA), and the person responsible for one of 250g or more, or 100g or more with a camera, needs an Operator ID. To get a Flyer ID you pass the CAA's free online theory test: 40 multiple-choice questions with a pass mark of 30, open book with the Drone and Model Aircraft Code, based on the rules in force from 1 January 2026. A Flyer ID lasts five years and lets you fly in the Over People (A1) and Far from People (A3) subcategories. Flying a UK2 class drone near people in the Near People (A2) subcategory also needs the A2 Certificate of Competency, taken with a CAA-recognised assessment entity after self-practical training: a theory exam of at least 30 multiple-choice questions on meteorology, UAS flight performance and ground risk mitigations, passed at 75%.",
+      rows: [
+        { label: "Flyer ID test", value: "40 multiple-choice questions, pass mark 30, open book, free" },
+        { label: "Who needs it", value: "Anyone flying a drone or model aircraft of 100g or more (from 1 January 2026)" },
+        { label: "Flyer ID lasts", value: "5 years, renewed by passing the test again" },
+        { label: "Operator ID", value: "From 250g, or 100g with a camera; operator 18 or over; renewed every year" },
+        { label: "A2 CofC exam", value: "At least 30 questions, 75% to pass, at a CAA-recognised assessment entity" },
+        { label: "A2 CofC lasts", value: "5 years" },
+        { label: "Run by", value: "UK Civil Aviation Authority (CAA)" },
+      ],
+      basedOn: "the CAA Drone and Model Aircraft Code (updated March 2026), the CAA Flyer ID theory test page, the A2 CofC page and AMC2 UAS.OPEN.030(2)(c), checked November 2026",
+      source: { name: "CAA: Prepare for the Flyer ID theory test", url: "https://www.caa.co.uk/drones/getting-started-with-drones-and-model-aircraft/prepare-for-the-flyer-id-theory-test/" },
+    },
   nzdrone: {
       answer:
         "New Zealand drones and model aircraft are flown under Civil Aviation Rule Part 101, made by the Civil Aviation Authority of New Zealand (CAA); since 22 December 2025 most of the detail for remotely piloted aircraft sits in the transport instrument CATI 101-1. A drone must weigh 25 kg or less (15 to 25 kg needs an approved person or organisation), stay in visual line of sight, below the cloud base and below 400 ft above ground level, give way to all manned aircraft, and fly over people or property only with their consent. Flying unshielded within 4 km of an aerodrome needs a pilot qualification from an approved person or organisation (or supervision, or a Part 61 or Part 149 licence) plus ATC authorisation or the aerodrome operator's agreement, and controlled airspace needs prior ATC authorisation, applied for through Airshare, unless the flight is shielded. There is no single official exam: approved organisations under rule 101.202 issue pilot qualifications with their own assessments. Operations outside Part 101 need a Part 102 operator certificate.",

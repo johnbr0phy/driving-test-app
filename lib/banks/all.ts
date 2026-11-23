@@ -297,6 +297,7 @@ import "./hspachl";
 import "./rpt";
 import "./ascppbt";
 import "./crfsc";
+import "./ukdrone";
 import "./nzdrone";
 import "./cadc";
 import "./nzham";

@@ -1446,5 +1446,13 @@
       "pr": 964,
       "findings": 7
     }
+  ],
+  "inrrn": [
+    {
+      "date": "2026-11-22",
+      "kind": "blind review at build",
+      "pr": 0,
+      "findings": 24
+    }
   ]
 }

@@ -88,3 +88,12 @@ sorted number key is the value written as the key.
   items were rewritten in two passes. What remains shares only a template and a common answer
   (an HCF of 12, "Only conclusion I follows", a train passing in 12 seconds with other lengths and
   speeds).
+
+## Second review (2026-11-22)
+
+The reviewer tried the RRB hosts again (rrbcdg.gov.in, rrbchennai.gov.in, rrbmumbai.gov.in,
+rrb.indianrailways.gov.in) with curl and in Chrome: all timed out. The CBT 1 pattern therefore still
+rests on the official CEN 04/2026 PDF read from the byte copy on Testbook's CDN named above, not on
+an RRB host. One wrong key fixed (data sufficiency), 21 items rewritten that repeated another India
+or Nigeria bank's numbers or fact and answer, and two conclusion items given other keys so "Only
+conclusion I follows" is not always right.

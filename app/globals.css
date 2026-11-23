@@ -5818,6 +5818,20 @@
     --brand-gradient-to: 10 45% 95%;
   }
 
+  /* CompTIA Project+ theme: deep indigo navy (v2 exam; matches lib/v2/exams/projectplus.ts theme) */
+  [data-theme="projectplus"] {
+    --brand: 250 45% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 250 45% 96%;
+    --brand-hover: 250 45% 11%;
+    --brand-dark: 250 45% 10%;
+    --brand-darker: 250 40% 7%;
+    --brand-muted: 250 25% 70%;
+    --brand-border: 250 25% 80%;
+    --brand-border-light: 250 25% 89%;
+    --brand-gradient-to: 270 40% 95%;
+  }
+
   [data-theme="safe"] {
     --brand: 290 15% 32%;
     --brand-foreground: 0 0% 100%;
@@ -12724,6 +12738,18 @@
     --brand-muted: 350 25% 45%;
     --brand-dark: 350 60% 65%;
     --brand-darker: 350 55% 78%;
+  }
+
+  .dark [data-theme="projectplus"] {
+    --brand: 250 45% 50%;
+    --brand-hover: 250 45% 42%;
+    --brand-light: 250 45% 13%;
+    --brand-gradient-to: 270 40% 11%;
+    --brand-border-light: 250 25% 24%;
+    --brand-border: 250 25% 34%;
+    --brand-muted: 250 25% 45%;
+    --brand-dark: 250 45% 65%;
+    --brand-darker: 250 40% 78%;
   }
 
   .dark [data-theme="safe"] {

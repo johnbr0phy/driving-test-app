@@ -585,6 +585,15 @@
       "done": "2026-11-18"
     },
     {
+      "exam": "cadroneadv",
+      "date": "2025-11-04",
+      "kind": "law",
+      "what": "SOR/2025-70 amended CARs Part IX in two stages (1 April and 4 November 2025): advanced operations now cover EVLOS, sheltered operations and medium RPA to 150 kg, with reworked Standard 922 declarations; Level 1 Complex adds lower-risk BVLOS.",
+      "action": "Bank written to the amended rules; re-check Division V, declaration and distance-band items (CADRONEADV-ADV, -DEC, -EVL) against any further Part IX or Standard 922 amendment or a new TP 15263 edition.",
+      "source": "https://gazette.gc.ca/rp-pr/p2/2025/2025-03-26/html/sor-dors70-eng.html",
+      "done": "2026-11-22"
+    },
+    {
       "exam": "sfpd1",
       "date": "2026-11-18",
       "kind": "review",

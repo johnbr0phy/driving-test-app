@@ -407,6 +407,12 @@
   "https://internationalcredentialing.org/icrc-credentials/credentials/",
   "https://internationalcredentialing.org/prep-and-study-materials/"
  ],
+ "cadroneadv": [
+  "https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/take-drone-pilot-online-exam/small-advanced",
+  "https://tc.canada.ca/en/aviation/publications/knowledge-requirements-pilots-remotely-piloted-aircraft-systems-250-g-including-150-kg-basic-advanced-operations-tp-15263",
+  "https://tc.canada.ca/en/aviation/drone-safety/learn-rules-you-fly-your-drone/drone-operation-categories-pilot-certificates",
+  "https://gazette.gc.ca/rp-pr/p2/2025/2025-03-26/html/sor-dors70-eng.html"
+ ],
  "cadronebasic": [
   "https://tc.canada.ca/en/aviation/drone-safety/drone-pilot-licensing/take-drone-pilot-online-exam/small-basic",
   "https://tc.canada.ca/en/aviation/publications/knowledge-requirements-pilots-remotely-piloted-aircraft-systems-250-g-including-150-kg-basic-advanced-operations-tp-15263",

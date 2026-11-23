@@ -76,7 +76,7 @@ Q = [
 ("A counselor considers telling a client about her own divorce. The key question to ask herself is:",
  "Will it serve the client?", ["Will the client like me?", "Is the story interesting?", "Is the event recent?"],
  "Self-disclosure is used only when it helps the client and is brief, then focus returns to the client."),
-("A client says she is \"fine\" with her diagnosis but cancels every session after hearing it. The counselor gently notes the pattern. This is:",
+("A client says she is \"fine\" with her diagnosis but cancels every session after hearing it. The counselor kindly points out the pattern. This is:",
  "Gentle confrontation", ["Reflection of content", "Paraphrasing her words", "Summarizing the session"],
  "Constructive confrontation points out discrepancies between words and actions in a caring way, so the client can look at them."),
 ("A client with an addiction misses many sessions and blames everyone. The counselor first works to:",

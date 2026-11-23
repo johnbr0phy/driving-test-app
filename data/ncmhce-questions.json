@@ -137,7 +137,7 @@
     "optionD": "Keep it secret in every case",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "ACA B.2.c permits disclosure to identifiable third parties at high risk of a contagious, life-threatening disease, after confirming the diagnosis and the client's intent, and only where state law allows."
+    "explanation": "ACA B.2.c says counselors may be justified in disclosing to identifiable third parties at serious and foreseeable risk of a communicable, life-threatening disease, after assessing whether the client intends to tell them, and only as state law allows."
   },
   {
     "type": "NCMHCE",
@@ -403,7 +403,7 @@
     "optionD": "An advance directive",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A professional will names a colleague to contact clients, secure records and arrange referrals if the counselor cannot. NBCC's 2027 specifications list professional wills; an advance directive covers her own medical care."
+    "explanation": "ACA C.2.h asks counselors to prepare a plan for transferring clients and files if they become incapacitated, die or end their practice. A professional will names the colleague who carries it out; an advance directive covers her own medical care."
   },
   {
     "type": "NCMHCE",
@@ -417,7 +417,7 @@
     "optionD": "End counseling right away",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "ACA D.1.e and E.13 separate the treating role from a forensic evaluation. A treating counselor should not evaluate custody; she can explain the conflict and suggest a separate evaluator."
+    "explanation": "ACA E.13.c says counselors do not evaluate current or former clients for forensic purposes, since the treating and evaluating roles conflict. She can explain the conflict and suggest a separate evaluator."
   },
   {
     "type": "NCMHCE",
@@ -1250,7 +1250,7 @@
     "state": "ALL",
     "questionId": "NCMHCE-PLN-010",
     "category": "ncmhcePlanning",
-    "question": "A client has met her goals and feels steady. The counselor should begin to:",
+    "question": "A client has met her goals and feels steady. The counselor should:",
     "optionA": "End without any discussion",
     "optionB": "Begin planning the ending",
     "optionC": "Add goals to keep going",
@@ -1278,10 +1278,10 @@
     "state": "ALL",
     "questionId": "NCMHCE-PLN-012",
     "category": "ncmhcePlanning",
-    "question": "A client in recovery lists people, places and moods that lead to drinking, with a response for each. This is a:",
-    "optionA": "A behavior contract",
-    "optionB": "A crisis safety plan",
-    "optionC": "A discharge summary",
+    "question": "A client in recovery lists people, places and moods that lead to drinking, with a response for each. This work is part of:",
+    "optionA": "Behavior contracting",
+    "optionB": "Crisis safety planning",
+    "optionC": "Discharge paperwork",
     "optionD": "Relapse prevention",
     "correctAnswer": "D",
     "correctIndex": 3,
@@ -1866,7 +1866,7 @@
     "state": "ALL",
     "questionId": "NCMHCE-INT-026",
     "category": "ncmhceInterventions",
-    "question": "A client says she is \"fine\" with her diagnosis but cancels every session after hearing it. The counselor gently notes the pattern. This is:",
+    "question": "A client says she is \"fine\" with her diagnosis but cancels every session after hearing it. The counselor kindly points out the pattern. This is:",
     "optionA": "Reflection of content",
     "optionB": "Gentle confrontation",
     "optionC": "Paraphrasing her words",
@@ -2122,10 +2122,10 @@
     "optionA": "The stepfather leads alone",
     "optionB": "No discipline for a year",
     "optionC": "The children choose rules",
-    "optionD": "The parent leads discipline",
+    "optionD": "The birth parent leads it",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "In new stepfamilies, the biological parent usually leads discipline while the stepparent first builds a relationship with the children."
+    "explanation": "In new stepfamilies, the birth parent usually leads discipline at first while the stepparent builds a relationship with the children, then the stepparent takes on more as trust grows."
   },
   {
     "type": "NCMHCE",

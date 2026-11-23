@@ -5294,6 +5294,19 @@
   }
 
   /* NASAA Series 66 theme: deep forest green */
+  [data-theme="series24"] {
+    --brand: 340 75% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 340 35% 95%;
+    --brand-hover: 340 75% 11%;
+    --brand-dark: 340 75% 9%;
+    --brand-darker: 340 70% 6%;
+    --brand-muted: 340 15% 68%;
+    --brand-border: 340 15% 80%;
+    --brand-border-light: 340 14% 89%;
+    --brand-gradient-to: 200 40% 95%;
+  }
+
   [data-theme="series6"] {
     --brand: 58 30% 16%;
     --brand-foreground: 0 0% 100%;
@@ -12485,6 +12498,18 @@
     --brand-muted: 18 25% 45%;
     --brand-dark: 18 100% 65%;
     --brand-darker: 18 80% 78%;
+  }
+
+  .dark [data-theme="series24"] {
+    --brand: 340 75% 50%;
+    --brand-hover: 340 75% 42%;
+    --brand-light: 340 35% 13%;
+    --brand-gradient-to: 200 40% 11%;
+    --brand-border-light: 340 14% 24%;
+    --brand-border: 340 15% 34%;
+    --brand-muted: 340 15% 45%;
+    --brand-dark: 340 75% 65%;
+    --brand-darker: 340 70% 78%;
   }
 
   .dark [data-theme="series6"] {

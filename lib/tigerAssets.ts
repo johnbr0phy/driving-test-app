@@ -280,7 +280,7 @@ const BORROWED_SETS: Record<string, string> = {
   cen: "nclex",
   // International batch 1 reuses the car, CDL, real estate, insurance, Series 7, hunter, personal
   // licence, security guard and NCLEX families.
-  sgftt: "driving", iedttcv: "cdl", sgres: "realestate", hkiiqe1: "insurance", hklesfi1: "series7", series6: "series7",
+  sgftt: "driving", iedttcv: "cdl", sgres: "realestate", hkiiqe1: "insurance", hklesfi1: "series7", series6: "series7", series24: "series7",
   nzfirearms: "hunter", nzlcq: "ukaplh", aesira: "security", aerera: "realestate", mypce: "insurance", kenck: "nclex",
   // NZ real estate salesperson borrows the real estate tiger.
   nzrealestate: "realestate", nzsecurity: "security",

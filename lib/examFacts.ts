@@ -7877,6 +7877,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "NASAA's Series 63 overview and test specifications (effective June 12, 2023) and FINRA's Series 63 page, checked November 2026",
     source: { name: "NASAA: Series 63 Exam", url: "https://www.nasaa.org/exams/study-guides/series-63-exam-content-outline/" },
   },
+  series24: {
+    answer:
+      "The Series 24 is FINRA's General Securities Principal Qualification Examination. It has 150 scored multiple-choice questions, plus 10 unscored pretest questions, in 3 hours and 45 minutes, and the passing score is 70, on an equated scale. Candidates also need the SIE and a representative-level corequisite such as the Series 7. A General Securities Principal supervises a broker-dealer's securities business, but not options or municipal securities, which have their own principal exams.",
+    rows: [
+      { label: "Questions", value: "150 scored, plus 10 unscored" },
+      { label: "Time", value: "3 hours 45 minutes" },
+      { label: "Passing score", value: "70" },
+      { label: "Largest function", value: "Supervision of general broker-dealer activities, 45 of 150" },
+      { label: "Corequisites", value: "SIE plus Series 7 (or 57, 79, 82, 86 and 87)" },
+      { label: "Not covered", value: "Options and municipal securities supervision" },
+      { label: "Run by", value: "FINRA" },
+    ],
+    basedOn: "FINRA's Series 24 content outline and Series 24 exam page, checked November 2026",
+    source: { name: "FINRA: Series 24 Exam", url: "https://www.finra.org/registration-exams-ce/qualification-exams/series24" },
+  },
   series6: {
     answer:
       "The Series 6 is FINRA's Investment Company and Variable Contracts Products Representative exam. It has 50 scored multiple-choice questions with four choices each, plus 5 unscored pretest questions, in 1 hour and 30 minutes, and the passing score is 70, an equated scaled score. Passed together with the SIE, its corequisite, it lets a person sell mutual funds, variable annuities, variable life insurance, unit investment trusts and 529 plans. FINRA's outline has four functions: investment information, recommendations and records 50%, seeking business 24%, opening accounts 16% and processing transactions 10%.",

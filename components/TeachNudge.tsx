@@ -38,6 +38,8 @@ const TEACHER_LED = new Set([
   "nzboat",
   // High school and intro IT courses (CompTIA Tech+)
   "techplus",
+  // Server administration courses (CompTIA Server+)
+  "serverplus",
   // Data analytics courses and bootcamps (CompTIA Data+)
   "dataplus",
   // Cisco Networking Academy classes (CCST Networking)

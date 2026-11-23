@@ -731,6 +731,14 @@
       "what": "ACA is revising its 2014 Code of Ethics (task force since January 2025; ACA's project page lists a 2027 version, adoption planned at the Governing Board's fall 2026 meeting). Items cite 2014 section numbers (A.5.c five-year rule, A.11, A.12, B.2.c, B.6.c, C.2.h professional will, H distance counseling).",
       "action": "When the revised Code is published, check every ncmhce item that cites an ACA section number or rule, update the numbers and any changed rule, record the new Code in sources.md, rebuild.",
       "source": "https://manifold.counseling.org/projects/aca-code-of-ethics"
+    },
+    {
+      "exam": "serverplus",
+      "date": "2027-06-01",
+      "kind": "outline",
+      "what": "CompTIA expects to launch the next Server+ exam (SK0-006) in summer 2027, after a beta that runs November 12, 2026 to February 4, 2027. SK0-005 has no announced retirement date yet.",
+      "action": "When SK0-006 launches, read its final objectives, re-weight the domains, add items for new objectives, update the landing, examFacts, scoreNote and sources.md, rebuild; retire SK0-005 wording once CompTIA sets its retirement date.",
+      "source": "https://www.comptia.org/en/blog/help-shape-the-next-comptia-server-certification/"
     }
   ]
 }

@@ -10,7 +10,7 @@ Q = [
 ("The annual occupational limit of 50 mSv equals how many rem?",
  "5 rem", ["0.5 rem", "50 rem", "500 rem"],
  "One rem is 0.01 Sv, so 50 mSv is 5 rem, the federal annual occupational limit."),
-("What is the annual occupational limit for the lens of the eye?",
+("Under federal rules, what is the annual occupational limit for the lens of the eye?",
  "150 mSv", ["15 mSv", "50 mSv", "500 mSv"],
  "The lens has its own limit of 15 rem, which is 150 mSv, a year under federal rules."),
 ("For a declared pregnant worker, what is the dose limit to the embryo or fetus for the whole pregnancy?",

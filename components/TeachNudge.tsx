@@ -40,6 +40,8 @@ const TEACHER_LED = new Set([
   "techplus",
   // Data analytics courses and bootcamps (CompTIA Data+)
   "dataplus",
+  // Cisco Networking Academy classes (CCST Networking)
+  "ccst",
   // Azure administrator courses and bootcamps (AZ-104)
   "az104",
   // Microsoft security operations courses and SOC bootcamps (SC-200)

@@ -5693,6 +5693,20 @@
     --brand-gradient-to: 172 45% 95%;
   }
 
+  /* Cisco CCST Networking theme: deep indigo violet (v2 exam; matches lib/v2/exams/ccst.ts theme) */
+  [data-theme="ccst"] {
+    --brand: 264 65% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 264 65% 96%;
+    --brand-hover: 264 65% 11%;
+    --brand-dark: 264 65% 10%;
+    --brand-darker: 264 60% 7%;
+    --brand-muted: 264 25% 70%;
+    --brand-border: 264 25% 80%;
+    --brand-border-light: 264 25% 89%;
+    --brand-gradient-to: 284 45% 95%;
+  }
+
   /* CompTIA Tech+ theme: deep wine red (v2 exam; matches lib/v2/exams/techplus.ts theme) */
   [data-theme="techplus"] {
     --brand: 350 60% 14%;
@@ -12400,6 +12414,18 @@
     --brand-muted: 152 25% 45%;
     --brand-dark: 152 75% 65%;
     --brand-darker: 152 70% 78%;
+  }
+
+  .dark [data-theme="ccst"] {
+    --brand: 264 65% 50%;
+    --brand-hover: 264 65% 42%;
+    --brand-light: 264 35% 13%;
+    --brand-gradient-to: 284 30% 11%;
+    --brand-border-light: 264 25% 24%;
+    --brand-border: 264 25% 34%;
+    --brand-muted: 264 25% 45%;
+    --brand-dark: 264 65% 65%;
+    --brand-darker: 264 60% 78%;
   }
 
   .dark [data-theme="techplus"] {

@@ -597,6 +597,10 @@ const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
     "color": "hsl(290, 15%, 32%)",
     "tint": "hsl(290, 15%, 96%)"
   },
+  "ccst": {
+    "color": "hsl(264, 65%, 14%)",
+    "tint": "hsl(264, 65%, 96%)"
+  },
   "techplus": {
     "color": "hsl(350, 60%, 14%)",
     "tint": "hsl(350, 60%, 96%)"

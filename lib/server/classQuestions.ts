@@ -83,6 +83,7 @@ import "@/lib/v2/banks/az104";
 import "@/lib/v2/banks/techplus";
 import "@/lib/v2/banks/safe";
 import "@/lib/v2/banks/dataplus";
+import "@/lib/v2/banks/ccst";
 import "@/lib/v2/banks/isc2cc";
 import "@/lib/v2/banks/sc900";
 import "@/lib/v2/banks/ai901";

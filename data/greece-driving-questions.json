@@ -942,14 +942,14 @@
     "state": "ALL",
     "questionId": "GRDRV-REG-022",
     "category": "grRegulatory",
-    "question": "A red-bordered circle with \"50\", crossed by grey diagonal lines, means:",
+    "question": "A white disc with no red border, showing a grey \"50\" crossed by grey diagonal lines, means:",
     "optionA": "50 km/h zone ahead",
     "optionB": "End of 50 km/h limit",
     "optionC": "No vehicles over 50 t",
     "optionD": "Minimum speed 50 km/h",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Grey diagonal lines cancel the limit shown. The general limit for that type of road then applies."
+    "explanation": "The end-of-limit sign is a white disc with no red border. Its grey diagonal lines cancel the limit shown, and the general limit for that type of road then applies."
   },
   {
     "type": "GRDRIVE",

@@ -1,0 +1,65 @@
+{
+ "runId": "2026-11-23-c29912",
+ "at": "2026-11-23T18:20:16.890Z",
+ "model": "claude-opus-5-5",
+ "checked": 309,
+ "blindChecked": 307,
+ "disagreements": 44,
+ "adjudicated": 308,
+ "findings": [
+  {
+   "examId": "grdriving",
+   "questionId": "GRDRV-REG-022",
+   "file": "data/greece-driving-questions.json",
+   "trigger": [
+    "source"
+   ],
+   "notes": [
+    "An official source page for this exam changed recently; check the question is still correct."
+   ],
+   "key": [
+    "B"
+   ],
+   "blind": {
+    "answer": [
+     "B"
+    ],
+    "confidence": "high",
+    "defensibleOthers": [],
+    "problem": "Under the Vienna Convention, the end-of-speed-limit sign is a white disc with a grey or black border, number and diagonal lines. It has no red border. Describing it as 'red-bordered' is inaccurate, although B is still the intended answer."
+   },
+   "disagreed": true,
+   "verdict": {
+    "verdict": "unclear",
+    "confidence": "medium",
+    "correctAnswer": [
+     "B"
+    ],
+    "reason": "B is the intended and correct meaning, but the stem describes the sign wrongly. The Vienna Convention end-of-speed-limit sign (C,17b) and the Greek equivalent (Ρ-33) are a white disc with no red border, a grey or black number and grey or black diagonal stripes. A red-bordered circle with \"50\" is the speed-limit sign itself, so a well-prepared candidate could be misled by the description.",
+    "fix": "Rewrite the stem as: \"A white circle with no red border, showing a grey \"50\" crossed by grey diagonal lines, means:\" Keep key B. Rewrite the explanation as: \"The end-of-limit sign is a white disc with no red border. Its grey diagonal lines cancel the limit shown, and the general limit for that type of road then applies.\""
+   }
+  },
+  {
+   "examId": "sgm5",
+   "questionId": "SGM5-NOT-006",
+   "verdict": "unclear",
+   "confidence": "medium",
+   "reason": "Under MAS Notice FAA-N20 (Balanced Scorecard Framework), at least 60% of variable income is measured for representatives paid only variable income. For those paid a fixed salary plus variable income, all of it is measured, so B is correct. However, the stem never mentions the balanced scorecard, FAA-N20 or the non-sales KPIs, so 'measured' has no stated reference point. The independent examiner flagged this gap, and a well-prepared candidate cannot be sure which rule is being tested.",
+   "fix": "Rewrite the stem as: \"Under MAS Notice FAA-N20's Balanced Scorecard Framework, a representative's remuneration consists of a fixed salary plus variable income. How much of the variable income must be measured against the non-sales KPIs?\" Keep the options and key B. Add to the explanation: \"(By contrast, where a representative receives only variable income, at least 60% of it is measured.)\"",
+   "modelAnswer": "B",
+   "trigger": [
+    "stats"
+   ],
+   "signalExamId": "sgm5",
+   "runId": "2026-11-22-f79d77",
+   "status": "open",
+   "createdAt": "2026-11-22T12:54:05.106Z",
+   "attempts": 1,
+   "id": "sgm5__SGM5-NOT-006",
+   "file": "data/sg-cmfas-res5-questions.json",
+   "question": "Question: A representative earns a fixed salary plus variable income. How much of the variable income is measured?\nA) 60% of it\nB) All of it\nC) Half of it\nD) None of it\n\nAnswer key: B\nExplanation: Where remuneration combines a fixed salary and variable income, FAA-N20 measures all of the variable income against the non-sales KPIs.",
+   "carried": true
+  }
+ ],
+ "signalsCleared": 5
+}

@@ -31,18 +31,18 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Pattern series",
-    "stem": "A series of shapes: a triangle, a square, a pentagon, a hexagon. What comes next?",
+    "stem": "A series of shapes: a square, a pentagon, a hexagon, a heptagon. What comes next?",
     "options": [
-      "Pentagon",
       "Circle",
-      "Heptagon",
       "Octagon",
-      "Triangle"
+      "Decagon",
+      "Hexagon",
+      "Nonagon"
     ],
     "correct": [
-      2
+      1
     ],
-    "explanation": "Each shape has one more side than the one before: 3, 4, 5, 6, so next has 7 sides, a heptagon."
+    "explanation": "Each shape has one more side than the one before: 4, 5, 6, 7, so next has 8 sides, an octagon."
   },
   {
     "id": "CCAT-T1-003",
@@ -320,19 +320,19 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Number series",
-    "stem": "What number comes next? 2, 5, 14, 41, ?",
+    "stem": "What number comes next? 2, 9, 30, 93, ?",
     "options": [
-      "68",
-      "82",
-      "120",
-      "122",
-      "123"
+      "186",
+      "279",
+      "281",
+      "282",
+      "285"
     ],
     "correct": [
       3
     ],
     "lockedOrder": true,
-    "explanation": "Each number is 3 times the one before, minus 1: 41 x 3 - 1 = 122."
+    "explanation": "Each number is 3 times the one before, plus 3: 93 x 3 + 3 = 282."
   },
   {
     "id": "CCAT-T1-016",
@@ -544,18 +544,18 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Letter series",
-    "stem": "What letter comes next? E, I, M, Q, ?",
+    "stem": "What letter comes next? G, K, O, S, ?",
     "options": [
-      "V",
+      "X",
       "U",
-      "R",
-      "T",
-      "S"
+      "W",
+      "V",
+      "T"
     ],
     "correct": [
-      1
+      2
     ],
-    "explanation": "Each letter is four places after the one before: E, I, M, Q, then U."
+    "explanation": "Each letter is four places after the one before: G, K, O, S, then W."
   },
   {
     "id": "CCAT-T1-026",
@@ -877,19 +877,19 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Unknown value",
-    "stem": "If 7x - 9 = 47, what is x?",
+    "stem": "If 6x - 11 = 43, what is x?",
     "options": [
       "5",
-      "5.4",
       "6",
       "7",
-      "8"
+      "8",
+      "9"
     ],
     "correct": [
       4
     ],
     "lockedOrder": true,
-    "explanation": "Add 9 to both sides: 7x = 56, so x = 8."
+    "explanation": "Add 11 to both sides: 6x = 54, so x = 9."
   },
   {
     "id": "CCAT-T1-041",
@@ -946,18 +946,18 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Mixed series",
-    "stem": "What comes next? Z1, X3, V5, T7, ?",
+    "stem": "What comes next? Y2, W5, U8, S11, ?",
     "options": [
-      "S9",
-      "R9",
-      "Q9",
-      "R11",
-      "R8"
+      "R14",
+      "Q14",
+      "Q15",
+      "Q13",
+      "P14"
     ],
     "correct": [
       1
     ],
-    "explanation": "The letters step back two places (Z, X, V, T, R) and the numbers go up by 2 (1, 3, 5, 7, 9), so R9."
+    "explanation": "The letters step back two places (Y, W, U, S, Q) and the numbers go up by 3 (2, 5, 8, 11, 14), so Q14."
   },
   {
     "id": "CCAT-T1-044",
@@ -1437,19 +1437,19 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Number series",
-    "stem": "What number comes next? 2, 4, 7, 11, 16, ?",
+    "stem": "What number comes next? 4, 6, 9, 13, 18, ?",
     "options": [
-      "20",
-      "21",
       "22",
-      "26",
-      "32"
+      "23",
+      "24",
+      "28",
+      "36"
     ],
     "correct": [
       2
     ],
     "lockedOrder": true,
-    "explanation": "The steps grow by one each time: +2, +3, +4, +5, so next is 16 + 6 = 22."
+    "explanation": "The steps grow by one each time: +2, +3, +4, +5, so next is 18 + 6 = 24."
   },
   {
     "id": "CCAT-T2-016",
@@ -1527,18 +1527,18 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Opposites",
-    "stem": "Which word is most nearly opposite in meaning to TRANSPARENT?",
+    "stem": "Which word is most nearly opposite in meaning to MURKY?",
     "options": [
-      "Glossy",
-      "Opaque",
-      "Tinted",
-      "Visible",
-      "Shallow"
+      "Shallow",
+      "Gloomy",
+      "Clear",
+      "Muddy",
+      "Tinted"
     ],
     "correct": [
-      1
+      2
     ],
-    "explanation": "Transparent means you can see through it; opaque means light does not pass through. Tinted glass can still be see-through."
+    "explanation": "Murky water is dark and hard to see through; clear water is easy to see through. Muddy and gloomy are near synonyms."
   },
   {
     "id": "CCAT-T2-020",
@@ -3223,18 +3223,18 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Closest meaning",
-    "stem": "Which word is closest in meaning to ADEQUATE?",
+    "stem": "Which word is closest in meaning to AMPLE?",
     "options": [
-      "Sufficient",
-      "Exceptional",
-      "Accurate",
       "Minimal",
+      "Plentiful",
+      "Accurate",
+      "Exceptional",
       "Excellent"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "Adequate means enough for the need, so sufficient. Excellent goes beyond adequate."
+    "explanation": "Ample means more than enough, so plentiful. Excellent describes quality, not amount."
   },
   {
     "id": "CCAT-D-046",
@@ -3357,19 +3357,19 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Averages",
-    "stem": "A class of 20 averages 70 on a test and a class of 30 averages 80. What is the average of all 50 students?",
+    "stem": "A group of 15 averages 72 on a test and a group of 25 averages 88. What is the average of all 40 people?",
     "options": [
-      "72",
-      "73",
-      "74",
-      "75",
-      "76"
+      "78",
+      "80",
+      "82",
+      "84",
+      "86"
     ],
     "correct": [
-      4
+      2
     ],
     "lockedOrder": true,
-    "explanation": "Total points: 20 x 70 + 30 x 80 = 1,400 + 2,400 = 3,800, and 3,800 ÷ 50 = 76. 75 ignores the class sizes."
+    "explanation": "Total points: 15 x 72 + 25 x 88 = 1,080 + 2,200 = 3,280, and 3,280 ÷ 40 = 82. 80 ignores the group sizes."
   },
   {
     "id": "CCAT-D-052",
@@ -3469,19 +3469,19 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Negative numbers",
-    "stem": "What is -8 + 15 - 11?",
+    "stem": "What is -9 + 14 - 12?",
     "options": [
-      "-34",
-      "-18",
-      "-4",
-      "4",
-      "18"
+      "-35",
+      "-21",
+      "-7",
+      "5",
+      "7"
     ],
     "correct": [
       2
     ],
     "lockedOrder": true,
-    "explanation": "-8 + 15 = 7, and 7 - 11 = -4."
+    "explanation": "-9 + 14 = 5, and 5 - 12 = -7."
   },
   {
     "id": "CCAT-D-057",
@@ -4071,19 +4071,19 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Averages",
-    "stem": "The average of six numbers is 15. When one number is removed, the average of the other five is 14. What number was removed?",
+    "stem": "The average of seven numbers is 13. When one number is removed, the average of the other six is 12. What number was removed?",
     "options": [
       "1",
-      "14",
-      "15",
-      "20",
-      "26"
+      "12",
+      "13",
+      "19",
+      "25"
     ],
     "correct": [
       3
     ],
     "lockedOrder": true,
-    "explanation": "The six total 90 and the five total 70, so the removed number is 90 - 70 = 20."
+    "explanation": "The seven total 91 and the six total 72, so the removed number is 91 - 72 = 19."
   },
   {
     "id": "CCAT-D-084",
@@ -4228,19 +4228,19 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Squares and roots",
-    "stem": "What is 15² - 13²?",
+    "stem": "What is 17² - 14²?",
     "options": [
-      "4",
-      "28",
-      "44",
-      "52",
-      "56"
+      "9",
+      "45",
+      "89",
+      "93",
+      "96"
     ],
     "correct": [
-      4
+      3
     ],
     "lockedOrder": true,
-    "explanation": "225 - 169 = 56. A shortcut: (15 - 13)(15 + 13) = 2 x 28 = 56."
+    "explanation": "289 - 196 = 93. A shortcut: (17 - 14)(17 + 14) = 3 x 31 = 93."
   },
   {
     "id": "CCAT-D-091",
@@ -4296,18 +4296,18 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Letter series",
-    "stem": "What letter comes next? B, C, E, H, L, ?",
+    "stem": "What letter comes next? H, I, K, N, R, ?",
     "options": [
-      "R",
-      "S",
-      "Q",
-      "O",
-      "P"
+      "U",
+      "W",
+      "X",
+      "Y",
+      "V"
     ],
     "correct": [
-      2
+      1
     ],
-    "explanation": "The steps grow by one: +1, +2, +3, +4, so next is L + 5 = Q."
+    "explanation": "The steps grow by one: +1, +2, +3, +4, so next is R + 5 = W."
   },
   {
     "id": "CCAT-D-094",
@@ -4339,18 +4339,18 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Closest meaning",
-    "stem": "Which word is closest in meaning to TENACIOUS?",
+    "stem": "Which word is closest in meaning to ZEALOUS?",
     "options": [
-      "Persistent",
-      "Affectionate",
+      "Gracious",
       "Tender",
-      "Anxious",
-      "Gracious"
+      "Passionate",
+      "Affectionate",
+      "Jealous"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "Tenacious means holding on and not giving up, so persistent. Gracious shares the ending but means kind and polite."
+    "explanation": "Zealous means full of eager enthusiasm, so passionate. Jealous looks similar but means resentful of another's advantage."
   },
   {
     "id": "CCAT-D-096",

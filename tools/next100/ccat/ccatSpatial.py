@@ -4,9 +4,9 @@
 # pictures; here every figure is described in words. Key written first.
 ITEMS = [
     # ---------- Practice Test 1 ----------
-    S(1, 1, "Pattern series", "A series of shapes: a triangle, a square, a pentagon, a hexagon. What comes next?",
-      ["Heptagon", "Octagon", "Circle", "Triangle", "Pentagon"],
-      "Each shape has one more side than the one before: 3, 4, 5, 6, so next has 7 sides, a heptagon."),
+    S(1, 1, "Pattern series", "A series of shapes: a square, a pentagon, a hexagon, a heptagon. What comes next?",
+      ["Octagon", "Nonagon", "Circle", "Hexagon", "Decagon"],
+      "Each shape has one more side than the one before: 4, 5, 6, 7, so next has 8 sides, an octagon."),
     S(1, 1, "Odd one out", "Which shape does not belong: square, rectangle, rhombus, trapezoid, circle?",
       ["Circle", "Square", "Rhombus", "Trapezoid", "Rectangle"],
       "Every other shape has four straight sides. A circle has no straight sides."),

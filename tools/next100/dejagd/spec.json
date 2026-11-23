@@ -1,0 +1,33 @@
+{
+  "id": "dejagd",
+  "stateCode": "DEJAGD",
+  "idBase": 47400,
+  "prefix": "DEJGD-",
+  "slug": "/jaegerpruefung",
+  "landingPath": "/de/jaegerpruefung-test",
+  "dataFile": "data/de-jaegerpruefung-questions.json",
+  "language": "de",
+  "locale": "de-DE",
+  "name": "Jägerprüfung",
+  "shortName": "Jägerprüfung",
+  "examLabel": "Jägerprüfung, schriftlicher Teil",
+  "fullName": "Jägerprüfung (Jagdschein): der schriftliche Teil nach bayerischer Prüfungsordnung",
+  "english": {
+    "name": "German Hunting Licence Exam (Jägerprüfung)",
+    "shortName": "German hunting exam",
+    "fullName": "German hunting licence exam (Jägerprüfung, Jagdschein), written part, Bavarian format, in German"
+  },
+  "icon": "target",
+  "testCount": 2,
+  "questionsPerTest": 100,
+  "passPct": 75,
+  "categories": [
+    {"key": "dejgWaffen", "label": "Jagdwaffen, Jagd- und Fanggeräte", "perTest": 16, "pool": 32, "segment": "WAF"},
+    {"key": "dejgBiologie", "label": "Biologie der Wildarten", "perTest": 16, "pool": 32, "segment": "BIO"},
+    {"key": "dejgRecht", "label": "Rechtliche Vorschriften", "perTest": 16, "pool": 32, "segment": "REC"},
+    {"key": "dejgHege", "label": "Wildhege, Jagdbetrieb und jagdliche Praxis", "perTest": 16, "pool": 32, "segment": "HEG"},
+    {"key": "dejgHunde", "label": "Jagdhundewesen", "perTest": 16, "pool": 32, "segment": "HUN"},
+    {"key": "dejgNatur", "label": "Naturschutz, Landbau, Forstwesen, Wild- und Jagdschadensverhütung", "perTest": 20, "pool": 40, "segment": "NAT"}
+  ],
+  "notes": "Two real-length 100-question tests (JFPO § 12: 16 each from Sachgebiete 1-5, 20 from 6; 100 minutes; at most 25 wrong). Pools exactly 2x. passPct 75. Six sets, one per Sachgebiet, 47401-47406, Jagdhundewesen last; 6 + 2 = 8 dashboard steps."
+}

@@ -52,7 +52,7 @@
     "skill": "Securing AI systems",
     "stem": "A Lambda function must call only one Bedrock model and nothing else. How should access be granted?",
     "options": [
-      "IAM role with least-privilege policy",
+      "Least-privilege IAM role",
       "Public S3 bucket policy",
       "Root user access keys",
       "Shared admin password"
@@ -94,10 +94,10 @@
     "skill": "Tokens",
     "stem": "What is a token for a large language model?",
     "options": [
-      "One full sentence of input",
+      "One complete sentence of input text",
       "Password to call the model API",
       "Single neuron in the network",
-      "Piece of text the model reads and writes"
+      "Unit of text the model processes"
     ],
     "correct": [
       3
@@ -113,15 +113,15 @@
     "difficulty": 1,
     "format": "single",
     "skill": "GenAI limitations",
-    "stem": "A chatbot states a refund policy that the company never had. What is this called?",
+    "stem": "A travel chatbot cites a baggage rule the airline does not have. What is this called?",
     "options": [
-      "Data drift",
+      "Hallucination",
+      "Catastrophic forgetting",
       "Underfitting",
-      "Overfitting",
-      "Hallucination"
+      "Overfitting"
     ],
     "correct": [
-      3
+      0
     ],
     "explanation": "A hallucination is fluent output that is false or unsupported. Grounding answers in company documents with RAG helps reduce it."
   },
@@ -178,7 +178,7 @@
     "skill": "RAG",
     "stem": "What does Retrieval Augmented Generation add to an FM response?",
     "options": [
-      "Relevant passages from a company's own data",
+      "Passages retrieved from company data",
       "Encryption of the prompt",
       "Faster tokens per second",
       "New weights trained on the documents"
@@ -262,9 +262,9 @@
     "skill": "Embeddings",
     "stem": "What does an embedding represent?",
     "options": [
-      "Compressed copy of the original file",
+      "Compressed copy of the original source file",
       "List of keywords found in a text",
-      "Meaning of content as a numeric vector",
+      "Meaning as a list of numbers",
       "Encryption key for stored data"
     ],
     "correct": [
@@ -304,7 +304,7 @@
     "skill": "Fine-tuning methods",
     "stem": "A bank has large amounts of unlabeled financial text and wants a model fluent in its terms. Which approach fits?",
     "options": [
-      "Prompt templating",
+      "Prompt templates with variables",
       "Few-shot prompting",
       "Instruction tuning",
       "Continued pre-training"
@@ -411,7 +411,7 @@
     "options": [
       "Subset of ML using deep neural networks",
       "Broader field that contains ML",
-      "Replacement for ML on tabular data",
+      "Older technique that ML has replaced",
       "Rule-based system with no training"
     ],
     "correct": [
@@ -454,7 +454,7 @@
       "Amazon Lex",
       "Amazon Bedrock",
       "Amazon EC2",
-      "AWS Glue"
+      "Amazon SageMaker Ground Truth"
     ],
     "correct": [
       1
@@ -474,7 +474,7 @@
     "options": [
       "Bedrock rejects small datasets",
       "It removes the need to evaluate",
-      "The model learns only the cases it sees",
+      "Models learn only the cases they see",
       "Unrepresentative data trains faster"
     ],
     "correct": [
@@ -496,7 +496,7 @@
       "AWS Glue Data Catalog",
       "Amazon ElastiCache for Memcached",
       "Amazon S3 Glacier Deep Archive",
-      "Amazon RDS for PostgreSQL with pgvector"
+      "Amazon RDS for PostgreSQL"
     ],
     "correct": [
       3
@@ -515,7 +515,7 @@
     "stem": "A face analysis model is trained mostly on photos of young adults. What dataset problem is likely?",
     "options": [
       "Lack of diversity across ages",
-      "Data stored in the wrong Region",
+      "Data in the wrong Region",
       "Too much labeled data",
       "Too many image formats"
     ],
@@ -535,10 +535,10 @@
     "skill": "AI threats",
     "stem": "Which control best reduces the chance a chatbot reveals another customer's data?",
     "options": [
-      "Filter and validate output before showing it",
-      "Raise the temperature setting",
-      "Drop logging to save cost",
-      "Use a larger context window"
+      "Filtering and validating output",
+      "Raising the temperature setting",
+      "Turning off logging",
+      "Using a larger context window"
     ],
     "correct": [
       0
@@ -601,7 +601,7 @@
       "Amazon Polly",
       "AWS Artifact",
       "Strands Agents",
-      "Amazon Macie"
+      "Amazon Bedrock Guardrails"
     ],
     "correct": [
       2
@@ -621,7 +621,7 @@
     "options": [
       "Labels for image pixels",
       "Code for the model's layers",
-      "Rankings of which responses are better",
+      "Rankings of better responses",
       "Raw text for pre-training"
     ],
     "correct": [
@@ -640,7 +640,7 @@
     "skill": "Customization cost",
     "stem": "Which approach adapts an FM to new company facts at the lowest cost, with no training?",
     "options": [
-      "Full fine-tuning",
+      "Full fine-tuning on the data",
       "Continued pre-training",
       "Pre-training a new model",
       "RAG over the company's documents"
@@ -662,8 +662,8 @@
     "stem": "Why do teams retrain a deployed model on a schedule or when monitoring shows drift?",
     "options": [
       "Training data is deleted on deploy",
-      "Retraining lowers storage costs",
-      "Live data changes and accuracy drops",
+      "Each retrain lowers the model's storage cost",
+      "Live data drifts over time",
       "Endpoints expire after a year"
     ],
     "correct": [
@@ -682,7 +682,7 @@
     "skill": "Legal risks",
     "stem": "An image model produces pictures closely copying an artist's protected work. Which risk does this create?",
     "options": [
-      "Higher token costs",
+      "Higher image token costs",
       "Model drift",
       "Intellectual property claims",
       "Data residency breach"
@@ -705,7 +705,7 @@
     "options": [
       "Model distillation",
       "Batch inference",
-      "Prompt caching",
+      "Prompt version management",
       "Data lineage tracking"
     ],
     "correct": [
@@ -722,15 +722,15 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Prompt techniques",
-    "stem": "A prompt asks the model to classify a review with no examples given. What technique is this?",
+    "stem": "A prompt asks the model to rate a ticket's urgency and gives no examples. What technique is this?",
     "options": [
-      "Few-shot prompting",
       "Chain-of-thought prompting",
-      "Single-shot prompting",
-      "Zero-shot prompting"
+      "Few-shot prompting",
+      "Zero-shot prompting",
+      "Single-shot prompting"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "Zero-shot gives only the instruction. Single-shot adds one example and few-shot adds several to show the pattern."
   },
@@ -746,9 +746,9 @@
     "stem": "A payroll system must calculate overtime pay exactly by a fixed formula every time. Why is an ML model a poor choice?",
     "options": [
       "Payroll data is always unlabeled",
-      "ML models cannot be audited at all",
+      "ML models cannot be audited",
       "ML cannot work with numeric data",
-      "The output must be exact, not a prediction"
+      "Output must be exact, not predicted"
     ],
     "correct": [
       3
@@ -767,9 +767,9 @@
     "stem": "With token-based pricing on Amazon Bedrock, which change usually lowers the cost of each request?",
     "options": [
       "More examples in each prompt",
-      "Asking for longer answers",
+      "Asking for longer and more detailed answers",
       "Higher temperature setting",
-      "Shorter prompts and capped output length"
+      "Shorter prompts and outputs"
     ],
     "correct": [
       3
@@ -788,7 +788,7 @@
     "stem": "A team built an agent with an open source framework and needs a secure, serverless place to run it with session isolation. Which service fits?",
     "options": [
       "Amazon Bedrock AgentCore Runtime",
-      "AWS Trusted Advisor",
+      "Amazon Bedrock Prompt Management",
       "Amazon Bedrock Knowledge Bases",
       "SageMaker Model Cards"
     ],
@@ -890,12 +890,12 @@
     "difficulty": 1,
     "format": "single",
     "skill": "AWS managed AI services",
-    "stem": "A call center wants text transcripts of recorded customer calls. Which AWS service converts speech to text?",
+    "stem": "A clinic wants written notes from doctors' recorded dictations. Which AWS service converts speech to text?",
     "options": [
       "Amazon Polly",
-      "Amazon Comprehend",
+      "Amazon Translate",
       "Amazon Transcribe",
-      "Amazon Translate"
+      "Amazon Comprehend"
     ],
     "correct": [
       2
@@ -915,8 +915,8 @@
     "options": [
       "Billing plan for agent usage",
       "Format for labeling training data",
-      "Standard way to connect to tools and data",
-      "Method for compressing model weights"
+      "Common interface to tools and data",
+      "Method for compressing weights"
     ],
     "correct": [
       2
@@ -932,15 +932,15 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Cost tradeoffs",
-    "stem": "A company has steady, high-volume traffic to one Bedrock model and needs guaranteed capacity. Which option fits?",
+    "stem": "A retailer expects constant heavy use of one Bedrock model all year and needs reserved capacity. Which option fits?",
     "options": [
-      "Spot Instances",
       "Provisioned Throughput",
       "Batch inference only",
-      "On-demand pricing"
+      "On-demand pricing",
+      "On-demand with prompt caching"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "Provisioned Throughput buys model units at a fixed hourly cost for consistent capacity, with discounts for 1- or 6-month terms. On-demand bills per token with no reserved capacity."
   },
@@ -955,7 +955,7 @@
     "skill": "Evaluation approaches",
     "stem": "A team wants a second LLM to score responses for helpfulness and explain each score. Which approach is this?",
     "options": [
-      "Benchmark dataset only",
+      "Benchmark dataset scoring only",
       "Human worker evaluation",
       "LLM-as-a-judge evaluation",
       "A/B test with users"
@@ -999,8 +999,8 @@
     "options": [
       "Faster training for more bias",
       "Less data needed for less safety",
-      "Higher cost for less transparency",
-      "Lower accuracy for more interpretability"
+      "Higher cost and less transparency overall",
+      "Less accuracy, more interpretability"
     ],
     "correct": [
       3
@@ -1016,11 +1016,11 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Governance services",
-    "stem": "A compliance officer needs AWS's ISO and SOC reports. Where can they download them?",
+    "stem": "An auditor of a company's AI app asks for AWS's own compliance reports. Where are they downloaded?",
     "options": [
-      "AWS Config",
       "AWS Secrets Manager",
       "Amazon Macie",
+      "AWS Config",
       "AWS Artifact"
     ],
     "correct": [
@@ -1085,7 +1085,7 @@
     "stem": "In the foundation model lifecycle, which step comes before fine-tuning?",
     "options": [
       "Monitoring for drift",
-      "Deploying to production",
+      "Deploying the model to production",
       "Collecting user feedback",
       "Pre-training on broad data"
     ],
@@ -1128,7 +1128,7 @@
     "options": [
       "Count tokens in each response",
       "Measure the model's weight size",
-      "Check retrieval relevance and answer accuracy",
+      "Score retrieval and answers",
       "Time the embedding upload"
     ],
     "correct": [
@@ -1190,8 +1190,8 @@
     "stem": "Which business task suits an AI agent better than a single model call?",
     "options": [
       "Tagging one image",
-      "Booking travel across several systems",
-      "Summarizing one email",
+      "Booking a trip across systems",
+      "Summarizing a single email thread",
       "Translating one sentence"
     ],
     "correct": [
@@ -1397,15 +1397,15 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Inference parameters",
-    "stem": "Answers from a model are cut off mid-sentence. Which setting should be raised?",
+    "stem": "A model's long reports keep ending before the conclusion. Which setting should be raised?",
     "options": [
-      "Number of examples",
-      "Temperature",
       "Maximum output tokens",
+      "Number of few-shot examples",
+      "Temperature",
       "Top P"
     ],
     "correct": [
-      2
+      0
     ],
     "explanation": "The maximum length parameter caps how many tokens the model may generate. If it is too low, responses stop early."
   },
@@ -1483,7 +1483,7 @@
     "skill": "Foundation models",
     "stem": "What makes a model a foundation model?",
     "options": [
-      "Large pre-trained model adaptable to many tasks",
+      "Large pre-trained, adaptable model",
       "Model trained only on labeled tables",
       "Rule-based system with no training",
       "Model built for a single narrow task"
@@ -1504,8 +1504,8 @@
     "skill": "GenAI limitations",
     "stem": "Why is interpretability a limitation of large generative models?",
     "options": [
-      "They need labeled data to answer",
-      "Hard to trace why an output was produced",
+      "They need labeled data for every answer",
+      "Outputs are hard to explain",
       "They only run on premises",
       "They cannot produce any text"
     ],
@@ -1527,7 +1527,7 @@
     "options": [
       "Adding labeled examples to a prompt",
       "Tuning it on a few customer records",
-      "Learning from huge unlabeled data first",
+      "Learning from huge unlabeled data",
       "Testing the model before release"
     ],
     "correct": [
@@ -1548,7 +1548,7 @@
     "options": [
       "Evaluating it on held-out data",
       "Labeling the training set",
-      "Monitoring it in production",
+      "Monitoring it in production for drift",
       "Collecting more raw data"
     ],
     "correct": [
@@ -1588,7 +1588,7 @@
     "skill": "Guardrails",
     "stem": "A call center app must mask customers' phone numbers in model responses. Which Guardrails policy fits?",
     "options": [
-      "Content filter for insults",
+      "Content filter set to high strength",
       "Automated Reasoning checks",
       "Sensitive information filter",
       "Denied topics"
@@ -1609,7 +1609,7 @@
     "skill": "Securing AI systems",
     "stem": "An agent must access a user's calendar with that user's own permissions. Which AgentCore service handles this?",
     "options": [
-      "AgentCore Browser",
+      "AgentCore Observability",
       "AgentCore Identity",
       "AgentCore Memory",
       "AgentCore Runtime"
@@ -1737,7 +1737,7 @@
     "options": [
       "Prompt attack filter",
       "Contextual grounding check",
-      "Word filter",
+      "Sensitive information filter",
       "Denied topics"
     ],
     "correct": [
@@ -1840,10 +1840,10 @@
     "skill": "AWS GenAI services",
     "stem": "When would a team choose SageMaker AI over Amazon Bedrock for a generative model?",
     "options": [
-      "They want no infrastructure to manage",
-      "They want token-based on-demand billing",
-      "They need full control of training and hosting",
-      "They only call prebuilt models by API"
+      "No infrastructure to manage at all",
+      "Token-based on-demand billing",
+      "Full control of training and hosting",
+      "Calling prebuilt models only by API"
     ],
     "correct": [
       2
@@ -1863,7 +1863,7 @@
     "options": [
       "Curating and cleaning examples",
       "Raising the learning rate",
-      "Deploying the tuned model",
+      "Deploying the tuned model to production",
       "Setting the temperature"
     ],
     "correct": [
@@ -1885,7 +1885,7 @@
       "Amazon Redshift Spectrum",
       "Amazon OpenSearch Serverless",
       "Amazon CloudFront",
-      "AWS Lake Formation"
+      "AWS Lake Formation data catalog"
     ],
     "correct": [
       1
@@ -1906,7 +1906,7 @@
       "Overfitting from high variance",
       "Underfitting from high bias",
       "Perfect generalization",
-      "Class imbalance only"
+      "Class imbalance in the test set"
     ],
     "correct": [
       0
@@ -1927,7 +1927,7 @@
       "Removing all access controls",
       "Duplicating every record",
       "Publishing the raw dataset",
-      "Masking or tokenizing personal fields"
+      "Masking personal fields"
     ],
     "correct": [
       3
@@ -1945,9 +1945,9 @@
     "skill": "Basic AI terms",
     "stem": "What is inference in machine learning?",
     "options": [
-      "Using a trained model to make predictions",
+      "Predicting with a trained model",
       "Choosing which algorithm to train",
-      "Adjusting weights during training",
+      "Adjusting the model's weights during training",
       "Collecting labeled data for training"
     ],
     "correct": [
@@ -1966,7 +1966,7 @@
     "skill": "Vectors",
     "stem": "How does a vector search find content that matches a question?",
     "options": [
-      "Compares embedding distance to the query",
+      "Finds vectors nearest the query",
       "Sorts documents by upload date",
       "Reads every file with the model",
       "Looks for exact keyword matches"
@@ -2073,7 +2073,7 @@
     "options": [
       "Analyzing label quality",
       "Increasing temperature",
-      "Shortening the prompt",
+      "Shortening the system prompt",
       "Adding more Regions"
     ],
     "correct": [
@@ -2094,7 +2094,7 @@
     "options": [
       "RAG with cited source passages",
       "Higher temperature sampling",
-      "Removing the system prompt",
+      "Removing the system prompt entirely",
       "Longer output limits"
     ],
     "correct": [
@@ -2155,7 +2155,7 @@
     "skill": "Context engineering",
     "stem": "What is context engineering in an FM application?",
     "options": [
-      "Choosing what information goes into the context",
+      "Choosing what the model sees",
       "Training a new model from scratch",
       "Writing the model's source code",
       "Setting the model's price per token"
@@ -2197,7 +2197,7 @@
     "skill": "Evaluation metrics",
     "stem": "Why use BERTScore instead of word overlap to compare a response with a reference?",
     "options": [
-      "It credits same meaning in other words",
+      "It credits paraphrased meaning",
       "It measures response speed",
       "It needs no reference text",
       "It counts exact word matches only"
@@ -2218,9 +2218,9 @@
     "skill": "Transparent models",
     "stem": "What makes a model transparent?",
     "options": [
-      "It runs on public servers",
+      "It runs on public, shared servers",
       "It has the most parameters",
-      "People can see how it reaches outputs",
+      "Its reasoning can be inspected",
       "It is free to use"
     ],
     "correct": [
@@ -2237,15 +2237,15 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Governance services",
-    "stem": "Which service tracks configuration changes to AWS resources and checks them against rules?",
+    "stem": "Which service records how the settings of an AI workload's resources change and flags rule breaks?",
     "options": [
-      "AWS Config",
-      "AWS Artifact",
       "AWS CloudTrail Lake",
-      "Amazon Polly"
+      "Amazon Polly",
+      "AWS Artifact",
+      "AWS Config"
     ],
     "correct": [
-      0
+      3
     ],
     "explanation": "AWS Config records resource configurations over time and evaluates them against compliance rules."
   },
@@ -2344,7 +2344,7 @@
     "skill": "Evaluation approaches",
     "stem": "Which approach is best for judging tone and brand voice in marketing copy?",
     "options": [
-      "BLEU against old copy",
+      "BLEU scores against past campaigns",
       "Token count per answer",
       "Human evaluators with a rubric",
       "Latency per request"
@@ -2386,10 +2386,10 @@
     "skill": "Human-centered design",
     "stem": "Which feature supports human-centered design for an AI loan tool?",
     "options": [
-      "Removing any way to appeal",
+      "Removing every way to appeal a decision",
       "Hiding model output from staff",
       "Raising the model's temperature",
-      "Showing the reasons behind each decision"
+      "Explaining each decision"
     ],
     "correct": [
       3
@@ -2405,17 +2405,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Governance services",
-    "stem": "Which service scans EC2 instances and container images used by an AI app for software vulnerabilities?",
+    "stem": "An AI app runs on Lambda functions and container images. Which service finds known vulnerabilities in them?",
     "options": [
-      "Amazon Inspector",
-      "AWS Budgets",
+      "Amazon Macie",
       "AWS Artifact",
-      "Amazon Macie"
+      "Amazon Inspector",
+      "AWS Trusted Advisor"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "Inspector continuously scans workloads for known vulnerabilities and network exposure. Macie looks for sensitive data in S3."
+    "explanation": "Inspector continuously scans EC2 instances, Lambda functions and container images for known vulnerabilities. Macie looks for sensitive data in S3."
   },
   {
     "id": "AWSAIF-T2-050",
@@ -2429,7 +2429,7 @@
     "stem": "A team wants to save tested prompt versions with variables and compare variants. Which Bedrock feature fits?",
     "options": [
       "Amazon Bedrock Prompt Management",
-      "Amazon Bedrock Guardrails",
+      "Amazon Bedrock Model Evaluations",
       "Bedrock Knowledge Bases",
       "AgentCore Memory"
     ],
@@ -2447,17 +2447,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "AWS managed AI services",
-    "stem": "A company wants to find the overall sentiment and key phrases in thousands of product reviews without training a model. Which service fits?",
+    "stem": "A company wants the language and named entities in each support ticket without training a model. Which service fits?",
     "options": [
-      "Amazon Rekognition",
-      "Amazon Personalize",
       "Amazon Polly",
-      "Amazon Comprehend"
+      "Amazon Personalize",
+      "Amazon Comprehend",
+      "Amazon Rekognition"
     ],
     "correct": [
-      3
+      2
     ],
-    "explanation": "Amazon Comprehend is a managed NLP service that detects sentiment, key phrases, entities and language in text. Rekognition analyzes images and video."
+    "explanation": "Amazon Comprehend is a managed NLP service that detects language, entities, key phrases and sentiment in text. Rekognition analyzes images and video."
   },
   {
     "id": "AWSAIF-T2-052",
@@ -2470,8 +2470,8 @@
     "skill": "Multi-agent patterns",
     "stem": "In a supervisor multi-agent pattern, what does the supervisor agent do?",
     "options": [
-      "Splits the task and routes parts to specialists",
-      "Stores every embedding for the others",
+      "Routes subtasks to specialist agents",
+      "Stores embeddings for the others",
       "Blocks all calls to external tools",
       "Trains the other agents' models"
     ],
@@ -2491,8 +2491,8 @@
     "skill": "AWS infrastructure benefits",
     "stem": "Why does building on AWS GenAI services lower the barrier to entry for a small team?",
     "options": [
-      "They make outputs always accurate",
-      "Managed models avoid building infrastructure",
+      "Outputs are always accurate without review",
+      "No GPUs or models to build",
       "They remove the need for any data",
       "They work without an AWS account"
     ],
@@ -2513,7 +2513,7 @@
     "stem": "What is a benchmark dataset used for in FM evaluation?",
     "options": [
       "Encrypting prompts at rest",
-      "Comparing models on the same standard tasks",
+      "Comparing models on equal tasks",
       "Storing embeddings for RAG",
       "Training the model from scratch"
     ],
@@ -2552,15 +2552,15 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Data governance",
-    "stem": "A regulation requires customer data to stay in one country. Which data governance concern is this?",
+    "stem": "Prompts with health records may be processed only inside the EU. Which data governance concern is this?",
     "options": [
-      "Data residency",
+      "Data lineage",
       "Data augmentation",
-      "Data labeling",
-      "Data lineage"
+      "Data residency",
+      "Data labeling"
     ],
     "correct": [
-      0
+      2
     ],
     "explanation": "Data residency rules where data is stored and processed. Teams choose Regions and services that keep data in place."
   },
@@ -2575,10 +2575,10 @@
     "skill": "Prompt risks",
     "stem": "Instructions hidden in a web page tell a browsing agent to email out customer data. What risk is this?",
     "options": [
-      "Embedding drift",
+      "Training data memorization",
       "Token limit exceeded",
       "Model overfitting",
-      "Hijacking through indirect injection"
+      "Indirect prompt injection"
     ],
     "correct": [
       3
@@ -2804,15 +2804,15 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Tokens",
-    "stem": "What is the context window of an LLM?",
+    "stem": "A contract is too long to send to a model in one call. Which model limit is it hitting?",
     "options": [
-      "Number of users it serves at once",
-      "Size of its training dataset",
-      "Time limit for each request",
-      "Most tokens it can handle in one request"
+      "Request rate quota",
+      "Temperature range",
+      "Context window",
+      "Embedding dimension"
     ],
     "correct": [
-      3
+      2
     ],
     "explanation": "The context window caps how many tokens of input and output a model can process together. Long documents may need chunking or summarizing to fit."
   },
@@ -2828,9 +2828,9 @@
     "stem": "Which risk comes from an LLM's knowledge stopping at its training cutoff?",
     "options": [
       "Slower responses each month",
-      "Out-of-date answers about recent events",
+      "Outdated answers",
       "Loss of the model's weights",
-      "Higher token prices over time"
+      "Token prices rising as the model ages"
     ],
     "correct": [
       1
@@ -2850,8 +2850,8 @@
     "options": [
       "Size of the context window",
       "Price tier of the model",
-      "Share of probable tokens to sample from",
-      "Number of prompts per minute"
+      "Pool of likely next tokens",
+      "Maximum number of prompts per minute"
     ],
     "correct": [
       2
@@ -2869,7 +2869,7 @@
     "skill": "Training elements",
     "stem": "What does fine-tuning change in a foundation model?",
     "options": [
-      "Its weights, using task-specific data",
+      "Its weights, from task data",
       "The vector store it reads from",
       "Only the prompt sent at run time",
       "The AWS Region it runs in"
@@ -2932,7 +2932,7 @@
     "skill": "ML pipeline",
     "stem": "Which stage of an ML project should come first?",
     "options": [
-      "Choosing an instance type",
+      "Choosing an instance type for training",
       "Tuning the learning rate",
       "Setting up monitoring",
       "Defining the business problem"
@@ -2974,7 +2974,7 @@
     "skill": "Embeddings",
     "stem": "Which task is a typical use of embeddings?",
     "options": [
-      "Encrypting customer records",
+      "Encrypting customer records at rest",
       "Compressing video files",
       "Semantic search over documents",
       "Rendering images in a browser"
@@ -3016,10 +3016,10 @@
     "skill": "RAG",
     "stem": "Why do RAG answers often include citations?",
     "options": [
-      "To make responses shorter",
-      "To raise the model's temperature",
-      "So users can check the source passages",
-      "To train the model on the answer"
+      "It makes responses shorter",
+      "It raises the model's temperature",
+      "Users can verify the sources",
+      "It trains the model on each answer"
     ],
     "correct": [
       2
@@ -3038,7 +3038,7 @@
     "stem": "What does domain adaptation of an FM aim to do?",
     "options": [
       "Shrink its context window",
-      "Improve it on one field's language and tasks",
+      "Better results in one field",
       "Lower its token price",
       "Make it run in more Regions"
     ],
@@ -3100,7 +3100,7 @@
     "skill": "ML pipeline",
     "stem": "What does exploratory data analysis do in an ML pipeline?",
     "options": [
-      "Finds patterns, gaps and outliers in data",
+      "Finds patterns, gaps and outliers",
       "Encrypts the training dataset",
       "Retrains the model on a schedule",
       "Serves predictions to an application"
@@ -3121,7 +3121,7 @@
     "skill": "Agentic AI",
     "stem": "What sets agentic AI apart from a chatbot that only answers questions?",
     "options": [
-      "It works without any instructions",
+      "It answers faster with more data",
       "It plans steps and uses tools to act",
       "It generates text with no model",
       "It only classifies images"
@@ -3164,7 +3164,7 @@
     "stem": "Which AgentCore service lets an agent run code safely in an isolated sandbox?",
     "options": [
       "AgentCore Observability",
-      "AgentCore Gateway",
+      "AgentCore Memory long-term store",
       "AgentCore Code Interpreter",
       "AgentCore Identity"
     ],
@@ -3187,7 +3187,7 @@
       "Chunking and retrieval settings",
       "Billing alarm thresholds",
       "IAM password policy",
-      "Model temperature only"
+      "Model temperature and Top P only"
     ],
     "correct": [
       0
@@ -3205,7 +3205,7 @@
     "skill": "Data for fine-tuning",
     "stem": "Why is data governance part of preparing fine-tuning data?",
     "options": [
-      "It replaces labeling",
+      "It replaces data labeling",
       "It speeds up GPU training",
       "It sets the model's temperature",
       "Data must be allowed for this use"
@@ -3247,10 +3247,10 @@
     "skill": "AI threats",
     "stem": "Why should a GenAI app log prompts and responses?",
     "options": [
-      "To lower token prices",
-      "To speed up inference",
-      "To support audits and incident review",
-      "To raise the model's accuracy"
+      "Lowering token prices",
+      "Speeding up inference",
+      "Audits and incident review",
+      "Raising the model's accuracy"
     ],
     "correct": [
       2
@@ -3331,7 +3331,7 @@
     "skill": "AWS GenAI services",
     "stem": "Which AgentCore service traces each step of an agent's work so teams can debug it in production?",
     "options": [
-      "AgentCore Browser",
+      "AgentCore Code Interpreter",
       "AgentCore Memory",
       "AgentCore Runtime",
       "AgentCore Observability"
@@ -3415,7 +3415,7 @@
     "skill": "Secure data engineering",
     "stem": "What does data integrity mean for a training pipeline?",
     "options": [
-      "Data is labeled by many people",
+      "Data is labeled by many different people",
       "Data is shared publicly",
       "Data is not altered without authorization",
       "Data is stored in many formats"
@@ -3481,7 +3481,7 @@
       "Its tokens are billed on each request",
       "It forces provisioned throughput",
       "It raises the model's training cost",
-      "It switches the model to batch mode"
+      "It switches calls into batch mode"
     ],
     "correct": [
       0
@@ -3499,10 +3499,10 @@
     "skill": "Cost tradeoffs",
     "stem": "A Bedrock model is not offered in the Region where the company runs its app. What is the main tradeoff?",
     "options": [
-      "Added latency or data residency concerns",
-      "No need for IAM roles",
+      "Latency or residency issues",
+      "No need for IAM roles or policies",
       "Automatic fine-tuning",
-      "Lower price per token"
+      "Lower price per token in that Region"
     ],
     "correct": [
       0
@@ -3542,7 +3542,7 @@
     "stem": "Which Amazon Bedrock capability runs evaluation jobs on models with built-in or custom prompt datasets?",
     "options": [
       "Amazon Bedrock Guardrails",
-      "AgentCore Gateway",
+      "Amazon Bedrock Knowledge Bases",
       "Amazon Bedrock Evaluations",
       "Bedrock Prompt Management"
     ],
@@ -3646,9 +3646,9 @@
     "skill": "Agentic AI",
     "stem": "What is workflow orchestration in an agentic system?",
     "options": [
-      "Coordinating the order of agent and tool steps",
+      "Coordinating agent and tool steps",
       "Choosing an AWS Region for models",
-      "Encrypting messages between agents",
+      "Encrypting agent messages",
       "Labeling data for fine-tuning"
     ],
     "correct": [
@@ -3709,7 +3709,7 @@
     "skill": "Evaluation approaches",
     "stem": "Why add a human-in-the-loop review step to FM evaluation?",
     "options": [
-      "It removes the need for test data",
+      "No test data is needed",
       "It lowers storage costs",
       "People catch errors metrics miss",
       "It makes inference faster"
@@ -3730,7 +3730,7 @@
     "skill": "Bias effects",
     "stem": "A speech model has a higher error rate for one accent. What is the main effect?",
     "options": [
-      "Faster responses for everyone",
+      "Faster replies for everyone",
       "Worse service for that group",
       "Lower cloud storage costs",
       "Smaller model weights"
@@ -3754,7 +3754,7 @@
       "Amazon Inspector",
       "Amazon Macie",
       "AWS Trusted Advisor",
-      "AWS Artifact"
+      "Amazon CloudWatch Logs"
     ],
     "correct": [
       2
@@ -3774,8 +3774,8 @@
     "options": [
       "No infrastructure to manage",
       "Billing only per token used",
-      "AWS patches the servers for it",
-      "Full control over the model and hardware"
+      "AWS patches and scales the servers for it",
+      "Full control of the stack"
     ],
     "correct": [
       3
@@ -3817,7 +3817,7 @@
       "Swarm",
       "Supervisor routing",
       "Sequential pipeline",
-      "Single agent loop"
+      "Single agent tool loop"
     ],
     "correct": [
       2
@@ -3836,8 +3836,8 @@
     "stem": "What does cross-domain performance mean when judging a GenAI model's value?",
     "options": [
       "Supporting many payment methods",
-      "Doing well across many kinds of tasks",
-      "Being trained by several teams",
+      "Strength across many tasks",
+      "Being trained by several separate teams",
       "Running in several AWS Regions"
     ],
     "correct": [
@@ -3941,9 +3941,9 @@
     "stem": "What is technical debt in an ML system?",
     "options": [
       "Cost of labeling new data",
-      "Shortcuts that make later changes costly",
+      "Shortcuts that raise future costs",
       "Unpaid compute bills for training",
-      "Gap between test and live accuracy"
+      "Test and live accuracy gap"
     ],
     "correct": [
       1
@@ -3982,7 +3982,7 @@
     "skill": "Diffusion models",
     "stem": "A marketing team wants new product images from a text description. Which model type fits?",
     "options": [
-      "Speech recognition model",
+      "Speech-to-text recognition model",
       "Text classification model",
       "Regression model",
       "Text-to-image diffusion model"
@@ -4004,8 +4004,8 @@
     "stem": "Under the shared responsibility model, what does AWS secure for Amazon Bedrock?",
     "options": [
       "Customer prompts' wording",
-      "IAM users the customer creates",
-      "Infrastructure that runs the service",
+      "IAM users and roles the customer creates",
+      "Underlying infrastructure",
       "Data customers choose to share"
     ],
     "correct": [
@@ -4025,9 +4025,9 @@
     "stem": "What is prompt poisoning?",
     "options": [
       "Writing prompts in two languages",
-      "Planting harmful content the model will read",
+      "Planting bad input data",
       "Using too many examples in a prompt",
-      "Raising temperature above 1"
+      "Raising the temperature setting above 1"
     ],
     "correct": [
       1
@@ -4069,7 +4069,7 @@
       "Filters cannot be written down",
       "Publishing them raises token prices",
       "It shrinks the model's context",
-      "Attackers could use them to get around them"
+      "Attackers could learn to evade them"
     ],
     "correct": [
       3

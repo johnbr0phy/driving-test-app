@@ -93,7 +93,7 @@ Q = [
 ("A trauma patient's whole spine is reformatted from a chest, abdomen and pelvis CT. Which algorithm is used for the spine images?",
  "Bone kernel", ["Soft tissue kernel only", "Lung kernel only", "Smooth brain kernel"],
  "Spine reformats from the trauma data set are reconstructed with a bone kernel to show fractures; the soft tissue kernel serves the organs."),
-("Which bony landmark marks the usual lower end of a CT of the lumbosacral spine?",
- "Through S1", ["T12 only", "Iliac crests only", "Femoral necks"],
- "A lumbosacral spine study runs from about T12 or L1 through the sacrum at least to S1, covering the L5-S1 disc and lumbosacral junction."),
+("On sagittal reformats of a lumbar spine CT, L5 has slipped forward on S1. What is this called?",
+ "Spondylolisthesis", ["Spondylolysis", "Schmorl node", "Facet hypertrophy"],
+ "Spondylolisthesis is the forward slip of one vertebral body on the one below, best seen on sagittal reformats. Spondylolysis is the pars interarticularis defect that can lead to it; a Schmorl node is disc material pushed into an endplate."),
 ]

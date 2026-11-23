@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: "What changed on the ARRT CT exam in September 2026?",
-    a: "ARRT revised its CT documents with effect from September 1, 2026. The outline adds the time-out, power injection options, timing bolus and bolus tracking, adverse event reporting, cardiac studies such as TAVR planning, esophagram, urogram, renal stone, retrograde cystogram and CT colonography, and replaces pediatric with infant and young child. Biliary studies were removed. ARRT also approved an updated passing standard from the same date.",
+    a: "ARRT revised its CT documents with effect from September 1, 2026. ARRT says the outline adds the time-out, power injection options and scanning techniques, adverse event reporting, external equipment, and the esophagram, urogram, renal stone, retrograde cystogram and virtual colonography procedures. Lumbar became lumbosacral, heart became cardiac with more detail, and pediatric became infant and young child. Biliary and sacrum and coccyx were removed, and the total number of scored questions is unchanged. ARRT also approved an updated passing standard from the same date.",
   },
   {
     q: "Are these the real ARRT CT exam questions?",

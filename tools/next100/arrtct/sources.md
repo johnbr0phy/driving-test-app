@@ -74,3 +74,21 @@ app or any published question set.
   and stems say "typical" or "commonly".
 - No exam-admin questions; no commercial prep provider named.
 - Facts already asked in the ARRT Radiography bank (`arrt`) are not repeated with the same answer.
+
+## Typical clinical values (checked at second review, 2026-11-22)
+
+- The Royal College of Radiologists, Recommendations for cross-sectional imaging in cancer
+  management, 3rd edition, section 16 Pancreas (April 2022), fetched 2026-11-22:
+  https://www.rcr.ac.uk/media/fbpf4egu/rcr-publications_recommendations-for-cross-sectional-imaging-in-cancer-management-third-edition-16-pancreas_april-2022.pdf
+  Pancreatic phase 35 to 40 seconds and portal venous phase 65 to 70 seconds. Published protocols
+  vary (40 to 50 seconds in trial protocols), so the pancreatic stem says "about 40 seconds" and the
+  portal stem "about 70 seconds".
+- Agatston et al., Quantification of coronary artery calcium using ultrafast CT, J Am Coll Cardiol
+  1990: calcium is a lesion of at least 130 HU (the definition behind every calcium score).
+- Prospective triggering at mid-diastole (about 70 to 75% of R-R) and a target heart rate under
+  about 60 to 65 for coronary CTA follow the SCCT guidelines for coronary CTA acquisition; stems say
+  "commonly" and "about".
+- Adrenal: 10 HU or less on noncontrast CT indicates a lipid-rich adenoma (ACR Incidental Findings
+  Committee white paper on adrenal incidentalomas, JACR 2017). AAA: aortic diameter of 3 cm or more
+  (Society for Vascular Surgery practice guideline, 2018). Carina at about T4 to T5 and the iodine
+  K-edge at 33.2 keV are standard anatomy and physics.

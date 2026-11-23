@@ -13,7 +13,7 @@ Q = [
 ("Behind the neck of the pancreas, the splenic vein joins which vessel to form the portal vein?",
  "Superior mesenteric vein", ["Inferior vena cava", "Left renal vein", "Proper hepatic artery"],
  "The splenic vein and superior mesenteric vein join behind the pancreatic neck to form the portal vein."),
-("A pancreatic protocol CT includes a pancreatic phase at about 40 to 45 seconds. Why?",
+("A pancreatic protocol CT includes a pancreatic phase at about 40 seconds after injection starts. Why?",
  "Peak gland enhancement", ["Peak bladder filling", "Best ureter filling", "Lowest possible dose"],
  "The normal pancreas enhances most in this phase, so a poorly enhancing adenocarcinoma stands out as a darker mass."),
 ("On a pancreatic phase CT, how does a typical pancreatic adenocarcinoma appear?",

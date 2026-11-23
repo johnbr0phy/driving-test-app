@@ -7294,6 +7294,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "NASAA's Series 63 overview and test specifications (effective June 12, 2023) and FINRA's Series 63 page, checked November 2026",
     source: { name: "NASAA: Series 63 Exam", url: "https://www.nasaa.org/exams/study-guides/series-63-exam-content-outline/" },
   },
+  series6: {
+    answer:
+      "The Series 6 is FINRA's Investment Company and Variable Contracts Products Representative exam. It has 50 scored multiple-choice questions with four choices each, plus 5 unscored pretest questions, in 1 hour and 30 minutes, and the passing score is 70, an equated scaled score. Passed together with the SIE, its corequisite, it lets a person sell mutual funds, variable annuities, variable life insurance, unit investment trusts and 529 plans. FINRA's outline has four functions: investment information, recommendations and records 50%, seeking business 24%, opening accounts 16% and processing transactions 10%.",
+    rows: [
+      { label: "Questions", value: "50 scored, plus 5 unscored" },
+      { label: "Time", value: "1 hour 30 minutes" },
+      { label: "Passing score", value: "70" },
+      { label: "Largest function", value: "Investment information and recommendations, 50%" },
+      { label: "Products covered", value: "Mutual funds, variable annuities and life, UITs, 529 plans" },
+      { label: "Corequisite", value: "SIE" },
+      { label: "Run by", value: "FINRA" },
+    ],
+    basedOn: "FINRA's Series 6 content outline and Series 6 exam page, checked November 2026",
+    source: { name: "FINRA: Series 6 Exam", url: "https://www.finra.org/registration-exams-ce/qualification-exams/series6" },
+  },
   series66: {
     answer:
       "The Series 66 is the Uniform Combined State Law Examination, written by NASAA and administered by FINRA. It has 110 multiple-choice questions, 100 scored and 10 unscored, in 150 minutes, and you pass by answering at least 73 of the 100 scored questions correctly. Passed with the Series 7, its corequisite, it lets a state register a person as both an agent of a broker-dealer and an investment adviser representative. NASAA's outline has four sections: laws, regulations and ethics 45%, client recommendations and strategies 30%, investment vehicles 17% and economic factors 8%.",

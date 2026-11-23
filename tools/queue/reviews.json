@@ -1582,5 +1582,13 @@
       "pr": 986,
       "findings": 7
     }
+  ],
+  "series6": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 0,
+      "findings": 10
+    }
   ]
 }

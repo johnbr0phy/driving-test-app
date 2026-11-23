@@ -153,3 +153,34 @@ dantrolene, anaphylaxis, peroneal nerve, OSHA needle and vaccine rules, PDSA, IR
 Remaining shared keys are different facts (for example "Bupivacaine" here is about lipid
 emulsion, elsewhere about duration). CCI publishes no public question catalogue; its practice
 tests were not opened, so no similarity check against official items was possible or needed.
+
+## Second review (2026-11-23)
+
+- WHO Surgical Safety Checklist Implementation Manual (2009), PDF copy hosted by Leapfrog, read
+  2026-11-23: https://www.leapfroggroup.org/sites/default/files/Files/WHO_SafeSurgeryChecklistImplementationManual.pdf
+  Sign out: nurse verbally confirms specimen labelling ("read specimen labels aloud, including
+  patient name"). Site marking: the surgeon performing the operation marks the site, usually with
+  a permanent felt-tip marker, in cases with laterality or multiple structures or levels. This now
+  supports CAR-031, CAR-032, CAR-033 (rewritten to the marker) and CAR-037 directly; the "visible
+  after draping" item was rewritten because only a search extract supported it.
+- FDA, Reprocessing Single-Use Medical Devices page, fetched 2026-11-23 (same URL as above):
+  reprocessors of SUDs are held to the same regulatory requirements as the original manufacturer
+  (MGT-005 confirmed).
+- OSHA, Hospitals eTool, surgical suite smoke plume, fetched 2026-11-23 (same URL as above):
+  evacuator in every room that generates plume, inlet within 2 inches of the site (CAR-009
+  confirmed).
+- CDC 2008 disinfection and sterilization guideline (UW copy above): burns from hot flash-sterilized
+  instruments, cooled by air or immersion in sterile liquid such as saline (new INF-010); sterile
+  items open to air become contaminated with time (new INF-031).
+- LAST review PMC11237253 (above): aspirate before injection even with ultrasound, inject in small
+  aliquots (new EMG-015).
+- Positioning scoping review PMC7948884 (above): shear rises in Fowler and semi-Fowler positions
+  (new CAR-019).
+- Rewritten for repeats: CAR-019 (CST-PRE-019 peroneal nerve in lithotomy), EMG-015 (CST-PHM-012
+  lipid emulsion), INF-031 (CST-PRE-015 first flap away from the body), INF-010 (CRCST SPD-PRP-039
+  event-related sterility definition), CAR-003 (CST-INT-080 alcohol prep drying, now asks why).
+- Widely taught OR practice kept without a public primary source because each key is the only
+  defensible option: gown front sterile chest to field level (INF-032), joint count at a permanent
+  relief handoff (CAR-029), industry reps give technical advice only (MGT-006), rapid robotic
+  undocking drills (EMG-018), mask in the restricted zone (INF-026; CDC 1999 masks when sterile
+  items are exposed), labeling medications on the field (CAR-034/035).

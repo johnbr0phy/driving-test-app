@@ -5815,6 +5815,20 @@
     --brand-gradient-to: 282 40% 95%;
   }
 
+  /* Microsoft DP-900 theme: deep sea green (v2 exam; matches lib/v2/exams/dp900.ts theme) */
+  [data-theme="dp900"] {
+    --brand: 156 55% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 156 55% 96%;
+    --brand-hover: 156 55% 11%;
+    --brand-dark: 156 55% 10%;
+    --brand-darker: 156 50% 7%;
+    --brand-muted: 156 25% 70%;
+    --brand-border: 156 25% 80%;
+    --brand-border-light: 156 25% 89%;
+    --brand-gradient-to: 176 45% 95%;
+  }
+
   /* CompTIA Data+ theme: deep green teal (v2 exam; matches lib/v2/exams/dataplus.ts theme) */
   [data-theme="dataplus"] {
     --brand: 152 75% 14%;
@@ -12817,6 +12831,18 @@
     --brand-muted: 262 20% 45%;
     --brand-dark: 262 40% 65%;
     --brand-darker: 262 35% 78%;
+  }
+
+  .dark [data-theme="dp900"] {
+    --brand: 156 55% 33.4%;
+    --brand-hover: 156 55% 25.4%;
+    --brand-light: 156 45% 13%;
+    --brand-gradient-to: 176 40% 11%;
+    --brand-border-light: 156 25% 24%;
+    --brand-border: 156 25% 34%;
+    --brand-muted: 156 25% 45%;
+    --brand-dark: 156 55% 65%;
+    --brand-darker: 156 50% 78%;
   }
 
   .dark [data-theme="dataplus"] {

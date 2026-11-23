@@ -336,6 +336,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   serverplus: { title: "CompTIA Server+ SK0-005", description: "Practice racking, RAID and storage, server administration, virtualization, security, backups and troubleshooting." },
   techplus: { title: "CompTIA Tech+", description: "Practice computing basics, hardware, networking, software, coding concepts, databases and security." },
   ccst: { title: "Cisco CCST Networking", description: "Practice network models, IPv4 and IPv6 addressing, cables and Wi-Fi, switches and routers, troubleshooting and security." },
+  dp900: { title: "Microsoft DP-900", description: "Practise data formats, SQL, Azure SQL, Blob storage, Cosmos DB, Microsoft Fabric, Databricks and Power BI." },
   az104: { title: "Microsoft AZ-104", description: "Practise Entra ID, RBAC, Azure Policy, storage, VMs, App Service, networking, Azure Monitor and Backup." },
   sc200: { title: "Microsoft SC-200", description: "Practise Defender XDR, Microsoft Sentinel, detections, incident response and KQL threat hunting." },
   ccnpencor: { title: "Cisco CCNP ENCOR 350-401", description: "Practise SD-WAN and SD-Access, VRF and VXLAN, spanning tree, OSPF and BGP, assurance, security and automation, all explained." },

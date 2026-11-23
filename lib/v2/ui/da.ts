@@ -123,7 +123,7 @@ export const DA: V2UiTranslation = {
     selectAll: "Vælg alle svar, der passer.",
     srCorrect: "Rigtigt. ",
     srNotQuite: "Forkert. ",
-    correct: "Rigtigt",
+    correct: "Rigtigt!",
     notQuite: "Forkert",
     skill: (skill: string) => `Færdighed: ${skill}`,
 
@@ -404,6 +404,9 @@ export const DA: V2UiTranslation = {
     firstTryDetail: (firstTry: number, outOf: number) => `${firstTry} af ${outOf} rigtige i første forsøg`,
     retriedDetail: (n: number) => `${n} rettet i et nyt forsøg`,
     nextSkill: (skill: string) => `Næste færdighed: ${skill}`,
+    nextQuestion: "Næste spørgsmål",
+    questionsCorrect: "spørgsmål rigtige",
+    viewStats: "Se statistik",
     tryPracticeChild: "Prøv øvelsesspørgsmålene",
     tryExamLevel: "Prøv spørgsmål på prøveniveau",
     learnAgain: "Lær det igen",

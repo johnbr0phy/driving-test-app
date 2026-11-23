@@ -136,7 +136,7 @@ export const DE: V2UiTranslation = {
     selectAll: "Wähle alle zutreffenden Antworten.",
     srCorrect: "Richtig. ",
     srNotQuite: "Falsch. ",
-    correct: "Richtig",
+    correct: "Richtig!",
     notQuite: "Falsch",
     skill: (skill: string) => `Fertigkeit: ${skill}`,
 
@@ -445,6 +445,9 @@ export const DE: V2UiTranslation = {
     firstTryDetail: (firstTry: number, outOf: number) => `${firstTry} von ${outOf} beim ersten Versuch richtig`,
     retriedDetail: (n: number) => `${n} beim zweiten Versuch korrigiert`,
     nextSkill: (skill: string) => `Nächste Fertigkeit: ${skill}`,
+    nextQuestion: "Nächste Frage",
+    questionsCorrect: "Fragen richtig",
+    viewStats: "Statistiken ansehen",
     tryPracticeChild: "Probier die Übungsfragen",
     tryExamLevel: "Fragen auf Prüfungsniveau probieren",
     learnAgain: "Noch einmal lernen",

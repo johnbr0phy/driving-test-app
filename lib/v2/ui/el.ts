@@ -127,7 +127,7 @@ export const EL: V2UiTranslation = {
     selectAll: "Διάλεξε όλες τις απαντήσεις που ισχύουν.",
     srCorrect: "Σωστό. ",
     srNotQuite: "Λάθος. ",
-    correct: "Σωστό",
+    correct: "Σωστά!",
     notQuite: "Λάθος",
     skill: (skill: string) => `Δεξιότητα: ${skill}`,
 
@@ -409,6 +409,9 @@ export const EL: V2UiTranslation = {
     firstTryDetail: (firstTry: number, outOf: number) => `${firstTry} από ${outOf} σωστές με την πρώτη`,
     retriedDetail: (n: number) => `${n} διορθώθηκαν σε νέα προσπάθεια`,
     nextSkill: (skill: string) => `Επόμενη δεξιότητα: ${skill}`,
+    nextQuestion: "Επόμενη ερώτηση",
+    questionsCorrect: "σωστές ερωτήσεις",
+    viewStats: "Δες τα στατιστικά",
     tryPracticeChild: "Δοκίμασε τις ερωτήσεις εξάσκησης",
     tryExamLevel: "Δοκίμασε ερωτήσεις επιπέδου εξέτασης",
     learnAgain: "Μάθε το ξανά",

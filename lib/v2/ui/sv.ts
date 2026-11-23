@@ -136,7 +136,7 @@ export const SV: V2UiTranslation = {
     selectAll: "Välj alla svar som stämmer.",
     srCorrect: "Rätt. ",
     srNotQuite: "Fel. ",
-    correct: "Rätt",
+    correct: "Rätt!",
     notQuite: "Fel",
     skill: (skill: string) => `Färdighet: ${skill}`,
 
@@ -445,6 +445,9 @@ export const SV: V2UiTranslation = {
     firstTryDetail: (firstTry: number, outOf: number) => `${firstTry} av ${outOf} rätt på första försöket`,
     retriedDetail: (n: number) => `${n} rättade vid ett nytt försök`,
     nextSkill: (skill: string) => `Nästa färdighet: ${skill}`,
+    nextQuestion: "Nästa fråga",
+    questionsCorrect: "rätta svar",
+    viewStats: "Visa statistik",
     tryPracticeChild: "Prova övningsfrågorna",
     tryExamLevel: "Prova frågor på provnivå",
     learnAgain: "Lär dig den igen",

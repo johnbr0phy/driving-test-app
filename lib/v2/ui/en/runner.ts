@@ -126,7 +126,7 @@ export const runner = {
   selectAll: "Select every answer that applies.",
   srCorrect: "Correct. ",
   srNotQuite: "Incorrect. ",
-  correct: "Correct",
+  correct: "Correct!",
   notQuite: "Incorrect",
   skill: (skill: string) => `Skill: ${skill}`,
 

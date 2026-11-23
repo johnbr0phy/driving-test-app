@@ -8,6 +8,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { FocusBar } from "@/components/FocusBar";
+import { Card, CardContent } from "@/components/ui/card";
 import { NextButton } from "@/components/question/NextButton";
 import { RotateCcw, Lock, BookOpen, Play } from "lucide-react";
 import { ExamV2Config, AnswerValue, QuestionV2 } from "@/lib/v2/types";
@@ -212,17 +213,19 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
         exitHref={backHref}
         exitLabel={ui.common.back}
         title={drill.name}
-        subtitle={`${t.masteredCount(mastered, questions.length)}${state.wrongQueue.length ? t.toRetry(state.wrongQueue.length) : ""}`}
-        progress={questions.length ? mastered / questions.length : 0}
+        subtitle={`${mastered}/${questions.length} ${t.questionsCorrect}`}
+        progress={questions.length ? mastered / questions.length : undefined}
         right={
-          <button type="button" onClick={() => setConfirmReset(true)} className="flex h-10 w-10 items-center justify-center rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800" aria-label={t.resetAria}>
-            <RotateCcw className="h-5 w-5" />
-          </button>
+          user ? (
+            <Link href={routes.stats} className="text-sm font-medium text-brand-dark hover:text-brand-darker transition-colors">
+              {t.viewStats}
+            </Link>
+          ) : undefined
         }
       />
 
       <div className="v2-scroll" ref={scroller}>
-        <div className="mx-auto max-w-2xl px-4 py-4">
+        <div className="relative container mx-auto px-4 py-4 max-w-lg md:max-w-2xl lg:max-w-4xl">
           {done ? (
             <AchievementCelebration
               examId={exam.id}
@@ -247,17 +250,23 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
           ) : sharePrompt.showing ? (
             <SharePromptStep onShared={sharePrompt.shared} onSkip={() => { sharePrompt.skip(); load(); }} />
           ) : question ? (
-            <QuestionView focusOnChange
-              key={question.id}
-              question={question}
-              stimulus={getStimulus(exam.id, question)}
-              optionOrder={order}
-              answer={answer}
-              onAnswer={onAnswer}
-              reveal={revealed}
-              disabled={revealed}
-              layout="stack"
-            />
+            <Card className="w-full">
+              <CardContent className="p-4 md:p-8">
+                <QuestionView focusOnChange
+                  key={question.id}
+                  question={question}
+                  stimulus={getStimulus(exam.id, question)}
+                  optionOrder={order}
+                  answer={answer}
+                  onAnswer={onAnswer}
+                  reveal={revealed}
+                  disabled={revealed}
+                  layout="stack"
+                  actions={!done && !guestPrompt.showing && !sharePrompt.showing ? <NextButton ref={nextRef} onClick={() => { if (earnedMastery || !(guestPrompt.takeStep() || sharePrompt.takeStep())) load(); }}>{t.nextQuestion}</NextButton> : null}
+                  footer={<ReportExamQuestion key={question.id} examId={exam.id} questionId={question.id} picked={v2Pick(question.format, answer)} />}
+                />
+              </CardContent>
+            </Card>
           ) : null}
           {missedSkill && !guestPrompt.showing && !sharePrompt.showing && (
             <div className="v2-pop mt-4 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-4 py-3">
@@ -271,24 +280,27 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
               </button>
             </div>
           )}
-          {revealed && question && !done && !guestPrompt.showing && !sharePrompt.showing && (
-            <div className="mt-4">
-              <ReportExamQuestion key={question.id} examId={exam.id} questionId={question.id} picked={v2Pick(question.format, answer)} />
+          {/* Progress under the card, as on v1 training */}
+          {!done && question && !guestPrompt.showing && !sharePrompt.showing && questions.length > 0 && (
+            <div className="mt-4 md:mt-6 text-center">
+              <div className="flex items-center justify-center gap-1 text-sm md:text-lg text-gray-700 dark:text-gray-200">
+                <span className="font-bold text-xl md:text-2xl text-brand-dark">{mastered}</span>
+                <span className="text-gray-500 dark:text-gray-400">/{questions.length}</span>
+                <span className="text-gray-500 dark:text-gray-400 text-xs md:text-base ml-1">{t.questionsCorrect}</span>
+              </div>
+              <div className="w-full bg-brand-border-light rounded-full h-2 mt-2 max-w-md mx-auto">
+                <div className="bg-brand h-2 rounded-full transition-all" style={{ width: `${pct}%` }} />
+              </div>
             </div>
           )}
         </div>
       </div>
 
-      {!done && question && !guestPrompt.showing && !sharePrompt.showing && (
+      {/* Only formats that need a Check button (select-all, numeric, ordering...) keep a bottom bar; single choice answers on tap like v1. */}
+      {!done && question && !revealed && question.format !== "single" && !guestPrompt.showing && !sharePrompt.showing && (
         <div className="v2-safe-bottom shrink-0 border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 px-3 pt-3">
           <div className="mx-auto flex max-w-2xl gap-2">
-            {revealed ? (
-              <NextButton ref={nextRef} onClick={() => { if (earnedMastery || !(guestPrompt.takeStep() || sharePrompt.takeStep())) load(); }}>{ui.common.next}</NextButton>
-            ) : question.format === "single" ? (
-              <div className="v2-tap flex w-full items-center justify-center text-sm text-gray-500 dark:text-gray-400">{t.tapToCheck}</div>
-            ) : (
-              <button type="button" onClick={() => check()} disabled={!isComplete(question, answer)} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white disabled:opacity-40">{t.check}</button>
-            )}
+            <button type="button" onClick={() => check()} disabled={!isComplete(question, answer)} className="v2-tap w-full rounded-xl bg-brand text-base font-bold text-white disabled:opacity-40">{t.check}</button>
           </div>
         </div>
       )}

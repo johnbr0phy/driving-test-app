@@ -124,7 +124,7 @@ export const HU: V2UiTranslation = {
     selectAll: "Jelöld meg az összes helyes választ.",
     srCorrect: "Helyes. ",
     srNotQuite: "Helytelen. ",
-    correct: "Helyes",
+    correct: "Helyes!",
     notQuite: "Helytelen",
     skill: (skill: string) => `Készség: ${skill}`,
 
@@ -405,6 +405,9 @@ export const HU: V2UiTranslation = {
     firstTryDetail: (firstTry: number, outOf: number) => `${firstTry}/${outOf} elsőre helyes`,
     retriedDetail: (n: number) => `${n} javítva újrapróbálással`,
     nextSkill: (skill: string) => `Következő készség: ${skill}`,
+    nextQuestion: "Következő kérdés",
+    questionsCorrect: "helyes válasz",
+    viewStats: "Statisztikák megtekintése",
     tryPracticeChild: "Próbáld ki a gyakorló kérdéseket",
     tryExamLevel: "Próbáld ki a vizsgaszintű kérdéseket",
     learnAgain: "Tanuld meg újra",

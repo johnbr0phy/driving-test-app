@@ -127,7 +127,7 @@ export const FI: V2UiTranslation = {
     selectAll: "Valitse kaikki oikeat vastaukset.",
     srCorrect: "Oikein. ",
     srNotQuite: "Väärin. ",
-    correct: "Oikein",
+    correct: "Oikein!",
     notQuite: "Väärin",
     skill: (skill: string) => `Taito: ${skill}`,
 
@@ -410,6 +410,9 @@ export const FI: V2UiTranslation = {
     firstTryDetail: (firstTry: number, outOf: number) => `${firstTry}/${outOf} oikein ensimmäisellä yrityksellä`,
     retriedDetail: (c: number) => `${c} korjattu uudella yrityksellä`,
     nextSkill: (skill: string) => `Seuraava taito: ${skill}`,
+    nextQuestion: "Seuraava kysymys",
+    questionsCorrect: "kysymystä oikein",
+    viewStats: "Näytä tilastot",
     tryPracticeChild: "Kokeile harjoituskysymyksiä",
     tryExamLevel: "Kokeile koetason kysymyksiä",
     learnAgain: "Opi se uudelleen",

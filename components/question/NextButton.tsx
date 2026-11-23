@@ -1,13 +1,11 @@
-import type { ButtonHTMLAttributes, Ref } from "react";
+import type { Ref } from "react";
+import { Button } from "@/components/ui/button";
 
-/** The Next button after an answer, shared by v1 training, quizzes and v2 drills. */
-export function NextButton({ ref, className = "", ...button }: ButtonHTMLAttributes<HTMLButtonElement> & { ref?: Ref<HTMLButtonElement> }) {
+/** The "Next Question" button in v1's training look (TrainingCard). */
+export function NextButton({ ref, onClick, children }: { ref?: Ref<HTMLButtonElement>; onClick: () => void; children: React.ReactNode }) {
   return (
-    <button
-      ref={ref}
-      type="button"
-      {...button}
-      className={`h-12 w-full rounded-xl bg-brand text-base font-bold text-white transition-colors [@media(hover:hover)]:hover:bg-brand-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand ${className}`}
-    />
+    <Button ref={ref} onClick={onClick} className="w-full bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200" size="lg">
+      {children}
+    </Button>
   );
 }

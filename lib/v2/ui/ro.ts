@@ -128,7 +128,7 @@ export const RO: V2UiTranslation = {
     selectAll: "Selectează toate răspunsurile corecte.",
     srCorrect: "Corect. ",
     srNotQuite: "Greșit. ",
-    correct: "Corect",
+    correct: "Corect!",
     notQuite: "Greșit",
     skill: (skill: string) => `Abilitate: ${skill}`,
 
@@ -411,6 +411,9 @@ export const RO: V2UiTranslation = {
     firstTryDetail: (firstTry: number, outOf: number) => `${firstTry} din ${outOf} corecte din prima`,
     retriedDetail: (n: number) => `${n} corectate la reîncercare`,
     nextSkill: (skill: string) => `Abilitatea următoare: ${skill}`,
+    nextQuestion: "Întrebarea următoare",
+    questionsCorrect: "întrebări corecte",
+    viewStats: "Vezi statisticile",
     tryPracticeChild: "Încearcă întrebările de exersare",
     tryExamLevel: "Încearcă întrebări de nivel de examen",
     learnAgain: "Învaț-o din nou",

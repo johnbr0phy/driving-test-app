@@ -3,8 +3,7 @@
 import { useId, useEffect, useRef } from "react";
 import { Question } from "@/types";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { AnswerOption, type AnswerOptionState } from "@/components/question/AnswerOption";
-import { AnswerFeedback } from "@/components/question/AnswerFeedback";
+import { CheckCircle2, XCircle } from "lucide-react";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { QuestionImage } from "@/components/QuestionImage";
 
@@ -34,13 +33,21 @@ export function QuestionCard({
 
   const isCorrect = selectedAnswer === question.correctAnswer;
 
-  const stateOf = (value: string): AnswerOptionState => {
+  const getOptionClasses = (optionValue: string) => {
+    const isThisCorrect = optionValue === question.correctAnswer;
+    const isSelected = selectedAnswer === optionValue;
+
     if (showResult) {
-      if (value === question.correctAnswer) return "correct";
-      if (value === selectedAnswer) return "wrong";
-      return "dim";
+      if (isThisCorrect) {
+        return "border-green-500 bg-green-50 dark:bg-green-950";
+      } else if (isSelected && !isCorrect) {
+        return "border-red-500 bg-red-50 dark:bg-red-950";
+      }
+      return "border-gray-300 dark:border-gray-700 opacity-50";
     }
-    return value === selectedAnswer ? "selected" : "idle";
+
+    if (isSelected) return "border-brand bg-brand-light ring-1 ring-brand";
+    return "border-gray-300 dark:border-gray-700 [@media(hover:hover)]:hover:border-brand [@media(hover:hover)]:hover:bg-brand-light active:border-brand active:bg-brand-light cursor-pointer";
   };
 
   return (
@@ -53,26 +60,41 @@ export function QuestionCard({
       </CardHeader>
       <CardContent>
         <div role="group" aria-labelledby={headingId} className="space-y-3">
-          {options.map((option) => (
-            <AnswerOption
-              key={option.value}
-              letter={option.value}
-              state={stateOf(option.value)}
-              interactive={!showResult && selectedAnswer === undefined}
-              srLabel={showResult ? (option.value === question.correctAnswer ? t("trainingCard.correct") : option.value === selectedAnswer && !isCorrect ? t("trainingCard.incorrect") : undefined) : undefined}
-              aria-pressed={selectedAnswer === option.value}
-              aria-disabled={showResult || selectedAnswer !== undefined}
-              onClick={() => !showResult && selectedAnswer === undefined && onAnswerChange(option.value)}
-            >
-              {option.label}
-            </AnswerOption>
-          ))}
+          {options.map((option) => {
+            const isThisCorrect = option.value === question.correctAnswer;
+            const isSelected = selectedAnswer === option.value;
+
+            return (
+              <button
+                key={option.value}
+                type="button"
+                aria-pressed={selectedAnswer === option.value}
+                aria-disabled={showResult || selectedAnswer !== undefined}
+                onClick={() => !showResult && selectedAnswer === undefined && onAnswerChange(option.value)}
+                className={`w-full text-left border-2 rounded-lg p-4 transition-all ${getOptionClasses(option.value)}`}
+              >
+                <div className="flex items-center justify-between gap-2">
+                  <span className="font-bold text-lg w-6 shrink-0">{option.value})</span>
+                  <span className="flex-1">{option.label}</span>
+                  {showResult && option.value === question.correctAnswer && <span className="sr-only">{t("trainingCard.correct")}</span>}
+                  {showResult && option.value === selectedAnswer && !isCorrect && <span className="sr-only">{t("trainingCard.incorrect")}</span>}
+                  {showResult && isThisCorrect && (
+                    <CheckCircle2 className="h-6 w-6 text-green-600 dark:text-green-400" />
+                  )}
+                  {showResult && isSelected && !isCorrect && (
+                    <XCircle className="h-6 w-6 text-red-600 dark:text-red-400" />
+                  )}
+                </div>
+              </button>
+            );
+          })}
         </div>
 
         {showResult && (
-          <AnswerFeedback className="mt-6" correct={isCorrect} title={isCorrect ? t("trainingCard.correct") : t("trainingCard.incorrect")}>
-            {question.explanation}
-          </AnswerFeedback>
+          <div className="mt-6 p-4 border rounded-lg bg-brand-light border-brand-border-light">
+            <div className="font-semibold mb-2 text-brand-darker">{t("questionCard.explanation")}</div>
+            <div className="text-brand-dark">{question.explanation}</div>
+          </div>
         )}
       </CardContent>
     </Card>

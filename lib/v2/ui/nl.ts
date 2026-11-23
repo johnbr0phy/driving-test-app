@@ -122,7 +122,7 @@ export const NL: V2UiTranslation = {
     selectAll: "Kies alle antwoorden die kloppen.",
     srCorrect: "Goed. ",
     srNotQuite: "Fout. ",
-    correct: "Goed",
+    correct: "Goed!",
     notQuite: "Fout",
     skill: (skill: string) => `Vaardigheid: ${skill}`,
 
@@ -403,6 +403,9 @@ export const NL: V2UiTranslation = {
     firstTryDetail: (firstTry: number, outOf: number) => `${firstTry} van ${outOf} goed bij de eerste poging`,
     retriedDetail: (n: number) => `${n} verbeterd bij een nieuwe poging`,
     nextSkill: (skill: string) => `Volgende vaardigheid: ${skill}`,
+    nextQuestion: "Volgende vraag",
+    questionsCorrect: "vragen goed",
+    viewStats: "Statistieken bekijken",
     tryPracticeChild: "Probeer de oefenvragen",
     tryExamLevel: "Probeer vragen op examenniveau",
     learnAgain: "Opnieuw leren",

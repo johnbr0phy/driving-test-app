@@ -192,7 +192,7 @@ export function QuizReport({ code }: { code: string }) {
               </div>
             )}
 
-            {report.questions.length > 0 && <ClassQuestions questions={report.questions} groupLabel="players" />}
+            {report.questions.length > 0 && <ClassQuestions questions={report.questions} audience="quiz" />}
 
             <div className={`${card} relative overflow-x-auto`}>
               <div className="flex items-center justify-between mb-3">
@@ -256,7 +256,7 @@ export function QuizReport({ code }: { code: string }) {
                 </tbody>
               </table>
             </div>
-            <StudentDetail student={report.students.find((s) => playerKey(s) === selectedKey) ?? null} report={report} onClose={() => setSelectedKey(null)} groupName="Players" />
+            <StudentDetail student={report.students.find((s) => playerKey(s) === selectedKey) ?? null} report={report} onClose={() => setSelectedKey(null)} audience="quiz" />
           </>
         )}
         <p className="text-xs text-gray-500 dark:text-gray-400">

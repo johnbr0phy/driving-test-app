@@ -8,6 +8,7 @@ import type { User } from "firebase/auth";
 import { Input } from "@/components/ui/input";
 import { teachFetch } from "@/lib/teachClient";
 import { MAX_NAME_LENGTH } from "@/lib/classes";
+import { useTeachCopy } from "@/components/teach/useTeachCopy";
 
 export interface ClassDetails {
   name: string;
@@ -28,6 +29,7 @@ export function ClassDetailsForm({
   onSaved: (d: ClassDetails) => void;
   onCancel: () => void;
 }) {
+  const c = useTeachCopy();
   const [name, setName] = useState(details.name);
   const [teacherName, setTeacherName] = useState(details.teacherName);
   const [school, setSchool] = useState(details.school);
@@ -37,8 +39,8 @@ export function ClassDetailsForm({
   const save = async (e: FormEvent) => {
     e.preventDefault();
     const next = { name: name.trim(), teacherName: teacherName.trim(), school: school.trim() };
-    if (!next.name) return setError("Give the class a name");
-    if (!next.teacherName) return setError("Add the name your students know you by");
+    if (!next.name) return setError(c.errNameClass);
+    if (!next.teacherName) return setError(c.errTeacherName);
     const changed = Object.fromEntries(
       (Object.keys(next) as (keyof ClassDetails)[]).filter((k) => next[k] !== details[k]).map((k) => [k, next[k]]),
     );
@@ -49,7 +51,7 @@ export function ClassDetailsForm({
       const res = await teachFetch<Partial<ClassDetails>>(user, `/api/classes/${code}`, { method: "PATCH", body: JSON.stringify(changed) });
       onSaved({ ...details, ...res });
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Couldn't save the changes");
+      setError(err instanceof Error ? err.message : c.errSave);
     } finally {
       setSaving(false);
     }
@@ -63,28 +65,28 @@ export function ClassDetailsForm({
       className="mt-2 rounded-xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-4 space-y-3 w-full sm:w-96"
     >
       <div>
-        <label htmlFor="class-name" className={label}>Class name</label>
+        <label htmlFor="class-name" className={label}>{c.className}</label>
         <Input id="class-name" value={name} onChange={(e) => setName(e.target.value)} maxLength={MAX_NAME_LENGTH} autoFocus />
       </div>
       <div>
-        <label htmlFor="teacher-name" className={label}>Your name, as students know you</label>
-        <Input id="teacher-name" value={teacherName} onChange={(e) => setTeacherName(e.target.value)} placeholder="Ms. Rivera" maxLength={MAX_NAME_LENGTH} />
+        <label htmlFor="teacher-name" className={label}>{c.yourName}</label>
+        <Input id="teacher-name" value={teacherName} onChange={(e) => setTeacherName(e.target.value)} placeholder={c.teacherPlaceholder} maxLength={MAX_NAME_LENGTH} />
       </div>
       <div>
         <label htmlFor="school" className={label}>
-          School <span className="font-normal text-gray-500 dark:text-gray-400">(optional)</span>
+          {c.school} <span className="font-normal text-gray-500 dark:text-gray-400">{c.optional}</span>
         </label>
-        <Input id="school" value={school} onChange={(e) => setSchool(e.target.value)} placeholder="Lakeview Community College" maxLength={MAX_NAME_LENGTH} />
+        <Input id="school" value={school} onChange={(e) => setSchool(e.target.value)} placeholder={c.schoolPlaceholder} maxLength={MAX_NAME_LENGTH} />
       </div>
       <p className="text-xs text-gray-500 dark:text-gray-400">
-        Students see these when they join. The class link and everyone&apos;s progress stay the same.
+        {c.editNote}
       </p>
       {error && <p className="text-sm text-red-600 dark:text-red-400" role="alert">{error}</p>}
       <div className="flex items-center gap-2">
         <button type="submit" disabled={saving} className="rounded-md bg-black text-white dark:bg-white dark:text-black px-3 py-1.5 text-sm font-medium">
-          {saving ? "Saving…" : "Save"}
+          {saving ? c.saving : c.save}
         </button>
-        <button type="button" onClick={onCancel} className="rounded-md px-2 py-1.5 text-sm text-gray-600 dark:text-gray-300">Cancel</button>
+        <button type="button" onClick={onCancel} className="rounded-md px-2 py-1.5 text-sm text-gray-600 dark:text-gray-300">{c.cancel}</button>
       </div>
     </form>
   );

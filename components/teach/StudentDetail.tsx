@@ -14,6 +14,7 @@ import {
 } from "@/lib/classes";
 import { scoreBar, scoreChip, scoreLevel, scoreText, scoreTrack } from "@/components/teach/scoreColors";
 import { topWrongPick, untrackedNote } from "@/components/teach/ClassQuestions";
+import { useTeachCopy } from "@/components/teach/useTeachCopy";
 
 // One student, opened from the class page's Students table: what they need
 // help with (only judged once they've answered enough), every topic against
@@ -29,24 +30,26 @@ export function StudentDetail({
   student,
   report,
   onClose,
-  groupName = "Class",
+  audience = "class",
 }: {
   student: ClassStudentRow | null;
   report: ClassReport;
   onClose: () => void;
-  /** The rest of the group in the per-question line: "Class" on the teacher page, "Players" on a quiz's report. */
-  groupName?: string;
+  /** A class (in the page's language), or a quiz's players (English, like the rest of the quiz report). */
+  audience?: "class" | "quiz";
 }) {
   return (
     <Dialog open={!!student} onOpenChange={(open) => !open && onClose()}>
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto bg-white dark:bg-gray-900">
-        {student && <Body key={student.name + student.joinedAt} student={student} report={report} groupName={groupName} />}
+        {student && <Body key={student.name + student.joinedAt} student={student} report={report} quiz={audience === "quiz"} />}
       </DialogContent>
     </Dialog>
   );
 }
 
-function Body({ student, report, groupName }: { student: ClassStudentRow; report: ClassReport; groupName: string }) {
+function Body({ student, report, quiz }: { student: ClassStudentRow; report: ClassReport; quiz: boolean }) {
+  const c = useTeachCopy(quiz);
+  const groupName = quiz ? "Players" : c.classGroup;
   const [showAll, setShowAll] = useState(false);
   const { detail } = student;
   const pass = report.passPct;
@@ -68,17 +71,15 @@ function Body({ student, report, groupName }: { student: ClassStudentRow; report
       <DialogHeader className="text-left">
         <DialogTitle className="text-xl text-gray-900 dark:text-gray-50">{student.name}</DialogTitle>
         <DialogDescription className="text-gray-600 dark:text-gray-300">
-          {student.answered} answered · {student.answered ? `${pct(student.correct, student.answered)}% right` : "no answers yet"}
-          {student.testsTaken > 0 && ` · ${student.testsTaken} practice ${student.testsTaken === 1 ? "test" : "tests"}`}
+          {c.studentSummary(student.answered, student.answered ? pct(student.correct, student.answered) : null, student.testsTaken)}
         </DialogDescription>
       </DialogHeader>
 
       <div className="rounded-lg bg-gray-100 dark:bg-gray-800 px-4 py-3">
-        <p className="text-xs text-gray-600 dark:text-gray-300 mb-1">Needs help with</p>
+        <p className="text-xs text-gray-600 dark:text-gray-300 mb-1">{c.needsHelpWith}</p>
         {!enough ? (
           <p className="text-sm text-gray-800 dark:text-gray-100">
-            Not enough practice yet to tell. We call out weak topics after {STUDENT_MIN_ANSWERS} answers
-            {student.answered > 0 ? ` (${student.name} has ${student.answered})` : ""}; the questions they missed are below.
+            {c.notEnoughYet(STUDENT_MIN_ANSWERS, student.name, student.answered)}
           </p>
         ) : detail.focus.length ? (
           <div className="flex flex-wrap gap-2">
@@ -93,19 +94,19 @@ function Body({ student, report, groupName }: { student: ClassStudentRow; report
           </div>
         ) : (
           <p className="text-sm text-gray-800 dark:text-gray-100">
-            Nothing stands out: every topic with {STUDENT_TOPIC_MIN_ANSWERS}+ answers is at or above the {pass}% pass mark.
+            {c.nothingStandsOut(STUDENT_TOPIC_MIN_ANSWERS, pass)}
           </p>
         )}
         {repeat > 0 && (
           <p className="text-xs text-gray-600 dark:text-gray-300 mt-2">
-            Missed {repeat} {repeat === 1 ? "question" : "questions"} more than once: the strongest sign of a real gap.
+            {c.repeatMissed(repeat)}
           </p>
         )}
       </div>
 
       {detail.topics.length > 0 && (
         <div>
-          <h3 className={section}>By topic</h3>
+          <h3 className={section}>{c.byTopic}</h3>
           <div className="space-y-2.5">
             {detail.topics.map((t) => {
               const p = pct(t.correct, t.answered);
@@ -113,30 +114,30 @@ function Body({ student, report, groupName }: { student: ClassStudentRow; report
                 <div key={t.key} className="grid grid-cols-[minmax(0,9rem)_1fr_5.5rem] sm:grid-cols-[minmax(0,13rem)_1fr_7rem] items-center gap-3 text-sm">
                   <span className="truncate text-gray-800 dark:text-gray-100" title={t.label}>{t.label}</span>
                   {t.judged ? (
-                    <div className={`h-2.5 rounded-sm ${scoreTrack}`} title={`${t.correct} of ${t.answered} right`}>
+                    <div className={`h-2.5 rounded-sm ${scoreTrack}`} title={c.rightOfAnswered(t.correct, t.answered)}>
                       <div className={`h-2.5 rounded-sm ${scoreBar(scoreLevel(p, pass))}`} style={{ width: `${p}%` }} />
                     </div>
                   ) : (
-                    <span className="text-xs text-gray-500 dark:text-gray-400">Too few to judge ({t.correct} of {t.answered})</span>
+                    <span className="text-xs text-gray-500 dark:text-gray-400">{c.tooFewToJudge(t.correct, t.answered)}</span>
                   )}
                   <span className="text-right tabular-nums text-gray-800 dark:text-gray-100">
                     {t.judged ? `${p}%` : "-"}
-                    {t.othersPct !== null && <span className="text-xs text-gray-500 dark:text-gray-400"> · class {t.othersPct}%</span>}
+                    {t.othersPct !== null && <span className="text-xs text-gray-500 dark:text-gray-400"> · {c.classPct(t.othersPct)}</span>}
                   </span>
                 </div>
               );
             })}
           </div>
           <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
-            A topic gets a score once {student.name} has answered {STUDENT_TOPIC_MIN_ANSWERS} questions in it.
+            {c.topicScoreNote(student.name, STUDENT_TOPIC_MIN_ANSWERS)}
           </p>
         </div>
       )}
 
       <div>
-        <h3 className={section}>Questions {student.name} missed</h3>
+        <h3 className={section}>{c.missedTitle(student.name)}</h3>
         {missed.length === 0 ? (
-          <p className="text-sm text-gray-600 dark:text-gray-300">{!student.answered ? "No answers yet." : unlisted > 0 ? "None listed yet." : "None missed yet."}</p>
+          <p className="text-sm text-gray-600 dark:text-gray-300">{!student.answered ? c.noAnswersYet : unlisted > 0 ? c.noneListedYet : c.noneMissedYet}</p>
         ) : (
           <>
             <div className="space-y-2">
@@ -144,11 +145,11 @@ function Body({ student, report, groupName }: { student: ClassStudentRow; report
                 <QuizRow
                   key={m.questionId}
                   chipValue={`${m.missed}×`}
-                  chipLabel="missed"
+                  chipLabel={c.chipMissed}
                   chipColorClass={scoreText(m.missed >= 2 ? "low" : "near")}
                   question={m.q.question}
                   media={getSignIdForQuestion(m.questionId) ? <QuestionImage questionId={m.questionId} /> : undefined}
-                  subtitle={[m.q.topic, topWrongPick(m.picks)].filter(Boolean).join(" · ")}
+                  subtitle={[m.q.topic, topWrongPick(m.picks, c)].filter(Boolean).join(" · ")}
                   options={m.q.options}
                   correctAnswer={m.q.answer}
                   revealAnswer
@@ -156,10 +157,9 @@ function Body({ student, report, groupName }: { student: ClassStudentRow; report
                   renderFooter={() => (
                     <div className="pt-1 px-1 space-y-1.5">
                       <p className="text-xs text-gray-500 dark:text-gray-400">
-                        {student.name}: missed {m.missed} of {m.answered} {m.answered === 1 ? "try" : "tries"}
-. {groupName}: {m.q.answered - m.q.missed} of {m.q.answered} right.
+                        {c.triesLine(student.name, m.missed, m.answered, groupName, m.q.answered - m.q.missed, m.q.answered)}
                       </p>
-                      {untrackedNote(m.picks, m.missed) && <p className="text-xs text-gray-500 dark:text-gray-400">{untrackedNote(m.picks, m.missed)}</p>}
+                      {untrackedNote(m.picks, m.missed, c) && <p className="text-xs text-gray-500 dark:text-gray-400">{untrackedNote(m.picks, m.missed, c)}</p>}
                       {m.q.explanation && <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">{m.q.explanation}</p>}
                     </div>
                   )}
@@ -168,26 +168,25 @@ function Body({ student, report, groupName }: { student: ClassStudentRow; report
             </div>
             {missed.length > MISSED_SHOWN && (
               <button type="button" onClick={() => setShowAll((s) => !s)} className="mt-3 text-sm underline text-gray-700 dark:text-gray-200">
-                {showAll ? "Show fewer" : `Show all ${missed.length}`}
+                {showAll ? c.showFewer : c.showAll(missed.length)}
               </button>
             )}
           </>
         )}
         {unlisted > 0 && (
           <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
-            {unlisted} {unlisted === 1 ? "miss isn't" : "misses aren't"} listed: a bug before Oct 19 dropped them. They come back the next time {student.name} opens
-            this test on the device they joined on.
+            {c.unlisted(unlisted, student.name)}
           </p>
         )}
       </div>
 
       {detail.tests.length > 0 && (
         <div>
-          <h3 className={section}>Practice tests</h3>
+          <h3 className={section}>{c.practiceTests}</h3>
           <div className="flex flex-wrap gap-2">
             {detail.tests.map((t) => (
               <span key={t.testNumber} className={`rounded-sm px-2 py-1 text-xs font-medium ${scoreChip(scoreLevel(t.best, pass))}`}>
-                Test {t.testNumber} · best {t.best}%{t.attempts > 1 ? ` · ${t.attempts} tries` : ""}
+                {c.testBest(t.testNumber, t.best, t.attempts)}
               </span>
             ))}
           </div>

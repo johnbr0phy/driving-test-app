@@ -9,7 +9,8 @@ import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { ChevronRight, Loader2, Pencil, RefreshCw } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
-import { useLanguage } from "@/contexts/LanguageContext";
+import { useTeachCopy } from "@/components/teach/useTeachCopy";
+import type { TeachCopy } from "@/components/teach/teachCopy";
 import { classLink, teachFetch } from "@/lib/teachClient";
 import { normalizeClassCode, type ClassReport, type ClassStudentRow } from "@/lib/classes";
 import { ClassShare } from "@/components/teach/ClassShare";
@@ -23,12 +24,12 @@ function pct(correct: number, answered: number): number {
   return answered ? Math.round((correct / answered) * 100) : 0;
 }
 
-function ago(iso: string | null): string {
-  if (!iso) return "Not started";
+function ago(iso: string | null, c: TeachCopy): string {
+  if (!iso) return c.notStarted;
   const days = Math.floor((Date.now() - Date.parse(iso)) / 86_400_000);
-  if (days <= 0) return "Today";
-  if (days === 1) return "Yesterday";
-  return `${days} days ago`;
+  if (days <= 0) return c.today;
+  if (days === 1) return c.yesterday;
+  return c.daysAgo(days);
 }
 
 const studentKey = (s: ClassStudentRow) => `${s.name}|${s.joinedAt}`;
@@ -38,7 +39,7 @@ export default function ClassPage() {
   const router = useRouter();
   const code = normalizeClassCode(String(params.code ?? ""));
   const { user, loading } = useAuth();
-  const { englishLocale } = useLanguage();
+  const c = useTeachCopy();
   const [report, setReport] = useState<ClassReport | null>(null);
   const [error, setError] = useState("");
   const [refreshing, setRefreshing] = useState(false);
@@ -53,11 +54,11 @@ export default function ClassPage() {
       setReport(await teachFetch<ClassReport>(user, `/api/classes/${code}/report`));
       setError("");
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Couldn't load the class");
+      setError(e instanceof Error ? e.message : c.errLoad);
     } finally {
       setRefreshing(false);
     }
-  }, [user, code]);
+  }, [user, code, c]);
 
   useEffect(() => {
     if (!loading && !user) router.replace(`/login?redirect=/teach/classes/${code}`);
@@ -68,7 +69,7 @@ export default function ClassPage() {
     return (
       <div className="flex-1 bg-gray-50 dark:bg-gray-950 px-4 py-12 text-center">
         <p className="text-gray-900 dark:text-gray-50 font-semibold mb-2">{error}</p>
-        <Link href="/teach" className="text-sm underline text-gray-700 dark:text-gray-200">Your classes</Link>
+        <Link href="/teach" className="text-sm underline text-gray-700 dark:text-gray-200">{c.yourClasses}</Link>
       </div>
     );
   }
@@ -76,7 +77,7 @@ export default function ClassPage() {
     return (
       <div className="flex-1 bg-gray-50 dark:bg-gray-950 px-4 py-16 flex flex-col items-center gap-3 text-sm text-gray-500 dark:text-gray-400" role="status">
         <Loader2 className="w-8 h-8 animate-spin text-gray-400" aria-hidden="true" />
-        Loading your class…
+        {c.loadingClass}
       </div>
     );
   }
@@ -90,7 +91,7 @@ export default function ClassPage() {
       <div className="container mx-auto px-4 sm:px-6 py-8 max-w-4xl space-y-5">
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div className="min-w-0">
-            <Link href="/teach" className="text-sm text-gray-600 dark:text-gray-300 underline">Your classes</Link>
+            <Link href="/teach" className="text-sm text-gray-600 dark:text-gray-300 underline">{c.yourClasses}</Link>
             {editing && user ? (
               <ClassDetailsForm
                 user={user}
@@ -102,59 +103,59 @@ export default function ClassPage() {
             ) : (
               <div className="mt-2 flex items-center gap-2">
                 <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-50">{report.name}</h1>
-                <button type="button" onClick={() => setEditing(true)} aria-label="Edit class details" title="Edit class name, your name and school" className="rounded-md p-1.5 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
+                <button type="button" onClick={() => setEditing(true)} aria-label={c.editDetailsAria} title={c.editDetailsTitle} className="rounded-md p-1.5 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50">
                   <Pencil className="w-4 h-4" aria-hidden="true" />
                 </button>
               </div>
             )}
             <p className="text-sm text-gray-600 dark:text-gray-300">
-              {report.examName} · {report.memberCount} {report.memberCount === 1 ? "student" : "students"}
+              {report.examName} · {c.students(report.memberCount)}
             </p>
             {!editing && (
               <p className="text-sm text-gray-600 dark:text-gray-300">
                 {[report.teacherName, report.school].filter(Boolean).join(" · ")}
                 {" "}
-                <button type="button" onClick={() => setEditing(true)} className="underline text-gray-500 dark:text-gray-400">Edit details</button>
+                <button type="button" onClick={() => setEditing(true)} className="underline text-gray-500 dark:text-gray-400">{c.editDetails}</button>
               </p>
             )}
           </div>
           <div className={`${card} w-full sm:w-auto`}>
-            <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">Class link: post it in Teams, Google Classroom, Canvas or an email</p>
+            <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">{c.classLinkHint}</p>
             <p className="font-mono text-sm text-gray-900 dark:text-gray-50 mb-3 break-all">{classLink(code)}</p>
-            <ClassShare code={code} className={report.name} examName={report.examName} britishSpelling={englishLocale === "en-GB"} />
+            <ClassShare code={code} className={report.name} examName={report.examName} />
           </div>
         </div>
 
         {report.memberCount === 0 ? (
           <div className={card}>
-            <p className="font-semibold text-gray-900 dark:text-gray-50 mb-1">No students yet</p>
+            <p className="font-semibold text-gray-900 dark:text-gray-50 mb-1">{c.noStudentsYet}</p>
             <p className="text-sm text-gray-600 dark:text-gray-300">
-              Paste this message into Teams, Google Classroom or an email, or put the QR code on the board in your next lesson. Students type their name and start {englishLocale === "en-GB" ? "practising" : "practicing"}; nothing to install, no account. Each one shows up here as soon as they join.
+              {c.noStudentsBody}
             </p>
             <div className="mt-3">
-              <ClassShare code={code} className={report.name} examName={report.examName} britishSpelling={englishLocale === "en-GB"} showMessage />
+              <ClassShare code={code} className={report.name} examName={report.examName} showMessage />
             </div>
           </div>
         ) : (
           <>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-              <div className={stat}><p className="text-xs text-gray-600 dark:text-gray-300">Active this week</p><p className="text-xl font-bold text-gray-900 dark:text-gray-50">{report.activeThisWeek} of {report.memberCount}</p></div>
-              <div className={stat}><p className="text-xs text-gray-600 dark:text-gray-300">Questions answered</p><p className="text-xl font-bold text-gray-900 dark:text-gray-50">{report.answered.toLocaleString("en-US")}</p></div>
-              <div className={stat}><p className="text-xs text-gray-600 dark:text-gray-300">Class accuracy</p><p className="text-xl font-bold text-gray-900 dark:text-gray-50">{report.answered ? `${accuracy}%` : "-"}</p></div>
-              <div className={stat}><p className="text-xs text-gray-600 dark:text-gray-300">Passed a practice test ({report.passPct}%+)</p><p className="text-xl font-bold text-gray-900 dark:text-gray-50">{report.passedATest} of {report.memberCount}</p></div>
+              <div className={stat}><p className="text-xs text-gray-600 dark:text-gray-300">{c.activeThisWeek}</p><p className="text-xl font-bold text-gray-900 dark:text-gray-50">{c.xOfY(report.activeThisWeek, report.memberCount)}</p></div>
+              <div className={stat}><p className="text-xs text-gray-600 dark:text-gray-300">{c.questionsAnswered}</p><p className="text-xl font-bold text-gray-900 dark:text-gray-50">{report.answered.toLocaleString(c.locale)}</p></div>
+              <div className={stat}><p className="text-xs text-gray-600 dark:text-gray-300">{c.classAccuracy}</p><p className="text-xl font-bold text-gray-900 dark:text-gray-50">{report.answered ? `${accuracy}%` : "-"}</p></div>
+              <div className={stat}><p className="text-xs text-gray-600 dark:text-gray-300">{c.passedATest(report.passPct)}</p><p className="text-xl font-bold text-gray-900 dark:text-gray-50">{c.xOfY(report.passedATest, report.memberCount)}</p></div>
             </div>
 
             {report.topics.length > 0 && (
               <div className={card}>
-                <h2 className="font-semibold text-gray-900 dark:text-gray-50 mb-1">Where your class struggles</h2>
-                <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">Accuracy by topic, weakest first. Green is at or above the {report.passPct}% pass mark.</p>
+                <h2 className="font-semibold text-gray-900 dark:text-gray-50 mb-1">{c.struggleTitle}</h2>
+                <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">{c.struggleBody(report.passPct)}</p>
                 <div className="space-y-2.5">
                   {report.topics.map((t) => {
                     const p = pct(t.correct, t.answered);
                     return (
                       <div key={t.key} className="grid grid-cols-[minmax(0,10rem)_1fr_3rem] sm:grid-cols-[minmax(0,14rem)_1fr_3rem] items-center gap-3 text-sm">
                         <span className="truncate text-gray-800 dark:text-gray-100" title={t.label}>{t.label}</span>
-                        <div className={`h-2.5 rounded-sm ${scoreTrack}`} title={`${t.correct} of ${t.answered} right`}>
+                        <div className={`h-2.5 rounded-sm ${scoreTrack}`} title={c.rightOfAnswered(t.correct, t.answered)}>
                           <div className={`h-2.5 rounded-sm ${scoreBar(scoreLevel(p, report.passPct))}`} style={{ width: `${p}%` }} />
                         </div>
                         <span className="text-right tabular-nums text-gray-800 dark:text-gray-100">{p}%</span>
@@ -170,22 +171,22 @@ export default function ClassPage() {
             <div className={`${card} relative overflow-x-auto`}>
               <div className="flex items-center justify-between mb-3">
                 <div>
-                  <h2 className="font-semibold text-gray-900 dark:text-gray-50">Students</h2>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">Click a student to see what they need help with.</p>
+                  <h2 className="font-semibold text-gray-900 dark:text-gray-50">{c.studentsTitle}</h2>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">{c.studentsHint}</p>
                 </div>
                 <button type="button" onClick={() => void load()} className="inline-flex items-center gap-1.5 text-sm text-gray-600 dark:text-gray-300" disabled={refreshing}>
-                  <RefreshCw className={`w-4 h-4 ${refreshing ? "animate-spin" : ""}`} aria-hidden="true" /> Refresh
+                  <RefreshCw className={`w-4 h-4 ${refreshing ? "animate-spin" : ""}`} aria-hidden="true" /> {c.refresh}
                 </button>
               </div>
               <table className="w-full min-w-[520px] text-sm">
                 <thead>
                   <tr className="text-left text-gray-500 dark:text-gray-400">
-                    <th scope="col" className="font-normal py-2">Name</th>
-                    <th scope="col" className="font-normal">Last active</th>
-                    <th scope="col" className="font-normal">Answered</th>
-                    <th scope="col" className="font-normal">Accuracy</th>
-                    <th scope="col" className="font-normal">Best practice test</th>
-                    <th scope="col" className="w-6"><span className="sr-only">Open</span></th>
+                    <th scope="col" className="font-normal py-2">{c.colName}</th>
+                    <th scope="col" className="font-normal">{c.colLastActive}</th>
+                    <th scope="col" className="font-normal">{c.colAnswered}</th>
+                    <th scope="col" className="font-normal">{c.colAccuracy}</th>
+                    <th scope="col" className="font-normal">{c.colBestTest}</th>
+                    <th scope="col" className="w-6"><span className="sr-only">{c.open}</span></th>
                   </tr>
                 </thead>
                 <tbody>
@@ -200,16 +201,16 @@ export default function ClassPage() {
                           {s.name}
                         </button>
                       </td>
-                      <td className="pr-3">{ago(s.lastActive)}</td>
+                      <td className="pr-3">{ago(s.lastActive, c)}</td>
                       <td className="pr-3 tabular-nums">{s.answered}</td>
                       <td className="pr-3 tabular-nums">{s.answered ? `${pct(s.correct, s.answered)}%` : "-"}</td>
                       <td>
                         {s.bestTest ? (
                           <span className={`rounded-sm px-2 py-0.5 text-xs font-medium ${scoreChip(s.bestTest.pct >= report.passPct ? "good" : "near")}`}>
-                            Test {s.bestTest.testNumber} · {s.bestTest.pct}%
+                            {c.testPct(s.bestTest.testNumber, s.bestTest.pct)}
                           </span>
                         ) : (
-                          <span className="text-gray-500 dark:text-gray-400">No test yet</span>
+                          <span className="text-gray-500 dark:text-gray-400">{c.noTestYet}</span>
                         )}
                       </td>
                       <td className="text-gray-400"><ChevronRight className="w-4 h-4" aria-hidden="true" /></td>
@@ -227,7 +228,7 @@ export default function ClassPage() {
         )}
         {user && <DeleteClassButton user={user} code={code} className={report.name} memberCount={report.memberCount} />}
         <p className="text-xs text-gray-500 dark:text-gray-400">
-          Students join with a name only. Practice counts from the device they joined on. Class code {code}.
+          {c.classFooter(code)}
         </p>
       </div>
     </div>

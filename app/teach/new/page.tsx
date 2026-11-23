@@ -21,6 +21,7 @@ import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { teachFetch } from "@/lib/teachClient";
 import { markTeacher } from "@/components/TeachLink";
 import { trackTeachStep } from "@/lib/teachTracking";
+import { useTeachCopy } from "@/components/teach/useTeachCopy";
 import { DMV_EXAM_ID, classExamGroups, type ClassExamChoice } from "@/lib/classes";
 
 const DRAFT_KEY = "tigertest-teach-draft";
@@ -56,6 +57,7 @@ const fieldClass = "block text-sm font-medium text-gray-800 dark:text-gray-100 m
 
 function NewClassForm() {
   const { user, loading } = useAuth();
+  const c = useTeachCopy();
   const router = useRouter();
   const params = useSearchParams();
   const groups = useMemo(() => classExamGroups(), []);
@@ -129,10 +131,10 @@ function NewClassForm() {
   };
 
   const validate = (): string => {
-    if (!choice) return "Pick the test your students are preparing for";
-    if (choice.stateRequired && !stateKey) return "Pick your state";
-    if (!name.trim()) return "Give the class a name";
-    if (!teacherName.trim()) return "Add the name your students know you by";
+    if (!choice) return c.errPickTest;
+    if (choice.stateRequired && !stateKey) return c.errPickState;
+    if (!name.trim()) return c.errNameClass;
+    if (!teacherName.trim()) return c.errTeacherName;
     return "";
   };
 
@@ -163,7 +165,7 @@ function NewClassForm() {
       writeDraft(null);
       router.push(`/teach/classes/${code}`);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Couldn't make the class. Try again.");
+      setError(err instanceof Error ? err.message : c.errCreate);
       setBusy(false);
     }
   };
@@ -187,13 +189,13 @@ function NewClassForm() {
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <div className="container mx-auto px-4 sm:px-6 py-10 max-w-2xl">
-        <Link href="/teach" className="text-sm text-gray-600 dark:text-gray-300 underline">{user ? "Your classes" : "Back"}</Link>
-        <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mt-3 mb-6">New class</h1>
+        <Link href="/teach" className="text-sm text-gray-600 dark:text-gray-300 underline">{user ? c.yourClasses : c.back}</Link>
+        <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-50 mt-3 mb-6">{c.newClassTitle}</h1>
         <form onSubmit={submit} className="space-y-6 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-6">
           <div>
-            <p className={fieldClass}>Test</p>
+            <p className={fieldClass}>{c.test}</p>
             <p className="sr-only" aria-live="polite">
-              {!choice && q ? (matchCount === 1 ? "1 test matches" : `${matchCount} tests match`) : ""}
+              {!choice && q ? c.testsMatch(matchCount) : ""}
             </p>
             {choice ? (
               <div className="flex items-center justify-between gap-3 rounded-xl border-2 border-gray-900 dark:border-gray-50 px-4 py-3">
@@ -208,10 +210,10 @@ function NewClassForm() {
                     setChoice(null);
                     setFocusTo("search");
                   }}
-                  aria-label={`Change test (${choice.name})`}
+                  aria-label={c.changeTestAria(choice.name)}
                   className="-my-1 py-1 text-sm underline text-gray-700 dark:text-gray-200 flex-shrink-0"
                 >
-                  Change
+                  {c.change}
                 </button>
               </div>
             ) : (
@@ -222,13 +224,13 @@ function NewClassForm() {
                     ref={searchRef}
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
-                    placeholder="Search: surgical tech, NCLEX, SAT, real estate…"
-                    aria-label="Search tests"
+                    placeholder={c.searchPlaceholder}
+                    aria-label={c.searchAria}
                     className="w-full bg-transparent pl-9 pr-3 py-3 text-base md:text-sm text-gray-900 dark:text-gray-50 outline-none focus-in-parent"
                   />
                 </div>
                 <div className="max-h-80 overflow-y-auto p-2">
-                  {filtered.length === 0 && <p className="text-sm text-gray-500 dark:text-gray-400 p-3">No test matches “{query}”.</p>}
+                  {filtered.length === 0 && <p className="text-sm text-gray-500 dark:text-gray-400 p-3">{c.noTestMatches(query)}</p>}
                   {filtered.map((g) => (
                     <div key={g.title} className="mb-2">
                       <p className="px-2 pt-2 pb-1 text-[11px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">{g.title}</p>
@@ -253,7 +255,7 @@ function NewClassForm() {
           {stateOptions.length > 0 && (
             <div>
               <label htmlFor="class-state" className={fieldClass}>
-                State {!choice?.stateRequired && <span className="font-normal text-gray-500 dark:text-gray-400">(optional)</span>}
+                {c.state} {!choice?.stateRequired && <span className="font-normal text-gray-500 dark:text-gray-400">{c.optional}</span>}
               </label>
               <select
                 id="class-state"
@@ -261,7 +263,7 @@ function NewClassForm() {
                 onChange={(e) => setStateKey(e.target.value)}
                 className="w-full h-10 rounded-md border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-50 px-3 text-base md:text-sm"
               >
-                <option value="">{choice?.stateRequired ? "Choose your state" : "National (no state law)"}</option>
+                <option value="">{choice?.stateRequired ? c.chooseState : c.nationalNoState}</option>
                 {stateOptions.map((s) => (
                   <option key={s.code} value={`${s.id}|${s.code}`}>{s.name}</option>
                 ))}
@@ -270,45 +272,45 @@ function NewClassForm() {
           )}
 
           <div>
-            <label htmlFor="class-name" className={fieldClass}>Class name</label>
-            <Input id="class-name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Surgical Tech, Fall 2026" maxLength={40} />
+            <label htmlFor="class-name" className={fieldClass}>{c.className}</label>
+            <Input id="class-name" value={name} onChange={(e) => setName(e.target.value)} placeholder={c.classNamePlaceholder} maxLength={40} />
           </div>
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="teacher-name" className={fieldClass}>Your name, as students know you</label>
-              <Input id="teacher-name" value={teacherName} onChange={(e) => setTeacherName(e.target.value)} placeholder="Ms. Rivera" maxLength={40} />
+              <label htmlFor="teacher-name" className={fieldClass}>{c.yourName}</label>
+              <Input id="teacher-name" value={teacherName} onChange={(e) => setTeacherName(e.target.value)} placeholder={c.teacherPlaceholder} maxLength={40} />
             </div>
             <div>
               <label htmlFor="school" className={fieldClass}>
-                School <span className="font-normal text-gray-500 dark:text-gray-400">(optional)</span>
+                {c.school} <span className="font-normal text-gray-500 dark:text-gray-400">{c.optional}</span>
               </label>
-              <Input id="school" value={school} onChange={(e) => setSchool(e.target.value)} placeholder="Lakeview Community College" maxLength={40} />
+              <Input id="school" value={school} onChange={(e) => setSchool(e.target.value)} placeholder={c.schoolPlaceholder} maxLength={40} />
             </div>
           </div>
           {error && <p role="alert" className="text-sm text-red-600 dark:text-red-400">{error}</p>}
           {askSignIn && !user ? (
-            <div role="region" aria-label="Save your class" className="rounded-xl border-2 border-gray-900 dark:border-gray-50 p-4 space-y-3">
-              <p className="font-semibold text-gray-900 dark:text-gray-50">Last step: save your class to a free account</p>
-              <p className="text-sm text-gray-600 dark:text-gray-300">So you can see your students&apos; scores from any device. Your class is ready and is made the moment you sign in.</p>
+            <div role="region" aria-label={c.saveClassAria} className="rounded-xl border-2 border-gray-900 dark:border-gray-50 p-4 space-y-3">
+              <p className="font-semibold text-gray-900 dark:text-gray-50">{c.lastStepTitle}</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300">{c.lastStepBody}</p>
               {!isNative && (
                 <WebViewGoogleWarning onGoogleSignIn={googleSignUp} disabled={googleBusy} className="h-10 border w-full" />
               )}
               <Button asChild className="w-full h-10 bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200">
-                <Link href={`/signup?redirect=${encodeURIComponent(here)}`}>Sign up with email</Link>
+                <Link href={`/signup?redirect=${encodeURIComponent(here)}`}>{c.signUpEmail}</Link>
               </Button>
-              {googleError && <p role="alert" className="text-sm text-red-600 dark:text-red-400">Google sign-in didn&apos;t work. Try again or use email.</p>}
+              {googleError && <p role="alert" className="text-sm text-red-600 dark:text-red-400">{c.googleFailed}</p>}
               <p className="text-center text-sm text-gray-600 dark:text-gray-300">
-                Already have an account?{" "}
-                <Link href={`/login?redirect=${encodeURIComponent(here)}`} className="font-semibold underline">Log in</Link>
+                {c.haveAccount}{" "}
+                <Link href={`/login?redirect=${encodeURIComponent(here)}`} className="font-semibold underline">{c.logIn}</Link>
               </p>
             </div>
           ) : (
           <Button type="submit" disabled={busy} className="w-full bg-black dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200">
-            {busy ? "Creating…" : (<><Check className="w-4 h-4 mr-1.5" aria-hidden="true" /> Create class</>)}
+            {busy ? c.creating : (<><Check className="w-4 h-4 mr-1.5" aria-hidden="true" /> {c.createClass}</>)}
           </Button>
           )}
-          {!user && !askSignIn && <p className="text-xs text-gray-500 dark:text-gray-400">Free. You&apos;ll save it to an account in one tap at the end.</p>}
-          <p className="text-xs text-gray-500 dark:text-gray-400">Students see the class name, your name and the school when they join.</p>
+          {!user && !askSignIn && <p className="text-xs text-gray-500 dark:text-gray-400">{c.freeSaveNote}</p>}
+          <p className="text-xs text-gray-500 dark:text-gray-400">{c.studentsSeeNote}</p>
         </form>
       </div>
     </div>

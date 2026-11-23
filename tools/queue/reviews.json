@@ -1502,5 +1502,13 @@
       "pr": 975,
       "findings": 25
     }
+  ],
+  "az104": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 974,
+      "findings": 2
+    }
   ]
 }

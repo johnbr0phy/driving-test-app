@@ -218,6 +218,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   dat: { title: "DAT Practice Tests", description: "DAT biology, general and organic chemistry, reading comprehension and quantitative reasoning at the real pace, with drills by topic." },
   mcat: { title: "MCAT Practice Tests", description: "All four MCAT sections with passage sets, a 472 to 528 score estimate and drills by foundational concept and CARS skill." },
   gmat: { title: "GMAT Focus Edition Practice Tests", description: "Timed Quant, Verbal and Data Insights sections with a 205 to 805 score estimate and drills by question type." },
+  ccat: { title: "CCAT Practice Test", description: "Timed 50-question, 15-minute aptitude tests with verbal, math, logic and spatial drills, every answer explained." },
   wonderlic: { title: "Wonderlic Practice Test", description: "Timed 50-question, 12-minute cognitive tests with vocabulary, math, series, logic and spatial drills, every answer explained." },
   iimcat: { title: "CAT Mock Tests", description: "Timed VARC, DILR and QA sections of 40 minutes each, typed TITA answers and drills by question type." },
   lsat: { title: "LSAT Practice Tests", description: "Timed Logical Reasoning and Reading Comprehension sections with a 120 to 180 score estimate and drills by question family." },

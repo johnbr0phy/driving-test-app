@@ -4021,6 +4021,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two DAT practice tests with the Survey of the Natural Sciences, Reading Comprehension and Quantitative Reasoning at half length and the real pace, and seven drills by topic. The picture-based Perceptual Ability Test is not included. It is free to start, with no account required.",
   },
+  ccat: {
+    answer:
+      "The Criteria Cognitive Aptitude Test (CCAT) is Criteria Corp's pre-employment aptitude test, which employers use mostly for mid- to senior-level roles. It has 50 multiple-choice questions and a 15-minute time limit, and very few people finish all 50. The questions cover three abilities: verbal ability (vocabulary, sentence completion and word comparisons), math and logic (arithmetic, proportions, word problems and logic) and spatial reasoning (shape patterns, rotations and the odd one out). No calculator is allowed and a wrong answer costs nothing. Employers get the raw score out of 50 and a percentile, plus percentiles for the three abilities. There is no pass mark: each employer compares the score with a suggested range for the role, and Criteria reports a median of 24 out of 50.",
+    rows: [
+      { label: "Questions", value: "50 multiple choice" },
+      { label: "Time", value: "15 minutes, about 18 seconds a question" },
+      { label: "Abilities", value: "Verbal ability, math and logic, spatial reasoning" },
+      { label: "Calculator", value: "Not allowed" },
+      { label: "Scoring", value: "Raw score out of 50 and a percentile; no penalty for wrong answers" },
+      { label: "Pass mark", value: "None: employers compare the score with a range for the role" },
+      { label: "Median score", value: "24 out of 50 in Criteria's norm group" },
+      { label: "Given by", value: "Criteria Corp, for employers, online on any device" },
+    ],
+    basedOn: "Criteria Corp's CCAT product page, candidate prep page, CCAT information brief and score report guide (checked November 2026)",
+    source: { name: "Criteria Corp", url: "https://www.criteriacorp.com/candidates/ccat-prep" },
+    tigertest:
+      "Tigertest has two timed CCAT-style practice tests of 50 original five-choice questions in 15 minutes and eight drills: vocabulary, analogies, sentence completion, arithmetic, word problems, number and letter series, logic and spatial reasoning. Start for free, no account required; Practice Test 1 and the first four drills are free and Practice Test 2 and the other drills are part of Premium. Scores are percent correct, not a CCAT percentile.",
+  },
   wonderlic: {
     answer:
       "The Wonderlic cognitive ability test is the 12-minute timed section of Wonderlic's pre-employment assessments, the Wonderlic Personnel Test (WPT-R) and Wonderlic Select (WonScore), which employers use in hiring. Wonderlic describes it as 50 questions in 12 minutes covering simple math, basic logic, language comprehension, spatial reasoning and pattern identification, getting harder as the test goes on; its test-taker pages name word problems, number series, logic puzzles, vocabulary and analogies. The score is estimated from the whole response pattern, with each question weighted by its difficulty and the effect of guessing. There is no universal pass or fail: each employer compares results with the profile for the role, and Wonderlic says the classic 50-question test averages a score of about 20.",

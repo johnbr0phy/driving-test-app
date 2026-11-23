@@ -215,6 +215,7 @@ export const NON_DRIVING_TESTS = new Set([
   "prince2",
   "fortinse",
   "wonderlic",
+  "ccat",
   "espolicia", "esguardia", "esvigilante",
   "ptvigil",
   "mttaxi", "mtguard",

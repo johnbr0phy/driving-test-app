@@ -3053,6 +3053,20 @@
   }
 
   /* French examen civique: deep brick red, distinct from frvtc violet and frcode blue. */
+  /* Einbürgerungstest: deep black-red, the dark end of the German flag. */
+  [data-theme="deeinb"] {
+    --brand: 0 100% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 0 100% 96%;
+    --brand-hover: 0 100% 10%;
+    --brand-dark: 0 100% 8%;
+    --brand-darker: 0 100% 5%;
+    --brand-muted: 0 30% 65%;
+    --brand-border: 0 30% 78%;
+    --brand-border-light: 0 30% 90%;
+    --brand-gradient-to: 0 30% 98%;
+  }
+
   [data-theme="frcivique"] {
     --brand: 10 100% 22%;
     --brand-foreground: 0 0% 100%;
@@ -7269,6 +7283,18 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+  }
+
+  .dark [data-theme="deeinb"] {
+    --brand: 0 100% 46.2%;
+    --brand-hover: 0 100% 38.2%;
+    --brand-light: 0 45% 13%;
+    --brand-gradient-to: 0 30% 11%;
+    --brand-border-light: 0 30% 24%;
+    --brand-border: 0 30% 34%;
+    --brand-muted: 0 30% 45%;
+    --brand-dark: 0 100% 65%;
+    --brand-darker: 0 100% 78%;
   }
 
   .dark [data-theme="frcivique"] {

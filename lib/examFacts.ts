@@ -44,6 +44,21 @@ export function examCostRows(examId: string): (ExamFactRow & { url: string })[] 
 }
 
 export const EXAM_FACTS: Record<string, ExamFacts> = {
+  deeinb: {
+    answer:
+      "Germany's Einbürgerungstest proves the knowledge of the legal and social order that naturalisation requires under § 10 of the Nationality Act (StAG). It has 33 multiple-choice questions with four answers each, one right, and three of them are about the candidate's own federal state. Candidates have 60 minutes under supervision and pass with at least 17 correct. The questions come from a public catalogue of 310 (300 general and 10 for each Land). The Leben in Deutschland test at the end of the integration course's orientation course uses the same catalogue: 15 correct pass the course, and 17 also count for naturalisation.",
+    rows: [
+      { label: "Questions", value: "33, four answers each, one right" },
+      { label: "Land questions", value: "3 of the 33 are about your federal state" },
+      { label: "Time", value: "60 minutes, supervised" },
+      { label: "Pass mark", value: "17 of 33 (Leben in Deutschland: 15 to pass the orientation course)" },
+      { label: "Question catalogue", value: "310 public questions: 300 general, 10 per Land" },
+      { label: "Run by", value: "BAMF, at approved test centres" },
+    ],
+    basedOn: "the Einbürgerungstestverordnung (last amended 21 June 2024), § 10 StAG and the BAMF page on the integration course final test, checked November 22, 2026",
+    source: { name: "Einbürgerungstestverordnung (gesetze-im-internet.de)", url: "https://www.gesetze-im-internet.de/einbtestv/BJNR164900008.html" },
+    tigertest: "198 original German-language questions in six real-length 33-question tests, each with 3 questions on the Länder in general. Free to start. No question from the official catalogue is reused, and the ten questions for your own Land are best learned from the BAMF catalogue. Model language review only.",
+  },
   frcivique: {
   "answer": "France's examen civique has been required since 1 January 2026 for a first multi-year residence card (carte de séjour pluriannuelle), a first resident card (carte de résident) and naturalisation by decree. It is a 40-question multiple-choice test in French, 45 minutes at most, taken on a computer or tablet at a centre approved by the Ministry of the Interior: 28 knowledge questions and 12 situations across five themes. The pass mark is 80% (32 of 40) for all three pathways; the questions get harder from the residence card to naturalisation.",
   "rows": [

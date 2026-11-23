@@ -1,0 +1,121 @@
+{
+  "metaTitle": "Einbürgerungstest 2026: kostenloser Übungstest auf Deutsch",
+  "metaDescription": "Übe für den Einbürgerungstest und den Test Leben in Deutschland: 198 eigene Fragen zu Grundgesetz, Staat, Wahlen, Bundesländern, Geschichte und Gesellschaft, jede Antwort erklärt. Sechs Testbögen mit 33 Fragen wie im echten Test. Kostenlos starten, ohne Anmeldung.",
+  "keywords": "Einbürgerungstest, Einbürgerungstest üben, Einbürgerungstest online, Test Leben in Deutschland, Leben in Deutschland Test, Einbürgerungstest Fragen, Einbürgerungstest 33 Fragen, Orientierungskurs Test, Einbürgerungstest 2026, Fragen zur Einbürgerung",
+  "breadcrumb": {
+    "home": "Start",
+    "allTests": "Alle Tests",
+    "current": "Einbürgerungstest"
+  },
+  "h1": "Einbürgerungstest 2026: kostenlos üben",
+  "subtitle": "198 Übungsfragen zu Grundgesetz, Staat, Geschichte und Gesellschaft, alle erklärt. Sechs Testbögen mit 33 Fragen wie im echten Test. Kostenlos starten, ohne Anmeldung.",
+  "facts": {
+    "h2": "Der Einbürgerungstest auf einen Blick",
+    "answer": "Wer sich einbürgern lassen will, weist mit dem Einbürgerungstest Kenntnisse der Rechts- und Gesellschaftsordnung und der Lebensverhältnisse in Deutschland nach (§ 10 StAG). Der Test hat 33 Fragen mit je vier Antworten, von denen genau eine richtig ist. Drei Fragen beziehen sich auf dein Bundesland. Du hast 60 Minuten Zeit und bestehst mit mindestens 17 richtigen Antworten. Die Fragen stammen aus einem öffentlichen Katalog von 310 Fragen: 300 allgemeine und 10 zu jedem Bundesland. Der Test „Leben in Deutschland“ am Ende des Orientierungskurses nutzt denselben Katalog; dort reichen 15 richtige Antworten für den Kurs, mit 17 gilt er auch für die Einbürgerung.",
+    "tigertest": "Tigertest hat 198 eigene Übungsfragen auf Deutsch zu allen Themen des Rahmencurriculums, der Einstieg ist kostenlos und ohne Anmeldung. Jeder Testbogen hat wie der echte Test 33 Fragen, davon drei zu den Bundesländern allgemein. Die Fragen sind selbst geschrieben, nicht aus dem amtlichen Katalog kopiert. Die Sprache hat ein Modell geprüft, kein menschlicher Lektor.",
+    "rows": [
+      {
+        "label": "Fragen",
+        "value": "33 Fragen mit je vier Antworten, eine davon richtig"
+      },
+      {
+        "label": "Bundesland",
+        "value": "3 der 33 Fragen betreffen dein Bundesland"
+      },
+      {
+        "label": "Zeit",
+        "value": "60 Minuten, unter Aufsicht"
+      },
+      {
+        "label": "Bestehen",
+        "value": "Mindestens 17 richtige Antworten (Test Leben in Deutschland: 15 für den Orientierungskurs)"
+      },
+      {
+        "label": "Fragenkatalog",
+        "value": "310 Fragen: 300 allgemeine und 10 je Bundesland"
+      },
+      {
+        "label": "Gültigkeit",
+        "value": "Die Bescheinigung gilt auch nach einem Umzug in ein anderes Bundesland"
+      }
+    ],
+    "footnote": "Nach der Einbürgerungstestverordnung, § 10 StAG und der BAMF-Seite zur Abschlussprüfung, geprüft am 22. November 2026. Ausnahmen gibt es etwa bei Krankheit, Behinderung oder hohem Alter. Tigertest ist unabhängig vom BAMF und den Prüfstellen. Die amtlichen Regeln findest du hier:",
+    "source": {
+      "name": "Einbürgerungstestverordnung (gesetze-im-internet.de)",
+      "url": "https://www.gesetze-im-internet.de/einbtestv/BJNR164900008.html"
+    }
+  },
+  "howItWorks": {
+    "h2": "So funktioniert es",
+    "cards": [
+      {
+        "h3": "Erst üben, dann testen",
+        "p": "Fünf Übungssets nach Themen: Grundgesetz und Grundrechte, Staat und Rechtsstaat, Wahlen, Parteien und Bundesländer, Geschichte und Verantwortung sowie Mensch und Gesellschaft. Jede Antwort wird erklärt, und falsch beantwortete Fragen kommen wieder, bis du sie sicher kannst."
+      },
+      {
+        "h3": "Testbögen wie im echten Test",
+        "p": "Jeder Testbogen hat 33 Fragen, davon drei zu den Bundesländern. Bestanden ist er wie beim Einbürgerungstest mit 17 richtigen Antworten. Nimm dir 60 Minuten Zeit und übe unter echten Bedingungen."
+      }
+    ]
+  },
+  "topics": {
+    "h2": "Die Themen des Einbürgerungstests",
+    "p": "Die Themen folgen dem Rahmencurriculum der Einbürgerungstestverordnung: Leben in der Demokratie, Geschichte und Verantwortung, Mensch und Gesellschaft. Jeder Testbogen hier enthält:",
+    "items": [
+      "Grundgesetz und Grundrechte (7 von 33 Fragen)",
+      "Staat und Rechtsstaat (7 von 33 Fragen)",
+      "Wahlen, Parteien und Mitwirkung (5 von 33 Fragen)",
+      "Bundesländer und Kommunen (3 von 33 Fragen)",
+      "Geschichte und Verantwortung (6 von 33 Fragen)",
+      "Mensch und Gesellschaft (5 von 33 Fragen)"
+    ]
+  },
+  "howToPass": {
+    "h2": "So bestehst du den Einbürgerungstest",
+    "steps": [
+      {
+        "h3": "1. Lerne zuerst die Grundlagen",
+        "p": "Fast die Hälfte des Tests dreht sich um Grundgesetz, Staat und Wahlen. Beginne mit diesen Übungssets und lies jede Erklärung, auch wenn du richtig lagst."
+      },
+      {
+        "h3": "2. Übe die Fragen zu deinem Bundesland",
+        "p": "Drei Fragen betreffen dein Bundesland, etwa Wappen, Landeshauptstadt und Landtag. Tigertest übt die Bundesländer allgemein. Die zehn Fragen zu deinem Land findest du im Fragenkatalog des BAMF."
+      },
+      {
+        "h3": "3. Mach mehrere Testbögen",
+        "p": "17 von 33 reichen zum Bestehen. Übe, bis du regelmäßig deutlich mehr schaffst, damit du am Testtag eine sichere Reserve hast."
+      },
+      {
+        "h3": "4. Melde dich bei einer Prüfstelle an",
+        "p": "Den Test legst du bei einer vom BAMF zugelassenen Prüfstelle ab, oft einer Volkshochschule. Frag dort nach Terminen und nach den Unterlagen, die du mitbringen musst."
+      }
+    ]
+  },
+  "faqTitle": "Häufige Fragen zum Einbürgerungstest",
+  "faqs": [
+    {
+      "q": "Wie viele Fragen muss ich beim Einbürgerungstest richtig beantworten?",
+      "a": "Du brauchst mindestens 17 richtige Antworten von 33. Für jede Frage gibt es vier Antworten, und genau eine ist richtig. Du hast 60 Minuten Zeit."
+    },
+    {
+      "q": "Was ist der Unterschied zum Test Leben in Deutschland?",
+      "a": "Der Test „Leben in Deutschland“ ist der Abschlusstest des Orientierungskurses im Integrationskurs. Er nutzt denselben Fragenkatalog. Mit 15 richtigen Antworten bestehst du den Kurs, mit 17 richtigen gilt der Test auch als Nachweis für die Einbürgerung."
+    },
+    {
+      "q": "Sind das die offiziellen Fragen des BAMF?",
+      "a": "Nein. Alle 198 Fragen sind selbst geschrieben, nach dem Grundgesetz, dem Staatsangehörigkeitsgesetz und dem Rahmencurriculum. Der amtliche Katalog mit 310 Fragen ist öffentlich, und wir empfehlen dir, ihn ebenfalls zu lernen. Die Sprache hat ein Modell geprüft, kein menschlicher Lektor."
+    },
+    {
+      "q": "Werden auch Fragen zu meinem Bundesland geübt?",
+      "a": "Jeder Testbogen hier hat drei Fragen zu den Bundesländern allgemein, etwa zu Landeshauptstädten, Landtagen und Kommunalwahlen. Die zehn Fragen zu deinem eigenen Land, zum Beispiel zum Landeswappen, lernst du am besten direkt aus dem Fragenkatalog des BAMF."
+    },
+    {
+      "q": "Kann ich kostenlos üben?",
+      "a": "Ja, du kannst kostenlos und ohne Anmeldung starten: Die Übungssets 1 bis 3 und die Testbögen 1 und 2 sind frei. Die Übungssets 4 und 5 und die Testbögen 3 bis 6 gehören zu Tigertest Premium, mit einer einmaligen Zahlung und ohne Abo."
+    }
+  ],
+  "finalCta": {
+    "h2": "Starte deine Vorbereitung auf den Einbürgerungstest",
+    "p": "Ein Thema nach dem anderen, mit einer Erklärung zu jeder Antwort. Kostenlos starten, ohne Anmeldung."
+  }
+}

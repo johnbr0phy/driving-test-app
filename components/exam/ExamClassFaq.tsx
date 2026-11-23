@@ -10,6 +10,7 @@ import { teachPathFor } from "@/lib/teachPages";
 
 export const TEACHES: Record<string, string> = {
   frcivique: "a French civic exam preparation class",
+  deeinb: "an Einbürgerungskurs or orientation course",
   sfappbuilder: "a Salesforce App Builder or Salesforce admin course",
   sfpd1: "a Salesforce developer course or bootcamp",
   nailtech: "at a nail technology school",

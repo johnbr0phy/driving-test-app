@@ -404,16 +404,16 @@
     "skill": "Physical access controls",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which control lets only one person through at a time, with a second door that opens after the first closes?",
-    "explanation": "An access control vestibule (once called a mantrap) has two interlocked doors, which stops tailgating.",
+    "stem": "A server room must stop wireless signals from leaking out to anyone listening outside. Which physical measure fits?",
+    "explanation": "Signal blocking (shielding built into the room) stops radio signals passing through the walls. Reflective glass stops people seeing in, and bollards stop vehicles.",
     "options": [
-      "Turnstile with a guard post",
-      "Badge reader alone",
-      "Access control vestibule",
-      "Bollard"
+      "Reflective glass on the windows",
+      "Brighter outdoor lighting",
+      "Bollards at the entrance",
+      "Signal blocking in the walls"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -992,13 +992,13 @@
     "skill": "Permissions and access controls",
     "difficulty": 2,
     "format": "single",
-    "stem": "Help desk staff are put in a group that has reset rights. Which access model is this?",
-    "explanation": "Role-based access control grants rights to a role or group, and people get access by being placed in it.",
+    "stem": "A senior admin lets a junior admin reset passwords in one department's accounts only, without making the junior a full domain admin. What is this?",
+    "explanation": "Delegation hands one limited admin task to someone else without granting all of the delegating admin's rights.",
     "options": [
-      "Mandatory access control",
-      "Rule-based access control",
-      "Discretionary access control",
-      "Role-based access control"
+      "Account lockout",
+      "Two-person integrity",
+      "Single sign-on",
+      "Delegation"
     ],
     "correct": [
       3
@@ -1454,16 +1454,16 @@
     "skill": "Mitigation strategies",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which system collects logs from many servers and correlates them to raise security alerts?",
-    "explanation": "A security information and event management system gathers and correlates events across sources and alerts on patterns.",
+    "stem": "Why must every server's clock be in sync before its logs go into a SIEM?",
+    "explanation": "A SIEM correlates events across sources by time. If clocks differ, related events appear out of order or fail to match up.",
     "options": [
-      "NAS",
-      "DLP",
-      "SIEM",
-      "HIPS"
+      "So the logs compress to a smaller size",
+      "So nightly backups finish sooner",
+      "So the SIEM license stays valid",
+      "So events from many servers line up in order"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -3046,19 +3046,19 @@
     "test": 2,
     "module": 1,
     "domain": "spHaVirt",
-    "skill": "Cloud models",
+    "skill": "Management interfaces for virtual machines",
     "difficulty": 2,
     "format": "single",
-    "stem": "A company keeps payroll servers on site and bursts web servers to a provider at peak. Which cloud model is this?",
-    "explanation": "Hybrid cloud joins private, on-premises resources with public cloud resources that work together.",
+    "stem": "A VM's guest OS lost its network settings, so SSH and RDP to it fail. How can an admin still reach its screen?",
+    "explanation": "The hypervisor's management interface opens the VM's console directly, without the guest's network. A crash cart shows the host's own screen, not the guest's.",
     "options": [
-      "Public",
-      "Private",
-      "Hybrid",
-      "Community"
+      "Telnet to the VM's old address",
+      "The host's UPS web page",
+      "A crash cart wheeled to the host",
+      "The VM console in the hypervisor's management tool"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -3322,16 +3322,16 @@
     "skill": "Testing",
     "difficulty": 2,
     "format": "single",
-    "stem": "Which DR test walks through the plan in a meeting without touching any systems?",
-    "explanation": "A tabletop is a discussion of the plan's steps and roles. Failover tests actually move workloads.",
+    "stem": "Which DR test really moves production work to the DR site and runs it there?",
+    "explanation": "A live failover shifts the real workload to the DR site, the fullest and riskiest test. A simulated failover rehearses the steps without moving production, and a tabletop is only a discussion.",
     "options": [
       "Simulated failover",
-      "Production cutover",
-      "Live failover to the DR site",
+      "Live failover",
+      "Plan document review",
       "Tabletop exercise"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -3933,16 +3933,16 @@
     "skill": "Regulatory constraints",
     "difficulty": 2,
     "format": "single",
-    "stem": "Servers storing card numbers must follow which standard?",
-    "explanation": "The Payment Card Industry Data Security Standard covers systems that store, process or send cardholder data.",
+    "stem": "Under PCI DSS, how must card numbers stored on a server be kept?",
+    "explanation": "PCI DSS requires stored primary account numbers to be rendered unreadable, for example by strong encryption, truncation or hashing.",
     "options": [
-      "PCI DSS",
-      "RFC 1918",
-      "HIPAA",
-      "ISO 9001"
+      "In plain text for the auditors",
+      "Only in the server's event log",
+      "On the same disk as the OS",
+      "Unreadable, for example encrypted"
     ],
     "correct": [
-      0
+      3
     ]
   },
   {

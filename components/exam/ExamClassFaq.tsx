@@ -116,6 +116,7 @@ export const TEACHES: Record<string, string> = {
   ccma: "a medical assistant program",
   cet: "an EKG technician program",
   cct: "a cardiographic or EKG technician program",
+  crat: "a monitor technician or EKG technician program",
   danb: "a dental assisting program",
   cpr: "CPR and first aid classes",
   ukfaw: "First Aid at Work courses",

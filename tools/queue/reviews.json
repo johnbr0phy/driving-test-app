@@ -1098,6 +1098,14 @@
         "pr": 994,
         "findings": 10
       }
+    ],
+    "crat": [
+      {
+        "date": "2026-11-23",
+        "kind": "blind review at build",
+        "pr": 993,
+        "findings": 3
+      }
     ]
   },
   "pendingReviews": {

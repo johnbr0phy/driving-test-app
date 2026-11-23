@@ -79,7 +79,7 @@ ITEMS = [
     single(0, "Threat landscape", 2,
            "Which source gives the risk practitioner the MOST timely view of active attack campaigns?",
            ["Threat intelligence feeds", "Past board minutes", "Product brochures", "Yearly business risk reports"],
-           "Threat intelligence reports what attackers are doing now. Audit reports and minutes look back."),
+           "Threat intelligence reports what attackers are doing now. Yearly reports and board minutes look back."),
     single(0, "Vulnerability management", 3,
            "A penetration test and a vulnerability scan differ MAINLY because the test:",
            ["Tries to exploit flaws", "Runs without any approval", "Checks only physical security", "Never finds real issues"],

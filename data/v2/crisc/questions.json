@@ -3418,7 +3418,7 @@
     "difficulty": 2,
     "format": "single",
     "stem": "Which source gives the risk practitioner the MOST timely view of active attack campaigns?",
-    "explanation": "Threat intelligence reports what attackers are doing now. Audit reports and minutes look back.",
+    "explanation": "Threat intelligence reports what attackers are doing now. Yearly reports and board minutes look back.",
     "options": [
       "Product brochures",
       "Threat intelligence feeds",

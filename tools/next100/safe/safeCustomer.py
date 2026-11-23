@@ -32,12 +32,12 @@ ITEMS = [
            "Design thinking aims for solutions that are desirable to customers, profitable for the business and sustainable over the product's life."),
     single(1, "Stories", 1,
            "How long should a SAFe story take to finish?",
-           ["A few days or less", "One full PI", "About one quarter", "Two or three iterations"],
+           ["A few days or less", "One full PI of 8 to 12 weeks", "About one quarter", "Two or three iterations"],
            "A story is a small piece of functionality that a team can finish within one iteration, typically in a few days or less."),
     # ---------------- Test 2 ----------------
     single(2, "WSJF", 2,
            "Which of these is one of the components of cost of delay in WSJF?",
-           ["Time criticality", "Team velocity", "Number of testers", "Sunk cost"],
+           ["Time criticality", "Team velocity", "Number of testers", "Sunk cost already spent"],
            "Cost of delay adds user and business value, time criticality, and risk reduction or opportunity enablement. WSJF ignores sunk costs on purpose."),
     single(2, "WSJF", 3,
            "Half the budget for a feature is already spent. How does WSJF treat that money?",
@@ -117,4 +117,13 @@ ITEMS = [
            ["The solution can cost too much", "The solution always runs faster for users",
             "Security issues disappear", "Testing is no longer needed at all"],
            "Too strict NFRs make a solution too costly, and too loose ones make it inadequate, which is why SAFe treats them adaptively."),
+    single(0, "ART backlog", 1,
+           "Who owns and orders the ART backlog?",
+           ["Product Management", "The Release Train Engineer", "The Business Owners", "Each team's Product Owner"],
+           "Product Management manages and prioritizes the ART backlog and aligns it with product strategy, vision and roadmap. Product Owners manage their own team backlogs."),
+    single(0, "Lean UX", 2,
+           "What does Lean UX favour over a theoretically ideal design?",
+           ["Iterative learning", "Detailed upfront specs", "Pixel-perfect mockups first", "Sign-off by a design board"],
+           "Lean UX is team-based and favours iterative learning and customer outcomes, testing small changes with users instead of perfecting a design on paper."),
 ]
+

@@ -1,0 +1,4245 @@
+[
+  {
+    "id": "SAFE-T1-001",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Lean budgets",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does SAFe fund instead of projects?",
+    "options": [
+      "Individual job roles",
+      "Value streams",
+      "Departments",
+      "Individual stories"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lean budgets fund value streams rather than projects, which removes much of the overhead of project cost accounting and lets ARTs steer work inside their budget."
+  },
+  {
+    "id": "SAFE-T1-002",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "WSJF",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How does SAFe calculate Weighted Shortest Job First?",
+    "options": [
+      "Job size divided by business value",
+      "Risk reduction minus job size",
+      "Cost of delay divided by job duration",
+      "Business value times time criticality"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "WSJF is the relative cost of delay divided by the relative job duration, usually estimated with job size. The highest result goes first."
+  },
+  {
+    "id": "SAFE-T1-003",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "PI Planning",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How long is a PI Planning event, and who facilitates it?",
+    "options": [
+      "One week; the Product Owners",
+      "Two days; the RTE",
+      "Half a day; the Business Owners",
+      "One day; the Scrum Masters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "PI Planning is a two-day event for the whole ART, led by the Release Train Engineer, held every 8 to 12 weeks."
+  },
+  {
+    "id": "SAFE-T1-004",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Core values",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which list gives the four SAFe core values?",
+    "options": [
+      "Alignment, transparency, respect for people, relentless improvement",
+      "Commitment, focus, openness, respect, courage and trust",
+      "Speed, quality, cost control, predictability and lasting customer delight",
+      "Alignment, built-in quality, transparency, program execution"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SAFe's core values are alignment, transparency, respect for people and relentless improvement. The five Scrum values and the older SAFe list with built-in quality are tempting mix-ups."
+  },
+  {
+    "id": "SAFE-T1-005",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 1",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which two practices does SAFe tie to Principle #1?",
+    "options": [
+      "Track utilization; fund each project separately each year",
+      "Defer integration; review the budget yearly",
+      "Deliver early and often; use an economic framework",
+      "Fix scope early; reward teams for hitting their dates"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Principle #1 rests on delivering early and often and on applying an economic framework so decisions at every level weigh the money involved."
+  },
+  {
+    "id": "SAFE-T1-006",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Agile teams",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How large is a SAFe Agile team, typically?",
+    "options": [
+      "Fifteen to twenty people",
+      "Exactly five people",
+      "Ten or fewer people",
+      "Twenty-five or more people"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A SAFe Agile team is a cross-functional group of typically ten or fewer people with the skills to define, build, test and deliver value."
+  },
+  {
+    "id": "SAFE-T1-007",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Age of disruption",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which technological revolution does SAFe say businesses now compete in?",
+    "options": [
+      "Age of Oil and Mass Production",
+      "Age of Electricity and Heavy Engineering",
+      "Age of Software and Digital",
+      "Age of Steam and Railways"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SAFe draws on Carlota Perez's five technological revolutions and places today's enterprises in the Age of Software and Digital, where digitally enabled solutions decide who thrives."
+  },
+  {
+    "id": "SAFE-T1-008",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Implementation roadmap",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the first step of the SAFe Implementation Roadmap?",
+    "options": [
+      "Reaching the tipping point",
+      "Launching the first ART",
+      "Training every team at the same time",
+      "Creating the implementation plan for all value streams"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The roadmap starts with reaching the tipping point, then training change agents, creating a LACE and training leaders, before the first ART is launched."
+  },
+  {
+    "id": "SAFE-T1-009",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Guardrails",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is one of SAFe's four Lean budget guardrails?",
+    "options": [
+      "Annual project business cases for each team",
+      "Continuous Business Owner engagement",
+      "Fixed scope for each feature in the PI",
+      "Approval of every story by finance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The guardrails are guiding investments by horizon, capacity allocation, approving significant initiatives, and continuous Business Owner engagement."
+  },
+  {
+    "id": "SAFE-T1-010",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "WSJF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Feature X has a cost of delay of 20 and a job size of 5. Feature Y has 24 and 8. Which goes first, and why?",
+    "options": [
+      "X, its job size is smaller",
+      "Y, its cost of delay is higher",
+      "Y, its WSJF is 3 against 2",
+      "X, its WSJF is 4 against 3"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "WSJF for X is 20 / 5 = 4 and for Y is 24 / 8 = 3, so X goes first. A higher cost of delay or a smaller size alone does not decide the order."
+  },
+  {
+    "id": "SAFE-T1-011",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "PI Planning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which two outputs come out of PI Planning?",
+    "options": [
+      "A signed contract and a Gantt chart",
+      "A master test plan and a release checklist",
+      "Committed PI objectives and a planning board",
+      "A budget request and a hiring plan for next year"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Teams leave PI Planning with committed PI objectives and an ART planning board showing feature delivery dates and dependencies between teams."
+  },
+  {
+    "id": "SAFE-T1-012",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Epics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which three things must an epic have before it can be approved?",
+    "options": [
+      "A Gantt chart, a contract and a test plan",
+      "MVP, Lean business case, cost estimate",
+      "A team, a sprint and a burndown chart",
+      "A vendor quote, a charter and a steering board"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SAFe requires each epic to have a defined MVP, a Lean business case and a cost estimate, and approval by portfolio leadership."
+  },
+  {
+    "id": "SAFE-T1-013",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Lean-Agile mindset",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which two bodies of thought does SAFe's mindset combine?",
+    "options": [
+      "ITIL and the PMBOK Guide on project work",
+      "Six Sigma and waterfall planning",
+      "Lean thinking and the Agile Manifesto",
+      "Theory X and command-and-control management"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SAFe describes the Lean-Agile mindset as the beliefs and actions of leaders and practitioners who embrace Lean thinking and the Agile Manifesto."
+  },
+  {
+    "id": "SAFE-T1-014",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 3",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team keeps several design options open until learning shows which works. What is this called?",
+    "options": [
+      "Big design up front",
+      "Point-based design",
+      "Set-based design",
+      "Gold plating"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Set-based design preserves options until the knowledge to choose arrives. Point-based design picks one option early, which Principle #3 warns against."
+  },
+  {
+    "id": "SAFE-T1-015",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Agile Release Trains",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What size is a typical Agile Release Train?",
+    "options": [
+      "50 to 125 people",
+      "10 to 20 people",
+      "200 to 400 people",
+      "500 people or more"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SAFe describes an ART as a long-lived team of Agile teams, generally 50 to 125 people, with the skills to define, build, validate, release and operate a solution."
+  },
+  {
+    "id": "SAFE-T1-016",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Epics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What are SAFe's two types of epic?",
+    "options": [
+      "Business and enabler",
+      "Internal and external",
+      "Strategic and tactical",
+      "Major and minor"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Business epics deliver value directly to customers. Enabler epics extend the architectural runway or the capabilities needed for future business work."
+  },
+  {
+    "id": "SAFE-T1-017",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Dual operating system",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In SAFe's dual operating system, what is the network side optimized for?",
+    "options": [
+      "Efficiency and stability",
+      "Career paths and reporting",
+      "Cost control and audits",
+      "Speed and adaptability"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The network is built for speed and adaptability, while the hierarchy stays optimized for efficiency and stability. Both run together, and both need to be agile."
+  },
+  {
+    "id": "SAFE-T1-018",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Lead by example",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does SAFe say leaders, not teams, must drive the change?",
+    "options": [
+      "Teams are not allowed to suggest changes",
+      "Teams lack any domain knowledge",
+      "Only leaders can change the system",
+      "Leaders write most of the code"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SAFe says only leaders can change the systems that govern how work is done, so they must model the mindset and lead the change."
+  },
+  {
+    "id": "SAFE-T1-019",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "Customer centricity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An ART builds an e-banking platform that a mobile app ART uses. Who is the platform ART's customer?",
+    "options": [
+      "The mobile app ART",
+      "The platform's own testers",
+      "Only the bank's end users",
+      "The Lean Portfolio Management team"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SAFe recognizes internal customers inside the company as well as external ones. Along a chain of ARTs, the ART that uses the platform is its customer."
+  },
+  {
+    "id": "SAFE-T1-020",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "PI objectives",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why do teams mark some PI objectives as uncommitted?",
+    "options": [
+      "The Business Owners have not yet funded it",
+      "The work is outside the ART's mission",
+      "The outcome is too uncertain",
+      "The team plans to skip that work if busy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Uncommitted objectives are planned and counted in capacity, but their outcome is uncertain, so the team does not promise them. They still give the business a fuller picture."
+  },
+  {
+    "id": "SAFE-T1-021",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Strategic themes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does SAFe recommend stating strategic themes?",
+    "options": [
+      "As yearly headcount targets",
+      "As a list of named projects with dates",
+      "As OKRs in plain language",
+      "As technical design rules for every ART"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Strategic themes are portfolio-level business objectives. SAFe strongly recommends expressing them as OKRs in plain business language."
+  },
+  {
+    "id": "SAFE-T1-022",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Agile Manifesto",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "The Agile Manifesto values responding to change over which item?",
+    "options": [
+      "Detailed documentation",
+      "Contract negotiation",
+      "Processes and tools",
+      "Following a plan"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The manifesto values responding to change over following a plan. The other three items are the right-hand sides of its other values."
+  },
+  {
+    "id": "SAFE-T1-023",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 6",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "By Little's Law, an ART finishes 10 features a quarter and has 40 waiting. About how long will a new feature wait?",
+    "options": [
+      "2 quarters",
+      "4 quarters",
+      "10 quarters",
+      "40 quarters"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Little's Law gives average wait time as queue length divided by processing rate: 40 features divided by 10 per quarter is 4 quarters.",
+    "lockedOrder": true
+  },
+  {
+    "id": "SAFE-T1-024",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Continuous delivery pipeline",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which list gives the four aspects of the continuous delivery pipeline in order?",
+    "options": [
+      "Exploration, integration, deployment, release on demand",
+      "Plan, code, test, then release on one fixed yearly date",
+      "Design, build, verify, hand over to operations",
+      "Integration, exploration, release on demand, deployment"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The pipeline runs from continuous exploration through continuous integration and continuous deployment to release on demand."
+  },
+  {
+    "id": "SAFE-T1-025",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Portfolio Kanban",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does SAFe limit WIP in the portfolio Kanban?",
+    "options": [
+      "To match epics to real capacity",
+      "To slow down every ART on purpose",
+      "To stop new ideas from being raised",
+      "To spend the budget faster"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "WIP limits keep the portfolio from starting more epics than it can deliver. Effort and capacity rise from left to right on the Kanban, so leaders choose which epics advance."
+  },
+  {
+    "id": "SAFE-T1-026",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "Features",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What can one ART complete within a single PI?",
+    "options": [
+      "A feature",
+      "A strategic theme",
+      "A portfolio vision",
+      "An epic"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A feature delivers business value and is sized so that one ART can complete it within a PI. Epics are larger initiatives that usually span many PIs and ARTs."
+  },
+  {
+    "id": "SAFE-T1-027",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "ART Sync",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A risk raised at ART Sync will be handled by a named person after the meeting. What is its ROAM status?",
+    "options": [
+      "Accepted",
+      "Resolved",
+      "Owned",
+      "Mitigated"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "ROAM stands for Resolved, Owned, Accepted and Mitigated. An owned risk has someone who takes responsibility for handling it outside the meeting."
+  },
+  {
+    "id": "SAFE-T1-028",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Value streams",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bank's steps from a loan application to paying out the money form which kind of value stream?",
+    "options": [
+      "Enabling",
+      "Operational",
+      "Portfolio",
+      "Development"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Operational value streams deliver goods or services to customers, such as providing a loan or fulfilling an order. Development value streams build the solutions that operational ones use."
+  },
+  {
+    "id": "SAFE-T1-029",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Change agents",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which group does SAFe often set up to coordinate a SAFe transformation?",
+    "options": [
+      "A PMO",
+      "A works council",
+      "A steering vendor",
+      "A LACE"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A Lean-Agile Center of Excellence (LACE) is often formed to coordinate the change, working with SAFe Program Consultants who act as change agents."
+  },
+  {
+    "id": "SAFE-T1-030",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Epic Owner",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who usually acts as Epic Owner for an enabler epic?",
+    "options": [
+      "A Scrum Master/Team Coach",
+      "A Product Owner on the team",
+      "A finance analyst",
+      "An Enterprise Architect"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Enterprise Architects typically act as Epic Owners for enabler epics, which build the technical foundations the business epics will need."
+  },
+  {
+    "id": "SAFE-T1-031",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Core values",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Teams share honest progress, risks and bad news early with leaders. Which core value is this?",
+    "options": [
+      "Transparency",
+      "Relentless improvement",
+      "Alignment",
+      "Respect for people"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Transparency means work and problems are visible, including bad news, so trust can grow and decisions rest on facts."
+  },
+  {
+    "id": "SAFE-T1-032",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 8",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which three levers does SAFe name for unlocking intrinsic motivation?",
+    "options": [
+      "Rules, audits and sign-offs",
+      "Overtime, targets and deadlines",
+      "Autonomy, mastery and purpose",
+      "Bonuses, rankings and titles"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Principle #8 uses autonomy, mastery and purpose to foster intrinsic motivation. Extrinsic rewards can even hurt performance on heuristic knowledge work."
+  },
+  {
+    "id": "SAFE-T1-033",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "DevOps",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In CALMR, what does the R stand for?",
+    "options": [
+      "Release",
+      "Readiness",
+      "Reporting",
+      "Recovery"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "CALMR is culture, automation, Lean flow, measurement and recovery. The wider DevOps community's CALMS has sharing; SAFe folds sharing into culture and adds recovery."
+  },
+  {
+    "id": "SAFE-T1-034",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "Design thinking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which three qualities does SAFe's design thinking aim for in a product?",
+    "options": [
+      "Cheap, fast and fixed in scope",
+      "Approved, documented and audited",
+      "Desirable, profitable, sustainable",
+      "Complex, unique and fully patented"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Design thinking aims for solutions that are desirable to customers, profitable for the business and sustainable over the product's life."
+  },
+  {
+    "id": "SAFE-T1-035",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "Inspect and Adapt",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which three parts make up the Inspect and Adapt event?",
+    "options": [
+      "Portfolio sync, budget review, epic approval and funding",
+      "Iteration review, daily stand-up, backlog refinement and estimating",
+      "Kickoff, design review, final sign-off",
+      "PI System Demo, measurement review, problem-solving workshop"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Inspect and Adapt has a PI System Demo, a quantitative and qualitative measurement review, and a retrospective and problem-solving workshop."
+  },
+  {
+    "id": "SAFE-T1-036",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Strategic Investment Planning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What was SAFe's Strategic Investment Planning formerly called?",
+    "options": [
+      "Program Increment Budgeting",
+      "Participatory Budgeting",
+      "Zero-based Annual Budgeting",
+      "Capacity Allocation"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SAFe now calls Participatory Budgeting Strategic Investment Planning. It is how stakeholders help decide how the portfolio budget is split across value streams."
+  },
+  {
+    "id": "SAFE-T1-037",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Portfolio vision",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does SAFe's portfolio vision describe?",
+    "options": [
+      "Last year's portfolio results and costs",
+      "Future state of the value streams",
+      "The reporting lines planned for next year",
+      "Each team's iteration plan"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The portfolio vision describes the future state of the portfolio's value streams and solutions. It should be aspirational yet achievable and is a key input for identifying epics."
+  },
+  {
+    "id": "SAFE-T1-038",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Business agility",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does SAFe mean by business agility?",
+    "options": [
+      "Running every department as a separate Scrum team",
+      "Cutting headcount whenever quarterly revenue drops",
+      "Moving all software development to outside vendors",
+      "Fast response to change with digital solutions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Business agility is the ability to compete and thrive by responding quickly to market changes and emerging opportunities with innovative, digitally enabled solutions."
+  },
+  {
+    "id": "SAFE-T1-039",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Empower leaders with AI",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A leader wants teams to use AI well. What does SAFe expect the leader to do first?",
+    "options": [
+      "Measure people by prompts written",
+      "Mandate one tool for every task",
+      "Ban AI until it is perfect",
+      "Model responsible use themselves"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Leading by example applies to AI too: leaders learn and model responsible, human-centric use before asking teams to adopt it."
+  },
+  {
+    "id": "SAFE-T1-040",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Empower agility with AI",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "According to AI-Native SAFe, what role does AI play for Agile teams?",
+    "options": [
+      "It removes the need for PI Planning",
+      "It augments the people on the team",
+      "It replaces the Product Owner role",
+      "It sets the team's PI objectives"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "AI-Native SAFe speaks of augmenting teams with AI, sustained by a human-centric AI culture. People stay accountable for goals, plans and decisions."
+  },
+  {
+    "id": "SAFE-T1-041",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 9",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which kind of decision does SAFe keep centralized under Principle #9?",
+    "options": [
+      "Frequent, time-critical team choices",
+      "Story estimates within an iteration",
+      "Daily task assignments within each team",
+      "Rare ones with big economies of scale"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Decisions that are infrequent, long-lasting and have significant economies of scale stay central. Frequent, time-critical decisions that need local information are decentralized."
+  },
+  {
+    "id": "SAFE-T1-042",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Team roles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which two roles does every SAFe Agile team have?",
+    "options": [
+      "Product Manager and System Team lead",
+      "Product Owner and Scrum Master/Team Coach",
+      "Business Owner and Epic Owner",
+      "Release Train Engineer and System Architect"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each Agile team has a Product Owner and a Scrum Master/Team Coach. The RTE, System Architect and Product Management lead at the ART level."
+  },
+  {
+    "id": "SAFE-T1-043",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "Stories",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How long should a SAFe story take to finish?",
+    "options": [
+      "About one quarter",
+      "One full PI of 8 to 12 weeks",
+      "Two or three iterations",
+      "A few days or less"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A story is a small piece of functionality that a team can finish within one iteration, typically in a few days or less."
+  },
+  {
+    "id": "SAFE-T1-044",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "Innovation and Planning iteration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which work is planned into the IP iteration during PI Planning?",
+    "options": [
+      "All carried-over defects",
+      "None at all",
+      "The largest features",
+      "Every enabler"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "No planned work is assigned to the IP iteration. It gives an estimating buffer and time for innovation, learning, PI Planning and Inspect and Adapt."
+  },
+  {
+    "id": "SAFE-T1-045",
+    "section": "safe",
+    "test": 1,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "LPM events",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "When should the Strategic Portfolio Review take place?",
+    "options": [
+      "Quarterly, ahead of PI Planning",
+      "Daily, before the team stand-ups",
+      "Every two years, with the audit",
+      "Weekly, after each ART Sync"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Strategic Portfolio Review is held quarterly, at least one month before the next PI Planning, so its decisions can shape the ART backlogs in time."
+  },
+  {
+    "id": "SAFE-T2-001",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "LPM",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which three areas does Lean Portfolio Management cover?",
+    "options": [
+      "Strategy and funding, operations, governance",
+      "Coding, testing, deployment and release",
+      "Hiring, payroll and office space",
+      "Sales, marketing, customer support and renewals"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "LPM aligns strategy and execution across strategy and investment funding, Agile portfolio operations, and Lean governance."
+  },
+  {
+    "id": "SAFE-T2-002",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "WSJF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which of these is one of the components of cost of delay in WSJF?",
+    "options": [
+      "Time criticality",
+      "Number of testers",
+      "Sunk cost already spent",
+      "Team velocity"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cost of delay adds user and business value, time criticality, and risk reduction or opportunity enablement. WSJF ignores sunk costs on purpose."
+  },
+  {
+    "id": "SAFE-T2-003",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "Planning Interval",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How long is a typical Planning Interval (PI)?",
+    "options": [
+      "2 to 4 weeks",
+      "8 to 12 weeks",
+      "One full year",
+      "6 to 9 months"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A PI is a cadence-based timebox of 8 to 12 weeks, often four or five development iterations followed by one Innovation and Planning iteration."
+  },
+  {
+    "id": "SAFE-T2-004",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Core values",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Everyone on the ART understands the mission and how their work fits it. Which value is this?",
+    "options": [
+      "Respect for people",
+      "Relentless improvement",
+      "Transparency",
+      "Alignment"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Alignment means everyone shares the same mission and direction and knows how their work contributes, which lets decisions be made locally."
+  },
+  {
+    "id": "SAFE-T2-005",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 2",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Principle #2 says SAFe draws on four bodies of knowledge. Which is one of them?",
+    "options": [
+      "Theory X",
+      "Waterfall",
+      "Six Sigma",
+      "DevOps"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SAFe names systems thinking, Agile development, Lean product development and DevOps as the four bodies of knowledge it is built on."
+  },
+  {
+    "id": "SAFE-T2-006",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Team roles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement about the Scrum Master/Team Coach is true in SAFe?",
+    "options": [
+      "The role sets the team's priorities",
+      "The role assigns tasks to each member",
+      "It is usually not a people manager",
+      "The role writes all of the stories"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The SM/TC is a servant leader and coach who facilitates events and removes impediments. It is usually not a people manager and does not set priorities, which is the Product Owner's job."
+  },
+  {
+    "id": "SAFE-T2-007",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Dual operating system",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does SAFe organize its second operating system around?",
+    "options": [
+      "Development value streams",
+      "Functional departments",
+      "Geographic sales regions",
+      "Annual project budget cycles"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SAFe adds a second operating system organized around development value streams, running alongside the existing hierarchy rather than replacing it."
+  },
+  {
+    "id": "SAFE-T2-008",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Implementation roadmap",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Whose change model does the SAFe Implementation Roadmap partly draw on?",
+    "options": [
+      "Max Weber's",
+      "Henri Fayol's",
+      "John Kotter's",
+      "Frederick Taylor's"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The roadmap draws on John Kotter's work on leading change, including his accelerators such as creating urgency and building a guiding coalition."
+  },
+  {
+    "id": "SAFE-T2-009",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Guardrails",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which two guardrails are quantitative?",
+    "options": [
+      "Business Owner engagement and epic approval",
+      "Story points and velocity targets",
+      "Release dates and bug counts",
+      "Investment horizons and capacity allocation"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Guiding investments by horizon and capacity allocation are quantitative. Approving significant initiatives and continuous Business Owner engagement are process-based and qualitative."
+  },
+  {
+    "id": "SAFE-T2-010",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "WSJF",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Half the budget for a feature is already spent. How does WSJF treat that money?",
+    "options": [
+      "It doubles the feature's value",
+      "It ignores it",
+      "It lowers the feature's job size",
+      "It moves the feature to the top"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "WSJF looks only at the value of doing the remaining work sooner and its remaining size. Money already spent is a sunk cost and does not affect the ranking."
+  },
+  {
+    "id": "SAFE-T2-011",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "System Demo",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When does the System Demo happen, and where is it shown from?",
+    "options": [
+      "End of each PI; each developer's laptop",
+      "Start of each PI; a slide deck of screenshots",
+      "Once a year; the live public store",
+      "Each iteration end; production-like setup"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The System Demo shows the integrated work of all teams at the end of each iteration, from a production-like environment, to measure real progress."
+  },
+  {
+    "id": "SAFE-T2-012",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Guardrails",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In SAFe's investment horizons, what does Horizon 0 mean for a solution?",
+    "options": [
+      "It has no budget limits",
+      "It is a brand new idea",
+      "It is moving toward retirement",
+      "It is the top funding priority"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Horizon 0 marks solutions being moved toward decommissioning. Investment horizons help the portfolio balance spending across new, growing and declining solutions."
+  },
+  {
+    "id": "SAFE-T2-013",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Agile Manifesto",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does the Agile Manifesto value over comprehensive documentation?",
+    "options": [
+      "Responding to change",
+      "Working software",
+      "Customer collaboration",
+      "Individuals and interactions"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Working software is valued over comprehensive documentation. The other options are the left-hand sides of the manifesto's other three values."
+  },
+  {
+    "id": "SAFE-T2-014",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 4",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "According to Principle #4, what goes wrong in phase-gated development?",
+    "options": [
+      "Teams deliver value too often",
+      "Integration happens every single day",
+      "Customers see working parts much too early",
+      "Costs pile up before value or feedback"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In phase-gated work, investment builds up long before anything can be evaluated, so feedback arrives late. Adding more gates or up-front requirements makes it worse."
+  },
+  {
+    "id": "SAFE-T2-015",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Continuous delivery pipeline",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does SAFe separate deployment from release?",
+    "options": [
+      "So testing can be skipped in production",
+      "So operations can refuse any new code it dislikes",
+      "So the business decides when users get it",
+      "So releases happen only once a year"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Continuous deployment puts new functionality into production, ready to release. Release on demand then lets the business choose when and to whom it goes live."
+  },
+  {
+    "id": "SAFE-T2-016",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Epics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does SAFe say epics differ from projects?",
+    "options": [
+      "Epics never need any approval",
+      "They flow through a Kanban",
+      "Epics have no cost estimate at all",
+      "Epics are run by one team only"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Epics are not projects. They move through the portfolio Kanban, are tested with an MVP and are funded within value stream budgets instead of project plans."
+  },
+  {
+    "id": "SAFE-T2-017",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Lean-Agile organization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "As a company grows, why does SAFe say its original network of people slows down?",
+    "options": [
+      "The hierarchy's upkeep crowds it out",
+      "Automation removes the need for teams",
+      "Teams become too small to deliver",
+      "Customers stop asking for new products"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Enterprises start as fast networks, then add hierarchy for efficiency. Over time the work of maintaining the hierarchy overtakes the network, which slows the response to change."
+  },
+  {
+    "id": "SAFE-T2-018",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Lead the change",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which group of influential leaders does SAFe say a transformation needs early?",
+    "options": [
+      "A guiding coalition",
+      "A change review board",
+      "A project steering committee",
+      "An audit panel"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SAFe calls for a guiding coalition of influential leaders who sponsor and drive the change, following Kotter's accelerators."
+  },
+  {
+    "id": "SAFE-T2-019",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "Features",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who defines features on an ART, and who defines its enablers?",
+    "options": [
+      "The RTE; the Business Owners of the ART",
+      "Each Product Owner; each Agile team",
+      "Product Management; System Architect",
+      "The Epic Owner; the Value Management Office"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Product Management owns features and the ART backlog, while the System Architect defines the enablers that keep the solution's architecture healthy."
+  },
+  {
+    "id": "SAFE-T2-020",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "ART Sync",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which two meetings does ART Sync combine?",
+    "options": [
+      "PO Sync and Coach Sync",
+      "Daily stand-up and retrospective",
+      "Portfolio Sync and budget review",
+      "System Demo and iteration review"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "ART Sync joins the PO Sync, about scope, priorities and feature progress, with the Coach Sync, about impediments, dependencies and risks."
+  },
+  {
+    "id": "SAFE-T2-021",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Epics",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which cycle does SAFe use to build and test an epic's MVP?",
+    "options": [
+      "The Lean Startup cycle",
+      "The annual budget cycle",
+      "The waterfall cycle",
+      "The annual hiring and onboarding cycle"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SAFe implements epics with the SAFe Lean Startup cycle: build an MVP, evaluate the hypothesis, then pivot or persevere."
+  },
+  {
+    "id": "SAFE-T2-022",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Core values",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which SAFe core value means never settling for the current state and solving problems as they appear?",
+    "options": [
+      "Relentless improvement",
+      "Alignment",
+      "Transparency",
+      "Respect for people and partners"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Relentless improvement is the drive to keep getting better, never assuming the current state is good enough, and to solve problems as they surface."
+  },
+  {
+    "id": "SAFE-T2-023",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 6",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of these is one of SAFe's eight flow accelerators?",
+    "options": [
+      "Lengthen the queues",
+      "Work in smaller batches",
+      "Start more work at once",
+      "Add more handoffs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Working in smaller batches is a flow accelerator. The others are the opposite of the accelerators, which include limiting WIP, minimizing handoffs and reducing queue length."
+  },
+  {
+    "id": "SAFE-T2-024",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Agile teams",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When does SAFe suggest a team choose SAFe Team Kanban over SAFe Scrum?",
+    "options": [
+      "Work arrives unevenly",
+      "The team wants to skip PI Planning",
+      "The team has more than fifteen people",
+      "The work is fixed for a whole year"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Team Kanban suits teams whose work arrives unpredictably or whose priorities change quickly, such as system, operations and support teams. Kanban teams still plan with the ART."
+  },
+  {
+    "id": "SAFE-T2-025",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Epic Owner",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does an Epic Owner do once LPM approves an epic?",
+    "options": [
+      "Coordinates it with the ARTs",
+      "Signs the vendor contracts",
+      "Writes all of its stories alone",
+      "Sets every team's iteration goals"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "After approval, the Epic Owner coordinates bringing the epic into implementation with the ARTs, often several of them."
+  },
+  {
+    "id": "SAFE-T2-026",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "Capabilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is a capability in SAFe?",
+    "options": [
+      "A test that runs automatically after each story",
+      "Functionality spanning several ARTs",
+      "A budget line for one value stream",
+      "A skill a team member lists on a profile"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A capability is larger functionality that often spans multiple ARTs and is sized to be delivered within a PI. It is split into features for each ART."
+  },
+  {
+    "id": "SAFE-T2-027",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "PI objectives",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "PI objectives feed which ART measure?",
+    "options": [
+      "Automated code coverage",
+      "Headcount",
+      "Predictability",
+      "Team utilization"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Committed and uncommitted PI objectives, with the business value achieved, feed the ART predictability measure."
+  },
+  {
+    "id": "SAFE-T2-028",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Value streams",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How do development value streams relate to Agile Release Trains?",
+    "options": [
+      "Each contains one or more ARTs",
+      "They replace ARTs in large firms",
+      "Each ART contains several of them",
+      "They exist only in the portfolio"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A development value stream is realized by one or more ARTs. The ART is the team of Agile teams that builds and delivers the solution for that value stream."
+  },
+  {
+    "id": "SAFE-T2-029",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Lead by example",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How do Lean-Agile leaders spread leaner thinking, according to SAFe?",
+    "options": [
+      "Setting tighter targets each month",
+      "Coaching, empowering and engaging",
+      "Approving every decision personally",
+      "Adding more status reports"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lean-Agile leaders model the mindset and spread it by coaching, empowering and engaging people, not by tighter control."
+  },
+  {
+    "id": "SAFE-T2-030",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "VMO",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where does a Value Management Office often come from?",
+    "options": [
+      "A newly launched release train",
+      "An outside auditor",
+      "The sales team",
+      "An existing PMO"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A VMO often grows out of an existing project management office as the organization moves from temporary projects to long-lived products and flow."
+  },
+  {
+    "id": "SAFE-T2-031",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Lean-Agile mindset",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which mindset does SAFe ask leaders to hold about people's abilities?",
+    "options": [
+      "A scarcity mindset",
+      "A fixed mindset",
+      "A growth mindset",
+      "A control mindset"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SAFe stresses a growth mindset: the belief that abilities can be developed through effort and learning, which makes adopting new ways of working possible."
+  },
+  {
+    "id": "SAFE-T2-032",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 7",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Under Principle #7, what does cadence do for an organization?",
+    "options": [
+      "Makes routine work routine",
+      "Fixes scope for a whole year",
+      "Removes every planning event",
+      "Lets each team pick its own dates"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cadence is a rhythmic pattern of events that makes routine work routine and predictable. Synchronization then lets many perspectives be integrated at the same time."
+  },
+  {
+    "id": "SAFE-T2-033",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Built-in quality",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which SAFe principle is built-in quality most directly tied to?",
+    "options": [
+      "Apply cadence, synchronize with cross-domain planning",
+      "Make value flow without interruptions",
+      "Apply systems thinking",
+      "Unlock the intrinsic motivation of knowledge workers"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SAFe links built-in quality to Principle #6: defects found late interrupt flow, so quality is built in at every step to shift learning left."
+  },
+  {
+    "id": "SAFE-T2-034",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "Nonfunctional requirements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where does SAFe revisit nonfunctional requirements during delivery?",
+    "options": [
+      "Only in the first PI",
+      "In the definition of done",
+      "Only during audits",
+      "Only at the final release"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "NFRs such as performance, security and usability are persistent qualities, so they are revisited in the definition of done for each iteration, PI or release."
+  },
+  {
+    "id": "SAFE-T2-035",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "Inspect and Adapt",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where do the improvement items from the Inspect and Adapt workshop go?",
+    "options": [
+      "To the portfolio for approval",
+      "Into the ART backlog for PI Planning",
+      "Into a lessons file for the next year",
+      "To the HR team for individual performance reviews"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Improvement items from the problem-solving workshop enter the ART backlog so they can be planned at the next PI Planning, which keeps relentless improvement real."
+  },
+  {
+    "id": "SAFE-T2-036",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "OKRs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In an OKR, what are the key results?",
+    "options": [
+      "Tasks to finish this week",
+      "The budget for the objective",
+      "Names of the people involved",
+      "Measurable signs of success"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The objective is the business outcome, and key results are the measurable criteria that show whether it is being achieved, typically two to five per objective."
+  },
+  {
+    "id": "SAFE-T2-037",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Strategic Investment Planning",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In Strategic Investment Planning, which two parts make up a value stream budget?",
+    "options": [
+      "Fixed and variable bonuses for the ART",
+      "Hardware and software licences",
+      "Salaries and travel costs for each team",
+      "Baseline investments and proposed initiatives"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A value stream budget has baseline solution investments, the cost of running current solutions, and proposed solution initiatives, the new or improved epics."
+  },
+  {
+    "id": "SAFE-T2-038",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Measure and grow",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which three measurement domains does SAFe's Measure and Grow use?",
+    "options": [
+      "Outcomes, flow and competency",
+      "Cost, scope and delivery schedule",
+      "Velocity, defects and morale",
+      "Revenue, margin and market share"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Measure and Grow looks at outcomes (do solutions meet customer and business needs), flow (how efficiently value is delivered) and competency (how proficient the organization is)."
+  },
+  {
+    "id": "SAFE-T2-039",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Continuous learning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which SAFe structure helps people share knowledge across teams and ARTs?",
+    "options": [
+      "Communities of practice",
+      "Formal approval boards",
+      "Locked document libraries",
+      "Annual performance reviews"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Communities of practice bring together people with a shared interest across teams and ARTs to learn and share, which builds a continuous learning culture."
+  },
+  {
+    "id": "SAFE-T2-040",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Empower agility with AI",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team uses an AI assistant to draft acceptance criteria for a story. What should happen next?",
+    "options": [
+      "The draft is kept secret from stakeholders",
+      "The RTE signs them off alone",
+      "They go straight into the backlog",
+      "The team reviews and edits them"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "AI output is a draft that people check. The team stays accountable for what it commits to, so it reviews the criteria before accepting the story."
+  },
+  {
+    "id": "SAFE-T2-041",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 10",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does Principle #10, Organize around value, add to the existing hierarchy?",
+    "options": [
+      "A network built around value streams",
+      "A central project management office",
+      "A matrix of skill-based functional departments",
+      "A second layer of middle managers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Principle #10 describes the dual operating system: a value-stream network for speed and adaptability, working alongside the hierarchy that provides stability."
+  },
+  {
+    "id": "SAFE-T2-042",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "System team",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a System Team mainly do on an ART?",
+    "options": [
+      "Writes the stories for every team",
+      "Builds the delivery pipeline",
+      "Approves features for release",
+      "Sets the ART's business priorities"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A System Team builds and supports the Agile development environment, including the continuous delivery pipeline, so development teams can move faster with less cognitive load."
+  },
+  {
+    "id": "SAFE-T2-043",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "Lean UX",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What makes Lean UX a closed-loop process?",
+    "options": [
+      "Designs are frozen before any coding starts",
+      "Fast feedback checks the outcome",
+      "Users see the product only at its launch",
+      "One lead designer approves every screen"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lean UX uses fast feedback from real users to check whether the business outcome is being met, then adjusts the design."
+  },
+  {
+    "id": "SAFE-T2-044",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "Release on demand",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which questions does release on demand answer?",
+    "options": [
+      "Which vendor to pay and how much",
+      "Who to hire and when to train them",
+      "How many testers to add before go-live",
+      "When, what and to whom to release"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Release on demand decides when to release, what to release and to which users, based on business and customer needs."
+  },
+  {
+    "id": "SAFE-T2-045",
+    "section": "safe",
+    "test": 2,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "LPM events",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How often is the Portfolio Sync generally held?",
+    "options": [
+      "Only when a crisis hits",
+      "Every two years",
+      "Monthly",
+      "Daily"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Portfolio Sync is generally monthly. In a month with a Strategic Portfolio Review, the review can take its place."
+  },
+  {
+    "id": "SAFE-D-001",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Age of disruption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "According to SAFe, what usually decides which firms win in the digital age?",
+    "options": [
+      "Number of patents they already hold",
+      "Size of their capital reserves and credit",
+      "Age and fame of their established brands",
+      "Speed of response with digital solutions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In the Age of Software and Digital, the winners are the enterprises that respond quickly to change with digitally enabled solutions, not simply the biggest or oldest."
+  },
+  {
+    "id": "SAFE-D-002",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Core values",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A leader treats suppliers and partners as long-term partners. Which core value does this show?",
+    "options": [
+      "Respect for people",
+      "Alignment",
+      "Relentless improvement",
+      "Transparency"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Respect for people covers everyone in the value stream, including customers, suppliers and partners, and favours long-term relationships built on trust."
+  },
+  {
+    "id": "SAFE-D-003",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 1",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which does SAFe name as a common cause of failed solutions under Principle #1?",
+    "options": [
+      "Small batch sizes",
+      "Short iterations",
+      "Too many system demos",
+      "Poor economics"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Principle #1 notes that poor economics is one of the most common causes of failed solutions, which is why economics should inform decisions at every level."
+  },
+  {
+    "id": "SAFE-D-004",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Agile teams",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should each member of a SAFe Agile team usually belong to one team only?",
+    "options": [
+      "Dedication keeps focus and cuts delays",
+      "It lets managers track hours more easily",
+      "Pay grades depend on team membership",
+      "SAFe forbids any shared specialists"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Each member is typically dedicated to one team, which keeps focus and avoids the waits that come when people are split across many teams."
+  },
+  {
+    "id": "SAFE-D-005",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "WSJF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Feature A has a cost of delay of 18 and size 6. Feature B has 21 and size 3. What are their WSJF scores?",
+    "options": [
+      "A is 6, B is 7",
+      "A is 3, B is 3",
+      "A is 108, B is 63",
+      "A is 3, B is 7"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "WSJF is cost of delay divided by job size: 18 / 6 = 3 for A and 21 / 3 = 7 for B, so B goes first. Multiplying instead gives 108 and 63."
+  },
+  {
+    "id": "SAFE-D-006",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "PI Planning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does SAFe prefer everyone on the ART to attend PI Planning together?",
+    "options": [
+      "It replaces the need for any iterations",
+      "Direct talk aligns plans and dependencies",
+      "It keeps teams from talking afterwards",
+      "It lets managers assign individual tasks faster"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Planning with the whole ART gives direct communication, alignment to business goals, early sight of dependencies and a match between demand and capacity."
+  },
+  {
+    "id": "SAFE-D-007",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Lean budgets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What problem does SAFe say traditional project budgeting creates?",
+    "options": [
+      "It funds work too quickly",
+      "It gives teams far too much freedom to spend",
+      "It removes all cost oversight from leaders",
+      "It can block Lean-Agile ways of working"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Project budgeting adds overhead and locks scope and money early, which SAFe says can stop an organization from adopting Lean-Agile ways of working."
+  },
+  {
+    "id": "SAFE-D-008",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Implementation roadmap",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which step comes right after reaching the tipping point on the Implementation Roadmap?",
+    "options": [
+      "Create a Lean-Agile Center of Excellence",
+      "Launch more ARTs and value streams",
+      "Enhance the portfolio",
+      "Train Lean-Agile change agents"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "After the tipping point, the roadmap trains Lean-Agile change agents, then creates a LACE and trains executives, managers and leaders."
+  },
+  {
+    "id": "SAFE-D-009",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Business agility",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the SAFe Business Agility Value Stream?",
+    "options": [
+      "List of teams ready for agile training",
+      "Ranking of business units by profit",
+      "Path from opportunity to delivered value",
+      "Yearly budget cycle for funding new projects"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The Business Agility Value Stream shows how an enterprise moves from identifying a business opportunity to delivering customer value, and how fast it can do so."
+  },
+  {
+    "id": "SAFE-D-010",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Core values",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Without which core value can teams not make decisions locally that still fit the strategy?",
+    "options": [
+      "Respect for people",
+      "Alignment",
+      "Transparency",
+      "Relentless improvement"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Alignment gives every team the shared mission and context it needs to decentralize decisions safely, so local choices still serve the strategy."
+  },
+  {
+    "id": "SAFE-D-011",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 3",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does Principle #3 warn against choosing one design early?",
+    "options": [
+      "Customers forbid any late changes",
+      "Testing cannot start until one is chosen",
+      "Uncertainty is highest at the start",
+      "Early choices are always cheaper"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Early in development the cone of uncertainty is widest, so a single early choice often proves wrong. Keeping several options open avoids costly rework."
+  },
+  {
+    "id": "SAFE-D-012",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Agile Release Trains",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What makes an Agile Release Train cross-functional?",
+    "options": [
+      "Its members rotate jobs each iteration",
+      "It mixes people from every country",
+      "It reports to several directors at once in a matrix",
+      "It holds every skill its solution needs"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An ART includes everyone needed to define, build, validate, release and operate its solution, so it does not wait on handoffs to other groups."
+  },
+  {
+    "id": "SAFE-D-013",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "WSJF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which cost of delay part captures how quickly value decays if a feature waits?",
+    "options": [
+      "Time criticality",
+      "User and business value",
+      "Risk reduction",
+      "Job size"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Time criticality reflects how the value falls as time passes, such as a fixed deadline or a market window that closes."
+  },
+  {
+    "id": "SAFE-D-014",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "PI Planning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Can PI Planning be held with people in different locations?",
+    "options": [
+      "Only if it is stretched to a full week",
+      "No, never in any form",
+      "Yes, if everyone joins in real time",
+      "Only for the Business Owners and the RTE"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Being in one room is preferred, but SAFe accepts real-time virtual PI Planning as long as all ART members take part."
+  },
+  {
+    "id": "SAFE-D-015",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Lean budgets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who allocates the approved budget to value streams?",
+    "options": [
+      "Lean Portfolio Management",
+      "The System Team",
+      "Each Agile team",
+      "Each Scrum Master/Team Coach"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "LPM, as portfolio leadership, allocates the approved portfolio budget to the value streams, which then steer their own spending within guardrails."
+  },
+  {
+    "id": "SAFE-D-016",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Implementation roadmap",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "On the Implementation Roadmap, which step comes before preparing for the first ART launch?",
+    "options": [
+      "Enhance the portfolio",
+      "Create the implementation plan",
+      "Launch more ARTs and value streams",
+      "Coach ART execution"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The order runs organize around value, create the implementation plan, prepare for ART launch, train teams and launch the ART, then coach ART execution."
+  },
+  {
+    "id": "SAFE-D-017",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Dual operating system",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What happens to the existing hierarchy when an enterprise adopts SAFe?",
+    "options": [
+      "It replaces the value streams over time",
+      "It is handed to an outside firm",
+      "It is removed within the first PI or two",
+      "It keeps running beside the network"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SAFe does not abolish the hierarchy. It adds a value-stream network beside it, so the organization gets both stability and speed."
+  },
+  {
+    "id": "SAFE-D-018",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Agile Manifesto",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does the Agile Manifesto value over processes and tools?",
+    "options": [
+      "Individuals and interactions",
+      "Working software",
+      "Negotiating the contract terms",
+      "Following a plan"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The first manifesto value is individuals and interactions over processes and tools. Following a plan and contract negotiation are right-hand items."
+  },
+  {
+    "id": "SAFE-D-019",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 5",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What should SAFe milestones be based on?",
+    "options": [
+      "Hours spent against the plan",
+      "Signed-off design documents at each phase gate",
+      "Percentage of tasks marked as started this month",
+      "Objective evaluation of working systems"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Principle #5 bases milestones on objective evaluation of working systems, because documents and phase gates do not show whether the investment is paying off."
+  },
+  {
+    "id": "SAFE-D-020",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Agile Release Trains",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which group forms ART leadership with Product Management?",
+    "options": [
+      "The Epic Owners and the LACE coaches",
+      "RTE, System Architect, Business Owners",
+      "The finance, legal and HR leads",
+      "The Scrum Masters of each team"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "ART leadership is Product Management, the System Architect, the Release Train Engineer and the Business Owners working together."
+  },
+  {
+    "id": "SAFE-D-021",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "WSJF",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which kind of job does WSJF tend to move to the front?",
+    "options": [
+      "Small jobs with a high cost of delay",
+      "Jobs that have waited the longest",
+      "Large jobs with any cost of delay",
+      "Jobs with the most money already spent"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Dividing cost of delay by size favours small jobs with a high cost of delay, which deliver the most value per unit of time."
+  },
+  {
+    "id": "SAFE-D-022",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "PI Planning",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which benefit does SAFe list for PI Planning?",
+    "options": [
+      "No need for an ART backlog at all",
+      "Less excess work in process",
+      "Longer iterations",
+      "Fewer system demos needed each PI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Matching demand to capacity in PI Planning removes excess WIP. It also speeds up decisions and makes dependencies visible."
+  },
+  {
+    "id": "SAFE-D-023",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Guardrails",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which guardrail balances new features against enablers and maintenance work?",
+    "options": [
+      "Investment horizons",
+      "Business Owner engagement",
+      "Capacity allocation",
+      "Epic approval"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Capacity allocation sets how much of an ART's capacity goes to each kind of work, protecting solution integrity while delivering value."
+  },
+  {
+    "id": "SAFE-D-024",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Implementation roadmap",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the last step of the SAFe Implementation Roadmap?",
+    "options": [
+      "Enhance the portfolio",
+      "Coach ART execution",
+      "Accelerate",
+      "Organize around value"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The roadmap ends with Accelerate, after launching more ARTs and value streams and enhancing the portfolio."
+  },
+  {
+    "id": "SAFE-D-025",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Value streams",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Admitting and treating a patient in a hospital is an example of what?",
+    "options": [
+      "Strategic theme",
+      "Operational value stream",
+      "Solution Train backlog",
+      "Portfolio enabler epic"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Operational value streams are the steps that deliver a product or service to a customer, such as admitting and treating a patient. They use the systems that development value streams build."
+  },
+  {
+    "id": "SAFE-D-026",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Agile Manifesto",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does the Agile Manifesto value over contract negotiation?",
+    "options": [
+      "Customer collaboration",
+      "Comprehensive documentation",
+      "Responding to change",
+      "Working software"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Customer collaboration is valued over contract negotiation. Comprehensive documentation is the item that working software is valued over."
+  },
+  {
+    "id": "SAFE-D-027",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 5",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Who shares a fiduciary duty for the money spent on a large system, according to Principle #5?",
+    "options": [
+      "Only the Release Train Engineer",
+      "Developers and customers",
+      "Only the outside vendor",
+      "Only the finance team"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SAFe says the builders of a system and its customers share a fiduciary responsibility to make sure the investment delivers economic benefit."
+  },
+  {
+    "id": "SAFE-D-028",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Team roles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which part of the organization does SAFe say the Product Owner belongs to?",
+    "options": [
+      "The Product Management function",
+      "The Business Owners who fund the ART",
+      "The quality assurance group",
+      "The project management office"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Product Owner is a member of the Agile team and also part of the Product Management function, acting as the voice of the customer for the team."
+  },
+  {
+    "id": "SAFE-D-029",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "WSJF",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where does SAFe apply WSJF?",
+    "options": [
+      "Only to hiring and staffing decisions",
+      "To backlogs in flow-based systems",
+      "Only to each team's daily task list",
+      "Only to defect fixes after a release"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SAFe uses WSJF to keep prioritizing backlogs, such as the ART and portfolio backlogs, for the best economic sequencing."
+  },
+  {
+    "id": "SAFE-D-030",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "Planning Interval",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is SAFe's guidance on PI length?",
+    "options": [
+      "A fixed rule of 12 weeks",
+      "Always matched to the fiscal year",
+      "Set by each team on its own",
+      "A guide; shorter is preferred"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The 8 to 12 week timebox is a suggestion rather than a strict rule, and SAFe prefers shorter PIs because they give faster feedback."
+  },
+  {
+    "id": "SAFE-D-031",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Guardrails",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A large epic needs approval before work starts. Which guardrail applies?",
+    "options": [
+      "Approving significant initiatives",
+      "Continuous Business Owner engagement",
+      "Guiding investments by horizon",
+      "Capacity allocation"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Approving significant initiatives makes large initiatives, such as epics over a set cost, go through LPM approval before implementation."
+  },
+  {
+    "id": "SAFE-D-032",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Implementation roadmap",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How strictly must the Implementation Roadmap's steps be followed in order?",
+    "options": [
+      "Only the first and last steps",
+      "In reverse after the first PI",
+      "Exactly, with no overlap",
+      "Not strictly; it is a guide"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SAFe notes the roadmap is not strictly sequential. Organizations adapt it, and some steps overlap or repeat."
+  },
+  {
+    "id": "SAFE-D-033",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Value streams",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a development value stream turn into a solution that delivers value?",
+    "options": [
+      "A finished requirements file",
+      "A signed contract",
+      "A business hypothesis",
+      "An approved annual budget"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A development value stream is the sequence of activities that converts a business hypothesis into a digitally enabled solution that delivers customer value."
+  },
+  {
+    "id": "SAFE-D-034",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Agile Manifesto",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How should the right-hand items of the Agile Manifesto be treated?",
+    "options": [
+      "Removed from the work",
+      "Left to managers only",
+      "Still valued, but less",
+      "Valued equally with the left"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The manifesto says that while there is value in the items on the right, the items on the left are valued more. Plans and documents still matter."
+  },
+  {
+    "id": "SAFE-D-035",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 6",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does SAFe define flow efficiency?",
+    "options": [
+      "Items done divided by items started",
+      "Story points divided by team size",
+      "Value-added time over total flow time",
+      "Defects found divided by releases shipped"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Flow efficiency is the share of total flow time spent actively working on an item. A low value means most of the time is spent waiting."
+  },
+  {
+    "id": "SAFE-D-036",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Team roles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Can one Scrum Master/Team Coach support more than one team?",
+    "options": [
+      "Yes, the role can span teams",
+      "Only on Solution Trains",
+      "No, never in any case",
+      "Only during the IP iteration"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SAFe allows the SM/TC to be full-time or part-time, a team member with other duties, or to support more than one team."
+  },
+  {
+    "id": "SAFE-D-037",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "Customer centricity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does SAFe describe customer-centricity?",
+    "options": [
+      "A sales target set for each ART every PI",
+      "A rule that customers write the stories",
+      "A mindset aimed at customer experience",
+      "A survey taken after every release"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Customer-centricity is a mindset focused on creating positive experiences across the full set of products and services the customer uses."
+  },
+  {
+    "id": "SAFE-D-038",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "Innovation and Planning iteration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which activity fits the IP iteration?",
+    "options": [
+      "A big feature",
+      "A code freeze",
+      "A hackathon",
+      "A team reshuffle"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The IP iteration leaves room for innovation and learning, such as hackathons and community of practice meetings, as well as PI Planning and Inspect and Adapt."
+  },
+  {
+    "id": "SAFE-D-039",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Epics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does SAFe call an epic that extends the architectural runway?",
+    "options": [
+      "A business epic",
+      "A portfolio theme",
+      "A capability",
+      "An enabler epic"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Enabler epics build technical foundations such as runway. Business epics deliver value directly to customers."
+  },
+  {
+    "id": "SAFE-D-040",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Implementation roadmap",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which of these is one of Kotter's accelerators used in the roadmap?",
+    "options": [
+      "Create a sense of urgency",
+      "Freeze all hiring first",
+      "Outsource the change effort",
+      "Wait for full consensus"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Kotter's accelerators include creating urgency, building a guiding coalition, forming a vision, enlisting a volunteer army, removing barriers, generating short-term wins and sustaining acceleration."
+  },
+  {
+    "id": "SAFE-D-041",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Value streams",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which practice does SAFe use to see where delay builds up between process steps?",
+    "options": [
+      "Earned value analysis",
+      "Value stream mapping",
+      "Root cause voting",
+      "Critical path scheduling"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Value stream mapping shows each step and the waiting between steps, so the organization can measure flow and target the biggest delays."
+  },
+  {
+    "id": "SAFE-D-042",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Lean-Agile mindset",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does SAFe say employees must understand Lean-Agile ideas, not only follow its rules?",
+    "options": [
+      "Rules alone break down in new situations",
+      "Following rules is forbidden in SAFe",
+      "Understanding replaces all training",
+      "Rules are written by outside vendors and consultants"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SAFe notes that people who only follow rules struggle when situations change. Understanding the core ideas lets them apply the principles to new problems."
+  },
+  {
+    "id": "SAFE-D-043",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 6",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is one of SAFe's six flow metrics?",
+    "options": [
+      "Team utilization",
+      "Flow load",
+      "Lines of code",
+      "Budget burn"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The six flow metrics are flow distribution, velocity, time, load, efficiency and predictability. Flow load counts the items in progress in the system."
+  },
+  {
+    "id": "SAFE-D-044",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Iterations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "About how long does SAFe suggest Iteration Planning takes for a two-week iteration?",
+    "options": [
+      "4 hours",
+      "90 minutes",
+      "8 hours",
+      "30 minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SAFe timeboxes Iteration Planning to about 90 minutes for a two-week iteration. The team sets iteration goals and selects stories it believes it can finish."
+  },
+  {
+    "id": "SAFE-D-045",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "Customer centricity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which practice does SAFe call key to steering how a product evolves?",
+    "options": [
+      "Customer demos",
+      "Fixed contracts",
+      "Annual audits",
+      "Status reports"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Demos with customers show real reactions to working product early, which SAFe describes as key to steering product evolution."
+  },
+  {
+    "id": "SAFE-D-046",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "Innovation and Planning iteration",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Where does the IP iteration sit in a PI?",
+    "options": [
+      "It moves to wherever the team has spare capacity",
+      "It is the last iteration",
+      "It is the first iteration",
+      "It falls in the middle"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The IP iteration is the last iteration of the PI. It ends with Inspect and Adapt and the next PI Planning."
+  },
+  {
+    "id": "SAFE-D-047",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Portfolio Kanban",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does the portfolio Kanban manage?",
+    "options": [
+      "Every team's daily tasks",
+      "Hiring requests for ARTs",
+      "Business and enabler epics",
+      "Defects found in production"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The portfolio Kanban captures and manages the flow of business and enabler epics through the portfolio, from idea to implementation or rejection."
+  },
+  {
+    "id": "SAFE-D-048",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Lead the change",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which leadership competency does SAFe list in its Leadership and Culture discipline?",
+    "options": [
+      "Managing by Objectives",
+      "Balancing the Dual OS",
+      "Ranking the Staff",
+      "Controlling the Budget"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The discipline lists competencies such as Leading by Example, Leading Change, Developing Leaders, Adapting and Innovating, Balancing the Dual OS and Building an AI Organization."
+  },
+  {
+    "id": "SAFE-D-049",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Lean-Agile organization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Organizational Agility in SAFe has three dimensions. Which is one of them?",
+    "options": [
+      "Strategy agility",
+      "Contract agility",
+      "Vendor rotation",
+      "Budget freezing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Organizational Agility covers Lean-thinking people and Agile teams, Lean business operations, and strategy agility."
+  },
+  {
+    "id": "SAFE-D-050",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Lean-Agile mindset",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What does SAFe say is mainly needed for agility to stick?",
+    "options": [
+      "A larger budget",
+      "A changed mindset",
+      "A new tool chain",
+      "A thicker process manual"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SAFe states that agility is mainly a matter of mindset. Tools, money and process documents do not create agility if beliefs and behaviours stay the same."
+  },
+  {
+    "id": "SAFE-D-051",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 6",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why does SAFe automate the delivery pipeline to support small batches?",
+    "options": [
+      "It removes the need for testing",
+      "It lowers the cost of each transaction",
+      "It makes every batch larger and less frequent",
+      "It ends holding costs completely and for good"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Batch size balances holding cost against transaction cost. Automation cuts the transaction cost of each release, so smaller batches become economical."
+  },
+  {
+    "id": "SAFE-D-052",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Iterations",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What does the business promise in return for the team's commitment at Iteration Planning?",
+    "options": [
+      "To skip the next System Demo",
+      "To approve overtime whenever it is needed",
+      "To keep the goals stable",
+      "To add a bonus for each story"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Iteration Planning ends in a mutual commitment: the team commits to the goals, and the business keeps those goals stable for the timebox."
+  },
+  {
+    "id": "SAFE-D-053",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "Design thinking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which pattern of thinking does design thinking use to understand and then decide?",
+    "options": [
+      "Random trial and error",
+      "Convergent from the start",
+      "Linear, phase by phase",
+      "Divergent, then convergent"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Design thinking widens the options first (divergent) and then narrows to the best choice (convergent), both for the problem and for the solution."
+  },
+  {
+    "id": "SAFE-D-054",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "ART Sync",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who facilitates the Coach Sync?",
+    "options": [
+      "An Epic Owner",
+      "A Business Owner",
+      "The System Architect",
+      "The RTE"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Release Train Engineer facilitates the Coach Sync, also called a Scrum of Scrums, with the Scrum Masters/Team Coaches."
+  },
+  {
+    "id": "SAFE-D-055",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Portfolio Kanban",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which events refine the portfolio backlog?",
+    "options": [
+      "System Demo and Iteration Review",
+      "Coach Sync and PO Sync within ART Sync",
+      "Portfolio Sync and Strategic Portfolio Review",
+      "Daily stand-up and retrospective"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Portfolio leadership refines and prioritizes the portfolio backlog in the Portfolio Sync and the Strategic Portfolio Review."
+  },
+  {
+    "id": "SAFE-D-056",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Change agents",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who does SAFe describe as change agents in a transformation?",
+    "options": [
+      "SAFe Program Consultants",
+      "Help desk and service desk staff",
+      "Business analysts on each team",
+      "Outside auditors"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SAFe Program Consultants (SPCs) act as change agents, training leaders and teams and helping launch ARTs."
+  },
+  {
+    "id": "SAFE-D-057",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Lean-Agile organization",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Lean business operations is part of which SAFe competency?",
+    "options": [
+      "Continuous Learning Culture",
+      "Team and Technical Agility",
+      "Agile Product Delivery",
+      "Organizational Agility"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Organizational Agility has three dimensions: Lean-thinking people and Agile teams, Lean business operations, and strategy agility."
+  },
+  {
+    "id": "SAFE-D-058",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Lean-Agile mindset",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "SAFe compares a mindset to a lens. What does it mean by that?",
+    "options": [
+      "It only matters for executives",
+      "It is fixed early in each career",
+      "It shapes how people see and act",
+      "It can be bought with new tools"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A mindset works like a lens formed by experience: it filters what people notice and how they respond, which is why changing it changes behaviour."
+  },
+  {
+    "id": "SAFE-D-059",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 6",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "According to the Theory of Constraints, what limits a system's throughput?",
+    "options": [
+      "Its largest team",
+      "Its main bottleneck",
+      "Its fastest step",
+      "Its newest and costliest tool"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Theory of Constraints says throughput is limited by the dominant bottleneck, so improving other steps adds little until the bottleneck is addressed."
+  },
+  {
+    "id": "SAFE-D-060",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Continuous delivery pipeline",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is one of the four activities of continuous integration?",
+    "options": [
+      "Monitor",
+      "Respond",
+      "Hypothesize",
+      "Stage"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Continuous integration covers develop, build, test end to end and stage. Monitor and respond belong to continuous deployment, which comes after staging."
+  },
+  {
+    "id": "SAFE-D-061",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "Design thinking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What risk of sequential development does SAFe say design thinking reduces?",
+    "options": [
+      "Releasing too often to real users",
+      "Testing too early in the work",
+      "Building features users ignore",
+      "Talking to customers far too much"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Waterfall development often delivers features that users never use because their real needs were not explored. Design thinking studies the problem and context first."
+  },
+  {
+    "id": "SAFE-D-062",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "ART Sync",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which topic belongs in the PO Sync rather than the Coach Sync?",
+    "options": [
+      "Scope and priority changes",
+      "Coaching practices for Scrum Masters",
+      "Cross-team blockers and delays",
+      "Team impediments"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The PO Sync covers PI objective progress, feature status, scope and priority changes, and dependencies. The Coach Sync covers impediments and risks."
+  },
+  {
+    "id": "SAFE-D-063",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Strategic themes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How do ARTs use strategic themes?",
+    "options": [
+      "To pick their iteration lengths",
+      "To set salaries for each of their teams",
+      "To choose their tools and development platforms",
+      "To guide their epics and features"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Strategic themes steer the portfolio, and ARTs and teams refer to them when defining and prioritizing epics and features."
+  },
+  {
+    "id": "SAFE-D-064",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Change agents",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What does the LACE focus on, compared with the VMO?",
+    "options": [
+      "Running portfolio budgets",
+      "Approving each epic's spend",
+      "Measuring every team's velocity each iteration",
+      "Launching and coaching the change"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The LACE launches and coaches the transformation. The VMO enables Lean Portfolio Management and lean governance."
+  },
+  {
+    "id": "SAFE-D-065",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Lean-Agile organization",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In SAFe, who builds the solutions that operational value streams rely on?",
+    "options": [
+      "Operational value streams themselves",
+      "Shared Services teams",
+      "Development value streams",
+      "Lean budget owners"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Development value streams, made of one or more ARTs, build and maintain the systems that operational value streams use to serve customers."
+  },
+  {
+    "id": "SAFE-D-066",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Empower agility with AI",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does SAFe say keeps AI adoption working in the long run?",
+    "options": [
+      "A human-centric AI culture",
+      "An AI tool assigned to every role",
+      "A single central AI team",
+      "A ban on generative AI tools"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "AI-Native SAFe names a human-centric AI culture as what sustains the shift, keeping people at the centre of how AI is used."
+  },
+  {
+    "id": "SAFE-D-067",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 7",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does synchronization add to cadence under Principle #7?",
+    "options": [
+      "Several views integrated at the same time",
+      "One expert approving every design",
+      "Separate releases on separate dates for each team",
+      "Every team on a different calendar"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Synchronization lets multiple solution perspectives be understood, resolved and integrated at the same time, which works with cadence to give objective status."
+  },
+  {
+    "id": "SAFE-D-068",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Continuous delivery pipeline",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which activities make up continuous deployment?",
+    "options": [
+      "Develop, build, test end to end and stage",
+      "Deploy, verify, monitor and respond",
+      "Explore, decide, fund and report",
+      "Plan, design, code and hand over"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Continuous deployment moves changes from staging to production through deploy, verify, monitor and respond, so features are ready before the business releases them."
+  },
+  {
+    "id": "SAFE-D-069",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "Stories",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What are SAFe's four tiers of backlog items, from largest to smallest?",
+    "options": [
+      "Portfolio, train, team, member",
+      "Initiative, project, phase, task",
+      "Theme, epic, task, bug",
+      "Epic, capability, feature, story"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SAFe's work items run from epics through capabilities and features down to stories, each sized for a different level of the organization."
+  },
+  {
+    "id": "SAFE-D-070",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "ART Sync",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team takes action that lowers a risk's chance or impact. What is the ROAM status?",
+    "options": [
+      "Owned",
+      "Accepted",
+      "Resolved",
+      "Mitigated"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A mitigated risk has a plan that reduces its likelihood or impact. A resolved risk is no longer a concern, and an accepted one is acknowledged without action."
+  },
+  {
+    "id": "SAFE-D-071",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Portfolio vision",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which analogy does SAFe use for an inspiring portfolio vision?",
+    "options": [
+      "A ship's anchor",
+      "A road map with toll booths",
+      "A destination postcard",
+      "A finish line tape"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SAFe borrows the destination postcard from the Heath brothers: a vivid picture of the future that makes the goal attractive and clear."
+  },
+  {
+    "id": "SAFE-D-072",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Lead by example",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A leader keeps asking for detailed status reports after adopting SAFe. Which behaviour would model the mindset instead?",
+    "options": [
+      "Attend the System Demo",
+      "Add another approval step",
+      "Ask for daily timesheets",
+      "Skip PI Planning"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Seeing working solutions at the System Demo gives objective evidence of progress, in line with basing milestones on working systems, and replaces document status reports."
+  },
+  {
+    "id": "SAFE-D-073",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Measure and grow",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In Measure and Grow, which domain asks how efficiently the organization delivers value?",
+    "options": [
+      "Competency",
+      "Flow",
+      "Outcomes",
+      "Readiness"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Flow measures how efficiently value moves through the system. Outcomes asks whether the solutions meet needs, and competency asks how proficient the organization is in its practices."
+  },
+  {
+    "id": "SAFE-D-074",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Empower agility with AI",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is a sound habit when writing a prompt for an AI assistant at work?",
+    "options": [
+      "Keep it to one word",
+      "Ask it to decide the team's whole plan",
+      "Give context and the result wanted",
+      "Paste in customer passwords"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Clear prompts state the context, the task and the form of answer wanted. Sensitive data stays out, and people keep the decisions."
+  },
+  {
+    "id": "SAFE-D-075",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 8",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does research cited in Principle #8 say about adding pay rewards to heuristic work?",
+    "options": [
+      "It has no effect at all",
+      "It always doubles output",
+      "It can lower performance",
+      "It only helps beginners"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Studies cited by SAFe show extrinsic rewards can degrade performance on heuristic, creative tasks, which is most knowledge work."
+  },
+  {
+    "id": "SAFE-D-076",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Continuous delivery pipeline",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the main output of continuous exploration?",
+    "options": [
+      "Deployable code running in production",
+      "Test results for each story",
+      "Vision, roadmap and feature backlog",
+      "A signed requirements document"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Continuous exploration studies market and customer needs and produces a shared vision, a forecast roadmap and a prioritized backlog of features."
+  },
+  {
+    "id": "SAFE-D-077",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "Enablers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is one of SAFe's four enabler categories?",
+    "options": [
+      "Sales support",
+      "Payroll and benefits",
+      "Compliance",
+      "Marketing"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Enablers are exploration, architecture, infrastructure and compliance. Compliance enablers cover verification and validation, audits, approvals and policy automation."
+  },
+  {
+    "id": "SAFE-D-078",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "System Demo",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does the System Demo differ from a team's Iteration Review?",
+    "options": [
+      "It shows all teams' work integrated",
+      "It is held only once each PI",
+      "It is run by each developer alone at a desk",
+      "It replaces customer feedback entirely"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Iteration Review shows one team's increment. The System Demo shows the integrated increment from every team on the ART, led by the RTE."
+  },
+  {
+    "id": "SAFE-D-079",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Portfolio vision",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which tool, based on the Business Model Canvas, describes a SAFe portfolio?",
+    "options": [
+      "Portfolio Canvas",
+      "Value Canvas map",
+      "Lean Canvas board",
+      "Portfolio Kanban board"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The SAFe Portfolio Canvas adapts the Business Model Canvas to show how a portfolio's value streams and solutions create value."
+  },
+  {
+    "id": "SAFE-D-080",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Lead by example",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does SAFe say leaders do through their own behaviour?",
+    "options": [
+      "Run the stand-ups",
+      "Write the stories",
+      "Size the backlog",
+      "Set the culture"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Leadership and Culture discipline states that leaders set the culture through how they behave, so modelling the mindset matters more than announcing it."
+  },
+  {
+    "id": "SAFE-D-081",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Measure and grow",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At which levels can SAFe's Measure and Grow domains be applied?",
+    "options": [
+      "Team level only, each iteration",
+      "Portfolio level only, once a year",
+      "Executive level only",
+      "Every level from team to portfolio"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The outcomes, flow and competency domains apply at every level, from teams through ARTs and Solution Trains to the portfolio."
+  },
+  {
+    "id": "SAFE-D-082",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Empower agility with AI",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An AI tool summarizes customer feedback for a feature. What is the responsible use of that summary?",
+    "options": [
+      "Delete the original feedback to save space",
+      "Ship the feature it recommends",
+      "Check it against the source feedback",
+      "Share it with stakeholders as verified customer data"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "AI summaries can miss or invent points. Responsible use checks the summary against the real feedback before decisions rest on it."
+  },
+  {
+    "id": "SAFE-D-083",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 9",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What blocks progress when every decision goes to a central authority?",
+    "options": [
+      "A queue of decision requests",
+      "Too much team autonomy",
+      "Shorter iteration lengths",
+      "Fewer managers for teams to report to"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Principle #9 shows a queue of requests building up at managers, which delays work. People closest to the work often have the information to decide faster."
+  },
+  {
+    "id": "SAFE-D-084",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "DevOps",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does SAFe mean by DevOps?",
+    "options": [
+      "A job title for release managers",
+      "Mindset, culture and technical practices",
+      "A tool that replaces manual testing in the pipeline",
+      "A separate team that deploys code at night"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SAFe describes DevOps as a mindset, a culture and a set of technical practices that support integration, automation and collaboration across the value stream."
+  },
+  {
+    "id": "SAFE-D-085",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "Enablers",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A team builds a quick prototype to compare two database options. What kind of enabler is this?",
+    "options": [
+      "Infrastructure",
+      "Exploration",
+      "Architecture",
+      "Compliance"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Exploration enablers cover research, prototyping and evaluating alternatives. Infrastructure enablers build or improve environments, and compliance enablers handle audits and approvals."
+  },
+  {
+    "id": "SAFE-D-086",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "Release Train Engineer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does SAFe describe the Release Train Engineer?",
+    "options": [
+      "The manager of every engineer",
+      "The owner of the ART backlog",
+      "Servant leader and ART coach",
+      "The person who funds the train"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The RTE is a servant leader and coach who facilitates ART events, removes impediments, manages risks and drives improvement. Product Management owns the backlog."
+  },
+  {
+    "id": "SAFE-D-087",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "VMO",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does the VMO's focus differ from the LACE's?",
+    "options": [
+      "VMO funds ARTs; LACE builds pipelines",
+      "VMO leads the change; LACE runs portfolio LPM",
+      "VMO enables LPM; LACE leads the change",
+      "VMO trains teams; LACE approves epics"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The LACE launches and coaches the transformation. The VMO enables Lean Portfolio Management and lean governance and measures the flow of value."
+  },
+  {
+    "id": "SAFE-D-088",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Lead the change",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which goal does SAFe's Leadership and Culture discipline aim for?",
+    "options": [
+      "A fixed five-year plan",
+      "A Lean-Agile organization",
+      "A flatter salary structure",
+      "A single global office"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The discipline aims for a Lean-Agile organization, built by Lean-Agile leaders, an adaptive operating model and a continuous learning culture."
+  },
+  {
+    "id": "SAFE-D-089",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Measure and grow",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "How does SAFe measure the competency domain?",
+    "options": [
+      "Assessments for each discipline",
+      "Lines of code released",
+      "Number of certificates staff hold",
+      "Hours of classroom training attended"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Competency is measured with self-assessments per SAFe discipline, which show how proficient the organization is and where to improve next."
+  },
+  {
+    "id": "SAFE-D-090",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Empower agility with AI",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "According to AI-Native SAFe, which kind of work becomes the bottleneck as AI speeds up building?",
+    "options": [
+      "Printing the program board",
+      "Typing the code for each story",
+      "Validating that work is safe and valuable",
+      "Booking rooms and travel for all team events"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SAFe's June 2026 release notes that the bottleneck moves from building to validating that work is safe, secure and valuable."
+  },
+  {
+    "id": "SAFE-D-091",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 9",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which is a reason SAFe gives for decisions staying centralized when they should not?",
+    "options": [
+      "Short planning cycles",
+      "Strong team skills",
+      "Too much transparency",
+      "A lack of trust"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SAFe points to top-down cultures, a lack of trust and an emphasis on control as the reasons decisions stay with central authorities."
+  },
+  {
+    "id": "SAFE-D-092",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Architectural runway",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the architectural runway?",
+    "options": [
+      "The budget for hardware the ART must buy before any new feature work",
+      "A list of features planned for next year",
+      "Existing code and infrastructure for near-term features",
+      "A schedule of every release to production"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Architectural runway is the existing code, components and technical infrastructure needed to implement near-term features with little redesign or delay."
+  },
+  {
+    "id": "SAFE-D-093",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "Nonfunctional requirements",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What happens if a team over-specifies nonfunctional requirements?",
+    "options": [
+      "Testing is no longer needed at all",
+      "The solution always runs faster for users",
+      "The solution can cost too much",
+      "Security issues disappear"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Too strict NFRs make a solution too costly, and too loose ones make it inadequate, which is why SAFe treats them adaptively."
+  },
+  {
+    "id": "SAFE-D-094",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "Business Owners",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What are Business Owners mainly responsible for on an ART?",
+    "options": [
+      "Building the test environments",
+      "Running each team's events",
+      "ROI, governance and compliance",
+      "Writing and sizing stories"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Business Owners are key stakeholders with primary business and technical responsibility for return on investment, governance and compliance. SAFe suggests starting with four to six."
+  },
+  {
+    "id": "SAFE-D-095",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "OKRs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many key results does SAFe say an objective typically has?",
+    "options": [
+      "As many as possible",
+      "Two to five",
+      "Ten to twenty",
+      "One only"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SAFe describes typically two to five key results per objective, enough to define success without diluting focus."
+  },
+  {
+    "id": "SAFE-D-096",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Empower leaders with AI",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which competency did SAFe add to its leadership discipline for the AI era?",
+    "options": [
+      "Automating All Leadership Decisions",
+      "Buying AI Platforms for Every Team",
+      "Replacing Middle Managers",
+      "Building an AI Organization"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Leadership and Culture discipline lists Building an AI Organization as a competency, alongside leading by example and leading change."
+  },
+  {
+    "id": "SAFE-D-097",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Age of disruption",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does SAFe say a purely hierarchical company struggles with digital disruption?",
+    "options": [
+      "It has too few managers to decide",
+      "Decisions move too slowly",
+      "Its staff resist every kind of tool",
+      "It spends too little on new technology"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Hierarchies are built for efficiency and stability, so decisions travel up and down slowly. Disruption rewards fast responses, which the value-stream network provides."
+  },
+  {
+    "id": "SAFE-D-098",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Core values",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which of these is one of SAFe's four core values?",
+    "options": [
+      "Built-in quality",
+      "Courage to push back",
+      "Commitment",
+      "Respect for people"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Respect for people is a SAFe core value. Commitment and courage are Scrum values, and built-in quality appeared in an earlier SAFe list but is now a practice area."
+  },
+  {
+    "id": "SAFE-D-099",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 2",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Applying systems thinking, which view should guide improvement of a solution?",
+    "options": [
+      "The busiest team on the ART",
+      "The whole system and its environment",
+      "The cheapest component in the bill of materials",
+      "Each department measured strictly on its own"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Systems thinking looks at the whole solution, its environment and the organization that builds it, across design, development, deployment and maintenance."
+  },
+  {
+    "id": "SAFE-D-100",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Architectural runway",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which kind of enabler builds the runway for smoother pipeline flow?",
+    "options": [
+      "Architecture enablers",
+      "Exploration enablers",
+      "Customer marketing enablers",
+      "Compliance enablers"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "SAFe groups enablers into exploration, architecture, infrastructure and compliance. Architecture enablers build the runway for smoother flow through the pipeline."
+  },
+  {
+    "id": "SAFE-D-101",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "ART backlog",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Who owns and orders the ART backlog?",
+    "options": [
+      "Each team's Product Owner",
+      "The Business Owners",
+      "The Release Train Engineer",
+      "Product Management"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Product Management manages and prioritizes the ART backlog and aligns it with product strategy, vision and roadmap. Product Owners manage their own team backlogs."
+  },
+  {
+    "id": "SAFE-D-102",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "ART Sync",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "In which ART event is the ROAM board reviewed and updated during the PI?",
+    "options": [
+      "Iteration Retrospective",
+      "Iteration Planning",
+      "Strategic Portfolio Review",
+      "ART Sync"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "ART Sync takes the ROAM board as an input and updates it as risks are resolved, owned, accepted or mitigated during the PI."
+  },
+  {
+    "id": "SAFE-D-103",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Strategic Investment Planning",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "How often does SAFe suggest updating value stream budgets?",
+    "options": [
+      "Every iteration",
+      "Only when an ART closes",
+      "About every two PIs",
+      "Once every three years"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SAFe suggests updating budgets about every two PIs, roughly twice a year, budgeting each epic only for the part expected in the coming period."
+  },
+  {
+    "id": "SAFE-D-104",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Empower leaders with AI",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A manager plans to let an AI tool pick PI objectives for the ART. What does a human-centric approach say?",
+    "options": [
+      "Let the tool decide to save time",
+      "Ban the tool from planning entirely",
+      "Let the RTE copy its plan as-is for speed",
+      "AI may advise; people decide and commit"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In a human-centric AI culture, AI can suggest and inform, but the teams and Business Owners who commit to PI objectives stay accountable for them."
+  },
+  {
+    "id": "SAFE-D-105",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeAdapt",
+    "skill": "Business agility",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which pair does SAFe say a business-agile company needs at once?",
+    "options": [
+      "Scale and fixed scope",
+      "Secrecy and control",
+      "Stability and speed",
+      "Low cost and no change"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The dual operating system gives the stability and efficiency of the hierarchy together with the speed and adaptability of the network."
+  },
+  {
+    "id": "SAFE-D-106",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeMindset",
+    "skill": "Lean-Agile mindset",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which belief fits a growth mindset in a team member?",
+    "options": [
+      "Mistakes prove a lack of natural ability",
+      "Feedback is best avoided when stakes are high",
+      "Skills grow with practice and feedback",
+      "Talent is set at birth"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A growth mindset holds that abilities develop through effort, practice and feedback, so mistakes are chances to learn."
+  },
+  {
+    "id": "SAFE-D-107",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePrinciples",
+    "skill": "Principle 10",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does SAFe call the pairing of a value-stream network with the hierarchy?",
+    "options": [
+      "Shared services model",
+      "Dual operating system",
+      "Center of excellence",
+      "Matrix organization"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SAFe calls it the dual operating system: the hierarchy for efficiency and stability, the network for speed and adaptability."
+  },
+  {
+    "id": "SAFE-D-108",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeTeam",
+    "skill": "Built-in quality",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which benefit does SAFe list for built-in quality?",
+    "options": [
+      "Fewer releases each year with longer test phases",
+      "Longer test phases at the end",
+      "Better speed and predictability",
+      "More defects found in production"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SAFe lists higher customer satisfaction, better velocity and delivery predictability, better system performance and better ability to innovate and meet compliance."
+  },
+  {
+    "id": "SAFE-D-109",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeCustomer",
+    "skill": "Lean UX",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does Lean UX favour over a theoretically ideal design?",
+    "options": [
+      "Sign-off by a design board",
+      "Iterative learning",
+      "Pixel-perfect mockups first",
+      "Detailed upfront specs"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lean UX is team-based and favours iterative learning and customer outcomes, testing small changes with users instead of perfecting a design on paper."
+  },
+  {
+    "id": "SAFE-D-110",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safePI",
+    "skill": "Iterations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which event sets a team's goals for the next two weeks?",
+    "options": [
+      "Portfolio Sync meeting",
+      "Strategic Portfolio Review",
+      "Inspect and Adapt workshop",
+      "Iteration Planning"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "At Iteration Planning the team defines its iteration goals and selects the stories it can finish, using its capacity and past velocity."
+  },
+  {
+    "id": "SAFE-D-111",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLPM",
+    "skill": "Strategic Investment Planning",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Who makes the final funding decisions after Strategic Investment Planning forums?",
+    "options": [
+      "Outside auditors",
+      "The forum's loudest group",
+      "Portfolio leadership",
+      "Each Agile team"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Forum results show what stakeholders would fund, but portfolio leadership makes the final decisions at the Strategic Portfolio Review."
+  },
+  {
+    "id": "SAFE-D-112",
+    "section": "safe",
+    "test": 0,
+    "module": 1,
+    "domain": "safeLead",
+    "skill": "Continuous learning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which approach does SAFe use so leaders make data-based decisions about the change?",
+    "options": [
+      "Annual surveys only",
+      "Vendor reports",
+      "Measure and grow",
+      "Gut feeling of the most senior leader"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Measure and grow assesses outcomes, flow and competency so leaders can see progress and choose improvement actions from data."
+  }
+]

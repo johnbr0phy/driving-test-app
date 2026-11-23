@@ -232,7 +232,7 @@ export default function TechPlusLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">1. Look at real settings</h3>
               <p>
-                Tech+ is an entry-level exam, so most questions ask what something is for. Open a computer's settings, a home router's admin page and a browser's privacy options, and look at the parts you read about. Seeing Wi-Fi bands, file permissions and cache settings once makes the questions easy.
+                Tech+ is an entry-level exam, so most questions ask what something is for. Open a computer&apos;s settings, a home router&apos;s admin page and a browser&apos;s privacy options, and look at the parts you read about. Seeing Wi-Fi bands, file permissions and cache settings once makes the questions easy.
               </p>
             </div>
             <div>

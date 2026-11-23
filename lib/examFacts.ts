@@ -3405,6 +3405,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the Highfield Level 3 Award in Food Safety for Catering specification, UK food hygiene law and Food Standards Agency guidance, checked November 2026",
     source: { name: "Highfield: Level 3 Award in Food Safety for Catering specification", url: "https://centres.highfieldqualifications.com/Assets/DownloadArea/QualificationDownloads/[25082021_1546]_L3_FSC_(RQF)_Qualification_specification_v1.2_Aug21.pdf" },
   },
+  ukhs2: {
+    answer:
+      "The Level 2 Award in Health and Safety in the Workplace is a short regulated UK qualification for anyone at work, covering employer and employee duties, risk assessment, common workplace hazards and their controls, and what to do after accidents and emergencies. It is offered by several awarding bodies, each with its own multiple-choice exam; RSPH's, for example, is 25 questions in 40 minutes, passed by scoring at least 16 (64 percent). The law requires suitable training, not this certificate itself.",
+    rows: [
+      { label: "Exam (RSPH)", value: "25 multiple-choice questions" },
+      { label: "Time (RSPH)", value: "40 minutes" },
+      { label: "Pass mark (RSPH)", value: "16 of 25 (64%)" },
+      { label: "Course length", value: "About 6 to 10 guided learning hours" },
+      { label: "Legally required?", value: "Suitable training yes; this certificate no" },
+      { label: "Core topics", value: "Duties, risk assessment, hazards and controls, accidents" },
+      { label: "Regulated by", value: "Ofqual (also Qualifications Wales and CCEA for some)" },
+    ],
+    basedOn: "the RSPH Level 2 Award in Health and Safety in the Workplace specification, Great Britain health and safety law and HSE guidance, checked November 2026",
+    source: { name: "RSPH: Level 2 Award in Health and Safety in the Workplace", url: "https://www.rsph.org.uk/qualification/level-2-award-in-health-and-safety-in-the-workplace.html" },
+  },
   ukaplh: {
     answer:
       "The Level 2 Award for Personal Licence Holders (APLH) is the accredited qualification you need before applying for a personal licence to sell alcohol in England and Wales. It is a one-unit course on the Licensing Act 2003, usually taught in a day, ending in a 40-question multiple-choice exam where you need 28 correct (70%). You then apply to the licensing authority where you live; the licence lasts indefinitely.",

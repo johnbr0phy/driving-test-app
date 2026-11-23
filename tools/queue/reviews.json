@@ -1550,5 +1550,13 @@
       "pr": 978,
       "findings": 32
     }
+  ],
+  "snowpro": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 984,
+      "findings": 1
+    }
   ]
 }

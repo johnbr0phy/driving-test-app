@@ -1546,6 +1546,19 @@
     --brand-gradient-to: 320 45% 95%;
   }
 
+  /* Red Seal Refrigeration and Air Conditioning Mechanic theme (Canada): deep refrigerant navy */
+  [data-theme="carsrefrig"] {
+    --brand: 206 55% 12%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 206 40% 96%;
+    --brand-hover: 206 55% 9%;
+    --brand-dark: 206 55% 7%;
+    --brand-darker: 206 50% 5%;
+    --brand-muted: 206 30% 68%;
+    --brand-border: 206 30% 80%;
+    --brand-border-light: 206 25% 90%;
+    --brand-gradient-to: 196 40% 96%;
+  }
   [data-theme="ukhs2"] {
     --brand: 241 40% 46%;
     --brand-foreground: 0 0% 100%;
@@ -9143,6 +9156,18 @@
     --brand-muted: 308 30% 45%;
     --brand-dark: 308 80% 65%;
     --brand-darker: 308 75% 78%;
+  }
+
+  .dark [data-theme="carsrefrig"] {
+    --brand: 206 55% 44.6%;
+    --brand-hover: 206 55% 36.6%;
+    --brand-light: 206 40% 13%;
+    --brand-gradient-to: 196 40% 11%;
+    --brand-border-light: 206 25% 24%;
+    --brand-border: 206 30% 34%;
+    --brand-muted: 206 30% 45%;
+    --brand-dark: 206 55% 65%;
+    --brand-darker: 206 50% 78%;
   }
 
   .dark [data-theme="ukhs2"] {

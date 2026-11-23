@@ -99,3 +99,10 @@ paraphrased, and no training provider is named. Checked 2026-11-23.
   B52 (paywalled, and they change with the edition).
 - HFC consumption allowance dates under ODSHAR (they change with amendments).
 - Anything about the exam itself (count, time, pass mark) as a question.
+
+## Official sample questions
+- Red Seal Sample Examination Questions, https://red-seal.ca/eng/questions.shtml?tid=202 (checked
+  2026-11-23): the page builds its questions with script and returned no question text to an
+  automated read, and the Chrome session was not available. The bank was written only from the
+  standard's tasks and the sources above, never from sample questions; the reviewer should compare
+  against the sample page in a browser.

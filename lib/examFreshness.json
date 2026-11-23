@@ -276,6 +276,14 @@
       "source": "https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/"
     },
     {
+      "exam": "dejagd",
+      "date": "2027-01-01",
+      "kind": "law",
+      "what": "From 1 January 2027 the Bavarian Jägerprüfung also proves Fallenjagd competence (Bavarian hunting law reform 2026), and the federal amendment bringing the wolf into the Bundesjagdgesetz was still being implemented in November 2026.",
+      "action": "Re-read BayJG, the JFPO and BJagdG; check the trap and law items, the landing and examFacts; still ask no wolf hunting rules unless they are in force.",
+      "source": "https://www.stmwi.bayern.de/fileadmin/user_upload/stmwi/jagd-forst/jagd/2026-03-31-Reform-des-Bayerischen-Jagdgesetzes-2026-Erlaeuterndes-Faktenblatt.pdf"
+    },
+    {
       "exam": "dkjagt",
       "date": "2027-04-01",
       "kind": "review",

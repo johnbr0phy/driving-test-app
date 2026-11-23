@@ -351,6 +351,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   dkteori: { title: "Denmark Driving Theory Test", description: "Practise give way, roundabouts, cyclists and motorway rules for the teoriprøve, in English." },
   dkmoto: { title: "Denmark Motorcycle Theory Test", description: "Practise lane position, bends, junctions and motorway rules for the motorcycle teoriprøve, in English." },
   dktruck: { title: "Denmark Truck Theory Test", description: "Practise air brakes, mirrors, driving times, weights and right turns for the lorry teoriprøve, in English." },
+  dejagd: { title: "German Hunting Licence Exam", description: "Practise hunting weapons, game biology, hunting law, dogs and conservation in German for the written Jägerprüfung." },
   dkjagt: { title: "Danish Hunting Licence Test", description: "Practise game species, weapons, safety and Danish hunting law in Danish for the written jagtprøve." },
   setrafik: { title: "Sweden Driving Theory Test", description: "Practise the right-hand rule, Swedish signs, speed limits and winter driving in English for the kunskapsprov." },
   fitheory: { title: "Finland Driving Theory Test", description: "Review giving way, Finnish signs, parking and winter rules for the category B teoriakoe." },

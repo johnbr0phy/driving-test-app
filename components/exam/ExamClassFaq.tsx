@@ -74,6 +74,7 @@ export const TEACHES: Record<string, string> = {
   de34a: "a Sachkunde 34a preparation course",
   frcaces: "a CACES R489 forklift training course",
   deheilpr: "a Heilpraktiker exam preparation course",
+  dejagd: "a Jägerkurs (hunting licence course)",
   pttvde: "the TVDE driver initial course",
   ptvigil: "a private security (vigilante) training course",
   sejakt: "a jägarexamen course",

@@ -175,6 +175,7 @@ import "./esvigilante";
 import "./demotorrad";
 import "./deaevo";
 import "./de34a";
+import "./dejagd";
 import "./deheilpr";
 import "./phlet";
 import "./phnle";

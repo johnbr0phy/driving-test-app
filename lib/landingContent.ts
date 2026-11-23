@@ -41,6 +41,7 @@ import demotorradDe from "@/lib/landings/demotorrad.de.json";
 import deaevoDe from "@/lib/landings/deaevo.de.json";
 import de34aDe from "@/lib/landings/de34a.de.json";
 import deheilprDe from "@/lib/landings/deheilpr.de.json";
+import dejagdDe from "@/lib/landings/dejagd.de.json";
 import ptcamPt from "@/lib/landings/ptcam.pt.json";
 import pttvdePt from "@/lib/landings/pttvde.pt.json";
 import ptvigilPt from "@/lib/landings/ptvigil.pt.json";
@@ -103,6 +104,7 @@ const LANDINGS: Record<string, TranslatedLandingContent> = {
   "deaevo.de": deaevoDe as TranslatedLandingContent,
   "de34a.de": de34aDe as TranslatedLandingContent,
   "deheilpr.de": deheilprDe as TranslatedLandingContent,
+  "dejagd.de": dejagdDe as TranslatedLandingContent,
   "ptcam.pt": ptcamPt as TranslatedLandingContent,
   "pttvde.pt": pttvdePt as TranslatedLandingContent,
   "ptvigil.pt": ptvigilPt as TranslatedLandingContent,

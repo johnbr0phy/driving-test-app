@@ -74,7 +74,7 @@ const TEACHER_LED = new Set([
   // Spain: academias de oposiciones and accredited security training centres
   "espolicia", "esguardia", "esvigilante",
   // Germany: AdA courses, 34a preparation courses and Heilpraktikerschulen
-  "deaevo", "de34a", "deheilpr",
+  "deaevo", "de34a", "deheilpr", "dejagd",
   "frcaces",
   // Portugal: TVDE driver initial courses and private security training providers
   "pttvde", "ptvigil",

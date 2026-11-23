@@ -483,6 +483,7 @@
   "snowpro": ["#0e3539","#effafb","#051314","#dbeef0"],
   "awsdva": ["#3d200b","#fcf4ee","#1a0e05","#f1e4da"],
   "aemt": ["#4b3d52","#f3eff5","#2b232f","#e7e2e9"],
+  "emr": ["#5c6b70","#f0f3f5","#404b4f","#e3e7e8"],
   "faaifr": ["#171830","#f1f2f8","#0a0a15","#dedfed"],
   "ccnpencor": ["#321c40","#f6effb","#160e1b","#e8dbf0"],
   "jncia": ["#175a02","#f2fbef","#0b2603","#e0f0db"],

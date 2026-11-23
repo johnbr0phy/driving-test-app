@@ -2468,14 +2468,14 @@
     "state": "ALL",
     "questionId": "SGM9-LAW-013",
     "category": "sgm9Law",
-    "question": "Which is a duty the principal owes the agent?",
-    "optionA": "To pay the agreed commission",
-    "optionB": "To act with skill and care",
-    "optionC": "To keep the principal's secrets",
-    "optionD": "To avoid conflicts of interest",
+    "question": "An agent acting within authority signs a lawful contract for the principal and is then held liable on it to the third party. Who should bear that liability?",
+    "optionA": "The principal, by indemnifying the agent",
+    "optionB": "The agent alone, as signatory",
+    "optionC": "The third party who sued",
+    "optionD": "Agent and principal equally",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The principal must pay the agreed remuneration and indemnify the agent for proper expenses. The other duties listed are owed by the agent."
+    "explanation": "A principal must indemnify the agent against losses and liabilities properly incurred in carrying out the agency. The agent's own duties run the other way: care, obedience, loyalty and accounts."
   },
   {
     "type": "SGM9",

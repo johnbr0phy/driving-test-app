@@ -275,6 +275,7 @@ import "./itpatente";
 import "./frcivique";
 import "./frvtc";
 import "./frcode";
+import "./frcaces";
 import "./plteoria";
 import "./plcpc";
 import "./plaplik";

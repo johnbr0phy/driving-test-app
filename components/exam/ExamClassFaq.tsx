@@ -71,6 +71,7 @@ export const TEACHES: Record<string, string> = {
   esvigilante: "a vigilante de seguridad training course",
   deaevo: "an AEVO trainer course (Ausbildung der Ausbilder)",
   de34a: "a Sachkunde 34a preparation course",
+  frcaces: "a CACES R489 forklift training course",
   deheilpr: "a Heilpraktiker exam preparation course",
   pttvde: "the TVDE driver initial course",
   ptvigil: "a private security (vigilante) training course",

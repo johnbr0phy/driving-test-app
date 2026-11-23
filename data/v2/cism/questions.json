@@ -1,0 +1,4164 @@
+[
+  {
+    "id": "CISM-T1-001",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Policy framework",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which document sets mandatory, specific rules such as minimum password length?",
+    "explanation": "Standards make policy measurable with mandatory specifics. Policies state intent, procedures give steps, and guidelines are advice.",
+    "options": [
+      "Policy",
+      "Standard",
+      "Procedure",
+      "Guideline"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T1-002",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Control implementation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new control will change how the finance team works. What MOST helps it succeed?",
+    "explanation": "Controls built with the people who use them fit the process and gain acceptance. Imposed controls tend to be worked around.",
+    "options": [
+      "Involving finance in its design",
+      "Deploying it over a quiet holiday weekend",
+      "Announcing it in a company-wide email",
+      "Making it optional for the first year"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-003",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Incident response plan",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the MAIN purpose of an incident response plan?",
+    "explanation": "The plan gives roles, steps and decision rights so incidents are contained quickly and consistently, reducing impact.",
+    "options": [
+      "Limit damage through organized action",
+      "Meet the insurer's claim form requirements",
+      "Assign blame for each breach to a person",
+      "Replace the business continuity plan"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-004",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Containment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "During a ransomware outbreak, an IT manager wants to restore file servers from backup at once. What must come FIRST?",
+    "explanation": "Restoring while the malware is still spreading lets it encrypt the restored data too. Containment comes before recovery; rebuilding may follow later.",
+    "options": [
+      "Stop the spread",
+      "Rebuild the domain from scratch",
+      "Buy new storage hardware",
+      "Notify every customer"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-005",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Risk assessment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What should be identified FIRST in an information risk assessment?",
+    "explanation": "Risk is judged against what could be lost, so the assets in scope and their value to the business come first. Threats, vulnerabilities and controls are then assessed against them.",
+    "options": [
+      "Insurance options and premiums",
+      "Audit findings from the past year",
+      "Assets and their value",
+      "Controls already in place"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T1-006",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Strategy development",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the MOST important input when developing an information security strategy?",
+    "explanation": "The strategy exists to support where the business is going, so its goals come first. Threats, tools and audit results inform the plan but do not set its direction.",
+    "options": [
+      "Current tool inventory",
+      "Enterprise objectives",
+      "Latest threat reports",
+      "Last audit findings"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T1-007",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Risk treatment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company stops offering an online service because its risk cannot be brought within appetite. Which response is this?",
+    "explanation": "Ending the activity that creates the risk is avoidance. Mitigation would reduce the risk while keeping the service.",
+    "options": [
+      "Avoidance",
+      "Mitigation",
+      "Acceptance",
+      "Transfer"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-008",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismGov",
+    "skill": "Accountability",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Who is ultimately accountable for protecting an enterprise's information?",
+    "explanation": "Governance, including accountability for information risk, rests with the board and executive management. The CISO leads the program but acts on authority delegated by them.",
+    "options": [
+      "Head of information protection",
+      "Board and executive leadership",
+      "Director of IT operations and infrastructure",
+      "Internal audit"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T1-009",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Policy framework",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The company replaces its identity management tool. Which document is MOST likely to need rewriting?",
+    "explanation": "Procedures give tool-specific steps, so they change with the tool. The policy's intent and the standard's requirements, such as removing leaver access promptly, usually stay the same.",
+    "options": [
+      "Program charter",
+      "Policy statement",
+      "Procedure",
+      "Standard"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T1-010",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Control integration",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Where should security checks be built into a software release process?",
+    "explanation": "Integrating checks into the stages teams already use catches flaws early without adding a separate gate that people skip.",
+    "options": [
+      "Only after production release",
+      "In a separate yearly review",
+      "Into existing pipeline stages",
+      "On request from developers"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T1-011",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Business impact analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which question does a business impact analysis answer?",
+    "explanation": "A BIA identifies critical processes, the impact of their loss over time and the recovery priorities and objectives that follow.",
+    "options": [
+      "Which processes matter most, and how fast",
+      "Which vendors cost the most",
+      "Which attackers are active",
+      "Which controls failed in the last audit"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-012",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Investigation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A laptop may hold evidence for legal action. Which action protects that evidence BEST?",
+    "explanation": "Chain of custody records who handled the evidence and when, so it stays admissible. Reinstalling or copying files alters or loses evidence.",
+    "options": [
+      "Copy key files to a USB stick",
+      "Document chain of custody",
+      "Ask the user to explain",
+      "Let IT reinstall the system"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T1-013",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Risk analysis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Each breach costs \\$240,000, and one is expected about every four years. What is the expected yearly loss in dollars?",
+    "explanation": "ALE = single loss expectancy x annual rate of occurrence = 240,000 x 0.25 = 60,000 dollars a year. Dividing by five or eight instead of four gives 48,000 or 30,000.",
+    "options": [
+      "20000",
+      "30000",
+      "48000",
+      "60000"
+    ],
+    "correct": [
+      3
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "CISM-T1-014",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Asset classification",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What should drive the classification level given to an information asset?",
+    "explanation": "Classification reflects the harm to the enterprise from loss of confidentiality, integrity or availability. Hardware cost and user counts do not measure that harm.",
+    "options": [
+      "Purchase cost of the hardware it sits on",
+      "Age or brand of the system holding it",
+      "Number of people who use it",
+      "Impact if it is disclosed or lost"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-015",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Control testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should controls be tested after they are implemented?",
+    "explanation": "A control that is designed well may still be misconfigured or bypassed. Testing gives evidence that it operates effectively.",
+    "options": [
+      "To confirm they work as intended",
+      "To meet licence terms",
+      "To replace risk assessment",
+      "To lower what they cost to run"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-016",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Strategy development",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A gap analysis compares which two states when building a security strategy?",
+    "explanation": "Strategy defines a desired state, assesses the current state and plans the work to close the gap between them. The NIST CSF calls these the Current and Target Profiles.",
+    "options": [
+      "Policy and its procedures",
+      "Approved budget and actual spend",
+      "Inherent and residual risk",
+      "Current and desired state"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-017",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Risk ownership",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who should own a risk arising from a sales system?",
+    "explanation": "Risk is owned by the manager accountable for the business process, who can accept it or fund treatment. Security advises and monitors.",
+    "options": [
+      "Head of sales",
+      "Sales database administrator",
+      "Chief audit executive",
+      "Information protection manager"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-018",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Recovery objectives",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Losing more than two hours of order data is unacceptable. Which objective does this set?",
+    "explanation": "The RPO is the maximum acceptable data loss measured in time, which drives backup or replication frequency. The RTO is how fast service must return.",
+    "options": [
+      "Maximum tolerable downtime",
+      "Recovery time objective",
+      "Recovery point objective",
+      "Service delivery objective"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T1-019",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Escalation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An analyst confirms customer data was taken. Who should be informed FIRST under the plan?",
+    "explanation": "The plan routes confirmed incidents to the incident manager, who brings in legal, executives and communications to decide on notifications.",
+    "options": [
+      "Local newspaper",
+      "Designated incident manager",
+      "Each affected customer at once",
+      "Every employee, by email"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T1-020",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismGov",
+    "skill": "Organizational structure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new CISO will report to the head of IT operations. What is the MAIN concern with this line?",
+    "explanation": "IT operations is judged on uptime and cost, so security findings about its own systems may be played down. Reporting outside IT gives the function independence.",
+    "options": [
+      "Slower patch cycles",
+      "Conflict of interest",
+      "Weaker technical skills",
+      "Smaller program budget"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T1-021",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Asset identification",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why must an asset inventory exist before controls are selected?",
+    "explanation": "Controls can only be applied to assets the program knows about. Unlisted systems and data stores are a common source of breaches.",
+    "options": [
+      "Support contracts require it",
+      "It sets the budget for the year",
+      "It replaces risk assessment",
+      "Unknown assets go unprotected"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-022",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Control testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who should test a key control to give the MOST objective result?",
+    "explanation": "Independence avoids people grading their own work. The operator can self-assess, but key controls need independent testing.",
+    "options": [
+      "Someone independent of its operation",
+      "The administrator who runs it every day",
+      "A user it restricts",
+      "The vendor that sold it"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-023",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Risk analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is the MAIN advantage of qualitative risk analysis over quantitative analysis?",
+    "explanation": "Qualitative scales such as high, medium and low can be applied quickly when reliable numbers are not available. Exact money figures and cost comparison are strengths of quantitative work.",
+    "options": [
+      "Exact loss figures",
+      "Direct cost comparison",
+      "Fully objective results",
+      "Faster when figures are scarce"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-024",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Recovery objectives",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A process can be down at most 24 hours. Restoring systems takes 10 hours, and checking data takes 4 hours more. What is the latest the restore can start, in hours after the outage?",
+    "explanation": "The process must be back within 24 hours, and recovery takes 10 + 4 = 14 hours, so restoration must start no later than 24 - 14 = 10 hours after the outage.",
+    "options": [
+      "4",
+      "10",
+      "14",
+      "24"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "CISM-T1-025",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Notification",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who should decide whether a breach must be reported to regulators?",
+    "explanation": "Notification duties depend on laws and contracts, so legal counsel assesses them and management decides. Analysts supply the facts.",
+    "options": [
+      "Administrator of the affected server",
+      "Legal counsel with management",
+      "Software vendor",
+      "SOC analyst on the night shift"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T1-026",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Control selection",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Several controls would treat a risk. Which should usually be chosen?",
+    "explanation": "A control should bring risk within appetite at a sensible cost. Newness or auditor familiarity do not make it the better choice.",
+    "options": [
+      "The newest technology",
+      "The one staff already know well",
+      "The strongest one, regardless of cost",
+      "The most cost-effective one"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-027",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Business case",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A business case for a new security initiative should FIRST show:",
+    "explanation": "Decision makers fund initiatives that deliver value or reduce business risk at a sensible cost. Features and designs support the case but do not make it.",
+    "options": [
+      "Technical architecture",
+      "Value to the business",
+      "Vendor product features",
+      "Staff training hours"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T1-028",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Risk acceptance",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A residual risk sits just above appetite and further controls cost more than the loss. What is the BEST course?",
+    "explanation": "When treatment is not cost-justified, an owner with authority may accept the risk, documented and reviewed over time. Security cannot accept business risk on the owner's behalf.",
+    "options": [
+      "Silent acceptance by the security team",
+      "More controls regardless of cost",
+      "Removal from the register",
+      "Formal acceptance by an authorized owner"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-029",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Awareness and training",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Phishing simulations show one department keeps clicking. What is the BEST response?",
+    "explanation": "Results point to where training should focus. Punishment and blanket blocking create resentment or business harm without fixing understanding.",
+    "options": [
+      "Disciplinary action for all",
+      "Block every link in incoming email",
+      "Targeted training for that group",
+      "End the simulations for that department"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T1-030",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Incident classification",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why define incident severity levels in advance?",
+    "explanation": "Agreed severity criteria tell responders who to call and how fast, so similar incidents are handled the same way.",
+    "options": [
+      "Longer and more detailed reports",
+      "Lower logging volumes",
+      "Fewer people notified",
+      "Consistent escalation and response"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-031",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Eradication",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Malware is removed, but how it got in is unknown. What is the MAIN risk of restoring service now?",
+    "explanation": "Without finding the entry point, attackers can return the same way. Root cause must be addressed before or as part of recovery.",
+    "options": [
+      "Reinfection by the same route",
+      "Higher backup storage costs",
+      "Extra overtime for the response team",
+      "Delays to the next audit report"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-032",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismGov",
+    "skill": "Organizational culture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which factor MOST influences whether staff actually follow security policies?",
+    "explanation": "Behaviour follows what the organization values and rewards. Audits and tools help, but a culture that treats security as part of the work does most to drive compliance.",
+    "options": [
+      "How often reviews take place",
+      "Organizational culture",
+      "Length of the policy document",
+      "Choice of firewall product"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T1-033",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Control design",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A control detects unusual payments after they are made. What type of control is it?",
+    "explanation": "Detective controls find events after they occur. A preventive control would stop the payment from being made.",
+    "options": [
+      "Detective",
+      "Preventive",
+      "Corrective",
+      "Deterrent"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-034",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Threat landscape",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Generative AI tools let attackers write convincing phishing in any language. How should this change the risk assessment?",
+    "explanation": "A new capability for attackers makes an existing threat more likely to succeed. The assessment should reflect that before losses occur.",
+    "options": [
+      "Remove email systems from scope",
+      "Defer it until a loss occurs",
+      "Raise the likelihood rating",
+      "Lower the impact of email breaches"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T1-035",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Awareness and training",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "When should new employees first receive security awareness training?",
+    "explanation": "Training at onboarding sets expectations before staff get access, then refresher training keeps it current.",
+    "options": [
+      "After one full year of service",
+      "After their first security mistake",
+      "During onboarding",
+      "Before retirement"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T1-036",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Enterprise architecture",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why should security architecture be part of enterprise architecture rather than designed apart from it?",
+    "explanation": "Building security into enterprise architecture places controls where business processes and data actually flow, which costs less than bolting them on later.",
+    "options": [
+      "It is cheaper to license",
+      "Controls fit systems from the start",
+      "Policies are no longer needed",
+      "Auditors require a single diagram"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T1-037",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Risk monitoring",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which measure warns that a risk is growing before any loss occurs?",
+    "explanation": "A key risk indicator signals rising exposure early, such as a growing backlog of unpatched servers. The others measure how well activities are performed.",
+    "options": [
+      "More unpatched servers",
+      "Training sessions held this quarter",
+      "Tickets closed per analyst each week",
+      "Projects delivered on time"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-038",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Security architecture",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which principle assumes no user or device is trusted just because it is on the internal network?",
+    "explanation": "Zero trust verifies each request based on identity, device and context rather than network location. Defense in depth layers controls but may still trust the internal network.",
+    "options": [
+      "Security by obscurity",
+      "Defense in depth",
+      "Fail secure",
+      "Zero trust"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-039",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Incident response team",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which group should be on the incident response team besides IT security?",
+    "explanation": "Incidents raise legal, reputational and business decisions, so those functions need named roles in the team.",
+    "options": [
+      "Every employee in the building",
+      "Only network engineers",
+      "Outside auditors and regulators",
+      "Legal, communications and business"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-040",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Recovery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before systems return to production after an incident, what should be confirmed?",
+    "explanation": "Restored systems must be verified free of attacker access and patched against the exploited weakness, then monitored closely.",
+    "options": [
+      "All incident logs are deleted",
+      "The supplier invoice is approved",
+      "They are clean and hardened",
+      "The press release has gone out"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T1-041",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Third-party management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What should be done BEFORE a vendor is given access to sensitive data?",
+    "explanation": "Assessing a supplier's security before onboarding lets gaps be fixed or priced into the contract. After access is granted, leverage is lower.",
+    "options": [
+      "Announce the contract publicly",
+      "Pay the first invoice",
+      "Give it admin rights",
+      "Security due diligence"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-042",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Vulnerability analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A scan finds a critical flaw on a server that holds no sensitive data and is isolated. How should it be ranked?",
+    "explanation": "Technical severity is one input. Priority depends on what the asset supports and how reachable it is, so context can raise or lower the ranking.",
+    "options": [
+      "As low, since nothing is stored",
+      "By the date it was found",
+      "As critical, as scored",
+      "By asset value and exposure"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-043",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Program resources",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which combination makes up the resources of an information security program?",
+    "explanation": "Programs need skilled people, defined processes and supporting technology working together. Tools alone do not make a program.",
+    "options": [
+      "Budget, auditors and business partners",
+      "Servers, firewalls and laptops",
+      "Policies, logs and alerts",
+      "People, process and technology"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-044",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismGov",
+    "skill": "Legal and regulatory requirements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new privacy law will apply to the enterprise next year. What should the security manager do FIRST?",
+    "explanation": "A gap analysis shows which existing controls already meet the law and which do not. Tools, rewrites and training are chosen once the gaps are known.",
+    "options": [
+      "Buy a privacy compliance tool",
+      "Rewrite every security policy at once",
+      "Train all staff on the new law",
+      "Analyze gaps against current controls"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-045",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Plan testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the MAIN limitation of a tabletop exercise?",
+    "explanation": "A tabletop talks through roles and decisions without touching systems, so it is safe and cheap but cannot show that backups restore or sites fail over. Parallel and full interruption tests do that.",
+    "options": [
+      "It needs the whole company to stop",
+      "It always breaks production",
+      "It cannot include executives",
+      "It does not prove systems recover"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-046",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Post-incident review",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Post-incident reviews keep turning into a search for someone to blame. What is the MAIN risk?",
+    "explanation": "When reviews punish people, they stop reporting errors and near misses, so the facts needed to improve the response are lost. Reviews should focus on causes and fixes.",
+    "options": [
+      "Logs grow too large to keep",
+      "Staff hide mistakes next time",
+      "Reviews take too little time",
+      "Tickets close too quickly"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T1-047",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Third-party management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A cloud provider's contract lets it move your data to subcontractors without telling you. What should the security manager seek?",
+    "explanation": "Subcontractors, sometimes called fourth or nth parties, handle the data too. The contract should require notice of them and pass the same security obligations down to them.",
+    "options": [
+      "A lower annual service fee",
+      "Disclosure and flow-down of controls",
+      "Exclusive use of one data center",
+      "A shorter contract term"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T1-048",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Frameworks and standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why can an organization be certified against ISO/IEC 27001 but not against ISO/IEC 27002?",
+    "explanation": "Certification audits check conformance with requirements. ISO/IEC 27001 states the requirements for an ISMS; ISO/IEC 27002 gives guidance on implementing controls, so there is nothing in it to certify against.",
+    "options": [
+      "27001 covers only cloud services",
+      "27002 was withdrawn in 2022",
+      "27002 applies only in Europe",
+      "27001 sets requirements; 27002 is guidance"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-049",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Control ownership",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who is responsible for making sure a control operates as intended day to day?",
+    "explanation": "Each control needs a named owner who runs it and confirms it works. Committees oversee and assessors test, but neither operates the control.",
+    "options": [
+      "Control owner",
+      "Business continuity planner",
+      "Risk committee chair",
+      "External assessor"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-050",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Program metrics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which makes a security metric MOST useful to management?",
+    "explanation": "A useful metric shows progress toward something management cares about. Easy or frequent measures that link to no objective add noise.",
+    "options": [
+      "Easy to collect from existing tools",
+      "Taken from a vendor dashboard",
+      "Linked to an agreed objective",
+      "Produced every single day"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T1-051",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Disaster recovery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two data centers replicate in real time and either can carry the full load. What is this arrangement?",
+    "explanation": "A mirrored site runs in step with production, so failover is near instant and costs the most. Warm and cold sites need data or equipment loaded first, and a reciprocal agreement borrows another firm's spare capacity.",
+    "options": [
+      "Warm site",
+      "Cold site",
+      "Mirrored site",
+      "Reciprocal agreement"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T1-052",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Tools and techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool BEST correlates alerts from many systems to spot an attack?",
+    "explanation": "A SIEM collects and correlates events across sources so related alerts form a picture. Scanners find weaknesses rather than live attacks.",
+    "options": [
+      "Vulnerability scanner",
+      "SIEM platform",
+      "Password manager",
+      "Spreadsheet of logs"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T1-053",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Control deficiency analysis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A control is well designed but staff often skip it. What type of deficiency is this?",
+    "explanation": "A sound design that is not applied consistently fails in operation. A design deficiency means the control would not work even if performed as written.",
+    "options": [
+      "Operating effectiveness",
+      "Control objective",
+      "Risk appetite",
+      "Control design"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-054",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Third-party management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which contract clause MOST helps verify a cloud provider's security over time?",
+    "explanation": "A right to audit, or regular independent reports such as SOC 2, gives ongoing evidence that controls still work.",
+    "options": [
+      "Right to audit or assurance reports",
+      "Exclusive use of one region",
+      "Fixed price for three or five years",
+      "Automatic contract renewal each year"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-055",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Frameworks and standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which ISO/IEC standard gives guidance on implementing information security controls?",
+    "explanation": "ISO/IEC 27002 is control guidance. 27001 holds the certifiable ISMS requirements, 22301 covers business continuity and 31000 general risk management.",
+    "options": [
+      "ISO/IEC 27002",
+      "ISO/IEC 27001",
+      "ISO 22301",
+      "ISO 31000"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-056",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismGov",
+    "skill": "Contractual requirements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A customer contract requires its data to be encrypted at rest. How should the security manager treat this?",
+    "explanation": "Contractual obligations carry legal force just as regulations do. They belong in the compliance requirements the program must meet and track.",
+    "options": [
+      "As a binding requirement",
+      "As a likely future audit finding",
+      "As optional good practice",
+      "As the customer's own duty to meet"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-057",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Business continuity",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "How should the incident response plan relate to the business continuity plan?",
+    "explanation": "Some incidents become business disruptions. The plans should reference each other and define when continuity procedures take over.",
+    "options": [
+      "Linked, with clear handoffs",
+      "Kept fully separate from it",
+      "Merged into one long document",
+      "Owned by different auditors"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-058",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Response communications",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Staff hear rumours about a breach during the response. What is the BEST approach?",
+    "explanation": "Consistent, approved messages prevent rumours and leaks of sensitive detail. Silence and ad hoc explanations both cause confusion.",
+    "options": [
+      "Approved updates through set channels",
+      "Post technical details internally",
+      "Let each manager explain it their own way",
+      "Say nothing until the incident ends"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-059",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Strategic planning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Security spending is cut by a quarter. What should the security manager do FIRST?",
+    "explanation": "With fewer resources, the remaining money should go to the highest risks. Blanket cuts to projects or training may drop work that matters more than what is kept.",
+    "options": [
+      "Reprioritize work by risk",
+      "Stop all new projects",
+      "Cancel the awareness program first",
+      "Ask auditors to step in and decide"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-060",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Exceptions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A team asks to run an unsupported system for six more months. What should an exception include?",
+    "explanation": "A policy exception should be time-limited, approved by the risk owner and backed by compensating controls, then reviewed when it expires.",
+    "options": [
+      "No record, to save effort",
+      "Expiry date and compensating controls",
+      "Approval from the vendor",
+      "Permanent approval signed by the IT director"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T1-061",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Program reporting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How often should the security program report status to senior management?",
+    "explanation": "Regular reporting keeps leaders informed of risk and progress, so decisions are not made only in a crisis.",
+    "options": [
+      "Only when an audit demands it",
+      "On an agreed regular schedule",
+      "Whenever the budget is short",
+      "Only after major incidents"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T1-062",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Policy framework",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Policies are rewritten every year even when nothing changed. What is the BETTER approach?",
+    "explanation": "Policies should be reviewed on a schedule and when the business, law or risk changes, then revised only where needed.",
+    "options": [
+      "Freeze all policies for five years",
+      "Replace them with guidelines",
+      "Let each team edit policies freely",
+      "Review yearly, revise as needed"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-063",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Risk assessment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When should a risk assessment be repeated outside its normal schedule?",
+    "explanation": "Mergers, new systems and new markets change assets, threats and exposure, so the earlier assessment may no longer hold.",
+    "options": [
+      "When a new auditor joins the firm",
+      "When a policy is reformatted",
+      "After staff holidays",
+      "After a merger brings in new systems"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-064",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Plan maintenance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When should the incident response plan be updated outside its review cycle?",
+    "explanation": "Organizational, system or contact changes, and lessons from incidents and tests, can make the plan inaccurate and must be reflected promptly.",
+    "options": [
+      "When the font changes",
+      "After major changes and post-incident lessons",
+      "Only when auditors ask for it",
+      "Every time a monitoring alert fires"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T1-065",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Evaluation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An alert fires on unusual logins. What should the analyst do FIRST?",
+    "explanation": "Triage confirms whether the event is real and how serious it is before disruptive actions are taken.",
+    "options": [
+      "Validate the alert",
+      "Email every user to warn them",
+      "Wipe the affected account at once",
+      "Shut down the whole network"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-066",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Program metrics",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Training completion is 98%, but phishing click rates have not fallen. What does this suggest?",
+    "explanation": "Completion measures activity; the click rate measures outcome. A high completion rate with no change in behaviour means the content or approach needs work.",
+    "options": [
+      "The metrics should be removed",
+      "Training is not changing behaviour",
+      "Click rates are being measured wrongly",
+      "The completion target is too low"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T1-067",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Data protection",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which control BEST protects customer records stored in a public cloud from the provider's own staff?",
+    "explanation": "If the enterprise manages the keys, provider staff see only ciphertext. Contracts and questionnaires give assurance but do not stop access.",
+    "options": [
+      "Contract clause on confidentiality",
+      "Annual provider questionnaire",
+      "Daily backups held in the same region",
+      "Encryption with keys the company holds"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-068",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismGov",
+    "skill": "Roles and responsibilities",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A RACI chart names two managers as Accountable for approving firewall changes. What is the problem?",
+    "explanation": "RACI allows one Accountable owner per activity. With two, each may assume the other decided, so approvals stall or are made twice.",
+    "options": [
+      "Unclear decision ownership",
+      "Too few people are informed",
+      "Too many are consulted",
+      "No one does the work"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-069",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Resources",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The program needs skills the team lacks for a short project. Which option is usually MOST cost-effective?",
+    "explanation": "A time-limited skill need is usually met best by outside specialists. Permanent hires suit lasting needs, and training everyone is slow and costly for one project.",
+    "options": [
+      "Contract specialists for the project",
+      "Hire two permanent experts",
+      "Delay the project for a year",
+      "Train the whole IT department over a year"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-070",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Risk reporting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How should risk be reported to senior management?",
+    "explanation": "Leaders decide on risk in terms of business impact and trends. Technical detail belongs in operational reports.",
+    "options": [
+      "As firewall log samples",
+      "As impact on objectives",
+      "By CVE identifier and score",
+      "As raw scanner output"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T1-071",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Risk register",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Where should identified risks, owners and treatment decisions be recorded?",
+    "explanation": "The risk register holds each risk with its rating, owner and treatment status so it can be tracked and reported.",
+    "options": [
+      "Risk register",
+      "Incident ticket",
+      "Change log",
+      "Asset inventory"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T1-072",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Training",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Responders know the plan but freeze during a real incident. What would help MOST?",
+    "explanation": "Practice builds confidence and reveals gaps. Exercises that simulate pressure prepare people better than more documentation.",
+    "options": [
+      "A longer and more detailed written plan",
+      "More logging tools",
+      "Regular realistic exercises",
+      "Fewer team members"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T1-073",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Containment",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Shutting down an infected server would stop a critical service. What should guide the containment choice?",
+    "explanation": "Containment options carry business costs. The plan's decision makers weigh stopping the threat against disrupting operations.",
+    "options": [
+      "The analyst's own preference",
+      "Which tool raised the alert",
+      "Whatever is fastest technically",
+      "Operational impact versus spread"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-074",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Program communications",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A major control change will affect customers. Who should approve the customer messaging?",
+    "explanation": "Customer messages carry business and reputational impact, so the business and communications owners approve them with security input.",
+    "options": [
+      "Network engineers",
+      "External penetration testers",
+      "Software engineers",
+      "Business and communications leads"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T1-075",
+    "section": "cism",
+    "test": 1,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Program development",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which should come FIRST when building a new security program?",
+    "explanation": "A charter approved by leadership defines scope, authority and responsibilities, which every later activity relies on.",
+    "options": [
+      "Penetration test of all systems",
+      "Choice of tools",
+      "Awareness posters",
+      "Charter with leadership mandate"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-001",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Policy framework",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A guideline differs from a standard because it is:",
+    "explanation": "Guidelines offer advice that staff may adapt. Standards are mandatory specifics that support a policy.",
+    "options": [
+      "Recommended, not mandatory",
+      "Approved by the board",
+      "Always technical in nature",
+      "Written by the internal auditors"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T2-002",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Control implementation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A firewall rule change was made without approval. Which process failed?",
+    "explanation": "Change management requires review and approval before configuration changes. Its failure lets unauthorized or risky changes reach production.",
+    "options": [
+      "Change management",
+      "Incident response",
+      "Vendor management",
+      "Business continuity planning"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T2-003",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Business impact analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who provides the MOST reliable input on downtime impact for a business process?",
+    "explanation": "Process managers know the financial, legal and customer impact of an outage. Technical staff estimate recovery effort instead.",
+    "options": [
+      "Data center administrators",
+      "Software vendors",
+      "Managers of that process",
+      "Penetration testers"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T2-004",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Investigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which evidence should be captured FIRST from a running compromised server?",
+    "explanation": "Volatile data in memory is lost when the system powers off, so it is collected before disk images by order of volatility.",
+    "options": [
+      "Backup tapes",
+      "Printed screenshots of the desktop",
+      "Memory contents",
+      "Image of the hard disk"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T2-005",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Risk analysis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An outage would cost \\$80,000 each time and happens three times a year. A control halves the frequency. What is the new ALE in dollars?",
+    "explanation": "ALE before = 80,000 x 3 = 240,000. Halving the rate gives 1.5 events a year, so ALE = 80,000 x 1.5 = 120,000 dollars. 240,000 is the ALE before the control.",
+    "options": [
+      "120000",
+      "160000",
+      "200000",
+      "240000"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "CISM-T2-006",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Strategy development",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which shows that an information security strategy is aligned with the business?",
+    "explanation": "Alignment means each security initiative can be traced to a business goal or risk. Following a framework or buying new tools does not prove that.",
+    "options": [
+      "It follows the latest framework",
+      "It uses the newest controls",
+      "IT approved it",
+      "Initiatives trace to enterprise goals"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-007",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Risk treatment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Outsourcing payment processing to a certified provider is MAINLY a way to:",
+    "explanation": "Using a provider moves some exposure to a third party, but the enterprise remains accountable for its customers' data and must still manage the provider.",
+    "options": [
+      "Eliminate all of the risk",
+      "Avoid the activity entirely",
+      "Share part of the risk",
+      "Accept the full risk"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T2-008",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismGov",
+    "skill": "Organizational structure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An information security steering committee works BEST when its members include:",
+    "explanation": "A steering committee aligns security with the business, so it needs the people who own business processes and can commit resources. Engineers and auditors can advise it.",
+    "options": [
+      "Vendor account managers",
+      "Security engineers only",
+      "Outside audit partners",
+      "Business unit leaders"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-009",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Asset classification",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who should assign the classification of a business dataset?",
+    "explanation": "The business owner understands the data's value and impact, so the owner classifies it. Custodians store and protect it to that level.",
+    "options": [
+      "The storage team that hosts it",
+      "The analyst on the protection team",
+      "Its business owner",
+      "Its users"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T2-010",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Control testing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Testing finds a control works only in some business units. What should the security manager do FIRST?",
+    "explanation": "Understanding the cause, such as missing procedures or tooling, shows whether the fix is training, configuration or redesign.",
+    "options": [
+      "Find why it differs between units",
+      "Retire the control everywhere",
+      "Report the units to the board",
+      "Buy a different product"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T2-011",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Recovery objectives",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which recovery time objective would MOST likely justify a hot site?",
+    "explanation": "Very short RTOs need systems ready to run, as at a hot site. Longer RTOs can be met by cheaper warm or cold sites.",
+    "options": [
+      "One month after the event",
+      "Two weeks",
+      "No objective set yet",
+      "Under one hour"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-012",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Containment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An account used by an attacker belongs to a senior executive. What is the BEST containment step?",
+    "explanation": "A compromised account must be contained immediately regardless of rank. Deleting data destroys evidence and may breach retention rules.",
+    "options": [
+      "Delete all the executive's email",
+      "Monitor it for a week or two",
+      "Wait for the executive's approval",
+      "Disable or reset the account now"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-013",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Risk assessment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why compare inherent and residual risk for the same scenario?",
+    "explanation": "Inherent risk ignores controls and residual risk is what remains with them, so the difference shows how much the controls reduce the risk and whether they are worth their cost.",
+    "options": [
+      "To show what the controls achieve",
+      "To pick which insurer to use",
+      "To set the audit schedule",
+      "To decide who owns the asset"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T2-014",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Asset classification",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why keep the number of classification levels small?",
+    "explanation": "Staff must apply labels correctly every day. Three or four clear levels are used consistently; long schemes are applied inconsistently.",
+    "options": [
+      "Lower storage costs",
+      "Easier for staff to apply",
+      "Fewer visits from auditors each year",
+      "Shorter encryption keys"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T2-015",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Control testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A cloud provider offers only a SOC 2 Type I report. What assurance is missing?",
+    "explanation": "A Type I report covers control design at one date. A Type II report also tests whether controls operated effectively over a review period, so ask for it or other evidence.",
+    "options": [
+      "Design of the controls",
+      "Scope of the systems covered",
+      "Independence of the auditor",
+      "Controls operating over a period"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-016",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Strategy development",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Senior leaders disagree on how much risk the enterprise will take. What should happen BEFORE the security strategy is set?",
+    "explanation": "The strategy's target state depends on how much risk leadership accepts. Until the appetite is agreed, the strategy has no stable goal to aim for.",
+    "options": [
+      "Choose a control framework to follow",
+      "Run a full penetration test",
+      "Agree the risk appetite",
+      "Approve the next budget"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T2-017",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Cost-benefit",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A proposed control would cost more each year than the loss it prevents. What is usually the BEST decision?",
+    "explanation": "Controls should cost less than the risk they reduce. A cheaper control, or documented acceptance by the owner, usually serves the business better.",
+    "options": [
+      "Buy it anyway to be safe",
+      "Drop the related business line entirely",
+      "Seek a cheaper option or accept",
+      "Ask auditors or IT to fund it"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T2-018",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Recovery objectives",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Backups run every six hours. The business sets a recovery point objective of one hour. What should change?",
+    "explanation": "With six-hourly backups up to six hours of data could be lost, more than the one-hour RPO allows. Data must be captured at least hourly.",
+    "options": [
+      "Lengthen the recovery time objective",
+      "Move to a cold site",
+      "Shorten the backup retention period",
+      "Replicate data at least hourly"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-019",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Escalation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should escalation thresholds be written into the plan?",
+    "explanation": "Clear thresholds tell responders when to involve senior management, legal and others, so critical decisions happen quickly.",
+    "options": [
+      "So decisions are not delayed",
+      "So auditors approve each step",
+      "So logs are smaller",
+      "So fewer people know"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T2-020",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismGov",
+    "skill": "Governance concepts",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which description BEST fits information security governance?",
+    "explanation": "Governance sets direction, approves strategy and monitors performance. Running tools and writing rules are management and operations activities carried out under that direction.",
+    "options": [
+      "Testing controls after rollout",
+      "Writing firewall rule sets",
+      "Daily running of security tools",
+      "Direction and oversight by leadership"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-021",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Control design",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Restoring data from backup after an attack is which type of control?",
+    "explanation": "Corrective controls fix the effect of an event and restore normal state. Backups do not stop or detect the attack.",
+    "options": [
+      "Detective",
+      "Corrective",
+      "Directive",
+      "Preventive"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T2-022",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Awareness and training",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which group needs the MOST specialized security training?",
+    "explanation": "Administrators hold powerful access and make configuration choices, so they need role-based training beyond general awareness.",
+    "options": [
+      "Contract cleaners",
+      "Data entry interns",
+      "Visitors on site",
+      "System administrators"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-023",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Threat landscape",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which source gives the MOST relevant view of threats facing a specific industry?",
+    "explanation": "Sector sharing groups such as ISACs exchange threat intelligence among organizations that face the same adversaries and systems.",
+    "options": [
+      "Annual staff survey",
+      "Sector sharing group",
+      "Vendor marketing briefs",
+      "General business news sites"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T2-024",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Incident classification",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which incident should get the HIGHEST priority?",
+    "explanation": "Priority follows business impact and spread. Active ransomware on systems that handle payments threatens critical operations right now.",
+    "options": [
+      "Defaced test website",
+      "Ransomware on payment servers",
+      "Single spam email reported by a user",
+      "Expired visitor badge found in the lobby"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T2-025",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Notification",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A cloud provider reports a breach that may include your customers' data. Who is responsible for notifying those customers?",
+    "explanation": "The organization that collected the data normally keeps the duty to notify, even when a processor caused the breach. Contracts and law define the details.",
+    "options": [
+      "The customers' banks",
+      "No one, since the breach was external",
+      "Usually your organization",
+      "Only the provider"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T2-026",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Control selection",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which BEST illustrates defense in depth for a web application?",
+    "explanation": "Defense in depth layers different kinds of control so one failure does not expose the asset. Two copies of the same control share the same weaknesses.",
+    "options": [
+      "Firewall, WAF, secure code and logging",
+      "Two firewalls from one vendor",
+      "One very strong password policy for all",
+      "Encrypting only the database"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T2-027",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Frameworks and standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which framework separates governance objectives from management objectives for enterprise IT?",
+    "explanation": "COBIT 2019 places governance in the Evaluate, Direct and Monitor domain and management in four other domains. ITIL 4 is a service management framework.",
+    "options": [
+      "ISO/IEC 27002",
+      "ITIL 4",
+      "COBIT 2019",
+      "NIST SP 800-61"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T2-028",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Residual risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After treatment, residual risk is still above appetite. What should happen next?",
+    "explanation": "Residual risk above appetite must be treated further or escalated for a decision. Closing it or changing the appetite without approval hides the exposure.",
+    "options": [
+      "Close the risk as treated",
+      "Wait for an incident or audit",
+      "Lower the appetite quietly",
+      "Further treatment or escalation"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-029",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Awareness and training",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the BEST measure of an awareness program's success?",
+    "explanation": "Awareness aims to change what people do, so behaviour such as reporting rates and safer handling is the measure. Output counts show effort, not effect.",
+    "options": [
+      "Attendance at launch event",
+      "Change in secure behaviour",
+      "Number of posters printed",
+      "Hours of video produced"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T2-030",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Incident response plan",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What must the incident response plan state about decision rights?",
+    "explanation": "In a crisis, decisions such as shutting systems or paying for outside help need a named authority so the response is not delayed.",
+    "options": [
+      "When to stop logging",
+      "How to avoid contact with regulators",
+      "Which supplier to blame",
+      "Who can authorize major actions"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-031",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Eradication",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which step belongs to eradication rather than containment?",
+    "explanation": "Eradication removes the cause, such as malware and backdoors. Blocking, isolating and disabling limit spread, which is containment.",
+    "options": [
+      "Removing attacker persistence",
+      "Disabling a stolen account",
+      "Blocking a hostile address at the firewall",
+      "Isolating a network segment from the rest"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T2-032",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismGov",
+    "skill": "Organizational purpose",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Security proposes banning personal phones, but field staff depend on them to serve customers. What should the security manager do?",
+    "explanation": "Security exists to enable the business at an acceptable level of risk. Controls such as device enrolment can manage the risk without stopping a process the business relies on.",
+    "options": [
+      "Enforce the ban without exception",
+      "Let each manager decide alone",
+      "Controls that keep the work possible",
+      "Withdraw the proposal for good"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T2-033",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Security architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why segment a network into zones by trust level?",
+    "explanation": "Segmentation contains an attacker or malware within one zone and lets controls focus on the paths between zones.",
+    "options": [
+      "Remove the need for logging on internal systems",
+      "Speed up internet access",
+      "Limit the spread of a compromise",
+      "Reduce licence costs"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T2-034",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Vulnerability analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should vulnerability management feed the risk management process?",
+    "explanation": "A vulnerability raises the chance that a threat succeeds, so new findings may change risk ratings and treatment decisions.",
+    "options": [
+      "Flaws change likelihood of loss",
+      "Auditors require scan counts",
+      "Scans replace risk assessments entirely",
+      "Patching is always optional"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T2-035",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Third-party management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How should suppliers be grouped for ongoing security reviews?",
+    "explanation": "Tiering suppliers by data access and criticality focuses deeper reviews on those that could cause the most harm.",
+    "options": [
+      "By contract value only",
+      "By the year each was onboarded",
+      "Alphabetically by name",
+      "By the risk each one poses"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-036",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Frameworks and standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In NIST CSF 2.0, what do the Tiers describe?",
+    "explanation": "CSF 2.0 Tiers, from Partial to Adaptive, characterize how rigorous an organization's cybersecurity risk governance and management practices are.",
+    "options": [
+      "Severity of security incidents",
+      "Trust zones in the network",
+      "Levels of data classification",
+      "Rigor of risk governance practices"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-037",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Risk monitoring",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why set thresholds on key risk indicators?",
+    "explanation": "Thresholds tell owners when a KRI has moved far enough to need a response, so action happens before the risk becomes a loss.",
+    "options": [
+      "To satisfy business partners",
+      "To replace risk owners",
+      "To trigger timely action",
+      "To shorten audit reports"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T2-038",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Security architecture",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A new business application will hold regulated data. When should security requirements be agreed?",
+    "explanation": "Requirements agreed early are designed in at low cost. Discovering them in testing or after an audit forces expensive rework.",
+    "options": [
+      "During user acceptance testing",
+      "In the requirements phase",
+      "After the first external audit",
+      "At decommissioning"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T2-039",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Disaster recovery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A process can be down for two weeks, and management wants the cheapest alternate site. Which fits?",
+    "explanation": "A long tolerable outage allows time to install equipment, so a cold site with only space and power meets it at the lowest cost.",
+    "options": [
+      "Cold site",
+      "Warm standby site",
+      "Hot site",
+      "Fully mirrored site"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T2-040",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Recovery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why monitor restored systems closely after an incident?",
+    "explanation": "Attackers often retry, and missed persistence can resurface. Heightened monitoring confirms recovery held.",
+    "options": [
+      "Attackers may try to return",
+      "Users prefer extra alerts",
+      "Auditors require new dashboards",
+      "Monitoring cuts licence fees"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T2-041",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Third-party management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A supplier's assurance report excludes the data center that hosts your systems. What should you do?",
+    "explanation": "A report gives assurance only for what it covers. Other evidence, such as a bridge letter, another report or an audit, is needed for the excluded site.",
+    "options": [
+      "Other audit evidence for that site",
+      "Accept the report as complete",
+      "End the contract at once",
+      "Ignore the scope note"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T2-042",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Risk assessment",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Two business units rate the same risk very differently. What is the MOST likely cause?",
+    "explanation": "Without shared scales and criteria for likelihood and impact, ratings depend on who scores them. A common methodology makes risks comparable.",
+    "options": [
+      "Different firewall brands",
+      "No common rating method",
+      "Unequal staff headcounts",
+      "Separate office buildings"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T2-043",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Program metrics",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which metric BEST shows the effect of the vulnerability management program?",
+    "explanation": "Time to remediate critical vulnerabilities measures how quickly exposure is closed. Scan counts and licences measure activity, not outcome.",
+    "options": [
+      "Number of scans run each month",
+      "Time to fix critical flaws",
+      "Scanner licences bought",
+      "Pages in the vulnerability procedure"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T2-044",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismGov",
+    "skill": "Legal and regulatory requirements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which source is MOST reliable for deciding which laws apply to the enterprise?",
+    "explanation": "Applicability of a law is a legal judgment. Counsel interprets jurisdiction and scope; news and peers can raise awareness but are not authoritative.",
+    "options": [
+      "Legal counsel",
+      "Peer security managers",
+      "Vendor white papers",
+      "Industry news feeds"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T2-045",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Plan testing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which continuity plan test carries the MOST risk to normal operations?",
+    "explanation": "A full interruption test shuts down the primary site and runs on the recovery site, so a failure disrupts real business. Parallel tests keep production running.",
+    "options": [
+      "Checklist review",
+      "Tabletop exercise",
+      "Parallel test",
+      "Full interruption test"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-046",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Post-incident review",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When should a post-incident review take place?",
+    "explanation": "Holding the review soon after closure captures accurate memories and gets fixes in place before the next incident.",
+    "options": [
+      "When the next incident occurs",
+      "Soon after the incident closes",
+      "At the next annual audit",
+      "Only for incidents over a cost"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T2-047",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Third-party management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When a supplier contract ends, what must the security manager confirm?",
+    "explanation": "Offboarding must recover or securely destroy enterprise data and remove the supplier's access. Payment and archiving are not security outcomes.",
+    "options": [
+      "Data is returned or destroyed",
+      "The contract is archived in the system",
+      "The final invoice is paid",
+      "The supplier is thanked"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T2-048",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Business case",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Two projects cost the same. Which should a business case favour?",
+    "explanation": "With equal cost, the better investment is the one that lowers more business risk or adds more value. Technology age and features matter only through that effect.",
+    "options": [
+      "Newer underlying technology",
+      "Greater reduction in risk",
+      "Shorter vendor contract",
+      "More features out of the box"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T2-049",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Compensating controls",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A legacy system cannot support multifactor authentication. Which is the BEST compensating control?",
+    "explanation": "A monitored jump host that itself enforces strong authentication limits who can reach the system and records activity. Longer expiry weakens passwords further.",
+    "options": [
+      "Longer password expiry period",
+      "Security-monitored jump host",
+      "Remove the system from the inventory",
+      "Annual review of the user list"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T2-050",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Program resources",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Business units keep building their own security tools. What should the security manager propose?",
+    "explanation": "Shared, centrally governed services reduce duplicated cost and inconsistent protection while still meeting unit needs.",
+    "options": [
+      "A ban on all new tools",
+      "A separate team per unit",
+      "Full outsourcing of security at once",
+      "Shared services under one program"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-051",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Business continuity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which component keeps a continuity plan usable when key staff are unavailable?",
+    "explanation": "Alternates trained for each role keep the plan working when primary people are absent, injured or unreachable.",
+    "options": [
+      "One expert who knows it all",
+      "Supplier contact list only",
+      "Detailed network diagrams for every site",
+      "Named alternates for each role"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-052",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Tools and techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which capability lets responders isolate a suspicious laptop remotely?",
+    "explanation": "EDR agents can contain a host from the network while keeping it reachable for investigation. The other controls cannot isolate a device.",
+    "options": [
+      "Data classification labels on files",
+      "Firewall rule audit",
+      "Password complexity rules",
+      "Endpoint detection and response"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-053",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Emerging risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A business unit plans to adopt a new technology quickly. What should the security manager do FIRST?",
+    "explanation": "Working with the business to assess the new technology early lets controls be designed in. Blocking or approving blindly both ignore the risk.",
+    "options": [
+      "Assess its risks with the unit",
+      "Block it until it is audited",
+      "Approve it to avoid delay",
+      "Wait for a vendor certificate of security"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T2-054",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Program reporting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which report format suits operational security teams rather than executives?",
+    "explanation": "Operational teams need the technical detail to act. Executives need summaries of risk and trends.",
+    "options": [
+      "One-page summary of top risks",
+      "Quarterly trend chart of top risks",
+      "Strategic security roadmap",
+      "Detailed technical findings"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-055",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Frameworks and standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why map controls to several frameworks at once?",
+    "explanation": "A control mapping shows how one control satisfies several frameworks or laws, so it can be tested once and reported many ways.",
+    "options": [
+      "More controls overall",
+      "Avoid any external audit",
+      "Test once, meet many requirements",
+      "Remove the need for written policies"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T2-056",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismGov",
+    "skill": "Roles and responsibilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should internal audit stay separate from the security function?",
+    "explanation": "Auditors must not review controls they designed or run. Keeping the functions apart preserves the objectivity of the assurance the board relies on.",
+    "options": [
+      "To cut staffing costs",
+      "To speed up control changes",
+      "To keep assurance independent",
+      "To share audit workpapers easily"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T2-057",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Training",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which group needs incident awareness MOST beyond the response team?",
+    "explanation": "The help desk often receives the first report of an incident, so it must recognize one and escalate it quickly.",
+    "options": [
+      "Retired employees",
+      "Help desk staff",
+      "Building visitors",
+      "Board observers"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T2-058",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Response communications",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which role should speak to the media during a major incident?",
+    "explanation": "One designated spokesperson gives consistent, approved statements and protects legal positions. Technical staff should not speak publicly.",
+    "options": [
+      "First analyst on the scene",
+      "Designated spokesperson",
+      "Any senior engineer",
+      "External penetration tester"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T2-059",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Enterprise architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which artifact BEST helps the security manager see where sensitive data flows between systems?",
+    "explanation": "Data flow diagrams from the enterprise architecture show how information moves, so controls can be placed at the right points. The others do not show data movement.",
+    "options": [
+      "Organization charts for each unit",
+      "Data flow diagrams",
+      "Vendor contracts and annexes",
+      "Training records"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T2-060",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Risk ownership",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A risk owner refuses to fund a needed control. What should the security manager do?",
+    "explanation": "The owner may accept risk within delegated authority. If it is outside that authority or appetite, the manager documents the decision and escalates through the agreed process.",
+    "options": [
+      "Implement it from the security budget",
+      "Ignore the risk from now on",
+      "Document it and escalate as agreed",
+      "Report the owner to the external auditors"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T2-061",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Program metrics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A metric shows 100% compliance every month for two years. What should the manager question?",
+    "explanation": "A metric that never moves may be too easy, poorly defined or measuring the wrong thing. It should be reviewed for value.",
+    "options": [
+      "Whether to publish it daily",
+      "Whether to add color",
+      "Whether to hire more staff",
+      "Whether it measures anything useful"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-062",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Policy framework",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which feature BEST helps a policy survive technology changes?",
+    "explanation": "Policies that state intent rather than products stay valid as tools change. Product detail belongs in standards and procedures.",
+    "options": [
+      "Technology-neutral wording",
+      "Named product versions",
+      "Detailed screenshots of each setting",
+      "Contract numbers"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T2-063",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Control deficiency analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Testing shows a backup job has failed silently for months. What is the security manager's FIRST concern?",
+    "explanation": "The first concern is the risk: data that cannot be restored. Root cause and blame follow once the exposure is understood and addressed.",
+    "options": [
+      "Exposure created by the gap",
+      "Cost of new backup software",
+      "Who configured the job",
+      "Wording of the policy"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T2-064",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Evaluation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which metric BEST shows that incident readiness is improving?",
+    "explanation": "Faster detection and containment show the organization can find and stop incidents sooner. Plan length and team size do not show results.",
+    "options": [
+      "More pages in the response plan",
+      "Larger incident response team",
+      "More tools purchased this year",
+      "Shorter time to detect and contain"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-065",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Evaluation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who should decide that an incident is closed?",
+    "explanation": "Closure is a decision under the plan: the incident manager confirms containment, recovery and handover of follow-up actions. Closing early by whoever is on the case risks loose ends.",
+    "options": [
+      "External auditor",
+      "Incident manager, per the plan",
+      "First analyst on the case",
+      "Any affected user"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T2-066",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Program communications",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How should the security manager handle a business unit that ignores repeated findings?",
+    "explanation": "Persistent noncompliance is a governance issue for the leaders who own the risk. Escalating keeps accountability with the business.",
+    "options": [
+      "Fix their systems without asking",
+      "Stop reporting the findings to them",
+      "Escalate through governance",
+      "Publish their names company-wide"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T2-067",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Identity and access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A developer keeps production administrator rights after moving to a testing role. Which principle is broken?",
+    "explanation": "Access should match the current role. Rights left from an old role exceed what the job needs and widen the damage a mistake or compromise could cause.",
+    "options": [
+      "Least privilege",
+      "Implicit trust",
+      "Job rotation",
+      "Defense in depth"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T2-068",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismGov",
+    "skill": "Organizational culture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which measure BEST tracks whether security culture is improving?",
+    "explanation": "Rising reports of near misses and suspicious activity show people notice risk and trust the process. Spending and blocking say little about behaviour.",
+    "options": [
+      "Near misses reported each quarter",
+      "Security spending rose sharply this year",
+      "More staff passed the annual quiz",
+      "Many websites are now blocked"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T2-069",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Resources",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A security roadmap has more projects than staff. What is the BEST basis for sequencing them?",
+    "explanation": "Projects should go first where they cut the most risk, while respecting dependencies such as identity work that others build on. Arrival order and size ignore risk.",
+    "options": [
+      "Order in which requests arrived",
+      "Risk reduction and dependencies",
+      "Size of each project",
+      "Preference of the IT team"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T2-070",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Risk reporting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What should a risk dashboard for executives emphasize?",
+    "explanation": "Executives need the few risks that matter most and whether they are improving or getting worse. Detailed lists overwhelm the decision.",
+    "options": [
+      "Every open vulnerability by host",
+      "Daily alert volumes",
+      "Top risks and trends",
+      "Number of tool licences in use"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-T2-071",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Risk scenarios",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the main purpose of building risk scenarios?",
+    "explanation": "A risk scenario describes how a threat could exploit a weakness and what loss would follow, which makes risk concrete for owners and decision makers.",
+    "options": [
+      "List every possible threat",
+      "Describe plausible loss events",
+      "Replace the asset inventory",
+      "Set the internal audit schedule"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T2-072",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Incident response plan",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which document gives responders the specific steps for one incident type, such as ransomware?",
+    "explanation": "Playbooks sit under the incident response plan and set out the detailed actions for a common scenario. The risk register and asset inventory feed planning but give no response steps.",
+    "options": [
+      "Incident playbook",
+      "Asset inventory",
+      "Risk register",
+      "Business case"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-T2-073",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Containment",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An attacker is still active on one segment, and the team wants to watch them to learn more. What must be weighed FIRST?",
+    "explanation": "Watching an attacker can yield intelligence, but only if the risk of further loss is acceptable. That decision belongs to the incident manager under the plan.",
+    "options": [
+      "Preferences of the vendor",
+      "Risk of further damage",
+      "Cost of the monitoring tools",
+      "Length of the final report"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-T2-074",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Control integration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why align security controls with IT service management processes?",
+    "explanation": "Embedding controls in incident, change and access processes makes them routine, so they are performed consistently.",
+    "options": [
+      "They cost nothing extra",
+      "They need no testing",
+      "They no longer need change control",
+      "They run as part of daily work"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-T2-075",
+    "section": "cism",
+    "test": 2,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Data protection",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which control BEST stops staff emailing classified files to outside addresses?",
+    "explanation": "DLP inspects outgoing content against classification and can block or quarantine it. Antivirus and passwords do not address this path.",
+    "options": [
+      "Data loss prevention rules",
+      "Antivirus on servers",
+      "Longer passwords for all staff",
+      "Annual policy sign-off"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-D-001",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismGov",
+    "skill": "Organizational structure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the MAIN benefit of the security manager reporting outside the IT department?",
+    "explanation": "A reporting line outside IT lets the security manager raise risks in IT's own systems without a conflict and gives security a voice with senior leadership.",
+    "options": [
+      "Lower personnel costs",
+      "Independence and visibility",
+      "Quicker server builds for projects",
+      "Fewer audit requests"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-D-002",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Strategy development",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which time horizon does an information security strategy usually cover?",
+    "explanation": "A strategy sets direction over several years, with yearly plans and budgets beneath it. Short horizons are for tactical plans.",
+    "options": [
+      "One quarter",
+      "The next audit cycle",
+      "Three to five years",
+      "Until the next incident"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-D-003",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Risk analysis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Fraud losses run \\$15,000 per event, and about six events happen a year. What is the single loss expectancy in dollars?",
+    "explanation": "Single loss expectancy is the loss from one event, 15,000 dollars. The ALE would be 15,000 x 6 = 90,000, which is the tempting wrong answer.",
+    "options": [
+      "2500",
+      "6000",
+      "15000",
+      "90000"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "CISM-D-004",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Risk treatment",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Buying cyber insurance against ransomware losses is an example of:",
+    "explanation": "Insurance moves the financial impact to the insurer. The enterprise still owns the risk of the attack and the duty to respond.",
+    "options": [
+      "Risk transfer",
+      "Risk mitigation",
+      "Risk acceptance",
+      "Risk avoidance"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-D-005",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Policy framework",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which statement belongs in a high-level information security policy?",
+    "explanation": "A policy states management intent in broad terms. A password length is a standard, and click steps are procedure.",
+    "options": [
+      "Click Save, then Submit",
+      "Use the blue login button",
+      "Information is protected to its value",
+      "Passwords must have 14 characters"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-D-006",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Control testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which evidence gives the STRONGEST assurance that access reviews happen?",
+    "explanation": "Tested records show the reviews were performed. Policies and statements show intent, not operation.",
+    "options": [
+      "Policy that requires reviews",
+      "Manager's verbal statement",
+      "Email reminders sent to every manager",
+      "Audit-sampled signed reviews"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-D-007",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Recovery objectives",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which term means the longest a process can be unavailable before harm becomes unacceptable?",
+    "explanation": "Maximum tolerable downtime is the outer limit for disruption. The RTO must be set within it.",
+    "options": [
+      "Service level target",
+      "Maximum tolerable downtime",
+      "Mean time between failures",
+      "Recovery point objective"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-D-008",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Investigation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should investigators work from a forensic copy rather than the original disk?",
+    "explanation": "Analysis can change data. Working on a verified copy keeps the original evidence unaltered for court or further review.",
+    "options": [
+      "To preserve the original",
+      "To avoid writing reports",
+      "To speed up the scan",
+      "To save storage space on the server"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-D-009",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismGov",
+    "skill": "Senior management commitment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Senior management support for security is MOST clearly shown by:",
+    "explanation": "Commitment means authority and resources. Leaders who approve the strategy and fund it give the program what it needs; attending training is welcome but shows less.",
+    "options": [
+      "Approving and funding the program",
+      "Attending awareness sessions",
+      "Reading monthly incident reports",
+      "Signing the acceptable use policy"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-D-010",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Strategy development",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A roadmap lists projects but no measures of success. What is MOST likely to suffer?",
+    "explanation": "Without metrics tied to objectives, leadership cannot tell whether the strategy is working. Defining measures is part of developing the strategy.",
+    "options": [
+      "Speed of procurement",
+      "Quality of firewall rule sets",
+      "Number of suppliers under contract",
+      "Ability to show progress"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-D-011",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Risk analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In risk analysis, what does risk velocity describe?",
+    "explanation": "Velocity is the time between an event and its impact. A fast-moving risk, such as ransomware, leaves little time to respond, which affects how it is prioritized.",
+    "options": [
+      "How many assets it touches",
+      "How often the event occurs",
+      "How much a control costs",
+      "How fast impact is felt"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-D-012",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Risk treatment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Adding encryption to laptops to reduce the impact of theft is:",
+    "explanation": "Encryption reduces the harm if a laptop is stolen, which is risk mitigation. The laptops and their use continue.",
+    "options": [
+      "Risk sharing",
+      "Mitigation",
+      "Avoidance",
+      "Retention"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-D-013",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Control design",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A required control is impractical, so another control meets the same intent. What is that control called?",
+    "explanation": "A compensating control satisfies the intent of a requirement that cannot be met as written. Corrective, detective and directive describe a control's function, not its role as a substitute.",
+    "options": [
+      "Compensating",
+      "Corrective",
+      "Directive",
+      "Detective"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-D-014",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Awareness and training",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why tailor awareness content to different roles?",
+    "explanation": "Finance staff face payment fraud, developers face code flaws and executives face targeted attacks. Role-based content addresses the risks each group meets.",
+    "options": [
+      "Generic content is illegal",
+      "Auditors forbid generic content",
+      "Risks differ by role",
+      "It costs less overall"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-D-015",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Business impact analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A BIA finds that a minor-looking process feeds payroll. What should follow?",
+    "explanation": "Dependencies reveal hidden criticality. A process that payroll depends on must be recovered in time for payroll to work.",
+    "options": [
+      "Remove it from the BIA",
+      "Raise its recovery priority",
+      "Leave its priority unchanged",
+      "Move payroll offline"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-D-016",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Post-incident review",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A review finds the same root cause as two earlier incidents. What does this MOST likely show?",
+    "explanation": "Repeat causes suggest lessons learned did not become completed actions. Tracking corrective actions to closure prevents recurrence.",
+    "options": [
+      "Reviews should be skipped",
+      "Attackers are unbeatable",
+      "The plan is too long to follow",
+      "Earlier fixes were not carried out"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-D-017",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismGov",
+    "skill": "Business alignment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The board asks how security helps the enterprise. Which answer is MOST useful to them?",
+    "explanation": "Boards govern by business outcomes. Showing how security enables strategic goals and reduces business risk speaks their language; operational counts do not.",
+    "options": [
+      "How many attacks were blocked",
+      "How long firewalls stayed up",
+      "How many patches were applied last month",
+      "How controls enable strategic goals"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-D-018",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Frameworks and standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does an ISO/IEC 27001 statement of applicability record?",
+    "explanation": "The statement of applicability lists the controls chosen, whether they are in place, and why any were excluded. It links control choices to the risk treatment plan.",
+    "options": [
+      "Audit dates and auditors",
+      "Selected controls and reasons",
+      "Incident history by year and severity",
+      "Software licences held"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-D-019",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Threat landscape",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A threat actor group starts targeting software suppliers to reach their customers. Which risk should the enterprise reassess?",
+    "explanation": "Attacks on suppliers reach customers through trusted updates and services, so supply chain risk is the one that changes.",
+    "options": [
+      "Power grid failure",
+      "Supply chain compromise",
+      "Business email outage",
+      "Physical theft of laptops"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-D-020",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Risk monitoring",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why must risks be monitored after treatment?",
+    "explanation": "New threats, business change and control drift can raise a treated risk again, so ratings and controls need ongoing review.",
+    "options": [
+      "Auditors close risks once a year",
+      "Owners change every week",
+      "Treatment is never effective",
+      "Conditions and threats change"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-D-021",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Asset identification",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which source is MOST useful for finding unknown cloud services in use?",
+    "explanation": "Traffic logs and company card expenses reveal software bought or used outside IT. The other sources do not show service use.",
+    "options": [
+      "Staff phone directory",
+      "Network logs and expense records",
+      "Office floor plans",
+      "Board meeting minutes"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-D-022",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Third-party management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is the BEST way to keep supplier risk current between full assessments?",
+    "explanation": "Monitoring breaches, certifications, financial health and service changes catches new risk between periodic assessments.",
+    "options": [
+      "Waiting for the renewal date",
+      "Ongoing monitoring of key signals",
+      "Trusting the first questionnaire",
+      "Yearly reminder emails"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-D-023",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Incident classification",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What distinguishes a security incident from a security event?",
+    "explanation": "An event is any observable occurrence. It becomes an incident when it harms, or threatens to harm, confidentiality, integrity or availability.",
+    "options": [
+      "Time of day it occurs",
+      "Actual or likely harm",
+      "Number of log lines",
+      "Which tool raised it"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-D-024",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Tools and techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which practice MOST helps responders know what normal activity looks like?",
+    "explanation": "A baseline of normal behaviour makes anomalies stand out, which speeds detection and investigation.",
+    "options": [
+      "Baselining systems and traffic",
+      "Rotating passwords often",
+      "Encrypting all backup media",
+      "Labelling documents"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-D-025",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismGov",
+    "skill": "Policy approval",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Who should keep the information security policy current and propose updates?",
+    "explanation": "The security manager maintains the policy and brings changes to senior management for approval. Auditors test against it but should not write it.",
+    "options": [
+      "Each new employee",
+      "IT help desk",
+      "Information security manager",
+      "External auditors"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-D-026",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Frameworks and standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why might an enterprise adopt an industry framework instead of writing its own control set?",
+    "explanation": "A framework brings tested, widely accepted practice and a common language. It still must be tailored by risk and does not remove legal obligations.",
+    "options": [
+      "It needs no tailoring to the business",
+      "It removes legal duties",
+      "It reflects accepted practice",
+      "It replaces risk assessment"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-D-027",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Vulnerability analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is a vulnerability rather than a threat?",
+    "explanation": "A vulnerability is a weakness that a threat could exploit. Criminal groups, angry insiders and floods are threats.",
+    "options": [
+      "Unpatched web server",
+      "Ransomware gang",
+      "Disgruntled former employee",
+      "Severe flooding in the region"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-D-028",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Risk appetite",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How do risk appetite and risk tolerance differ?",
+    "explanation": "Appetite is the broad amount of risk the enterprise will accept in pursuit of its goals. Tolerance is the acceptable deviation around specific objectives.",
+    "options": [
+      "They are the same thing",
+      "Appetite applies to IT only",
+      "Tolerance is allowed variation",
+      "Tolerance is set by the auditors"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-D-029",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Program metrics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What should be defined before any security metric is reported?",
+    "explanation": "Each metric needs a purpose and an audience so it measures something that informs a decision.",
+    "options": [
+      "Color of the chart",
+      "Purpose and audience",
+      "Tool that collects it",
+      "Number of decimal places"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-D-030",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Program metrics",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A metric shows whether the program avoided penalized breaches this year. What kind of indicator is it?",
+    "explanation": "A KGI shows whether a goal was achieved after the fact. KPIs measure how well processes run, and KRIs warn of rising risk.",
+    "options": [
+      "Leading indicator",
+      "Key risk indicator",
+      "Key goal indicator",
+      "Key performance indicator"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-D-031",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Plan testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the MAIN output of a continuity plan test?",
+    "explanation": "Tests are run to find weaknesses. Their findings drive plan updates, training and changes to recovery arrangements.",
+    "options": [
+      "Gaps to fix in the plan",
+      "A certificate of compliance from auditors",
+      "A new budget request",
+      "A list of passwords"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-D-032",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Escalation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A minor incident starts affecting customer services. What should happen?",
+    "explanation": "Severity should change as impact changes. Reclassifying brings in the right people and resources.",
+    "options": [
+      "Keep its original rating",
+      "Close and reopen it later",
+      "Handle it informally",
+      "Reclassify and escalate it"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-D-033",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismGov",
+    "skill": "Legal and regulatory requirements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How should the security program keep track of the legal and contractual duties it must meet?",
+    "explanation": "A maintained register of obligations, owners and related controls lets the program see changes and gaps. The other sources do not list obligations.",
+    "options": [
+      "Survey staff once a year",
+      "Follow product release notes",
+      "Keep an obligations register",
+      "Review firewall change logs"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-D-034",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Business case",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which metric BEST supports a business case to executives?",
+    "explanation": "Executives compare investments by money and business impact, so expected annual loss reduction speaks to them. Activity counts do not show value.",
+    "options": [
+      "Expected loss avoided per year",
+      "Number of alerts handled",
+      "Firewall rules reviewed",
+      "Servers scanned per week"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-D-035",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Risk assessment",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who is BEST placed to rate the business impact of losing a payroll system?",
+    "explanation": "The process owner knows what the business would suffer without the system. Technical staff can rate exposure, not business impact.",
+    "options": [
+      "Network administrator",
+      "Payroll process owner",
+      "External penetration tester",
+      "Help desk lead"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-D-036",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Control ownership",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A control has no named owner. What is the MOST likely result?",
+    "explanation": "Without an owner, no one checks that the control still works, so failures go unnoticed until something goes wrong.",
+    "options": [
+      "It costs less to run",
+      "It degrades unnoticed",
+      "It becomes stronger",
+      "It passes every audit"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-D-037",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Security architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which design principle means a failed control should default to denying access?",
+    "explanation": "Fail secure keeps assets protected when a control breaks. Fail open restores access on failure, which may suit life safety but not data protection.",
+    "options": [
+      "Fail open",
+      "Open design",
+      "Fail secure",
+      "Economy of mechanism"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-D-038",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Control implementation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A rushed rollout skipped user testing of a new access control. What is the MAIN risk?",
+    "explanation": "Untested controls can block legitimate work, and frustrated users find ways around them, which removes the protection.",
+    "options": [
+      "Higher licence fees",
+      "Slower audit or review cycles",
+      "Disruption or workarounds",
+      "Weaker encryption"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-D-039",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Disaster recovery",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Two data centers share a power grid and flood plain. What does this weaken?",
+    "explanation": "A recovery site exposed to the same disaster as the primary may fail at the same time. Sites should not share regional hazards.",
+    "options": [
+      "Geographic diversity of recovery",
+      "Encryption of backups",
+      "Strength of passwords",
+      "Speed of the network"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-D-040",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Recovery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In what order should systems be restored after a widespread outage?",
+    "explanation": "The BIA's recovery priorities make sure the most critical processes and their dependencies return first.",
+    "options": [
+      "Alphabetically by host name",
+      "Newest hardware first",
+      "By BIA recovery priority",
+      "Whatever is easiest to restore first"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-D-041",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismGov",
+    "skill": "Roles and responsibilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An administrator can change audit log settings and also reviews those logs for their own actions. Which control is missing?",
+    "explanation": "No one should be able to alter the record of their own actions and then review it. Giving log review to someone independent of the administrator is segregation of duties.",
+    "options": [
+      "Least privilege",
+      "Need to know",
+      "Segregation of duties",
+      "Mandatory vacation"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-D-042",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismStrategy",
+    "skill": "Enterprise architecture",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A cloud migration is planned. When should security architecture requirements be defined?",
+    "explanation": "Requirements set during design are cheaper and more effective than controls added after deployment. Waiting for audits or incidents leaves gaps in production.",
+    "options": [
+      "During solution design",
+      "When the first incident occurs",
+      "After go-live testing",
+      "At the next annual audit"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-D-043",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismRiskAssess",
+    "skill": "Risk aggregation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Several low risks share one weak authentication service. Why might they need attention together?",
+    "explanation": "Risks that depend on a common weakness can add up to a much larger exposure. Aggregating them shows the true risk and the value of fixing the shared cause.",
+    "options": [
+      "Combined they may be significant",
+      "They cancel each other out",
+      "Auditors only count high risks",
+      "Low risks never need review"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CISM-D-044",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismRiskResponse",
+    "skill": "Exceptions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Many teams hold exceptions to the same password standard. What should the security manager conclude?",
+    "explanation": "A pattern of exceptions suggests the standard does not fit how the business works. Reviewing it may lower risk more than granting endless exceptions.",
+    "options": [
+      "Audits should stop for a year",
+      "The standard may need revising",
+      "The teams should face discipline",
+      "Exceptions should be hidden"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-D-045",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismProgDev",
+    "skill": "Control selection",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A control meets a regulation but adds hours to every customer order. What should the manager look for?",
+    "explanation": "The aim is compliance at the least cost to the business. Alternatives that meet the same requirement with less friction should be weighed.",
+    "options": [
+      "A way to skip the regulation",
+      "Quiet removal of the control",
+      "More staff to absorb the delay",
+      "A compliant control with less friction"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CISM-D-046",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismProgMgmt",
+    "skill": "Program reporting",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Leadership asks if the program is worth its cost. Which report BEST answers this?",
+    "explanation": "Value is shown by comparing reduced business risk with the investment. Tool and policy counts show activity only.",
+    "options": [
+      "List of team certifications",
+      "Count of tools deployed",
+      "Risk reduced against money spent",
+      "Number of policies written"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CISM-D-047",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismIrReady",
+    "skill": "Incident response plan",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where should up-to-date contact details for the response team be kept?",
+    "explanation": "If the network or email is the target, responders still need to reach one another, so contact lists must be available offline or out of band.",
+    "options": [
+      "Only on the main file server",
+      "Reachable even if systems are down",
+      "In one manager's head",
+      "In the email system only"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CISM-D-048",
+    "section": "cism",
+    "test": 0,
+    "module": 1,
+    "domain": "cismIrOps",
+    "skill": "Response communications",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should incident updates to executives avoid unconfirmed details?",
+    "explanation": "Leaders act on what they are told. Separating confirmed facts from working theories keeps decisions sound.",
+    "options": [
+      "Executives dislike long emails",
+      "Logs may be deleted",
+      "Early guesses mislead decisions",
+      "Updates are billed per message"
+    ],
+    "correct": [
+      2
+    ]
+  }
+]

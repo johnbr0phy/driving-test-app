@@ -274,6 +274,7 @@ export const TEACHES: Record<string, string> = {
   pspo: "a Product Owner or Scrum course",
   capm: "a project management course",
   projectplus: "an IT project management or CompTIA Project+ course",
+  cism: "a CISM review course or an information security management class",
   osssc: "an OSSSC preparation class",
   ssccgl: "an SSC coaching batch",
   rrbntpc: "a railway exam coaching class",

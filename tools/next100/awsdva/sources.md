@@ -97,6 +97,23 @@ All items are original, written from AWS's public DVA-C03 exam guide and AWS pro
 - **Cognito access token**, fetched 2026-11-23. https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-user-pools-using-the-access-token.html
   Access token carries scope and cognito:groups and authorizes API operations; M2M tokens have no username or groups.
 
+## Added at review (2026-11-23)
+- **Using IAM authentication with RDS Proxy**, fetched 2026-11-23. https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy-iam.html
+  Clients can authenticate to the proxy with IAM tokens; the proxy connects to the database with credentials from Secrets Manager.
+- **Cross-account policy evaluation logic**, fetched 2026-11-23. https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic-cross-account.html
+  A cross-account request needs an allow in the caller's identity policy and in the resource-based policy of the other account.
+- **Fanout to Amazon SQS queues**, fetched 2026-11-23. https://docs.aws.amazon.com/sns/latest/dg/sns-sqs-as-subscriber.html
+  The queue policy must allow the SNS topic to call sqs:SendMessage.
+- **Invalidating files in CloudFront**, fetched 2026-11-23. https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Invalidation.html
+  Invalidate to remove cached copies before they expire, or use versioned file names.
+- **ElastiCache replication and Multi-AZ**, fetched 2026-11-23. https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/AutoFailover.html
+  Replication groups with Multi-AZ promote a replica when the primary fails; Memcached has no replication.
+- **IAM roles for EC2 and the SDK credential chain**, fetched 2026-11-23. https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html
+  Applications on EC2 get role credentials from the instance metadata service.
+- **AssumeRole (STS API reference)**, fetched 2026-11-23. https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html
+  Returns temporary credentials: access key ID, secret access key and session token.
+- **Review method**: the reviewer answered all 212 items blind (0 key disagreements) and compared every key against the aws, awssaa, awsaif, az104, az900, gcdl and gcppca banks; seven items that repeated an awssaa or aws fact and answer (instance profile, explicit deny, cross-account role, RDS Proxy, CloudFront for global assets, SNS fan-out, ElastiCache for repeated queries) were rewritten on another angle.
+
 ## Not confirmed or left out
 - Prices, quotas that changed in 2026 (Lambda timeout, async payload, SQS message size) and per-request rates are not asked. Exam fees appear only on the landing.
 - AWS tools that are not on the in-scope list (Amazon Q Developer, CodeGuru, Amazon Comprehend, Amazon Macie) are never keyed. The bank's AI-tool items use Kiro, Bedrock, Bedrock AgentCore and CloudWatch.

@@ -67,7 +67,7 @@ const faqs = [
   },
   {
     q: "Is the Tigertest AWS Developer Associate practice test free?",
-    a: "It is free to start, with no account required. Practice Test 1 and five drills (Code for AWS, Lambda, Data Stores, Auth and Access, Encryption and Secrets) are free; Practice Test 2 and the AI Service Security, Artifacts and Testing, CI/CD Deployment, Troubleshooting and Optimization drills are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.",
+    a: "It is free to start, with no account required. Practice Test 1 and five drills (Code for AWS, Lambda, Data Stores, Auth and Access, Encryption and Secrets) are free; Practice Test 2 and the AI Service Security, Artifacts and Testing, CI/CD Deployment, Troubleshooting, and Optimization drills are part of Tigertest Premium, one payment with no subscription. Create a free account if you want your progress saved across devices.",
   },
 ];
 

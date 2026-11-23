@@ -71,17 +71,17 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Programmatic access",
-    "stem": "Code on an EC2 instance calls S3 through the SDK. How should it get credentials?",
+    "stem": "SDK code on an EC2 instance with a role attached sets no keys anywhere. Where does the default credential chain get its credentials?",
     "options": [
-      "Access keys in source code",
-      "Keys in instance user data",
-      "An instance profile role",
-      "Root user access keys"
+      "The instance metadata service",
+      "The bucket policy of the target bucket",
+      "A KMS key alias",
+      "The instance's user data script"
     ],
     "correct": [
-      2
+      0
     ],
-    "explanation": "An instance profile hands the SDK temporary role credentials that rotate automatically through the default credential chain. Long-term keys in code or user data can leak."
+    "explanation": "With no keys in the environment or config files, the SDK's default credential chain reads the role's temporary credentials from the instance metadata service and refreshes them before they expire. User data is a startup script, not a credential source."
   },
   {
     "id": "AWSDVA-T1-005",
@@ -365,17 +365,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Connection pooling",
-    "stem": "Thousands of concurrent Lambda invocations exhaust an RDS database's connections. What helps?",
+    "stem": "Lambda functions reach an RDS database through RDS Proxy. How can they connect without a database password in their code?",
     "options": [
-      "A shorter function timeout",
-      "A read replica alone",
-      "More function memory",
-      "Amazon RDS Proxy"
+      "A larger connection pool",
+      "The database's public endpoint",
+      "IAM authentication to the proxy",
+      "A wider security group rule"
     ],
     "correct": [
-      3
+      2
     ],
-    "explanation": "RDS Proxy pools and shares database connections across many invocations. Memory and timeouts do not change how many connections open."
+    "explanation": "RDS Proxy can require IAM authentication: the function signs a short-lived token with its role, and the proxy uses the database credentials it reads from Secrets Manager. Network rules and pool sizes do not replace a credential."
   },
   {
     "id": "AWSDVA-T1-019",
@@ -827,17 +827,17 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Caching",
-    "stem": "Static assets in S3 load slowly for users around the world. What fits?",
+    "stem": "A deploy overwrote app.js in S3 under the same name, but CloudFront users still get the old file. What fixes it now?",
     "options": [
-      "A second S3 bucket in another Region",
-      "More EC2 instances behind a load balancer",
-      "A CloudFront distribution",
-      "An S3 Lifecycle rule"
+      "Invalidate the changed paths",
+      "Raise the default TTL",
+      "Add a second origin",
+      "Turn on S3 versioning"
     ],
     "correct": [
-      2
+      0
     ],
-    "explanation": "CloudFront caches content at edge locations near users. A lifecycle rule moves objects between storage classes."
+    "explanation": "An invalidation removes the cached copies so edge locations fetch the new file. A longer TTL keeps the old copy even longer; versioned file names avoid the problem on future deploys."
   },
   {
     "id": "AWSDVA-T1-041",
@@ -890,17 +890,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Assume role",
-    "stem": "A function in account A must write to a DynamoDB table in account B. What is the standard approach?",
+    "stem": "Code in account A calls sts:AssumeRole for a role in account B before writing to B's DynamoDB table. What does the call return?",
     "options": [
-      "Assume a role in account B",
-      "Make the table public",
-      "Share account B's access keys",
-      "Copy the table into account A"
+      "A new IAM user in account B",
+      "An access key, secret key and session token",
+      "A KMS data key for the table",
+      "A Cognito ID token"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "A role in account B that trusts account A lets the function get temporary credentials for B. Sharing long-term keys breaks least privilege and auditing."
+    "explanation": "AssumeRole returns temporary credentials: an access key ID, a secret access key and a session token, valid until they expire. The code builds a new SDK client with them to call account B."
   },
   {
     "id": "AWSDVA-T1-044",
@@ -1058,17 +1058,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Messaging",
-    "stem": "One order event must reach billing, shipping and analytics, each with its own queue. What fits?",
+    "stem": "An SQS queue is subscribed to an SNS topic, but no messages arrive. What must the queue's access policy allow?",
     "options": [
-      "SNS topic with SQS subscribers",
-      "One shared queue read by all three teams",
-      "Three Lambda function URLs called in turn",
-      "One FIFO queue per order"
+      "kms:CreateKey for the topic",
+      "sns:Publish on the queue",
+      "sqs:SendMessage from the topic",
+      "lambda:InvokeFunction for SNS"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "SNS fan-out copies each message to every subscribed queue, so each consumer works at its own pace. On a shared queue each message goes to only one consumer."
+    "explanation": "SNS delivers to a queue by sending messages to it, so the queue policy must let the SNS service principal call sqs:SendMessage, limited to that topic's ARN. Without it the fan-out silently fails for that queue."
   },
   {
     "id": "AWSDVA-T1-052",
@@ -1985,17 +1985,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Caching",
-    "stem": "An RDS-backed page runs the same costly query thousands of times a minute. What fits?",
+    "stem": "Cached sessions in ElastiCache must survive the loss of a cache node. What should be set up?",
     "options": [
-      "Turn on RDS Multi-AZ for the instance",
-      "Raise the database volume's provisioned IOPS",
-      "Add a GSI to the table",
-      "Cache results in ElastiCache"
+      "Memcached with more nodes",
+      "A replica with automatic failover",
+      "A longer TTL on each key",
+      "A bigger node of the same count"
     ],
     "correct": [
-      3
+      1
     ],
-    "explanation": "Keeping query results in an in-memory cache serves repeats without hitting the database. Multi-AZ adds availability, not read speed."
+    "explanation": "With a replica in another Availability Zone and automatic failover, a replica is promoted when the primary fails and the data stays available. Memcached does not replicate, so a lost node loses its keys."
   },
   {
     "id": "AWSDVA-T2-030",
@@ -2090,17 +2090,17 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Permissions",
-    "stem": "An identity policy allows s3:GetObject, but the bucket policy explicitly denies it. What happens?",
+    "stem": "A role in account A allows s3:GetObject on a bucket in account B, but the bucket policy does not mention the role. What happens?",
     "options": [
-      "Access is allowed",
-      "Access is denied",
+      "Allowed; the role's policy is enough",
+      "Denied; the bucket policy must also allow it",
       "Allowed only with MFA",
-      "Allowed for one hour"
+      "Allowed through a session policy alone"
     ],
     "correct": [
       1
     ],
-    "explanation": "An explicit deny in any applicable policy overrides every allow. Access needs an allow and no deny."
+    "explanation": "For cross-account access both sides must allow the request: the caller's identity policy and the resource policy in the other account. Within one account an identity policy alone can be enough."
   },
   {
     "id": "AWSDVA-T2-035",

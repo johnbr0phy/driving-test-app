@@ -35,7 +35,7 @@ import { TEST_CATALOG, TEST_GROUPS } from "@/lib/testCatalog";
 import { regionOfTest } from "@/lib/region";
 import { isInternalEmail } from "@/lib/internal";
 import { buildSearchGroups } from "@/lib/server/searchGroups";
-import { WEIGHTS, liveScore, purchaseWeight, purchaseWindowStart } from "@/lib/buildQueueScore";
+import { WEIGHTS, liveScore, purchaseWeight, purchaseWindowStart, trendsBoost } from "@/lib/buildQueueScore";
 
 interface Candidate {
   id: string;
@@ -175,7 +175,7 @@ async function main() {
     const searched = gaps
       .filter((g) => words.some((w) => [g.q, ...g.variants.map((v) => v.q)].some((q) => ` ${q.toLowerCase()} `.includes(` ${w} `))))
       .reduce((s, g) => s + g.d30, 0);
-    const score = Math.round(base * (c.sells ?? 1) + searched * WEIGHTS.perSearch + (c.trends ?? 0) * WEIGHTS.perTrend);
+    const score = Math.round(base * (c.sells ?? 1) + searched * WEIGHTS.perSearch + trendsBoost(c.trends, c.region));
     const s = state.get(c.id);
     let held: string | null = null;
     if (liveIds.includes(c.id)) held = "live";

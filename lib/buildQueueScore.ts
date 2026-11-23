@@ -17,6 +17,21 @@ export const PURCHASE_WINDOW_DAYS = 60;
  */
 export const WEIGHTS = { per100Answers: 1, perPaywallView: 1, perPurchase: 40, perSearch: 15, perTrend: 0.2 };
 
+/**
+ * Countries where search has not turned into sales: a candidate there counts
+ * its Google Trends interest at a fifth. On 2026-11-23 India, the Philippines,
+ * Nigeria, Kenya and Pakistan had given thousands of answers a week and no
+ * purchase since Premium went beyond the DMV (US 17, NZ 6). Revisit when one sells.
+ */
+export const LOW_PAY_REGIONS = ["IN", "PH", "NG", "KE", "PK"];
+export const LOW_PAY_TREND_FACTOR = 0.2;
+
+/** What a candidate's Google Trends interest adds to its queue score. */
+export function trendsBoost(trends: number | undefined, region: string): number {
+  const factor = LOW_PAY_REGIONS.includes(region) ? LOW_PAY_TREND_FACTOR : 1;
+  return (trends ?? 0) * WEIGHTS.perTrend * factor;
+}
+
 /** First day (YYYY-MM-DD) of the purchase window ending `today`. */
 export function purchaseWindowStart(today: Date = new Date()): string {
   const rolling = new Date(today.getTime() - PURCHASE_WINDOW_DAYS * 86400000).toISOString().slice(0, 10);

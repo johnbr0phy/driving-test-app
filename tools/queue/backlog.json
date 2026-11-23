@@ -355,7 +355,9 @@
       "search": [
         "crat",
         "rhythm analysis"
-      ]
+      ],
+      "trends": 0,
+      "trendsTerm": "crat exam cci"
     },
     {
       "id": "cdm",
@@ -465,7 +467,9 @@
       "search": [
         "aemt",
         "advanced emt"
-      ]
+      ],
+      "trends": 60,
+      "trendsTerm": "advanced emt"
     },
     {
       "id": "emr",
@@ -1149,7 +1153,9 @@
       "sells": 1.0,
       "search": [
         "dp-900"
-      ]
+      ],
+      "trends": 38,
+      "trendsTerm": "dp-900"
     },
     {
       "id": "ms900",
@@ -1350,7 +1356,9 @@
       "sells": 1.0,
       "search": [
         "project+"
-      ]
+      ],
+      "trends": 10,
+      "trendsTerm": "comptia project+"
     },
     {
       "id": "techplus",
@@ -1365,7 +1373,9 @@
       "search": [
         "tech+",
         "itf+"
-      ]
+      ],
+      "trends": 57,
+      "trendsTerm": "comptia tech+"
     },
     {
       "id": "securityx",
@@ -1528,7 +1538,9 @@
       "search": [
         "aws ai practitioner",
         "aif-c01"
-      ]
+      ],
+      "trends": 203,
+      "trendsTerm": "aws ai practitioner"
     },
     {
       "id": "awsmla",
@@ -1599,7 +1611,9 @@
       "sells": 1.0,
       "search": [
         "professional data engineer"
-      ]
+      ],
+      "trends": 43,
+      "trendsTerm": "google professional data engineer"
     },
     {
       "id": "kcna",
@@ -1645,7 +1659,9 @@
       "search": [
         "snowpro",
         "snowflake"
-      ]
+      ],
+      "trends": 40,
+      "trendsTerm": "snowpro core"
     },
     {
       "id": "databricksde",
@@ -1903,7 +1919,9 @@
       "sells": 1.0,
       "search": [
         "yellow belt"
-      ]
+      ],
+      "trends": 121,
+      "trendsTerm": "six sigma yellow belt"
     },
     {
       "id": "cbap",
@@ -2577,7 +2595,9 @@
       "sells": 1.0,
       "search": [
         "ase g1"
-      ]
+      ],
+      "trends": 5,
+      "trendsTerm": "ase g1"
     },
     {
       "id": "cwi",
@@ -2623,7 +2643,9 @@
       "sells": 1.0,
       "search": [
         "wastewater operator"
-      ]
+      ],
+      "trends": 2,
+      "trendsTerm": "wastewater operator exam"
     },
     {
       "id": "pesticide",
@@ -2713,7 +2735,9 @@
       "sells": 1.0,
       "search": [
         "grol"
-      ]
+      ],
+      "trends": 1,
+      "trendsTerm": "fcc grol"
     },
     {
       "id": "faaifr",
@@ -2728,7 +2752,9 @@
       "sells": 1.0,
       "search": [
         "instrument rating"
-      ]
+      ],
+      "trends": 1,
+      "trendsTerm": "instrument rating written"
     },
     {
       "id": "faacax",
@@ -2743,7 +2769,9 @@
       "sells": 1.0,
       "search": [
         "commercial pilot"
-      ]
+      ],
+      "trends": 3,
+      "trendsTerm": "commercial pilot written"
     },
     {
       "id": "faaamg",
@@ -2860,7 +2888,9 @@
       "search": [
         "atv safety",
         "snowmobile safety"
-      ]
+      ],
+      "trends": 7,
+      "trendsTerm": "atv safety course"
     },
     {
       "id": "ffii",
@@ -3476,7 +3506,9 @@
       "sells": 1.0,
       "search": [
         "millwright"
-      ]
+      ],
+      "trends": 4,
+      "trendsTerm": "millwright red seal"
     },
     {
       "id": "carscook",
@@ -3522,7 +3554,9 @@
       "search": [
         "313a",
         "refrigeration mechanic"
-      ]
+      ],
+      "trends": 0,
+      "trendsTerm": "refrigeration mechanic red seal"
     },
     {
       "id": "carshdet",
@@ -3584,7 +3618,9 @@
       "sells": 1.0,
       "search": [
         "sheet metal"
-      ]
+      ],
+      "trends": 1,
+      "trendsTerm": "sheet metal red seal"
     },
     {
       "id": "nswboat",
@@ -3662,7 +3698,9 @@
       "sells": 1.0,
       "search": [
         "amateur radio australia"
-      ]
+      ],
+      "trends": 0,
+      "trendsTerm": "amateur radio licence australia"
     },
     {
       "id": "ausecurity",
@@ -3968,7 +4006,9 @@
       "sells": 1.0,
       "search": [
         "level 2 health and safety"
-      ]
+      ],
+      "trends": 53,
+      "trendsTerm": "level 2 health and safety"
     },
     {
       "id": "ukefaw",
@@ -4230,7 +4270,9 @@
       "sells": 1.0,
       "search": [
         "apa exam"
-      ]
+      ],
+      "trends": 0,
+      "trendsTerm": "qqi apa"
     },
     {
       "id": "ieplumbt2",
@@ -4275,7 +4317,9 @@
       "sells": 1.0,
       "search": [
         "m9a"
-      ]
+      ],
+      "trends": 0,
+      "trendsTerm": "cmfas m9a"
     },
     {
       "id": "sghi",
@@ -4495,7 +4539,9 @@
       "sells": 1.0,
       "search": [
         "re1"
-      ]
+      ],
+      "trends": 1,
+      "trendsTerm": "re1 exam"
     },
     {
       "id": "zanbt",
@@ -4538,7 +4584,9 @@
       "sells": 0.5,
       "search": [
         "psv kenya"
-      ]
+      ],
+      "trends": 0,
+      "trendsTerm": "psv license kenya"
     },
     {
       "id": "phnmat",
@@ -4552,7 +4600,9 @@
       "sells": 0.5,
       "search": [
         "nmat"
-      ]
+      ],
+      "trends": 533,
+      "trendsTerm": "nmat"
     },
     {
       "id": "phupcat",
@@ -4566,7 +4616,9 @@
       "sells": 0.5,
       "search": [
         "upcat"
-      ]
+      ],
+      "trends": 360,
+      "trendsTerm": "upcat"
     },
     {
       "id": "phpnpe",
@@ -4611,7 +4663,9 @@
       "search": [
         "rrn",
         "jkssb"
-      ]
+      ],
+      "trends": 1650,
+      "trendsTerm": "rrb je"
     },
     {
       "id": "qabaabat",

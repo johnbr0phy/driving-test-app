@@ -278,6 +278,16 @@ async function main() {
   for (const r of falling) L.push(`| ${r.page} | ${r.clicks} | ${r.before} |`);
   L.push("", "## Sitemaps", "", "| Sitemap | Errors | Warnings | Last read |", "| --- | --- | --- | --- |");
   for (const s of sitemaps) L.push(`| ${shortHost(s.path)} | ${s.errors} | ${s.warnings} | ${s.lastDownloaded?.slice(0, 10) ?? "never"} |`);
+  // Search Console's "Request indexing" button allows about 10 a day: pages Google
+  // filed under another URL first, then DMV state pages (the biggest searches),
+  // then pages Google has never crawled.
+  const rank = (r: (typeof notIndexed)[number]) =>
+    (r.googleCanonical ? 0 : 3) + (/-dmv-practice-test$/.test(r.page) ? 0 : 1) + (r.lastCrawl ? 1 : 0);
+  const requestNext = [...notIndexed].sort((a, b) => rank(a) - rank(b) || a.page.localeCompare(b.page)).slice(0, 10);
+  if (requestNext.length) {
+    L.push("", "## Request indexing next", "", "Search Console allows about 10 a day: URL Inspection, paste the URL, Request indexing.", "");
+    for (const r of requestNext) L.push(`- ${SITE}${r.page}`);
+  }
   L.push("", `## Landings not indexed (${notIndexed.length} of ${inspected} inspected)`, "");
   if (notIndexed.length) {
     L.push("Find the cause (thin, duplicate, orphaned, canonical elsewhere) and fix that, not the page alone.", "", "| Page | Google's reason | Google's canonical | Last crawl |", "| --- | --- | --- | --- |");

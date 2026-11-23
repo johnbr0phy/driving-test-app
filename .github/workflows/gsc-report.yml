@@ -13,10 +13,6 @@ name: Search Console report
 # Google Cloud project. GSC_SERVICE_ACCOUNT_KEY overrides it when set.
 
 on:
-  # TEMPORARY: one run from this branch to confirm access; removed before merge.
-  push:
-    branches: [claude/busy-feynman-ymwaob]
-    paths: [.github/workflows/gsc-report.yml, scripts/gsc-report.ts]
   schedule:
     - cron: "41 8 * * 1" # Mondays 08:41 UTC, after the SEO audit
   workflow_dispatch:
@@ -70,7 +66,6 @@ jobs:
           if-no-files-found: ignore
 
       - name: Commit to the data branch
-        if: github.event_name != 'push'
         run: |
           shopt -s nullglob
           files=("$RUNNER_TEMP"/gsc/*)

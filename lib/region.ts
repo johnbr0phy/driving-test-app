@@ -134,6 +134,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   aufirearmsvic: "AU",
   aufirearmsnsw: "AU",
   nzham: "NZ",
+  auham: "AU",
   nzdrone: "NZ",
   crfsc: "CA",
   cadronebasic: "CA",

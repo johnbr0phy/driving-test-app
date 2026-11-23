@@ -138,6 +138,7 @@ const BORROWED_SETS: Record<string, string> = {
   ascpmlt: "htl",
   aufirearmsnsw: "capal",
   nzham: "ham",
+  auham: "ham",
   hamextra: "ham",
   cahambasic: "ham",
   hamgeneral: "ham",

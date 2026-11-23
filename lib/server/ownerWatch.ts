@@ -16,13 +16,14 @@ const iso = (v: unknown): string | null => (typeof v === "string" && v ? v : nul
  * for a broken job.
  */
 export async function readJobHeartbeats(db: Firestore): Promise<JobHeartbeat[]> {
-  const [stats, flags, source, brief, audit, aiAnswers] = await Promise.all([
+  const [stats, flags, source, brief, audit, aiAnswers, gsc] = await Promise.all([
     db.doc("globalStats/studyTimes").get(),
     db.doc("globalStats/questionFlags").get(),
     db.collection("sourceWatch").orderBy("checkedAt", "desc").limit(1).get(),
     db.collection("dailyBriefs").orderBy("date", "desc").limit(1).get(),
     db.collection("questionAudits").orderBy("at", "desc").limit(1).get(),
     db.collection("aiAnswerChecks").orderBy("date", "desc").limit(1).get(),
+    db.collection("gscReports").orderBy("date", "desc").limit(1).get(),
   ]);
   const jobs: JobHeartbeat[] = [
     {
@@ -61,6 +62,14 @@ export async function readJobHeartbeats(db: Firestore): Promise<JobHeartbeat[]> 
       // Thu to Mon is 4 days; six allows a late run.
       maxAgeHours: 6 * 24,
       hint: "Check the AI answer check workflow in GitHub Actions.",
+    },
+    {
+      id: "gsc-report",
+      title: "Weekly Search Console report",
+      lastAt: iso(gsc.docs[0]?.data().at),
+      // Mondays; nine days allows one late or re-run week.
+      maxAgeHours: 9 * 24,
+      hint: "Check the Search Console report workflow in GitHub Actions (the service account must stay a user on the property).",
     },
   ];
   // Weekdays only, and only where the key that writes it is set.

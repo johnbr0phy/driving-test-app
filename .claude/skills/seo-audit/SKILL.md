@@ -83,6 +83,23 @@ on /admin or `analytics/questions.byExam`), 1 translated landing, 1 topic page,
   test"). Note whether Tigertest is cited; if a competitor is cited for a fact
   we have, check our page states that fact plainly in the first answer block.
 
+## 4b. Search Console: the closest wins
+
+Read the newest report on the `gsc-data` branch (`reports/<date>.md`, from
+`.github/workflows/gsc-report.yml`; run it by hand for a fresh one). Then:
+- **Page 2**: take the top 5 queries by impressions. On the page shown, answer
+  the query in the first block, put its words in the title and h1 where they
+  read naturally, and add links to it from 3 related pages.
+- **Low click rate**: rewrite that page's title and description to lead with
+  the query's words and say what the page gives. Keep "Free ... Practice Test".
+- **Competing pages**: decide which page should rank, link the other to it,
+  and take the query's words out of the other's title.
+- **Not indexed**: fix the cause in the template (thin, duplicate, orphaned,
+  canonical elsewhere), never one page by hand.
+- **Falling pages**: check the page still answers 200 with its canonical, then
+  compare its title and first block with the pages now above it.
+Next week's report shows whether a change worked; note what you changed in the PR.
+
 ## Never install outside SEO packs
 
 Third-party SEO skill packs and plugins often bundle remote MCP servers, load

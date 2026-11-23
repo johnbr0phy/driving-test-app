@@ -77,7 +77,7 @@
     "correct": [
       2
     ],
-    "explanation": "91.185(c)(2) requires the highest of the last assigned altitude, the minimum IFR altitude and the altitude ATC said to expect. Once the expected time passes, that is 7,000.",
+    "explanation": "91.185(c)(2) requires the highest of the last assigned altitude, the minimum IFR altitude and the altitude ATC said to expect. Once the 10 minutes pass, the expected 7,000 is the highest, so climb to it.",
     "lockedOrder": true
   },
   {
@@ -332,14 +332,14 @@
     "skill": "Alternate minimums",
     "stem": "An alternate has only a nonprecision approach and no published alternate minimums. What forecast does it need at your ETA?",
     "options": [
-      "400-foot ceiling and 1 SM",
-      "600-foot ceiling and 2 SM",
-      "800-foot ceiling and 2 SM"
+      "800-foot ceiling and 2 SM",
+      "1,000-foot ceiling and 3 SM",
+      "2,000-foot ceiling and 3 SM"
     ],
     "correct": [
-      2
+      0
     ],
-    "explanation": "When a procedure lists no alternate minimums, 91.169(c) uses the standard ones: 600 and 2 for a precision approach, 800 and 2 for a nonprecision approach.",
+    "explanation": "When a procedure lists no alternate minimums, 91.169(c) uses the standard ones: 600 and 2 for a precision approach, 800 and 2 for a nonprecision approach. 2,000 and 3 is the test for needing an alternate at all.",
     "lockedOrder": true
   },
   {
@@ -715,14 +715,14 @@
     "difficulty": 3,
     "format": "single",
     "skill": "RVR conversion",
-    "stem": "Minimums list RVR 2400, but RVR is not reported for that runway. What visibility applies?",
+    "stem": "Minimums list RVR 1600, but RVR is not reported for that runway. What visibility applies?",
     "options": [
       "1/4 statute mile",
       "1/2 statute mile",
       "3/4 statute mile"
     ],
     "correct": [
-      1
+      0
     ],
     "explanation": "91.175(h) converts RVR to ground visibility when RVR isn't reported: 1,600 is 1/4 mile, 2,400 is 1/2 mile, 4,000 is 3/4 mile and 5,000 is 1 mile.",
     "lockedOrder": true
@@ -858,17 +858,16 @@
     "difficulty": 3,
     "format": "single",
     "skill": "VFR-on-top",
-    "stem": "Cleared to maintain VFR-on-top on a magnetic course of 090, which altitude fits?",
+    "stem": "In which airspace can't you operate VFR-on-top?",
     "options": [
-      "6,500 MSL",
-      "7,000 MSL",
-      "7,500 MSL"
+      "Class G",
+      "Class E",
+      "Class A"
     ],
     "correct": [
       2
     ],
-    "explanation": "VFR-on-top requires VFR cruising altitudes under 91.159: odd thousands plus 500 feet on courses from 0 to 179 degrees. 7,500 fits; 7,000 is an IFR altitude.",
-    "lockedOrder": true
+    "explanation": "AIM 4-4-8: VFR-on-top is not permitted in Class A airspace, where all flight is IFR at assigned altitudes."
   },
   {
     "id": "FAAIFR-T1-044",
@@ -1019,16 +1018,16 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Departure procedures",
-    "stem": "Unless a procedure says otherwise, IFR departure obstacle clearance assumes what climb gradient?",
+    "stem": "Unless a departure procedure says otherwise, how high above the departure end must you be before turning?",
     "options": [
-      "120 feet per NM",
-      "150 feet per NM",
-      "200 feet per NM"
+      "400 feet",
+      "500 feet",
+      "1,000 feet"
     ],
     "correct": [
-      2
+      0
     ],
-    "explanation": "AIM 5-2-9: obstacle clearance assumes crossing the runway end at 35 feet, climbing to 400 feet before turning, and at least 200 feet per NM to the minimum IFR altitude.",
+    "explanation": "AIM 5-2-9: obstacle clearance assumes crossing the runway end at 35 feet and climbing to 400 feet above it before the first turn, then at least the standard climb gradient.",
     "lockedOrder": true
   },
   {
@@ -1057,19 +1056,19 @@
     "test": 1,
     "module": 1,
     "domain": "ifrHuman",
-    "difficulty": 3,
+    "difficulty": 2,
     "format": "single",
-    "skill": "Hazardous attitudes",
-    "stem": "\"I've flown approaches lower than this; watch me get in.\" Which hazardous attitude, and what antidote?",
+    "skill": "Single-pilot resource management",
+    "stem": "Flying single-pilot IFR, why brief the approach chart before starting the descent?",
     "options": [
-      "Invulnerability; it could happen to me",
-      "Impulsivity; not so fast, think first",
-      "Macho; taking chances is foolish"
+      "ATC requires a read-back of it",
+      "It sets the autopilot's minimums",
+      "It cuts workload on final"
     ],
     "correct": [
       2
     ],
-    "explanation": "Trying to prove oneself by taking risks is the macho attitude. The antidote is 'Taking chances is foolish.'"
+    "explanation": "Single-pilot resource management means doing the planning when workload is low. Briefing frequencies, altitudes, minimums and the missed approach early leaves attention free for flying the final segment."
   },
   {
     "id": "FAAIFR-T1-054",
@@ -1377,19 +1376,19 @@
     "test": 2,
     "module": 1,
     "domain": "ifrRegs",
-    "difficulty": 2,
+    "difficulty": 3,
     "format": "single",
     "skill": "Alternate minimums",
-    "stem": "Your planned alternate has only an ILS and lists no special alternate minimums. What forecast must it show?",
+    "stem": "Your planned alternate's ILS lists nonstandard alternate minimums of 900-2 for your category. What forecast must it show?",
     "options": [
       "600-foot ceiling and 2 SM",
       "800-foot ceiling and 2 SM",
-      "1,000-foot ceiling and 3 SM"
+      "900-foot ceiling and 2 SM"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "With no published alternate minimums, 91.169(c) sets 600 feet and 2 SM for a precision approach and 800 feet and 2 SM for a nonprecision approach.",
+    "explanation": "91.169(c) uses the alternate minimums specified in the procedure when they are published. Here that is 900 and 2. The standard 600-2 and 800-2 apply only when a procedure lists none.",
     "lockedOrder": true
   },
   {
@@ -1623,17 +1622,17 @@
     "domain": "ifrApproaches",
     "difficulty": 3,
     "format": "single",
-    "skill": "Contact approach",
-    "stem": "Which is true of a contact approach?",
+    "skill": "Visual approach",
+    "stem": "Flying a visual approach, what is your flight plan status?",
     "options": [
-      "Only the pilot can request it",
-      "It needs 3 miles of visibility",
-      "ATC offers it to save time"
+      "Cancelled once you see the field",
+      "VFR until you land",
+      "Still IFR, under ATC control"
     ],
     "correct": [
-      0
+      2
     ],
-    "explanation": "AIM 5-4-25: a contact approach must be requested by the pilot, needs at least 1 mile reported ground visibility and clear of clouds, and only goes to an airport with an instrument approach."
+    "explanation": "AIM 5-4-23: a visual approach is an IFR procedure flown in visual conditions. You stay on your IFR flight plan and under ATC control."
   },
   {
     "id": "FAAIFR-T2-022",
@@ -1704,16 +1703,16 @@
     "difficulty": 2,
     "format": "single",
     "skill": "VOR check",
-    "stem": "No VOT or ground checkpoint exists, so you use a designated airborne checkpoint. What error is allowed?",
+    "stem": "Your departure airport has no VOT and no surface checkpoint. Which 91.171 check may you use next?",
     "options": [
-      "Plus or minus 10 degrees",
-      "Plus or minus 6 degrees",
-      "Plus or minus 4 degrees"
+      "A designated airborne checkpoint",
+      "Any radial read over the runway",
+      "A cross-bearing from an NDB"
     ],
     "correct": [
-      1
+      0
     ],
-    "explanation": "91.171(b)(3) allows plus or minus 6 degrees over an airborne checkpoint. Ground checks with a VOT or surface checkpoint allow 4 degrees."
+    "explanation": "91.171(b) lists a VOT or ground checkpoint first; if neither is available, a designated airborne checkpoint; and if none, a check over a prominent ground point along an airway."
   },
   {
     "id": "FAAIFR-T2-026",
@@ -2023,19 +2022,19 @@
     "test": 2,
     "module": 1,
     "domain": "ifrInstruments",
-    "difficulty": 3,
+    "difficulty": 2,
     "format": "single",
     "skill": "Alternate static",
-    "stem": "When you open the alternate static source in the cabin, the VSI briefly shows:",
+    "stem": "When should you select the alternate static source?",
     "options": [
-      "A climb",
-      "No change",
-      "A descent"
+      "Only after a pitot heat failure",
+      "When the static ports are blocked",
+      "Whenever you climb through clouds"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "Cabin pressure is usually lower than outside static pressure, so the VSI shows a momentary climb, and the altimeter and airspeed read somewhat high."
+    "explanation": "The alternate static source, usually inside the cabin, is for a blocked static system, such as ports iced over. It does nothing for a blocked pitot tube."
   },
   {
     "id": "FAAIFR-T2-042",
@@ -2237,7 +2236,7 @@
     "correct": [
       2
     ],
-    "explanation": "A cruise clearance assigns a block from the minimum IFR altitude up to the stated altitude. Once you report leaving an altitude in the block, you can't return to it without a new clearance."
+    "explanation": "A cruise clearance assigns a block from the minimum IFR altitude up to the stated altitude, here 8,000. Once you report leaving an altitude in the block, you can't return to it without a new clearance."
   },
   {
     "id": "FAAIFR-T2-052",
@@ -2498,7 +2497,7 @@
     "correct": [
       0
     ],
-    "explanation": "MVFR is a ceiling of 1,000 to 3,000 feet and/or visibility of 3 to 5 miles. OVC008 is IFR by ceiling and 2SM is IFR by visibility."
+    "explanation": "MVFR is a ceiling of 1,000 to 3,000 feet and/or visibility of 3 to 5 miles. OVC020 with 6SM is MVFR by its 2,000-foot ceiling. OVC008 is IFR by ceiling and 2SM is IFR by visibility."
   },
   {
     "id": "FAAIFR-D-005",
@@ -2529,16 +2528,16 @@
     "difficulty": 2,
     "format": "single",
     "skill": "En route altitudes",
-    "stem": "Which altitude assures both obstacle clearance and navigation signal coverage along an airway?",
+    "stem": "What does a minimum turning altitude (MTA) at a fix provide?",
     "options": [
-      "MOCA",
-      "MEA",
-      "OROCA"
+      "Obstacle clearance during the turn",
+      "Radar coverage through the turn",
+      "A required holding altitude"
     ],
     "correct": [
-      1
+      0
     ],
-    "explanation": "The MEA gives obstacle clearance and acceptable signal coverage between fixes. A MOCA assures signals only within 22 NM of a VOR, and an OROCA assures neither signal nor radar."
+    "explanation": "The Instrument Procedures Handbook describes an MTA as a charted altitude giving vertical and lateral obstruction clearance based on turn criteria over certain fixes and route segments."
   },
   {
     "id": "FAAIFR-D-007",
@@ -2761,7 +2760,7 @@
     "correct": [
       2
     ],
-    "explanation": "A 3-degree path is about 318 feet per NM. At 90 knots, 1.5 NM per minute, that is about 477 fpm; a quick check is groundspeed x 5, or 450.",
+    "explanation": "A 3-degree path is about 318 feet per NM. At 90 knots, 1.5 NM per minute, that is about 477, so about 480 fpm; a quick check is groundspeed x 5, or 450.",
     "lockedOrder": true
   },
   {
@@ -3357,16 +3356,16 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Required reports",
-    "stem": "Your true airspeed differs from the filed TAS. When must you tell ATC?",
+    "stem": "When must you tell ATC you can't keep up a climb or descent rate?",
     "options": [
-      "Only when it exceeds 50 knots",
-      "At any change of 2 knots or more",
-      "At 5 percent or 10 knots"
+      "Below 500 fpm",
+      "Below 1,000 fpm",
+      "Below 300 fpm"
     ],
     "correct": [
-      2
+      0
     ],
-    "explanation": "AIM 5-3-3 requires a report when the average TAS at cruise varies from the filed value by 5 percent or 10 knots, whichever is greater."
+    "explanation": "AIM 5-3-3 asks for a report whenever you are unable to climb or descend at a rate of at least 500 feet per minute."
   },
   {
     "id": "FAAIFR-D-048",
@@ -3658,16 +3657,16 @@
     "difficulty": 2,
     "format": "single",
     "skill": "DME",
-    "stem": "What does DME measure?",
+    "stem": "When is a DME groundspeed readout accurate?",
     "options": [
-      "Radial from the station",
-      "Ground distance to the runway",
-      "Slant range to the station"
+      "Crossing a radial at right angles",
+      "Flying an arc around the station",
+      "Tracking straight to or from it"
     ],
     "correct": [
       2
     ],
-    "explanation": "DME measures the line-of-sight slant range from the airplane to the ground station, not the horizontal distance over the ground."
+    "explanation": "DME groundspeed comes from the rate of change of distance, so it is accurate only when tracking directly to or from the station."
   },
   {
     "id": "FAAIFR-D-063",
@@ -3859,16 +3858,16 @@
     "difficulty": 3,
     "format": "single",
     "skill": "GPS approach",
-    "stem": "Your GPS loses integrity before the final approach waypoint on an LNAV approach. What should you do?",
+    "stem": "If you don't arm approach mode, what does the GPS CDI do inside 30 NM?",
     "options": [
-      "Don't continue; tell ATC",
-      "Continue, it's only a warning",
-      "Descend to the MDA and look"
+      "Shows a VOR back course",
+      "Stays at en route scaling",
+      "Switches to 0.3 NM at once"
     ],
     "correct": [
-      0
+      1
     ],
-    "explanation": "Without integrity monitoring the GPS position can't be trusted for the approach. Before the FAWP, don't start the final approach; tell ATC and get another plan."
+    "explanation": "AIM 1-1: without arming, the receiver won't change from the en route 5 NM sensitivity to the 1 NM terminal sensitivity, so the CDI stays far too coarse."
   },
   {
     "id": "FAAIFR-D-073",

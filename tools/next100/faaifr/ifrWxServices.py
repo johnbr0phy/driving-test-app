@@ -48,7 +48,7 @@ ITEMS = [
     # ---------- Drill only ----------
     S(0, 2, "Flight categories", "Which METAR conditions are MVFR?",
       ["OVC020 and 6SM", "OVC008 and 6SM", "SKC and 2SM"],
-      "MVFR is a ceiling of 1,000 to 3,000 feet and/or visibility of 3 to 5 miles. OVC008 is IFR by ceiling and 2SM is IFR by visibility."),
+      "MVFR is a ceiling of 1,000 to 3,000 feet and/or visibility of 3 to 5 miles. OVC020 with 6SM is MVFR by its 2,000-foot ceiling. OVC008 is IFR by ceiling and 2SM is IFR by visibility."),
     S(0, 2, "AIRMET schedule", "AIRMETs over the contiguous United States are issued on what schedule?",
       ["Every 6 hours", "Every hour", "Every 12 hours"],
       "AIM 7-1: AIRMETs are scheduled every 6 hours (every 8 in Alaska), with unscheduled updates as needed."),

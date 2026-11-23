@@ -18,10 +18,9 @@ ITEMS = [
     S(1, 2, "Automation", "In IMC the autopilot begins a turn you didn't expect. What should you do first?",
       ["Disconnect it and hand-fly", "Reprogram the flight plan at once", "Wait to see where it is going"],
       "When automation does something unexpected, fly the airplane first: disconnect, hand-fly to a safe attitude and heading, then sort out the modes."),
-    S(1, 3, "Hazardous attitudes", "\"I've flown approaches lower than this; watch me get in.\" Which hazardous attitude, and what antidote?",
-      ["Macho; taking chances is foolish", "Invulnerability; it could happen to me", "Impulsivity; not so fast, think first"],
-      "Trying to prove oneself by taking risks is the macho attitude. The antidote is 'Taking chances is foolish.'"),
-    # ---------- Practice Test 2 ----------
+    S(1, 2, "Single-pilot resource management", "Flying single-pilot IFR, why brief the approach chart before starting the descent?",
+      ["It cuts workload on final", "ATC requires a read-back of it", "It sets the autopilot's minimums"],
+      "Single-pilot resource management means doing the planning when workload is low. Briefing frequencies, altitudes, minimums and the missed approach early leaves attention free for flying the final segment."),
     S(2, 2, "Vestibular illusions", "After an abrupt level-off from a climb, you feel you are tumbling backward. What is the danger?",
       ["Pushing the nose too low", "Pulling into a steep climb", "Rolling into a steep bank"],
       "The inversion illusion follows an abrupt change from climb to level flight. The disoriented pilot may push the nose down abruptly, making the illusion worse."),

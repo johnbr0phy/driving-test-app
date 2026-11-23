@@ -23,7 +23,7 @@ const description =
 const faqs = [
   {
     q: "What safety training do I need for a first SA firearms licence?",
-    a: "Section 15 of the Firearms Act 2015 (SA) lets the Registrar refuse a licence until you have completed training in the safe handling, use, storage and transport of firearms, and regulation 28 lets the Registrar require a course, a written examination and a practical examination. In practice you apply to SAPOL first with form PD303; if your application is accepted, the approval letter tells you what training you need and who to contact. TAFE SA runs SAPOL-approved firearm safety training; the category A and B course must be done before, or on the same day as, category H training.",
+    a: "Section 15 of the Firearms Act 2015 (SA) lets the Registrar refuse a licence until you have completed training in the safe handling, use, storage and transport of firearms, and regulation 28 lets the Registrar require a course, a written examination and a practical examination. In practice you apply to SAPOL first with form PD303; if your application is accepted, the approval letter tells you what training you need and who to contact. TAFE SA runs SAPOL-approved firearm safety training, and TAFE SA says its category A and B course must be completed before, or on the same day as, its category H training.",
   },
   {
     q: "What is the TAFE SA firearm safety course like?",

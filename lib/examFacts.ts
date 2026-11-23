@@ -1125,6 +1125,23 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Cisco's 100-150 CCST Networking exam page, the CCST certifications FAQ and the CCST Networking objectives, checked November 2026",
     source: { name: "Cisco: 100-150 CCST Networking", url: "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html" },
   },
+  serverplus: {
+    answer:
+      "CompTIA Server+ (exam SK0-005) is CompTIA's certification for people who install, manage and troubleshoot servers in data centers, on premises and in hybrid environments. The exam has a maximum of 90 questions, multiple choice and performance-based, in 90 minutes, and the passing score is 750 on a scale of 100 to 900. The SK0-005 objectives cover four domains: Server Hardware Installation and Management 18%, Server Administration 30%, Security and Disaster Recovery 24%, and Troubleshooting 28%. CompTIA recommends two years of hands-on server experience and A+ or equivalent knowledge. A beta of the next version (SK0-006) runs until February 4, 2027, and CompTIA expects to launch it in summer 2027.",
+    rows: [
+      { label: "Exam code", value: "SK0-005 (launched May 18, 2021)" },
+      { label: "Questions", value: "Maximum of 90, multiple choice and performance-based" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Pass mark", value: "750 on a scale of 100 to 900" },
+      { label: "Content", value: "Hardware installation and management 18%, server administration 30%, security and disaster recovery 24%, troubleshooting 28%" },
+      { label: "Languages", value: "English, Japanese" },
+      { label: "Experience", value: "Two years of hands-on server work and A+ or equivalent knowledge recommended" },
+      { label: "Next version", value: "SK0-006 expected in summer 2027 (beta to February 4, 2027)" },
+      { label: "Run by", value: "CompTIA" },
+    ],
+    basedOn: "the CompTIA Server+ SK0-005 exam objectives (document version 7.0), the Server+ certification page and CompTIA's November 17, 2026 announcement of the SK0-006 beta, checked November 2026",
+    source: { name: "CompTIA: Server+ certification", url: "https://www.comptia.org/en-us/certifications/server/" },
+  },
   techplus: {
     answer:
       "CompTIA Tech+ (exam FC0-U71) is CompTIA's entry-level certification for people new to IT, and it replaced CompTIA IT Fundamentals+ (ITF+), whose FC0-U61 exam retired on July 31, 2025 in English. The exam has a maximum of 70 multiple-choice questions in 60 minutes, and the passing score is 650 on a scale of 900. The FC0-U71 objectives cover six domains: IT Concepts and Terminology 13%, Infrastructure 24%, Applications and Software 18%, Software Development Concepts 13%, Data and Database Fundamentals 13% and Security 19%. CompTIA recommends it for high school students and non-IT professionals, with no prior experience needed, and offers it in English and Japanese.",

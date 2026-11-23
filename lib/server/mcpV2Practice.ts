@@ -89,6 +89,7 @@ import '@/lib/v2/banks/ceh';
 import '@/lib/v2/banks/sc200';
 import '@/lib/v2/banks/az104';
 import '@/lib/v2/banks/techplus';
+import '@/lib/v2/banks/serverplus';
 import '@/lib/v2/banks/safe';
 import '@/lib/v2/banks/dataplus';
 import '@/lib/v2/banks/ccst';

@@ -1,0 +1,4429 @@
+[
+  {
+    "id": "SERVERPLUS-T1-001",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Troubleshooting methodology",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "In what order do the first four troubleshooting steps go?",
+    "explanation": "CompTIA's method starts by identifying the problem, then a theory, then testing it, then planning the fix, before implementing, verifying and documenting.",
+    "options": [
+      "Identify the problem and its scope",
+      "Establish a theory of probable cause",
+      "Test the theory",
+      "Establish a plan of action"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-002",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Encryption paradigms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A stolen backup drive must be unreadable without a key. What protects it?",
+    "explanation": "Encrypting data at rest protects it on the disk or tape itself. In-transit encryption only covers data moving over a network.",
+    "options": [
+      "A strong share password",
+      "Encryption at rest",
+      "Encryption in transit",
+      "Hashing file names"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-003",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Causes of OS problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Domain users suddenly cannot log on to one server, and its clock is 20 minutes fast. What is the cause?",
+    "explanation": "Kerberos tickets carry timestamps, so a server whose clock drifts too far from the domain controllers rejects logons. Syncing with NTP fixes it.",
+    "options": [
+      "A full system log",
+      "A memory leak",
+      "Wrong CPU affinity setting",
+      "Clock skew"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-004",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Backup methods",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A weekly full backup is 3000 GB and each of the six daily incrementals after it is 150 GB. How many GB does one week's set hold? Type the number only.",
+    "explanation": "One full plus six incrementals: 3000 GB + 6 x 150 GB = 3900 GB. Capacity planning for backup targets starts from sums like this.",
+    "numeric": {
+      "answers": [
+        "3900"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "SERVERPLUS-T1-005",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "Installations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Windows Server install option has no desktop and is managed remotely or from the command line?",
+    "explanation": "Server Core leaves out the graphical shell, which cuts the attack surface and the number of patches. Desktop Experience is the full GUI.",
+    "options": [
+      "Desktop Experience",
+      "Server Core",
+      "Slipstreamed image",
+      "Bare-metal restore image"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-006",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Baselining",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why record a performance baseline when a new server goes live?",
+    "explanation": "A baseline is the normal CPU, memory, disk and network profile. Later readings are compared with it to tell a real problem from normal load.",
+    "options": [
+      "To pick a backup rotation",
+      "To set the warranty start date",
+      "To size the next UPS purchase",
+      "To spot abnormal load later"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-007",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Clustering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In an active-passive cluster, what does the passive node do while the active node is healthy?",
+    "explanation": "The passive node stands by, watching the heartbeat, and takes over the workload on failover.",
+    "options": [
+      "Waits to take over",
+      "Hosts the quorum disk only",
+      "Serves half the clients",
+      "Runs the nightly backups"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-008",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spHardware",
+    "skill": "Racking",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A 48U rack holds three 4U storage shelves and six 2U servers. How many rack units are free? Type the number only.",
+    "explanation": "Three 4U shelves use 12U and six 2U servers use 12U, so 24U are taken. 48 minus 24 leaves 24U.",
+    "numeric": {
+      "answers": [
+        "24"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "SERVERPLUS-T1-009",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spStorage",
+    "skill": "RAID levels",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Eight 900 GB drives are built into one RAID 6 array. How many GB are usable? Type the number only.",
+    "explanation": "RAID 6 gives two drives' worth of space to parity, so 6 of the 8 drives hold data: 6 x 900 GB = 5400 GB.",
+    "numeric": {
+      "answers": [
+        "5400"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "SERVERPLUS-T1-010",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Troubleshooting methodology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "While identifying the problem, what should be done before making any changes, if possible?",
+    "explanation": "Taking a backup first means a fix that goes wrong cannot make the data loss worse.",
+    "options": [
+      "Back up the server",
+      "Reload the OS from scratch",
+      "Close the ticket for now",
+      "Replace the motherboard"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-011",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Firmware passwords",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why set a UEFI or BIOS password on a server?",
+    "explanation": "A firmware password keeps someone with physical access from changing settings such as boot order to boot their own media.",
+    "options": [
+      "To encrypt the data drives",
+      "To stop boot order changes",
+      "To speed up POST on each boot",
+      "To lock out remote SSH users"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-012",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Causes of OS problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Restarting a service frees several GB of RAM, which then slowly fills again over a week. What is the lasting fix?",
+    "explanation": "Steadily growing memory that only a restart frees is a memory leak. Restarts and extra RAM only delay it; a fixed version of the software ends it.",
+    "options": [
+      "Patch the leaking software",
+      "Schedule weekly restarts",
+      "Add more RAM to the host",
+      "Enlarge the page file"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-013",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Backup methods",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a differential backup copy?",
+    "explanation": "A differential copies everything changed since the last full backup, so it grows each day but a restore needs only the full and the latest differential.",
+    "options": [
+      "Only files open in use",
+      "Every file on the volume",
+      "Changes since the last backup",
+      "Changes since the last full"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-014",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "Installations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Forty identical servers need the same OS with no one at the keyboard. What makes that possible?",
+    "explanation": "A scripted or unattended install reads its choices from an answer file, so the same build runs on every server without prompts.",
+    "options": [
+      "Live boot from optical media",
+      "Manual install on each server",
+      "A copy of the hosts file",
+      "Answer file for an unattended install"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-015",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Storage management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A file server holds hundreds of near-identical VM images. Which feature saves the most space?",
+    "explanation": "Deduplication stores repeated blocks once and points to them, so many near-identical images take far less space.",
+    "options": [
+      "Deduplication",
+      "Larger page file",
+      "Defragmentation",
+      "Disk quotas"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-016",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Clustering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How do cluster nodes find out that a partner has stopped responding?",
+    "explanation": "Nodes exchange heartbeats on a regular interval. When a set number are missed, the cluster starts failover.",
+    "options": [
+      "The DHCP lease expiring",
+      "Daily email reports",
+      "Missed heartbeats",
+      "SNMP traps from the UPS"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-017",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spHardware",
+    "skill": "Rack layout",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Where should the heaviest equipment go when filling an empty rack?",
+    "explanation": "Heavy gear low keeps the center of gravity down so the rack will not tip when a server slides out on its rails.",
+    "options": [
+      "Top of the rack, near the fans",
+      "Wherever cabling is shortest",
+      "Middle of the rack",
+      "Bottom of the rack"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-018",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spStorage",
+    "skill": "RAID levels",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which RAID level stripes data across drives with no redundancy at all?",
+    "explanation": "RAID 0 only stripes, so it is fast but one failed drive loses the whole array.",
+    "options": [
+      "RAID 0",
+      "RAID 10",
+      "RAID 1",
+      "RAID 5"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-019",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Troubleshooting methodology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A fix is tried and the problem remains. What should happen next?",
+    "explanation": "Make one change at a time. If it does not work, undo it where appropriate before the next try, so the cause stays clear.",
+    "options": [
+      "Close the ticket as resolved",
+      "Leave it and add a second fix",
+      "Reinstall every driver at once",
+      "Undo it, then try another"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-020",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Physical access controls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server room must stop wireless signals from leaking out to anyone listening outside. Which physical measure fits?",
+    "explanation": "Signal blocking (shielding built into the room) stops radio signals passing through the walls. Reflective glass stops people seeing in, and bollards stop vehicles.",
+    "options": [
+      "Reflective glass on the windows",
+      "Brighter outdoor lighting",
+      "Bollards at the entrance",
+      "Signal blocking in the walls"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-021",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "OS and software tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Linux admin must run one command as root without logging in as root. Which tool fits?",
+    "explanation": "sudo runs a single command with elevated rights and logs it. su switches to the root user for a whole session; runas is the Windows tool.",
+    "options": [
+      "$\\texttt{su -}$",
+      "$\\texttt{runas}$",
+      "$\\texttt{chmod}$",
+      "$\\texttt{sudo}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-022",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Backup methods",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is a synthetic full backup?",
+    "explanation": "The backup system merges the last full with later incrementals into a new full, without reading the whole server again.",
+    "options": [
+      "A copy kept only in the cloud",
+      "A backup that skips system files",
+      "A full built from earlier backups",
+      "A full taken from a live snapshot"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-023",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Memory errors and failures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An ESXi host stops with a purple diagnostic screen. What is this?",
+    "explanation": "The purple screen is the VMware host's fatal error screen, like a Windows blue screen. The memory dump helps find the cause.",
+    "options": [
+      "A network outage",
+      "A finished backup",
+      "A host crash",
+      "A normal firmware update"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-024",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "Imaging",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An old physical server must move onto a hypervisor without a rebuild. What is this called?",
+    "explanation": "A P2V conversion copies the running physical machine into a virtual machine, keeping its OS, apps and data.",
+    "options": [
+      "Physical to virtual (P2V)",
+      "Template deployment of a VM",
+      "Slipstreaming the install media",
+      "Bare-metal install on new hardware"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-025",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Storage management",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which feature caps how much space each user can fill on a shared volume?",
+    "explanation": "Quotas set a per-user or per-folder limit and can warn or block when it is reached.",
+    "options": [
+      "Compression",
+      "Disk quotas",
+      "Thin provisioning",
+      "Mirroring with RAID 1"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-026",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Clustering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the safe way to patch a two-node failover cluster?",
+    "explanation": "Draining roles from one node, patching it, then repeating on the other keeps the service up and lets a bad patch be caught on one node.",
+    "options": [
+      "One node at a time, roles moved first",
+      "Patch, then remove the heartbeat link",
+      "Both nodes at once in one window",
+      "The active node only"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-027",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Physical access controls",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What are the short posts outside a data center entrance meant to stop?",
+    "explanation": "Bollards block cars or trucks from being driven into a building's entrance or walls.",
+    "options": [
+      "Tailgaters",
+      "Floodwater",
+      "Radio signals",
+      "Vehicles"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-028",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Recovery",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Windows server crashes at every boot after a new driver was installed. Which boot option helps remove it?",
+    "explanation": "Safe mode loads only core drivers, so the bad driver can be rolled back or removed. Single user mode is the Linux equivalent.",
+    "options": [
+      "Fast startup",
+      "Safe mode",
+      "Single user mode",
+      "PXE boot from the network"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-029",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spHardware",
+    "skill": "Redundant power",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server has two power supplies. How should they be connected for the best protection?",
+    "explanation": "Feeding each supply from a separate circuit means one tripped breaker or failed PDU cannot take the server down.",
+    "options": [
+      "Both to one high-capacity PDU",
+      "One cabled, one kept as a cold spare",
+      "Both to the same UPS outlet strip",
+      "Each to a PDU on its own circuit"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-030",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spStorage",
+    "skill": "RAID levels",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An array must keep running after any two drives fail at once. Which level fits?",
+    "explanation": "RAID 6 keeps two independent parity blocks per stripe, so it survives two drive failures. RAID 5 survives only one.",
+    "options": [
+      "RAID 5",
+      "RAID 1",
+      "RAID 6",
+      "RAID 0"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-031",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "CMOS battery failure",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After every power-off, a server's clock and firmware settings reset. What is the likely cause?",
+    "explanation": "The small CMOS battery keeps the clock and settings while the server is unplugged. When it dies they reset each time.",
+    "options": [
+      "Full system drive",
+      "Expired license",
+      "Failed CMOS battery",
+      "Bad power supply fan"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-032",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Media rotation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In grandfather-father-son rotation, which backup sets are kept the longest?",
+    "explanation": "Grandfather-father-son keeps daily (son), weekly (father) and monthly (grandfather) sets. The monthly grandfather sets are kept longest.",
+    "options": [
+      "Daily sets",
+      "Weekly sets",
+      "Incremental sets",
+      "Monthly sets"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-033",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Environmental controls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why do many data centers use a clean-agent gas system instead of water sprinklers?",
+    "explanation": "Clean agents suppress fire without leaving water or residue on electronics. Many sites still keep a sprinkler system as required by code.",
+    "options": [
+      "It needs no building inspection",
+      "It leaves no water on equipment",
+      "It also cools the servers",
+      "It is cheaper to install"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-034",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Services and processes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A web service will not start because the service it relies on is stopped. What is this?",
+    "explanation": "Services can depend on others. Starting the required service first, or fixing it, lets the dependent one start.",
+    "options": [
+      "Buffer overrun",
+      "Orphaned service account",
+      "Zombie process",
+      "Dependency failure"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-035",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "Partition types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why can a 6 TB disk not be fully used with an MBR partition table?",
+    "explanation": "MBR stores sector addresses in 32 bits, which tops out near 2 TB with 512-byte sectors. GPT removes that limit and is what UEFI boots from.",
+    "options": [
+      "MBR cannot hold NTFS volumes",
+      "MBR addresses only about 2 TB",
+      "MBR allows only one partition",
+      "MBR needs a UEFI firmware"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-036",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Monitoring",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A disk shows 2,000 IOPS against a rated 2,200 while only 40% of its space is used. What is the concern?",
+    "explanation": "IOPS near the rated limit means the disk is nearly out of throughput even though plenty of space is left: utilization and capacity are different measures.",
+    "options": [
+      "Both are fine",
+      "The disk is failing",
+      "Performance, not capacity",
+      "Capacity, not performance"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-037",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Load balancing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which load balancing method hands each new request to the next server in a fixed rotation?",
+    "explanation": "Round robin cycles through the pool in order and ignores current load, which is simple but uneven when requests differ in size.",
+    "options": [
+      "Least connections",
+      "Source IP hash",
+      "Round robin",
+      "Most recently used"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-038",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Causes of common problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server overheats and throttles right after a new CPU was fitted. What is most likely?",
+    "explanation": "A heat sink that is loose or missing thermal paste cannot move heat away, so the CPU overheats soon after a change.",
+    "options": [
+      "DNS misconfigured",
+      "Wrong RAID level",
+      "Heat sink not seated",
+      "Expired SSL certificate"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-039",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spHardware",
+    "skill": "Network cabling",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which fiber type uses a very narrow core so a link can run tens of kilometers?",
+    "explanation": "Single-mode fiber carries light down one narrow path and reaches many kilometers. Multimode has a wider core and is meant for shorter runs inside a building.",
+    "options": [
+      "Single-mode",
+      "Twinax copper",
+      "Multimode",
+      "Cat 6a twisted pair"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-040",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spStorage",
+    "skill": "Hardware vs software RAID",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a hardware RAID controller give that software RAID does not?",
+    "explanation": "A dedicated controller (often with battery- or flash-backed cache) does the RAID math itself, so the server's CPU is not loaded by it.",
+    "options": [
+      "Parity work off the host CPU",
+      "Free hot spares for every array",
+      "Support for more file systems",
+      "No need for any drivers"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-041",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Restore methods",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user needs last week's version of a file but wants to keep today's too. Which restore method fits?",
+    "explanation": "Restoring to another path or name puts the old copy beside the current one, so nothing in use is lost.",
+    "options": [
+      "Restore the system state",
+      "Full bare-metal restore",
+      "Restore to another path",
+      "Overwrite the current file"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-042",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Password policies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does an account lockout policy defend against?",
+    "explanation": "Locking an account after a set number of failed logons slows brute-force and guessing attacks.",
+    "options": [
+      "Shoulder surfing at the console",
+      "Repeated password guessing",
+      "Phishing emails sent to admins",
+      "Expired certificates"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-043",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Patching",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before patching a critical VM, what makes a quick rollback possible?",
+    "explanation": "A snapshot captures the VM's state, so if the patch fails the VM can be reverted in minutes. Delete it once the patch is proven.",
+    "options": [
+      "Disable the firewall",
+      "Remove it from the domain",
+      "Take a snapshot",
+      "Raise its CPU priority"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-044",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "Volume types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On Linux, which tool lets an admin grow a volume across several physical disks later?",
+    "explanation": "Logical Volume Management pools physical volumes into volume groups, so logical volumes can be extended onto new disks.",
+    "options": [
+      "LVM",
+      "fdisk with MBR",
+      "ext4 journal",
+      "Swap partition"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-045",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Event logs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does log shipping or forwarding give a server team?",
+    "explanation": "Forwarding sends events to a central collector, so logs survive a server crash or an intruder wiping them, and can be searched in one place.",
+    "options": [
+      "Automatic patching of the OS",
+      "Faster writes to the local disk",
+      "Smaller logs on each server",
+      "Copies kept off the server"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-046",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "NIC teaming",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two NICs are teamed with link aggregation to one switch. What does this add over failover-only teaming?",
+    "explanation": "Link aggregation (such as LACP) uses both links at once for more throughput and still survives a link failure. Failover-only keeps one link idle.",
+    "options": [
+      "A separate MAC address per VLAN",
+      "Combined bandwidth",
+      "A second IP subnet",
+      "Encryption on the wire"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-047",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Fault and device indication",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A drive caddy shows an amber light while the others are green. What does it usually mean?",
+    "explanation": "Amber on a drive or component LED usually flags a failure or predictive failure. The server's management log names the exact error.",
+    "options": [
+      "That drive is the busiest",
+      "That drive has a fault",
+      "The server is on battery",
+      "The array is rebuilding fine"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-048",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Permissions and access controls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A senior admin lets a junior admin reset passwords in one department's accounts only, without making the junior a full domain admin. What is this?",
+    "explanation": "Delegation hands one limited admin task to someone else without granting all of the delegating admin's rights.",
+    "options": [
+      "Account lockout",
+      "Two-person integrity",
+      "Single sign-on",
+      "Delegation"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-049",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Network causes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server reaches other hosts by IP address but gets unknown host errors for their names. What is failing?",
+    "explanation": "If addresses work but names do not, DNS (or the hosts file) is the problem. nslookup or dig will show it.",
+    "options": [
+      "The NIC driver",
+      "Name resolution",
+      "The default route",
+      "The switch port"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-050",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Backup validation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does a team know its backups can really be restored?",
+    "explanation": "A job can finish with unreadable or incomplete data. Only regular test restores prove the backup works.",
+    "options": [
+      "Run backups more often",
+      "Check the job says complete",
+      "Test restores on a schedule",
+      "Buy higher-grade tapes"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-051",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spHardware",
+    "skill": "Transceivers",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which pluggable transceiver is built for 40 Gbps links?",
+    "explanation": "QSFP+ bundles four 10 Gbps lanes for 40 Gbps. SFP+ is the 10 Gbps module and plain SFP is about 1 Gbps.",
+    "options": [
+      "10GBASE-T",
+      "QSFP+",
+      "SFP+",
+      "SFP"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-052",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spStorage",
+    "skill": "Drive media types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A logging database writes all day long. Which SSD class should be bought?",
+    "explanation": "Write-intensive SSDs are rated for many more drive writes per day, so heavy write loads do not wear them out early.",
+    "options": [
+      "Hybrid flash and disk drive",
+      "Consumer desktop SSD",
+      "Write-intensive",
+      "Read-intensive SSD"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-053",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Environmental causes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Servers in one rack keep failing, and the room's humidity reads very high. Which risk does this raise?",
+    "explanation": "Too much humidity can cause condensation and corrosion. Too little raises static discharge risk, so humidity is kept in a band.",
+    "options": [
+      "Lower disk IOPS",
+      "Static discharge",
+      "Corrosion",
+      "Faster fan bearing wear"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-054",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "File system types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which file system is the one VMware ESXi hosts format their shared datastores with?",
+    "explanation": "VMFS is VMware's clustered file system that lets several hosts read and write the same datastore.",
+    "options": [
+      "ext4",
+      "NTFS",
+      "VMFS",
+      "ReFS"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-055",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Data migration and transfer",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Windows command copies a folder tree and can mirror it with retries?",
+    "explanation": "Robocopy (robust file copy) is built into Windows and handles mirroring, retries and keeping permissions. scp copies over SSH between hosts.",
+    "options": [
+      "xcopy /s",
+      "robocopy",
+      "rsync",
+      "scp"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-056",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Virtual networking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which virtual network mode lets VMs reach outside networks through the host's own address?",
+    "explanation": "With NAT the host translates the VMs' private addresses to its own, so they can reach out but are not directly reachable. Bridged makes each VM a peer on the LAN.",
+    "options": [
+      "Bridged to the physical LAN",
+      "Isolated internal",
+      "NAT",
+      "Host-only"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-057",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Permissions and access controls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who should approve the payments that a finance admin also enters into the system?",
+    "explanation": "Segregation of duties splits a sensitive task so that no one person can complete and approve it alone.",
+    "options": [
+      "A different person",
+      "The backup operator",
+      "Nobody, the log is enough",
+      "The same admin, after a delay"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-058",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Network causes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server moved to a new rack cannot reach anything, though its link light is on. Its switch port was set up by someone else. What should be checked?",
+    "explanation": "A live link with no traffic often means the port is in the wrong VLAN, or port security is blocking the server's MAC address.",
+    "options": [
+      "The UPS runtime",
+      "The port's VLAN",
+      "The server's RAID level",
+      "The DNS zone serial number"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-059",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Site types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which disaster recovery site has space, power and cooling but no servers installed?",
+    "explanation": "A cold site is the cheapest and slowest to bring up, since equipment must be bought or shipped in (NIST SP 800-34).",
+    "options": [
+      "Cold site",
+      "Warm site",
+      "Mirrored site",
+      "Hot site"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-060",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Tools and techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What should a technician wear before reseating a memory module?",
+    "explanation": "An electrostatic discharge strap grounds the technician so static does not damage the module or the board.",
+    "options": [
+      "Hearing protection",
+      "Hard hat and gloves",
+      "Safety goggles",
+      "ESD wrist strap"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-061",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spHardware",
+    "skill": "Chassis types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which chassis type shares power, cooling and networking among many thin servers?",
+    "explanation": "Blades slide into an enclosure that supplies shared power supplies, fans and switch modules, saving space per server.",
+    "options": [
+      "Tower server on casters",
+      "1U rack-mount server",
+      "Desktop form factor",
+      "Blade enclosure"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-062",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spStorage",
+    "skill": "Drive media types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which hard drive spindle speed gives the lowest seek and rotation delay?",
+    "explanation": "The faster the platter spins, the sooner the right sector comes under the head, so 15,000 RPM drives have the lowest latency.",
+    "options": [
+      "10,000 RPM",
+      "5,400 RPM",
+      "15,000 RPM",
+      "7,200 RPM"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-063",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Multifactor authentication",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A logon needs a password and a fingerprint. Which two factor types are used?",
+    "explanation": "A password is something you know and a fingerprint is something you are, so this is true two-factor authentication.",
+    "options": [
+      "Know and are",
+      "Know and know",
+      "Know and have",
+      "Have and are"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-064",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Network tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command shows the hop where traffic to a remote subnet stops on a Linux server?",
+    "explanation": "traceroute lists each router along the path, so the last one that answers shows where traffic stops. On Windows the command is tracert.",
+    "options": [
+      "$\\texttt{nslookup}$",
+      "$\\texttt{ip addr show}$",
+      "$\\texttt{traceroute}$",
+      "$\\texttt{ping}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-065",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "IP configuration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why do most servers get a static IP address rather than a dynamic one?",
+    "explanation": "Services are found by name and address, so a server's address must not change. A DHCP reservation is the other common way to pin it.",
+    "options": [
+      "Static addresses load pages faster",
+      "Clients and DNS need it unchanged",
+      "It removes the need for a gateway",
+      "DHCP cannot hand out server addresses"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-066",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Asset management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which inventory field uniquely identifies one physical server from its maker?",
+    "explanation": "The serial number is unique to the unit. Many servers share a model, and hostnames and rack spots can change.",
+    "options": [
+      "Serial number",
+      "Rack position",
+      "Hostname",
+      "Model number"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-067",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Resource allocation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A host has 64 GB of RAM, and its VMs are given 96 GB in total. What is this called?",
+    "explanation": "Overprovisioning (overcommitment) allocates more than the host physically has, betting that VMs will not all use their full share at once.",
+    "options": [
+      "Memory pinning on the host",
+      "Scaling out the cluster",
+      "Overprovisioning",
+      "Memory ballooning failure"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-068",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Storage problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Write performance drops sharply after the RAID controller's cache battery fails. Why?",
+    "explanation": "Without battery or flash backup, the controller disables write-back caching to protect data, so every write waits for the disks.",
+    "options": [
+      "The array loses its parity data",
+      "TRIM is turned off",
+      "The drives spin down",
+      "Caching drops to write-through"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-069",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Replication",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which replication confirms each write only after the remote copy also has it?",
+    "explanation": "Synchronous replication loses no committed data but adds latency, so it suits short distances. Asynchronous confirms locally first.",
+    "options": [
+      "Scheduled snapshot",
+      "Asynchronous",
+      "Background",
+      "Synchronous"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-070",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Mitigation strategies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why must every server's clock be in sync before its logs go into a SIEM?",
+    "explanation": "A SIEM correlates events across sources by time. If clocks differ, related events appear out of order or fail to match up.",
+    "options": [
+      "So the logs compress to a smaller size",
+      "So nightly backups finish sooner",
+      "So the SIEM license stays valid",
+      "So events from many servers line up in order"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-071",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Security problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool shows which ports a server is listening on, seen from the network?",
+    "explanation": "A port scanner probes a host to list open ports, which can reveal services that should be off.",
+    "options": [
+      "UAC prompt on the console",
+      "Checksum tool",
+      "Port scanner",
+      "Packet sniffer"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-072",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Storage problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A RAID 5 array has one failed drive and is rebuilding onto a spare. What should users expect?",
+    "explanation": "During a rebuild the controller rebuilds missing data from parity while also serving I/O, so performance drops until it finishes.",
+    "options": [
+      "Total data loss",
+      "No change at all",
+      "Slower disk I/O",
+      "Faster reads from the spare"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-073",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spHardware",
+    "skill": "Out-of-band management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The OS on a remote server has frozen. Which feature lets an admin power cycle it without a site visit?",
+    "explanation": "A baseboard management controller such as iDRAC or iLO runs on its own port and power, so it still answers when the OS is hung. Remote desktop and SSH need the OS.",
+    "options": [
+      "SSH session to the OS",
+      "Wake-on-LAN magic packet",
+      "Remote desktop session",
+      "Out-of-band management"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-074",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spStorage",
+    "skill": "Shared storage",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which shared storage presents blocks to servers, so each sees what looks like a local disk?",
+    "explanation": "A storage area network serves block storage over iSCSI or Fibre Channel. NAS serves files over NFS or SMB/CIFS.",
+    "options": [
+      "SAN",
+      "NAS",
+      "DAS",
+      "CIFS share"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-075",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "MAC addresses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does the first half of a NIC's MAC address identify?",
+    "explanation": "The first 24 bits of a 48-bit MAC address are the organizationally unique identifier assigned to the maker. The rest is the device's own number.",
+    "options": [
+      "Its subnet",
+      "Its manufacturer",
+      "Its VLAN",
+      "Its switch port"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-076",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Documentation management",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A server's last three repairs took 3, 5 and 7 hours. What is its mean time to recover in hours? Type the number only.",
+    "explanation": "MTTR is the average repair time: (3 + 5 + 7) / 3 = 5 hours.",
+    "numeric": {
+      "answers": [
+        "5"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "SERVERPLUS-T1-077",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Script types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which script type runs natively on Windows with objects passed down the pipeline?",
+    "explanation": "PowerShell passes .NET objects between commands. Batch and VBScript are older Windows options, and Bash is the usual Linux shell.",
+    "options": [
+      "Batch file",
+      "Bash",
+      "PowerShell",
+      "VBScript"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-078",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Media destruction",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which method should not be used to sanitize SSDs?",
+    "explanation": "Degaussing works only on magnetic media and does not sanitize flash storage such as SSDs (NIST SP 800-88 Rev. 2).",
+    "options": [
+      "Degaussing",
+      "Shredding",
+      "Cryptographic erase",
+      "Incineration"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-079",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "OS hardening",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new web server also has a print spooler and an FTP service it never uses. What should be done?",
+    "explanation": "Every unneeded service is a possible way in. Hardening turns off what the server's role does not need.",
+    "options": [
+      "Disable them",
+      "Rename the services",
+      "Move them to port 80",
+      "Leave them running"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-080",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Security problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Linux web server cannot read files in a new folder, though the file permissions allow it. What else may block it?",
+    "explanation": "SELinux enforces its own labels and rules on top of file permissions. A wrong context on the new folder will deny access.",
+    "options": [
+      "SELinux policy",
+      "Clock skew",
+      "Switch port security",
+      "Disk quotas"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-081",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Storage problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server shows \"OS not found\" at boot after a USB stick was left plugged in. What is the first fix?",
+    "explanation": "Firmware may be trying to boot the USB stick first. Removing it or putting the boot disk first in the order is the simplest fix.",
+    "options": [
+      "Rebuild the RAID array",
+      "Reinstall the OS from media",
+      "Fix the boot order",
+      "Replace the system board"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-082",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spHardware",
+    "skill": "Hot-swappable hardware",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which part can usually be replaced while a typical rack server keeps running?",
+    "explanation": "Redundant power supplies, fans and drives in caddies are built for hot swap. CPUs, DIMMs and the board need the server powered off.",
+    "options": [
+      "System board and chipset",
+      "Primary CPU in socket one",
+      "Registered memory module",
+      "Redundant power supply"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-083",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spStorage",
+    "skill": "Interface types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which drive can a SAS controller accept besides SAS drives?",
+    "explanation": "SAS backplanes and controllers also accept SATA drives. The reverse is not true: a SATA controller cannot run a SAS drive.",
+    "options": [
+      "IDE",
+      "SD card",
+      "eSATA",
+      "SATA"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-084",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "Name resolution",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which file on a server maps names to IP addresses locally, before DNS is asked?",
+    "explanation": "The hosts file holds static name-to-address entries that the resolver checks before it queries DNS.",
+    "options": [
+      "Resolver cache log",
+      "DHCP lease file",
+      "ARP cache table",
+      "Hosts file"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-085",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Licensing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Under per-core licensing, what changes the license count?",
+    "explanation": "Per-core licensing counts the processor cores in the server, so a bigger CPU needs more licenses even with the same users.",
+    "options": [
+      "Number of disks in the array",
+      "Number of physical cores",
+      "Number of users logged on",
+      "Amount of installed RAM"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-086",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Basic script constructs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A script must run the same command once for each server name in a list. Which construct fits?",
+    "explanation": "A loop (for or foreach) repeats the command for every item in the list. A conditional runs code once if a test is true.",
+    "options": [
+      "Single conditional",
+      "Loop",
+      "Environment variable",
+      "Comment"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-087",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Proper removal procedures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before a server is powered off for good, what should be confirmed first?",
+    "explanation": "Verifying non-utilization (no services, users or jobs still pointing at the server) avoids an outage when it is removed.",
+    "options": [
+      "Its warranty has expired",
+      "Its rack is otherwise empty",
+      "Nothing depends on it",
+      "Its fans have been cleaned"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-088",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Patching",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A critical OS patch is released. What comes before deploying it to production servers?",
+    "explanation": "Patches are tested in a non-production environment and deployed under change management, so a bad update is caught first.",
+    "options": [
+      "Testing it on a staging server",
+      "Rebooting the domain controller",
+      "Rolling it out to every server",
+      "Removing the firewall"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-089",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Security problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A system file's hash no longer matches the value recorded at install. What does this suggest?",
+    "explanation": "File integrity monitoring compares checksums. A changed hash on a system file can mean tampering or malware.",
+    "options": [
+      "DNS is misconfigured",
+      "The NIC is failing",
+      "The file was changed",
+      "The disk is nearly full"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T1-090",
+    "section": "serverplus",
+    "test": 1,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Tools and techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Windows command maps a drive letter to a network share for testing access?",
+    "explanation": "net use connects a drive letter to a share on Windows. mount does the same job on Linux.",
+    "options": [
+      "$\\texttt{net use}$",
+      "$\\texttt{netstat}$",
+      "$\\texttt{ipconfig}$",
+      "$\\texttt{mount}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-001",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Troubleshooting methodology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Three servers on one rack lose power at once. What does the method say to look for?",
+    "explanation": "When several problems appear together, check for something they share, such as one PDU or circuit, before treating each alone.",
+    "options": [
+      "A software bug",
+      "The newest server",
+      "Three separate causes",
+      "A common element"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-002",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Encryption paradigms",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Admins log in to a web management page over the network. What keeps the session private?",
+    "explanation": "TLS (HTTPS) encrypts data while it moves between the browser and the server, which is encryption in transit.",
+    "options": [
+      "Encryption in transit",
+      "Deduplication of the session",
+      "Encryption at rest",
+      "BIOS password"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-003",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Causes of OS problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new application installs but will not run, saying a required library is missing. What is this?",
+    "explanation": "Software that needs another package or library fails until that dependency is installed, often through the package manager.",
+    "options": [
+      "Missing dependency",
+      "Clock skew on the host",
+      "Memory leak in the app",
+      "Zombie process left by the installer"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-004",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Backup methods",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which backup type resets the archive bit and copies only what changed since the last backup of any kind?",
+    "explanation": "An incremental copies files changed since the most recent backup and clears their archive bit. A differential leaves the bit set.",
+    "options": [
+      "Full",
+      "Differential",
+      "Incremental",
+      "Snapshot"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-005",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "Installations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is a slipstreamed install image?",
+    "explanation": "Slipstreaming folds patches, drivers and service packs into the installation source, so new servers start out current.",
+    "options": [
+      "Media with updates built in",
+      "Image copied from a running VM",
+      "Network boot with no local disk",
+      "Install that skips activation"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-006",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Server roles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new SQL server will run many small random reads and writes. Which resource matters most to plan for?",
+    "explanation": "Database servers are usually limited by storage operations per second, plus memory for caching.",
+    "options": [
+      "Optical drive speed",
+      "Disk IOPS",
+      "Serial port count",
+      "Display resolution"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-007",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Clustering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After failover, the original node is repaired. What is moving the service back to it called?",
+    "explanation": "Failback returns the workload to its preferred node once that node is healthy again, often at a planned time.",
+    "options": [
+      "Heartbeat",
+      "Failover",
+      "Failback",
+      "Fencing"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-008",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spHardware",
+    "skill": "Racking",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "How tall is one rack unit (1U)?",
+    "explanation": "One rack unit is 1.75 inches (44.45 mm). Nineteen inches is the standard mounting width, not a height.",
+    "options": [
+      "1.5 inches",
+      "1.75 inches",
+      "2.25 inches",
+      "19 inches"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "SERVERPLUS-T2-009",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spStorage",
+    "skill": "RAID levels",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Five 2400 GB drives form a RAID 5 array. How many GB are usable? Type the number only.",
+    "explanation": "RAID 5 uses one drive's worth of space for parity, so 4 of the 5 drives hold data: 4 x 2400 GB = 9600 GB.",
+    "numeric": {
+      "answers": [
+        "9600"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "SERVERPLUS-T2-010",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Troubleshooting methodology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "After the fix is confirmed, what should be done last?",
+    "explanation": "Documenting the cause, actions and outcome closes the process and helps the next person who sees the problem.",
+    "options": [
+      "Document the outcome",
+      "Reboot every server",
+      "Delete the event logs",
+      "Restore the old settings"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-011",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Data storage",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why keep a copy of backups at a separate location?",
+    "explanation": "Off-site copies survive a fire, flood or theft that destroys the primary site and every copy stored there.",
+    "options": [
+      "Regulators ban on-site backups",
+      "Backups restore faster from far away",
+      "It removes the need for encryption",
+      "One disaster cannot destroy every copy"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-012",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Causes of OS problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A batch job pins one CPU core at 100% while other cores sit idle. Which setting should be reviewed?",
+    "explanation": "CPU affinity ties a process to chosen cores. A process locked to one core cannot use the others.",
+    "options": [
+      "Disk quota on the volume",
+      "DHCP lease time",
+      "Swap file location",
+      "CPU affinity"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-013",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Backup methods",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A database must be backed up while it stays online and in use. What is needed?",
+    "explanation": "Open file agents or snapshots capture a consistent copy of files that are in use, so the service need not stop.",
+    "options": [
+      "Media rotation scheme",
+      "Cold backup taken at night",
+      "Open file or snapshot backup",
+      "Archive bit reset"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-014",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "Media installation type",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A rack of new servers has no optical drives or USB media. How can they install an OS?",
+    "explanation": "Pre-boot execution environment (PXE) lets the NIC fetch a boot image from a deployment server over the network.",
+    "options": [
+      "Load it from the UPS",
+      "Copy the OS to the CMOS",
+      "Boot from the BMC firmware",
+      "PXE boot from the network"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-015",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Storage management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where should a busy server's page file go when a fast spare disk is free?",
+    "explanation": "Paging is disk-heavy, so putting it on a fast local disk apart from busy data keeps it from slowing other I/O.",
+    "options": [
+      "On a USB flash drive",
+      "On a mapped network share",
+      "On the slowest disk",
+      "On the fast spare disk"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-016",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Clustering",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What sets an active-active cluster apart from active-passive?",
+    "explanation": "In active-active every node serves clients, so capacity is used fully, but each node must have headroom to absorb a failed partner's load.",
+    "options": [
+      "Nodes share one power supply",
+      "All nodes carry load at once",
+      "It needs no shared storage at all",
+      "Only one node holds the data"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-017",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spHardware",
+    "skill": "Rack layout",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before a technician installs heavy servers on a raised floor, what should be checked?",
+    "explanation": "A full rack can weigh well over half a ton. The raised floor's load limit must cover it before installation starts.",
+    "options": [
+      "Rack paint finish",
+      "Floor load rating",
+      "Number of patch ports",
+      "Server warranty dates"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-018",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spStorage",
+    "skill": "RAID levels",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the fewest drives a RAID 5 array can be built with?",
+    "explanation": "RAID 5 needs at least three drives: data on two and parity spread so it can rebuild one. RAID 6 and RAID 10 need four.",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "SERVERPLUS-T2-019",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Troubleshooting methodology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why notify affected users before carrying out a planned fix?",
+    "explanation": "The plan of action step includes telling the people affected, since the repair may need downtime.",
+    "options": [
+      "It speeds up the fix itself",
+      "Users must approve all changes",
+      "The fix may interrupt service",
+      "It replaces the change request"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-020",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Physical access controls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which lock type grants entry by scanning a badge without contact?",
+    "explanation": "RFID badges are read by radio when held near the reader. Biometric locks read a body trait such as a fingerprint.",
+    "options": [
+      "RFID reader",
+      "Biometric scanner",
+      "Key cylinder",
+      "Cipher keypad"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-021",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Causes of OS problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server cannot write to its system logs. What is a common cause?",
+    "explanation": "Logging stops when the log disk or partition runs out of space, or when the log files' permissions are wrong.",
+    "options": [
+      "NTP is in sync",
+      "The NIC is teamed",
+      "The CPU is mostly idle",
+      "The log volume is full"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-022",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Backup types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which backup captures a Windows server's registry, boot files and Active Directory data?",
+    "explanation": "A system-state backup covers the OS configuration needed to rebuild the server. A file-level backup copies chosen files and folders.",
+    "options": [
+      "Archive backup",
+      "Differential backup",
+      "File-level backup",
+      "System state backup"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-023",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Memory errors and failures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server's management log shows a rising count of corrected memory errors on one DIMM. What is best?",
+    "explanation": "Corrected ECC errors are a predictive failure warning. Replacing the module in a window avoids an uncorrectable error and a crash.",
+    "options": [
+      "Ignore it, since ECC fixed them",
+      "Lower the CPU speed",
+      "Remove ECC from the BIOS",
+      "Plan to replace that DIMM"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-024",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "Imaging",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Many new virtual machines must be built from one approved, hardened base. What fits best?",
+    "explanation": "A template is a master image kept for deployment. Cloning a live production VM copies its identity and data, which then has to be scrubbed.",
+    "options": [
+      "Restore last night's full server backup",
+      "Clone a running production VM",
+      "Install each one by hand",
+      "Deploy them from a VM template"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-025",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Monitoring",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Memory alerts fire every night during a backup that runs fine. What is the best fix?",
+    "explanation": "Alerts that fire on known, harmless load teach people to ignore them. Adjusting the threshold or the alert window keeps real alerts meaningful.",
+    "options": [
+      "Replace the memory modules",
+      "Tune the alert threshold",
+      "Turn monitoring off for good",
+      "Add a second nightly backup"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-026",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Fault tolerance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which gives server-level redundancy rather than component redundancy?",
+    "explanation": "Component redundancy protects against one part failing inside a server. A second clustered server survives the loss of the whole box.",
+    "options": [
+      "A RAID 1 boot volume",
+      "A second server in a cluster",
+      "Dual power supplies",
+      "A teamed pair of NICs"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-027",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Architectural reinforcements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A data center building is left unmarked, with no company name on it. What is this practice?",
+    "explanation": "Keeping a data center plain and unlabeled makes it a less obvious target. The objectives call it datacenter camouflage.",
+    "options": [
+      "Perimeter fencing with cameras",
+      "Datacenter camouflage",
+      "Signal blocking",
+      "Reflective glass"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-028",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "OS and software tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tools push the same configuration to hundreds of Linux servers from code?",
+    "explanation": "Configuration management tools apply a declared state to many servers and correct drift. GPO does the same job for Windows domain members.",
+    "options": [
+      "Robocopy or xcopy",
+      "Puppet, Chef or Ansible",
+      "SNMP traps and syslog",
+      "ping or tracert"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-029",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spHardware",
+    "skill": "Redundant power",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why would a data center buy utility power from two separate providers?",
+    "explanation": "Two providers remove a single point of failure upstream of the building. A UPS bridges the gap only until generators or the other feed take over.",
+    "options": [
+      "It lowers the cost per kilowatt",
+      "One grid outage cannot cut all power",
+      "Each rack needs its own utility meter",
+      "Servers draw less current"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-030",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spStorage",
+    "skill": "RAID levels",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does RAID 10 lay data out across its drives?",
+    "explanation": "RAID 10 mirrors drives in pairs, then stripes across the pairs. It gives half the raw capacity and fast rebuilds.",
+    "options": [
+      "Striping across mirrored pairs",
+      "Single parity spread over drives",
+      "Concatenating drives end to end",
+      "Double parity across all drives"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-031",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Memory errors and failures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Linux server halts with a kernel panic right after new memory was added. What should be checked first?",
+    "explanation": "A new change is the first suspect. Incompatible or badly seated memory often causes panics, lockups and POST errors.",
+    "options": [
+      "The hosts file",
+      "The DNS server",
+      "The new modules",
+      "The license count"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-032",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Backup media types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which backup media is cheapest per terabyte for long-term archive and is kept offline?",
+    "explanation": "Tape cartridges store large amounts cheaply and sit offline on a shelf, which also protects them from ransomware.",
+    "options": [
+      "NVMe drive",
+      "Tape",
+      "Hybrid disk",
+      "SSD"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-033",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Environmental controls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which sensor gives the earliest warning that HVAC has failed in a server room?",
+    "explanation": "Temperature rises soon after cooling stops, well before smoke or a shutdown. Humidity sensors are also common.",
+    "options": [
+      "Temperature sensor",
+      "Door contact sensor",
+      "Smoke detector in the ceiling",
+      "Motion sensor in the aisle"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-034",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Clocks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which protocol keeps server clocks in step with a reliable time source?",
+    "explanation": "Network Time Protocol syncs clocks over UDP port 123, which keeps logs, certificates and Kerberos working.",
+    "options": [
+      "NTP",
+      "SNMP",
+      "DHCP",
+      "LDAP"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-035",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "Partition types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How many primary partitions can an MBR disk hold?",
+    "explanation": "MBR has room for four primary entries; more need an extended partition. GPT holds 128 entries by default on Windows.",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "128"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "SERVERPLUS-T2-036",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Event logs",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Logs fill the system disk every few weeks. Which setting addresses this?",
+    "explanation": "Rotation closes and archives old logs, and retention deletes those past the required age, so the disk does not fill.",
+    "options": [
+      "Faster CPU cores",
+      "Disabling NTP time sync on the host",
+      "Higher alert thresholds",
+      "Log rotation and retention"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-037",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Virtualization",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which hypervisor type runs directly on the server hardware with no host OS underneath?",
+    "explanation": "Type 1 (bare-metal) hypervisors such as ESXi and Hyper-V Server run on the hardware. Type 2 runs as an app on a host OS.",
+    "options": [
+      "Type 1",
+      "Container engine",
+      "Emulator",
+      "Type 2"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-038",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Fault and device indication",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician smells something burning near a server. What should be done first?",
+    "explanation": "A burning smell can mean a failing power supply or part. Shutting it down safely protects people and hardware before diagnosis.",
+    "options": [
+      "Power it down safely",
+      "Open a support ticket",
+      "Run a disk check",
+      "Update the firmware"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-039",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spHardware",
+    "skill": "Uninterruptible power supply",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the main job of a UPS during a short power cut?",
+    "explanation": "A UPS supplies battery power so servers ride through a brief outage or shut down cleanly, and it conditions the power while the utility is up.",
+    "options": [
+      "Filter traffic on the network",
+      "Restart every server after the cut",
+      "Balance load across PDUs",
+      "Keep servers running on battery"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-040",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spStorage",
+    "skill": "RAID levels",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which setup joins disks end to end with no striping and no redundancy?",
+    "explanation": "Just a bunch of disks (spanned) fills one disk before the next. It adds capacity, not speed or protection.",
+    "options": [
+      "RAID 10",
+      "JBOD",
+      "RAID 1",
+      "RAID 6"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-041",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Media inventory",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before a large restore starts, what should be checked?",
+    "explanation": "A media inventory confirms every tape or set the restore chain needs is present and readable.",
+    "options": [
+      "Host firewall is fully disabled",
+      "Server is unlicensed",
+      "All needed media is on hand",
+      "Logging is turned off"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-042",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Password policies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which password policy setting stops users from cycling back to a recent password?",
+    "explanation": "Password history remembers a set number of previous passwords and refuses them, so a reset cannot just reuse the old one.",
+    "options": [
+      "Password history",
+      "Account lockout",
+      "Minimum length",
+      "Complexity rules"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-043",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Network causes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server has an address but cannot reach any remote subnet. The route table shows no default route. What is the fix?",
+    "explanation": "Without a default route, packets for other networks have nowhere to go. Setting the gateway (or adding the route) restores them.",
+    "options": [
+      "Change the MAC address",
+      "Flush the DNS cache",
+      "Renew the SSL certificate",
+      "Add the default gateway"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-044",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "File system types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Windows Server file system was built for resilience on large volumes and Storage Spaces?",
+    "explanation": "Resilient File System adds checksums and integrity streams and is aimed at large data volumes. NTFS is still used for boot volumes.",
+    "options": [
+      "ext4",
+      "FAT32",
+      "exFAT",
+      "ReFS"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-045",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Administrative interfaces",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which remote admin interface sends passwords in clear text and should be replaced?",
+    "explanation": "Telnet sends the whole session, password included, unencrypted. SSH is its encrypted replacement.",
+    "options": [
+      "RDP with TLS",
+      "Telnet",
+      "HTTPS web console",
+      "SSH"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-046",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Virtual networking",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Several VMs on one host must talk to each other and to the uplink. What connects their vNICs?",
+    "explanation": "A virtual switch in the hypervisor links the VMs' virtual NICs to each other and to the host's physical NICs.",
+    "options": [
+      "Virtual switch",
+      "Physical KVM",
+      "Patch panel",
+      "Crash cart"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-047",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Causes of common problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Several drives in one enclosure drop offline together while each tests fine elsewhere. What is likely failing?",
+    "explanation": "When many drives fail at once but test fine alone, the shared backplane, cabling or controller is the common part.",
+    "options": [
+      "One of the drives",
+      "Backplane",
+      "The UPS battery",
+      "The OS kernel"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-048",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Auditing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which audit finding most needs follow-up on a file server?",
+    "explanation": "Changes to privileged group membership can signal an attack or a policy breach, so they are a key audit item.",
+    "options": [
+      "Scheduled backup job finishing",
+      "Account added to Domain Admins",
+      "User opening a shared file",
+      "Print job completing on the default printer"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-049",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Network causes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server got a DHCP address in the wrong subnet with the wrong gateway. What is the likely cause?",
+    "explanation": "Wrong DHCP settings usually come from a second, unauthorized DHCP server on the segment, or from a misconfigured scope.",
+    "options": [
+      "Rogue DHCP server",
+      "Bad CMOS battery on the board",
+      "Failed RAID controller",
+      "Full system log"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-050",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Site types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which site type is a fully redundant copy of the primary, kept current in real time?",
+    "explanation": "NIST SP 800-34 describes a mirrored site as identical to the primary with real-time mirroring. It is the most expensive and the fastest to take over.",
+    "options": [
+      "Warm site",
+      "Mirrored site",
+      "Mobile site",
+      "Cold site"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-051",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spHardware",
+    "skill": "Network cabling",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which fiber connector is the larger, square, push-pull type?",
+    "explanation": "SC is the square push-pull fiber connector. LC is the smaller latching connector used on most SFP optics.",
+    "options": [
+      "RJ45",
+      "SC",
+      "BNC",
+      "LC"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-052",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spStorage",
+    "skill": "Capacity planning",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A file server uses 6 TB today and grows 1 TB a year. What should capacity planning size it for?",
+    "explanation": "Capacity planning projects use over the server's expected life and adds headroom, so storage is not exhausted early.",
+    "options": [
+      "Exactly today's 6 TB",
+      "The largest drive on the market",
+      "Last year's usage only",
+      "Projected growth over its service life"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-053",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Tools and techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Dust has built up on a server's heat sinks. How should it be cleaned?",
+    "explanation": "With the server powered off, compressed air blows dust out of heat sinks and fans without static or moisture.",
+    "options": [
+      "Damp cloth, powered on",
+      "Vacuum, while it runs",
+      "Leave it until a fan fails",
+      "Compressed air, powered off"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-054",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "File system types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which file system combines volume management with checksums and copy-on-write snapshots?",
+    "explanation": "ZFS manages its own storage pools and checksums every block, which lets it detect and repair silent corruption.",
+    "options": [
+      "ext3",
+      "FAT32",
+      "NTFS",
+      "ZFS"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-055",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Asset management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A batch of leased servers reaches the end of its lease. What usually happens?",
+    "explanation": "Leased devices belong to the lessor and are returned at the end of the term, after the data on them is sanitized.",
+    "options": [
+      "They are shredded on site",
+      "They go back to the lessor",
+      "Ownership passes automatically",
+      "They move to a cold site"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-056",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Management interfaces for virtual machines",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A VM's guest OS lost its network settings, so SSH and RDP to it fail. How can an admin still reach its screen?",
+    "explanation": "The hypervisor's management interface opens the VM's console directly, without the guest's network. A crash cart shows the host's own screen, not the guest's.",
+    "options": [
+      "Telnet to the VM's old address",
+      "The host's UPS web page",
+      "A crash cart wheeled to the host",
+      "The VM console in the hypervisor's management tool"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-057",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Single sign-on",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does single sign-on give users?",
+    "explanation": "With SSO one authentication is trusted by many applications, so users do not sign in to each separately.",
+    "options": [
+      "A new password each day",
+      "A token for each server",
+      "Access with no login at all",
+      "One login for many systems"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-058",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Network tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A web server's port must be checked from a client without a browser. Which test fits?",
+    "explanation": "A telnet or netcat connection to the port shows whether the service is listening and reachable through firewalls.",
+    "options": [
+      "Ping the default gateway",
+      "Read the hosts file",
+      "Run ipconfig on the client",
+      "telnet or nc to the port"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-059",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Replication",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Two data centers are 900 km apart. Which replication is usually chosen?",
+    "explanation": "At long distance, waiting for each remote write would slow every transaction, so data is sent shortly after it is committed locally.",
+    "options": [
+      "Nightly tape shipping",
+      "Local RAID mirroring",
+      "Synchronous",
+      "Asynchronous"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-060",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Storage problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A replacement drive is a different size and speed than the rest of the array. What problem can follow?",
+    "explanation": "Mixing sizes or speeds can waste capacity or slow the array, and some controllers refuse the drive.",
+    "options": [
+      "The NIC loses its link",
+      "Lost capacity or speed",
+      "Backups stop running",
+      "The OS cannot boot"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-061",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spHardware",
+    "skill": "Server components",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before buying a new RAID controller for a server, what should be checked first?",
+    "explanation": "The HCL lists parts the server and OS vendors have tested and support. An unlisted card may lack drivers or firmware support.",
+    "options": [
+      "Number of local user accounts",
+      "Backup rotation schedule",
+      "Current CPU temperature reading",
+      "Hardware compatibility list"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-062",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spStorage",
+    "skill": "Shared storage",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which protocol carries Fibre Channel frames directly over Ethernet instead of over IP?",
+    "explanation": "Fibre Channel over Ethernet puts FC frames on a lossless Ethernet network. iSCSI instead wraps SCSI commands in TCP/IP.",
+    "options": [
+      "NFS",
+      "CIFS",
+      "iSCSI",
+      "FCoE"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-063",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Security risks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An attacker calls the help desk posing as a manager and asks for a password reset. What is this?",
+    "explanation": "Social engineering tricks people rather than systems. Verifying the caller's identity is the defense.",
+    "options": [
+      "Backdoor in the app",
+      "Data corruption",
+      "Social engineering",
+      "Buffer overrun in the app"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-064",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Network tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command lists a server's active connections and listening ports?",
+    "explanation": "netstat shows open connections and listening sockets. nbtstat shows NetBIOS names, dig queries DNS and route edits the routing table.",
+    "options": [
+      "$\\texttt{nbtstat}$",
+      "$\\texttt{dig}$",
+      "$\\texttt{route}$",
+      "$\\texttt{netstat}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-065",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "VLAN",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server's NIC plugs into a switch port that carries several VLANs. What must the server do to use one of them?",
+    "explanation": "A trunk port carries tagged frames (802.1Q). The server's NIC or virtual switch must tag frames with the right VLAN ID.",
+    "options": [
+      "Tag frames with that VLAN ID",
+      "Change its MAC address to match",
+      "Disable its default gateway",
+      "Use a static ARP entry for the switch"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-066",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Documentation management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A hosting contract promises 99.95% uptime and credits if it is missed. What is this document?",
+    "explanation": "An SLA states the service level a provider commits to and what happens when it is not met.",
+    "options": [
+      "Business impact analysis",
+      "Network architecture diagram",
+      "Service level agreement",
+      "Change request form for the host"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-067",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Comment syntax",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which line is a comment in a Bash or PowerShell script?",
+    "explanation": "Both Bash and PowerShell treat text after # as a comment. REM is the batch-file comment, // is C-style and -- is SQL.",
+    "options": [
+      "$\\texttt{-- check free disk space}$",
+      "$\\texttt{REM check free disk space}$",
+      "$\\texttt{// check free disk space}$",
+      "$\\texttt{\\# check free disk space}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-068",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Storage problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A SAN volume disappears from one server while others still see it. What is most likely?",
+    "explanation": "If other hosts still reach the volume, the fault is on the path to this one server, such as its host bus adapter or cable.",
+    "options": [
+      "The SAN's power supply",
+      "A failed disk in the SAN",
+      "A DNS outage in the site",
+      "That server's HBA or cable"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-069",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which DR test really moves production work to the DR site and runs it there?",
+    "explanation": "A live failover shifts the real workload to the DR site, the fullest and riskiest test. A simulated failover rehearses the steps without moving production, and a tabletop is only a discussion.",
+    "options": [
+      "Simulated failover",
+      "Live failover",
+      "Plan document review",
+      "Tabletop exercise"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-070",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Mitigation strategies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A master encryption key is split so that two admins must each supply their part. What is this control?",
+    "explanation": "Split keys and two-person integrity mean no single insider can use the key alone.",
+    "options": [
+      "Least functionality setting",
+      "Single sign-on for the vault",
+      "Two-person integrity",
+      "Account lockout threshold"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-071",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Security problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A process with a random name keeps restarting and opening outbound connections. What is this?",
+    "explanation": "An unknown process that persists and calls out is a sign of malware. It should be isolated and investigated.",
+    "options": [
+      "An orphan service",
+      "A normal update agent",
+      "A rogue process",
+      "A DHCP renewal"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-072",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Storage problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Backups fail with a disk full error on the backup target. What is the cause category?",
+    "explanation": "The target has run out of space, so retention or capacity must be fixed before backups will succeed.",
+    "options": [
+      "Cache battery failure",
+      "Insufficient space",
+      "Loose drive connector",
+      "Corrupt boot sector"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-073",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spHardware",
+    "skill": "Local hardware administration",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server in the data center has no network access and no monitor. What does a technician wheel over to work on it?",
+    "explanation": "A crash cart carries a monitor, keyboard and mouse to plug straight into a server that cannot be reached over the network.",
+    "options": [
+      "Serial bus hub",
+      "Crash cart",
+      "Remote console",
+      "IP KVM switch"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-074",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spStorage",
+    "skill": "Shared storage",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Linux servers need to mount a shared folder from a NAS. Which protocol fits best?",
+    "explanation": "NFS is the file-sharing protocol native to Linux and UNIX. Windows clients usually use SMB, which the objectives call CIFS.",
+    "options": [
+      "FCoE",
+      "NFS",
+      "iSCSI",
+      "SAS"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-075",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "Addressing protocols",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server shows the address 169.254.30.7. What does this most likely mean?",
+    "explanation": "Hosts assign themselves a 169.254.0.0/16 link-local (APIPA) address when no DHCP server replies.",
+    "options": [
+      "DNS is pointing to the wrong host",
+      "Its gateway is set to the router",
+      "It got no answer from DHCP",
+      "It has a static public address"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-076",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Licensing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An annual audit finds more installs than licenses bought. What is the usual way to settle it?",
+    "explanation": "A true-up buys the extra licenses found in use, so the count matches what is deployed.",
+    "options": [
+      "A volume key reset",
+      "A true-up purchase",
+      "A license downgrade",
+      "A node lock on each host"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-077",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Basic data types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A script stores the names web01, web02 and web03 together under one variable. What data type is that?",
+    "explanation": "An array holds an ordered list of values under one name, so a loop can step through it.",
+    "options": [
+      "Array",
+      "Integer",
+      "Float",
+      "Boolean"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-078",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Recovery point objective",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Backups run every 6 hours and nothing is replicated between them. What is the worst-case data loss in hours? Type the number only.",
+    "explanation": "If the server fails just before the next backup, everything since the last one is lost: up to 6 hours. That gap must fit inside the RPO.",
+    "numeric": {
+      "answers": [
+        "6"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "SERVERPLUS-T2-079",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Host security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool watches a server's own activity and can block a suspicious change as it happens?",
+    "explanation": "A host intrusion prevention system can stop the action. A host intrusion detection system only detects and alerts.",
+    "options": [
+      "Network sniffer",
+      "HIPS",
+      "Port scanner",
+      "HIDS"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-080",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Security problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A contractor's account can still read finance shares months after the project ended. What is the problem?",
+    "explanation": "Rights left in place after they are needed give excessive access. Regular access reviews remove them.",
+    "options": [
+      "A buffer overrun",
+      "Port security",
+      "Clock skew",
+      "Excessive access"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-081",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Causes of common problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server reboots at random under heavy load, and its log shows input voltage dips on one supply. What is the likely cause?",
+    "explanation": "Random reboots under load with voltage warnings point to a failing power supply, which cannot hold its output when demand peaks.",
+    "options": [
+      "Power supply fault",
+      "Clock skew on the host",
+      "Expired domain trust",
+      "Corrupt file system table"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-082",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spHardware",
+    "skill": "Local and remote administration",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Does each tool need the server's network connection to work?",
+    "explanation": "An IP KVM and remote desktop reach the server over the network. A crash cart and a serial console cable plug straight into the server.",
+    "rows": [
+      "IP KVM over the LAN",
+      "Crash cart",
+      "Serial console cable",
+      "Remote desktop"
+    ],
+    "columns": [
+      "Needs network",
+      "Works without it"
+    ],
+    "correct": [
+      0,
+      1,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-083",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spStorage",
+    "skill": "Shared storage",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Is each protocol file-level (NAS) or block-level (SAN) storage?",
+    "explanation": "NFS and CIFS share files. Fibre Channel and Fibre Channel over Ethernet carry block storage.",
+    "rows": [
+      "NFS",
+      "Fibre Channel",
+      "CIFS",
+      "FCoE"
+    ],
+    "columns": [
+      "File-level",
+      "Block-level"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-084",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "Firewall ports",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Which TCP port must a host firewall open for each service?",
+    "explanation": "SSH listens on 22, HTTPS on 443, LDAP over TLS on 636 and Remote Desktop on 3389 (IANA registry).",
+    "rows": [
+      "SSH",
+      "RDP",
+      "HTTPS",
+      "LDAPS"
+    ],
+    "columns": [
+      "3389",
+      "443",
+      "22",
+      "636"
+    ],
+    "correct": [
+      2,
+      0,
+      1,
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-085",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Licensing",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Which licensing model describes each case?",
+    "explanation": "Node-locked binds a license to one host, concurrent-user licenses count simultaneous sessions, a site license covers a location, and a subscription is paid each term.",
+    "rows": [
+      "Tied to one machine's hardware ID",
+      "Counts users connected at once",
+      "Covers every device at one location",
+      "Paid yearly for as long as it is used"
+    ],
+    "columns": [
+      "Site-based",
+      "Node-locked",
+      "Subscription",
+      "Per concurrent user"
+    ],
+    "correct": [
+      1,
+      3,
+      0,
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-086",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Environment variables",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why would a startup script read an environment variable instead of a typed path?",
+    "explanation": "Environment variables such as the system root or home folder hold the right value on each machine, so one script works everywhere.",
+    "options": [
+      "It hides the script code",
+      "It adapts to each system",
+      "It runs with admin rights",
+      "It skips the interactive login step"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-087",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Electronics recycling",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A decommissioned server still has years of useful life. Which option keeps it in use?",
+    "explanation": "Repurposing reuses a sanitized server for another job, such as a lab, before it is finally recycled.",
+    "options": [
+      "Degauss the chassis",
+      "Incinerate it on site",
+      "Repurpose it internally",
+      "Leave it powered in the rack"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-088",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Hardware hardening",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two steps harden a server's hardware? (Choose two.)",
+    "explanation": "Turning off unused ports and fixing the boot order stop someone from plugging in or booting their own media.",
+    "options": [
+      "Remove the firmware password",
+      "Allow booting from any media",
+      "Set the boot order to the local disk",
+      "Disable unused USB ports",
+      "Enable every onboard device"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "SERVERPLUS-T2-089",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Security tools",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Which tool answers each question?",
+    "explanation": "A sniffer captures traffic, a port scanner lists listening ports, and comparing checksums shows whether a file changed.",
+    "rows": [
+      "What traffic crosses this link?",
+      "Which ports are open on this host?",
+      "Has this file been altered?"
+    ],
+    "columns": [
+      "Checksum",
+      "Port scanner",
+      "Sniffer"
+    ],
+    "correct": [
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-T2-090",
+    "section": "serverplus",
+    "test": 2,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Storage problems",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Which tool is used for each task?",
+    "explanation": "mount attaches file systems on Linux, the controller's RAID utility manages arrays, and net use maps shares on Windows.",
+    "rows": [
+      "Mount an NFS export on Linux",
+      "Rebuild a degraded array",
+      "Map a share to a drive letter on Windows"
+    ],
+    "columns": [
+      "RAID management utility",
+      "$\\texttt{mount}$",
+      "$\\texttt{net use}$"
+    ],
+    "correct": [
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-D-001",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spHardware",
+    "skill": "Firmware upgrades",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A vendor releases new firmware for a server's drive controller. What should happen before it goes on production servers?",
+    "explanation": "Firmware can change controller behavior, so it is tested on a lab or staging server and rolled out under change management.",
+    "options": [
+      "Apply it at once to every server",
+      "Test it on a matching lab server",
+      "Roll every controller back to factory firmware",
+      "Wait until a drive fails"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-D-002",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spStorage",
+    "skill": "RAID levels",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Eight 1200 GB drives are set up as RAID 10. How many GB are usable? Type the number only.",
+    "explanation": "RAID 10 mirrors every drive, so half the raw space is usable: 8 x 1200 GB = 9600 GB raw, 4800 GB usable.",
+    "numeric": {
+      "answers": [
+        "4800"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "SERVERPLUS-D-003",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "Installations",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "A new bare-metal server will get its OS from a USB stick. In what order are the steps done?",
+    "explanation": "Confirm the hardware is supported, boot the install media, install the OS with any extra drivers, then patch it before it goes into service.",
+    "options": [
+      "Check the OS is on the server's HCL",
+      "Set the firmware to boot from USB",
+      "Run the installer and load drivers",
+      "Apply the latest patches"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-D-004",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Licensing",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A per-core license is needed for every core. The server has 2 CPUs with 12 cores each. How many core licenses are needed? Type the number only.",
+    "explanation": "Two processors of 12 cores make 24 physical cores, and each core needs a license.",
+    "numeric": {
+      "answers": [
+        "24"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "SERVERPLUS-D-005",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Comparators",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A PowerShell script contains this test:\n\n$$\\begin{array}{l}\\texttt{if (\\$free -lt 10) \\{ Write-Output \"Low disk\" \\}}\\end{array}$$\n\nWhen does the message print?",
+    "explanation": "-lt means less than, so the block runs only when the variable holds a value below 10. Equal to is -eq and greater than is -gt.",
+    "options": [
+      "When free is over 10",
+      "When free equals exactly 10",
+      "When free is under 10",
+      "Never, the syntax is wrong"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-D-006",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Regulatory constraints",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Under PCI DSS, how must card numbers stored on a server be kept?",
+    "explanation": "PCI DSS requires stored primary account numbers to be rendered unreadable, for example by strong encryption, truncation or hashing.",
+    "options": [
+      "In plain text for the auditors",
+      "Only in the server's event log",
+      "On the same disk as the OS",
+      "Unreadable, for example encrypted"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-D-007",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Proper removal procedures",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "In what order is a server decommissioned?",
+    "explanation": "Confirm it is unused, get the change approved, preserve then sanitize its data, then update the asset records and send it for recycling.",
+    "options": [
+      "Verify nothing depends on it",
+      "Approve the change request",
+      "Back up and sanitize the data",
+      "Update asset records and recycle"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-D-008",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Troubleshooting methodology",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When should a technician escalate a server problem?",
+    "explanation": "The method allows escalation when the problem is outside the technician's scope, rights or knowledge.",
+    "options": [
+      "Never, if a theory exists",
+      "When it is beyond their scope",
+      "Only after replacing every part",
+      "Before identifying the problem"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-D-009",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Network tools",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Linux admin runs this command:\n\n$$\\begin{array}{l}\\texttt{dig mail.example.com}\\end{array}$$\n\nWhat is being tested?",
+    "explanation": "dig queries DNS and shows the records returned, which helps find name resolution problems.",
+    "options": [
+      "Link speed of the NIC",
+      "Route to the host",
+      "DNS lookup of the name",
+      "Open ports on the host"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "SERVERPLUS-D-010",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spHardware",
+    "skill": "Rack layout",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where is a shared rack KVM switch with a fold-out console usually mounted?",
+    "explanation": "A rack console sits at a comfortable working height, roughly mid-rack, so admins can use it standing.",
+    "options": [
+      "At the very bottom",
+      "Outside the rack on a shelf",
+      "At the very top of the rack",
+      "Mid-rack, at working height"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-D-011",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spStorage",
+    "skill": "Drive media types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which drive pairs a spinning platter with a small flash cache in one unit?",
+    "explanation": "A solid state hybrid drive keeps often-read blocks in flash and the rest on the platters.",
+    "options": [
+      "Write-intensive SSD",
+      "NVMe drive with RAM cache",
+      "15,000 RPM SAS drive",
+      "Hybrid drive"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-D-012",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "Name resolution",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is a fully qualified domain name?",
+    "explanation": "An FQDN gives the host name with its full domain path to the root. A bare host name, an IP address or a NetBIOS-style name is not one.",
+    "options": [
+      "10.20.30.40",
+      "db01",
+      "corp\\db01",
+      "db01.corp.example.com"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "SERVERPLUS-D-013",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Documentation management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which document should be checked first when restoring a failed application server?",
+    "explanation": "Documented recovery processes give the tested steps and order to bring the service back.",
+    "options": [
+      "Server warranty card",
+      "Recovery process",
+      "Original purchase order",
+      "Building floor plan"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-D-014",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Resource allocation",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "A host has 32 physical cores. The team allows 3 vCPUs per physical core. How many vCPUs can be assigned in total? Type the number only.",
+    "explanation": "A 3 to 1 vCPU ratio on 32 cores gives 32 x 3 = 96 vCPUs that can be handed out to VMs.",
+    "numeric": {
+      "answers": [
+        "96"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "SERVERPLUS-D-015",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Legal considerations",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company receives a subpoena for email records. What must happen to the matching data?",
+    "explanation": "Legal holds override normal retention so data named in a subpoena or case is preserved.",
+    "options": [
+      "It is kept despite normal deletion",
+      "It is encrypted and destroyed",
+      "It is deleted on the usual schedule",
+      "It is moved to a public share"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-D-016",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Replication",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Which replication type fits each description?",
+    "explanation": "Synchronous replication waits for the remote write, asynchronous sends it after the local commit, and bidirectional replication copies changes both ways.",
+    "rows": [
+      "Write confirmed only once the remote copy has it",
+      "Write confirmed locally, sent on shortly after",
+      "Both sites accept changes and copy them to each other"
+    ],
+    "columns": [
+      "Synchronous",
+      "Bidirectional",
+      "Asynchronous"
+    ],
+    "correct": [
+      0,
+      2,
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-D-017",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Causes of common problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new firmware update makes a server's network card fail to load. What should be tried?",
+    "explanation": "Firmware incompatibility is a known cause. Downgrading to the last working version often restores the device.",
+    "options": [
+      "Add more RAM to the host",
+      "Roll back the firmware",
+      "Change the RAID level used",
+      "Replace the CPU in socket one"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-D-018",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Security problems",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Users cannot open files on a share after a new data loss prevention rule went live. What should be checked?",
+    "explanation": "An overly broad DLP rule can block legitimate access, so its scope and matches should be reviewed.",
+    "options": [
+      "The DLP rule's scope",
+      "The RAID cache battery",
+      "The CMOS battery on the board",
+      "The NTP server settings"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-D-019",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spHardware",
+    "skill": "Server components",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "A team wants a server to run AI model training faster. Which two parts help most? (Choose two.)",
+    "explanation": "Training is parallel math that GPUs handle well, and large data sets need memory. The other parts add no compute.",
+    "options": [
+      "Faster tape drive",
+      "GPU",
+      "Second serial port",
+      "Optical drive",
+      "More system RAM"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "SERVERPLUS-D-020",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spStorage",
+    "skill": "RAID levels",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two RAID levels can survive one failed drive? (Choose two.)",
+    "explanation": "Mirroring (RAID 1) and single parity (RAID 5) both rebuild from one lost drive. RAID 0, JBOD and spanning lose data.",
+    "options": [
+      "RAID 1",
+      "RAID 5",
+      "Spanned volume",
+      "RAID 0",
+      "JBOD"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2
+  },
+  {
+    "id": "SERVERPLUS-D-021",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spOsNet",
+    "skill": "Addressing protocols",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two are true of IPv6 addresses on a server? (Choose two.)",
+    "explanation": "IPv6 addresses are 128 bits written in hexadecimal groups, and fe80::/10 is the link-local range. Addresses can also come from SLAAC or static setup.",
+    "options": [
+      "fe80:: marks a link-local address",
+      "Every address must be set by DHCPv6",
+      "They are 64 bits long",
+      "They are 128 bits long",
+      "They are written in dotted decimal"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "SERVERPLUS-D-022",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spAdmin",
+    "skill": "Licensing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which describes a backward-compatible application version?",
+    "explanation": "Backward compatible means newer software still works with files or systems from earlier versions. Forward compatible is the reverse.",
+    "options": [
+      "It only runs on newer hardware",
+      "It reads older versions' data",
+      "It drops support for older file formats",
+      "It needs a new license key"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "SERVERPLUS-D-023",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spHaVirt",
+    "skill": "Script types",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Which script type does each file extension belong to?",
+    "explanation": "PowerShell scripts end in .ps1, Bash scripts usually .sh, batch files .bat (or .cmd) and VBScript files .vbs.",
+    "rows": [
+      ".ps1",
+      ".sh",
+      ".bat",
+      ".vbs"
+    ],
+    "columns": [
+      "VBScript",
+      "PowerShell",
+      "Bash",
+      "Batch file"
+    ],
+    "correct": [
+      1,
+      2,
+      3,
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-D-024",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spSecurity",
+    "skill": "Permissions and access controls",
+    "difficulty": 2,
+    "format": "matrix",
+    "stem": "Which access control approach does each case use?",
+    "explanation": "Role-based grants rights through a job role or group, rule-based applies conditions such as time of day, and scope-based limits rights to a set of objects.",
+    "rows": [
+      "DBA group may manage the SQL servers",
+      "Logons allowed only from 7 a.m. to 7 p.m.",
+      "Admin rights limited to one office's servers"
+    ],
+    "columns": [
+      "Scope-based",
+      "Rule-based",
+      "Role-based"
+    ],
+    "correct": [
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "SERVERPLUS-D-025",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spRecovery",
+    "skill": "Media destruction",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two methods destroy a hard drive physically? (Choose two.)",
+    "explanation": "Shredding and crushing break the platters. Wiping overwrites data and leaves the drive usable, and a format or partition delete leaves data recoverable.",
+    "options": [
+      "Shredding",
+      "Deleting the partition",
+      "Crushing",
+      "Disk wiping",
+      "Quick format"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "SERVERPLUS-D-026",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spTroubleHw",
+    "skill": "Storage problems",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two point to a failing hard drive? (Choose two.)",
+    "explanation": "Bad sectors that keep appearing and mechanical clicking are classic signs of a failing disk.",
+    "options": [
+      "Clicking noise from the drive",
+      "Wrong default gateway",
+      "A full print queue",
+      "Growing count of bad sectors",
+      "High CPU use in one app"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "SERVERPLUS-D-027",
+    "section": "serverplus",
+    "test": 0,
+    "module": 1,
+    "domain": "spTroubleSw",
+    "skill": "Causes of OS problems",
+    "difficulty": 2,
+    "format": "multi",
+    "stem": "Which two can cause a patch update to fail? (Choose two.)",
+    "explanation": "Updates need room to unpack and often require earlier updates first. Static addressing, hyper-threading and NIC teaming do not stop a patch.",
+    "options": [
+      "A missing prerequisite update",
+      "Hyper-threading turned on",
+      "A teamed pair of NICs",
+      "Not enough free disk space",
+      "A static IP address"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "select": 2
+  }
+]

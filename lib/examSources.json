@@ -2117,6 +2117,11 @@
  "series7": [
   "https://www.finra.org/registration-exams-ce/qualification-exams/series7"
  ],
+ "serverplus": [
+  "https://lecbyo.files.cmp.optimizely.com/download/1eba6d54bef111ef9480da43816a42bf",
+  "https://www.comptia.org/en-us/certifications/server/",
+  "https://www.comptia.org/en/blog/help-shape-the-next-comptia-server-certification/"
+ ],
  "servicenowcsa": [
   "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554",
   "https://www.servicenow.com/docs/r/platform-user-interface/using-the-next-experience-global-header.html",

@@ -32,28 +32,28 @@
     "state": "ALL",
     "questionId": "ESCCSE-INS-003",
     "category": "esccseInstituciones",
-    "question": "Según la Constitución, ¿qué forma política tiene el Estado español?",
-    "optionA": "República parlamentaria",
-    "optionB": "Monarquía absoluta",
-    "optionC": "Monarquía parlamentaria",
-    "optionD": "República presidencial",
+    "question": "Según el manual oficial, ¿de qué es símbolo la Corona?",
+    "optionA": "Del poder judicial",
+    "optionB": "De la Unión Europea",
+    "optionC": "De la unidad de España",
+    "optionD": "De la fe católica",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "El artículo 1 dice que la forma política del Estado español es la monarquía parlamentaria: el rey es jefe del Estado y el Gobierno responde ante las Cortes."
+    "explanation": "La Corona es el símbolo de la unidad de España. El rey es el jefe del Estado y modera el funcionamiento de las instituciones."
   },
   {
     "type": "ESCCSE",
     "state": "ALL",
     "questionId": "ESCCSE-INS-004",
     "category": "esccseInstituciones",
-    "question": "¿Cuál de estos es uno de los valores superiores del ordenamiento jurídico español?",
-    "optionA": "La unidad religiosa",
-    "optionB": "La tradición monárquica",
-    "optionC": "El crecimiento económico",
-    "optionD": "El pluralismo político",
+    "question": "¿Cómo define la Constitución a España en relación con su territorio?",
+    "optionA": "Federación de pueblos libres",
+    "optionB": "Unión de antiguos reinos",
+    "optionC": "Suma de estados soberanos",
+    "optionD": "Patria común e indivisible",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "La Constitución propugna como valores superiores la libertad, la justicia, la igualdad y el pluralismo político. No hay religión oficial."
+    "explanation": "España es una patria común e indivisible, y la Constitución reconoce el derecho a la autonomía de sus nacionalidades y regiones y la solidaridad entre ellas."
   },
   {
     "type": "ESCCSE",
@@ -270,14 +270,14 @@
     "state": "ALL",
     "questionId": "ESCCSE-INS-020",
     "category": "esccseInstituciones",
-    "question": "¿Cómo se llama la norma con rango de ley que dicta el Gobierno en casos de urgencia?",
-    "optionA": "Ley orgánica",
-    "optionB": "Proposición de ley",
-    "optionC": "Estatuto",
-    "optionD": "Decreto ley",
+    "question": "¿Quién aprueba los reglamentos que desarrollan una ley?",
+    "optionA": "El Senado",
+    "optionB": "El Tribunal Constitucional",
+    "optionC": "El Defensor del Pueblo",
+    "optionD": "El Gobierno",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "El decreto ley es una norma que dicta el Gobierno en casos de extraordinaria y urgente necesidad. Las leyes orgánicas y ordinarias las aprueban las Cortes."
+    "explanation": "Las leyes aprobadas se desarrollan con reglamentos y órdenes ministeriales, que son normas del Gobierno y de los ministerios."
   },
   {
     "type": "ESCCSE",
@@ -368,14 +368,14 @@
     "state": "ALL",
     "questionId": "ESCCSE-INS-027",
     "category": "esccseInstituciones",
-    "question": "¿Cuántos años dura el mandato del Defensor del Pueblo?",
-    "optionA": "3 años",
-    "optionB": "4 años",
-    "optionC": "5 años",
-    "optionD": "6 años",
+    "question": "¿Qué puede investigar el Defensor del Pueblo?",
+    "optionA": "Las cuentas de una empresa",
+    "optionB": "Los conflictos entre vecinos",
+    "optionC": "La actuación de la Administración",
+    "optionD": "Las sentencias de los jueces",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "El Defensor del Pueblo lo eligen el Congreso y el Senado para un mandato de 5 años, y no recibe órdenes de ninguna autoridad."
+    "explanation": "El Defensor del Pueblo investiga actuaciones presuntamente irregulares de la Administración pública o de sus agentes, a partir de las quejas de los ciudadanos."
   },
   {
     "type": "ESCCSE",
@@ -515,7 +515,7 @@
     "optionD": "7",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "España ha ejercido la Presidencia semestral del Consejo de la UE cinco veces: en 1989, 1995, 2002, 2010 y 2023."
+    "explanation": "España ha ejercido la Presidencia semestral del Consejo de la UE 5 veces: en 1989, 1995, 2002, 2010 y 2023."
   },
   {
     "type": "ESCCSE",
@@ -1068,14 +1068,14 @@
     "state": "ALL",
     "questionId": "ESCCSE-ADM-029",
     "category": "esccseAdministracion",
-    "question": "¿Qué función general tienen las Fuerzas y Cuerpos de Seguridad?",
-    "optionA": "La seguridad ciudadana",
-    "optionB": "La defensa en una guerra",
-    "optionC": "La aprobación de leyes",
-    "optionD": "El cobro de impuestos",
+    "question": "Durante un trámite con la Administración, ¿qué puede consultar en línea el ciudadano?",
+    "optionA": "Cómo va su expediente",
+    "optionB": "Los datos de sus vecinos",
+    "optionC": "Las notas de los jueces",
+    "optionD": "La agenda de los ministros",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Las Fuerzas y Cuerpos de Seguridad protegen el libre ejercicio de los derechos y libertades y garantizan la seguridad ciudadana."
+    "explanation": "Los trámites en línea están disponibles a cualquier hora y el ciudadano puede consultar en cualquier momento el estado de su expediente."
   },
   {
     "type": "ESCCSE",
@@ -1138,14 +1138,14 @@
     "state": "ALL",
     "questionId": "ESCCSE-DER-002",
     "category": "esccseDerechos",
-    "question": "¿A partir de qué edad son mayores de edad los españoles según la Constitución?",
-    "optionA": "14 años",
-    "optionB": "18 años",
-    "optionC": "19 años",
-    "optionD": "30 años",
+    "question": "Además del derecho de huelga, ¿qué reconoce el artículo 28?",
+    "optionA": "La libertad de cátedra",
+    "optionB": "La libertad sindical",
+    "optionC": "La libertad de empresa",
+    "optionD": "El derecho de petición",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "El artículo 12 fija la mayoría de edad de los españoles en los 18 años."
+    "explanation": "El artículo 28 reconoce el derecho a sindicarse libremente y el derecho de huelga de los trabajadores para defender sus intereses."
   },
   {
     "type": "ESCCSE",
@@ -1194,14 +1194,14 @@
     "state": "ALL",
     "questionId": "ESCCSE-DER-006",
     "category": "esccseDerechos",
-    "question": "¿Cuándo puede entrar la policía en un domicilio sin el permiso del titular?",
-    "optionA": "Con permiso del alcalde",
-    "optionB": "Con orden judicial",
-    "optionC": "Si un vecino lo pide",
-    "optionD": "Tras avisar con un día",
+    "question": "Según el artículo 31, ¿cómo debe asignarse el gasto público?",
+    "optionA": "Solo en las capitales",
+    "optionB": "De forma equitativa",
+    "optionC": "Según el voto de cada zona",
+    "optionD": "Por sorteo entre regiones",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "El domicilio es inviolable. Sin permiso del titular solo se puede entrar con resolución judicial o en caso de delito flagrante."
+    "explanation": "El artículo 31 dice que el gasto público realizará una asignación equitativa de los recursos públicos, es decir, justa para todos."
   },
   {
     "type": "ESCCSE",
@@ -2160,14 +2160,14 @@
     "state": "ALL",
     "questionId": "ESCCSE-VID-011",
     "category": "esccseVidaDiaria",
-    "question": "¿Cuántos años de residencia legal pide la regla general para solicitar la nacionalidad?",
-    "optionA": "2 años",
-    "optionB": "5 años",
-    "optionC": "10 años",
-    "optionD": "15 años",
+    "question": "¿Para quiénes es de 2 años el plazo de residencia para pedir la nacionalidad?",
+    "optionA": "Todos los ciudadanos de la UE",
+    "optionB": "Personas casadas con españoles",
+    "optionC": "Nacionales de países iberoamericanos",
+    "optionD": "Quien tiene trabajo fijo",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "El plazo general es de 10 años; 5 para refugiados; 2 para nacionales de países iberoamericanos, Andorra, Filipinas, Guinea Ecuatorial, Portugal y sefardíes; 1 en casos especiales."
+    "explanation": "El plazo general es de 10 años; es de 2 años para nacionales de países iberoamericanos, Andorra, Filipinas, Guinea Ecuatorial, Portugal y sefardíes; de 1 año para quien está casado con un español."
   },
   {
     "type": "ESCCSE",

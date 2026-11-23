@@ -1742,5 +1742,6 @@
       "pr": 1005,
       "findings": 22
     }
-  ]
+  ],
+  "serverplus": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1006, "findings": 7 }]
 }

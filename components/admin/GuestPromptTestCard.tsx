@@ -4,6 +4,7 @@ import { useMemo, useRef, useState } from "react";
 import { CARD, ROW, STICKY_COL, TableScroll, useAdminFetch } from "@/components/admin/AdminTabParts";
 import { GUEST_PROMPT_DESIGNS } from "@/components/guestPrompt/designs";
 import {
+  ACTIVE_GUEST_PROMPT_VARIANTS,
   GUEST_PROMPT_TEST_ID,
   GUEST_PROMPT_VARIANTS,
   GUEST_PROMPT_VARIANT_NAMES,
@@ -51,14 +52,16 @@ export function GuestPromptTestCard() {
 
   if (loading) return <div className={`${CARD} mb-3 sm:mb-4 text-sm text-gray-500`}>Loading the sign-up step test...</div>;
   if (error || !data) return null;
-  const shown = rows.reduce((n, r) => n + r.shown, 0);
+  const active = rows.filter((r) => !RETIRED_GUEST_PROMPT_VARIANTS.includes(r.v));
+  const retired = rows.filter((r) => RETIRED_GUEST_PROMPT_VARIANTS.includes(r.v));
+  const shown = active.reduce((n, r) => n + r.shown, 0);
 
   return (
     <div className={`${CARD} mb-3 sm:mb-4`}>
       <h2 className={H2}>Which sign-up message works best?</h2>
       <p className={SUB}>
         After two right answers in a row, signed-out English readers get a sign-up step in place of the next question, a different one of the active designs each time,
-        in an order shuffled per browser. Retired designs keep their counts but are no longer shown. A sign-up counts for a design when the account is made within an hour of tapping its button.
+        in an order shuffled per browser. A sign-up counts for a design when the account is made within an hour of tapping its button.
         {data.since && ` Counting since ${data.since.slice(0, 10)}.`}
       </p>
       <div className="mt-3 inline-flex rounded-lg border border-gray-200 dark:border-gray-800 p-0.5 text-xs">
@@ -76,63 +79,74 @@ export function GuestPromptTestCard() {
       {shown === 0 ? (
         <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">No showings yet.</p>
       ) : (
-        <TableScroll className="mt-3">
-          <table className="w-full text-sm">
-            <thead>
-              <tr className="text-xs text-gray-500 dark:text-gray-400">
-                <th className={`text-left font-medium pb-2 ${STICKY_COL}`}>Design</th>
-                <th className={TH}>Shown</th>
-                <th className={TH}>Tapped sign-up</th>
-                <th className={TH}>Signed up</th>
-                <th className={TH}>Sign-ups per 100</th>
-                <th className={TH}>Skipped</th>
-                <th className={TH}>vs control</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
-              {rows.map((r) => (
-                <tr key={r.v} className={`${ROW} text-gray-900 dark:text-gray-50`}>
-                  <td className={`py-2 pr-2 ${STICKY_COL} max-w-[14rem]`}>
-                    <span className="font-mono text-xs text-gray-500 dark:text-gray-400 mr-1">{r.v}</span>
-                    {GUEST_PROMPT_VARIANT_NAMES[r.v]}
-                    {RETIRED_GUEST_PROMPT_VARIANTS.includes(r.v) && (
-                      <span className="ml-1 rounded bg-gray-100 dark:bg-gray-800 px-1 text-xs text-gray-500 dark:text-gray-400">retired</span>
-                    )}
-                  </td>
-                  <td className={TD}>{r.shown}</td>
-                  <td className={TD}>{r.taps} <span className="text-gray-500 dark:text-gray-400">({fmtPct(r.taps, r.shown)})</span></td>
-                  <td className={TD}>{r.signup}</td>
-                  <td className={`${TD} font-semibold`}>{fmtPct(r.signup, r.shown)}</td>
-                  <td className={TD}>{fmtPct(r.skipped, r.shown)}</td>
-                  <td className={TD}>{r.p === null ? "control" : r.p < 0.05 ? <span className="font-semibold text-green-700 dark:text-green-300">p {r.p.toFixed(3)}</span> : `p ${r.p.toFixed(2)}`}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </TableScroll>
+        <DesignTable rows={active} />
       )}
       <p className="mt-3 text-xs text-gray-500 dark:text-gray-400">
         The active designs split the traffic, so give it at least a few hundred showings each before calling a winner, and with several comparisons expect one
         to look &quot;significant&quot; by chance about two times in five: a winner should beat the control at p under 0.005, or hold its lead for another two weeks.
       </p>
+      {retired.length > 0 && (
+        <details className="mt-3">
+          <summary className="cursor-pointer text-sm font-semibold text-gray-900 dark:text-gray-50">Retired designs ({retired.length}), counts frozen</summary>
+          <DesignTable rows={retired} />
+        </details>
+      )}
       <DesignPreviews />
     </div>
   );
 }
 
-/** Every design, inert, so the table's names have a picture. */
+type Row = { v: GuestPromptVariant; shown: number; taps: number; signup: number; skipped: number; p: number | null };
+
+function DesignTable({ rows }: { rows: Row[] }) {
+  return (
+    <TableScroll className="mt-3">
+      <table className="w-full text-sm">
+        <thead>
+          <tr className="text-xs text-gray-500 dark:text-gray-400">
+            <th className={`text-left font-medium pb-2 ${STICKY_COL}`}>Design</th>
+            <th className={TH}>Shown</th>
+            <th className={TH}>Tapped sign-up</th>
+            <th className={TH}>Signed up</th>
+            <th className={TH}>Sign-ups per 100</th>
+            <th className={TH}>Skipped</th>
+            <th className={TH}>vs control</th>
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
+          {rows.map((r) => (
+            <tr key={r.v} className={`${ROW} text-gray-900 dark:text-gray-50`}>
+              <td className={`py-2 pr-2 ${STICKY_COL} max-w-[14rem]`}>
+                <span className="font-mono text-xs text-gray-500 dark:text-gray-400 mr-1">{r.v}</span>
+                {GUEST_PROMPT_VARIANT_NAMES[r.v]}
+              </td>
+              <td className={TD}>{r.shown}</td>
+              <td className={TD}>{r.taps} <span className="text-gray-500 dark:text-gray-400">({fmtPct(r.taps, r.shown)})</span></td>
+              <td className={TD}>{r.signup}</td>
+              <td className={`${TD} font-semibold`}>{fmtPct(r.signup, r.shown)}</td>
+              <td className={TD}>{fmtPct(r.skipped, r.shown)}</td>
+              <td className={TD}>{r.p === null ? "control" : r.p < 0.05 ? <span className="font-semibold text-green-700 dark:text-green-300">p {r.p.toFixed(3)}</span> : `p ${r.p.toFixed(2)}`}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </TableScroll>
+  );
+}
+
+/** The designs still running, inert, so the table's names have a picture. */
 function DesignPreviews() {
   const heading = useRef<HTMLHeadingElement>(null);
   const noop = () => {};
   return (
     <details className="mt-3">
-      <summary className="cursor-pointer text-sm font-semibold text-gray-900 dark:text-gray-50">See the variations: all ten designs</summary>
+      <summary className="cursor-pointer text-sm font-semibold text-gray-900 dark:text-gray-50">See the {ACTIVE_GUEST_PROMPT_VARIANTS.length} designs still running</summary>
       <div className="mt-3 grid gap-4 sm:grid-cols-2">
-        {GUEST_PROMPT_VARIANTS.map((v) => {
+        {ACTIVE_GUEST_PROMPT_VARIANTS.map((v) => {
           const Design = GUEST_PROMPT_DESIGNS[v];
           return (
             <div key={v} className="pointer-events-none">
-              <p className="mb-1 text-xs font-mono text-gray-500 dark:text-gray-400">{v}{RETIRED_GUEST_PROMPT_VARIANTS.includes(v) ? " (retired)" : ""}</p>
+              <p className="mb-1 text-xs font-mono text-gray-500 dark:text-gray-400">{v}</p>
               <Design n={14} headingRef={heading} isNative={false} busy={false} onGoogle={noop} signupHref="/signup" onEmail={noop} onLater={noop} />
             </div>
           );

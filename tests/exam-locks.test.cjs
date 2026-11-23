@@ -163,7 +163,7 @@ test('RBT paywall says plainly what Premium adds, never a readiness verdict', ()
   assert.match(examPremiumBullets(getExamById('cdl'), 'en')[0], /later CDL training steps and practice tests/);
 });
 
-test('lock share test ended: every browser gets LOCKED_SHARE, v2 locks half too, the result card stays on the A/B tests tab', () => {
+test('lock share test ended: every browser gets LOCKED_SHARE, v2 locks half too, its card is off the A/B tests tab', () => {
   const fs = require('node:fs');
   const read = (p) => fs.readFileSync(require('node:path').join(__dirname, '..', p), 'utf8');
   assert.ok(!fs.existsSync(require('node:path').join(__dirname, '..', 'lib/lockTest.ts')));
@@ -171,5 +171,5 @@ test('lock share test ended: every browser gets LOCKED_SHARE, v2 locks half too,
   assert.match(read('hooks/useExamLocks.ts'), /lockedTestIds\(source\)/);
   assert.match(read('lib/v2/registry.ts'), /lockedStepCount\([^)]*V2_LOCKED_SHARE\)/);
   assert.match(read('app/api/stripe/webhook/route.ts'), /lockArm: session\.metadata\?\.lockArm/);
-  assert.match(read('components/admin/ABTestsTab.tsx'), /<LockTestCard/);
+  assert.doesNotMatch(read('components/admin/ABTestsTab.tsx'), /LockTestCard/);
 });

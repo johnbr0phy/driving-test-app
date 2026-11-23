@@ -52,6 +52,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   phleb: { title: "Phlebotomy Certification", description: "Study blood collection, patient identification, infection control and specimen handling." },
   ccma: { title: "Clinical Medical Assistant", description: "Review vital signs, clinical procedures, infection control and patient communication." },
   cet: { title: "EKG Technician", description: "Review lead placement, rhythm analysis, artifacts, monitoring and patient safety." },
+  danbice: { title: "Free-to-Start DANB ICE Practice Test", description: "200 original questions on the DANB ICE outline: transmission and PPE, disinfection, waterlines, sterilization and OSHA rules. Free to start." },
   danbrhs: { title: "Free-to-Start DANB RHS Practice Test", description: "200 original questions on the DANB RHS outline: landmarks, technique and errors, radiation safety and infection control. Free to start." },
   danb: { title: "DANB Dental Assistant", description: "Review chairside assisting, radiation safety, infection control and dental procedures." },
   foodmgr: { title: "Food Protection Manager", description: "Review foodborne illness prevention, safe temperatures, sanitation and HACCP principles." },

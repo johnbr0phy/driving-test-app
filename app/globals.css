@@ -6268,6 +6268,19 @@
     --brand-border-light: 287 35% 90%;
     --brand-gradient-to: 300 60% 96%;
   }
+  /* DANB ICE theme: muted sage */
+  [data-theme="danbice"] {
+    --brand: 98 15% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 98 20% 96%;
+    --brand-hover: 98 15% 34%;
+    --brand-dark: 98 15% 30%;
+    --brand-darker: 98 15% 22%;
+    --brand-muted: 98 10% 68%;
+    --brand-border: 98 10% 80%;
+    --brand-border-light: 98 10% 90%;
+    --brand-gradient-to: 108 20% 96%;
+  }
   /* DANB RHS theme: deep plum ink */
   [data-theme="danbrhs"] {
     --brand: 274 25% 16%;
@@ -14428,6 +14441,18 @@
     --brand-dark: 287 100% 65%;
     --brand-darker: 287 90% 78%;
   }
+  .dark [data-theme="danbice"] {
+    --brand: 98 15% 41.9%;
+    --brand-hover: 98 15% 34%;
+    --brand-light: 98 20% 13%;
+    --brand-gradient-to: 108 20% 11%;
+    --brand-border-light: 98 10% 24%;
+    --brand-border: 98 10% 34%;
+    --brand-muted: 98 10% 45%;
+    --brand-dark: 98 15% 65%;
+    --brand-darker: 98 15% 78%;
+  }
+
   .dark [data-theme="danbrhs"] {
     --brand: 274 25% 50%;
     --brand-hover: 274 25% 42%;

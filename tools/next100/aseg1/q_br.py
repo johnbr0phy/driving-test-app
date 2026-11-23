@@ -4,14 +4,14 @@
 CAT = "g1Brakes"; SEG = "BR"
 Q = [
 # A
-("A", "The brake pedal feels spongy but firms up when pumped. What is the most likely cause?",
- "Air in the lines",
- ["Worn front brake pads", "Weak vacuum booster", "Glazed rear linings"],
- "Air compresses, so the first stroke takes up the slack and pumping fills it. Bleeding the system by the service procedure removes it."),
-("A", "With steady foot pressure, the pedal slowly sinks to the floor and nothing leaks outside. What is likely?",
- "Master cylinder bypassing",
- ["Booster diaphragm tear", "Seized caliper slide pin", "Out-of-round rear drum"],
- "Worn master cylinder cups let fluid slip past the piston inside the bore, so the pedal creeps down with no fluid lost outside. The master cylinder is replaced."),
+("A", "Fluid caught in a bottle while bleeding brakes looks clean. What is done with it?",
+ "Dispose of it properly",
+ ["Pour it back in the reservoir", "Keep it for top-ups", "Mix it with new fluid"],
+ "Used fluid has been exposed to air and may hold moisture and debris, so it is never returned to the system. It goes to hazardous waste disposal."),
+("A", "A steel brake line has heavy, flaking rust. What is done?",
+ "Fit a new line",
+ ["Paint over the rust", "Wire-brush and reuse it", "Wrap it in rubber hose"],
+ "Flaking rust thins the tube wall until it bursts under brake pressure. The line is replaced with the correct tubing, fittings and flares, and secured in its clips."),
 ("A", "Brake fluid tests dark and contaminated. What is the normal service?",
  "Flush the whole system",
  ["Top up with fresh fluid", "Bleed the front wheels only", "Add a fluid conditioner"],

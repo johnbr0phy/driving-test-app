@@ -1788,5 +1788,6 @@
   "gcppde": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1021, "findings": 3 }],
   "cism": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1022, "findings": 8 }],
   "emr": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1019, "findings": 14 }],
-  "carsrefrig": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1023, "findings": 9 }]
+  "carsrefrig": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1023, "findings": 9 }],
+  "masterelec": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1024, "findings": 6 }]
 }

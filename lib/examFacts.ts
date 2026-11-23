@@ -3887,6 +3887,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "AHIMA's CCA certification page, the CCA Exam Content Outline (2024 rev) and the 2026 required code book list, checked November 2026",
     source: { name: "AHIMA: Certified Coding Associate (CCA)", url: "https://ahima.org/certification/cca/" },
   },
+  masterelec: {
+    answer:
+      "The master electrician exam is a state or city licensing exam taken after several years as a licensed journeyman, and it leans harder on design than the journeyman exam: service and feeder load calculations, transformers, motors and special occupancies, all on the National Electrical Code. Many jurisdictions use the ICC National Master Electrician exam: 100 multiple-choice questions, open book, 5 hours, 75 percent to pass, based on the 2023 NEC. State exams given by PSI or Prometric set their own length, code edition and pass mark, often 70 percent.",
+    rows: [
+      { label: "Questions (ICC national exam)", value: "100 multiple choice" },
+      { label: "Time (ICC)", value: "5 hours" },
+      { label: "Passing score (ICC)", value: "75%" },
+      { label: "Format", value: "Open book with the NEC" },
+      { label: "Code edition (ICC)", value: "2023 NEC" },
+      { label: "Largest area (ICC outline)", value: "Wiring methods and materials, 19%" },
+      { label: "State exams", value: "Length, edition and pass mark vary by state" },
+    ],
+    basedOn: "ICC 2024 National Contractor/Trades Examination Information Bulletin (published October 12, 2026) and state PSI candidate bulletins, checked November 2026",
+    source: { name: "ICC National Contractor/Trades Examination Information Bulletin", url: "https://www.iccsafe.org/wp-content/uploads/2024-National_Contractor_Bulletin.pdf" },
+  },
   jelec: {
     answer:
       "The journeyman electrician exam is a state or city licensing exam on the National Electrical Code, electrical theory and calculations, taken after a set amount of supervised work, often about 8,000 hours or a completed apprenticeship. There is no single national version: many places use the ICC national journeyman exam of about 80 multiple-choice questions in 4 hours, open book with the NEC, and 70 percent is the most common passing score. Most exams now test the 2023 NEC, but each state sets its own edition, eligibility and pass mark.",

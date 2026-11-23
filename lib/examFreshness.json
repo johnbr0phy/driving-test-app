@@ -3,6 +3,14 @@
   "reviewAfterDays": 365,
   "events": [
     {
+      "exam": "masterelec",
+      "date": "2027-06-01",
+      "kind": "review",
+      "what": "More states are moving their electrician exams to the 2026 NEC (Texas PSI exams since September 1, 2026), which moves load calculations from Article 220 to Article 120 and folds Chapter 8 into Chapter 7. The ICC National Master Electrician exam (R16) is still on the 2023 NEC.",
+      "action": "Check the ICC Exam Catalog for a 2026 NEC master exam; when it appears, review every item against the 2026 text, renumber article citations and update the landing, facts and sources.",
+      "source": "https://www.iccsafe.org/wp-content/uploads/2024-National_Contractor_Bulletin.pdf"
+    },
+    {
       "exam": "hamgeneral",
       "date": "2027-07-01",
       "kind": "outline",

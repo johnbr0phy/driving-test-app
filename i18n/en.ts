@@ -2062,6 +2062,15 @@ export const en = {
     jelecEquip: "Equipment for General Use",
     jelecMotors: "Motors & Air Conditioning",
     jelecSpecial: "Special Occupancies, Equipment & Systems",
+    // masterelec
+    melecGeneral: "Theory, Definitions & Plans",
+    melecLoadCalc: "Service & Feeder Load Calculations",
+    melecService: "Services, Feeders & Transformers",
+    melecBranch: "Branch Circuits & Conductors",
+    melecWiring: "Wiring Methods & Materials",
+    melecEquip: "Equipment, Devices & Controls",
+    melecMotors: "Motors & Generators",
+    melecSpecial: "Special Occupancies & Systems",
     // barber
     barInfection: "Infection Control & Safety",
     barAnatomy: "Anatomy, Hair & Skin Disorders",

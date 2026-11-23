@@ -144,6 +144,7 @@
   "nasm": ["#dc350c","#fdf0ed","#81250e","#ecddd9"],
   "rbt": ["#b81487","#fdedf8","#5f1148","#ecd9e7"],
   "cpc": ["#7c429a","#f6f1f9","#462d53","#e6d9ec"],
+  "masterelec": ["#47003b","#f9f1f8","#22021d","#e8dee6"],
   "jelec": ["#885407","#fdf6ed","#372306","#ece5d9"],
   "barber": ["#7e2620","#fbefef","#321311","#ecdbd9"],
   "nailtech": ["#aa0e59","#fdedf5","#430a25","#ebdbe3"],

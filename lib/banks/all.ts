@@ -103,6 +103,7 @@ import "./cca";
 import "./rhit";
 import "./cpc";
 import "./jelec";
+import "./masterelec";
 import "./barber";
 import "./ffi";
 import "./police";

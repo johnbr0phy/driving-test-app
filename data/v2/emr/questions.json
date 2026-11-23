@@ -1,0 +1,4410 @@
+[
+  {
+    "id": "EMR-T1-001",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Scene safety",
+    "stem": "You are first on scene at a car that struck a utility pole. A wire lies across the hood and the driver is awake inside. What should you do?",
+    "options": [
+      "Pull him out through the far door, away from the wire",
+      "Stay back and tell him to stay in the car",
+      "Reach in through the window to hold his head still",
+      "Lift the wire off the hood with a dry branch"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Treat every downed wire as live. A person in the car is usually safer inside until the power company makes the line safe, and you stay well clear. Wood can carry current, and touching the car puts you in the circuit."
+  },
+  {
+    "id": "EMR-T1-002",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "CPR quality",
+    "stem": "How fast and how deep should you compress the chest of an adult in cardiac arrest?",
+    "options": [
+      "100 to 120 a minute, at least 2 inches",
+      "60 to 80 a minute, about 1 inch",
+      "Over 140 a minute, at least 3 inches",
+      "80 a minute, as deep as you possibly can push"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Push hard and fast: 100 to 120 compressions a minute, at least 2 inches deep but not more than about 2.4 inches, letting the chest come all the way back up between each one."
+  },
+  {
+    "id": "EMR-T1-003",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Level of consciousness",
+    "stem": "A patient opens her eyes and groans only when you squeeze her shoulder. Using AVPU, how is she described?",
+    "options": [
+      "Unresponsive",
+      "Alert",
+      "Responds to verbal",
+      "Responds to pain"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "She does not respond to your voice but does react to a painful stimulus, so she is P on the AVPU scale. A patient who responds to nothing is U."
+  },
+  {
+    "id": "EMR-T1-004",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "General impression",
+    "stem": "As you walk up, a man sits slumped, pale and silent with blood soaking his pant leg. What does your general impression tell you?",
+    "options": [
+      "He should walk to the ambulance with help",
+      "He needs a full history before any other care",
+      "He looks sick and needs fast action",
+      "He looks stable for now"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The general impression is your first look from across the room. Pallor, silence and heavy bleeding say the patient is sick, so you move straight to the life threats."
+  },
+  {
+    "id": "EMR-T1-005",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Equipment check",
+    "stem": "When should you check your AED and oxygen supply?",
+    "options": [
+      "At the start of every shift",
+      "Only when a warning light flashes on it",
+      "Once a year at the agency's equipment inspection",
+      "Only after a call where you used them"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A daily or start-of-shift check finds a dead battery, expired pads or an empty cylinder before a patient needs them."
+  },
+  {
+    "id": "EMR-T1-006",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dispatch information",
+    "stem": "Dispatch reports a fall from a ladder and adds that a caller heard shouting and a gunshot before the fall. What is the safest plan?",
+    "options": [
+      "Ask a bystander to check the patient",
+      "Enter quickly, since a patient is down and hurt",
+      "Stage nearby until police secure the scene",
+      "Park at the door with lights off and go straight in"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A report of a gunshot means the scene may not be safe. You stage out of sight and wait for law enforcement to say it is secure. Sending a bystander in only moves the danger to someone else."
+  },
+  {
+    "id": "EMR-T1-007",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AED",
+    "stem": "The AED says shock advised. What do you do?",
+    "options": [
+      "Check a pulse before shocking",
+      "Remove the pads and reapply them",
+      "Give two breaths, then shock",
+      "Clear everyone, then shock"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Clear everyone from the patient, press the shock button, then start compressions right away for 2 minutes before the AED analyzes again. A pulse check before the shock only delays it."
+  },
+  {
+    "id": "EMR-T1-008",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Opening the airway",
+    "stem": "An unresponsive woman found in bed has no sign of injury. Which maneuver opens her airway?",
+    "options": [
+      "Pulling the tongue forward with gauze",
+      "Head tilt-chin lift",
+      "Turning the head side to side",
+      "Jaw thrust only"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "With no suspected neck injury, the head tilt-chin lift lifts the tongue off the back of the throat. The jaw thrust is kept for patients who may have a spine injury."
+  },
+  {
+    "id": "EMR-T1-009",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "SAMPLE history",
+    "stem": "In a SAMPLE history, what does the L stand for?",
+    "options": [
+      "Level of consciousness",
+      "Last oral intake",
+      "Location of the patient's pain",
+      "Lung sounds"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SAMPLE covers signs and symptoms, allergies, medications, pertinent past history, last oral intake and events leading up. The last meal matters if surgery or vomiting is likely."
+  },
+  {
+    "id": "EMR-T1-010",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life-threatening bleeding",
+    "stem": "An awake man has blood spurting from a deep cut on his upper arm. What comes first?",
+    "options": [
+      "Take his blood pressure",
+      "Control the bleeding",
+      "Count his breathing rate",
+      "Ask about his allergies"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Massive bleeding can kill in minutes, so it is controlled as soon as you see it, even before a full airway and breathing check in an awake, talking patient."
+  },
+  {
+    "id": "EMR-T1-011",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Standard precautions",
+    "stem": "Which PPE should you put on before caring for a patient coughing up blood after an assault?",
+    "options": [
+      "Gloves alone",
+      "A gown alone",
+      "No PPE until blood is on you",
+      "Gloves, eyewear and a mask"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Blood that can be coughed or sprayed calls for protection of the eyes, nose and mouth as well as the hands. PPE is chosen before contact, from what you expect, not after an exposure."
+  },
+  {
+    "id": "EMR-T1-012",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "AED in children",
+    "stem": "You must use an AED on a 5-year-old and have only adult pads. What should you do?",
+    "options": [
+      "Skip the AED and do CPR until pediatric pads come",
+      "Cut the adult pads in half to fit the chest",
+      "Use the adult pads without letting them touch",
+      "Wait for pediatric pads to arrive before any shock"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pediatric pads or a child setting are preferred for children under 8, but adult pads are better than no shock. Place them so they do not touch, front and back if needed."
+  },
+  {
+    "id": "EMR-T1-013",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oral airway",
+    "stem": "When is an oral airway the right adjunct?",
+    "options": [
+      "A confused patient who is talking",
+      "A patient who gags when you check the mouth",
+      "An unresponsive patient with no gag reflex",
+      "A patient with clenched teeth"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "An oral airway keeps the tongue from blocking the airway in a patient who cannot protect it. A gag reflex or clenched teeth mean the device can cause vomiting or injury."
+  },
+  {
+    "id": "EMR-T1-014",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Documentation",
+    "stem": "Which entry belongs in a patient care report?",
+    "options": [
+      "Patient seemed to be faking the pain to us",
+      "Patient was rude, as usual",
+      "Patient probably drinks too much, per neighbors",
+      "Patient states pain is 8 out of 10"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Patient states pain is 8 out of 10 is objective. Reports should be objective: what you saw, heard and did, and the patient's own words in quotes. Opinions and labels do not belong and can cause legal trouble."
+  },
+  {
+    "id": "EMR-T1-015",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pulse site",
+    "stem": "Where do you check the pulse of an unresponsive adult?",
+    "options": [
+      "Carotid artery in the neck",
+      "Pedal pulse on the foot",
+      "Brachial artery on the inside of the upper arm",
+      "Radial artery at the wrist"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In an unresponsive adult, check the carotid pulse, which is felt even when blood pressure is low. In an infant, use the brachial pulse inside the upper arm."
+  },
+  {
+    "id": "EMR-T1-016",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Airborne precautions",
+    "stem": "A man with a long cough, night sweats and weight loss needs help. What should you wear in addition to gloves?",
+    "options": [
+      "A gown and booties",
+      "A fit-tested N95 respirator",
+      "A surgical mask worn by you alone",
+      "Nothing more, as long as he coughs into his elbow"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Those signs suggest tuberculosis, which spreads through the air. A fit-tested N95 or better respirator protects you; a surgical mask placed on the patient also helps limit spread."
+  },
+  {
+    "id": "EMR-T1-017",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxygen delivery",
+    "stem": "A short-of-breath adult has clearly low oxygen signs and is breathing adequately. Which device gives the most oxygen within EMR scope?",
+    "options": [
+      "CPAP mask set by an EMT partner",
+      "Nonrebreather mask at 15 L/min",
+      "Simple face mask at 6 L/min",
+      "Nasal cannula at 2 L/min for comfort"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A nonrebreather at 10 to 15 L/min delivers a high concentration of oxygen and is within EMR scope. Simple face masks and CPAP are listed at the EMT level in the national model."
+  },
+  {
+    "id": "EMR-T1-018",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oral airway sizing",
+    "stem": "How do you choose the right size oral airway?",
+    "options": [
+      "Corner of the mouth to the earlobe",
+      "Length of the patient's index finger",
+      "Tip of the nose to the point of the chin",
+      "Width of the patient's palm across the knuckles"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hold the airway against the face: it should reach from the corner of the mouth to the bottom of the earlobe or the angle of the jaw. Too long can push the epiglottis closed; too short can push the tongue back."
+  },
+  {
+    "id": "EMR-T1-019",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Skin signs",
+    "stem": "Which skin finding best suggests poor perfusion?",
+    "options": [
+      "Pale, cool and moist skin",
+      "Tanned skin with freckles",
+      "Pink, warm and dry skin",
+      "Red, flushed skin after hard exercise"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When blood flow drops, the body pulls blood from the skin, leaving it pale, cool and clammy. Pink, warm, dry skin is normal."
+  },
+  {
+    "id": "EMR-T1-020",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mechanism of injury",
+    "stem": "Why does the mechanism of injury matter during scene size-up?",
+    "options": [
+      "It tells you who was at fault",
+      "It hints at hidden injuries",
+      "It sets the patient's treatment",
+      "It replaces a physical exam"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A high-energy mechanism such as a rollover or a long fall warns you to look for injuries you cannot yet see. It guides your suspicion and your resource request but never replaces assessing the patient."
+  },
+  {
+    "id": "EMR-T1-021",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Naloxone",
+    "stem": "Which naloxone routes are within EMR scope under the national model?",
+    "options": [
+      "Nebulized",
+      "Intraosseous",
+      "Intravenous push through a new line",
+      "Intranasal unit dose and auto-injector"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The national scope model lets EMRs give naloxone for suspected opioid overdose by unit-dosed intranasal device or auto-injector. IV and IO routes are AEMT and above."
+  },
+  {
+    "id": "EMR-T1-022",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Consent",
+    "stem": "An unresponsive adult is found after a fall. On what basis can you treat him?",
+    "options": [
+      "A court order from a judge",
+      "Implied consent",
+      "Informed refusal",
+      "Expressed consent"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "When a patient cannot give consent and needs emergency care, the law assumes a reasonable person would want treatment. This is implied consent."
+  },
+  {
+    "id": "EMR-T1-023",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Suction",
+    "stem": "While you ventilate an unresponsive man, he vomits and you hear gurgling. What should you do first?",
+    "options": [
+      "Raise his head on a pillow",
+      "Give faster breaths",
+      "Insert a larger oral airway",
+      "Suction the mouth"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Gurgling means fluid in the upper airway. Roll him if needed and suction before you go on ventilating, or the vomit will be pushed into the lungs."
+  },
+  {
+    "id": "EMR-T1-024",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reassessment",
+    "stem": "How often should you reassess the vital signs of a stable patient while waiting for EMS?",
+    "options": [
+      "About every 15 minutes",
+      "Every 30 seconds",
+      "Only once at the start",
+      "Only when the patient asks you to check"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Reassess a stable patient about every 15 minutes and an unstable patient about every 5 minutes, and after every intervention."
+  },
+  {
+    "id": "EMR-T1-025",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Tourniquet",
+    "stem": "Direct pressure does not stop heavy bleeding from a forearm wound. Where do you place a tourniquet?",
+    "options": [
+      "Directly over the wound",
+      "2 to 3 inches above the wound",
+      "Over the elbow joint",
+      "Below the wound near the hand"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Place the tourniquet on bare skin 2 to 3 inches above the wound, not over a joint, and tighten it until the bleeding stops. Write down the time it went on."
+  },
+  {
+    "id": "EMR-T1-026",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number of patients",
+    "stem": "At a two-car crash, the driver you reach says his daughter was in the back seat. The back seat is empty. What should you do next?",
+    "options": [
+      "Wait for police to search later",
+      "Assume a relative already picked her up",
+      "Search the area for the child",
+      "Treat the driver and ignore the remark"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Finding every patient is part of size-up. A child may have walked away or been thrown from the car. Look nearby and tell incoming units there may be another patient."
+  },
+  {
+    "id": "EMR-T1-027",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Epinephrine scope",
+    "stem": "A woman with known bee allergy has hives and trouble breathing. Under the national model, what is the EMR's role with an epinephrine auto-injector?",
+    "options": [
+      "No EMS level may give epinephrine",
+      "EMRs may give it only IV",
+      "EMT and above; states may add EMRs",
+      "Any EMR may always inject it"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The 2019 national model lists the epinephrine auto-injector for anaphylaxis at the EMT level and above, though some states add it for EMRs. Support the airway, call ALS early and follow your state and medical director."
+  },
+  {
+    "id": "EMR-T1-028",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Breathing assessment",
+    "stem": "An adult breathes 8 times a minute with shallow chest rise and gray lips. What does she need?",
+    "options": [
+      "Time to rest, then a full reassessment",
+      "Ventilations with a BVM and oxygen",
+      "A nasal cannula at 2 L/min",
+      "A nonrebreather mask with no other care"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A slow rate with shallow breaths is inadequate breathing, even though she breathes on her own. She needs assisted ventilation; a mask alone gives oxygen but does not move enough air."
+  },
+  {
+    "id": "EMR-T1-029",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Resource request",
+    "stem": "You arrive alone to find a bus on its side with many people injured. What is your first action?",
+    "options": [
+      "Call for more resources",
+      "Splint the closest open fracture",
+      "Help the walking patients leave",
+      "Begin CPR on the first patient"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "When patients outnumber you, call early for more units, supervisors and incident command support. One responder who stops to treat one patient cannot help the rest."
+  },
+  {
+    "id": "EMR-T1-030",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Tourniquet pain",
+    "stem": "A patient with a properly placed tourniquet complains that it hurts badly. What should you do?",
+    "options": [
+      "Loosen it a little every few minutes",
+      "Leave it tight and explain why",
+      "Take it off and use a pressure bandage",
+      "Move it below the wound so the hand gets blood"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A working tourniquet is painful. Do not loosen it to relieve pain: bleeding will restart. Reassure the patient and let the next level of care know when it was applied."
+  },
+  {
+    "id": "EMR-T1-031",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Spinal motion restriction",
+    "stem": "A conscious driver complains of neck pain after a rollover. What is within EMR scope?",
+    "options": [
+      "Strapping him to a long spine board on scene",
+      "Manual stabilization and a cervical collar",
+      "Leaving him unsupported",
+      "A seated extrication device such as a KED"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The national model adds the cervical collar and manual cervical stabilization at the EMR level. Long boards and seated devices such as the KED are EMT-level tools."
+  },
+  {
+    "id": "EMR-T1-032",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Refusal",
+    "stem": "An alert, oriented adult with a cut hand refuses care after you explain the risks. What should you do?",
+    "options": [
+      "Call police to force treatment on the patient",
+      "Treat him anyway, since he is injured and bleeding",
+      "Respect it, document it and advise calling back",
+      "Leave without a word"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A competent adult may refuse care. Make sure he understands the risks, try to persuade him, document the refusal and tell him to call back if he changes his mind."
+  },
+  {
+    "id": "EMR-T1-033",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rescue breathing",
+    "stem": "An adult has a strong pulse but is not breathing. How often do you give a rescue breath?",
+    "options": [
+      "Every 10 seconds",
+      "Every 6 seconds",
+      "Every 2 to 3 seconds",
+      "Every 15 seconds"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An adult with a pulse who is not breathing gets 1 breath every 6 seconds, about 10 a minute, each just enough to make the chest rise. Children and infants get a breath every 2 to 3 seconds."
+  },
+  {
+    "id": "EMR-T1-034",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "SALT triage",
+    "stem": "Using SALT, you ask patients who can walk to move to a set area. What is the next global sort step?",
+    "options": [
+      "Open the airway of every child you can reach",
+      "Ask the rest to wave or move a limb",
+      "Tag every walking patient as minimal before moving on",
+      "Begin CPR on anyone who is not breathing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SALT sorts first by walking, then asks those who cannot walk to wave or show purposeful movement. Those who do neither are assessed first, then those who wave, then the walkers. Tags come later in the individual assessment."
+  },
+  {
+    "id": "EMR-T1-035",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Splinting",
+    "stem": "How should you splint a suspected broken forearm?",
+    "options": [
+      "Straighten it with force first",
+      "Include the wrist and elbow",
+      "Wrap it tightly around the fingers",
+      "Splint only the broken spot"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Immobilize the joints above and below a long-bone injury so the bone ends cannot move, and check pulse, movement and sensation before and after."
+  },
+  {
+    "id": "EMR-T1-036",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Shock",
+    "stem": "A woman hit by a car is anxious, pale and has a fast, weak pulse. Her blood pressure is still normal. What do you suspect?",
+    "options": [
+      "Simple anxiety",
+      "A heart attack",
+      "No problem while the pressure is normal",
+      "Early shock"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Restlessness, pallor and a fast pulse are early signs of shock. Blood pressure often stays normal until late, especially in young people, so do not wait for it to fall."
+  },
+  {
+    "id": "EMR-T1-037",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Choking",
+    "stem": "A conscious adult at a restaurant clutches her throat and cannot speak or cough. What does current AHA guidance say to do?",
+    "options": [
+      "Lay her down on the floor and give rescue breaths",
+      "Give abdominal thrusts only",
+      "Alternate 5 back blows and 5 abdominal thrusts",
+      "Do a blind finger sweep"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The 2025 AHA guidelines tell rescuers to alternate 5 back blows with 5 abdominal thrusts for a choking adult or child until the object comes out or the person becomes unresponsive."
+  },
+  {
+    "id": "EMR-T1-038",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Stroke",
+    "stem": "A woman suddenly cannot raise her right arm and her speech is slurred. Which detail is most important to find out and pass on?",
+    "options": [
+      "What she ate for lunch and when she ate it",
+      "Her insurance details and doctor's name",
+      "Her childhood illnesses and old surgeries",
+      "The time she was last known well"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Stroke treatments depend on how long ago symptoms began. If no one saw the onset, the time she was last known to be normal is used. Get it and pass it on."
+  },
+  {
+    "id": "EMR-T1-039",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Privacy",
+    "stem": "A neighbor asks what is wrong with the patient you just treated. What should you say?",
+    "options": [
+      "The diagnosis, since a neighbor is like family",
+      "That you cannot share patient information",
+      "Whatever the patient's family allows",
+      "Only the patient's medicines"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Patient information is private. Share it only with those involved in the patient's care or as the law requires, not with curious neighbors."
+  },
+  {
+    "id": "EMR-T1-040",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Hazardous materials",
+    "stem": "You see a tanker leaking a cloud from its valve. Which actions are correct? Select two.",
+    "options": [
+      "Walk closer to read the label",
+      "Look up the placard in the ERG",
+      "Treat patients in the cloud first",
+      "Stay uphill and upwind",
+      "Drive through the cloud quickly"
+    ],
+    "select": 2,
+    "correct": [
+      1,
+      3
+    ],
+    "explanation": "Distance and position protect you: stay uphill and upwind and identify the product from a safe distance, using the placard number and the Emergency Response Guidebook. Entering the cloud is for trained hazmat teams with the right protection."
+  },
+  {
+    "id": "EMR-T1-041",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Burns",
+    "stem": "A cook has a fresh burn on his forearm from hot oil. What should you do first?",
+    "options": [
+      "Cool it with clean running water",
+      "Apply butter or oil to soothe it",
+      "Pack it in ice",
+      "Pop the blisters"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cool water stops the burning and eases pain. Ice can deepen the injury, and blisters should be left intact. Then cover the burn with a dry, clean dressing."
+  },
+  {
+    "id": "EMR-T1-042",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Blood pressure",
+    "stem": "Which blood pressure method is within EMR scope under the national model?",
+    "options": [
+      "Arterial line reading from a monitor",
+      "Automated cuff only",
+      "Manual cuff and stethoscope",
+      "Pulse oximeter estimate from the finger"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The national scope model lists manual blood pressure at the EMR level. Automated blood pressure devices are listed at the EMT level and above."
+  },
+  {
+    "id": "EMR-T1-043",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Inadequate breathing",
+    "stem": "Which findings show an adult's breathing is not adequate? Select three.",
+    "options": [
+      "Speaking only 1 or 2 words at a time",
+      "Rate of 16 with even rise",
+      "Speaking in full sentences",
+      "Blue tint around the lips",
+      "Pink, dry skin",
+      "Use of neck muscles to breathe"
+    ],
+    "select": 3,
+    "correct": [
+      0,
+      3,
+      5
+    ],
+    "explanation": "Accessory muscle use, broken speech and cyanosis are signs of failing breathing. A rate of 16 with equal chest rise, full sentences and normal skin are signs of adequate breathing."
+  },
+  {
+    "id": "EMR-T1-044",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Emergency moves",
+    "stem": "A patient is down in a smoke-filled room and must be moved now. Put the steps in order.",
+    "options": [
+      "Grab the clothing at the shoulders",
+      "Make sure you can enter safely",
+      "Move to a safe area outside",
+      "Drag the patient along the long axis",
+      "Support the head between your arms"
+    ],
+    "correct": [
+      1,
+      0,
+      4,
+      3,
+      2
+    ],
+    "explanation": "An emergency move is only for an immediate danger. Confirm your own safety, grip the shoulders of the clothing, cradle the head, pull in a straight line along the body to limit spine movement and get clear of the hazard."
+  },
+  {
+    "id": "EMR-T1-045",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Childbirth",
+    "stem": "During an uncomplicated delivery, which actions are right? Select two.",
+    "options": [
+      "Pull the baby out by the head",
+      "Push the head back in to wait",
+      "Support the baby's head as it emerges",
+      "Dry and warm the newborn",
+      "Cut the cord before the baby is out"
+    ],
+    "select": 2,
+    "correct": [
+      2,
+      3
+    ],
+    "explanation": "Guide and support the head gently, then dry, warm and stimulate the newborn. Never pull on the baby or push the head back unless a cord problem needs it under higher-level care."
+  },
+  {
+    "id": "EMR-T1-046",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Rapid transport",
+    "stem": "Which findings in the primary assessment mean the patient needs rapid transport and more help? Select two.",
+    "options": [
+      "Responds only to pain",
+      "Bleeding that is hard to control",
+      "A small scraped knee",
+      "A sprained wrist",
+      "Normal breathing and speech"
+    ],
+    "select": 2,
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "An altered patient and uncontrolled bleeding are priority findings. They call for early transport by EMS and advanced help, while minor injuries can wait."
+  },
+  {
+    "id": "EMR-T1-047",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Responder well-being",
+    "stem": "Which steps help responders cope after a very hard call? Select two.",
+    "options": [
+      "Working extra shifts back to back",
+      "Avoiding all talk about the call",
+      "Drinking alcohol to sleep",
+      "Getting rest and regular meals",
+      "Talking with peers or a support program"
+    ],
+    "select": 2,
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "Peer support, employee assistance programs, sleep and healthy routines help after a hard call. Bottling it up, alcohol and overwork make stress worse."
+  },
+  {
+    "id": "EMR-T1-048",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Mouth-to-mask ventilation",
+    "stem": "Put the steps for mouth-to-mask ventilation of an adult in order.",
+    "options": [
+      "Place the mask on the face",
+      "Let the chest fall before the next breath",
+      "Breathe in until the chest rises",
+      "Seal it with both hands",
+      "Open the airway"
+    ],
+    "correct": [
+      0,
+      3,
+      4,
+      2,
+      1
+    ],
+    "explanation": "Position and seal the mask, open the airway while holding the seal, give each breath over about a second until the chest just rises and let it fall before the next one."
+  },
+  {
+    "id": "EMR-T1-049",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Scene hazards",
+    "stem": "For each situation, choose whether it is safe to approach now or you must wait for another agency.",
+    "rows": [
+      "A patient in a deep silo",
+      "A conscious fall victim in a park",
+      "A domestic fight still going on",
+      "A car on fire with fuel leaking",
+      "A child who fell at a playground"
+    ],
+    "columns": [
+      "Approach now",
+      "Wait for help"
+    ],
+    "correct": [
+      1,
+      0,
+      1,
+      1,
+      0
+    ],
+    "explanation": "An active fight needs police, a burning car needs fire, and a silo is a confined space with deadly gases that needs a rescue team. A fall victim in a park or at a playground can be reached safely."
+  },
+  {
+    "id": "EMR-T1-050",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "AED use",
+    "stem": "Put the steps of using an AED on an adult in cardiac arrest in order.",
+    "options": [
+      "Turn on the AED",
+      "Stand clear while it analyzes",
+      "Attach the pads to the bare chest",
+      "Deliver the shock if advised",
+      "Resume compressions at once"
+    ],
+    "correct": [
+      0,
+      2,
+      1,
+      3,
+      4
+    ],
+    "explanation": "Power the AED, place the pads, keep everyone clear while it checks the rhythm, shock when told to and go straight back to compressions."
+  },
+  {
+    "id": "EMR-T1-051",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Pulse sites",
+    "stem": "For each patient, choose the best place to check the pulse first.",
+    "rows": [
+      "Responsive 7-year-old",
+      "Responsive adult",
+      "Unresponsive infant",
+      "Unresponsive adult"
+    ],
+    "columns": [
+      "Carotid",
+      "Radial",
+      "Brachial"
+    ],
+    "correct": [
+      1,
+      1,
+      2,
+      0
+    ],
+    "explanation": "Check the carotid in an unresponsive adult and the brachial in an infant. In a responsive adult or older child, the radial pulse at the wrist is easiest and also shows the pressure is enough to reach the wrist."
+  },
+  {
+    "id": "EMR-T1-052",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Stoma",
+    "stem": "A patient who breathes through a neck stoma stops breathing. How do you ventilate him?",
+    "options": [
+      "Wait for a paramedic to place an advanced airway",
+      "Give breaths through the nose only",
+      "Seal a mask over his mouth and nose as usual",
+      "Seal a pediatric mask over the stoma"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A patient with a stoma moves air through the opening in his neck, not the mouth. A small round mask sealed over the stoma gives effective breaths."
+  },
+  {
+    "id": "EMR-T1-053",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Pain assessment",
+    "stem": "Match each OPQRST question to the letter it belongs to.",
+    "rows": [
+      "On a scale of 0 to 10, how bad is it?",
+      "What makes it better or worse?",
+      "What were you doing when it started?",
+      "Does the pain go anywhere else?"
+    ],
+    "columns": [
+      "Onset",
+      "Provocation",
+      "Region and radiation",
+      "Severity"
+    ],
+    "correct": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "explanation": "Onset asks what the patient was doing when it began, provocation what changes it, region and radiation where it is and where it spreads, and severity how bad it is."
+  },
+  {
+    "id": "EMR-T1-054",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Antidote auto-injector",
+    "stem": "At a farm call you and your partner develop drooling, pinpoint pupils and muscle twitching after a pesticide spill. What is within EMR scope under the national model?",
+    "options": [
+      "IV fluids started for the farmer",
+      "An inhaler borrowed from a bystander",
+      "Oral glucose for each person",
+      "An agency antidote auto-injector"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The national scope model lets EMRs use agency-supplied auto-injector antidotes for chemical exposures. IV fluids, inhalers and oral glucose are not EMR skills. Get clear of the spill and call hazmat as well."
+  },
+  {
+    "id": "EMR-T1-055",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "EMR medications",
+    "stem": "Under the national model, is each medication within EMR scope?",
+    "rows": [
+      "Agency antidote auto-injector",
+      "Inhaled albuterol",
+      "Intranasal naloxone",
+      "Oral aspirin for chest pain",
+      "Oral glucose"
+    ],
+    "columns": [
+      "Within EMR scope",
+      "EMT and above"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      1,
+      1
+    ],
+    "explanation": "EMRs may give naloxone by intranasal unit dose or auto-injector and antidote auto-injectors for chemical exposures. Aspirin, oral glucose and inhaled bronchodilators are listed at the EMT level and above."
+  },
+  {
+    "id": "EMR-T1-056",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Oxygen cylinder setup",
+    "stem": "Put the steps for preparing an oxygen cylinder in order.",
+    "options": [
+      "Set the flow for the device",
+      "Check the pressure gauge",
+      "Remove the seal and crack the valve briefly",
+      "Open the cylinder valve",
+      "Attach the regulator with its washer"
+    ],
+    "correct": [
+      2,
+      4,
+      3,
+      1,
+      0
+    ],
+    "explanation": "Cracking the valve blows dust from the outlet. Then attach the regulator, open the valve, confirm there is enough pressure and set the flow the device needs."
+  },
+  {
+    "id": "EMR-T1-057",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Chief complaint",
+    "stem": "What is the chief complaint?",
+    "options": [
+      "The diagnosis you suspect after your exam",
+      "The worst injury you see",
+      "The reason dispatch gave",
+      "The problem in the patient's own words"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The chief complaint is why the patient called, ideally in their own words, such as I can't breathe. Record it as said, not as your guess at a diagnosis."
+  },
+  {
+    "id": "EMR-T1-058",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Recovery position",
+    "stem": "An unresponsive patient is breathing well and has no suspected injury. Why place her in the recovery position?",
+    "options": [
+      "To raise her blood pressure while she rests",
+      "To keep her from waking up too quickly",
+      "To make chest compressions easier if she arrests",
+      "To let fluids drain from the mouth"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Lying on her side lets vomit and saliva drain out instead of into the airway, while you keep watching her breathing."
+  },
+  {
+    "id": "EMR-T1-059",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Crowd control",
+    "stem": "Bystanders press around a patient and block your work. What is the best response?",
+    "options": [
+      "Ask the patient to send them away",
+      "Ignore them and keep working",
+      "Give a calm, clear request to step back",
+      "Shout at them to leave the area at once"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A calm, direct request usually works, and you can give a helpful bystander a task such as watching for the ambulance. If the crowd turns hostile, retreat and call police."
+  },
+  {
+    "id": "EMR-T1-060",
+    "section": "emr",
+    "test": 1,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Handoff",
+    "stem": "Which handoff to the arriving EMT is most useful?",
+    "options": [
+      "Complaint, findings, care and changes",
+      "The patient's address and phone number",
+      "How long you waited for them to arrive on scene",
+      "A guess at the diagnosis only"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A short, organized handoff gives the next crew what they need: who the patient is, the complaint, what you found, what you did and how the patient has responded."
+  },
+  {
+    "id": "EMR-T2-001",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Traffic safety",
+    "stem": "You stop your car at a highway crash at night. Where is the safest place to park?",
+    "options": [
+      "Behind the crash, angled to shield the scene",
+      "On the far shoulder across the median, facing traffic",
+      "In front of the crash with lights off",
+      "Across all lanes to stop the traffic flow"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Parking behind the crash, angled with your lights on, forms a barrier that protects you and the patients from traffic. Wear a high-visibility vest and set warning devices if you have them."
+  },
+  {
+    "id": "EMR-T2-002",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Child CPR",
+    "stem": "How deep should you compress the chest of a 6-year-old in cardiac arrest?",
+    "options": [
+      "Just enough to move the skin, to protect the ribs",
+      "About one third of the chest, about 2 inches",
+      "About 1 inch",
+      "About half the depth of the chest"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Children are compressed about one third the depth of the chest, roughly 2 inches, using one or two hands. Shallow compressions do not move enough blood."
+  },
+  {
+    "id": "EMR-T2-003",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Level of consciousness",
+    "stem": "A man answers your questions but cannot tell you the day or where he is. How do you describe him on AVPU?",
+    "options": [
+      "Alert but disoriented",
+      "Responds to pain",
+      "Responds to verbal stimulus",
+      "Unresponsive"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "He is awake with eyes open and talking on his own, so he is Alert on AVPU. His confusion is described separately as disorientation to time and place."
+  },
+  {
+    "id": "EMR-T2-004",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Capillary refill",
+    "stem": "In which patient is capillary refill most useful as a sign of perfusion?",
+    "options": [
+      "A 3-year-old with vomiting",
+      "A 70-year-old in a cold room",
+      "An adult with cold hands outdoors",
+      "A patient wearing nail polish"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Capillary refill is most reliable in young children, such as a 3-year-old. Cold temperatures, age and some medicines make it unreliable in adults."
+  },
+  {
+    "id": "EMR-T2-005",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medical direction",
+    "stem": "What is offline medical direction?",
+    "options": [
+      "Instructions read out by the dispatcher on the radio",
+      "A nurse's advice by phone from the hospital",
+      "A doctor's orders by radio",
+      "Written protocols and standing orders"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Offline medical direction is the set of written protocols, standing orders and training approved by the medical director. Online direction is real-time orders by radio or phone."
+  },
+  {
+    "id": "EMR-T2-006",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carbon monoxide",
+    "stem": "You enter a house where two people have headaches and nausea and a space heater is running. You feel dizzy. What should you do?",
+    "options": [
+      "Open one window and treat inside",
+      "Give oxygen to the sickest person first",
+      "Leave and get everyone outside",
+      "Turn off the heater and stay to treat them inside"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Headaches and nausea in several people, with you now affected, point to carbon monoxide. Get yourself and the occupants into fresh air, and call fire to check the building. You cannot help anyone if you are overcome."
+  },
+  {
+    "id": "EMR-T2-007",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Infant CPR",
+    "stem": "Which method of infant chest compression does the 2025 AHA guidance drop?",
+    "options": [
+      "Two thumbs with hands encircling the chest",
+      "Compressions with a full ratio and breaths",
+      "Two fingers on the breastbone",
+      "The heel of one hand"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The 2025 guidance dropped the two-finger technique because it often fails to reach the right depth. Rescuers use two thumbs with the hands around the chest, or the heel of one hand."
+  },
+  {
+    "id": "EMR-T2-008",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Jaw thrust",
+    "stem": "An unresponsive cyclist was thrown over a car hood. Which maneuver opens her airway?",
+    "options": [
+      "Jaw thrust",
+      "Recovery position first",
+      "Neck roll under the shoulders",
+      "Head tilt-chin lift"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With a mechanism that could injure the spine, the jaw thrust opens the airway with little neck movement. If it fails to open the airway, the airway still takes priority."
+  },
+  {
+    "id": "EMR-T2-009",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pupils",
+    "stem": "After a head injury, one pupil is large and does not react to light. What should you do?",
+    "options": [
+      "Keep shining a light into it until it reacts",
+      "Report it as a sign of pressure on the brain",
+      "Ignore it as a normal finding",
+      "Cover the eye with a patch"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Unequal pupils after head trauma can mean pressure building inside the skull. Report it at once to the arriving EMS crew, who will need to hurry transport."
+  },
+  {
+    "id": "EMR-T2-010",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Wound packing",
+    "stem": "Heavy bleeding comes from a deep wound in the groin where a tourniquet will not fit. What should you do?",
+    "options": [
+      "Lay a thin bandage on top and watch closely",
+      "Pack the wound and hold firm pressure",
+      "Raise the leg and wait",
+      "Apply ice and watch it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Junctional wounds such as the groin or armpit cannot take a limb tourniquet. Packing gauze deep into the wound and holding hard pressure stops the bleeding. Wound packing is within EMR scope."
+  },
+  {
+    "id": "EMR-T2-011",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "PPE choice",
+    "stem": "What PPE do you need to take a pulse on a calm patient with intact skin and no fluids present?",
+    "options": [
+      "A full face shield and gown",
+      "Gloves and a respirator",
+      "Gloves and a gown",
+      "Gloves"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Gloves are the basic standard precaution for patient contact. Eye protection, gowns and respirators are added when splashes, heavy contamination or airborne disease are expected."
+  },
+  {
+    "id": "EMR-T2-012",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "CPR ratio",
+    "stem": "You and a second rescuer give CPR to a 4-year-old. What ratio do you use?",
+    "options": [
+      "15 compressions to 2 breaths",
+      "Compressions only, with no breaths at all",
+      "30 compressions to 2 breaths",
+      "5 compressions to 1 breath at any age"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With two rescuers on a child or infant, use 15:2. A single rescuer uses 30:2 for every age."
+  },
+  {
+    "id": "EMR-T2-013",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nasal airway",
+    "stem": "An unresponsive patient has clenched teeth and snoring breaths. Under the national scope model, which airway adjunct is outside EMR scope?",
+    "options": [
+      "A bag-valve mask",
+      "A nasal airway",
+      "A suction catheter for the mouth",
+      "An oral airway"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The national scope model lists the nasal airway at the EMT level and above. An EMR uses manual maneuvers, suction, an oral airway when there is no gag reflex, and a BVM."
+  },
+  {
+    "id": "EMR-T2-014",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Documentation error",
+    "stem": "You realize you wrote the wrong pulse rate on a paper report. How do you fix it?",
+    "options": [
+      "Black it out completely",
+      "One line through it, then the correction, initialed and dated",
+      "Tear out the page and start over on a new one",
+      "Erase it and write over it"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A single line keeps the original readable and shows a correction, not a cover-up. Add the correct value with your initials and the date."
+  },
+  {
+    "id": "EMR-T2-015",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Shock positioning",
+    "stem": "How should you position a patient in shock with no suspected spine or leg injury?",
+    "options": [
+      "Head down on a steep slope with legs up",
+      "Standing to help blood reach the legs",
+      "Flat on the back and kept warm",
+      "Sitting upright in a chair"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lay the patient flat and prevent heat loss with blankets. Steep head-down positions are no longer advised, and sitting up can worsen low blood flow to the brain."
+  },
+  {
+    "id": "EMR-T2-016",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dispatch information",
+    "stem": "Dispatch sends you to an unresponsive 2-year-old found in a backyard pool. What should you plan on the way?",
+    "options": [
+      "Airway and breathing support right away",
+      "Splinting both legs before any other care",
+      "A slow, detailed history from the parents first",
+      "A long, slow search of the yard for other patients"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A child pulled from water needs immediate airway and breathing care, since drowning causes arrest through lack of oxygen. Ready your ventilation equipment and plan to start rescue breaths early."
+  },
+  {
+    "id": "EMR-T2-017",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxygen delivery",
+    "stem": "A patient with mild shortness of breath will not tolerate a mask. What can you use?",
+    "options": [
+      "Nonrebreather at 2 L/min",
+      "Oxygen blown at the face from a tube",
+      "Nasal cannula at 1 to 6 L/min",
+      "A BVM held loosely over the face"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A nasal cannula gives low to moderate oxygen at 1 to 6 L/min and is easier to tolerate. A nonrebreather needs a high flow to keep the bag full."
+  },
+  {
+    "id": "EMR-T2-018",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Suction",
+    "stem": "Why should each suction attempt on an adult be kept short?",
+    "options": [
+      "Suction removes oxygen too",
+      "It loosens the patient's teeth",
+      "It drains the suction battery",
+      "Long suction cools the airway"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Suction pulls out air along with fluid, so long attempts cause low oxygen. Keep each attempt brief, about 15 seconds or less for an adult, and oxygenate between attempts."
+  },
+  {
+    "id": "EMR-T2-019",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pulse check",
+    "stem": "You find a pulse of 44 in an adult who is pale and confused. What does this mean?",
+    "options": [
+      "A sign of good fitness in a healthy adult",
+      "A normal resting rate",
+      "A slow rate with poor perfusion is serious",
+      "Nothing until you check it again in 15 minutes"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "A rate under 60 with signs of poor perfusion such as confusion and pallor is dangerous and needs rapid transport and advanced help. A slow pulse is only reassuring in a well, alert, fit person."
+  },
+  {
+    "id": "EMR-T2-020",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Resource request",
+    "stem": "Which findings should prompt a request for advanced life support? Select two.",
+    "options": [
+      "Chest pain with cold, clammy skin",
+      "A nosebleed that has stopped",
+      "A small cut on the hand",
+      "A sprained ankle",
+      "A seizure that will not stop"
+    ],
+    "select": 2,
+    "correct": [
+      0,
+      4
+    ],
+    "explanation": "A patient who may be having a heart attack with poor perfusion, or a seizure that keeps going, may need medications and monitoring beyond the EMR level. The minor injuries can wait for routine transport."
+  },
+  {
+    "id": "EMR-T2-021",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Naloxone",
+    "stem": "After intranasal naloxone, an overdose patient wakes, breathes well and wants to leave. What should you know?",
+    "options": [
+      "Naloxone can wear off before the opioid does",
+      "A second dose is never needed after waking",
+      "He is safe to drive himself home after an hour",
+      "He can no longer stop breathing"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Many opioids last longer than naloxone, so breathing can slow again. Keep monitoring, encourage EMS transport and be ready to support breathing."
+  },
+  {
+    "id": "EMR-T2-022",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Abandonment",
+    "stem": "You start care for a patient. Which act could count as abandonment?",
+    "options": [
+      "Asking a paramedic who arrives to take over",
+      "Leaving before an equal or higher level takes over",
+      "Handing off to an arriving EMT",
+      "Staying with the patient until the ambulance leaves"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Once you begin care, you must continue until you hand off to someone with equal or higher training. Walking away before then is abandonment."
+  },
+  {
+    "id": "EMR-T2-023",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Choking infant",
+    "stem": "A 6-month-old is choking and cannot cry or cough. What does current AHA guidance say to do?",
+    "options": [
+      "Hold the infant upside down by the ankles and shake",
+      "Do a blind finger sweep",
+      "Give abdominal thrusts",
+      "Alternate 5 back blows and 5 chest thrusts"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "For a choking infant, the 2025 AHA guidelines call for 5 back blows alternating with 5 chest thrusts using the heel of one hand. Abdominal thrusts are not used in infants because of injury risk."
+  },
+  {
+    "id": "EMR-T2-024",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Focused exam",
+    "stem": "A responsive man complains only of pain in his right ankle after a slip. Which exam fits?",
+    "options": [
+      "No exam at all until EMS arrives on scene",
+      "A check of his pupils and nothing else",
+      "A full head-to-toe exam before anything else",
+      "A focused exam of the ankle and leg"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "With a minor mechanism and one complaint in an alert patient, a focused exam of the injured area, including pulse, movement and feeling below it, is enough."
+  },
+  {
+    "id": "EMR-T2-025",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Internal bleeding",
+    "stem": "A man kicked by a horse has a bruised belly, thirst and a fast, weak pulse. What is the best care?",
+    "options": [
+      "Treat for shock and speed his transport",
+      "Massage the bruised area to ease the pain",
+      "Wait to see if the bruise grows before acting",
+      "Have him drink water for his thirst"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "These signs point to internal bleeding you cannot stop in the field. Keep him flat and warm, give oxygen, and get him to a hospital quickly. Nothing by mouth."
+  },
+  {
+    "id": "EMR-T2-026",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "SALT triage",
+    "stem": "In the SALT individual assessment, a patient who is breathing has a pulse, follows commands and has bleeding controlled, but you judge he will likely not survive with the resources at hand. Which category fits?",
+    "options": [
+      "Immediate",
+      "Delayed",
+      "Expectant",
+      "Minimal"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SALT places a patient who meets the immediate criteria but is unlikely to survive given current resources in the expectant category. That patient is rechecked as resources arrive."
+  },
+  {
+    "id": "EMR-T2-027",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heat stroke",
+    "stem": "A runner is confused and hot after a race in the heat. What is the most important treatment?",
+    "options": [
+      "Cool her rapidly",
+      "Give her a warm drink",
+      "Have her keep walking",
+      "Wrap her in a blanket"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Confusion with a high body temperature is heat stroke, a true emergency. Move her to shade and cool her fast, ideally by immersion in cold water or with wet towels and fanning."
+  },
+  {
+    "id": "EMR-T2-028",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Unresponsive choking",
+    "stem": "A choking adult goes limp in your arms. What do you do after lowering him to the floor?",
+    "options": [
+      "Do a blind finger sweep",
+      "Give back blows to him on the floor",
+      "Keep giving abdominal thrusts until the object comes out",
+      "Start CPR, checking the mouth before breaths"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Once a choking patient becomes unresponsive, start CPR. Compressions may move the object. Each time you open the airway to give breaths, look in the mouth and remove an object only if you can see it."
+  },
+  {
+    "id": "EMR-T2-029",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lifesaving interventions",
+    "stem": "Which lifesaving step does SALT allow during the individual assessment before you move on?",
+    "options": [
+      "Bandaging minor scrapes and small cuts",
+      "Taking a full set of vitals",
+      "Controlling major bleeding",
+      "Splinting a closed fracture"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "SALT lets you do quick lifesaving steps such as controlling major bleeding, opening the airway and, for a child, two rescue breaths, then move on. Splints, full vitals and dressings come after triage."
+  },
+  {
+    "id": "EMR-T2-030",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Tourniquet use",
+    "stem": "Which steps are correct when applying a tourniquet? Select three.",
+    "options": [
+      "Note the time it was applied",
+      "Loosen it every 10 minutes",
+      "Cover it with clothing",
+      "Place it over the knee",
+      "Place it on bare skin",
+      "Tighten until bleeding stops"
+    ],
+    "select": 3,
+    "correct": [
+      0,
+      4,
+      5
+    ],
+    "explanation": "A tourniquet goes on bare skin above the wound, is tightened until the bleeding stops and has its time recorded where everyone can see it. It must stay visible and must not be loosened."
+  },
+  {
+    "id": "EMR-T2-031",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hypothermia",
+    "stem": "A man pulled from snow is cold and drowsy but breathing. What should you do?",
+    "options": [
+      "Have him walk around to warm up his legs",
+      "Give him an alcoholic drink to warm his core",
+      "Rub his arms and legs hard to warm them",
+      "Handle him gently and warm him"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A very cold heart is irritable, so rough handling can trigger a dangerous rhythm. Move him gently, remove wet clothing, insulate him and warm the trunk."
+  },
+  {
+    "id": "EMR-T2-032",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Minor consent",
+    "stem": "A 10-year-old was hurt at soccer and no parent can be reached. She needs care now. What applies?",
+    "options": [
+      "No care until a parent agrees",
+      "Implied consent for emergency care",
+      "Her coach must sign for her",
+      "Only the child's own consent"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Minors usually need a parent's consent, but when a child needs emergency care and no parent can be reached, implied consent allows treatment. Keep trying to reach the parent."
+  },
+  {
+    "id": "EMR-T2-033",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Gastric distension",
+    "stem": "While you ventilate a child with a BVM, her belly swells. What should you change?",
+    "options": [
+      "Squeeze the bag harder so more air goes in",
+      "Breathe faster to keep up with her rate",
+      "Press on the belly to empty it",
+      "Give slower, smaller breaths"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Air going into the stomach means breaths are too big or too fast. Smaller, slower breaths that just make the chest rise reduce distension; pressing on the belly can cause vomiting."
+  },
+  {
+    "id": "EMR-T2-034",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Violent scene",
+    "stem": "While you assess a patient, a family member grows angry and picks up a kitchen knife. What should you do?",
+    "options": [
+      "Ask him to put the knife away in a kitchen drawer",
+      "Leave with your partner and call police",
+      "Take the knife away",
+      "Keep treating and ignore him"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "When a scene becomes unsafe, your first duty is your own safety. Back away, leave by a route you know, and call police. Do not try to disarm anyone."
+  },
+  {
+    "id": "EMR-T2-035",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Transport",
+    "stem": "Under the national model, which statements about an EMR and ambulance transport are true? Select two.",
+    "options": [
+      "An EMT or higher must be in the patient compartment",
+      "An EMR may be the only attendant",
+      "An EMR may not touch the patient en route",
+      "An EMR may assist with care in the ambulance",
+      "An EMR must drive with lights on"
+    ],
+    "select": 2,
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "The national model says an EMR may help with care during transport, but an EMT or higher must be in the patient compartment and responsible for care."
+  },
+  {
+    "id": "EMR-T2-036",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Primary assessment",
+    "stem": "Put the parts of the primary assessment of a responsive trauma patient in order.",
+    "options": [
+      "Control major bleeding",
+      "Check responsiveness",
+      "Decide on transport priority",
+      "Form a general impression",
+      "Check the airway and breathing"
+    ],
+    "correct": [
+      3,
+      1,
+      0,
+      4,
+      2
+    ],
+    "explanation": "After the first look and a check of responsiveness, life-threatening bleeding is handled at once, then airway and breathing, and the findings set how urgent the patient is."
+  },
+  {
+    "id": "EMR-T2-037",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Airway obstruction",
+    "stem": "Which signs point to a severe airway obstruction? Select two.",
+    "options": [
+      "No sound when trying to speak",
+      "Normal breathing between coughs",
+      "Forceful coughing",
+      "A weak, silent cough",
+      "Clear, loud speech"
+    ],
+    "select": 2,
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "A person who cannot speak or has a weak, silent cough is not moving enough air and needs help now. Forceful coughing and clear speech mean the airway is partly open, so encourage coughing and watch closely."
+  },
+  {
+    "id": "EMR-T2-038",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Stroke signs",
+    "stem": "Which findings should make you think of a stroke? Select two.",
+    "options": [
+      "Sudden trouble speaking",
+      "One side of the face droops",
+      "A cut on the forehead",
+      "A cough with a fever",
+      "Pain in both knees for weeks"
+    ],
+    "select": 2,
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "A face droop and sudden speech trouble are classic stroke signs, along with one-sided arm weakness, balance and vision changes. The other findings point elsewhere."
+  },
+  {
+    "id": "EMR-T2-039",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Incident command",
+    "stem": "Match each role to its job under the Incident Command System.",
+    "rows": [
+      "Directs patient sorting",
+      "Gets supplies and equipment",
+      "Gives information to the media",
+      "Sets objectives for the whole incident"
+    ],
+    "columns": [
+      "Incident commander",
+      "Triage officer",
+      "Logistics",
+      "Public information officer"
+    ],
+    "correct": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "explanation": "The incident commander leads and sets objectives, triage sorts patients, logistics finds supplies and equipment, and the public information officer speaks to the media."
+  },
+  {
+    "id": "EMR-T2-040",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Scene size-up",
+    "stem": "Put the parts of a scene size-up in order as you arrive.",
+    "options": [
+      "Request more resources if needed",
+      "Count the patients",
+      "Check the scene for hazards",
+      "Note the mechanism or nature of illness",
+      "Put on the PPE you need"
+    ],
+    "correct": [
+      2,
+      4,
+      3,
+      1,
+      0
+    ],
+    "explanation": "You look for danger before you get out, choose PPE before contact, work out what happened, find every patient and then call for the help the scene needs."
+  },
+  {
+    "id": "EMR-T2-041",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Cervical collar",
+    "stem": "Put the steps of placing a cervical collar on a seated patient in order.",
+    "options": [
+      "Size the collar",
+      "Check movement and feeling in the hands",
+      "Slide the back of the collar behind the neck",
+      "Hold the head still in line",
+      "Fasten the front and recheck"
+    ],
+    "correct": [
+      3,
+      1,
+      0,
+      2,
+      4
+    ],
+    "explanation": "Manual stabilization comes first and continues throughout. Check function, measure and size the collar, place it and fasten it, then recheck movement and feeling."
+  },
+  {
+    "id": "EMR-T2-042",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Vital signs",
+    "stem": "Why take a set of baseline vital signs early?",
+    "options": [
+      "To replace the history",
+      "To decide whether to wear gloves or not",
+      "To make a diagnosis",
+      "To compare with later sets"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Baseline vitals give you a starting point. Repeated sets show whether the patient is getting better or worse, which matters more than any single number."
+  },
+  {
+    "id": "EMR-T2-043",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "EMR scope",
+    "stem": "Under the national scope model, is each airway skill within EMR scope?",
+    "rows": [
+      "Oral airway",
+      "Mouth-to-stoma breathing",
+      "Supraglottic airway",
+      "Upper airway suctioning",
+      "CPAP"
+    ],
+    "columns": [
+      "Within EMR scope",
+      "Above EMR scope"
+    ],
+    "correct": [
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    "explanation": "The national model gives EMRs the oral airway, upper airway suction and all the mouth-to-barrier methods, including through a stoma. Supraglottic airways are AEMT and above, and CPAP is EMT and above."
+  },
+  {
+    "id": "EMR-T2-044",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Respiratory protection",
+    "stem": "For each patient, choose the protection you need beyond gloves.",
+    "rows": [
+      "Suspected measles with a rash",
+      "A vomiting patient",
+      "Cough with suspected tuberculosis",
+      "A quiet fainting episode",
+      "A clean cut on the arm"
+    ],
+    "columns": [
+      "Respirator",
+      "Eye protection",
+      "Gloves only"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      2,
+      2
+    ],
+    "explanation": "Measles and tuberculosis spread through the air and need a fit-tested respirator. Vomit can splash into the eyes, so add eye protection. A clean cut or a faint with no fluids needs gloves only."
+  },
+  {
+    "id": "EMR-T2-045",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Splinting scope",
+    "stem": "Under the national model, is each device or skill within EMR scope?",
+    "rows": [
+      "Long spine board",
+      "Rigid splint for the forearm",
+      "Manual extremity stabilization",
+      "Traction splint for the thigh",
+      "Cervical collar"
+    ],
+    "columns": [
+      "Within EMR scope",
+      "EMT and above"
+    ],
+    "correct": [
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "explanation": "EMRs may stabilize an injured limb by hand, splint it and place a cervical collar. Traction splints and long spine boards are listed at the EMT level and above."
+  },
+  {
+    "id": "EMR-T2-046",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Priority",
+    "stem": "For each patient, choose whether care is a high priority or can wait.",
+    "rows": [
+      "Unresponsive after a fall",
+      "Pain in one finger",
+      "Fast, weak pulse with pale skin",
+      "Trouble breathing with a pale face",
+      "Calm and alert with a small bruise"
+    ],
+    "columns": [
+      "High priority",
+      "Can wait"
+    ],
+    "correct": [
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "explanation": "Signs of shock, an unresponsive patient and breathing trouble are priority findings. A painful finger or a small bruise in an alert patient can wait."
+  },
+  {
+    "id": "EMR-T2-047",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Supply inventory",
+    "stem": "After a call you used the last two pairs of gloves in your kit. What should you do?",
+    "options": [
+      "Borrow from the ambulance later",
+      "Use bare hands on the next call",
+      "Wait until the weekly equipment check",
+      "Restock before the next call"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Restock right after a call so the next patient does not meet an empty kit. Ensuring enough supplies is part of an EMR's job."
+  },
+  {
+    "id": "EMR-T2-048",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Breathing assessment",
+    "stem": "How long should you look, listen and feel for breathing in an unresponsive adult before acting?",
+    "options": [
+      "Until a second responder arrives",
+      "About 30 seconds",
+      "No more than 10 seconds",
+      "A full minute of watching and listening"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Check breathing, and the pulse at the same time if you are trained to, for no more than 10 seconds. Gasping is not normal breathing and calls for CPR."
+  },
+  {
+    "id": "EMR-T2-049",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Water rescue",
+    "stem": "A swimmer is struggling 20 feet from a dock. You are not trained in water rescue. What should you do?",
+    "options": [
+      "Throw a floating object and call for help",
+      "Wade out",
+      "Wait on shore without acting",
+      "Swim out to tow her back to the dock"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Reach or throw, do not go: an untrained rescuer who swims out often drowns too. A ring, cooler or rope gives the swimmer something to hold while trained rescuers come."
+  },
+  {
+    "id": "EMR-T2-050",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Eye injury",
+    "stem": "A worker splashed a cleaning chemical in her eye. What should you do?",
+    "options": [
+      "Put drops of milk in it",
+      "Rub it with a dry cloth",
+      "Flush it with water for a long time",
+      "Cover it and wait for EMS"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Flush the eye right away with plenty of clean water, away from the other eye, and keep going until EMS takes over. Eye irrigation is within EMR scope."
+  },
+  {
+    "id": "EMR-T2-051",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Nosebleed",
+    "stem": "A conscious patient has a heavy nosebleed. How should she sit?",
+    "options": [
+      "Leaning forward while pinching the nose",
+      "Lying on her stomach",
+      "Leaning back with the head tilted toward the ceiling",
+      "Lying flat on her back with her head turned"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Leaning forward keeps blood from running down the throat, where it can be swallowed or inhaled, and firm pinching of the soft part of the nose slows the bleeding."
+  },
+  {
+    "id": "EMR-T2-052",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxygen by nasal cannula",
+    "stem": "An alert patient breathing adequately is mildly short of breath. Your protocol calls for low-flow oxygen. Which device fits?",
+    "options": [
+      "Mouth-to-mask breaths",
+      "Bag-valve mask",
+      "Oral airway",
+      "Nasal cannula"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A patient who is breathing adequately needs oxygen, not ventilation. A nasal cannula gives low-flow oxygen and is within EMR scope. A BVM and rescue breaths are for inadequate breathing."
+  },
+  {
+    "id": "EMR-T2-053",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Head-to-toe exam",
+    "stem": "Put the regions of a full-body exam of a trauma patient in order.",
+    "options": [
+      "Abdomen",
+      "Head",
+      "Pelvis",
+      "Chest",
+      "Neck",
+      "Legs and arms"
+    ],
+    "correct": [
+      1,
+      4,
+      3,
+      0,
+      2,
+      5
+    ],
+    "explanation": "A head-to-toe exam runs in order so nothing is missed: head, neck, chest, abdomen, pelvis, then the extremities, with the back checked when the patient is rolled."
+  },
+  {
+    "id": "EMR-T2-054",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Downed motorcycle",
+    "stem": "A motorcycle rider lies in the road on a blind curve and traffic is still moving. What should happen first?",
+    "options": [
+      "Protect the scene from traffic",
+      "Drag him onto the shoulder",
+      "Remove his helmet right away",
+      "Start a head-to-toe exam"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Approaching cars are the main hazard. Use your vehicle, lights and warning devices or have police stop traffic before you kneel in the road. Move him only if he is in immediate danger."
+  },
+  {
+    "id": "EMR-T2-055",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Older patient",
+    "stem": "An 82-year-old fell at home and seems slightly confused. Her family says this is new. What should you think?",
+    "options": [
+      "Confusion is normal at her age",
+      "She is likely only tired",
+      "No care is needed if she can stand",
+      "New confusion may signal a serious problem"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A sudden change in mental status in an older adult is never just age. It can mean a head injury, low oxygen, infection or stroke. Report the change and its timing to EMS."
+  },
+  {
+    "id": "EMR-T2-056",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mandatory reporting",
+    "stem": "While treating a child, you notice bruises of different ages and an unlikely story. What should you do?",
+    "options": [
+      "Accuse the parents on scene and leave with the child",
+      "Ask the child to keep it a secret from the parents",
+      "Ignore it, since you are not a police officer",
+      "Report your concern as your state requires"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Signs of possible abuse must be reported to the proper authority as state law requires. Stay professional with the family, document what you saw and heard, and pass your concern on at handoff."
+  },
+  {
+    "id": "EMR-T2-057",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Impaled object",
+    "stem": "A worker has a metal rod stuck in his thigh with little bleeding. What should you do?",
+    "options": [
+      "Pull it out and press on the wound",
+      "Twist it to check how deep it goes",
+      "Stabilize it in place with bulky dressings",
+      "Cut it flush with the skin yourself"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Leave an impaled object in place, since it may be plugging a bleeding vessel. Pad around it to keep it from moving and control bleeding around it. Removal happens at the hospital, except an object blocking the airway or CPR."
+  },
+  {
+    "id": "EMR-T2-058",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 3,
+    "format": "multi",
+    "skill": "Infant breathing",
+    "stem": "Which signs show an infant is working too hard to breathe? Select three.",
+    "options": [
+      "Grunting at the end of each breath",
+      "Nostrils flaring with each breath",
+      "Sleeping calmly",
+      "Pink lips and quiet breathing",
+      "Feeding well from a bottle",
+      "Skin pulling in between the ribs"
+    ],
+    "select": 3,
+    "correct": [
+      0,
+      1,
+      5
+    ],
+    "explanation": "Nasal flaring, retractions between the ribs and grunting are signs of respiratory distress in an infant. Pink lips, quiet breathing, good feeding and calm sleep are reassuring."
+  },
+  {
+    "id": "EMR-T2-059",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Antidote auto-injector",
+    "stem": "Who may receive an agency-supplied antidote auto-injector from an EMR at a chemical exposure under the national model?",
+    "options": [
+      "Only the EMR's own partner on the call",
+      "Only patients older than 65",
+      "Exposed people, per protocol",
+      "No one, unless an EMT is standing beside the EMR"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The scope model lists auto-injector antidotes for chemical and hazardous material exposures at every level from EMR up, given to exposed people under medical direction and protocol."
+  },
+  {
+    "id": "EMR-T2-060",
+    "section": "emr",
+    "test": 2,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Opioid overdose",
+    "stem": "Under the national model, after giving intranasal naloxone to a patient who is still not breathing, what must you keep doing?",
+    "options": [
+      "Sit him up and slap his face",
+      "Give him a cold shower to wake him up",
+      "Ventilate with a BVM and oxygen",
+      "Wait quietly for the drug to work"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Naloxone takes minutes to work and may not be enough. Keep ventilating until breathing returns and start CPR if he has no pulse. A shower or slaps waste time."
+  },
+  {
+    "id": "EMR-D-001",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "CPR quality",
+    "stem": "Why must you let the chest come all the way back up after each compression?",
+    "options": [
+      "It lets the patient take a breath on his own",
+      "It rests your arms",
+      "The heart refills with blood",
+      "It keeps the ribs from cracking"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Full chest recoil lets blood flow back into the heart before the next push. Leaning on the chest cuts blood flow."
+  },
+  {
+    "id": "EMR-D-002",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scene safety",
+    "stem": "You arrive at a crash where a pickup lies on its side and rocks slightly. What should you do before reaching the driver?",
+    "options": [
+      "Push it back onto its wheels",
+      "Have it stabilized first",
+      "Break the windshield to reach in",
+      "Climb onto it to open a door"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "An unstable vehicle can roll onto you or the patient. Wait for fire or rescue to crib and stabilize it before you enter or reach inside."
+  },
+  {
+    "id": "EMR-D-003",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Duty to act",
+    "stem": "When does an EMR have a duty to act?",
+    "options": [
+      "While on duty and called to respond",
+      "Only with a doctor present",
+      "Only when paid by the patient",
+      "Whenever they see any accident, on or off duty"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "On duty, an EMR has a legal duty to respond and give care. Off duty, rules vary by state, and Good Samaritan laws may protect people who help in good faith."
+  },
+  {
+    "id": "EMR-D-004",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "DCAP-BTLS",
+    "stem": "During a trauma exam, what does the T in DCAP-BTLS stand for?",
+    "options": [
+      "Tenderness",
+      "Temperature",
+      "Tremor",
+      "Tourniquet time"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "DCAP-BTLS stands for deformities, contusions, abrasions, punctures or penetrations, burns, tenderness, lacerations and swelling."
+  },
+  {
+    "id": "EMR-D-005",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Airway priority",
+    "stem": "Why is the airway checked before almost everything else?",
+    "options": [
+      "It takes the least time",
+      "It is the easiest step to do",
+      "Without it, oxygen cannot reach the lungs",
+      "It tells you the patient's history and medicines"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Every other treatment fails if air cannot reach the lungs. A blocked airway can kill within minutes, so it comes first in the primary assessment along with major bleeding."
+  },
+  {
+    "id": "EMR-D-006",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pulse rate",
+    "stem": "Which resting pulse is within the normal range for an adult?",
+    "options": [
+      "40 a minute",
+      "72 a minute",
+      "130 a minute",
+      "150 a minute"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A normal adult resting pulse is about 60 to 100, so 72 is normal. Children and infants have faster normal rates.",
+    "lockedOrder": true
+  },
+  {
+    "id": "EMR-D-007",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Interruptions",
+    "stem": "How long should pauses in chest compressions last?",
+    "options": [
+      "As long as the AED needs",
+      "Under 10 seconds",
+      "About 20 seconds each time",
+      "About 30 seconds"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Keep pauses for breaths, rhythm checks or shocks under 10 seconds. Blood flow stops the moment compressions stop."
+  },
+  {
+    "id": "EMR-D-008",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Hand hygiene",
+    "stem": "When should you clean your hands during a call?",
+    "options": [
+      "Only if you touched blood or vomit directly",
+      "Only when they look dirty",
+      "Before and after patient contact",
+      "After gloves come off"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Clean your hands before you touch a patient and after contact, including after taking off gloves. Gloves can have tiny holes, and hands pick up germs from the gloves as they come off."
+  },
+  {
+    "id": "EMR-D-009",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Scope of practice",
+    "stem": "What defines what an EMR may do on a call?",
+    "options": [
+      "Anything learned from a training video online",
+      "Whatever the patient asks for",
+      "Whatever a bystander on scene suggests",
+      "State law, medical direction and protocols"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each state sets the legal scope of practice, using the national model as a guide, and the medical director sets local protocols. Act only within both."
+  },
+  {
+    "id": "EMR-D-010",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Medications",
+    "stem": "Why ask which medicines a patient takes?",
+    "options": [
+      "To decide whether to wear gloves",
+      "They hint at the patient's illnesses",
+      "To check the patient's insurance before transport",
+      "So you can give the patient a dose of each one"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A list of medicines tells you about conditions the patient may not mention, such as heart failure or diabetes. EMRs do not give the patient's own prescriptions."
+  },
+  {
+    "id": "EMR-D-011",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Rescuer swap",
+    "stem": "Two rescuers are doing CPR. How often should they switch who compresses?",
+    "options": [
+      "Only when one rescuer is fully exhausted",
+      "Never during the call",
+      "Every 10 minutes",
+      "About every 2 minutes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Compression quality drops as rescuers tire, often before they notice. Swap about every 2 minutes, at the AED analysis, with a quick change."
+  },
+  {
+    "id": "EMR-D-012",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Agonal breathing",
+    "stem": "An unresponsive man takes a slow gasp every 10 seconds. How should you treat this?",
+    "options": [
+      "As a sign he is waking up",
+      "As a reason to wait and watch him",
+      "As adequate breathing for now",
+      "As no normal breathing"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Occasional gasps, called agonal breaths, are a sign of cardiac arrest, not real breathing. If he has no pulse, start CPR."
+  },
+  {
+    "id": "EMR-D-013",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pediatric shock",
+    "stem": "Which sign of shock in a child tends to appear last?",
+    "options": [
+      "A falling blood pressure",
+      "A fast heart rate that keeps climbing",
+      "Slow capillary refill in the fingertips",
+      "Cool hands and feet with mottled skin"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Children hold their blood pressure up until they are near collapse. A fast pulse, cool skin and slow refill come first; low blood pressure is a late and ominous sign."
+  },
+  {
+    "id": "EMR-D-014",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "AED pads",
+    "stem": "A patient in arrest has a hairy, wet chest. What should you do before placing AED pads?",
+    "options": [
+      "Dry the chest and remove hair if needed",
+      "Place the pads over a shirt",
+      "Rub lotion on the skin so the pads slide",
+      "Place the pads on the belly, below the wet skin"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Pads need full skin contact. Wipe the chest dry and shave or pull away hair under the pads, using a spare set if needed."
+  },
+  {
+    "id": "EMR-D-015",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Removing gloves",
+    "stem": "Why do you peel the first glove off inside out and hold it in the other gloved hand?",
+    "options": [
+      "To check the gloves for tears after use",
+      "To keep the outside from touching skin",
+      "To make the used gloves easier to recycle",
+      "To save the gloves for reuse"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Turning the gloves inside out traps the contaminated outer surface inside. Your bare skin then touches only the clean inner side of the second glove."
+  },
+  {
+    "id": "EMR-D-016",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Exposure report",
+    "stem": "A used needle sticks your hand during a call. What should you do?",
+    "options": [
+      "Cover it and report it at next month's meeting",
+      "Keep it quiet to avoid the extra paperwork",
+      "Wait to see if you feel sick",
+      "Wash the site and report it at once"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Wash the area with soap and water and report the exposure right away so testing and preventive treatment can start in time."
+  },
+  {
+    "id": "EMR-D-017",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Diabetic emergency",
+    "stem": "A diabetic man is sweaty, shaky and confused. Under the national scope model, what can an EMR do?",
+    "options": [
+      "Give him oral glucose gel between cheek and gum",
+      "Check his blood sugar with his own meter",
+      "Inject his own insulin",
+      "Protect his airway and call for EMS"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Blood glucose checks and oral glucose are EMT-level skills in the national model. An EMR keeps him safe, protects the airway, gathers the history and gets EMS on the way. State protocols may add more."
+  },
+  {
+    "id": "EMR-D-018",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Implanted device",
+    "stem": "You see a bulge under the skin below an arrest patient's collarbone. How should you place the AED pad?",
+    "options": [
+      "Directly over the bulge",
+      "Away from the bulge",
+      "Skip the AED entirely",
+      "On the arm instead"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The bulge is likely a pacemaker or implanted defibrillator. Place the pad so it is not directly over the device and use the AED as usual."
+  },
+  {
+    "id": "EMR-D-019",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Exposure",
+    "stem": "A patient's blood splashes into your eye. What should you do first?",
+    "options": [
+      "Wait until the call ends, then rinse it",
+      "Flush the eye with plenty of water",
+      "Cover the eye with gauze until the call ends",
+      "Rub the eye gently to clear the blood out"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Flush the eye at once with water or saline, then report the exposure to your supervisor so you can be evaluated quickly. Rubbing can push material deeper."
+  },
+  {
+    "id": "EMR-D-020",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oral airway insertion",
+    "stem": "In an adult, how is an oral airway usually inserted?",
+    "options": [
+      "Tip toward the roof of the mouth, then rotated",
+      "Tip pointing toward the tongue and pushed straight in",
+      "Through one nostril",
+      "Sideways along the cheek and left there"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In adults the airway goes in with the tip pointing to the roof of the mouth and is turned 180 degrees as it nears the back of the throat, so it rides over the tongue. In children it is often inserted with a tongue blade in its normal position."
+  },
+  {
+    "id": "EMR-D-021",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Direct pressure",
+    "stem": "Blood soaks through the gauze you are holding on a leg wound. What should you do?",
+    "options": [
+      "Rinse the wound with water",
+      "Add more gauze and press harder",
+      "Remove the gauze and start over",
+      "Lift the gauze to look"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lifting or removing soaked gauze pulls away clots. Add gauze on top and press harder; if bleeding still will not stop on a limb, apply a tourniquet."
+  },
+  {
+    "id": "EMR-D-022",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Sharps",
+    "stem": "Where should a used sharp go?",
+    "options": [
+      "Back into its cap by hand",
+      "Into a puncture-resistant sharps container",
+      "Into your pocket for later",
+      "Into a regular trash bag"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Put used sharps straight into a puncture-resistant container. Recapping by hand is a common cause of needlesticks."
+  },
+  {
+    "id": "EMR-D-023",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxygen safety",
+    "stem": "Which practice is safe around oxygen?",
+    "options": [
+      "Keep it away from open flames",
+      "Let a patient smoke with a cannula on",
+      "Store cylinders lying loose in a vehicle",
+      "Grease the regulator threads"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Oxygen feeds fire. Keep flames and sparks away, secure cylinders and never put oil or grease on the fittings."
+  },
+  {
+    "id": "EMR-D-024",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reassessment",
+    "stem": "You placed a splint on a forearm. What must you recheck after it is on?",
+    "options": [
+      "Pulse, movement and feeling in the hand",
+      "The patient's blood type",
+      "The patient's pupils only",
+      "Lung sounds on both sides of the chest"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A splint can press on vessels and nerves. Check circulation, movement and sensation below the injury before and after splinting."
+  },
+  {
+    "id": "EMR-D-025",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hazardous materials",
+    "stem": "Which marking on a truck tells you it carries hazardous material you can look up?",
+    "options": [
+      "A speed limiter sticker",
+      "A license plate from another state or country",
+      "A company logo painted on the driver door",
+      "A diamond placard with a four-digit number"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Diamond placards show the hazard class, and the four-digit identification number can be looked up in the Emergency Response Guidebook from a safe distance."
+  },
+  {
+    "id": "EMR-D-026",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cleaning equipment",
+    "stem": "A BVM mask is soiled with saliva after a call. What should happen to it?",
+    "options": [
+      "Wipe it on your sleeve and reuse it",
+      "Rinse it with tap water only",
+      "Follow your agency's cleaning rules",
+      "Leave it in the kit as is"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Follow your agency's rules for single-use items and for cleaning and disinfecting reusable gear. Wear gloves while cleaning."
+  },
+  {
+    "id": "EMR-D-027",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pregnant patient",
+    "stem": "A woman 8 months pregnant feels faint lying flat on her back. How should you position her?",
+    "options": [
+      "Flat on her back",
+      "With her legs raised high on pillows",
+      "On her left side",
+      "Face down"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "In late pregnancy the uterus can press on the large vein that returns blood to the heart when she lies flat. Turning her onto her left side relieves it."
+  },
+  {
+    "id": "EMR-D-028",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "BVM seal",
+    "stem": "Why is a two-person BVM technique preferred when two responders are present?",
+    "options": [
+      "It lets breaths be twice as large",
+      "It doubles the oxygen flow from the tank",
+      "It avoids the need to open the airway",
+      "One holds a better mask seal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "One rescuer uses both hands to hold the mask seal and keep the airway open while the other squeezes the bag. A poor seal is the most common reason BVM breaths fail."
+  },
+  {
+    "id": "EMR-D-029",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Manual blood pressure",
+    "stem": "When taking a manual blood pressure, what is the systolic reading?",
+    "options": [
+      "The highest number you pumped to",
+      "The first tapping sound you hear",
+      "The average of the two numbers",
+      "The point the sounds stop"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "As the cuff slowly deflates, the first clear tapping sound marks the systolic pressure. The point where the sounds disappear is the diastolic pressure."
+  },
+  {
+    "id": "EMR-D-030",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Allergies",
+    "stem": "A patient says she is allergic to latex. What should you do?",
+    "options": [
+      "Note it only if she reacts",
+      "Skip gloves altogether",
+      "Use latex-free gloves and report the allergy",
+      "Use any gloves, since contact will be brief"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Latex can trigger a serious reaction in an allergic person. Switch to non-latex equipment and pass the allergy on at handoff."
+  },
+  {
+    "id": "EMR-D-031",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Newborn care",
+    "stem": "Right after birth, a newborn is limp and not crying. What should you do first?",
+    "options": [
+      "Slap the baby's feet hard until it cries",
+      "Hold the baby upside down by the feet",
+      "Dry, warm and rub the baby",
+      "Wait 5 minutes to see if it cries"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Drying and rubbing the back keeps the baby warm and often starts breathing. If the baby still does not breathe well, start ventilations with a BVM sized for a newborn."
+  },
+  {
+    "id": "EMR-D-032",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "SALT triage",
+    "stem": "During the SALT global sort, a man lies still and does not respond to your commands. What happens next?",
+    "options": [
+      "He is moved to the walkers",
+      "He is skipped until the end",
+      "He is tagged dead at once",
+      "He is assessed first"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Patients who neither walk nor wave are assessed first because they are most likely to need lifesaving care. A tag is given only after the individual assessment."
+  },
+  {
+    "id": "EMR-D-033",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Radio communication",
+    "stem": "Which radio message is best when calling for an ambulance?",
+    "options": [
+      "Brief, clear facts in plain language",
+      "Every detail of the history",
+      "Jokes to calm the crew",
+      "Codes only you understand"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Keep radio traffic short and clear: location, number of patients, their condition and what you need. Plain language avoids confusion between agencies."
+  },
+  {
+    "id": "EMR-D-034",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Complicated delivery",
+    "stem": "During a delivery, a loop of umbilical cord comes out before the baby. Under the national model, what is your role?",
+    "options": [
+      "Cut the cord at once",
+      "Pull the baby out quickly by the shoulders",
+      "Call for higher-level help",
+      "Push the cord back in yourself"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Assisted complicated delivery is listed at the EMT level and above in the national model. Get the highest level of care coming now and help them; a prolapsed cord needs urgent hospital care."
+  },
+  {
+    "id": "EMR-D-035",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pediatric airway",
+    "stem": "Why might a folded towel go under a small child's shoulders when you open the airway?",
+    "options": [
+      "It lowers the risk of vomiting during ventilation",
+      "It stops the child from moving or rolling",
+      "It keeps the child warm on a cold floor",
+      "The large head bends the neck forward"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A young child's large head flexes the neck when lying flat, which can kink the airway. A little padding under the shoulders brings the head to a neutral position."
+  },
+  {
+    "id": "EMR-D-036",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Palpated pressure",
+    "stem": "In a noisy place you cannot hear the pulse sounds. How can you estimate systolic pressure?",
+    "options": [
+      "By guessing from skin color",
+      "By counting breaths",
+      "By feeling for the radial pulse to return",
+      "By pressing on a fingernail and counting the refill"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Inflate the cuff until the radial pulse disappears, then let it down slowly. The reading when the pulse returns is the palpated systolic pressure. Record it as palpated."
+  },
+  {
+    "id": "EMR-D-037",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Events leading up",
+    "stem": "A man is found at the bottom of a staircase. Why ask what happened before he fell?",
+    "options": [
+      "It shows whether he needs a cervical collar",
+      "A medical problem may have caused the fall",
+      "It tells you who is to blame",
+      "It replaces the need for a trauma exam"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A fall may follow a faint, seizure or heart rhythm problem. Asking about events leading up helps you treat both the cause and the injury."
+  },
+  {
+    "id": "EMR-D-038",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pediatric triage",
+    "stem": "In SALT, a child is not breathing after you open the airway. What should you do?",
+    "options": [
+      "Move on without any action",
+      "Give two rescue breaths",
+      "Tag the child dead at once",
+      "Start full CPR and stay"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "SALT allows two rescue breaths for a child who is not breathing after the airway is opened, since a child's arrest often starts with breathing. If breathing does not start, the child is tagged dead and you move on."
+  },
+  {
+    "id": "EMR-D-039",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Privacy",
+    "stem": "Which use of patient information is allowed under HIPAA?",
+    "options": [
+      "Telling friends about the call",
+      "Describing the patient to the press at the scene",
+      "Posting a photo of the scene online without names",
+      "Sharing findings with the receiving hospital"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sharing information with others caring for the patient is permitted. Posting scene photos or telling friends or the media is not."
+  },
+  {
+    "id": "EMR-D-040",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Splinting",
+    "stem": "A bone end is poking through the skin of the shin. How should you handle the wound?",
+    "options": [
+      "Cover it with a sterile dressing and splint",
+      "Leave it open to the air",
+      "Push the bone back under the skin, then bandage",
+      "Rinse the bone with soap"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Cover an open fracture with a sterile dressing to limit contamination, control bleeding without pressing on the bone, and splint it as it lies."
+  },
+  {
+    "id": "EMR-D-041",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dislocation",
+    "stem": "A man's shoulder looks out of place after a fall. What should you do?",
+    "options": [
+      "Pull the arm to put it back",
+      "Have him move it in circles",
+      "Splint it in the position found",
+      "Wrap the hand to the chest very tightly"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Splint a suspected dislocation as found, using a sling and padding for comfort. Putting it back can damage nerves and vessels and is not an EMR skill."
+  },
+  {
+    "id": "EMR-D-042",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Fire safety",
+    "stem": "You reach a house fire before fire crews. Which actions are right? Select two.",
+    "options": [
+      "Enter to search bedrooms",
+      "Report people still inside",
+      "Open doors to let smoke out",
+      "Climb a ladder to a window",
+      "Stay outside the building"
+    ],
+    "select": 2,
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "Without turnout gear and breathing apparatus, stay out, keep bystanders back and give arriving crews what you know about people inside. Opening doors can feed the fire."
+  },
+  {
+    "id": "EMR-D-043",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Patient refusal",
+    "stem": "A patient who refuses care is slurring his words and smells of alcohol. What should you consider?",
+    "options": [
+      "His refusal is always valid if he signs the form",
+      "You must leave at once without a signature",
+      "You can restrain him yourself until he agrees",
+      "He may not be able to refuse safely"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "A valid refusal needs a patient who understands the risks. Intoxication, head injury or low blood sugar can impair that. Get medical direction and police help as your protocols say."
+  },
+  {
+    "id": "EMR-D-044",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Breath sounds",
+    "stem": "During your exam you notice a patient's breathing sounds wet and gurgling from the throat. What does this tell you?",
+    "options": [
+      "There is fluid in the upper airway",
+      "The patient is asleep and resting comfortably",
+      "The patient has a fever and a chest infection",
+      "The lungs are clear"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Gurgling from the throat means fluid in the upper airway that needs suction. Snoring suggests the tongue is partly blocking the airway."
+  },
+  {
+    "id": "EMR-D-045",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Breathing rate",
+    "stem": "Which breathing rate is normal for a resting adult?",
+    "options": [
+      "6 a minute",
+      "16 a minute",
+      "32 a minute",
+      "40 a minute"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A resting adult normally breathes about 12 to 20 times a minute, so 16 is normal. Rates well below or above that range, along with poor chest rise, suggest inadequate breathing.",
+    "lockedOrder": true
+  },
+  {
+    "id": "EMR-D-046",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pulse quality",
+    "stem": "What does a thready pulse mean?",
+    "options": [
+      "It skips every third beat in a regular pattern",
+      "It is weak and hard to feel",
+      "It is strong and bounding",
+      "It is slower than normal for the age"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A thready pulse is weak and faint, often fast, and is a common sign of shock. A bounding pulse is unusually strong."
+  },
+  {
+    "id": "EMR-D-047",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Seizure",
+    "stem": "A man is having a seizure on the floor. What should you do?",
+    "options": [
+      "Hold his arms and legs still",
+      "Put something between his teeth",
+      "Pour water in his mouth",
+      "Move things away and protect his head"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Protect him from injury and do not restrain him or put anything in his mouth. When the jerking stops, roll him onto his side and check breathing."
+  },
+  {
+    "id": "EMR-D-048",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Planning",
+    "stem": "Why is it useful to know the patient's age and complaint from dispatch?",
+    "options": [
+      "It lets you prepare equipment",
+      "It confirms the diagnosis",
+      "It tells you the patient's full medical history",
+      "It allows you to skip the scene size-up"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Dispatch details help you plan, such as readying a pediatric mask or the AED. They can be wrong, so you still size up the scene and assess the patient."
+  },
+  {
+    "id": "EMR-D-049",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Stress",
+    "stem": "Which is a warning sign of growing stress in a responder?",
+    "options": [
+      "Normal interest in hobbies and family",
+      "Trouble sleeping and irritability",
+      "Steady appetite and sleep",
+      "Enjoying time off with friends and family"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Sleep problems, irritability, withdrawal and loss of interest can signal stress building up. Seek support early."
+  },
+  {
+    "id": "EMR-D-050",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Altered patient history",
+    "stem": "A patient is too confused to answer. Where can you find history?",
+    "options": [
+      "Only from the patient later, once he is less confused",
+      "From guessing his age",
+      "Family, bystanders and medical ID jewelry",
+      "From the registration papers in his car"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Family, bystanders, medication bottles and medical ID jewelry can give history when the patient cannot. Note the source in your report."
+  },
+  {
+    "id": "EMR-D-051",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Behavioral emergency",
+    "stem": "An agitated patient is pacing and shouting but not violent. What is the best approach?",
+    "options": [
+      "Speak calmly and keep a clear exit",
+      "Argue with him until he calms down and sits",
+      "Restrain him at once with a sheet and tape",
+      "Stand between him and the door to keep him in"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Stay calm, use a quiet voice, keep a safe distance and never block your own way out. Mechanical restraint is not in the EMR scope; call police if he becomes violent."
+  },
+  {
+    "id": "EMR-D-052",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Rescue breaths",
+    "stem": "Which make rescue breaths more effective? Select two.",
+    "options": [
+      "Skipping the airway opening",
+      "Breaths as fast as possible",
+      "Blowing until the cheeks puff",
+      "Each breath over about 1 second",
+      "Just enough air to see the chest rise"
+    ],
+    "select": 2,
+    "correct": [
+      3,
+      4
+    ],
+    "explanation": "Steady one-second breaths that just raise the chest give oxygen without filling the stomach. Fast or forceful breaths push air into the stomach and can cause vomiting."
+  },
+  {
+    "id": "EMR-D-053",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Signs of shock",
+    "stem": "Which signs fit a patient in shock? Select three.",
+    "options": [
+      "Warm, pink skin",
+      "Fast, weak pulse",
+      "Slow, deep breathing",
+      "Restlessness or anxiety",
+      "Pale, sweaty skin",
+      "Strong, slow pulse"
+    ],
+    "select": 3,
+    "correct": [
+      1,
+      3,
+      4
+    ],
+    "explanation": "Shock makes the brain uneasy, speeds the pulse while weakening it, and pulls blood from the skin. Warm pink skin and a strong slow pulse are not typical of early shock."
+  },
+  {
+    "id": "EMR-D-054",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Snakebite",
+    "stem": "A hiker was bitten on the ankle by a rattlesnake. What is the right care?",
+    "options": [
+      "Put a tourniquet above the bite",
+      "Pack the leg in ice",
+      "Cut the bite and suck out venom",
+      "Keep him calm and the leg still"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Keep the patient still and calm, remove rings or tight items, splint the limb loosely and get him to a hospital. Cutting, suction, ice and tourniquets cause harm."
+  },
+  {
+    "id": "EMR-D-055",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Confined space",
+    "stem": "A worker has collapsed at the bottom of a sewer access hole. What should you do?",
+    "options": [
+      "Climb down quickly to check his pulse",
+      "Stay out and call a rescue team",
+      "Lower a rope and pull him up",
+      "Send a coworker down a ladder to help"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Confined spaces may lack oxygen or hold toxic gas, which is why the worker collapsed. Would-be rescuers often die there. Only trained teams with air supplies should enter."
+  },
+  {
+    "id": "EMR-D-056",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Documentation",
+    "stem": "What should a patient care report include? Select three.",
+    "options": [
+      "Your opinion of the family",
+      "Your guess at blame for the crash",
+      "The care you gave and the response",
+      "Vital signs and findings",
+      "Times of key events and care",
+      "Rumors from bystanders"
+    ],
+    "select": 3,
+    "correct": [
+      2,
+      3,
+      4
+    ],
+    "explanation": "A good report records times, findings, vital signs, the care given and how the patient responded. Opinions, rumors and blame do not belong."
+  },
+  {
+    "id": "EMR-D-057",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Stroke history",
+    "stem": "A man has sudden weakness on one side. Which facts should you gather for the EMS crew? Select two.",
+    "options": [
+      "The color of his car",
+      "Who saw the symptoms start",
+      "Where he went to school",
+      "His favorite food",
+      "When he was last known well"
+    ],
+    "select": 2,
+    "correct": [
+      1,
+      4
+    ],
+    "explanation": "Last known well and the person who saw the onset help the hospital decide on time-sensitive treatment. Bring or name the witness if you can."
+  },
+  {
+    "id": "EMR-D-058",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "multi",
+    "skill": "Cardiac arrest",
+    "stem": "Which actions improve survival in adult cardiac arrest? Select two.",
+    "options": [
+      "Checking the pulse for a full minute",
+      "Starting compressions quickly",
+      "Using an AED as soon as it arrives",
+      "Pausing compressions to find a vein",
+      "Giving breaths before every compression"
+    ],
+    "select": 2,
+    "correct": [
+      1,
+      2
+    ],
+    "explanation": "Early, high-quality compressions and early defibrillation are what most improve survival. Long pulse checks and other pauses take blood flow away."
+  },
+  {
+    "id": "EMR-D-059",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Resource request",
+    "stem": "For each situation, choose the resource to request.",
+    "rows": [
+      "A long ground trip for a critical patient",
+      "A gas smell in a building",
+      "A crowd threatening the crew",
+      "A car door jammed around a trapped driver"
+    ],
+    "columns": [
+      "Fire or rescue",
+      "Law enforcement",
+      "Air medical"
+    ],
+    "correct": [
+      2,
+      0,
+      1,
+      0
+    ],
+    "explanation": "Extrication and gas leaks need fire or rescue, threats need law enforcement, and air medical can shorten a long trip for a critical patient where local protocol allows."
+  },
+  {
+    "id": "EMR-D-060",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Choking pregnant patient",
+    "stem": "A choking woman is visibly pregnant. Where do you give thrusts?",
+    "options": [
+      "On the upper belly",
+      "On the chest",
+      "Only on the back",
+      "On the lower belly"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In late pregnancy, and for people too large to encircle, chest thrusts replace abdominal thrusts so the uterus is not compressed."
+  },
+  {
+    "id": "EMR-D-061",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pediatric assessment",
+    "stem": "How can you form a quick first impression of a young child before you touch her?",
+    "options": [
+      "Check her temperature under the arm",
+      "Watch her look, breathing and color",
+      "Take a blood pressure with a small cuff",
+      "Ask the parent for her full medical history"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Watching from the doorway shows how the child looks and acts, how hard she works to breathe and the color of her skin. A child who is upset by touch may look worse once handled."
+  },
+  {
+    "id": "EMR-D-062",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Arriving at a multiple-patient scene",
+    "stem": "Put the first actions of the first unit at a large incident in order.",
+    "options": [
+      "Request more resources",
+      "Establish command",
+      "Begin triage",
+      "Size up the scene"
+    ],
+    "correct": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "explanation": "The first unit sizes up the scene, takes command, calls for what is needed and then starts triage so care reaches the right patients first."
+  },
+  {
+    "id": "EMR-D-063",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "matrix",
+    "skill": "Oxygen devices",
+    "stem": "Choose the usual flow range for each device.",
+    "rows": [
+      "Nonrebreather mask",
+      "Nasal cannula"
+    ],
+    "columns": [
+      "1 to 6 L/min",
+      "10 to 15 L/min"
+    ],
+    "correct": [
+      1,
+      0
+    ],
+    "explanation": "A nasal cannula runs at 1 to 6 L/min. A nonrebreather needs 10 to 15 L/min to keep its reservoir bag inflated."
+  },
+  {
+    "id": "EMR-D-064",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Abdominal exam",
+    "stem": "Where do you start when feeling a patient's belly for pain?",
+    "options": [
+      "Only on the left side, where the spleen is",
+      "Away from where it hurts",
+      "With deep, hard pressure over the whole belly",
+      "Right on the painful spot"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Begin away from the painful area and move toward it last with gentle pressure, so the patient does not tense up and hide other findings."
+  },
+  {
+    "id": "EMR-D-065",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Weapons",
+    "stem": "While moving a patient you find a handgun in his waistband. What should you do?",
+    "options": [
+      "Unload it yourself",
+      "Stop and get law enforcement to secure it",
+      "Hide it in your kit",
+      "Leave it in place and keep moving him to the car"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Weapons are a scene hazard. Do not handle the gun; tell police and let them secure it before care continues."
+  },
+  {
+    "id": "EMR-D-066",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vehicle safety",
+    "stem": "Why should you wear a seat belt when riding in the back of an ambulance?",
+    "options": [
+      "Crashes can throw unbelted riders",
+      "It speeds up the trip",
+      "It keeps the patient calm during the ride",
+      "It is only a rule for drivers, not crew"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Unrestrained crew members are badly hurt in ambulance crashes. Stay belted whenever you can and secure loose equipment."
+  },
+  {
+    "id": "EMR-D-067",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lifting",
+    "stem": "How should you lift a heavy patient on a device with your partner?",
+    "options": [
+      "Bend at the knees and keep your back straight",
+      "Bend at the waist and lift fast",
+      "Hold the weight far out from your body",
+      "Twist to face the door as you lift, to save time"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Use your legs, keep your back straight, hold the load close and avoid twisting. Ask for more help when a patient is too heavy."
+  },
+  {
+    "id": "EMR-D-068",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Opioid overdose",
+    "stem": "A man with pinpoint pupils breathes 4 times a minute. Before giving intranasal naloxone, what should you do?",
+    "options": [
+      "Wait to see if he wakes up on his own",
+      "Check his blood sugar with a meter first",
+      "Open the airway and ventilate",
+      "Sit him upright in a chair so he can breathe"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Support breathing first. Breaths with a BVM or mask keep oxygen going while naloxone, which takes a few minutes to work, is prepared and given."
+  },
+  {
+    "id": "EMR-D-069",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Improvised tourniquet",
+    "stem": "Why is a commercial tourniquet preferred over a belt?",
+    "options": [
+      "It is cheaper to replace",
+      "It reliably tightens enough to stop flow",
+      "It can be loosened every few minutes to rest the limb",
+      "It does not need to be timed or marked"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Improvised tourniquets often fail to get tight enough and can just slow venous return, which makes bleeding worse. Use a commercial device when one is available."
+  },
+  {
+    "id": "EMR-D-070",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pediatric history",
+    "stem": "A 4-year-old has a fever and a rash. Who is often the best source of her history?",
+    "options": [
+      "Her older siblings only",
+      "Her school nurse's records",
+      "A neighbor across the street",
+      "Her parent or caregiver"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Caregivers know a young child's baseline, recent illness and medicines best. Talk to the child too, at her level, about what hurts."
+  },
+  {
+    "id": "EMR-D-071",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Amputated part",
+    "stem": "A finger was cut off in a saw accident. How should you care for the part?",
+    "options": [
+      "Throw it away since it cannot be saved",
+      "Wrap it in dry gauze, bag it and keep it cool",
+      "Put it straight onto ice",
+      "Soak it in water in a cup"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Wrap the part in dry sterile gauze, seal it in a plastic bag and place the bag on ice or in cool water. Direct contact with ice or soaking damages the tissue."
+  },
+  {
+    "id": "EMR-D-072",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Hazardous materials",
+    "stem": "Two people who were in a spill have chemical powder on their clothes. What should happen before you treat them?",
+    "options": [
+      "They wait until the hospital",
+      "You treat them in your vehicle",
+      "You brush the powder off with your hands",
+      "They are decontaminated first"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Contaminated patients can expose you and everyone else. Hazmat teams decontaminate them first, often by removing clothing and rinsing, unless you have the training and gear to help."
+  },
+  {
+    "id": "EMR-D-073",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Advance directive",
+    "stem": "A family shows you a valid do not resuscitate order for a patient in cardiac arrest. What should you do?",
+    "options": [
+      "Ask a bystander at the scene to decide for you",
+      "Follow the order and your local protocol",
+      "Start CPR anyway every time",
+      "Ignore it unless a doctor is present on scene"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A valid DNR order or similar form tells you the patient's wishes. Follow it as your state and local protocols direct; if you doubt it is valid, begin care and seek medical direction."
+  },
+  {
+    "id": "EMR-D-074",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Child seat",
+    "stem": "A toddler was in a car seat during a minor crash and is awake and calm. How might you limit movement?",
+    "options": [
+      "Strap him upright to an adult board",
+      "Have him walk to the ambulance",
+      "Keep the child in the seat if it is intact",
+      "Take the child out and hold him"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "If the car seat is undamaged and the child is stable, the seat itself can limit movement with padding added. Remove the child only if the seat is damaged or care requires it."
+  },
+  {
+    "id": "EMR-D-075",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrAirway",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Unresponsive patient",
+    "stem": "Put the first steps for an unresponsive adult found on a sidewalk in order.",
+    "options": [
+      "Call for help and an AED",
+      "Check for a response",
+      "Check breathing and pulse",
+      "Make sure the scene is safe"
+    ],
+    "correct": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "explanation": "Confirm safety, tap and shout to check for a response, get help and an AED on the way, then check breathing and pulse together for no more than 10 seconds."
+  },
+  {
+    "id": "EMR-D-076",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrCirc",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Vital signs",
+    "stem": "A trauma patient's pulse rises from 92 to 118 over 10 minutes while his skin grows paler. What does this trend suggest?",
+    "options": [
+      "He is getting worse",
+      "He is calming down",
+      "He is getting better",
+      "The first reading was wrong"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A rising pulse with paler skin suggests worsening shock. Trends across repeated vitals tell you more than one set and should be reported to the next level of care."
+  },
+  {
+    "id": "EMR-D-077",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrSecondary",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reassessment",
+    "stem": "You reassess an unstable patient. How often should this be done?",
+    "options": [
+      "Only once before handoff",
+      "Only if the patient complains",
+      "About every 30 minutes",
+      "About every 5 minutes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Unstable patients are reassessed about every 5 minutes because their condition can change quickly; stable patients about every 15."
+  },
+  {
+    "id": "EMR-D-078",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrScene",
+    "difficulty": 2,
+    "format": "order",
+    "skill": "Removing PPE",
+    "stem": "Following the CDC's first example sequence, put the steps for taking off PPE in order.",
+    "options": [
+      "Remove the mask or respirator",
+      "Clean your hands",
+      "Remove the gloves",
+      "Remove the gown",
+      "Remove the goggles or face shield"
+    ],
+    "correct": [
+      2,
+      4,
+      3,
+      0,
+      1
+    ],
+    "explanation": "In the CDC's first example sequence the most contaminated items come off first: gloves, then eye protection by the clean band, then the gown, then the mask or respirator by the straps, and hands are cleaned at the end."
+  },
+  {
+    "id": "EMR-D-079",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrOps",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Restocking oxygen",
+    "stem": "Your oxygen cylinder gauge reads very low after a call. What should you do?",
+    "options": [
+      "Store it with the full cylinders for later",
+      "Replace it before the next call",
+      "Keep using it until it is empty",
+      "Mark it full to save time"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Replace a low cylinder right away and mark the empty one so it is not grabbed by mistake. A cylinder that runs out mid-call puts the patient at risk."
+  },
+  {
+    "id": "EMR-D-080",
+    "section": "emr",
+    "test": 0,
+    "module": 1,
+    "domain": "emrTreatment",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Bariatric patient",
+    "stem": "A very heavy patient must be moved from an upstairs bedroom. What is the best plan?",
+    "options": [
+      "Lift him alone to save time and space",
+      "Call for more lifting help and equipment",
+      "Have him slide down the stairs on a blanket",
+      "Leave him there and treat in place until he improves"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Moving a heavy patient safely takes enough people and the right equipment. Ask early for lift assistance so no one, patient or rescuer, is injured."
+  }
+]

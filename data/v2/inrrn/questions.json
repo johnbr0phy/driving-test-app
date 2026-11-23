@@ -796,17 +796,17 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Classification",
-    "stem": "Which hill town is the odd one out: Shimla, Dehradun, Shillong or Darjeeling?",
+    "stem": "Which hill town is the odd one out: Shimla, Gangtok, Shillong or Darjeeling?",
     "options": [
-      "Shimla",
       "Darjeeling",
       "Shillong",
-      "Dehradun"
+      "Gangtok",
+      "Shimla"
     ],
     "correct": [
-      1
+      0
     ],
-    "explanation": "Shimla, Dehradun and Shillong are state capitals (Himachal Pradesh, Uttarakhand and Meghalaya). Darjeeling is a hill town in West Bengal but not a capital."
+    "explanation": "Shimla, Gangtok and Shillong are state capitals (Himachal Pradesh, Sikkim and Meghalaya). Darjeeling is a hill town in West Bengal but not a capital."
   },
   {
     "id": "RRBJE-T1-038",

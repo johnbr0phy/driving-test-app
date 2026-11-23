@@ -1,0 +1,4315 @@
+[
+  {
+    "id": "CRISC-T1-001",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Strategy and objectives",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should IT risk be assessed against business objectives rather than against IT goals alone?",
+    "explanation": "A risk practitioner judges risk by how it could stop the enterprise reaching its objectives. An IT goal is only a means to a business outcome.",
+    "options": [
+      "IT goals are audited more often than business goals",
+      "Business goals are too broad to assess against",
+      "IT goals already include every business risk",
+      "Risk matters through its effect on outcomes"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-002",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Enterprise risk management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should IT risk be managed within enterprise risk management rather than apart from it?",
+    "explanation": "Placing IT risk in the ERM view lets leaders weigh it against financial, operational and strategic risk on one common basis.",
+    "options": [
+      "To let IT set an appetite of its own for technology risks",
+      "To keep it inside the yearly IT budget process alone",
+      "To keep technology risks out of board reporting",
+      "To compare it with other business risks"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-003",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Operations management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Outages keep recurring from one unknown cause. Which process should find and remove it?",
+    "explanation": "Incident management restores service each time. Problem management investigates the underlying cause so the outages stop.",
+    "options": [
+      "Capacity management",
+      "Incident management",
+      "Release management",
+      "Problem management"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-004",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Risk scenarios",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which elements make up a complete IT risk scenario?",
+    "explanation": "A scenario describes who or what acts, the type of threat, the event, the asset or resource affected and when it happens, so its likelihood and impact can be judged.",
+    "options": [
+      "Threat, vulnerability and control only",
+      "Asset, owner, budget, control and audit date",
+      "Actor, threat, event, asset and timing",
+      "Server, network and data center"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T1-005",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Analysis methodologies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Ransomware would destroy 30% of the value of a customer database worth \\$500,000. What is the single loss expectancy in dollars?",
+    "explanation": "SLE = asset value x exposure factor = 500,000 x 0.30 = 150,000 dollars. 350,000 is the value that would survive; dividing by 0.30 gives 1,666,667.",
+    "options": [
+      "150000",
+      "350000",
+      "500000",
+      "1666667"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "CRISC-T1-006",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Risk response options",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A risk is well inside appetite and treating it would cost more than it saves. Which response fits?",
+    "explanation": "When exposure is within appetite and treatment is not worth its cost, the owner can accept the risk formally and keep monitoring it.",
+    "options": [
+      "Mitigation",
+      "Transfer",
+      "Avoidance",
+      "Acceptance"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-007",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which test method gives the STRONGEST evidence that a control works?",
+    "explanation": "Reperforming the control shows directly whether it produces the right result. Inquiry and policy review only show what should happen.",
+    "options": [
+      "Reperformance by the tester",
+      "Reading the written policy document",
+      "Inquiry of the control owner and team",
+      "A survey of user opinion"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T1-008",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Risk metrics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a key control indicator (KCI) measure?",
+    "explanation": "A KCI tracks a control's performance, such as the share of access reviews done on time. A KRI tracks the level of a risk.",
+    "options": [
+      "How much residual risk the enterprise holds",
+      "How well a control is working",
+      "How profitable a unit is",
+      "How likely a threat is to succeed this year"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T1-009",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscInfoSec",
+    "skill": "Security concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A security control is strong, but it stops staff doing routine work. What is the MOST likely result?",
+    "explanation": "Controls that block normal work invite workarounds, which can leave the risk higher than a balanced control would. Usability is part of control design.",
+    "options": [
+      "Staff find ways around it",
+      "Audit closes the related risk",
+      "Productivity rises once staff adjust",
+      "Risk falls to zero for that process"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T1-010",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Roles and responsibilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who is accountable for deciding how much IT risk the enterprise will take?",
+    "explanation": "Setting the level of risk the enterprise accepts is a governance decision for the board and senior management. The risk practitioner advises and reports.",
+    "options": [
+      "Risk practitioner who runs the risk program",
+      "Line managers in each business unit",
+      "Chief information officer acting alone",
+      "Board and senior management"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-011",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Lines of defense",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In the three lines model, which line owns and manages risk day to day?",
+    "explanation": "Business and operational managers own the risks in their areas and run the controls. Second-line functions oversee and challenge; internal audit gives independent assurance.",
+    "options": [
+      "Operational management",
+      "Regulators who supervise the enterprise",
+      "Internal audit reporting to the board",
+      "Risk management and compliance functions"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T1-012",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "SDLC",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In which SDLC phase is fixing a security flaw usually cheapest?",
+    "explanation": "Changing a design costs little compared with reworking code that is built, tested and in use.",
+    "options": [
+      "Requirements and design",
+      "User acceptance testing",
+      "Production operation",
+      "Coding and unit testing"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T1-013",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Risk scenarios",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is the MAIN strength of a top-down approach to building risk scenarios?",
+    "explanation": "Top-down starts from objectives and asks what could stop them, so scenarios stay relevant to leaders. Bottom-up starts from assets and threats and catches technical detail.",
+    "options": [
+      "Ties scenarios to business objectives",
+      "Uses past incident data alone",
+      "Catches every technical flaw in each system",
+      "Needs no input from business managers"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T1-014",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Analysis methodologies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the MAIN weakness of a heat map built from qualitative ratings?",
+    "explanation": "Labels such as medium and high are subjective and coarse, so two risks in one cell may differ greatly. Heat maps still help prioritize.",
+    "options": [
+      "Ratings are hard to compare precisely",
+      "It needs exact dollar figures for all business risks",
+      "Only specialists can read it",
+      "It cannot show likelihood and impact together"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T1-015",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Risk response options",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which factor should MOST influence the choice among risk responses?",
+    "explanation": "A response should bring risk within appetite at a cost the business accepts. Habit or imitation is not a sound basis.",
+    "options": [
+      "Ease of writing the report",
+      "Fit with risk appetite and cost",
+      "Preference of the IT operations team",
+      "The response a peer company chose for a similar risk"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T1-016",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A login screen that blocks access after a wrong password is which kind of control?",
+    "explanation": "It stops the unwanted action before it succeeds. A detective control would only record or alert on the attempt.",
+    "options": [
+      "Corrective",
+      "Detective",
+      "Preventive",
+      "Directive"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T1-017",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Risk metrics",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which makes a KRI a leading indicator rather than a lagging one?",
+    "explanation": "Leading indicators signal rising exposure early, such as growing patch backlogs. Lagging indicators record losses after the fact.",
+    "options": [
+      "It counts incidents from the past quarter",
+      "It changes before losses occur",
+      "It is reported to the board every year",
+      "It is set by the risk committee"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T1-018",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Roles and responsibilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the risk practitioner's MAIN role in a risk decision taken by a business owner?",
+    "explanation": "The practitioner gathers and analyzes risk information so the owner can decide. The decision and its funding stay with the business.",
+    "options": [
+      "Fund the chosen response",
+      "Overrule the owner if needed",
+      "Approve the final decision",
+      "Supply analysis to inform it"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-019",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Lines of defense",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is the second line's MAIN role in IT risk?",
+    "explanation": "The second line, such as risk management and compliance, sets frameworks, monitors and challenges how the first line manages risk.",
+    "options": [
+      "Approving every IT purchase",
+      "Independent assurance to the audit committee",
+      "Running daily IT operations and controls",
+      "Oversight and challenge of the first line"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-020",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscInfoSec",
+    "skill": "Privacy principles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A marketing team wants to keep every customer field in case it proves useful later. Which risk does this MAINLY raise?",
+    "explanation": "Personal data held without a need add exposure: a breach or misuse can harm more people. Data minimization limits collection and keeping to what the purpose needs.",
+    "options": [
+      "Fewer reports for the business",
+      "Slower marketing campaigns",
+      "Higher licence fees for the CRM",
+      "More harm if the data are breached"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-021",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Enterprise architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does a technology roadmap help the risk practitioner?",
+    "explanation": "A roadmap shows planned systems and retirements, so risks such as unsupported software can be assessed before they arrive.",
+    "options": [
+      "Replaces the risk register",
+      "Sets the risk appetite for IT",
+      "Records which risks were accepted last year",
+      "Shows coming changes to assess early"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-022",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Threat modeling",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which threat modeling output is MOST useful to the risk register?",
+    "explanation": "Threat modeling names the threats that could realistically hit each part of a system. Those become risk scenarios that can be rated and owned.",
+    "options": [
+      "A list of developers on the project",
+      "Test cases for user interface layout",
+      "Credible threats to each component",
+      "The hosting provider's price sheet"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T1-023",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Inherent and residual risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A risk is rated before any controls are considered. What is this rating?",
+    "explanation": "Inherent risk is the exposure with no controls in place. Residual risk is what remains once controls are counted.",
+    "options": [
+      "Residual risk after treatment",
+      "Secondary risk from a response",
+      "Control risk of the process",
+      "Inherent risk"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-024",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Risk ownership",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the difference between a risk owner and a control owner?",
+    "explanation": "The risk owner is accountable for the risk and its response. The control owner makes sure a specific control works day to day.",
+    "options": [
+      "Risk owner decides; control owner operates",
+      "They are always the same person",
+      "Risk owner operates controls; auditors decide",
+      "Control owner decides; risk owner tests the control"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T1-025",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control design",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A control is selected for a risk. What should be confirmed BEFORE it is built?",
+    "explanation": "A control that does not act on the cause or effect of the risk will not reduce it, however advanced it is.",
+    "options": [
+      "It needs no owner",
+      "It uses the newest technology",
+      "It addresses the risk's cause",
+      "It is the costliest option"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T1-026",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Data validation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A KRI drops sharply after a new data feed is connected. What should be checked FIRST?",
+    "explanation": "A sudden change after a data source changes may be a collection error. Metrics must be validated before they drive decisions.",
+    "options": [
+      "Whether to lower appetite",
+      "Whether the data are accurate",
+      "Whether the risk has vanished",
+      "Whether to close the KRI"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T1-027",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Culture and ethics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Staff fear blame for reporting control failures. What is the MAIN effect on risk management?",
+    "explanation": "A culture that punishes bad news keeps problems hidden, so the risk profile looks healthier than it is.",
+    "options": [
+      "Risks surface late or not at all",
+      "Risk appetite rises by itself",
+      "Audits find nothing to test",
+      "Control testing will become more frequent"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T1-028",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Risk appetite and tolerance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the MAIN purpose of setting a risk tolerance for a specific objective?",
+    "explanation": "Tolerance is the acceptable variation for a specific objective or measure. Appetite is the broader amount of risk the enterprise is willing to pursue, and a breach of tolerance flags where action is due.",
+    "options": [
+      "To set the cost of each control",
+      "To show when a deviation needs action",
+      "To replace the risk appetite statement",
+      "To raise inherent risk ratings"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T1-029",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Data lifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which data lifecycle stage carries the risk that records outlive their legal need?",
+    "explanation": "Keeping data longer than required raises breach and legal exposure. Retention schedules decide when data should be destroyed.",
+    "options": [
+      "Retention",
+      "Use",
+      "Creation",
+      "Sharing"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T1-030",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscInfoSec",
+    "skill": "Risk awareness",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What should risk awareness training for managers stress MOST?",
+    "explanation": "Managers own risks in their areas, so their training covers how to identify, report and respond to risk.",
+    "options": [
+      "How audit samples are drawn and sized",
+      "Detailed firewall rule syntax and logging",
+      "How malware is written",
+      "Their duties as risk owners"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-031",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Threat landscape",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Attackers start exploiting a flaw in a widely used file transfer product. What should the practitioner do FIRST?",
+    "explanation": "The first question is exposure: whether the product runs in the enterprise and where. Ratings and responses follow from that.",
+    "options": [
+      "Raise the rating of every file transfer risk",
+      "Ban all file transfers at once until patched",
+      "Wait for a vendor report",
+      "Check whether the firm uses it"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-032",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Business impact analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does a BIA estimate impact at several downtime lengths, such as one hour, one day and one week?",
+    "explanation": "Losses often rise sharply after some point, such as a missed payroll run. Plotting impact over time shows when a process becomes critical.",
+    "options": [
+      "Backups run at those times",
+      "Regulators sample those periods",
+      "Harm usually grows with downtime",
+      "Shift patterns follow those periods"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T1-033",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Vendor risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which vendors should get the deepest risk assessment?",
+    "explanation": "Assessment effort follows the risk a vendor brings, which depends on the data and systems it touches and how much the business relies on it.",
+    "options": [
+      "Those with the largest contracts by yearly value",
+      "Those that have been suppliers the longest time",
+      "Those with critical access or data",
+      "Those located in other countries from the firm"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T1-034",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control implementation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should business users test a new control before it goes live?",
+    "explanation": "User testing shows whether the control blocks legitimate work or invites workarounds, which would weaken it in practice.",
+    "options": [
+      "To set the business risk appetite",
+      "To replace later control testing",
+      "To confirm the vendor met its contract terms",
+      "To catch disruption early"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-035",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Risk action plans",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What should every risk action plan include?",
+    "explanation": "A plan can be tracked only if it states who acts, what will be done, by when and with what resources.",
+    "options": [
+      "Risk rating history and links to past findings",
+      "Each related system's network address and hostname",
+      "Owner, steps, dates and resources",
+      "The business unit's mission and values statement"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T1-036",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Policies and standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new IT risk policy is drafted. What gives it authority across the enterprise?",
+    "explanation": "Policy carries weight when leadership approves it and expects compliance. Publishing a draft does not give it a mandate.",
+    "options": [
+      "Approval by senior management",
+      "Signature by the risk analyst",
+      "Publication on the intranet",
+      "Review by the help desk"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T1-037",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Risk appetite and tolerance",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "How does risk capacity differ from risk appetite?",
+    "explanation": "Capacity is the largest loss the enterprise could survive. Appetite, set by leadership, should sit well inside that limit.",
+    "options": [
+      "Capacity is the most it could absorb",
+      "Capacity is the risk left after all controls",
+      "Capacity is set by the risk committee",
+      "Capacity applies only to IT risks"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T1-038",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Project management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A project team skips the risk review to meet a launch date. What is the MAIN concern?",
+    "explanation": "Bypassing risk review puts systems into production with unknown exposure that the business has not accepted.",
+    "options": [
+      "The team learns faster",
+      "Audit fees will rise the following year",
+      "The project will cost more to run",
+      "Risks go live unassessed"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-039",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Business resilience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should business managers, not IT alone, own the business continuity plan?",
+    "explanation": "Continuity keeps critical business processes going, so the people who run those processes decide priorities and workarounds. IT supports it by restoring the technology.",
+    "options": [
+      "They know which work must continue",
+      "It removes the need for disaster recovery",
+      "IT staff cannot follow the plan",
+      "Regulators ban IT from planning"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T1-040",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Risk profile",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does the enterprise IT risk profile show?",
+    "explanation": "The risk profile gives a picture of the enterprise's IT risk at a point in time, so leaders can see where exposure sits.",
+    "options": [
+      "The approved project budget",
+      "Current risks and their levels overall",
+      "Every open audit finding",
+      "Risks accepted by each owner in past years"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T1-041",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Vulnerability management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should vulnerability scans be authenticated where possible?",
+    "explanation": "Logged-in scans can inspect installed software and settings, so they find flaws an outside view misses.",
+    "options": [
+      "They need no approval",
+      "They finish in less time",
+      "They see more installed flaws",
+      "They hide results from attackers"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T1-042",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Risk register",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which field in a risk register MOST helps track whether action is happening?",
+    "explanation": "Status and due dates for each treatment show whether owners are acting on the risks they hold.",
+    "options": [
+      "Name of the database server",
+      "Treatment status and due date",
+      "Date the register was created",
+      "Font used in the report"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T1-043",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Vendor risk",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A key vendor relies on a subcontractor the company has never assessed. What is this risk called?",
+    "explanation": "Fourth parties are the vendors of your vendors. Their failures can reach you even though you have no contract with them.",
+    "options": [
+      "Residual risk",
+      "Inherent risk",
+      "Fourth-party risk",
+      "Market risk"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T1-044",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control analysis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Two controls cover the same risk and both fully work. What should the practitioner consider?",
+    "explanation": "Redundant controls cost money to run. Where layering is not needed for defense in depth, one may be removed.",
+    "options": [
+      "Adding a third control for full coverage",
+      "Removing the owner",
+      "Raising the inherent risk rating of the scenario",
+      "Retiring one to save cost"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-045",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Reporting techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which report format BEST shows the board how top risks moved this quarter?",
+    "explanation": "Leaders need a concise view of the main risks and their direction. Technical detail suits operational teams.",
+    "options": [
+      "Raw vulnerability scan output",
+      "Full list of every risk in the register",
+      "Dashboard with trend arrows",
+      "Unsorted incident tickets"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T1-046",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscInfoSec",
+    "skill": "Security concepts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which control gives non-repudiation for an approved payment request?",
+    "explanation": "A signature tied to one person's private key proves who approved and stops them later denying it. Shared credentials cannot show who acted.",
+    "options": [
+      "Digital signature",
+      "Shared admin password",
+      "Network segment",
+      "Nightly backup"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T1-047",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Technology resilience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why test restoring from backups, not just making them?",
+    "explanation": "A backup that cannot be restored gives no protection. Restore tests prove the data and process work.",
+    "options": [
+      "Backups may not restore",
+      "It lowers storage costs",
+      "Testers then run every restore",
+      "Testing makes backups faster"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T1-048",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Asset management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should asset values in the inventory reflect business impact, not only purchase price?",
+    "explanation": "A cheap server can hold data whose loss would halt sales or bring fines. Valuing assets by impact puts protection where the harm would be greatest.",
+    "options": [
+      "Purchase prices are rarely recorded",
+      "It lowers insurance premiums",
+      "Loss harm can far exceed cost",
+      "Accountants require impact values"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T1-049",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Legal and regulatory requirements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A regulator adds a new data retention rule. How should it enter the risk program?",
+    "explanation": "Legal obligations become requirements that controls must meet. Mapping them shows where current controls fall short.",
+    "options": [
+      "As a best practice the business may adopt",
+      "As a requirement mapped to controls",
+      "Only after the first fine",
+      "As a matter for IT staff alone"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T1-050",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Risk events",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A misconfigured storage bucket exposes data for a week but no one accesses it. How should it be treated?",
+    "explanation": "A near miss shows a control gap without harm this time. Recording it helps fix the cause before a real loss.",
+    "options": [
+      "As a confirmed breach",
+      "As a finding only",
+      "As a near miss to learn from",
+      "As nothing"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T1-051",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Risk assessment standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which NIST publication gives guidance on conducting risk assessments?",
+    "explanation": "SP 800-30 is the guide for conducting risk assessments. SP 800-61 covers incident response, SP 800-88 media sanitization and SP 800-63 digital identity.",
+    "options": [
+      "SP 800-63",
+      "SP 800-30",
+      "SP 800-61",
+      "SP 800-88"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T1-052",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Exceptions and exemptions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does an exception usually differ from an exemption?",
+    "explanation": "An exception is a time-bound departure from a requirement while a fix is made. An exemption is a lasting release where the requirement does not reasonably apply.",
+    "options": [
+      "Exemption is temporary; exception standing",
+      "Exception is temporary; exemption standing",
+      "They mean the same thing",
+      "Exception needs no approval at all"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T1-053",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control frameworks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why map controls to a common framework such as COBIT?",
+    "explanation": "Mapping shows which control objectives are covered, missing or duplicated, which supports planning and reporting.",
+    "options": [
+      "To avoid control testing",
+      "To remove all custom controls",
+      "To fix the budget for good",
+      "To find gaps and overlaps"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-054",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Monitoring techniques",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why is continuous monitoring of controls preferred where it is practical?",
+    "explanation": "Automated, ongoing checks catch a control failure close to when it happens, instead of at the next periodic review.",
+    "options": [
+      "Failures are found sooner",
+      "It removes residual risk from monitored systems",
+      "Periodic independent reviews are no longer needed",
+      "Owners then need no training on their controls"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T1-055",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Emerging technologies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A business wants to put a machine learning model into credit decisions. Which risk is MOST specific to this choice?",
+    "explanation": "Models can learn bias from training data and give results that are hard to explain, which raises fairness, legal and reputation risk.",
+    "options": [
+      "Slower decisions for each applicant",
+      "Lower electricity bills",
+      "Biased or unexplainable outcomes",
+      "Higher storage costs for training data"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T1-056",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Business processes",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which input is MOST useful when the risk practitioner first studies a business process?",
+    "explanation": "Understanding how the process works and which systems and data it depends on shows where IT risk can affect it.",
+    "options": [
+      "Last audit report",
+      "Vendor sales contact list",
+      "Marketing plan",
+      "Process map with its key systems"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-057",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Risk frameworks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why might an enterprise base its risk program on a recognized framework such as COSO ERM?",
+    "explanation": "A framework gives a common language and a tested structure. Leaders still set the appetite and owners still manage the risks.",
+    "options": [
+      "It removes all legal duties",
+      "Regulators then skip the program",
+      "It sets the risk appetite for you",
+      "Shared terms and proven structure"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-058",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscInfoSec",
+    "skill": "Privacy principles",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A team wants to reuse recorded support calls to train a sales AI model. What should the risk practitioner check FIRST?",
+    "explanation": "Personal data should be used only for the purposes people were told about, unless a new lawful basis applies. A new use needs that check before any build starts.",
+    "options": [
+      "Whether the new use fits the stated purpose",
+      "Whether the sales team has enough staff",
+      "Whether the recordings sit on fast storage",
+      "Whether the model vendor offers a discount"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T1-059",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Risk scenarios",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who should help validate risk scenarios for a sales platform?",
+    "explanation": "People who run and support the process know whether a scenario is realistic and what it would cost the business.",
+    "options": [
+      "Last year's external reviewers",
+      "The platform vendor's support desk",
+      "The marketing agency",
+      "Sales managers and IT owners"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-060",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Analysis methodologies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why might the practitioner use ranges, such as a loss between \\$1 million and \\$4 million?",
+    "explanation": "Ranges and probability estimates show how uncertain the analysis is, which a single precise number would hide.",
+    "options": [
+      "To meet a reporting rule for insurers",
+      "To hide the real figure",
+      "To show uncertainty honestly",
+      "To avoid review by the risk owner"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T1-061",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Issues and findings",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An audit finding has a management response but no due date. What should the practitioner ask for?",
+    "explanation": "A finding is tracked to closure through an owner and a date. Without them, progress cannot be followed.",
+    "options": [
+      "Removal of the finding from the issue log",
+      "A second review to confirm the finding is valid",
+      "A new risk taxonomy for the business unit",
+      "Target date and named owner"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-062",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control implementation",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put these control implementation steps in order:",
+    "explanation": "A control starts from the requirement it must meet, is designed and built, tested before use, put into operation and then monitored.",
+    "options": [
+      "Define the control requirement",
+      "Design and build the control",
+      "Test it with the business",
+      "Put it into operation",
+      "Monitor its performance"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "CRISC-T1-063",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Emerging risks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Staff begin pasting company data into public AI chat tools. How should the risk practitioner treat this?",
+    "explanation": "A new technology used in new ways can expose data. It should be added to monitoring, assessed and reported.",
+    "options": [
+      "As outside IT risk scope",
+      "As an emerging risk to assess",
+      "As a training matter for the help desk only",
+      "As a closed past event"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T1-064",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Operations management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "DevOps teams deploy many times a day. How should change risk be managed?",
+    "explanation": "Building tests, scans and approvals into the deployment pipeline keeps control over frequent change without slowing it to a halt.",
+    "options": [
+      "Automated checks in the pipeline",
+      "Monthly change board approval on paper",
+      "Pausing all deployments until a quarterly window",
+      "Skipping tests"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T1-065",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Organizational structure",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two features make an enterprise's risk function MOST effective? (Choose two.)",
+    "explanation": "A risk function needs authority from leadership and the access to see risk wherever it arises. Reporting lines through operations or audit weaken its independence and reach.",
+    "options": [
+      "Clear mandate from leadership",
+      "Staff drawn only from IT",
+      "Access to all business units",
+      "Reporting through the help desk",
+      "Budget set by the auditors"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "CRISC-T1-066",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Enterprise risk management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A business unit keeps its own risk list in a format no one else uses. What is the MAIN problem?",
+    "explanation": "Without common scales and formats, the unit's risks cannot be combined with others into an enterprise view.",
+    "options": [
+      "The list holds too much technical detail",
+      "Controls in that unit will cost less to run",
+      "Risks cannot be aggregated",
+      "Owners in other units will refuse to rate"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T1-067",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscInfoSec",
+    "skill": "Security frameworks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a security baseline define?",
+    "explanation": "A baseline sets the minimum configuration for a type of system, so deviations can be found and corrected.",
+    "options": [
+      "List of past incidents",
+      "Best settings each user may choose",
+      "Minimum settings systems must meet",
+      "Highest budget allowed"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T1-068",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Vulnerability management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A patch would fix a serious flaw, but testing shows it breaks a key application. What is the BEST action?",
+    "explanation": "When the fix cannot be applied yet, other controls such as isolation or extra monitoring reduce exposure while the conflict is resolved.",
+    "options": [
+      "Accept the flaw with no review",
+      "Remove the key application",
+      "Install the patch at once and fix the app later",
+      "Apply compensating controls and track"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-069",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Inherent and residual risk",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Residual risk is higher than expected after new controls go in. What should be checked FIRST?",
+    "explanation": "Controls that are poorly designed or not operating leave more risk than planned. Testing them shows where the gap comes from.",
+    "options": [
+      "Whether the controls work as designed",
+      "Whether the risk owner has changed jobs",
+      "Whether business risks were re-rated",
+      "Whether appetite was raised"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T1-070",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Risk response options",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A firm moves a risky process to a provider but keeps liability for customer harm. What remains true?",
+    "explanation": "Outsourcing shares some of the work and loss, but accountability to customers and regulators stays with the enterprise.",
+    "options": [
+      "Risk becomes inherent",
+      "Provider is accountable",
+      "All risk left the firm",
+      "Accountability stays with the firm"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-071",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control testing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A tester watches staff perform a backup step. Which method is this?",
+    "explanation": "Observation means watching the control happen. Inspection examines records, inquiry asks people and reperformance repeats the control.",
+    "options": [
+      "Inquiry of the operator",
+      "Observation",
+      "Inspection of backup logs",
+      "Reperformance of the backup"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T1-072",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Data aggregation",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two steps make risk data from many units fit to combine? (Choose two.)",
+    "explanation": "Aggregation works only when units rate and define risk the same way. Mixed scales and formats cannot be added together reliably.",
+    "options": [
+      "Each unit's own scoring",
+      "Shared data definitions",
+      "Data from one unit only",
+      "Reports in any format",
+      "Common rating scales"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "CRISC-T1-073",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Technology principles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does end-of-life software raise risk?",
+    "explanation": "Once support ends, new flaws stay unpatched, so exposure grows over time.",
+    "options": [
+      "It cannot run on newer hardware at all",
+      "Vendors stop issuing fixes",
+      "Licenses for it become free to all users",
+      "It can no longer store business data reliably"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T1-074",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Culture and ethics",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "What does a code of ethics MAINLY give staff facing a risk dilemma?",
+    "explanation": "A code of ethics sets out the conduct expected of everyone. It guides judgment rather than listing a procedure for each situation.",
+    "options": [
+      "Legal advice on each decision",
+      "Bonus rules for good behavior",
+      "Exact steps for every case",
+      "Expected standards of conduct"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T1-075",
+    "section": "crisc",
+    "test": 1,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Contractual requirements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A customer contract requires breach notice within 24 hours. Where should this be tracked?",
+    "explanation": "Contractual duties are requirements like laws. Linking them to incident response steps makes sure they are met when needed.",
+    "options": [
+      "Obligations mapped to response steps",
+      "In the marketing calendar",
+      "Only in the signed contract file",
+      "In the asset inventory"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T2-001",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Strategy and objectives",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A company plans to expand into a new country. What should the risk practitioner assess FIRST?",
+    "explanation": "A strategic change brings new laws, threats and dependencies. The practitioner first works out how the enterprise's overall risk position shifts.",
+    "options": [
+      "How the plan changes the risk profile",
+      "Which security tools to buy for the new office",
+      "The office lease terms",
+      "Local staff holiday calendars"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T2-002",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Lines of defense",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should internal audit not design the controls it later audits?",
+    "explanation": "Auditing its own work would weaken the objectivity of the assurance the third line gives to the board.",
+    "options": [
+      "Regulators forbid auditors from any design work",
+      "Controls need no design once they are bought",
+      "It would lose independence",
+      "It lacks the technical skills to design controls"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-003",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Operations management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An emergency change was made overnight without approval. What should follow?",
+    "explanation": "Emergency change processes allow speed but require documentation and review afterwards, so the change is still controlled.",
+    "options": [
+      "Reversal of the change without any review",
+      "Review and approval after the fact",
+      "No action, as it was an emergency",
+      "Dismissal of the engineer"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T2-004",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Threat modeling",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which method groups threats as spoofing, tampering, repudiation, disclosure, denial of service and privilege gain?",
+    "explanation": "STRIDE names those six threat types. DREAD scores threats, OCTAVE is a risk assessment method and PASTA is a staged threat modeling process.",
+    "options": [
+      "OCTAVE",
+      "STRIDE",
+      "PASTA",
+      "DREAD"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T2-005",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Analysis methodologies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A failure costs \\$50,000 each time and happens twice a year. A control would cut it to once every two years. How much ALE does the control remove, in dollars?",
+    "explanation": "ALE before = 50,000 x 2 = 100,000. ALE after = 50,000 x 0.5 = 25,000. The control removes 100,000 - 25,000 = 75,000 dollars a year.",
+    "options": [
+      "25000",
+      "50000",
+      "75000",
+      "100000"
+    ],
+    "correct": [
+      2
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "CRISC-T2-006",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Risk response options",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Leadership considers dropping a planned mobile payment feature to avoid its risk. What is the MAIN cost of that choice?",
+    "explanation": "Avoidance removes the risk by not doing the activity, so the value it would have brought is lost as well. That trade-off is weighed against appetite.",
+    "options": [
+      "Larger register",
+      "Lost benefit of the feature",
+      "More controls for the business to operate",
+      "Higher insurance premiums for the company"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T2-007",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An acceptable use policy that tells staff what they may do is which control type?",
+    "explanation": "A directive control guides behavior by stating what is required or allowed. It works only if people follow it.",
+    "options": [
+      "Corrective",
+      "Detective",
+      "Compensating",
+      "Directive"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T2-008",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Risk metrics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is the BEST KRI for the risk of former staff keeping system access?",
+    "explanation": "Active accounts of leavers measure the exposure directly. The other figures are unrelated to that risk.",
+    "options": [
+      "Total software licenses owned",
+      "Help desk wait time",
+      "Accounts still active after leaving",
+      "Number of password resets each month"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-009",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscInfoSec",
+    "skill": "Privacy principles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a privacy impact assessment MAINLY evaluate?",
+    "explanation": "A PIA looks at how collecting and using personal data could harm the people it describes, and which controls reduce that harm.",
+    "options": [
+      "Risks the processing poses to individuals",
+      "Whether the system meets its budget",
+      "Which vendor gives the best price",
+      "How fast pages load for users"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T2-010",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Roles and responsibilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which role is BEST placed to explain how a control failure would hurt a business process?",
+    "explanation": "The process owner knows what the process delivers and what a disruption costs. Technical staff can explain the failure but not the business harm.",
+    "options": [
+      "External auditor",
+      "Network engineer",
+      "Vendor account manager",
+      "Process owner"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T2-011",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Risk appetite and tolerance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which group should approve the enterprise's risk appetite statement?",
+    "explanation": "Risk appetite is a governance choice. The board approves it, often on a proposal from senior management.",
+    "options": [
+      "The risk practitioner, who drafts the statement",
+      "Each system administrator for their systems",
+      "Heads of the help desk and IT operations",
+      "Board of directors"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T2-012",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "SDLC",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which practice in development MOST reduces the risk of insecure code reaching users?",
+    "explanation": "Peer review and security testing find flaws before release. Team size and tooling speed do not address code quality.",
+    "options": [
+      "Larger development teams",
+      "Code review with security testing",
+      "Detailed release notes for each version",
+      "Faster build servers"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T2-013",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Risk scenarios",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A scenario list has grown to 400 items. What is the BEST next step?",
+    "explanation": "Too many scenarios cannot be analyzed well. Grouping similar ones and focusing on those that matter most to objectives keeps the work useful.",
+    "options": [
+      "Delete half at random",
+      "Rate them all the same to save time",
+      "Group and focus on the most relevant",
+      "Add more so the list is complete"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-014",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Business impact analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who should approve the recovery priorities that come out of a BIA?",
+    "explanation": "Recovery priorities decide where money and effort go after a disruption, so business leaders who own the processes approve them.",
+    "options": [
+      "IT operations and backup teams",
+      "Network engineers",
+      "Help desk team lead",
+      "Senior business management"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T2-015",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Risk ownership",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "No one agrees who owns a risk that spans two business units. Who should settle it?",
+    "explanation": "Ownership disputes go to the management level with authority over both units. The practitioner facilitates but does not take ownership.",
+    "options": [
+      "The manager of the cheaper unit",
+      "The risk practitioner, who owns cross-unit risks",
+      "Senior management above both",
+      "The compliance officer"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-016",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control design",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is an automated control often preferred to a manual one?",
+    "explanation": "Automation removes human variation and fatigue, though automated controls still need owners, change control and monitoring.",
+    "options": [
+      "It needs no named owner once it is configured",
+      "It runs the same way each time",
+      "It never needs maintenance, review or change control",
+      "It removes all of the business risks it covers"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T2-017",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Risk metrics",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is a KPI's MAIN role compared with a KRI?",
+    "explanation": "KPIs show how well a process or activity is performing. KRIs show changes in risk; KCIs show control performance.",
+    "options": [
+      "Measuring changes in exposure to loss",
+      "Measuring performance toward a goal",
+      "Measuring the strength of control design",
+      "Measuring coverage of business risks"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T2-018",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Organizational structure",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Risk management sits inside the IT department and reports to the CIO. What is the MAIN concern?",
+    "explanation": "A function that reports to the area whose risk it judges may soften bad news. Independence lets it report risk plainly to leadership.",
+    "options": [
+      "IT risk may be understated",
+      "Projects will finish too early",
+      "Risk staff will lack technical skill",
+      "Audit will refuse to review it"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T2-019",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Risk appetite and tolerance",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A risk sits above tolerance but within appetite overall. What should the risk practitioner do?",
+    "explanation": "Tolerance is the limit for that measure, so a breach needs attention even when total exposure is still inside appetite.",
+    "options": [
+      "Close the risk in the register",
+      "Report it for action by its owner",
+      "Leave it alone because appetite is not exceeded",
+      "Raise the tolerance quietly"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T2-020",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscInfoSec",
+    "skill": "Security concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should security requirements be set by data classification rather than by system type alone?",
+    "explanation": "Classification ranks data by the harm their loss would cause, so the strongest controls go where the data are most sensitive, whatever system holds them.",
+    "options": [
+      "Classification removes the need for encryption",
+      "All data then get the same controls",
+      "Systems then need no named owner",
+      "Protection then follows the data's value"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T2-021",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Enterprise architecture",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why should the risk practitioner take part in enterprise architecture reviews?",
+    "explanation": "Architecture choices fix many risks in place. Early involvement lets controls be designed in rather than bolted on.",
+    "options": [
+      "To set architecture team budgets and headcount",
+      "To approve vendor invoices for each new system",
+      "To write the application code for new systems",
+      "To spot risks in designs early"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T2-022",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Threat landscape",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which change in the threat landscape is MOST likely to raise supply chain risk?",
+    "explanation": "Compromising a vendor's update channel lets attackers reach many customers at once, which raises the risk from trusted suppliers.",
+    "options": [
+      "Fewer phishing campaigns against staff",
+      "Cheaper laptop prices",
+      "Longer password rules",
+      "Attacks through software updates"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T2-023",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Risk register",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Two entries in the register describe the same risk in different words. What is the MAIN issue?",
+    "explanation": "Duplicate entries inflate or split the picture of a risk and can lead to treatments that overlap or conflict.",
+    "options": [
+      "Ratings for both entries will default to zero",
+      "Exposure may be double counted",
+      "The register will look too short for the board",
+      "Owners will be too busy to update both entries"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T2-024",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Vendor risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which contract term BEST supports ongoing vendor risk monitoring?",
+    "explanation": "Rights to audit reports, certifications or questionnaires let the enterprise keep checking the vendor's controls during the contract.",
+    "options": [
+      "Right to assessment reports",
+      "Exclusive supply clause for the business unit",
+      "Fixed price for the first five years of service",
+      "Unlimited user licenses across all subsidiaries"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T2-025",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control testing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is the MAIN aim of testing a control's design separately from its operation?",
+    "explanation": "A design test asks whether the control, if performed as written, would meet its objective. Operating tests ask whether it actually ran.",
+    "options": [
+      "To reduce the sample needed for operating tests",
+      "To avoid business input",
+      "To see if it could work at all",
+      "To skip the risk register"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-026",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Reporting techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A heat map shows a risk moving from medium to high. What should the report also give?",
+    "explanation": "Leaders need to know why the rating changed and what is being done, not only that it changed.",
+    "options": [
+      "The color codes used",
+      "The software that drew it",
+      "Reason for the change and the action",
+      "Full history of every rating since it was opened"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-027",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Policies and standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A standard requires encryption, but one legacy system cannot comply. What should happen?",
+    "explanation": "A documented, time-limited exception keeps the standard intact while the gap is tracked and treated.",
+    "options": [
+      "Rewrite of the policy to exclude that system",
+      "Approved exception with an end date",
+      "Ignore the system until the next review",
+      "Delete the standard"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T2-028",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Risk profile",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "When should the IT risk profile be updated?",
+    "explanation": "The profile is useful only if current, so it follows changes in threats, systems, strategy and control results.",
+    "options": [
+      "Only after an outside review reports on it",
+      "Only once a decade",
+      "When risks or the business change",
+      "When the logo changes"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-029",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Data lifecycle",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the BEST way to dispose of data on drives leaving the company?",
+    "explanation": "Normal deletion and quick formats leave data recoverable. Sanitization following a standard such as NIST SP 800-88 makes recovery infeasible.",
+    "options": [
+      "Rename the folders",
+      "Delete the files normally",
+      "Sanitize to a recognized standard",
+      "Reformat the drive once before it leaves"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-030",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscInfoSec",
+    "skill": "Risk awareness",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "How can the risk practitioner BEST tell whether awareness training reduced risk?",
+    "explanation": "Attendance and ratings show activity, not effect. A drop in related incidents and errors shows behavior changed.",
+    "options": [
+      "Higher course ratings",
+      "More staff attending sessions",
+      "Fewer related incidents and near misses",
+      "Longer modules"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-031",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Vulnerability management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is an accurate asset inventory needed for vulnerability management?",
+    "explanation": "A scanner only covers what it is pointed at. Systems missing from the inventory carry flaws no one is tracking.",
+    "options": [
+      "Scanners need it to set their licence fee",
+      "It lists every business risk",
+      "Unlisted systems are never scanned",
+      "It replaces patching of business systems"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-032",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Analysis methodologies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When is quantitative risk analysis MOST appropriate?",
+    "explanation": "Quantitative methods need credible figures for frequency and loss. Without them, qualitative methods give a faster and more honest result.",
+    "options": [
+      "When no data exist",
+      "When owners refuse to meet",
+      "When reliable loss data exist",
+      "When time is short and figures are scarce"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-033",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Exceptions and exemptions",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Exceptions to the patching standard have been renewed for three years. What should the practitioner do?",
+    "explanation": "Repeated renewals mean the risk is never treated. Escalation lets leadership decide to fund a fix or formally accept the risk.",
+    "options": [
+      "Renew them again for another three years",
+      "Delete the patching standard for those systems",
+      "Escalate as unmanaged risk",
+      "Close them without review as long-standing"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-034",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control maturity",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Controls are documented and followed but not measured. Which step would raise their maturity?",
+    "explanation": "Maturity models rise from ad hoc to defined to measured and optimized. Adding measurement moves defined controls up.",
+    "options": [
+      "Leaving them to each user",
+      "Removing their documentation",
+      "Testing them only once",
+      "Monitoring them with metrics"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T2-035",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Risk action plans",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An action plan is marked complete, but the risk rating has not changed. What should the practitioner do?",
+    "explanation": "Completion of tasks does not prove risk fell. The practitioner checks whether the response was carried out as planned and had the intended effect.",
+    "options": [
+      "Raise the risk appetite",
+      "Close the risk at once since the plan is done",
+      "Validate that the response worked",
+      "Remove the KRI"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-036",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Business resilience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What should drive the order in which processes appear in the continuity plan?",
+    "explanation": "Continuity planning restores the most critical processes first, based on the harm their loss would cause.",
+    "options": [
+      "The number of people each process employs",
+      "The age and vendor of the systems they use",
+      "Alphabetical order",
+      "Their criticality to the business"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T2-037",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Enterprise risk management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a common risk taxonomy MAINLY give an enterprise?",
+    "explanation": "A taxonomy sorts risks into agreed categories, so units describe and roll up similar risks the same way.",
+    "options": [
+      "Fewer risk owners across the business units",
+      "Consistent naming of risk types",
+      "Lower premiums from the enterprise's insurers",
+      "Faster software releases in every department"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T2-038",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Project management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In an Agile project, when should risk be reviewed?",
+    "explanation": "Agile work changes every iteration, so risks are revisited as the backlog and design change.",
+    "options": [
+      "Only at project start",
+      "Only at project end",
+      "Never, Agile has no risk",
+      "Each iteration"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T2-039",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Asset management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Unknown servers keep appearing on the network. What does this MAINLY show?",
+    "explanation": "Assets missing from the inventory have no owner, no classification and no assured controls, which is a gap in asset management.",
+    "options": [
+      "Too many risk owners",
+      "Low risk appetite",
+      "Strong change control",
+      "Weak asset management"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T2-040",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Risk frameworks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which framework is built around the Govern, Identify, Protect, Detect, Respond and Recover functions?",
+    "explanation": "NIST's Cybersecurity Framework 2.0 added Govern to its five earlier functions. COBIT is a governance framework, ISO 31000 a risk guideline and ITIL a service framework.",
+    "options": [
+      "COBIT 2019",
+      "NIST CSF 2.0",
+      "ITIL 4",
+      "ISO 31000"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T2-041",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Risk events",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why should the risk practitioner review incidents that happened at peer companies?",
+    "explanation": "External events show what can happen to similar enterprises and help build realistic scenarios even without local losses.",
+    "options": [
+      "They replace the need for internal loss data",
+      "They reveal plausible new scenarios",
+      "They set budgets",
+      "They prove the firm's own controls are sound"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T2-042",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Inherent and residual risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which formula BEST describes residual risk?",
+    "explanation": "Residual risk is what remains once the effect of controls is taken from inherent risk. It is compared with appetite to decide if more is needed.",
+    "options": [
+      "Inherent risk less control effect",
+      "Control cost less asset value",
+      "Total risk times audit score",
+      "Inherent risk plus the cost of controls"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T2-043",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Issues and findings",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Many open findings share one root cause. What is the BEST response?",
+    "explanation": "Addressing the shared cause resolves several findings at once and stops them coming back.",
+    "options": [
+      "Fix the common cause",
+      "Close each one separately",
+      "Ask auditors to stop reporting",
+      "Raise the risk appetite"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T2-044",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control frameworks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which source lists a catalog of security and privacy controls for information systems?",
+    "explanation": "SP 800-53 is a control catalog. ISO 31000 and COSO ERM cover risk management in general, and SP 800-30 covers risk assessment.",
+    "options": [
+      "NIST SP 800-30",
+      "COSO ERM",
+      "ISO 31000",
+      "NIST SP 800-53"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T2-045",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Monitoring techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which source gives the MOST objective data for monitoring access control?",
+    "explanation": "System-generated records show what actually happened. Self-assessments and surveys depend on opinion.",
+    "options": [
+      "Vendor marketing claims",
+      "System logs and reports",
+      "Staff opinion surveys",
+      "Owner self-ratings"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T2-046",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscInfoSec",
+    "skill": "Security frameworks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which standard sets requirements for an information security management system?",
+    "explanation": "ISO/IEC 27001 specifies ISMS requirements. ISO 9001 is quality management, ISO 31000 risk guidance and ISO 22301 business continuity.",
+    "options": [
+      "ISO 31000",
+      "ISO/IEC 27001",
+      "ISO 9001",
+      "ISO 22301"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T2-047",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Technology resilience",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A recovery test restores a system correctly but takes three days, and its RTO is one day. What does this show?",
+    "explanation": "The restore worked, but not within the time the business set. The gap is a risk to report and treat, not a reason to quietly change the objective.",
+    "options": [
+      "The RTO should be raised to three days",
+      "Backups should be taken less often",
+      "Recovery falls short of the requirement",
+      "The backup software failed the test"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-048",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Culture and ethics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which action by leaders does MOST to build a risk-aware culture?",
+    "explanation": "Staff copy what leaders do. Leaders who follow controls and discuss risk openly set the tone for everyone else.",
+    "options": [
+      "Following the rules they set",
+      "Writing longer and more detailed policies",
+      "Cutting the training budget to fund controls",
+      "Adding more reviewers to every business unit"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T2-049",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Legal and regulatory requirements",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Two countries where the firm operates set conflicting data rules. Who should resolve the approach?",
+    "explanation": "Conflicting legal duties need legal interpretation and a business decision. The practitioner then assesses the risk of the chosen approach.",
+    "options": [
+      "Local IT technicians",
+      "The cloud vendor",
+      "Legal counsel with business leaders",
+      "The risk analyst alone"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-050",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Risk scenarios",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why include scenarios with low likelihood but severe impact?",
+    "explanation": "Rare events such as a regional disaster can still exceed the enterprise's capacity, so they need planning even when unlikely.",
+    "options": [
+      "They are easy to treat",
+      "Regulators require exactly ten",
+      "They may threaten survival",
+      "They lower overall risks"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-051",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Business impact analysis",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A BIA shows a process can lose one day of data but must resume within two hours. Which two values were set?",
+    "explanation": "Tolerable data loss is the recovery point objective; the time to resume is the recovery time objective.",
+    "options": [
+      "RPO one day, RTO two hours",
+      "RTO one day, RPO two hours",
+      "MTD one day, RPO two hours",
+      "RTO one day, MTD two hours"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T2-052",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Risk response options",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Adding a control to one risk creates a new risk elsewhere. What is the new one called?",
+    "explanation": "A secondary risk arises directly from carrying out a response. It must be assessed like any other risk.",
+    "options": [
+      "Capacity risk",
+      "Inherent risk",
+      "Secondary risk",
+      "Accepted risk"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-053",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A control's cost exceeds the reduction in expected loss it brings. What does this suggest?",
+    "explanation": "A cost-benefit view compares the cost of a control with the risk it removes. A control that costs more than it saves needs rethinking unless law requires it.",
+    "options": [
+      "It may not be justified",
+      "It is the best choice available",
+      "It should be strengthened further",
+      "It needs no review"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T2-054",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Data validation",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A business unit reports perfect KRI results that no one can trace to source data. What is the MAIN concern?",
+    "explanation": "Metrics that cannot be traced and checked may be wrong or massaged, so they should not be relied on until validated.",
+    "options": [
+      "The unit has too many people in its risk team",
+      "The unit's risk appetite is set too high",
+      "KRIs are no longer needed in that unit",
+      "Results may be unreliable"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T2-055",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Emerging technologies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Many internet-connected sensors are added to a factory. Which risk rises MOST?",
+    "explanation": "Each connected device is another entry point, often with weak default security and limited patching.",
+    "options": [
+      "Lower data volume",
+      "Larger attack surface",
+      "Less need for monitoring",
+      "Fewer devices to patch"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T2-056",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Strategy and objectives",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why should the risk management program have its own objectives?",
+    "explanation": "Program objectives tied to enterprise goals let leadership see whether risk management is working and worth its cost.",
+    "options": [
+      "To set the IT budget",
+      "To measure whether it adds value",
+      "To replace business objectives with risk goals",
+      "To limit the audit scope"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T2-057",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Lines of defense",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two functions usually sit in the second line? (Choose two.)",
+    "explanation": "Risk management and compliance oversee and challenge the first line. Internal audit is the third line; development and payroll are first-line operations.",
+    "options": [
+      "Risk management",
+      "Payroll operations",
+      "Compliance",
+      "Internal audit",
+      "Software development"
+    ],
+    "correct": [
+      0,
+      2
+    ],
+    "select": 2
+  },
+  {
+    "id": "CRISC-T2-058",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscInfoSec",
+    "skill": "Privacy principles",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Personal data are replaced with codes, and the key is stored apart. What is this technique?",
+    "explanation": "Pseudonymized data can be linked back to a person only with the separately held key, which lowers exposure but still counts as personal data.",
+    "options": [
+      "Tokenized backup",
+      "Encryption at rest",
+      "Data masking for display",
+      "Pseudonymization"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T2-059",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Threat modeling",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two items should a threat model of a web application include? (Choose two.)",
+    "explanation": "Threat modeling maps how data moves, where trust changes and where an attacker could get in. Schedules and floor plans do not describe the application's attack surface.",
+    "options": [
+      "Staff holiday schedule",
+      "Data flows and trust boundaries",
+      "Office floor plan",
+      "Vendor sales targets",
+      "Entry points attackers could use"
+    ],
+    "correct": [
+      1,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "CRISC-T2-060",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Risk assessment standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which method relies on structured workshops with staff to identify critical assets and threats?",
+    "explanation": "OCTAVE is a self-directed, workshop-based risk assessment method. STRIDE classifies threats, Monte Carlo simulates outcomes and Six Sigma is a quality method.",
+    "options": [
+      "Monte Carlo",
+      "Six Sigma",
+      "OCTAVE",
+      "STRIDE"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-061",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Vendor risk",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two steps belong at the end of a vendor relationship? (Choose two.)",
+    "explanation": "Offboarding removes access and makes sure company data does not stay with the vendor. Ratings and new accounts do not apply once the work has ended.",
+    "options": [
+      "Extend its contract by a year",
+      "Give it new admin accounts",
+      "Raise the vendor's risk rating",
+      "Confirm data is returned or destroyed",
+      "Revoke the vendor's access"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "CRISC-T2-062",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control testing",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two choices raise confidence in a sample-based control test? (Choose two.)",
+    "explanation": "A bigger, randomly drawn sample better represents the whole population. Owner-picked or narrow samples can hide failures.",
+    "options": [
+      "Random selection of items",
+      "Only items from one day",
+      "Testing only easy cases",
+      "Larger sample size",
+      "Samples chosen by the owner"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "CRISC-T2-063",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Emerging risks",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which practice BEST helps the risk function spot emerging risks early?",
+    "explanation": "Horizon scanning looks systematically at technology, legal, market and threat trends for changes that could create new risks.",
+    "options": [
+      "Cutting threat feeds to reduce alert noise",
+      "Reprinting the policy set once each year",
+      "Regular horizon scanning",
+      "Freezing the risk register between reviews"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-064",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Portfolio management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What risk view does portfolio management add that managing each project alone lacks?",
+    "explanation": "Looking across the portfolio shows shared dependencies, concentration on the same people or vendors, and total exposure, which no single project plan shows.",
+    "options": [
+      "Combined risk across all projects",
+      "Each developer's weekly workload",
+      "Vendor price lists",
+      "Detailed code review results"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T2-065",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Policies and standards",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A procedure conflicts with the approved IT risk policy. Which should prevail?",
+    "explanation": "Policy carries leadership's approved intent, and procedures carry it out. A conflicting procedure should be corrected, or the policy changed through approval.",
+    "options": [
+      "The policy, until formally changed",
+      "The procedure, as it is more detailed",
+      "Whichever was written more recently",
+      "Whatever the team prefers"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T2-066",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Risk appetite and tolerance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should risk appetite be stated in measurable terms where possible?",
+    "explanation": "Measurable limits let monitoring show when exposure moves outside what leadership accepted.",
+    "options": [
+      "So business units can set their own limits",
+      "So breaches can be detected",
+      "So it never needs review",
+      "So all risks become zero"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T2-067",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscInfoSec",
+    "skill": "Security concepts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which KRI BEST signals rising availability risk for an online ordering service?",
+    "explanation": "As peak load nears capacity, the chance of an outage rises before any failure happens. The other measures track different risks.",
+    "options": [
+      "Count of open policy exceptions",
+      "Peak load as a share of capacity",
+      "Awareness training completion rate",
+      "Number of password resets each month"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-T2-068",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Vulnerability management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What should decide how fast a found vulnerability must be fixed?",
+    "explanation": "Remediation timelines follow risk: severity, exploitability, asset value and exposure together.",
+    "options": [
+      "The order in which the scans found it",
+      "The brand of scanner that reported it",
+      "The size of the team that owns the system",
+      "Its risk to the business"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T2-069",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Analysis methodologies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What does a Monte Carlo simulation add to a quantitative risk analysis?",
+    "explanation": "Running many random trials over input ranges produces a distribution of losses, showing both typical and extreme outcomes.",
+    "options": [
+      "One exact loss figure",
+      "A ranking of staff skills",
+      "A list of threat actors",
+      "A range of likely outcomes"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T2-070",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Risk ownership",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should a risk owner be a manager with authority over the affected area?",
+    "explanation": "A risk owner must be able to make and carry out decisions about the risk, which needs authority and resources.",
+    "options": [
+      "They are independent of the area they oversee",
+      "They know every technical detail",
+      "They review all business risks yearly",
+      "They can fund and direct the response"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T2-071",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control implementation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A control is installed but no one is told how to use it. What is MOST likely?",
+    "explanation": "People must know their role in a control. Without training and communication, a sound design fails in operation.",
+    "options": [
+      "It will cost less",
+      "It will pass every test",
+      "It will not operate as intended",
+      "It will lower inherent risk at once"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-T2-072",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Reporting techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which feature makes a risk scorecard MOST useful to a business unit head?",
+    "explanation": "A scorecard focused on the unit's own risks and how they compare with tolerance helps its head decide what to act on.",
+    "options": [
+      "Their risks against limits",
+      "Raw log entries from their systems",
+      "The auditor's fee",
+      "Every risk in the company in one table"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-T2-073",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Technology principles",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two practices reduce the risk of cloud misconfiguration? (Choose two.)",
+    "explanation": "Standard templates and automated checks keep settings consistent and catch drift. Broad admin rights and manual setup make errors more likely.",
+    "options": [
+      "Disabled cloud logging",
+      "Manual setup each time",
+      "Admin rights for all users",
+      "Automated configuration checks",
+      "Templates with approved settings"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "CRISC-T2-074",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Business resilience",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A key process depends on one supplier with no backup. Which resilience weakness is this?",
+    "explanation": "When one supplier can stop the process, its failure becomes the process's failure. Resilience planning looks for these dependencies.",
+    "options": [
+      "Excess redundancy",
+      "Weak password rules",
+      "Poor change logging",
+      "Single point of failure"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-T2-075",
+    "section": "crisc",
+    "test": 2,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Contractual requirements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Before signing, what should the risk practitioner check in a cloud contract?",
+    "explanation": "Contracts set who is responsible for which controls. Gaps between the provider's and the customer's duties become unmanaged risk.",
+    "options": [
+      "Number of sales staff",
+      "Security duties each party holds",
+      "Color scheme of the portal",
+      "Provider's office locations only"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-D-001",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Roles and responsibilities",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does it mean for a manager to be accountable for a risk?",
+    "explanation": "Accountability means owning the outcome and the decisions. Tasks can be delegated to others who are responsible for carrying them out.",
+    "options": [
+      "They perform every related task themselves",
+      "They rate all business risks",
+      "They answer for how it is treated",
+      "They approve IT purchases"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-D-002",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Enterprise risk management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the MAIN benefit of a single enterprise risk register over many local lists?",
+    "explanation": "A shared register lets leaders see overlapping and connected risks across units and set priorities on one basis.",
+    "options": [
+      "One view of related risks",
+      "Fewer risks reported to the board",
+      "No need for risk owners in units",
+      "Less need for controls"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-D-003",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Risk events",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is a risk event?",
+    "explanation": "A risk event is an occurrence that can affect objectives, such as an outage, a breach or a failed change.",
+    "options": [
+      "A record in the asset list",
+      "A daily control check",
+      "A meeting of the risk committee",
+      "Something that happens and causes loss"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-D-004",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Risk register",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who should keep the IT risk register current?",
+    "explanation": "The risk function maintains the register, but owners supply updates on their risks and treatments.",
+    "options": [
+      "Each user for their own risks",
+      "Risk function with input from owners",
+      "Business units with no central view",
+      "The tool vendor"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-D-005",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Risk response options",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is an example of risk mitigation?",
+    "explanation": "Multifactor login lowers the likelihood of account takeover. Insurance shares the risk, stopping a service avoids it and signing off accepts it.",
+    "options": [
+      "Signing off on the risk",
+      "Buying a cyber policy",
+      "Adding multifactor login",
+      "Stopping an online service"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-D-006",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which is a deterrent control?",
+    "explanation": "A deterrent discourages a person from attempting the act. Backups and restore images recover, and alerts detect.",
+    "options": [
+      "Warning banner at login",
+      "Intrusion alert email",
+      "System restore image",
+      "Nightly data backup"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-D-007",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Risk metrics",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should each KRI have a threshold set in advance?",
+    "explanation": "Thresholds tied to tolerance turn a metric into a trigger for escalation and response.",
+    "options": [
+      "So the indicator never needs to change",
+      "So breaches prompt action",
+      "So reviewers can ignore it between audits",
+      "So it shows only good news to the board"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-D-008",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Operations management",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where should known causes and workarounds for recurring incidents be recorded?",
+    "explanation": "Problem management records known errors with their workarounds, so service desks resolve repeat incidents faster until the cause is fixed.",
+    "options": [
+      "Risk appetite statement",
+      "Asset disposal log",
+      "Vendor contract file",
+      "Known error database"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-D-009",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscInfoSec",
+    "skill": "Privacy principles",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does privacy by design mean?",
+    "explanation": "Privacy protections are part of a system's requirements and design, not added after problems appear.",
+    "options": [
+      "Leaving every privacy choice to the user",
+      "Adding privacy controls after launch if needed",
+      "Privacy adverts",
+      "Building privacy in from the start"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-D-010",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Policies and standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How often should IT risk policies be reviewed?",
+    "explanation": "Policies stay relevant through scheduled reviews plus reviews after major changes in the business, laws or technology.",
+    "options": [
+      "On a set cycle and after big changes",
+      "Never once approved",
+      "Only when an auditor asks for it",
+      "Every time a user complains"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-D-011",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Risk appetite and tolerance",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A startup accepts more risk to grow quickly. What does this describe?",
+    "explanation": "Appetite reflects how much risk an enterprise is willing to take in pursuit of its goals, and it varies with strategy and culture.",
+    "options": [
+      "A missing risk taxonomy",
+      "A higher risk appetite",
+      "A lower risk capacity",
+      "A weaker control design"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-D-012",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Threat landscape",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which source gives the risk practitioner the MOST timely view of active attack campaigns?",
+    "explanation": "Threat intelligence reports what attackers are doing now. Yearly reports and board minutes look back.",
+    "options": [
+      "Product brochures",
+      "Threat intelligence feeds",
+      "Yearly business risk reports",
+      "Past board minutes"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-D-013",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Analysis methodologies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A risk has an ALE of \\$90,000 and occurs three times a year. What is its single loss expectancy in dollars?",
+    "explanation": "SLE = ALE / ARO = 90,000 / 3 = 30,000 dollars. Multiplying instead of dividing gives 270,000.",
+    "options": [
+      "30000",
+      "45000",
+      "90000",
+      "270000"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "CRISC-D-014",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Exceptions and exemptions",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who should approve an exception to a security standard?",
+    "explanation": "The person accountable for the risk, at a level that matches its size, approves the exception and accepts what it brings.",
+    "options": [
+      "Any member of the IT security team",
+      "The requester's colleague",
+      "The software vendor",
+      "Risk owner at the right authority"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-D-015",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control testing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Inquiry alone is weak evidence because it:",
+    "explanation": "Asking the owner tells you what they believe happens, not proof that it does. It is usually combined with other methods.",
+    "options": [
+      "Relies on what people say",
+      "Costs more than reperformance of the control",
+      "Needs special software to perform it",
+      "Takes too long to perform in practice"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-D-016",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Monitoring techniques",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the MAIN weakness of control self-assessment?",
+    "explanation": "People reviewing their own controls may overlook or downplay failures, so self-assessment results need independent checks.",
+    "options": [
+      "Owners may rate themselves too kindly",
+      "It needs costly outside consultants",
+      "It removes ownership from managers",
+      "It cannot cover manual controls"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-D-017",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "SDLC",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why should production data not be copied into test systems unmasked?",
+    "explanation": "Test environments usually have weaker controls and wider access, so real personal data there is exposed.",
+    "options": [
+      "Tests would run more slowly with real data",
+      "Production would stop",
+      "Developers lose access",
+      "Test systems are less protected"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-D-018",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscInfoSec",
+    "skill": "Risk awareness",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should awareness messages explain why a rule exists?",
+    "explanation": "Explaining the risk behind a rule builds support and helps staff apply it in situations the rule does not spell out.",
+    "options": [
+      "Regulators require reasons in every message",
+      "It removes all errors",
+      "It lengthens messages",
+      "People follow rules they understand"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-D-019",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Asset management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why should data and software be in the asset inventory, not only hardware?",
+    "explanation": "Information and applications are often what the business most needs to protect. An inventory of devices alone misses them.",
+    "options": [
+      "Data has no owner",
+      "They often carry the most value",
+      "Software cannot be lost",
+      "Hardware never needs to be tracked at all"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-D-020",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Lines of defense",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who gives the governing body independent assurance on risk management?",
+    "explanation": "Internal audit is independent of management and reports to the governing body, usually through the audit committee.",
+    "options": [
+      "Internal audit",
+      "Line managers in each unit",
+      "Control operators on each team",
+      "Risk owners for each risk"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-D-021",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Vulnerability management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why should vulnerability management cover weak configurations, not only missing patches?",
+    "explanation": "Default passwords, open services and loose permissions give attackers a way in as surely as an unpatched flaw, so they belong in the same process.",
+    "options": [
+      "Configurations cannot be scanned",
+      "Auditors only test settings",
+      "Patches never fix real flaws",
+      "Weak settings can be exploited too"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-D-022",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Business impact analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which input is MOST important when a BIA ranks processes?",
+    "explanation": "Ranking is based on the harm caused by downtime: lost revenue, legal exposure, customer effects and safety.",
+    "options": [
+      "Number of servers they use",
+      "Size of their office",
+      "Impact of their loss on the business",
+      "Age of their software"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-D-023",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Vendor risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When should a vendor's risk first be assessed?",
+    "explanation": "Assessing before signing lets the enterprise choose another vendor or negotiate controls into the contract.",
+    "options": [
+      "At the first contract renewal",
+      "Before the contract is signed",
+      "After the first incident",
+      "When the vendor asks"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-D-024",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control design",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is a key control?",
+    "explanation": "Key controls are the ones the risk response mainly depends on, so they get closer testing and monitoring.",
+    "options": [
+      "A yearly control",
+      "A control the board runs itself",
+      "Any control with a password",
+      "One whose failure leaves risk untreated"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-D-025",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Data validation",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should the source of each risk metric be documented?",
+    "explanation": "Knowing where data come from lets others check accuracy and repeat the measurement.",
+    "options": [
+      "So reports to the board look more complete",
+      "So owners can change it when they need to",
+      "So results can be verified",
+      "So the data stay private to the risk team"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-D-026",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Technology resilience",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a recovery time objective set?",
+    "explanation": "The RTO is the target time to restore a system or process after disruption. The RPO sets tolerable data loss.",
+    "options": [
+      "How often to back up",
+      "How much data may be lost in an outage",
+      "How long staff work",
+      "How fast a system must be back"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-D-027",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscInfoSec",
+    "skill": "Security concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A file share mixes data classified as internal with data classified as restricted. What is the MAIN risk?",
+    "explanation": "A shared location is usually protected to one level. Unless restricted data are separated or the whole share is raised, they get weaker controls than their class requires.",
+    "options": [
+      "Backups of the share take longer",
+      "Users cannot find their files",
+      "Internal data become restricted by law",
+      "Restricted data get only internal protection"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-D-028",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Business processes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new process is being designed. When should risk be considered?",
+    "explanation": "Building risk thinking into design is cheaper and more effective than adding controls after the process is live.",
+    "options": [
+      "Once staff are hired",
+      "After its first failure",
+      "During its design",
+      "At the next annual audit"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-D-029",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Risk frameworks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which standard gives general guidelines for managing any type of risk?",
+    "explanation": "ISO 31000 sets out principles, a framework and a process for risk management of any kind. The others cover security controls, card data or service assurance.",
+    "options": [
+      "SOC 2 Type II",
+      "ISO 31000",
+      "PCI DSS v4.0",
+      "ISO/IEC 27002"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-D-030",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Risk scenarios",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should risk scenarios be reviewed regularly?",
+    "explanation": "New technology, business changes and attacker methods make some scenarios stale and create new ones.",
+    "options": [
+      "Scenarios expire by law after each year",
+      "Owners must rotate to a new unit each year",
+      "Old scenarios cost money to keep in the register",
+      "Threats and systems change"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-D-031",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Inherent and residual risk",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is inherent risk worth recording when controls already exist?",
+    "explanation": "Inherent risk shows how much depends on the controls, which helps decide how closely to monitor them.",
+    "options": [
+      "It shows the exposure if controls fail",
+      "It replaces residual risk in reports",
+      "It sets the backup schedule",
+      "It lowers insurance fees"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-D-032",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Issues and findings",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where should open audit findings be tracked for the risk function?",
+    "explanation": "Linking findings to risks in a central log shows how control gaps affect exposure and lets owners be chased.",
+    "options": [
+      "Issue log linked to the register",
+      "Vendor ticket system",
+      "Personal email folders",
+      "A printed binder"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-D-033",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control analysis",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a control gap analysis compare?",
+    "explanation": "Gap analysis shows which required controls are missing or weak, guiding where to act.",
+    "options": [
+      "Two vendors' prices",
+      "Required controls with those in place",
+      "Office layouts",
+      "Staff skills with their salaries"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-D-034",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Risk action plans",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An action plan keeps slipping its due date. What should the practitioner do?",
+    "explanation": "Repeated delays leave risk untreated. Escalating within governance makes leadership aware and lets them act.",
+    "options": [
+      "Delete the plan",
+      "Escalate to the risk owner's manager",
+      "Change the risk status to closed for now",
+      "Wait for the next review to report the delay"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-D-035",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Emerging technologies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why should quantum computing be on the long-term risk watch list?",
+    "explanation": "A large enough quantum computer could break widely used public-key algorithms, so data with a long secrecy life may need new methods.",
+    "options": [
+      "It lengthens passwords",
+      "It lowers cloud costs",
+      "It makes current malware detection obsolete",
+      "It may break public-key encryption"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-D-036",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscInfoSec",
+    "skill": "Security frameworks",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why does a framework not replace a risk assessment?",
+    "explanation": "A framework offers a broad set of controls. The assessment decides which apply, how strong they must be and where to focus.",
+    "options": [
+      "Frameworks have no controls",
+      "Assessments are illegal",
+      "Controls must fit the firm's risks",
+      "Frameworks are always out of date"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-D-037",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Culture and ethics",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A manager pressures staff to record a failed control check as effective. What should staff do?",
+    "explanation": "Falsifying results breaks ethical standards and hides real risk. Ethics or whistleblowing channels exist for this kind of pressure.",
+    "options": [
+      "Delete the test record",
+      "Report it through ethics channels",
+      "Rerun the check until it succeeds",
+      "Record it as effective as told"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-D-038",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Legal and regulatory requirements",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the BEST first step when a new regulation affects IT?",
+    "explanation": "A gap assessment shows which requirements are already met and which need new or changed controls.",
+    "options": [
+      "Wait",
+      "Buy a new security tool that claims to cover it",
+      "Compare it with current controls",
+      "Rewrite every policy at once to match it"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-D-039",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Threat modeling",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is an attack tree used for?",
+    "explanation": "An attack tree breaks an attacker's goal into the steps that could achieve it, showing where controls would block a path.",
+    "options": [
+      "Ranking users by seniority and level of access",
+      "Planning network cabling across sites",
+      "Licensing",
+      "Mapping paths to an attacker's goal"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-D-040",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Risk assessment standards",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which part of a risk assessment estimates how often a threat could cause loss?",
+    "explanation": "Likelihood analysis judges how often a threat could exploit a weakness. Impact analysis judges the size of the loss.",
+    "options": [
+      "Impact analysis",
+      "Control testing",
+      "Likelihood analysis",
+      "Asset valuation"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-D-041",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Risk ownership",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A risk owner leaves the company. What should happen to their risks?",
+    "explanation": "Every risk needs a current owner, so ownership moves to another accountable manager without delay.",
+    "options": [
+      "Leave them unowned",
+      "Close them in the register until a hire is made",
+      "Pass them to internal audit to hold",
+      "Reassign them to a new owner"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-D-042",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control frameworks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which framework describes internal control through five components, including control environment and monitoring activities?",
+    "explanation": "COSO's Internal Control framework has five components: control environment, risk assessment, control activities, information and communication, and monitoring activities.",
+    "options": [
+      "COSO Internal Control",
+      "NIST CSF 2.0",
+      "ISO 22301",
+      "ITIL 4"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-D-043",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Reporting techniques",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why tailor risk reports to each audience?",
+    "explanation": "Boards need summaries and trends; operational teams need detail to act. One report rarely serves both.",
+    "options": [
+      "Reports must be the same",
+      "Each needs different detail",
+      "Leaders prefer raw data",
+      "It lowers inherent risk"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-D-044",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Enterprise architecture",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What risk does a sprawl of overlapping applications create?",
+    "explanation": "Duplicate systems multiply patching, access and integration work, and often hold copies of the same data.",
+    "options": [
+      "More systems to secure and support",
+      "Lower licensing costs",
+      "Fewer copies of data to protect",
+      "Simpler access control"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-D-045",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscInfoSec",
+    "skill": "Privacy principles",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A person asks a company for a copy of the data it holds about them. Which right is this?",
+    "explanation": "The right of access lets individuals obtain their own personal data. Portability is about moving it to another service in a usable format.",
+    "options": [
+      "Right to object",
+      "Right of access",
+      "Right to be forgotten",
+      "Right to portability"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-D-046",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscOrgGov",
+    "skill": "Strategy and objectives",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which statement BEST describes the purpose of IT risk management?",
+    "explanation": "Risk management keeps risk within limits so the enterprise can pursue its goals. Removing all risk is neither possible nor desirable.",
+    "options": [
+      "Satisfy regulators only",
+      "Remove all IT risk",
+      "Cut the IT budget",
+      "Help the enterprise meet its objectives"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CRISC-D-047",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskGov",
+    "skill": "Risk profile",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is aggregated risk?",
+    "explanation": "Several small risks that share a cause or affect the same objective can add up to an exposure that matters at enterprise level.",
+    "options": [
+      "Combined effect of related risks",
+      "Risk with no owner",
+      "One risk counted twice",
+      "Risk left after treatment"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-D-048",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskId",
+    "skill": "Risk events",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An employee emails a customer list to a personal account. Which threat type is this?",
+    "explanation": "A person inside the enterprise misusing legitimate access is an insider threat, whether the intent is malicious or careless.",
+    "options": [
+      "Denial of service",
+      "Insider threat",
+      "Natural hazard",
+      "Supply chain attack"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CRISC-D-049",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskAnalysis",
+    "skill": "Risk register",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A risk register lists risks but no owners. What is the MOST likely result?",
+    "explanation": "Without named owners no one is accountable for deciding or carrying out a response, so risks stay open.",
+    "options": [
+      "Risks are rated too high",
+      "Audits are not needed",
+      "Risks are not acted on",
+      "Controls cost too little"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-D-050",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscRiskResponse",
+    "skill": "Risk response options",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why should accepted risks still be reviewed?",
+    "explanation": "A risk accepted today may grow as threats, systems or the business change, so it stays on the monitoring list.",
+    "options": [
+      "Acceptance expires automatically each day",
+      "Reviewers close accepted risks every year",
+      "Conditions may raise them",
+      "Accepted risks no longer exist in the register"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-D-051",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscControls",
+    "skill": "Control testing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "When should a control be retested outside the normal plan?",
+    "explanation": "A change to the control or the system it protects may break it, so testing confirms it still works.",
+    "options": [
+      "When the business risks are renamed",
+      "When its owner takes leave",
+      "After a significant change to it",
+      "Each time reports print"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-D-052",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscMonitoring",
+    "skill": "Emerging risks",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A new law on AI use is proposed. When should the risk practitioner start assessing it?",
+    "explanation": "Early assessment gives time to plan controls. Monitoring proposed laws is part of watching for emerging risk.",
+    "options": [
+      "While it is still proposed",
+      "Only once the first fines have been issued",
+      "Only after it takes effect and applies to the firm",
+      "Never, as legal change is out of risk scope"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CRISC-D-053",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscTech",
+    "skill": "Project management",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A system owner accepts a residual risk above appetite without escalating it. What is the MAIN issue?",
+    "explanation": "Risk above appetite needs a decision at a level that can accept it, usually senior management. An owner cannot accept it alone.",
+    "options": [
+      "The project will cost less",
+      "Testing will take longer",
+      "It exceeds their authority",
+      "The register will be too long"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CRISC-D-054",
+    "section": "crisc",
+    "test": 0,
+    "module": 1,
+    "domain": "criscInfoSec",
+    "skill": "Risk awareness",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which group BEST helps carry risk awareness into daily business work?",
+    "explanation": "Champions inside business units translate risk messages into local practice and pass concerns back to the risk function.",
+    "options": [
+      "Risk champions in each unit",
+      "Software vendors",
+      "Board members alone",
+      "Outside consultants"
+    ],
+    "correct": [
+      0
+    ]
+  }
+]

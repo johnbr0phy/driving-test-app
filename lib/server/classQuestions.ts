@@ -111,6 +111,7 @@ import "@/lib/v2/banks/pspo";
 import "@/lib/v2/banks/capm";
 import "@/lib/v2/banks/projectplus";
 import "@/lib/v2/banks/cism";
+import "@/lib/v2/banks/crisc";
 import "@/lib/v2/banks/gcdl";
 import "@/lib/v2/banks/gcppca";
 import "@/lib/v2/banks/gcppde";

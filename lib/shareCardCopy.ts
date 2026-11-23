@@ -238,6 +238,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   pspo: { title: "PSPO I Professional Scrum Product Owner", description: "Practice product value, backlog ordering, stakeholders and Evidence-Based Management in 80 questions in 60 minutes." },
   safe: { title: "SAFe Agilist", description: "Practice SAFe core values and principles, ARTs, WSJF, PI Planning and Lean Portfolio Management in 45-question tests." },
   psm: { title: "PSM I Professional Scrum Master", description: "Practice the 2020 Scrum Guide: accountabilities, events, artifacts and commitments, in 80 questions in 60 minutes." },
+  crisc: { title: "ISACA CRISC", description: "Practice IT risk governance, risk assessment, risk response and reporting, and technology and security." },
   cism: { title: "ISACA CISM", description: "Practice security governance, risk management, the security program and incident management." },
   projectplus: { title: "CompTIA Project+", description: "Practice project management concepts, the project life cycle, tools and charts, and IT governance." },
   capm: { title: "CAPM Certified Associate in Project Management", description: "Practice questions on project management fundamentals, predictive and agile methods, and business analysis." },

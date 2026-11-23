@@ -137,7 +137,7 @@ const TEACHER_LED = new Set([
   "uklitu", "cacit", "aucit",
   // Next 30 batch (October 2026)
   "rbt", "cpc", "cca", "rhit", "aswb", "arrt", "arrtct", "arrtmri", "nce", "jelec", "masterelec", "barber", "ffi", "police", "corrections", "faapvt", "faaifr", "faacax",
-  "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "linuxplus", "cysa", "cissp", "cism", "gcdl", "gcppca", "gcppde", "itil", "istqb", "cobit", "prince2", "psm", "capm", "projectplus",
+  "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "linuxplus", "cysa", "cissp", "cism", "crisc", "gcdl", "gcppca", "gcppde", "itil", "istqb", "cobit", "prince2", "psm", "capm", "projectplus",
   "psat", "praxis", "gre", "gmat", "lsat", "iimcat", "ieltsread", "toeflread", "mcat", "dat", "naplex", "netplus", "cysa", "ceh", "cissp", "gcdl", "gcppca", "itil", "psm", "capm",
   "ssccgl", "rrbntpc", "ctet", "ibpspo",
   "osssc", "rrbgroupd", "sscgd", "sscchsl", "sscmts", "uppolice", "ibpsclerk", "jnvst", "vidyagyan", "jambeng", "appsych",

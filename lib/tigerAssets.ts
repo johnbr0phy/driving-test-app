@@ -140,6 +140,7 @@ const BORROWED_SETS: Record<string, string> = {
   cpcta: "cna",
   cpatcp: "cpareg",
   aufirearmswa: "capal",
+  aufasa: "capal",
   hspacis: "crcst",
   ncma: "ccma",
   aufirearmsvic: "capal",

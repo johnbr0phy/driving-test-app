@@ -94,6 +94,10 @@ against for similarity; the course assessment's questions were not seen.
   Online learning with compulsory exercises (about 6 to 8 hours), then one in-class day of about
   8.5 hours with theory and assessments (about 6 hours) and practical assessments (about 2 hours).
   No pass mark, number of questions or written-assessment format is published.
+- TAFE SA, Firearm Safety Training - Category H, fetched 2026-11-23:
+  https://www.tafesa.edu.au/xml/course/sc/sc_T967811495.aspx
+  Needs the SAPOL approval letter, and categories A and B completed before or on the same day as
+  category H training.
 - Format conclusion: the Registrar may require a course, a written examination and a practical
   examination (reg 28(1)); TAFE SA assesses theory and practical work on the course day. No count
   or pass mark is published, so Tigertest's 50-question tests and 80% readiness line are

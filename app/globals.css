@@ -5634,6 +5634,19 @@
     --brand-border-light: 106 20% 89%;
     --brand-gradient-to: 0 0% 98%;
   }
+  /* South Australia firearms safety theme: dark olive green */
+  [data-theme="aufasa"] {
+    --brand: 96 55% 14%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 96 50% 95%;
+    --brand-hover: 96 55% 10%;
+    --brand-dark: 96 55% 9%;
+    --brand-darker: 96 55% 5%;
+    --brand-muted: 96 15% 70%;
+    --brand-border: 96 20% 80%;
+    --brand-border-light: 96 20% 89%;
+    --brand-gradient-to: 0 0% 98%;
+  }
   [data-theme="nzfirstaid"] {
     --brand: 2 70% 14%;
     --brand-foreground: 0 0% 100%;
@@ -12784,6 +12797,17 @@
     --brand-muted: 106 15% 45%;
     --brand-dark: 106 60% 65%;
     --brand-darker: 106 60% 78%;
+  }
+  .dark [data-theme="aufasa"] {
+    --brand: 96 55% 33%;
+    --brand-hover: 96 55% 25%;
+    --brand-light: 96 45% 13%;
+    --brand-gradient-to: 0 0% 11%;
+    --brand-border-light: 96 20% 24%;
+    --brand-border: 96 20% 34%;
+    --brand-muted: 96 15% 45%;
+    --brand-dark: 96 55% 65%;
+    --brand-darker: 96 55% 78%;
   }
 
   .dark [data-theme="nzfirstaid"] {

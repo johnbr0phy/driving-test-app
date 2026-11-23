@@ -54,7 +54,7 @@ ITEMS = [
            ["Data classification", "Data locality", "Data replication", "Data augmentation for training"],
            "Classification sorts data by sensitivity so protection matches risk."),
     single(2, "Data retention", 2,
-           "A customer contract says the provider must keep transaction records for five years. Which kind of retention is this?",
+           "A signed customer agreement says the provider must keep transaction records for five years. Which kind of retention is this?",
            ["Contractual", "Regulatory", "Litigation hold", "Ephemeral"],
            "Retention required by an agreement between parties is contractual. Retention required by law is regulatory."),
     single(2, "Authentication", 2,

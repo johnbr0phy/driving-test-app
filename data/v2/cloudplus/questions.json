@@ -644,11 +644,11 @@
     "skill": "Deployment issues",
     "difficulty": 2,
     "format": "single",
-    "stem": "A service the team wants to use is available in one region but not in the region chosen for the deployment. What is the issue?",
+    "stem": "A managed service the design depends on is offered in some of the provider's locations but not in the one chosen for the deployment. What is the issue?",
     "explanation": "Not every service or feature exists in every region, so the design must use a region that offers it.",
     "options": [
-      "Privilege escalation",
       "API throttling",
+      "Privilege escalation",
       "Regional service availability",
       "A VLAN tag mismatch"
     ],
@@ -2258,16 +2258,16 @@
     "skill": "Versioning",
     "difficulty": 2,
     "format": "single",
-    "stem": "A template change breaks production. Because the templates are in version control, what can the team do quickly?",
+    "stem": "A template change breaks production. Because the templates are kept in Git, what can the team do quickly?",
     "explanation": "Versioned code lets the team see what changed and roll back to a working version.",
     "options": [
-      "Turn off monitoring until the fix is found",
-      "Delete the repository and start again",
       "Revert to the last good version",
-      "Rebuild every server by hand from memory"
+      "Rebuild every server by hand from memory",
+      "Delete the repository and start again",
+      "Turn off monitoring until the fix is found"
     ],
     "correct": [
-      2
+      0
     ]
   },
   {
@@ -2321,13 +2321,13 @@
     "skill": "Recovery options",
     "difficulty": 2,
     "format": "single",
-    "stem": "A user deleted one spreadsheet from a file share. What kind of restore fits best?",
+    "stem": "A user deleted one spreadsheet from a file share. What is the best way to get it back?",
     "explanation": "Granular recovery brings back individual items without overwriting everything else.",
     "options": [
       "A granular restore of that single file",
       "A failover to the DR region",
-      "Rebuilding the file server from scratch",
-      "A bulk restore of the whole volume"
+      "A bulk restore of the whole volume",
+      "Rebuilding the file server from scratch"
     ],
     "correct": [
       0
@@ -2646,12 +2646,12 @@
     "skill": "Data retention",
     "difficulty": 2,
     "format": "single",
-    "stem": "A customer contract says the provider must keep transaction records for five years. Which kind of retention is this?",
+    "stem": "A signed customer agreement says the provider must keep transaction records for five years. Which kind of retention is this?",
     "explanation": "Retention required by an agreement between parties is contractual. Retention required by law is regulatory.",
     "options": [
+      "Litigation hold",
       "Ephemeral",
       "Regulatory",
-      "Litigation hold",
       "Contractual"
     ],
     "correct": [
@@ -3267,16 +3267,16 @@
     "skill": "Security controls",
     "difficulty": 3,
     "format": "single",
-    "stem": "Which cloud control allows or denies traffic to a VM's network interface or a subnet by protocol, port and source address, and remembers connections so reply traffic is let back in?",
+    "stem": "Which cloud control allows or denies traffic to a VM's virtual NIC or a subnet by protocol, port and source address, and remembers connections so reply traffic is let back in?",
     "explanation": "A network security group (called a security group or firewall rule set by different providers) is a stateful packet filter on a VM's interface or a subnet. A WAF inspects HTTP content, DLP watches data leaving, and endpoint antivirus runs on the machine itself.",
     "options": [
-      "Web application firewall",
-      "Network security group",
+      "Data loss prevention",
       "Endpoint antivirus",
-      "Data loss prevention"
+      "Network security group",
+      "Web application firewall"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -4169,16 +4169,16 @@
     "skill": "Backup schedule",
     "difficulty": 2,
     "format": "single",
-    "stem": "A business sets an RPO of one hour for its order database. How often must backups or snapshots run at least?",
+    "stem": "A business sets an RPO of 60 minutes for its order database. How often must backups or snapshots run at least?",
     "explanation": "The backup interval must be no longer than the RPO, or more data than allowed could be lost.",
     "options": [
       "Every week",
+      "Every day",
       "Every hour",
-      "Every month",
-      "Every day"
+      "Every month"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -4255,16 +4255,16 @@
     "skill": "Network issues",
     "difficulty": 2,
     "format": "single",
-    "stem": "A client supports only HTTP/1.1, and the server accepts only a newer protocol. What is this issue?",
+    "stem": "A client supports only HTTP/1.1, and the server accepts only HTTP/2 or later. What is this issue?",
     "explanation": "Both ends must share a supported protocol version.",
     "options": [
-      "Litigation hold",
       "Protocol incompatibility",
       "Cloud bursting",
+      "Litigation hold",
       "Data sovereignty"
     ],
     "correct": [
-      1
+      0
     ]
   },
   {

@@ -58,7 +58,7 @@ ITEMS = [
            ["Data loss prevention", "DDoS protection", "Endpoint protection"], [0, 1, 2],
            "DLP finds and blocks sensitive data leaving, DDoS protection absorbs attack traffic, and endpoint protection guards individual machines."),
     single(2, "Security controls", 3,
-           "Which cloud control allows or denies traffic to a VM's network interface or a subnet by protocol, port and source address, and remembers connections so reply traffic is let back in?",
+           "Which cloud control allows or denies traffic to a VM's virtual NIC or a subnet by protocol, port and source address, and remembers connections so reply traffic is let back in?",
            ["Network security group", "Web application firewall", "Data loss prevention", "Endpoint antivirus"],
            "A network security group (called a security group or firewall rule set by different providers) is a stateful packet filter on a VM's interface or a subnet. A WAF inspects HTTP content, DLP watches data leaving, and endpoint antivirus runs on the machine itself."),
     single(2, "Monitoring", 2,

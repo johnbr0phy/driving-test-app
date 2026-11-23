@@ -53,7 +53,7 @@ ITEMS = [
            ["[\"web\", \"db\"]", "{\"web\", \"db\"}", "(web, db)", "<web><db>"],
            "JSON arrays use square brackets with comma-separated values. Braces hold key-value objects."),
     single(2, "Versioning", 2,
-           "A template change breaks production. Because the templates are in version control, what can the team do quickly?",
+           "A template change breaks production. Because the templates are kept in Git, what can the team do quickly?",
            ["Revert to the last good version", "Rebuild every server by hand from memory", "Delete the repository and start again", "Turn off monitoring until the fix is found"],
            "Versioned code lets the team see what changed and roll back to a working version."),
     single(2, "Scripting logic", 2,

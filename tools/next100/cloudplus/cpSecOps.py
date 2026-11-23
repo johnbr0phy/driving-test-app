@@ -62,7 +62,7 @@ ITEMS = [
            ["Network security group", "Web application firewall", "Data loss prevention", "Endpoint antivirus"],
            "Security groups are stateful packet filters attached to instances or subnets."),
     single(2, "Monitoring", 2,
-           "A scan shows that a web server listens on TCP 3306 and 6379 to the internet, but it is only meant to serve HTTPS. What is the finding?",
+           "An HTTPS-only web server also listens to the internet on TCP 3306 and 6379. What is the finding?",
            ["Unnecessary open ports", "A normal web server setup", "A DDoS attack in progress against the web server", "An expired TLS certificate"],
            "Ports 3306 (MySQL) and 6379 (Redis) should never face the internet on a web server; they should be closed."),
     single(2, "Attack types", 2,

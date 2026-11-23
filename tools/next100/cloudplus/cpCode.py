@@ -10,7 +10,7 @@ assert 4 * 2 == 8
 ITEMS = [
     # ---------------- Test 1 ----------------
     single(1, "Infrastructure as code", 2,
-           "A team defines its networks, VMs and load balancers in template files kept in Git, and every environment is built from them. What practice is this?",
+           "Networks, VMs and load balancers are defined in template files in Git and built from them. What practice is this?",
            ["Infrastructure as code", "Configuration drift", "Manual provisioning in the console", "Cold standby"],
            "Infrastructure as code describes resources in files that tools apply, so environments are built the same way every time."),
     single(1, "Configuration as code", 2,
@@ -18,7 +18,7 @@ ITEMS = [
            ["Configuration as code", "Infrastructure as code for networks", "Data augmentation", "Pass-through"],
            "Configuration as code defines the settings inside systems (packages, files, services) in versioned files."),
     single(1, "Drift detection", 3,
-           "Someone opens a firewall port by hand in the console. The next IaC run reports a difference between the live resource and the template. What is this difference called?",
+           "A firewall port opened by hand makes the live resource differ from its IaC template. What is this called?",
            ["Configuration drift", "Cloud bursting", "Service discovery", "Rightsizing of instances"],
            "Drift is any change to live resources made outside the code. Drift detection compares the real state with the declared state."),
     single(1, "Formats", 2,
@@ -69,7 +69,7 @@ ITEMS = [
            ["So other teams can reuse it correctly", "So it runs faster on every apply", "So it no longer needs testing in the pipeline", "So the tool skips drift detection for that module entirely"],
            "Documentation explains how to use the code, which makes reuse safer."),
     numeric(2, "Provisioning", 2,
-            "A deployment file asks for 4 replicas of a container, and each replica requests 2 vCPUs. How many vCPUs does the deployment request in total? Type the number only.",
+            "A deployment asks for 4 replicas, each requesting 2 vCPUs. How many vCPUs in total? Type the number only.",
             8,
             "4 replicas x 2 vCPUs each = 8 vCPUs."),
     single(2, "Provisioning", 3,

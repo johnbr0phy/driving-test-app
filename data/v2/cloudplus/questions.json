@@ -142,16 +142,16 @@
     "skill": "Infrastructure as code",
     "difficulty": 2,
     "format": "single",
-    "stem": "A team defines its networks, VMs and load balancers in template files kept in Git, and every environment is built from them. What practice is this?",
+    "stem": "Networks, VMs and load balancers are defined in template files in Git and built from them. What practice is this?",
     "explanation": "Infrastructure as code describes resources in files that tools apply, so environments are built the same way every time.",
     "options": [
-      "Infrastructure as code",
-      "Configuration drift",
       "Cold standby",
-      "Manual provisioning in the console"
+      "Infrastructure as code",
+      "Manual provisioning in the console",
+      "Configuration drift"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -289,12 +289,12 @@
     "skill": "Deployment strategies",
     "difficulty": 2,
     "format": "single",
-    "stem": "A new release goes to 5% of users first while the team watches error rates, and then to everyone if all looks well. Which strategy is this?",
+    "stem": "A release reaches 5% of users first, then everyone if error rates stay low. Which strategy is this?",
     "explanation": "A canary release exposes a small share of users to the new version first to catch problems early.",
     "options": [
-      "Rolling",
-      "Canary",
       "Blue-green",
+      "Canary",
+      "Rolling",
       "In-place"
     ],
     "correct": [
@@ -373,13 +373,13 @@
     "skill": "Tracing",
     "difficulty": 3,
     "format": "single",
-    "stem": "Engineers want to pull up every log line, from every service, that belongs to one slow customer request. What should each service add to its logs?",
+    "stem": "To find every service's log lines for one slow request, what should each service log?",
     "explanation": "Passing one trace ID along with the request and logging it everywhere ties all the entries for that request together.",
     "options": [
-      "The instance size",
-      "The request's trace or correlation ID",
       "The disk serial number",
-      "The server's uptime"
+      "The request's trace or correlation ID",
+      "The server's uptime",
+      "The instance size"
     ],
     "correct": [
       1
@@ -415,7 +415,7 @@
     "skill": "Backup types",
     "difficulty": 3,
     "format": "numeric",
-    "stem": "A full backup runs Sunday night and incremental backups run Monday through Friday nights. The server fails Saturday morning. How many backup sets must be restored? Type the number only.",
+    "stem": "Full backup Sunday, incrementals Monday to Friday nights, failure Saturday morning. How many backup sets must be restored? Type the number only.",
     "explanation": "Restore the Sunday full and then each incremental in order, Monday through Friday: 1 + 5 = 6 sets.",
     "numeric": {
       "answers": [
@@ -434,16 +434,16 @@
     "skill": "Service models",
     "difficulty": 2,
     "format": "single",
-    "stem": "A developer writes a small piece of code that runs only when a file lands in a bucket, and pays only for the milliseconds it runs. Which service model is this?",
+    "stem": "Code runs only when a file lands in a bucket, billed per millisecond of run time. Which service model is this?",
     "explanation": "FaaS runs event-triggered functions with no server to manage and bills per execution time.",
     "options": [
       "Infrastructure as a service",
-      "Desktop as a service",
+      "Function as a service",
       "Software as a service",
-      "Function as a service"
+      "Desktop as a service"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -476,13 +476,13 @@
     "skill": "Cloud-native design",
     "difficulty": 2,
     "format": "single",
-    "stem": "When one order arrives, a service publishes a single message that the billing, shipping and email services each receive and process in parallel. What pattern is this?",
+    "stem": "One order message is delivered to billing, shipping and email services at once. What pattern is this?",
     "explanation": "Fan-out sends one event to many subscribers at the same time.",
     "options": [
       "Fan-out",
       "Host affinity",
-      "Cold standby",
-      "Vertical scaling"
+      "Vertical scaling",
+      "Cold standby"
     ],
     "correct": [
       0
@@ -497,16 +497,16 @@
     "skill": "Deployment strategies",
     "difficulty": 3,
     "format": "single",
-    "stem": "Two identical environments exist. The new version is fully installed on the idle one, tested, and then all traffic is switched over at once, with the old one kept for instant rollback. Which strategy is this?",
+    "stem": "A release goes onto an idle twin environment, then all traffic switches over, keeping the old one for rollback. Which strategy is this?",
     "explanation": "Blue-green keeps two full environments and switches traffic between them, so rollback is just switching back.",
     "options": [
-      "Blue-green",
-      "Rolling",
       "Canary",
-      "In-place upgrade"
+      "Blue-green",
+      "In-place upgrade",
+      "Rolling"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -560,12 +560,12 @@
     "skill": "Drift detection",
     "difficulty": 3,
     "format": "single",
-    "stem": "Someone opens a firewall port by hand in the console. The next IaC run reports a difference between the live resource and the template. What is this difference called?",
+    "stem": "A firewall port opened by hand makes the live resource differ from its IaC template. What is this called?",
     "explanation": "Drift is any change to live resources made outside the code. Drift detection compares the real state with the declared state.",
     "options": [
-      "Rightsizing of instances",
       "Service discovery",
       "Cloud bursting",
+      "Rightsizing of instances",
       "Configuration drift"
     ],
     "correct": [
@@ -623,16 +623,16 @@
     "skill": "Availability",
     "difficulty": 2,
     "format": "single",
-    "stem": "An architect places two copies of an application in separate data centers within the same region so one site losing power does not take it down. What is each data center called?",
+    "stem": "An app runs in two isolated data centers of one region to survive a site power loss. What is each data center called?",
     "explanation": "Availability zones are isolated locations inside a region with their own power and networking, used to survive a single-site failure.",
     "options": [
-      "Availability zone",
       "Edge location",
-      "Tenant",
-      "Point of presence"
+      "Availability zone",
+      "Point of presence",
+      "Tenant"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -726,11 +726,11 @@
     "skill": "Data retention",
     "difficulty": 3,
     "format": "single",
-    "stem": "A company is sued, and legal orders that all email and chat records for the case be kept, even if the normal policy would delete them. What is this?",
+    "stem": "After a lawsuit, legal orders that case records be kept despite the normal deletion policy. What is this?",
     "explanation": "A litigation hold suspends normal deletion for records relevant to a legal matter.",
     "options": [
-      "A cold storage tier",
       "A contractual retention period",
+      "A cold storage tier",
       "Data masking",
       "A litigation hold"
     ],
@@ -789,16 +789,16 @@
     "skill": "Deployment issues",
     "difficulty": 3,
     "format": "single",
-    "stem": "VMs on a host run slowly because the host has assigned far more virtual CPUs than it has physical cores and every VM is busy. What is this?",
+    "stem": "A host assigned far more vCPUs than it has cores, and with every VM busy, all run slowly. What is this?",
     "explanation": "Oversubscribing CPU or memory works when VMs are mostly idle but causes contention when they are all busy.",
     "options": [
       "Hardware pass-through",
+      "Anti-affinity",
       "Oversubscription",
-      "Rightsizing",
-      "Anti-affinity"
+      "Rightsizing"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -873,13 +873,13 @@
     "skill": "Containers",
     "difficulty": 2,
     "format": "single",
-    "stem": "A container writes uploaded files to its own writable layer. After the container is replaced during an update, the files are gone. What should it use instead?",
+    "stem": "Uploads saved in a container's writable layer vanish when the container is replaced. What should it use instead?",
     "explanation": "Data in a container's writable layer is ephemeral. A persistent volume lives outside the container and survives restarts and replacement.",
     "options": [
       "A persistent volume",
-      "Ephemeral storage",
       "A larger container image",
-      "A second port mapping"
+      "A second port mapping",
+      "Ephemeral storage"
     ],
     "correct": [
       0
@@ -915,16 +915,16 @@
     "skill": "Migration strategies",
     "difficulty": 2,
     "format": "single",
-    "stem": "A company moves its VMs to the cloud exactly as they are, with no code or architecture changes, to exit a data center quickly. Which strategy is this?",
+    "stem": "VMs move to the cloud unchanged so a data center can close fast. Which strategy is this?",
     "explanation": "Rehosting, often called lift and shift, moves workloads unchanged.",
     "options": [
-      "Refactor",
       "Retire",
-      "Rehost",
-      "Replatform"
+      "Replatform",
+      "Refactor",
+      "Rehost"
     ],
     "correct": [
-      2
+      3
     ]
   },
   {
@@ -1133,16 +1133,16 @@
     "skill": "Network issues",
     "difficulty": 3,
     "format": "single",
-    "stem": "New VMs in a subnet stay stuck without IP addresses, while existing ones work. The subnet is a /27 and already has many instances. What is the likely cause?",
+    "stem": "New VMs in a busy /27 subnet get no IP address, while older ones work. What is the likely cause?",
     "explanation": "A /27 has only 32 addresses before any reserved ones, so a busy subnet can run out and new VMs get no address.",
     "options": [
-      "TLS 1.3 is disabled",
       "The load balancer in front of the subnet is layer 7",
       "The DNS zone is missing",
-      "The DHCP scope or subnet address space is exhausted"
+      "The DHCP scope or subnet address space is exhausted",
+      "TLS 1.3 is disabled"
     ],
     "correct": [
-      3
+      2
     ]
   },
   {
@@ -1196,7 +1196,7 @@
     "skill": "Integration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A client asks one API endpoint for exactly the fields it needs, such as a user's name and last three orders, in a single query. Which technology is this?",
+    "stem": "A client asks one API endpoint for exactly the fields it needs in a single query. Which technology is this?",
     "explanation": "GraphQL lets clients specify the shape of the data they want from one endpoint.",
     "options": [
       "SOAP",
@@ -1217,16 +1217,16 @@
     "skill": "Recovery types",
     "difficulty": 3,
     "format": "single",
-    "stem": "A team restores last night's backup to a new server next to the damaged one, so it can compare the two before switching users over. Which recovery type is this?",
+    "stem": "A backup is restored to a new server beside the damaged one, and users move over after a check. Which recovery type is this?",
     "explanation": "A parallel recovery restores to a separate location alongside the original. An in-place recovery overwrites the original.",
     "options": [
-      "Cold boot",
-      "Bulk deletion",
       "Parallel recovery",
-      "In-place recovery"
+      "Bulk deletion",
+      "In-place recovery",
+      "Cold boot"
     ],
     "correct": [
-      2
+      0
     ]
   },
   {
@@ -1364,16 +1364,16 @@
     "skill": "Migration",
     "difficulty": 2,
     "format": "single",
-    "stem": "After a merger, two apps do the same job. The plan keeps one and switches the other off instead of moving it. Which strategy applies to the one switched off?",
+    "stem": "After a merger, one of two duplicate apps is switched off instead of moved. Which strategy applies to it?",
     "explanation": "Retiring switches off applications that are no longer needed instead of paying to move them.",
     "options": [
-      "Rehost",
       "Retire",
-      "Refactor",
-      "Replatform"
+      "Rehost",
+      "Replatform",
+      "Refactor"
     ],
     "correct": [
-      1
+      0
     ]
   },
   {
@@ -1532,7 +1532,7 @@
     "skill": "Scaling",
     "difficulty": 3,
     "format": "numeric",
-    "stem": "An autoscaling group has 7 instances and a maximum of 10. Each time CPU stays above 70%, the policy adds 2 instances. CPU stays high through two policy actions. How many instances are running afterward? Type the number only.",
+    "stem": "An autoscaling group runs 7 instances, maximum 10. Each high-CPU action adds 2. After two actions, how many run? Type the number only.",
     "explanation": "The first action takes the group from 7 to 9. The second would reach 11, but the maximum caps it at 10.",
     "numeric": {
       "answers": [
@@ -2002,16 +2002,16 @@
     "skill": "Vulnerability management",
     "difficulty": 3,
     "format": "single",
-    "stem": "A CVSS 9.8 finding sits on an isolated lab VM with no network access. A CVSS 7.5 finding on an internet-facing VPN gateway is being actively exploited. Which should be fixed first?",
+    "stem": "A CVSS 9.8 flaw is on an isolated lab VM. A CVSS 7.5 flaw on an internet-facing VPN gateway is being exploited. Which comes first?",
     "explanation": "Assessment weighs the score with exposure, exploitation and asset value, so the exposed, attacked gateway comes first.",
     "options": [
-      "The VPN gateway, because exposure and active exploitation raise its real risk",
-      "The lab VM, because its score is higher",
       "Both together, because scores do not matter",
-      "Neither, until the scores are recalculated"
+      "The lab VM, because its score is higher",
+      "Neither, until the scores are recalculated",
+      "The VPN gateway, because exposure and active exploitation raise its real risk"
     ],
     "correct": [
-      0
+      3
     ]
   },
   {
@@ -2107,7 +2107,7 @@
     "skill": "Backup types",
     "difficulty": 3,
     "format": "numeric",
-    "stem": "A full backup runs Sunday night and differential backups run Monday through Thursday nights. The server fails Friday morning. How many backup sets must be restored? Type the number only.",
+    "stem": "Full backup Sunday, differentials Monday to Thursday nights, failure Friday morning. How many backup sets must be restored? Type the number only.",
     "explanation": "A differential holds every change since the last full, so restore the Sunday full plus only Thursday's differential: 2 sets.",
     "numeric": {
       "answers": [
@@ -2189,16 +2189,16 @@
     "skill": "Deployment strategies",
     "difficulty": 2,
     "format": "single",
-    "stem": "A small internal tool is updated by stopping the app on its only server, installing the new version over it and starting it again. Which strategy is this?",
+    "stem": "An app is stopped on its only server, upgraded in place and restarted. Which strategy is this?",
     "explanation": "An in-place deployment updates the existing servers directly, which usually means some downtime and a slower rollback.",
     "options": [
       "Canary",
+      "In-place",
       "Blue-green",
-      "Rolling",
-      "In-place"
+      "Rolling"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -2537,16 +2537,16 @@
     "skill": "Availability",
     "difficulty": 2,
     "format": "single",
-    "stem": "A factory processes camera images on small servers next to the production line so decisions are made within milliseconds instead of waiting on a distant region. What is this?",
+    "stem": "A factory processes camera images on servers beside the line to decide within milliseconds. What is this?",
     "explanation": "Edge computing moves processing close to where data is created to cut latency.",
     "options": [
       "Cloud bursting",
-      "Edge computing",
       "Service discovery",
-      "Cold storage"
+      "Cold storage",
+      "Edge computing"
     ],
     "correct": [
-      1
+      3
     ]
   },
   {
@@ -2627,7 +2627,7 @@
     "skill": "Deployment strategies",
     "difficulty": 3,
     "format": "numeric",
-    "stem": "A site serves 40,000 requests an hour. A canary release routes 5% of requests to the new version. How many requests an hour reach the new version? Type the number only.",
+    "stem": "A site serves 40,000 requests an hour, and a canary gets 5% of them. How many an hour reach the canary? Type the number only.",
     "explanation": "5% of 40,000 is 40,000 x 0.05 = 2,000 requests an hour.",
     "numeric": {
       "answers": [
@@ -2751,7 +2751,7 @@
     "skill": "Scaling",
     "difficulty": 3,
     "format": "numeric",
-    "stem": "Each instance can serve 500 requests a second. Six instances are running and demand will reach 4,200 requests a second. How many more instances are needed at minimum? Type the number only.",
+    "stem": "Each instance serves 500 requests a second. Six run, and demand will reach 4,200. How many more are needed? Type the number only.",
     "explanation": "4,200 / 500 = 8.4, so 9 instances are needed. With 6 running, 3 more are needed.",
     "numeric": {
       "answers": [
@@ -3103,16 +3103,16 @@
     "skill": "Authentication",
     "difficulty": 3,
     "format": "single",
-    "stem": "A mobile app signs users in with an external identity provider and receives an ID token describing who they are. The protocol is built on top of OAuth 2.0. Which is it?",
+    "stem": "Which sign-in protocol, built on OAuth 2.0, gives a mobile app an ID token describing the user?",
     "explanation": "OpenID Connect adds an identity layer and ID tokens on top of OAuth 2.0's authorization flows.",
     "options": [
       "RADIUS accounting",
-      "SAML 1.1",
+      "OpenID Connect",
       "Kerberos",
-      "OpenID Connect"
+      "SAML 1.1"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -3124,16 +3124,16 @@
     "skill": "Integration",
     "difficulty": 3,
     "format": "single",
-    "stem": "When a new user signs up, a message is published, and separate services react on their own to send a welcome email and create a billing profile. What architecture is this?",
+    "stem": "A sign-up publishes a message, and separate services react on their own to email and bill the user. What architecture is this?",
     "explanation": "In event-driven systems, producers publish events and consumers react independently.",
     "options": [
       "A cold site",
+      "A monolith with shared tables",
       "Event-driven architecture",
-      "A single cron job",
-      "A monolith with shared tables"
+      "A single cron job"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -3208,16 +3208,16 @@
     "skill": "Network issues",
     "difficulty": 3,
     "format": "single",
-    "stem": "A hypervisor host's uplink carries VLANs 10 and 20, but VMs on VLAN 20 cannot reach anything. The switch port is set as an access port in VLAN 10. What is wrong?",
+    "stem": "A host carries VLANs 10 and 20, but VLAN 20 VMs are cut off. Its switch port is an access port in VLAN 10. What is wrong?",
     "explanation": "An access port carries one untagged VLAN. A host with several VLANs needs a trunk port that passes tagged traffic.",
     "options": [
-      "The host needs more memory for the VMs on VLAN 20",
-      "The port must be a trunk port",
+      "VLAN 20 needs a CDN",
       "The VMs need public IP addresses",
-      "VLAN 20 needs a CDN"
+      "The port must be a trunk port",
+      "The host needs more memory for the VMs on VLAN 20"
     ],
     "correct": [
-      1
+      2
     ]
   },
   {
@@ -3229,7 +3229,7 @@
     "skill": "Provisioning",
     "difficulty": 2,
     "format": "numeric",
-    "stem": "A deployment file asks for 4 replicas of a container, and each replica requests 2 vCPUs. How many vCPUs does the deployment request in total? Type the number only.",
+    "stem": "A deployment asks for 4 replicas, each requesting 2 vCPUs. How many vCPUs in total? Type the number only.",
     "explanation": "4 replicas x 2 vCPUs each = 8 vCPUs.",
     "numeric": {
       "answers": [
@@ -3248,7 +3248,7 @@
     "skill": "Logging",
     "difficulty": 2,
     "format": "numeric",
-    "stem": "An application writes 20 GB of logs a day and the retention policy keeps 90 days. How many GB of logs are stored once the policy is full? Type the number only.",
+    "stem": "An app writes 20 GB of logs a day, kept for 90 days. How many GB are stored at most? Type the number only.",
     "explanation": "20 GB a day x 90 days = 1,800 GB.",
     "numeric": {
       "answers": [
@@ -3483,16 +3483,16 @@
     "skill": "Monitoring",
     "difficulty": 2,
     "format": "single",
-    "stem": "A scan shows that a web server listens on TCP 3306 and 6379 to the internet, but it is only meant to serve HTTPS. What is the finding?",
+    "stem": "An HTTPS-only web server also listens to the internet on TCP 3306 and 6379. What is the finding?",
     "explanation": "Ports 3306 (MySQL) and 6379 (Redis) should never face the internet on a web server; they should be closed.",
     "options": [
-      "A DDoS attack in progress against the web server",
-      "Unnecessary open ports",
+      "An expired TLS certificate",
       "A normal web server setup",
-      "An expired TLS certificate"
+      "A DDoS attack in progress against the web server",
+      "Unnecessary open ports"
     ],
     "correct": [
-      1
+      3
     ]
   },
   {
@@ -3588,13 +3588,13 @@
     "skill": "Networking",
     "difficulty": 3,
     "format": "single",
-    "stem": "A dedicated connection carries traffic to the cloud and a VPN is the backup. The routes should fail over on their own when the circuit drops. Which protocol exchanges those routes dynamically?",
+    "stem": "A dedicated link to the cloud has a VPN backup, and routes must fail over on their own. Which protocol exchanges them?",
     "explanation": "BGP advertises routes between networks and withdraws them when a link fails, so traffic shifts to the remaining path.",
     "options": [
       "Border Gateway Protocol",
-      "Network Time Protocol",
+      "Simple Network Management Protocol",
       "Dynamic Host Configuration Protocol",
-      "Simple Network Management Protocol"
+      "Network Time Protocol"
     ],
     "correct": [
       0
@@ -3714,16 +3714,16 @@
     "skill": "Migration",
     "difficulty": 2,
     "format": "single",
-    "stem": "A team moves an analytics cluster from the cloud back into its own data center because steady use made the cloud bill too high. Which migration type is this?",
+    "stem": "An analytics cluster moves from the cloud back into the company's own data center to cut costs. Which migration type is this?",
     "explanation": "Bringing a workload back from a provider into your own facility is a cloud-to-on-premises migration.",
     "options": [
-      "Cloud-to-on-premises",
-      "Cloud-to-cloud",
       "On-premises-to-cloud",
-      "Edge-to-cloud"
+      "Cloud-to-on-premises",
+      "Edge-to-cloud",
+      "Cloud-to-cloud"
     ],
     "correct": [
-      0
+      1
     ]
   },
   {
@@ -3777,7 +3777,7 @@
     "skill": "Optimization",
     "difficulty": 3,
     "format": "numeric",
-    "stem": "A team must copy 900 GB to the cloud over a link that sustains 1 Gbps. Ignoring overhead, how many hours will the copy take? Type the number only.",
+    "stem": "How many hours does copying 900 GB over a steady 1 Gbps link take, ignoring overhead? Type the number only.",
     "explanation": "900 GB is 900 x 8 = 7,200 gigabits. At 1 gigabit per second that takes 7,200 seconds, which is 2 hours.",
     "numeric": {
       "answers": [
@@ -3796,7 +3796,7 @@
     "skill": "Networking",
     "difficulty": 2,
     "format": "numeric",
-    "stem": "A team is given the CIDR block 10.40.0.0/19 for a new VPC. How many IP addresses does the block contain in total, before any reserved addresses? Type the number only.",
+    "stem": "How many IP addresses does the block 10.40.0.0/19 contain in total, before reserved ones? Type the number only.",
     "explanation": "A /19 leaves 32 - 19 = 13 host bits, and 2 to the 13th power is 8,192 addresses.",
     "numeric": {
       "answers": [
@@ -3815,16 +3815,16 @@
     "skill": "Network issues",
     "difficulty": 2,
     "format": "single",
-    "stem": "A team measures 180 ms round trips between its app servers in one region and a database in another continent, and chatty queries are slow. What is the main issue?",
+    "stem": "App servers wait 180 ms per round trip to a database on another continent, so chatty queries crawl. What is the main issue?",
     "explanation": "Every round trip pays the cross-continent delay, so moving the database closer or batching queries helps.",
     "options": [
       "A revoked access key",
-      "An exhausted DHCP scope",
+      "Latency between regions",
       "A misconfigured VLAN tag on the trunk",
-      "Latency between regions"
+      "An exhausted DHCP scope"
     ],
     "correct": [
-      3
+      1
     ]
   },
   {
@@ -4085,16 +4085,16 @@
     "skill": "Evolving technology",
     "difficulty": 2,
     "format": "single",
-    "stem": "Thousands of soil sensors on a farm send small readings to a local device that batches them and forwards them to the cloud. What is that local device?",
+    "stem": "Farm sensors send readings to a local device that batches them for the cloud. What is that device?",
     "explanation": "An IoT gateway collects data from nearby sensors, often over short-range protocols, and relays it to the cloud.",
     "options": [
-      "A bastion host",
       "An IoT gateway",
-      "A hypervisor",
-      "A load balancer"
+      "A load balancer",
+      "A bastion host",
+      "A hypervisor"
     ],
     "correct": [
-      1
+      0
     ]
   },
   {
@@ -4255,13 +4255,13 @@
     "skill": "Network issues",
     "difficulty": 2,
     "format": "single",
-    "stem": "A client and server cannot connect because one only supports HTTP/1.1 and the other was configured to accept only a protocol the client lacks. What is this?",
+    "stem": "A client supports only HTTP/1.1, and the server accepts only a newer protocol. What is this issue?",
     "explanation": "Both ends must share a supported protocol version.",
     "options": [
-      "Cloud bursting",
+      "Litigation hold",
       "Protocol incompatibility",
-      "Data sovereignty",
-      "Litigation hold"
+      "Cloud bursting",
+      "Data sovereignty"
     ],
     "correct": [
       1

@@ -13,12 +13,12 @@
 // Real strings: the class, the students (three rows), the missed questions'
 // stems and counts, the banner, the question and options on the phone.
 
-import { useTranslation } from "@/contexts/LanguageContext";
+import { useTeachCopy } from "@/components/teach/useTeachCopy";
 import { X } from "lucide-react";
 import { Bar, Check, Count, Phone, Stage, Window, type Act } from "@/components/stageshow/kit";
 import "./teach-class-demo.css";
 
-const OPTIONS = ["Vitamin K", "Protamine sulfate", "Naloxone", "Flumazenil"];
+// The question on the phone is the landing's first sample question (teachCopy).
 const RIGHT = 1;
 const PICK = 0;
 
@@ -45,61 +45,61 @@ async function script(a: Act<S>) {
 }
 
 const STUDENTS = [
-  { name: "Maya B.", when: "Yesterday", answered: 288, acc: "69%" },
-  { name: "Barney B.", when: "3 days ago", answered: 150, acc: "74%" },
+  { name: "Maya B.", days: 1, answered: 288 },
+  { name: "Barney B.", days: 3, answered: 150 },
 ];
 
 function ClassPage({ s }: { s: S }) {
-  const { englishLocale } = useTranslation();
+  const c = useTeachCopy();
   return (
     <div className="tc-page">
       <div className="tc-head">
-        <div className="tc-title">{englishLocale === "en-GB" ? "Surgical Technology, Autumn" : "Surgical Tech, Fall"}</div>
-        <div className="tc-sub">CST · 18 students</div>
+        <div className="tc-title">{c.demoClassName}</div>
+        <div className="tc-sub">{c.demoClassSub}</div>
       </div>
 
       <section className="tc-card">
-        <div className="tc-card__title">Students</div>
+        <div className="tc-card__title">{c.studentsTitle}</div>
         <div className="tc-row tc-row--student" data-flash={s.synced || undefined}>
           <span className="tc-name">Phoebe B.</span>
           <span className="tc-when">
             <span className="tc-when__swap" data-on={s.synced || undefined}>
-              <span>Today</span>
+              <span>{c.today}</span>
               <span className="tc-live">
                 <span className="tc-live__dot" />
-                Just now
+                {c.justNow}
               </span>
             </span>
           </span>
           <span className="tc-num">
-            <Count value={s.synced ? 413 : 412} /> answered
+            <Count value={s.synced ? 413 : 412} /> {c.answeredWord}
           </span>
           <Bar w={52} h={8} r={4} tone={2} className="tc-fill" />
         </div>
         {STUDENTS.map((st) => (
           <div key={st.name} className="tc-row tc-row--student">
             <span className="tc-name">{st.name}</span>
-            <span className="tc-when">{st.when}</span>
-            <span className="tc-num">{st.answered} answered</span>
+            <span className="tc-when">{st.days === 1 ? c.yesterday : c.daysAgo(st.days)}</span>
+            <span className="tc-num">{st.answered} {c.answeredWord}</span>
             <Bar w={44} h={8} r={4} tone={2} className="tc-fill" />
           </div>
         ))}
       </section>
 
       <section className="tc-card">
-        <div className="tc-card__title">Most missed questions</div>
+        <div className="tc-card__title">{c.demoMostMissed}</div>
         <div className="tc-row tc-row--q" data-flash={s.missed || undefined}>
-          <span className="tc-q">Which drug reverses heparin?</span>
+          <span className="tc-q">{c.demoMissedQ}</span>
           <span className="tc-missed">
             <Count value={s.missed ? 10 : 9} />
-            <span>of</span>
+            <span>{c.of}</span>
             <Count value={s.missed ? 17 : 16} />
-            <span>missed</span>
+            <span>{c.missedWord}</span>
           </span>
         </div>
         <div className="tc-row tc-row--q">
-          <span className="tc-q">Which of these sutures is absorbable?</span>
-          <span className="tc-missed">6 of 17 missed</span>
+          <span className="tc-q">{c.sampleQuestions[1].question}</span>
+          <span className="tc-missed">6 {c.of} 17 {c.missedWord}</span>
         </div>
         <div className="tc-row tc-row--q tc-row--filler">
           <Bar w={210} h={8} r={4} tone={2} />
@@ -113,18 +113,18 @@ function ClassPage({ s }: { s: S }) {
 // The phone column's design: the student's phone leads, and the class page
 // is a small card straddling its edge with only the two rows that change
 function ClassMini({ s }: { s: S }) {
-  const { englishLocale } = useTranslation();
+  const c = useTeachCopy();
   return (
     <Window url="tigertest.io/teach" chrome="hairline" className="tc-mini">
       <div className="tc-mini__body">
-        <div className="tc-mini__title">{englishLocale === "en-GB" ? "Surgical Technology, Autumn" : "Surgical Tech, Fall"}</div>
+        <div className="tc-mini__title">{c.demoClassName}</div>
         <div className="tc-mini__row" data-flash={s.synced || undefined}>
           <span className="tc-name">Phoebe B.</span>
           <span className="tc-when__swap" data-on={s.synced || undefined}>
-            <span className="tc-when">Today</span>
+            <span className="tc-when">{c.today}</span>
             <span className="tc-live">
               <span className="tc-live__dot" />
-              Just now
+              {c.justNow}
             </span>
           </span>
           <span className="tc-num tc-mini__num">
@@ -132,12 +132,12 @@ function ClassMini({ s }: { s: S }) {
           </span>
         </div>
         <div className="tc-mini__row tc-mini__row--q" data-flash={s.missed || undefined}>
-          <span className="tc-q">Reverses heparin?</span>
+          <span className="tc-q">{c.demoMissedShort}</span>
           <span className="tc-missed">
             <Count value={s.missed ? 10 : 9} />
-            <span>of</span>
+            <span>{c.of}</span>
             <Count value={s.missed ? 17 : 16} />
-            <span>missed</span>
+            <span>{c.missedWord}</span>
           </span>
         </div>
       </div>
@@ -146,24 +146,25 @@ function ClassMini({ s }: { s: S }) {
 }
 
 function StudentScreen({ pick }: { pick: number | null }) {
-  const { englishLocale } = useTranslation();
-  const options = englishLocale === "en-GB" ? ["Vitamin K", "Protamine sulphate", "Naloxone", "Flumazenil"] : OPTIONS;
+  const c = useTeachCopy();
+  const sample = c.sampleQuestions[0];
+  const options = sample.options;
   const answered = pick !== null;
   return (
     <div className="tc-phone-screen">
       <div className="tc-url">tigertest.io/cst/practice/2</div>
       <div className="tc-banner">
-        Your scores are shared with <b>Ms. Rivera</b>
+        {c.sharedWith} <b>{c.teacherPlaceholder}</b>{c.sharedWithAfter}
       </div>
       <div className="tc-quiz">
         <div className="tc-quiz__meta">
-          <span>Training Set 2</span>
-          <span>14 of 50</span>
+          <span>{c.demoTrainingSet}</span>
+          <span>{c.demoProgress}</span>
         </div>
         <span className="tc-quiz__track">
           <span className="tc-quiz__fill" />
         </span>
-        <div className="tc-quiz__question">Which drug reverses the anticoagulant effect of heparin?</div>
+        <div className="tc-quiz__question">{sample.question}</div>
         <div className="tc-quiz__options">
           {options.map((o, i) => (
             <div

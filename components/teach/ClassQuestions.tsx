@@ -6,6 +6,8 @@ import { QuestionImage } from "@/components/QuestionImage";
 import { getSignIdForQuestion } from "@/lib/signImages";
 import type { ClassQuestionRow } from "@/lib/classes";
 import { scoreText } from "@/components/teach/scoreColors";
+import { useTeachCopy } from "@/components/teach/useTeachCopy";
+import type { TeachCopy } from "@/components/teach/teachCopy";
 
 function pct(correct: number, answered: number): number {
   return answered ? Math.round((correct / answered) * 100) : 0;
@@ -14,15 +16,15 @@ function pct(correct: number, answered: number): number {
 const LETTERS = ["A", "B", "C", "D", "E", "F"];
 
 /** "Most picked wrong: B" for a row's subtitle, when any wrong pick was recorded. */
-export function topWrongPick(picks: number[]): string | null {
+export function topWrongPick(picks: number[], c: TeachCopy): string | null {
   const top = picks.reduce((best, n, i) => (n > (picks[best] ?? 0) ? i : best), 0);
-  return picks[top] > 0 ? `Most picked wrong: ${LETTERS[top]}` : null;
+  return picks[top] > 0 ? c.topWrongPick(LETTERS[top]) : null;
 }
 
 /** Misses from before wrong picks were recorded, said once under the options. */
-export function untrackedNote(picks: number[], missed: number): string | null {
+export function untrackedNote(picks: number[], missed: number, c: TeachCopy): string | null {
   const untracked = missed - picks.reduce((s, n) => s + n, 0);
-  return untracked > 0 ? `${untracked} ${untracked === 1 ? "miss" : "misses"} from before we recorded which answer was picked.` : null;
+  return untracked > 0 ? c.untracked(untracked) : null;
 }
 
 // Every question the class answered, as the /stats rows: tap one to see the
@@ -33,13 +35,15 @@ const QUESTIONS_SHOWN = 10;
 export function ClassQuestions({
   questions,
   headingLevel = 2,
-  groupLabel = "your class",
+  audience = "class",
 }: {
   questions: ClassQuestionRow[];
   headingLevel?: 2 | 3;
-  /** Who answered them: "your class" on the teacher page, "players" on a quiz's report. */
-  groupLabel?: string;
+  /** Who answered them: a class (in the page's language), or a quiz's players (English, like the rest of the quiz report). */
+  audience?: "class" | "quiz";
 }) {
+  const quiz = audience === "quiz";
+  const c = useTeachCopy(quiz);
   const Heading = headingLevel === 3 ? "h3" : "h2";
   const [sort, setSort] = useState<"missed" | "accuracy">("missed");
   const [showAll, setShowAll] = useState(false);
@@ -53,8 +57,8 @@ export function ClassQuestions({
   return (
     <div>
       <div className="flex flex-wrap items-center gap-2 mb-3">
-        <Heading className="font-semibold text-gray-900 dark:text-gray-50 mr-2">Questions</Heading>
-        {([["missed", "Most missed"], ["accuracy", "Lowest accuracy"]] as const).map(([key, label]) => (
+        <Heading className="font-semibold text-gray-900 dark:text-gray-50 mr-2">{c.questions}</Heading>
+        {([["missed", c.mostMissed], ["accuracy", c.lowestAccuracy]] as const).map(([key, label]) => (
           <button
             key={key}
             type="button"
@@ -69,15 +73,15 @@ export function ClassQuestions({
             {label}
           </button>
         ))}
-        <span className="ml-auto text-xs text-gray-500 dark:text-gray-400">{questions.length} answered by {groupLabel}</span>
+        <span className="ml-auto text-xs text-gray-500 dark:text-gray-400">{c.answeredBy(questions.length, quiz ? "players" : c.yourClass)}</span>
       </div>
       <div className="space-y-2">
         {shown.map((q) => {
           const accuracy = pct(q.answered - q.missed, q.answered);
           const chip =
             sort === "missed"
-              ? { value: `${q.missed}`, label: "missed", color: q.missed > 0 ? scoreText("low") : "text-gray-500 dark:text-gray-400" }
-              : { value: `${accuracy}%`, label: "right", color: scoreText(accuracy >= 70 ? "good" : accuracy >= 50 ? "near" : "low") };
+              ? { value: `${q.missed}`, label: c.chipMissed, color: q.missed > 0 ? scoreText("low") : "text-gray-500 dark:text-gray-400" }
+              : { value: `${accuracy}%`, label: c.chipRight, color: scoreText(accuracy >= 70 ? "good" : accuracy >= 50 ? "near" : "low") };
           return (
             <QuizRow
               key={q.questionId}
@@ -86,7 +90,7 @@ export function ClassQuestions({
               chipColorClass={chip.color}
               question={q.question}
               media={getSignIdForQuestion(q.questionId) ? <QuestionImage questionId={q.questionId} /> : undefined}
-              subtitle={[q.topic, topWrongPick(q.picks)].filter(Boolean).join(" · ")}
+              subtitle={[q.topic, topWrongPick(q.picks, c)].filter(Boolean).join(" · ")}
               options={q.options}
               correctAnswer={q.answer}
               revealAnswer
@@ -94,11 +98,11 @@ export function ClassQuestions({
               renderFooter={() => (
                 <div className="pt-1 px-1 space-y-1.5">
                   <div className="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-400">
-                    <span>Answered: <span className="font-semibold text-gray-700 dark:text-gray-200">{q.answered}</span></span>
-                    <span>Right: <span className={`font-semibold ${scoreText("good")}`}>{q.answered - q.missed}</span></span>
-                    <span>Missed: <span className={`font-semibold ${scoreText("low")}`}>{q.missed}</span></span>
+                    <span>{c.answeredLabel} <span className="font-semibold text-gray-700 dark:text-gray-200">{q.answered}</span></span>
+                    <span>{c.rightLabel} <span className={`font-semibold ${scoreText("good")}`}>{q.answered - q.missed}</span></span>
+                    <span>{c.missedLabel} <span className={`font-semibold ${scoreText("low")}`}>{q.missed}</span></span>
                   </div>
-                  {untrackedNote(q.picks, q.missed) && <p className="text-xs text-gray-500 dark:text-gray-400">{untrackedNote(q.picks, q.missed)}</p>}
+                  {untrackedNote(q.picks, q.missed, c) && <p className="text-xs text-gray-500 dark:text-gray-400">{untrackedNote(q.picks, q.missed, c)}</p>}
                   {q.explanation && <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">{q.explanation}</p>}
                 </div>
               )}
@@ -108,7 +112,7 @@ export function ClassQuestions({
       </div>
       {sorted.length > QUESTIONS_SHOWN && (
         <button type="button" onClick={() => setShowAll((s) => !s)} className="mt-3 text-sm underline text-gray-700 dark:text-gray-200">
-          {showAll ? "Show fewer" : `Show all ${sorted.length}`}
+          {showAll ? c.showFewer : c.showAll(sorted.length)}
         </button>
       )}
     </div>

@@ -8,12 +8,7 @@ import { useEffect, useState } from "react";
 import { QRCodeSVG } from "qrcode.react";
 import { Check, Copy, MessageSquareText, QrCode, X } from "lucide-react";
 import { classLink, classUrl } from "@/lib/teachClient";
-
-/** The message a teacher pastes for students. */
-export function studentMessage(examName: string, url: string, britishSpelling: boolean): string {
-  const practice = britishSpelling ? "Practise" : "Practice";
-  return `${practice} for your ${examName} here: ${url}\nType your name as I know it and you're in. It's free and you don't need an account.`;
-}
+import { useTeachCopy } from "@/components/teach/useTeachCopy";
 
 type Copied = "link" | "message" | null;
 
@@ -24,20 +19,19 @@ export function ClassShare({
   code,
   className,
   examName,
-  britishSpelling,
   showMessage = false,
 }: {
   code: string;
   className: string;
   examName: string;
-  britishSpelling: boolean;
   /** Show the message text above the buttons (on an empty class). */
   showMessage?: boolean;
 }) {
+  const c = useTeachCopy();
   const [copied, setCopied] = useState<Copied>(null);
   const [board, setBoard] = useState(false);
   const url = classUrl(code);
-  const message = studentMessage(examName, url, britishSpelling);
+  const message = c.studentMessage(examName, url);
 
   const copy = async (what: Exclude<Copied, null>) => {
     try {
@@ -66,14 +60,14 @@ export function ClassShare({
       <div className="flex flex-wrap gap-2">
         <button type="button" onClick={() => copy("message")} className={button}>
           {copied === "message" ? <Check className="w-4 h-4" aria-hidden="true" /> : <MessageSquareText className="w-4 h-4" aria-hidden="true" />}
-          <span aria-live="polite">{copied === "message" ? "Copied" : "Copy message for students"}</span>
+          <span aria-live="polite">{copied === "message" ? c.copied : c.copyMessage}</span>
         </button>
         <button type="button" onClick={() => copy("link")} className={button}>
           {copied === "link" ? <Check className="w-4 h-4" aria-hidden="true" /> : <Copy className="w-4 h-4" aria-hidden="true" />}
-          <span aria-live="polite">{copied === "link" ? "Copied" : "Copy link"}</span>
+          <span aria-live="polite">{copied === "link" ? c.copied : c.copyLink}</span>
         </button>
         <button type="button" onClick={() => setBoard(true)} className={button}>
-          <QrCode className="w-4 h-4" aria-hidden="true" /> Show QR code
+          <QrCode className="w-4 h-4" aria-hidden="true" /> {c.showQr}
         </button>
       </div>
 
@@ -81,27 +75,27 @@ export function ClassShare({
         <div
           role="dialog"
           aria-modal="true"
-          aria-label={`QR code to join ${className}`}
+          aria-label={c.qrDialogAria(className)}
           onClick={() => setBoard(false)}
           className="fixed inset-0 z-[100] flex flex-col items-center justify-center gap-4 sm:gap-6 bg-white p-6 text-center"
         >
           <button
             type="button"
             onClick={() => setBoard(false)}
-            aria-label="Close"
+            aria-label={c.close}
             className="absolute right-4 top-4 rounded-md p-2 text-gray-600 hover:text-gray-900"
           >
             <X className="w-6 h-6" aria-hidden="true" />
           </button>
-          <p className="text-2xl sm:text-4xl font-bold text-gray-900">Scan to join {className}</p>
+          <p className="text-2xl sm:text-4xl font-bold text-gray-900">{c.scanToJoin(className)}</p>
           <QRCodeSVG
             value={url}
             size={512}
-            title={`QR code for ${classLink(code)}`}
+            title={c.qrTitle(classLink(code))}
             className="h-auto w-[min(70vw,50vh)] max-w-full"
           />
           <p className="font-mono text-xl sm:text-3xl text-gray-900 break-all">{classLink(code)}</p>
-          <p className="text-base sm:text-lg text-gray-600">Type your name as your teacher knows it. Free, no account needed.</p>
+          <p className="text-base sm:text-lg text-gray-600">{c.qrNote}</p>
         </div>
       )}
     </>

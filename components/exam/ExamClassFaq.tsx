@@ -390,6 +390,7 @@ export const TEACHES: Record<string, string> = {
   caweld: "a welding program",
   carscook: "a culinary apprenticeship program",
   carsrefrig: "a refrigeration and air conditioning apprenticeship program",
+  carstruck: "a truck and transport mechanic apprenticeship program",
   carshair: "a hairstyling apprenticeship program",
   cawhmis: "WHMIS training for new hires or a co-op class",
   caguard: "an Ontario security guard course",

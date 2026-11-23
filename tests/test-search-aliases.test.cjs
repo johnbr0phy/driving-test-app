@@ -8,6 +8,9 @@ const { searchAllTests } = require("../lib/testSearch.ts");
 // for every alias it wires, so an alias never quietly stops working.
 const CASES = [
   ["red seal refrigeration", "CA", "carsrefrig"],
+  ["red seal truck and transport", "CA", "carstruck"],
+  ["310t", "CA", "carstruck"],
+  ["truck and coach technician", "CA", "carstruck"],
   ["313a", "CA", "carsrefrig"],
   ["refrigeration mechanic exam", "CA", "carsrefrig"],
   ["master electrician", "US", "masterelec"],

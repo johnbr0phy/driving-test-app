@@ -79,6 +79,7 @@ const BORROWED_SETS: Record<string, string> = {
   carshair: "cosmetology",
   carscook: "foodhandler",
   carsrefrig: "epa608",
+  carstruck: "caauto",
   frvtc: "driving",
   zafirearm: "capal",
   realestatebroker: "realestate",

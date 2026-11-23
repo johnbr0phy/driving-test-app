@@ -379,6 +379,7 @@ import "./nzforklift";
 import "./aufasa";
 import "./carscook";
 import "./carsrefrig";
+import "./carstruck";
 import "./carshair";
 import "./excpt";
 import "./cct";

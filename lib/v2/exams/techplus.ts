@@ -7,7 +7,7 @@ import { percentScale, overallPercent } from "../scales";
 // Infrastructure 24%, Applications and Software 18%, Software Development
 // Concepts 13%, Data and Database Fundamentals 13%, Security 19%. CompTIA
 // gives a maximum of 70 multiple-choice questions in 60 minutes and a passing
-// score of 650 on a scale of 100 to 900. Each practice test is 70 questions in
+// score of 650 on a scale of 900. Each practice test is 70 questions in
 // 60 minutes with free navigation. Per test: concepts 9; hardware and storage
 // 9, networking and cloud 8 (17); operating systems 6, software, browsers and
 // AI 7 (13); software development 9; data and databases 9; security concepts
@@ -92,6 +92,6 @@ export const TECHPLUS: ExamV2Config = {
       "Goal hit on both practice tests.",
     ],
     sourceLine: "Weighted to the CompTIA Tech+ FC0-U71 exam objectives. Not affiliated with CompTIA.",
-    scoreNote: "Percent correct. CompTIA reports a scaled score from 100 to 900 with 650 to pass, which is not a fixed percent; aim for 80 percent here.",
+    scoreNote: "Percent correct. CompTIA sets the passing score at 650 on a scale of 900, a scaled score that is not a fixed percent; aim for 80 percent here.",
   },
 };

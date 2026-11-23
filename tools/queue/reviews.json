@@ -1558,5 +1558,13 @@
       "pr": 984,
       "findings": 1
     }
+  ],
+  "techplus": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 0,
+      "findings": 6
+    }
   ]
 }

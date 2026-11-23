@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "What is the passing score for CompTIA Tech+?",
-    a: "You need 650 on a scale of 100 to 900. The score is scaled, so it is not a fixed percentage of questions. Aim for 80 percent or better on these practice tests before you book.",
+    a: "You need 650 on a scale of 900. The score is scaled, so it is not a fixed percentage of questions. Aim for 80 percent or better on these practice tests before you book.",
   },
   {
     q: "What is on the Tech+ exam?",

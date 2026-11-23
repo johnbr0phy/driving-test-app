@@ -94,7 +94,7 @@ ITEMS = [
             "128 + 64 + 32 + 4 + 2 = 230."),
     single(0, "Units of measure", 2,
            "A 400 MB file downloads over a steady 100 Mbps link. About how many seconds does it take?",
-           ["3.2", "4", "32", "320"],
+           ["32", "3.2", "4", "320"],
            "400 megabytes is 3,200 megabits, and 3,200 / 100 = 32 seconds. Forgetting the 8 bits per byte gives 4."),
     single(0, "Units of measure", 1,
            "Which unit would measure the size of a large data center's total storage?",

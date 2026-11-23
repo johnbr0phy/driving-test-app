@@ -1028,12 +1028,12 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
   },
   techplus: {
     answer:
-      "CompTIA Tech+ (exam FC0-U71) is CompTIA's entry-level certification for people new to IT, and it replaced CompTIA IT Fundamentals+ (ITF+), whose FC0-U61 exam retired on July 31, 2025 in English. The exam has a maximum of 70 multiple-choice questions in 60 minutes, and the passing score is 650 on a scale of 100 to 900. The FC0-U71 objectives cover six domains: IT Concepts and Terminology 13%, Infrastructure 24%, Applications and Software 18%, Software Development Concepts 13%, Data and Database Fundamentals 13% and Security 19%. CompTIA recommends it for high school students and non-IT professionals, with no prior experience needed, and offers it in English and Japanese.",
+      "CompTIA Tech+ (exam FC0-U71) is CompTIA's entry-level certification for people new to IT, and it replaced CompTIA IT Fundamentals+ (ITF+), whose FC0-U61 exam retired on July 31, 2025 in English. The exam has a maximum of 70 multiple-choice questions in 60 minutes, and the passing score is 650 on a scale of 900. The FC0-U71 objectives cover six domains: IT Concepts and Terminology 13%, Infrastructure 24%, Applications and Software 18%, Software Development Concepts 13%, Data and Database Fundamentals 13% and Security 19%. CompTIA recommends it for high school students and non-IT professionals, with no prior experience needed, and offers it in English and Japanese.",
     rows: [
       { label: "Exam code", value: "FC0-U71 (replaced ITF+ FC0-U61)" },
       { label: "Questions", value: "Maximum of 70, multiple choice" },
       { label: "Time", value: "60 minutes" },
-      { label: "Pass mark", value: "650 on a scale of 100 to 900" },
+      { label: "Pass mark", value: "650 on a scale of 900" },
       { label: "Content", value: "IT concepts 13%, infrastructure 24%, applications and software 18%, software development 13%, data and databases 13%, security 19%" },
       { label: "Languages", value: "English, Japanese" },
       { label: "Experience", value: "None required; aimed at high school students and non-IT professionals" },

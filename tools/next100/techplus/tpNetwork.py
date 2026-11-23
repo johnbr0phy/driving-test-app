@@ -91,7 +91,7 @@ ITEMS = [
            ["DNS", "DHCP", "NAT", "SMTP"],
            "The Domain Name System resolves names to addresses. DHCP hands out addresses to devices."),
     multi(0, "Networking concepts", 2,
-          "Which protocols deliver email? (Choose two.)",
+          "Which protocols are used to send or read email? (Choose two.)",
           ["SMTP", "IMAP", "FTP", "SSH"],
           "SMTP sends mail and IMAP lets a client read mail kept on the server. FTP moves files and SSH gives remote shells.", n=2),
     single(0, "Small wireless networks", 2,

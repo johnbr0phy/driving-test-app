@@ -29,7 +29,7 @@ ITEMS = [
            ["Schema", "Record", "Report", "Query"],
            "The schema is the design of the database: its tables, columns, types and relationships."),
     single(1, "Database structures", 2,
-           "Social media posts, emails and videos with no fixed fields are which kind of data?",
+           "Photos, voice recordings and videos with no fixed fields are which kind of data?",
            ["Non-structured", "Structured", "Relational", "Tabular spreadsheet"],
            "Non-structured data has no set format. Structured data fits defined rows and columns."),
     single(1, "Backups", 2,

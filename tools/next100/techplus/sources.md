@@ -27,7 +27,7 @@ from those topic bullets.
 - CompTIA Tech+ certification page
   https://www.comptia.org/en-us/certifications/tech/
   fetched 2026-11-23. Exam codes FC0-U71 (no expiration) and FC0-U71-CE (valid for 5 years), maximum of 70 questions,
-  multiple choice, 60 minutes, passing score 650 on a scale of 900 (CompTIA scaled scores run from 100 to 900), English and Japanese,
+  multiple choice, 60 minutes, passing score "650 (on a scale of 900)" (rechecked 2026-11-23 by the reviewer), English and Japanese,
   domain weights as in the objectives, "no prior experience necessary". No retirement date or
   newer version announced on the page.
 

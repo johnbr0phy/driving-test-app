@@ -212,6 +212,7 @@ export const TEACHES: Record<string, string> = {
   aswb: "in an MSW program or run ASWB licensure prep",
   arrt: "a radiography program",
   arrtct: "a CT program",
+  arrtmri: "an MRI program",
   nce: "a counselor education course or supervise counselors preparing for licensure",
   jelec: "an electrical apprenticeship or NEC code class",
   ase: "an automotive technology program or ASE prep class",

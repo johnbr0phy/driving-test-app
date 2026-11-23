@@ -674,6 +674,14 @@
       "what": "New Wft eind- en toetstermen take effect (CDFD advice of 20 October 2026): Basis 1b.16 wording and 1f.39/1f.40 privacy wording; recheck the kenmerken.",
       "action": "Read the CDFD toetstermen and kenmerken for module Basis from 1 April 2027, update affected items and the landing, record in sources.md, rebuild.",
       "source": "https://cdfd.nl/nieuws/advies-over-de-inhoud-van-de-wft-examens-vanaf-1-april-2027/"
+    },
+    {
+      "exam": "arrtmri",
+      "date": "2028-02-01",
+      "kind": "outline",
+      "what": "ARRT's revised MRI Examination Content Specifications take effect (draft July 2026: Patient Care 20, Safety 40, Image Production 86, Procedures 54 of 200).",
+      "action": "Read the approved 2028 specifications, re-weight the blueprint, pools and training sets, add the new safety topics, and update the landing, facts and docs.",
+      "source": "https://www.arrt.org/news/article/2026/08/17/arrt-seeks-comments-on-mri-documents-2026"
     }
   ]
 }

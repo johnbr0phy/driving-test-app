@@ -109,6 +109,7 @@ const BORROWED_SETS: Record<string, string> = {
   coc: "cpc",
   lmrt: "arrt",
   arrtct: "arrt",
+  arrtmri: "arrt",
   cbcs: "cpc",
   hha: "cna",
   istqb: "itil",

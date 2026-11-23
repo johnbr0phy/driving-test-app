@@ -1074,6 +1074,14 @@
         "pr": 967,
         "findings": 4
       }
+    ],
+    "arrtmri": [
+      {
+        "date": "2026-11-22",
+        "kind": "blind review at build",
+        "pr": 979,
+        "findings": 8
+      }
     ]
   },
   "pendingReviews": {

@@ -146,14 +146,23 @@ TierSchG, BNatSchG, Tier-LMHV, EU hygiene law), and the few Bavarian rules are l
   may set more); BJagdG § 19 and AWaffV § 13 read again the same day.
 
 ## Copyright check at the blind review
-All 200 items were compared by machine (word overlap and string similarity on stem plus key)
-against 1,549 items of the Bavarian Fragenkatalog (Sachgebiete 1 to 6, wildtierportal.bayern.de,
-Stand 2017 to 2021) and the LMG's written papers 2024-4 and 2025-1 to 2025-4 with solutions,
-and the closest 70 pairs were read by hand. The reviewer opened these only for this check. Shared
-facts are expected (same syllabus); close rewordings of a catalogue question were rewritten:
-HUN-001, HUN-002 and HUN-028 (dog group and work items in the catalogue's form), HUN-010
-(spurlaut), HUN-015 (brauchbare Jagdhunde list), HEG-003 (hellroter, blasiger Schweiß), BIO-005
-(Rotwild rut dates in the catalogue's words), REC-024 (two Kurzwaffen) and NAT-024 (Zwischenfrucht
-definition). HEG-001 (Ausschlagen mit den Hinterläufen as a Kammerschuss sign) was replaced too:
+Method: every one of the 200 items was compared by machine against 1,787 catalogue items: the
+public Bavarian Fragenkatalog with solutions for all six Sachgebiete (wildtierportal.bayern.de,
+sachgebiet_1.pdf and jaegerpruefung_sg2 to sg6.pdf, Stand 2017 to 2021), the LMG's written papers
+2024-4 and 2025-1 to 2025-4 with solutions (lmg.bayern.de), and Niedersachsen's published
+Fachgebiet 4 question set (ml.niedersachsen.de). Three measures per pair: normalised stem string
+similarity (difflib ratio), content-word overlap of stem plus key against stem plus correct
+answers, and shared options (option strings with similarity over 0.8). Every item with stem
+similarity 0.6 or more, two or more shared options, or word overlap 0.6 with a shared option was
+read by hand (61 in the first full pass). The reviewer opened the catalogues only for this check.
+
+Result: 28 items were close rewordings of a catalogue question (same fact asked the same way,
+often with the same answer wording or option set) and were rewritten with a different angle and
+new distractors: WAF-009, WAF-031; BIO-001, BIO-002, BIO-004, BIO-005, BIO-007, BIO-015, BIO-016,
+BIO-018, BIO-028; REC-021, REC-023, REC-024; HEG-002, HEG-003, HEG-007, HEG-024; HUN-001, HUN-002,
+HUN-006, HUN-010, HUN-011, HUN-015, HUN-019, HUN-028, HUN-029; NAT-024. The remaining flags were
+template matches only (for example "Was versteht man unter ..." about a different term) or shared
+species and place names, with different facts. Shared facts across the syllabus remain, as in any
+course book. HEG-001 (Ausschlagen mit den Hinterläufen as a Kammerschuss sign) was replaced too:
 the catalogue reads the same sign, with a crooked back, as a Weidwundschuss, so a second answer
 was defensible.

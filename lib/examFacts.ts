@@ -4051,6 +4051,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the FAA Private Pilot for Airplane Category ACS (FAA-S-ACS-6C) and the FAA ACS knowledge test table",
     source: { name: "FAA", url: "https://www.faa.gov/training_testing/testing/acs" },
   },
+  faaifr: {
+    answer:
+      "The FAA Instrument Rating Airplane (IRA) knowledge test has 60 multiple-choice questions with three answer choices each, a 2-hour time limit and a passing score of 70 percent. You must be at least 15 and have an instructor or home-study endorsement to take it at an FAA testing center. Questions come from the Instrument Rating Airplane ACS (FAA-S-ACS-8C) and many use a testing supplement of en route charts and approach plates. A pass is valid for 24 calendar months.",
+    rows: [
+      { label: "Questions", value: "60, three choices each" },
+      { label: "Time", value: "2 hours" },
+      { label: "Passing score", value: "70%" },
+      { label: "Minimum age", value: "15" },
+      { label: "Result valid", value: "24 calendar months" },
+      { label: "Given by", value: "FAA, at authorized testing centers" },
+    ],
+    basedOn: "the FAA Instrument Rating Airplane ACS (FAA-S-ACS-8C) and the FAA ACS knowledge test table",
+    source: { name: "FAA", url: "https://www.faa.gov/training_testing/testing/acs" },
+  },
   shsat: {
     answer:
       "The SHSAT (Specialized High Schools Admissions Test) is the NYC Public Schools test that decides admission to eight of New York City's nine Specialized High Schools, including Stuyvesant, Bronx Science and Brooklyn Tech (LaGuardia uses an audition). NYC residents in 8th grade, or in 9th grade for the first time, can take it in the fall before the school year they want to enter. From fall 2026 it is a computer-adaptive test on DOE computers: 50 English Language Arts questions (Revising/Editing and Reading Comprehension) and 50 Math questions in 180 minutes, with the student choosing which subject to start with and how to split the time. Each subject includes 10 unscored field-test items. There is no calculator and no formula sheet. Scaled scores in the two subjects are added into a composite that ranks students for offers; there is no pass mark.",

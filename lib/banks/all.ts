@@ -233,6 +233,7 @@ import "./aphr";
 import "./cisa";
 import "./fortigate";
 import "./cssgb";
+import "./cssyb";
 import "./ccs";
 import "./rhia";
 import "./rdexam";

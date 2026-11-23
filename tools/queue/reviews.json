@@ -1614,5 +1614,13 @@
       "pr": 983,
       "findings": 3
     }
+  ],
+  "servingitright": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 0,
+      "findings": 2
+    }
   ]
 }

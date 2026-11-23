@@ -1044,6 +1044,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the Microsoft Learn SC-900 study guide (skills measured as of October 21, 2026) and the Security, Compliance, and Identity Fundamentals certification page, checked November 2026",
     source: { name: "Microsoft Learn: Study guide for Exam SC-900", url: "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/sc-900" },
   },
+  safe: {
+    answer:
+      "The SAFe Agilist (SA) exam is the certification exam that follows Scaled Agile's Leading SAFe class. It has 45 single-select multiple-choice questions in 90 minutes, it is web-based and closed book, and the passing score is 80 percent, so 36 of 45. Unanswered questions count as wrong when time runs out. The current exam study guide (October 2026) covers six domains: Adapt and Thrive with SAFe 7-9%, Build a Foundation with Mindset, Value, and Principles 21-23%, Establish Team and Technical Agility 10-12%, Product Development Flow 25-28%, Explore Lean Portfolio Management 21-23% and Lead the Change 7-9%. The exam is taken from the Learning Plan after the course, and the first two attempts are included when taken within 60 days of finishing it.",
+    rows: [
+      { label: "Exam", value: "SAFe Agilist (SA), the exam for Leading SAFe" },
+      { label: "Questions", value: "45, multiple choice, one answer each" },
+      { label: "Time", value: "90 minutes" },
+      { label: "Pass mark", value: "80% (36 of 45)" },
+      { label: "Format", value: "Web-based, closed book, taken after the Leading SAFe course" },
+      { label: "Content", value: "Adapt and thrive 7-9%, mindset, value and principles 21-23%, team and technical agility 10-12%, product development flow 25-28%, Lean Portfolio Management 21-23%, lead the change 7-9%" },
+      { label: "Attempts", value: "First two included within 60 days of the course; retakes are paid" },
+      { label: "Run by", value: "Scaled Agile, Inc." },
+    ],
+    basedOn: "Scaled Agile's exam study guide for the AI-Empowered SA - SAFe Agilist exam (October 20, 2026) and the Scaled Agile Framework articles, checked November 2026",
+    source: { name: "Scaled Agile: SAFe Agilist exam study guide", url: "https://support.scaledagile.com/en/articles/13835858-exam-study-guide-ai-empowered-sa-safe-agilist-exam-for-leading-safe" },
+  },
   techplus: {
     answer:
       "CompTIA Tech+ (exam FC0-U71) is CompTIA's entry-level certification for people new to IT, and it replaced CompTIA IT Fundamentals+ (ITF+), whose FC0-U61 exam retired on July 31, 2025 in English. The exam has a maximum of 70 multiple-choice questions in 60 minutes, and the passing score is 650 on a scale of 900. The FC0-U71 objectives cover six domains: IT Concepts and Terminology 13%, Infrastructure 24%, Applications and Software 18%, Software Development Concepts 13%, Data and Database Fundamentals 13% and Security 19%. CompTIA recommends it for high school students and non-IT professionals, with no prior experience needed, and offers it in English and Japanese.",

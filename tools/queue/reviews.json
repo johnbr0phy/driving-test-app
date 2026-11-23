@@ -1743,12 +1743,54 @@
       "findings": 22
     }
   ],
-  "serverplus": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1006, "findings": 7 }],
-  "sgm9a": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1007, "findings": 4 }],
-  "aemt": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1008, "findings": 6 }],
-  "nzfirstaid": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1009, "findings": 10 }],
-  "danbrhs": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1010, "findings": 2 }],
-  "wastewaterop": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1013, "findings": 18 }],
+  "serverplus": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1006,
+      "findings": 7
+    }
+  ],
+  "sgm9a": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1007,
+      "findings": 4
+    }
+  ],
+  "aemt": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1008,
+      "findings": 6
+    }
+  ],
+  "nzfirstaid": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1009,
+      "findings": 10
+    }
+  ],
+  "danbrhs": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1010,
+      "findings": 2
+    }
+  ],
+  "wastewaterop": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1013,
+      "findings": 18
+    }
+  ],
   "cloudplus": [
     {
       "date": "2026-11-23",
@@ -1763,6 +1805,14 @@
       "kind": "blind review at build",
       "pr": 1011,
       "findings": 7
+    }
+  ],
+  "danbice": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 1016,
+      "findings": 6
     }
   ]
 }

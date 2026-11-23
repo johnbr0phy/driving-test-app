@@ -89,7 +89,7 @@ Q = [
  "Minors must not be there", ["They brought a coat", "They paid a cover charge", "They used the washroom"],
  "Section 78(2) bars a minor from entering or being in a service area except as the licence terms, regulations or other lawful excuse allow."),
 ('At a restaurant, a 16-year-old performs in a band. Minors may entertain only:',
- 'As the licence allows', ['Only after 10 p.m.', 'With no adult present', 'When paid in cash'],
+ 'As the licence allows', ['After 10 p.m. only', 'With no adult present', 'When paid in cash'],
  'Regulation s. 166 lets minors entertain patrons only in listed kinds of venues where the licence or permit allows it, and never in adult entertainment.'),
 ('Who must prove the defence that ID was asked for and examined?',
  'Person charged', ['The minor', 'The police', "The minor's parent"],

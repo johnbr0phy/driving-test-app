@@ -45,7 +45,7 @@ Q = [
  "4 a.m.", ["1 a.m.", "2 a.m.", "4 a.m.", "6 a.m."],
  "Regulation s. 97 lets catering service start no earlier than 9 a.m. and end no later than 4 a.m. the next day, the same window as special event permits.", "fixed"),
 ('At a liquor store, can a 17-year-old cashier sell a case of beer?',
- 'No, it is a liquor job', ['Yes, with a manager nearby', 'Yes, if the buyer is 25+', 'Yes, during daytime hours'],
+ 'No, it is a liquor job', ['Yes, if a manager is nearby', 'No, unless they are 18', 'Yes, once they are trained'],
  'Regulation ss. 161 and 165 let retail stores employ minors only in jobs that do not involve liquor, so a minor may not sell it.'),
 ("A delivery driver arrives and the person at the door looks about 18. The driver should:",
  "Ask for two pieces of ID", ["Leave it with the customer", "Take the payment and go", "Ask an adult neighbour"],

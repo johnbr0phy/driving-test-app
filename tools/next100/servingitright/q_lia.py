@@ -32,7 +32,7 @@ Q = [
  "May be arrested", ["Must be fined on the spot", "Must be driven home", "Breaks no law"],
  "Section 74 says an intoxicated person must not be or remain in a public place, and a peace officer may arrest them without a warrant."),
 ('A guest leaves the bar with an open beer to drink on the sidewalk. Under s. 73:',
- 'Not allowed', ['Fine if it is beer', 'Fine before 11 p.m.', 'Fine within 10 m'],
+ 'Not allowed there', ['Allowed if it is beer', 'Allowed before 11 p.m.', 'Allowed within 10 m'],
  'Section 73 bars drinking or carrying open liquor outside a residence, a private place, a service area or another place the Act allows, such as a designated public area.'),
 ('Who can be charged when liquor is served to a person showing signs of intoxication?',
  'Licensee and employee', ['Only the licensee', 'Only the guest', 'No one; it is civil'],

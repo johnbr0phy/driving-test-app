@@ -61,6 +61,8 @@ Each fetched 2026-11-23. Only facts stated in the readable text were used.
   https://framework.scaledagile.com/unlock-the-intrinsic-motivation-of-knowledge-workers
   (autonomy, mastery, purpose), https://framework.scaledagile.com/decentralize-decision-making,
   https://framework.scaledagile.com/organize-around-value (dual operating system).
+- Manifesto for Agile Software Development: https://agilemanifesto.org/ fetched 2026-11-23
+  (the four values; the Lean-Agile mindset article names it as half of the mindset).
 - Core values: https://framework.scaledagile.com/safe-core-values (alignment, transparency,
   respect for people, relentless improvement).
 - Mindset and leadership: https://framework.scaledagile.com/lean-agile-mindset (last update

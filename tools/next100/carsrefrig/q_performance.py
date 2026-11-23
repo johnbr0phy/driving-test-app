@@ -9,7 +9,7 @@ Q = [
 ("An air-cooled condenser's condensing temperature runs much further above outdoor air than at start-up. What does that suggest?",
  "Dirty condenser coil", ["Low refrigerant charge", "Oversized evaporator", "Light indoor load"],
  "The condenser split grows when the coil cannot reject heat: fouled fins, a failed fan or recirculating air. Undercharge usually lowers condensing pressure."),
-("Which reading confirms an air handler is moving its design airflow through a duct system?",
+("Which reading, checked on the maker's fan table, shows whether an air handler is moving its design airflow?",
  "External static pressure", ["Supply air humidity", "Compressor current draw", "Filter pressure drop alone"],
  "Total external static pressure, read across the fan's inlet and outlet, is plotted on the maker's fan table to estimate airflow at the blower setting."),
 ("What is checked to confirm a building automation system controls a rooftop unit as designed?",

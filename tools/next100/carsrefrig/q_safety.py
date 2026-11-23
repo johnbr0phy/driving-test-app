@@ -29,7 +29,7 @@ Q = [
  "Cylinder pressure follows the refrigerant's saturation temperature, so heat raises it toward the relief setting. Store cylinders upright, secured and away from heat."),
 ("Which ladder setup is correct when climbing onto a flat roof to reach a condensing unit?",
  "Secured, 1 m past the roof edge", ["Leaned on the eavestrough unsecured", "Set at a 2 to 1 angle", "Footed by a pail of tools"],
- "An extension ladder used for access extends about 1 m past the landing and is secured against slipping, set at about 4 to 1. Hanging tools on it adds load and trip hazards."),
+ "An extension ladder used for access extends about 1 m past the landing and is secured against slipping, set at about 4 to 1. A pail of tools at its foot does not secure it."),
 ("A new heat pump model uses a refrigerant you have never handled. What is the best first step?",
  "Read the service literature", ["Treat it the same as R-22", "Charge it by the sight glass", "Ask the homeowner how it works"],
  "Continuous learning in the trade includes reading installation and service instructions for new equipment and refrigerants, since pressures, oils and safety classes differ."),

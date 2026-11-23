@@ -101,8 +101,13 @@ paraphrased, and no training provider is named. Checked 2026-11-23.
 - Anything about the exam itself (count, time, pass mark) as a question.
 
 ## Official sample questions
-- Red Seal Sample Examination Questions, https://red-seal.ca/eng/questions.shtml?tid=202 (checked
-  2026-11-23): the page builds its questions with script and returned no question text to an
-  automated read, and the Chrome session was not available. The bank was written only from the
-  standard's tasks and the sources above, never from sample questions; the reviewer should compare
-  against the sample page in a browser.
+- Red Seal Sample Examination Questions, https://red-seal.ca/eng/questions.shtml?tid=202 (read
+  2026-11-23 by the reviewer in a browser; the page loads its 20 questions from
+  https://red-seal.ca/_conf/assets/json/questionnaires/202.json). The builder wrote the bank without
+  seeing them. Reviewer check: every bank item compared with all 20 sample questions (normalised
+  stem similarity, word overlap, shared option sets). No stem was close (highest ratio 0.61, a
+  different question) and no option set was shared. Three items asked the same fact with the same
+  answer as a sample question and were rewritten on a different angle: CARAC-SRV-006 (winding
+  resistance sum, now identifying the common terminal), CARAC-TRD-009 (POE is hygroscopic, now what
+  to do with an opened container) and CARAC-SRV-004 (TXV bulb losing its charge, now a loose bulb
+  sensing room air).

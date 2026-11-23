@@ -68,7 +68,7 @@ Q = [
  "In a freezer the drain line passes through sub-zero air. A heater keeps defrost water liquid until it leaves the box."),
 ("A new refrigerant circuit is ready to be charged, but it has not been leak tested. What must happen first?",
  "Pressure test it", ["Charge it, then use soap", "Run it to see if it holds", "Install the thermostat"],
- "Systems are leak tested before charging. Federal rules prohibit charging a system without a leak test, and charging to look for leaks wastes refrigerant."),
+ "Systems are leak tested before charging. The Federal Halocarbon Regulations (for federal systems) and provincial rules prohibit charging a system without a leak test, and charging to look for leaks wastes refrigerant."),
 ("When a wall penetration is made for a line set, what keeps out weather and pests?",
  "Sealed sleeve or cover", ["Extra insulation on the line", "A drain trap", "Wider wall bracket"],
  "Penetrations get a sleeve or line set cover sealed against the wall, which stops water, air leakage and insects."),

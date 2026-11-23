@@ -137,7 +137,7 @@
     "optionD": "Footed by a pail of tools",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "An extension ladder used for access extends about 1 m past the landing and is secured against slipping, set at about 4 to 1. Hanging tools on it adds load and trip hazards."
+    "explanation": "An extension ladder used for access extends about 1 m past the landing and is secured against slipping, set at about 4 to 1. A pail of tools at its foot does not secure it."
   },
   {
     "type": "CARAC",
@@ -564,14 +564,14 @@
     "state": "ALL",
     "questionId": "CARAC-TRD-009",
     "category": "rsracTrade",
-    "question": "Why is polyolester oil kept sealed and added from small containers?",
-    "optionA": "It is hygroscopic",
-    "optionB": "It thickens in sunlight",
-    "optionC": "It turns flammable in air",
-    "optionD": "It reacts with copper tubing",
+    "question": "A container of polyolester oil was left uncapped in a service van overnight. What should be done with it?",
+    "optionA": "Discard it",
+    "optionB": "Pour it through a filter first",
+    "optionC": "Warm it to drive off water",
+    "optionD": "Use it, since POE resists moisture",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "POE oil is hygroscopic, so an open container picks up water from the air. Wet oil forms acids in the system."
+    "explanation": "POE pulls water from the air, and that water cannot be filtered or warmed out on site. Wet oil forms acids in the system, so an opened container is used promptly or thrown away."
   },
   {
     "type": "CARAC",
@@ -1327,7 +1327,7 @@
     "optionD": "Install the thermostat",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Systems are leak tested before charging. Federal rules prohibit charging a system without a leak test, and charging to look for leaks wastes refrigerant."
+    "explanation": "Systems are leak tested before charging. The Federal Halocarbon Regulations (for federal systems) and provincial rules prohibit charging a system without a leak test, and charging to look for leaks wastes refrigerant."
   },
   {
     "type": "CARAC",
@@ -1586,14 +1586,14 @@
     "state": "ALL",
     "questionId": "CARAC-COM-002",
     "category": "rsracCommission",
-    "question": "At start-up, a three-phase scroll compressor is noisy and draws low current. What is the likely cause?",
-    "optionA": "Overcharged with oil",
-    "optionB": "Running backward",
-    "optionC": "Low supply voltage",
-    "optionD": "Dirty condenser coil",
+    "question": "A new three-phase scroll compressor is found to turn the wrong way. With the power locked out, how is its rotation corrected?",
+    "optionA": "Reverse the run capacitor leads",
+    "optionB": "Swap two of the three supply leads",
+    "optionC": "Swap the suction and discharge lines",
+    "optionD": "Fit a contactor with a higher coil voltage",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "A scroll turning backward does not pump, so suction and discharge pressures barely change, current is low and it is noisy. Swapping two supply legs corrects the rotation."
+    "explanation": "Phase sequence sets the direction of a three-phase motor, so swapping any two supply leads reverses it. A three-phase compressor has no run capacitor, and the refrigerant piping has nothing to do with rotation."
   },
   {
     "type": "CARAC",
@@ -1894,7 +1894,7 @@
     "state": "ALL",
     "questionId": "CARAC-PRF-004",
     "category": "rsracPerformance",
-    "question": "Which reading confirms an air handler is moving its design airflow through a duct system?",
+    "question": "Which reading, checked on the maker's fan table, shows whether an air handler is moving its design airflow?",
     "optionA": "Supply air humidity",
     "optionB": "Compressor current draw",
     "optionC": "Filter pressure drop alone",
@@ -2219,11 +2219,11 @@
     "question": "Why is a refrigerant leak check part of the scheduled maintenance on a large commercial system?",
     "optionA": "It replaces the oil change",
     "optionB": "It resets the charge level",
-    "optionC": "Federal rules require it",
+    "optionC": "Halocarbon rules require it",
     "optionD": "It cleans the coils too",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The Federal Halocarbon Regulations require leak tests on systems over 10 kg at least once every calendar year and no more than 15 months apart, and provinces have similar rules."
+    "explanation": "Halocarbon rules call for regular leak tests. The Federal Halocarbon Regulations, which cover federal systems, require them on systems over 10 kg at least once every calendar year and no more than 15 months apart, and provincial rules set leak checks for other systems."
   },
   {
     "type": "CARAC",
@@ -2342,14 +2342,14 @@
     "state": "ALL",
     "questionId": "CARAC-SRV-004",
     "category": "rsracService",
-    "question": "A TXV's sensing bulb loses its charge. How does the valve respond?",
-    "optionA": "Opens wide and floods",
+    "question": "A TXV bulb strapped loosely and left uninsulated senses warm room air instead of the suction line. How does the valve respond?",
+    "optionA": "Closes and starves the coil",
     "optionB": "Holds superheat normally",
     "optionC": "Switches to heating mode",
-    "optionD": "Closes and starves the evaporator",
+    "optionD": "Overfeeds, and superheat drops",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Bulb pressure pushes the valve open. Without it, spring and evaporator pressure close the valve, so suction pressure drops and superheat climbs."
+    "explanation": "A bulb that reads warmer than the suction line builds more pressure, which drives the valve further open. The coil floods, superheat falls and liquid can reach the compressor."
   },
   {
     "type": "CARAC",
@@ -2370,14 +2370,14 @@
     "state": "ALL",
     "questionId": "CARAC-SRV-006",
     "category": "rsracService",
-    "question": "Compressor winding resistance reads 0.6 ohm from common to run and 2.4 ohm from common to start. What should run to start read?",
-    "optionA": "1.8 ohms",
-    "optionB": "3.0 ohms",
-    "optionC": "2.4 ohms",
-    "optionD": "0.6 ohms",
+    "question": "Three unmarked single-phase compressor terminals read: 1 to 2, 0.6 ohm; 1 to 3, 2.4 ohms; 2 to 3, 3.0 ohms. Which terminal is common?",
+    "optionA": "Terminal 2",
+    "optionB": "Terminal 1",
+    "optionC": "Terminal 3",
+    "optionD": "None, a winding is open",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "On a single-phase compressor, run to start is the sum of the two windings: 0.6 + 2.4 = 3.0 ohms. A different reading suggests a winding fault or a wrong terminal."
+    "explanation": "The highest reading, 3.0 ohms between 2 and 3, goes through both windings, so the terminal left out of that pair, 1, is common. From common, the lower reading (0.6 ohm, terminal 2) is run and the higher (terminal 3) is start."
   },
   {
     "type": "CARAC",
@@ -2559,7 +2559,7 @@
     "optionD": "Run it empty to dry it",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "A repair is confirmed with a pressure or leak test, then the system is evacuated and charged. Federal rules require a leak to be repaired before recharging."
+    "explanation": "A repair is confirmed with a pressure or leak test, then the system is evacuated and charged. Halocarbon rules, federal and provincial, require a leak to be repaired before recharging."
   },
   {
     "type": "CARAC",

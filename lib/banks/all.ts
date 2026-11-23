@@ -334,6 +334,7 @@ import "./ncpt";
 import "./mace";
 import "./hspacis";
 import "./aufirearmswa";
+import "./aufatas";
 import "./cpatcp";
 import "./pance";
 import "./cpcta";

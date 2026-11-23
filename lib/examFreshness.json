@@ -811,6 +811,14 @@
       "what": "The Instituto Cervantes publishes a new Manual de preparación CCSE each year (the 2026 manual is NIPO 110-25-054-X). The 2027 manual may change items, figures (population, Presidency of the Council of the EU, family leave) or the item list.",
       "action": "When the Manual CCSE 2027 is out, check the study text against the bank's facts, re-run the similarity check against the new official item list (stem similarity, word overlap, shared options) and rewrite any close match; update sources.md and the landing.",
       "source": "https://cervantes.org/es/examenes/ccse"
+    },
+    {
+      "exam": "aufatas",
+      "date": "2027-01-31",
+      "kind": "law",
+      "what": "Firearms Amendment (Strengthening Firearms Security) Act 2026 (Tas) passed in September 2026 and commences on days to be proclaimed. Not in force on 2026-11-23 (consolidated Act still the 2 December 2024 version). It changes the 14-day address and particulars notices to 24 hours, the interstate-mover rules, production of firearms, lending and borrowing, citizenship for licences, straight pull and lever release firearms (to Category C) and antique permits.",
+      "action": "Check legislation.tas.gov.au for a proclamation. Once any part commences, update the questions it touches (no current item asks about these changes), the landing and examFacts.",
+      "source": "https://www.parliament.tas.gov.au/__data/assets/pdf_file/0009/110223/Fact-Sheet-Firearms-Amendment-Strengthening-Firearms-Security-Bill-2026.pdf"
     }
   ]
 }

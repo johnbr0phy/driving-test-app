@@ -142,6 +142,7 @@ const BORROWED_SETS: Record<string, string> = {
   cpatcp: "cpareg",
   aufirearmswa: "capal",
   aufasa: "capal",
+  aufatas: "capal",
   hspacis: "crcst",
   ncma: "ccma",
   aufirearmsvic: "capal",

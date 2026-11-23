@@ -11,7 +11,7 @@ const { shareImageUrl } = require('../lib/shareImageUrl.ts');
 const expectedHashes = require('./fixtures/tiger-medical-safety-sha256.json');
 const dedicated = ['cmaa', 'mace'];
 const filenames = Array.from({ length: 8 }, (_, i) => `tiger_face_${String(i + 1).padStart(2, '0')}.png`);
-const mappings = {cmaa:'cmaa', mace:'mace', aufirearmsnsw:'capal', aufirearmsqld:'capal', aufirearmsvic:'capal', aufirearmswa:'capal'};
+const mappings = {cmaa:'cmaa', mace:'mace', aufirearmsnsw:'capal', aufirearmsqld:'capal', aufirearmsvic:'capal', aufirearmswa:'capal', aufatas:'capal'};
 for (const [id, mascot] of Object.entries(mappings)) {
   test(`${id} uses correct art and refreshed share cache`, () => {
     assert.equal(hasTigerSet(id), true);

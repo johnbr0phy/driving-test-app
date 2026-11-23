@@ -1,6 +1,7 @@
 {
   "_": "Second-reviewer checks of whole banks: a reviewer that did not write the questions answered every one without the key and its findings were fixed. One entry per check. /build-tests adds an entry for each test it ships. Read by scripts/test-progress.ts. Tests built before 2026-11-14 are not listed: their reviews were not recorded per test.",
   "reviews": {
+  "aufatas": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1028, "findings": 8 }],
     "nscacpt": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1030, "findings": 18 }],
     "pesticide": [
       {

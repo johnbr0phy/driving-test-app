@@ -37,7 +37,7 @@ Q = [
  "The branch-circuit breaker", ["Its own cord and plug only", "A thermostat setting", "A wall switch only"],
  "For permanently connected appliances rated not over 300 VA or 1/8 hp, Article 422 lets the branch-circuit overcurrent device serve as the disconnecting means."),
 ("An air conditioner nameplate lists a maximum overcurrent protective device of 35 A. The breaker may be:",
- "No larger than 35 A", ["Up to 40 A", "Up to 40 A if needed", "Up to 50 A"],
+ "No larger than 35 A", ["Up to 40 A", "Up to 45 A", "Up to 50 A"],
  "Article 440 does not allow the protective device to exceed the maximum overcurrent protection marked on the equipment nameplate, here 35 A."),
 ("A cord-connected room air conditioner on a circuit that also feeds lighting may draw no more than what share of the circuit rating?",
  "50 percent", ["80 percent", "100 percent", "125 percent"],

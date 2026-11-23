@@ -31,7 +31,7 @@ Q = [
  "Three-way switch", ["Switch on circuit 3", "Switch mounted 3 ft up", "Three-pole breaker"],
  "Plan symbols put the switch type after the S: S3 is a three-way switch and S4 a four-way. Circuit numbers are shown on the home run, not in the switch symbol."),
 ("Beside a receptacle symbol on a plan, the letters \"WP\" mean:",
- "Weatherproof", ["Wall plate", "Wire pull", "Wire-pulling point"],
+ "Weatherproof", ["Wall plate", "Wire pull", "Water pipe"],
  "WP is the standard plan abbreviation for a weatherproof device or enclosure. Outdoor and wet-location receptacles are commonly marked this way."),
 ("Resistors of 12, 6 and 4 ohms are connected in parallel. What is the total resistance?",
  "2 ohms", ["22 ohms", "4 ohms", "7.3 ohms"],

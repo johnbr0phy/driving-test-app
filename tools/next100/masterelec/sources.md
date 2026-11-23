@@ -67,3 +67,25 @@ check against; the bank was checked instead against every bank in this repo (see
 ## Duplicates
 - Checked 2026-11-23 with a word-overlap scan of every stem against every bank in data/: no item
   repeats a fact and answer from jelec, caelec, uk18ed, nhie or contractorlaw.
+
+## Second review (blind, 2026-11-23)
+Every item answered without the key and every number recomputed (load calculations, transformer and
+tap sizing, motor feeders, box fill, conduit fill, pull boxes, PVC expansion, voltage drop). The
+figures the builder listed as written from working knowledge were checked against public
+reproductions of the 2023 text and code-change summaries (ICC bulletin re-read from the PDF; RV park
+receptacle split via the Leviton Captain Code 2023 summary and NC OSFM 2023 NCEC interpretation;
+514.11 distance band via IAEI and state adoptions; Table 110.26(A)(1) rows via IAEI and nVent 2023
+summaries; 410.16(C) via IAEI Article 410 and ECM). Six findings fixed in the sources:
+- SVC-023: a roof people walk on takes the 230.24(B) clearances, not 8 ft 6 in.; stem now names a roof
+  not used by pedestrians or vehicles.
+- SPC-022: the 2023 NEC requires 50 A receptacles at 40 percent of sites in new RV parks (20 percent is
+  for existing parks); key changed from 20 to 40 percent.
+- SPC-020: the 120 percent rule limits 125 percent of inverter output current, not the breaker; item now
+  asks the largest inverter output current (32 A).
+- WIR-020: 480Y/277 V falls in the 151 to 600 V row of the working-space table (a 601 to 1000 V row has
+  5 ft); explanation fixed.
+- WIR-030: the 60 percent nipple figure gives 14 conductors, not 13.
+- BRC-027: the identification method may be posted at each panelboard or documented in a readily
+  available way; key reworded.
+Repeat scan against jelec, caelec, uk18ed, nhie and contractorlaw: shared templates only, no repeated
+fact with the same numbers and answer.

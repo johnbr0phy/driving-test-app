@@ -148,7 +148,7 @@
     "optionA": "Wall plate",
     "optionB": "Wire pull",
     "optionC": "Weatherproof",
-    "optionD": "Wire-pulling point",
+    "optionD": "Water pipe",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "WP is the standard plan abbreviation for a weatherproof device or enclosure. Outdoor and wet-location receptacles are commonly marked this way."
@@ -928,14 +928,14 @@
     "state": "ALL",
     "questionId": "MELEC-SVC-023",
     "category": "melecService",
-    "question": "Overhead service conductors passing over a flat roof that people can walk on need what vertical clearance?",
+    "question": "Overhead service conductors pass over a roof that is not used by pedestrians or vehicles. Unless an exception for steep roofs or overhangs applies, what vertical clearance is needed?",
     "optionA": "3 ft",
     "optionB": "10 ft 6 in.",
     "optionC": "8 ft 6 in.",
     "optionD": "18 in.",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Conductors above a roof generally need 8 ft 6 in. of clearance. The 3 ft and 18 in. figures are exceptions for steep roofs and short overhangs at 300 V or less."
+    "explanation": "Conductors above a roof generally need 8 ft 6 in. of clearance. The 3 ft and 18 in. figures are exceptions for steep roofs and short overhangs at 300 V or less, and a roof used by pedestrians or vehicles takes the clearances for those areas instead."
   },
   {
     "type": "MASTERELEC",
@@ -1323,11 +1323,11 @@
     "question": "A building has both 208Y/120 V and 480Y/277 V systems. The branch-circuit identification method must be:",
     "optionA": "Filed with the inspector",
     "optionB": "Shown at the service only",
-    "optionC": "Posted at each panelboard",
+    "optionC": "Posted or documented at each panel",
     "optionD": "Painted on each raceway",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Where more than one voltage system supplies a building, each ungrounded conductor must be identified by phase and system, and the method must be permanently posted at each branch-circuit panelboard."
+    "explanation": "Where more than one voltage system supplies a building, each ungrounded conductor must be identified by phase and system, and the method must be permanently posted at each branch-circuit panelboard or documented in a readily available way."
   },
   {
     "type": "MASTERELEC",
@@ -1621,7 +1621,7 @@
     "optionD": "4 ft",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The working-space table gives 4 ft for Condition 3 at 151 to 1000 V to ground. Condition 1 is 3 ft and Condition 2 is 3 1/2 ft."
+    "explanation": "A 480Y/277 V system is 277 V to ground, so it falls in the 151 to 600 V row, which gives 4 ft for Condition 3. Condition 1 is 3 ft and Condition 2 is 3 1/2 ft."
   },
   {
     "type": "MASTERELEC",
@@ -1757,11 +1757,11 @@
     "question": "Trade size 1 EMT allows 0.346 sq in. at 40 percent fill, and 8 AWG THHN takes 0.0366 sq in. How many may be installed?",
     "optionA": "23",
     "optionB": "9",
-    "optionC": "13",
+    "optionC": "14",
     "optionD": "8",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "0.346 / 0.0366 is about 9.45, and only whole conductors count, so 9 fit. Using the 60 percent nipple figure would give 13."
+    "explanation": "0.346 / 0.0366 is about 9.45, and only whole conductors count, so 9 fit. Using the 60 percent nipple figure (0.519 sq in.) would give 14."
   },
   {
     "type": "MASTERELEC",
@@ -2079,7 +2079,7 @@
     "question": "An air conditioner nameplate lists a maximum overcurrent protective device of 35 A. The breaker may be:",
     "optionA": "No larger than 35 A",
     "optionB": "Up to 40 A",
-    "optionC": "Up to 40 A if needed",
+    "optionC": "Up to 45 A",
     "optionD": "Up to 50 A",
     "correctAnswer": "A",
     "correctIndex": 0,
@@ -2734,14 +2734,14 @@
     "state": "ALL",
     "questionId": "MELEC-SPC-020",
     "category": "melecSpecial",
-    "question": "A 200 A busbar has a 200 A main breaker at the opposite end from a solar backfed breaker. Under the 120 percent rule, how large may the PV breaker be?",
-    "optionA": "20 A",
-    "optionB": "50 A",
-    "optionC": "60 A",
-    "optionD": "40 A",
+    "question": "A 200 A busbar has a 200 A main breaker at the opposite end from a solar backfed breaker. Under the 120 percent rule, what is the largest inverter output current allowed?",
+    "optionA": "40 A",
+    "optionB": "48 A",
+    "optionC": "24 A",
+    "optionD": "32 A",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "The 120 percent rule allows 125 percent of the inverter output current plus the main device to reach 1.2 x 200 = 240 A. 240 - 200 leaves 40 A for the PV breaker."
+    "explanation": "The 120 percent rule lets 125 percent of the inverter output current plus the main device reach 1.2 x 200 = 240 A. That leaves 40 A, and 40 / 1.25 = 32 A of inverter output current."
   },
   {
     "type": "MASTERELEC",
@@ -2762,14 +2762,14 @@
     "state": "ALL",
     "questionId": "MELEC-SPC-022",
     "category": "melecSpecial",
-    "question": "In an RV park, what share of the sites with electric supply must have a 50 A, 125/250 V receptacle?",
-    "optionA": "10 percent",
-    "optionB": "20 percent",
-    "optionC": "25 percent",
-    "optionD": "50 percent",
+    "question": "Under the 2023 NEC, what minimum share of the sites with electric supply in a new RV park must have a 50 A, 125/250 V receptacle?",
+    "optionA": "20 percent",
+    "optionB": "40 percent",
+    "optionC": "70 percent",
+    "optionD": "100 percent",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Article 551 requires at least 20 percent of the RV sites with electrical supply to have a 50 A, 125/250 V receptacle."
+    "explanation": "Article 551 requires at least 40 percent of the sites with electrical supply in a new RV park to have a 50 A, 125/250 V receptacle; the older 20 percent figure now applies to existing parks. 70 percent is the share that needs a 30 A, 125 V receptacle."
   },
   {
     "type": "MASTERELEC",

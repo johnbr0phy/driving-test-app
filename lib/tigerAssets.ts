@@ -124,6 +124,7 @@ const BORROWED_SETS: Record<string, string> = {
   cpabar: "cpafar",
   cpaisc: "cpafar",
   dispatcher: "police",
+  corrections: "police",
   ctec: "cpareg",
   cpcta: "cna",
   cpatcp: "cpareg",

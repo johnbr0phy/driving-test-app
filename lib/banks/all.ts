@@ -333,6 +333,7 @@ import "./dispatcher";
 import "./proserve";
 import "./servingitright";
 import "./cagas3";
+import "./corrections";
 import "./ctec";
 import "./ea1";
 import "./nzboat";

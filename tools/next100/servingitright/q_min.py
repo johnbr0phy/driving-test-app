@@ -1,8 +1,8 @@
 CAT = "sirMinors"; SEG = "MIN"
 Q = [
 ("Under BC's Act, which of these is an offence when the drinker is a minor?",
- 'Letting them drink at home', ['Serving them a soft drink', 'Seating them for a meal', 'Asking them for photo ID'],
- 'Section 77 says a person must not allow a minor to consume or possess liquor in a place under their control, as well as not supplying liquor to one.'),
+ 'Letting a friend\'s teen drink at your party', ['Serving them a soft drink', 'Seating them for a meal', 'Asking them for photo ID'],
+ 'Section 77 says a person must not allow a minor to consume or possess liquor in a place under their control. The Regulation (s. 157) excuses only a parent, spouse or guardian giving liquor in a residence, not a host giving it to someone else\'s child.'),
 ("Buying liquor now to give to a 17-year-old cousin later is:",
  "An offence under the Act", ["Legal if it stays sealed", "Legal with a parent's note", "Only a store matter"],
  "Section 77(1)(b) bars possessing liquor for the purpose of supplying it to a minor, even before it is handed over."),

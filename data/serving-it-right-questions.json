@@ -746,14 +746,14 @@
     "state": "ALL",
     "questionId": "SIRBC-RTL-018",
     "category": "sirRetail",
-    "question": "A U-Brew may give a customer how many tasting samples?",
+    "question": "Before bottling, how much of their own U-Brew batch may a customer taste on site?",
     "optionA": "One of up to 50 mL",
     "optionB": "Two of up to 100 mL",
     "optionC": "Three of up to 50 mL",
     "optionD": "As many as needed",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Regulation s. 45 caps U-Brew and U-Vin tastings at two samples of 100 mL each."
+    "explanation": "Regulation s. 45 lets the customer who made the beer or wine taste it before bottling, up to two samples of 100 mL each."
   },
   {
     "type": "SIRBC",
@@ -789,13 +789,13 @@
     "questionId": "SIRBC-MIN-001",
     "category": "sirMinors",
     "question": "Under BC's Act, which of these is an offence when the drinker is a minor?",
-    "optionA": "Letting them drink at home",
+    "optionA": "Letting a friend's teen drink at your party",
     "optionB": "Serving them a soft drink",
     "optionC": "Seating them for a meal",
     "optionD": "Asking them for photo ID",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Section 77 says a person must not allow a minor to consume or possess liquor in a place under their control, as well as not supplying liquor to one."
+    "explanation": "Section 77 says a person must not allow a minor to consume or possess liquor in a place under their control. The Regulation (s. 157) excuses only a parent, spouse or guardian giving liquor in a residence, not a host giving it to someone else's child."
   },
   {
     "type": "SIRBC",

@@ -297,19 +297,19 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Percents",
-    "stem": "What is 15% of 260?",
+    "stem": "What is 15% of 340?",
     "options": [
-      "13",
-      "26",
-      "35",
-      "36",
-      "39"
+      "17",
+      "34",
+      "48",
+      "50",
+      "51"
     ],
     "correct": [
       4
     ],
     "lockedOrder": true,
-    "explanation": "10% of 260 is 26 and 5% is 13, so 15% is 26 + 13 = 39."
+    "explanation": "10% of 340 is 34 and 5% is 17, so 15% is 34 + 17 = 51."
   },
   {
     "id": "CCAT-T1-015",
@@ -544,18 +544,18 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Letter series",
-    "stem": "What letter comes next? D, H, L, P, ?",
+    "stem": "What letter comes next? E, I, M, Q, ?",
     "options": [
+      "V",
       "U",
-      "Q",
-      "S",
       "R",
-      "T"
+      "T",
+      "S"
     ],
     "correct": [
-      4
+      1
     ],
-    "explanation": "Each letter is four places after the one before: D, H, L, P, then T."
+    "explanation": "Each letter is four places after the one before: E, I, M, Q, then U."
   },
   {
     "id": "CCAT-T1-026",
@@ -900,19 +900,19 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Ratios",
-    "stem": "Paint is mixed 2 parts blue to 5 parts white. How many liters of blue go in 21 liters of mix?",
+    "stem": "Paint is mixed 3 parts blue to 4 parts white. How many liters of blue go in 28 liters of mix?",
     "options": [
       "4",
-      "6",
-      "8",
-      "10.5",
-      "15"
+      "12",
+      "14",
+      "16",
+      "21"
     ],
     "correct": [
       1
     ],
     "lockedOrder": true,
-    "explanation": "There are 7 parts in all, so each part is 3 liters and blue is 2 x 3 = 6. 15 is the white."
+    "explanation": "There are 7 parts in all, so each part is 4 liters and blue is 3 x 4 = 12. 16 is the white."
   },
   {
     "id": "CCAT-T1-042",
@@ -1169,18 +1169,18 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Opposites",
-    "stem": "Which word is most nearly opposite in meaning to FRAGILE?",
+    "stem": "Which word is most nearly opposite in meaning to OBEDIENT?",
     "options": [
-      "Delicate",
-      "Brittle",
-      "Sturdy",
-      "Smooth",
-      "Heavy"
+      "Quiet",
+      "Loyal",
+      "Defiant",
+      "Polite",
+      "Willing"
     ],
     "correct": [
       2
     ],
-    "explanation": "Fragile means easily broken; sturdy means strong and hard to break. Brittle and delicate are near synonyms."
+    "explanation": "Obedient means doing what you are told; defiant means openly refusing. Willing and loyal lean the same way as obedient."
   },
   {
     "id": "CCAT-T2-004",
@@ -1437,19 +1437,19 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Number series",
-    "stem": "What number comes next? 1, 3, 6, 10, 15, ?",
+    "stem": "What number comes next? 2, 4, 7, 11, 16, ?",
     "options": [
-      "18",
       "20",
       "21",
-      "25",
-      "30"
+      "22",
+      "26",
+      "32"
     ],
     "correct": [
       2
     ],
     "lockedOrder": true,
-    "explanation": "The steps grow by one each time: +2, +3, +4, +5, so next is 15 + 6 = 21."
+    "explanation": "The steps grow by one each time: +2, +3, +4, +5, so next is 16 + 6 = 22."
   },
   {
     "id": "CCAT-T2-016",
@@ -1593,19 +1593,19 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Fractions",
-    "stem": "What is 5/6 - 1/4?",
+    "stem": "What is 7/8 - 1/3?",
     "options": [
-      "1/4",
-      "4/10",
+      "5/24",
       "1/2",
-      "7/12",
-      "2/3"
+      "13/24",
+      "2/3",
+      "6/5"
     ],
     "correct": [
-      3
+      2
     ],
     "lockedOrder": true,
-    "explanation": "Use twelfths: 10/12 - 3/12 = 7/12."
+    "explanation": "Use twenty-fourths: 21/24 - 8/24 = 13/24. Subtracting tops and bottoms gives 6/5, which is wrong."
   },
   {
     "id": "CCAT-T2-023",
@@ -2287,18 +2287,18 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Opposites",
-    "stem": "Which word is most nearly opposite in meaning to ARRIVE?",
+    "stem": "Which word is most nearly opposite in meaning to VANISH?",
     "options": [
-      "Enter",
-      "Travel",
-      "Return",
-      "Depart",
-      "Remain"
+      "Escape",
+      "Fade",
+      "Appear",
+      "Hide",
+      "Travel"
     ],
     "correct": [
-      3
+      2
     ],
-    "explanation": "To arrive is to reach a place; to depart is to leave it. Remain means to stay, which is not the reverse of arriving."
+    "explanation": "To vanish is to disappear; to appear is to come into view. Fade and hide lean the same way as vanish."
   },
   {
     "id": "CCAT-D-004",
@@ -2421,18 +2421,18 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Time",
-    "stem": "A webinar starts at 9:40 a.m. and lasts 1 hour 35 minutes. When does it end?",
+    "stem": "A webinar starts at 8:50 a.m. and lasts 1 hour 45 minutes. When does it end?",
     "options": [
-      "10:15 a.m.",
-      "11:15 a.m.",
-      "11:35 a.m.",
-      "11:25 a.m.",
-      "11:05 a.m."
+      "10:45 a.m.",
+      "9:35 a.m.",
+      "10:25 a.m.",
+      "10:35 a.m.",
+      "11:35 a.m."
     ],
     "correct": [
-      1
+      3
     ],
-    "explanation": "9:40 plus 1 hour is 10:40, and 35 more minutes is 11:15."
+    "explanation": "8:50 plus 1 hour is 9:50, and 45 more minutes is 10:35."
   },
   {
     "id": "CCAT-D-010",
@@ -2887,18 +2887,18 @@
     "difficulty": 1,
     "format": "single",
     "skill": "Place",
-    "stem": "BREAD is to BAKERY as MEDICINE is to ____.",
+    "stem": "BOOK is to LIBRARY as PAINTING is to ____.",
     "options": [
-      "Clinic",
-      "Hospital",
-      "Factory",
-      "Library",
-      "Pharmacy"
+      "Gallery",
+      "Studio",
+      "Frame",
+      "Theater",
+      "Easel"
     ],
     "correct": [
-      4
+      0
     ],
-    "explanation": "Bread is sold at a bakery; medicine is sold at a pharmacy. A hospital uses medicine but is not where you buy it."
+    "explanation": "Books are kept for the public in a library; paintings are kept and shown in a gallery. A studio is where a painting is made, not where it is kept for the public."
   },
   {
     "id": "CCAT-D-031",
@@ -3425,18 +3425,18 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Function",
-    "stem": "COMPASS is to DIRECTION as CLOCK is to ____.",
+    "stem": "THERMOSTAT is to TEMPERATURE as DIMMER is to ____.",
     "options": [
-      "Speed",
-      "Time",
-      "Hour",
-      "Alarm",
-      "Hands"
+      "Bulb",
+      "Color",
+      "Switch",
+      "Power",
+      "Brightness"
     ],
     "correct": [
-      1
+      4
     ],
-    "explanation": "A compass shows direction; a clock shows time. Hands and hours are parts of what a clock shows."
+    "explanation": "A thermostat adjusts temperature; a dimmer adjusts brightness. The bulb is what the dimmer acts on, not what it controls."
   },
   {
     "id": "CCAT-D-055",
@@ -4048,19 +4048,19 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Percents",
-    "stem": "A price falls from 75 to 60. By what percent did it fall?",
+    "stem": "A price falls from 80 to 68. By what percent did it fall?",
     "options": [
       "12%",
       "15%",
-      "20%",
-      "25%",
-      "80%"
+      "17.6%",
+      "18%",
+      "85%"
     ],
     "correct": [
-      2
+      1
     ],
     "lockedOrder": true,
-    "explanation": "The fall is 15, and 15 ÷ 75 = 0.2, so 20%. Dividing 15 by the new price 60 gives 25%."
+    "explanation": "The fall is 12, and 12 ÷ 80 = 0.15, so 15%. Dividing 12 by the new price 68 gives about 17.6%."
   },
   {
     "id": "CCAT-D-083",
@@ -4071,19 +4071,19 @@
     "difficulty": 3,
     "format": "single",
     "skill": "Averages",
-    "stem": "The average of five numbers is 18. When one number is removed, the average of the rest is 16. What number was removed?",
+    "stem": "The average of six numbers is 15. When one number is removed, the average of the other five is 14. What number was removed?",
     "options": [
-      "2",
-      "18",
+      "1",
+      "14",
+      "15",
       "20",
-      "26",
-      "34"
+      "26"
     ],
     "correct": [
       3
     ],
     "lockedOrder": true,
-    "explanation": "The five total 90 and the four total 64, so the removed number is 90 - 64 = 26."
+    "explanation": "The six total 90 and the five total 70, so the removed number is 90 - 70 = 20."
   },
   {
     "id": "CCAT-D-084",

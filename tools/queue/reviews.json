@@ -1786,5 +1786,5 @@
   "danbice": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1016, "findings": 6 }],
   "cnor": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1020, "findings": 91 }],
   "gcppde": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1021, "findings": 3 }],
-  "cism": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 0, "findings": 8 }]
+  "cism": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1022, "findings": 8 }]
 }

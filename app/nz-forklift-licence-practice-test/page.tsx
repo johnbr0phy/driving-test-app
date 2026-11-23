@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "Is this an official forklift course or certificate?",
-    a: "No. Every question is original, written by Tigertest from the NZQA standards, New Zealand law and published lift truck safety codes. It is free revision for the theory side of a course, not a certificate, and it cannot replace hands-on training and assessment by a registered forklift trainer. Tigertest is not affiliated with NZQA, WorkSafe New Zealand, NZ Transport Agency Waka Kotahi or any training provider.",
+    a: "No. Every question is original, written by Tigertest from the NZQA standards, New Zealand law and published lift truck safety codes. It is practice for the theory side of a course, not a certificate, and it cannot replace hands-on training and assessment by a registered forklift trainer. Tigertest is not affiliated with NZQA, WorkSafe New Zealand, NZ Transport Agency Waka Kotahi or any training provider.",
   },
 ];
 
@@ -162,7 +162,7 @@ export default function NzForkliftLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Mixed Practice Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four practice tests of 50 questions, each mixing every topic. Your course is assessed by your trainer rather than a national exam, so aim for 80% here as a readiness line. No question appears in more than one test, and every one comes with an explanation.
+                Four practice tests of 50 questions, each mixing every topic. Your course is assessed by your trainer rather than a national exam, so aim for 80% here as a target. No question appears in more than one test, and every one comes with an explanation.
               </p>
             </div>
           </div>

@@ -54,7 +54,7 @@ Q = [
  'With a non-integrated platform the person aloft has no controls, so the operator stays at the controls and does not travel or tilt.'),
 ('What is an integrated working platform?',
  'Controls in the platform', ['Platform welded to the forks', 'Platform with no guardrails', 'Platform used only on roads'],
- 'HSE guidance describes integrated platforms as having controls linked to the truck so only the person in the platform controls height and movement.'),
+ 'Integrated platforms have controls linked to the truck so only the person in the platform controls height and movement.'),
 ('What must also be planned before anyone works from a forklift platform?',
  'How to rescue them if needed', ['Which radio station to play', 'Lunch breaks for the operator', 'Where to park visitors'],
  '40737 lists emergency rescue procedures among the risks to plan for when operating a working platform.'),

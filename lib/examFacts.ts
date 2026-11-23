@@ -162,7 +162,7 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
       { label: "Exam", value: "No national exam, question count or pass mark" },
       { label: "Minimum age", value: "15 to enrol (40735); no worker under 15 may drive a forklift (GRWM reg 47)" },
       { label: "On the road", value: "Full licence (class 1 to 18,000 kg loaded, class 2 above) plus F endorsement" },
-      { label: "Refresher", value: "Every three years recommended (NZQA)" },
+      { label: "Refresher", value: "Every three years, as guidance in expiring unit standard 10851 recommends" },
     ],
     basedOn: "NZQA skill standards 40735, 40736 and 40737 and expiring unit standards 10851 and 10852, the Health and Safety at Work Act 2015, the GRWM Regulations 2016 and Waka Kotahi's F endorsement page, checked November 2026",
     source: { name: "NZQA: Skill standard 40735 Operate a forklift safely", url: "https://www.nzqa.govt.nz/nqfdocs/skills/pdf/40735.pdf" },

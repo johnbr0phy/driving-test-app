@@ -34,7 +34,7 @@ Q = [
 ('What is the youngest age at which a worker may drive a forklift at work under the GRWM Regulations?',
  '15', ['12', '16', '18'],
  'Regulation 47 bars workers under 15 from driving self-propelled mobile plant such as a forklift. The 12-year exception covers only trained workers on tractors used for agricultural work.'),
-('A 13-year-old on a family farm asks to drive the yard forklift. What applies?',
+('A 13-year-old worker on a farm asks to drive the yard forklift. What applies?',
  'Not allowed under 15', ['Allowed with training', 'Allowed off the public road', 'Allowed if supervised'],
  'The under-15 ban in regulation 47 covers self-propelled mobile plant over 700 kg. Its exception for those aged 12 and over covers only tractors in agricultural work, not forklifts.'),
 ('Regulation 47 does not count small self-propelled machinery as a vehicle. What mass sets that line?',

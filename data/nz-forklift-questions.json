@@ -158,7 +158,7 @@
     "state": "ALL",
     "questionId": "NZFORK-LAW-012",
     "category": "nzfkLaw",
-    "question": "A 13-year-old on a family farm asks to drive the yard forklift. What applies?",
+    "question": "A 13-year-old worker on a farm asks to drive the yard forklift. What applies?",
     "optionA": "Allowed with training",
     "optionB": "Allowed off the public road",
     "optionC": "Allowed if supervised",
@@ -1033,7 +1033,7 @@
     "optionD": "When the load is centred",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "OSHA's stability appendix notes that with no load, the truck's own centre of gravity is the only factor in its lateral stability; a load adds its weight to the combined point."
+    "explanation": "With no load, the truck's own centre of gravity is the only factor in its lateral stability; a load adds its weight to the combined point."
   },
   {
     "type": "NZFORKLIFT",
@@ -1159,7 +1159,7 @@
     "optionD": "Checking the tyre pressures",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "OSHA's stability appendix says moving, braking, cornering, lifting, tilting and lowering create dynamic forces that shift the centre of gravity, so take extra care near the truck's limits."
+    "explanation": "Moving, braking, cornering, lifting, tilting and lowering create dynamic forces that shift the centre of gravity, so take extra care near the truck's limits."
   },
   {
     "type": "NZFORKLIFT",
@@ -1341,7 +1341,7 @@
     "optionD": "They can be trapped under it",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "HSE's lift truck code says restraints are fitted because an operator thrown or jumping out can be trapped between the truck and the ground. Stay in the seat with the restraint fastened."
+    "explanation": "Restraints are fitted because an operator thrown or jumping out can be trapped between the truck and the ground. Stay in the seat with the restraint fastened."
   },
   {
     "type": "NZFORKLIFT",
@@ -1425,7 +1425,7 @@
     "optionD": "Lift only to knee height",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "HSE's lift truck code lists missing or damaged fork positioning locks among the pre-shift checks. A sliding fork can drop the load; the truck stays out of use until repaired."
+    "explanation": "Missing or damaged fork positioning locks are a standard pre-shift check item. A sliding fork can drop the load; the truck stays out of use until repaired."
   },
   {
     "type": "NZFORKLIFT",
@@ -1565,7 +1565,7 @@
     "optionD": "Turn it off at the cylinder",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "HSE's lift truck code says that on LPG trucks the gas supply should be turned off at the tank if the truck is left for some time, such as overnight."
+    "explanation": "On LPG trucks, turn the gas supply off at the cylinder when the truck is left for some time, such as overnight, so a leak cannot build up gas."
   },
   {
     "type": "NZFORKLIFT",
@@ -1761,7 +1761,7 @@
     "optionD": "Turn the wheels uphill",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "OSHA's forklift standard says an unattended truck has its forks lowered, controls in neutral, power off and brakes set, and its wheels blocked if parked on an incline."
+    "explanation": "Safe practice is that an unattended truck has its forks lowered, controls in neutral, power off and brakes set, and its wheels blocked if parked on an incline."
   },
   {
     "type": "NZFORKLIFT",
@@ -1789,7 +1789,7 @@
     "optionD": "Slowly, load low and tilted back",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "OSHA's forklift standard says grades are climbed or descended slowly, with the load tilted back and raised only enough to clear the surface."
+    "explanation": "Grades are climbed or descended slowly, with the load tilted back and raised only enough to clear the surface."
   },
   {
     "type": "NZFORKLIFT",
@@ -1803,7 +1803,7 @@
     "optionD": "The load's supplier",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "HSE's lift truck code says never drive up or down a gradient steeper than the maximum the manufacturer or authorised supplier specifies."
+    "explanation": "Never drive up or down a gradient steeper than the maximum the manufacturer or authorised supplier specifies."
   },
   {
     "type": "NZFORKLIFT",
@@ -1824,14 +1824,14 @@
     "state": "ALL",
     "questionId": "NZFORK-OPR-007",
     "category": "nzfkOperate",
-    "question": "When should the horn be used?",
-    "optionA": "To hurry slow pedestrians",
-    "optionB": "Only in an emergency stop",
-    "optionC": "At blind corners",
-    "optionD": "Never inside buildings",
+    "question": "A pedestrian in the aisle ahead has not noticed the forklift. What should the operator do?",
+    "optionA": "Drive round them quickly",
+    "optionB": "Hold the horn and carry on",
+    "optionC": "Stop until they have seen it",
+    "optionD": "Flash the lights and keep going",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Sites often require operators to sound the horn at blind spots, intersections and doorways so pedestrians and other drivers are warned."
+    "explanation": "A warning only works once it is noticed. Stop and wait until the pedestrian has seen the forklift and moved clear; never squeeze past someone who has not seen you."
   },
   {
     "type": "NZFORKLIFT",
@@ -2041,7 +2041,7 @@
     "optionD": "Beside the loading dock edge",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "HSE's lift truck code advises parking areas in a secure or supervised place, away from main thoroughfares and operating areas, so unauthorised people cannot easily use the trucks."
+    "explanation": "Park trucks in a secure or supervised place, away from main thoroughfares and operating areas, so unauthorised people cannot easily use the trucks."
   },
   {
     "type": "NZFORKLIFT",
@@ -2083,7 +2083,7 @@
     "optionD": "They bend the overhead guard",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "HSE's lift truck code says road humps are unsuitable for lift trucks; provide a bypass where humps slow other traffic."
+    "explanation": "Road humps jolt a lift truck and its load, so they are unsuitable on forklift routes; provide a bypass where humps slow other traffic."
   },
   {
     "type": "NZFORKLIFT",
@@ -2153,7 +2153,7 @@
     "optionD": "No sounding the horn",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "OSHA's forklift standard bans stunt driving and horseplay, and section 45 of the Health and Safety at Work Act requires reasonable care for others' safety."
+    "explanation": "Stunt driving and horseplay are banned on every forklift site, and section 45 of the Health and Safety at Work Act requires reasonable care for others' safety."
   },
   {
     "type": "NZFORKLIFT",
@@ -2293,7 +2293,7 @@
     "optionD": "That the line is live",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "HSE's power line guidance says to always assume a line is live until its owner confirms it is dead. Electricity can also jump across small gaps, so keep the mast and load well clear."
+    "explanation": "Always assume a line is live until its owner confirms it is dead. Electricity can also jump across small gaps, so keep the mast and load well clear."
   },
   {
     "type": "NZFORKLIFT",
@@ -2384,7 +2384,7 @@
     "state": "ALL",
     "questionId": "NZFORK-SIT-011",
     "category": "nzfkSite",
-    "question": "What colour scheme does HSE guidance suggest for marking columns and dock edges?",
+    "question": "What colour scheme is widely used to mark columns and dock edges on forklift sites?",
     "optionA": "Red and white dots",
     "optionB": "Green and blue bands",
     "optionC": "Black and yellow stripes",
@@ -2769,7 +2769,7 @@
     "optionD": "Platform used only on roads",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "HSE guidance describes integrated platforms as having controls linked to the truck so only the person in the platform controls height and movement."
+    "explanation": "Integrated platforms have controls linked to the truck so only the person in the platform controls height and movement."
   },
   {
     "type": "NZFORKLIFT",

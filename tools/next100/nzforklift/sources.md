@@ -112,3 +112,11 @@ asking the same fact with the same answer (primary duty, five-year records, load
 definition, 600 mm load centre, travelling in reverse with a blocked view, ramps, pedestrians,
 LPG cylinder changes, battery PPE, cracked forks, power lines and others) were rewritten from a
 different angle or replaced.
+
+## Second review (2026-11-23)
+Blind answers to all 200 matched the keys after checking the F endorsement expiry on the Waka
+Kotahi page (it expires with the driver licence) and regulation 47 of the GRWM Regulations on
+legislation.govt.nz (under 15, machinery over 700 kg, tractor-only exception from 12). Stems and
+explanations no longer name HSE or OSHA: the practice they describe is stated as general safe
+practice that does not conflict with New Zealand law. One item that repeated a sibling bank's
+fact and answer (horn at blind corners, `auforklift`) was replaced.

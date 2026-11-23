@@ -81,9 +81,9 @@ ITEMS = [
       "Total = 85 + 110 + 65 + 140 = 400 tonnes, and 140 / 400 = 35%."),
 
     # ---------- Drill only ----------
-    S(0, 2, "Relationships", "Introducing a girl, Kabir says, \"She is the daughter of the only son of my grandfather.\" How is the girl related to Kabir?",
+    S(0, 2, "Relationships", "Introducing a girl, Kabir says, \"She is the daughter of the only son of my paternal grandfather.\" How is the girl related to Kabir?",
       ["Sister", "Daughter", "Cousin", "Niece"],
-      "The only son of Kabir's grandfather is Kabir's father, so the girl is his father's daughter: his sister."),
+      "The only son of Kabir's paternal grandfather is Kabir's father, so the girl is his father's daughter: his sister."),
     S(0, 2, "Clock", "What is the angle between the hands of a clock at 4:30?",
       ["45°", "30°", "60°", "75°"],
       "Angle = |30 × 4 − 5.5 × 30| = |120 − 165| = 45°. 60° forgets that the hour hand is halfway between 4 and 5."),

@@ -4454,17 +4454,17 @@
     "difficulty": 2,
     "format": "single",
     "skill": "Relationships",
-    "stem": "Introducing a girl, Kabir says, \"She is the daughter of the only son of my grandfather.\" How is the girl related to Kabir?",
+    "stem": "Introducing a girl, Kabir says, \"She is the daughter of the only son of my paternal grandfather.\" How is the girl related to Kabir?",
     "options": [
-      "Daughter",
-      "Sister",
+      "Niece",
       "Cousin",
-      "Niece"
+      "Sister",
+      "Daughter"
     ],
     "correct": [
-      1
+      2
     ],
-    "explanation": "The only son of Kabir's grandfather is Kabir's father, so the girl is his father's daughter: his sister."
+    "explanation": "The only son of Kabir's paternal grandfather is Kabir's father, so the girl is his father's daughter: his sister."
   },
   {
     "id": "RRBJE-D-009",

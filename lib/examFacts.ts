@@ -3696,6 +3696,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Responsible Service BC's Serving It Right FAQs and course page, and the Liquor Control and Licensing Regulation s. 184, checked November 2026",
     source: { name: "Responsible Service BC: Serving It Right FAQs", url: "https://www.responsibleservicebc.gov.bc.ca/serving-it-right-faqs" },
   },
+  ausecurity: {
+    answer:
+      "In Australia each state and territory licenses its own security officers, and the national qualification that aligns with the unarmed guard and crowd controller licences is CPP20218 Certificate II in Security Operations (Release 3, current on training.gov.au). It has 14 core units: communication, legal and procedural requirements, WHS and emergencies, risk assessment, client service, defensive techniques, patrols, screening, access control, crowd control, intoxicated persons, removing persons from premises, escorts, and HLTAID011 first aid. A registered training organisation assesses each unit as competent or not yet competent; there is no single national exam and no published question count or pass mark. Licence classes, extra training, checks and fees vary by state.",
+    rows: [
+      { label: "Qualification", value: "CPP20218 Certificate II in Security Operations" },
+      { label: "Units", value: "14 core units, no electives" },
+      { label: "Leads to", value: "Unarmed guard and crowd controller licences" },
+      { label: "Assessed by", value: "The registered training organisation (RTO)" },
+      { label: "Pass mark", value: "None published; competent or not yet competent" },
+      { label: "Licensing", value: "By each state and territory; rules vary" },
+      { label: "Arrest powers", value: "The same as any citizen's" },
+    ],
+    basedOn: "CPP20218 Certificate II in Security Operations Release 3 and its unit assessment requirements on training.gov.au, the Crimes Act 1958 (Vic), the Criminal Code (Qld) and the Australian Government's crowded places guidelines, checked November 2026",
+    source: { name: "training.gov.au: CPP20218 Certificate II in Security Operations", url: "https://training.gov.au/assets/CPP/CPP20218_R3.pdf" },
+  },
   cagas3: {
     answer:
       "The Gas Technician 3 (G.3) is Ontario's entry-level gas technician certificate, issued by the Technical Standards and Safety Authority (TSSA) under Ontario Regulation 215/01. Candidates complete a TSSA-accredited program of curriculum modules 1 to 9 (a suggested 180 hours) or the challenge route, then write a multiple-choice TSSA certification exam with the permitted references (the Technical Standards and Safety Act, the fuels regulations and code adoption documents, CSA B149.1 and B149.2) and pass a practical evaluation. TSSA requires 75% on the exam, in each module and on the practical. A G.3 works under the general supervision of a G.1, G.2 or DA holder on listed tasks once they are signed off, and under direct supervision for anything else in that holder's scope.",

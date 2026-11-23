@@ -5991,6 +5991,22 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the RRB Assistant Loco Pilot notice CEN 01/2026 (11,127 posts), as summarised by exam guides",
     source: { name: "Railway Recruitment Boards", url: "https://www.rrbcdg.gov.in" },
   },
+  inrrn: {
+    answer:
+      "RRB JE CBT 1 is the first-stage Computer Based Test that the Railway Recruitment Boards hold for Junior Engineer and Depot Material Superintendent posts. Under CEN 04/2026 it has 100 multiple-choice questions in 90 minutes: Mathematics 30, General Intelligence and Reasoning 25, General Awareness 15 and General Science 30 (physics, chemistry and life sciences up to the 10th standard CBSE syllabus); the notice calls the split indicative. One third of a mark is deducted for each wrong answer, and calculators are not allowed. CBT 1 is a screening test: its normalised marks are used only to shortlist candidates, 15 times the vacancies in each community, for CBT 2, which adds technical abilities in the candidate's engineering group.",
+    rows: [
+      { label: "Questions", value: "100 multiple choice, one mark each" },
+      { label: "Time", value: "90 minutes (120 with a scribe)" },
+      { label: "Subjects", value: "Mathematics 30, Reasoning 25, General Awareness 15, General Science 30" },
+      { label: "Negative marking", value: "1/3 mark per wrong answer" },
+      { label: "Minimum marks", value: "UR and EWS 40%, OBC (NCL) and SC 30%, ST 25%" },
+      { label: "Next stage", value: "CBT 2: 150 questions in 120 minutes, 100 on technical abilities" },
+      { label: "Languages", value: "English, Hindi and 13 regional languages" },
+      { label: "Given by", value: "Railway Recruitment Boards (RRBs)" },
+    ],
+    basedOn: "the RRB Junior Engineer and Depot Material Superintendent notice CEN 04/2026, para 13",
+    source: { name: "Railway Recruitment Boards", url: "https://rrb.indianrailways.gov.in/" },
+  },
   rpfconst: {
     answer:
       "The RPF Constable exam is the Computer Based Test for Constable (Executive) posts in the Railway Protection Force and the Railway Protection Special Force. In the last recruitment, CEN RPF 02/2024 run by the Railway Recruitment Boards (CBT held in March 2025), it had 120 multiple-choice questions in 90 minutes: exam guides give 50 on General Awareness, 35 on Arithmetic and 35 on General Intelligence and Reasoning. One third of a mark is deducted for each wrong answer, and guides report minimum qualifying marks of 35 percent for UR, EWS and OBC and 30 percent for SC and ST. Shortlisted candidates then take the Physical Efficiency and Physical Measurement Tests (qualifying) and document verification. The next notice had not been published as of November 2026.",

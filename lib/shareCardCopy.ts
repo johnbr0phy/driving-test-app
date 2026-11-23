@@ -394,6 +394,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   phcse: { title: "Civil Service Exam Reviewer", description: "Professional and Subprofessional mock exams on verbal, analytical, clerical and numerical ability and general information, with every answer explained." },
   upscse: { title: "UPSC Prelims GS Paper I", description: "Full 100-question GS Paper I mock tests, subject drills in the UPSC statement format and a CSAT drill, with every answer explained." },
   ssccpo: { title: "SSC CPO Mock Test", description: "Practice reasoning, general knowledge, maths and English in full 100-question SSC CPO Paper-I mock tests, timed 15 minutes per part." },
+  inrrn: { title: "RRB JE CBT 1", description: "Full 100-question Junior Engineer mock tests on Maths, Reasoning, General Awareness and General Science, with every answer explained." },
   rrbalp: { title: "RRB ALP CBT 1", description: "Full 75-question Assistant Loco Pilot mock tests on Maths, Mental Ability and General Science, with every answer explained." },
   rpfconst: { title: "RPF Constable CBT", description: "100-question Railway Protection Force constable mock tests on General Awareness, Arithmetic and Reasoning, with every answer explained." },
   nda: { title: "NDA Mock Test", description: "Practice Mathematics and the General Ability Test (English and General Knowledge) in timed mock tests at the real pace." },

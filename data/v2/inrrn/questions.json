@@ -1,0 +1,4810 @@
+[
+  {
+    "id": "RRBJE-T1-001",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentages",
+    "stem": "A number increased by 25% becomes 340. What is the number?",
+    "options": [
+      "68",
+      "85",
+      "255",
+      "272"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "If x × 1.25 = 340, then x = 340 / 1.25 = 272. Taking 25% off 340 gives 255, which is the usual slip.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-002",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "BODMAS",
+    "stem": "Simplify: 63 ÷ 7 × 3 − 2³ + 4",
+    "options": [
+      "19",
+      "23",
+      "31",
+      "35"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Left to right: 63 ÷ 7 = 9 and 9 × 3 = 27. Then 27 − 8 + 4 = 23. 19 stops before adding 4, and 35 adds 8 instead of taking it away.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-003",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "A trader buys a water pump for ₹850 and sells it for ₹1,020. What is his profit percent?",
+    "options": [
+      "15%",
+      "17%",
+      "20%",
+      "25%"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Profit = 1,020 − 850 = ₹170, and profit percent is on the cost: 170 / 850 × 100 = 20%. Dividing by the selling price gives about 17%.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-004",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "What is the LCM of 15, 20 and 28?",
+    "options": [
+      "105",
+      "140",
+      "210",
+      "420"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "15 = 3 × 5, 20 = 2² × 5, 28 = 2² × 7. Take the highest powers: 2² × 3 × 5 × 7 = 420.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-005",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Discount",
+    "stem": "A drill machine marked at ₹2,400 is sold at a discount of 12.5%. What is the selling price?",
+    "options": [
+      "₹2,100",
+      "₹2,250",
+      "₹2,388",
+      "₹2,700"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "12.5% of 2,400 is ₹300, so the selling price is 2,400 − 300 = ₹2,100. ₹2,700 adds the discount instead of taking it off.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-006",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "What is the HCF of 84 and 132?",
+    "options": [
+      "12",
+      "24",
+      "42",
+      "924"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "84 = 2² × 3 × 7 and 132 = 2² × 3 × 11, so the HCF is 2² × 3 = 12. 924 is their LCM.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-007",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "What is the simple interest on ₹7,200 at 6% per annum for 3 years?",
+    "options": [
+      "₹432",
+      "₹1,080",
+      "₹1,200",
+      "₹1,296"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "SI = P × R × T / 100 = 7,200 × 6 × 3 / 100 = ₹1,296. ₹432 is the interest for one year only.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-008",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fractions",
+    "stem": "Which of these fractions is the greatest: 4/7, 5/9, 7/12 or 3/5?",
+    "options": [
+      "5/9",
+      "4/7",
+      "7/12",
+      "3/5"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "As decimals: 4/7 = 0.571, 5/9 = 0.556, 7/12 = 0.583 and 3/5 = 0.6, so 3/5 is the greatest.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-009",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "What is the compound interest on ₹12,500 at 6% per annum for 2 years, compounded annually?",
+    "options": [
+      "₹750",
+      "₹1,500",
+      "₹1,545",
+      "₹1,590"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Amount = 12,500 × 1.06² = 12,500 × 1.1236 = ₹14,045, so CI = ₹1,545. ₹1,500 is the simple interest and ₹750 the interest for one year.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-010",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Square root",
+    "stem": "What is √0.0049?",
+    "options": [
+      "0.0007",
+      "0.007",
+      "0.049",
+      "0.07"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "0.0049 = 49 / 10,000, and its square root is 7 / 100 = 0.07. Check: 0.07 × 0.07 = 0.0049.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-011",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ratio and proportion",
+    "stem": "₹4,950 is shared among A, B and C in the ratio 2 : 3 : 4. How much does C get?",
+    "options": [
+      "₹2,200",
+      "₹2,475",
+      "₹2,750",
+      "₹3,300"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "There are 2 + 3 + 4 = 9 parts, each worth 4,950 / 9 = ₹550. C gets 4 parts, ₹2,200.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-012",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number systems",
+    "stem": "What is the smallest number that must be added to 4,210 to make it divisible by 9?",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "7"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The digits of 4,210 add up to 7. The next multiple of 9 is 9, so 2 must be added (4,212 = 9 × 468). 7 is the digit sum itself.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-013",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Averages",
+    "stem": "The average of 9 numbers is 34. When one number, 52, is removed, what is the average of the rest?",
+    "options": [
+      "30.25",
+      "31.75",
+      "32",
+      "34"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Total = 9 × 34 = 306. Removing 52 leaves 254 for 8 numbers, so the average is 254 / 8 = 31.75.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-014",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Algebra",
+    "stem": "If x − 1/x = 6, what is x² + 1/x²?",
+    "options": [
+      "34",
+      "36",
+      "38",
+      "40"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Square both sides: x² − 2 + 1/x² = 36, so x² + 1/x² = 38. 34 takes the 2 away instead of adding it, and 36 forgets it.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-015",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ages",
+    "stem": "A man is four times as old as his daughter. In 16 years he will be twice as old as she is. How old is the daughter now?",
+    "options": [
+      "8 years",
+      "10 years",
+      "16 years",
+      "32 years"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Let the daughter be x: 4x + 16 = 2(x + 16), so 2x = 16 and x = 8. The man is 32 now and 48 in 16 years, twice 24.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-016",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Algebra",
+    "stem": "If a + b = 13 and ab = 40, what is a² + b²?",
+    "options": [
+      "89",
+      "129",
+      "169",
+      "249"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "a² + b² = (a + b)² − 2ab = 169 − 80 = 89. Taking off ab only once gives 129, adding 2ab gives 249, and 169 is just (a + b)².",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-017",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "A can finish a job in 30 days and B in 45 days. Working together, how long will they take?",
+    "options": [
+      "18 days",
+      "22.5 days",
+      "37.5 days",
+      "75 days"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Together they do 1/30 + 1/45 = (3 + 2)/90 = 1/18 of the job a day, so 18 days. 37.5 days is the average of the two times and 75 days their sum.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-018",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Linear equations",
+    "stem": "Solve for x: 5(x − 2) = 3x + 8",
+    "options": [
+      "1",
+      "3",
+      "7",
+      "9"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "5x − 10 = 3x + 8, so 2x = 18 and x = 9. Check: 5 × 7 = 35 and 27 + 8 = 35.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-019",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Pipes and cisterns",
+    "stem": "Pipe A fills a tank in 6 hours and pipe B empties it in 15 hours. If both are opened on an empty tank, when is it full?",
+    "options": [
+      "4.3 hours",
+      "9 hours",
+      "10 hours",
+      "21 hours"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Net filling per hour = 1/6 − 1/15 = (5 − 2)/30 = 1/10, so the tank is full in 10 hours. 4.3 hours adds the two rates, as if B also filled the tank.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-020",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geometry",
+    "stem": "What is each interior angle of a regular polygon with 18 sides?",
+    "options": [
+      "20°",
+      "140°",
+      "150°",
+      "160°"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The interior angles add up to (18 − 2) × 180° = 2,880°, so each is 2,880° / 18 = 160°. 20° is the exterior angle.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-021",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time and distance",
+    "stem": "A train 240 m long runs at 54 km/h. How long does it take to cross a platform 360 m long?",
+    "options": [
+      "16 seconds",
+      "24 seconds",
+      "40 seconds",
+      "44 seconds"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "54 km/h = 15 m/s. The train must cover its own length plus the platform, 600 m, which takes 600 / 15 = 40 s. 16 s ignores the platform.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-022",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Geometry",
+    "stem": "The angles of a triangle are in the ratio 2 : 5 : 11. What is the largest angle?",
+    "options": [
+      "55°",
+      "90°",
+      "100°",
+      "110°"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "2 + 5 + 11 = 18 parts make 180°, so one part is 10° and the largest angle is 11 × 10° = 110°.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-023",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Average speed",
+    "stem": "A car goes 90 km at 30 km/h and comes back the same way at 45 km/h. What is its average speed for the round trip?",
+    "options": [
+      "36 km/h",
+      "37.5 km/h",
+      "40 km/h",
+      "42 km/h"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Time = 90/30 + 90/45 = 3 + 2 = 5 h for 180 km, so 36 km/h. 37.5 km/h is the plain average of the two speeds, which is wrong when the distances are equal.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-024",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the perimeter of a semicircular plate of radius 21 cm? (Take π = 22/7.)",
+    "options": [
+      "54 cm",
+      "66 cm",
+      "87 cm",
+      "108 cm"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The curved edge is πr = 22/7 × 21 = 66 cm, and the straight edge is the diameter, 42 cm, so the perimeter is 108 cm. 66 cm leaves out the diameter.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-025",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Boats and streams",
+    "stem": "A boat rows at 14 km/h in still water and the stream flows at 4 km/h. How long does it take to go 45 km downstream?",
+    "options": [
+      "2.5 hours",
+      "3 hours",
+      "3.2 hours",
+      "4.5 hours"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Downstream speed = 14 + 4 = 18 km/h, so the time is 45 / 18 = 2.5 h. 4.5 h uses the upstream speed of 10 km/h.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-026",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "A cylindrical tank has a radius of 3.5 m and a height of 10 m. What is its volume? (Take π = 22/7.)",
+    "options": [
+      "110 m³",
+      "385 m³",
+      "770 m³",
+      "1,540 m³"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "V = πr²h = 22/7 × 3.5 × 3.5 × 10 = 385 m³. 110 m³ is πr × h, which leaves out one factor of r.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-027",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mixtures",
+    "stem": "50 litres of a mixture has milk and water in the ratio 4 : 1. How much water must be added to make the ratio 4 : 3?",
+    "options": [
+      "20 litres",
+      "25 litres",
+      "30 litres",
+      "40 litres"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The mixture has 40 L of milk and 10 L of water. For 4 : 3 the water must be 30 L, so 20 L is added. 30 L is the new total water, not the amount added.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-028",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Trigonometry",
+    "stem": "What is the value of sin 30° × cos 60° + tan 45°?",
+    "options": [
+      "3/4",
+      "1",
+      "5/4",
+      "3/2"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "sin 30° = cos 60° = 1/2 and tan 45° = 1, so the value is 1/4 + 1 = 5/4.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-029",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Population growth",
+    "stem": "A town of 32,000 people grows by 5% every year. What will its population be after 2 years?",
+    "options": [
+      "32,000",
+      "33,600",
+      "35,200",
+      "35,280"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "32,000 × 1.05 × 1.05 = 35,280. 35,200 adds 5% of 32,000 twice and leaves out the growth on the first year's growth.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-030",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Statistics",
+    "stem": "What is the median of 13, 8, 21, 5, 17 and 10?",
+    "options": [
+      "10",
+      "11.5",
+      "12.3",
+      "13"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In order: 5, 8, 10, 13, 17, 21. With six values the median is the mean of the middle two, (10 + 13)/2 = 11.5. 12.3 is the mean of all six.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-031",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogies",
+    "stem": "Ammeter : Current :: Hygrometer : ?",
+    "options": [
+      "Humidity",
+      "Rainfall",
+      "Pressure",
+      "Altitude"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An ammeter measures electric current; a hygrometer measures the humidity of the air. A barometer measures pressure and a rain gauge rainfall."
+  },
+  {
+    "id": "RRBJE-T1-032",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Relationships",
+    "stem": "Pointing to a girl in a photo, Arjun says, \"Her mother is the wife of my father's only son.\" How is the girl related to Arjun?",
+    "options": [
+      "Niece",
+      "Daughter",
+      "Sister",
+      "Wife"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The only son of Arjun's father is Arjun himself, so the girl's mother is Arjun's wife and the girl is his daughter."
+  },
+  {
+    "id": "RRBJE-T1-033",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "6 : 215 :: 9 : ?",
+    "options": [
+      "81",
+      "648",
+      "728",
+      "729"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "215 is 6³ − 1, so the answer is 9³ − 1 = 728. 729 forgets to subtract 1, and 81 is only 9².",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-034",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "Anil faces north. He turns 135° clockwise and then 90° anticlockwise. Which direction does he face now?",
+    "options": [
+      "North-west",
+      "South-east",
+      "South-west",
+      "North-east"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "From north, 90° clockwise is east and 45° more is south-east. Turning 90° anticlockwise from south-east brings him to north-east."
+  },
+  {
+    "id": "RRBJE-T1-035",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Letter analogy",
+    "stem": "GIK : HJL :: PRT : ?",
+    "options": [
+      "QRS",
+      "QSU",
+      "RTV",
+      "OQS"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each letter of GIK moves one place forward to give HJL. Moving each letter of PRT one place forward gives QSU."
+  },
+  {
+    "id": "RRBJE-T1-036",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "A surveyor walks 21 km south and then 20 km west. How far is he from his starting point?",
+    "options": [
+      "21 km",
+      "29 km",
+      "31 km",
+      "41 km"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The two legs are at right angles, so the distance is √(21² + 20²) = √841 = 29 km. 41 km is the distance walked, not the distance from the start.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-037",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Which hill town is the odd one out: Shimla, Gangtok, Shillong or Darjeeling?",
+    "options": [
+      "Darjeeling",
+      "Shillong",
+      "Gangtok",
+      "Shimla"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Shimla, Gangtok and Shillong are state capitals (Himachal Pradesh, Sikkim and Meghalaya). Darjeeling is a hill town in West Bengal but not a capital."
+  },
+  {
+    "id": "RRBJE-T1-038",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: All rails are steel. No steel is plastic.\nConclusions: I. No rail is plastic. II. Some plastic is steel.",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rails lie inside steel, and steel is wholly apart from plastic, so no rail is plastic (I). II contradicts 'no steel is plastic'.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-039",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Which number is the odd one out?",
+    "options": [
+      "27",
+      "64",
+      "125",
+      "196"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "27, 64 and 125 are cubes (3³, 4³, 5³). 196 is 14², a square but not a cube.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-040",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: Some engines are electric. All electric things use power.\nConclusions: I. Some engines use power. II. All engines use power.",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The engines that are electric use power, so some engines do (I). Nothing is said about the engines that are not electric, so II does not follow.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-041",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next: 3, 11, 35, 107, ?",
+    "options": [
+      "214",
+      "321",
+      "323",
+      "325"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each term is three times the one before plus 2: 3 × 3 + 2 = 11, 11 × 3 + 2 = 35, 35 × 3 + 2 = 107, so 107 × 3 + 2 = 323.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-042",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "Priya is 9th from the top and 32nd from the bottom in her class. How many students are in the class?",
+    "options": [
+      "39",
+      "40",
+      "41",
+      "42"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Total = top rank + bottom rank − 1 = 9 + 32 − 1 = 40. Adding without subtracting 1 counts Priya twice.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-043",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alphabet series",
+    "stem": "What comes next: C, E, I, O, ?",
+    "options": [
+      "X",
+      "W",
+      "U",
+      "V"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The gaps grow by 2: C to E is +2, E to I +4, I to O +6, so the next is O + 8 = W (15 + 8 = 23)."
+  },
+  {
+    "id": "RRBJE-T1-044",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Seating arrangement",
+    "stem": "M, N, O, P and Q sit in a row facing north. Q is at the left end and N is second from the left. O sits immediately to the right of P. M is not at an end. Who sits in the middle?",
+    "options": [
+      "P",
+      "M",
+      "O",
+      "N"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Seats 1 and 2 from the left are Q and N. P and O must sit side by side in seats 3 to 5, and M is not at an end, so M takes seat 3 and P and O take seats 4 and 5."
+  },
+  {
+    "id": "RRBJE-T1-045",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding and decoding",
+    "stem": "In a code, TRAIN is written as UQBHO. How is CROSS written in that code?",
+    "options": [
+      "BQNRR",
+      "DSPTT",
+      "DQPRT",
+      "DQPTT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The letters move +1, −1, +1, −1, +1: T→U, R→Q, A→B, I→H, N→O. For CROSS: C→D, R→Q, O→P, S→R, S→T, giving DQPRT."
+  },
+  {
+    "id": "RRBJE-T1-046",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "2 October 2025 was a Thursday. Which day of the week was 2 October 2026?",
+    "options": [
+      "Thursday",
+      "Wednesday",
+      "Saturday",
+      "Friday"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The year between the two dates includes 28 February 2026, not a leap day, so it has 365 days: 52 weeks and 1 day. The day moves one forward, to Friday."
+  },
+  {
+    "id": "RRBJE-T1-047",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Coding and decoding",
+    "stem": "If CAT is coded as 24 by adding the positions of its letters in the alphabet, what is the code for RAIL?",
+    "options": [
+      "36",
+      "38",
+      "39",
+      "40"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "C + A + T = 3 + 1 + 20 = 24. R + A + I + L = 18 + 1 + 9 + 12 = 40.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-048",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "What is the smaller angle between the hands of a clock at 11:10?",
+    "options": [
+      "85°",
+      "90°",
+      "95°",
+      "275°"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Angle = |30 × 11 − 5.5 × 10| = |330 − 55| = 275°, so the smaller angle is 360° − 275° = 85°. 90° forgets that the hour hand has moved a sixth of the way from 11 to 12.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-049",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mathematical operations",
+    "stem": "If + means ×, × means −, − means ÷ and ÷ means +, what is 18 − 3 + 4 ÷ 6 × 5?",
+    "options": [
+      "19",
+      "25",
+      "29",
+      "31"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Replacing the signs gives 18 ÷ 3 × 4 + 6 − 5 = 6 × 4 + 6 − 5 = 24 + 1 = 25.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-050",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conclusions",
+    "stem": "Statement: Ticket sales on a route doubled after online booking was introduced.\nConclusions: I. Online booking made buying tickets easier for some passengers. II. No one buys tickets at the counter any more.",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The rise follows the new option, so it is reasonable that some found it easier (I). Doubling sales says nothing about counter sales falling to zero (II).",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-051",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dictionary order",
+    "stem": "When these words are arranged in dictionary order, which comes third: Signet, Sigma, Sight, Signal?",
+    "options": [
+      "Sight",
+      "Sigma",
+      "Signet",
+      "Signal"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "All begin SIG; the fourth letters decide: Sight (H), Sigma (M), then Signal and Signet (N). Signal comes before Signet because A comes before E, so the order is Sight, Sigma, Signal, Signet."
+  },
+  {
+    "id": "RRBJE-T1-052",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data sufficiency",
+    "stem": "What is Vikram's age?\nI. Vikram is 4 years older than Sunil.\nII. Sunil is 20 years old.",
+    "options": [
+      "Statement I alone is sufficient",
+      "Statement II alone is sufficient",
+      "Either I or II alone is sufficient",
+      "Both I and II together are needed"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "I gives only the gap and II gives only Sunil's age. Together they give Vikram's age, 24, so both are needed.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-053",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Analogies",
+    "stem": "Granite : Igneous :: Marble : ?",
+    "options": [
+      "Sedimentary",
+      "Metamorphic",
+      "Volcanic",
+      "Igneous"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Granite is an igneous rock. Marble forms when limestone is changed by heat and pressure, so it is a metamorphic rock."
+  },
+  {
+    "id": "RRBJE-T1-054",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Venn diagram",
+    "stem": "Of 90 workers in a workshop, 52 can weld, 41 can operate a lathe and 18 can do both. How many can do neither?",
+    "options": [
+      "15",
+      "33",
+      "38",
+      "49"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Those who can do at least one = 52 + 41 − 18 = 75, so 90 − 75 = 15 can do neither. 33 takes the 18 off twice, 38 counts those who cannot weld, and 49 those who cannot work a lathe.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-055",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Missing number",
+    "stem": "In each row the third number follows the same rule from the first two. Row 1: 3, 4, 13. Row 2: 5, 2, 11. Row 3: 6, 3, ?",
+    "options": [
+      "9",
+      "18",
+      "19",
+      "21"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The third number is the product of the first two plus 1: 12 + 1 = 13, 10 + 1 = 11, so 18 + 1 = 19.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-056",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "History",
+    "stem": "The Battle of Talikota in 1565 led to the decline of which empire?",
+    "options": [
+      "Maratha",
+      "Mughal",
+      "Chola",
+      "Vijayanagara"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "An alliance of the Deccan sultanates defeated Vijayanagara at Talikota, and its capital Hampi was sacked. The Marathas rose a century later."
+  },
+  {
+    "id": "RRBJE-T1-057",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "History",
+    "stem": "Which Greek envoy at the Mauryan court wrote the account called Indica?",
+    "options": [
+      "Al-Biruni",
+      "Hiuen Tsang",
+      "Fa-Hien",
+      "Megasthenes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Megasthenes was sent by Seleucus to Chandragupta Maurya. Fa-Hien and Hiuen Tsang were Chinese pilgrims, and Al-Biruni wrote Kitab-ul-Hind."
+  },
+  {
+    "id": "RRBJE-T1-058",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "History",
+    "stem": "Which Sultan of Delhi built the fortified city of Tughlaqabad?",
+    "options": [
+      "Firoz Shah Tughlaq",
+      "Alauddin Khalji",
+      "Ghiyasuddin Tughlaq",
+      "Sikandar Lodi"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ghiyasuddin Tughlaq, founder of the Tughlaq dynasty, built Tughlaqabad in the 1320s. Firoz Shah later built Firozabad."
+  },
+  {
+    "id": "RRBJE-T1-059",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "The Hunter Committee of 1919 was set up to inquire into the:",
+    "options": [
+      "Partition of Bengal",
+      "Jallianwala Bagh massacre",
+      "Kakori train action",
+      "Chauri Chaura incident"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Disorders Inquiry Committee under Lord Hunter looked into the Punjab disturbances, including the firing at Jallianwala Bagh in April 1919."
+  },
+  {
+    "id": "RRBJE-T1-060",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "Who founded the Servants of India Society in 1905?",
+    "options": [
+      "Bal Gangadhar Tilak",
+      "Lala Lajpat Rai",
+      "Dadabhai Naoroji",
+      "Gopal Krishna Gokhale"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Gokhale founded the society in Pune to train Indians for public service. Tilak was a leading figure of the extremist group."
+  },
+  {
+    "id": "RRBJE-T1-061",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "The Theosophical Society, with which Annie Besant worked in India, had its headquarters at:",
+    "options": [
+      "Wardha",
+      "Belur, Calcutta",
+      "Aligarh",
+      "Adyar, Madras"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The society's international headquarters was set up at Adyar in Madras in 1882. Belur Math is the headquarters of the Ramakrishna Mission."
+  },
+  {
+    "id": "RRBJE-T1-062",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "Which Article of the Constitution provides for the GST Council?",
+    "options": [
+      "Article 279A",
+      "Article 265",
+      "Article 280",
+      "Article 246A"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The 101st Amendment of 2016 added Article 279A for the GST Council and Article 246A for the power to levy GST. Article 280 is the Finance Commission."
+  },
+  {
+    "id": "RRBJE-T1-063",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "Who decides whether a bill is a Money Bill?",
+    "options": [
+      "Lok Sabha Speaker",
+      "Union Finance Minister",
+      "Rajya Sabha Chairman",
+      "President"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Under Article 110(3), the Speaker of the Lok Sabha decides, and the decision is final."
+  },
+  {
+    "id": "RRBJE-T1-064",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "Which Schedule of the Constitution lists the languages of India?",
+    "options": [
+      "Tenth Schedule",
+      "Eighth Schedule",
+      "Twelfth Schedule",
+      "Seventh Schedule"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Eighth Schedule lists 22 languages. The Seventh has the Union, State and Concurrent Lists, and the Tenth the anti-defection rules."
+  },
+  {
+    "id": "RRBJE-T1-065",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "Jog Falls in Karnataka is formed by which river?",
+    "options": [
+      "Krishna",
+      "Kaveri",
+      "Tungabhadra",
+      "Sharavathi"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Sharavathi drops in four streams, Raja, Rani, Rocket and Roarer, at Jog Falls in Shivamogga district."
+  },
+  {
+    "id": "RRBJE-T1-066",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "Kolleru, a large freshwater lake and bird sanctuary, is in which state?",
+    "options": [
+      "Karnataka",
+      "Odisha",
+      "Telangana",
+      "Andhra Pradesh"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Kolleru Lake lies between the Godavari and Krishna deltas in Andhra Pradesh and is a Ramsar site."
+  },
+  {
+    "id": "RRBJE-T1-067",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "The Idukki arch dam in Kerala is built on which river?",
+    "options": [
+      "Periyar",
+      "Pamba",
+      "Bharathapuzha",
+      "Kaveri"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Idukki dam stands on the Periyar, Kerala's longest river. The Pamba flows past Sabarimala."
+  },
+  {
+    "id": "RRBJE-T1-068",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "The repo rate is the rate at which:",
+    "options": [
+      "Banks lend to farmers",
+      "The government borrows abroad",
+      "Banks pay on savings",
+      "The RBI lends to banks"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Repo is the rate at which the RBI lends short-term money to commercial banks against securities. The reverse repo is the rate the RBI pays banks."
+  },
+  {
+    "id": "RRBJE-T1-069",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "Ramsar sites are protected because they are important:",
+    "options": [
+      "Wetlands",
+      "Deserts",
+      "Coral islands",
+      "Mountain passes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The Ramsar Convention of 1971 protects wetlands of international importance, such as Chilika Lake and Keoladeo."
+  },
+  {
+    "id": "RRBJE-T1-070",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "The Thomas Cup is a world team championship in which sport?",
+    "options": [
+      "Table tennis",
+      "Squash",
+      "Tennis",
+      "Badminton"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Thomas Cup is the men's world team badminton championship. India won it for the first time in 2022."
+  },
+  {
+    "id": "RRBJE-T1-071",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Work and power",
+    "stem": "A pump lifts 300 kg of water through 8 m in 15 seconds. What power does it develop? (Take g = 10 m/s².)",
+    "options": [
+      "160 W",
+      "800 W",
+      "1,200 W",
+      "1,600 W"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Work = mgh = 300 × 10 × 8 = 24,000 J, and power = 24,000 / 15 = 1,600 W. 160 W leaves out g.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-072",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Acids, bases and salts",
+    "stem": "Which compound is used to remove the permanent hardness of water?",
+    "options": [
+      "Sodium carbonate",
+      "Calcium carbonate",
+      "Calcium sulphate",
+      "Sodium chloride"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Washing soda, sodium carbonate, makes calcium and magnesium ions settle out as carbonates. Calcium sulphate is one of the salts that cause hardness."
+  },
+  {
+    "id": "RRBJE-T1-073",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Cell",
+    "stem": "Which cell organelles are called suicide bags because they hold digestive enzymes?",
+    "options": [
+      "Centrioles",
+      "Lysosomes",
+      "Ribosomes",
+      "Plastids"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Lysosomes contain enzymes that break down waste; if the cell is damaged they can burst and digest the cell itself."
+  },
+  {
+    "id": "RRBJE-T1-074",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Laws of motion",
+    "stem": "What is the momentum of a 1,200 kg car moving at 15 m/s?",
+    "options": [
+      "80 kg m/s",
+      "1,215 kg m/s",
+      "9,000 kg m/s",
+      "18,000 kg m/s"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Momentum = mass × velocity = 1,200 × 15 = 18,000 kg m/s. 80 divides instead of multiplying, and 1,215 adds the two numbers.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-075",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Acids, bases and salts",
+    "stem": "What is the approximate pH of human blood?",
+    "options": [
+      "5.5",
+      "6.2",
+      "6.8",
+      "7.4"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Blood is slightly basic, with a pH of about 7.4. The body keeps it in a narrow range around that value.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-076",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Life processes",
+    "stem": "Which enzyme in saliva begins the digestion of starch?",
+    "options": [
+      "Salivary amylase",
+      "Pepsin",
+      "Trypsin",
+      "Lipase"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Salivary amylase breaks starch into maltose in the mouth. Pepsin works on proteins in the stomach."
+  },
+  {
+    "id": "RRBJE-T1-077",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electric energy",
+    "stem": "One kilowatt hour (kWh) is equal to how many joules?",
+    "options": [
+      "3.6 × 10³ J",
+      "1 × 10³ J",
+      "3.6 × 10⁵ J",
+      "3.6 × 10⁶ J"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "1 kWh = 1,000 W × 3,600 s = 3,600,000 J = 3.6 × 10⁶ J."
+  },
+  {
+    "id": "RRBJE-T1-078",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Chemical reactions",
+    "stem": "The reaction Fe + CuSO₄ → FeSO₄ + Cu is an example of a:",
+    "options": [
+      "Neutralisation reaction",
+      "Combination reaction",
+      "Decomposition reaction",
+      "Displacement reaction"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Iron is more reactive than copper, so it pushes copper out of copper sulphate. The blue solution turns pale green."
+  },
+  {
+    "id": "RRBJE-T1-079",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Life processes",
+    "stem": "In human lungs, oxygen and carbon dioxide are exchanged in the:",
+    "options": [
+      "Alveoli",
+      "Trachea",
+      "Larynx",
+      "Bronchi"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Alveoli are tiny air sacs with thin walls and many capillaries, where gases pass between air and blood."
+  },
+  {
+    "id": "RRBJE-T1-080",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "A current of 0.5 A flows through a 24 Ω resistor. What is the potential difference across it?",
+    "options": [
+      "6 V",
+      "12 V",
+      "24.5 V",
+      "48 V"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "By Ohm's law, V = IR = 0.5 × 24 = 12 V. 48 V divides R by I.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-081",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxidation and reduction",
+    "stem": "Chips packets are often filled with nitrogen to:",
+    "options": [
+      "Add flavour",
+      "Make the chips crisper",
+      "Prevent the oil going rancid",
+      "Kill all bacteria"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Oxidation of fats and oils makes food rancid. Nitrogen keeps oxygen away and slows this down."
+  },
+  {
+    "id": "RRBJE-T1-082",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life processes",
+    "stem": "How many chambers does the heart of a fish have?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A fish heart has one atrium and one ventricle, two chambers, and pumps blood through the gills once in each circuit. Amphibians have three chambers and birds and mammals four.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-083",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "Resistors of 4 Ω and 12 Ω are joined in parallel. What is their combined resistance?",
+    "options": [
+      "3 Ω",
+      "4 Ω",
+      "8 Ω",
+      "16 Ω"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "1/R = 1/4 + 1/12 = 4/12, so R = 3 Ω. In parallel the total is less than the smallest resistor; 16 Ω is the series value.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-084",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Metals and non-metals",
+    "stem": "Which metal is soft enough to be cut with a knife?",
+    "options": [
+      "Copper",
+      "Iron",
+      "Aluminium",
+      "Sodium"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Sodium and potassium are soft and are stored under kerosene because they react with air and water. Iron, aluminium and copper are hard."
+  },
+  {
+    "id": "RRBJE-T1-085",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life processes",
+    "stem": "The movement of food made in the leaves to other parts of a plant through the phloem is called:",
+    "options": [
+      "Transpiration",
+      "Translocation",
+      "Guttation",
+      "Osmosis"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Translocation carries sugars in the phloem. Transpiration is the loss of water vapour from leaves."
+  },
+  {
+    "id": "RRBJE-T1-086",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Dispersion",
+    "stem": "A rainbow forms when sunlight is dispersed by:",
+    "options": [
+      "Dust particles",
+      "Air molecules",
+      "Raindrops",
+      "Clouds of ice only"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each raindrop refracts, disperses and reflects sunlight, so the colours separate. Scattering by air molecules makes the sky blue."
+  },
+  {
+    "id": "RRBJE-T1-087",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Periodic classification",
+    "stem": "Mendeleev left a gap for eka-aluminium. Which element was later found to fill it?",
+    "options": [
+      "Germanium",
+      "Gallium",
+      "Indium",
+      "Scandium"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Gallium, discovered in 1875, matched his predictions for eka-aluminium. Germanium filled the gap he called eka-silicon."
+  },
+  {
+    "id": "RRBJE-T1-088",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Control and coordination",
+    "stem": "Iodised salt is advised because iodine is needed to make which hormone?",
+    "options": [
+      "Thyroxine",
+      "Adrenaline",
+      "Oestrogen",
+      "Insulin"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The thyroid uses iodine to make thyroxine; too little iodine can cause goitre, a swollen thyroid."
+  },
+  {
+    "id": "RRBJE-T1-089",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Refraction",
+    "stem": "Stars appear to twinkle mainly because of:",
+    "options": [
+      "Total internal reflection",
+      "Atmospheric refraction",
+      "Scattering by dust",
+      "Reflection by clouds"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Starlight is refracted again and again by layers of air of changing density, so its apparent position and brightness flicker."
+  },
+  {
+    "id": "RRBJE-T1-090",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carbon compounds",
+    "stem": "How many covalent bonds join the two atoms in a nitrogen molecule, N₂?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each nitrogen atom has 5 outer electrons and needs 3 more, so the two atoms share three pairs: a triple bond.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T1-091",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Control and coordination",
+    "stem": "Which plant hormone helps fruits to ripen?",
+    "options": [
+      "Auxin",
+      "Gibberellin",
+      "Ethylene",
+      "Cytokinin"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Ethylene is a gas that speeds up ripening. Gibberellins help stems grow longer."
+  },
+  {
+    "id": "RRBJE-T1-092",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sound",
+    "stem": "The time a wave takes to complete one full oscillation is called its:",
+    "options": [
+      "Frequency",
+      "Amplitude",
+      "Wavelength",
+      "Time period"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The time period is the time for one oscillation; the frequency is the number of oscillations each second, so frequency = 1 / time period."
+  },
+  {
+    "id": "RRBJE-T1-093",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carbon compounds",
+    "stem": "Ethanoic acid reacts with ethanol in the presence of an acid catalyst to form a sweet-smelling:",
+    "options": [
+      "Alkane",
+      "Soap",
+      "Ester",
+      "Aldehyde"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Acid + alcohol gives an ester and water (esterification). Esters are used in perfumes and flavours."
+  },
+  {
+    "id": "RRBJE-T1-094",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Health",
+    "stem": "Chickenpox is caused by a:",
+    "options": [
+      "Bacterium",
+      "Virus",
+      "Protozoan",
+      "Fungus"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Chickenpox is caused by the varicella-zoster virus, which also causes shingles later in life."
+  },
+  {
+    "id": "RRBJE-T1-095",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mirrors",
+    "stem": "An object is placed 12 cm in front of a concave mirror of focal length 8 cm. Where is the image formed?",
+    "options": [
+      "24 cm in front of the mirror",
+      "24 cm behind the mirror",
+      "20 cm in front of the mirror",
+      "4.8 cm in front of the mirror"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "With u = −12 cm and f = −8 cm, 1/v = 1/f − 1/u = −1/8 + 1/12 = −1/24, so v = −24 cm: a real image 24 cm in front of the mirror."
+  },
+  {
+    "id": "RRBJE-T1-096",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Metals and non-metals",
+    "stem": "Cinnabar is the main ore of which metal?",
+    "options": [
+      "Zinc",
+      "Mercury",
+      "Copper",
+      "Lead"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Cinnabar is mercury(II) sulphide, HgS. Galena is the lead ore and zinc blende the zinc ore."
+  },
+  {
+    "id": "RRBJE-T1-097",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Reproduction",
+    "stem": "After fertilisation, the ovules of a flower develop into:",
+    "options": [
+      "Pollen",
+      "Seeds",
+      "Fruits",
+      "Petals"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each fertilised ovule becomes a seed; the ovary around them becomes the fruit."
+  },
+  {
+    "id": "RRBJE-T1-098",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Magnetic effects of current",
+    "stem": "A long coil of wire carrying a current, a solenoid, behaves like a:",
+    "options": [
+      "Electric cell",
+      "Horseshoe magnet only",
+      "Bar magnet",
+      "Capacitor"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The field of a solenoid has a north and a south end and is uniform inside, just like a bar magnet."
+  },
+  {
+    "id": "RRBJE-T1-099",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Acids, bases and salts",
+    "stem": "Plaster of Paris must be kept in a moisture-proof container because it:",
+    "options": [
+      "Sets hard on taking up water",
+      "Catches fire in damp air",
+      "Turns into washing soda",
+      "Gives off chlorine gas"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Plaster of Paris takes up water and sets into hard gypsum, so damp air would spoil it in the bag."
+  },
+  {
+    "id": "RRBJE-T1-100",
+    "section": "cbt",
+    "test": 1,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heredity",
+    "stem": "Genes, the units of heredity, are located on the:",
+    "options": [
+      "Cell wall",
+      "Ribosomes",
+      "Chromosomes",
+      "Mitochondrial membrane"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Genes are lengths of DNA arranged along the chromosomes in the nucleus."
+  },
+  {
+    "id": "RRBJE-T2-001",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Percentages",
+    "stem": "18% of a number is 81. What is the number?",
+    "options": [
+      "450",
+      "486",
+      "540",
+      "810"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "x = 81 / 0.18 = 450. Check: 18% of 450 is 81.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-002",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "BODMAS",
+    "stem": "Simplify: 7 + 3 × (18 − 6) ÷ 4",
+    "options": [
+      "16",
+      "19",
+      "25",
+      "30"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Bracket first: 12. Then 3 × 12 = 36 and 36 ÷ 4 = 9. Finally 7 + 9 = 16. Adding 7 + 3 first gives 30.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-003",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "By selling a motor for ₹2,340 a dealer loses 10%. What was his cost price?",
+    "options": [
+      "₹2,106",
+      "₹2,340",
+      "₹2,574",
+      "₹2,600"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Selling price is 90% of cost, so cost = 2,340 / 0.9 = ₹2,600. Adding 10% to 2,340 gives ₹2,574, which takes the loss on the wrong base.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-004",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "The product of two numbers is 2,160 and their HCF is 12. What is their LCM?",
+    "options": [
+      "180",
+      "216",
+      "360",
+      "25,920"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "For two numbers, HCF × LCM = product, so LCM = 2,160 / 12 = 180. 25,920 multiplies instead of dividing.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-005",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Discount",
+    "stem": "Two successive discounts of 25% and 10% are equal to a single discount of:",
+    "options": [
+      "30%",
+      "32.5%",
+      "33%",
+      "35%"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A price of 100 becomes 75, then 67.5, a total cut of 32.5%. Adding the two rates gives 35%, which ignores that the second discount is on a lower price.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-006",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "LCM and HCF",
+    "stem": "Three signal lamps blink every 18, 30 and 45 seconds. They blink together now. After how many seconds will they next blink together?",
+    "options": [
+      "90 seconds",
+      "135 seconds",
+      "180 seconds",
+      "270 seconds"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The answer is the LCM: 18 = 2 × 3², 30 = 2 × 3 × 5, 45 = 3² × 5, so LCM = 2 × 3² × 5 = 90.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-007",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Simple interest",
+    "stem": "A sum grows to ₹9,100 in 3 years at 10% simple interest per annum. What was the sum?",
+    "options": [
+      "₹6,370",
+      "₹7,000",
+      "₹7,500",
+      "₹8,190"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Amount = P × (1 + 0.10 × 3) = 1.3P, so P = 9,100 / 1.3 = ₹7,000. ₹6,370 takes 30% off the amount instead.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-008",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Decimals",
+    "stem": "What is 0.36 × 0.25?",
+    "options": [
+      "0.09",
+      "0.11",
+      "0.61",
+      "0.9"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "36 × 25 = 900, and the factors have four decimal places in all, so 0.0900 = 0.09. 0.61 is the sum.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-009",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "What is the amount on ₹10,000 at 10% per annum for 1 year, compounded half-yearly?",
+    "options": [
+      "₹10,250",
+      "₹10,500",
+      "₹11,000",
+      "₹11,025"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Half-yearly means 5% for each of two periods: 10,000 × 1.05² = ₹11,025. ₹11,000 is the amount with yearly compounding.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-010",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Fractions",
+    "stem": "Which fraction is equal to the recurring decimal 0.454545...?",
+    "options": [
+      "9/22",
+      "4/9",
+      "9/20",
+      "5/11"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Two repeating digits: 0.45 recurring = 45/99 = 5/11. 9/20 is 0.45 exactly, which stops.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-011",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ratio and proportion",
+    "stem": "If A : B = 4 : 5 and B : C = 3 : 7, what is A : B : C?",
+    "options": [
+      "4 : 5 : 7",
+      "12 : 15 : 28",
+      "4 : 15 : 35",
+      "12 : 15 : 35"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Make B the same in both: A : B = 12 : 15 and B : C = 15 : 35. So A : B : C = 12 : 15 : 35."
+  },
+  {
+    "id": "RRBJE-T2-012",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number systems",
+    "stem": "Which of these numbers is divisible by 11?",
+    "options": [
+      "4,271",
+      "5,083",
+      "6,194",
+      "7,326"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Test for 11: alternate digit sums must differ by 0 or a multiple of 11. For 7,326: (7 + 2) − (3 + 6) = 0, so it divides (7,326 = 11 × 666).",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-013",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Averages",
+    "stem": "The average weight of 30 students is 42 kg. When the teacher's weight is included, the average rises by 0.5 kg. What does the teacher weigh?",
+    "options": [
+      "57 kg",
+      "57.5 kg",
+      "63 kg",
+      "72.5 kg"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "New total = 31 × 42.5 = 1,317.5 kg; old total = 30 × 42 = 1,260 kg. The teacher weighs 57.5 kg. 57 kg forgets that the teacher also raises his own share by 0.5 kg.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-014",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Square root",
+    "stem": "What is √12 × √27?",
+    "options": [
+      "9",
+      "18",
+      "36",
+      "54"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "√12 × √27 = √324 = 18. Or: 2√3 × 3√3 = 6 × 3 = 18.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-015",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Ages",
+    "stem": "The ages of a mother and her daughter add up to 56. Four years ago the mother was three times as old as the daughter. How old is the daughter now?",
+    "options": [
+      "12 years",
+      "14 years",
+      "16 years",
+      "40 years"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Let the daughter be d, so the mother is 56 − d. Then 52 − d = 3(d − 4), giving 4d = 64 and d = 16.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-016",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Algebra",
+    "stem": "If a − b = 4 and ab = 21, what is a² + b²?",
+    "options": [
+      "16",
+      "37",
+      "42",
+      "58"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "a² + b² = (a − b)² + 2ab = 16 + 42 = 58. 42 is only 2ab, and 37 adds 16 and 21.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-017",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Time and work",
+    "stem": "15 men can finish a piece of work in 16 days. How many days will 24 men take?",
+    "options": [
+      "10 days",
+      "12 days",
+      "15 days",
+      "25.6 days"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The work is 15 × 16 = 240 man-days, so 24 men need 240 / 24 = 10 days. 25.6 days comes from scaling the wrong way.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-018",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Linear equations",
+    "stem": "If x + y = 17 and x − y = 5, what is xy?",
+    "options": [
+      "60",
+      "66",
+      "72",
+      "85"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Adding the equations: 2x = 22, so x = 11 and y = 6. Then xy = 66.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-019",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Pipes and cisterns",
+    "stem": "Two pipes fill a tank in 12 and 18 minutes. Both run for 3 minutes, then the first is closed. How much longer does the second take to fill the tank?",
+    "options": [
+      "9 minutes",
+      "10.5 minutes",
+      "12 minutes",
+      "15 minutes"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In 3 minutes they fill 3 × (1/12 + 1/18) = 3 × 5/36 = 5/12. The rest, 7/12, at 1/18 a minute takes 7/12 × 18 = 10.5 minutes.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-020",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Quadratic equations",
+    "stem": "What are the roots of x² − 13x + 36 = 0?",
+    "options": [
+      "−4 and −9",
+      "4 and 9",
+      "3 and 12",
+      "6 and 6"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "x² − 13x + 36 = (x − 4)(x − 9), so x = 4 or 9. The roots must add to 13 and multiply to 36; 3 and 12 multiply to 36 but add to 15."
+  },
+  {
+    "id": "RRBJE-T2-021",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Time and distance",
+    "stem": "Trains 130 m and 170 m long run in opposite directions at 50 km/h and 40 km/h. How long do they take to pass each other?",
+    "options": [
+      "12 seconds",
+      "15 seconds",
+      "24 seconds",
+      "108 seconds"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "In opposite directions the speeds add: 90 km/h = 25 m/s. They must cover 130 + 170 = 300 m, which takes 12 s. 108 s uses the difference of the speeds.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-022",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geometry",
+    "stem": "Each exterior angle of a regular polygon is 24°. How many sides does it have?",
+    "options": [
+      "15",
+      "18",
+      "20",
+      "24"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The exterior angles of any polygon add up to 360°, so it has 360 / 24 = 15 sides.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-023",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Time and distance",
+    "stem": "Walking at four-fifths of his usual speed, a man reaches 15 minutes late. What is his usual time for the journey?",
+    "options": [
+      "60 minutes",
+      "75 minutes",
+      "80 minutes",
+      "120 minutes"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "At 4/5 of the speed the time becomes 5/4 of usual, so the extra quarter is 15 minutes and the usual time is 60 minutes. 75 minutes is the late time.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-024",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geometry",
+    "stem": "A 41 m ladder leans against a wall with its foot 9 m from the wall. How high up the wall does it reach?",
+    "options": [
+      "32 m",
+      "40 m",
+      "42 m",
+      "45 m"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "By Pythagoras, the height is √(41² − 9²) = √(1,681 − 81) = √1,600 = 40 m. 32 m is just 41 − 9.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-025",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Boats and streams",
+    "stem": "A boat goes 24 km upstream in 4 hours and the same distance downstream in 3 hours. What is the speed of the stream?",
+    "options": [
+      "1 km/h",
+      "1.5 km/h",
+      "2 km/h",
+      "7 km/h"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Upstream 6 km/h, downstream 8 km/h. The stream speed is half the difference, (8 − 6)/2 = 1 km/h; 7 km/h is the boat's own speed.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-026",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "What is the length of the diagonal of a rectangular yard 60 m long and 45 m wide?",
+    "options": [
+      "75 m",
+      "90 m",
+      "105 m",
+      "210 m"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Diagonal = √(60² + 45²) = √(3,600 + 2,025) = √5,625 = 75 m. 105 m simply adds the sides.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-027",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Mixtures",
+    "stem": "Tea at ₹150 a kg is mixed with tea at ₹200 a kg so that the mixture costs ₹170 a kg. In what ratio are they mixed?",
+    "options": [
+      "4 : 3",
+      "2 : 3",
+      "5 : 2",
+      "3 : 2"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "By alligation, cheaper : dearer = (200 − 170) : (170 − 150) = 30 : 20 = 3 : 2. Reversing it to 2 : 3 is the common slip."
+  },
+  {
+    "id": "RRBJE-T2-028",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Trigonometry",
+    "stem": "If θ is acute and cos θ = 12/37, what is tan θ?",
+    "options": [
+      "12/35",
+      "35/37",
+      "35/12",
+      "37/12"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Opposite side = √(37² − 12²) = √1,225 = 35. So tan θ = opposite / adjacent = 35/12. 35/37 is sin θ.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-029",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Percentages",
+    "stem": "In an election between two candidates, the winner gets 58% of the votes and wins by 2,880 votes. How many votes were polled?",
+    "options": [
+      "16,000",
+      "18,000",
+      "20,000",
+      "24,000"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The loser gets 42%, so the margin is 58 − 42 = 16% of the votes. 16% = 2,880 gives a total of 18,000.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-030",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Statistics",
+    "stem": "What is the mode of 3, 8, 5, 8, 3, 8, 6 and 5?",
+    "options": [
+      "3",
+      "5",
+      "6",
+      "8"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The mode is the value that occurs most often: 8 appears three times, 3 and 5 twice each.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-031",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Analogies",
+    "stem": "Odometer : Distance :: Tachometer : ?",
+    "options": [
+      "Rotation speed",
+      "Fuel level",
+      "Air pressure",
+      "Oil temperature"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "An odometer records distance travelled; a tachometer shows how fast a shaft or engine turns, in revolutions per minute."
+  },
+  {
+    "id": "RRBJE-T2-032",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Relationships",
+    "stem": "R's mother is S, and T is S's only brother. How is T related to R?",
+    "options": [
+      "Maternal uncle",
+      "Cousin",
+      "Father",
+      "Grandfather"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "T is the brother of R's mother, which makes him R's maternal uncle."
+  },
+  {
+    "id": "RRBJE-T2-033",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "7 : 50 :: 11 : ?",
+    "options": [
+      "120",
+      "121",
+      "122",
+      "132"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "50 is 7² + 1, so the answer is 11² + 1 = 122. 121 forgets the +1.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-034",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coded relations",
+    "stem": "P # Q means P is the wife of Q; P @ Q means P is the son of Q; P & Q means P is the sister of Q. If X @ Y # Z, how is Z related to X?",
+    "options": [
+      "Son",
+      "Father",
+      "Uncle",
+      "Brother"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "X @ Y: X is Y's son. Y # Z: Y is Z's wife. So Y is X's mother and her husband Z is X's father."
+  },
+  {
+    "id": "RRBJE-T2-035",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Letter analogy",
+    "stem": "BDH : YWS :: CEG : ?",
+    "options": [
+      "DFH",
+      "XWU",
+      "XVT",
+      "YVT"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Each letter is replaced by its opposite in the alphabet (B↔Y, D↔W, H↔S). The opposites of C, E and G are X, V and T."
+  },
+  {
+    "id": "RRBJE-T2-036",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "In the evening Leela walks straight towards the setting sun, then turns left. Which direction does she face now?",
+    "options": [
+      "West",
+      "North",
+      "East",
+      "South"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The sun sets in the west, so she first walks west. A left turn from west is towards the south."
+  },
+  {
+    "id": "RRBJE-T2-037",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Which is the odd one out: bronze, steel, brass or copper?",
+    "options": [
+      "Bronze",
+      "Steel",
+      "Copper",
+      "Brass"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Bronze, steel and brass are alloys. Copper is a pure element."
+  },
+  {
+    "id": "RRBJE-T2-038",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Directions",
+    "stem": "A man walks 7 km south, turns left and walks 6 km, then turns left again and walks 15 km. How far and in which direction is he from the start?",
+    "options": [
+      "10 km north-east",
+      "14 km north-east",
+      "8 km north",
+      "10 km north-west"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "South 7 km, then left (east) 6 km, then left again (north) 15 km leaves him 8 km north and 6 km east of the start: √(64 + 36) = 10 km to the north-east."
+  },
+  {
+    "id": "RRBJE-T2-039",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Which pair does not follow the rule shared by the others: 2 and 9, 3 and 28, 4 and 65, 5 and 120?",
+    "options": [
+      "4 and 65",
+      "5 and 120",
+      "2 and 9",
+      "3 and 28"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In the others the second number is the cube of the first plus 1: 9, 28, 65. 5³ + 1 is 126, not 120."
+  },
+  {
+    "id": "RRBJE-T2-040",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: No coach is empty. All coaches are clean.\nConclusions: I. Some clean things are not empty. II. All clean things are coaches.",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Every coach is clean and none is empty, so those clean things (the coaches) are not empty (I). 'All coaches are clean' cannot be reversed, so II does not follow.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-041",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next: 3, 10, 31, 94, ?",
+    "options": [
+      "188",
+      "281",
+      "282",
+      "283"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Each term is three times the one before plus 1: 3 × 3 + 1 = 10, 10 × 3 + 1 = 31, 31 × 3 + 1 = 94, so 94 × 3 + 1 = 283.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-042",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Syllogism",
+    "stem": "Statements: All diesel engines are locomotives. All locomotives are vehicles. Some vehicles are old.\nConclusions: I. All diesel engines are vehicles. II. Some vehicles are locomotives.",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Diesel engines sit inside locomotives, which sit inside vehicles, so I follows. Every locomotive is a vehicle, so some vehicles are locomotives and II follows too. The old vehicles say nothing either way.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-043",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Number series",
+    "stem": "What comes next: 0, 6, 24, 60, 120, ?",
+    "options": [
+      "180",
+      "210",
+      "216",
+      "222"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The terms are n³ − n: 1 − 1, 8 − 2, 27 − 3, 64 − 4, 125 − 5. The next is 216 − 6 = 210.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-044",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Ranking",
+    "stem": "In a row, A is 10th from the left and B is 15th from the right. When they swap places, A is 18th from the left. How many people are in the row?",
+    "options": [
+      "25",
+      "31",
+      "32",
+      "33"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "After the swap A stands where B stood: 18th from the left and 15th from the right. Total = 18 + 15 − 1 = 32.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-045",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Alphabet series",
+    "stem": "What comes next: AB, DE, GH, JK, ?",
+    "options": [
+      "MO",
+      "MN",
+      "NO",
+      "LM"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Each pair starts three letters after the last one began (A, D, G, J, M) and the second letter follows the first."
+  },
+  {
+    "id": "RRBJE-T2-046",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Seating arrangement",
+    "stem": "Six people A to F sit round a circular table facing the centre. A is opposite D, B sits next to A, C is opposite B, and E sits next to D. Who sits opposite F?",
+    "options": [
+      "C",
+      "B",
+      "E",
+      "A"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Put A in seat 1 and D in seat 4. B is in seat 2 (or 6), so C is in seat 5 (or 3). E must be next to D in the seat C left free, and F takes the last seat, which is opposite E either way."
+  },
+  {
+    "id": "RRBJE-T2-047",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Coding and decoding",
+    "stem": "If ENGINE is written as FOHJOF in a code, how is TRACK written?",
+    "options": [
+      "USBCL",
+      "SQZBJ",
+      "USBDL",
+      "VTCEM"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Every letter moves one place forward: E→F, N→O, G→H. For TRACK: T→U, R→S, A→B, C→D, K→L."
+  },
+  {
+    "id": "RRBJE-T2-048",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Calendar",
+    "stem": "Today is a Wednesday. Which day of the week will it be 100 days from today?",
+    "options": [
+      "Friday",
+      "Thursday",
+      "Saturday",
+      "Tuesday"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "100 days is 14 weeks and 2 days, so the day moves two forward from Wednesday, to Friday."
+  },
+  {
+    "id": "RRBJE-T2-049",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Coding and decoding",
+    "stem": "In a code language, \"red signal stops\" is \"ka mo ti\", \"green signal moves\" is \"lu ti ra\" and \"red flag\" is \"mo pe\". What is the code for \"stops\"?",
+    "options": [
+      "mo",
+      "ti",
+      "ka",
+      "lu"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "\"signal\" is in the first two phrases and so is \"ti\". \"red\" is in the first and third, and so is \"mo\". The word left in the first phrase, \"stops\", is \"ka\"."
+  },
+  {
+    "id": "RRBJE-T2-050",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Statement and arguments",
+    "stem": "Should mobile phones be banned inside train coaches?\nArguments: I. Yes, some passengers talk loudly and disturb others. II. No, passengers need phones for e-tickets and emergencies.",
+    "options": [
+      "Only argument I is strong",
+      "Only argument II is strong",
+      "Both I and II are strong",
+      "Neither I nor II is strong"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "A nuisance from some users is a reason for etiquette rules, not a ban, so I is weak. II gives a real need the ban would harm, so it is strong.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-051",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mathematical operations",
+    "stem": "If 7 ★ 3 = 40 and 9 ★ 5 = 56, what is 8 ★ 6?",
+    "options": [
+      "2",
+      "14",
+      "28",
+      "100"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "a ★ b = a² − b²: 49 − 9 = 40 and 81 − 25 = 56. So 8 ★ 6 = 64 − 36 = 28; 100 adds the squares instead.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-052",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data sufficiency",
+    "stem": "x is a whole number. Is x even?\nI. 3x is even.\nII. x + 5 is odd.",
+    "options": [
+      "Statement I alone is sufficient",
+      "Statement II alone is sufficient",
+      "Either I or II alone is sufficient",
+      "Both I and II together are needed"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "3x is even only if x is even, so I settles it. x + 5 is odd only if x is even, so II settles it too. Either alone is enough.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-053",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Jumbling",
+    "stem": "Which word can be made using only the letters of LOCOMOTIVE?",
+    "options": [
+      "MOVIES",
+      "TOILETS",
+      "MOTIVE",
+      "VOLUME"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "LOCOMOTIVE has M, O, T, I, V and E, so MOTIVE can be made. MOVIES needs an S, VOLUME a U and TOILETS an S."
+  },
+  {
+    "id": "RRBJE-T2-054",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Data interpretation",
+    "stem": "A depot used 85, 110, 65 and 140 tonnes of steel in four months. What share of the total was used in the fourth month?",
+    "options": [
+      "25%",
+      "30%",
+      "35%",
+      "40%"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Total = 85 + 110 + 65 + 140 = 400 tonnes, and 140 / 400 = 35%.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-055",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Which unit is the odd one out?",
+    "options": [
+      "Litre",
+      "Kilogram",
+      "Kelvin",
+      "Ampere"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Kelvin, ampere and kilogram are SI base units. The litre is a unit of volume accepted for use with SI but is not a base unit."
+  },
+  {
+    "id": "RRBJE-T2-056",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "History",
+    "stem": "The paintings in the Ajanta caves mainly show stories from:",
+    "options": [
+      "Jain Kalpasutra",
+      "The Puranas",
+      "The Mahabharata",
+      "Buddhist Jataka tales"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Ajanta murals illustrate the Jataka tales of the Buddha's earlier lives. Ellora has Buddhist, Hindu and Jain caves."
+  },
+  {
+    "id": "RRBJE-T2-057",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "History",
+    "stem": "Which Chola king sent a naval expedition against the Srivijaya kingdom of South-East Asia?",
+    "options": [
+      "Rajendra I",
+      "Kulottunga I",
+      "Karikala",
+      "Rajaraja I"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Rajendra I, son of Rajaraja I, led the naval campaign against Srivijaya around 1025 and also built Gangaikonda Cholapuram."
+  },
+  {
+    "id": "RRBJE-T2-058",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "The Ilbert Bill controversy of 1883 was about:",
+    "options": [
+      "A tax on salt",
+      "Indian judges trying Europeans",
+      "The vernacular press",
+      "Partition of Bengal"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The Ilbert Bill proposed letting Indian judges try European offenders, and European protest forced it to be watered down."
+  },
+  {
+    "id": "RRBJE-T2-059",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "The Lucknow Pact of 1916 was signed between the Congress and the:",
+    "options": [
+      "Ghadar Party",
+      "Hindu Mahasabha",
+      "Swaraj Party",
+      "Muslim League"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "In 1916 the Congress and the Muslim League agreed on joint demands for reform, including separate electorates."
+  },
+  {
+    "id": "RRBJE-T2-060",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Freedom struggle",
+    "stem": "In which year did the Cripps Mission come to India?",
+    "options": [
+      "1935",
+      "1939",
+      "1940",
+      "1942"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Stafford Cripps came in March 1942 with an offer of dominion status after the war; the Congress rejected it. The Cabinet Mission came in 1946.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-061",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "Since the 44th Amendment, the President can proclaim a national emergency under Article 352 only when the decision is communicated in writing by the:",
+    "options": [
+      "Chief Election Commissioner",
+      "Union Cabinet",
+      "Chief Justice of India",
+      "Lok Sabha Speaker"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Article 352(3), added by the 44th Amendment (1978), lets the President proclaim a national emergency only after the Union Cabinet's decision is communicated in writing."
+  },
+  {
+    "id": "RRBJE-T2-062",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Polity",
+    "stem": "Who presides over a joint sitting of the two Houses of Parliament?",
+    "options": [
+      "Prime Minister",
+      "President",
+      "Vice-President",
+      "Lok Sabha Speaker"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Under Article 108 the President calls a joint sitting, and Article 118 lets the Speaker of the Lok Sabha preside over it."
+  },
+  {
+    "id": "RRBJE-T2-063",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "History",
+    "stem": "Pitt's India Act of 1784 set up which body in Britain to oversee the East India Company?",
+    "options": [
+      "India Council",
+      "Court of Directors",
+      "Board of Control",
+      "Privy Council"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Pitt's India Act created a Board of Control to supervise the Company's political affairs, alongside its Court of Directors. The India Council came after 1858."
+  },
+  {
+    "id": "RRBJE-T2-064",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "The Nathpa Jhakri hydroelectric project is on which river?",
+    "options": [
+      "Ravi",
+      "Beas",
+      "Satluj",
+      "Chenab"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Nathpa Jhakri, in Himachal Pradesh, is on the Satluj. The Bhakra Nangal dam is on the same river further down."
+  },
+  {
+    "id": "RRBJE-T2-065",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "The Duncan Passage separates which two islands?",
+    "options": [
+      "North Andaman and Middle Andaman",
+      "Great Nicobar and Sumatra",
+      "Little Andaman and Car Nicobar",
+      "South Andaman and Little Andaman"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Duncan Passage lies between South Andaman and Little Andaman. The Ten Degree Channel separates Little Andaman from Car Nicobar."
+  },
+  {
+    "id": "RRBJE-T2-066",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Geography",
+    "stem": "Which soil forms where heavy rain leaches away silica and lime, leaving iron and aluminium?",
+    "options": [
+      "Desert soil",
+      "Alluvial soil",
+      "Black soil",
+      "Laterite soil"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Laterite soil forms in hot, very wet areas by intense leaching. It is found on the Western Ghats and in Odisha."
+  },
+  {
+    "id": "RRBJE-T2-067",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "Which body releases India's official GDP estimates?",
+    "options": [
+      "Finance Commission",
+      "Reserve Bank of India",
+      "National Statistics Office",
+      "NITI Aayog"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The National Statistics Office under the Ministry of Statistics and Programme Implementation publishes the GDP estimates."
+  },
+  {
+    "id": "RRBJE-T2-068",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "Which was India's first national park, set up in 1936 as Hailey National Park?",
+    "options": [
+      "Jim Corbett",
+      "Kanha",
+      "Bandipur",
+      "Gir"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Hailey National Park in Uttarakhand was renamed Jim Corbett National Park. Project Tiger began there in 1973."
+  },
+  {
+    "id": "RRBJE-T2-069",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Culture",
+    "stem": "Yakshagana, a form of dance-drama, belongs mainly to which state?",
+    "options": [
+      "Goa",
+      "Karnataka",
+      "Kerala",
+      "Andhra Pradesh"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Yakshagana comes from coastal Karnataka. Kerala's dance-dramas include Kathakali and Theyyam."
+  },
+  {
+    "id": "RRBJE-T2-070",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sports",
+    "stem": "The Nehru Trophy, raced every August on Punnamada Lake in Kerala, is a contest for:",
+    "options": [
+      "Bullock carts",
+      "Camel riders",
+      "Kite flyers",
+      "Snake boats"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The Nehru Trophy Boat Race near Alappuzha is raced by long snake boats (chundan vallam), and is named after Jawaharlal Nehru, who watched a race there in 1952."
+  },
+  {
+    "id": "RRBJE-T2-071",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Motion",
+    "stem": "A car slows from 25 m/s to 5 m/s in 8 seconds. What is its retardation?",
+    "options": [
+      "1.6 m/s²",
+      "2.5 m/s²",
+      "3.1 m/s²",
+      "3.75 m/s²"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Retardation = (25 − 5) / 8 = 2.5 m/s². 3.75 m/s² adds the two speeds before dividing.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-072",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Acids, bases and salts",
+    "stem": "What is the chemical formula of gypsum?",
+    "options": [
+      "CaCO₃",
+      "CaSO₄·2H₂O",
+      "CaSO₄·½H₂O",
+      "CaCl₂"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Gypsum is calcium sulphate dihydrate, CaSO₄·2H₂O. Heated to about 373 K it loses water and becomes Plaster of Paris."
+  },
+  {
+    "id": "RRBJE-T2-073",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Life processes",
+    "stem": "Root hairs take in water from the soil mainly by:",
+    "options": [
+      "Photosynthesis",
+      "Transpiration",
+      "Osmosis",
+      "Translocation"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Water moves from the soil into root hair cells by osmosis, from a weaker to a stronger solution across the cell membrane."
+  },
+  {
+    "id": "RRBJE-T2-074",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Laws of motion",
+    "stem": "The inertia of a body depends on its:",
+    "options": [
+      "Colour",
+      "Speed",
+      "Shape",
+      "Mass"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Inertia is a body's resistance to a change in its motion, and it depends only on mass: a loaded wagon is harder to start than an empty one."
+  },
+  {
+    "id": "RRBJE-T2-075",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Acids, bases and salts",
+    "stem": "Which acid is injected by an ant sting?",
+    "options": [
+      "Citric acid",
+      "Ethanoic acid",
+      "Oxalic acid",
+      "Methanoic acid"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Ants inject methanoic (formic) acid, which is why a mild base such as baking soda eases the sting."
+  },
+  {
+    "id": "RRBJE-T2-076",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life processes",
+    "stem": "A person's blood group (A, B, AB or O) depends on antigens present on the:",
+    "options": [
+      "Platelets",
+      "Red blood cells",
+      "Blood plasma",
+      "White blood cells"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The A and B antigens sit on the surface of red blood cells; the plasma carries the matching antibodies."
+  },
+  {
+    "id": "RRBJE-T2-077",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Pressure",
+    "stem": "A sharp knife cuts better than a blunt one because it:",
+    "options": [
+      "Exerts more force",
+      "Has less friction",
+      "Exerts more pressure",
+      "Is heavier"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The same force acts on a much smaller area, so the pressure is greater. The force itself is the same."
+  },
+  {
+    "id": "RRBJE-T2-078",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Oxidation and reduction",
+    "stem": "In the reaction 2Mg + O₂ → 2MgO, magnesium is:",
+    "options": [
+      "A catalyst",
+      "Reduced",
+      "Neither oxidised nor reduced",
+      "Oxidised"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Magnesium gains oxygen, so it is oxidised. Oxygen is the oxidising agent."
+  },
+  {
+    "id": "RRBJE-T2-079",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Reproduction",
+    "stem": "Which animal can grow a whole new body from small cut pieces, a process called regeneration?",
+    "options": [
+      "Pigeon",
+      "Earthworm egg",
+      "Planaria",
+      "Frog"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Planaria and Hydra regenerate fully from fragments. Most complex animals cannot."
+  },
+  {
+    "id": "RRBJE-T2-080",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Work",
+    "stem": "No work is done by a force when the angle between the force and the displacement is:",
+    "options": [
+      "0°",
+      "45°",
+      "90°",
+      "180°"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Work = Fs cos θ, and cos 90° = 0. At 180° the work is negative, not zero.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-081",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Corrosion",
+    "stem": "Anodising gives a thick protective oxide layer to which metal?",
+    "options": [
+      "Aluminium",
+      "Copper",
+      "Silver",
+      "Iron"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Aluminium is made the anode in electrolysis so its natural oxide coat becomes thicker and can also be dyed."
+  },
+  {
+    "id": "RRBJE-T2-082",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Control and coordination",
+    "stem": "Too little growth hormone in childhood leads to:",
+    "options": [
+      "Dwarfism",
+      "Diabetes",
+      "Goitre",
+      "Scurvy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Growth hormone from the pituitary controls growth; too little causes dwarfism. Goitre is linked to iodine and thyroxine."
+  },
+  {
+    "id": "RRBJE-T2-083",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Electricity",
+    "stem": "In India, the mains electricity supplied to homes is about 220 V at a frequency of:",
+    "options": [
+      "50 Hz",
+      "60 Hz",
+      "100 Hz",
+      "220 Hz"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Household AC supply in India is about 220 V and 50 Hz. Many countries in the Americas use 60 Hz.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-084",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Periodic classification",
+    "stem": "In the modern periodic table, the halogens are in which group?",
+    "options": [
+      "Group 17",
+      "Group 2",
+      "Group 18",
+      "Group 1"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Fluorine, chlorine, bromine and iodine are in Group 17, with 7 outer electrons. Group 18 holds the noble gases."
+  },
+  {
+    "id": "RRBJE-T2-085",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Health",
+    "stem": "Houseflies spread diseases such as cholera mainly by:",
+    "options": [
+      "Carrying germs from filth to food on their bodies",
+      "Laying their eggs under people's skin",
+      "Breathing out poisonous gases near food",
+      "Biting people and injecting germs into the blood"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Houseflies do not bite. They sit on faeces and garbage and then on food, carrying the germs with them, so covering food helps prevent such diseases."
+  },
+  {
+    "id": "RRBJE-T2-086",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heating effect of current",
+    "stem": "Nichrome is used for the heating elements of electric irons because it has:",
+    "options": [
+      "High resistivity and high melting point",
+      "Strong magnetic properties",
+      "Low resistivity and low melting point",
+      "High conductivity and low cost"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "A heating element needs a high resistance to produce heat and must not melt when red hot; nichrome has both properties."
+  },
+  {
+    "id": "RRBJE-T2-087",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Carbon compounds",
+    "stem": "Buckminsterfullerene, C₆₀, is an allotrope of:",
+    "options": [
+      "Sulphur",
+      "Carbon",
+      "Phosphorus",
+      "Silicon"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Diamond, graphite and the fullerenes are all forms of carbon. C₆₀ is shaped like a football."
+  },
+  {
+    "id": "RRBJE-T2-088",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "Who gave the ten per cent law of energy transfer in a food chain?",
+    "options": [
+      "Robert Hooke",
+      "Charles Darwin",
+      "Raymond Lindeman",
+      "Gregor Mendel"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Lindeman showed that only about 10% of energy passes from one trophic level to the next."
+  },
+  {
+    "id": "RRBJE-T2-089",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Lenses",
+    "stem": "An object is placed at 2F in front of a convex lens. What is the image like?",
+    "options": [
+      "Virtual, erect, same size",
+      "Virtual, erect, magnified",
+      "Real, inverted, diminished",
+      "Real, inverted, same size"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "At 2F the image forms at 2F on the other side: real, inverted and the same size as the object."
+  },
+  {
+    "id": "RRBJE-T2-090",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Metallurgy",
+    "stem": "Heating a carbonate ore strongly in a limited supply of air to change it into an oxide is called:",
+    "options": [
+      "Calcination",
+      "Galvanisation",
+      "Roasting",
+      "Smelting"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Calcination drives out carbon dioxide from carbonate ores. Roasting heats sulphide ores in plenty of air."
+  },
+  {
+    "id": "RRBJE-T2-091",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Environment",
+    "stem": "In a pond ecosystem, which of these is a producer?",
+    "options": [
+      "Frog",
+      "Bacteria of decay",
+      "Phytoplankton",
+      "Small fish"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Phytoplankton are tiny green plants that make food by photosynthesis, so they start the pond's food chains."
+  },
+  {
+    "id": "RRBJE-T2-092",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Human eye",
+    "stem": "A person who sees distant objects clearly but cannot read a book held close has:",
+    "options": [
+      "Colour blindness",
+      "Hypermetropia",
+      "Cataract",
+      "Myopia"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "In hypermetropia (long-sightedness) the image of a near object forms behind the retina; a convex lens corrects it."
+  },
+  {
+    "id": "RRBJE-T2-093",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Metals and non-metals",
+    "stem": "German silver is an alloy of copper, zinc and:",
+    "options": [
+      "Silver",
+      "Chromium",
+      "Tin",
+      "Nickel"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Despite its name German silver contains no silver: it is copper, zinc and nickel. Bronze is copper and tin."
+  },
+  {
+    "id": "RRBJE-T2-094",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Control and coordination",
+    "stem": "Which hormone is made by the ovaries?",
+    "options": [
+      "Insulin",
+      "Thyroxine",
+      "Oestrogen",
+      "Testosterone"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The ovaries make oestrogen, which controls female sexual development. Testosterone is made by the testes."
+  },
+  {
+    "id": "RRBJE-T2-095",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Sound",
+    "stem": "Bats find their way in the dark by using:",
+    "options": [
+      "Infrared light",
+      "Infrasonic waves",
+      "Radio waves",
+      "Ultrasonic echoes"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Bats emit ultrasonic squeaks and judge the distance to obstacles from the echoes."
+  },
+  {
+    "id": "RRBJE-T2-096",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mole concept",
+    "stem": "About how many molecules are in one mole of any substance?",
+    "options": [
+      "1.6 × 10⁻¹⁹",
+      "3.011 × 10²³",
+      "6.022 × 10²²",
+      "6.022 × 10²³"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "One mole holds Avogadro's number of particles, about 6.022 × 10²³. 1.6 × 10⁻¹⁹ is the charge on an electron in coulombs."
+  },
+  {
+    "id": "RRBJE-T2-097",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heredity",
+    "stem": "Which pair of sex chromosomes does a human male have?",
+    "options": [
+      "XO",
+      "YY",
+      "XX",
+      "XY"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Males have one X and one Y chromosome; females have two X chromosomes."
+  },
+  {
+    "id": "RRBJE-T2-098",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Work and power",
+    "stem": "One horsepower is about how many watts?",
+    "options": [
+      "100 W",
+      "500 W",
+      "550 W",
+      "746 W"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "1 horsepower is about 746 W. 550 comes from the definition in foot-pounds per second, not watts.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-T2-099",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Acids, bases and salts",
+    "stem": "What colour does methyl orange turn in an acid?",
+    "options": [
+      "Pink",
+      "Red",
+      "Blue",
+      "Yellow"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Methyl orange is red in acids and yellow in bases. Phenolphthalein is the indicator that turns pink in bases."
+  },
+  {
+    "id": "RRBJE-T2-100",
+    "section": "cbt",
+    "test": 2,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Health",
+    "stem": "Typhoid is caused by a:",
+    "options": [
+      "Fungus",
+      "Virus",
+      "Bacterium",
+      "Protozoan"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Typhoid is caused by the bacterium Salmonella typhi, spread through contaminated food and water."
+  },
+  {
+    "id": "RRBJE-D-001",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Compound interest",
+    "stem": "What is the compound interest on ₹8,000 at 5% per annum for 3 years, compounded annually?",
+    "options": [
+      "₹400",
+      "₹1,158",
+      "₹1,200",
+      "₹1,261"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "8,000 × 1.05³ = 8,000 × 1.157625 = ₹9,261, so CI = ₹1,261. ₹1,200 is the simple interest.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-D-002",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number systems",
+    "stem": "What is the cube root of 3,375?",
+    "options": [
+      "13",
+      "15",
+      "17",
+      "25"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "15³ = 15 × 15 × 15 = 225 × 15 = 3,375. 13³ is 2,197 and 17³ is 4,913.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-D-003",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Profit and loss",
+    "stem": "A dealer sells at cost price but uses a 950 g weight in place of 1 kg. What is his gain percent, to one decimal place?",
+    "options": [
+      "4.8%",
+      "5%",
+      "5.3%",
+      "6.3%"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "He gives 950 g for the price of 1,000 g, gaining 50 g on 950 g: 50/950 × 100 = 5.26%, about 5.3%. 5% wrongly divides by 1,000.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-D-004",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Mensuration",
+    "stem": "A cube has a volume of 512 cm³. What is its total surface area?",
+    "options": [
+      "64 cm²",
+      "256 cm²",
+      "384 cm²",
+      "512 cm²"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Side = ∛512 = 8 cm, so the total surface area is 6 × 8² = 384 cm². 256 cm² counts only the four side faces.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-D-005",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnArith",
+    "difficulty": 3,
+    "format": "single",
+    "skill": "Time and distance",
+    "stem": "Walking at 4 km/h, a man is 15 minutes late; at 5 km/h he is 9 minutes early. How far does he walk?",
+    "options": [
+      "6 km",
+      "8 km",
+      "10 km",
+      "16 km"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The two times differ by 24 minutes: d/4 − d/5 = 0.4 hour, so d/20 = 0.4 and d = 8 km.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-D-006",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnMaths",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Heights and distances",
+    "stem": "A pole's shadow is exactly as long as the pole. What is the angle of elevation of the sun?",
+    "options": [
+      "30°",
+      "45°",
+      "60°",
+      "90°"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "tan θ = height / shadow = 1, so θ = 45°. A shorter shadow would mean a higher sun.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-D-007",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Number analogy",
+    "stem": "8 : 63 :: 12 : ?",
+    "options": [
+      "132",
+      "143",
+      "144",
+      "145"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "63 is 8² − 1, so the answer is 12² − 1 = 143.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-D-008",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Relationships",
+    "stem": "Pointing to a boy, Kabir says, \"His mother's brother is my father.\" How is the boy related to Kabir?",
+    "options": [
+      "Uncle",
+      "Brother",
+      "Nephew",
+      "Cousin"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The boy's mother is the sister of Kabir's father, Kabir's aunt, so the boy is the son of Kabir's aunt: his cousin."
+  },
+  {
+    "id": "RRBJE-D-009",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Alphabet series",
+    "stem": "What comes next: Y, U, P, J, ?",
+    "options": [
+      "E",
+      "C",
+      "D",
+      "B"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The letters step back by 4, 5, 6 and then 7: Y (25), U (21), P (16), J (10), then 10 − 7 = 3, which is C."
+  },
+  {
+    "id": "RRBJE-D-010",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Clock",
+    "stem": "What is the angle between the hands of a clock at 4:30?",
+    "options": [
+      "30°",
+      "45°",
+      "60°",
+      "75°"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Angle = |30 × 4 − 5.5 × 30| = |120 − 165| = 45°. 60° forgets that the hour hand is halfway between 4 and 5.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-D-011",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnVerbal",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Classification",
+    "stem": "Which device is the odd one out?",
+    "options": [
+      "Piston",
+      "Screw",
+      "Pulley",
+      "Lever"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Pulley, lever and screw are three of the six simple machines. A piston is a part of an engine or pump."
+  },
+  {
+    "id": "RRBJE-D-012",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnLogical",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Conclusions",
+    "stem": "Statement: The new timetable adds three more trains between two cities.\nConclusions: I. Every seat on the new trains will be booked. II. The older trains on the route will be withdrawn.",
+    "options": [
+      "Only conclusion I follows",
+      "Only conclusion II follows",
+      "Both I and II follow",
+      "Neither I nor II follows"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Adding trains suggests more demand, but not that every seat will be filled (I is too strong). Nothing in the statement says any train is being removed (II).",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-D-013",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Railways",
+    "stem": "India's first electric train ran in February 1925 between Bombay Victoria Terminus and:",
+    "options": [
+      "Pune",
+      "Andheri",
+      "Thane",
+      "Kurla"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "The first electric train ran on 3 February 1925 on the Harbour line from Bombay VT to Kurla."
+  },
+  {
+    "id": "RRBJE-D-014",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Science and technology",
+    "stem": "ISRO's Aditya-L1 mission studies:",
+    "options": [
+      "The Moon",
+      "Venus",
+      "The Sun",
+      "Mars"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Aditya-L1, launched in 2023, observes the Sun from a halo orbit around the first Lagrange point, L1."
+  },
+  {
+    "id": "RRBJE-D-015",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnGA",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Economy",
+    "stem": "The Green Revolution of the 1960s raised output most of all in:",
+    "options": [
+      "Wheat",
+      "Cotton",
+      "Pulses",
+      "Tea"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "High-yielding wheat varieties with irrigation and fertiliser raised wheat output sharply, mostly in Punjab, Haryana and western Uttar Pradesh."
+  },
+  {
+    "id": "RRBJE-D-016",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Human eye",
+    "stem": "For a normal adult eye, the least distance of distinct vision is about:",
+    "options": [
+      "10 cm",
+      "1 m",
+      "25 cm",
+      "50 cm"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Objects closer than about 25 cm cannot be seen clearly without strain; the far point of a normal eye is at infinity."
+  },
+  {
+    "id": "RRBJE-D-017",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Atomic structure",
+    "stem": "How many electrons are in the outermost shell of chlorine (atomic number 17)?",
+    "options": [
+      "1",
+      "5",
+      "7",
+      "8"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Chlorine's configuration is 2, 8, 7, so it has 7 outer electrons and gains one to form Cl⁻.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-D-018",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Reproduction",
+    "stem": "In a flower, pollen grains are produced in the:",
+    "options": [
+      "Sepal",
+      "Anther",
+      "Stigma",
+      "Ovary"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The anther, at the tip of the stamen, makes pollen. The stigma receives it."
+  },
+  {
+    "id": "RRBJE-D-019",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Mirrors",
+    "stem": "A ray of light strikes a mirror along the normal. What is the angle of reflection?",
+    "options": [
+      "0°",
+      "45°",
+      "90°",
+      "180°"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "The angles of incidence and reflection are measured from the normal. A ray along the normal has incidence 0°, so it reflects back along itself at 0°.",
+    "lockedOrder": true
+  },
+  {
+    "id": "RRBJE-D-020",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 1,
+    "format": "single",
+    "skill": "Acids, bases and salts",
+    "stem": "Brine is a concentrated solution of:",
+    "options": [
+      "Sodium carbonate",
+      "Calcium chloride",
+      "Sodium chloride",
+      "Potassium nitrate"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "Brine is a strong solution of common salt, sodium chloride, in water. It is the raw material of the chlor-alkali process."
+  },
+  {
+    "id": "RRBJE-D-021",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life processes",
+    "stem": "In the human body, urea is mainly made in the:",
+    "options": [
+      "Lungs",
+      "Kidneys",
+      "Liver",
+      "Pancreas"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "The liver turns excess amino acids into urea; the kidneys then filter it out of the blood into urine."
+  },
+  {
+    "id": "RRBJE-D-022",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnPhysics",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Motion",
+    "stem": "A body moves in a circle at a constant speed. Its velocity is:",
+    "options": [
+      "Increasing in size",
+      "Changing in direction",
+      "Zero",
+      "Constant"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Velocity has direction, and the direction of motion keeps changing round a circle, so the velocity changes even though the speed does not."
+  },
+  {
+    "id": "RRBJE-D-023",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnChemistry",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Acids, bases and salts",
+    "stem": "Litmus, a common acid-base indicator, is obtained from:",
+    "options": [
+      "Turmeric",
+      "Red cabbage",
+      "Rose petals",
+      "Lichens"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "Litmus is extracted from lichens. Turmeric and red cabbage are other natural indicators."
+  },
+  {
+    "id": "RRBJE-D-024",
+    "section": "cbt",
+    "test": 0,
+    "module": 1,
+    "domain": "inrrnBiology",
+    "difficulty": 2,
+    "format": "single",
+    "skill": "Life processes",
+    "stem": "In which part of the human gut is most digested food absorbed?",
+    "options": [
+      "Large intestine",
+      "Small intestine",
+      "Stomach",
+      "Oesophagus"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "The villi of the small intestine give a huge surface for absorbing digested food. The large intestine mainly absorbs water."
+  }
+]

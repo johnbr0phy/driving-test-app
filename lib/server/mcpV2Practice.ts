@@ -145,6 +145,7 @@ import '@/lib/v2/banks/nda';
 import '@/lib/v2/banks/agniveer';
 import '@/lib/v2/banks/agniveervayu';
 import '@/lib/v2/banks/rrbalp';
+import '@/lib/v2/banks/inrrn';
 import '@/lib/v2/banks/rpfconst';
 import '@/lib/v2/banks/ssccpo';
 import '@/lib/v2/banks/apworld';

@@ -2286,6 +2286,19 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the OSHA Outreach Training Program topics",
     source: { name: "OSHA", url: "https://www.osha.gov/training/outreach" },
   },
+  osha30: {
+    answer:
+      "OSHA 30 is the 30-hour class in OSHA's voluntary Outreach Training Program, meant for workers with some safety responsibility, such as foremen and supervisors. The Construction version covers at least 14 required hours (introduction to OSHA, managing safety and health, the Focus Four hazards, PPE, health hazards, stairways and ladders) plus electives such as scaffolds, excavations, cranes and concrete. OSHA does not require a test; any final exam and pass mark are set by your authorized trainer or online provider. The card comes from that trainer and is not a license.",
+    rows: [
+      { label: "Length", value: "At least 30 hours, 7.5 a day at most" },
+      { label: "Required topics", value: "14 hours (Construction)" },
+      { label: "Final exam", value: "Optional; set by the trainer or provider" },
+      { label: "Versions", value: "Construction and General Industry" },
+      { label: "Card from", value: "OSHA-authorized trainer" },
+    ],
+    basedOn: "OSHA's Outreach Training Program Construction Industry Procedures (revised July 1, 2024)",
+    source: { name: "OSHA", url: "https://www.osha.gov/training/outreach" },
+  },
   forklift: {
     answer:
       "There is no government forklift license in the US. Under OSHA 1910.178 your employer certifies you after formal instruction, hands-on training and a performance evaluation on the truck you will drive, and must re-evaluate you at least every three years. Operators must be at least 18 in non-agricultural jobs.",

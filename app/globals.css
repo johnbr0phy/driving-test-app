@@ -5814,6 +5814,19 @@
     --brand-border-light: 290 15% 89%;
     --brand-gradient-to: 300 15% 96%;
   }
+  /* OSHA 30 theme: muted hard-hat tan */
+  [data-theme="osha30"] {
+    --brand: 30 25% 44%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 30 25% 96%;
+    --brand-hover: 30 25% 38%;
+    --brand-dark: 30 25% 30%;
+    --brand-darker: 30 25% 19%;
+    --brand-muted: 30 20% 70%;
+    --brand-border: 30 20% 80%;
+    --brand-border-light: 30 20% 89%;
+    --brand-gradient-to: 40 20% 96%;
+  }
   /* HVAC journeyman mechanical theme: galvanized duct slate */
   [data-theme="hvacjourney"] {
     --brand: 202 30% 18%;
@@ -13105,6 +13118,15 @@
     --brand-muted: 290 15% 45%;
     --brand-dark: 290 20% 65%;
     --brand-darker: 290 20% 78%;
+  }
+  .dark [data-theme="osha30"] {
+    --brand-light: 30 25% 13%;
+    --brand-gradient-to: 40 20% 11%;
+    --brand-border-light: 30 20% 24%;
+    --brand-border: 30 20% 34%;
+    --brand-muted: 30 20% 45%;
+    --brand-dark: 30 25% 65%;
+    --brand-darker: 30 25% 78%;
   }
   .dark [data-theme="contractorlaw"] {
     --brand: 344 25% 50%;

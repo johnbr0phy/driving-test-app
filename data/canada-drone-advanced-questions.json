@@ -1544,14 +1544,14 @@
     "state": "ALL",
     "questionId": "CADRONEADV-RAD-007",
     "category": "cdaRadio",
-    "question": "Your drone heads toward a busy highway after a fault, but nobody is hurt yet. Which signal fits a radio call?",
+    "question": "Which spoken signal begins an urgency message, the level just below distress?",
     "optionA": "MAYDAY",
     "optionB": "SEELONCE",
     "optionC": "PAN PAN",
     "optionD": "SECURITY",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "PAN PAN is the urgency signal in RIC-21, ranked below distress. MAYDAY is the distress signal, for grave and imminent danger."
+    "explanation": "PAN PAN is the urgency signal in RIC-21, ranked below distress. MAYDAY is the distress signal, for grave and imminent danger, and SEELONCE imposes silence during distress traffic."
   },
   {
     "type": "CADRONEADV",
@@ -2202,14 +2202,14 @@
     "state": "ALL",
     "questionId": "CADRONEADV-OPS-006",
     "category": "cdaOps",
-    "question": "An area has 18 people per square kilometre. How does Part IX classify it?",
-    "optionA": "Populated area",
-    "optionB": "Sparsely populated",
-    "optionC": "Unpopulated area",
-    "optionD": "Densely populated",
+    "question": "Under Part IX, which density makes an area sparsely populated?",
+    "optionA": "Up to 5 per km²",
+    "optionB": "Over 5, up to 25 per km²",
+    "optionC": "Over 25, up to 100 per km²",
+    "optionD": "Over 100 per km²",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "CAR 900.01 calls an area with more than 5 but not more than 25 people per square kilometre sparsely populated."
+    "explanation": "CAR 900.01 defines a sparsely populated area as one with more than 5 but not more than 25 people per square kilometre. The BVLOS site survey under CAR 901.27(h) looks at the distance from populated and sparsely populated areas."
   },
   {
     "type": "CADRONEADV",
@@ -2331,7 +2331,7 @@
     "question": "May one visual observer watch for two drones at the same time?",
     "optionA": "Yes, at any time",
     "optionB": "No, never under any rule",
-    "optionC": "Only under CAR 901.40",
+    "optionC": "Only under 901.40 or an SFOC",
     "optionD": "Only if both are small",
     "correctAnswer": "C",
     "correctIndex": 2,

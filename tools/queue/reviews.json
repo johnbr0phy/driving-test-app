@@ -1784,5 +1784,6 @@
   ],
   "dp900": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1018, "findings": 10 }],
   "danbice": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1016, "findings": 6 }],
-  "cnor": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1020, "findings": 91 }]
+  "cnor": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 1020, "findings": 91 }],
+  "gcppde": [{ "date": "2026-11-23", "kind": "blind review at build", "pr": 0, "findings": 3 }]
 }

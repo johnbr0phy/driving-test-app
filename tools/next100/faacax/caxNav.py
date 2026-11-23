@@ -69,6 +69,6 @@ ITEMS = [
     S(0, 2, "Diversion", "Weather forces a diversion to an alternate. What is a good first step?",
       ["Turn toward the alternate promptly on an estimated heading, then work out distance, time and fuel",
        "Circle over a landmark until you have planned the new leg in full on the chart",
-       "Continue toward the original destination while you plan the diversion"],
+       "Continue toward the original destination while you plan the whole diversion leg"],
       "The ACS (VI.C) and AFH call for turning promptly toward the alternate using a rough heading from the chart, then refining heading, distance, time and fuel once established."),
 ]

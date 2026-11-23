@@ -210,7 +210,7 @@
     "skill": "Wind shear alerts",
     "stem": "What does a low-level wind shear alert system (LLWAS) at an airport do?",
     "options": [
-      "Forecasts wind shear for the next 24 hours",
+      "Forecasts wind shear and microbursts for the airport over the next 24 hours",
       "Measures turbulence in the clouds above the airport with radar",
       "Compares winds from sensors around the airport to detect shear near the runways"
     ],
@@ -351,7 +351,7 @@
     "stem": "Which night requirement must a commercial single-engine applicant log as solo or as the person performing the duties of pilot in command?",
     "options": [
       "3 hours of night VFR with 10 full-stop takeoffs and landings at any public airport",
-      "5 hours of night VFR with 3 takeoffs and 3 landings to a full stop",
+      "5 hours of night VFR with 3 takeoffs and 3 landings to a full stop at any airport",
       "5 hours of night VFR with 10 takeoffs and 10 landings at an airport with an operating control tower"
     ],
     "correct": [
@@ -550,7 +550,7 @@
     "skill": "TAF",
     "stem": "In a terminal aerodrome forecast, what does TEMPO mean?",
     "options": [
-      "A change that will last the rest of the period once it begins",
+      "A change that begins at the stated time and lasts the rest of the forecast period",
       "A permanent change that occurs gradually over the period",
       "Temporary changes, each lasting less than an hour and in total less than half the period"
     ],
@@ -1051,7 +1051,7 @@
     "stem": "In a steep turn, why must you usually hold some aileron against the bank?",
     "options": [
       "The outer wing travels faster and makes more lift, so the bank tends to steepen",
-      "The inner wing travels faster and makes more lift",
+      "The inner wing travels faster and makes more lift, so the bank tends to steepen",
       "Adverse yaw from the rudder rolls the airplane out"
     ],
     "correct": [
@@ -1291,7 +1291,7 @@
     "stem": "You cruise at 12,500 feet MSL over a plateau whose surface is 10,500 feet MSL, outside any Class B, C or Mode C veil. Must your transponder be on?",
     "options": [
       "No, because you are at or below 2,500 feet above the surface",
-      "Yes, because you are above 12,000 feet MSL",
+      "Yes, because any flight above 12,000 feet MSL needs a transponder in Mode C",
       "Yes, because you are above 10,000 feet MSL"
     ],
     "correct": [
@@ -1730,7 +1730,7 @@
     "skill": "Cloud types",
     "stem": "In the morning you see altocumulus castellanus, turret-shaped middle clouds. What does that suggest?",
     "options": [
-      "Fog forming at the surface by evening",
+      "Fog and low stratus forming at the surface by the evening",
       "Instability aloft and possible thunderstorms later in the day",
       "A stable atmosphere with smooth air all day"
     ],
@@ -1752,7 +1752,7 @@
     "options": [
       "About 2 to 3 degrees of bank toward the operating engine with the ball about half out toward it",
       "Wings level with the ball centered and rudder held toward the dead engine",
-      "About 5 degrees of bank toward the inoperative engine"
+      "About 5 degrees of bank toward the inoperative engine with the ball centered"
     ],
     "correct": [
       0
@@ -1852,7 +1852,7 @@
     "options": [
       "Stay at least 500 feet above the glide path until short final",
       "Stay at or above the visual glide path until a lower altitude is needed to land",
-      "Fly the glide path only when the tower asks you to"
+      "Fly the visual glide path only when the tower tells you to use it"
     ],
     "correct": [
       1
@@ -2031,8 +2031,8 @@
     "stem": "A METAR shows SQ. What weather is that?",
     "options": [
       "A squall: a sudden wind increase of at least 16 knots, to 22 knots or more, lasting a minute or longer",
-      "A line of thunderstorms within 10 miles",
-      "A steady wind of 16 knots or more from one direction"
+      "A line of thunderstorms within 10 miles of the station, moving toward it",
+      "A steady wind of 16 knots or more from one direction, with gusts to at least 22 knots"
     ],
     "correct": [
       0
@@ -2211,8 +2211,8 @@
     "stem": "Why can an iced airplane stall without its stall warning sounding first?",
     "options": [
       "Ice raises the stall speed and lowers the critical angle of attack below the warning setting",
-      "Ice makes the stall horn sound only on the ground",
-      "Ice blocks the static ports so airspeed reads high"
+      "Ice on the stall warning vane makes the horn sound only at a lower angle of attack than normal",
+      "Ice blocks the static ports, so the airspeed indicator reads too high near the stall"
     ],
     "correct": [
       0
@@ -2390,7 +2390,7 @@
     "skill": "Thunderstorms",
     "stem": "According to the AIM, which thunderstorms should be regarded as extremely hazardous?",
     "options": [
-      "Only those with lightning seen at night",
+      "Only those with lightning that can be seen from the airplane at night",
       "Any with tops below 20,000 feet",
       "Any with tops at 35,000 feet or higher, seen visually or on radar"
     ],
@@ -3171,7 +3171,7 @@
     "stem": "Sunlight flashing through a turning propeller at about 4 to 20 flashes a second can cause what?",
     "options": [
       "Autokinesis, a light seeming to move",
-      "Hypoxia from reduced oxygen",
+      "Hypoxia, from the propeller disturbing the flow of fresh cabin air",
       "Flicker vertigo, with nausea and in rare cases seizures"
     ],
     "correct": [
@@ -3231,7 +3231,7 @@
     "stem": "A METAR remark reads PK WND 28045/15. What does it mean?",
     "options": [
       "A peak wind from 280 degrees at 45 knots at 15 minutes past the hour",
-      "Wind from 280 degrees at 45 knots for 15 minutes",
+      "Wind from 280 degrees at a steady 45 knots for the last 15 minutes",
       "Wind from 280 degrees at 15 knots, gusting to 45"
     ],
     "correct": [
@@ -3411,7 +3411,7 @@
     "stem": "A cold air mass moves over a much warmer surface. What weather do you expect?",
     "options": [
       "Cumuliform clouds, showers and good visibility outside them",
-      "Smooth air and widespread fog",
+      "Smooth air with widespread fog and low stratus",
       "Stratus, steady drizzle and poor visibility"
     ],
     "correct": [
@@ -3470,7 +3470,7 @@
     "skill": "Controlled firing areas",
     "stem": "Why are controlled firing areas not shown on aeronautical charts?",
     "options": [
-      "They exist only above 18,000 feet MSL",
+      "They exist only above 18,000 feet MSL, in Class A airspace where VFR is not allowed",
       "They are always prohibited to civil aircraft",
       "Their hazardous activity stops whenever an aircraft approaches"
     ],
@@ -3930,7 +3930,7 @@
     "skill": "Payload",
     "stem": "How does payload differ from useful load?",
     "options": [
-      "Payload and useful load are the same thing",
+      "Payload is the same as useful load, and both include the pilot and fuel",
       "Payload is useful load minus usable fuel and required crew",
       "Payload is useful load plus usable fuel"
     ],
@@ -4050,7 +4050,7 @@
     "skill": "Diversion",
     "stem": "Weather forces a diversion to an alternate. What is a good first step?",
     "options": [
-      "Continue toward the original destination while you plan the diversion",
+      "Continue toward the original destination while you plan the whole diversion leg",
       "Circle over a landmark until you have planned the new leg in full on the chart",
       "Turn toward the alternate promptly on an estimated heading, then work out distance, time and fuel"
     ],

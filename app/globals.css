@@ -2313,6 +2313,20 @@
     --brand-gradient-to: 199 80% 96%;
   }
 
+  /* FAA Commercial Pilot theme: steel grey-blue (v2 exam; matches lib/v2/exams/faacax.ts theme) */
+  [data-theme="faacax"] {
+    --brand: 208 10% 42%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 208 10% 96%;
+    --brand-hover: 208 10% 35%;
+    --brand-dark: 208 10% 30%;
+    --brand-darker: 208 10% 20%;
+    --brand-muted: 208 10% 72%;
+    --brand-border: 208 10% 80%;
+    --brand-border-light: 208 10% 89%;
+    --brand-gradient-to: 199 60% 96%;
+  }
+
   /* PSAT theme (v2 exam; matches lib/v2/exams/psat.ts theme) */
   [data-theme="psat"] {
     --brand: 230 50% 28%;
@@ -9662,6 +9676,18 @@
     --brand-muted: 314 40% 45%;
     --brand-dark: 314 100% 65%;
     --brand-darker: 314 90% 78%;
+  }
+
+  .dark [data-theme="faacax"] {
+    --brand: 208 10% 46.2%;
+    --brand-hover: 208 10% 38.2%;
+    --brand-light: 208 10% 13%;
+    --brand-gradient-to: 199 40% 11%;
+    --brand-border-light: 208 10% 24%;
+    --brand-border: 208 10% 34%;
+    --brand-muted: 208 10% 45%;
+    --brand-dark: 208 10% 65%;
+    --brand-darker: 208 10% 78%;
   }
 
   .dark [data-theme="faapvt"] {

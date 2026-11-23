@@ -13,7 +13,7 @@ ITEMS = [
     S(1, 2, "Aeronautical experience", "Which night requirement must a commercial single-engine applicant log as solo or as the person performing the duties of pilot in command?",
       ["5 hours of night VFR with 10 takeoffs and 10 landings at an airport with an operating control tower",
        "3 hours of night VFR with 10 full-stop takeoffs and landings at any public airport",
-       "5 hours of night VFR with 3 takeoffs and 3 landings to a full stop"],
+       "5 hours of night VFR with 3 takeoffs and 3 landings to a full stop at any airport"],
       "14 CFR 61.129(a)(4)(ii) requires 5 hours in night VFR conditions with 10 takeoffs and 10 landings, each in the traffic pattern, at an airport with an operating control tower."),
     S(1, 2, "Part 119 exceptions", "A local business pays you to fly its advertising banner along a beach. Which certificate does this operation need beyond your commercial pilot certificate?",
       ["None, because banner towing is aerial work outside part 119",

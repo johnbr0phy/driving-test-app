@@ -44,7 +44,7 @@ ITEMS = [
       ["You feel higher than you are and fly a lower approach", "You feel lower than you are and fly a higher approach", "You feel slower than you are and add speed"],
       "Without ground detail the eye judges height poorly. The usual result is the illusion of being higher than actual and a lower-than-normal approach (AIM 8-1-5)."),
     S(0, 2, "Flicker vertigo", "Sunlight flashing through a turning propeller at about 4 to 20 flashes a second can cause what?",
-      ["Flicker vertigo, with nausea and in rare cases seizures", "Autokinesis, a light seeming to move", "Hypoxia from reduced oxygen"],
+      ["Flicker vertigo, with nausea and in rare cases seizures", "Autokinesis, a light seeming to move", "Hypoxia, from the propeller disturbing the flow of fresh cabin air"],
       "Light flickering at roughly 4 to 20 cycles per second can cause flicker vertigo. Change the propeller RPM or look away (PHAK chapter 17)."),
     S(0, 2, "Ground lighting illusions", "At night, a line of lights along a straight road can lead you to what error?",
       ["Mistaking the road lights for runway lights", "Thinking you are climbing when you are level", "Believing the airport beacon is a star"],

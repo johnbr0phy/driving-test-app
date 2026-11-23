@@ -71,7 +71,7 @@ ITEMS = [
       ["1,350 feet", "1,500 feet", "1,300 feet"],
       "3,000 feet is halfway between the chart values, so interpolate halfway: 1,200 + (1,500 - 1,200) / 2 = 1,350 feet."),
     S(0, 2, "Payload", "How does payload differ from useful load?",
-      ["Payload is useful load minus usable fuel and required crew", "Payload is useful load plus usable fuel", "Payload and useful load are the same thing"],
+      ["Payload is useful load minus usable fuel and required crew", "Payload is useful load plus usable fuel", "Payload is the same as useful load, and both include the pilot and fuel"],
       "Useful load is maximum weight minus basic empty weight. Payload is what is left for passengers, baggage and cargo after fuel and required crew (FAA-H-8083-1B)."),
     S(0, 2, "Ramp weight", "Why is maximum ramp weight higher than maximum takeoff weight?",
       ["It allows for fuel burned during engine start, taxi and runup", "It allows for baggage loaded after takeoff", "It allows for the weight of ice that may form in flight"],

@@ -22,7 +22,7 @@ ITEMS = [
       "A spin is an aggravated stall with autorotation. Both wings are stalled, but the more deeply stalled wing has less lift and more drag, keeping the rotation going (AFH chapter 5)."),
     # ---------- Practice Test 2 ----------
     S(2, 2, "Overbanking tendency", "In a steep turn, why must you usually hold some aileron against the bank?",
-      ["The outer wing travels faster and makes more lift, so the bank tends to steepen", "The inner wing travels faster and makes more lift", "Adverse yaw from the rudder rolls the airplane out"],
+      ["The outer wing travels faster and makes more lift, so the bank tends to steepen", "The inner wing travels faster and makes more lift, so the bank tends to steepen", "Adverse yaw from the rudder rolls the airplane out"],
       "In bank angles above about 30 degrees the outside wing moves faster through the air and produces more lift, so the airplane tends to overbank (AFH chapter 3)."),
     S(2, 2, "Center of gravity", "How does an aft center of gravity affect an airplane compared with a forward one?",
       ["It is less stable and harder to recover from a stall or spin", "It is more stable, with a higher stall speed and better spin recovery", "It needs more elevator force to raise the nose"],
@@ -34,7 +34,7 @@ ITEMS = [
       ["Recover at once by reducing power on the operating engine and lowering the nose", "Add full power on the operating engine and raise the nose to slow down", "Keep going until directional control is lost"],
       "Recovery begins at the first sign of loss of directional control, stall warning or buffet: reduce power on the operating engine and lower the nose to regain airspeed (ACS X.B)."),
     S(2, 3, "One engine inoperative", "Which attitude gives the least drag when flying a light twin with one engine inoperative?",
-      ["About 2 to 3 degrees of bank toward the operating engine with the ball about half out toward it", "Wings level with the ball centered and rudder held toward the dead engine", "About 5 degrees of bank toward the inoperative engine"],
+      ["About 2 to 3 degrees of bank toward the operating engine with the ball about half out toward it", "Wings level with the ball centered and rudder held toward the dead engine", "About 5 degrees of bank toward the inoperative engine with the ball centered"],
       "Banking slightly toward the operating engine lets part of the lift oppose the rudder's side force, so the airplane flies with zero sideslip and least drag. The ball then sits about halfway toward the operating engine (AFH chapter 13)."),
     S(2, 2, "Climb speeds", "As altitude increases, how do the best angle (VX) and best rate (VY) of climb speeds change?",
       ["VX increases and VY decreases until they meet at the absolute ceiling", "Both stay the same at every altitude", "VX decreases and VY increases until they meet at the service ceiling"],

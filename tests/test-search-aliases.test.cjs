@@ -455,6 +455,8 @@ const CASES = [
   ["data analyst certification", "IN", "dataplus"],
   ["itf+", "US", "techplus"],
   ["it fundamentals", "US", "techplus"],
+  ["commercial pilot written", "US", "faacax"],
+  ["cpl knowledge test", "US", "faacax"],
   ["ccst networking", "US", "ccst"],
   ["cisco certified support technician", "US", "ccst"],
   ["100-150", "US", "ccst"],

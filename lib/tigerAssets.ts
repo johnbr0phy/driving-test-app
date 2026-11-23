@@ -69,6 +69,7 @@ const completedSets = new Set<string>(TIGER_EXAM_IDS);
  */
 const BORROWED_SETS: Record<string, string> = {
   faaifr: "faapvt",
+  faacax: "faapvt",
   deeinb: "aplang",
   carshair: "cosmetology",
   carscook: "foodhandler",

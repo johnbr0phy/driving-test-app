@@ -60,7 +60,7 @@ Q = [
 ("Quelle partie du visage un casque jet laisse-t-il exposée ?",
  "Le menton", ["Le front", "Les oreilles", "La nuque"],
  "Le jet laisse le bas du visage à découvert ; le casque intégral protège aussi le menton et la mâchoire, souvent touchés lors d'une chute."),
-("Un dorsale porté sous le blouson sert à protéger :",
+("Une protection dorsale portée sous le blouson sert à protéger :",
  "La colonne vertébrale", ["Les poignets et les mains", "Les genoux et les tibias", "Les épaules seulement"],
  "Une protection dorsale absorbe une partie du choc sur le dos et protège la colonne vertébrale en cas de chute ou de projection."),
 ("Quel équipement rend le motard plus visible la nuit à l'arrêt ?",

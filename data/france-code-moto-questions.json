@@ -480,14 +480,14 @@
     "state": "ALL",
     "questionId": "FRMOTO-CIR-035",
     "category": "frmotoCirculation",
-    "question": "Un panneau rond blanc à bord rouge affiche 70. Il s'applique jusqu'à :",
-    "optionA": "La fin de la journée",
-    "optionB": "Un kilomètre plus loin",
-    "optionC": "La sortie du virage",
-    "optionD": "Un panneau qui le lève",
+    "question": "Vous arrivez à la fin d'un bouchon sur autoroute. Pour prévenir ceux qui suivent, vous :",
+    "optionA": "Passez en feux de route",
+    "optionB": "Klaxonnez longuement",
+    "optionC": "Roulez sur la bande d'arrêt",
+    "optionD": "Allumez les feux de détresse",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Une limitation de vitesse vaut jusqu'à un panneau de fin d'interdiction, une nouvelle limitation ou l'entrée en agglomération, selon la signalisation."
+    "explanation": "Arrêté du 23 avril 2012, annexe I : le motard avertit les autres d'un risque en utilisant les feux de détresse lorsqu'il est le dernier d'une file ralentie ou arrêtée."
   },
   {
     "type": "FRMOTO",
@@ -1530,7 +1530,7 @@
     "state": "ALL",
     "questionId": "FRMOTO-EQU-020",
     "category": "frmotoEquipement",
-    "question": "Un dorsale porté sous le blouson sert à protéger :",
+    "question": "Une protection dorsale portée sous le blouson sert à protéger :",
     "optionA": "Les poignets et les mains",
     "optionB": "Les genoux et les tibias",
     "optionC": "Les épaules seulement",
@@ -1922,14 +1922,14 @@
     "state": "ALL",
     "questionId": "FRMOTO-MAI-023",
     "category": "frmotoMaitrise",
-    "question": "Pourquoi débrayer brièvement en rétrogradant trop fort à haute vitesse ?",
+    "question": "En freinant, pourquoi rétrograder un rapport à la fois ?",
     "optionA": "Prendre de la vitesse en descente",
     "optionB": "Allumer le feu stop arrière",
     "optionC": "Éviter le blocage arrière",
     "optionD": "Économiser la gomme des pneus",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "Un rétrogradage brutal peut faire glisser ou bloquer la roue arrière. On rétrograde rapport par rapport, régime adapté, embrayage relâché en douceur."
+    "explanation": "Sauter plusieurs rapports d'un coup crée un frein moteur brutal qui peut faire glisser ou bloquer la roue arrière. On rétrograde rapport par rapport, embrayage relâché en douceur."
   },
   {
     "type": "FRMOTO",

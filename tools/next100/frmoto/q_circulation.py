@@ -105,7 +105,7 @@ Q = [
 ("Les indications d'un agent et celles d'un feu se contredisent. Vous suivez :",
  "L'agent", ["Le feu tricolore", "Le panneau fixe", "Le marquage au sol"],
  "Code de la route : les prescriptions des agents de la circulation l'emportent sur les feux, les panneaux et les règles de priorité."),
-("Un panneau rond blanc à bord rouge affiche 70. Il s'applique jusqu'à :",
- "Un panneau qui le lève", ["La fin de la journée", "Un kilomètre plus loin", "La sortie du virage"],
- "Une limitation de vitesse vaut jusqu'à un panneau de fin d'interdiction, une nouvelle limitation ou l'entrée en agglomération, selon la signalisation."),
+("Vous arrivez à la fin d'un bouchon sur autoroute. Pour prévenir ceux qui suivent, vous :",
+ "Allumez les feux de détresse", ["Passez en feux de route", "Klaxonnez longuement", "Roulez sur la bande d'arrêt"],
+ "Arrêté du 23 avril 2012, annexe I : le motard avertit les autres d'un risque en utilisant les feux de détresse lorsqu'il est le dernier d'une file ralentie ou arrêtée."),
 ]

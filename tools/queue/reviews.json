@@ -1772,5 +1772,13 @@
       "pr": 1014,
       "findings": 3
     }
+  ],
+  "ukhs2": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 0,
+      "findings": 9
+    }
   ]
 }

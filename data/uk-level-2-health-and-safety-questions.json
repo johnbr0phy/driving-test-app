@@ -214,14 +214,14 @@
     "state": "ALL",
     "questionId": "UKHS2-LAW-016",
     "category": "hs2Law",
-    "question": "What is the result of ignoring an improvement notice after its deadline?",
-    "optionA": "A verbal warning",
-    "optionB": "A longer deadline",
-    "optionC": "A lower insurance premium",
-    "optionD": "A criminal offence",
+    "question": "A firm is convicted of a health and safety offence. Who sets the penalty?",
+    "optionA": "The inspector",
+    "optionB": "The HSE board",
+    "optionC": "The firm's insurer",
+    "optionD": "The court",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "Failing to comply with an enforcement notice is an offence in its own right and can lead to prosecution."
+    "explanation": "Inspectors investigate and serve notices, but only a court can convict and decide the fine or other penalty."
   },
   {
     "type": "UKHS2",

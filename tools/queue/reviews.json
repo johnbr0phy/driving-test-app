@@ -1654,5 +1654,13 @@
       "pr": 995,
       "findings": 8
     }
+  ],
+  "ccst": [
+    {
+      "date": "2026-11-23",
+      "kind": "blind review at build",
+      "pr": 996,
+      "findings": 8
+    }
   ]
 }

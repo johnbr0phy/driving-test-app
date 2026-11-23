@@ -1,0 +1,4432 @@
+[
+  {
+    "id": "CCST-T1-001",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Network models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "At which OSI layer does a router choose the path for a packet?",
+    "explanation": "Routing on IP addresses is Layer 3, the network layer. Switches forward frames at Layer 2, the data link layer.",
+    "options": [
+      "Data link",
+      "Session",
+      "Network",
+      "Transport"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-T1-002",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "Private and public addresses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which address is a private IPv4 address?",
+    "explanation": "RFC 1918 reserves 10.0.0.0/8, 172.16.0.0/12 (172.16.0.0 to 172.31.255.255) and 192.168.0.0/16. 172.32.0.9 is just outside the /12.",
+    "options": [
+      "172.31.200.4",
+      "11.0.0.5",
+      "172.32.0.9",
+      "192.169.100.1"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T1-003",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Cables and connectors",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which cable joins a desktop PC's network card to an office wall jack?",
+    "explanation": "Office wall jacks are usually copper Ethernet, reached with a short twisted-pair patch cable. Console cables manage network devices, not PCs.",
+    "options": [
+      "Twisted-pair patch cable",
+      "Coaxial drop cable",
+      "Console cable",
+      "Fiber patch cord"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T1-004",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Help desk practice",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put these help desk steps in order for a new problem report:",
+    "explanation": "Log the call first so nothing is lost, gather facts, fix it or pass it on within policy, and finish with notes before closing.",
+    "options": [
+      "Open a ticket",
+      "Collect details from the user",
+      "Resolve or escalate",
+      "Record the outcome and close"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "CCST-T1-005",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Status lights",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On many Cisco switches, what does a port light blinking green mean?",
+    "explanation": "Steady green means a link is up; blinking green means frames are moving on it. An unlit port has no link.",
+    "options": [
+      "Port is disabled by admin",
+      "Power supply has a fault",
+      "Traffic is passing",
+      "No cable is attached"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-T1-006",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Firewalls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A firewall rule list ends with an implicit deny. What happens to traffic no rule permits?",
+    "explanation": "Rules are checked in order and the first match wins. Anything that matches no permit rule falls to the final deny.",
+    "options": [
+      "It is logged only",
+      "It is blocked",
+      "It is allowed",
+      "It is rate limited"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-T1-007",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Network models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the unit of data at the data link layer called?",
+    "explanation": "Layer 2 wraps a packet in a frame with source and destination MAC addresses. The packet is the Layer 3 unit.",
+    "options": [
+      "Bit",
+      "Packet",
+      "Frame",
+      "Segment"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-T1-008",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "Private and public addresses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What lets many hosts with private addresses share one public address to reach the internet?",
+    "explanation": "Network address translation, usually port address translation on a home router, rewrites private source addresses to the router's public address.",
+    "options": [
+      "NAT",
+      "DNS",
+      "ARP",
+      "DHCP"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T1-009",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Cables and connectors",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why is fiber often used between two buildings with separate power supplies?",
+    "explanation": "Copper between buildings can carry ground-potential differences and lightning surges. Glass fiber carries light only, so it isolates the buildings electrically.",
+    "options": [
+      "It carries no electric current",
+      "It is cheaper than copper",
+      "It needs no connectors",
+      "It works without switches"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T1-010",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Help desk practice",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Three tickets arrive at once. Which should a technician work first under a usual priority policy?",
+    "explanation": "Priority follows impact and urgency. An outage affecting many users comes before single-user requests.",
+    "options": [
+      "One slow printer",
+      "Wallpaper question",
+      "New mouse request",
+      "Whole floor offline"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T1-011",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Cabling from a diagram",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An engineer's diagram shows Gi1/0/24 on SW1 cabled to Gi0/0/1 on R1. What does Gi1/0/24 name?",
+    "explanation": "Cisco names an interface by type and number. Gi1/0/24 is GigabitEthernet port 24 on SW1.",
+    "options": [
+      "IP subnet",
+      "Interface on SW1",
+      "VLAN on R1",
+      "Rack position"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-T1-012",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Bandwidth and throughput",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A 1 Gbps link moves only 380 Mbps of real data during a file copy. What is the 380 Mbps figure?",
+    "explanation": "Bandwidth is the most a link can carry. Throughput is what actually gets through once overhead, congestion and the slowest device are counted.",
+    "options": [
+      "Jitter",
+      "Bandwidth",
+      "Latency",
+      "Throughput"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T1-013",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Security concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A file is changed in transit without anyone noticing. Which part of the CIA triad failed?",
+    "explanation": "Integrity means data is not altered without detection. Confidentiality is about who can read it, availability about reaching it when needed.",
+    "options": [
+      "Accounting",
+      "Availability",
+      "Confidentiality",
+      "Integrity"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T1-014",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv4 subnets",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "How many usable host addresses does a /26 subnet have? Type the number only.",
+    "explanation": "A /26 leaves 6 host bits: 2^6 = 64 addresses, minus the network and broadcast addresses, is 62 usable hosts.",
+    "numeric": {
+      "answers": [
+        "62"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CCST-T1-015",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Wired, Wi-Fi and cellular",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A laptop sees the office's 2.4 GHz and 5 GHz networks but never its 6 GHz one. What is the likely reason?",
+    "explanation": "Only Wi-Fi 6E and later radios can use the 6 GHz band, so an older card never sees those networks. IP settings do not decide which bands a radio can hear.",
+    "options": [
+      "6 GHz is a licensed carrier band",
+      "Its Wi-Fi card predates Wi-Fi 6E",
+      "Its IP address is set by hand",
+      "Its DHCP lease has expired"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-T1-016",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Wireshark captures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which file format does Wireshark save captures to by default?",
+    "explanation": "Wireshark has saved to pcapng by default since version 1.8. It can also save the older pcap format used by tcpdump.",
+    "options": [
+      "csv",
+      "txt",
+      "xml",
+      "pcapng"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T1-017",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Ports on network devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which port gives first-time access to a new Cisco switch with no IP address set?",
+    "explanation": "The console port connects a terminal emulator by serial (RJ-45 or USB) and works before any IP settings exist.",
+    "options": [
+      "SFP port",
+      "Console port",
+      "PoE port",
+      "Fiber uplink port"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-T1-018",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Network types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A city links its libraries, schools and offices across town. Which network type is this?",
+    "explanation": "A metropolitan area network covers a town or city. A campus area network joins buildings on one site, such as a university.",
+    "options": [
+      "MAN",
+      "CAN",
+      "PAN",
+      "LAN"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T1-019",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv4 subnets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which subnet mask matches /27?",
+    "explanation": "27 ones means three ones in the last octet: 128 + 64 + 32 = 224, so 255.255.255.224. A /26 is .192 and a /28 is .240.",
+    "options": [
+      "255.255.255.240",
+      "255.255.254.0",
+      "255.255.255.192",
+      "255.255.255.224"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T1-020",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Wired, Wi-Fi and cellular",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why is cellular data called licensed spectrum while Wi-Fi is unlicensed?",
+    "explanation": "Mobile carriers buy rights to their frequencies, so no one else may transmit there. Wi-Fi bands are shared by anyone using approved equipment, within power rules.",
+    "options": [
+      "Cellular needs a user licence",
+      "Carriers pay for exclusive bands",
+      "Wi-Fi follows no rules of any kind",
+      "Cellular is always faster"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-T1-021",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Diagnostic commands",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command shows each router hop on the way to a host from a Windows PC?",
+    "explanation": "Windows names it tracert; Linux and macOS use traceroute. Each line of output is one hop.",
+    "options": [
+      "$\\texttt{tracert}$",
+      "$\\texttt{traceroute}$",
+      "$\\texttt{arp -a}$",
+      "$\\texttt{nslookup}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T1-022",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Topologies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Every switch in a small office plugs into one central switch. Which physical topology is this?",
+    "explanation": "Devices running out from one central point form a star. A bus shares one cable and a ring passes data around a loop.",
+    "options": [
+      "Full mesh",
+      "Bus",
+      "Star",
+      "Ring"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-T1-023",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Ports on network devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A switch's SFP slot is empty. What must go in before a fiber cable can connect?",
+    "explanation": "An SFP slot takes a pluggable transceiver matched to the fiber type and distance. The fiber then plugs into the transceiver.",
+    "options": [
+      "Transceiver module",
+      "Console cable",
+      "PoE injector",
+      "Crossover adapter"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T1-024",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Security concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A login needs a password and a code from a phone app. What is this called?",
+    "explanation": "Two different kinds of factor, something you know and something you have, make MFA. Single sign-on reuses one login across apps.",
+    "options": [
+      "Single sign-on",
+      "Multifactor authentication",
+      "Accounting",
+      "Authorization"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-T1-025",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv4 subnets",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is the broadcast address of the subnet holding 172.20.9.70/27?",
+    "explanation": "A /27 makes blocks of 32 in the last octet: 64 to 95 holds .70, so the broadcast is 172.20.9.95. The .255 answer would be a /24.",
+    "options": [
+      "172.20.9.255",
+      "172.20.9.63",
+      "172.20.9.127",
+      "172.20.9.95"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T1-026",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Endpoint devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which device is an endpoint rather than network infrastructure?",
+    "explanation": "Endpoints are where traffic starts and ends: computers, phones, printers, IoT sensors, servers. Routers, switches and firewalls move or filter it.",
+    "options": [
+      "Router",
+      "Switch",
+      "Firewall",
+      "IP phone"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T1-027",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Diagnostic commands",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Ping to a web server times out, yet its web page loads. What is the likely reason?",
+    "explanation": "Many firewalls drop ICMP echo while allowing HTTPS. A failed ping does not always mean the host is down.",
+    "options": [
+      "The cable is faulty",
+      "The PC has no gateway",
+      "A firewall blocks ICMP",
+      "The DNS server is down"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-T1-028",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Cloud and on-premises",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A bank runs self-service virtual servers in its own data centre for its staff only. Which model is this?",
+    "explanation": "A private cloud gives cloud-style self-service on infrastructure used by one organisation. Hybrid would add a public cloud to it.",
+    "options": [
+      "Private cloud",
+      "Public cloud",
+      "Hybrid cloud",
+      "Community cloud"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T1-029",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Basic routing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A PC sends traffic to a host on another subnet. Where does it send the frame first?",
+    "explanation": "A host compares the destination with its own subnet. A remote address goes to the default gateway, the router that forwards it on.",
+    "options": [
+      "Local DHCP server",
+      "Destination host",
+      "Default gateway",
+      "Primary DNS server"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-T1-030",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv4 subnets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which device separates broadcast domains?",
+    "explanation": "Routers do not forward broadcasts between interfaces, so each interface is its own broadcast domain. Switches flood broadcasts within a VLAN.",
+    "options": [
+      "Router",
+      "Hub",
+      "Unmanaged switch",
+      "Repeater"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T1-031",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Endpoint devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A door sensor reports to a cloud app over Wi-Fi. What kind of endpoint is it?",
+    "explanation": "Internet of Things devices are everyday objects with network connections, often with weak default security that needs checking.",
+    "options": [
+      "IoT device",
+      "Access point",
+      "Thin client",
+      "Server"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T1-032",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Remote access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which protocol gives encrypted command-line access to a switch over the network?",
+    "explanation": "SSH encrypts the whole session on TCP 22. Telnet sends everything, passwords included, in clear text.",
+    "options": [
+      "RDP",
+      "TFTP",
+      "SSH",
+      "Telnet"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-T1-033",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Security concepts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Many fake requests flood a web server until real users cannot reach it. What is this attack?",
+    "explanation": "A denial-of-service attack targets availability by overwhelming the service. Phishing tricks people into giving up data.",
+    "options": [
+      "Spam",
+      "Denial of service",
+      "Ransomware",
+      "Phishing"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-T1-034",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Applications and protocols",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which transport protocol has less overhead because it sends no acknowledgements?",
+    "explanation": "UDP adds only a small header and never waits for acknowledgements. TCP acknowledges data and resends what is lost.",
+    "options": [
+      "TCP",
+      "UDP",
+      "ICMP",
+      "ARP"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-T1-035",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Basic switching",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does a switch fill its MAC address table?",
+    "explanation": "A switch learns by reading the source MAC of each frame and noting the port it came in on.",
+    "options": [
+      "From source MACs of frames",
+      "From destination IP addresses",
+      "From DNS replies it receives",
+      "From the DHCP server's leases"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T1-036",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv6 addresses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which prefix marks an IPv6 link-local address?",
+    "explanation": "RFC 4291 gives link-local unicast the FE80::/10 prefix. FF00::/8 is multicast and FC00::/7 is unique local.",
+    "options": [
+      "FE80::/10",
+      "2000::/3",
+      "FF00::/8",
+      "FC00::/7"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T1-037",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Checking connectivity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On Windows, which command clears the PC's stored DNS answers?",
+    "explanation": "ipconfig /flushdns empties the DNS resolver cache, so the next lookup goes back to the DNS server. /renew asks DHCP for a new lease.",
+    "options": [
+      "$\\texttt{ipconfig /renew}$",
+      "$\\texttt{ipconfig /flushdns}$",
+      "$\\texttt{nslookup -d}$",
+      "$\\texttt{netstat -r}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-T1-038",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Show commands",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command lists each port with its IP address and up or down status in one short table?",
+    "explanation": "show ip interface brief gives one line per interface with address, status and protocol. show running-config prints the whole configuration.",
+    "options": [
+      "$\\texttt{show running-config}$",
+      "$\\texttt{show version}$",
+      "$\\texttt{show ip interface brief}$",
+      "$\\texttt{show inventory}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-T1-039",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Applications and protocols",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which DNS record type maps a name to an IPv4 address?",
+    "explanation": "An A record holds an IPv4 address and an AAAA record an IPv6 address. MX points to mail servers and CNAME is an alias for another name.",
+    "options": [
+      "A record",
+      "MX record",
+      "CNAME record",
+      "AAAA record"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T1-040",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Wireless security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which security mode should a new home router use when every device supports it?",
+    "explanation": "WPA3 is the current Wi-Fi Alliance standard and resists password-guessing attacks better than WPA2. WEP and original WPA are broken.",
+    "options": [
+      "WPA-Personal",
+      "WPA3-Personal",
+      "Open network",
+      "WEP"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-T1-041",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Basic switching",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Two ports are in different VLANs on the same switch. How do their hosts reach each other?",
+    "explanation": "Each VLAN is its own broadcast domain and subnet. Traffic between VLANs needs Layer 3 routing.",
+    "options": [
+      "They share a broadcast",
+      "Directly through the switch",
+      "Through a hub",
+      "Via Layer 3 routing"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T1-042",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv6 addresses",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is 2001:0db8:0000:0000:0000:00a0:0000:0001 written in its shortest correct form?",
+    "explanation": "Drop leading zeros in each group and replace the single longest run of zero groups with ::. A second :: is not allowed, and 00a0 shortens to a0, not a.",
+    "options": [
+      "2001:db8::a:0:1",
+      "2001:db8::a0::1",
+      "2001:db8:a0::1",
+      "2001:db8::a0:0:1"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T1-043",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Checking connectivity",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "A laptop will not join a Wi-Fi network. Which two settings must match the network? (Choose two.)",
+    "explanation": "The client needs the right network name and the same security mode, such as WPA2 or WPA3 Personal, plus the right passphrase.",
+    "options": [
+      "Time zone",
+      "Screen resolution",
+      "SSID",
+      "Host name",
+      "Security type"
+    ],
+    "correct": [
+      2,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "CCST-T1-044",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Show commands",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A switch prompt ends in # instead of >. What does that mean?",
+    "explanation": "Switch> is user EXEC with limited commands. After enable, Switch# is privileged EXEC. Config modes show (config) in the prompt.",
+    "options": [
+      "User EXEC mode",
+      "Privileged EXEC mode",
+      "Interface config mode",
+      "Global config mode"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-T1-045",
+    "section": "ccst",
+    "test": 1,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Applications and protocols",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Match each protocol to what it does:",
+    "explanation": "NTP synchronises clocks, TFTP is a simple file transfer over UDP with no authentication, and DHCP leases addresses, masks, gateways and DNS servers.",
+    "rows": [
+      "NTP",
+      "TFTP",
+      "DHCP"
+    ],
+    "columns": [
+      "Copies files with no login",
+      "Keeps device clocks in step",
+      "Hands out IP settings"
+    ],
+    "correct": [
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "id": "CCST-T2-001",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Network models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which OSI layer adds port numbers so data reaches the right application?",
+    "explanation": "Layer 4, the transport layer, uses TCP or UDP port numbers to deliver data to a process. Layer 3 delivers to a host.",
+    "options": [
+      "Presentation",
+      "Transport",
+      "Network",
+      "Physical"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-T2-002",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "Private and public addresses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which address block is private under RFC 1918?",
+    "explanation": "10.0.0.0/8 is one of the three private blocks. 169.254.0.0/16 is link-local, 127.0.0.0/8 is loopback and 100.64.0.0/10 is carrier shared space.",
+    "options": [
+      "169.254.0.0/16",
+      "127.0.0.0/8",
+      "100.64.0.0/10",
+      "10.0.0.0/8"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T2-003",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Cables and connectors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which cable is most affected by electrical noise near motors and fluorescent lights?",
+    "explanation": "Unshielded twisted pair relies on twisting alone, so strong EMI can corrupt it. Shielding helps, and fiber carries light that EMI cannot touch.",
+    "options": [
+      "UTP copper",
+      "Multimode fiber",
+      "Single-mode fiber",
+      "STP copper"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T2-004",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Help desk practice",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should a technician record every step taken in the ticket?",
+    "explanation": "Accurate, complete notes let the next technician pick up the work and help spot repeat problems.",
+    "options": [
+      "It closes faster",
+      "It skips approval",
+      "Others can follow the history",
+      "It hides mistakes"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-T2-005",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Status lights",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On many Cisco switches, what does a steady amber port light usually mean?",
+    "explanation": "Amber points to a problem or a blocked or disabled port, for example one held by spanning tree or shut down by an error.",
+    "options": [
+      "PoE is on",
+      "Port is not forwarding",
+      "Normal link",
+      "Traffic at full line speed"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-T2-006",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Firewalls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which details does a basic firewall rule match to permit or deny traffic?",
+    "explanation": "Packet-filtering rules match source and destination address, protocol such as TCP or UDP, and port number.",
+    "options": [
+      "Cable colour",
+      "User's job title",
+      "Addresses, protocol and port",
+      "Screen resolution"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-T2-007",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Network models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "The TCP/IP model's internet layer lines up with which OSI layer?",
+    "explanation": "The TCP/IP internet layer, where IP works, matches OSI Layer 3. Its network access layer covers OSI Layers 1 and 2.",
+    "options": [
+      "Transport",
+      "Application",
+      "Data link",
+      "Network"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T2-008",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "Address classes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Under classful addressing, which class does 150.20.4.9 belong to?",
+    "explanation": "A first octet of 128 to 191 is Class B, with a default mask of 255.255.0.0. Class A is 1 to 126 and Class C is 192 to 223.",
+    "options": [
+      "Class B",
+      "Class A",
+      "Class C",
+      "Class D"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T2-009",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Cables and connectors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the usual maximum run for twisted-pair Ethernet?",
+    "explanation": "Copper Ethernet channels are specified up to 100 metres. Longer runs need a switch in between or fiber.",
+    "options": [
+      "30 m",
+      "100 m",
+      "500 m",
+      "1,000 m"
+    ],
+    "correct": [
+      1
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "CCST-T2-010",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Troubleshooting method",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A fix works for the user. What should happen before the ticket is closed?",
+    "explanation": "Verify the whole system works, including anything the fix could affect, then document cause and fix. Escalation is for problems beyond the technician's scope.",
+    "options": [
+      "Escalate to a senior network engineer",
+      "Change the user's password",
+      "Confirm full function and document",
+      "Restart every switch"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-T2-011",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Cabling from a diagram",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A rack diagram puts the heaviest UPS at the bottom. Why?",
+    "explanation": "Heavy gear low in a rack keeps the centre of gravity down so it will not tip. Rack elevation drawings show each device's position.",
+    "options": [
+      "Shortens patch cables",
+      "Reduces interference",
+      "Cools the switches",
+      "Stops it tipping over"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T2-012",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Bandwidth and throughput",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user wants to measure throughput between two hosts on the company LAN only. Which tool fits?",
+    "explanation": "iperf runs as a server on one host and a client on the other, so it measures the path between them. A web speed test measures to an internet server.",
+    "options": [
+      "iperf",
+      "nslookup",
+      "Online speed test",
+      "Wireshark filter"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T2-013",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Security concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "In AAA, which part decides what a logged-in user may do?",
+    "explanation": "Authentication proves who you are, authorization sets what you may access, and accounting records what you did.",
+    "options": [
+      "Authorization",
+      "Authentication",
+      "Auditing",
+      "Accounting"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T2-014",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv4 subnets",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "How many usable host addresses does a /22 subnet have? Type the number only.",
+    "explanation": "A /22 leaves 10 host bits: 2^10 = 1024 addresses, minus network and broadcast, is 1022 hosts.",
+    "numeric": {
+      "answers": [
+        "1022"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CCST-T2-015",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Cables and connectors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which small push-in fiber connector with a latch is found on most SFP modules?",
+    "explanation": "LC is the small-form-factor fiber connector used on most SFP modules. ST is round with a twist-lock bayonet.",
+    "options": [
+      "LC",
+      "BNC",
+      "RJ-45",
+      "ST"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T2-016",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Wireshark captures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why would a technician run a packet analyser such as Wireshark?",
+    "explanation": "A packet analyser captures and decodes traffic so you can see which protocols, addresses and errors are actually present.",
+    "options": [
+      "Speed up the link",
+      "Assign IP addresses to new hosts",
+      "See the frames on the wire",
+      "Block attacks"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-T2-017",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Ports on network devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which kind of port can power a wireless access point over its data cable?",
+    "explanation": "A PoE switch port supplies DC power with the data. Console, USB and serial ports do not power an access point.",
+    "options": [
+      "Console",
+      "Serial WAN port",
+      "USB",
+      "PoE Ethernet"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T2-018",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Bandwidth and throughput",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which term is the time a packet takes to travel from source to destination?",
+    "explanation": "Latency, or delay, is measured in milliseconds. Bandwidth and throughput are rates, measured in bits per second.",
+    "options": [
+      "Throughput",
+      "Bandwidth",
+      "Latency",
+      "Duplex"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-T2-019",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv4 subnets",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which network does host 10.44.7.200/26 belong to?",
+    "explanation": "A /26 makes blocks of 64: 0, 64, 128 and 192. 200 falls in the block that starts at 192.",
+    "options": [
+      "10.44.7.128/26",
+      "10.44.7.224/26",
+      "10.44.7.0/26",
+      "10.44.7.192/26"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T2-020",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Wired, Wi-Fi and cellular",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Wi-Fi band reaches farthest through walls?",
+    "explanation": "Lower frequencies pass through walls better. Higher bands carry more data but lose range.",
+    "options": [
+      "6 GHz",
+      "All reach equally",
+      "2.4 GHz",
+      "5 GHz"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-T2-021",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Diagnostic commands",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command tests whether a name resolves to an IP address?",
+    "explanation": "nslookup queries DNS directly and shows the server used and the answer. ipconfig /renew asks DHCP for a new lease.",
+    "options": [
+      "$\\texttt{nslookup}$",
+      "$\\texttt{netstat}$",
+      "$\\texttt{ipconfig /renew}$",
+      "$\\texttt{ping -n 1}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T2-022",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Network types",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "A phone, smartwatch and earbuds talk over Bluetooth. Which network type is this?",
+    "explanation": "A personal area network links devices within a few metres of one person. A WLAN is a building-scale Wi-Fi network.",
+    "options": [
+      "PAN",
+      "WLAN",
+      "MAN",
+      "LAN"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T2-023",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Basic routing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a Layer 3 switch do that a Layer 2 switch cannot?",
+    "explanation": "A Layer 3 switch adds routing by IP address. Both kinds learn MACs and switch frames, and both support VLANs.",
+    "options": [
+      "Route between subnets",
+      "Learn MAC addresses from frames",
+      "Hold VLANs",
+      "Forward frames"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T2-024",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Security concepts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which central store holds user accounts and groups for a Windows domain?",
+    "explanation": "Active Directory is an identity store: devices and services check logins and group membership against it.",
+    "options": [
+      "MAC address table",
+      "DHCP scope options",
+      "Active Directory",
+      "DNS resolver cache"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-T2-025",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv4 subnets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which prefix length matches the mask 255.255.255.248?",
+    "explanation": "248 is 11111000, five ones after the first 24, so 29 bits. 255.255.255.252 would be /30.",
+    "options": [
+      "/30",
+      "/27",
+      "/28",
+      "/29"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T2-026",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Wired, Wi-Fi and cellular",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which household device most often interferes with 2.4 GHz Wi-Fi?",
+    "explanation": "Microwave ovens leak energy near 2.45 GHz, right in the band. Cordless phones and Bluetooth also share 2.4 GHz.",
+    "options": [
+      "Microwave oven",
+      "Electric toothbrush",
+      "LED desk lamp",
+      "Smart TV remote"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T2-027",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Diagnostic commands",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Ping by IP address works but ping by name fails. Where is the problem most likely?",
+    "explanation": "Reaching the host by address proves the path works, so the name lookup is what fails.",
+    "options": [
+      "Default gateway",
+      "Switch port",
+      "DNS",
+      "Cabling"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-T2-028",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Topologies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Cables form a star, but traffic is passed from station to station in order. Which logical topology does it use?",
+    "explanation": "Physical topology is how cables run; logical topology is how data flows. A star of cables can carry a logical ring, as token ring did.",
+    "options": [
+      "Bus",
+      "Ring",
+      "Mesh",
+      "Star"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-T2-029",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Basic routing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where does a router look to choose the exit interface for a packet?",
+    "explanation": "The routing table lists known networks and the interface or next hop for each. A switch's MAC address table works at Layer 2 instead.",
+    "options": [
+      "Routing table",
+      "ARP cache",
+      "MAC address table",
+      "DNS cache"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T2-030",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv4 subnets",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A host has 192.168.40.77 with mask 255.255.255.192. Which address is on the same subnet?",
+    "explanation": "The /26 block holding .77 runs from .64 to .127, so .100 is local. .60 is in the block below and .130 in the block above.",
+    "options": [
+      "192.168.40.130",
+      "192.168.41.77",
+      "192.168.40.60",
+      "192.168.40.100"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T2-031",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Endpoint devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which endpoint usually needs a fixed IP address so others can always find it?",
+    "explanation": "Servers and network printers get static or reserved addresses so their address never changes. Ordinary clients take whatever DHCP gives.",
+    "options": [
+      "File server",
+      "Visitor phone",
+      "Guest laptop",
+      "Tablet"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T2-032",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Remote access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which method lets an engineer manage branch switches from a web dashboard with no on-site controller?",
+    "explanation": "Cloud-managed gear, such as Cisco Meraki, phones home to a vendor cloud where it is configured and monitored.",
+    "options": [
+      "Serial link",
+      "Cloud-managed networking",
+      "Telnet",
+      "Console cable at each site"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-T2-033",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Security concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An email asks a user to sign in at a link to keep their account open. What should the user do?",
+    "explanation": "This is a typical phishing lure. Reporting it lets IT warn others and block the sender; clicking or replying gives the attacker what they want.",
+    "options": [
+      "Reply to ask if it is real",
+      "Forward it to coworkers",
+      "Click to check the site",
+      "Report it and not click"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T2-034",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Cloud and on-premises",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Staff work from home some days and in the office on others. What is this arrangement called?",
+    "explanation": "Hybrid work splits time between home and office, so staff need secure remote access such as a VPN and cloud apps.",
+    "options": [
+      "Hybrid work",
+      "Remote-only work",
+      "Hot desking",
+      "Shift work"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T2-035",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Basic switching",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A switch receives a broadcast frame on a port in VLAN 10. Where does it send it?",
+    "explanation": "Broadcasts are flooded to every port in the same VLAN except the one they came in on. Ports in other VLANs never see them.",
+    "options": [
+      "Every other port in VLAN 10",
+      "Back out the same port",
+      "Only the router port",
+      "Every port on the switch"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T2-036",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv6 addresses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which IPv6 address is the loopback address?",
+    "explanation": "RFC 4291 sets ::1/128 as loopback. :: alone is the unspecified address, and FF02::1 is the all-nodes multicast group.",
+    "options": [
+      "FF02::1",
+      "FE80::1",
+      "::1",
+      "::"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-T2-037",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Checking connectivity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On Linux or macOS, which command pings a host exactly four times and stops?",
+    "explanation": "On Linux and macOS, -c sets the count. Windows uses -n for the count, and -t pings until stopped.",
+    "options": [
+      "$\\texttt{ping -n 4}$",
+      "$\\texttt{ping -a}$",
+      "$\\texttt{ping -c 4}$",
+      "$\\texttt{ping -t}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-T2-038",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Show commands",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command lists directly connected Cisco devices and the ports they use?",
+    "explanation": "Cisco Discovery Protocol learns its neighbours' names, platforms and local and remote ports.",
+    "options": [
+      "$\\texttt{show ip route}$",
+      "$\\texttt{show mac address-table}$",
+      "$\\texttt{show version}$",
+      "$\\texttt{show cdp neighbors}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T2-039",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Applications and protocols",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which protocol do ping and traceroute rely on for their messages?",
+    "explanation": "Ping sends ICMP echo requests and waits for echo replies. Traceroute reads the ICMP time exceeded messages each router sends back; Linux traceroute sends UDP probes by default, but the replies it relies on are ICMP.",
+    "options": [
+      "UDP",
+      "TFTP",
+      "NTP",
+      "ICMP"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T2-040",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Wireless security",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A company wants each employee to log in to Wi-Fi with their own account. Which mode fits?",
+    "explanation": "Enterprise mode checks each user against an authentication server. Personal mode shares one passphrase among everyone.",
+    "options": [
+      "WPA3-Personal",
+      "Open with captive portal",
+      "WPA2-Personal",
+      "WPA3-Enterprise"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-T2-041",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Basic switching",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "An admin allows only listed device MACs on a switch port. What is this control called?",
+    "explanation": "MAC filtering, often called port security on Cisco switches, permits only known addresses. MACs can be spoofed, so it is not strong security alone.",
+    "options": [
+      "MAC address filtering",
+      "NAT",
+      "VLAN tagging",
+      "Dynamic port forwarding"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-T2-042",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv6 addresses",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "How many 16-bit groups make up a full IPv6 address? Type the number only.",
+    "explanation": "IPv6 addresses are 128 bits written as 8 groups of 16 bits, each group as four hex digits separated by colons.",
+    "numeric": {
+      "answers": [
+        "8"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CCST-T2-043",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Checking connectivity",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "Put these checks in order for a PC that cannot reach a website, starting close to the PC:",
+    "explanation": "Work outward: own address first, then the gateway, then the internet by IP, and only then name resolution. Each step proves the one before it.",
+    "options": [
+      "Confirm it has an IP address",
+      "Ping the default gateway",
+      "Ping a public IP address",
+      "Look up the site name"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "CCST-T2-044",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Show commands",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Read this output:\n\n$$\\begin{array}{l}\\texttt{Interface\\ \\ \\ \\ IP-Address\\ \\ \\ Status\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ Protocol}\\\\\\texttt{Gi0/0\\ \\ \\ \\ \\ \\ \\ \\ 10.1.1.1\\ \\ \\ \\ \\ up\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ up}\\\\\\texttt{Gi0/1\\ \\ \\ \\ \\ \\ \\ \\ 10.1.2.1\\ \\ \\ \\ \\ down\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ down}\\\\\\texttt{Gi0/2\\ \\ \\ \\ \\ \\ \\ \\ unassigned\\ \\ \\ administratively down down}\\end{array}$$\n\nWhich interface has a cable problem or nothing attached?",
+    "explanation": "down/down with an address means no physical link. Gi0/2 is administratively down: it was shut down on purpose, not a cable fault.",
+    "options": [
+      "Gi0/2",
+      "All three",
+      "Gi0/1",
+      "Gi0/0"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-T2-045",
+    "section": "ccst",
+    "test": 2,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Applications and protocols",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two protocols encrypt the data they carry? (Choose two.)",
+    "explanation": "HTTPS uses TLS and SFTP runs inside SSH, so both encrypt. FTP, TFTP and HTTP send data, and FTP even passwords, in clear text.",
+    "options": [
+      "HTTPS",
+      "SFTP",
+      "FTP",
+      "TFTP",
+      "HTTP"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2
+  },
+  {
+    "id": "CCST-D-001",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Help desk practice",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A user reports the same fault that was fixed last week. What should the technician check first?",
+    "explanation": "Ticket history shows what was found and changed last time, which often points straight to why the fault came back.",
+    "options": [
+      "The office floor plan",
+      "The user's browser history",
+      "Every switch's uptime",
+      "Earlier tickets for it"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-002",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Network models",
+    "difficulty": 2,
+    "format": "order",
+    "stem": "Put the TCP/IP model layers in order from the bottom up:",
+    "explanation": "The four-layer TCP/IP model runs network access (OSI 1 and 2), internet (IP), transport (TCP and UDP) and application (OSI 5 to 7).",
+    "options": [
+      "Network access",
+      "Internet",
+      "Transport",
+      "Application"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-003",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "Private and public addresses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which address could be routed on the public internet?",
+    "explanation": "The other three sit in the RFC 1918 private ranges, which internet routers drop. 8.20.14.3 is outside all of them.",
+    "options": [
+      "172.18.5.5",
+      "10.250.1.1",
+      "192.168.200.9",
+      "8.20.14.3"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-004",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Firewalls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A rule blocks inbound TCP port 3389 at the edge. Which service is shut off from the internet?",
+    "explanation": "RDP listens on TCP 3389. Blocking it at the edge keeps remote desktop off the internet while users still browse out.",
+    "options": [
+      "Web browsing",
+      "Email sending",
+      "Remote Desktop",
+      "DNS lookups"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-005",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Cables and connectors",
+    "difficulty": 1,
+    "format": "single",
+    "stem": "Which connector does a landline phone cable use?",
+    "explanation": "RJ-11 is the narrow phone plug with fewer pins. It fits in an RJ-45 jack but not the other way around.",
+    "options": [
+      "RJ-45",
+      "SC",
+      "USB-C",
+      "RJ-11"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-006",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Status lights",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A newly patched port's light stays off. What should be checked first?",
+    "explanation": "No light means no physical link. Reseat or swap the cable and confirm the far device is powered and its port enabled.",
+    "options": [
+      "Antivirus",
+      "DNS settings",
+      "Routing table",
+      "Cable seated at both ends"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-007",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Help desk practice",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A problem is beyond what a support technician is allowed to change. What is the right step?",
+    "explanation": "Policies set what each tier may do. Escalating with the steps already taken saves the engineer from repeating them.",
+    "options": [
+      "Escalate with full notes",
+      "Close the ticket",
+      "Try changes anyway",
+      "Tell the user to wait"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-008",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Network models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "When a host sends data, what happens as it moves down the layers?",
+    "explanation": "Sending is encapsulation: each layer wraps what it got from above with its own header. The receiver reverses this, decapsulation.",
+    "options": [
+      "Each layer strips a header",
+      "Only Layer 7 adds data",
+      "The data is compressed",
+      "Each layer adds a header"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-009",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "Private and public addresses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A PC shows 169.254.33.10 and cannot reach anything. What most likely happened?",
+    "explanation": "Windows and other systems pick a 169.254.x.x link-local address when they ask for DHCP and get no answer. Check the DHCP server or the link.",
+    "options": [
+      "No DHCP reply arrived",
+      "NAT failed",
+      "DNS is wrong",
+      "Its gateway is down"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-010",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Firewalls",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why might a stateful firewall let a reply in even with no inbound permit rule?",
+    "explanation": "A stateful firewall records connections started from inside and allows their matching return traffic.",
+    "options": [
+      "Replies skip all rules",
+      "It tracks the outbound session",
+      "It trusts all TCP",
+      "It ignores ports"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-D-011",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Cables and connectors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which cable type carries cable-TV internet to a home's modem?",
+    "explanation": "Cable broadband arrives on coax with F-type connectors. Fiber-to-the-home uses fiber instead.",
+    "options": [
+      "Twisted pair",
+      "Coaxial",
+      "Serial",
+      "Single-mode fiber"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-D-012",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Status lights",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A port light turns green after a short amber period when a PC connects. What does that usually show?",
+    "explanation": "Spanning tree briefly holds a new port, often shown amber, before it starts forwarding and turns green.",
+    "options": [
+      "PC has a virus",
+      "Port checked, now forwarding",
+      "Cable is faulty",
+      "Port is overloaded by PoE draw"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-D-013",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Help desk practice",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What helps a technician ask the user useful questions?",
+    "explanation": "Recent changes, error messages and who else is affected point most quickly to a cause.",
+    "options": [
+      "Their job title",
+      "Office floor colour",
+      "What changed recently",
+      "User's favourite apps"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-014",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Network models",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which OSI layer covers cables, voltages and connectors?",
+    "explanation": "Layer 1 defines the signals and the media they travel on. Layer 2 handles framing and MAC addressing.",
+    "options": [
+      "Network",
+      "Presentation",
+      "Physical",
+      "Data link"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-015",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "Private and public addresses",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "With port address translation, how does the router tell apart replies for two inside hosts?",
+    "explanation": "PAT gives each inside session its own source port on the public address and keeps a table to map replies back to the right host.",
+    "options": [
+      "By MAC address",
+      "By TTL value",
+      "By VLAN tag",
+      "By port number"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-016",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Firewalls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Rules are checked from top to bottom. What happens once a packet matches one?",
+    "explanation": "First match wins, so a broad permit placed above a specific deny can let unwanted traffic through. Order matters.",
+    "options": [
+      "That rule's action applies",
+      "The packet is logged twice",
+      "The list restarts",
+      "Every rule is still read"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-017",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Cables and connectors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why are the wire pairs in UTP cable twisted?",
+    "explanation": "Twisting makes noise affect both wires of a pair alike, so it cancels out, and it cuts crosstalk between pairs.",
+    "options": [
+      "To mark the pairs",
+      "To carry power",
+      "To cancel interference",
+      "To make the cable stronger"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-018",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Status lights",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Who usually tells an on-site technician which status lights to read on a Cisco device?",
+    "explanation": "A support technician reads lights and reports them as a remote engineer directs, which saves sending an engineer to site.",
+    "options": [
+      "A network engineer",
+      "The DHCP server",
+      "The end user",
+      "The ISP's billing team"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-019",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Troubleshooting method",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A technician's first theory proved wrong. What does the method say to do next?",
+    "explanation": "If testing does not confirm the cause, go back, form another theory and test again, or escalate.",
+    "options": [
+      "Document a fix",
+      "Replace all hardware",
+      "Form a new likely cause",
+      "Close the ticket"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-020",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Network models",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which address does a switch read to decide where a frame goes?",
+    "explanation": "A Layer 2 switch looks up the destination MAC address in its table. IP addresses are read by routers at Layer 3.",
+    "options": [
+      "Destination IP",
+      "Destination MAC",
+      "Source port",
+      "Source IP"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-D-021",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "Address classes",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the default mask of a Class C network?",
+    "explanation": "Class C (first octet 192 to 223) uses 24 network bits by default. Class B uses 255.255.0.0 and Class A 255.0.0.0.",
+    "options": [
+      "255.255.0.0",
+      "255.255.255.128",
+      "255.255.255.0",
+      "255.0.0.0"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-022",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Firewalls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where does a host-based firewall run?",
+    "explanation": "A host-based firewall, such as the one built into Windows or macOS, filters traffic for that one device. A network firewall protects a whole segment.",
+    "options": [
+      "On the DNS server",
+      "In the patch panel",
+      "On the computer itself",
+      "On the ISP's router"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-023",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Cables and connectors",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "When is multimode fiber the usual pick over single-mode?",
+    "explanation": "Multimode is cheaper to drive with LEDs or VCSELs but spreads light, so it suits a few hundred metres. Long runs need single-mode.",
+    "options": [
+      "Short runs inside a building",
+      "Runs over 40 km",
+      "Undersea cables",
+      "Long links between two cities"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-024",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Cabling from a diagram",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a patch panel do in a wiring closet?",
+    "explanation": "Wall runs end on the back of a patch panel; short patch cables then link its front ports to switch ports.",
+    "options": [
+      "Assigns addresses",
+      "Routes traffic between the VLANs",
+      "Filters traffic",
+      "Ends cable runs for patching"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-025",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Wireshark captures",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which Wireshark filter shows only DNS traffic in a capture already taken?",
+    "explanation": "A display filter hides packets after capture. Typing dns shows only DNS queries and responses.",
+    "options": [
+      "$\\texttt{port 80}$",
+      "$\\texttt{dns}$",
+      "$\\texttt{arp}$",
+      "$\\texttt{icmp}$"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-D-026",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Bandwidth and throughput",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which change raises a link's bandwidth?",
+    "explanation": "Bandwidth is the link's capacity, set by the interface and media speed. Fewer users may raise throughput but not the capacity.",
+    "options": [
+      "Faster interface speed",
+      "Shorter host names on clients",
+      "Lower latency on the path",
+      "Fewer users on the segment"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-027",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "Address classes",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which first-octet range is Class D, used for multicast?",
+    "explanation": "Class D runs from 224 to 239 and carries multicast groups. 240 and up was Class E, reserved.",
+    "options": [
+      "240 to 255",
+      "192 to 223",
+      "224 to 239",
+      "128 to 191"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-028",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Security concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which CIA goal does encryption mainly protect?",
+    "explanation": "Encryption keeps data unreadable to anyone without the key. Hashes and signatures protect integrity.",
+    "options": [
+      "Availability",
+      "Integrity",
+      "Non-repudiation",
+      "Confidentiality"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-029",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Cables and connectors",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which fiber connector is round with a twist-lock bayonet?",
+    "explanation": "ST locks with a quarter twist. SC is square and push-pull, and LC is the small latching connector.",
+    "options": [
+      "ST",
+      "MT-RJ",
+      "SC",
+      "LC"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-030",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Cabling from a diagram",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why do modern switch ports work with either straight-through or crossover cables?",
+    "explanation": "Auto-MDIX detects the wiring and swaps transmit and receive pairs, so the cable type no longer matters.",
+    "options": [
+      "Auto-MDIX",
+      "Port security",
+      "PoE",
+      "Full duplex"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-031",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Wireshark captures",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A technician saved a capture for an engineer. What does the engineer open it with?",
+    "explanation": "pcap and pcapng files are read by packet analysers such as Wireshark or tcpdump.",
+    "options": [
+      "A web browser",
+      "A word processor",
+      "A packet analyser",
+      "The switch console"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-032",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Bandwidth and throughput",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A video call stutters although the speed test shows plenty of bandwidth. What most likely varies?",
+    "explanation": "Real-time traffic suffers when delay changes from packet to packet, called jitter. High bandwidth alone does not stop it.",
+    "options": [
+      "Wrong IP address class",
+      "Delay between packets",
+      "Cable category in the walls",
+      "DNS suffix on the laptop"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-D-033",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv4 subnets",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "How many usable host addresses does a /23 subnet have? Type the number only.",
+    "explanation": "A /23 leaves 9 host bits: 2^9 = 512 addresses, minus 2, gives 510 hosts.",
+    "numeric": {
+      "answers": [
+        "510"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CCST-D-034",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Security concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What lets a browser trust that a website is really the site it claims to be?",
+    "explanation": "The site presents a certificate signed by a trusted authority, which the browser checks before showing the padlock.",
+    "options": [
+      "Cache",
+      "Digital certificate",
+      "Cookie",
+      "Bookmark"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-D-035",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Cables and connectors",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Match each connector to its cable:",
+    "explanation": "RJ-45 terminates twisted-pair Ethernet, F-type screws onto coax, and SC is a square push-pull fiber connector.",
+    "rows": [
+      "RJ-45",
+      "F-type",
+      "SC"
+    ],
+    "columns": [
+      "Coaxial",
+      "Twisted pair",
+      "Fiber"
+    ],
+    "correct": [
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-036",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Cabling from a diagram",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A diagram shows two power supplies on one switch, each on a different circuit. What is the aim?",
+    "explanation": "Redundant supplies on separate circuits or PDUs keep the switch running when one supply or feed fails.",
+    "options": [
+      "Power more PoE",
+      "Cool the rack",
+      "Double the port speed",
+      "Stay up if one fails"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-037",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Diagnostic commands",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does each numbered line of traceroute output stand for?",
+    "explanation": "Each line is a hop: a router that answered as the probe's TTL ran out, with its round-trip times. Asterisks mean that hop sent no reply.",
+    "options": [
+      "One router hop",
+      "One DNS lookup",
+      "One switch port",
+      "One lost packet"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-038",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Network types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A university connects its library, labs and dorms on one site. Which network type is this?",
+    "explanation": "A campus area network joins buildings on one property. A WAN spans cities or countries.",
+    "options": [
+      "CAN",
+      "PAN",
+      "MAN",
+      "WAN"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-039",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv4 subnets",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A subnet must hold 30 hosts. What is the longest prefix that still fits them?",
+    "explanation": "A /27 has 5 host bits, 32 - 2 = 30 usable hosts, exactly enough. A /28 gives only 14; a /26 works but wastes addresses.",
+    "options": [
+      "/27",
+      "/26",
+      "/28",
+      "/29"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-040",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Security concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which password is strongest?",
+    "explanation": "Length and unpredictability matter most. Common words with a year or keyboard runs fall quickly to guessing attacks.",
+    "options": [
+      "Password123",
+      "qwerty",
+      "Summer2026",
+      "River-lamp-Quilt-88"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-041",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Wired, Wi-Fi and cellular",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An access point's datasheet lists 802.11ax. What does that tell you?",
+    "explanation": "802.11 is the IEEE family for wireless LANs, and 802.11ax is Wi-Fi 6. Wired Ethernet is 802.3, VLAN tagging is 802.1Q and Bluetooth grew from 802.15.",
+    "options": [
+      "How it tags VLAN frames",
+      "Which Bluetooth version it has",
+      "Which Wi-Fi standard it supports",
+      "Which Ethernet cable it needs"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-042",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Diagnostic commands",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a reply to ping 127.0.0.1 prove?",
+    "explanation": "127.0.0.1 is the loopback address, so the reply never leaves the host. It tests only the host's own TCP/IP software.",
+    "options": [
+      "The internet is up",
+      "The default gateway answers",
+      "DNS works",
+      "The local IP stack works"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-043",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Cabling from a diagram",
+    "difficulty": 3,
+    "format": "order",
+    "stem": "Put these steps in order when adding a switch to a rack from an engineer's diagram:",
+    "explanation": "Mount first, then power, then cable to the diagram's port map, and finally confirm links by reading the lights back to the engineer.",
+    "options": [
+      "Mount it in the marked rack units",
+      "Connect power",
+      "Patch cables to the listed ports",
+      "Report the port lights"
+    ],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-044",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Network types",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A Wi-Fi network covers one office floor. Which network type is it?",
+    "explanation": "A wireless LAN serves a building or floor over Wi-Fi. A PAN reaches only a few metres around one person.",
+    "options": [
+      "WLAN",
+      "CAN",
+      "PAN",
+      "WAN"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-045",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv4 subnets",
+    "difficulty": 3,
+    "format": "numeric",
+    "stem": "How many usable host addresses does a /19 subnet have? Type the number only.",
+    "explanation": "A /19 leaves 13 host bits: 2^13 = 8192 addresses, minus 2, is 8190 hosts.",
+    "numeric": {
+      "answers": [
+        "8190"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CCST-D-046",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Security concepts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "In AAA, which step comes first when a user logs in?",
+    "explanation": "The system must first confirm who the user is. Only then can it decide what they may do and log what they did.",
+    "options": [
+      "Auditing",
+      "Authorization",
+      "Authentication",
+      "Accounting"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-047",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Wired, Wi-Fi and cellular",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A laptop shows full Wi-Fi bars but slow speeds next to many neighbours' networks. What is the likely cause?",
+    "explanation": "Signal strength can be good while many networks share the same channel. Moving to a less crowded channel or to 5 GHz helps.",
+    "options": [
+      "Bad RJ-45 pins in the jack",
+      "Wrong subnet mask on laptop",
+      "Channel congestion",
+      "Expired certificate"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-048",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Diagnostic commands",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A traceroute shows asterisks for one middle hop but the target still answers. What does that suggest?",
+    "explanation": "Many routers are set not to answer traceroute probes. Later hops answering show the path still works.",
+    "options": [
+      "That hop ignores probes",
+      "The target host went down",
+      "The cable is loose",
+      "DNS is broken"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-049",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Ports on network devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which port type links routers over older leased lines such as T1?",
+    "explanation": "Serial WAN interfaces carried point-to-point leased circuits. Ethernet and fiber hand-offs have mostly replaced them.",
+    "options": [
+      "Serial",
+      "SFP",
+      "Console",
+      "PoE"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-050",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Topologies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which topology gives every device a direct link to every other device?",
+    "explanation": "A full mesh has the most redundancy and the most cabling. A partial mesh links only some pairs directly.",
+    "options": [
+      "Full mesh",
+      "Partial mesh",
+      "Star",
+      "Bus"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-051",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv4 subnets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the longest prefix that still gives at least 100 usable hosts?",
+    "explanation": "A /25 has 7 host bits, so 128 - 2 = 126 hosts. A /26 gives only 62.",
+    "options": [
+      "/27",
+      "/24",
+      "/26",
+      "/25"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-052",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Security concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which sign best shows that ransomware, not a failing disk, has hit a shared drive?",
+    "explanation": "Ransomware encrypts files, often adds a new extension and leaves a note asking for payment. A failing disk gives read errors and noises, not a ransom demand.",
+    "options": [
+      "Slow file copies at busy times",
+      "A clicking noise from the server",
+      "One file that will not open",
+      "Renamed files and a payment note"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-053",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Wired, Wi-Fi and cellular",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which connection gives a phone internet with no Wi-Fi nearby?",
+    "explanation": "Cellular data uses the carrier's licensed network. Bluetooth and NFC reach only centimetres to metres.",
+    "options": [
+      "Bluetooth",
+      "Ethernet",
+      "NFC",
+      "Cellular data"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-054",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Diagnostic commands",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which Windows command prints the PC's routing table?",
+    "explanation": "route print (or netstat -r) lists the routes the PC knows, including the default route to its gateway. arp -a shows the IP-to-MAC cache.",
+    "options": [
+      "$\\texttt{tracert -d}$",
+      "$\\texttt{ipconfig /all}$",
+      "$\\texttt{arp -a}$",
+      "$\\texttt{route print}$"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-055",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Ports on network devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On a Cisco router, what can a USB port be used for besides the console?",
+    "explanation": "Many Cisco devices accept a USB flash drive to copy IOS images or configurations, and some offer a USB console.",
+    "options": [
+      "Powering an access point over PoE",
+      "Joining VLANs",
+      "Loading files from a flash drive",
+      "Routing traffic"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-056",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Topologies",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which drawing shows how data flows and how networks are addressed, not where cables run?",
+    "explanation": "A logical diagram shows subnets, VLANs and traffic paths. A physical diagram shows devices, ports and cable runs.",
+    "options": [
+      "Physical diagram",
+      "Floor plan",
+      "Rack elevation",
+      "Logical diagram"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-057",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv4 subnets",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which network address does 192.168.33.150/25 sit on?",
+    "explanation": "A /25 splits the last octet into 0 to 127 and 128 to 255. 150 is in the upper half, which starts at .128.",
+    "options": [
+      "192.168.33.192",
+      "192.168.33.144",
+      "192.168.33.0",
+      "192.168.33.128"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-058",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Security concepts",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is the difference between a threat and a vulnerability?",
+    "explanation": "A vulnerability is a weakness, such as an unpatched service. A threat is someone or something that could exploit it.",
+    "options": [
+      "Threat exploits a weakness",
+      "Threats are only software",
+      "They mean the same",
+      "Vulnerability attacks a threat"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-059",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Wired, Wi-Fi and cellular",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why does a wired desktop usually get steadier speeds than the same PC on Wi-Fi?",
+    "explanation": "A switch port gives one host a full-duplex link. Wi-Fi clients share airtime and face interference and distance loss.",
+    "options": [
+      "Copper is always 10 Gbps",
+      "Wired skips the router",
+      "Wi-Fi uses no encryption",
+      "Its own full-duplex link"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-060",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Remote access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which tool reaches a Windows server's full desktop remotely?",
+    "explanation": "Remote Desktop Protocol, TCP 3389, carries a graphical session. SSH and Telnet give text sessions.",
+    "options": [
+      "Telnet",
+      "SNMP",
+      "SSH",
+      "RDP"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-061",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Topologies",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A star network needs one more PC. What does adding it take?",
+    "explanation": "In a star each host has its own cable to the central switch, so a new PC just needs a run to a spare port. Other hosts keep working while it is added.",
+    "options": [
+      "Shutting down every other host",
+      "One cable to a free switch port",
+      "A second router for the new PC",
+      "Cutting into the main backbone cable"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-D-062",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv4 subnets",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is the broadcast address for 10.9.16.40/22?",
+    "explanation": "A /22 spans four third-octet values in blocks of 4: 16 to 19. The last address of that block is 10.9.19.255.",
+    "options": [
+      "10.9.17.255",
+      "10.9.16.255",
+      "10.9.19.255",
+      "10.9.23.255"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-063",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Security concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "How does a phishing email differ from ordinary spam?",
+    "explanation": "Spam is unwanted bulk mail, usually adverts. Phishing pretends to be a trusted sender to trick the reader into giving up passwords or data, with or without an attachment.",
+    "options": [
+      "It always carries an attachment",
+      "It only arrives by phone call",
+      "It comes from a single sender",
+      "It tries to steal logins or data"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-064",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Ports on network devices",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Match each port to its typical use:",
+    "explanation": "The console port is for direct management, SFP slots take fiber or copper modules for uplinks, and PoE ports power phones and access points.",
+    "rows": [
+      "Console",
+      "SFP",
+      "PoE"
+    ],
+    "columns": [
+      "Fiber uplink",
+      "Powering a phone",
+      "Local management"
+    ],
+    "correct": [
+      2,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "CCST-D-065",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Remote access",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What runs on a laptop to open an SSH or console session to a switch?",
+    "explanation": "Terminal emulators such as PuTTY or the built-in terminal open SSH, Telnet or serial console sessions.",
+    "options": [
+      "Terminal emulator",
+      "Spreadsheet",
+      "Packet capture analyser",
+      "Web browser"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-066",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Endpoint devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A desk phone gets power and data through one network cable. What makes that possible?",
+    "explanation": "Power over Ethernet sends DC power on the same cable from a PoE switch or injector, so the phone needs no wall adapter.",
+    "options": [
+      "Crossover wiring",
+      "PoE",
+      "QoS",
+      "NAT"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-D-067",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Cloud and on-premises",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A staff member uses a browser-based word processor the vendor hosts and updates. Which service model is this?",
+    "explanation": "Software as a Service is a finished application used over the internet. The user manages only their files and settings.",
+    "options": [
+      "SaaS",
+      "IaaS",
+      "PaaS",
+      "Hybrid"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-068",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv4 subnets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which mask matches /18?",
+    "explanation": "18 bits is 16 in the first two octets plus 2 in the third: 128 + 64 = 192, so 255.255.192.0. A /26 would put .192 in the last octet instead.",
+    "options": [
+      "255.255.128.0",
+      "255.255.224.0",
+      "255.255.255.192",
+      "255.255.192.0"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-069",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Security concepts",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Match each MFA factor to its type:",
+    "explanation": "A PIN is knowledge, a token is possession and a fingerprint is inherence, a biometric.",
+    "rows": [
+      "PIN",
+      "Hardware token",
+      "Fingerprint"
+    ],
+    "columns": [
+      "Something you are",
+      "Something you have",
+      "Something you know"
+    ],
+    "correct": [
+      2,
+      1,
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-070",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Basic routing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does a host compare to decide whether a destination is local or remote?",
+    "explanation": "Applying its subnet mask to both addresses tells the host whether they share a network. If not, it uses the default gateway.",
+    "options": [
+      "Its own address and mask",
+      "Its DNS server",
+      "Its MAC address and port",
+      "Its host name"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-071",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Remote access",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which kind of system polls many network devices and shows alerts on one screen?",
+    "explanation": "A network management system collects status, often by SNMP, and alerts when a device or link fails.",
+    "options": [
+      "DHCP server",
+      "Network management system",
+      "Network address translator",
+      "Terminal emulator on a laptop"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-D-072",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Endpoint devices",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A laptop's browser requests a web page. What role does the laptop play?",
+    "explanation": "The device that asks for a service is the client; the one that answers is the server. A laptop can be either, depending on what it runs.",
+    "options": [
+      "Client",
+      "Router",
+      "Server",
+      "Access point"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-073",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Cloud and on-premises",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is a drawback of running services on premises instead of in a public cloud?",
+    "explanation": "On premises, the company pays for servers, power and space itself. It keeps full control of the data, which is a benefit, not a drawback.",
+    "options": [
+      "Needs internet to work",
+      "Shared with other tenants",
+      "No control of data",
+      "Buying hardware up front"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-074",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv4 subnets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which prefix length matches 255.255.252.0?",
+    "explanation": "252 is 11111100, six ones, added to 16 gives 22 bits.",
+    "options": [
+      "/22",
+      "/21",
+      "/24",
+      "/23"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-075",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Security concepts",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A server is down for hours after a power cut. Which CIA goal is hurt?",
+    "explanation": "Availability means systems and data are reachable when needed. UPS units and redundancy protect it.",
+    "options": [
+      "Authorization",
+      "Availability",
+      "Integrity",
+      "Confidentiality"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-D-076",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Basic routing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A PC can reach hosts on its own subnet but nothing beyond it. What is most likely wrong?",
+    "explanation": "Local traffic works without a gateway. A missing or wrong default gateway stops only remote traffic.",
+    "options": [
+      "Switch MAC table",
+      "Wi-Fi channel band",
+      "Default gateway",
+      "Cable category rating"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-077",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Remote access",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why might an engineer use a script to collect data from devices?",
+    "explanation": "Scripts run the same show commands across many devices and save the output, which is faster and repeatable.",
+    "options": [
+      "To get around device encryption",
+      "To replace a console cable",
+      "Run commands on many devices",
+      "To skip logging in"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-078",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Endpoint devices",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Why are IoT cameras often placed on their own network segment?",
+    "explanation": "Many IoT devices get few security updates and ship with weak defaults. A separate segment limits what an attacker reaches if one is taken over.",
+    "options": [
+      "They are hard to patch",
+      "They need more bandwidth than PCs",
+      "They cannot use DHCP",
+      "They block printers"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-079",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Cloud and on-premises",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A remote worker reaches office servers through an encrypted tunnel over home internet. What provides it?",
+    "explanation": "A virtual private network encrypts traffic between the worker and the office. A VLAN divides a switch into separate LANs.",
+    "options": [
+      "DHCP",
+      "VLAN",
+      "VPN",
+      "NAT"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-080",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv4 subnets",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does the slash in 10.4.0.0/16 tell you?",
+    "explanation": "Slash notation, or CIDR notation, counts the ones in the subnet mask. /16 means 255.255.0.0.",
+    "options": [
+      "Number of usable host addresses",
+      "Number of hosts",
+      "Number of network bits",
+      "Network address class"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-081",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Wireless security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why should WPS be turned off on a home router?",
+    "explanation": "Wi-Fi Protected Setup's eight-digit PIN is checked in two halves, so it can be brute-forced. Turning WPS off removes that way in.",
+    "options": [
+      "It hides the SSID",
+      "Its PIN can be guessed",
+      "It blocks guest access",
+      "It slows the Wi-Fi"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-D-082",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Show commands",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command shows the software release and uptime?",
+    "explanation": "show version gives the software release, uptime, model and memory. show inventory lists hardware parts and serial numbers.",
+    "options": [
+      "$\\texttt{show interfaces}$",
+      "$\\texttt{show inventory}$",
+      "$\\texttt{show version}$",
+      "$\\texttt{show cdp neighbors}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-083",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Basic routing",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which route does a router use when nothing more specific matches?",
+    "explanation": "The default route, 0.0.0.0/0, catches all traffic with no better match, usually toward the internet.",
+    "options": [
+      "Default route",
+      "Connected route",
+      "Loopback route",
+      "Host route"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-084",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Checking connectivity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On macOS, where does a user see the Wi-Fi IP address without a terminal?",
+    "explanation": "System Settings, Network, then the Wi-Fi details show the IP address, router and DNS. Terminal users can run ifconfig.",
+    "options": [
+      "Activity Monitor",
+      "Disk Utility window",
+      "Network settings",
+      "Keychain Access app"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-085",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Applications and protocols",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which protocol gives a host its IP address, mask and default gateway automatically?",
+    "explanation": "Dynamic Host Configuration Protocol leases IP settings. DNS only resolves names.",
+    "options": [
+      "NTP",
+      "DHCP",
+      "ICMP",
+      "DNS"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-D-086",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv4 subnets",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Two hosts on one switch have the same mask but different subnet addresses. What do they need to talk?",
+    "explanation": "Hosts on different subnets send traffic to their default gateway, which routes it. The same switch alone does not join two subnets.",
+    "options": [
+      "A crossover cable",
+      "A second switch",
+      "A longer mask",
+      "A router"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-087",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Wireless security",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A home router offers WPA2/WPA3 mixed mode. Why choose it?",
+    "explanation": "Transition mode lets WPA3 clients use WPA3 while older WPA2-only devices keep working. Pure WPA3 would lock them out.",
+    "options": [
+      "It removes the need for a passphrase",
+      "Older devices can still join",
+      "It doubles the speed",
+      "It hides the SSID"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-D-088",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Show commands",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which command lists the MAC addresses a switch has learned and their ports?",
+    "explanation": "show mac address-table lists each learned MAC with its VLAN and port.",
+    "options": [
+      "$\\texttt{show mac address-table}$",
+      "$\\texttt{show ip route}$",
+      "$\\texttt{show version}$",
+      "$\\texttt{show running-config}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-089",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Basic routing",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A router has routes to 10.1.0.0/16 and 10.1.5.0/24. Which does it use for 10.1.5.9?",
+    "explanation": "Routers prefer the longest matching prefix. The /24 is more specific than the /16, so it wins.",
+    "options": [
+      "10.1.0.0/16",
+      "Both in turn",
+      "10.1.5.0/24",
+      "Neither"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-090",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Checking connectivity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On an Android phone, where is the Wi-Fi IP address shown?",
+    "explanation": "Tap the connected Wi-Fi network in Settings to see its IP address, gateway and signal. iPhones show the same under the network's info icon.",
+    "options": [
+      "Details of the joined network",
+      "Network usage settings",
+      "Display settings",
+      "Battery and power saving settings"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-091",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Applications and protocols",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Why does live video often use UDP instead of TCP?",
+    "explanation": "A resent frame arrives too late to show, so the lighter, connectionless UDP suits live media. UDP does not encrypt anything.",
+    "options": [
+      "UDP encrypts the stream",
+      "TCP cannot carry video",
+      "Late resends are useless",
+      "UDP checks for errors more"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-092",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv6 addresses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which IPv6 prefix covers multicast addresses?",
+    "explanation": "Every IPv6 multicast address starts with FF, so FF00::/8 holds them all. IPv6 has no broadcast; multicast groups such as FF02::1 do that job.",
+    "options": [
+      "FC00::/7",
+      "2000::/3",
+      "FE80::/10",
+      "FF00::/8"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-093",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Wireless security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What should be changed first on a new home router?",
+    "explanation": "Default admin credentials are published online. Changing them stops anyone on the network from taking over the router.",
+    "options": [
+      "DHCP lease time for clients",
+      "Brightness of the status LED",
+      "Wi-Fi channel width setting",
+      "Default admin password"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-094",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Show commands",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which command shows a router's known networks and where it sends traffic for each?",
+    "explanation": "show ip route prints the routing table, with codes such as C for connected and S for static routes.",
+    "options": [
+      "$\\texttt{show inventory}$",
+      "$\\texttt{show ip interface brief}$",
+      "$\\texttt{show ip route}$",
+      "$\\texttt{show mac address-table}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-095",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Basic switching",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "A switch port is an access port in VLAN 30. Which traffic does it carry?",
+    "explanation": "An access port belongs to one VLAN and carries untagged frames for it. Carrying several VLANs is what a trunk does.",
+    "options": [
+      "VLAN 1 and VLAN 30",
+      "Every VLAN",
+      "Only VLAN 30",
+      "Only tagged frames"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-096",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Checking connectivity",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which Windows command drops the current DHCP address so a fresh one can be requested?",
+    "explanation": "ipconfig /release drops the current lease and ipconfig /renew asks for a new one. /flushdns only clears cached name lookups.",
+    "options": [
+      "$\\texttt{ipconfig /release}$",
+      "$\\texttt{ipconfig /displaydns}$",
+      "$\\texttt{ipconfig /flushdns}$",
+      "$\\texttt{ping -t}$"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-097",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Applications and protocols",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which TCP port does unencrypted web traffic use by default?",
+    "explanation": "HTTP uses TCP 80 and HTTPS uses TCP 443. Ports 110 and 143 belong to the mail protocols POP3 and IMAP.",
+    "options": [
+      "80",
+      "110",
+      "143",
+      "443"
+    ],
+    "correct": [
+      0
+    ],
+    "lockedOrder": true
+  },
+  {
+    "id": "CCST-D-098",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv6 addresses",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Which range holds the global unicast addresses now assigned to internet hosts?",
+    "explanation": "Global unicast addresses in use today begin with 2 or 3, the 2000::/3 block. FD00::/8 is unique local, like IPv4 private space.",
+    "options": [
+      "FE80::/10",
+      "FD00::/8",
+      "2000::/3",
+      "FF00::/8"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-099",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Wireless security",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which encryption does WPA2 use when set up correctly?",
+    "explanation": "WPA2 uses AES with CCMP. TKIP was the stopgap for original WPA and should be avoided.",
+    "options": [
+      "AES",
+      "RC4",
+      "DES",
+      "TKIP"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-100",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Show commands",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which command shows per-port error counters such as CRCs?",
+    "explanation": "show interfaces gives detailed counters, including input errors and CRCs, which point to cabling or duplex problems.",
+    "options": [
+      "$\\texttt{show cdp neighbors}$",
+      "$\\texttt{show version}$",
+      "$\\texttt{show interfaces}$",
+      "$\\texttt{show ip route}$"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-101",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Basic switching",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "Which kind of link carries traffic for several VLANs between two switches?",
+    "explanation": "A trunk tags each frame with its VLAN, using 802.1Q, so many VLANs share one link. An access port carries one VLAN.",
+    "options": [
+      "Serial link",
+      "Console link",
+      "Access port",
+      "Trunk"
+    ],
+    "correct": [
+      3
+    ]
+  },
+  {
+    "id": "CCST-D-102",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Checking connectivity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "An iPhone joins Wi-Fi but shows a 169.254.x.x address. What should be checked first?",
+    "explanation": "A self-assigned 169.254 address means no DHCP offer arrived. The phone has a link but no usable settings.",
+    "options": [
+      "The screen lock setting",
+      "The DNS search suffix",
+      "The DHCP server",
+      "The cellular SIM card"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-103",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Applications and protocols",
+    "difficulty": 2,
+    "format": "numeric",
+    "stem": "Which UDP port does a DHCP server listen on? Type the number only.",
+    "explanation": "DHCP servers listen on UDP 67 and clients use UDP 68. The client starts with a broadcast because it has no address yet.",
+    "numeric": {
+      "answers": [
+        "67"
+      ],
+      "tolerance": 0,
+      "wholeNumber": true
+    }
+  },
+  {
+    "id": "CCST-D-104",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv6 addresses",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "What is fe80:0000:0000:0000:0204:00ff:0000:0012 in shortest form?",
+    "explanation": "The three zero groups after fe80 collapse to ::, and leading zeros drop in each group. Only one :: is allowed, so the later single zero stays as 0.",
+    "options": [
+      "fe80::204:ff:0:12",
+      "fe8::204:ff:0:12",
+      "fe80::204:ff::12",
+      "fe80:0:204:ff:0:12"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-105",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Wireless security",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two steps make a home Wi-Fi network harder to break into? (Choose two.)",
+    "explanation": "A long, unguessable passphrase resists guessing, and firmware updates close known holes in the router. WEP is broken and the factory login is published online.",
+    "options": [
+      "Use WEP",
+      "Keep factory login",
+      "Update router firmware",
+      "Use a long passphrase",
+      "Share the key publicly"
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "CCST-D-106",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Show commands",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What does typing ? at a Cisco prompt do?",
+    "explanation": "The question mark gives context help. Pressing Tab completes a partly typed command.",
+    "options": [
+      "Lists available commands",
+      "Reboots the device safely",
+      "Exits the session",
+      "Saves the config"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-107",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Basic switching",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A laptop moves from port 4 to port 9 on the same switch. What happens to its MAC table entry?",
+    "explanation": "When the laptop's frames arrive on port 9, the switch relearns its MAC on the new port and replaces the old entry.",
+    "options": [
+      "It stays on port 4",
+      "The switch blocks port 9",
+      "It moves to port 9",
+      "Both ports keep it"
+    ],
+    "correct": [
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-108",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Checking connectivity",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two commands show a Linux host's interface addresses? (Choose two.)",
+    "explanation": "ip addr is the current tool and ifconfig the older one. ipconfig and tracert are the Windows names, and nslookup tests DNS.",
+    "options": [
+      "$\\texttt{nslookup}$",
+      "$\\texttt{ifconfig}$",
+      "$\\texttt{ipconfig}$",
+      "$\\texttt{ip addr}$",
+      "$\\texttt{tracert}$"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "select": 2
+  },
+  {
+    "id": "CCST-D-109",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Applications and protocols",
+    "difficulty": 3,
+    "format": "single",
+    "stem": "A switch must back up its configuration to a server with no user login. Which protocol is built for that?",
+    "explanation": "Trivial FTP runs over UDP 69 with no authentication, which is why network devices often use it for config and image files. SFTP needs a login.",
+    "options": [
+      "TFTP",
+      "SFTP",
+      "SSH",
+      "HTTPS"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-110",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv6 addresses",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two statements about IPv6 prefixes are true? (Choose two.)",
+    "explanation": "IPv6 uses slash notation only, and LAN subnets are normally /64, leaving 64 bits for the interface ID. There are no dotted-decimal masks in IPv6.",
+    "options": [
+      "IPv6 masks are dotted decimal",
+      "Hosts never need a prefix",
+      "Every prefix is /48",
+      "The prefix is written after a slash",
+      "A /64 is the usual LAN subnet"
+    ],
+    "correct": [
+      3,
+      4
+    ],
+    "select": 2
+  },
+  {
+    "id": "CCST-D-111",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Wireless security",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "What is the SSID of a wireless network?",
+    "explanation": "The service set identifier is the network name clients see. Hiding it adds little security.",
+    "options": [
+      "Its broadcast name",
+      "Its encryption key",
+      "Its MAC address",
+      "Its IP range"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-112",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Show commands",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Match each command to what it shows:",
+    "explanation": "show running-config prints the configuration in use, show inventory lists modules and serial numbers, and show interfaces status gives one line per port with VLAN, duplex and speed.",
+    "rows": [
+      "show running-config",
+      "show inventory",
+      "show interfaces status"
+    ],
+    "columns": [
+      "Port speed and VLAN",
+      "Active configuration",
+      "Hardware and serials"
+    ],
+    "correct": [
+      1,
+      2,
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-113",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstInfra",
+    "skill": "Basic switching",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two are true of a Layer 2 switch? (Choose two.)",
+    "explanation": "A Layer 2 switch forwards by MAC and floods broadcasts within the VLAN. Routing and stopping broadcasts between networks are Layer 3 jobs.",
+    "options": [
+      "Forwards frames by MAC address",
+      "Floods broadcasts in a VLAN",
+      "Routes between subnets",
+      "Blocks all broadcasts",
+      "Needs an IP per port"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "select": 2
+  },
+  {
+    "id": "CCST-D-114",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstMedia",
+    "skill": "Checking connectivity",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "On a phone, what does Forget this network do for a saved Wi-Fi network?",
+    "explanation": "Forgetting removes the stored passphrase and settings on that device only, so the next join asks for the key again. It is a common fix after a passphrase change.",
+    "options": [
+      "Blocks the network for everyone",
+      "Deletes its saved settings and key",
+      "Changes the network's SSID",
+      "Resets the access point"
+    ],
+    "correct": [
+      1
+    ]
+  },
+  {
+    "id": "CCST-D-115",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstStandards",
+    "skill": "Applications and protocols",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Is each protocol connection-oriented or connectionless?",
+    "explanation": "TCP sets up a session with a three-way handshake before data flows. UDP sends each datagram on its own with no session.",
+    "rows": [
+      "TCP",
+      "UDP"
+    ],
+    "columns": [
+      "Connection-oriented",
+      "Connectionless"
+    ],
+    "correct": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "CCST-D-116",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstAddressing",
+    "skill": "IPv6 addresses",
+    "difficulty": 3,
+    "format": "matrix",
+    "stem": "Match each IPv6 address to its type:",
+    "explanation": "FE80::/10 is link-local, FF00::/8 is multicast (FF02::2 is all routers), and :: with nothing else is the unspecified address.",
+    "rows": [
+      "FE80::9C1",
+      "FF02::2",
+      "::"
+    ],
+    "columns": [
+      "Multicast",
+      "Link-local unicast",
+      "Unspecified"
+    ],
+    "correct": [
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "id": "CCST-D-117",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstSecurity",
+    "skill": "Firewalls",
+    "difficulty": 2,
+    "format": "single",
+    "stem": "Where does a small office usually place its firewall?",
+    "explanation": "An edge firewall sits between the inside network and the internet so every flow in or out passes its rules.",
+    "options": [
+      "Between LAN and internet",
+      "After the printer",
+      "Inside each PC's case",
+      "Between two patch panels"
+    ],
+    "correct": [
+      0
+    ]
+  },
+  {
+    "id": "CCST-D-118",
+    "section": "ccst",
+    "test": 0,
+    "module": 1,
+    "domain": "ccstDiagnose",
+    "skill": "Help desk practice",
+    "difficulty": 3,
+    "format": "multi",
+    "stem": "Which two belong in a ticket's notes? (Choose two.)",
+    "explanation": "Good notes record the exact error text and how far the problem reaches, which sets its priority. Passwords never go in a ticket.",
+    "options": [
+      "User's password",
+      "Exact error message",
+      "Who else is affected",
+      "Opinions about the user",
+      "Unrelated chat"
+    ],
+    "correct": [
+      1,
+      2
+    ],
+    "select": 2
+  }
+]

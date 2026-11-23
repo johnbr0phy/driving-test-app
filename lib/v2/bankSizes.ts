@@ -166,4 +166,5 @@ export const BANK_SIZES: Record<string, number> = {
   safe: 202,
   dataplus: 225,
   awsdva: 212,
+  ccst: 208,
 };

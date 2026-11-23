@@ -326,6 +326,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   isc2cc: { title: "ISC2 CC", description: "Practise ISC2 Certified in Cybersecurity questions on security principles, governance, IAM, networks, cloud and incident response." },
   dataplus: { title: "CompTIA Data+", description: "Practice SQL queries, data cleaning, statistics, charts, reports and data governance." },
   techplus: { title: "CompTIA Tech+", description: "Practice computing basics, hardware, networking, software, coding concepts, databases and security." },
+  ccst: { title: "Cisco CCST Networking", description: "Practice network models, IPv4 and IPv6 addressing, cables and Wi-Fi, switches and routers, troubleshooting and security." },
   az104: { title: "Microsoft AZ-104", description: "Practise Entra ID, RBAC, Azure Policy, storage, VMs, App Service, networking, Azure Monitor and Backup." },
   sc200: { title: "Microsoft SC-200", description: "Practise Defender XDR, Microsoft Sentinel, detections, incident response and KQL threat hunting." },
   ccnpencor: { title: "Cisco CCNP ENCOR 350-401", description: "Practise SD-WAN and SD-Access, VRF and VXLAN, spanning tree, OSPF and BGP, assurance, security and automation, all explained." },

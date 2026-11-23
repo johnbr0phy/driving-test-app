@@ -1076,6 +1076,24 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the CompTIA Data+ DA0-002 exam objectives and the Data+ certification page, checked November 2026",
     source: { name: "CompTIA: Data+ certification", url: "https://www.comptia.org/en-us/certifications/data/" },
   },
+  ccst: {
+    answer:
+      "Cisco Certified Support Technician (CCST) Networking, exam 100-150, is Cisco's entry-level networking certification and a first step toward CCNA. The exam lasts 50 minutes, the number of questions varies, and Cisco reports the result only as Pass or Fail, with no published passing score. It covers six domains: standards and concepts, addressing and subnet formats, endpoints and media types, infrastructure, diagnosing problems, and security. It is delivered by Certiport and Pearson VUE at a test centre or online with a proctor, there are no prerequisites, and certifications earned on or after July 15, 2025 are valid for five years.",
+    rows: [
+      { label: "Exam code", value: "100-150 CCST Networking" },
+      { label: "Time", value: "50 minutes" },
+      { label: "Questions", value: "Varies; Cisco publishes no fixed count" },
+      { label: "Result", value: "Pass or Fail, no published passing score" },
+      { label: "Content", value: "Standards and concepts, addressing and subnets, endpoints and media, infrastructure, diagnosing problems, security" },
+      { label: "Languages", value: "English, Arabic, Chinese, Spanish, French, Japanese, Portuguese" },
+      { label: "Delivery", value: "Certiport or Pearson VUE, test centre or online proctored" },
+      { label: "Prerequisites", value: "None" },
+      { label: "Valid for", value: "5 years if earned on or after July 15, 2025" },
+      { label: "Run by", value: "Cisco" },
+    ],
+    basedOn: "Cisco's 100-150 CCST Networking exam page, the CCST certifications FAQ and the CCST Networking objectives, checked November 2026",
+    source: { name: "Cisco: 100-150 CCST Networking", url: "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-networking.html" },
+  },
   techplus: {
     answer:
       "CompTIA Tech+ (exam FC0-U71) is CompTIA's entry-level certification for people new to IT, and it replaced CompTIA IT Fundamentals+ (ITF+), whose FC0-U61 exam retired on July 31, 2025 in English. The exam has a maximum of 70 multiple-choice questions in 60 minutes, and the passing score is 650 on a scale of 900. The FC0-U71 objectives cover six domains: IT Concepts and Terminology 13%, Infrastructure 24%, Applications and Software 18%, Software Development Concepts 13%, Data and Database Fundamentals 13% and Security 19%. CompTIA recommends it for high school students and non-IT professionals, with no prior experience needed, and offers it in English and Japanese.",

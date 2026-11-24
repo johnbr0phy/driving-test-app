@@ -31,6 +31,7 @@ export const SV: V2UiTranslation = {
     noCalculator: "Ingen miniräknare",
     noGoingBack: "Ingen väg tillbaka",
     untimedPractice: "Övning utan tidsgräns (noteras med ditt resultat)",
+    halfLengthPractice: "Halv längd (hälften av frågorna, halva tiden)",
     directions: "Instruktioner",
     clockStartsLinear: "Klockan startar när du trycker på Starta.",
     clockStartsReview: "Klockan startar när du trycker på Starta och fortsätter gå på granskningssidan.",
@@ -134,9 +135,9 @@ export const SV: V2UiTranslation = {
     selectN: (n: number) => `Välj ${n}.`,
     selectAll: "Välj alla svar som stämmer.",
     srCorrect: "Rätt. ",
-    srNotQuite: "Inte riktigt. ",
-    correct: "Rätt",
-    notQuite: "Inte riktigt",
+    srNotQuite: "Fel. ",
+    correct: "Rätt!",
+    notQuite: "Fel",
     skill: (skill: string) => `Färdighet: ${skill}`,
 
     // Order input
@@ -282,6 +283,7 @@ export const SV: V2UiTranslation = {
     seeYourProgress: "Se dina framsteg",
     reviewYourAnswers: "Granska dina svar",
     untimedNote: "Övning utan tidsgräns. Det här försöket efterliknade inte provets tidsgräns.",
+    halfLengthNote: "Halv längd. Delpoängen är uppskattade utifrån hälften av frågorna.",
 
     // ResultsV2: section cards
     correctOfTotal: (raw: number, total: number) => `${raw} / ${total} rätt`,
@@ -443,6 +445,9 @@ export const SV: V2UiTranslation = {
     firstTryDetail: (firstTry: number, outOf: number) => `${firstTry} av ${outOf} rätt på första försöket`,
     retriedDetail: (n: number) => `${n} rättade vid ett nytt försök`,
     nextSkill: (skill: string) => `Nästa färdighet: ${skill}`,
+    nextQuestion: "Nästa fråga",
+    questionsCorrect: "rätta svar",
+    viewStats: "Visa statistik",
     tryPracticeChild: "Prova övningsfrågorna",
     tryExamLevel: "Prova frågor på provnivå",
     learnAgain: "Lär dig den igen",

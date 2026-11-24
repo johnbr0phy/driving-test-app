@@ -198,14 +198,13 @@ export function LandingTryQuestion({ q, rich, lang, onAnswer }: { q: TryQuestion
                       : "border-gray-200 dark:border-gray-700 text-gray-400"
               }`}
             >
+              {/* "A)" like the training card; try-badge carries both test arms' pulse. */}
               <span
-                className={`try-badge flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 text-sm font-bold transition-colors ${
-                  state === "idle"
-                    ? "border-brand dark:border-brand-dark text-brand group-hover:bg-brand group-hover:text-white dark:group-hover:border-brand"
-                    : "border-current"
+                className={`try-badge w-6 shrink-0 rounded-md text-base font-bold sm:text-lg ${
+                  state === "idle" ? "text-brand dark:text-brand-dark" : ""
                 }`}
               >
-                {LETTERS[i]}
+                {LETTERS[i]})
               </span>
               <span className="flex-1 min-w-0">{rich?.options[i] ?? text}</span>
               {state === "right" && <Check className="h-5 w-5 shrink-0 text-green-600 dark:text-green-400" aria-hidden />}

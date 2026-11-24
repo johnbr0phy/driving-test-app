@@ -20,6 +20,7 @@ export const runner = {
   noCalculator: "No calculator",
   noGoingBack: "No going back",
   untimedPractice: "Untimed practice (recorded with your result)",
+  halfLengthPractice: "Half-length practice (half the questions, half the time)",
   directions: "Directions",
   clockStartsLinear: "The clock starts when you tap Start.",
   clockStartsReview: "The clock starts when you tap Start and keeps running on the review screen.",
@@ -124,9 +125,9 @@ export const runner = {
   selectN: (n: number) => `Select ${n}.`,
   selectAll: "Select every answer that applies.",
   srCorrect: "Correct. ",
-  srNotQuite: "Not quite. ",
-  correct: "Correct",
-  notQuite: "Not quite",
+  srNotQuite: "Incorrect. ",
+  correct: "Correct!",
+  notQuite: "Incorrect",
   skill: (skill: string) => `Skill: ${skill}`,
 
   // Order input

@@ -30,6 +30,10 @@ interface FocusBarProps {
   right?: ReactNode;
   /** Ask before leaving (practice tests). Training saves every answer, so it leaves at once. */
   confirmExit?: boolean;
+  /** Label for ✕ when the page runs in the test's language (v2 drills). */
+  exitLabel?: string;
+  /** Extra classes on the bar (v2 adds its safe-area padding). */
+  className?: string;
 }
 
 /**
@@ -38,7 +42,7 @@ interface FocusBarProps {
  * and how far along, one slot on the right, a progress bar. The site header
  * is hidden on these pages (isRunnerPath in SiteHeader).
  */
-export function FocusBar({ exitHref, title, subtitle, progress, right, confirmExit }: FocusBarProps) {
+export function FocusBar({ exitHref, title, subtitle, progress, right, confirmExit, exitLabel, className }: FocusBarProps) {
   const router = useRouter();
   const { language } = useTranslation();
   const copy = COPY[language] ?? COPY.en!;
@@ -47,14 +51,14 @@ export function FocusBar({ exitHref, title, subtitle, progress, right, confirmEx
     "-ml-1.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-800 dark:hover:text-gray-50";
 
   return (
-    <header className="sticky top-0 z-40 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
+    <header className={`sticky top-0 z-40 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900${className ? ` ${className}` : ""}`}>
       <div className="flex items-center gap-2 px-3 pt-2 pb-2 sm:px-6">
         {confirmExit ? (
-          <button type="button" onClick={() => setAsking(true)} className={exitClass} aria-label={copy.leave}>
+          <button type="button" onClick={() => setAsking(true)} className={exitClass} aria-label={exitLabel ?? copy.leave}>
             <X className="h-5 w-5" />
           </button>
         ) : (
-          <Link href={exitHref} className={exitClass} aria-label={copy.leave}>
+          <Link href={exitHref} className={exitClass} aria-label={exitLabel ?? copy.leave}>
             <X className="h-5 w-5" />
           </Link>
         )}

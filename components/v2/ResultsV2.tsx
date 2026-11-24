@@ -113,6 +113,7 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
       )}
       <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">{exam.copy.scoreNote}</p>
       {result.timing === "untimed" && <p className="mt-1 text-sm font-semibold">{t.untimedNote}</p>}
+      {result.length === "half" && <p className="mt-1 text-sm font-semibold">{t.halfLengthNote}</p>}
 
       <div id="result-breakdown" className="mt-6 grid gap-4 md:grid-cols-2">
         {result.sections.map((s) => {

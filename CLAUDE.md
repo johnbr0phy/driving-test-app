@@ -99,9 +99,11 @@ One shape for every exam: `/<exam>/dashboard`, `/<exam>/practice/<n>`, `/<exam>/
 **Git and PRs**
 - Self-merging bots (source triage, question audit, exam upkeep, alias-only search gaps) merge only after their checks pass; new tests always wait for John.
 - Do not include any model identifier in commits, PRs, code comments or pushed files.
+- **This repo is public.** Never commit or push business data, on any branch: revenue, conversion, signups, user counts, analytics exports, admin reports, Firestore dumps, or anything with emails, uids or IPs. Never suggest GitHub (or a gist) as the way to move such files between sessions; have John paste or attach them in chat instead.
 
 ## Adding things
 
+- **Which engine**: v1 by default. Use v2 only when the real exam needs what v1 cannot model: passages beside the question, select-all, typed numeric, ordering/matrix/cloze/bowtie items, adaptive modules or scaled scores. A clock alone is not a reason. Do not move v1 exams to v2 (an internal Nov 2026 comparison favoured v1).
 - **A v1 exam**: follow the `exam-bank` skill (`.claude/skills/exam-bank/references/wiring.md` is the full checklist) and `docs/claude/v1-engine.md`.
 - **A v2 exam**: `docs/claude/v2-engine.md` ("To add a v2 exam") and the same skill.
 - **Either**: write `docs/exams/<examId>.md` (what the exam is, official format and pass mark, pools and per-test blueprint, IDs, state code, prefix, sources path, build command, theme, mascot, region and hub group, what is not modelled), add `lib/examFacts.ts`, the catalog entry, theme, sitemap and llms.txt lines, and bump `lib/landingDates.json` via `scripts/build-landing-dates.ts`.

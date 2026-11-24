@@ -1,7 +1,10 @@
 "use client";
 
+import type React from "react";
 import { useMemo, useState, useId, useRef, useEffect } from "react";
-import { Check, X, Eye, EyeOff } from "lucide-react";
+import { Eye, EyeOff } from "lucide-react";
+import { AnswerOption, type AnswerOptionState } from "@/components/question/AnswerOption";
+import { AnswerFeedback } from "@/components/question/AnswerFeedback";
 import { AnswerValue, QuestionV2, Stimulus } from "@/lib/v2/types";
 import { OPTION_LETTERS, isCorrect, parseNumeric, relabelChoices } from "@/lib/v2/grading";
 import { RichText } from "./RichText";
@@ -28,9 +31,13 @@ interface Props {
   /** Shown above the stem, e.g. "Question 4 of 27". */
   label?: string;
   focusOnChange?: boolean;
+  /** Shown once revealed, between the choices and the feedback (v1 puts Next Question here). */
+  actions?: React.ReactNode;
+  /** Shown under the feedback once revealed (Report this question). */
+  footer?: React.ReactNode;
 }
 
-export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer, eliminated = [], onToggleEliminate, eliminatorOn = false, reveal = false, layout = "split", disabled = false, label, focusOnChange = false }: Props) {
+export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer, eliminated = [], onToggleEliminate, eliminatorOn = false, reveal = false, layout = "split", disabled = false, label, focusOnChange = false, actions, footer }: Props) {
   const id = useId();
   const t = useV2Ui().runner;
   const stem = useRef<HTMLDivElement>(null);
@@ -56,16 +63,10 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
     }
   };
 
-  const optionClass = (orig: number) => {
-    const isSel = selected(orig);
-    const isKey = question.correct?.includes(orig);
-    if (reveal) {
-      if (isKey) return "border-green-500 bg-green-50 dark:bg-green-950";
-      if (isSel && !isKey) return "border-red-400 dark:border-red-600 bg-red-50 dark:bg-red-950";
-      return "border-gray-200 dark:border-gray-800 opacity-60";
-    }
-    if (isSel) return "border-brand bg-brand-light ring-1 ring-brand";
-    return "border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 active:bg-brand-light [@media(hover:hover)]:hover:border-brand";
+  const stateOf = (orig: number): AnswerOptionState => {
+    const isKey = !!question.correct?.includes(orig);
+    if (reveal) return isKey ? "correct" : selected(orig) ? "wrong" : "dim";
+    return selected(orig) ? "selected" : "idle";
   };
 
   const stimulusBlock = stimulus && (
@@ -100,7 +101,7 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
   const questionBlock = (
     <div>
       {label && <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">{label}</div>}
-      <div id={`${id}-stem`} ref={stem} tabIndex={-1}><RichText text={question.stem} className="text-[17px] font-medium md:text-lg" renderSlot={renderSlot} /></div>
+      <div id={`${id}-stem`} ref={stem} tabIndex={-1}><RichText text={question.stem} className="text-lg md:text-2xl font-semibold" renderSlot={renderSlot} /></div>
       {question.figure && (
         <div className="mt-3">
           <Figure figure={question.figure} />
@@ -153,34 +154,24 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
           )}
         </div>
       ) : (
-        <div role="group" aria-labelledby={`${id}-stem`} className="mt-4 space-y-2.5">
+        <div role="group" aria-labelledby={`${id}-stem`} className="mt-4 md:mt-6 space-y-2 md:space-y-3">
           {optionOrder.map((orig, pos) => {
             const struck = eliminated.includes(orig);
             return (
               <div key={orig} className="flex items-stretch gap-2">
-                <button
-                  type="button"
+                <AnswerOption
+                  letter={OPTION_LETTERS[pos]}
+                  state={stateOf(orig)}
+                  interactive={!disabled && !reveal}
                   disabled={disabled || reveal}
                   onClick={() => pick(orig)}
                   aria-pressed={selected(orig)}
                   aria-disabled={disabled || reveal || (atCap && !selected(orig))}
-                  className={`v2-tap flex flex-1 items-start gap-3 rounded-xl border-2 px-3 py-3 text-left transition-colors ${optionClass(orig)} ${struck && !reveal ? "v2-struck" : ""}`}
+                  className={`flex-1${struck && !reveal ? " v2-struck" : ""}`}
+                  srLabel={struck && !reveal ? t.srEliminated : reveal ? (question.correct?.includes(orig) ? `${t.srCorrectAnswer}. ` : selected(orig) ? `${t.srIncorrectAnswer}. ` : undefined) : undefined}
                 >
-                  <span
-                    className={`mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border-2 text-sm font-bold ${
-                      selected(orig) && !reveal ? "border-brand bg-brand text-white" : "border-gray-400 dark:border-gray-600 text-gray-700 dark:text-gray-200"
-                    } ${reveal && question.correct?.includes(orig) ? "border-green-600 bg-green-600 text-white" : ""}`}
-                  >
-                    {question.format === "multi" && selected(orig) ? <><span className="sr-only">{OPTION_LETTERS[pos]}</span><Check className="h-4 w-4" /></> : OPTION_LETTERS[pos]}
-                  </span>
-                  <span className="flex-1 pt-0.5">
-                    <RichText text={question.options?.[orig] ?? ""} className="text-[15px] md:text-base" />
-                  </span>
-                  {struck && !reveal && <span className="sr-only">{t.srEliminated}</span>}
-                  {reveal && <span className="sr-only">{question.correct?.includes(orig) ? `${t.srCorrectAnswer}. ` : selected(orig) ? `${t.srIncorrectAnswer}. ` : ""}</span>}
-                  {reveal && question.correct?.includes(orig) && <Check className="mt-1 h-5 w-5 shrink-0 text-green-600 dark:text-green-400" />}
-                  {reveal && selected(orig) && !question.correct?.includes(orig) && <X className="mt-1 h-5 w-5 shrink-0 text-red-500 dark:text-red-400" />}
-                </button>
+                  <RichText text={question.options?.[orig] ?? ""} />
+                </AnswerOption>
                 {eliminatorOn && !reveal && onToggleEliminate && (
                   <button
                     type="button"
@@ -204,10 +195,12 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
 
       <div role="status" aria-atomic="true" className="sr-only">{reveal ? (correct ? t.srCorrect : t.srNotQuite) + relabelChoices(question.explanation, optionOrder) : ""}</div>
       {reveal && (
-        <div className={`v2-pop mt-5 rounded-xl border p-4 ${correct ? "border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950" : "border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-950"}`}>
-          <div className={`mb-1 text-sm font-bold ${correct ? "text-green-800 dark:text-green-300" : "text-amber-900 dark:text-amber-200"}`}>{correct ? t.correct : t.notQuite}</div>
-          <RichText text={relabelChoices(question.explanation, optionOrder)} className="text-[15px] text-gray-800 dark:text-gray-100" />
-          {question.skill && <div className="mt-2 text-xs text-gray-500 dark:text-gray-400">{t.skill(question.skill)}</div>}
+        <div className="mt-4 md:mt-6 space-y-3 md:space-y-4">
+          {actions}
+          <AnswerFeedback correct={correct} title={correct ? t.correct : t.notQuite}>
+            <RichText text={relabelChoices(question.explanation, optionOrder)} />
+          </AnswerFeedback>
+          {footer}
         </div>
       )}
     </div>

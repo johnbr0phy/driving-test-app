@@ -31,6 +31,7 @@ export const IT: V2UiTranslation = {
     noCalculator: "Niente calcolatrice",
     noGoingBack: "Non si torna indietro",
     untimedPractice: "Esercitazione senza tempo (registrata con il risultato)",
+    halfLengthPractice: "Metà lunghezza (metà delle domande, metà del tempo)",
     directions: "Istruzioni",
     clockStartsLinear: "Il tempo parte quando tocchi Inizia.",
     clockStartsReview: "Il tempo parte quando tocchi Inizia e continua a scorrere nella schermata di revisione.",
@@ -135,9 +136,9 @@ export const IT: V2UiTranslation = {
     selectN: (n: number) => `Selezionane ${n}.`,
     selectAll: "Seleziona tutte le risposte corrette.",
     srCorrect: "Giusto. ",
-    srNotQuite: "Non proprio. ",
-    correct: "Giusto",
-    notQuite: "Non proprio",
+    srNotQuite: "Sbagliato. ",
+    correct: "Esatto!",
+    notQuite: "Sbagliato",
     skill: (skill: string) => `Abilità: ${skill}`,
 
     // Order input
@@ -284,6 +285,7 @@ export const IT: V2UiTranslation = {
     seeYourProgress: "Guarda i tuoi progressi",
     reviewYourAnswers: "Rivedi le tue risposte",
     untimedNote: "Esercitazione senza tempo. Questo tentativo non ha simulato il limite di tempo dell'esame.",
+    halfLengthNote: "Metà lunghezza. I punteggi delle sezioni sono stimati da metà delle domande.",
 
     // ResultsV2: section cards
     correctOfTotal: (raw: number, total: number) => `${raw} / ${total} corrette`,
@@ -448,6 +450,9 @@ export const IT: V2UiTranslation = {
     firstTryDetail: (firstTry: number, outOf: number) => `${firstTry} su ${outOf} giuste al primo tentativo`,
     retriedDetail: (n: number) => `${n} ${n === 1 ? "corretta" : "corrette"} con un nuovo tentativo`,
     nextSkill: (skill: string) => `Prossima abilità: ${skill}`,
+    nextQuestion: "Domanda successiva",
+    questionsCorrect: "domande corrette",
+    viewStats: "Vedi statistiche",
     tryPracticeChild: "Prova le domande di esercitazione",
     tryExamLevel: "Prova le domande di livello d'esame",
     learnAgain: "Imparala di nuovo",

@@ -31,6 +31,7 @@ export const DE: V2UiTranslation = {
     noCalculator: "Kein Taschenrechner",
     noGoingBack: "Kein Zurück",
     untimedPractice: "Übung ohne Zeitlimit (wird mit deinem Ergebnis vermerkt)",
+    halfLengthPractice: "Halbe Länge (halb so viele Fragen, halbe Zeit)",
     directions: "Anleitung",
     clockStartsLinear: "Die Zeit läuft, sobald du auf Start tippst.",
     clockStartsReview: "Die Zeit läuft, sobald du auf Start tippst, und läuft auf der Übersichtsseite weiter.",
@@ -134,9 +135,9 @@ export const DE: V2UiTranslation = {
     selectN: (n: number) => `Wähle ${n}.`,
     selectAll: "Wähle alle zutreffenden Antworten.",
     srCorrect: "Richtig. ",
-    srNotQuite: "Nicht ganz. ",
-    correct: "Richtig",
-    notQuite: "Nicht ganz",
+    srNotQuite: "Falsch. ",
+    correct: "Richtig!",
+    notQuite: "Falsch",
     skill: (skill: string) => `Fertigkeit: ${skill}`,
 
     // Order input
@@ -282,6 +283,7 @@ export const DE: V2UiTranslation = {
     seeYourProgress: "Deinen Fortschritt ansehen",
     reviewYourAnswers: "Deine Antworten ansehen",
     untimedNote: "Übung ohne Zeitlimit. Dieser Versuch hat das Zeitlimit der Prüfung nicht nachgestellt.",
+    halfLengthNote: "Halbe Länge. Die Abschnittsergebnisse sind aus der Hälfte der Fragen geschätzt.",
 
     // ResultsV2: section cards
     correctOfTotal: (raw: number, total: number) => `${raw} / ${total} richtig`,
@@ -443,6 +445,9 @@ export const DE: V2UiTranslation = {
     firstTryDetail: (firstTry: number, outOf: number) => `${firstTry} von ${outOf} beim ersten Versuch richtig`,
     retriedDetail: (n: number) => `${n} beim zweiten Versuch korrigiert`,
     nextSkill: (skill: string) => `Nächste Fertigkeit: ${skill}`,
+    nextQuestion: "Nächste Frage",
+    questionsCorrect: "Fragen richtig",
+    viewStats: "Statistiken ansehen",
     tryPracticeChild: "Probier die Übungsfragen",
     tryExamLevel: "Fragen auf Prüfungsniveau probieren",
     learnAgain: "Noch einmal lernen",

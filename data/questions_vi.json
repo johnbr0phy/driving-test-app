@@ -4064,14 +4064,14 @@
   "state": "CA",
   "questionId": "CA-011",
   "category": "gdlLicensing",
-  "question": "Yêu cầu về độ tuổi tối thiểu đối với người lái xe có bằng giám sát người giữ bằng tập lái ở California là bao nhiêu?",
+  "question": "Độ tuổi tối thiểu của người lái xe có bằng giám sát người giữ bằng tập lái dưới 18 tuổi ở California là bao nhiêu?",
   "optionA": "18 tuổi",
   "optionB": "21 tuổi",
   "optionC": "25 tuổi",
   "optionD": "23 tuổi",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "Người lái xe giám sát phải ít nhất 25 tuổi và giữ một bằng lái xe hợp lệ của California."
+  "explanation": "Người giữ bằng tập lái dưới 18 tuổi phải tập lái với người có bằng lái California ít nhất 25 tuổi. Người giữ bằng tập lái từ 18 tuổi trở lên cần người có bằng lái California ít nhất 18 tuổi."
  },
  {
   "type": "State-Specific",

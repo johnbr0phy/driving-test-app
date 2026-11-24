@@ -4064,14 +4064,14 @@
   "state": "CA",
   "questionId": "CA-011",
   "category": "gdlLicensing",
-  "question": "캘리포니아에서 임시 면허 소지자를 지도하는 면허 소지자의 최소 나이는 몇 세입니까?",
+  "question": "캘리포니아에서 18세 미만 임시 면허 소지자를 지도하는 면허 소지자의 최소 나이는 몇 세입니까?",
   "optionA": "18세",
   "optionB": "21세",
   "optionC": "25세",
   "optionD": "23세",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "지도 운전자는 만 25세 이상이어야 하고 유효한 캘리포니아 운전면허를 보유해야 합니다."
+  "explanation": "18세 미만 임시 면허 소지자는 만 25세 이상의 캘리포니아 면허 소지 운전자와 함께 연습해야 합니다. 18세 이상 임시 면허 소지자는 만 18세 이상의 캘리포니아 면허 소지 운전자가 필요합니다."
  },
  {
   "type": "State-Specific",

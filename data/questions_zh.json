@@ -2384,14 +2384,14 @@
   "state": "CA",
   "questionId": "CA-011",
   "category": "gdlLicensing",
-  "question": "在加州，陪同持学习驾照者的持照驾驶人最低年龄要求是多少？",
+  "question": "在加州，陪同未满18岁的学习驾照持有者的持照驾驶人最低年龄是多少？",
   "optionA": "18岁",
   "optionB": "21岁",
   "optionC": "25岁",
   "optionD": "23岁",
   "correctAnswer": "C",
   "correctIndex": 2,
-  "explanation": "陪同驾驶人必须年满25岁，并持有有效的加州驾照。"
+  "explanation": "未满18岁的学习驾照持有者必须与年满25岁、持有加州驾照的驾驶人一起练习。18岁及以上的学习驾照持有者需要年满18岁、持有加州驾照的驾驶人陪同。"
  },
  {
   "type": "State-Specific",

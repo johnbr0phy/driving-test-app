@@ -4064,14 +4064,14 @@
     "state": "CA",
     "questionId": "CA-011",
     "category": "gdlLicensing",
-    "question": "What is the minimum age requirement for the licensed driver who supervises a permit holder in California?",
+    "question": "What is the minimum age of the licensed driver who supervises a permit holder under 18 in California?",
     "optionA": "18 years old",
     "optionB": "21 years old",
     "optionC": "25 years old",
     "optionD": "23 years old",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The supervising driver must be at least 25 years old and hold a valid California driver's license."
+    "explanation": "A permit holder under 18 must practice with a California-licensed driver who is at least 25 years old. Permit holders aged 18 or older need a California-licensed driver who is at least 18."
   },
   {
     "type": "State-Specific",

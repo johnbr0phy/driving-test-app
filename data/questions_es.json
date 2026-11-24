@@ -4624,14 +4624,14 @@
     "state": "CA",
     "questionId": "CA-011",
     "category": "gdlLicensing",
-    "question": "¿Cuál es el requisito de edad mínima para el conductor con licencia que supervisa a un titular de permiso en California?",
+    "question": "¿Cuál es la edad mínima del conductor con licencia que supervisa a un titular de permiso menor de 18 años en California?",
     "optionA": "18 años",
     "optionB": "21 años",
     "optionC": "25 años",
     "optionD": "23 años",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "El conductor supervisor debe tener al menos 25 años y poseer una licencia de conducir válida de California."
+    "explanation": "Un titular de permiso menor de 18 años debe practicar con un conductor con licencia de California que tenga al menos 25 años. Los titulares de permiso de 18 años o más necesitan un conductor con licencia de California de al menos 18 años."
   },
   {
     "type": "State-Specific",

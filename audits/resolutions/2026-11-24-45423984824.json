@@ -1,0 +1,7 @@
+[
+  {
+    "id": "dmv__CA-011",
+    "status": "fixed",
+    "note": "The stem now asks about a permit holder under 18 (key stays C, 25), and the explanation adds that holders 18 or older need a supervisor aged 18 or older. Changed in the English, es, ko, vi and zh banks, per the CA DMV Driver's Handbook ('at least 18 years old (25 for minors)'), recorded in tools/dmv/sources.md."
+  }
+]

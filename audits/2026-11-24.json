@@ -1,0 +1,46 @@
+{
+ "runId": "2026-11-24-1921d4",
+ "at": "2026-11-24T15:19:55.313Z",
+ "model": "claude-opus-5-5",
+ "checked": 11,
+ "blindChecked": 11,
+ "disagreements": 2,
+ "adjudicated": 11,
+ "findings": [
+  {
+   "examId": "dmv",
+   "questionId": "CA-011",
+   "file": "data/questions.json",
+   "trigger": [
+    "report"
+   ],
+   "notes": [
+    "A student reported: unclear: \"Vague and ambiguous question. Was it referring to supervising minors (minimum  25 years old w/ DL) or adults(minimum 18 years old w/ DL)?\""
+   ],
+   "key": [
+    "C"
+   ],
+   "blind": {
+    "answer": [
+     "C"
+    ],
+    "confidence": "high",
+    "defensibleOthers": [],
+    "problem": ""
+   },
+   "disagreed": false,
+   "verdict": {
+    "verdict": "ambiguous",
+    "confidence": "high",
+    "correctAnswer": [
+     "C"
+    ],
+    "reason": "The student is right that the stem doesn't say whether the permit holder is a minor, and California sets a different age for each. A minor with an instruction permit must drive with a parent, guardian, spouse, or other adult aged 25 or older who holds a valid California license. A permit holder aged 18 or older needs only a supervising California-licensed driver aged 18 or older (Vehicle Code §12509 and the CA Driver Handbook). As worded, both A and C are defensible; C is right only for minors.",
+    "fix": "Rewrite the stem as: \"What is the minimum age for a licensed adult (other than a parent, guardian, or spouse) who supervises a permit holder under 18 in California?\" Keep the key as C. Replace the explanation with: \"A minor with an instruction permit must drive with a parent, guardian, spouse, or another adult aged 25 or older who holds a valid California driver's license. (Permit holders aged 18 or older only need a supervising California-licensed driver aged 18 or older.)\""
+   },
+   "signalExamId": "dmv",
+   "n": 0
+  }
+ ],
+ "signalsCleared": 10
+}

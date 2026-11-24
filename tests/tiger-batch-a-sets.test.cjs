@@ -105,7 +105,7 @@ test('batch A has exactly 80 approved files within its static and happy-face bud
     total += bytes;
     if (key.endsWith('tiger_face_03.png')) happy += bytes;
   }
-  assert.equal(total, 6_383_409, 'Only reviewed optimized exports belong in this batch');
+  assert.equal(total, 6_023_497, 'Only reviewed optimized exports belong in this batch');
   assert.ok(total < 6_500_000, 'Static batch budget is 6.5 MB');
   assert.equal(happy, 804_432);
   assert.ok(happy < 850_000, 'Only ten happy faces should add to the exam OG trace');

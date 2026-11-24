@@ -161,7 +161,9 @@ node_modules. Chromium is preinstalled in cloud sessions.)
 
 ## 12. Mascots (optional, later)
 `lib/tigerAssets.ts` lists exams with finished art under `public/tigers/<id>/`. New exams fall
-back to the DMV tiger automatically; add the id only once eight expressions exist.
+back to the DMV tiger automatically; add the id only once all eight expressions pass visual review.
+Follow `docs/TIGER_ASSET_PROMPTS.md`. A crown replaces all other headwear and sits directly
+on the tiger's fur. Visually reject any crown layered over a hat, cap, helmet or hood.
 
 ## Native-language exam (a bank written in German, Italian, Polish...)
 A native exam is a normal v1 exam whose base bank and base copy are in its own language

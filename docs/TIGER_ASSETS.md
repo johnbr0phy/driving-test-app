@@ -26,6 +26,10 @@ by the score-card renderer. Next Image creates smaller browser derivatives.
 | 07 | 10–24% | Frowning |
 | 08 | 0–9% | Worried |
 
+For crowned artwork, remove all other headwear. The crown goes directly on
+the tiger's fur, never over a hat, cap, helmet or hood. Follow the
+[visual review gate](TIGER_ASSET_PROMPTS.md#expressions) before registering a set.
+
 Scores select artwork only. Each exam keeps its configured pass mark.
 Dashboard progress retains its existing completion thresholds.
 

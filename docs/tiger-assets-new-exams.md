@@ -21,7 +21,7 @@ Ten exam-specific sets, each with eight 512 × 512 transparent PNGs. The shoulde
 
 | File | Emotion |
 | --- | --- |
-| `tiger_face_01.png` | TOP SCORE / MASTERY. A big joyful open smile, bright starry highlights in the eyes, a small gold crown with red jewels above the head and a few gold sparkles. Keep existing headwear in place if present, with the crown perched neatly on top, and keep the complete crown inside the canvas. |
+| `tiger_face_01.png` | TOP SCORE / MASTERY. A big joyful open smile, bright starry highlights in the eyes, a small gold crown with red jewels above the head and a few gold sparkles. Remove all other headwear and any accessories attached to it. Place the crown directly on the tiger's furry head. Keep the complete crown inside the canvas. |
 | `tiger_face_02.png` | CELEBRATION. A delighted broad laughing smile, happy eyes, and a few red, blue and gold confetti pieces around the head. No crown. |
 | `tiger_face_03.png` | Default friendly open smile. |
 | `tiger_face_04.png` | CALM AND ENCOURAGING. A gentle confident CLOSED-mouth smile and relaxed eyebrows. No crown or confetti. |
@@ -34,7 +34,7 @@ Ten exam-specific sets, each with eight 512 × 512 transparent PNGs. The shoulde
 
 Generated with the built-in image generation tool. Each base uses the existing EMT tiger as a character/style reference, with the costume and props in the coverage table. No text, logos, background, or shadows. Preserve the orange and cream fur, bold outlines, glossy eyes, and two visible ears. Use a centered waist-up composition on true transparent alpha.
 
-Each expression is a separate identity-preserving edit of that exam's base image. Its corresponding EMT expression is an emotion-only reference. Change only the mouth, eyebrows, and eyes, plus the crown/sparkles, confetti, or sweat specified above. Preserve the outfit, accessories, props, paws, body pose, head size, colors, and shading. Keep ears and accessories inside the square canvas. Export and normalize to 512 × 512 while preserving alpha.
+Each expression is a separate identity-preserving edit of that exam's base image. Its corresponding EMT expression is an emotion-only reference. Change only the mouth, eyebrows, and eyes, plus the crown/sparkles, confetti, or sweat specified above. Preserve the outfit, accessories, props, paws, body pose, head size, colors, and shading, except for headwear removed for the crown. Apply the [crown review gate](TIGER_ASSET_PROMPTS.md#expressions) before exporting. Keep ears and accessories inside the square canvas. Export and normalize to 512 × 512 while preserving alpha.
 
 ## Review gallery
 

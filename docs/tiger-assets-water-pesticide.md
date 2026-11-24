@@ -6,8 +6,8 @@ clipboard. Pesticide Applicator uses `pesticide`, a field worker with a
 crop-scouting clipboard, protective glasses and no spraying equipment.
 
 Both sets have eight identity-preserving expressions. The first face has a
-winner's crown directly on the tiger's fur. The applicator's hat and its goggles
-are absent from that face only. The second face laughs with confetti and the
+winner's crown directly on the tiger's fur. The applicator laughs with its
+eyes closed and has no hat, goggles, star highlights or confetti on this face. The second face laughs with confetti and the
 third is the default happy face. Faces 04 to 07 are closed-mouth: confident, tentative, neutral
 and frowning. The tentative face keeps its eyes open. Face 08 has an open
 worried mouth and blue sweat. Props and clothing identify the same role in

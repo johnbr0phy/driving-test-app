@@ -32,7 +32,7 @@ Use case: identity-preserve. Image 1 is the exact character and outfit reference
 
 | File suffix | Expression | Direction |
 | --- | --- | --- |
-| 01 | Crowned winner | A triumphant broad toothy grin with bright sparkling eyes. Add a large gold crown with red jewels, matching the expression reference. Remove any hat, cap, helmet, hood or other headwear, including accessories attached to it. Seat the crown directly on the tiger's furry head, never on or over headwear. Retain all other clothing, props and role accessories. The complete crown must fit within the frame. |
+| 01 | Crowned winner | A joyful, relaxed wide smile or open laugh. The eyes can be soft and open or gently closed in upward arcs. Avoid star-shaped pupils, exaggerated staring eyes and a rigid toothy grin. Add a large gold crown with red jewels, matching the expression reference. Remove any hat, cap, helmet, hood or other headwear, including accessories attached to it. Seat the crown directly on the tiger's furry head, never on or over headwear. Retain all other clothing, props and role accessories. The complete crown must fit within the frame. |
 | 02 | Celebrating | A delighted wide open laughing smile, cheerful lifted eyebrows and sparkling eyes. Add a restrained scattering of clean colourful paper confetti around the head. No crown. Keep every confetti piece fully inside the frame. |
 | 03 | Happy | The default friendly happy open-mouth smile. |
 | 04 | Confident smile | A confident warm CLOSED-mouth smile, clearly upturned corners and relaxed slightly lifted eyebrows. Mouth completely closed, no tongue and no teeth visible. No added decorations. |

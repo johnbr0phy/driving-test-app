@@ -21,7 +21,7 @@ Ten exam-specific sets, each with eight 512 × 512 transparent PNGs. The shoulde
 
 | File | Emotion |
 | --- | --- |
-| `tiger_face_01.png` | TOP SCORE / MASTERY. A big joyful open smile, bright starry highlights in the eyes, a small gold crown with red jewels above the head and a few gold sparkles. Remove all other headwear and any accessories attached to it. Place the crown directly on the tiger's furry head. Keep the complete crown inside the canvas. |
+| `tiger_face_01.png` | TOP SCORE / MASTERY. A joyful open smile or laugh with relaxed eyes, and a gold crown with red jewels. Avoid star-shaped pupils or a rigid grin. Remove all other headwear and any accessories attached to it. Place the crown directly on the tiger's furry head. Keep the complete crown inside the canvas. |
 | `tiger_face_02.png` | CELEBRATION. A delighted broad laughing smile, happy eyes, and a few red, blue and gold confetti pieces around the head. No crown. |
 | `tiger_face_03.png` | Default friendly open smile. |
 | `tiger_face_04.png` | CALM AND ENCOURAGING. A gentle confident CLOSED-mouth smile and relaxed eyebrows. No crown or confetti. |

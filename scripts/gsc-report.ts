@@ -19,6 +19,9 @@
  *   - Indexing: landings Google has not indexed, with its reason (URL
  *     Inspection API, 2,000 a day per property, so landings only).
  *   - Sitemaps: errors and warnings Google reports.
+ *   - Core update: for 60 days after a Google core update in CORE_UPDATES,
+ *     daily totals and equal windows before and after its impact day, by page
+ *     family and by page.
  *
  * Key: GSC_SERVICE_ACCOUNT_KEY, else FIREBASE_SERVICE_ACCOUNT_KEY (service
  * account JSON). Writes gscReports/{date} in Firestore as the watchdog heartbeat
@@ -120,6 +123,108 @@ const shortHost = (u: string) => (/^https:\/\/www\./.test(u) ? short(u) : u.repl
 const pct = (n: number) => `${(n * 100).toFixed(1)}%`;
 const pos = (n: number) => n.toFixed(1);
 
+/**
+ * Google core updates to measure against. `impact` is the day the first big
+ * movement showed in Search Console (not always the announcement day); the
+ * check runs while the impact day is within the last 60 days.
+ */
+const CORE_UPDATES = [{ name: "November 2026 core update", impact: "2026-11-13", done: "2026-11-24" }];
+
+const addDays = (d: string, n: number) => new Date(Date.parse(d + "T00:00:00Z") + n * 86400_000).toISOString().slice(0, 10);
+const daysBetween = (a: string, b: string) => Math.round((Date.parse(b) - Date.parse(a)) / 86400_000) + 1;
+const pathOf = (u: string) => u.replace(/^https?:\/\/[^/]+/, "") || "/";
+
+/** Page family, so a whole template falling together shows up as one line. */
+function pageGroup(u: string): string {
+  const p = pathOf(u);
+  if (p === "/") return "Homepage";
+  if (/dmv/.test(p)) return /^\/[a-z]{2}\//.test(p) ? "DMV, translated" : "DMV landings";
+  if (/^\/[a-z]{2}$/.test(p)) return "Country homepages";
+  if (/^\/[a-z]{2}\//.test(p)) return "Native-language exam pages";
+  if (/-practice-test$/.test(p)) return "Exam landings";
+  if (/^\/(topics?|most-missed|teach|q|quizzes)\b/.test(p)) return "Topic, quiz and teacher pages";
+  return "Other";
+}
+
+type Window = { start: string; end: string; days: number };
+type UpdateCheck = {
+  name: string;
+  impact: string;
+  done: string;
+  before: Window;
+  after: Window;
+  daily: { date: string; clicks: number; impressions: number; position: number }[];
+  totals: { beforeClicks: number; afterClicks: number; beforeImpressions: number; afterImpressions: number; beforePosition: number; afterPosition: number };
+  groups: { group: string; beforeClicks: number; afterClicks: number; beforeImpressions: number; afterImpressions: number }[];
+  losers: { page: string; beforeClicks: number; afterClicks: number }[];
+  winners: { page: string; beforeClicks: number; afterClicks: number }[];
+};
+
+/**
+ * Before and after a core update: daily totals from 14 days before the impact
+ * day, then equal-length windows either side of it (per day, so a short after
+ * window still compares fairly), by page family and by page.
+ */
+async function coreUpdateCheck(site: string, end: string): Promise<UpdateCheck | null> {
+  const u = CORE_UPDATES.filter((x) => x.impact <= end && daysBetween(x.impact, end) <= 60).at(-1);
+  if (!u) return null;
+  const afterDays = Math.min(28, daysBetween(u.impact, end));
+  const after = { start: u.impact, end: addDays(u.impact, afterDays - 1), days: afterDays };
+  const before = { start: addDays(u.impact, -afterDays), end: addDays(u.impact, -1), days: afterDays };
+  const [daily, pb, pa, tb, ta] = await Promise.all([
+    query(site, addDays(u.impact, -14), end, ["date"]),
+    query(site, before.start, before.end, ["page"]),
+    query(site, after.start, after.end, ["page"]),
+    query(site, before.start, before.end, []),
+    query(site, after.start, after.end, []),
+  ]);
+  const t0 = tb[0] ?? { clicks: 0, impressions: 0, position: 0 }, t1 = ta[0] ?? { clicks: 0, impressions: 0, position: 0 };
+
+  const groups = new Map<string, UpdateCheck["groups"][number]>();
+  const g = (name: string) => groups.get(name) ?? (groups.set(name, { group: name, beforeClicks: 0, afterClicks: 0, beforeImpressions: 0, afterImpressions: 0 }), groups.get(name)!);
+  const byPage = new Map<string, { page: string; beforeClicks: number; afterClicks: number }>();
+  const p = (u: string) => byPage.get(pathOf(u)) ?? (byPage.set(pathOf(u), { page: pathOf(u), beforeClicks: 0, afterClicks: 0 }), byPage.get(pathOf(u))!);
+  for (const r of pb) { const e = g(pageGroup(r.keys[0])); e.beforeClicks += r.clicks; e.beforeImpressions += r.impressions; p(r.keys[0]).beforeClicks += r.clicks; }
+  for (const r of pa) { const e = g(pageGroup(r.keys[0])); e.afterClicks += r.clicks; e.afterImpressions += r.impressions; p(r.keys[0]).afterClicks += r.clicks; }
+  const pages = [...byPage.values()];
+
+  return {
+    ...u,
+    before,
+    after,
+    daily: daily.map((r) => ({ date: r.keys[0], clicks: r.clicks, impressions: r.impressions, position: r.position })),
+    totals: { beforeClicks: t0.clicks, afterClicks: t1.clicks, beforeImpressions: t0.impressions, afterImpressions: t1.impressions, beforePosition: t0.position, afterPosition: t1.position },
+    groups: [...groups.values()].sort((a, b) => b.beforeImpressions + b.afterImpressions - (a.beforeImpressions + a.afterImpressions)),
+    losers: pages.filter((x) => x.beforeClicks >= 5 && x.afterClicks <= x.beforeClicks * 0.7).sort((a, b) => b.beforeClicks - b.afterClicks - (a.beforeClicks - a.afterClicks)).slice(0, 20),
+    winners: pages.filter((x) => x.afterClicks >= 5 && x.afterClicks >= x.beforeClicks * 1.5).sort((a, b) => b.afterClicks - b.beforeClicks - (a.afterClicks - a.beforeClicks)).slice(0, 20),
+  };
+}
+
+function updateSection(c: UpdateCheck): string[] {
+  const ch = (a: number, b: number) => (b ? `${a >= b ? "+" : ""}${Math.round(((a - b) / b) * 100)}%` : a ? "new" : "0");
+  const flag = (a: number, b: number) => (b >= 20 && a <= b * 0.7 ? " (down 30%+)" : "");
+  const L: string[] = [];
+  L.push("", `## ${c.name}`, "");
+  L.push(
+    `First impact ${c.impact}, rollout complete ${c.done}. ${c.before.days} days before (${c.before.start} to ${c.before.end}) against ${c.after.days} days from the impact day (${c.after.start} to ${c.after.end}). ` +
+      `Clicks ${c.totals.beforeClicks.toLocaleString("en-US")} to ${c.totals.afterClicks.toLocaleString("en-US")} (${ch(c.totals.afterClicks, c.totals.beforeClicks)}), ` +
+      `impressions ${c.totals.beforeImpressions.toLocaleString("en-US")} to ${c.totals.afterImpressions.toLocaleString("en-US")} (${ch(c.totals.afterImpressions, c.totals.beforeImpressions)}), ` +
+      `average position ${pos(c.totals.beforePosition)} to ${pos(c.totals.afterPosition)}.`,
+    "",
+    "A whole page family falling together points at the template, not one page: fix what the family shares.",
+    ""
+  );
+  L.push("| Page family | Clicks before | Clicks after | Change | Impressions before | Impressions after | Change |", "| --- | --- | --- | --- | --- | --- | --- |");
+  for (const r of c.groups) L.push(`| ${r.group} | ${r.beforeClicks} | ${r.afterClicks} | ${ch(r.afterClicks, r.beforeClicks)}${flag(r.afterClicks, r.beforeClicks)} | ${r.beforeImpressions} | ${r.afterImpressions} | ${ch(r.afterImpressions, r.beforeImpressions)} |`);
+  L.push("", "### Daily", "", "| Date | Clicks | Impressions | Position |", "| --- | --- | --- | --- |");
+  for (const r of c.daily) L.push(`| ${r.date}${r.date === c.impact ? " (impact)" : ""} | ${r.clicks} | ${r.impressions} | ${pos(r.position)} |`);
+  L.push("", "### Pages that lost clicks (down 30%+, 5+ before)", "", "| Page | Before | After |", "| --- | --- | --- |");
+  for (const r of c.losers) L.push(`| ${r.page} | ${r.beforeClicks} | ${r.afterClicks} |`);
+  L.push("", "### Pages that gained clicks (up 50%+, 5+ after)", "", "| Page | Before | After |", "| --- | --- | --- |");
+  for (const r of c.winners) L.push(`| ${r.page} | ${r.beforeClicks} | ${r.afterClicks} |`);
+  return L;
+}
+
 async function main() {
   const key = readKey();
   token = await accessToken(key);
@@ -193,6 +298,8 @@ async function main() {
     .sort((a, b) => b.before - b.clicks - (a.before - a.clicks))
     .slice(0, 20);
 
+  const updateCheck = await coreUpdateCheck(site, end);
+
   // Sitemaps as Google sees them.
   const sitemaps = ((await call<{ sitemap?: { path: string; errors?: string; warnings?: string; lastDownloaded?: string; isPending?: boolean }[] }>(
     `/webmasters/v3/sites/${encodeURIComponent(site)}/sitemaps`
@@ -255,6 +362,7 @@ async function main() {
     falling,
     sitemaps,
     indexing: { inspected, notIndexed },
+    coreUpdate: updateCheck,
   };
 
   const L: string[] = [];
@@ -264,6 +372,7 @@ async function main() {
       `${now.impressions.toLocaleString("en-US")} impressions (${change(now.impressions, before.impressions)}), click rate ${pct(now.ctr)}, average position ${pos(now.position)}.`,
     ""
   );
+  if (updateCheck) L.push(...updateSection(updateCheck).slice(1), "");
   L.push("## Page 2: closest wins", "", "Answer the query in the page's first block, put it in the title and h1 where it reads naturally, and link the page from related pages.", "");
   L.push("| Query | Page | Impressions | Clicks | Position |", "| --- | --- | --- | --- | --- |");
   for (const r of page2) L.push(`| ${r.query} | ${r.page} | ${r.impressions} | ${r.clicks} | ${pos(r.position)} |`);

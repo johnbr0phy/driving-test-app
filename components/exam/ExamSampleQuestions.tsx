@@ -251,9 +251,31 @@ export function ExamSampleQuestions({
  * The same block for a DMV state page: six of that state's own questions
  * (state law, one per topic) from data/questions.json. English only; the
  * page passes the state's rows so this file never imports the DMV bank.
+ * With `missed` (lib/server/stateMostMissed.ts), it shows the state questions
+ * real test-takers miss most instead, each with its miss rate: data only
+ * Tigertest has, which makes each state page its own.
  */
-export function DmvSampleQuestions({ questions, stateName, path }: { questions: Question[]; stateName: string; path: string }) {
-  const sample = pickSampleQuestions(questions, 6);
+export function DmvSampleQuestions({
+  questions,
+  stateName,
+  path,
+  missed,
+  missedUpdatedAt,
+}: {
+  questions: Question[];
+  stateName: string;
+  path: string;
+  missed?: { questionId: string; errorRate: number; total: number }[];
+  missedUpdatedAt?: string | null;
+}) {
+  const byId = new Map(questions.map((q) => [q.questionId, q]));
+  const missedRows = (missed ?? []).filter((m) => {
+    const q = byId.get(m.questionId);
+    return q && !getSignIdForQuestion(q.questionId) && !hasPositionDependentAnswers(q);
+  });
+  const useMissed = missedRows.length >= 3;
+  const rate = new Map(missedRows.map((m) => [m.questionId, m]));
+  const sample = useMissed ? spreadSampleKeys(missedRows.map((m) => byId.get(m.questionId)!)) : pickSampleQuestions(questions, 6);
   if (sample.length === 0) return null;
   const options = (q: Question) => [q.optionA, q.optionB, q.optionC, q.optionD];
   const key = (q: Question) => Math.max(0, LETTERS.indexOf(q.correctAnswer as (typeof LETTERS)[number]));
@@ -283,14 +305,26 @@ export function DmvSampleQuestions({ questions, stateName, path }: { questions: 
     <section aria-labelledby="sample-questions" className="mb-16">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <h2 id="sample-questions" className="text-3xl font-bold text-gray-900 dark:text-gray-50 text-center mb-3">
-        {stateName} permit test questions and answers
+        {useMissed ? `The ${stateName} permit test questions people miss most` : `${stateName} permit test questions and answers`}
       </h2>
       <p className="text-gray-600 dark:text-gray-300 text-center mb-8">
-        {sample.length} of the questions on {stateName}&apos;s own laws, with the answer explained.
+        {useMissed ? (
+          <>
+            The {sample.length} questions on {stateName}&apos;s own laws that Tigertest users get wrong most often, with the
+            answer explained{missedUpdatedAt ? <>. Updated <time dateTime={missedUpdatedAt}>{missedUpdatedAt}</time></> : null}.
+          </>
+        ) : (
+          <>{sample.length} of the questions on {stateName}&apos;s own laws, with the answer explained.</>
+        )}
       </p>
       <ol className="space-y-5">
         {sample.map((q, n) => (
           <li key={q.questionId} className="rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-6">
+            {rate.get(q.questionId) && (
+              <p className="mb-2 text-sm font-semibold text-brand-dark">
+                {rate.get(q.questionId)!.errorRate}% of people missed this ({rate.get(q.questionId)!.total.toLocaleString("en-US")} answers)
+              </p>
+            )}
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-4">
               {n + 1}. {q.question}
             </h3>

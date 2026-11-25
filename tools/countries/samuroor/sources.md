@@ -35,7 +35,7 @@ Highway Code manual on traffic control devices. Signs are described in words (no
   vehicles and motorcades (Art. 54); pedestrians (Art. 55); school buses (Art. 56); seat belts and
   child seats (Art. 57); helmets (Art. 58); crash liability and duties (Arts. 60, 63); wrecked
   vehicle sales (Art. 65); points and withdrawal (Art. 76); unlicensed drivers (Art. 77); vehicles
-  sold abroad (Art. 78); driving authorisation (Art. 17 as amended). Articles marked "amended by
+  sold abroad (Art. 78); driving authorisation (Art. 17 as amended). Also Art. 2(20) as amended (a private car whose driver holds a Transport General Authority permit may carry passengers for a fare) and Art. 2(27) (emergency vehicles may exceed the set speed and not stop at signals when their work requires it). Articles marked "amended by
   M/115, refer to it" whose new text is not in this copy were not used for figures.
 - Traffic violation tables (four classes of violations, KKU copy of the law's annexed tables, last
   updated 3 Jumada I 1438H): https://www.kku.edu.sa/sites/default/files/2023-11/traffic_violations_list.pdf

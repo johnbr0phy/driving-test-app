@@ -32,7 +32,7 @@ On every page with the site header (home, dashboards, landings, results; never r
 
 ## Tiger Time winner
 
-- `app/api/cron/tiger-time` (daily 05:15 UTC, just after midnight Eastern) reads the finished day's top 200 counts (`topOfDay`) and writes `tigerTimeWinners/{day}` `{ uid, correct, reachedAt, at, emailed }` once and emails the winner a congratulations (`tigerTimeEmail` in `lib/email-templates.ts`: transactional, from John, no unsubscribe link, like the 1,000,000th-question email; English only; skipped if the account unsubscribed; sent once, by `emailed` and the Resend idempotency key `tiger-time-<day>`): the signed-in account with the most correct answers, at least `TIGER_TIME_MIN_TO_WIN` (10), ties to whoever reached the count first (`reachedAt` on the person doc); guests cannot win (`pickTigerTimeWinner`); internal accounts can (John, Nov 25 2026). `?day=` reruns a day: it never replaces a winner and retries an email that did not send. Every run writes `globalStats/tigerTime.updatedAt`, which the watchdog reads (`readJobHeartbeats`, 36 hours).
+- `app/api/cron/tiger-time` (daily 05:15 UTC, just after midnight Eastern) reads the finished day's top 200 counts (`topOfDay`) and writes `tigerTimeWinners/{day}` `{ uid, correct, reachedAt, at, emailed }` once and emails the winner a congratulations (`tigerTimeEmail` in `lib/email-templates.ts`: transactional, from John, no unsubscribe link, like the 1,000,000th-question email; in the account's language (`users/{uid}.language`, copy in `lib/tigerTimeEmailCopy.ts`, English when unset); skipped if the account unsubscribed; sent once, by `emailed` and the Resend idempotency key `tiger-time-<day>`): the signed-in account with the most correct answers, at least `TIGER_TIME_MIN_TO_WIN` (10), ties to whoever reached the count first (`reachedAt` on the person doc); guests cannot win (`pickTigerTimeWinner`); internal accounts can (John, Nov 25 2026). Each run also deletes rank days older than three days (`deleteOldDays`). `?day=` reruns a day: it never replaces a winner and retries an email that did not send. Every run writes `globalStats/tigerTime.updatedAt`, which the watchdog reads (`readJobHeartbeats`, 36 hours).
 - No badge or trophy is shown on the site (decided Nov 25 2026); the email is the prize. Nobody else is told who won. Account deletion removes the winner records.
 - The stats panel shows a live countdown to midnight Eastern ("Ends in 3:07:45") and the prize line.
 - Copy outside English says "New York time", which reads more clearly than "Eastern time" abroad.
@@ -55,9 +55,13 @@ No cron and no account scan. Each change moves the person from their old histogr
 
 Everyone (Nov 25 2026: the A/B test was ended and its card taken off the A/B tests tab; `analytics/dailyRankTest` keeps its few hours of counts). `?rank=off` hides Tiger Time in that tab for previews, and `?rank=on` brings it back (`sessionStorage`).
 
-## Setup outside the code
+## Cheat check
 
-- Firestore TTL policy on `expiresAt` for collection groups `people` and `shards` (the /privacy page promises three days).
+Before picking the winner, `pickCheckedWinner` passes over any day that looks scripted (`suspiciousDay`, days of 50+ correct only): faster than 6 correct a minute on average from the day's first answer (`firstAt` on the person doc, kept since Nov 25 2026) to reaching the count, or 200+ correct with not one wrong. The next account wins. If a passed-over day would have won, John gets an email (`tiger-time-flags-<day>`) and the winner doc keeps `passedOver`. The person is never told.
+
+## Cleanup
+
+No Firestore TTL policy is needed: the winner cron deletes `dailyRank/{day}` (people and shards) for days older than three days, up to seven days a run. `expiresAt` is still written in case a TTL policy is ever added.
 
 ## Not done in the prototype
 

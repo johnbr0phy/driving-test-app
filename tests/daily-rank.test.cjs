@@ -337,7 +337,7 @@ test('Tiger Time wiring: daily winner cron, heartbeat, email, account deletion',
 });
 
 test('Tiger Time email: plain words, full links, no em dashes', () => {
-  const { tigerTimeEmail, tigerTimeDate, TIGER_TIME_SUBJECT } = require('../lib/email-templates.ts');
+  const { tigerTimeEmail, tigerTimeDate, tigerTimeSubject, TIGER_TIME_SUBJECT } = require('../lib/email-templates.ts');
   const { voiceFor } = require('../lib/email-voice.ts');
   assert.equal(tigerTimeDate('2026-11-24'), 'Tuesday, November 24');
   const html = tigerTimeEmail(voiceFor('cdl'), { firstName: 'Sam', correct: 1234, day: '2026-11-24' });
@@ -352,6 +352,16 @@ test('Tiger Time email: plain words, full links, no em dashes', () => {
   assert.doesNotMatch(text, /TigerTest|tigertest/, '"Tigertest" styled right');
   assert.match(text, /Tigertest/);
   assert.match(tigerTimeEmail(voiceFor(undefined), { firstName: null, correct: 12, day: '2026-11-24' }), /Hi there,/);
+  // Every language: its own subject and copy, no em dashes, the right date format.
+  const { TIGER_TIME_EMAIL_COPY } = require('../lib/tigerTimeEmailCopy.ts');
+  for (const lang of Object.keys(TIGER_TIME_EMAIL_COPY)) {
+    const h = tigerTimeEmail(voiceFor(undefined), { firstName: 'Sam', correct: 1234, day: '2026-11-24', lang });
+    assert.doesNotMatch(h + tigerTimeSubject(lang), /\u2014/, `${lang}: no em dashes`);
+    assert.match(h, /Tiger Time/, `${lang}: keeps the name`);
+    if (lang !== 'en' && lang !== 'en-GB') assert.notEqual(tigerTimeSubject(lang), TIGER_TIME_SUBJECT, `${lang} is translated`);
+  }
+  assert.match(tigerTimeEmail(voiceFor(undefined), { firstName: 'Sam', correct: 1234, day: '2026-11-24', lang: 'de' }), /1\.234/);
+  assert.match(read('app/api/cron/tiger-time/route.ts'), /subject: tigerTimeSubject\(lang\)/, 'the cron sends it in the winner\'s language');
 });
 
 test('next goal: the closest percentile step up, then first place', () => {
@@ -398,7 +408,35 @@ test('internal accounts count like anyone else; test browsers keep a local count
   for (const f of ['app/api/rank/today/route.ts', 'app/api/rank/merge/route.ts', 'lib/server/dailyRankRequest.ts', 'app/api/cron/tiger-time/route.ts']) {
     assert.doesNotMatch(read(f), /internal\b(?! accounts)/i, `${f} has no internal exclusion`);
   }
-  assert.match(read('app/api/cron/tiger-time/route.ts'), /pickTigerTimeWinner\(candidates\)/);
+  assert.match(read('app/api/cron/tiger-time/route.ts'), /pickCheckedWinner\(candidates\)/, 'no exclusion list passed');
+});
+
+test('Tiger Time cheat check: scripted days are passed over and John is told', () => {
+  const t0 = '2026-11-24T10:00:00.000Z';
+  const at = (min) => new Date(Date.parse(t0) + min * 60_000).toISOString();
+  const day = (uid, correct, minutes, wrong = 5) => ({ uid, correct, firstAt: t0, reachedAt: at(minutes), wrong });
+  assert.equal(R.suspiciousDay(day('a', 49, 1)), null, 'small days are never checked');
+  assert.equal(R.suspiciousDay(day('a', 300, 60)), null, '5 a minute is fast but human');
+  assert.equal(R.suspiciousDay(day('a', 700, 60)).reason, 'fast', 'over 6 a minute');
+  assert.equal(R.suspiciousDay(day('a', 250, 120, 0)).reason, 'perfect', '200+ and none wrong');
+  assert.equal(R.suspiciousDay({ uid: 'a', correct: 900, reachedAt: at(1), firstAt: null, wrong: 3 }), null, 'older days without firstAt are not timed');
+  const { winner, flagged } = R.pickCheckedWinner([day('bot', 2000, 30), day('b', 400, 300), day('c', 100, 60)]);
+  assert.equal(winner.uid, 'b', 'the next honest account wins');
+  assert.deepEqual(flagged.map((f) => f.uid), ['bot']);
+  assert.deepEqual(R.pickCheckedWinner([day('b', 400, 300), day('slow-bot', 60, 1)]).flagged, [], 'flags that change nothing are not reported');
+  const server = read('lib/server/dailyRank.ts');
+  assert.match(server, /firstAt: firstAt \?\? now\.toISOString\(\)/, 'the first answer time is kept');
+  assert.match(server, /firstAtOf\(snap\)\)/, 'updates keep it');
+  const route = read('app/api/cron/tiger-time/route.ts');
+  assert.match(route, /notifyFlagged\(day, flags/);
+  assert.match(route, /idempotencyKey: `tiger-time-flags-\$\{day\}`/);
+});
+
+test('Tiger Time cleanup: rank days past three are deleted by the cron', () => {
+  const server = read('lib/server/dailyRank.ts');
+  assert.match(server, /export async function deleteOldDays\(db: Firestore, today: string, keepDays = 3/);
+  assert.match(server, /db\.recursiveDelete\(r\)/);
+  assert.match(read('app/api/cron/tiger-time/route.ts'), /deleteOldDays\(db, tigerDay\(\)\)/);
 });
 
 test('site header: the trophy chip takes the stats icon\'s place once there is 1 correct today', () => {

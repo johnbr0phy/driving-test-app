@@ -28,8 +28,15 @@ export function requestIp(request: NextRequest): string {
   return (forwarded ? forwarded.split(',')[0] : request.headers.get('x-real-ip'))?.trim() || 'unknown';
 }
 
-function ipKey(ip: string): string {
-  return createHash('sha256').update(`tigertest-answers:${ip}`).digest('hex').slice(0, 32);
+/**
+ * Which budget: 'answers' is the anonymous counter's (its key is unchanged
+ * from before scopes existed); 'rank' is the daily rank counter's
+ * (lib/server/dailyRank.ts), so the two never eat each other's budget.
+ */
+export type AnswerBudgetScope = 'answers' | 'rank';
+
+function ipKey(ip: string, scope: AnswerBudgetScope = 'answers'): string {
+  return createHash('sha256').update(`tigertest-${scope}:${ip}`).digest('hex').slice(0, 32);
 }
 
 /**
@@ -37,11 +44,17 @@ function ipKey(ip: string): string {
  * returns how many were granted (0 to count). Fails open: a Firestore error
  * grants the full count, since analytics must never break answering.
  */
-export async function grantAnswers(db: Firestore, ip: string, count: number, now = new Date()): Promise<number> {
+export async function grantAnswers(
+  db: Firestore,
+  ip: string,
+  count: number,
+  now = new Date(),
+  scope: AnswerBudgetScope = 'answers'
+): Promise<number> {
   const iso = now.toISOString();
   const day = iso.slice(0, 10);
   const hour = iso.slice(11, 13);
-  const ref = db.collection('analyticsRateLimits').doc(`${ipKey(ip)}_${day}`);
+  const ref = db.collection('analyticsRateLimits').doc(`${ipKey(ip, scope)}_${day}`);
   try {
     return await db.runTransaction(async (tx) => {
       const snap = await tx.get(ref);

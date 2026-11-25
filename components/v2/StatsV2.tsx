@@ -11,6 +11,7 @@
 // answers for the exam.
 
 import { Suspense, useMemo, useState } from "react";
+import { DailyRankPanel } from "@/components/DailyRank";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ExamV2Config, QuestionV2 } from "@/lib/v2/types";
 import { getBank } from "@/lib/v2/bank";
@@ -163,6 +164,9 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
         badge={exam.composite.max === 100 ? undefined : null}
         hideSocialProof
       />
+
+      {/* Today's rank, explained (lib/dailyRank.ts; A/B arm "rank" only). */}
+      <DailyRankPanel continueHref={routes.dashboard} />
 
       {communityOn && <StatsTabs active={tab} onChange={setTab} yoursLabel={t.tabYours} communityLabel={t.tabCommunity} />}
 

@@ -344,6 +344,7 @@ function TrainingPageContent() {
       )}
 
       <FocusBar
+        rank="replace"
         exitHref="/dmv/dashboard"
         title={isSetMode && setNumber ? t(`trainingSets.${setNumber}`) : t("common.dmvHeaderTitle")}
         subtitle={isSetMode && setProgress ? `${setProgress.correct}/${setProgress.total} ${t("trainingPage.questionsCorrect")}` : undefined}

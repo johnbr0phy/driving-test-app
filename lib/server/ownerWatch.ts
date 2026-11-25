@@ -16,7 +16,7 @@ const iso = (v: unknown): string | null => (typeof v === "string" && v ? v : nul
  * for a broken job.
  */
 export async function readJobHeartbeats(db: Firestore): Promise<JobHeartbeat[]> {
-  const [stats, flags, source, brief, audit, aiAnswers, gsc] = await Promise.all([
+  const [stats, flags, source, brief, audit, aiAnswers, gsc, tiger] = await Promise.all([
     db.doc("globalStats/studyTimes").get(),
     db.doc("globalStats/questionFlags").get(),
     db.collection("sourceWatch").orderBy("checkedAt", "desc").limit(1).get(),
@@ -24,8 +24,16 @@ export async function readJobHeartbeats(db: Firestore): Promise<JobHeartbeat[]> 
     db.collection("questionAudits").orderBy("at", "desc").limit(1).get(),
     db.collection("aiAnswerChecks").orderBy("date", "desc").limit(1).get(),
     db.collection("gscReports").orderBy("date", "desc").limit(1).get(),
+    db.doc("globalStats/tigerTime").get(),
   ]);
   const jobs: JobHeartbeat[] = [
+    {
+      id: "tiger-time",
+      title: "Daily Tiger Time winner",
+      lastAt: iso(tiger.data()?.updatedAt),
+      maxAgeHours: 36,
+      hint: "Check /api/cron/tiger-time in the Vercel logs.",
+    },
     {
       id: "aggregate-stats",
       title: "Nightly community stats (Common Mistakes, exit questions, study times)",

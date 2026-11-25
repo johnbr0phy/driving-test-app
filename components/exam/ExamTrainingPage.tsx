@@ -9,6 +9,7 @@ import { ShareButton } from "@/components/ShareButton";
 import { useStore } from "@/store/useStore";
 import { shuffleQuestionOptions } from "@/lib/shuffleOptions";
 import { recordClassAnswer } from "@/lib/classProgress";
+import { DailyRankCard } from "@/components/DailyRank";
 import { useClassMissRecovery } from "@/components/exam/ClassMissRecovery";
 import { getExamTrainingSetQuestions, getNextExamTrainingSetQuestion } from "@/lib/examTestGenerator";
 import { ExamConfig, examSetId, trainingPartName, trainingParts } from "@/lib/exams";
@@ -336,6 +337,7 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
               detail={<><span className="block">{setLabel}</span><span className="block mt-1 font-normal">{progress?.correct}/{progress?.total} {t("trainingPage.questionsCorrect")}</span></>}
               earned={earnedCompletion}
             >
+              <DailyRankCard />
               <Button asChild className="h-auto min-h-12 w-full whitespace-normal bg-green-700 px-5 py-3 text-base font-bold text-white hover:bg-green-800">
                 <Link href={dashboardHref}>{celebrationCopy.progress}</Link>
               </Button>
@@ -375,6 +377,7 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
       )}
 
       <FocusBar
+        rank="replace"
         exitHref={routes.dashboard}
         title={isSetMode ? setLabel : exam.shortName}
         subtitle={isSetMode && progress ? `${progress.correct}/${progress.total} ${t("trainingPage.questionsCorrect")}` : undefined}

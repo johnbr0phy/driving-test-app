@@ -37,7 +37,7 @@ Q = [
  "Registered owner", ["Buyer named on the contract", "Showroom that sold it", "Vehicle's insurer"],
  "Article 9: the owner whose name is registered stays responsible for all fees and obligations on the vehicle until the transfer is done, and may claim back from the new owner."),
 ("Under the amended Article 17, what must be issued before another person may use a car?",
- "Owner's authorisation (tafweed)", ["Notarised power of attorney", "Named-driver insurance policy", "Signed car lease agreement"],
+ "Owner's authorisation", ["Notarised power of attorney", "Named-driver insurance policy", "Signed car lease agreement"],
  "The amended Article 17: an owner may not let another person drive the vehicle except under an authorisation (tafweed) issued through the procedure the regulation sets."),
 ("On which kind of vehicle sale does Article 16 say no ownership transfer fee is charged?",
  "Sale for dismantling into parts", ["Sale between family members", "Sale through a licensed showroom", "Sale to a buyer abroad"],

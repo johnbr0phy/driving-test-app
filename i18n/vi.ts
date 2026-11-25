@@ -4443,6 +4443,8 @@ export const vi: TranslationKeys = {
     goalPlaceOne: "Thêm 1 câu đúng để đạt được.",
     firstPlaceTied: "Bạn đang đồng hạng. Thêm 1 câu đúng để dẫn đầu một mình.",
     top100: "Top 100",
+    encourage: "Mỗi câu đúng giúp bạn tăng hạng. Tiếp tục ôn luyện nhé!",
+    encourageTop: "Bạn sắp lên đỉnh rồi. Cố lên!",
   },
   theme: {
     appearance: "Giao diện",

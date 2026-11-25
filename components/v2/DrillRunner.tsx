@@ -1,6 +1,7 @@
 "use client";
 
 import { FocusMode } from "./FocusMode";
+import { noteStatsSource } from "@/lib/statsViews";
 
 import { AccessibleOverlay } from "@/components/AccessibleOverlay";
 
@@ -218,7 +219,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
         progress={questions.length ? mastered / questions.length : undefined}
         right={
           user ? (
-            <Link href={routes.stats} className="text-sm font-medium text-brand-dark hover:text-brand-darker transition-colors">
+            <Link href={routes.stats} onClick={() => noteStatsSource("bar_link")} className="text-sm font-medium text-brand-dark hover:text-brand-darker transition-colors">
               {t.viewStats}
             </Link>
           ) : undefined

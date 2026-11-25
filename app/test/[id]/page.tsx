@@ -1,6 +1,7 @@
 "use client";
 
 import { startCheckout } from "@/lib/startCheckout";
+import { noteStatsSource } from "@/lib/statsViews";
 import { useState, useEffect, useRef } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { QuestionCard } from "@/components/QuestionCard";
@@ -209,6 +210,7 @@ export default function TestPage() {
           isPremium ? (
             <Link
               href="/stats"
+              onClick={() => noteStatsSource("bar_link")}
               className="text-sm font-medium text-brand-dark hover:text-brand-darker transition-colors"
             >
               {t("dashboard.viewStats")}
@@ -224,7 +226,7 @@ export default function TestPage() {
                 trackViewItem("practice_test_4");
                 setPaywallOpen(true);
               }}
-              className="text-sm font-medium text-brand-dark hover:text-brand-darker transition-colors"
+              className="max-w-[9.5rem] text-right text-sm font-medium leading-tight text-brand-dark transition-colors hover:text-brand-darker sm:max-w-none sm:leading-normal"
             >
               {ctaText}
             </button>

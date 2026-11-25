@@ -229,9 +229,9 @@ test('wiring: every engine\'s answers feed the rank, sign-in merges, the API reu
 test('privacy: the API never returns a head count, a raw rank or anyone else', () => {
   const status = R.rankStatus('2026-11-25', histOf([1, 2, 3, 4, 5]), 3);
   assert.deepEqual(Object.keys(status).sort(), ['correct', 'cutoffs', 'day', 'enterTop', 'next', 'place', 'placeGoal', 'topPercent']);
-  // A place is shown only in the top 100, so it never reveals how many people answered.
+  // Everyone gets a place now (John, Nov 25 2026), however far down.
   const big = {}; for (let c = 1; c <= 300; c++) big[c] = 500;
-  assert.equal(R.rankStatus('2026-11-25', big, 1).place, null, 'far down: no place, a percent');
+  assert.equal(R.rankStatus('2026-11-25', big, 1).place, 299 * 500 + 1, 'far down: still a place');
   assert.equal(R.rankStatus('2026-11-25', big, 300).place, 1);
   // Every response is the caller's own status, built by rankStatus/statusFor, or an error.
   for (const file of ['app/api/rank/today/route.ts', 'app/api/rank/merge/route.ts']) {
@@ -337,7 +337,7 @@ test('Tiger Time wiring: daily winner cron, heartbeat, email, account deletion',
 });
 
 test('Tiger Time email: plain words, full links, no em dashes', () => {
-  const { tigerTimeEmail, tigerTimeDate, TIGER_TIME_SUBJECT } = require('../lib/email-templates.ts');
+  const { tigerTimeEmail, tigerTimeDate, tigerTimeSubject, TIGER_TIME_SUBJECT } = require('../lib/email-templates.ts');
   const { voiceFor } = require('../lib/email-voice.ts');
   assert.equal(tigerTimeDate('2026-11-24'), 'Tuesday, November 24');
   const html = tigerTimeEmail(voiceFor('cdl'), { firstName: 'Sam', correct: 1234, day: '2026-11-24' });
@@ -352,6 +352,16 @@ test('Tiger Time email: plain words, full links, no em dashes', () => {
   assert.doesNotMatch(text, /TigerTest|tigertest/, '"Tigertest" styled right');
   assert.match(text, /Tigertest/);
   assert.match(tigerTimeEmail(voiceFor(undefined), { firstName: null, correct: 12, day: '2026-11-24' }), /Hi there,/);
+  // Every language: its own subject and copy, no em dashes, the right date format.
+  const { TIGER_TIME_EMAIL_COPY } = require('../lib/tigerTimeEmailCopy.ts');
+  for (const lang of Object.keys(TIGER_TIME_EMAIL_COPY)) {
+    const h = tigerTimeEmail(voiceFor(undefined), { firstName: 'Sam', correct: 1234, day: '2026-11-24', lang });
+    assert.doesNotMatch(h + tigerTimeSubject(lang), /\u2014/, `${lang}: no em dashes`);
+    assert.match(h, /Tiger Time/, `${lang}: keeps the name`);
+    if (lang !== 'en' && lang !== 'en-GB') assert.notEqual(tigerTimeSubject(lang), TIGER_TIME_SUBJECT, `${lang} is translated`);
+  }
+  assert.match(tigerTimeEmail(voiceFor(undefined), { firstName: 'Sam', correct: 1234, day: '2026-11-24', lang: 'de' }), /1\.234/);
+  assert.match(read('app/api/cron/tiger-time/route.ts'), /subject: tigerTimeSubject\(lang\)/, 'the cron sends it in the winner\'s language');
 });
 
 test('next goal: the closest percentile step up, then first place', () => {
@@ -368,7 +378,7 @@ test('next goal: the closest percentile step up, then first place', () => {
   assert.equal(R.nextGoal(cutoffs, 0, null), null);
 });
 
-test('place: top 100 only, ties share the better place, the next place up', () => {
+test('place: for everyone, ties share the better place, the next place up', () => {
   // Made-up: one person on 300, two on 299, ten on 250, then a long tail.
   const h = { 300: 1, 299: 2, 250: 10 };
   for (let c = 1; c < 250; c++) h[c] = 40;
@@ -379,9 +389,10 @@ test('place: top 100 only, ties share the better place, the next place up', () =
   assert.deepEqual(R.nextPlaceUp(h, 299), { place: 1, need: 1 });
   assert.equal(R.nextPlaceUp(h, 300), null);
   const far = R.rankStatus('d', h, 100);
-  assert.equal(far.place, null, 'outside the top 100');
-  // 247 correct has 2x40 (248, 249) + 13 ahead: 94th, inside the top 100.
-  assert.deepEqual(far.enterTop, { need: 147 });
+  // 150 counts (101..249) x 40 people + 13 at 250+ are ahead of 100 correct.
+  assert.equal(far.place, 149 * 40 + 13 + 1, 'far down: still a place');
+  assert.deepEqual(far.placeGoal, { place: 149 * 40 + 13 + 1 - 40, need: 1 }, 'the next place up');
+  assert.equal(far.enterTop, null, 'no "Top 100" step any more');
   // Goals: next place up, tied first, first, and the way into the top 100.
   assert.deepEqual(R.nextGoal([], 250, { kind: 'block', need: 1, people: 1 }, 4, { place: 2, need: 49 }), { kind: 'place', place: 2, need: 49 });
   assert.deepEqual(R.nextGoal([], 300, { kind: 'everyone', need: 1, people: 1 }, 1, null), { kind: 'tiedFirst' });
@@ -397,7 +408,35 @@ test('internal accounts count like anyone else; test browsers keep a local count
   for (const f of ['app/api/rank/today/route.ts', 'app/api/rank/merge/route.ts', 'lib/server/dailyRankRequest.ts', 'app/api/cron/tiger-time/route.ts']) {
     assert.doesNotMatch(read(f), /internal\b(?! accounts)/i, `${f} has no internal exclusion`);
   }
-  assert.match(read('app/api/cron/tiger-time/route.ts'), /pickTigerTimeWinner\(candidates\)/);
+  assert.match(read('app/api/cron/tiger-time/route.ts'), /pickCheckedWinner\(candidates\)/, 'no exclusion list passed');
+});
+
+test('Tiger Time cheat check: scripted days are passed over and John is told', () => {
+  const t0 = '2026-11-24T10:00:00.000Z';
+  const at = (min) => new Date(Date.parse(t0) + min * 60_000).toISOString();
+  const day = (uid, correct, minutes, wrong = 5) => ({ uid, correct, firstAt: t0, reachedAt: at(minutes), wrong });
+  assert.equal(R.suspiciousDay(day('a', 49, 1)), null, 'small days are never checked');
+  assert.equal(R.suspiciousDay(day('a', 300, 60)), null, '5 a minute is fast but human');
+  assert.equal(R.suspiciousDay(day('a', 700, 60)).reason, 'fast', 'over 6 a minute');
+  assert.equal(R.suspiciousDay(day('a', 250, 120, 0)).reason, 'perfect', '200+ and none wrong');
+  assert.equal(R.suspiciousDay({ uid: 'a', correct: 900, reachedAt: at(1), firstAt: null, wrong: 3 }), null, 'older days without firstAt are not timed');
+  const { winner, flagged } = R.pickCheckedWinner([day('bot', 2000, 30), day('b', 400, 300), day('c', 100, 60)]);
+  assert.equal(winner.uid, 'b', 'the next honest account wins');
+  assert.deepEqual(flagged.map((f) => f.uid), ['bot']);
+  assert.deepEqual(R.pickCheckedWinner([day('b', 400, 300), day('slow-bot', 60, 1)]).flagged, [], 'flags that change nothing are not reported');
+  const server = read('lib/server/dailyRank.ts');
+  assert.match(server, /firstAt: firstAt \?\? now\.toISOString\(\)/, 'the first answer time is kept');
+  assert.match(server, /firstAtOf\(snap\)\)/, 'updates keep it');
+  const route = read('app/api/cron/tiger-time/route.ts');
+  assert.match(route, /notifyFlagged\(day, flags/);
+  assert.match(route, /idempotencyKey: `tiger-time-flags-\$\{day\}`/);
+});
+
+test('Tiger Time cleanup: rank days past three are deleted by the cron', () => {
+  const server = read('lib/server/dailyRank.ts');
+  assert.match(server, /export async function deleteOldDays\(db: Firestore, today: string, keepDays = 3/);
+  assert.match(server, /db\.recursiveDelete\(r\)/);
+  assert.match(read('app/api/cron/tiger-time/route.ts'), /deleteOldDays\(db, tigerDay\(\)\)/);
 });
 
 test('site header: the trophy chip takes the stats icon\'s place once there is 1 correct today', () => {
@@ -411,4 +450,34 @@ test('site header: the trophy chip takes the stats icon\'s place once there is 1
   assert.match(chip, /compact && rank\.correct >= 1000/);
   // The chip takes an explicit link (or none) where it is not on a runner path.
   assert.match(read('components/DailyRank.tsx'), /hrefOverride === undefined \? rankStatsHref\(pathname\) : hrefOverride/);
+});
+
+test('every place but first gets a nudge to keep prepping', () => {
+  const panel = read('components/DailyRank.tsx');
+  assert.match(panel, /rank\.place > 1 && \(/);
+  assert.match(panel, /rank\.place <= RANK_NEAR_TOP \? "dailyRank\.encourageTop" : "dailyRank\.encourage"/);
+  const { en } = require('../i18n/en.ts');
+  assert.equal(en.dailyRank.encourage, 'Every correct answer moves you up. Keep prepping!');
+});
+
+test('English places read as ordinals with thousands separators', () => {
+  assert.match(read('components/DailyRank.tsx'), /\$\{n\.toLocaleString\("en-US"\)\}\$\{suffix\[/);
+  const suffix = { one: 'st', two: 'nd', few: 'rd', other: 'th' };
+  const ord = (n) => `${n.toLocaleString('en-US')}${suffix[new Intl.PluralRules('en-US', { type: 'ordinal' }).select(n)]}`;
+  assert.deepEqual([1, 2, 3, 11, 22, 235, 48189].map(ord), ['1st', '2nd', '3rd', '11th', '22nd', '235th', '48,189th']);
+});
+
+test('the end-of-session card is the stats panel design, with sign-in for guests', () => {
+  const src = read('components/DailyRank.tsx');
+  assert.match(src, /export function DailyRankCard\([^)]*\) \{\s*return <DailyRankPanel className=\{className\} guestSignIn anchor=\{false\} \/>;/);
+  assert.match(src, /\{guestSignIn && !user && \(/);
+  assert.match(src, /id=\{anchor \? "today-rank" : undefined\}/);
+  // The header chip and the test-bar chip are told apart in stats traffic.
+  assert.match(src, /noteStatsSource\(hrefOverride === undefined \? "bar_chip" : "header_chip"\)/);
+});
+
+test('the DMV upsell in the test bar wraps on phones instead of crushing the title', () => {
+  for (const f of ['app/training/page.tsx', 'app/test/[id]/page.tsx']) {
+    assert.match(read(f), /max-w-\[9\.5rem\] text-right text-sm font-medium leading-tight[^"]*sm:max-w-none/, f);
+  }
 });

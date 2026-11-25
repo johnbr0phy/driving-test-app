@@ -567,6 +567,8 @@ export const nl: TranslationKeys = {
     goalPlaceOne: "Nog 1 goed om daar te komen.",
     firstPlaceTied: "Je staat gelijk. Nog 1 goed om alleen bovenaan te staan.",
     top100: "Top 100",
+    encourage: "Elk goed antwoord brengt je omhoog. Blijf oefenen!",
+    encourageTop: "Je bent bijna bovenaan. Ga zo door!",
   },
   theme: {
     appearance: "Weergave",

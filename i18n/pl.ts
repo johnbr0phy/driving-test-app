@@ -567,6 +567,8 @@ export const pl: TranslationKeys = {
     goalPlaceOne: "Brakuje 1 poprawnej.",
     firstPlaceTied: "Remis na pierwszym miejscu. Jeszcze 1 poprawna, by prowadzić samodzielnie.",
     top100: "Top 100",
+    encourage: "Każda poprawna odpowiedź przesuwa cię w górę. Ćwicz dalej!",
+    encourageTop: "Jesteś blisko szczytu. Tak trzymaj!",
   },
   theme: {
     appearance: "Wygląd",

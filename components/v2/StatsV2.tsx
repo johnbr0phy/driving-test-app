@@ -11,6 +11,7 @@
 // answers for the exam.
 
 import { Suspense, useMemo, useState } from "react";
+import { useStatsView } from "@/lib/statsViews";
 import { DailyRankPanel } from "@/components/DailyRank";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ExamV2Config, QuestionV2 } from "@/lib/v2/types";
@@ -126,6 +127,8 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
     [communityRaw, byId],
   );
 
+  // Stats page traffic (lib/statsViews.ts): one view once the page really shows.
+  useStatsView(exam.id, hydrated);
   if (!hydrated) return <div className="flex-1 bg-gray-50 dark:bg-gray-950" />;
 
   const subtitle = (q: QuestionV2) => `${exam.domainLabels[q.domain] ?? q.domain}${q.skill ? ` · ${q.skill}` : ""}`;

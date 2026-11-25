@@ -568,6 +568,8 @@ export const fi: TranslationKeys = {
     goalPlaceOne: "Vielä 1 oikein, niin pääset sinne.",
     firstPlaceTied: "Jaettu ykkössija. Vielä 1 oikein, niin johdat yksin.",
     top100: "Top 100",
+    encourage: "Jokainen oikea vastaus nostaa sinua. Jatka harjoittelua!",
+    encourageTop: "Olet lähellä kärkeä. Jatka samaan malliin!",
   },
   theme: {
     appearance: "Ulkoasu",

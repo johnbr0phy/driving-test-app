@@ -568,6 +568,8 @@ export const da: TranslationKeys = {
     goalPlaceOne: "1 rigtigt mere for at nå dertil.",
     firstPlaceTied: "Delt førsteplads. 1 rigtigt mere for at føre alene.",
     top100: "Top 100",
+    encourage: "Hvert rigtigt svar bringer dig op. Bliv ved med at øve!",
+    encourageTop: "Du er tæt på toppen. Bliv ved!",
   },
   theme: {
     appearance: "Udseende",

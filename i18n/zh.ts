@@ -4445,6 +4445,8 @@ export const zh: TranslationKeys = {
     goalPlaceOne: "再答对 1 题即可。",
     firstPlaceTied: "你并列第一。再答对 1 题即可独占第一。",
     top100: "前 100 名",
+    encourage: "每答对一题，排名就会上升。继续加油备考！",
+    encourageTop: "你离榜首很近了，继续加油！",
   },
   theme: {
     appearance: "外观",

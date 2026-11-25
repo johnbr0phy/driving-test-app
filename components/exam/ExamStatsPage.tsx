@@ -10,6 +10,7 @@
 // (lib/communityStats.ts); ?tab=community opens it, guests included.
 
 import { startCheckout } from "@/lib/startCheckout";
+import { useStatsView } from "@/lib/statsViews";
 import { DailyRankPanel } from "@/components/DailyRank";
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
@@ -218,6 +219,8 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
     );
   };
 
+  // Stats page traffic (lib/statsViews.ts): one view once the page really shows.
+  useStatsView(exam.id, hydrated && (wantsCommunity || (accountReady && !!user && !isGuest)) && !(loadFailed && user && !wantsCommunity));
   if (loadFailed && user && !wantsCommunity) return <AccountLoadRetry uid={user.uid} />;
   if (!hydrated || (!wantsCommunity && (!accountReady || !user || isGuest))) return null;
 

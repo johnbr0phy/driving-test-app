@@ -568,6 +568,8 @@ export const sv: TranslationKeys = {
     goalPlaceOne: "1 rätt till för att komma dit.",
     firstPlaceTied: "Delad förstaplats. 1 rätt till för att leda ensam.",
     top100: "Topp 100",
+    encourage: "Varje rätt svar tar dig uppåt. Fortsätt plugga!",
+    encourageTop: "Du är nära toppen. Fortsätt så!",
   },
   theme: {
     appearance: "Utseende",

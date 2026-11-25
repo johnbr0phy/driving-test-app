@@ -26,8 +26,13 @@ export const RANK_PASS_BLOCK = 1000;
 export const RANK_MAX_SEEN = 3000;
 /** How long a day's distribution is cached before it is read again. */
 export const RANK_DISTRIBUTION_TTL_MS = 15 * 60_000;
-/** Places are shown only this high up ("2nd"); below, the percentile ("Top 6%"). */
-export const RANK_SHOW_PLACE_MAX = 100;
+/**
+ * Places are shown this high up ("235th"); below, the percentile. No cap
+ * (John, Nov 25 2026): everyone sees their place, with a nudge to keep going.
+ */
+export const RANK_SHOW_PLACE_MAX = Number.POSITIVE_INFINITY;
+/** Places this high get "close to the top" instead of "every answer moves you up". */
+export const RANK_NEAR_TOP = 10;
 /** Percentiles above this are not shown ("Top 80%" reads as a put-down). */
 export const RANK_SHOW_TOP_PERCENT_MAX = 50;
 
@@ -52,7 +57,7 @@ export type RankStatus = {
   next: RankNext | null;
   /** cutoffs[p - 1]: fewest correct answers that reach the top p%, null if none can. */
   cutoffs: (number | null)[];
-  /** Place today (ties share the better one), only in the top RANK_SHOW_PLACE_MAX. */
+  /** Place today (ties share the better one), for everyone with 1+ correct. */
   place: number | null;
   /** In the top 100 but not first: the next place up and how many more correct reach it. */
   placeGoal: { place: number; need: number } | null;
@@ -104,7 +109,60 @@ export function formatCountdown(ms: number): string {
   return `${h}:${String(m).padStart(2, "0")}:${String(sec).padStart(2, "0")}`;
 }
 
-export type TigerCandidate = { uid: string | null; correct: number; reachedAt: string | null };
+export type TigerCandidate = {
+  uid: string | null;
+  correct: number;
+  reachedAt: string | null;
+  /** When the person's first answer of the day arrived (older days have none). */
+  firstAt?: string | null;
+  /** First answers that were wrong. */
+  wrong?: number;
+};
+
+/** A day is only checked for cheating from this many correct answers. */
+export const TIGER_TIME_CHECK_FROM = 50;
+/** Faster than this, averaged over the day, is not a person reading questions (about 10 s each). */
+export const TIGER_TIME_MAX_PER_MINUTE = 6;
+/** This many correct with not one wrong is not believable either. */
+export const TIGER_TIME_PERFECT_FROM = 200;
+
+/**
+ * Why a day looks scripted, or null. "fast": more than 6 correct a minute
+ * from the first answer to reaching the count; "perfect": 200+ correct and
+ * not one wrong. Only days of 50+ correct are checked, and a day with no
+ * firstAt (recorded before Nov 25 2026) is only checked for "perfect".
+ */
+export function suspiciousDay(c: TigerCandidate): { reason: "fast" | "perfect"; perMinute: number | null } | null {
+  if (c.correct < TIGER_TIME_CHECK_FROM) return null;
+  let perMinute: number | null = null;
+  if (c.firstAt && c.reachedAt) {
+    const minutes = Math.max(1, (Date.parse(c.reachedAt) - Date.parse(c.firstAt)) / 60_000);
+    perMinute = Math.round((c.correct / minutes) * 10) / 10;
+    if (perMinute > TIGER_TIME_MAX_PER_MINUTE) return { reason: "fast", perMinute };
+  }
+  if (c.correct >= TIGER_TIME_PERFECT_FROM && c.wrong === 0) return { reason: "perfect", perMinute };
+  return null;
+}
+
+/**
+ * The winner after the cheat check: suspicious days are passed over (and
+ * returned in `flagged` so John hears about them) and the next account wins.
+ */
+export function pickCheckedWinner(
+  candidates: TigerCandidate[],
+  excluded: (uid: string) => boolean = () => false,
+): { winner: TigerCandidate | null; flagged: (TigerCandidate & { reason: "fast" | "perfect"; perMinute: number | null })[] } {
+  const flagged: (TigerCandidate & { reason: "fast" | "perfect"; perMinute: number | null })[] = [];
+  const clean = candidates.filter((c) => {
+    if (!c.uid) return true;
+    const s = suspiciousDay(c);
+    if (s) flagged.push({ ...c, ...s });
+    return !s;
+  });
+  const winner = pickTigerTimeWinner(clean, excluded);
+  // Only flags that changed the result (they would have won or out-scored the winner) matter.
+  return { winner, flagged: flagged.filter((f) => !winner || f.correct >= winner.correct) };
+}
 
 /**
  * The day's winner: the signed-in account with the most correct answers, at

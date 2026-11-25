@@ -4443,6 +4443,8 @@ export const es: TranslationKeys = {
     goalPlaceOne: "1 correcta más para llegar.",
     firstPlaceTied: "Estás empatado. 1 correcta más para quedarte solo arriba.",
     top100: "Top 100",
+    encourage: "Cada acierto te hace subir. ¡Sigue preparándote!",
+    encourageTop: "Estás cerca de la cima. ¡Sigue así!",
   },
   theme: {
     appearance: "Apariencia",

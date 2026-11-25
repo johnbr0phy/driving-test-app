@@ -80,17 +80,25 @@ function writePerson(
   now: Date,
   reachedAt: string | null,
   extra: Record<string, unknown> = {},
+  firstAt: string | null = null,
 ) {
   tx.set(personRef(db, day, id), {
     k: p.k,
     w: p.w,
     c: correctOf(p),
     reachedAt,
+    // When the first answer of the day arrived: the winner job's cheat check.
+    firstAt: firstAt ?? now.toISOString(),
     ...(id.startsWith('u_') && { uid: id.slice(2) }),
     at: now.toISOString(),
     expiresAt: new Date(now.getTime() + KEEP_MS),
     ...extra,
   });
+}
+
+function firstAtOf(snap: FirebaseFirestore.DocumentSnapshot): string | null {
+  const v = snap.get('firstAt');
+  return typeof v === 'string' ? v : null;
 }
 
 function reachedAtOf(snap: FirebaseFirestore.DocumentSnapshot): string | null {
@@ -114,7 +122,7 @@ export async function recordRankAnswers(db: Firestore, day: string, personId: st
     const after = applyAnswers(before, answers);
     if (after.k.length === before.k.length && after.w.length === before.w.length) return correctOf(before);
     const grew = correctOf(after) > correctOf(before);
-    writePerson(tx, db, day, personId, after, now, grew ? now.toISOString() : reachedAtOf(snap));
+    writePerson(tx, db, day, personId, after, now, grew ? now.toISOString() : reachedAtOf(snap), {}, firstAtOf(snap));
     writeDelta(tx, db, day, histogramDelta(correctOf(before), correctOf(after)), now);
     return correctOf(after);
   });
@@ -134,7 +142,8 @@ export async function mergeGuestDay(db: Firestore, day: string, guestId: string,
     const guest = readPerson(gSnap.data());
     const merged = mergePeople(account, guest);
     const grew = correctOf(merged) > correctOf(account);
-    writePerson(tx, db, day, accountId, merged, now, grew ? now.toISOString() : reachedAtOf(aSnap));
+    const firsts = [firstAtOf(aSnap), firstAtOf(gSnap)].filter((x): x is string => !!x).sort();
+    writePerson(tx, db, day, accountId, merged, now, grew ? now.toISOString() : reachedAtOf(aSnap), {}, firsts[0] ?? null);
     writePerson(tx, db, day, guestId, emptyPerson(), now, null, { mergedInto: accountId });
     // Out of both old buckets, into the merged one.
     const delta = addHistogramDeltas(
@@ -199,6 +208,21 @@ export async function topOfDay(db: Firestore, day: string): Promise<TigerCandida
       uid: typeof d.get('uid') === 'string' ? (d.get('uid') as string) : null,
       correct: Number(d.get('c')) || 0,
       reachedAt: typeof d.get('reachedAt') === 'string' ? (d.get('reachedAt') as string) : null,
+      firstAt: typeof d.get('firstAt') === 'string' ? (d.get('firstAt') as string) : null,
+      wrong: Array.isArray(d.get('w')) ? (d.get('w') as unknown[]).length : undefined,
     }));
 }
 
+
+/**
+ * Deletes rank days older than `keepDays` (people and histogram shards), at
+ * most `max` days a run. The /privacy page promises three days; this keeps
+ * that promise without a Firestore TTL policy. Returns the days deleted.
+ */
+export async function deleteOldDays(db: Firestore, today: string, keepDays = 3, max = 7): Promise<string[]> {
+  const cutoff = new Date(Date.parse(`${today}T00:00:00Z`) - keepDays * 86_400_000).toISOString().slice(0, 10);
+  const refs = await db.collection('dailyRank').listDocuments();
+  const old = refs.filter((r) => /^\d{4}-\d{2}-\d{2}$/.test(r.id) && r.id < cutoff).slice(0, max);
+  for (const r of old) await db.recursiveDelete(r);
+  return old.map((r) => r.id);
+}

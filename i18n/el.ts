@@ -568,6 +568,8 @@ export const el: TranslationKeys = {
     goalPlaceOne: "Άλλη 1 σωστή για να φτάσεις εκεί.",
     firstPlaceTied: "Είσαι ισόβαθμος. Άλλη 1 σωστή για να είσαι μόνος πρώτος.",
     top100: "Top 100",
+    encourage: "Κάθε σωστή απάντηση σε ανεβάζει. Συνέχισε την προετοιμασία!",
+    encourageTop: "Είσαι κοντά στην κορυφή. Συνέχισε!",
   },
   theme: {
     appearance: "Εμφάνιση",

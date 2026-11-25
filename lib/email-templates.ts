@@ -13,6 +13,7 @@ import { emailBrand } from "@/lib/email-brand";
 import type { TigerExpression } from "@/lib/tigerAssets";
 import { EXAMS_V2 } from "@/lib/v2/registry";
 import { reportReplyCopy } from "@/lib/reportReplyCopy";
+import { tigerTimeEmailCopy } from "@/lib/tigerTimeEmailCopy";
 
 interface ShellOptions {
   /** <title>, used by some clients as the preview label. */
@@ -621,32 +622,48 @@ export interface TigerTimeContent {
   correct: number;
   /** The Tiger Time day won, YYYY-MM-DD (Eastern time). */
   day: string;
+  /** The winner's interface language (users/{uid}.language); English when unknown. */
+  lang?: string;
 }
 
-/** "Tuesday, November 24" for a Tiger Time day. */
-export function tigerTimeDate(day: string): string {
-  return new Intl.DateTimeFormat("en-US", { weekday: "long", month: "long", day: "numeric", timeZone: "UTC" }).format(new Date(`${day}T12:00:00Z`));
+/** "Tuesday, November 24" for a Tiger Time day, in the given language. */
+export function tigerTimeDate(day: string, lang = "en"): string {
+  const locale = lang === "en" ? "en-US" : lang;
+  return new Intl.DateTimeFormat(locale, { weekday: "long", month: "long", day: "numeric", timeZone: "UTC" }).format(new Date(`${day}T12:00:00Z`));
+}
+
+/** The subject line in the winner's language. */
+export function tigerTimeSubject(lang?: string): string {
+  return tigerTimeEmailCopy(lang).copy.subject;
 }
 
 export function tigerTimeEmail(v: EmailVoice, c: TigerTimeContent): string {
-  const date = tigerTimeDate(c.day);
-  const count = c.correct.toLocaleString("en-US");
+  const { lang, copy } = tigerTimeEmailCopy(c.lang);
+  const date = tigerTimeDate(c.day, lang);
+  const count = c.correct.toLocaleString(lang === "en" ? "en-US" : lang);
+  const fill = (s: string, vars: Record<string, string>) => s.replace(/\{(\w+)\}/g, (_, k: string) => vars[k] ?? "");
+  const won = fill(esc(copy.won).replace(/&lt;strong&gt;/g, '<strong style="font-weight: 700;">').replace(/&lt;\/strong&gt;/g, "</strong>"), {
+    date: esc(date),
+    count,
+  });
   return emailShell({
     voice: v,
     expression: 1,
     eyebrow: "TIGER TIME",
-    title: TIGER_TIME_SUBJECT,
-    preheader: `${count} right on the first try. Nobody on Tigertest got more on ${date}.`,
-    heading: "You won Tiger Time.",
+    title: copy.subject,
+    preheader: fill(copy.preheader, { count, date }),
+    heading: copy.heading,
     unsubscribe: false,
-    footerNote: `You are getting this because you won Tiger Time on ${date}.`,
+    lang,
+    footerNote: fill(copy.footer, { date }),
+    privacyLabel: reportReplyCopy(lang).copy.privacy,
     body: [
-      p(c.firstName ? `Hi ${esc(c.firstName)},` : "Hi there,"),
-      p(`On ${esc(date)} you got <strong style="font-weight: 700;">${count} questions right on the first try</strong>. Nobody on Tigertest got more, so you are that day's Tiger Time winner.`),
-      p("Congratulations. That is a serious day of studying."),
-      p("A new Tiger Time starts every night at midnight Eastern time, if you want to go again."),
-      cta(DASH(v, "tiger_time"), v.id === "unknown" ? "Keep Practicing" : `Keep Practicing ${v.shortName}`),
-      signoff("Cheers,"),
+      p(c.firstName ? esc(fill(copy.hi, { name: c.firstName })) : esc(copy.hiThere)),
+      p(won),
+      p(esc(copy.congrats)),
+      p(esc(copy.again)),
+      cta(DASH(v, "tiger_time"), esc(v.id === "unknown" ? copy.cta : fill(copy.ctaNamed, { name: v.shortName }))),
+      signoff(esc(copy.signoff)),
     ].join("\n"),
   });
 }

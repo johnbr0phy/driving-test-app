@@ -1920,15 +1920,15 @@
 
   /* Gulf doctor licensing exam (SMLE, DHA, DOH, MOHAP) theme: deep Gulf azure */
   [data-theme="gulfmd"] {
-    --brand: 215 100% 31%;
+    --brand: 250 65% 48%;
     --brand-foreground: 0 0% 100%;
-    --brand-light: 215 80% 96%;
-    --brand-hover: 215 100% 26%;
-    --brand-dark: 215 100% 21%;
-    --brand-darker: 215 100% 14%;
-    --brand-muted: 215 40% 72%;
-    --brand-border: 215 40% 82%;
-    --brand-border-light: 215 35% 90%;
+    --brand-light: 250 80% 96%;
+    --brand-hover: 250 65% 43%;
+    --brand-dark: 250 65% 38%;
+    --brand-darker: 250 65% 30%;
+    --brand-muted: 250 40% 72%;
+    --brand-border: 250 40% 82%;
+    --brand-border-light: 250 35% 90%;
     --brand-gradient-to: 45 55% 96%;
   }
 
@@ -9819,15 +9819,15 @@
   }
 
   .dark [data-theme="gulfmd"] {
-    --brand: 215 100% 50%;
-    --brand-hover: 215 100% 42%;
-    --brand-light: 215 45% 13%;
+    --brand: 250 65% 50%;
+    --brand-hover: 250 65% 43%;
+    --brand-light: 250 45% 13%;
     --brand-gradient-to: 45 40% 11%;
-    --brand-border-light: 215 35% 24%;
-    --brand-border: 215 40% 34%;
-    --brand-muted: 215 40% 45%;
-    --brand-dark: 215 100% 65%;
-    --brand-darker: 215 100% 78%;
+    --brand-border-light: 250 35% 24%;
+    --brand-border: 250 40% 34%;
+    --brand-muted: 250 40% 45%;
+    --brand-dark: 250 65% 66%;
+    --brand-darker: 250 65% 78%;
   }
 
   .dark [data-theme="inrto"] {

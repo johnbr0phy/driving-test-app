@@ -2323,20 +2323,6 @@
     --brand-gradient-to: 190 55% 95%;
   }
 
-  /* Saudi driving theory (Muroor) theme: deep Saudi green */
-  [data-theme="samuroor"] {
-    --brand: 155 100% 12%;
-    --brand-foreground: 0 0% 100%;
-    --brand-light: 155 40% 95%;
-    --brand-hover: 155 100% 9%;
-    --brand-dark: 155 100% 7%;
-    --brand-darker: 155 95% 5%;
-    --brand-muted: 155 30% 68%;
-    --brand-border: 155 30% 80%;
-    --brand-border-light: 155 25% 90%;
-    --brand-gradient-to: 140 40% 95%;
-  }
-
   /* Nigeria FRSC Highway Code theme */
   [data-theme="ngfrsc"] {
     --brand: 123 60% 26%;
@@ -10158,18 +10144,6 @@
     --brand-muted: 162 30% 45%;
     --brand-dark: 162 80% 65%;
     --brand-darker: 162 70% 78%;
-  }
-
-  .dark [data-theme="samuroor"] {
-    --brand: 155 100% 26.4%;
-    --brand-hover: 155 100% 18.4%;
-    --brand-light: 155 40% 13%;
-    --brand-gradient-to: 140 40% 11%;
-    --brand-border-light: 155 25% 24%;
-    --brand-border: 155 30% 34%;
-    --brand-muted: 155 30% 45%;
-    --brand-dark: 155 100% 65%;
-    --brand-darker: 155 95% 78%;
   }
 
   .dark [data-theme="ngfrsc"] {

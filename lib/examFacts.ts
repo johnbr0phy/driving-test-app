@@ -4328,21 +4328,6 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "RTA Knowledge Test service page and UAE government road safety guidance, checked October 2026",
     source: { name: "RTA: Knowledge Test", url: "https://www.rta.ae/wps/portal/rta/ae/home/rta-services/service-details?serviceId=510" },
   },
-  samuroor: {
-    answer:
-      "The Saudi driving theory test is taken through a licensed driving school. Under the driving school regulation published in the Umm Al-Qura gazette, a trainee first completes the school's set theory and practical training hours, then takes a practical driving test and a theory test on the Traffic Law and its Implementing Regulations, road traffic rules, road signs and signals, and public safety rules. The test is run by the traffic authority or a body the General Department of Traffic authorises. The question count, time limit and pass mark were not on any official page we could load, so Tigertest's mock tests use 50 questions and an 80% target. Check the minimum age, fees and booking with your driving school or the General Department of Traffic.",
-    rows: [
-      { label: "Where", value: "A licensed driving school" },
-      { label: "Before the test", value: "The school's theory and practical hours" },
-      { label: "Tests", value: "Theory test and practical driving test" },
-      { label: "Theory covers", value: "Traffic Law, road rules, signs, signals, safety" },
-      { label: "Run by", value: "Traffic authority or a body it authorises" },
-      { label: "Pass mark", value: "Not published online; Tigertest aims for 80%" },
-      { label: "Rules", value: "Traffic Law (Royal Decree M/85, as amended)" },
-    ],
-    basedOn: "Driving school regulation in the Umm Al-Qura gazette (15 October 2021), the Traffic Law and SHC 602, checked November 2026",
-    source: { name: "Umm Al-Qura: driving school regulation", url: "https://www.uqn.gov.sa/details?p=18426" },
-  },
   ngfrsc: {
     answer:
       "To get a fresh driver's licence in Nigeria you must be at least 18, train at an FRSC-certified driving school and hold a learner's permit. Since 1 June 2021 the school's training ends with a computer-based theory test (CBT) on the Highway Code: FRSC's July 2021 announcement gives 35 multiple-choice questions in 30 minutes, with 60% needed to pass and a retake after 7 days. You also need a visual acuity and medical fitness certificate, a practical driving test and biometric capture at a Driver's Licence Centre. A learner may drive only with a licensed driver or instructor beside them.",

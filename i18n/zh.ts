@@ -2263,15 +2263,6 @@ export const zh: TranslationKeys = {
     aeLanes: "Lanes, Speed & Overtaking",
     aeSafety: "Children, Pedestrians & Passengers",
     aeConditions: "Weather, Breakdowns & Crashes",
-    // samuroor
-    saLicence: "Licence, Documents & Vehicle",
-    saRegSigns: "Regulatory Signs",
-    saWarnSigns: "Warning, Guide & Work Zone Signs",
-    saSignals: "Traffic Signals",
-    saMarkings: "Road Markings",
-    saRightOfWay: "Right of Way & Roundabouts",
-    saConduct: "Safe Driving & Conduct",
-    saStopping: "Stopping, Parking & Crashes",
     // ngfrsc
     ngLicence: "Licences & Documents",
     ngSigns: "Road Signs & Signals",

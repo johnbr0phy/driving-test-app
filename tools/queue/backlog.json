@@ -5123,20 +5123,6 @@
         "gat saudi",
         "general aptitude test"
       ]
-    },
-    {
-      "id": "samuroor",
-      "name": "Saudi Arabia driving theory test",
-      "owner": "Muroor",
-      "region": "SA",
-      "engine": "v1",
-      "siblings": [
-        "aerta"
-      ],
-      "sells": 1.0,
-      "search": [
-        "saudi driving test"
-      ]
     }
   ]
 }

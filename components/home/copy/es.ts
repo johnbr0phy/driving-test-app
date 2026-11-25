@@ -129,7 +129,7 @@ export const es: HomeCopy = {
 export const countryNames: Record<string, string> = {
   US: "Estados Unidos", CA: "Canadá", UK: "Reino Unido", IE: "Irlanda", AU: "Australia", NZ: "Nueva Zelanda", IN: "India",
   PH: "Filipinas", MY: "Malasia", SG: "Singapur", HK: "Hong Kong", AE: "Emiratos Árabes Unidos", ZA: "Sudáfrica",
-  NG: "Nigeria", KE: "Kenia", PK: "Pakistán", SA: "Arabia Saudí", ES: "España", PT: "Portugal", RO: "Rumanía", SE: "Suecia", GR: "Grecia",
+  NG: "Nigeria", KE: "Kenia", PK: "Pakistán", ES: "España", PT: "Portugal", RO: "Rumanía", SE: "Suecia", GR: "Grecia",
   DK: "Dinamarca", HU: "Hungría", BE: "Bélgica", FI: "Finlandia", MT: "Malta", DE: "Alemania", IT: "Italia", FR: "Francia", PL: "Polonia", NL: "Países Bajos",
 };
 
@@ -139,6 +139,6 @@ export const countryNames: Record<string, string> = {
 export const inNames: Record<string, string> = {
   US: "Estados Unidos", CA: "Canadá", UK: "el Reino Unido", IE: "Irlanda", AU: "Australia", NZ: "Nueva Zelanda", IN: "la India",
   PH: "Filipinas", MY: "Malasia", SG: "Singapur", HK: "Hong Kong", AE: "los Emiratos Árabes Unidos", ZA: "Sudáfrica",
-  NG: "Nigeria", KE: "Kenia", PK: "Pakistán", SA: "Arabia Saudí", ES: "España", PT: "Portugal", RO: "Rumanía", SE: "Suecia", GR: "Grecia",
+  NG: "Nigeria", KE: "Kenia", PK: "Pakistán", ES: "España", PT: "Portugal", RO: "Rumanía", SE: "Suecia", GR: "Grecia",
   DK: "Dinamarca", HU: "Hungría", BE: "Bélgica", FI: "Finlandia", MT: "Malta", DE: "Alemania", IT: "Italia", FR: "Francia", PL: "Polonia", NL: "los Países Bajos",
 };

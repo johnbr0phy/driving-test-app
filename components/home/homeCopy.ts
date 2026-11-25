@@ -339,7 +339,7 @@ export const COUNTRY_NAMES: Partial<Record<Language, Record<string, string>>> = 
   de: {
     US: "USA", CA: "Kanada", UK: "Vereinigtes Königreich", IE: "Irland", AU: "Australien", NZ: "Neuseeland", IN: "Indien",
     PH: "Philippinen", MY: "Malaysia", SG: "Singapur", HK: "Hongkong", AE: "Vereinigte Arabische Emirate", ZA: "Südafrika",
-    NG: "Nigeria", KE: "Kenia", PK: "Pakistan", SA: "Saudi-Arabien", ES: "Spanien", PT: "Portugal", RO: "Rumänien", SE: "Schweden", GR: "Griechenland",
+    NG: "Nigeria", KE: "Kenia", PK: "Pakistan", ES: "Spanien", PT: "Portugal", RO: "Rumänien", SE: "Schweden", GR: "Griechenland",
     DK: "Dänemark", HU: "Ungarn", BE: "Belgien", FI: "Finnland", MT: "Malta", DE: "Deutschland", IT: "Italien", FR: "Frankreich", PL: "Polen", NL: "Niederlande",
   },
 };

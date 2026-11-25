@@ -128,6 +128,6 @@ export const zh: HomeCopy = {
 /** Every country's name in Simplified Chinese, for the country pills and "Practice tests for <country>". */
 export const countryNames: Record<string, string> = {
   US: "美国", CA: "加拿大", UK: "英国", IE: "爱尔兰", AU: "澳大利亚", NZ: "新西兰", IN: "印度", PH: "菲律宾", MY: "马来西亚", SG: "新加坡", HK: "香港",
-  AE: "阿联酋", ZA: "南非", NG: "尼日利亚", KE: "肯尼亚", PK: "巴基斯坦", SA: "沙特阿拉伯", ES: "西班牙", PT: "葡萄牙", RO: "罗马尼亚", SE: "瑞典", GR: "希腊", DK: "丹麦",
+  AE: "阿联酋", ZA: "南非", NG: "尼日利亚", KE: "肯尼亚", PK: "巴基斯坦", ES: "西班牙", PT: "葡萄牙", RO: "罗马尼亚", SE: "瑞典", GR: "希腊", DK: "丹麦",
   HU: "匈牙利", BE: "比利时", FI: "芬兰", MT: "马耳他", DE: "德国", IT: "意大利", FR: "法国", PL: "波兰", NL: "荷兰",
 };

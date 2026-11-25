@@ -129,7 +129,7 @@ export const fr: HomeCopy = {
 export const countryNames: Record<string, string> = {
   US: "États-Unis", CA: "Canada", UK: "Royaume-Uni", IE: "Irlande", AU: "Australie", NZ: "Nouvelle-Zélande", IN: "Inde",
   PH: "Philippines", MY: "Malaisie", SG: "Singapour", HK: "Hong Kong", AE: "Émirats arabes unis", ZA: "Afrique du Sud",
-  NG: "Nigeria", KE: "Kenya", PK: "Pakistan", SA: "Arabie saoudite", ES: "Espagne", PT: "Portugal", RO: "Roumanie", SE: "Suède", GR: "Grèce",
+  NG: "Nigeria", KE: "Kenya", PK: "Pakistan", ES: "Espagne", PT: "Portugal", RO: "Roumanie", SE: "Suède", GR: "Grèce",
   DK: "Danemark", HU: "Hongrie", BE: "Belgique", FI: "Finlande", MT: "Malte", DE: "Allemagne", IT: "Italie", FR: "France", PL: "Pologne", NL: "Pays-Bas",
 };
 
@@ -137,6 +137,6 @@ export const countryNames: Record<string, string> = {
 export const inNames: Record<string, string> = {
   US: "les États-Unis", CA: "le Canada", UK: "le Royaume-Uni", IE: "l'Irlande", AU: "l'Australie", NZ: "la Nouvelle-Zélande", IN: "l'Inde",
   PH: "les Philippines", MY: "la Malaisie", SG: "Singapour", HK: "Hong Kong", AE: "les Émirats arabes unis", ZA: "l'Afrique du Sud",
-  NG: "le Nigeria", KE: "le Kenya", PK: "le Pakistan", SA: "l'Arabie saoudite", ES: "l'Espagne", PT: "le Portugal", RO: "la Roumanie", SE: "la Suède", GR: "la Grèce",
+  NG: "le Nigeria", KE: "le Kenya", PK: "le Pakistan", ES: "l'Espagne", PT: "le Portugal", RO: "la Roumanie", SE: "la Suède", GR: "la Grèce",
   DK: "le Danemark", HU: "la Hongrie", BE: "la Belgique", FI: "la Finlande", MT: "Malte", DE: "l'Allemagne", IT: "l'Italie", FR: "la France", PL: "la Pologne", NL: "les Pays-Bas",
 };

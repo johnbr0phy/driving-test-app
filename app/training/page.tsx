@@ -1,6 +1,7 @@
 "use client";
 
 import { startCheckout } from "@/lib/startCheckout";
+import { noteStatsSource } from "@/lib/statsViews";
 import { useState, useEffect, Suspense, useRef, useCallback } from "react";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { TrainingCard } from "@/components/TrainingCard";
@@ -330,7 +331,7 @@ function TrainingPageContent() {
                     className="h-auto min-h-11 whitespace-normal border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-gray-800"
                   />
                 )}
-                {!isGuest && <Button asChild variant="ghost"><Link href={DMV_ROUTES.stats}>{t("results.viewStats")}</Link></Button>}
+                {!isGuest && <Button asChild variant="ghost"><Link href={DMV_ROUTES.stats} onClick={() => noteStatsSource("done_link")}>{t("results.viewStats")}</Link></Button>}
                 <Button ref={retryButtonRef} variant="ghost" onClick={() => setShowResetConfirm(true)}>{t("results.tryAgain")}</Button>
               </div>
               {showResetConfirm && (
@@ -362,6 +363,7 @@ function TrainingPageContent() {
           isPremium ? (
             <Link
               href="/stats"
+              onClick={() => noteStatsSource("bar_link")}
               className="text-sm font-medium text-brand-dark hover:text-brand-darker transition-colors"
             >
               {t("dashboard.viewStats")}

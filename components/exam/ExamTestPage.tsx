@@ -7,6 +7,7 @@
 // zero the test is scored with unanswered questions wrong.
 
 import { useState, useEffect, useRef } from "react";
+import { noteStatsSource } from "@/lib/statsViews";
 import { useRouter } from "next/navigation";
 import { useExamTestParam } from "@/hooks/useExamTestParam";
 import Link from "next/link";
@@ -241,6 +242,7 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
           ) : !isGuest ? (
             <Link
               href={routes.stats}
+              onClick={() => noteStatsSource("bar_link")}
               className="text-sm font-medium text-brand-dark hover:text-brand-darker transition-colors"
             >
               {t("dashboard.viewStats")}

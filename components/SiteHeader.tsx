@@ -9,6 +9,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { AdminLink } from "@/components/AdminLink";
 import { BrandLockup } from "@/components/BrandLockup";
 import { DailyRankChip, useRankChipVisible } from "@/components/DailyRank";
+import { noteStatsSource } from "@/lib/statsViews";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { TestSearchSheet } from "@/components/TestSearchSheet";
 import { currentClassCode, forgetCurrentClass, rememberCurrentClass, useStudentClass, useTeacherClasses, useTeaches } from "@/components/TeachLink";
@@ -246,6 +247,7 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
           ) : statsPath && (
             <Link
               href={statsPath}
+              onClick={() => noteStatsSource("header_icon")}
               aria-current={path === statsPath ? "page" : undefined}
               className={`${iconLink} ${path === statsPath ? "bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-50" : "text-gray-600 dark:text-gray-300"}`}
               title={t("stats.yourStats")}

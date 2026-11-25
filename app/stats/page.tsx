@@ -1,6 +1,7 @@
 "use client";
 
 import { startCheckout } from "@/lib/startCheckout";
+import { useStatsView } from "@/lib/statsViews";
 import { DailyRankPanel } from "@/components/DailyRank";
 import { useEffect, useState, useMemo, useRef, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -231,6 +232,8 @@ function StatsContent() {
     );
   };
 
+  // Stats page traffic (lib/statsViews.ts): one view once the page really shows.
+  useStatsView("dmv", hydrated && accountReady && !!user && !isGuest && !loadFailed);
   if (loadFailed && user) return <AccountLoadRetry uid={user.uid} />;
   if (!hydrated || !accountReady || !user || isGuest) {
     return null;

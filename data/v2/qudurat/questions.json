@@ -344,15 +344,15 @@
       "skill": "Contextual error",
       "difficulty": 1,
       "format": "single",
-      "stem": "Because the __heavy__ rain continued all night, the river __fell__ and __flooded__ the __low__ fields.\n\nWhich underlined word does not fit the meaning of the sentence?",
+      "stem": "The river __fell__ during the __heavy__ rain that lasted all night, __flooding__ the __low__ fields.\n\nWhich underlined word does not fit the meaning of the sentence?",
       "options": [
-        "heavy",
         "fell",
-        "flooded",
+        "heavy",
+        "flooding",
         "low"
       ],
       "correct": [
-        1
+        0
       ],
       "lockedOrder": true,
       "explanation": "Heavy rain all night makes a river rise, and only a rising river floods fields. \"Fell\" should be \"rose\"."
@@ -921,14 +921,14 @@
       "stem": "What is the main purpose of the passage?",
       "options": [
         "To compare two ways of desalting seawater",
-        "To argue that coastal countries need rain",
-        "To explain how membranes are made",
-        "To warn against drinking seawater"
+        "To show that brine harms the seabed",
+        "To explain why thermal plants burn fuel",
+        "To describe how membranes are replaced"
       ],
       "correct": [
         0
       ],
-      "explanation": "The passage sets out the thermal method and reverse osmosis, their costs and the brine both produce. Membranes are mentioned only as part of one method."
+      "explanation": "The passage sets out the thermal method and reverse osmosis, their costs and the brine both produce. Brine, fuel and membranes are each one detail inside that comparison, not its purpose."
     },
     {
       "id": "QUDURAT-T1-V2-16",
@@ -1335,15 +1335,15 @@
       "skill": "Contextual error",
       "difficulty": 1,
       "format": "single",
-      "stem": "To __save__ time, she took the __longest__ road, which __cut__ twenty minutes from her __journey__.\n\nWhich underlined word does not fit the meaning of the sentence?",
+      "stem": "She took the __longest__ road to __save__ time, and it __cut__ twenty minutes from her __journey__.\n\nWhich underlined word does not fit the meaning of the sentence?",
       "options": [
-        "save",
         "longest",
+        "save",
         "cut",
         "journey"
       ],
       "correct": [
-        1
+        0
       ],
       "lockedOrder": true,
       "explanation": "Cutting twenty minutes and saving time call for the shortest road, not the longest."
@@ -3058,15 +3058,15 @@
       "difficulty": 1,
       "format": "single",
       "basics": "preciseWords",
-      "stem": "Racing against time, the __rescue__ team worked __slowly__ through the night and __freed__ the trapped miners by __dawn__.\n\nWhich underlined word does not fit the meaning of the sentence?",
+      "stem": "Working __slowly__ because they were racing against time, the __rescue__ team __freed__ the trapped miners by __dawn__.\n\nWhich underlined word does not fit the meaning of the sentence?",
       "options": [
-        "rescue",
         "slowly",
+        "rescue",
         "freed",
         "dawn"
       ],
       "correct": [
-        1
+        0
       ],
       "lockedOrder": true,
       "explanation": "A team racing against time works fast, not slowly."
@@ -3498,18 +3498,18 @@
       "difficulty": 1,
       "format": "single",
       "basics": "causeEffect",
-      "stem": "Since __exercise__ strengthens the heart, doctors __discourage__ it for patients who want to __improve__ their __health__.\n\nWhich underlined word does not fit the meaning of the sentence?",
+      "stem": "Since __smoking__ damages the lungs, doctors __recommend__ it to patients who want to __protect__ their __health__.\n\nWhich underlined word does not fit the meaning of the sentence?",
       "options": [
-        "exercise",
-        "discourage",
-        "improve",
+        "smoking",
+        "recommend",
+        "protect",
         "health"
       ],
       "correct": [
         1
       ],
       "lockedOrder": true,
-      "explanation": "Because exercise strengthens the heart, doctors recommend it to patients who want better health. \"Discourage\" breaks the cause and effect."
+      "explanation": "Because smoking damages the lungs, doctors warn patients who want to protect their health against it. \"Recommend\" breaks the cause and effect."
     },
     {
       "id": "QUDURAT-T2-V2-13",
@@ -4004,15 +4004,15 @@
       "skill": "Contextual error",
       "difficulty": 2,
       "format": "single",
-      "stem": "The __ice__ on the lake was so __thin__ that heavy __trucks__ drove across it __safely__ all winter.\n\nWhich underlined word does not fit the meaning of the sentence?",
+      "stem": "The __thin__ ice on the lake carried heavy __trucks__ __safely__ all __winter__.\n\nWhich underlined word does not fit the meaning of the sentence?",
       "options": [
-        "ice",
         "thin",
         "trucks",
-        "safely"
+        "safely",
+        "winter"
       ],
       "correct": [
-        1
+        0
       ],
       "lockedOrder": true,
       "explanation": "Only thick ice can carry heavy trucks safely all winter. \"Thin\" should be \"thick\"."
@@ -4211,15 +4211,15 @@
       "stimulusId": "qd-t2-g",
       "stem": "According to the passage, a panel on a scorching afternoon:",
       "options": [
-        "stops working until it cools",
-        "makes more power than at noon",
-        "makes less power than its sunshine suggests",
-        "needs to be washed with water"
+        "stops working until it has cooled down",
+        "makes more power because the sun is strongest",
+        "makes less power than its light would allow",
+        "needs washing with scarce water first"
       ],
       "correct": [
         2
       ],
-      "explanation": "Solar cells turn sunlight into electricity less efficiently as they get hotter, so the panel produces less power than its sunshine alone would suggest."
+      "explanation": "Solar cells turn sunlight into electricity less efficiently as they get hotter, so the panel produces less power than its sunshine alone would suggest. Strong sun does not make up for the heat, and the panel keeps working."
     },
     {
       "id": "QUDURAT-T2-Q1-01",

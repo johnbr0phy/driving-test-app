@@ -35,9 +35,11 @@ interface Props {
   actions?: React.ReactNode;
   /** Shown under the feedback once revealed (Report this question). */
   footer?: React.ReactNode;
+  /** List-sized text and choices (stats rows, results review), not the full training size. */
+  compact?: boolean;
 }
 
-export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer, eliminated = [], onToggleEliminate, eliminatorOn = false, reveal = false, layout = "split", disabled = false, label, focusOnChange = false, actions, footer }: Props) {
+export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer, eliminated = [], onToggleEliminate, eliminatorOn = false, reveal = false, layout = "split", disabled = false, label, focusOnChange = false, actions, footer, compact = false }: Props) {
   const id = useId();
   const t = useV2Ui().runner;
   const stem = useRef<HTMLDivElement>(null);
@@ -101,7 +103,7 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
   const questionBlock = (
     <div>
       {label && <div className="mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">{label}</div>}
-      <div id={`${id}-stem`} ref={stem} tabIndex={-1}><RichText text={question.stem} className="text-lg md:text-2xl font-semibold" renderSlot={renderSlot} /></div>
+      <div id={`${id}-stem`} ref={stem} tabIndex={-1}><RichText text={question.stem} className={compact ? "text-base font-semibold" : "text-lg md:text-2xl font-semibold"} renderSlot={renderSlot} /></div>
       {question.figure && (
         <div className="mt-3">
           <Figure figure={question.figure} />
@@ -154,7 +156,7 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
           )}
         </div>
       ) : (
-        <div role="group" aria-labelledby={`${id}-stem`} className="mt-4 md:mt-6 space-y-2 md:space-y-3">
+        <div role="group" aria-labelledby={`${id}-stem`} className={compact ? "mt-3 space-y-2" : "mt-4 md:mt-6 space-y-2 md:space-y-3"}>
           {optionOrder.map((orig, pos) => {
             const struck = eliminated.includes(orig);
             return (
@@ -164,6 +166,7 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
                   state={stateOf(orig)}
                   interactive={!disabled && !reveal}
                   disabled={disabled || reveal}
+                  compact={compact}
                   onClick={() => pick(orig)}
                   aria-pressed={selected(orig)}
                   aria-disabled={disabled || reveal || (atCap && !selected(orig))}
@@ -195,7 +198,7 @@ export function QuestionView({ question, stimulus, optionOrder, answer, onAnswer
 
       <div role="status" aria-atomic="true" className="sr-only">{reveal ? (correct ? t.srCorrect : t.srNotQuite) + relabelChoices(question.explanation, optionOrder) : ""}</div>
       {reveal && (
-        <div className="mt-4 md:mt-6 space-y-3 md:space-y-4">
+        <div className={compact ? "mt-3 space-y-3" : "mt-4 md:mt-6 space-y-3 md:space-y-4"}>
           {actions}
           <AnswerFeedback correct={correct} title={correct ? t.correct : t.notQuite}>
             <RichText text={relabelChoices(question.explanation, optionOrder)} />

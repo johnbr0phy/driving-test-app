@@ -30,18 +30,20 @@ interface Props extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, "children"
   interactive?: boolean;
   /** Screen-reader text for the revealed state. */
   srLabel?: string;
+  /** Smaller box for lists, e.g. a stats row opened inline. */
+  compact?: boolean;
 }
 
-export function AnswerOption({ letter, state, children, interactive = false, srLabel, className = "", ...button }: Props) {
+export function AnswerOption({ letter, state, children, interactive = false, srLabel, compact = false, className = "", ...button }: Props) {
   return (
     <button
       type="button"
       {...button}
-      className={`w-full text-left border-2 rounded-lg p-3 md:p-4 transition-all ${BOX[state]}${interactive && state === "idle" ? HOVER : ""}${className ? ` ${className}` : ""}`}
+      className={`${compact ? "w-full text-left border-2 rounded-lg px-3 py-2 transition-all" : "w-full text-left border-2 rounded-lg p-3 md:p-4 transition-all"} ${BOX[state]}${interactive && state === "idle" ? HOVER : ""}${className ? ` ${className}` : ""}`}
     >
-      <div className="flex items-center gap-2 md:gap-3">
-        <span className="font-bold text-base md:text-lg w-6 shrink-0">{letter})</span>
-        <span className="flex-1 text-sm md:text-base">{children}</span>
+      <div className={compact ? "flex items-center gap-2" : "flex items-center gap-2 md:gap-3"}>
+        <span className={compact ? "font-bold text-sm w-6 shrink-0" : "font-bold text-base md:text-lg w-6 shrink-0"}>{letter})</span>
+        <span className={compact ? "flex-1 text-sm" : "flex-1 text-sm md:text-base"}>{children}</span>
         {srLabel && <span className="sr-only">{srLabel}</span>}
         {state === "correct" && <CheckCircle2 className="h-5 w-5 md:h-6 md:w-6 text-green-600 dark:text-green-400 flex-shrink-0" />}
         {state === "wrong" && <XCircle className="h-5 w-5 md:h-6 md:w-6 text-red-600 dark:text-red-400 flex-shrink-0" />}

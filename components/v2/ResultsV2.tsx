@@ -206,7 +206,7 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
                 </button>
                 {isOpen && (
                   <div className="border-t border-gray-100 dark:border-gray-800 px-4 py-4">
-                    <QuestionView question={q} stimulus={getStimulus(exam.id, q)} optionOrder={(q.options ?? []).map((_, k) => k)} answer={it.answer} onAnswer={() => {}} reveal disabled layout="stack" />
+                    <QuestionView question={q} stimulus={getStimulus(exam.id, q)} optionOrder={(q.options ?? []).map((_, k) => k)} answer={it.answer} onAnswer={() => {}} reveal disabled layout="stack" compact />
                   </div>
                 )}
               </div>

@@ -35,7 +35,7 @@ Q = [
  "Low point that floods", ["Bridge over a river", "Dry valley picnic site", "Water supply station"],
  "It is placed before low points on rural roads that are often flooded or scoured by water or sand. Never drive into flowing water."),
 ("What does a Speed Hump Ahead sign require of you?",
- "Slow down", ["Check your height", "Turn back here", "Keep to the left"],
+ "Reduce speed", ["Stop before the hump", "Switch on hazard lights", "Move to the left lane"],
  "The Speed Hump Ahead sign warns that you need to reduce speed and take care crossing the hump."),
 ("What does a Lane Drop warning sign tell you?",
  "Lanes reduce ahead", ["Exit lane on the right", "Two roads join here", "Overtaking lane begins"],

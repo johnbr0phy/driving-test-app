@@ -2,7 +2,7 @@ CAT = "saStopping"; SEG = "STP"
 # SHC 602 parking, stopping and waiting signs (3.2.41 to 3.2.72), bus stop markings (4.6.5.3),
 # school crossings (6.2.1.5); Traffic Law definitions (Art. 2) and crash duty (Art. 63).
 # Items ask for a time, distance, place, vehicle, colour or definition. Verdict items: 010 and 011,
-# both keyed on the permissive answer.
+# both keyed on the permissive answer (the exceptions a sign allows).
 Q = [
 ("Under SHC 602, how long does a standard Loading Zone bay allow for loading or unloading?",
  "Up to 1 hour", ["Up to 15 minutes", "Up to 2 hours", "Up to 30 minutes"],
@@ -31,9 +31,9 @@ Q = [
 ("Along a clearway, No Stopping repeater signs are posted at intervals of no more than:",
  "700 m", ["300 m", "500 m", "1,000 m"],
  "SHC 602 3.2.42: the No Stopping sign starts the clearway with a Clearway plate and is repeated on both sides at intervals of no more than 700 m, ending with an End plate."),
-("Your engine fails on a road signed No Stopping (clearway). What does SHC 602 allow?",
- "Halting where it fails", ["Rolling on to the clearway's end", "Pushing it to the next junction", "Restarting it to drive on"],
- "SHC 602 3.2.41 and 3.2.42: the No Stopping sign forbids stopping unless in an emergency or directed by the Traffic Police. A breakdown is an emergency, so stop as safely as you can and warn other traffic."),
+("Under SHC 602, in which two cases may a driver stop on a No Stopping clearway?",
+ "Emergency or police direction", ["Emergency or a passenger pick-up", "Police direction or loading goods", "Loading goods or a short call"],
+ "SHC 602 3.2.41 and 3.2.42: the No Stopping sign forbids stopping unless in an emergency or directed by the Traffic Police. Picking up passengers and loading goods are not exceptions; a breakdown counts as an emergency."),
 ("A blue sign with a red border and one red diagonal stands at the kerb. What may you do there?",
  "Set down a passenger", ["Park on that side", "Load goods for an hour", "Leave the car to run errands"],
  "SHC 602 3.2.41 (R21-1): the single-diagonal sign bans parking on that side of the road at any time, except to pick up or set down. Two crossed diagonals (R21-2) ban stopping too."),
@@ -62,6 +62,6 @@ Q = [
  "Unloading goods", ["Waiting for a friend", "Resting at the roadside", "Eating a meal in the car"],
  "Article 2(11): stopping is a halt for as long as traffic needs, to let people on or off, or to load or unload goods. Article 2(12): any other halt is parking or waiting."),
 ("Under Article 2, what is the road shoulder (kitf al-tariq) prepared for?",
- "Emergency stops", ["Emergency vehicles' use", "Slow heavy trucks", "Short rest breaks"],
+ "Emergency stops", ["Overtaking slow traffic", "Slow heavy trucks", "Short rest breaks"],
  "Article 2(6): the shoulder is the part of the road beside the carriageway, on one or both sides, prepared for vehicles to stop in an emergency."),
 ]

@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { ArrowRight, Clock, Trophy } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
-import { RANK_SHOW_TOP_PERCENT_MAX, nextGoal, tigerTimeLeftMs, type RankNext } from "@/lib/dailyRank";
+import { RANK_NEAR_TOP, RANK_SHOW_TOP_PERCENT_MAX, nextGoal, tigerTimeLeftMs, type RankNext } from "@/lib/dailyRank";
 import { flushRank, refreshRank, useDailyRank } from "@/lib/dailyRankClient";
 
 // Daily rank surfaces (lib/dailyRank.ts). They show for everyone, and only
@@ -54,7 +54,7 @@ function fill(s: string, vars: Record<string, string | number>): string {
 /** "2nd" in English (a real ordinal), the language's own form elsewhere ("Platz 2"). */
 function enOrdinal(n: number): string {
   const suffix: Record<string, string> = { one: "st", two: "nd", few: "rd", other: "th" };
-  return `${n}${suffix[new Intl.PluralRules("en-US", { type: "ordinal" }).select(n)]}`;
+  return `${n.toLocaleString("en-US")}${suffix[new Intl.PluralRules("en-US", { type: "ordinal" }).select(n)]}`;
 }
 
 function placeText(t: (k: string) => string, language: string, key: "dailyRank.placeShort" | "dailyRank.placeOfAll", n: number): string {
@@ -326,7 +326,15 @@ export function DailyRankPanel({ continueHref, className = "" }: { continueHref?
           {pct && <span className="mb-1 shrink-0 rounded-full bg-amber-100 px-3 py-1 text-base font-bold text-amber-900 dark:bg-amber-900 dark:text-amber-100">{pct}</span>}
         </div>
         {rank.place && (
-          <p className="mt-2 text-base font-semibold text-gray-900 dark:text-gray-50">{placeText(t, language, "dailyRank.placeOfAll", rank.place)}</p>
+          <>
+            <p className="mt-2 text-base font-semibold text-gray-900 dark:text-gray-50">{placeText(t, language, "dailyRank.placeOfAll", rank.place)}</p>
+            {/* A nudge under any place but first (first place has its own box). */}
+            {rank.place > 1 && (
+              <p className="mt-0.5 text-sm text-gray-600 dark:text-gray-300">
+                {t(rank.place <= RANK_NEAR_TOP ? "dailyRank.encourageTop" : "dailyRank.encourage")}
+              </p>
+            )}
+          </>
         )}
         {goalTitle && (
           <div

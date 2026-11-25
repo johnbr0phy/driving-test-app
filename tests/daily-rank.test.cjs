@@ -229,9 +229,9 @@ test('wiring: every engine\'s answers feed the rank, sign-in merges, the API reu
 test('privacy: the API never returns a head count, a raw rank or anyone else', () => {
   const status = R.rankStatus('2026-11-25', histOf([1, 2, 3, 4, 5]), 3);
   assert.deepEqual(Object.keys(status).sort(), ['correct', 'cutoffs', 'day', 'enterTop', 'next', 'place', 'placeGoal', 'topPercent']);
-  // A place is shown only in the top 100, so it never reveals how many people answered.
+  // Everyone gets a place now (John, Nov 25 2026), however far down.
   const big = {}; for (let c = 1; c <= 300; c++) big[c] = 500;
-  assert.equal(R.rankStatus('2026-11-25', big, 1).place, null, 'far down: no place, a percent');
+  assert.equal(R.rankStatus('2026-11-25', big, 1).place, 299 * 500 + 1, 'far down: still a place');
   assert.equal(R.rankStatus('2026-11-25', big, 300).place, 1);
   // Every response is the caller's own status, built by rankStatus/statusFor, or an error.
   for (const file of ['app/api/rank/today/route.ts', 'app/api/rank/merge/route.ts']) {
@@ -368,7 +368,7 @@ test('next goal: the closest percentile step up, then first place', () => {
   assert.equal(R.nextGoal(cutoffs, 0, null), null);
 });
 
-test('place: top 100 only, ties share the better place, the next place up', () => {
+test('place: for everyone, ties share the better place, the next place up', () => {
   // Made-up: one person on 300, two on 299, ten on 250, then a long tail.
   const h = { 300: 1, 299: 2, 250: 10 };
   for (let c = 1; c < 250; c++) h[c] = 40;
@@ -379,9 +379,10 @@ test('place: top 100 only, ties share the better place, the next place up', () =
   assert.deepEqual(R.nextPlaceUp(h, 299), { place: 1, need: 1 });
   assert.equal(R.nextPlaceUp(h, 300), null);
   const far = R.rankStatus('d', h, 100);
-  assert.equal(far.place, null, 'outside the top 100');
-  // 247 correct has 2x40 (248, 249) + 13 ahead: 94th, inside the top 100.
-  assert.deepEqual(far.enterTop, { need: 147 });
+  // 150 counts (101..249) x 40 people + 13 at 250+ are ahead of 100 correct.
+  assert.equal(far.place, 149 * 40 + 13 + 1, 'far down: still a place');
+  assert.deepEqual(far.placeGoal, { place: 149 * 40 + 13 + 1 - 40, need: 1 }, 'the next place up');
+  assert.equal(far.enterTop, null, 'no "Top 100" step any more');
   // Goals: next place up, tied first, first, and the way into the top 100.
   assert.deepEqual(R.nextGoal([], 250, { kind: 'block', need: 1, people: 1 }, 4, { place: 2, need: 49 }), { kind: 'place', place: 2, need: 49 });
   assert.deepEqual(R.nextGoal([], 300, { kind: 'everyone', need: 1, people: 1 }, 1, null), { kind: 'tiedFirst' });
@@ -411,4 +412,19 @@ test('site header: the trophy chip takes the stats icon\'s place once there is 1
   assert.match(chip, /compact && rank\.correct >= 1000/);
   // The chip takes an explicit link (or none) where it is not on a runner path.
   assert.match(read('components/DailyRank.tsx'), /hrefOverride === undefined \? rankStatsHref\(pathname\) : hrefOverride/);
+});
+
+test('every place but first gets a nudge to keep prepping', () => {
+  const panel = read('components/DailyRank.tsx');
+  assert.match(panel, /rank\.place > 1 && \(/);
+  assert.match(panel, /rank\.place <= RANK_NEAR_TOP \? "dailyRank\.encourageTop" : "dailyRank\.encourage"/);
+  const { en } = require('../i18n/en.ts');
+  assert.equal(en.dailyRank.encourage, 'Every correct answer moves you up. Keep prepping!');
+});
+
+test('English places read as ordinals with thousands separators', () => {
+  assert.match(read('components/DailyRank.tsx'), /\$\{n\.toLocaleString\("en-US"\)\}\$\{suffix\[/);
+  const suffix = { one: 'st', two: 'nd', few: 'rd', other: 'th' };
+  const ord = (n) => `${n.toLocaleString('en-US')}${suffix[new Intl.PluralRules('en-US', { type: 'ordinal' }).select(n)]}`;
+  assert.deepEqual([1, 2, 3, 11, 22, 235, 48189].map(ord), ['1st', '2nd', '3rd', '11th', '22nd', '235th', '48,189th']);
 });

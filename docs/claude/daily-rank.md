@@ -64,3 +64,8 @@ Everyone (Nov 25 2026: the A/B test was ended and its card taken off the A/B tes
 - Question ids are checked by format, not against the banks.
 - v2 full tests (`ExamRunner`) have their own top bar, so the chip shows in v2 drills (FocusBar) but not mid-test; the card shows on v2 results.
 - A browser id is a bearer secret for its guest day: anyone who has it can merge that day into their account. Ids are random and never leave the browser except to our API.
+
+## Places for everyone
+
+Since Nov 25 2026 (John) every person with 1+ correct sees their place ("235th of all Tigertesters today"), not just the top 100 (`RANK_SHOW_PLACE_MAX` is unbounded). The next goal is the next place up. Under any place but first the panel adds a nudge: "Every correct answer moves you up. Keep prepping!", or in the top 10 (`RANK_NEAR_TOP`) "You're close to the top. Keep going!". A place does reveal roughly how many people practise that day; John accepted that.
+

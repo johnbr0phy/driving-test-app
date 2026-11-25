@@ -4534,6 +4534,8 @@ export const en = {
     goalPlaceOne: "1 more correct to get there.",
     firstPlaceTied: "You're tied. 1 more correct to take it alone.",
     top100: "Top 100",
+    encourage: "Every correct answer moves you up. Keep prepping!",
+    encourageTop: "You're close to the top. Keep going!",
   },
   theme: {
     appearance: "Appearance",

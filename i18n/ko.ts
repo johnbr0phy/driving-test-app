@@ -4436,6 +4436,8 @@ export const ko: TranslationKeys = {
     goalPlaceOne: "1문제 더 맞히면 됩니다.",
     firstPlaceTied: "공동 1위입니다. 1문제 더 맞히면 단독 1위입니다.",
     top100: "상위 100위",
+    encourage: "정답 하나마다 순위가 올라갑니다. 계속 준비하세요!",
+    encourageTop: "정상이 가까워요. 계속하세요!",
   },
   theme: {
     appearance: "화면 모드",

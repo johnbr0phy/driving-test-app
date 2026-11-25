@@ -567,6 +567,8 @@ export const it: TranslationKeys = {
     goalPlaceOne: "Ancora 1 giusta per arrivarci.",
     firstPlaceTied: "Sei a pari merito. Ancora 1 giusta per essere primo da solo.",
     top100: "Top 100",
+    encourage: "Ogni risposta giusta ti fa salire. Continua a prepararti!",
+    encourageTop: "Sei vicino alla vetta. Continua così!",
   },
   theme: {
     appearance: "Aspetto",

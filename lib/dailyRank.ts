@@ -26,8 +26,13 @@ export const RANK_PASS_BLOCK = 1000;
 export const RANK_MAX_SEEN = 3000;
 /** How long a day's distribution is cached before it is read again. */
 export const RANK_DISTRIBUTION_TTL_MS = 15 * 60_000;
-/** Places are shown only this high up ("2nd"); below, the percentile ("Top 6%"). */
-export const RANK_SHOW_PLACE_MAX = 100;
+/**
+ * Places are shown this high up ("235th"); below, the percentile. No cap
+ * (John, Nov 25 2026): everyone sees their place, with a nudge to keep going.
+ */
+export const RANK_SHOW_PLACE_MAX = Number.POSITIVE_INFINITY;
+/** Places this high get "close to the top" instead of "every answer moves you up". */
+export const RANK_NEAR_TOP = 10;
 /** Percentiles above this are not shown ("Top 80%" reads as a put-down). */
 export const RANK_SHOW_TOP_PERCENT_MAX = 50;
 
@@ -52,7 +57,7 @@ export type RankStatus = {
   next: RankNext | null;
   /** cutoffs[p - 1]: fewest correct answers that reach the top p%, null if none can. */
   cutoffs: (number | null)[];
-  /** Place today (ties share the better one), only in the top RANK_SHOW_PLACE_MAX. */
+  /** Place today (ties share the better one), for everyone with 1+ correct. */
   place: number | null;
   /** In the top 100 but not first: the next place up and how many more correct reach it. */
   placeGoal: { place: number; need: number } | null;

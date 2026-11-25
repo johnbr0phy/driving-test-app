@@ -568,6 +568,8 @@ export const hu: TranslationKeys = {
     goalPlaceOne: "Még 1 helyes kell hozzá.",
     firstPlaceTied: "Holtversenyben vagy. Még 1 helyes, és egyedül vezetsz.",
     top100: "Top 100",
+    encourage: "Minden helyes válasz feljebb visz. Gyakorolj tovább!",
+    encourageTop: "Közel vagy a csúcshoz. Csak így tovább!",
   },
   theme: {
     appearance: "Megjelenés",

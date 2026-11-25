@@ -568,6 +568,8 @@ export const ro: TranslationKeys = {
     goalPlaceOne: "Mai ai nevoie de 1 corect.",
     firstPlaceTied: "Ești la egalitate. Încă 1 corect ca să fii singur pe primul loc.",
     top100: "Top 100",
+    encourage: "Fiecare răspuns corect te urcă. Continuă să exersezi!",
+    encourageTop: "Ești aproape de vârf. Continuă!",
   },
   theme: {
     appearance: "Aspect",

@@ -157,7 +157,7 @@ export function DailyRankChip({ href: hrefOverride, compact = false }: {
     <Link
       data-daily-rank-chip
       href={`${href}#today-rank`}
-      onClick={() => noteStatsSource("bar_chip")}
+      onClick={() => noteStatsSource(hrefOverride === undefined ? "bar_chip" : "header_chip")}
       title={t("dailyRank.chipLink")}
       aria-label={`${t("dailyRank.chipLink")}: ${count}${pct ? `, ${pct}` : ""}`}
       className={`${CHIP_CLASS} hover:border-amber-300 hover:bg-amber-100 dark:hover:bg-amber-900`}

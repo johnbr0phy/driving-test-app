@@ -20,7 +20,7 @@ Q = [
  "Switch on headlights", ["Switch on hazard lights", "Flash your lights twice", "Turn off your lights"],
  "For tunnels over 75 m long the Tunnel sign is followed by a Turn on Lights sign; driving in a tunnel without lights is a violation."),
 ("You pass a Dip warning sign. What should you do?",
- "Slow down for the dip", ["Keep your speed up", "Move onto the shoulder", "Overtake before it"],
+ "Reduce speed", ["Brake hard at the lowest point", "Use dipped headlights", "Sound your horn"],
  "The Dip sign warns that the road drops and rises again, so you need to reduce speed and take care through it."),
 ("What does a Sand Dunes warning sign tell drivers?",
  "Sand dunes on the road", ["Road surface ends", "Loose gravel thrown up", "Desert track crossing"],

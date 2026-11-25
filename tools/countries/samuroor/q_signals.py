@@ -59,6 +59,6 @@ Q = [
  "While the light flashes", ["All day on school days", "Only after sunset", "Only when police are there"],
  "On streets over 50 km/h the flasher is switched on while schoolchildren are present, and the lower school zone limit applies then."),
 ("You are turning right on a green light and a pedestrian is crossing the side road. You must:",
- "Let the pedestrian cross first", ["Turn; they wait for their signal", "Turn if they are not yet midway", "Turn, as turning traffic has priority"],
+ "Let the pedestrian cross first", ["Wait until a green arrow shows", "Go; they must wait for you", "Sound the horn, then turn"],
  "Green allows the turn, but drivers must give way to pedestrians lawfully within the crosswalk they are turning across."),
 ]

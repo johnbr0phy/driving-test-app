@@ -182,7 +182,8 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
         />
       ) : (
         <>
-          <StatsHeaderCard title={t.tabYours} subtitle={examUi(lang).statsSeen(answeredCount, rows.length, exam.shortName)} />
+          {/* The tabs already say "Your Stats"; the header card is only for exams without them. */}
+          {!communityOn && <StatsHeaderCard title={t.tabYours} subtitle={examUi(lang).statsSeen(answeredCount, rows.length, exam.shortName)} />}
           <StatsSortBar
             fields={[
               { field: "wrong" as SortField, label: tr("stats.wrongLabel") },

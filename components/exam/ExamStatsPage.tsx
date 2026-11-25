@@ -267,10 +267,13 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
           )}
 
           {!showCommunity && (<>
-          <StatsHeaderCard
-            title={t("stats.yourStats")}
-            subtitle={ui.statsSeen(answeredCount, examQuestions.length, exam.shortName)}
-          />
+          {/* The tabs already say "Your Stats"; the header card is only for exams without them. */}
+          {!communityOn && (
+            <StatsHeaderCard
+              title={t("stats.yourStats")}
+              subtitle={ui.statsSeen(answeredCount, examQuestions.length, exam.shortName)}
+            />
+          )}
 
           <StatsSortBar
             fields={[

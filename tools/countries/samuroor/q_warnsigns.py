@@ -14,7 +14,7 @@ Q = [
  "Stop sign hidden ahead", ["Stop is optional ahead", "Police checkpoint ahead", "Junction has been closed"],
  "Stop Ahead signs are used where the Stop sign cannot be seen far enough away for drivers to stop in time."),
 ("A warning triangle shows a traffic light in red, amber and green. It means:",
- "Traffic signals ahead", ["Signals are out of order", "Signals have priority", "Railway crossing ahead"],
+ "Traffic signals ahead", ["Signals out of order ahead", "Flashing amber mode ahead", "Bus-priority signals ahead"],
  "The Signal Ahead sign shows the three signal colours and is used where drivers would not expect signals or cannot see them early."),
 ("After a tunnel warning sign you see a Turn on Lights sign. What should you do?",
  "Switch on headlights", ["Switch on hazard lights", "Flash your lights twice", "Turn off your lights"],

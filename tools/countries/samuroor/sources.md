@@ -78,7 +78,9 @@ Highway Code manual on traffic control devices. Signs are described in words (no
   from this build environment (probably geoblocked); portal.mot.gov.sa returned a proxy error. So
   the Implementing Regulations (Ministerial Decision 2249 of 1441H) and the current M/115 violation
   tables could not be read in full. Rules that live only there (default speed limits, following
-  distances, overtaking side, U-turn and parking details, emergency numbers) are left out.
+  distances, U-turn details, emergency numbers) are left out. The passing side (left) is taken
+  only from how SHC 602 3.2.14 and 3.2.15 draw the overtaking signs, and parking details only
+  from the SHC 602 signs and markings listed below.
 - qanoniah.com (a third-party law mirror) returned 403 and was not used.
 
 ## Deliberately left out
@@ -87,3 +89,49 @@ Highway Code manual on traffic control devices. Signs are described in words (no
 - Minimum licence ages and licence validity periods (both amended by M/115, new text not read).
 - Default speed limits by road type, and any rule found only in prep sites.
 - Najm, Absher and other procedures for reporting minor crashes online.
+
+## Redesign of licence, conduct, stopping and right-of-way items (2026-11-25)
+
+The saLicence, saConduct and saStopping pools and 14 right-of-way items were rewritten from
+scratch after the bank failed an options-only check (wrong options read as loopholes beside a
+strict key). Each new item asks for one fact: a number, a place, a vehicle or person, a document,
+a colour or the meaning of a device. Only 9 allowed-or-forbidden items remain in these four
+categories, all keyed on the permissive answer. No rule outside the two primary texts above was
+added. Texts re-read 2026-11-25 for this rewrite:
+
+- Traffic Law (KKU copy above), re-read 2026-11-25: Art. 2 definitions as amended (3 lane, 5
+  island, 6 shoulder, 9 freeway, 10 service road, 11 stopping, 20 private car for a fare, 21 taxi
+  of up to eight persons, 22 public and private buses, 27 emergency vehicles, 30 public works
+  vehicles, 31 high, low and position lights, 32 technical check at approved centres, 40 traffic
+  accident, minor and serious, 41 tafheet, 42 empty, gross, net and axle weights); Arts. 3(b)
+  registration number is the plate number; 4 and 5 plates, one rear plate on motorcycles, trailers
+  and semi-trailers, trailers carry the towing vehicle's number; 9 registered owner liable until
+  transfer; 16 no transfer fee on vehicles sold for dismantling; 17 as amended, driving
+  authorisation; 24 Saudi Standards Organization specifications; 28 driver liable for loads; 31
+  rear and side lights or reflective strips on large vehicles; 34 military licence holders; 35
+  licence types; 37 test waived for recognised foreign licences; 42 one year from entry; 43
+  medical report; 48 cancelling a licence; 54 emergency vehicles and official motorcades; 56
+  school buses stopped for pupils; 63 crash duties. Violation tables: priority inside roundabouts
+  without signals or an officer; passengers over the registered number.
+- SHC 602 (NCC copy above), re-read 2026-11-25: 3.2.3 Yield with a pedestrian plate at
+  unsignalled marked crossings; 3.2.5 Night plate on unlighted roads only; 3.2.8 compulsory
+  minimum speed and its end (red oblique bar); 3.2.10 lane control signs no less than 150 m
+  before a junction; 3.2.14 and 3.2.15 passing side drawn on the left, two-wheeled motorcycles
+  exempt; 3.2.18 Pass Either Side; 3.2.41 and 3.2.42 parking restriction (pick-up allowed), No
+  Stopping except emergencies or police, clearway repeaters at no more than 700 m; 3.2.43
+  parking time limit signs (green border and text); 3.2.45 pay-and-display, ticket inside the
+  windscreen, arrows toward the payment point, black-and-turquoise standard and
+  white-and-turquoise premium kerbs; 3.2.54 Bus Stop sign black on white; 3.2.56 Loading Zone
+  1 hour; 3.2.58 bus lanes beside the median on dual carriageways; 3.2.59 neighbourhoods (local
+  deliveries only, humps and mini roundabouts without warning); 3.2.65 Look Right or Look Left
+  signs for pedestrians crossing cycle routes; 3.2.67 path for animal riders; 3.2.68 shared and
+  separated paths; 3.2.69 No Loading plates every 25 m over 50 m; 3.2.71 No Waiting Except taxis,
+  ambulances or police; 3.2.72 truck waiting ban by gross weight; 3.2.75 Priority Roadway sign
+  repeated after each intersection; 3.3.53 truck escape ramps; 3.6.10 kilometre posts west to
+  east and south to north; 3.6.13 Exit Only panels; 4.2.6 green studs at exit ramps; 4.2.10
+  turquoise paid-parking kerbs; 4.6.1 speed measurement markings; 4.6.2 speed reduction
+  markings; 4.6.5 part-time and full-time bus lanes, continuity line at junctions, red bus stop
+  surface; 4.6.7 HOV lanes for a driver plus one or more passengers; 4.10 longitudinal and
+  yellow transverse rumble strips; 6.2 school zones (30 km/h when flashing, up to 150 m past the
+  school, No Parking at least 20 m before a school zebra crossing, white-on-red Children Crossing
+  plate).

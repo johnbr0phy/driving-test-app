@@ -43,7 +43,7 @@ Q = [
  "Prostaglandin E1", ["Indomethacin", "Digoxin", "Adenosine"],
  "Alprostadil (prostaglandin E1) keeps the duct open until surgery in lesions such as pulmonary atresia or critical coarctation. Indomethacin closes the duct."),
 ("After acute rheumatic fever, which secondary prophylaxis does WHO prefer?",
- "IM benzathine penicillin monthly", ["Amoxicillin only with sore throats", "Yearly influenza vaccine", "Daily low-dose aspirin"],
+ "IM benzathine penicillin every 3-4 weeks", ["Amoxicillin only with sore throats", "Yearly influenza vaccine", "Daily low-dose aspirin"],
  "WHO recommends benzathine penicillin G every 3 to 4 weeks for years to prevent recurrence and progressive rheumatic heart disease."),
 ("A 9-month-old has colicky pain, vomiting and red-currant stools. Which test is first?",
  "Abdominal ultrasound", ["Barium meal", "Contrast CT of the abdomen", "Stool culture and microscopy"],

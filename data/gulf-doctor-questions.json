@@ -214,7 +214,7 @@
     "state": "ALL",
     "questionId": "GULFMD-CPU-016",
     "category": "gmdCardioPulm",
-    "question": "Which drug class is first-line for symptom relief in stable angina?",
+    "question": "Which drug class is a first-line option for symptom relief in stable angina?",
     "optionA": "Long-acting nitrate",
     "optionB": "Ranolazine",
     "optionC": "Ivabradine",
@@ -482,9 +482,9 @@
     "category": "gmdInfectCrit",
     "question": "Which finding suggests pyelonephritis rather than cystitis?",
     "optionA": "Dysuria with urinary frequency",
-    "optionB": "Suprapubic discomfort",
+    "optionB": "Suprapubic pain with urgency",
     "optionC": "Fever with flank tenderness",
-    "optionD": "Cloudy, strong-smelling urine",
+    "optionD": "Cloudy urine with a strong smell",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "Upper tract infection causes fever, rigors and costovertebral angle tenderness, and needs longer or IV treatment. Dysuria, frequency and suprapubic pain are bladder symptoms."
@@ -921,7 +921,7 @@
     "optionD": "10 mg",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "After a previous neural tube defect, a high dose of 4 mg daily from before conception through the first trimester is advised. 0.4 mg is the dose for women at ordinary risk."
+    "explanation": "After a previous neural tube defect, WHO, ACOG and CDC advise a high dose of 4 mg daily from before conception through the first trimester (NICE in the UK uses 5 mg). 0.4 mg is the dose for women at ordinary risk."
   },
   {
     "type": "GULFMD",
@@ -1215,7 +1215,7 @@
     "optionD": "Etonogestrel implant",
     "correctAnswer": "C",
     "correctIndex": 2,
-    "explanation": "The WHO Medical Eligibility Criteria place combined hormonal methods in category 3 from 6 weeks to 6 months for breastfeeding women, as estrogen can reduce milk supply. Progestogen-only methods and the copper IUD are category 1."
+    "explanation": "The WHO Medical Eligibility Criteria place combined hormonal methods in category 3 from 6 weeks to 6 months for breastfeeding women, as estrogen can reduce milk supply. Progestogen-only methods and the copper IUD are category 1. The UK's UKMEC grades some of these differently."
   },
   {
     "type": "GULFMD",
@@ -1645,7 +1645,7 @@
     "question": "Which feeding practice raises a toddler's risk of iron deficiency?",
     "optionA": "Breastfeeding to 6 months",
     "optionB": "Cow's milk before 12 months",
-    "optionC": "Iron-fortified formula",
+    "optionC": "Iron-fortified formula to 12 months",
     "optionD": "Meat purees from 6 months",
     "correctAnswer": "B",
     "correctIndex": 1,
@@ -1712,7 +1712,7 @@
     "state": "ALL",
     "questionId": "GULFMD-PGN-011",
     "category": "gmdPedsGeneral",
-    "question": "Babies born before about 31 weeks get eye screening for which condition?",
+    "question": "Very preterm babies are screened by an eye specialist for which condition?",
     "optionA": "Congenital cataract",
     "optionB": "Retinoblastoma",
     "optionC": "Retinopathy of prematurity",
@@ -2107,7 +2107,7 @@
     "question": "After acute rheumatic fever, which secondary prophylaxis does WHO prefer?",
     "optionA": "Amoxicillin only with sore throats",
     "optionB": "Yearly influenza vaccine",
-    "optionC": "IM benzathine penicillin monthly",
+    "optionC": "IM benzathine penicillin every 3-4 weeks",
     "optionD": "Daily low-dose aspirin",
     "correctAnswer": "C",
     "correctIndex": 2,
@@ -2273,10 +2273,10 @@
     "questionId": "GULFMD-SRG-003",
     "category": "gmdSurgery",
     "question": "Two days after spinal anesthesia, a patient has a headache that eases on lying flat. What is the cause?",
-    "optionA": "Bacterial meningitis",
-    "optionB": "Subarachnoid hemorrhage",
+    "optionA": "Meningitis from the needle track",
+    "optionB": "Bleeding into the subarachnoid space",
     "optionC": "CSF leak after dural puncture",
-    "optionD": "Migraine without aura",
+    "optionD": "Migraine set off by the drug",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "Post-dural puncture headache comes from CSF leaking through the puncture, so it worsens on sitting up and eases lying down. An epidural blood patch treats persistent cases."
@@ -2444,7 +2444,7 @@
     "optionA": "Direct inguinal",
     "optionB": "Indirect inguinal",
     "optionC": "Femoral",
-    "optionD": "Umbilical",
+    "optionD": "Sliding inguinal",
     "correctAnswer": "C",
     "correctIndex": 2,
     "explanation": "The femoral canal is narrow and rigid, so femoral hernias strangulate more often and are repaired promptly. Direct inguinal hernias have wide necks and rarely strangulate."

@@ -45,7 +45,7 @@ Q = [
 ("Which finding turns very high blood pressure into a hypertensive emergency?",
  "Acute organ damage", ["Reading above 180/120", "Headache without signs", "Rise over one week"],
  "A hypertensive emergency is severe hypertension with acute damage to organs such as the brain, heart, kidneys or retina, and needs IV treatment. The same reading without organ damage is managed more gradually."),
-("Which drug class is first-line for symptom relief in stable angina?",
+("Which drug class is a first-line option for symptom relief in stable angina?",
  "Beta-blocker", ["Long-acting nitrate", "Ranolazine", "Ivabradine"],
  "ESC chronic coronary syndrome guidance starts with a beta-blocker or a calcium channel blocker, plus short-acting nitrate for attacks. Long-acting nitrates, ranolazine and ivabradine are second-line add-ons."),
 ]

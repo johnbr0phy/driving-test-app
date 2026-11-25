@@ -7,7 +7,7 @@ Q = [
  "2 months HRZE, then 4 months HR", ["6 months HRZE throughout", "2 months HR, then 4 months HRZE", "9 months of isoniazid"],
  "WHO's standard 6-month regimen is isoniazid, rifampicin, pyrazinamide and ethambutol for 2 months, then isoniazid and rifampicin for 4. WHO 2022 also allows a 4-month rifapentine-moxifloxacin regimen for some patients; isoniazid alone treats latent infection."),
 ("Which finding suggests pyelonephritis rather than cystitis?",
- "Fever with flank tenderness", ["Dysuria with urinary frequency", "Suprapubic discomfort", "Cloudy, strong-smelling urine"],
+ "Fever with flank tenderness", ["Dysuria with urinary frequency", "Suprapubic pain with urgency", "Cloudy urine with a strong smell"],
  "Upper tract infection causes fever, rigors and costovertebral angle tenderness, and needs longer or IV treatment. Dysuria, frequency and suprapubic pain are bladder symptoms."),
 ("Suspected bacterial meningitis comes with papilledema, so CT is needed before lumbar puncture. What happens first?",
  "Blood cultures, then antibiotics", ["CT, then antibiotics after LP", "LP first, then CT head", "Antibiotics once CSF results are back"],

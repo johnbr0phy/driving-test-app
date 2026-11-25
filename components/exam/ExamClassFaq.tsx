@@ -84,6 +84,7 @@ export const TEACHES: Record<string, string> = {
   sejakt: "a jägarexamen course",
   semedb: "SFI, samhällsorientering or folkhögskola civics classes",
   sehp: "a högskoleprovet course",
+  qudurat: "a Qudurat (GAT) prep course",
   dkjagt: "a jagttegnskursus (hunting licence course)",
   dkindfoed: "a language school course for the indfødsretsprøve",
   itcils: "an Italian course for CILS B1 Cittadinanza",

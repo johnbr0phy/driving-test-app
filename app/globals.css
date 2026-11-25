@@ -2563,6 +2563,20 @@
     --brand-gradient-to: 200 30% 96%;
   }
 
+  /* Qudurat (GAT, Qiyas / ETEC) theme: vivid purple (v2 exam; matches lib/v2/exams/qudurat.ts theme) */
+  [data-theme="qudurat"] {
+    --brand: 280 70% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 280 70% 96%;
+    --brand-hover: 280 70% 40%;
+    --brand-dark: 280 70% 34%;
+    --brand-darker: 280 70% 24%;
+    --brand-muted: 280 40% 62%;
+    --brand-border: 280 50% 82%;
+    --brand-border-light: 280 55% 90%;
+    --brand-gradient-to: 285 60% 97%;
+  }
+
   /* CCAT (Criteria Cognitive Aptitude Test) theme: deep magenta (v2 exam; matches lib/v2/exams/ccat.ts theme) */
   [data-theme="ccat"] {
     --brand: 300 100% 20%;
@@ -10334,6 +10348,17 @@
     --brand-muted: 192 15% 45%;
     --brand-dark: 192 20% 65%;
     --brand-darker: 192 20% 78%;
+  }
+  .dark [data-theme="qudurat"] {
+    --brand: 280 70% 50%;
+    --brand-hover: 280 70% 42%;
+    --brand-light: 280 45% 13%;
+    --brand-gradient-to: 285 40% 11%;
+    --brand-border-light: 280 35% 24%;
+    --brand-border: 280 40% 34%;
+    --brand-muted: 280 40% 45%;
+    --brand-dark: 280 70% 65%;
+    --brand-darker: 280 70% 78%;
   }
   .dark [data-theme="ccat"] {
     --brand: 300 100% 40.6%;

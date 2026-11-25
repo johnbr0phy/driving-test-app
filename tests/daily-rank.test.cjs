@@ -441,8 +441,11 @@ test('Tiger Time cleanup: rank days past three are deleted by the cron', () => {
 
 test('site header: the trophy chip takes the stats icon\'s place once there is 1 correct today', () => {
   const header = read('components/SiteHeader.tsx');
-  // Hidden on the homepages, which belong to no test (Nov 25 2026).
-  assert.match(header, /const rankChip = useRankChipVisible\(\) && !HOME_PATHS\.has\(path\);/);
+  // Only where it opens a stats page: never on homepages, /teach or other pages with no test (Nov 25 2026).
+  assert.match(header, /const rankChip = useRankChipVisible\(\) && !!statsPath;/);
+  // The chip itself is never a dead label, and the in-test bar only gives up its slot when it shows.
+  assert.match(read('components/DailyRank.tsx'), /if \(!href\) return null;/);
+  assert.match(read('components/FocusBar.tsx'), /const rankShown = useRankChipVisible\(\) && !!rank && !!rankStatsHref\(pathname\);/);
   assert.match(header, /\{rankChip \? \(\s*<DailyRankChip compact href=\{statsPath\} \/>\s*\) : statsPath && \(/);
   // The chip adds #today-rank itself; the header passing it too made #today-rank#today-rank.
   assert.doesNotMatch(header, /#today-rank/);

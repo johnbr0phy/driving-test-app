@@ -74,7 +74,7 @@ const RUNNER_SEGMENTS = new Set(["test", "practice", "drill", "training"]);
  * explains the rank (DailyRankPanel). Runner paths are <base>/test/<n>,
  * <base>/practice/<n>, <base>/drill (bases can be nested, /real-estate/ca),
  * and the stats page is <base>/stats; the DMV's base is empty (/stats).
- * Quizzes (/q/...) have no stats page, so their chip stays a label.
+ * Quizzes (/q/...) have no stats page, so they show no chip.
  */
 export function rankStatsHref(pathname: string | null): string | null {
   const parts = (pathname || "").split("/").filter(Boolean);
@@ -94,7 +94,7 @@ const CHIP_CLASS =
  * count carries over when they sign in.
  */
 export function DailyRankChip({ href: hrefOverride, compact = false }: {
-  /** Where the chip links. Omitted: worked out from the runner path. null: a plain chip. */
+  /** Where the chip links. Omitted: worked out from the runner path. null: no chip (nothing to open). */
   href?: string | null;
   /** Phones show only the count (the site header, which is fuller than the test bar). */
   compact?: boolean;
@@ -147,13 +147,8 @@ export function DailyRankChip({ href: hrefOverride, compact = false }: {
     </>
   );
   const href = hrefOverride === undefined ? rankStatsHref(pathname) : hrefOverride;
-  if (!href) {
-    return (
-      <span data-daily-rank-chip title={t("dailyRank.label")} aria-label={`${count}${pct ? `, ${pct}` : ""}`} className={CHIP_CLASS}>
-        {body}
-      </span>
-    );
-  }
+  // No stats page to open (quizzes, signed-out visitors on some pages): no chip.
+  if (!href) return null;
   return (
     <Link
       data-daily-rank-chip

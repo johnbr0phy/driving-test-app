@@ -164,9 +164,9 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
   if (examV2 && hydrated && (user || v2Progress)) statsPath = v2Routes(examV2).stats;
   // Tiger Time (components/DailyRank.tsx): once there is 1 correct answer
   // today, the trophy chip takes the stats icon's place and links where it did.
-  // Not on the homepages: they belong to no test, so it would have no stats
-  // page to open (Nov 25 2026).
-  const rankChip = useRankChipVisible() && !HOME_PATHS.has(path);
+  // Only where it opens a stats page: never on the homepages or other pages
+  // with no test, or for a visitor this page shows no stats link (Nov 25 2026).
+  const rankChip = useRankChipVisible() && !!statsPath;
 
   // A signed-out visitor's ask. Each dashboard's own save card (GuestSaveCard)
   // already offers Google, email and sign in, so the header leaves it to them.

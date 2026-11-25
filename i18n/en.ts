@@ -3474,6 +3474,17 @@ export const en = {
     dhaphCardio: "Cardiovascular, Renal & Endocrine",
     dhaphInfect: "Infections & Immunisation",
     dhaphTherapy: "Respiratory, GI, CNS & Self-Care",
+    // Gulf doctor (GP) licensing exam
+    gmdCardioPulm: "Cardiology & Pulmonology",
+    gmdGiRenalEndo: "Gastroenterology, Nephrology & Endocrinology",
+    gmdInfectCrit: "Infectious Diseases & Critical Care",
+    gmdHemNeuroPsych: "Hematology, Rheumatology, Neurology & Psychiatry",
+    gmdObstetrics: "Obstetrics",
+    gmdGynecology: "Gynecology",
+    gmdPedsGeneral: "Neonatology, Growth & Child Infections",
+    gmdPedsSystems: "Pediatric Systems & Emergencies",
+    gmdSurgery: "Surgery & Trauma",
+    gmdSafetyEthics: "Patient Safety, Ethics & Preventive Medicine",
     // Cisco CCNA 200-301 domains
     ccnaFundamentals: "Network Fundamentals",
     ccnaAddressing: "IPv4 & IPv6 Addressing",

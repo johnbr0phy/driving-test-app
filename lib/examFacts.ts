@@ -3685,6 +3685,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the SCFHS SPLE Examination Content Guideline (2025), Qatar DHP's pharmacist blueprint and qualifying examination page, and the DHA Manual for Professional Assessment (2025), checked November 2026",
     source: { name: "SCFHS: SPLE Examination Content Guideline", url: "https://scfhs.org.sa/sites/default/files/2025-09/SPLE%20Applicant%20Guide.docx_.pdf" },
   },
+  gulfmd: {
+    answer:
+      "The SMLE (Saudi Medical Licensure Examination) is the computer-based licensing exam the Saudi Commission for Health Specialties sets for doctors: 200 one-best-answer questions in two 120-minute parts of 100, scored on a 200 to 800 scale with 560 to pass. Its 2026 blueprint gives 30 percent to medicine, 25 to obstetrics and gynecology, 25 to pediatrics and 20 to surgery, and lists patient safety, preventive medicine and ethics. The other Gulf health authorities (DHA in Dubai, DOH in Abu Dhabi, MOHAP, Qatar's DHP, and Oman, Kuwait and Bahrain) each set their own assessment for general practitioners, often through Prometric; DHA reports only pass or fail and allows three attempts.",
+    rows: [
+      { label: "Format", value: "Computer-based, multiple choice, one best answer" },
+      { label: "Saudi Arabia (SMLE)", value: "200 questions, 2 x 120 min, 560 on 200-800" },
+      { label: "Blueprint", value: "Medicine 30%, OB/GYN 25%, pediatrics 25%, surgery 20%" },
+      { label: "SMLE attempts", value: "Up to four a year" },
+      { label: "Dubai (DHA)", value: "Pass or fail only, three attempts" },
+      { label: "Other authorities", value: "Check your authority's current guide" },
+      { label: "Set by", value: "Each Gulf health authority" },
+    ],
+    basedOn: "the SCFHS Saudi Medical Licensure Examination (SMLE) Examination Content Guideline with the 2026 blueprint and the DHA Manual for Professional Assessment (2025), checked November 2026",
+    source: { name: "SCFHS: SMLE Examination Content Guideline (2026 blueprint)", url: "https://scfhs.org.sa/sites/default/files/2026-05/Saudi%20Medical%20Licensure%20Examination%20%28SMLE%29%20Blueprint_2026_0.pdf" },
+  },
   gulfrn: {
     answer:
       "The Gulf registered nurse licensing exam, often called the Prometric exam for nurses, is a computer-based multiple-choice test that each Gulf health authority sets for nurses who want to practise there: DHA in Dubai, DOH in Abu Dhabi, MOHAP elsewhere in the UAE, SCFHS in Saudi Arabia, the DHP in Qatar, and the authorities in Oman, Kuwait and Bahrain. Each sets its own number of questions, time and pass mark. Qatar's DHP lists 150 questions with a 50 percent pass mark, and Saudi Arabia's SNLE has 200 questions in two 120-minute parts with a scaled pass score of 500. The published blueprints weight adult nursing most, about 40 percent.",
@@ -7556,6 +7571,25 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     source: { name: "National Testing Agency", url: "https://cuet.nta.nic.in" },
     tigertest:
       "Tigertest has two full CUET General Test practice tests of 50 questions in 60 minutes and eight topic drills: three for general knowledge and one each for mental ability, numerical ability, quantitative reasoning, logical reasoning and analytical reasoning. All of it is free with no account required; scores are percent correct, with the +5/-1 marking explained rather than applied.",
+  },
+  qudurat: {
+    answer:
+      "Qudurat, the General Aptitude Test (GAT), is the university admission aptitude test of Qiyas, the National Center for Assessment at ETEC (the Education and Training Evaluation Commission) in Saudi Arabia, for secondary school students in their second and third years and for graduates. Under ETEC's Test-Taker's Guide it has 5 sections of 24 multiple-choice questions, 120 in all, in 2 hours and 5 minutes, with no calculator, and it is offered in Arabic and English, on paper and on computer. The verbal section covers verbal analogies (17%), sentence completion (7%), contextual error (10%) and reading comprehension (21%); the quantitative section of the Science Tracks version covers arithmetic (23%), geometry (10%), algebra (4%) and data analysis (8%). There is no pass mark: the score is norm-referenced, and each university decides how much weight to give it.",
+    rows: [
+      { label: "Questions", value: "120 multiple choice, in 5 sections of 24" },
+      { label: "Time", value: "2 hours 5 minutes, a time limit per section, no scheduled breaks" },
+      { label: "Verbal", value: "Analogies 17%, sentence completion 7%, contextual error 10%, reading 21%" },
+      { label: "Quantitative (Science Tracks)", value: "Arithmetic 23%, geometry 10%, algebra 4%, data analysis 8%" },
+      { label: "Calculator", value: "Not allowed" },
+      { label: "Scoring", value: "Norm-referenced, no pass or fail; 65 is average, 81 and above is the top 5%" },
+      { label: "Languages", value: "Arabic and English" },
+      { label: "Attempts and validity", value: "Five attempts; a result is valid for five years" },
+      { label: "Given by", value: "ETEC (Qiyas, the National Center for Assessment)" },
+    ],
+    basedOn: "ETEC's General Aptitude Test page and its English GAT Test-Taker's Guide (checked November 2026)",
+    source: { name: "ETEC", url: "https://etec.gov.sa/en/centers/qiyas" },
+    tigertest:
+      "Tigertest has two full practice tests of the GAT in English, each 120 questions in 2 hours 5 minutes (a verbal section in three timed parts and a quantitative section in two), and eight drills with Basics. Everything is free with no account required. Scores are percent correct; the Arabic GAT and the Humanities Tracks version are not modelled.",
   },
   reet: {
     answer:

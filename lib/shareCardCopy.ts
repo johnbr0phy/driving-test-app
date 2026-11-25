@@ -474,6 +474,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   kcet: { title: "KCET Mock Test", description: "Practice Physics, Chemistry and Mathematics in timed KCET mock tests at the real pace, on the I and II PUC syllabus." },
   mhtcet: { title: "MHT-CET Mock Test", description: "Practice Physics, Chemistry and Mathematics in timed MHT-CET PCM mock tests at the real pace." },
   cuet: { title: "CUET General Test Practice", description: "Practise GK, mental ability, numerical ability and reasoning in full 50-question, 60-minute CUET (UG) General Aptitude Test mocks." },
+  qudurat: { title: "Qudurat Practice Test (GAT, English)", description: "Full 120-question GAT practice in English: analogies, contextual error, reading, arithmetic, geometry and data, every answer explained." },
   reet: { title: "REET Level 1 (Classes 1 to 5)", description: "Practise child development and pedagogy, Hindi, English, maths and EVS with Rajasthan, with content and pedagogy questions." },
   uptet: { title: "UPTET Paper 1 (Classes 1 to 5)", description: "Practise child development and pedagogy, Hindi, English, maths and EVS, with content and pedagogy questions." },
   ugcnet: { title: "UGC-NET Paper 1", description: "Full 50-question Paper 1 mocks across all ten units of Teaching and Research Aptitude, with every answer explained." },

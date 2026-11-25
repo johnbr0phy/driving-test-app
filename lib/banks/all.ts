@@ -96,6 +96,7 @@ import "./cacit";
 import "./aucit";
 import "./gulfrn";
 import "./aedhapharm";
+import "./gulfmd";
 import "./inrto";
 import "./nasm";
 import "./rbt";

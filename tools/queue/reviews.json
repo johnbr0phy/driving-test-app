@@ -1890,6 +1890,22 @@
         "pr": 1031,
         "findings": 14
       }
+    ],
+    "gulfmd": [
+      {
+        "date": "2026-11-25",
+        "kind": "blind review at build",
+        "pr": 1050,
+        "findings": 8
+      }
+    ],
+    "qudurat": [
+      {
+        "date": "2026-11-25",
+        "kind": "blind review at build",
+        "pr": 1050,
+        "findings": 18
+      }
     ]
   },
   "pendingReviews": {

@@ -2,6 +2,10 @@
   "ignoreCommand": "bash scripts/vercel-ignore-build.sh",
   "crons": [
     {
+      "path": "/api/cron/tiger-time",
+      "schedule": "15 5 * * *"
+    },
+    {
       "path": "/api/cron/aggregate-stats",
       "schedule": "0 3 * * *"
     },

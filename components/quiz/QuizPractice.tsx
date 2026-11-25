@@ -212,7 +212,7 @@ export function QuizPractice({ code }: { code: string }) {
         </AccessibleOverlay>
       )}
 
-      <FocusBar exitHref={home} title={quiz.title} />
+      <FocusBar rank="beside" exitHref={home} title={quiz.title} />
       <div className="relative container mx-auto px-4 py-4 max-w-lg md:max-w-2xl lg:max-w-4xl">
         {current ? (
           <TrainingCard key={current.questionId} question={current} selectedAnswer={selected} onAnswerSelect={answer} onNext={loadNext} />

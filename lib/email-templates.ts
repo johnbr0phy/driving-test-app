@@ -610,6 +610,47 @@ export function reportReplyEmail(v: EmailVoice, c: ReportReplyContent): string {
   });
 }
 
+// ── Tiger Time winner (app/api/cron/tiger-time) ─────────────────────────────
+// One email, to the day's winner. Transactional: no unsubscribe link.
+
+export const TIGER_TIME_SUBJECT = "You won Tiger Time 🏆";
+
+export interface TigerTimeContent {
+  firstName: string | null;
+  /** First-try correct answers that won the day. */
+  correct: number;
+  /** The Tiger Time day won, YYYY-MM-DD (Eastern time). */
+  day: string;
+}
+
+/** "Tuesday, November 24" for a Tiger Time day. */
+export function tigerTimeDate(day: string): string {
+  return new Intl.DateTimeFormat("en-US", { weekday: "long", month: "long", day: "numeric", timeZone: "UTC" }).format(new Date(`${day}T12:00:00Z`));
+}
+
+export function tigerTimeEmail(v: EmailVoice, c: TigerTimeContent): string {
+  const date = tigerTimeDate(c.day);
+  const count = c.correct.toLocaleString("en-US");
+  return emailShell({
+    voice: v,
+    expression: 1,
+    eyebrow: "TIGER TIME",
+    title: TIGER_TIME_SUBJECT,
+    preheader: `${count} right on the first try. Nobody on Tigertest got more on ${date}.`,
+    heading: "You won Tiger Time.",
+    unsubscribe: false,
+    footerNote: `You are getting this because you won Tiger Time on ${date}.`,
+    body: [
+      p(c.firstName ? `Hi ${esc(c.firstName)},` : "Hi there,"),
+      p(`On ${esc(date)} you got <strong style="font-weight: 700;">${count} questions right on the first try</strong>. Nobody on Tigertest got more, so you are that day's Tiger Time winner.`),
+      p("Congratulations. That is a serious day of studying."),
+      p("A new Tiger Time starts every night at midnight Eastern time, if you want to go again."),
+      cta(DASH(v, "tiger_time"), v.id === "unknown" ? "Keep Practicing" : `Keep Practicing ${v.shortName}`),
+      signoff("Cheers,"),
+    ].join("\n"),
+  });
+}
+
 // ── The 1,000,000th question (lib/server/millionth) ──────────────────────────
 // One email, to one person. Transactional: no unsubscribe link.
 

@@ -17,6 +17,7 @@ import { useV2Store, resultsForExam } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { getTigerAsset } from "@/lib/tigerAssets";
 import { QuestionView } from "./QuestionView";
+import { DailyRankCard } from "@/components/DailyRank";
 import { useV2Ui } from "@/lib/v2/ui";
 
 export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber: number }) {
@@ -114,6 +115,7 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
       <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">{exam.copy.scoreNote}</p>
       {result.timing === "untimed" && <p className="mt-1 text-sm font-semibold">{t.untimedNote}</p>}
       {result.length === "half" && <p className="mt-1 text-sm font-semibold">{t.halfLengthNote}</p>}
+      <DailyRankCard className="mt-4" />
 
       <div id="result-breakdown" className="mt-6 grid gap-4 md:grid-cols-2">
         {result.sections.map((s) => {

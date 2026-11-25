@@ -72,6 +72,7 @@ export async function POST(request: NextRequest) {
     await deleteWhere(db, "quizzes", "ownerUid", uid, true);
     await deleteWhere(db, "classes", "teacherUid", uid, true);
     await deleteWhere(db, "enrollments", "uid", uid);
+    await deleteWhere(db, "tigerTimeWinners", "uid", uid);
     const reports = await db.collection("questionReports").where("uid", "==", uid).get();
     for (const d of reports.docs) await d.ref.update({ uid: null, email: null });
     await deleteWhere(db, "oauth_refresh_tokens", "userId", uid);

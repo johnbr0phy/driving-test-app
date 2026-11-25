@@ -1,5 +1,6 @@
 "use client";
 
+import { DailyRankCard } from "@/components/DailyRank";
 // Results of a quiz test: the score against the quiz's pass line, how each
 // topic went, every missed question with its answer, and the way back into
 // practice on exactly those misses.
@@ -113,6 +114,8 @@ export function QuizResults({ code }: { code: string }) {
           </p>
           <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">{when(attempt.at)}</p>
         </div>
+
+        <DailyRankCard />
 
         <div className="grid grid-cols-1 gap-2 sm:grid-cols-3">
           {missedQuizIds.length > 0 && (

@@ -1,6 +1,7 @@
 "use client";
 
 import { startCheckout } from "@/lib/startCheckout";
+import { DailyRankPanel } from "@/components/DailyRank";
 import { useEffect, useState, useMemo, useRef, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { BarChart3, Lock, Users } from "lucide-react";
@@ -260,6 +261,9 @@ function StatsContent() {
           isGuest={isGuest}
           onSignUp={() => router.push(signupDestination)}
         />
+
+        {/* Today's rank, explained (lib/dailyRank.ts; A/B arm "rank" only). */}
+        <DailyRankPanel continueHref="/dmv/dashboard" />
 
         {/* Tab Navigation */}
         <div className="flex gap-1.5 mb-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-1.5 shadow-sm">

@@ -10,6 +10,7 @@
 // (lib/communityStats.ts); ?tab=community opens it, guests included.
 
 import { startCheckout } from "@/lib/startCheckout";
+import { DailyRankPanel } from "@/components/DailyRank";
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useStore } from "@/store/useStore";
@@ -238,6 +239,9 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
             onSignUp={() => router.push(signupDestination)}
             hideSocialProof
           />
+
+          {/* Today's rank, explained (lib/dailyRank.ts; A/B arm "rank" only). */}
+          <DailyRankPanel continueHref={routes.dashboard} />
 
           {communityOn && (
             <StatsTabs

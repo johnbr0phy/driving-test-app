@@ -15201,3 +15201,10 @@ html[data-ltq="b"] .try-card {
   --brand-border: 240 75% 34%;
   --brand-border-light: 240 75% 24%;
 }
+
+/* Daily rank chip (components/DailyRank.tsx): a short pop when the count changes. */
+@keyframes rank-pop {
+  0% { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}
+

@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { X } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { useTranslation } from "@/contexts/LanguageContext";
+import { DailyRankChip, useRankChipVisible } from "@/components/DailyRank";
 import type { Language } from "@/i18n";
 
 // The leave-a-test question in the languages a test can run in; others read English.
@@ -34,6 +35,14 @@ interface FocusBarProps {
   exitLabel?: string;
   /** Extra classes on the bar (v2 adds its safe-area padding). */
   className?: string;
+  /**
+   * Today's rank chip (components/DailyRank.tsx). Leave it out on practice
+   * tests and mocks, which should feel like the real exam. "replace": the
+   * chip takes the right slot's place when it shows (training and drills,
+   * where the slot is "View stats" or the stats upsell, and the chip links to
+   * stats itself). "beside": it sits next to the slot (flashcards' Shuffle).
+   */
+  rank?: "replace" | "beside";
 }
 
 /**
@@ -42,7 +51,9 @@ interface FocusBarProps {
  * and how far along, one slot on the right, a progress bar. The site header
  * is hidden on these pages (isRunnerPath in SiteHeader).
  */
-export function FocusBar({ exitHref, title, subtitle, progress, right, confirmExit, exitLabel, className }: FocusBarProps) {
+export function FocusBar({ exitHref, title, subtitle, progress, right, confirmExit, exitLabel, className, rank }: FocusBarProps) {
+  const rankShown = useRankChipVisible() && !!rank;
+  const slot = rankShown && rank === "replace" ? null : right;
   const router = useRouter();
   const { language } = useTranslation();
   const copy = COPY[language] ?? COPY.en!;
@@ -66,7 +77,9 @@ export function FocusBar({ exitHref, title, subtitle, progress, right, confirmEx
           <div className="truncate text-sm font-bold text-gray-900 dark:text-gray-50">{title}</div>
           {subtitle && <div className="truncate text-xs text-gray-500 dark:text-gray-400">{subtitle}</div>}
         </div>
-        {right ? <div className="flex shrink-0 items-center gap-2">{right}</div> : null}
+        {/* Today's rank (A/B test arm "rank" only), never on practice tests. */}
+        {rank && <DailyRankChip />}
+        {slot ? <div className="flex shrink-0 items-center gap-2">{slot}</div> : null}
       </div>
       {progress !== undefined && (
         <div className="h-1 w-full bg-gray-100 dark:bg-gray-800" aria-hidden>

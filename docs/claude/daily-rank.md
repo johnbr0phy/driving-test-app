@@ -1,0 +1,63 @@
+# Daily rank (Tiger Time)
+
+Tells each person where they rank today by correct answers: "41 correct today. Top 14%." plus "3 more correct to pass the next 1,000 people." Added Nov 2026 as A/B test `dailyRank1`.
+
+## Rules
+
+- **What counts**: the first answer to each question in the person's local day, if it was right. Retries, repeats and wrong first answers never count. Speed never counts. Every engine (DMV, v1, v2, quizzes, Try one now) reports through `recordClassAnswerById` in `lib/classProgress.ts`, which calls `noteRankAnswer`.
+- **Who**: a signed-in uid, or a guest's browser id (`lib/enrollment.ts getBrowserId`), hashed before storage. Internal accounts, test browsers (`isTestBrowser`) and bots are never sent or counted.
+- **Day (Tiger Time)**: one day for everyone, midnight to midnight US Eastern time (`America/New_York`, daylight saving included; `tigerDay()`, `tigerTimeLeftMs()`). Everyone on the site is ranked against everyone else that day. The server decides the day; the browser's time zone is not used. The A/B test's next-day return still uses the person's own local day.
+- **Abuse**: answers go through `grantAnswers` (`lib/server/answerRateLimit.ts`) on its own `'rank'` budget; anything over it is dropped and tallied in `analytics/dailyRank.rateLimited`. The server dedupes questions per person per day (cap 3,000) whatever the client sends.
+- **Privacy**: responses carry only the caller's count, top percent, "N more" line and percentile cutoffs. Never a head count, a raw rank or anyone's identity. Cutoffs give the count needed for each percentile, which does not reveal how many people answered.
+- **Copy**: `dailyRank.*` in every `i18n/*.ts`. "Top X%" is shown only for the top half (`RANK_SHOW_TOP_PERCENT_MAX`); below it the card shows the count and the "N more" line. Nothing shows until 1 correct today.
+
+## Pieces
+
+| File | What |
+|---|---|
+| `lib/dailyRank.ts` | Pure maths: local day, counter (`applyAnswers`), guest merge (`mergePeople`), histogram deltas, `topPercent`, `nextTarget`, `percentileCutoffs` |
+| `lib/server/dailyRank.ts` | Firestore: `dailyRank/{day}/people/{id}` and `dailyRank/{day}/shards/{0..9}` (histogram), 15-minute in-memory distribution cache |
+| `app/api/rank/today` | GET status, POST answers then status |
+| `app/api/rank/merge` | At sign-in, moves today's guest day onto the account once |
+| `lib/dailyRankClient.ts` | Browser store: queue, 4-second flush, live view, `useDailyRank()`, `mergeRankOnSignIn()` (called from `AuthContext`) |
+| `components/DailyRank.tsx` | `DailyRankChip` (in `FocusBar` where a runner passes `rank`, never on practice tests; links to the test's stats page, `rankStatsHref`), `DailyRankCard` (DMV/v1 results, v1 set complete, v2 results, quiz results) and `DailyRankPanel` (top of every stats page: rank, the "N more" line, how to win, the countdown and one slim bar of how far up the field you are) |
+| `lib/dailyRankTest.ts` | A/B arms and metrics; `app/api/analytics/rank-test`, `app/api/admin/rank-test`, `components/admin/DailyRankTestCard.tsx` on the A/B tests tab |
+
+## Chip to stats
+
+The chip links to `<base>/stats#today-rank` (the DMV's `/stats`), cutting the runner path at its `test`, `practice`, `drill` or `training` segment, so nested bases like `/real-estate/ca` work. Quizzes have no stats page and keep a plain chip. Stats pages need an account, so a guest who taps the chip lands on sign-up; their count carries over at sign-in.
+
+## Tiger Time winner
+
+- `app/api/cron/tiger-time` (daily 05:15 UTC, just after midnight Eastern) reads the finished day's top 200 counts (`topOfDay`) and writes `tigerTimeWinners/{day}` `{ uid, correct, reachedAt, at, emailed }` once and emails the winner a congratulations (`tigerTimeEmail` in `lib/email-templates.ts`: transactional, from John, no unsubscribe link, like the 1,000,000th-question email; English only; skipped if the account unsubscribed; sent once, by `emailed` and the Resend idempotency key `tiger-time-<day>`): the signed-in account with the most correct answers, at least `TIGER_TIME_MIN_TO_WIN` (10), ties to whoever reached the count first (`reachedAt` on the person doc); guests and internal accounts cannot win (`pickTigerTimeWinner`). `?day=` reruns a day: it never replaces a winner and retries an email that did not send. Every run writes `globalStats/tigerTime.updatedAt`, which the watchdog reads (`readJobHeartbeats`, 36 hours).
+- No badge or trophy is shown on the site (decided Nov 25 2026); the email is the prize. Nobody else is told who won. Account deletion removes the winner records.
+- The stats panel shows a live countdown to midnight Eastern ("Ends in 3:07:45") and the prize line.
+- Copy outside English says "New York time", which reads more clearly than "Eastern time" abroad.
+- Guests see "Sign in to keep your rank and win Tiger Time": only accounts can win.
+
+## Where the chip shows
+
+`FocusBar` takes a `rank` prop; without it there is no chip.
+
+- **Never on practice tests or mocks** (DMV `/test/<n>`, every exam's `ExamTestPage`, quiz tests): they should feel like the real exam. Their answers still count, and the rank card still shows on their results.
+- **`rank="replace"`** in training sets (DMV and v1) and v2 drills: when the chip shows, it takes the right slot's place. That slot is "View stats" or the DMV stats upsell ("Stuck on the same questions?"), and the chip links to the stats page itself. In the rank arm that upsell is not shown in training, which the test's Premium guardrail measures.
+- **`rank="beside"`** in quiz practice and flashcards (beside Shuffle, a control).
+- The count is always shown, so the chip moves with every right answer (each part pops when it changes): phones "42 · Top 6%", under 360px "42", from `sm` up "42 correct · Top 6%".
+
+## Distribution
+
+No cron and no account scan. Each change moves the person from their old histogram bucket to the new one (`histogramDelta`) on a random shard, inside the same transaction as their own doc. A status read loads the day's 10 shard docs at most once per 15 minutes per server instance. Counts over 1,000 share one bucket.
+
+## A/B test
+
+Every answering browser is assigned 50/50 at its first answer (`?rank=on|off` pins for previews, never counted). Control still counts answers, so the distribution is everyone's. Primary: next-day return (answers again on the local day after enrolment, out of browsers enrolled before today). Secondary: questions per session (30-minute idle gap). Guardrail: Premium within 14 days. Decision rule at the top of `lib/dailyRankTest.ts`.
+
+## Setup outside the code
+
+- Firestore TTL policy on `expiresAt` for collection groups `people` and `shards` (the /privacy page promises three days).
+
+## Not done in the prototype
+
+- Question ids are checked by format, not against the banks.
+- v2 full tests (`ExamRunner`) have their own top bar, so the chip shows in v2 drills (FocusBar) but not mid-test; the card shows on v2 results.
+- A browser id is a bearer secret for its guest day: anyone who has it can merge that day into their account. Ids are random and never leave the browser except to our API.

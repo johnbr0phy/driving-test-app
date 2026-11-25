@@ -22,6 +22,7 @@ Keep this file short (under about 40 KB). Add a rule here only if it applies acr
 | `ui.md` | Site header, focus bar, footer, logo, themes, Stageshow demos, interface vs test language, dark mode |
 | `privacy.md` | Consent, GA and Vercel Analytics rules, children's tests, account deletion |
 | `email.md` | Email link rules, Resend, campaigns, crons, opt-out, blocked domains |
+| `daily-rank.md` | Daily rank: first-try correct answers per local day, percentile, header chip, results card, guest merge, its A/B test |
 
 ## Commands
 

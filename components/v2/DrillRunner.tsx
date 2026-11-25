@@ -209,6 +209,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
     <FocusMode className="v2-focus">
       {fireworks && done && <Fireworks duration={3000} onComplete={() => setFireworks(false)} />}
       <FocusBar
+        rank="replace"
         className="v2-safe-top shrink-0"
         exitHref={backHref}
         exitLabel={ui.common.back}

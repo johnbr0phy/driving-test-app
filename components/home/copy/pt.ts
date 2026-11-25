@@ -130,7 +130,7 @@ export const pt: HomeCopy = {
 export const countryNames: Record<string, string> = {
   US: "Estados Unidos", CA: "Canadá", UK: "Reino Unido", IE: "Irlanda", AU: "Austrália", NZ: "Nova Zelândia", IN: "Índia",
   PH: "Filipinas", MY: "Malásia", SG: "Singapura", HK: "Hong Kong", AE: "Emirados Árabes Unidos", ZA: "África do Sul",
-  NG: "Nigéria", KE: "Quénia", PK: "Paquistão", ES: "Espanha", PT: "Portugal", RO: "Roménia", SE: "Suécia", GR: "Grécia",
+  NG: "Nigéria", KE: "Quénia", PK: "Paquistão", SA: "Arábia Saudita", ES: "Espanha", PT: "Portugal", RO: "Roménia", SE: "Suécia", GR: "Grécia",
   DK: "Dinamarca", HU: "Hungria", BE: "Bélgica", FI: "Finlândia", MT: "Malta", DE: "Alemanha", IT: "Itália", FR: "França", PL: "Polónia", NL: "Países Baixos",
 };
 
@@ -140,6 +140,6 @@ export const countryNames: Record<string, string> = {
 export const inNames: Record<string, string> = {
   US: "os Estados Unidos", CA: "o Canadá", UK: "o Reino Unido", IE: "a Irlanda", AU: "a Austrália", NZ: "a Nova Zelândia", IN: "a Índia",
   PH: "as Filipinas", MY: "a Malásia", SG: "Singapura", HK: "Hong Kong", AE: "os Emirados Árabes Unidos", ZA: "a África do Sul",
-  NG: "a Nigéria", KE: "o Quénia", PK: "o Paquistão", ES: "Espanha", PT: "Portugal", RO: "a Roménia", SE: "a Suécia", GR: "a Grécia",
+  NG: "a Nigéria", KE: "o Quénia", PK: "o Paquistão", SA: "a Arábia Saudita", ES: "Espanha", PT: "Portugal", RO: "a Roménia", SE: "a Suécia", GR: "a Grécia",
   DK: "a Dinamarca", HU: "a Hungria", BE: "a Bélgica", FI: "a Finlândia", MT: "Malta", DE: "a Alemanha", IT: "a Itália", FR: "a França", PL: "a Polónia", NL: "os Países Baixos",
 };

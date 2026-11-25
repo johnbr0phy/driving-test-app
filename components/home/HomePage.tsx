@@ -89,6 +89,7 @@ const AUTHORITY: Record<Exclude<Region, "US">, string> = {
   NG: "the FRSC, JAMB, TRCN or any recruiting service",
   KE: "the NTSA or the Nursing Council of Kenya",
   PK: "any provincial or ICT licensing authority, the PPSC, Punjab Police, the Pakistan Army, the PAF, PMDC or PNMC",
+  SA: "the General Department of Traffic (Muroor) or any driving school",
   ES: "the DGT (Dirección General de Tráfico)",
   PT: "the IMT",
   RO: "the DGPCI (formerly DRPCIV), the ARR, the Ministry of Health or the universities of medicine",

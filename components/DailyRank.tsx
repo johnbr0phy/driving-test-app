@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+// React in scope: tests render this file with the classic JSX transform.
+import React, { useEffect, useState } from "react";
 import { noteStatsSource } from "@/lib/statsViews";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -167,66 +168,14 @@ export function DailyRankChip({ href: hrefOverride, compact = false }: {
   );
 }
 
-function nextLine(next: RankNext | null, t: (k: string) => string, nf: Intl.NumberFormat): string | null {
-  if (!next) return null;
-  if (next.kind === "top") return t("dailyRank.leading");
-  const people = nf.format(next.people);
-  if (next.kind === "block") {
-    return next.need === 1 ? fill(t("dailyRank.nextBlockOne"), { people }) : fill(t("dailyRank.nextBlock"), { need: nf.format(next.need), people });
-  }
-  return next.need === 1 ? t("dailyRank.nextEveryoneOne") : fill(t("dailyRank.nextEveryone"), { need: nf.format(next.need) });
-}
-
 /**
- * The rank card at the end of every session: "41 correct today. Top 14%."
- * plus the "N more" line, and for guests a link to sign in and keep it.
+ * The rank card at the end of every session (results, finished sets): the
+ * same design as the stats page panel, without "Continue practicing" (the
+ * results page has its own buttons) and, for guests, with "Sign in to keep
+ * your rank and win Tiger Time".
  */
 export function DailyRankCard({ className = "" }: { className?: string }) {
-  const on = useInRankArm();
-  const rank = useDailyRank();
-  const { user } = useAuth();
-  const pathname = usePathname();
-  const { t, language } = useTranslation();
-  useEffect(() => {
-    if (!on) return;
-    // Send the session's last answers now, then read the fresh rank.
-    void flushRank().then(() => refreshRank(true));
-  }, [on]);
-  if (!on || !rank || rank.correct < 1) return null;
-  const nf = new Intl.NumberFormat(language);
-  const headline = rank.correct === 1 ? t("dailyRank.correctTodayOne") : fill(t("dailyRank.correctToday"), { n: nf.format(rank.correct) });
-  const pct = showPercent(rank.topPercent) ? fill(t("dailyRank.topPercent"), { p: rank.topPercent }) : null;
-  const more = nextLine(rank.next, t, nf);
-  return (
-    <section
-      data-daily-rank-card
-      aria-label={t("dailyRank.label")}
-      className={`rounded-2xl border border-amber-200 bg-amber-50 p-4 text-left dark:border-amber-800 dark:bg-amber-950 ${className}`}
-    >
-      <div className="flex items-start gap-3">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-amber-400 text-white dark:bg-amber-500">
-          <Trophy className="h-5 w-5" aria-hidden />
-        </span>
-        <div className="min-w-0 flex-1">
-          <p className="text-xs font-semibold uppercase tracking-wide text-amber-800 dark:text-amber-300">{t("dailyRank.label")}</p>
-          <p className="mt-0.5 text-lg font-bold leading-snug text-gray-900 dark:text-gray-50">
-            {headline}
-            {pct && <> {pct}</>}
-          </p>
-          {more && <p className="mt-1 text-sm text-gray-700 dark:text-gray-200">{more}</p>}
-          <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">{t("dailyRank.howItWorks")}</p>
-        </div>
-      </div>
-      {!user && (
-        <Link
-          href={`/signup?redirect=${encodeURIComponent(pathname || "/")}`}
-          className="mt-3 block rounded-full bg-black px-4 py-2.5 text-center text-sm font-semibold text-white hover:bg-gray-800 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-200"
-        >
-          {t("dailyRank.signIn")}
-        </Link>
-      )}
-    </section>
-  );
+  return <DailyRankPanel className={className} guestSignIn anchor={false} />;
 }
 
 /** "1 hr 38 min" left in today's Tiger Time, refreshed every 15 seconds. */
@@ -253,7 +202,21 @@ function useTigerTimeLeft(language: string): string | null {
  * place), a button back to practice and the rules behind "How it works".
  * No head counts and nobody else's name or position.
  */
-export function DailyRankPanel({ continueHref, className = "" }: { continueHref?: string; className?: string }) {
+export function DailyRankPanel({
+  continueHref,
+  guestSignIn = false,
+  anchor = true,
+  className = "",
+}: {
+  continueHref?: string;
+  /** Guests get "Sign in to keep your rank and win Tiger Time" (the end-of-session card). */
+  guestSignIn?: boolean;
+  /** The stats page's #today-rank target (the chip links there); off on results. */
+  anchor?: boolean;
+  className?: string;
+}) {
+  const { user } = useAuth();
+  const pathname = usePathname();
   const on = useInRankArm();
   const rank = useDailyRank();
   const { t, language } = useTranslation();
@@ -296,7 +259,7 @@ export function DailyRankPanel({ continueHref, className = "" }: { continueHref?
   const eyebrow = "text-xs font-semibold uppercase tracking-[0.14em] text-gray-500 dark:text-gray-400";
   return (
     <section
-      id="today-rank"
+      id={anchor ? "today-rank" : undefined}
       data-daily-rank-panel
       aria-label={t("dailyRank.label")}
       className={`mb-4 scroll-mt-20 overflow-hidden rounded-3xl border border-amber-200 bg-white shadow-sm dark:border-amber-900 dark:bg-gray-900 ${className}`}
@@ -307,10 +270,10 @@ export function DailyRankPanel({ continueHref, className = "" }: { continueHref?
         </span>
         <div className="min-w-0 flex-1">
           <h2 className="text-lg font-bold leading-tight text-gray-900 dark:text-gray-50">{t("dailyRank.label")}</h2>
-          <p className="text-sm text-gray-600 dark:text-gray-300">{t("dailyRank.dailyChallenge")}</p>
+          <p className="truncate text-sm text-gray-600 dark:text-gray-300">{t("dailyRank.dailyChallenge")}</p>
         </div>
         {left && (
-          <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-amber-200 bg-white px-3 py-1 text-sm font-semibold text-amber-900 dark:border-amber-800 dark:bg-gray-900 dark:text-amber-200">
+          <span className="inline-flex shrink-0 items-center gap-1 whitespace-nowrap rounded-full border border-amber-200 bg-white px-2.5 py-1 text-xs font-semibold text-amber-900 sm:gap-1.5 sm:px-3 sm:text-sm dark:border-amber-800 dark:bg-gray-900 dark:text-amber-200">
             <Clock className="h-4 w-4" aria-hidden />
             {fill(t("dailyRank.timeLeft"), { time: left })}
           </span>
@@ -326,7 +289,7 @@ export function DailyRankPanel({ continueHref, className = "" }: { continueHref?
           {pct && <span className="mb-1 shrink-0 rounded-full bg-amber-100 px-3 py-1 text-base font-bold text-amber-900 dark:bg-amber-900 dark:text-amber-100">{pct}</span>}
         </div>
         {rank.place && (
-          <>
+          <div>
             <p className="mt-2 text-base font-semibold text-gray-900 dark:text-gray-50">{placeText(t, language, "dailyRank.placeOfAll", rank.place)}</p>
             {/* A nudge under any place but first (first place has its own box). */}
             {rank.place > 1 && (
@@ -334,7 +297,7 @@ export function DailyRankPanel({ continueHref, className = "" }: { continueHref?
                 {t(rank.place <= RANK_NEAR_TOP ? "dailyRank.encourageTop" : "dailyRank.encourage")}
               </p>
             )}
-          </>
+          </div>
         )}
         {goalTitle && (
           <div
@@ -349,6 +312,14 @@ export function DailyRankPanel({ continueHref, className = "" }: { continueHref?
             <p className="mt-1 text-xl font-bold text-gray-900 dark:text-gray-50">{goalTitle}</p>
             {goalBody && <p className="mt-0.5 text-sm text-gray-600 dark:text-gray-300">{goalBody}</p>}
           </div>
+        )}
+        {guestSignIn && !user && (
+          <Link
+            href={`/signup?redirect=${encodeURIComponent(pathname || "/")}`}
+            className="mt-5 flex items-center justify-center rounded-2xl bg-black px-4 py-3.5 text-center text-base font-bold text-white hover:bg-gray-800 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-200"
+          >
+            {t("dailyRank.signIn")}
+          </Link>
         )}
         {continueHref && (
           <Link

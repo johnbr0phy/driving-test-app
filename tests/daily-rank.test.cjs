@@ -428,3 +428,18 @@ test('English places read as ordinals with thousands separators', () => {
   const ord = (n) => `${n.toLocaleString('en-US')}${suffix[new Intl.PluralRules('en-US', { type: 'ordinal' }).select(n)]}`;
   assert.deepEqual([1, 2, 3, 11, 22, 235, 48189].map(ord), ['1st', '2nd', '3rd', '11th', '22nd', '235th', '48,189th']);
 });
+
+test('the end-of-session card is the stats panel design, with sign-in for guests', () => {
+  const src = read('components/DailyRank.tsx');
+  assert.match(src, /export function DailyRankCard\([^)]*\) \{\s*return <DailyRankPanel className=\{className\} guestSignIn anchor=\{false\} \/>;/);
+  assert.match(src, /\{guestSignIn && !user && \(/);
+  assert.match(src, /id=\{anchor \? "today-rank" : undefined\}/);
+  // The header chip and the test-bar chip are told apart in stats traffic.
+  assert.match(src, /noteStatsSource\(hrefOverride === undefined \? "bar_chip" : "header_chip"\)/);
+});
+
+test('the DMV upsell in the test bar wraps on phones instead of crushing the title', () => {
+  for (const f of ['app/training/page.tsx', 'app/test/[id]/page.tsx']) {
+    assert.match(read(f), /max-w-\[9\.5rem\] text-right text-sm font-medium leading-tight[^"]*sm:max-w-none/, f);
+  }
+});

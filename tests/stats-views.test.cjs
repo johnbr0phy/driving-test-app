@@ -19,13 +19,15 @@ test('sources are a fixed list; anything else is refused', () => {
 test('every way into a stats page notes its source', () => {
   const tagged = {
     'components/SiteHeader.tsx': ['header_icon'],
-    'components/DailyRank.tsx': ['bar_chip'],
+    'components/DailyRank.tsx': [],
     'components/exam/ExamTestPage.tsx': ['bar_link'],
     'components/exam/ExamTrainingPage.tsx': ['bar_link', 'done_link'],
     'components/v2/DrillRunner.tsx': ['bar_link'],
     'app/training/page.tsx': ['bar_link', 'done_link'],
     'app/test/[id]/page.tsx': ['bar_link'],
   };
+  // The chip notes bar_chip in the test bar and header_chip in the site header.
+  assert.match(read('components/DailyRank.tsx'), /noteStatsSource\(hrefOverride === undefined \? "bar_chip" : "header_chip"\)/);
   for (const [file, sources] of Object.entries(tagged)) {
     for (const s of sources) assert.match(read(file), new RegExp(`noteStatsSource\\("${s}"\\)`), `${file} notes ${s}`);
   }

@@ -399,3 +399,16 @@ test('internal accounts count like anyone else; test browsers keep a local count
   }
   assert.match(read('app/api/cron/tiger-time/route.ts'), /pickTigerTimeWinner\(candidates\)/);
 });
+
+test('site header: the trophy chip takes the stats icon\'s place once there is 1 correct today', () => {
+  const header = read('components/SiteHeader.tsx');
+  assert.match(header, /const rankChip = useRankChipVisible\(\);/);
+  assert.match(header, /\{rankChip \? \(\s*<DailyRankChip compact href=\{statsPath \? `\$\{statsPath\}#today-rank` : null\} \/>\s*\) : statsPath && \(/);
+  // Phones: the header chip is just the trophy and the count (1.2K past 999), so a
+  // guest's home header (TESTS, TEACH, chip, Sign In) fits at 320px.
+  const chip = read('components/DailyRank.tsx');
+  assert.match(chip, /compact \? "sm:inline" : "min-\[360px\]:inline"/);
+  assert.match(chip, /compact && rank\.correct >= 1000/);
+  // The chip takes an explicit link (or none) where it is not on a runner path.
+  assert.match(read('components/DailyRank.tsx'), /hrefOverride === undefined \? rankStatsHref\(pathname\) : hrefOverride/);
+});

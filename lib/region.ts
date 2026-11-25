@@ -1,6 +1,6 @@
 // Which country's tests a visitor sees first. Each country has its own
 // indexable homepage: the US at "/", the others at /uk, /ie, /ca, /au, /nz, /in,
-// /ph, /my, /sg, /hk, /ae, /za, /ng, /ke, /pk,
+// /ph, /my, /sg, /hk, /ae, /za, /ng, /ke, /pk, /sa,
 // /es, /pt, /ro, /se, /gr, /dk, /hu, /be, /fi, /mt, /de, /it, /fr, /ch, /pl and /nl. A view
 // setting only: it never touches progress, and every test stays reachable from
 // every country. middleware.ts sets it from Vercel's request country on the
@@ -9,7 +9,7 @@
 
 import type { Language } from "@/i18n";
 
-export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE" | "PK" | "ES" | "PT" | "RO" | "SE" | "GR" | "DK" | "HU" | "BE" | "FI" | "MT" | "DE" | "IT" | "FR" | "CH" | "PL" | "NL";
+export type Region = "US" | "CA" | "UK" | "IE" | "AU" | "NZ" | "IN" | "PH" | "MY" | "SG" | "HK" | "AE" | "ZA" | "NG" | "KE" | "PK" | "SA" | "ES" | "PT" | "RO" | "SE" | "GR" | "DK" | "HU" | "BE" | "FI" | "MT" | "DE" | "IT" | "FR" | "CH" | "PL" | "NL";
 
 /**
  * Every country with its own homepage. `lang` is the language its homepage is
@@ -34,6 +34,7 @@ export const REGIONS: { code: Region; name: string; short: string; inName: strin
   { code: "NG", name: "Nigeria", short: "NG", inName: "Nigeria", lang: "en", locale: "en-NG" },
   { code: "KE", name: "Kenya", short: "KE", inName: "Kenya", lang: "en", locale: "en-KE" },
   { code: "PK", name: "Pakistan", short: "PK", inName: "Pakistan", lang: "en", locale: "en-PK" },
+  { code: "SA", name: "Saudi Arabia", short: "KSA", inName: "Saudi Arabia", lang: "en", locale: "en-SA" },
   { code: "ES", name: "Spain", short: "ES", inName: "Spain", lang: "es", locale: "es-ES" },
   { code: "PT", name: "Portugal", short: "PT", inName: "Portugal", lang: "pt", locale: "pt-PT" },
   { code: "RO", name: "Romania", short: "RO", inName: "Romania", lang: "ro", locale: "ro-RO" },
@@ -81,6 +82,7 @@ export function regionFromCountry(cc: string | null | undefined): Region | null 
     case "NG": return "NG";
     case "KE": return "KE";
     case "PK": return "PK";
+    case "SA": return "SA";
     case "ES": return "ES";
     case "PT": return "PT";
     case "RO": return "RO";
@@ -153,7 +155,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   aunsw: "AU", auvic: "AU", auqld: "AU", auwa: "AU", ausa: "AU", naplan: "AU", nswsel: "AU", auwhite: "AU",
   naplan7: "AU", ocnsw: "AU", vicsel: "AU", hscmaths: "AU", aursa: "AU", aurcg: "AU", aufss: "AU", aufirstaid: "AU", ausecurity: "AU", auforklift: "AU", auwah: "AU", aucit: "AU",
   nzroad: "NZ", nzfirearms: "NZ", nzboat: "NZ", nzlcq: "NZ", nzmoto: "NZ", nzheavy: "NZ", nzsfe: "NZ", nzensf: "NZ",nziqn: "NZ",
-  phlto: "PH", phcse: "PH", phlet: "PH", mykpp: "MY", sgbtt: "SG", hkdrive: "HK", aerta: "AE", zak53: "ZA", zak53c3: "ZA", ngfrsc: "NG", kentsa: "KE", pkdrive: "PK",
+  phlto: "PH", phcse: "PH", phlet: "PH", mykpp: "MY", sgbtt: "SG", hkdrive: "HK", aerta: "AE", samuroor: "SA", zak53: "ZA", zak53c3: "ZA", ngfrsc: "NG", kentsa: "KE", pkdrive: "PK",
   ppsc: "PK", punjabpolice: "PK", pakarmy: "PK", pkpaf: "PK", pknle: "PK", pkpnmc: "PK",
   zak53moto: "ZA", zare5: "ZA", zasaps: "ZA", zapsira: "ZA",
   phnle: "PH", phmedtech: "PH", phpharm: "PH", phmidwife: "PH", phpsychom: "PH", phnapolcom: "PH", afpsat: "PH", phnat: "PH", phcle: "PH", phinsurance: "PH", phrebroker: "PH",
@@ -181,7 +183,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   upscse: "IN", nda: "IN", agniveer: "IN", agniveervayu: "IN", rrbalp: "IN", inrrn: "IN", rpfconst: "IN", ssccpo: "IN",
   neet: "IN", jeemain: "IN", cuet: "IN", mhtcet: "IN", kcet: "IN", ugcnet: "IN", reet: "IN", uptet: "IN", aissee: "IN", iimcat: "IN",
   aplus: "GLOBAL", secplus: "GLOBAL", aws: "GLOBAL", awssaa: "GLOBAL", awsaif: "GLOBAL", awsdva: "GLOBAL", snowpro: "GLOBAL", az900: "GLOBAL", az104: "GLOBAL", dp900: "GLOBAL", techplus: "GLOBAL", serverplus: "GLOBAL", projectplus: "GLOBAL", cism: "GLOBAL", crisc: "GLOBAL", ccst: "GLOBAL", dataplus: "GLOBAL", cloudplus: "GLOBAL", sc900: "GLOBAL", sc200: "GLOBAL", ccna: "GLOBAL", ccnpencor: "GLOBAL", pmp: "GLOBAL", gulfrn: "GLOBAL", aedhapharm: "GLOBAL", gulfmd: "GLOBAL", ai901: "GLOBAL", pl900: "GLOBAL", jncia: "GLOBAL",
-  netplus: "GLOBAL", linuxplus: "GLOBAL", cysa: "GLOBAL", pentestplus: "GLOBAL", pmiacp: "GLOBAL", safe: "GLOBAL", securityx: "GLOBAL", servicenowcsa: "GLOBAL", sscp: "GLOBAL", fortinse: "GLOBAL", cissp: "GLOBAL", gcdl: "GLOBAL", gcppca: "GLOBAL", gcppde: "GLOBAL", gre: "GLOBAL", gmat: "GLOBAL", qudurat: "GLOBAL", ieltsread: "GLOBAL", toeflread: "GLOBAL", itil: "GLOBAL", istqb: "GLOBAL", prince2: "GLOBAL", psm: "GLOBAL", pspo: "GLOBAL", capm: "GLOBAL", ceh: "GLOBAL", isc2cc: "GLOBAL", cobit: "GLOBAL",
+  netplus: "GLOBAL", linuxplus: "GLOBAL", cysa: "GLOBAL", pentestplus: "GLOBAL", pmiacp: "GLOBAL", safe: "GLOBAL", securityx: "GLOBAL", servicenowcsa: "GLOBAL", sscp: "GLOBAL", fortinse: "GLOBAL", cissp: "GLOBAL", gcdl: "GLOBAL", gcppca: "GLOBAL", gcppde: "GLOBAL", gre: "GLOBAL", gmat: "GLOBAL", qudurat: "SA", ieltsread: "GLOBAL", toeflread: "GLOBAL", itil: "GLOBAL", istqb: "GLOBAL", prince2: "GLOBAL", psm: "GLOBAL", pspo: "GLOBAL", capm: "GLOBAL", ceh: "GLOBAL", isc2cc: "GLOBAL", cobit: "GLOBAL",
   ccaf: "GLOBAL", sfadmin: "GLOBAL", sfpd1: "GLOBAL", sfappbuilder: "GLOBAL", cfal1: "GLOBAL", frm1: "GLOBAL", accafa: "GLOBAL", cisa: "GLOBAL", fortigate: "GLOBAL", cssgb: "GLOBAL", cssyb: "GLOBAL",
 };
 
@@ -416,6 +418,14 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
     cta: { label: "Driving licence test", href: "/pakistan-driving-licence-test" },
     testsTitle: "Driving licence sign test",
     testsSub: "200 questions on Pakistan's road signs and traffic rules, in km/h for left-hand traffic. Four full 50-question tests.",
+  },
+  SA: {
+    title: "Free Saudi Driving Theory Practice Test | Tigertest",
+    description: "Free practice for the Saudi driving theory test at your driving school: road signs, markings, signals and Traffic Law rules. No account needed.",
+    lead: "Practice for the theory test at your licensed driving school, the computer test on the Traffic Law, road signs and signals before your Saudi driving licence. Original questions in English, every answer explained. No signup.",
+    cta: { label: "Saudi theory test", href: "/saudi-driving-theory-test" },
+    testsTitle: "Driving theory test",
+    testsSub: "200 questions on Saudi traffic rules and SHC 602 signs, in km/h for right-hand traffic. Four full 50-question tests.",
   },
   // In Spanish (REGIONS[].lang), machine-translated, pending native review.
   ES: {

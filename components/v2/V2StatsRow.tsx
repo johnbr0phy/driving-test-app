@@ -80,6 +80,7 @@ export function V2StatsRow({ examId, question, chip, subtitle, footer, onAnswer 
             }}
             reveal={revealed}
             layout="stack"
+            compact
           />
           {question.format !== "single" && !revealed && (
             <button

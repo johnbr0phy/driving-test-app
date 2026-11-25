@@ -192,6 +192,7 @@ export const TEACHES: Record<string, string> = {
   pmp: "a project management course",
   gulfrn: "a Gulf nursing exam review course",
   aedhapharm: "a Gulf pharmacist exam review course",
+  gulfmd: "an SMLE or Gulf GP exam review course",
   uklitu: "ESOL or Life in the UK classes",
   cacit: "citizenship classes for newcomers",
   aucit: "citizenship or English classes for new migrants",

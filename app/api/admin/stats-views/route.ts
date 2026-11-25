@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb } from '@/lib/firebase-admin';
 import { requireAdmin } from '@/lib/server/adminAuth';
-import { STATS_VIEWS_DOC } from '@/lib/statsViews';
+import { STATS_VIEWS_DOC } from '@/lib/statsViewsShared';
 import { cachedAdminPayload, cachedJson, wantsRefresh } from '@/lib/server/adminCache';
 
 // The stats page traffic card on the /admin Growth tab (lib/statsViews.ts):

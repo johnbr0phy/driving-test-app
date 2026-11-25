@@ -4,7 +4,7 @@ Q = [
 ("A triangular sign with its point upward is used for:",
  "Hazard warning", ["Giving way at a junction", "Rule you must obey", "Directions to a city"],
  "SHC 602 reserves the upright triangle for advance warning signs; the downward triangle is the Yield sign."),
-("What colours do standard warning signs use?",
+("Outside road work zones, what colours do standard warning signs use?",
  "Black on white, red border", ["White symbol on blue", "White symbol on green", "Black on yellow, red border"],
  "Warning signs have a black symbol on a white background inside a red border, so they keep the same look by day and night."),
 ("A row of pointed rectangles with arrows appears on the outside of a bend. They show:",

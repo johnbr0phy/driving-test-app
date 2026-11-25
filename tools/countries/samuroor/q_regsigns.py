@@ -94,7 +94,7 @@ Q = [
 ("A Stop sign has an All Way plate below it. What does that tell you?",
  "Every approach has a Stop sign", ["Traffic on your road has priority", "Stop is only advised", "All turns are allowed here"],
  "The All Way plate is mounted only where every approach to the junction is controlled by a Stop sign."),
-("A Yield sign stands on an entrance ramp joining a busy expressway. You should:",
- "Merge into a gap safely", ["Stop and wait for a gap", "Expect traffic to give way", "Speed past the traffic"],
+("A Yield sign stands on an entrance ramp joining an expressway. You should:",
+ "Merge into a suitable gap", ["Stop at the line, then merge", "Merge at a reduced speed", "Use the shoulder to merge"],
  "SHC 602 uses Yield signs on ramps where entering traffic must merge with traffic already on the road: you adjust to fit a gap without forcing others to brake."),
 ]

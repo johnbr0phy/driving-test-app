@@ -277,6 +277,19 @@ export async function mergeRankOnSignIn() {
   }
 }
 
+/**
+ * On sign-out (contexts/AuthContext.tsx): today's count belongs to the
+ * account, so the browser goes back to a fresh guest count and the header
+ * chip disappears until the next right answer. Call after flushRank() while
+ * still signed in, so queued answers reach the account first.
+ */
+export function resetRankOnSignOut() {
+  if (typeof window === "undefined") return;
+  if (timer) clearTimeout(timer);
+  timer = null;
+  commit(freshState(today()));
+}
+
 // ── React ───────────────────────────────────────────────────────────────────
 
 function subscribe(l: () => void) {

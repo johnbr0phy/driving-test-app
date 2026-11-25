@@ -493,3 +493,13 @@ test('Tiger Time wears the test\'s brand colours, not a fixed amber (Nov 25 2026
   // v2 headers use V2Shell's tokens so the header chip follows the dark tints too.
   assert.match(read('components/SiteHeader.tsx'), /<div className="v2-shell" style=\{style\}>\{bar\}<\/div>/);
 });
+
+test('sign-out resets the browser\'s Tiger Time count, so the chip goes (Nov 25 2026)', () => {
+  const client = read('lib/dailyRankClient.ts');
+  assert.match(client, /export function resetRankOnSignOut\(\) \{[\s\S]*?commit\(freshState\(today\(\)\)\);/);
+  const authSrc = read('contexts/AuthContext.tsx');
+  // logout(): queued answers reach the account first, then the reset.
+  assert.match(authSrc, /await flushRank\(\);\s*resetRankOnSignOut\(\);\s*\/\/ Clear all store data/);
+  // Signed out elsewhere (another tab, expired session): reset too.
+  assert.match(authSrc, /localStorage\.removeItem\('driving-test-storage'\);\s*resetRankOnSignOut\(\);\s*\}/);
+});

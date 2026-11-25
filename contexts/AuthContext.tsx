@@ -23,7 +23,7 @@ import { auth } from "@/lib/firebase";
 import { flushPendingSaves, useStore } from "@/store/useStore";
 import { AccountConflictDialog } from "@/components/AccountConflictDialog";
 import { isInternalEmail, markInternalBrowser } from "@/lib/internal";
-import { mergeRankOnSignIn } from '@/lib/dailyRankClient';
+import { flushRank, mergeRankOnSignIn, resetRankOnSignOut } from '@/lib/dailyRankClient';
 import { claimEnrollments } from "@/lib/enrollment";
 
 interface AccountConflict {
@@ -223,6 +223,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           if (useStore.getState().userId) {
             useStore.getState().clearAllDataOnLogout();
             localStorage.removeItem('driving-test-storage');
+            resetRankOnSignOut();
           }
           setUserId(null);
         }
@@ -293,6 +294,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const logout = async () => {
     // Let saves still on their way reach the account before it is signed out.
     await flushPendingSaves();
+    // Today's Tiger Time answers reach the account, then the chip resets.
+    await flushRank();
+    resetRankOnSignOut();
     // Clear all store data (in-memory state)
     useStore.getState().clearAllDataOnLogout();
     // Clear localStorage to remove persisted data

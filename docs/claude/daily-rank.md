@@ -19,7 +19,7 @@ Tells each person where they rank today by correct answers: "41 correct today. T
 | `lib/server/dailyRank.ts` | Firestore: `dailyRank/{day}/people/{id}` and `dailyRank/{day}/shards/{0..9}` (histogram), 15-minute in-memory distribution cache |
 | `app/api/rank/today` | GET status, POST answers then status |
 | `app/api/rank/merge` | At sign-in, moves today's guest day onto the account once |
-| `lib/dailyRankClient.ts` | Browser store: queue, 4-second flush, live view, `useDailyRank()`, `mergeRankOnSignIn()` (called from `AuthContext`) |
+| `lib/dailyRankClient.ts` | Browser store: queue, 4-second flush, live view, `useDailyRank()`, `mergeRankOnSignIn()` and `resetRankOnSignOut()` (both called from `AuthContext`; sign-out sends queued answers, then starts a fresh guest count so the chip goes, Nov 25 2026) |
 | `components/DailyRank.tsx` | `DailyRankChip` (in `FocusBar` where a runner passes `rank`, never on practice tests; links to the test's stats page, `rankStatsHref`), `DailyRankCard` (DMV/v1 results, v1 set complete, v2 results, quiz results) and `DailyRankPanel` (top of every stats page: rank, the "N more" line, how to win, the countdown and one slim bar of how far up the field you are) |
 
 ## Chip to stats

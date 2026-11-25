@@ -154,6 +154,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
   return (
     <StatsPageShell backHref={routes.dashboard} backLabel={ui.common.back}>
       <PaywallModal
+        examId={exam.id}
         open={upgrade.paywallOpen}
         onOpenChange={upgrade.onOpenChange}
         feature="full_stats"

@@ -93,6 +93,7 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
       <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-brand-light to-transparent pointer-events-none" />
       <div className="relative container mx-auto px-4 sm:px-6 py-6 pb-10 max-w-lg md:max-w-2xl lg:max-w-4xl">
         <PaywallModal
+          examId={routes.id}
           open={upgrade.paywallOpen}
           onOpenChange={upgrade.onOpenChange}
           feature={upgrade.paywallFeature}

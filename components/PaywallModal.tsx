@@ -26,6 +26,7 @@ import {
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 import { GuestPaidNotice } from "@/components/GuestPaidNotice";
 import { guestPaidEmail } from "@/lib/guestPaidHint";
+import { getTigerAsset } from "@/lib/tigerAssets";
 
 interface PaywallModalProps {
   open: boolean;
@@ -42,6 +43,8 @@ interface PaywallModalProps {
   badge?: string | null;
   /** "2,000+ students passed" is a DMV number: hide it on other exams' paywalls. */
   hideSocialProof?: boolean;
+  /** The test being upsold: the paywall shows its crowned Premium tiger. Default the DMV's. */
+  examId?: string;
 }
 
 // English headlines for a browser's second and third paywall visit (the first
@@ -62,6 +65,7 @@ export function PaywallModal({
   headline,
   badge,
   hideSocialProof = false,
+  examId = "dmv",
 }: PaywallModalProps) {
   const price = usePremiumPrice();
   const { t, language } = useTranslation();
@@ -130,7 +134,7 @@ export function PaywallModal({
         <DialogHeader className="pb-4">
           <div className="flex items-center gap-3">
             <Image
-              src="/tiger_face_01.png"
+              src={getTigerAsset(examId, 1)}
               alt="Tigertest"
               width={56}
               height={56}

@@ -44,6 +44,7 @@ export function V2Paywall({
   const routes = v2Routes(exam);
   return (
     <PaywallModal
+      examId={exam.id}
       open={open}
       onOpenChange={onOpenChange}
       feature={`${exam.id}_premium`}

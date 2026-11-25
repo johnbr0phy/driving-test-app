@@ -55,10 +55,30 @@ const LETTERS6 = ["A", "B", "C", "D", "E", "F"];
 const RICH = /\$|\*\*|__|\||\{\{|\[\[|\n/;
 const POSITIONAL = /\b(all|none) of the above\b|\b(both|either|neither)\b.*\b[A-F]\b|\b[A-F]\s+(and|or)\s+[A-F]\b/i;
 
+/** Languages whose pages are written in Latin script. */
+const LATIN_LANGS = new Set<string>(["en", "es", "vi", "de", "fr", "it", "pl", "nl", "pt", "sv", "da", "fi", "hu", "ro"]);
+
+/**
+ * True when most letters in the text are Latin script. A v2 bank can hold a
+ * section in another language (the Hindi part of REET, UPTET, UP Police...),
+ * and those questions are often the shortest, so without this check an
+ * English landing opened on a Hindi grammar question.
+ */
+export function mostlyLatin(text: string): boolean {
+  const letters = text.match(/\p{L}/gu)?.length ?? 0;
+  if (!letters) return true;
+  const latin = text.match(/\p{Script=Latin}/gu)?.length ?? 0;
+  return latin * 2 >= letters;
+}
+
 /** An easy plain-text question from a v2 exam's first free drill that has one, or null. */
-function pickV2(dashboardHref: string): LandingTryQuestion | null {
+function pickV2(dashboardHref: string, lang?: Language): LandingTryQuestion | null {
   const exam = getExamV2ByPath(dashboardHref);
   if (!exam) return null;
+  const pageLang = lang ?? exam.language ?? "en";
+  // On a Latin-script page, prefer questions written in Latin script; fall
+  // back to any question only when the exam has none.
+  const scriptOk = (x: QuestionV2) => !LATIN_LANGS.has(pageLang) || mostlyLatin([x.stem, ...x.options!].join(" "));
   let bank;
   try {
     bank = getBank(exam.id).questions;
@@ -79,7 +99,8 @@ function pickV2(dashboardHref: string): LandingTryQuestion | null {
     !!x.explanation &&
     !/\||\{\{|\[\[/.test(x.explanation) &&
     !x.options!.some((o) => /\||\{\{|\[\[|\n/.test(o));
-  const tiers: ((x: QuestionV2) => boolean)[] = [plain, (x) => richOk(x, "alone"), (x) => richOk(x, "passage")];
+  const byShape: ((x: QuestionV2) => boolean)[] = [plain, (x) => richOk(x, "alone"), (x) => richOk(x, "passage")];
+  const tiers = [...byShape.map((f) => (x: QuestionV2) => f(x) && scriptOk(x)), ...byShape];
   // Within the first tier that has any, the shortest question across the
   // free drills (passage included), so the card stays compact on a phone.
   const size = (x: QuestionV2) =>
@@ -99,7 +120,8 @@ function pickV2(dashboardHref: string): LandingTryQuestion | null {
   }
   tier--;
   if (!q || !drill) return null;
-  const passage = tier === 2 ? samplePassage(exam.id, q) : null;
+  const shape = tier % byShape.length;
+  const passage = shape === 2 ? samplePassage(exam.id, q) : null;
   const n = q.options!.length;
   // A KaTeX option counts as a number only when it is one ("$-4$", not "$2x$").
   const nums = q.options!.map((o) => {
@@ -128,7 +150,7 @@ function pickV2(dashboardHref: string): LandingTryQuestion | null {
     explanation: relabelChoices(q.explanation, order),
     practiceHref: v2Routes(exam).drillQuestions(drill.key),
     v2: { drillKey: drillKey(exam.id, drill.key), domain: q.domain, order },
-    ...(tier > 0 ? { rich: true } : {}),
+    ...(shape > 0 ? { rich: true } : {}),
     ...(passage ? { passage: { ...(passage.title ? { title: passage.title } : {}), text: passage.text } } : {}),
   };
 }
@@ -154,7 +176,7 @@ const TRICKY_PENALTY = 150;
 
 export function pickLandingTryQuestion(dashboardHref: string, lang?: Language): LandingTryQuestion | null {
   const base = getExamByPath(dashboardHref);
-  if (!base) return pickV2(dashboardHref);
+  if (!base) return pickV2(dashboardHref, lang);
   const language = lang ?? examBaseLanguage(base);
   const exam = localizeExam(base, language);
   // The shortest suitable question, so the card fits a phone: set 1 when it

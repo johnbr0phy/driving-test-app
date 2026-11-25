@@ -51,3 +51,14 @@ test("the key stays the right answer after reordering", () => {
     assert.equal(q.options[q.correctIndex], bq.options[bq.correct[0]], q.questionId);
   }
 });
+
+test("an English v2 landing opens on a question in Latin script", () => {
+  // REET, UPTET and the Hindi police exams carry a Hindi section whose short
+  // grammar items used to win the card on the English landing.
+  const { mostlyLatin } = require("../lib/landingTryQuestion.ts");
+  for (const href of ["/reet/dashboard", "/uptet/dashboard", "/up-police-constable/dashboard", "/bihar-police-constable/dashboard"]) {
+    const q = pickLandingTryQuestion(href);
+    assert.ok(q, href);
+    assert.ok(mostlyLatin([q.stem, ...q.options].join(" ")), `${href}: ${q.stem}`);
+  }
+});

@@ -12,8 +12,7 @@
  *   3. time-sensitive questions in exams with a dated change due within 60
  *      days (lib/examFreshness.json) or a changed official page (sourceWatch)
  *   4. a random sweep of --sweep questions not audited in the last 90 days
- *      (the Action passes 1,000 a week: each of the ~54,000 choice
- *      questions about once a year)
+ *      (the Action passes 300 a week)
  * Without FIREBASE_SERVICE_ACCOUNT_KEY only steps 3 (registry part) and 4 run.
  * --signals runs steps 1 and 2 only: the daily run, so a new flag or report is
  * checked the morning after it appears instead of the next Monday.
@@ -50,10 +49,11 @@ import { ALL_EXAMS } from "@/lib/exams";
 import FRESHNESS from "@/lib/examFreshness.json";
 import { SIGN_BY_QUESTION_ID, SIGN_DESCRIPTIONS } from "@/lib/signImages";
 import { reviewFresh, type FlagReview } from "@/lib/questionQuality";
-import { allowanceUsd, usageCostUsd } from "@/lib/apiBudget";
+import { HAIKU_PRICES, PRICES, allowanceUsd, usageCostUsd } from "@/lib/apiBudget";
 
 const MODEL = "claude-opus-5-5";
-const CONCURRENCY = 6;
+// The blind first pass: most questions just agree with the key, so the small model does it.
+const BLIND_MODEL = "claude-haiku-5-5";
 const RECENT_DAYS = 90;
 const LETTERS = "ABCDEF";
 /** A finding the fix run could not settle this many times is closed, question kept as it is. */
@@ -349,7 +349,7 @@ const client = new Anthropic();
 // ── API budget (lib/apiBudget.ts) ───────────────────────────────────────────
 // Reports, flags and freshness are queued before the sweep, so they get the budget first.
 const { readSpend, recordSpend } = await import("@/lib/server/apiBudget");
-const RUN_CAP_USD = SIGNALS ? 2 : 8;
+const RUN_CAP_USD = SIGNALS ? 1 : 3;
 let budgetUsd = 0;
 try {
   // Without Firestore (a local run) the per-run cap is the only limit.
@@ -358,7 +358,6 @@ try {
   console.error("[audit] could not read the API budget, auditing nothing:", err);
 }
 let spentUsd = 0;
-const overBudget = () => spentUsd >= budgetUsd;
 console.log(`[audit] API budget for this run: $${budgetUsd.toFixed(2)}`);
 
 const BLIND_SCHEMA = {
@@ -414,33 +413,57 @@ function render(q: IndexQuestion, withKey: boolean): string {
   return lines.join("\n");
 }
 
-async function structured<T>(system: string, user: string, schema: object, effort: "low" | "medium" | "high"): Promise<T | null> {
-  for (let attempt = 0; attempt < 3; attempt++) {
-    if (overBudget()) return null;
-    try {
-      const response = await client.beta.messages.create({
-        model: MODEL,
+// Both passes go through the Message Batches API (half price; the audit runs at
+// night, so waiting is fine). A batch cannot stop part way, so each pass is
+// sized from an estimate before it is sent, and the real cost is added after.
+const BATCH_DISCOUNT = 0.5;
+/** Estimated cost of one request, batch price, US dollars (sized from past runs, with room to spare). */
+const EST_BLIND_USD = 0.002;
+const EST_JUDGE_USD = 0.06;
+const BATCH_POLL_MS = 30_000;
+const BATCH_MAX_WAIT_MS = 90 * 60_000;
+
+interface BatchAsk { id: string; system: string; user: string; schema: object }
+
+async function batchStructured<T>(asks: BatchAsk[], model: string, prices: typeof PRICES, effort: "low" | "medium" | "high"): Promise<Map<string, T>> {
+  const out = new Map<string, T>();
+  if (!asks.length) return out;
+  const batch = await client.beta.messages.batches.create({
+    requests: asks.map((a) => ({
+      custom_id: a.id,
+      params: {
+        model,
         max_tokens: 16000,
-        betas: ["server-side-fallback-2026-07-01"],
-        fallbacks: "default",
-        output_config: { effort, format: { type: "json_schema", schema } },
-        system,
-        messages: [{ role: "user", content: user }],
-      } as Parameters<typeof client.beta.messages.create>[0]) as Anthropic.Beta.BetaMessage;
-      spentUsd += usageCostUsd(response.usage);
-      if (response.stop_reason === "refusal") return null;
-      const text = response.content.flatMap((b) => (b.type === "text" ? [b.text] : [])).join("");
-      return JSON.parse(text) as T;
-    } catch (err) {
-      if (err instanceof Anthropic.RateLimitError || (err instanceof Anthropic.APIError && (err.status ?? 0) >= 500)) {
-        await new Promise((r) => setTimeout(r, 5000 * (attempt + 1)));
-        continue;
-      }
-      console.error(`[audit] request failed: ${err instanceof Error ? err.message : err}`);
-      return null;
+        output_config: { effort, format: { type: "json_schema", schema: a.schema } },
+        system: a.system,
+        messages: [{ role: "user", content: a.user }],
+      },
+    })),
+  } as Parameters<typeof client.beta.messages.batches.create>[0]);
+  console.log(`[audit] batch ${batch.id}: ${asks.length} requests on ${model}`);
+  const started = Date.now();
+  let status = batch.processing_status;
+  while (status !== "ended") {
+    if (Date.now() - started > BATCH_MAX_WAIT_MS) {
+      console.error(`[audit] batch ${batch.id} still running after 90 minutes; cancelling, finished requests are kept`);
+      await client.beta.messages.batches.cancel(batch.id).catch(() => undefined);
+    }
+    await new Promise((r) => setTimeout(r, BATCH_POLL_MS));
+    status = (await client.beta.messages.batches.retrieve(batch.id)).processing_status;
+  }
+  for await (const row of await client.beta.messages.batches.results(batch.id)) {
+    if (row.result.type !== "succeeded") continue;
+    const message = row.result.message;
+    spentUsd += usageCostUsd(message.usage, prices) * BATCH_DISCOUNT;
+    if (message.stop_reason === "refusal") continue;
+    const text = message.content.flatMap((b) => (b.type === "text" ? [b.text] : [])).join("");
+    try {
+      out.set(row.custom_id, JSON.parse(text) as T);
+    } catch {
+      console.error(`[audit] unreadable answer for ${row.custom_id}`);
     }
   }
-  return null;
+  return out;
 }
 
 interface Blind { answer: string[]; confidence: string; defensibleOthers: string[]; problem: string }
@@ -459,53 +482,91 @@ interface Result {
   n?: number;
 }
 
-async function audit(item: QueueItem): Promise<Result> {
-  const { q } = item;
-  const key = Array.isArray(q.key) && typeof q.key[0] === "number" ? (q.key as number[]).map((i) => LETTERS[i]) : [];
-  let blind: Blind | null = null;
-  let disagreed = false;
-  if (choiceFormat(q) && key.length) {
-    blind = await structured<Blind>(BLIND_SYSTEM, render(q, false), BLIND_SCHEMA, "low");
-    if (blind) {
-      const same = blind.answer.length === key.length && blind.answer.every((a) => key.includes(a));
-      disagreed = !same || blind.defensibleOthers.length > 0 || blind.problem.trim().length > 0;
-    }
-  }
-  const sweepOnly = item.trigger.size === 1 && item.trigger.has("sweep");
-  let verdict: Verdict | null = null;
-  if (!sweepOnly || disagreed) {
-    const evidence = [
-      ...item.notes,
-      ...(blind && disagreed
-        ? [`An independent examiner answering without the key chose ${blind.answer.join(", ") || "nothing"} (${blind.confidence} confidence)${blind.defensibleOthers.length ? `, and thought ${blind.defensibleOthers.join(", ")} also defensible` : ""}${blind.problem ? `. They noted: ${blind.problem}` : ""}.`]
-        : []),
-    ];
-    const sources = sourcesFor(q.examId);
-    const user = [
-      `Exam: ${q.examId}. Topic: ${q.category}.`,
-      choiceFormat(q) ? render(q, true) : `${render({ ...q, options: [] }, false)}\nAnswer: ${JSON.stringify(q.key)}\nExplanation: ${q.explanation}`,
-      `\nWhy it is being reviewed:\n${evidence.map((e) => `- ${e}`).join("\n") || "- Routine check."}`,
-      sources ? `\nThe author's sources (sources.md):\n${sources}` : "",
-    ].join("\n");
-    verdict = await structured<Verdict>(JUDGE_SYSTEM, user, VERDICT_SCHEMA, "high");
-  }
-  return { examId: q.examId, questionId: q.id, file: q.file, trigger: [...item.trigger], notes: item.notes, key, blind, disagreed, verdict, signalExamId: item.signalExamId, n: item.n };
+function keyOf(q: IndexQuestion): string[] {
+  return Array.isArray(q.key) && typeof q.key[0] === "number" ? (q.key as number[]).map((i) => LETTERS[i]) : [];
 }
 
-const items = [...queue.values()];
-const results: Result[] = [];
-let next = 0;
-await Promise.all(
-  Array.from({ length: CONCURRENCY }, async () => {
-    while (next < items.length && !overBudget()) {
-      const item = items[next++];
-      results.push(await audit(item));
-      if (results.length % 25 === 0) console.log(`[audit] ${results.length}/${items.length}`);
-    }
-  }),
-);
+function judgeUser(item: QueueItem, blind: Blind | null, disagreed: boolean): string {
+  const { q } = item;
+  const evidence = [
+    ...item.notes,
+    ...(blind && disagreed
+      ? [`An independent examiner answering without the key chose ${blind.answer.join(", ") || "nothing"} (${blind.confidence} confidence)${blind.defensibleOthers.length ? `, and thought ${blind.defensibleOthers.join(", ")} also defensible` : ""}${blind.problem ? `. They noted: ${blind.problem}` : ""}.`]
+      : []),
+  ];
+  const sources = sourcesFor(q.examId);
+  return [
+    `Exam: ${q.examId}. Topic: ${q.category}.`,
+    choiceFormat(q) ? render(q, true) : `${render({ ...q, options: [] }, false)}\nAnswer: ${JSON.stringify(q.key)}\nExplanation: ${q.explanation}`,
+    `\nWhy it is being reviewed:\n${evidence.map((e) => `- ${e}`).join("\n") || "- Routine check."}`,
+    sources ? `\nThe author's sources (sources.md):\n${sources}` : "",
+  ].join("\n");
+}
 
-if (overBudget()) console.log(`[audit] stopped at the API budget after ${results.length}/${items.length} questions`);
+// Signals (reports, flags, freshness) are queued first, so a tight budget keeps them.
+const allItems = [...queue.values()];
+const isSweepOnly = (i: QueueItem) => i.trigger.size === 1 && i.trigger.has("sweep");
+// Room for: a blind answer for every item, and a judge for every signal plus
+// an expected 1 in 5 sweep questions that disagree.
+const estimate = (i: QueueItem) => EST_BLIND_USD + (isSweepOnly(i) ? EST_JUDGE_USD / 5 : EST_JUDGE_USD);
+const items: QueueItem[] = [];
+let planned = 0;
+for (const i of allItems) {
+  if (planned + estimate(i) > budgetUsd) break;
+  items.push(i);
+  planned += estimate(i);
+}
+if (items.length < allItems.length) console.log(`[audit] budget covers ${items.length}/${allItems.length} queued questions`);
+
+// Pass 1: the blind answer, on the small model.
+const blindAsks: BatchAsk[] = [];
+items.forEach((item, n) => {
+  if (choiceFormat(item.q) && keyOf(item.q).length) blindAsks.push({ id: `b${n}`, system: BLIND_SYSTEM, user: render(item.q, false), schema: BLIND_SCHEMA });
+});
+let blinds = new Map<string, Blind>();
+try {
+  blinds = await batchStructured<Blind>(blindAsks, BLIND_MODEL, HAIKU_PRICES, "low");
+} catch (err) {
+  console.error(`[audit] blind batch failed: ${err instanceof Error ? err.message : err}`);
+}
+
+// Pass 2: the judge, only where a signal or a disagreement calls for one.
+const partial = items.map((item, n) => {
+  const key = keyOf(item.q);
+  const blind = blinds.get(`b${n}`) ?? null;
+  const disagreed = !!blind && (!(blind.answer.length === key.length && blind.answer.every((a) => key.includes(a))) || blind.defensibleOthers.length > 0 || blind.problem.trim().length > 0);
+  return { item, n, key, blind, disagreed };
+});
+const judgeAsks: BatchAsk[] = [];
+for (const p of partial) {
+  if (isSweepOnly(p.item) && !p.disagreed) continue;
+  if (spentUsd + (judgeAsks.length + 1) * EST_JUDGE_USD > budgetUsd) {
+    console.log(`[audit] budget stops the judge at ${judgeAsks.length} questions`);
+    break;
+  }
+  judgeAsks.push({ id: `j${p.n}`, system: JUDGE_SYSTEM, user: judgeUser(p.item, p.blind, p.disagreed), schema: VERDICT_SCHEMA });
+}
+let verdicts = new Map<string, Verdict>();
+try {
+  verdicts = await batchStructured<Verdict>(judgeAsks, MODEL, PRICES, "high");
+} catch (err) {
+  console.error(`[audit] judge batch failed: ${err instanceof Error ? err.message : err}`);
+}
+
+const results: Result[] = partial.map(({ item, n, key, blind, disagreed }) => ({
+  examId: item.q.examId,
+  questionId: item.q.id,
+  file: item.q.file,
+  trigger: [...item.trigger],
+  notes: item.notes,
+  key,
+  blind,
+  disagreed,
+  verdict: verdicts.get(`j${n}`) ?? null,
+  signalExamId: item.signalExamId,
+  n: item.n,
+}));
+
 try {
   if (db) await recordSpend(db, "question-audit", spentUsd);
   console.log(`[audit] spent $${spentUsd.toFixed(2)}`);
@@ -524,6 +585,7 @@ const summary = {
   runId,
   at: new Date().toISOString(),
   model: MODEL,
+  blindModel: BLIND_MODEL,
   checked: results.length,
   blindChecked: results.filter((r) => r.blind).length,
   disagreements: results.filter((r) => r.disagreed).length,

@@ -13,7 +13,7 @@ name: AI answer check
 
 on:
   schedule:
-    - cron: "23 9 * * 1,4" # Mon and Thu 09:23 UTC
+    - cron: "23 9 * * 1" # Mondays 09:23 UTC (was Mon and Thu; cut API spend Dec 2026)
   workflow_dispatch:
     inputs:
       limit:

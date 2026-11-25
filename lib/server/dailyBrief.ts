@@ -6,7 +6,7 @@ import { getInternalUids } from '@/lib/server/internalUsers';
 import { TEST_CATALOG } from '@/lib/testCatalog';
 import { REGIONS } from '@/lib/region';
 import { mergeMentions, searchMentions, type WebMention } from '@/lib/server/webMentions';
-import { allowanceUsd, usageCostUsd } from '@/lib/apiBudget';
+import { SONNET_PRICES, allowanceUsd, usageCostUsd } from '@/lib/apiBudget';
 import { readSpend, recordSpend } from '@/lib/server/apiBudget';
 
 // The daily update at the top of the /admin Today tab: Claude reads the
@@ -15,7 +15,8 @@ import { readSpend, recordSpend } from '@/lib/server/apiBudget';
 // by /api/cron/daily-brief, or on demand from the page. One doc per Eastern
 // day in dailyBriefs/{YYYY-MM-DD}; the page shows the newest.
 
-export const BRIEF_MODEL = 'claude-opus-5-5';
+// Sonnet since Dec 2026: the update summarises numbers it is given, so the larger model added cost, not quality.
+export const BRIEF_MODEL = 'claude-sonnet-5-5';
 
 export interface DailyBrief {
   date: string;
@@ -228,7 +229,7 @@ export async function writeBrief(
     max_tokens: 16000,
     betas: ['server-side-fallback-2026-07-01'],
     fallbacks: 'default',
-    output_config: { effort: 'medium' },
+    output_config: { effort: 'low' },
     system: SYSTEM,
     messages: [{ role: 'user', content: user }],
   });
@@ -260,7 +261,7 @@ export async function latestBrief(db: Firestore, before?: string): Promise<Daily
 }
 
 /** Most one update may cost; the month's share is JOB_BUDGETS_USD['daily-brief'] (lib/apiBudget.ts). */
-export const BRIEF_RUN_CAP_USD = 3;
+export const BRIEF_RUN_CAP_USD = 1;
 
 /** True when this month's API budget still covers an update. */
 export async function briefBudgetLeft(db: Firestore): Promise<boolean> {
@@ -273,11 +274,13 @@ export async function createBrief(db: Firestore, payload: OpportunitiesPayload):
   const date = briefDate();
   let costUsd = 0;
   const onUsage = (usage: Anthropic.Beta.BetaUsage) => {
-    costUsd += usageCostUsd(usage);
+    costUsd += usageCostUsd(usage, SONNET_PRICES);
   };
   const previous = await latestBrief(db, date);
-  // Runs while the numbers are gathered; it takes the longest.
-  const mentionsSearch = searchMentions(BRIEF_MODEL, date, onUsage).then(
+  // The web search is the costly part, so it runs on Mondays only (Eastern);
+  // other days keep the links already found. Runs while the numbers are gathered.
+  const monday = new Date(`${date}T12:00:00Z`).getUTCDay() === 1;
+  const mentionsSearch = (monday ? searchMentions(BRIEF_MODEL, date, onUsage) : Promise.resolve([])).then(
     (found) => ({ found, error: null as string | null }),
     (error) => {
       console.error('[daily-brief] web mentions unavailable', error);

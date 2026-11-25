@@ -77,7 +77,7 @@ const isTab = (v: string | null): v is TabId => TABS.some((t) => t.id === v);
 function TodayTab() {
   const { user } = useAuth();
   const { data, setData, error, loading, refreshing, updating, reload } =
-    useAdminFetch<OpportunitiesPayload & { brief?: DailyBrief | null }>("/api/admin/opportunities");
+    useAdminFetch<OpportunitiesPayload & { brief?: DailyBrief | null; briefPaused?: boolean }>("/api/admin/opportunities");
   const [writingBrief, setWritingBrief] = useState(false);
   const [briefError, setBriefError] = useState<string | null>(null);
 

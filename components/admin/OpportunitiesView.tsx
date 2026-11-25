@@ -222,12 +222,16 @@ function Mentions({ brief }: { brief: DailyBrief }) {
 }
 
 /** Claude's daily update (lib/server/dailyBrief), or how to get the first one. */
-function BriefCard({ brief, onWrite, writing, error }: {
+function BriefCard({ brief, paused, onWrite, writing, error }: {
   brief: DailyBrief | null;
+  paused: boolean;
   onWrite?: () => void;
   writing: boolean;
   error: string | null;
 }) {
+  // brief.date is the Eastern date it was written for (briefDate()).
+  const today = new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(new Date());
+  const stale = !!brief && brief.date !== today;
   const written = brief
     ? new Date(brief.generatedAt).toLocaleString("en-US", { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })
     : null;
@@ -236,7 +240,7 @@ function BriefCard({ brief, onWrite, writing, error }: {
       <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
         <p className="inline-flex items-center gap-1.5 text-xs font-medium text-gray-500 dark:text-gray-400">
           <Sparkles className="h-3.5 w-3.5" aria-hidden />
-          {written ? `Today's update · written by Claude ${written}` : "Today's update"}
+          {written ? `${stale ? "Last update" : "Today's update"} · written by Claude ${written}` : "Today's update"}
         </p>
         {onWrite && (
           <button
@@ -248,6 +252,11 @@ function BriefCard({ brief, onWrite, writing, error }: {
           </button>
         )}
       </div>
+      {paused && (
+        <p className="mb-3 text-xs text-amber-700 dark:text-amber-400">
+          Paused: this month&apos;s Claude API budget is used up (lib/apiBudget.ts), so no new update until the 1st.
+        </p>
+      )}
       {brief ? (
         <>
           <p className="text-lg font-semibold leading-snug">{brief.headline}</p>
@@ -272,7 +281,7 @@ function BriefCard({ brief, onWrite, writing, error }: {
 }
 
 export function OpportunitiesView({ data, onRefresh, refreshing, updating = false, onWriteBrief, writingBrief = false, briefError = null }: {
-  data: OpportunitiesPayload & { brief?: DailyBrief | null };
+  data: OpportunitiesPayload & { brief?: DailyBrief | null; briefPaused?: boolean };
   onRefresh: () => void;
   refreshing: boolean;
   updating?: boolean;
@@ -323,7 +332,7 @@ export function OpportunitiesView({ data, onRefresh, refreshing, updating = fals
         updating={updating}
       />
 
-        <BriefCard brief={data.brief ?? null} onWrite={onWriteBrief} writing={writingBrief} error={briefError} />
+        <BriefCard brief={data.brief ?? null} paused={!!data.briefPaused} onWrite={onWriteBrief} writing={writingBrief} error={briefError} />
 
         {/* The fixed notes behind the update, folded away */}
         {data.insights.length > 0 && (

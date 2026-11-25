@@ -24,7 +24,7 @@ on:
     branches: [main]
     paths: ["audits/sources/**"]
   schedule:
-    - cron: "23 5 * * 1,3,5" # Mon, Wed, Fri 05:23 UTC (was daily; cut API spend)
+    - cron: "23 5 * * 1" # Mondays 05:23 UTC (was Mon/Wed/Fri; cut API spend Dec 2026)
   workflow_dispatch:
     inputs:
       rebaseline:
@@ -92,7 +92,7 @@ jobs:
         id: budget
         env:
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
-        run: npx tsx scripts/api-budget.ts check source-triage 8
+        run: npx tsx scripts/api-budget.ts check source-triage 3
 
       - name: List pages to triage
         id: pages
@@ -130,7 +130,7 @@ jobs:
           path_to_claude_code_executable: ${{ runner.temp }}/claude
           # Prints the run, so a failure shows its reason in the log (it was hidden).
           show_full_output: true
-          claude_args: --max-budget-usd ${{ steps.budget.outputs.cap }} --max-turns 300 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --add-dir ${{ runner.temp }} /tmp --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(curl:*),Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(grep:*),Bash(ls:*),Bash(pdftotext:*)"
+          claude_args: --model sonnet --max-budget-usd ${{ steps.budget.outputs.cap }} --max-turns 100 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --add-dir ${{ runner.temp }} /tmp --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(curl:*),Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(grep:*),Bash(ls:*),Bash(pdftotext:*)"
           prompt: |
             Read CLAUDE.md, docs/claude/question-quality.md and the exam's docs/exams/<examId>.md, then
             ${{ steps.pages.outputs.list }}: official pages Tigertest's question banks were

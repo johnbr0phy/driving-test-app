@@ -12,18 +12,23 @@
 
 export const MONTHLY_LIMIT_USD = 200;
 
-/** Nothing new starts once the month's total reaches this; the gap covers runs already going and calls outside the ledger. */
-export const STOP_AT_USD = 190;
+/** Nothing new starts once the month's total reaches this; kept far under the Console cap since Dec 2026. */
+export const STOP_AT_USD = 50;
 
-/** Each job's share of a month. Sums to 188, under STOP_AT_USD. */
+/** Each job's share of a month. Sums to 45, under STOP_AT_USD. */
 export const JOB_BUDGETS_USD: Readonly<Record<string, number>> = {
-  'daily-brief': 35,
-  'source-triage': 45,
-  'question-audit': 45,
-  'search-gaps': 28,
-  'exam-upkeep': 20,
-  // AI answer check (lib/aiAnswers.ts): 25 questions twice a week on Sonnet 5.5, about $0.07 each.
-  'ai-answers': 15,
+  // Sonnet, numbers only; the web search runs on Mondays.
+  'daily-brief': 4,
+  // Weekly, Sonnet, only the changed text of each page.
+  'source-triage': 10,
+  // Small-model blind pass, judge only on disagreements, both batched at half price.
+  'question-audit': 12,
+  // Weekly, Sonnet; alias-only gaps are matched by a script.
+  'search-gaps': 6,
+  // Monthly, Sonnet.
+  'exam-upkeep': 4,
+  // AI answer check (lib/aiAnswers.ts): 25 questions on Mondays, about $1.70 a run.
+  'ai-answers': 9,
 };
 
 /** A run with less than this to spend would stop before doing anything useful, so it does not start. */
@@ -47,6 +52,15 @@ export const SONNET_PRICES: typeof PRICES = {
   output: 10,
   cacheWrite: 2.5,
   cacheRead: 0.1,
+  webSearch: 0.01,
+};
+
+/** Claude Haiku 5.5 list prices (prompts up to 100K tokens), same units as PRICES. */
+export const HAIKU_PRICES: typeof PRICES = {
+  input: 0.1,
+  output: 0.5,
+  cacheWrite: 0.125,
+  cacheRead: 0.01,
   webSearch: 0.01,
 };
 

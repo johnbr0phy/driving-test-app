@@ -4387,6 +4387,7 @@ export const en = {
     noQuestionsAvailable: "No questions available.",
     moreQuestions: "more questions",
     unlockPremiumStats: "Unlock Premium to see all your question stats",
+    commonMistakesSoon: "This feature will be unlocked soon.",
     universal: "Universal",
     specific: "-specific",
     start: "Start",

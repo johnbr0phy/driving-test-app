@@ -420,6 +420,7 @@ export const de: TranslationKeys = {
     noQuestionsAvailable: "Keine Fragen verfügbar.",
     moreQuestions: "weitere Fragen",
     unlockPremiumStats: "Schalte Premium frei, um alle deine Fragenstatistiken zu sehen",
+    commonMistakesSoon: "Diese Funktion wird bald freigeschaltet.",
     universal: "Allgemein",
     specific: "-spezifisch",
     start: "Start",

@@ -420,6 +420,7 @@ export const hu: TranslationKeys = {
     noQuestionsAvailable: "Nincsenek elérhető kérdések.",
     moreQuestions: "további kérdés",
     unlockPremiumStats: "Oldd fel a Premiumot, hogy lásd az összes kérdésstatisztikádat",
+    commonMistakesSoon: "Ez a funkció hamarosan elérhető lesz.",
     universal: "Általános",
     specific: "-specifikus",
     start: "Start",

@@ -12,8 +12,7 @@
  *   3. time-sensitive questions in exams with a dated change due within 60
  *      days (lib/examFreshness.json) or a changed official page (sourceWatch)
  *   4. a random sweep of --sweep questions not audited in the last 90 days
- *      (the Action passes 1,000 a week: each of the ~54,000 choice
- *      questions about once a year)
+ *      (the Action passes 1,000; the Monday budget decides how many are reached)
  * Without FIREBASE_SERVICE_ACCOUNT_KEY only steps 3 (registry part) and 4 run.
  * --signals runs steps 1 and 2 only: the daily run, so a new flag or report is
  * checked the morning after it appears instead of the next Monday.
@@ -50,10 +49,11 @@ import { ALL_EXAMS } from "@/lib/exams";
 import FRESHNESS from "@/lib/examFreshness.json";
 import { SIGN_BY_QUESTION_ID, SIGN_DESCRIPTIONS } from "@/lib/signImages";
 import { reviewFresh, type FlagReview } from "@/lib/questionQuality";
-import { allowanceUsd, usageCostUsd } from "@/lib/apiBudget";
+import { HAIKU_PRICES, PRICES, allowanceUsd, usageCostUsd } from "@/lib/apiBudget";
 
 const MODEL = "claude-opus-5-5";
-const CONCURRENCY = 6;
+// The blind first pass: most questions just agree with the key, so the small model does it.
+const BLIND_MODEL = "claude-haiku-5-5";
 const RECENT_DAYS = 90;
 const LETTERS = "ABCDEF";
 /** A finding the fix run could not settle this many times is closed, question kept as it is. */
@@ -350,6 +350,11 @@ const client = new Anthropic();
 // Reports, flags and freshness are queued before the sweep, so they get the budget first.
 const { readSpend, recordSpend } = await import("@/lib/server/apiBudget");
 const RUN_CAP_USD = SIGNALS ? 2 : 8;
+/** The workflow's per-run caps for the fix and verify steps (api-budget.ts check question-audit 5, then 2). */
+const FIX_RUN_CAP_USD = 5;
+const VERIFY_RUN_CAP_USD = 2;
+/** Below this a fix run cannot do real work and have it reviewed, so it does not use up an attempt. */
+const FIX_MIN_USD = 3;
 let budgetUsd = 0;
 try {
   // Without Firestore (a local run) the per-run cap is the only limit.
@@ -358,7 +363,6 @@ try {
   console.error("[audit] could not read the API budget, auditing nothing:", err);
 }
 let spentUsd = 0;
-const overBudget = () => spentUsd >= budgetUsd;
 console.log(`[audit] API budget for this run: $${budgetUsd.toFixed(2)}`);
 
 const BLIND_SCHEMA = {
@@ -414,33 +418,116 @@ function render(q: IndexQuestion, withKey: boolean): string {
   return lines.join("\n");
 }
 
-async function structured<T>(system: string, user: string, schema: object, effort: "low" | "medium" | "high"): Promise<T | null> {
-  for (let attempt = 0; attempt < 3; attempt++) {
-    if (overBudget()) return null;
+// Both passes go through the Message Batches API (half price; the audit runs at
+// night, so waiting is fine). A batch cannot stop part way, so each pass is
+// sized from an estimate before it is sent, and the real cost is added after.
+const BATCH_DISCOUNT = 0.5;
+/** Estimated cost of one request, batch price, US dollars (sized from past runs, with room to spare). */
+const EST_BLIND_USD = 0.002;
+/** Worst case for one judge request at batch price: its prompt (about 4 characters a token) plus 8,000 output and thinking tokens. */
+function estJudgeUsd(system: string, user: string): number {
+  const inputTokens = (system.length + user.length) / 4;
+  return ((inputTokens * PRICES.input + 8000 * PRICES.output) / 1_000_000) * BATCH_DISCOUNT;
+}
+/** Typical judge request, for sizing the queue before the prompts are built. */
+const EST_JUDGE_USD = 0.09;
+const BATCH_POLL_MS = 30_000;
+// Two batches must finish inside the job's 180 minutes, with time left to write the report.
+const BATCH_MAX_WAIT_MS = 60 * 60_000;
+
+interface BatchAsk { id: string; system: string; user: string; schema: object }
+
+/** Per result type, across both batches: written to the report so a broken pass shows. */
+const batchOutcomes: Record<string, number> = {};
+
+/** Retries a batch API call through rate limits, server errors and network blips. */
+async function retrying<T>(what: string, call: () => Promise<T>): Promise<T> {
+  for (let attempt = 0; ; attempt++) {
     try {
-      const response = await client.beta.messages.create({
-        model: MODEL,
-        max_tokens: 16000,
-        betas: ["server-side-fallback-2026-07-01"],
-        fallbacks: "default",
-        output_config: { effort, format: { type: "json_schema", schema } },
-        system,
-        messages: [{ role: "user", content: user }],
-      } as Parameters<typeof client.beta.messages.create>[0]) as Anthropic.Beta.BetaMessage;
-      spentUsd += usageCostUsd(response.usage);
-      if (response.stop_reason === "refusal") return null;
-      const text = response.content.flatMap((b) => (b.type === "text" ? [b.text] : [])).join("");
-      return JSON.parse(text) as T;
+      return await call();
     } catch (err) {
-      if (err instanceof Anthropic.RateLimitError || (err instanceof Anthropic.APIError && (err.status ?? 0) >= 500)) {
-        await new Promise((r) => setTimeout(r, 5000 * (attempt + 1)));
-        continue;
-      }
-      console.error(`[audit] request failed: ${err instanceof Error ? err.message : err}`);
-      return null;
+      const transient = err instanceof Anthropic.RateLimitError || err instanceof Anthropic.APIConnectionError || (err instanceof Anthropic.APIError && (err.status ?? 0) >= 500);
+      if (!transient || attempt >= 5) throw err;
+      console.error(`[audit] ${what} failed (${err instanceof Error ? err.message : err}); retrying`);
+      await new Promise((r) => setTimeout(r, 10_000 * (attempt + 1)));
     }
   }
-  return null;
+}
+
+async function batchStructured<T>(asks: BatchAsk[], model: string, prices: typeof PRICES, effort: "low" | "medium" | "high"): Promise<Map<string, T>> {
+  const out = new Map<string, T>();
+  if (!asks.length) return out;
+  const batch = await retrying("batch create", () =>
+    client.beta.messages.batches.create({
+      requests: asks.map((a) => ({
+        custom_id: a.id,
+        params: {
+          model,
+          max_tokens: 16000,
+          output_config: { effort, format: { type: "json_schema", schema: a.schema } },
+          system: a.system,
+          messages: [{ role: "user", content: a.user }],
+        },
+      })),
+    } as Parameters<typeof client.beta.messages.batches.create>[0]),
+  );
+  console.log(`[audit] batch ${batch.id}: ${asks.length} requests on ${model}`);
+  const started = Date.now();
+  let status = batch.processing_status;
+  let cancelled = false;
+  // Polls until the batch ends. Past the wait, or when polling keeps failing,
+  // the batch is cancelled once; what already finished is still read (and paid for).
+  while (status !== "ended") {
+    if (!cancelled && Date.now() - started > BATCH_MAX_WAIT_MS) {
+      console.error(`[audit] batch ${batch.id} still running after 60 minutes; cancelling, finished requests are kept`);
+      cancelled = true;
+      await retrying("batch cancel", () => client.beta.messages.batches.cancel(batch.id)).catch(() => undefined);
+    }
+    if (Date.now() - started > BATCH_MAX_WAIT_MS + 15 * 60_000) {
+      console.error(`[audit] batch ${batch.id} did not end after cancelling; its results are not read this run`);
+      return out;
+    }
+    await new Promise((r) => setTimeout(r, BATCH_POLL_MS));
+    try {
+      status = (await retrying("batch status", () => client.beta.messages.batches.retrieve(batch.id))).processing_status;
+    } catch (err) {
+      console.error(`[audit] batch ${batch.id} status unavailable (${err instanceof Error ? err.message : err})`);
+      if (!cancelled) {
+        cancelled = true;
+        await client.beta.messages.batches.cancel(batch.id).catch(() => undefined);
+      }
+    }
+  }
+  let firstError = "";
+  try {
+    for await (const row of await retrying("batch results", () => client.beta.messages.batches.results(batch.id))) {
+      batchOutcomes[row.result.type] = (batchOutcomes[row.result.type] ?? 0) + 1;
+      if (row.result.type !== "succeeded") {
+        if (!firstError && row.result.type === "errored") firstError = JSON.stringify(row.result.error).slice(0, 300);
+        continue;
+      }
+      const message = row.result.message;
+      spentUsd += usageCostUsd(message.usage, prices) * BATCH_DISCOUNT;
+      if (message.stop_reason === "refusal") {
+        batchOutcomes.refused = (batchOutcomes.refused ?? 0) + 1;
+        continue;
+      }
+      const text = message.content.flatMap((b) => (b.type === "text" ? [b.text] : [])).join("");
+      try {
+        out.set(row.custom_id, JSON.parse(text) as T);
+      } catch {
+        batchOutcomes.unreadable = (batchOutcomes.unreadable ?? 0) + 1;
+      }
+    }
+  } catch (err) {
+    console.error(`[audit] reading batch ${batch.id} results stopped part way (${err instanceof Error ? err.message : err}); keeping what was read`);
+  }
+  console.log(`[audit] batch ${batch.id}: ${out.size}/${asks.length} usable answers${firstError ? `; first error: ${firstError}` : ""}`);
+  if (out.size < asks.length * 0.8) {
+    console.error(`[audit] batch ${batch.id} on ${model}: fewer than 80% usable answers; the step will fail after the report is written`);
+    process.exitCode = 1;
+  }
+  return out;
 }
 
 interface Blind { answer: string[]; confidence: string; defensibleOthers: string[]; problem: string }
@@ -459,53 +546,109 @@ interface Result {
   n?: number;
 }
 
-async function audit(item: QueueItem): Promise<Result> {
-  const { q } = item;
-  const key = Array.isArray(q.key) && typeof q.key[0] === "number" ? (q.key as number[]).map((i) => LETTERS[i]) : [];
-  let blind: Blind | null = null;
-  let disagreed = false;
-  if (choiceFormat(q) && key.length) {
-    blind = await structured<Blind>(BLIND_SYSTEM, render(q, false), BLIND_SCHEMA, "low");
-    if (blind) {
-      const same = blind.answer.length === key.length && blind.answer.every((a) => key.includes(a));
-      disagreed = !same || blind.defensibleOthers.length > 0 || blind.problem.trim().length > 0;
-    }
-  }
-  const sweepOnly = item.trigger.size === 1 && item.trigger.has("sweep");
-  let verdict: Verdict | null = null;
-  if (!sweepOnly || disagreed) {
-    const evidence = [
-      ...item.notes,
-      ...(blind && disagreed
-        ? [`An independent examiner answering without the key chose ${blind.answer.join(", ") || "nothing"} (${blind.confidence} confidence)${blind.defensibleOthers.length ? `, and thought ${blind.defensibleOthers.join(", ")} also defensible` : ""}${blind.problem ? `. They noted: ${blind.problem}` : ""}.`]
-        : []),
-    ];
-    const sources = sourcesFor(q.examId);
-    const user = [
-      `Exam: ${q.examId}. Topic: ${q.category}.`,
-      choiceFormat(q) ? render(q, true) : `${render({ ...q, options: [] }, false)}\nAnswer: ${JSON.stringify(q.key)}\nExplanation: ${q.explanation}`,
-      `\nWhy it is being reviewed:\n${evidence.map((e) => `- ${e}`).join("\n") || "- Routine check."}`,
-      sources ? `\nThe author's sources (sources.md):\n${sources}` : "",
-    ].join("\n");
-    verdict = await structured<Verdict>(JUDGE_SYSTEM, user, VERDICT_SCHEMA, "high");
-  }
-  return { examId: q.examId, questionId: q.id, file: q.file, trigger: [...item.trigger], notes: item.notes, key, blind, disagreed, verdict, signalExamId: item.signalExamId, n: item.n };
+function keyOf(q: IndexQuestion): string[] {
+  return Array.isArray(q.key) && typeof q.key[0] === "number" ? (q.key as number[]).map((i) => LETTERS[i]) : [];
 }
 
-const items = [...queue.values()];
-const results: Result[] = [];
-let next = 0;
-await Promise.all(
-  Array.from({ length: CONCURRENCY }, async () => {
-    while (next < items.length && !overBudget()) {
-      const item = items[next++];
-      results.push(await audit(item));
-      if (results.length % 25 === 0) console.log(`[audit] ${results.length}/${items.length}`);
-    }
-  }),
-);
+function judgeUser(item: QueueItem, blind: Blind | null, disagreed: boolean): string {
+  const { q } = item;
+  const evidence = [
+    ...item.notes,
+    ...(blind && disagreed
+      ? [`An independent examiner answering without the key chose ${blind.answer.join(", ") || "nothing"} (${blind.confidence} confidence)${blind.defensibleOthers.length ? `, and thought ${blind.defensibleOthers.join(", ")} also defensible` : ""}${blind.problem ? `. They noted: ${blind.problem}` : ""}.`]
+      : []),
+  ];
+  const sources = sourcesFor(q.examId);
+  return [
+    `Exam: ${q.examId}. Topic: ${q.category}.`,
+    choiceFormat(q) ? render(q, true) : `${render({ ...q, options: [] }, false)}\nAnswer: ${JSON.stringify(q.key)}\nExplanation: ${q.explanation}`,
+    `\nWhy it is being reviewed:\n${evidence.map((e) => `- ${e}`).join("\n") || "- Routine check."}`,
+    sources ? `\nThe author's sources (sources.md):\n${sources}` : "",
+  ].join("\n");
+}
 
-if (overBudget()) console.log(`[audit] stopped at the API budget after ${results.length}/${items.length} questions`);
+// Signals (reports, flags, freshness) are queued first, so a tight budget keeps them.
+const allItems = [...queue.values()];
+const isSweepOnly = (i: QueueItem) => i.trigger.size === 1 && i.trigger.has("sweep");
+// Room for: a blind answer for every item, and a judge for every signal plus
+// an expected 1 in 3 sweep questions sent on.
+const estimate = (i: QueueItem) => EST_BLIND_USD + (isSweepOnly(i) ? EST_JUDGE_USD / 3 : EST_JUDGE_USD);
+const items: QueueItem[] = [];
+let planned = 0;
+for (const i of allItems) {
+  if (planned + estimate(i) > budgetUsd) break;
+  items.push(i);
+  planned += estimate(i);
+}
+if (items.length < allItems.length) console.log(`[audit] budget covers ${items.length}/${allItems.length} queued questions`);
+
+// Pass 1: the blind answer, on the small model.
+const blindAsks: BatchAsk[] = [];
+items.forEach((item, n) => {
+  if (choiceFormat(item.q) && keyOf(item.q).length) blindAsks.push({ id: `b${n}`, system: BLIND_SYSTEM, user: render(item.q, false), schema: BLIND_SCHEMA });
+});
+let blinds = new Map<string, Blind>();
+try {
+  blinds = await batchStructured<Blind>(blindAsks, BLIND_MODEL, HAIKU_PRICES, "low");
+} catch (err) {
+  console.error(`[audit] blind batch failed: ${err instanceof Error ? err.message : err}`);
+}
+
+// Pass 2: the judge, only where a signal or a disagreement calls for one.
+const partial = items.map((item, n) => {
+  const key = keyOf(item.q);
+  const blind = blinds.get(`b${n}`) ?? null;
+  // The small model's answer only clears a question when it is sure and matches the key exactly;
+  // anything less goes to the judge, so the cheaper first pass never lets a doubt through.
+  const disagreed = !!blind && (!(blind.answer.length === key.length && blind.answer.every((a) => key.includes(a))) || blind.defensibleOthers.length > 0 || blind.problem.trim().length > 0 || blind.confidence !== "high");
+  return { item, n, key, blind, disagreed };
+});
+const judgeAsks: BatchAsk[] = [];
+let judgePlanned = 0;
+for (const p of partial) {
+  if (isSweepOnly(p.item) && !p.disagreed) continue;
+  const user = judgeUser(p.item, p.blind, p.disagreed);
+  const cost = estJudgeUsd(JUDGE_SYSTEM, user);
+  if (spentUsd + judgePlanned + cost > budgetUsd) {
+    console.log(`[audit] budget stops the judge at ${judgeAsks.length} questions`);
+    break;
+  }
+  judgePlanned += cost;
+  judgeAsks.push({ id: `j${p.n}`, system: JUDGE_SYSTEM, user, schema: VERDICT_SCHEMA });
+}
+let verdicts = new Map<string, Verdict>();
+try {
+  verdicts = await batchStructured<Verdict>(judgeAsks, MODEL, PRICES, "high");
+} catch (err) {
+  console.error(`[audit] judge batch failed: ${err instanceof Error ? err.message : err}`);
+}
+
+// A question counts as checked only when every pass it needed came back. One the
+// budget or a failed batch left half done is left out, so it stays in the queue
+// (a report stays open, a sweep question is picked again) instead of being
+// logged as audited with no verdict.
+const complete = partial.filter((p) => {
+  // Reports, flags and freshness always go to the judge, blind answer or not,
+  // so a failed first pass never holds them back.
+  if (!isSweepOnly(p.item)) return verdicts.has(`j${p.n}`);
+  const hadBlind = !blindAsks.some((a) => a.id === `b${p.n}`) || !!p.blind;
+  return hadBlind && (!p.disagreed || verdicts.has(`j${p.n}`));
+});
+if (complete.length < partial.length) console.log(`[audit] ${partial.length - complete.length} questions left for a later run (no verdict this time)`);
+const results: Result[] = complete.map(({ item, n, key, blind, disagreed }) => ({
+  examId: item.q.examId,
+  questionId: item.q.id,
+  file: item.q.file,
+  trigger: [...item.trigger],
+  notes: item.notes,
+  key,
+  blind,
+  disagreed,
+  verdict: verdicts.get(`j${n}`) ?? null,
+  signalExamId: item.signalExamId,
+  n: item.n,
+}));
+
 try {
   if (db) await recordSpend(db, "question-audit", spentUsd);
   console.log(`[audit] spent $${spentUsd.toFixed(2)}`);
@@ -524,6 +667,8 @@ const summary = {
   runId,
   at: new Date().toISOString(),
   model: MODEL,
+  blindModel: BLIND_MODEL,
+  batchOutcomes,
   checked: results.length,
   blindChecked: results.filter((r) => r.blind).length,
   disagreements: results.filter((r) => r.disagreed).length,
@@ -603,8 +748,18 @@ if (db) {
       attempts: 1,
     });
   }
-  // One more fix run is about to see each carried finding.
-  for (const c of carriedFindings) batch.update(db.collection("questionAuditFindings").doc(String(c.id)), { attempts: Number(c.attempts) + 1 });
+  // One more fix run is about to see each carried finding, but only when the
+  // budget lets the fix step run: a skipped fix must not use up an attempt, or
+  // a real finding would be closed "kept as it is" without ever being worked on.
+  let fixCanRun = false;
+  try {
+    // Enough for a real fix and its second review, not just the $1 a step needs to start.
+    fixCanRun = allowanceUsd(await readSpend(db), "question-audit", FIX_RUN_CAP_USD + VERIFY_RUN_CAP_USD) >= FIX_MIN_USD;
+  } catch (err) {
+    console.error("[audit] could not read the API budget for the fix step; attempts left as they are:", err);
+  }
+  if (fixCanRun) for (const c of carriedFindings) batch.update(db.collection("questionAuditFindings").doc(String(c.id)), { attempts: Number(c.attempts) + 1 });
+  else if (carriedFindings.length) console.log(`[audit] no budget for the fix step: ${carriedFindings.length} carried findings keep their attempt count`);
   const log: Record<string, Record<string, string>> = {};
   for (const r of results) (log[r.examId] ??= {})[r.questionId] = summary.at;
   for (const [examId, entries] of Object.entries(log)) batch.set(db.collection("questionAuditLog").doc(examId), entries, { merge: true });

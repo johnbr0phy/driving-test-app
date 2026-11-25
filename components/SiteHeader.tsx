@@ -8,6 +8,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { AdminLink } from "@/components/AdminLink";
 import { BrandLockup } from "@/components/BrandLockup";
+import { DailyRankChip, useRankChipVisible } from "@/components/DailyRank";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { TestSearchSheet } from "@/components/TestSearchSheet";
 import { currentClassCode, forgetCurrentClass, rememberCurrentClass, useStudentClass, useTeacherClasses, useTeaches } from "@/components/TeachLink";
@@ -159,6 +160,9 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
     statsPath = `${variant?.slug ?? exam.slug}/stats`;
   }
   if (examV2 && hydrated && (user || v2Progress)) statsPath = v2Routes(examV2).stats;
+  // Tiger Time (components/DailyRank.tsx): once there is 1 correct answer
+  // today, the trophy chip takes the stats icon's place and links where it did.
+  const rankChip = useRankChipVisible();
 
   // A signed-out visitor's ask. Each dashboard's own save card (GuestSaveCard)
   // already offers Google, email and sign in, so the header leaves it to them.
@@ -215,7 +219,7 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
         <BrandLockup />
 
         {!chipTest && !classPill && (
-          <nav aria-label="Site" className="ml-1 flex self-stretch items-stretch gap-5 sm:gap-6 text-sm font-semibold tracking-wide">
+          <nav aria-label="Site" className={`ml-1 flex self-stretch items-stretch ${rankChip ? "gap-3" : "gap-5"} sm:gap-6 text-sm font-semibold tracking-wide`}>
             <TabLink href="/" active={!onTeach}>TESTS</TabLink>
             <TabLink href={teachHref} active={onTeach}>{classesTab ? "CLASSES" : "TEACH"}</TabLink>
           </nav>
@@ -237,7 +241,9 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
 
         <div className="ml-auto flex shrink-0 items-center gap-1">
           {languages}
-          {statsPath && (
+          {rankChip ? (
+            <DailyRankChip compact href={statsPath ? `${statsPath}#today-rank` : null} />
+          ) : statsPath && (
             <Link
               href={statsPath}
               aria-current={path === statsPath ? "page" : undefined}

@@ -4289,6 +4289,7 @@ export const zh: TranslationKeys = {
     noQuestionsAvailable: "暂无题目。",
     moreQuestions: "道题未显示",
     unlockPremiumStats: "解锁 Premium 高级版，查看所有题目统计",
+    commonMistakesSoon: "此功能即将开放。",
     universal: "通用",
     specific: "专属",
     start: "开始",

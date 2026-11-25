@@ -8,6 +8,13 @@ import { isAnswered } from "@/lib/v2/grading";
 import { trackFunnelStep } from "@/lib/funnel";
 import { trackQuestionsAnswered } from "@/lib/analytics";
 
+/** Ids of the items a session has an answer for, across its modules. */
+function answeredIds(session: TestSessionV2 | undefined): Set<string> {
+  const ids = new Set<string>();
+  for (const st of session?.stages ?? []) for (const [id, a] of Object.entries(st.answers)) if (isAnswered(a)) ids.add(id);
+  return ids;
+}
+
 /** Drill and Basics keys are `${examId}:${...}` (drillKey, basicsKey). */
 const examOf = (key: string) => key.split(":")[0];
 
@@ -50,7 +57,7 @@ export const EMPTY_V2: V2Data = { sessions: {}, results: [], drills: {}, basics:
 
 export const useV2Store = create<V2State>()(
   persist(
-    (set) => ({
+    (set, get) => ({
       sessions: {},
       results: [],
       drills: {},
@@ -59,7 +66,13 @@ export const useV2Store = create<V2State>()(
       questionStats: {},
       syncedUid: null,
 
-      putSession: (session) => set((s) => ({ sessions: { ...s.sessions, [session.key]: session } })),
+      putSession: (session) => {
+        // Count each item when it is first answered, not when the test is
+        // handed in (most people who start a test never finish it).
+        const fresh = answeredIds(session).size - answeredIds(get().sessions[session.key]).size;
+        if (fresh > 0) trackQuestionsAnswered(fresh, session.examId);
+        set((s) => ({ sessions: { ...s.sessions, [session.key]: session } }));
+      },
       removeSession: (key) =>
         set((s) => {
           const sessions = { ...s.sessions };
@@ -68,8 +81,9 @@ export const useV2Store = create<V2State>()(
         }),
       addResult: (result) => {
         queueAchievementCelebration(`v2:${result.key}:${result.completedAt}`);
-        trackFunnelStep("answered");
-        trackQuestionsAnswered(result.items.filter((i) => isAnswered(i.answer)).length, result.examId);
+        // Items answered in the session were counted as they were given (putSession).
+        const counted = answeredIds(get().sessions[result.key]).size;
+        trackQuestionsAnswered(Math.max(0, result.items.filter((i) => isAnswered(i.answer)).length - counted), result.examId);
         set((s) => ({ results: [...s.results, result] }));
       },
 

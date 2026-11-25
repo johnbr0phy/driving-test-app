@@ -4289,6 +4289,7 @@ export const ko: TranslationKeys = {
     noQuestionsAvailable: "문제가 없습니다.",
     moreQuestions: "문제 더 보기",
     unlockPremiumStats: "프리미엄을 시작하고 모든 문제 통계를 확인하세요",
+    commonMistakesSoon: "이 기능은 곧 열립니다.",
     universal: "공통",
     specific: " 전용",
     start: "시작",

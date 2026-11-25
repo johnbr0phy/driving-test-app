@@ -21,20 +21,21 @@ test("job shares fit under the stop line, which is under the Console limit", () 
 });
 
 test("a run gets its per-run cap when the month has room", () => {
-  assert.strictEqual(allowanceUsd(spend(10), "source-triage", 8), 8);
+  assert.strictEqual(allowanceUsd(spend(10), "source-triage", 3), 3);
 });
 
 test("a run never gets more than what is left of its job's share", () => {
-  assert.strictEqual(allowanceUsd(spend(50, { "source-triage": 40 }), "source-triage", 8), 5);
+  const share = JOB_BUDGETS_USD["source-triage"];
+  assert.strictEqual(allowanceUsd(spend(10, { "source-triage": share - 2 }), "source-triage", 8), 2);
 });
 
 test("a run never takes the month past the stop line", () => {
-  assert.strictEqual(allowanceUsd(spend(STOP_AT_USD - 3), "search-gaps", 8), 3);
+  assert.strictEqual(allowanceUsd(spend(STOP_AT_USD - 2), "search-gaps", 8), 2);
 });
 
 test("too little left, a spent share, a spent month or an unknown job means skip", () => {
   assert.strictEqual(allowanceUsd(spend(STOP_AT_USD - 0.5), "search-gaps", 8), 0);
-  assert.strictEqual(allowanceUsd(spend(20, { "exam-upkeep": 25 }), "exam-upkeep", 8), 0);
+  assert.strictEqual(allowanceUsd(spend(10, { "exam-upkeep": JOB_BUDGETS_USD["exam-upkeep"] }), "exam-upkeep", 8), 0);
   assert.strictEqual(allowanceUsd(spend(STOP_AT_USD + 4), "daily-brief", 3), 0);
   assert.strictEqual(allowanceUsd(spend(0), "not-a-job", 8), 0);
 });

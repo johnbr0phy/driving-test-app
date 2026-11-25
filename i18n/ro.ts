@@ -420,6 +420,7 @@ export const ro: TranslationKeys = {
     noQuestionsAvailable: "Nu sunt întrebări disponibile.",
     moreQuestions: "întrebări în plus",
     unlockPremiumStats: "Deblochează Premium ca să vezi toate statisticile întrebărilor tale",
+    commonMistakesSoon: "Această funcție va fi deblocată în curând.",
     universal: "Generale",
     specific: " specifice",
     start: "Start",

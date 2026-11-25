@@ -420,6 +420,7 @@ export const fi: TranslationKeys = {
     noQuestionsAvailable: "Kysymyksiä ei ole saatavilla.",
     moreQuestions: "kysymystä lisää",
     unlockPremiumStats: "Avaa Premium nähdäksesi kaikki kysymystilastosi",
+    commonMistakesSoon: "Tämä ominaisuus avautuu pian.",
     universal: "Yleinen",
     specific: "-kohtainen",
     start: "Alku",

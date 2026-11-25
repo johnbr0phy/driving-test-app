@@ -30,10 +30,9 @@ import { inClassFor, useClassMemberships } from "@/hooks/useClassMemberships";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { trackDailyQuizAnswer } from "@/lib/analytics";
 import { showsTestTakerCount } from "@/lib/communityStats";
-import { examUi } from "@/lib/examUi";
 import { examPaywallCopy } from "@/lib/examPaywallCopy";
 import { PaywallModal } from "@/components/PaywallModal";
-import { GatedStatsList, STATS_FREE_ROWS, StatsHeaderCard, StatsPageShell, StatsSortBar, StatsTab, StatsTabs, accuracyChipColor } from "@/components/stats/StatsParts";
+import { CommonMistakesSoon, GatedStatsList, STATS_FREE_ROWS, StatsPageShell, StatsSortBar, StatsTab, StatsTabs, accuracyChipColor } from "@/components/stats/StatsParts";
 import { V2StatsRow, plainStem } from "./V2StatsRow";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 import { useV2Language, useV2Ui } from "@/lib/v2/ui";
@@ -148,7 +147,6 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
     return { value: `${item.accuracy}%`, label: tr("stats.accuracy"), color: accuracyChipColor(item.accuracy) };
   };
 
-  const answeredCount = rows.filter((r) => r.timesAnswered > 0).length;
 
   return (
     <StatsPageShell backHref={routes.dashboard} backLabel={ui.common.back}>
@@ -168,9 +166,12 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
       {/* Today's rank, explained (lib/dailyRank.ts). */}
       <DailyRankPanel continueHref={routes.dashboard} />
 
-      {communityOn && <StatsTabs active={tab} onChange={setTab} yoursLabel={t.tabYours} communityLabel={t.tabCommunity} />}
+      <StatsTabs active={tab} onChange={setTab} yoursLabel={t.tabYours} communityLabel={t.tabCommunity} />
 
-      {showCommunity ? (
+      {tab === "community" && !communityOn ? (
+        /* No Common Mistakes data for this exam yet: say it is coming. */
+        <CommonMistakesSoon text={tr("stats.commonMistakesSoon")} />
+      ) : showCommunity ? (
         <CommunityList
           exam={exam}
           loading={communityLoading || !premiumReady}
@@ -182,7 +183,6 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
         />
       ) : (
         <>
-          <StatsHeaderCard title={t.tabYours} subtitle={examUi(lang).statsSeen(answeredCount, rows.length, exam.shortName)} />
           <StatsSortBar
             fields={[
               { field: "wrong" as SortField, label: tr("stats.wrongLabel") },

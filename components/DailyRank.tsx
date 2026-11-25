@@ -91,7 +91,12 @@ const CHIP_CLASS =
  * Guests land on sign-up from there (stats pages need an account), and their
  * count carries over when they sign in.
  */
-export function DailyRankChip() {
+export function DailyRankChip({ href: hrefOverride, compact = false }: {
+  /** Where the chip links. Omitted: worked out from the runner path. null: a plain chip. */
+  href?: string | null;
+  /** Phones show only the count (the site header, which is fuller than the test bar). */
+  compact?: boolean;
+} = {}) {
   const on = useInRankArm();
   const rank = useDailyRank();
   const pathname = usePathname();
@@ -122,19 +127,24 @@ export function DailyRankChip() {
       <Trophy className="h-3.5 w-3.5 shrink-0" aria-hidden />
       <span key={`c${rank.correct}`} className="tabular-nums motion-safe:animate-[rank-pop_300ms_ease-out]">
         <span className="sm:hidden" aria-hidden>
-          {nf.format(rank.correct)}
+          {compact && rank.correct >= 1000
+            ? new Intl.NumberFormat(language, { notation: "compact", maximumFractionDigits: 1 }).format(rank.correct)
+            : nf.format(rank.correct)}
         </span>
         <span className="hidden sm:inline">{count}</span>
       </span>
       {pct && (
-        <span key={`p${rank.place ?? rank.topPercent}`} className="hidden tabular-nums motion-safe:animate-[rank-pop_300ms_ease-out] min-[360px]:inline">
+        <span
+          key={`p${rank.place ?? rank.topPercent}`}
+          className={`hidden tabular-nums motion-safe:animate-[rank-pop_300ms_ease-out] ${compact ? "sm:inline" : "min-[360px]:inline"}`}
+        >
           {dot}
           {pct}
         </span>
       )}
     </>
   );
-  const href = rankStatsHref(pathname);
+  const href = hrefOverride === undefined ? rankStatsHref(pathname) : hrefOverride;
   if (!href) {
     return (
       <span data-daily-rank-chip title={t("dailyRank.label")} aria-label={`${count}${pct ? `, ${pct}` : ""}`} className={CHIP_CLASS}>

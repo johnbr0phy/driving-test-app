@@ -26,6 +26,10 @@ Tells each person where they rank today by correct answers: "41 correct today. T
 
 The chip links to `<base>/stats#today-rank` (the DMV's `/stats`), cutting the runner path at its `test`, `practice`, `drill` or `training` segment, so nested bases like `/real-estate/ca` work. Quizzes have no stats page and keep a plain chip. Stats pages need an account, so a guest who taps the chip lands on sign-up; their count carries over at sign-in.
 
+## In the site header
+
+On every page with the site header (home, dashboards, landings, results; never runners), once the person has 1 correct answer today the chip takes the place of the Your Stats icon and links to the same stats page (`#today-rank`), or is a plain chip where the header shows no stats link (guests on some pages). It is `compact`: on phones just the trophy and the count (`1.2K` past 999), and the TESTS / TEACH gap tightens, so a guest's home header fits at 320px.
+
 ## Tiger Time winner
 
 - `app/api/cron/tiger-time` (daily 05:15 UTC, just after midnight Eastern) reads the finished day's top 200 counts (`topOfDay`) and writes `tigerTimeWinners/{day}` `{ uid, correct, reachedAt, at, emailed }` once and emails the winner a congratulations (`tigerTimeEmail` in `lib/email-templates.ts`: transactional, from John, no unsubscribe link, like the 1,000,000th-question email; English only; skipped if the account unsubscribed; sent once, by `emailed` and the Resend idempotency key `tiger-time-<day>`): the signed-in account with the most correct answers, at least `TIGER_TIME_MIN_TO_WIN` (10), ties to whoever reached the count first (`reachedAt` on the person doc); guests cannot win (`pickTigerTimeWinner`); internal accounts can (John, Nov 25 2026). `?day=` reruns a day: it never replaces a winner and retries an email that did not send. Every run writes `globalStats/tigerTime.updatedAt`, which the watchdog reads (`readJobHeartbeats`, 36 hours).

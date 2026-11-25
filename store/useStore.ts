@@ -1,4 +1,4 @@
-import { captureMcpProgressRevision, assertMcpProgressRevision, throwIfMcpProgressConflict } from '@/lib/mcpProgressGuard';
+import { captureMcpProgressRevision, assertMcpProgressRevision, throwIfMcpProgressConflict, mcpProgressRevisionChanged, rebaseMcpProgress } from '@/lib/mcpProgressGuard';
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import { Question, TestSession, UserAnswer, TestAttemptStats, QuestionPerformance, Subscription } from '@/types';
@@ -1547,3 +1547,43 @@ export const useStore = create<AppState>()(
 );
 
 writeAccount = (snapshot, seq) => useStore.getState().writeSnapshot(snapshot, seq);
+
+// Back on a tab after practising with the assistant (Claude through the MCP
+// server) on the same account: that raised the account's progress revision,
+// and the first save here would be refused, with the "Progress changed in
+// another session" notice and a reload that drops the answer just given.
+// When this page has nothing unsaved (every save asked for has landed), take
+// the account as it is now instead. Work that did not save keeps the guard.
+// At most one account read per REFRESH_GAP_MS: focus fires on every click back into the window.
+const REFRESH_GAP_MS = 10_000;
+let refreshing = false;
+let lastRefreshAt = 0;
+async function refreshAccountIfChangedElsewhere(): Promise<void> {
+  const { userId, isGuest, loadedUid } = useStore.getState();
+  if (refreshing || !userId || isGuest || loadedUid !== userId || Date.now() - lastRefreshAt < REFRESH_GAP_MS) return;
+  refreshing = true;
+  lastRefreshAt = Date.now();
+  try {
+    await saveQueue.idle();
+    if (snapshotSeq !== savedSeq) return; // a save failed or is still running: unsaved work
+    const seq = snapshotSeq;
+    const snap = await getDoc(doc(db, 'users', userId));
+    if (!mcpProgressRevisionChanged(userId, 'catalog', snap.data())) return;
+    // An answer given while reading would be replaced by the load: leave it to the guard.
+    if (snapshotSeq !== seq || useStore.getState().userId !== userId) return;
+    if (!rebaseMcpProgress(userId, 'catalog')) return;
+    await useStore.getState().loadUserData(userId);
+  } catch (error) {
+    console.error('Refreshing the account failed:', error);
+  } finally {
+    refreshing = false;
+  }
+}
+
+if (typeof window !== 'undefined') {
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') void refreshAccountIfChangedElsewhere();
+  });
+  // Claude in another window leaves this tab visible: coming back is a focus.
+  window.addEventListener('focus', () => void refreshAccountIfChangedElsewhere());
+}

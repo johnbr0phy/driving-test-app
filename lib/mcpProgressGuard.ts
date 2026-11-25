@@ -56,7 +56,8 @@ export function captureMcpProgressRevision(uid: string, scope: McpProgressScope,
   const expected = revisions.get(key);
   if (expected !== undefined && expected !== actual) conflict(uid, scope, expected, actual);
   // Never let a later load bless an old save already in flight. A full explicit
-  // reload starts a new session and establishes its own per-store baseline.
+  // reload starts a new session and establishes its own per-store baseline;
+  // so does rebaseMcpProgress, for a page with nothing unsaved.
   if (expected === undefined && actual > 0) authoritativeLoads.add(key);
   revisions.set(key, actual);
 }
@@ -73,6 +74,26 @@ export function assertMcpProgressRevision(uid: string, scope: McpProgressScope, 
   // Existing accounts without MCP changes, and brand-new accounts, remain
   // backward compatible. Positive revisions always require a prior load.
   if (expected === undefined) revisions.set(key, 0);
+}
+
+/** True when the account's revision for `scope` is no longer the one this page loaded. */
+export function mcpProgressRevisionChanged(uid: string, scope: McpProgressScope, data: Record<string, unknown> | undefined): boolean {
+  const expected = revisions.get(keyFor(uid, scope));
+  return expected !== undefined && expected !== revisionOf(data, scope);
+}
+
+/**
+ * Forget this page's baseline so the next load takes the account as it is now.
+ * Only for a page with no unsaved work (every save done, none failed): then
+ * nothing local can be lost, and an assistant session's newer progress is
+ * loaded instead of blocking the next save. Refused once a conflict is shown.
+ */
+export function rebaseMcpProgress(uid: string, scope: McpProgressScope): boolean {
+  const key = keyFor(uid, scope);
+  if (blocked.has(key)) return false;
+  revisions.delete(key);
+  authoritativeLoads.delete(key);
+  return true;
 }
 
 export function isMcpProgressConflict(error: unknown): error is McpProgressConflictError {

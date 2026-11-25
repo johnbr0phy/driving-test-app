@@ -1,7 +1,6 @@
 "use client";
 
 import { CARD, TabHeader, fmtUpdated, useAdminFetch } from "@/components/admin/AdminTabParts";
-import { DailyRankTestCard } from "@/components/admin/DailyRankTestCard";
 import { GuestPromptTestCard } from "@/components/admin/GuestPromptTestCard";
 import { LandingTryTestCard } from "@/components/admin/LandingTryTestCard";
 import { PaywallTestCard } from "@/components/admin/PaywallTestCard";
@@ -33,7 +32,6 @@ export function ABTestsTab() {
         refreshing={refreshing}
         updating={updating}
       />
-      <DailyRankTestCard />
       <LandingTryTestCard />
       {opp.loading ? (
         <div className={`${CARD} mb-3 sm:mb-4 text-sm text-gray-500`}>Loading the paywall test...</div>

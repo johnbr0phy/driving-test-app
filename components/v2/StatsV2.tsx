@@ -165,7 +165,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
         hideSocialProof
       />
 
-      {/* Today's rank, explained (lib/dailyRank.ts; A/B arm "rank" only). */}
+      {/* Today's rank, explained (lib/dailyRank.ts). */}
       <DailyRankPanel continueHref={routes.dashboard} />
 
       {communityOn && <StatsTabs active={tab} onChange={setTab} yoursLabel={t.tabYours} communityLabel={t.tabCommunity} />}

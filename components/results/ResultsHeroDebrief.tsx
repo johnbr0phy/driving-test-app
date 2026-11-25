@@ -261,7 +261,7 @@ export function ResultsHeroDebrief({
         </div>
         )}
 
-        {/* Today's rank, right under the result (lib/dailyRank.ts; A/B arm "rank" only). */}
+        {/* Today's rank, right under the result (lib/dailyRank.ts). */}
         <DailyRankCard />
 
         <div className="flex gap-1.5 flex-wrap">

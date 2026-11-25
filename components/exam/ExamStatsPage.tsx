@@ -240,7 +240,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
             hideSocialProof
           />
 
-          {/* Today's rank, explained (lib/dailyRank.ts; A/B arm "rank" only). */}
+          {/* Today's rank, explained (lib/dailyRank.ts). */}
           <DailyRankPanel continueHref={routes.dashboard} />
 
           {communityOn && (

@@ -77,7 +77,7 @@ export function FocusBar({ exitHref, title, subtitle, progress, right, confirmEx
           <div className="truncate text-sm font-bold text-gray-900 dark:text-gray-50">{title}</div>
           {subtitle && <div className="truncate text-xs text-gray-500 dark:text-gray-400">{subtitle}</div>}
         </div>
-        {/* Today's rank (A/B test arm "rank" only), never on practice tests. */}
+        {/* Today's rank, never on practice tests. */}
         {rank && <DailyRankChip />}
         {slot ? <div className="flex shrink-0 items-center gap-2">{slot}</div> : null}
       </div>

@@ -3,7 +3,6 @@ import { DMV_ANALYTICS_KEY, type ExamAnalyticsKey } from "@/lib/exams";
 import { getBrowserId, trackEnrollment } from "@/lib/enrollment";
 import { trackFunnelStep } from "@/lib/funnel";
 import { noteLandingTryPurchase } from "@/lib/landingTryTest";
-import { noteRankTestPurchase } from "@/lib/dailyRankTest";
 import { isInternalBrowser } from "@/lib/internal";
 import { guestPaidEmail } from "@/lib/guestPaidHint";
 import { knownPremiumPrice } from "@/lib/localPrice";
@@ -220,7 +219,6 @@ export function trackPaywallDismissed(location = "dashboard") {
 
 export function trackPurchase(transactionId: string) {
   noteLandingTryPurchase();
-  noteRankTestPurchase();
   const first = checkoutAttribution();
   window.gtag?.("event", "purchase", {
     transaction_id: transactionId,

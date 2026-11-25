@@ -16,7 +16,6 @@ import { auth } from "@/lib/firebase";
 import { getBrowserId } from "@/lib/enrollment";
 import { isTestBrowser } from "@/lib/internal";
 import { tigerDay, topPercentFromCutoffs, type RankNext, type RankStatus } from "@/lib/dailyRank";
-import { flushRankTestActivity, noteRankTestAnswer } from "@/lib/dailyRankTest";
 
 const KEY = "tigertest-daily-rank";
 const FLUSH_MS = 4_000;
@@ -148,7 +147,6 @@ export function noteRankAnswer(exam: string, questionId: string, correct: boolea
   const after = addAnswer(before, exam, questionId, correct);
   if (after === before) return;
   commit(after);
-  noteRankTestAnswer();
   if (!listening) {
     listening = true;
     window.addEventListener("pagehide", () => void flushRank());
@@ -199,7 +197,6 @@ export async function flushRank() {
   if (inFlight || typeof window === "undefined") return;
   const s = load();
   if (!s.pending.length) return;
-  flushRankTestActivity();
   // Test and internal browsers keep a local count only.
   if (isTestBrowser()) return;
   const sent = s.pending.slice(0, 300);

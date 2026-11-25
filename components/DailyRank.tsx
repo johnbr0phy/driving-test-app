@@ -8,25 +8,41 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { RANK_SHOW_TOP_PERCENT_MAX, nextGoal, tigerTimeLeftMs, type RankNext } from "@/lib/dailyRank";
 import { flushRank, refreshRank, useDailyRank } from "@/lib/dailyRankClient";
-import { rankArm } from "@/lib/dailyRankTest";
 
-// Daily rank surfaces (lib/dailyRank.ts). Both show only in the "rank" arm of
-// the A/B test (lib/dailyRankTest.ts) and only once the person has 1 correct
+// Daily rank surfaces (lib/dailyRank.ts). They show for everyone, and only
+// once the person has 1 correct
 // answer today. "Top X%" is left out above the top half: it reads as a
 // put-down and gives nothing to aim at.
 
-/** True when the rank chip would show: rank arm and 1+ correct today. */
+/** True when the rank chip would show: not hidden with ?rank=off, and 1+ correct today. */
 export function useRankChipVisible(): boolean {
   const on = useInRankArm();
   const rank = useDailyRank();
   return on && !!rank && rank.correct >= 1;
 }
 
+/**
+ * Everyone sees Tiger Time (the A/B test ended Nov 25 2026: on for all).
+ * `?rank=off` hides it in this tab, for previewing a page without it, and
+ * `?rank=on` shows it again. Read after mount, so the server render and the
+ * first client render agree (nothing shown).
+ */
+const RANK_OFF_KEY = "tigertest-rank-off";
+
 function useInRankArm(): boolean {
-  // Read after mount: the arm lives in localStorage, so the server render and
-  // first client render agree (nothing shown).
   const [on, setOn] = useState(false);
-  useEffect(() => setOn(rankArm() === "rank"), []);
+  useEffect(() => {
+    let off = false;
+    try {
+      const pin = new URLSearchParams(window.location.search).get("rank");
+      if (pin === "off") sessionStorage.setItem(RANK_OFF_KEY, "1");
+      if (pin === "on") sessionStorage.removeItem(RANK_OFF_KEY);
+      off = sessionStorage.getItem(RANK_OFF_KEY) === "1";
+    } catch {
+      // Storage blocked: shown.
+    }
+    setOn(!off);
+  }, []);
   return on;
 }
 

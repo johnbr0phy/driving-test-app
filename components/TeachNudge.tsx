@@ -119,6 +119,7 @@ const TEACHER_LED = new Set([
   "aufirstaid", "ausecurity", "nzfirstaid", "nzforklift",
   "gulfrn",
   "aedhapharm",
+  "gulfmd",
   // High school, military and college classes
   "ged", "hiset", "tabe", "cbest", "sat", "act", "asvab", "afoqt", "secplus", "securityx", "servicenowcsa", "sscp", "aplus", "aws", "awssaa", "awsaif", "awsdva", "snowpro", "az900", "ai901", "pl900", "ccna", "jncia", "pmp", "gcsemaths", "osslt", "naplan", "nswsel",
   "gcsehigher", "gcsescience", "gcsecs", "fsmaths",

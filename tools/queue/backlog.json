@@ -4528,6 +4528,22 @@
       "trendsTerm": "dha pharmacist exam"
     },
     {
+      "id": "gulfmd",
+      "name": "Saudi SMLE / DHA / DOH / MOHAP doctor (GP) licensing exam",
+      "owner": "SCFHS",
+      "region": "GLOBAL",
+      "engine": "v1",
+      "siblings": [
+        "gulfrn",
+        "aedhapharm"
+      ],
+      "sells": 1.0,
+      "search": [
+        "smle",
+        "dha exam for doctors"
+      ]
+    },
+    {
       "id": "zare1",
       "name": "South Africa RE1 Key Individuals",
       "owner": "FSCA",

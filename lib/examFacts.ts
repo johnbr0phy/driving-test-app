@@ -3685,6 +3685,21 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "the SCFHS SPLE Examination Content Guideline (2025), Qatar DHP's pharmacist blueprint and qualifying examination page, and the DHA Manual for Professional Assessment (2025), checked November 2026",
     source: { name: "SCFHS: SPLE Examination Content Guideline", url: "https://scfhs.org.sa/sites/default/files/2025-09/SPLE%20Applicant%20Guide.docx_.pdf" },
   },
+  gulfmd: {
+    answer:
+      "The SMLE (Saudi Medical Licensure Examination) is the computer-based licensing exam the Saudi Commission for Health Specialties sets for doctors: 200 one-best-answer questions in two 120-minute parts of 100, scored on a 200 to 800 scale with 560 to pass. Its 2026 blueprint gives 30 percent to medicine, 25 to obstetrics and gynecology, 25 to pediatrics and 20 to surgery, and lists patient safety, preventive medicine and ethics. The other Gulf health authorities (DHA in Dubai, DOH in Abu Dhabi, MOHAP, Qatar's DHP, and Oman, Kuwait and Bahrain) each set their own assessment for general practitioners, often through Prometric; DHA reports only pass or fail and allows three attempts.",
+    rows: [
+      { label: "Format", value: "Computer-based, multiple choice, one best answer" },
+      { label: "Saudi Arabia (SMLE)", value: "200 questions, 2 x 120 min, 560 on 200-800" },
+      { label: "Blueprint", value: "Medicine 30%, OB/GYN 25%, pediatrics 25%, surgery 20%" },
+      { label: "SMLE attempts", value: "Up to four a year" },
+      { label: "Dubai (DHA)", value: "Pass or fail only, three attempts" },
+      { label: "Other authorities", value: "Check your authority's current guide" },
+      { label: "Set by", value: "Each Gulf health authority" },
+    ],
+    basedOn: "the SCFHS Saudi Medical Licensure Examination (SMLE) Examination Content Guideline with the 2026 blueprint and the DHA Manual for Professional Assessment (2025), checked November 2026",
+    source: { name: "SCFHS: SMLE Examination Content Guideline (2026 blueprint)", url: "https://scfhs.org.sa/sites/default/files/2026-05/Saudi%20Medical%20Licensure%20Examination%20%28SMLE%29%20Blueprint_2026_0.pdf" },
+  },
   gulfrn: {
     answer:
       "The Gulf registered nurse licensing exam, often called the Prometric exam for nurses, is a computer-based multiple-choice test that each Gulf health authority sets for nurses who want to practise there: DHA in Dubai, DOH in Abu Dhabi, MOHAP elsewhere in the UAE, SCFHS in Saudi Arabia, the DHP in Qatar, and the authorities in Oman, Kuwait and Bahrain. Each sets its own number of questions, time and pass mark. Qatar's DHP lists 150 questions with a 50 percent pass mark, and Saudi Arabia's SNLE has 200 questions in two 120-minute parts with a scaled pass score of 500. The published blueprints weight adult nursing most, about 40 percent.",

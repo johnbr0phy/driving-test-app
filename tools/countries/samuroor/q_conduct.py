@@ -2,7 +2,7 @@ CAT = "saConduct"; SEG = "CON"
 # SHC 602 speed, lane, school zone, neighbourhood and highway devices (3.2.5, 3.2.8, 3.2.10,
 # 3.2.14, 3.2.59, 3.3.53, 3.6.10, 3.6.13, 4.2.6, 4.6, 4.10, 6.2) and Traffic Law definitions
 # (Art. 2) and passenger rules. Items ask for a speed, distance, colour, lane, vehicle or meaning.
-# Verdict items: 008, 018, 019, 020 and 021, all keyed on the permissive answer.
+# Verdict items: 018, 019, 020 and 021, all keyed on the permissive answer.
 Q = [
 ("When a school zone's flashers are on, what speed limit does SHC 602 set?",
  "30 km/h", ["40 km/h", "20 km/h", "50 km/h"],
@@ -25,13 +25,13 @@ Q = [
 ("Who may normally use a high occupancy vehicle (HOV) lane under SHC 602?",
  "Driver plus at least one passenger", ["Driver plus at least two passengers", "Buses, taxis and vans only", "Electric cars of any occupancy"],
  "SHC 602 4.6.7: HOV lanes are reserved for vehicles with a driver and one or more passengers, including carpools, vanpools and buses. A higher level such as HOV 3+ is signed where it applies."),
-("A part-time bus lane has a broken white line. When may other traffic cross into it?",
- "Outside its signed hours", ["In slow-moving traffic", "To pass a stopped bus", "When no bus is in sight"],
- "SHC 602 4.6.5.1: part-time bus lanes use a broken line that may be crossed only when the bus lane is not in force, as its signs show. Full-time lanes use a solid line not to be crossed except in emergencies."),
-("White bars painted across your lane get closer together toward a bend. What are they for?",
- "Slowing traffic for the bend", ["Marking a speed check zone", "Warning of a lane drop", "Marking a bus stop ahead"],
- "SHC 602 4.6.2: speed reduction markings are transverse lines with shrinking spacing before an unexpected curve, giving the impression of speeding up so drivers slow down."),
-("Short white bars cross the centre and edge lines every 0.5 km for 1.5 km. Why?",
+("A bus lane is for buses only during signed hours. Which line separates it from other lanes?",
+ "Broken white line", ["Solid white line", "Broken yellow line", "Solid yellow line"],
+ "SHC 602 4.6.5.1: a part-time bus lane uses a broken white line that may be crossed only when the bus lane is not in force. A full-time lane uses a solid white line."),
+("Speed reduction markings are painted before an unexpected curve. How is their spacing laid out?",
+ "Closer together toward it", ["Further apart toward it", "Evenly spaced throughout", "Wider lines toward it"],
+ "SHC 602 4.6.2: speed reduction markings are white transverse lines whose spacing is progressively reduced toward the curve, giving the impression of speeding up so drivers slow down."),
+("Short white bars are painted across the centre and edge lines every 0.5 km over 1.5 km. What are they for?",
  "Speed enforcement", ["Distance to an exit", "Warning of a lane drop", "Rumble strip edge"],
  "SHC 602 4.6.1: speed measurement markings (L20-1) are white transverse marks at 0.5 km intervals over 1.5 km that help police check speeds."),
 ("Your tyres start to rumble on a textured strip along the shoulder. What does it tell you?",
@@ -80,7 +80,7 @@ Q = [
  "Service road", ["Slip road", "Shoulder lane", "Local carriageway"],
  "Article 2(10): a service road (tariq khidma) runs beside the freeway and serves the adjoining properties directly. The freeway itself does not."),
 ("Under Article 2, how do you get onto a freeway (tariq hurr al-haraka)?",
- "Controlled entry ramps", ["Signalled side junctions", "Median openings", "Any service-road gap"],
+ "Controlled entry ramps", ["Controlled side junctions", "Signal-controlled crossings", "Controlled median openings"],
  "Article 2(9): a freeway is entered and left only through controlled entries and exits built for that purpose, and it does not serve adjoining properties directly."),
 ("What does Article 2 call the space that separates two carriageways?",
  "Island (jazira)", ["Pavement (rasif)", "Road reserve (harim)", "Shoulder (kitf)"],

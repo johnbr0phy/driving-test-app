@@ -1,8 +1,8 @@
 CAT = "saStopping"; SEG = "STP"
 # SHC 602 parking, stopping and waiting signs (3.2.41 to 3.2.72), bus stop markings (4.6.5.3),
 # school crossings (6.2.1.5); Traffic Law definitions (Art. 2) and crash duty (Art. 63).
-# Items ask for a time, distance, place, vehicle, colour or definition. Verdict items: 010 and 011,
-# both keyed on the permissive answer (the exceptions a sign allows).
+# Items ask for a time, distance, place, vehicle, colour or definition. Verdict item: 011,
+# keyed on the permissive answer (the exception the sign allows).
 Q = [
 ("Under SHC 602, how long does a standard Loading Zone bay allow for loading or unloading?",
  "Up to 1 hour", ["Up to 15 minutes", "Up to 2 hours", "Up to 30 minutes"],
@@ -11,7 +11,7 @@ Q = [
  "Taxis, ambulances, police", ["Taxis, buses, trucks", "Buses, ambulances, police", "Taxis, buses, delivery vans"],
  "SHC 602 3.2.71: the No Waiting Except plate under a No Stopping sign names taxis, and the word may be changed to ambulances or police vehicles. The times shown may vary."),
 ("A No Waiting plate under a No Stopping sign shows a truck and 5T. Which vehicles does it cover?",
- "Trucks over 5 t gross weight", ["Trucks over 5 t on one axle", "Any truck for 5 hours", "Vehicles over 5 m long"],
+ "Trucks over 5 t gross", ["Trucks over 5 t per axle", "Trucks over 5 m long", "Trucks with 5 or more axles"],
  "SHC 602 3.2.72: the plate bans waiting by trucks with the maximum gross weight shown (for example 5T). Axle limits use a different sign (R25-1)."),
 ("You buy a pay-and-display parking ticket. Where does SHC 602 say it goes?",
  "Inside the windscreen", ["Under a wiper blade", "On the driver's door glass", "In the glovebox"],
@@ -31,9 +31,9 @@ Q = [
 ("Along a clearway, No Stopping repeater signs are posted at intervals of no more than:",
  "700 m", ["300 m", "500 m", "1,000 m"],
  "SHC 602 3.2.42: the No Stopping sign starts the clearway with a Clearway plate and is repeated on both sides at intervals of no more than 700 m, ending with an End plate."),
-("Under SHC 602, in which two cases may a driver stop on a No Stopping clearway?",
- "Emergency or police direction", ["Emergency or loading goods", "Police direction or a pick-up", "A pick-up or loading goods"],
- "SHC 602 3.2.41 and 3.2.42: the No Stopping sign forbids stopping unless in an emergency or directed by the Traffic Police. Picking up passengers and loading goods are not exceptions; a breakdown counts as an emergency."),
+("Under SHC 602, how is the end of a clearway shown?",
+ "No Stopping sign with End plate", ["Clearway sign with a red bar", "Blue P parking sign", "White sign, black diagonal lines"],
+ "SHC 602 3.2.42: the No Stopping sign (R21-2) starts the clearway with a Clearway plate, is repeated along it, and at its end carries an End plate. The black-lined white sign ends other prohibitions."),
 ("A blue sign with a red border and one red diagonal stands at the kerb. What may you do there?",
  "Set down a passenger", ["Park on that side", "Load goods for an hour", "Leave the car to run errands"],
  "SHC 602 3.2.41 (R21-1): the single-diagonal sign bans parking on that side of the road at any time, except to pick up or set down. Two crossed diagonals (R21-2) ban stopping too."),

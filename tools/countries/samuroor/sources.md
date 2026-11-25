@@ -95,7 +95,7 @@ Highway Code manual on traffic control devices. Signs are described in words (no
 The saLicence, saConduct and saStopping pools and 14 right-of-way items were rewritten from
 scratch after the bank failed an options-only check (wrong options read as loopholes beside a
 strict key). Each new item asks for one fact: a number, a place, a vehicle or person, a document,
-a colour or the meaning of a device. Only 9 allowed-or-forbidden items remain in these four
+a colour or the meaning of a device. Only 7 allowed-or-forbidden items remain in these four
 categories, all keyed on the permissive answer. No rule outside the two primary texts above was
 added. Texts re-read 2026-11-25 for this rewrite:
 
@@ -135,3 +135,11 @@ added. Texts re-read 2026-11-25 for this rewrite:
   yellow transverse rumble strips; 6.2 school zones (30 km/h when flashing, up to 150 m past the
   school, No Parking at least 20 m before a school zebra crossing, white-on-red Children Crossing
   plate).
+- Items restructured after later options-only rounds (texts re-read 2026-11-25): Traffic Law
+  Art. 21(a), a showroom needs a traffic department licence after a commercial register; SHC 602
+  3.2.5 Night plate on a black background; 3.2.6 combined sign on surveilled highways, black
+  border on yellow; 3.2.16 priority arrow black, larger and thicker, the other red; 3.3.20 Turn
+  on Lights sign after the Tunnel sign for tunnels over 75 m; 3.3.21 Dip sign; 3.3.46 Pedestrian
+  Crossing sign at least 100 m ahead; 4.2.7 hatching between opposing flows above 80 km/h; 4.6.1
+  speed measurement markings; 4.6.2 spacing reduced toward the curve; 4.6.5.1 broken white line
+  for part-time bus lanes; 3.2.42 End plate at the end of a clearway.

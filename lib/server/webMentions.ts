@@ -89,8 +89,8 @@ export async function searchMentions(
   const messages: Anthropic.Beta.BetaMessageParam[] = [
     { role: 'user', content: `Today is ${today}. Find everything people have posted about Tigertest since ${MENTIONS_SINCE}.` },
   ];
-  // A long search can pause the server's loop; resume it a few times.
-  for (let i = 0; i < 4; i++) {
+  // A long search can pause the server's loop; resume it once.
+  for (let i = 0; i < 2; i++) {
     const response = await client.beta.messages.create({
       model,
       max_tokens: 16000,
@@ -98,7 +98,7 @@ export async function searchMentions(
       fallbacks: 'default',
       output_config: { effort: 'low' },
       system: SYSTEM,
-      tools: [{ type: 'web_search_20260209', name: 'web_search', max_uses: 8, blocked_domains: ['tigertest.io'] }],
+      tools: [{ type: 'web_search_20260209', name: 'web_search', max_uses: 4, blocked_domains: ['tigertest.io'] }],
       messages,
     });
     onUsage?.(response.usage);

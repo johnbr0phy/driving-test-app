@@ -9,6 +9,7 @@ import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Fireworks } from "@/components/Fireworks";
 import { ShareButton } from "@/components/ShareButton";
+import { DailyRankCard } from "@/components/DailyRank";
 import { getTigerFace } from "@/lib/resultsCopy";
 import type { ReadyTestResults } from "@/hooks/useTestResults";
 import { useStore } from "@/store/useStore";
@@ -259,6 +260,9 @@ export function ResultsHeroDebrief({
           </div>
         </div>
         )}
+
+        {/* Today's rank, right under the result (lib/dailyRank.ts). */}
+        <DailyRankCard />
 
         <div className="flex gap-1.5 flex-wrap">
           {!passed && <span className="rounded-full bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 px-2.5 py-1 text-[11px] font-medium text-gray-600 dark:text-gray-300">

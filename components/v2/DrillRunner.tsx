@@ -1,6 +1,7 @@
 "use client";
 
 import { FocusMode } from "./FocusMode";
+import { noteStatsSource } from "@/lib/statsViews";
 
 import { AccessibleOverlay } from "@/components/AccessibleOverlay";
 
@@ -209,6 +210,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
     <FocusMode className="v2-focus">
       {fireworks && done && <Fireworks duration={3000} onComplete={() => setFireworks(false)} />}
       <FocusBar
+        rank="replace"
         className="v2-safe-top shrink-0"
         exitHref={backHref}
         exitLabel={ui.common.back}
@@ -217,7 +219,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
         progress={questions.length ? mastered / questions.length : undefined}
         right={
           user ? (
-            <Link href={routes.stats} className="text-sm font-medium text-brand-dark hover:text-brand-darker transition-colors">
+            <Link href={routes.stats} onClick={() => noteStatsSource("bar_link")} className="text-sm font-medium text-brand-dark hover:text-brand-darker transition-colors">
               {t.viewStats}
             </Link>
           ) : undefined

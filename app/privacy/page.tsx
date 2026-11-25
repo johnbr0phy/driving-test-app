@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 // consent and children's pages), app/api/account/delete (what deletion
 // removes), lib/classes.ts and lib/quizzes.ts (what teachers and quiz makers
 // see), lib/funnel.ts and the other anonymous counters.
-const UPDATED = "November 19, 2026";
+const UPDATED = "November 25, 2026";
 const CONTACT = "john@johnbrophy.net";
 
 const h2 = "text-2xl font-semibold mb-4 mt-2";
@@ -72,6 +72,13 @@ export default function PrivacyPage() {
                 with your account), the page that sent you here, a random browser ID kept in your browser, and whether
                 you came from a school learning system. When we pass 1,000,000 questions answered we note the first
                 signed-in account to answer after it, to give them a prize.
+              </li>
+              <li>
+                <strong>Daily rank:</strong> for each day, which questions you answered right or wrong the first time
+                (as short codes, not the questions themselves), under your account or a code made from your browser ID.
+                We use it only to tell you how many you got right today (Tiger Time, midnight to midnight
+                Eastern time) and where that puts you; nobody else sees it. If your account wins a day, we keep the date
+                and your count with your account and email you to say so, until you delete the account.
               </li>
               <li>
                 <strong>Payments:</strong> if you buy Premium, Stripe handles the card or other payment method. We receive
@@ -194,6 +201,7 @@ export default function PrivacyPage() {
               <li>Class and quiz results: until the teacher deletes the class or the maker deletes the quiz, or the account that holds them is deleted.</li>
               <li>Payment records: as long as tax law requires (normally up to seven years), even after an account is deleted.</li>
               <li>Search terms and anonymous totals: kept, but not linked to you.</li>
+              <li>Daily rank answers: deleted after three days.</li>
               <li>Google Analytics data: kept by Google for no more than 14 months.</li>
             </ul>
           </section>

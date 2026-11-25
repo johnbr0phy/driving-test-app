@@ -12,18 +12,30 @@
 
 export const MONTHLY_LIMIT_USD = 200;
 
-/** Nothing new starts once the month's total reaches this; the gap covers runs already going and calls outside the ledger. */
-export const STOP_AT_USD = 190;
+/** Nothing new starts once the month's total reaches this; kept far under the Console cap since Dec 2026. */
+export const STOP_AT_USD = 165;
 
-/** Each job's share of a month. Sums to 188, under STOP_AT_USD. */
+/**
+ * Each job's share of a month. Sums to 153, under STOP_AT_USD. Each share covers its runs at their per-run caps,
+ * so no job runs out part way through a month. Steps that change
+ * what customers see (bank fixes, source updates, exam upkeep, new tests) keep
+ * their model and per-run caps; the savings come from schedules, the admin-only
+ * daily update and the audit's batched first pass.
+ */
 export const JOB_BUDGETS_USD: Readonly<Record<string, number>> = {
-  'daily-brief': 35,
-  'source-triage': 45,
-  'question-audit': 45,
-  'search-gaps': 28,
-  'exam-upkeep': 20,
-  // AI answer check (lib/aiAnswers.ts): 25 questions twice a week on Sonnet 5.5, about $0.07 each.
-  'ai-answers': 15,
+  // Admin page only: Sonnet, numbers only; the web search runs on Mondays. About 22 runs at well under $0.25.
+  'daily-brief': 6,
+  // Mon, Wed, Fri at up to $8; spend follows the pages that changed.
+  'source-triage': 40,
+  // Daily signals ($2), Monday sweep ($8), fix ($5) and verify ($2) when there are findings.
+  // Small-model blind pass, judge on anything less than a sure match, both batched at half price.
+  'question-audit': 60,
+  // Weekly (was Tue, Thu, Sat) at up to $8: about 2 test builds a month.
+  'search-gaps': 16,
+  // Weekly, fix $8 and verify $3 in a week with tasks.
+  'exam-upkeep': 22,
+  // AI answer check (lib/aiAnswers.ts): 25 questions on Mondays, about $1.70 a run.
+  'ai-answers': 9,
 };
 
 /** A run with less than this to spend would stop before doing anything useful, so it does not start. */
@@ -47,6 +59,15 @@ export const SONNET_PRICES: typeof PRICES = {
   output: 10,
   cacheWrite: 2.5,
   cacheRead: 0.1,
+  webSearch: 0.01,
+};
+
+/** Claude Haiku 5.5 list prices (prompts up to 100K tokens), same units as PRICES. */
+export const HAIKU_PRICES: typeof PRICES = {
+  input: 0.1,
+  output: 0.5,
+  cacheWrite: 0.125,
+  cacheRead: 0.01,
   webSearch: 0.01,
 };
 

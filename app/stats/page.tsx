@@ -1,6 +1,8 @@
 "use client";
 
 import { startCheckout } from "@/lib/startCheckout";
+import { useStatsView } from "@/lib/statsViews";
+import { DailyRankPanel } from "@/components/DailyRank";
 import { useEffect, useState, useMemo, useRef, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { BarChart3, Lock, Users } from "lucide-react";
@@ -230,6 +232,8 @@ function StatsContent() {
     );
   };
 
+  // Stats page traffic (lib/statsViews.ts): one view once the page really shows.
+  useStatsView("dmv", hydrated && accountReady && !!user && !isGuest && !loadFailed);
   if (loadFailed && user) return <AccountLoadRetry uid={user.uid} />;
   if (!hydrated || !accountReady || !user || isGuest) {
     return null;
@@ -260,6 +264,9 @@ function StatsContent() {
           isGuest={isGuest}
           onSignUp={() => router.push(signupDestination)}
         />
+
+        {/* Today's rank, explained (lib/dailyRank.ts). */}
+        <DailyRankPanel continueHref="/dmv/dashboard" />
 
         {/* Tab Navigation */}
         <div className="flex gap-1.5 mb-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-1.5 shadow-sm">

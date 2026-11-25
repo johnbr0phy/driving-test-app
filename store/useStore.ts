@@ -566,6 +566,10 @@ export const useStore = create<AppState>()(
       },
 
       setAnswer: (testId: number, questionIndex: number, answer: string) => {
+        // Count a question when it is first answered, not when the test is
+        // handed in: most people who start a test leave before the end, and
+        // counting on submit showed their answers as none on /admin.
+        const firstAnswer = !get().currentTests[testId]?.answers?.[questionIndex];
         set((state) => ({
           currentTests: {
             ...state.currentTests,
@@ -578,6 +582,7 @@ export const useStore = create<AppState>()(
             },
           },
         }));
+        if (firstAnswer && answer) trackQuestionsAnswered(1, examAnalyticsKey(getExamForTestId(testId)));
         get().saveToFirestore();
       },
 
@@ -646,7 +651,10 @@ export const useStore = create<AppState>()(
         }));
         queueAchievementCelebration(session.id);
 
-        trackQuestionsAnswered(questions.length, examAnalyticsKey(getExamForTestId(testId)));
+        // Answers were counted as they were given (setAnswer); count the rest
+        // (skipped questions) now so a finished test still totals its length.
+        const alreadyCounted = Object.values(get().currentTests[testId]?.answers ?? {}).filter(Boolean).length;
+        trackQuestionsAnswered(Math.max(0, questions.length - alreadyCounted), examAnalyticsKey(getExamForTestId(testId)));
 
         // Clear current test
         get().clearCurrentTest(testId);

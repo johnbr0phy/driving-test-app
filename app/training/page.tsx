@@ -1,6 +1,7 @@
 "use client";
 
 import { startCheckout } from "@/lib/startCheckout";
+import { noteStatsSource } from "@/lib/statsViews";
 import { useState, useEffect, Suspense, useRef, useCallback } from "react";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { TrainingCard } from "@/components/TrainingCard";
@@ -92,6 +93,15 @@ function TrainingPageContent() {
   const [showSetComplete, setShowSetComplete] = useState(false);
   const [showResetConfirm, setShowResetConfirm] = useState(false);
   const retryButtonRef = useRef<HTMLButtonElement>(null);
+  const resetConfirmRef = useRef<HTMLDivElement>(null);
+
+  // The confirm sits low in a tall card: bring it on screen so Try Again visibly does something.
+  useEffect(() => {
+    if (!showResetConfirm) return;
+    const box = resetConfirmRef.current;
+    box?.scrollIntoView({ block: "center", behavior: "smooth" });
+    box?.querySelector<HTMLButtonElement>("button")?.focus({ preventScroll: true });
+  }, [showResetConfirm]);
   const [earnedCompletion, setEarnedCompletion] = useState(false);
   const pendingCompletion = useRef(false);
 
@@ -321,16 +331,11 @@ function TrainingPageContent() {
                     className="h-auto min-h-11 whitespace-normal border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-gray-800"
                   />
                 )}
-                {!isGuest && <Button asChild variant="ghost"><Link href={DMV_ROUTES.stats}>{t("results.viewStats")}</Link></Button>}
+                {!isGuest && <Button asChild variant="ghost"><Link href={DMV_ROUTES.stats} onClick={() => noteStatsSource("done_link")}>{t("results.viewStats")}</Link></Button>}
                 <Button ref={retryButtonRef} variant="ghost" onClick={() => setShowResetConfirm(true)}>{t("results.tryAgain")}</Button>
               </div>
-              {!isGuest && (
-                <Link href="/stats?tab=community" onClick={() => trackStatsEntry("training_complete", "community")} className="mt-1 rounded-md px-2 py-2 text-sm font-medium text-green-800 hover:underline dark:text-green-200">
-                  {t("trainingPage.beatMostMissed")} →
-                </Link>
-              )}
               {showResetConfirm && (
-                <div role="group" aria-label={t("trainingPage.resetConfirm")} className="mt-2 rounded-xl border border-gray-200 bg-white p-4 text-left dark:border-gray-700 dark:bg-gray-900">
+                <div ref={resetConfirmRef} role="group" aria-label={t("trainingPage.resetConfirm")} className="mt-2 rounded-xl border border-gray-200 bg-white p-4 text-left dark:border-gray-700 dark:bg-gray-900">
                   <p className="mb-3 text-sm text-gray-600 dark:text-gray-300">{t("trainingPage.resetConfirm")}</p>
                   <div className="flex gap-2">
                     <Button variant="outline" className="flex-1" onClick={handlePracticeAgain}>{t("trainingPage.resetYes")}</Button>
@@ -338,12 +343,18 @@ function TrainingPageContent() {
                   </div>
                 </div>
               )}
+              {!isGuest && (
+                <Link href="/stats?tab=community" onClick={() => trackStatsEntry("training_complete", "community")} className="mt-1 rounded-md px-2 py-2 text-sm font-medium text-green-800 hover:underline dark:text-green-200">
+                  {t("trainingPage.beatMostMissed")} →
+                </Link>
+              )}
             </AchievementCelebration>
           </div>
         </AccessibleOverlay>
       )}
 
       <FocusBar
+        rank="replace"
         exitHref="/dmv/dashboard"
         title={isSetMode && setNumber ? t(`trainingSets.${setNumber}`) : t("common.dmvHeaderTitle")}
         subtitle={isSetMode && setProgress ? `${setProgress.correct}/${setProgress.total} ${t("trainingPage.questionsCorrect")}` : undefined}
@@ -352,6 +363,7 @@ function TrainingPageContent() {
           isPremium ? (
             <Link
               href="/stats"
+              onClick={() => noteStatsSource("bar_link")}
               className="text-sm font-medium text-brand-dark hover:text-brand-darker transition-colors"
             >
               {t("dashboard.viewStats")}
@@ -367,7 +379,7 @@ function TrainingPageContent() {
                 trackViewItem("training_set_4");
                 setPaywallOpen(true);
               }}
-              className="text-sm font-medium text-brand-dark hover:text-brand-darker transition-colors"
+              className="max-w-[9.5rem] text-right text-sm font-medium leading-tight text-brand-dark transition-colors hover:text-brand-darker sm:max-w-none sm:leading-normal"
             >
               {ctaText}
             </button>

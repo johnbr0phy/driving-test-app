@@ -4528,6 +4528,22 @@
       "trendsTerm": "dha pharmacist exam"
     },
     {
+      "id": "gulfmd",
+      "name": "Saudi SMLE / DHA / DOH / MOHAP doctor (GP) licensing exam",
+      "owner": "SCFHS",
+      "region": "GLOBAL",
+      "engine": "v1",
+      "siblings": [
+        "gulfrn",
+        "aedhapharm"
+      ],
+      "sells": 1.0,
+      "search": [
+        "smle",
+        "dha exam for doctors"
+      ]
+    },
+    {
       "id": "zare1",
       "name": "South Africa RE1 Key Individuals",
       "owner": "FSCA",
@@ -5088,6 +5104,39 @@
       ],
       "trends": 0,
       "trendsTerm": "tasmania firearms licence"
+    },
+    {
+      "id": "qudurat",
+      "name": "Qudurat, the General Aptitude Test (GAT), English version",
+      "owner": "ETEC",
+      "region": "SA",
+      "engine": "v2",
+      "siblings": [
+        "sat",
+        "sehp",
+        "cuet"
+      ],
+      "sells": 0.5,
+      "search": [
+        "qudurat",
+        "qiyas",
+        "gat saudi",
+        "general aptitude test"
+      ]
+    },
+    {
+      "id": "samuroor",
+      "name": "Saudi Arabia driving theory test",
+      "owner": "Muroor",
+      "region": "SA",
+      "engine": "v1",
+      "siblings": [
+        "aerta"
+      ],
+      "sells": 1.0,
+      "search": [
+        "saudi driving test"
+      ]
     }
   ]
 }

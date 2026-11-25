@@ -23,6 +23,7 @@ import { auth } from "@/lib/firebase";
 import { flushPendingSaves, useStore } from "@/store/useStore";
 import { AccountConflictDialog } from "@/components/AccountConflictDialog";
 import { isInternalEmail, markInternalBrowser } from "@/lib/internal";
+import { flushRank, mergeRankOnSignIn, resetRankOnSignOut } from '@/lib/dailyRankClient';
 import { claimEnrollments } from "@/lib/enrollment";
 
 interface AccountConflict {
@@ -155,6 +156,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       if (isInternalEmail(user?.email)) markInternalBrowser();
       // Move this browser's guest "enrolled" marks onto the account (lib/enrollment).
       if (user) claimEnrollments();
+      // Today's guest answers on this browser carry over to the account (lib/dailyRankClient).
+      if (user) void mergeRankOnSignIn();
       // Signed in now: a guest purchase hint has done its job (lib/guestPaidHint).
       if (user) clearGuestPaid();
       // An account a guest checkout made, now signed in to with the email
@@ -220,6 +223,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           if (useStore.getState().userId) {
             useStore.getState().clearAllDataOnLogout();
             localStorage.removeItem('driving-test-storage');
+            resetRankOnSignOut();
           }
           setUserId(null);
         }
@@ -290,6 +294,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const logout = async () => {
     // Let saves still on their way reach the account before it is signed out.
     await flushPendingSaves();
+    // Today's Tiger Time answers reach the account, then the chip resets.
+    await flushRank();
+    resetRankOnSignOut();
     // Clear all store data (in-memory state)
     useStore.getState().clearAllDataOnLogout();
     // Clear localStorage to remove persisted data

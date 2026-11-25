@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, Suspense, useRef, useCallback } from "react";
+import { noteStatsSource } from "@/lib/statsViews";
 import { usePathname, useRouter, useSearchParams, useParams } from "next/navigation";
 import { TrainingCard } from "@/components/TrainingCard";
 import { Button } from "@/components/ui/button";
@@ -9,6 +10,7 @@ import { ShareButton } from "@/components/ShareButton";
 import { useStore } from "@/store/useStore";
 import { shuffleQuestionOptions } from "@/lib/shuffleOptions";
 import { recordClassAnswer } from "@/lib/classProgress";
+import { DailyRankCard } from "@/components/DailyRank";
 import { useClassMissRecovery } from "@/components/exam/ClassMissRecovery";
 import { getExamTrainingSetQuestions, getNextExamTrainingSetQuestion } from "@/lib/examTestGenerator";
 import { ExamConfig, examSetId, trainingPartName, trainingParts } from "@/lib/exams";
@@ -102,6 +104,15 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
   const [showSetComplete, setShowSetComplete] = useState(false);
   const [showResetConfirm, setShowResetConfirm] = useState(false);
   const retryButtonRef = useRef<HTMLButtonElement>(null);
+  const resetConfirmRef = useRef<HTMLDivElement>(null);
+
+  // The confirm sits low in a tall card: bring it on screen so Try Again visibly does something.
+  useEffect(() => {
+    if (!showResetConfirm) return;
+    const box = resetConfirmRef.current;
+    box?.scrollIntoView({ block: "center", behavior: "smooth" });
+    box?.querySelector<HTMLButtonElement>("button")?.focus({ preventScroll: true });
+  }, [showResetConfirm]);
   const [earnedCompletion, setEarnedCompletion] = useState(false);
   const pendingCompletion = useRef(false);
 
@@ -336,6 +347,7 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
               detail={<><span className="block">{setLabel}</span><span className="block mt-1 font-normal">{progress?.correct}/{progress?.total} {t("trainingPage.questionsCorrect")}</span></>}
               earned={earnedCompletion}
             >
+              <DailyRankCard />
               <Button asChild className="h-auto min-h-12 w-full whitespace-normal bg-green-700 px-5 py-3 text-base font-bold text-white hover:bg-green-800">
                 <Link href={dashboardHref}>{celebrationCopy.progress}</Link>
               </Button>
@@ -357,11 +369,11 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
                     className="h-auto min-h-11 whitespace-normal border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200 dark:hover:bg-gray-800"
                   />
                 )}
-                {!isGuest && <Button asChild variant="ghost"><Link href={routes.stats}>{t("results.viewStats")}</Link></Button>}
+                {!isGuest && <Button asChild variant="ghost"><Link href={routes.stats} onClick={() => noteStatsSource("done_link")}>{t("results.viewStats")}</Link></Button>}
                 <Button ref={retryButtonRef} variant="ghost" onClick={() => setShowResetConfirm(true)}>{t("results.tryAgain")}</Button>
               </div>
               {showResetConfirm && (
-                <div role="group" aria-label={resetMessage} className="mt-2 rounded-xl border border-gray-200 bg-white p-4 text-left dark:border-gray-700 dark:bg-gray-900">
+                <div ref={resetConfirmRef} role="group" aria-label={resetMessage} className="mt-2 rounded-xl border border-gray-200 bg-white p-4 text-left dark:border-gray-700 dark:bg-gray-900">
                   <p className="mb-3 text-sm text-gray-600 dark:text-gray-300">{resetMessage}</p>
                   <div className="flex gap-2">
                     <Button variant="outline" className="flex-1" onClick={handlePracticeAgain}>{t("trainingPage.resetYes")}</Button>
@@ -375,6 +387,7 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
       )}
 
       <FocusBar
+        rank="replace"
         exitHref={routes.dashboard}
         title={isSetMode ? setLabel : exam.shortName}
         subtitle={isSetMode && progress ? `${progress.correct}/${progress.total} ${t("trainingPage.questionsCorrect")}` : undefined}
@@ -383,6 +396,7 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
           !isGuest ? (
             <Link
               href={routes.stats}
+              onClick={() => noteStatsSource("bar_link")}
               className="text-sm font-medium text-brand-dark hover:text-brand-darker transition-colors"
             >
               {t("dashboard.viewStats")}

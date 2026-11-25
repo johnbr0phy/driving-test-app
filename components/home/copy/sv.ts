@@ -131,6 +131,6 @@ export const sv: HomeCopy = {
 export const countryNames: Record<string, string> = {
   US: "USA", CA: "Kanada", UK: "Storbritannien", IE: "Irland", AU: "Australien", NZ: "Nya Zeeland", IN: "Indien",
   PH: "Filippinerna", MY: "Malaysia", SG: "Singapore", HK: "Hongkong", AE: "Förenade Arabemiraten", ZA: "Sydafrika",
-  NG: "Nigeria", KE: "Kenya", PK: "Pakistan", ES: "Spanien", PT: "Portugal", RO: "Rumänien", SE: "Sverige", GR: "Grekland",
+  NG: "Nigeria", KE: "Kenya", PK: "Pakistan", SA: "Saudiarabien", ES: "Spanien", PT: "Portugal", RO: "Rumänien", SE: "Sverige", GR: "Grekland",
   DK: "Danmark", HU: "Ungern", BE: "Belgien", FI: "Finland", MT: "Malta", DE: "Tyskland", IT: "Italien", FR: "Frankrike", PL: "Polen", NL: "Nederländerna",
 };

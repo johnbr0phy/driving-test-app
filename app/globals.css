@@ -1918,6 +1918,20 @@
     --brand-gradient-to: 45 50% 96%;
   }
 
+  /* Gulf doctor licensing exam (SMLE, DHA, DOH, MOHAP) theme: deep Gulf azure */
+  [data-theme="gulfmd"] {
+    --brand: 250 65% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 250 80% 96%;
+    --brand-hover: 250 65% 43%;
+    --brand-dark: 250 65% 38%;
+    --brand-darker: 250 65% 30%;
+    --brand-muted: 250 40% 72%;
+    --brand-border: 250 40% 82%;
+    --brand-border-light: 250 35% 90%;
+    --brand-gradient-to: 45 55% 96%;
+  }
+
   /* India RTO learner's licence theme: India green */
   [data-theme="inrto"] {
     --brand: 116 85% 28.5%;
@@ -2309,6 +2323,20 @@
     --brand-gradient-to: 190 55% 95%;
   }
 
+  /* Saudi driving theory (Muroor) theme: deep Saudi green */
+  [data-theme="samuroor"] {
+    --brand: 155 100% 12%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 155 40% 95%;
+    --brand-hover: 155 100% 9%;
+    --brand-dark: 155 100% 7%;
+    --brand-darker: 155 95% 5%;
+    --brand-muted: 155 30% 68%;
+    --brand-border: 155 30% 80%;
+    --brand-border-light: 155 25% 90%;
+    --brand-gradient-to: 140 40% 95%;
+  }
+
   /* Nigeria FRSC Highway Code theme */
   [data-theme="ngfrsc"] {
     --brand: 123 60% 26%;
@@ -2547,6 +2575,20 @@
     --brand-border: 192 20% 80%;
     --brand-border-light: 192 20% 89%;
     --brand-gradient-to: 200 30% 96%;
+  }
+
+  /* Qudurat (GAT, Qiyas / ETEC) theme: vivid purple (v2 exam; matches lib/v2/exams/qudurat.ts theme) */
+  [data-theme="qudurat"] {
+    --brand: 280 70% 48%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 280 70% 96%;
+    --brand-hover: 280 70% 40%;
+    --brand-dark: 280 70% 34%;
+    --brand-darker: 280 70% 24%;
+    --brand-muted: 280 40% 62%;
+    --brand-border: 280 50% 82%;
+    --brand-border-light: 280 55% 90%;
+    --brand-gradient-to: 285 60% 97%;
   }
 
   /* CCAT (Criteria Cognitive Aptitude Test) theme: deep magenta (v2 exam; matches lib/v2/exams/ccat.ts theme) */
@@ -9776,6 +9818,18 @@
     --brand-darker: 134 15% 78%;
   }
 
+  .dark [data-theme="gulfmd"] {
+    --brand: 250 65% 50%;
+    --brand-hover: 250 65% 43%;
+    --brand-light: 250 45% 13%;
+    --brand-gradient-to: 45 40% 11%;
+    --brand-border-light: 250 35% 24%;
+    --brand-border: 250 40% 34%;
+    --brand-muted: 250 40% 45%;
+    --brand-dark: 250 65% 66%;
+    --brand-darker: 250 65% 78%;
+  }
+
   .dark [data-theme="inrto"] {
     --brand-light: 116 45% 13%;
     --brand-gradient-to: 30 40% 11%;
@@ -10106,6 +10160,18 @@
     --brand-darker: 162 70% 78%;
   }
 
+  .dark [data-theme="samuroor"] {
+    --brand: 155 100% 26.4%;
+    --brand-hover: 155 100% 18.4%;
+    --brand-light: 155 40% 13%;
+    --brand-gradient-to: 140 40% 11%;
+    --brand-border-light: 155 25% 24%;
+    --brand-border: 155 30% 34%;
+    --brand-muted: 155 30% 45%;
+    --brand-dark: 155 100% 65%;
+    --brand-darker: 155 95% 78%;
+  }
+
   .dark [data-theme="ngfrsc"] {
     --brand: 123 60% 33.1%;
     --brand-hover: 123 60% 25.1%;
@@ -10308,6 +10374,17 @@
     --brand-muted: 192 15% 45%;
     --brand-dark: 192 20% 65%;
     --brand-darker: 192 20% 78%;
+  }
+  .dark [data-theme="qudurat"] {
+    --brand: 280 70% 50%;
+    --brand-hover: 280 70% 42%;
+    --brand-light: 280 45% 13%;
+    --brand-gradient-to: 285 40% 11%;
+    --brand-border-light: 280 35% 24%;
+    --brand-border: 280 40% 34%;
+    --brand-muted: 280 40% 45%;
+    --brand-dark: 280 70% 65%;
+    --brand-darker: 280 70% 78%;
   }
   .dark [data-theme="ccat"] {
     --brand: 300 100% 40.6%;
@@ -15201,3 +15278,10 @@ html[data-ltq="b"] .try-card {
   --brand-border: 240 75% 34%;
   --brand-border-light: 240 75% 24%;
 }
+
+/* Daily rank chip (components/DailyRank.tsx): a short pop when the count changes. */
+@keyframes rank-pop {
+  0% { transform: scale(1.25); }
+  100% { transform: scale(1); }
+}
+

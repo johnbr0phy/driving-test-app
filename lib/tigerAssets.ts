@@ -8,6 +8,8 @@ export const TIGER_EXAM_IDS = [
   "pance", "cehrs",
   // Reviewed French civic-study and nail-care specialists.
   "frcivique", "nailtech",
+  // Reviewed plant operations and pesticide applicator sets.
+  "waterop", "pesticide",
   "driving", // Car-test mascot; original site branding remains at the public root.
   "cdl", "cdlx", "moto", "civics", "part107", "ham", "epa608",
   "cna", "ptcb", "phleb", "cet", "htl", "cst", "crcst",
@@ -72,6 +74,9 @@ const BORROWED_SETS: Record<string, string> = {
   emr: "emt",
   masterelec: "jelec",
   nscacpt: "nasm",
+  acecpt: "nasm",
+  rhia: "cehrs",
+  series66: "series7",
   faaifr: "faapvt",
   faacax: "faapvt",
   esccse: "aplang",
@@ -101,16 +106,14 @@ const BORROWED_SETS: Record<string, string> = {
   pals: "cpr",
   cct: "cet",
   crat: "cet",
-  cnor: "nclex",
+  cnor: "cst",
   contractorlaw: "osha",
   natecore: "epa608",
   osha30: "osha",
   hvacjourney: "epa608",
-  waterop: "epa608",
-  wastewaterop: "epa608",
+  wastewaterop: "waterop",
   r410a: "epa608",
   backflow: "caplumb",
-  pesticide: "epa608",
   bowhunter: "hunter",
   atvsafety: "moto",
   cafsc: "hunter",
@@ -193,10 +196,10 @@ const BORROWED_SETS: Record<string, string> = {
   caon: "driving", caqc: "driving", cabc: "driving", caab: "driving", camb: "driving",
   aunsw: "driving", auvic: "driving", auqld: "driving", auwa: "driving", ausa: "driving", inrto: "driving",
   // Global certifications and nursing exams wear their nearest US exam's tiger.
-  awssaa: "aws", az900: "aws", ai901: "aws", awsaif: "aws", awsdva: "aws", snowpro: "aws", pl900: "aws", ccna: "aplus", ccnpencor: "aplus", jncia: "aplus", gulfrn: "nclex", aedhapharm: "ptcb", uknmc: "nclex", ccrn: "nclex",
+  awssaa: "aws", az900: "aws", ai901: "aws", awsaif: "aws", awsdva: "aws", snowpro: "aws", pl900: "aws", ccna: "aplus", ccnpencor: "aplus", jncia: "aplus", gulfrn: "nclex", aedhapharm: "ptcb", gulfmd: "pance", uknmc: "nclex", ccrn: "nclex",
   cask: "driving", cans: "driving", nzroad: "driving", iedtt: "driving",
-  phlto: "driving", mykpp: "driving", sgbtt: "driving", hkdrive: "driving", aerta: "driving", zak53: "driving", zak53c3: "cdl", ngfrsc: "driving", kentsa: "driving",
-  psat: "sat", netplus: "secplus", linuxplus: "secplus", cysa: "secplus", fortinse: "secplus", pentestplus: "secplus", securityx: "secplus", ceh: "secplus", sc200: "secplus", az104: "aws", dp900: "aws", techplus: "aplus", serverplus: "aplus", projectplus: "capm", ccst: "ccna", dataplus: "aplus", cloudplus: "aplus", sc900: "secplus", gcdl: "aws", gcppca: "aws", gcppde: "aws", isc2cc: "cissp", cism: "cissp", crisc: "cissp", servicenowcsa: "cissp", sscp: "cissp",
+  phlto: "driving", mykpp: "driving", sgbtt: "driving", hkdrive: "driving", aerta: "driving", samuroor: "driving", zak53: "driving", zak53c3: "cdl", ngfrsc: "driving", kentsa: "driving",
+  psat: "sat", netplus: "secplus", linuxplus: "secplus", cysa: "secplus", fortinse: "secplus", pentestplus: "secplus", securityx: "secplus", ceh: "secplus", sc200: "secplus", az104: "aws", dp900: "aws", techplus: "aplus", serverplus: "aplus", projectplus: "capm", ccst: "aplus", dataplus: "aplus", cloudplus: "aplus", sc900: "secplus", gcdl: "aws", gcppca: "aws", gcppde: "aws", isc2cc: "cissp", cism: "cissp", crisc: "cissp", servicenowcsa: "cissp", sscp: "cissp",
   // India exams wear their family's tiger; Pakistan's car test the car tiger; JNVST (age 10 to 12) the times tables tiger.
   osssc: "ssccgl", ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", vidyagyan: "timestables", mapgrowth: "timestables", staaralg1: "sat",hspt: "shsat", cogat: "timestables",ssat: "shsat",isee: "shsat",
   // STAAR English I (Texas, grade 9) wears the AP English Language tiger.
@@ -215,7 +218,7 @@ const BORROWED_SETS: Record<string, string> = {
   mtmoto: "moto", mtcpc: "cdl", mttaxi: "driving", mtguard: "security",
   // Sweden (Nov 2026): motorcycle the motorcycle tiger, jägarexamen the hunter tiger, högskoleprovet the SAT tiger.
   // Swedish citizenship has its own flag and civic-study set above.
-  semoto: "moto", sejakt: "hunter", sehp: "sat",
+  semoto: "moto", sejakt: "hunter", sehp: "sat", qudurat: "sat",
   // Denmark (Nov 2026): motorcycle the motorcycle tiger, hunting the hunter tiger.
   // Citizenship and residence share the reviewed Danish flag and civic-study set.
   dkmoto: "moto", dktruck: "cdl", dkjagt: "hunter", dkmedborger: "dkindfoed",

@@ -11,6 +11,8 @@
 // answers for the exam.
 
 import { Suspense, useMemo, useState } from "react";
+import { useStatsView } from "@/lib/statsViews";
+import { DailyRankPanel } from "@/components/DailyRank";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ExamV2Config, QuestionV2 } from "@/lib/v2/types";
 import { getBank } from "@/lib/v2/bank";
@@ -29,10 +31,9 @@ import { inClassFor, useClassMemberships } from "@/hooks/useClassMemberships";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { trackDailyQuizAnswer } from "@/lib/analytics";
 import { showsTestTakerCount } from "@/lib/communityStats";
-import { examUi } from "@/lib/examUi";
 import { examPaywallCopy } from "@/lib/examPaywallCopy";
 import { PaywallModal } from "@/components/PaywallModal";
-import { GatedStatsList, STATS_FREE_ROWS, StatsHeaderCard, StatsPageShell, StatsSortBar, StatsTab, StatsTabs, accuracyChipColor } from "@/components/stats/StatsParts";
+import { CommonMistakesSoon, GatedStatsList, STATS_FREE_ROWS, StatsPageShell, StatsSortBar, StatsTab, StatsTabs, accuracyChipColor } from "@/components/stats/StatsParts";
 import { V2StatsRow, plainStem } from "./V2StatsRow";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 import { useV2Language, useV2Ui } from "@/lib/v2/ui";
@@ -126,6 +127,8 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
     [communityRaw, byId],
   );
 
+  // Stats page traffic (lib/statsViews.ts): one view once the page really shows.
+  useStatsView(exam.id, hydrated);
   if (!hydrated) return <div className="flex-1 bg-gray-50 dark:bg-gray-950" />;
 
   const subtitle = (q: QuestionV2) => `${exam.domainLabels[q.domain] ?? q.domain}${q.skill ? ` · ${q.skill}` : ""}`;
@@ -147,11 +150,11 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
     return { value: `${item.accuracy}%`, label: tr("stats.accuracy"), color: accuracyChipColor(item.accuracy) };
   };
 
-  const answeredCount = rows.filter((r) => r.timesAnswered > 0).length;
 
   return (
     <StatsPageShell backHref={routes.dashboard} backLabel={ui.common.back}>
       <PaywallModal
+        examId={exam.id}
         open={upgrade.paywallOpen}
         onOpenChange={upgrade.onOpenChange}
         feature="full_stats"
@@ -164,9 +167,15 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
         hideSocialProof
       />
 
-      {communityOn && <StatsTabs active={tab} onChange={setTab} yoursLabel={t.tabYours} communityLabel={t.tabCommunity} />}
+      {/* Today's rank, explained (lib/dailyRank.ts). */}
+      <DailyRankPanel continueHref={routes.dashboard} />
 
-      {showCommunity ? (
+      <StatsTabs active={tab} onChange={setTab} yoursLabel={t.tabYours} communityLabel={t.tabCommunity} />
+
+      {tab === "community" && !communityOn ? (
+        /* No Common Mistakes data for this exam yet: say it is coming. */
+        <CommonMistakesSoon text={tr("stats.commonMistakesSoon")} />
+      ) : showCommunity ? (
         <CommunityList
           exam={exam}
           loading={communityLoading || !premiumReady}
@@ -178,7 +187,6 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
         />
       ) : (
         <>
-          <StatsHeaderCard title={t.tabYours} subtitle={examUi(lang).statsSeen(answeredCount, rows.length, exam.shortName)} />
           <StatsSortBar
             fields={[
               { field: "wrong" as SortField, label: tr("stats.wrongLabel") },

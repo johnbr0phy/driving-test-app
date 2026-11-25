@@ -40,7 +40,7 @@ import nltheorieNl from "./examTranslations/nltheorie.nl.json";
 import bedrivingFr from "./examTranslations/bedriving.fr.json";
 import plcpcPl from "./examTranslations/plcpc.pl.json";
 
-export type ExamId = "carstruck" | "aseg1" | "aufatas" | "nscacpt" | "aufasa" | "series24" | "esccse" | "masterelec" | "cnor" | "danbice" | "nzforklift" | "wastewaterop" | "danbrhs" | "nzfirstaid" | "atvsafety" | "frm1" | "sgm9" | "sgm9a" | "auham" | "ausecurity" | "aedhapharm" | "crat" | "corrections" | "cagas3" | "cadroneadv" | "cfp" | "ncmhce" | "series6" | "grol" | "cssyb" | "eppp" | "itnautica" | "uksqe1" | "deeinb" | "ukdrone" | "oacp" | "rhia" | "coc" | "lmrt" | "cct" | "proserve" | "waterop" | "ukcemap2" | "dispatcher" | "ctec" | "hha" | "cbcs" | "fpc" | "titleagent" | "aswbbach" | "crc" | "cpb" | "ieplumbt2" | "trapper" | "backflow" | "pesticide" | "bowhunter" | "frcivique" | "epa609" | "realestatebroker" | "frvtc" | "cdm" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cpaisc" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "realestate-co" | "realestate-md" | "realestate-ma" | "realestate-mo" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "hamgeneral" | "hamextra" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "osha30" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukfood3" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "rhit" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "series66" | "acecpt" | "aswb" | "arrt" | "arrtct" | "arrtmri" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "nptept" | "aswbclin" | "phr" | "shrmcp" | "aphr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "dejagd" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "acls" | "pals" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itpatente" | "frcode" | "frmoto" | "frcaces" | "plteoria" | "plcpc" | "plaplik" | "pllek" | "plbron" | "nltheorie" | "nlbrom" | "nlmoto" | "nlvca" | "nlwft" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake" | "carshair" | "carscook" | "cadronebasic" | "cahambasic" | "ea3" | "ea2" | "nailtech" | "afsp" | "esthetician" | "ascpht" | "ascpmls" | "r410a" | "natecore" | "hvacjourney" | "contractorlaw" | "excpt" | "cafsc" | "servingitright" | "ukhs2" | "carsrefrig";
+export type ExamId = "samuroor" | "carstruck" | "gulfmd" | "aseg1" | "aufatas" | "nscacpt" | "aufasa" | "series24" | "esccse" | "masterelec" | "cnor" | "danbice" | "nzforklift" | "wastewaterop" | "danbrhs" | "nzfirstaid" | "atvsafety" | "frm1" | "sgm9" | "sgm9a" | "auham" | "ausecurity" | "aedhapharm" | "crat" | "corrections" | "cagas3" | "cadroneadv" | "cfp" | "ncmhce" | "series6" | "grol" | "cssyb" | "eppp" | "itnautica" | "uksqe1" | "deeinb" | "ukdrone" | "oacp" | "rhia" | "coc" | "lmrt" | "cct" | "proserve" | "waterop" | "ukcemap2" | "dispatcher" | "ctec" | "hha" | "cbcs" | "fpc" | "titleagent" | "aswbbach" | "crc" | "cpb" | "ieplumbt2" | "trapper" | "backflow" | "pesticide" | "bowhunter" | "frcivique" | "epa609" | "realestatebroker" | "frvtc" | "cdm" | "zafirearm" | "appraiser" | "nccco" | "nzboat" | "ea1" | "cpabar" | "cpaisc" | "cehrs" | "cpcta" | "pance" | "cpatcp" | "aufirearmswa" | "hspacis" | "mace" | "ncma" | "aufirearmsvic" | "cmaa" | "cbspd" | "ascpmlt" | "aufirearmsnsw" | "nzham" | "cadc" | "nzdrone" | "crfsc" | "ascppbt" | "rpt" | "hspachl" | "hspacer" | "bcaba" | "bcba" | "aufirearmsqld" | "mblex" | "ccaf" | "ukgas" | "ukbregs" | "ukrbi" | "ukplumb" | "ukg3" | "ukwater" | "phnat" | "realestate-ca" | "realestate-nj" | "realestate-tx" | "realestate-fl" | "realestate-ny" | "insurance-tx" | "insurance-fl" | "insurance-ca" | "pnc-tx" | "pnc-fl" | "pnc-ca" | "realestate-pa" | "realestate-il" | "realestate-oh" | "realestate-ga" | "realestate-nc" | "realestate-mi" | "realestate-va" | "realestate-wa" | "realestate-az" | "realestate-tn" | "realestate-la" | "realestate-co" | "realestate-md" | "realestate-ma" | "realestate-mo" | "insurance-ny" | "insurance-pa" | "insurance-il" | "insurance-oh" | "insurance-ga" | "insurance-nc" | "insurance-mi" | "insurance-nj" | "insurance-va" | "insurance-wa" | "pnc-ny" | "pnc-pa" | "pnc-il" | "pnc-oh" | "pnc-ga" | "pnc-nc" | "pnc-mi" | "pnc-nj" | "pnc-va" | "pnc-wa" | "cdl" | "cdlx" | "moto" | "civics" | "part107" | "ham" | "hamgeneral" | "hamextra" | "epa608" | "cna" | "ptcb" | "phleb" | "ccma" | "cet" | "danb" | "foodmgr" | "realestate" | "insurance" | "notary" | "foodhandler" | "boating" | "hunter" | "cpr" | "osha" | "osha30" | "forklift" | "alcohol" | "security" | "lifeguard" | "pnc" | "cosmetology" | "vtne" | "ukcar" | "ukmoto" | "uklgv" | "ukpcv" | "ukadi" | "caon" | "caqc" | "cabc" | "caab" | "camb" | "aunsw" | "auvic" | "auqld" | "auwa" | "ausa" | "uksia" | "uk18ed" | "cscs" | "ukfood" | "ukfood3" | "ukaplh" | "ukfaw" | "ukcare" | "capal" | "caelec" | "capsw" | "casfa" | "cawhmis" | "caguard" | "caauto" | "caplumb" | "cacarp" | "caweld" | "auwhite" | "aursa" | "aurcg" | "aufss" | "aufirstaid" | "auforklift" | "auwah" | "uklitu" | "cacit" | "aucit" | "gulfrn" | "inrto" | "nasm" | "rbt" | "cpc" | "cca" | "rhit" | "cpafar" | "cpareg" | "nmls" | "series65" | "series63" | "series66" | "acecpt" | "aswb" | "arrt" | "arrtct" | "arrtmri" | "nce" | "texesppr" | "praxisplt" | "cma" | "rma" | "nhie" | "txadjuster" | "sfadmin" | "cfal1" | "cpaaud" | "accafa" | "aatl2" | "nbdhe" | "nptepta" | "nptept" | "aswbclin" | "phr" | "shrmcp" | "aphr" | "cisa" | "cssgb" | "ccs" | "rdexam" | "ccrn" | "praxis5001" | "fladjuster" | "llqp" | "cemap" | "sgftt" | "sgres" | "hkiiqe1" | "hklesfi1" | "nzfirearms" | "nzlcq" | "aesira" | "mypce" | "kenck" | "iedttcv" | "jelec" | "barber" | "ffi" | "police" | "sie" | "series7" | "pcoc" | "cask" | "cans" | "ukseru" | "nzroad" | "iedtt" | "phlto" | "zak53" | "sgbtt" | "aerta" | "ngfrsc" | "kentsa" | "mykpp" | "hkdrive" | "pkdrive" | "esdgt" | "ptimt" | "ptmoto" | "ptcam" | "pttvde" | "ptvigil" | "bedriving" | "bemoto" | "bevracht" | "betoelating" | "befsmavz" | "dkteori" | "dkmoto" | "dktruck" | "dkindfoed" | "dkmedborger" | "dkjagt" | "setrafik" | "semoto" | "sejakt" | "semedb" | "fitheory" | "fimoto" | "fitruck" | "fihygiene" | "fihunt" | "grdriving" | "grmoto" | "grcitizen" | "grinsure" | "grsecurity" | "rodrpciv" | "rocpi" | "rotaxi" | "roadmed" | "rorezid" | "hukresz" | "hukreszmoto" | "hugki" | "huelsoseg" | "hubizt" | "mttheory" | "mtmoto" | "mtcpc" | "mttaxi" | "mtguard" | "detheorie" | "demotorrad" | "deaevo" | "de34a" | "deheilpr" | "dejagd" | "escapcond" | "espolicia" | "esguardia" | "esvigilante" | "phlet" | "phnle" | "phmedtech" | "phpharm" | "phmidwife" | "phpsychom" | "phnapolcom" | "afpsat" | "phcle" | "phinsurance" | "phrebroker" | "ngpolice" | "cdcfib" | "ngarmy" | "ngcustoms" | "trcnpqe" | "acls" | "pals" | "htl" | "cst" | "crcst" | "zak53c3" | "ppsc" | "punjabpolice" | "pakarmy" | "pkpaf" | "pknle" | "pkpnmc" | "zak53moto" | "zare5" | "zasaps" | "zapsira" | "iesafepass" | "iespsv" | "ieqfa" | "iepsa" | "nzmoto" | "nzheavy" | "nzsfe" | "sgrtt" | "sgm5" | "sgvl" | "fortigate" | "itpatente" | "frcode" | "frmoto" | "frcaces" | "plteoria" | "plcpc" | "plaplik" | "pllek" | "plbron" | "nltheorie" | "nlbrom" | "nlmoto" | "nlvca" | "nlwft" | "aafcs" | "cen" | "ase" | "sgsnb" | "iehcap" | "ukdsc1" | "hknurse" | "bcrealestate" | "aerera" | "nzrealestate" | "cacore" | "chtheory" | "qabaabat" | "nzsecurity" | "ncpt" | "smartserve" | "cahunteron" | "inbde" | "cabcguard" | "caabguard" | "caairbrake" | "carshair" | "carscook" | "cadronebasic" | "cahambasic" | "ea3" | "ea2" | "nailtech" | "afsp" | "esthetician" | "ascpht" | "ascpmls" | "r410a" | "natecore" | "hvacjourney" | "contractorlaw" | "excpt" | "cafsc" | "servingitright" | "ukhs2" | "carsrefrig";
 
 export interface ExamTrainingSetDef {
   /** 1-based set number used in URLs (/<exam>/practice/N). */
@@ -12151,6 +12151,78 @@ const aedhapharm: ExamConfig = {
 // IDs: tests 49301-49304, sets 49301-49305 (block 49300 assigned for this run).
 // Dashboard: 5 sets + 4 tests = 9 steps.
 
+const gulfmd: ExamConfig = {
+  id: "gulfmd",
+  stateCode: "GULFMD",
+  idBase: 51900,
+  slug: "/gulf-doctor-exam",
+  landingPath: "/smle-practice-test",
+  name: "SMLE Practice Test",
+  shortName: "Gulf Doctor",
+  examLabel: "doctor licensing exam",
+  fullName: "Doctor (General Practitioner) Licensing Exam (Saudi SMLE, DHA, DOH, MOHAP, Qatar DHP, Oman, Kuwait, Bahrain)",
+  questionIdPrefix: "GULFMD-",
+  icon: "stethoscope",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 60,
+  // Gulf doctor (general practitioner) licensing exams (checked November 2026). Each authority sets its own exam.
+  // SCFHS SMLE Examination Content Guideline (2026 blueprint): 200 one-best-answer MCQs in two 100-question,
+  // 120-minute parts; passing score 560 on the 200-800 reporting scale. Blueprint: Medicine 30%, Obstetrics and
+  // Gynecology 25%, Pediatrics 25%, Surgery 20% (+/-5% each), with Patient Safety, Preventive Medicine and Ethics
+  // listed after Surgery without a weight of its own. DHA's assessment manual (2025) confirms a pass/fail CBT
+  // through Prometric. Counts per 50: medicine 16, OB/GYN 12, pediatrics 12, surgery 6 plus safety and ethics 4.
+  // passPct 60 is Tigertest's own readiness line (SMLE is scaled). All items original.
+  blueprint: {
+    gmdCardioPulm: 4,
+    gmdGiRenalEndo: 4,
+    gmdInfectCrit: 4,
+    gmdHemNeuroPsych: 4,
+    gmdObstetrics: 7,
+    gmdGynecology: 5,
+    gmdPedsGeneral: 6,
+    gmdPedsSystems: 6,
+    gmdSurgery: 6,
+    gmdSafetyEthics: 4,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 51901, name: "Heart, Lungs, Gut, Kidney & Glands", categories: ["gmdCardioPulm", "gmdGiRenalEndo"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 2, id: 51902, name: "Infection, Blood, Joints & Brain", categories: ["gmdInfectCrit", "gmdHemNeuroPsych"], size: 32, weightLabel: "8 of 50 test questions" },
+    { setNumber: 3, id: 51903, name: "Obstetrics & Gynecology", categories: ["gmdObstetrics", "gmdGynecology"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 4, id: 51904, name: "Pediatrics", categories: ["gmdPedsGeneral", "gmdPedsSystems"], size: 48, weightLabel: "12 of 50 test questions" },
+    { setNumber: 5, id: 51905, name: "Surgery, Patient Safety & Ethics", categories: ["gmdSurgery", "gmdSafetyEthics"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    gmdCardioPulm: "Cardiology & Pulmonology",
+    gmdGiRenalEndo: "Gastroenterology, Nephrology & Endocrinology",
+    gmdInfectCrit: "Infectious Diseases & Critical Care",
+    gmdHemNeuroPsych: "Hematology, Rheumatology, Neurology & Psychiatry",
+    gmdObstetrics: "Obstetrics",
+    gmdGynecology: "Gynecology",
+    gmdPedsGeneral: "Neonatology, Growth & Child Infections",
+    gmdPedsSystems: "Pediatric Systems & Emergencies",
+    gmdSurgery: "Surgery & Trauma",
+    gmdSafetyEthics: "Patient Safety, Ethics & Preventive Medicine",
+  },
+  copy: {
+    guestPrompt: "to save your doctor licensing exam progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Five sets on the four SMLE sections, medicine, obstetrics and gynecology, pediatrics and surgery, plus patient safety and ethics. Missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, 60% to pass",
+    heroSubs: [
+      "Five training sets, four mock tests. Start with Heart, Lungs, Gut, Kidney & Glands.",
+      "Master each topic, then test yourself.",
+      "Keep going. Every topic you master shows up on the tests.",
+      "Review your mistakes, then retake any test you haven't passed.",
+      "All done. Every set and test is finished.",
+    ],
+    sourceLine: "Based on the SMLE blueprint published by Saudi Arabia's SCFHS. Original questions; each Gulf authority sets its own length and pass mark, and 60% is Tigertest's own target. Not affiliated with SCFHS, DHA, Prometric or any health authority.",
+    analyticsKey: "gulfmd",
+  },
+};
+// IDs: tests 51901-51904, sets 51901-51905 (block 51900 assigned for this run).
+// Dashboard: 5 sets + 4 tests = 9 steps.
+
 const carstruck: ExamConfig = {
   id: "carstruck",
   stateCode: "CATTM",
@@ -16338,6 +16410,73 @@ const aerta: ExamConfig = {
     ],
     sourceLine: "Based on UAE federal traffic rules and RTA guidance. Original questions; 40 per test, 30 to pass like the real test.",
     analyticsKey: "aerta",
+  },
+};
+
+const samuroor: ExamConfig = {
+  id: "samuroor",
+  stateCode: "SAMUROOR",
+  idBase: 51800,
+  slug: "/saudi-driving-theory",
+  landingPath: "/saudi-driving-theory-test",
+  name: "Saudi Driving Theory Practice Test",
+  shortName: "Saudi driving theory",
+  examLabel: "Muroor theory test",
+  fullName: "Saudi Arabia driving theory test (General Department of Traffic theory (knowledge) test, private licence)",
+  questionIdPrefix: "SAMUROOR-",
+  icon: "car",
+  testCount: 4,
+  questionsPerTest: 50,
+  passPct: 80,
+  // Real test: the theory test on the Traffic Law and its Implementing Regulations, road traffic
+  // rules, signs, signals and public safety rules, taken at a licensed driving school after its
+  // theory and practical hours and run by the traffic authority (driving school regulation,
+  // Umm Al-Qura gazette, 1443-3-09). The General Department of Traffic publishes no question count,
+  // time, pass mark or per-topic weights on a page that loaded here, so this 50-question mix is
+  // Tigertest's own, weighted to signs, markings and right of way, and 80% is Tigertest's target.
+  // Rules: Traffic Law (Royal Decree M/85 of 1428H as amended) and its violation tables; signs,
+  // markings and signals from SHC 602 (Saudi Highway Code, Manual on Uniform Traffic Control
+  // Devices, 2023). No fines, points totals or minimum ages. All items original.
+  blueprint: {
+    saLicence: 5,
+    saRegSigns: 8,
+    saWarnSigns: 7,
+    saSignals: 5,
+    saMarkings: 6,
+    saRightOfWay: 7,
+    saConduct: 7,
+    saStopping: 5,
+  },
+  trainingSets: [
+    { setNumber: 1, id: 51801, name: "Road Signs", categories: ["saRegSigns", "saWarnSigns"], size: 60, weightLabel: "15 of 50 test questions" },
+    { setNumber: 2, id: 51802, name: "Signals & Road Markings", categories: ["saSignals", "saMarkings"], size: 44, weightLabel: "11 of 50 test questions" },
+    { setNumber: 3, id: 51803, name: "Right of Way & Safe Driving", categories: ["saRightOfWay", "saConduct"], size: 56, weightLabel: "14 of 50 test questions" },
+    { setNumber: 4, id: 51804, name: "Licensing, Parking & Crashes", categories: ["saLicence", "saStopping"], size: 40, weightLabel: "10 of 50 test questions" },
+  ],
+  categoryLabels: {
+    saLicence: "Licence, Documents & Vehicle",
+    saRegSigns: "Regulatory Signs",
+    saWarnSigns: "Warning, Guide & Work Zone Signs",
+    saSignals: "Traffic Signals",
+    saMarkings: "Road Markings",
+    saRightOfWay: "Right of Way & Roundabouts",
+    saConduct: "Safe Driving & Conduct",
+    saStopping: "Stopping, Parking & Crashes",
+  },
+  copy: {
+    guestPrompt: "to save your Saudi theory test progress and track every question you miss",
+    trainingHeading: "Train by topic",
+    trainingSub: "Four sets covering the Traffic Law, Saudi road signs, markings and signals. Instant feedback, and missed questions come back until you master them.",
+    testsHeading: "Mock tests · 50 questions, aim for 80%",
+    heroSubs: [
+      "Four training sets, four practice tests. Start with Road Signs.",
+      "Master each set, then take a mock test.",
+      "Keep going. Take a mock test to see where you stand.",
+      "Review your mistakes, then retake any mock test you haven't passed.",
+      "All done. Book your theory test at your driving school.",
+    ],
+    sourceLine: "Based on the Saudi Traffic Law and the SHC 602 traffic control devices manual. Original questions in English; Arabic is not offered.",
+    analyticsKey: "samuroor",
   },
 };
 
@@ -30558,7 +30697,7 @@ const excpt: ExamConfig = {
 };
 // IDs: tests 41301-41304, sets 41301-41305 (block 41300 assigned for this run).
 // Dashboard: 5 sets + 4 tests = 9 steps; the 25% lock takes the last two steps.
-export const EXAMS: ExamConfig[] = [carstruck, nscacpt, dispatcher, corrections, esccse, deeinb, frcivique, epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, hamgeneral, hamextra, grol, epa608, waterop, wastewaterop, r410a, backflow, pesticide, natecore, hvacjourney, jelec, masterelec, contractorlaw, ase, aseg1, nhie, cna, ptcb, excpt, phleb, ccma, cma, rma, cen, cet, cct, crat, cnor, danb, danbrhs, danbice, nbdhe, foodmgr, realestate, insurance, notary, sie, series6, series24, series7, series63, series65, series66, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, ukcemap2, cfal1, frm1, foodhandler, boating, pcoc, hunter, bowhunter, trapper, atvsafety, cpr, ffi, osha, osha30, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, acecpt, rbt, cpc, coc, cca, ccs, rhit, rhia, ccaf, sfadmin, phr, shrmcp, aphr, cisa, fortigate, cssgb, cssyb, aswb, titleagent, fpc, aswbbach, aswbclin, ncmhce, eppp, nce, arrt, arrtct, arrtmri, lmrt, nptepta, nptept, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, ieplumbt2, cpb, cbcs, hha, crc, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukfood3, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, ausecurity, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, nzfirstaid, nzforklift, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgm9, sgm9a, sgvl, aerta, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, dejagd, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itpatente, itnautica, frcode, frmoto, frcaces, plteoria, plcpc, plaplik, pllek, plbron, nltheorie, nlbrom, nlmoto, nlvca, nlwft, gulfrn, aedhapharm, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, ukdrone, uksqe1, nzdrone, cadc, nzham, auham, aufirearmsnsw, ascpmlt, ascpmls, ascpht, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, aufatas, aufasa, cpatcp, pance, cpcta, cehrs, cpabar, cpaisc, ea1, cfp, sgsnb, oacp, acls, pals, cagas3, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, proserve, cahunteron, inbde, cabcguard, caabguard, caairbrake, nailtech, esthetician, carscook, carshair, carsrefrig, cadronebasic, cadroneadv, cahambasic, ea2, ea3, afsp, ctec, cafsc, servingitright, ukhs2];
+export const EXAMS: ExamConfig[] = [carstruck, nscacpt, dispatcher, corrections, esccse, deeinb, frcivique, epa609, realestatebroker, frvtc, cdm, zafirearm, appraiser, nccco, cdl, cdlx, moto, civics, part107, ham, hamgeneral, hamextra, grol, epa608, waterop, wastewaterop, r410a, backflow, pesticide, natecore, hvacjourney, jelec, masterelec, contractorlaw, ase, aseg1, nhie, cna, ptcb, excpt, phleb, ccma, cma, rma, cen, cet, cct, crat, cnor, danb, danbrhs, danbice, nbdhe, foodmgr, realestate, insurance, notary, sie, series6, series24, series7, series63, series65, series66, nmls, cpafar, cpareg, cpaaud, accafa, aatl2, cemap, ukcemap2, cfal1, frm1, foodhandler, boating, pcoc, hunter, bowhunter, trapper, atvsafety, cpr, ffi, osha, osha30, forklift, alcohol, security, police, lifeguard, pnc, txadjuster, fladjuster, llqp, cosmetology, barber, vtne, nasm, acecpt, rbt, cpc, coc, cca, ccs, rhit, rhia, ccaf, sfadmin, phr, shrmcp, aphr, cisa, fortigate, cssgb, cssyb, aswb, titleagent, fpc, aswbbach, aswbclin, ncmhce, eppp, nce, arrt, arrtct, arrtmri, lmrt, nptepta, nptept, rdexam, ccrn, ukcar, ukmoto, uklgv, ukpcv, ukadi, iedtt, iedttcv, iesafepass, iespsv, ieqfa, iepsa, ieplumbt2, cpb, cbcs, hha, crc, caon, caqc, cabc, caab, camb, cask, cans, aunsw, auvic, auqld, auwa, ausa, uksia, uk18ed, ukgas, ukbregs, ukrbi, ukplumb, ukg3, ukwater, cscs, ukseru, ukfood, ukfood3, ukaplh, ukfaw, ukcare, capal, caelec, capsw, casfa, cawhmis, caguard, caauto, caplumb, cacarp, caweld, auwhite, aursa, aurcg, aufss, aufirstaid, ausecurity, auforklift, auwah, nzroad, nzmoto, nzheavy, nzfirearms, nzboat, nzlcq, nzsfe, nzfirstaid, nzforklift, phlto, zak53, zak53c3, zak53moto, zare5, zasaps, zapsira, sgbtt, sgftt, sgrtt, sgres, sgm5, sgm9, sgm9a, sgvl, aerta, samuroor, aesira, ngfrsc, kentsa, kenck, mykpp, mypce, hkdrive, hkiiqe1, hklesfi1, pkdrive, ppsc, punjabpolice, pakarmy, pkpaf, pknle, pkpnmc, esdgt, ptimt, ptmoto, ptcam, pttvde, ptvigil, bedriving, bemoto, bevracht, dkteori, dkmoto, dktruck, setrafik, semoto, fitheory, fimoto, fitruck, fihygiene, fihunt, grdriving, grmoto, rodrpciv, rocpi, rotaxi, roadmed, rorezid, hukresz, hukreszmoto, hugki, huelsoseg, hubizt, mttheory, mtmoto, mtcpc, mttaxi, mtguard, detheorie, demotorrad, deaevo, de34a, deheilpr, dejagd, betoelating, befsmavz, sejakt, dkjagt, escapcond, espolicia, esguardia, esvigilante, phlet, phnle, phmedtech, phpharm, phmidwife, phpsychom, phnat, phnapolcom, afpsat, phcle, phinsurance, phrebroker, texesppr, praxisplt, praxis5001, aafcs, ngpolice, cdcfib, ngarmy, ngcustoms, trcnpqe, uklitu, cacit, aucit, grcitizen, grinsure, grsecurity, semedb, dkindfoed, dkmedborger, itpatente, itnautica, frcode, frmoto, frcaces, plteoria, plcpc, plaplik, pllek, plbron, nltheorie, nlbrom, nlmoto, nlvca, nlwft, gulfrn, aedhapharm, gulfmd, inrto, mblex, aufirearmsqld, bcba, bcaba, hspacer, hspachl, rpt, ascppbt, crfsc, ukdrone, uksqe1, nzdrone, cadc, nzham, auham, aufirearmsnsw, ascpmlt, ascpmls, ascpht, cbspd, cmaa, aufirearmsvic, ncma, mace, hspacis, aufirearmswa, aufatas, aufasa, cpatcp, pance, cpcta, cehrs, cpabar, cpaisc, ea1, cfp, sgsnb, oacp, acls, pals, cagas3, htl, cst, crcst, iehcap, ukdsc1, hknurse, bcrealestate, aerera, nzrealestate, cacore, chtheory, qabaabat, nzsecurity, ncpt, smartserve, proserve, cahunteron, inbde, cabcguard, caabguard, caairbrake, nailtech, esthetician, carscook, carshair, carsrefrig, cadronebasic, cadroneadv, cahambasic, ea2, ea3, afsp, ctec, cafsc, servingitright, ukhs2];
 
 
 /** State variants (see realestateCA). Not in EXAMS: one catalog entry per family. */

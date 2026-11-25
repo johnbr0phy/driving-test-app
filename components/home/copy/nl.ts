@@ -130,7 +130,7 @@ export const nl: HomeCopy = {
 export const countryNames: Record<string, string> = {
   US: "Verenigde Staten", CA: "Canada", UK: "Verenigd Koninkrijk", IE: "Ierland", AU: "Australië", NZ: "Nieuw-Zeeland", IN: "India",
   PH: "Filipijnen", MY: "Maleisië", SG: "Singapore", HK: "Hongkong", AE: "Verenigde Arabische Emiraten", ZA: "Zuid-Afrika",
-  NG: "Nigeria", KE: "Kenia", PK: "Pakistan", ES: "Spanje", PT: "Portugal", RO: "Roemenië", SE: "Zweden", GR: "Griekenland",
+  NG: "Nigeria", KE: "Kenia", PK: "Pakistan", SA: "Saoedi-Arabië", ES: "Spanje", PT: "Portugal", RO: "Roemenië", SE: "Zweden", GR: "Griekenland",
   DK: "Denemarken", HU: "Hongarije", BE: "België", FI: "Finland", MT: "Malta", DE: "Duitsland", IT: "Italië", FR: "Frankrijk", PL: "Polen", NL: "Nederland",
 };
 

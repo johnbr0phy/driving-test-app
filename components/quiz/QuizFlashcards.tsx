@@ -103,6 +103,7 @@ export function QuizFlashcards({ code }: { code: string }) {
   return (
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <FocusBar
+        rank="beside"
         exitHref={home}
         title={quiz.title}
         right={

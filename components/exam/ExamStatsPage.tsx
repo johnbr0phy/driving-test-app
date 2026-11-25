@@ -10,6 +10,8 @@
 // (lib/communityStats.ts); ?tab=community opens it, guests included.
 
 import { startCheckout } from "@/lib/startCheckout";
+import { useStatsView } from "@/lib/statsViews";
+import { DailyRankPanel } from "@/components/DailyRank";
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useStore } from "@/store/useStore";
@@ -32,7 +34,7 @@ import { useLocalizedExam } from "@/hooks/useLocalizedExam";
 import { examPaywallCopy } from "@/lib/examPaywallCopy";
 import { useCommunityAvailable, useExamCommunityStats } from "@/hooks/useCommunityStats";
 import { CommunityWrongQuestionsList } from "@/components/CommunityWrongQuestions";
-import { GatedStatsList, STATS_FREE_ROWS, StatsHeaderCard, StatsPageShell, StatsSortBar, StatsTabs, accuracyChipColor } from "@/components/stats/StatsParts";
+import { CommonMistakesSoon, GatedStatsList, STATS_FREE_ROWS, StatsPageShell, StatsSortBar, StatsTabs, accuracyChipColor } from "@/components/stats/StatsParts";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 
 type SortField = "timesAnswered" | "correct" | "wrong" | "accuracy";
@@ -61,7 +63,7 @@ export function ExamStatsPage({ exam }: { exam: ExamConfig }) {
 
 function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
   const price = usePremiumPrice();
-  const { exam, routes, ui, lang } = useLocalizedExam(source);
+  const { exam, routes, lang } = useLocalizedExam(source);
   const router = useRouter();
   const pathname = usePathname();
   const hydrated = useHydration();
@@ -217,14 +219,16 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
     );
   };
 
+  // Stats page traffic (lib/statsViews.ts): one view once the page really shows.
+  useStatsView(exam.id, hydrated && (wantsCommunity || (accountReady && !!user && !isGuest)) && !(loadFailed && user && !wantsCommunity));
   if (loadFailed && user && !wantsCommunity) return <AccountLoadRetry uid={user.uid} />;
   if (!hydrated || (!wantsCommunity && (!accountReady || !user || isGuest))) return null;
 
-  const answeredCount = questionsWithPerformance.filter((q) => q.timesAnswered > 0).length;
 
   return (
     <StatsPageShell backHref={routes.dashboard} backLabel={t("common.back")}>
           <PaywallModal
+            examId={exam.id}
             open={paywallOpen}
             onOpenChange={(open) => {
               if (open) trackPaywallHit("full_stats", "Full Stats", paywallLocation);
@@ -239,14 +243,18 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
             hideSocialProof
           />
 
-          {communityOn && (
-            <StatsTabs
-              active={activeTab}
-              onChange={setActiveTab}
-              yoursLabel={t("stats.yourStats")}
-              communityLabel={t("stats.commonMistakes")}
-            />
-          )}
+          {/* Today's rank, explained (lib/dailyRank.ts). */}
+          <DailyRankPanel continueHref={routes.dashboard} />
+
+          <StatsTabs
+            active={activeTab}
+            onChange={setActiveTab}
+            yoursLabel={t("stats.yourStats")}
+            communityLabel={t("stats.commonMistakes")}
+          />
+
+          {/* No Common Mistakes data for this exam yet: say it is coming. */}
+          {!communityOn && activeTab === "community" && <CommonMistakesSoon text={t("stats.commonMistakesSoon")} />}
 
           {showCommunity && (
             <CommunityWrongQuestionsList
@@ -262,11 +270,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
             />
           )}
 
-          {!showCommunity && (<>
-          <StatsHeaderCard
-            title={t("stats.yourStats")}
-            subtitle={ui.statsSeen(answeredCount, examQuestions.length, exam.shortName)}
-          />
+          {activeTab === "yours" && (<>
 
           <StatsSortBar
             fields={[

@@ -4,7 +4,7 @@ Generated with the built-in image generation tool. Each expression was a separat
 
 ## Shared constraints
 
-Keep the exact same TigerTest character, normally rounded skull, ears, forehead stripes, muzzle, body pose, paws, clothing, tools, prop symbols and colors as image 1. Change only the facial expression and the requested crown, confetti or sweat. Preserve thick clean black outlines, polished orange fur, cream cheek tufts, big expressive eyes, crisp shaded cartoon illustration. One centered chest-up mascot with the entire ears, accessories, paws and props in frame, comfortable clear margin on all sides. True transparent RGBA background, no background color, no checkerboard drawn into pixels, no ground shadow, no scene, no text labels, no watermark, no extra limbs.
+Keep the exact same TigerTest character, normally rounded skull, ears, forehead stripes, muzzle, body pose, paws, clothing, tools, prop symbols and colors as image 1. Change only the facial expression and the requested crown, confetti or sweat. For any crowned image, remove all other headwear first. The crown is the only headwear and rests directly on the tiger's fur. Preserve thick clean black outlines, polished orange fur, cream cheek tufts, big expressive eyes, crisp shaded cartoon illustration. One centered chest-up mascot with the entire ears, accessories, paws and props in frame, comfortable clear margin on all sides. True transparent RGBA background, no background color, no checkerboard drawn into pixels, no ground shadow, no scene, no text labels, no watermark, no extra limbs.
 
 ## Roles
 
@@ -28,11 +28,11 @@ Keep the exact same TigerTest character, normally rounded skull, ears, forehead 
 
 ## Expressions
 
-Use case: identity-preserve. Image 1 is the exact character and outfit reference. Change only the expression and requested crown, confetti or sweat.
+Use case: identity-preserve. Image 1 is the exact character and outfit reference. Change only the expression and requested crown, confetti or sweat, plus the required removal of all other headwear from crowned artwork.
 
 | File suffix | Expression | Direction |
 | --- | --- | --- |
-| 01 | Crowned winner | A triumphant broad toothy grin with bright sparkling eyes. Add a large gold crown with red jewels, matching the expression reference. Perch it on top of any existing headwear, or on the bare head if the role has no headwear. Retain all clothing, props and role accessories. The complete crown must fit within the frame. |
+| 01 | Crowned winner | A joyful, relaxed wide smile or open laugh. Keep both eyes visibly open with relaxed lids, warm centered pupils and small catchlights; preserve the joyful expression at icon size. Avoid star-shaped pupils, exaggerated staring eyes and a rigid toothy grin. Add a large gold crown with red jewels, matching the expression reference. Remove any hat, cap, helmet, hood or other headwear, including accessories attached to it. Seat the crown directly on the tiger's furry head, never on or over headwear. Retain all other clothing, props and role accessories. The complete crown must fit within the frame. |
 | 02 | Celebrating | A delighted wide open laughing smile, cheerful lifted eyebrows and sparkling eyes. Add a restrained scattering of clean colourful paper confetti around the head. No crown. Keep every confetti piece fully inside the frame. |
 | 03 | Happy | The default friendly happy open-mouth smile. |
 | 04 | Confident smile | A confident warm CLOSED-mouth smile, clearly upturned corners and relaxed slightly lifted eyebrows. Mouth completely closed, no tongue and no teeth visible. No added decorations. |
@@ -41,4 +41,10 @@ Use case: identity-preserve. Image 1 is the exact character and outfit reference
 | 07 | Frowning | A disappointed determined frown, CLOSED mouth curving downward, one eyebrow raised and the other angled inward. No smile, teeth or tongue. Friendly rather than menacing. No added decorations. |
 | 08 | Worried | A visibly worried face with raised knitted inner eyebrows, wide eyes with smaller pupils, an open downturned mouth and three bright blue cartoon sweat drops at the temples. No smile, crown or confetti. |
 
+**Crown review gate:** Inspect every crowned export at full size and at icon size. Verify that the crown touches bare fur and that no brim, strap, goggle band, helmet shell or other headwear remains underneath. Reject and regenerate any layered crown. Review the other expressions against the reference so they retain their intended role headwear.
+
 Final cleanup for TEAS 03 and CompTIA A+ 06 removed stray pixels or gray halos outside the mascot while preserving the expression, character, clothing, props, and transparency.
+
+## Expression review
+
+Review each of the eight expressions at full size and at the size used in results. The expression should read at a glance. For a crowned winner, keep both eyes visibly open and relaxed. For other laughing expressions, use soft attentive eyes or relaxed closed eyes. Avoid fixed glassy stares, star-shaped or pinprick pupils, and rigid rows of bared teeth. An open smile can show a few upper teeth, but avoid a second row. Keep the sad and worried faces distinct through the eyes, eyebrows and mouth. Keep the sweat in 08, but make the worry readable without a vacant stare.

@@ -11,6 +11,7 @@ import {
 import { CARD, ROW, STICKY_COL, ShowAllButton, TabError, TabHeader, TabLoading, TableScroll, fmtUpdated, useAdminFetch, useTopN } from "@/components/admin/AdminTabParts";
 import type { LandingRow } from "@/lib/funnelLanding";
 import { WeeklyActiveLearners } from "@/components/admin/WeeklyActiveLearners";
+import { StatsViewsCard } from "@/components/admin/StatsViewsCard";
 import { PeriodBarsCard, signupBars, type SignupUnit } from "@/components/admin/PeriodBars";
 
 // ─── Palette (validated: dataviz reference palette, light mode) ─────────────
@@ -1147,6 +1148,8 @@ export function GrowthTab() {
         </div>
 
         <WeeklyActiveLearners />
+
+        <StatsViewsCard />
 
         <PeriodBarsCard title="New signups" noun="signups" color={COLORS.users}
           data={signups} unit={signupUnit} onUnit={setSignupUnit} />

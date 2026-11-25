@@ -8,6 +8,8 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { AdminLink } from "@/components/AdminLink";
 import { BrandLockup } from "@/components/BrandLockup";
+import { DailyRankChip, useRankChipVisible } from "@/components/DailyRank";
+import { noteStatsSource } from "@/lib/statsViews";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { TestSearchSheet } from "@/components/TestSearchSheet";
 import { currentClassCode, forgetCurrentClass, rememberCurrentClass, useStudentClass, useTeacherClasses, useTeaches } from "@/components/TeachLink";
@@ -75,14 +77,15 @@ export function SiteHeader() {
   const bar = <HeaderBar path={realPath ?? "/"} themePath={themePath ?? "/"} examId={exam?.id} v2Id={examV2?.id} />;
   if (exam) return <TestThemeProvider theme={exam.id}>{bar}</TestThemeProvider>;
   if (examV2) {
-    // The dark tints ride along for the header's brand-colored controls.
+    // The same tokens as V2Shell (components/v2/v2.css), so the header's
+    // brand-colored controls (the Tiger Time chip) swap to the dark tints too.
     const style = {
-      "--brand": examV2.theme.brand,
-      "--brand-dark": examV2.theme.brandDark,
-      "--brand-light": examV2.theme.brandLight,
+      "--v2-brand-override": examV2.theme.brand,
+      "--v2-brand-dark-override": examV2.theme.brandDark,
+      "--v2-brand-light-override": examV2.theme.brandLight,
       ...v2DarkThemeStyle(examV2.theme),
     } as CSSProperties;
-    return <div style={style}>{bar}</div>;
+    return <div className="v2-shell" style={style}>{bar}</div>;
   }
   return bar;
 }
@@ -159,6 +162,11 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
     statsPath = `${variant?.slug ?? exam.slug}/stats`;
   }
   if (examV2 && hydrated && (user || v2Progress)) statsPath = v2Routes(examV2).stats;
+  // Tiger Time (components/DailyRank.tsx): once there is 1 correct answer
+  // today, the trophy chip takes the stats icon's place and links where it did.
+  // Only where it opens a stats page: never on the homepages or other pages
+  // with no test, or for a visitor this page shows no stats link (Nov 25 2026).
+  const rankChip = useRankChipVisible() && !!statsPath;
 
   // A signed-out visitor's ask. Each dashboard's own save card (GuestSaveCard)
   // already offers Google, email and sign in, so the header leaves it to them.
@@ -215,7 +223,7 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
         <BrandLockup />
 
         {!chipTest && !classPill && (
-          <nav aria-label="Site" className="ml-1 flex self-stretch items-stretch gap-5 sm:gap-6 text-sm font-semibold tracking-wide">
+          <nav aria-label="Site" className={`ml-1 flex self-stretch items-stretch ${rankChip ? "gap-3" : "gap-5"} sm:gap-6 text-sm font-semibold tracking-wide`}>
             <TabLink href="/" active={!onTeach}>TESTS</TabLink>
             <TabLink href={teachHref} active={onTeach}>{classesTab ? "CLASSES" : "TEACH"}</TabLink>
           </nav>
@@ -237,9 +245,12 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
 
         <div className="ml-auto flex shrink-0 items-center gap-1">
           {languages}
-          {statsPath && (
+          {rankChip ? (
+            <DailyRankChip compact href={statsPath} />
+          ) : statsPath && (
             <Link
               href={statsPath}
+              onClick={() => noteStatsSource("header_icon")}
               aria-current={path === statsPath ? "page" : undefined}
               className={`${iconLink} ${path === statsPath ? "bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-50" : "text-gray-600 dark:text-gray-300"}`}
               title={t("stats.yourStats")}

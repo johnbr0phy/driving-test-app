@@ -13,6 +13,7 @@ import { emailBrand } from "@/lib/email-brand";
 import type { TigerExpression } from "@/lib/tigerAssets";
 import { EXAMS_V2 } from "@/lib/v2/registry";
 import { reportReplyCopy } from "@/lib/reportReplyCopy";
+import { tigerTimeEmailCopy } from "@/lib/tigerTimeEmailCopy";
 
 interface ShellOptions {
   /** <title>, used by some clients as the preview label. */
@@ -607,6 +608,63 @@ export function reportReplyEmail(v: EmailVoice, c: ReportReplyContent): string {
       cta(DASH(v, "report_reply"), esc(v.id === "unknown" ? copy.cta : copy.ctaNamed.replace("{name}", v.shortName))),
       signoff(esc(copy.signoff)),
     ].filter(Boolean).join("\n"),
+  });
+}
+
+// ── Tiger Time winner (app/api/cron/tiger-time) ─────────────────────────────
+// One email, to the day's winner. Transactional: no unsubscribe link.
+
+export const TIGER_TIME_SUBJECT = "You won Tiger Time 🏆";
+
+export interface TigerTimeContent {
+  firstName: string | null;
+  /** First-try correct answers that won the day. */
+  correct: number;
+  /** The Tiger Time day won, YYYY-MM-DD (Eastern time). */
+  day: string;
+  /** The winner's interface language (users/{uid}.language); English when unknown. */
+  lang?: string;
+}
+
+/** "Tuesday, November 24" for a Tiger Time day, in the given language. */
+export function tigerTimeDate(day: string, lang = "en"): string {
+  const locale = lang === "en" ? "en-US" : lang;
+  return new Intl.DateTimeFormat(locale, { weekday: "long", month: "long", day: "numeric", timeZone: "UTC" }).format(new Date(`${day}T12:00:00Z`));
+}
+
+/** The subject line in the winner's language. */
+export function tigerTimeSubject(lang?: string): string {
+  return tigerTimeEmailCopy(lang).copy.subject;
+}
+
+export function tigerTimeEmail(v: EmailVoice, c: TigerTimeContent): string {
+  const { lang, copy } = tigerTimeEmailCopy(c.lang);
+  const date = tigerTimeDate(c.day, lang);
+  const count = c.correct.toLocaleString(lang === "en" ? "en-US" : lang);
+  const fill = (s: string, vars: Record<string, string>) => s.replace(/\{(\w+)\}/g, (_, k: string) => vars[k] ?? "");
+  const won = fill(esc(copy.won).replace(/&lt;strong&gt;/g, '<strong style="font-weight: 700;">').replace(/&lt;\/strong&gt;/g, "</strong>"), {
+    date: esc(date),
+    count,
+  });
+  return emailShell({
+    voice: v,
+    expression: 1,
+    eyebrow: "TIGER TIME",
+    title: copy.subject,
+    preheader: fill(copy.preheader, { count, date }),
+    heading: copy.heading,
+    unsubscribe: false,
+    lang,
+    footerNote: fill(copy.footer, { date }),
+    privacyLabel: reportReplyCopy(lang).copy.privacy,
+    body: [
+      p(c.firstName ? esc(fill(copy.hi, { name: c.firstName })) : esc(copy.hiThere)),
+      p(won),
+      p(esc(copy.congrats)),
+      p(esc(copy.again)),
+      cta(DASH(v, "tiger_time"), esc(v.id === "unknown" ? copy.cta : fill(copy.ctaNamed, { name: v.shortName }))),
+      signoff(esc(copy.signoff)),
+    ].join("\n"),
   });
 }
 

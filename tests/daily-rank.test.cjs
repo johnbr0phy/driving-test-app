@@ -220,7 +220,10 @@ test('wiring: every engine\'s answers feed the rank, sign-in merges, the API reu
   assert.match(read('contexts/AuthContext.tsx'), /mergeRankOnSignIn\(\)/);
   assert.match(read('app/api/rank/today/route.ts'), /grantAnswers\([\s\S]*?'rank'\)/);
   assert.match(read('components/FocusBar.tsx'), /<DailyRankChip \/>/);
-  assert.match(read('components/admin/ABTestsTab.tsx'), /<DailyRankTestCard \/>/);
+  // The A/B test ended (Nov 25 2026): everyone sees Tiger Time, and its card is off the A/B tab.
+  assert.doesNotMatch(read('components/admin/ABTestsTab.tsx'), /DailyRankTestCard/);
+  assert.ok(!fs.existsSync(path.join(__dirname, '..', 'lib/dailyRankTest.ts')));
+  assert.doesNotMatch(read('components/DailyRank.tsx'), /rankArm\(/);
 });
 
 test('privacy: the API never returns a head count, a raw rank or anyone else', () => {

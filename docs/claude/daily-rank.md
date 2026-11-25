@@ -1,6 +1,6 @@
 # Daily rank (Tiger Time)
 
-Tells each person where they rank today by correct answers: "41 correct today. Top 14%." plus "3 more correct to pass the next 1,000 people." Added Nov 2026 as A/B test `dailyRank1`.
+Tells each person where they rank today by correct answers: "41 correct today. Top 14%." plus "3 more correct to pass the next 1,000 people." Added Nov 2026. It ran briefly as A/B test `dailyRank1` and was switched on for everyone on Nov 25 2026.
 
 ## Rules
 
@@ -21,7 +21,6 @@ Tells each person where they rank today by correct answers: "41 correct today. T
 | `app/api/rank/merge` | At sign-in, moves today's guest day onto the account once |
 | `lib/dailyRankClient.ts` | Browser store: queue, 4-second flush, live view, `useDailyRank()`, `mergeRankOnSignIn()` (called from `AuthContext`) |
 | `components/DailyRank.tsx` | `DailyRankChip` (in `FocusBar` where a runner passes `rank`, never on practice tests; links to the test's stats page, `rankStatsHref`), `DailyRankCard` (DMV/v1 results, v1 set complete, v2 results, quiz results) and `DailyRankPanel` (top of every stats page: rank, the "N more" line, how to win, the countdown and one slim bar of how far up the field you are) |
-| `lib/dailyRankTest.ts` | A/B arms and metrics; `app/api/analytics/rank-test`, `app/api/admin/rank-test`, `components/admin/DailyRankTestCard.tsx` on the A/B tests tab |
 
 ## Chip to stats
 
@@ -40,7 +39,7 @@ The chip links to `<base>/stats#today-rank` (the DMV's `/stats`), cutting the ru
 `FocusBar` takes a `rank` prop; without it there is no chip.
 
 - **Never on practice tests or mocks** (DMV `/test/<n>`, every exam's `ExamTestPage`, quiz tests): they should feel like the real exam. Their answers still count, and the rank card still shows on their results.
-- **`rank="replace"`** in training sets (DMV and v1) and v2 drills: when the chip shows, it takes the right slot's place. That slot is "View stats" or the DMV stats upsell ("Stuck on the same questions?"), and the chip links to the stats page itself. In the rank arm that upsell is not shown in training, which the test's Premium guardrail measures.
+- **`rank="replace"`** in training sets (DMV and v1) and v2 drills: when the chip shows, it takes the right slot's place. That slot is "View stats" or the DMV stats upsell ("Stuck on the same questions?"), and the chip links to the stats page itself. So that upsell is not shown in training while the chip is.
 - **`rank="beside"`** in quiz practice and flashcards (beside Shuffle, a control).
 - The count is always shown, so the chip moves with every right answer (each part pops when it changes): phones "42 · Top 6%", under 360px "42", from `sm` up "42 correct · Top 6%".
 
@@ -48,9 +47,9 @@ The chip links to `<base>/stats#today-rank` (the DMV's `/stats`), cutting the ru
 
 No cron and no account scan. Each change moves the person from their old histogram bucket to the new one (`histogramDelta`) on a random shard, inside the same transaction as their own doc. A status read loads the day's 10 shard docs at most once per 15 minutes per server instance. Counts over 1,000 share one bucket.
 
-## A/B test
+## Who sees it
 
-Every answering browser is assigned 50/50 at its first answer (`?rank=on|off` pins for previews, never counted). Control still counts answers, so the distribution is everyone's. Primary: next-day return (answers again on the local day after enrolment, out of browsers enrolled before today). Secondary: questions per session (30-minute idle gap). Guardrail: Premium within 14 days. Decision rule at the top of `lib/dailyRankTest.ts`.
+Everyone (Nov 25 2026: the A/B test was ended and its card taken off the A/B tests tab; `analytics/dailyRankTest` keeps its few hours of counts). `?rank=off` hides Tiger Time in that tab for previews, and `?rank=on` brings it back (`sessionStorage`).
 
 ## Setup outside the code
 

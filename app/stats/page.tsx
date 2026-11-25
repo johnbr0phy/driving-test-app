@@ -262,7 +262,7 @@ function StatsContent() {
           onSignUp={() => router.push(signupDestination)}
         />
 
-        {/* Today's rank, explained (lib/dailyRank.ts; A/B arm "rank" only). */}
+        {/* Today's rank, explained (lib/dailyRank.ts). */}
         <DailyRankPanel continueHref="/dmv/dashboard" />
 
         {/* Tab Navigation */}

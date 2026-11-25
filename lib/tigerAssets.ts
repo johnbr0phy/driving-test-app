@@ -198,7 +198,7 @@ const BORROWED_SETS: Record<string, string> = {
   // Global certifications and nursing exams wear their nearest US exam's tiger.
   awssaa: "aws", az900: "aws", ai901: "aws", awsaif: "aws", awsdva: "aws", snowpro: "aws", pl900: "aws", ccna: "aplus", ccnpencor: "aplus", jncia: "aplus", gulfrn: "nclex", aedhapharm: "ptcb", uknmc: "nclex", ccrn: "nclex",
   cask: "driving", cans: "driving", nzroad: "driving", iedtt: "driving",
-  phlto: "driving", mykpp: "driving", sgbtt: "driving", hkdrive: "driving", aerta: "driving", zak53: "driving", zak53c3: "cdl", ngfrsc: "driving", kentsa: "driving",
+  phlto: "driving", mykpp: "driving", sgbtt: "driving", hkdrive: "driving", aerta: "driving", samuroor: "driving", zak53: "driving", zak53c3: "cdl", ngfrsc: "driving", kentsa: "driving",
   psat: "sat", netplus: "secplus", linuxplus: "secplus", cysa: "secplus", fortinse: "secplus", pentestplus: "secplus", securityx: "secplus", ceh: "secplus", sc200: "secplus", az104: "aws", dp900: "aws", techplus: "aplus", serverplus: "aplus", projectplus: "capm", ccst: "aplus", dataplus: "aplus", cloudplus: "aplus", sc900: "secplus", gcdl: "aws", gcppca: "aws", gcppde: "aws", isc2cc: "cissp", cism: "cissp", crisc: "cissp", servicenowcsa: "cissp", sscp: "cissp",
   // India exams wear their family's tiger; Pakistan's car test the car tiger; JNVST (age 10 to 12) the times tables tiger.
   osssc: "ssccgl", ibpsclerk: "ibpspo", rrbgroupd: "rrbntpc", sscgd: "ssccgl", sscchsl: "ssccgl", sscmts: "ssccgl", uppolice: "police", jnvst: "timestables", vidyagyan: "timestables", mapgrowth: "timestables", staaralg1: "sat",hspt: "shsat", cogat: "timestables",ssat: "shsat",isee: "shsat",

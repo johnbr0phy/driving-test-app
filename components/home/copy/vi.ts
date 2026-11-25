@@ -128,6 +128,6 @@ export const vi: HomeCopy = {
 /** Every country's name in Vietnamese, for the country pills and "Practice tests for <country>". */
 export const countryNames: Record<string, string> = {
   US: "Hoa Kỳ", CA: "Canada", UK: "Vương quốc Anh", IE: "Ireland", AU: "Úc", NZ: "New Zealand", IN: "Ấn Độ", PH: "Philippines", MY: "Malaysia", SG: "Singapore", HK: "Hồng Kông",
-  AE: "Các Tiểu vương quốc Ả Rập Thống nhất", ZA: "Nam Phi", NG: "Nigeria", KE: "Kenya", PK: "Pakistan", ES: "Tây Ban Nha", PT: "Bồ Đào Nha", RO: "Romania", SE: "Thụy Điển", GR: "Hy Lạp", DK: "Đan Mạch",
+  AE: "Các Tiểu vương quốc Ả Rập Thống nhất", ZA: "Nam Phi", NG: "Nigeria", KE: "Kenya", PK: "Pakistan", SA: "Ả Rập Xê Út", ES: "Tây Ban Nha", PT: "Bồ Đào Nha", RO: "Romania", SE: "Thụy Điển", GR: "Hy Lạp", DK: "Đan Mạch",
   HU: "Hungary", BE: "Bỉ", FI: "Phần Lan", MT: "Malta", DE: "Đức", IT: "Ý", FR: "Pháp", PL: "Ba Lan", NL: "Hà Lan",
 };

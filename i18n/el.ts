@@ -420,6 +420,7 @@ export const el: TranslationKeys = {
     noQuestionsAvailable: "Δεν υπάρχουν διαθέσιμες ερωτήσεις.",
     moreQuestions: "ακόμα ερωτήσεις",
     unlockPremiumStats: "Ξεκλείδωσε το Premium για να δεις όλα τα στατιστικά των ερωτήσεών σου",
+    commonMistakesSoon: "Αυτή η λειτουργία θα ξεκλειδωθεί σύντομα.",
     universal: "Γενικές",
     specific: ": ειδικές",
     start: "Αρχή",

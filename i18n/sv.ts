@@ -420,6 +420,7 @@ export const sv: TranslationKeys = {
     noQuestionsAvailable: "Inga frågor finns.",
     moreQuestions: "frågor till",
     unlockPremiumStats: "Lås upp Premium för att se all statistik för dina frågor",
+    commonMistakesSoon: "Den här funktionen låses upp snart.",
     universal: "Allmänt",
     specific: "-specifikt",
     start: "Start",

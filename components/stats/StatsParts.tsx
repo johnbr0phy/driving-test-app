@@ -66,11 +66,11 @@ export function StatsTabs({ active, onChange, yoursLabel, communityLabel }: {
   );
 }
 
-export function StatsHeaderCard({ title, subtitle, className = "mb-6" }: { title: string; subtitle: ReactNode; className?: string }) {
+/** Common Mistakes tab body for a test whose most-missed list is not live yet. */
+export function CommonMistakesSoon({ text }: { text: string }) {
   return (
-    <div className={`rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-4 ${className}`}>
-      <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">{title}</h1>
-      <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{subtitle}</p>
+    <div className="rounded-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-6 text-center">
+      <p className="text-sm text-gray-600 dark:text-gray-300">{text}</p>
     </div>
   );
 }

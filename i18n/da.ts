@@ -420,6 +420,7 @@ export const da: TranslationKeys = {
     noQuestionsAvailable: "Ingen spørgsmål tilgængelige.",
     moreQuestions: "spørgsmål mere",
     unlockPremiumStats: "Lås Premium op for at se al statistik for dine spørgsmål",
+    commonMistakesSoon: "Denne funktion låses snart op.",
     universal: "Generelle",
     specific: "-specifikke",
     start: "Start",

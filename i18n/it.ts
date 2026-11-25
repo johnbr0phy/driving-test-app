@@ -419,6 +419,7 @@ export const it: TranslationKeys = {
     noQuestionsAvailable: "Nessuna domanda disponibile.",
     moreQuestions: "altre domande",
     unlockPremiumStats: "Sblocca Premium per vedere tutte le statistiche",
+    commonMistakesSoon: "Questa funzione sarà sbloccata a breve.",
     universal: "Comune",
     specific: "-specifica",
     start: "Partenza",

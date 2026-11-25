@@ -137,6 +137,15 @@ function commit(next: RankState) {
 
 // ── Answers in, status back ─────────────────────────────────────────────────
 
+/**
+ * Test browsers (other hosts, automation, analytics declined) keep a local
+ * count and never sync. Internal accounts sync and are ranked like anyone
+ * else (John, Nov 25 2026).
+ */
+function localOnly(): boolean {
+  return isTestBrowser();
+}
+
 let timer: ReturnType<typeof setTimeout> | null = null;
 let inFlight = false;
 let listening = false;
@@ -197,8 +206,11 @@ export async function flushRank() {
   if (inFlight || typeof window === "undefined") return;
   const s = load();
   if (!s.pending.length) return;
-  // Test and internal browsers keep a local count only.
-  if (isTestBrowser()) return;
+  // Test browsers keep a local count only: drop the queue unsent.
+  if (localOnly()) {
+    commit({ ...s, pending: [] });
+    return;
+  }
   const sent = s.pending.slice(0, 300);
   inFlight = true;
   try {
@@ -223,7 +235,7 @@ export async function refreshRank(force = false) {
   const s = load();
   if (s.pending.length) return void flushRank();
   if (!force && Date.now() - s.syncedAt < STALE_MS) return;
-  if (isTestBrowser()) return;
+  if (localOnly()) return;
   const browserId = getBrowserId();
   if (!auth.currentUser && !browserId) return;
   try {
@@ -242,7 +254,7 @@ export async function refreshRank(force = false) {
 export async function mergeRankOnSignIn() {
   const user = auth.currentUser;
   const browserId = getBrowserId();
-  if (!user || !browserId || isTestBrowser()) return;
+  if (!user || !browserId || localOnly()) return;
   const mark = `${KEY}-merged`;
   const tag = `${user.uid}:${today()}`;
   try {

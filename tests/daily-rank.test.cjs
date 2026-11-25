@@ -388,3 +388,14 @@ test('place: top 100 only, ties share the better place, the next place up', () =
   assert.deepEqual(R.nextGoal([], 301, { kind: 'top' }, 1, null), { kind: 'first' });
   assert.deepEqual(R.nextGoal(Array(100).fill(1), 100, { kind: 'block', need: 1, people: 1000 }, null, null, { need: 150 }), { kind: 'top100', need: 150 });
 });
+
+test('internal accounts count like anyone else; test browsers keep a local count', () => {
+  const client = read('lib/dailyRankClient.ts');
+  assert.match(client, /function localOnly\(\): boolean \{\s*return isTestBrowser\(\);/);
+  assert.equal((client.match(/localOnly\(\)/g) || []).length, 4, 'definition + flush, refresh, merge');
+  // The server no longer refuses internal accounts (it answered 0 and wiped their count).
+  for (const f of ['app/api/rank/today/route.ts', 'app/api/rank/merge/route.ts', 'lib/server/dailyRankRequest.ts', 'app/api/cron/tiger-time/route.ts']) {
+    assert.doesNotMatch(read(f), /internal\b(?! accounts)/i, `${f} has no internal exclusion`);
+  }
+  assert.match(read('app/api/cron/tiger-time/route.ts'), /pickTigerTimeWinner\(candidates\)/);
+});

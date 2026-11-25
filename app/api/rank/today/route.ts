@@ -23,7 +23,7 @@ const empty = (day: string) => NextResponse.json(rankStatus(day, {}, 0), { heade
 
 export async function GET(request: NextRequest) {
   const caller = await rankCaller(request);
-  if (!caller.personId || caller.internal) return empty(caller.day);
+  if (!caller.personId) return empty(caller.day);
   try {
     const db = getAdminDb();
     const correct = await personCorrect(db, caller.day, caller.personId);
@@ -37,8 +37,9 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   const body = (await request.json().catch(() => ({}))) as Record<string, unknown>;
   const caller = await rankCaller(request, body);
-  // Bots, internal accounts and callers with no identity never count.
-  if (isBotRequest(request) || caller.internal || !caller.personId) return empty(caller.day);
+  // Bots and callers with no identity never count. Internal accounts do
+  // (John, Nov 25 2026): they are ranked like anyone else.
+  if (isBotRequest(request) || !caller.personId) return empty(caller.day);
 
   const raw = Array.isArray(body.answers) ? body.answers.slice(0, MAX_BATCH) : [];
   const answers: RankAnswer[] = [];

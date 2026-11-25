@@ -13,7 +13,6 @@ export async function POST(request: NextRequest) {
   if (!caller.uid || !caller.browserId || !caller.personId) {
     return NextResponse.json({ error: 'sign in first' }, { status: 401 });
   }
-  if (caller.internal) return NextResponse.json({ day: caller.day, correct: 0, topPercent: null, next: null, cutoffs: [] });
   try {
     const db = getAdminDb();
     const correct = await mergeGuestDay(db, caller.day, personIdForBrowser(caller.browserId), caller.personId);

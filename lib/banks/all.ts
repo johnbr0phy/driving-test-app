@@ -121,6 +121,7 @@ import "./zak53";
 import "./zak53c3";
 import "./sgbtt";
 import "./aerta";
+import "./samuroor";
 import "./ngfrsc";
 import "./kentsa";
 import "./mykpp";

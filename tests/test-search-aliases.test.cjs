@@ -11,6 +11,8 @@ const CASES = [
   ["red seal truck and transport", "CA", "carstruck"],
   ["310t", "CA", "carstruck"],
   ["truck and coach technician", "CA", "carstruck"],
+  ["saudi driving test", "SA", "samuroor"],
+  ["muroor test", "SA", "samuroor"],
   ["313a", "CA", "carsrefrig"],
   ["refrigeration mechanic exam", "CA", "carsrefrig"],
   ["master electrician", "US", "masterelec"],

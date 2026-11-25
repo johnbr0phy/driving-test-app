@@ -1906,6 +1906,22 @@
         "pr": 1050,
         "findings": 18
       }
+    ],
+    "samuroor": [
+      {
+        "date": "2026-11-25",
+        "kind": "blind review at build",
+        "pr": 1050,
+        "findings": 44,
+        "note": "Blind keys 197/200. Options-only failed four rounds of item fixes (44, 23, 25, 21 confirmed cues), so the licence, conduct and stopping pools and half of right of way were redesigned as fact items, then a whole-bank sweep removed absurd distractors."
+      },
+      {
+        "date": "2026-11-25",
+        "kind": "keyless blind answering plus two independent options-only passes after the redesign",
+        "pr": 1050,
+        "findings": 7,
+        "note": "Two options-only passes at 63% and 64% with 5 and 2 confirmed cues (pass, limit 6); all 7 rewritten and rechecked blind 7/7. Blind disagreements on the redesigned bank were settled against SHC 602 sections."
+      }
     ]
   },
   "pendingReviews": {

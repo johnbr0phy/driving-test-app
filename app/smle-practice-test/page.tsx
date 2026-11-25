@@ -227,7 +227,7 @@ export default function GulfDoctorLandingPage() {
                 Built on the 2026 SMLE Blueprint
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                The SCFHS blueprint gives 30 percent of the SMLE to medicine, 25 to obstetrics and gynecology, 25 to pediatrics and 20 to surgery, and lists patient safety, preventive medicine and ethics as a separate section without a weight of its own. Each Tigertest mock follows that split within the blueprint's 5 percent margin, with the question counts below, and breaks each section into topics. Medical colleges and review centres preparing a group for the SMLE or a Gulf GP licence can set Tigertest as practice at{" "}
+                The SCFHS blueprint gives 30 percent of the SMLE to medicine, 25 to obstetrics and gynecology, 25 to pediatrics and 20 to surgery, and lists patient safety, preventive medicine and ethics as a separate section without a weight of its own. Each Tigertest mock follows that split within the blueprint&apos;s 5 percent margin, with the question counts below, and breaks each section into topics. Medical colleges and review centres preparing a group for the SMLE or a Gulf GP licence can set Tigertest as practice at{" "}
                 <Link href="/teach" className="text-brand-dark hover:text-brand-darker underline">tigertest.io/teach</Link>
                 {" "}and see which topics the group misses most.
               </p>

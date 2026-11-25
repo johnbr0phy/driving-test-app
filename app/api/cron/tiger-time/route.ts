@@ -5,8 +5,8 @@
  *
  * Picks the day's winner (lib/dailyRank.ts pickTigerTimeWinner): the
  * signed-in account with the most first-try correct answers, at least
- * TIGER_TIME_MIN_TO_WIN, ties to whoever got there first; internal accounts
- * never win. Writes tigerTimeWinners/{day} once and emails the winner a
+ * TIGER_TIME_MIN_TO_WIN, ties to whoever got there first. Internal accounts
+ * can win like anyone else (John, Nov 25 2026). Writes tigerTimeWinners/{day} once and emails the winner a
  * congratulations (tigerTimeEmail, transactional, once: `emailed` on the doc
  * and the Resend idempotency key; skipped for anyone unsubscribed). Every run,
  * winner or not, writes globalStats/tigerTime.updatedAt for the watchdog.
@@ -15,7 +15,6 @@
  */
 import { NextRequest, NextResponse } from 'next/server';
 import { getAdminAuth, getAdminDb } from '@/lib/firebase-admin';
-import { isInternalEmail } from '@/lib/internal';
 import { pickTigerTimeWinner, tigerDay } from '@/lib/dailyRank';
 import { TIGER_WINNERS, topOfDay } from '@/lib/server/dailyRank';
 import { sendEmail } from '@/lib/resend';
@@ -85,14 +84,7 @@ export async function GET(req: NextRequest) {
       result = { day, status: 'already_written', emailed };
     } else {
       const candidates = await topOfDay(db, day);
-      // Internal accounts never win: look up the emails of the top accounts only.
-      const uids = [...new Set(candidates.filter((c) => c.uid).slice(0, 50).map((c) => c.uid as string))];
-      const internal = new Set<string>();
-      if (uids.length) {
-        const users = await getAdminAuth().getUsers(uids.map((uid) => ({ uid })));
-        for (const u of users.users) if (isInternalEmail(u.email)) internal.add(u.uid);
-      }
-      const winner = pickTigerTimeWinner(candidates.slice(0, 200), (uid) => internal.has(uid) || !uids.includes(uid));
+      const winner = pickTigerTimeWinner(candidates);
       if (winner?.uid) {
         await ref.create({ uid: winner.uid, correct: winner.correct, reachedAt: winner.reachedAt, at: new Date().toISOString(), emailed: false });
         let emailed = false;

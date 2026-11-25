@@ -14,7 +14,7 @@
 import { useSyncExternalStore } from "react";
 import { auth } from "@/lib/firebase";
 import { getBrowserId } from "@/lib/enrollment";
-import { isInternalBrowser, isTestBrowser } from "@/lib/internal";
+import { isTestBrowser } from "@/lib/internal";
 import { tigerDay, topPercentFromCutoffs, type RankNext, type RankStatus } from "@/lib/dailyRank";
 
 const KEY = "tigertest-daily-rank";
@@ -138,12 +138,12 @@ function commit(next: RankState) {
 // ── Answers in, status back ─────────────────────────────────────────────────
 
 /**
- * Test and internal browsers keep a local count and never sync: the server
- * does not count them (they must not move anyone's rank) and answers 0, which
- * would wipe the count they see. So they see the feature, outside the ranking.
+ * Test browsers (other hosts, automation, analytics declined) keep a local
+ * count and never sync. Internal accounts sync and are ranked like anyone
+ * else (John, Nov 25 2026).
  */
 function localOnly(): boolean {
-  return isTestBrowser() || isInternalBrowser(auth.currentUser?.email);
+  return isTestBrowser();
 }
 
 let timer: ReturnType<typeof setTimeout> | null = null;
@@ -206,7 +206,7 @@ export async function flushRank() {
   if (inFlight || typeof window === "undefined") return;
   const s = load();
   if (!s.pending.length) return;
-  // Test and internal browsers keep a local count only: drop the queue unsent.
+  // Test browsers keep a local count only: drop the queue unsent.
   if (localOnly()) {
     commit({ ...s, pending: [] });
     return;

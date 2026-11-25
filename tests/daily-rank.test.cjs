@@ -389,12 +389,13 @@ test('place: top 100 only, ties share the better place, the next place up', () =
   assert.deepEqual(R.nextGoal(Array(100).fill(1), 100, { kind: 'block', need: 1, people: 1000 }, null, null, { need: 150 }), { kind: 'top100', need: 150 });
 });
 
-test('internal and test browsers keep their own count: never synced, so never wiped to 0', () => {
+test('internal accounts count like anyone else; test browsers keep a local count', () => {
   const client = read('lib/dailyRankClient.ts');
-  assert.match(client, /function localOnly\(\): boolean \{\s*return isTestBrowser\(\) \|\| isInternalBrowser\(auth\.currentUser\?\.email\);/);
-  // Every path that talks to the server checks it first.
+  assert.match(client, /function localOnly\(\): boolean \{\s*return isTestBrowser\(\);/);
   assert.equal((client.match(/localOnly\(\)/g) || []).length, 4, 'definition + flush, refresh, merge');
-  assert.doesNotMatch(client, /if \(isTestBrowser\(\)\) return;/);
-  // The server still refuses to count internal accounts.
-  assert.match(read('app/api/rank/today/route.ts'), /caller\.internal \|\| !caller\.personId\) return empty/);
+  // The server no longer refuses internal accounts (it answered 0 and wiped their count).
+  for (const f of ['app/api/rank/today/route.ts', 'app/api/rank/merge/route.ts', 'lib/server/dailyRankRequest.ts', 'app/api/cron/tiger-time/route.ts']) {
+    assert.doesNotMatch(read(f), /internal\b(?! accounts)/i, `${f} has no internal exclusion`);
+  }
+  assert.match(read('app/api/cron/tiger-time/route.ts'), /pickTigerTimeWinner\(candidates\)/);
 });

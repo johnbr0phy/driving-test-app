@@ -18,9 +18,9 @@ const path = "/smle-practice-test";
 
 const title = "SMLE Practice Test 2026 - Free Saudi Medical Licensing Exam and Gulf GP Exam Prep";
 const metaDescription =
-  "Free practice for the Saudi SMLE and the Gulf doctor licensing exams (DHA, DOH, MOHAP, Qatar, Oman, Kuwait, Bahrain): 200 original questions, every answer explained.";
+  "Free to start: practice for the Saudi SMLE and the Gulf doctor licensing exams (DHA, DOH, MOHAP, Qatar, Oman, Kuwait, Bahrain): 200 original questions, every answer explained.";
 const description =
-  "Free practice for the SCFHS Saudi Medical Licensure Examination and the general practitioner licensing exams of the other Gulf health authorities: 200 original multiple-choice questions weighted like the 2026 SMLE blueprint, medicine 30 percent, obstetrics and gynecology 25, pediatrics 25 and surgery 20, with patient safety, ethics and preventive medicine. Four 50-question mock tests with a 60 percent readiness line and an explanation on every question.";
+  "Free to start: practice for the SCFHS Saudi Medical Licensure Examination and the general practitioner licensing exams of the other Gulf health authorities: 200 original multiple-choice questions weighted like the 2026 SMLE blueprint, medicine 30 percent, obstetrics and gynecology 25, pediatrics 25 and surgery 20, with patient safety, ethics and preventive medicine. Four 50-question mock tests with a 60 percent pass target set by Tigertest and an explanation on every question.";
 
 export const metadata: Metadata = {
   title,
@@ -49,11 +49,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is the SMLE?",
-    a: "The Saudi Medical Licensure Examination is the computer-based exam the Saudi Commission for Health Specialties (SCFHS) sets for doctors before supervised practice, registration and residency selection in Saudi Arabia. Under the SCFHS 2026 content guideline it has 200 one-best-answer questions in two parts of 100, each 120 minutes, with a 30-minute break, and it is taken at SCFHS-approved Prometric centres in Saudi Arabia and abroad. Final-year students, interns and graduates with an MBBS or equivalent can apply.",
+    a: "The Saudi Medical Licensure Examination is the computer-based licensure exam the Saudi Commission for Health Specialties (SCFHS) sets for doctors, who must pass it to obtain a licence to practise in Saudi Arabia; the score is also used for residency selection. Under the SCFHS 2026 content guideline it has 200 one-best-answer questions in two parts of 100, each 120 minutes, with a 30-minute break, and it is taken at SCFHS-approved Prometric centres in Saudi Arabia and abroad. Final-year students, interns and graduates with an MBBS or equivalent can apply.",
   },
   {
     q: "What is the SMLE pass mark?",
-    a: "The SMLE is scored on a 200 to 800 scale, and SCFHS sets the passing score at 560 after a standard-setting exercise. Results come 2 to 6 weeks after the testing window closes. Tigertest's mock tests are 50 questions each and use a 60 percent readiness line, which is Tigertest's own target, not the SCFHS cut score.",
+    a: "The SMLE is scored on a 200 to 800 scale, and SCFHS sets the passing score at 560 after a standard-setting exercise. Results come 2 to 6 weeks after the testing window closes. Tigertest's mock tests are 50 questions each and use a 60 percent pass target, which is Tigertest's own, not the SCFHS cut score.",
   },
   {
     q: "What topics does the SMLE cover?",
@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     q: "Is this also practice for the DHA, DOH, MOHAP and other Gulf GP exams?",
-    a: "Yes, for the medical knowledge. The Dubai Health Authority, the Department of Health Abu Dhabi, MOHAP and the authorities in Qatar, Oman, Kuwait and Bahrain each run their own assessment for general practitioners, often booked through Prometric, and each sets its own length, pass mark and attempts. DHA's 2025 assessment manual reports only pass or fail and allows three attempts. The questions here test international clinical practice from WHO and other primary guidelines, not one authority's local rules.",
+    a: "Yes, for the medical knowledge. The Dubai Health Authority, the Department of Health Abu Dhabi, MOHAP and the authorities in Qatar, Oman, Kuwait and Bahrain each run their own assessment for general practitioners, and each sets its own length, pass mark and attempts. DHA's 2025 assessment manual reports only pass or fail and allows three attempts. The questions here test international clinical practice from WHO and other primary guidelines, not one authority's local rules.",
   },
   {
     q: "Is this the official exam or affiliated with SCFHS, Prometric or a health authority?",
@@ -82,7 +82,7 @@ const jsonLd = {
       offers: examOffers("gulfmd"),
       featureList: [
         "200 doctor licensing practice questions",
-        "4 mock tests of 50 questions with a 60% readiness line",
+        "4 mock tests of 50 questions with a 60% pass target set by Tigertest",
         "5 training sets by topic",
         "Weighted like the SCFHS 2026 SMLE blueprint",
         "Instant feedback with explanations",
@@ -104,16 +104,16 @@ const jsonLd = {
 };
 
 const contentAreas = [
-  { name: "Cardiology & Pulmonology", weight: "8%" },
-  { name: "Gastroenterology, Nephrology & Endocrinology", weight: "8%" },
-  { name: "Infectious Diseases & Critical Care", weight: "8%" },
-  { name: "Hematology, Rheumatology, Neurology & Psychiatry", weight: "8%" },
-  { name: "Obstetrics", weight: "14%" },
-  { name: "Gynecology", weight: "10%" },
-  { name: "Neonatology, Growth & Child Infections", weight: "12%" },
-  { name: "Pediatric Systems & Emergencies", weight: "12%" },
-  { name: "Surgery & Trauma", weight: "12%" },
-  { name: "Patient Safety, Ethics & Preventive Medicine", weight: "8%" },
+  { name: "Cardiology & Pulmonology", weight: "4 of 50 per mock" },
+  { name: "Gastroenterology, Nephrology & Endocrinology", weight: "4 of 50 per mock" },
+  { name: "Infectious Diseases & Critical Care", weight: "4 of 50 per mock" },
+  { name: "Hematology, Rheumatology, Neurology & Psychiatry", weight: "4 of 50 per mock" },
+  { name: "Obstetrics", weight: "7 of 50 per mock" },
+  { name: "Gynecology", weight: "5 of 50 per mock" },
+  { name: "Neonatology, Growth & Child Infections", weight: "6 of 50 per mock" },
+  { name: "Pediatric Systems & Emergencies", weight: "6 of 50 per mock" },
+  { name: "Surgery & Trauma", weight: "6 of 50 per mock" },
+  { name: "Patient Safety, Ethics & Preventive Medicine", weight: "4 of 50 per mock" },
 ];
 
 // Only figures read from the authority's own published guide (checked November 2026).
@@ -176,7 +176,7 @@ export default function GulfDoctorLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Mock Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four 50-question mock tests weighted like the SCFHS SMLE blueprint, with a 60 percent readiness line set by Tigertest (the SMLE itself is scored on a 200 to 800 scale) and an explanation on every question.
+                Four 50-question mock tests weighted like the SCFHS SMLE blueprint, with a 60 percent pass target set by Tigertest (the SMLE itself is scored on a 200 to 800 scale) and an explanation on every question.
               </p>
             </div>
           </div>
@@ -227,7 +227,7 @@ export default function GulfDoctorLandingPage() {
                 Built on the 2026 SMLE Blueprint
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                The SCFHS blueprint gives 30 percent of the SMLE to medicine, 25 to obstetrics and gynecology, 25 to pediatrics and 20 to surgery, and lists patient safety, preventive medicine and ethics with surgery. The mock tests follow that split and break each section into topics. Medical colleges and review centres preparing a group for the SMLE or a Gulf GP licence can set Tigertest as practice at{" "}
+                The SCFHS blueprint gives 30 percent of the SMLE to medicine, 25 to obstetrics and gynecology, 25 to pediatrics and 20 to surgery, and lists patient safety, preventive medicine and ethics as a separate section without a weight of its own. Each Tigertest mock follows that split within the blueprint's 5 percent margin, with the question counts below, and breaks each section into topics. Medical colleges and review centres preparing a group for the SMLE or a Gulf GP licence can set Tigertest as practice at{" "}
                 <Link href="/teach" className="text-brand-dark hover:text-brand-darker underline">tigertest.io/teach</Link>
                 {" "}and see which topics the group misses most.
               </p>

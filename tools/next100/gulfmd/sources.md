@@ -31,8 +31,8 @@ Prometric item, a recall collection or any prep company's or app's questions.
 - Dubai Health Authority, "Manual for DHA Professional Assessment (Oral/CBT)", version 1.1, 2025
   (https://dha.gov.ae/uploads/052025/Manual%20for%20DHA%20Professional%20Assessment-Final2025533182.pdf),
   fetched 2026-11-25: licensed professionals pass a DHA assessment (CBT and/or oral); result Pass
-  or Fail only; three attempts, then blocked; CBT before oral where both apply; booked through
-  Prometric. The GP question count, time and pass mark are in DHA's CBT guideline, which was not
+  or Fail only; three attempts, then blocked; CBT before oral where both apply. (The manual
+  does not name Prometric.) The GP question count, time and pass mark are in DHA's CBT guideline, which was not
   found on a page that loaded.
 
 ## Could not be loaded or confirmed

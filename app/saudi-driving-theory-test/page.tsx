@@ -15,9 +15,9 @@ const siteUrl = SITE_URL;
 
 const title = "Free Saudi Driving Theory Practice Test 2026 - Muroor Signs and Rules";
 const metaDescription =
-  "Free Saudi driving theory practice test: 200 original questions on the Traffic Law, SHC 602 road signs, markings and signals, and right of way. Start free.";
+  "Free Saudi driving theory practice test: 200 original questions on the Traffic Law, SHC 602 road signs, markings and signals, and right of way. Start for free.";
 const description =
-  "Practice for the Saudi Arabia driving theory test, the computer test at your licensed driving school: 200 original questions on the Saudi Traffic Law and the SHC 602 manual of traffic signs, markings and signals. Four 50-question mock tests and four training sets on road signs, signals and markings, right of way and safe driving, and licences, parking and crashes, with an explanation on every question.";
+  "Practice for the Saudi Arabia driving theory test you take at your licensed driving school: 200 original questions on the Saudi Traffic Law and the SHC 602 manual of traffic signs, markings and signals. Four 50-question mock tests and four training sets on road signs, signals and markings, right of way and safe driving, and licences, parking and crashes, with an explanation on every question.";
 
 export const metadata: Metadata = {
   title,
@@ -54,7 +54,7 @@ const faqs = [
   },
   {
     q: "Is this practice test in Arabic?",
-    a: "No. Tigertest's questions are in English, and the site does not yet support Arabic. Signs on Saudi roads carry both Arabic and English, but learn the Arabic wording on signs with your driving school's materials too, and ask your school which languages the computer test offers.",
+    a: "No. Tigertest's questions are in English, and the site does not yet support Arabic. Many signs on Saudi roads carry both Arabic and English, but learn the Arabic wording on signs with your driving school's materials too, and ask your school which languages the theory test offers.",
   },
   {
     q: "Are fines and violation points on this practice test?",
@@ -62,7 +62,7 @@ const faqs = [
   },
   {
     q: "Are these the real Muroor test questions?",
-    a: "No. Every question is original, written by Tigertest from the Saudi Traffic Law, its violation tables and the SHC 602 Manual on Uniform Traffic Control Devices. Signs are described in words, so study the sign pictures in your driving school's materials as well. It is free revision, not an official test, and it does not book or replace your theory test.",
+    a: "No. Every question is original, written by Tigertest from the Saudi Traffic Law, its violation tables and the SHC 602 Manual on Uniform Traffic Control Devices. Signs are described in words, so study the sign pictures in your driving school's materials as well. It is practice, free to start, not an official test, and it does not book or replace your theory test.",
   },
 ];
 
@@ -158,7 +158,7 @@ export default function SaudiDrivingTheoryLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Full Mock Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four 50-question tests drawn from every topic, with an 80% target. No question repeats across tests, and every answer explains the rule and the common wrong pick.
+                Four 50-question tests drawn from every topic, with Tigertest&apos;s 80% target. No question repeats across tests, and every answer explains the rule and the common wrong pick.
               </p>
             </div>
           </div>
@@ -232,7 +232,7 @@ export default function SaudiDrivingTheoryLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">2. Read the road markings</h3>
               <p>
-                Edge lines are yellow and lane lines are white. A broken white line lets you change lanes with care, a solid white line tells you to stay in your lane, and a yellow box tells you not to stop inside the junction. Kerbs painted yellow and black, or red, mean no parking.
+                Edge lines are yellow and lane lines are white. A broken white line lets you change lanes with care, a solid white line means you should not change lanes there, and a yellow box tells you not to stop inside the junction. Kerbs painted yellow and black, or red, mean no parking.
               </p>
             </div>
             <div>

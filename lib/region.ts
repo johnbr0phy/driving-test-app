@@ -421,8 +421,8 @@ export const REGION_HOME: Record<Exclude<Region, "US">, {
   },
   SA: {
     title: "Free Saudi Driving Theory Practice Test | Tigertest",
-    description: "Free practice for the Saudi driving theory test at your driving school: road signs, markings, signals and Traffic Law rules. No account needed.",
-    lead: "Practice for the theory test at your licensed driving school, the computer test on the Traffic Law, road signs and signals before your Saudi driving licence. Original questions in English, every answer explained. No signup.",
+    description: "Free-to-start practice for the Saudi driving theory test at your driving school: road signs, markings, signals and Traffic Law rules. No account needed.",
+    lead: "Practice for the theory test at your licensed driving school, the theory test on the Traffic Law, road signs and signals before your Saudi driving licence. Original questions in English, every answer explained. No signup.",
     cta: { label: "Saudi theory test", href: "/saudi-driving-theory-test" },
     testsTitle: "Driving theory test",
     testsSub: "200 questions on Saudi traffic rules and SHC 602 signs, in km/h for right-hand traffic. Four full 50-question tests.",

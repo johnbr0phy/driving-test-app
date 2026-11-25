@@ -16422,7 +16422,7 @@ const samuroor: ExamConfig = {
   name: "Saudi Driving Theory Practice Test",
   shortName: "Saudi driving theory",
   examLabel: "Muroor theory test",
-  fullName: "Saudi Arabia driving theory test (General Department of Traffic computer knowledge test, private licence)",
+  fullName: "Saudi Arabia driving theory test (General Department of Traffic theory (knowledge) test, private licence)",
   questionIdPrefix: "SAMUROOR-",
   icon: "car",
   testCount: 4,

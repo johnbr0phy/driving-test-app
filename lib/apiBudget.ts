@@ -13,25 +13,27 @@
 export const MONTHLY_LIMIT_USD = 200;
 
 /** Nothing new starts once the month's total reaches this; kept far under the Console cap since Dec 2026. */
-export const STOP_AT_USD = 125;
+export const STOP_AT_USD = 165;
 
 /**
- * Each job's share of a month. Sums to 113, under STOP_AT_USD. Steps that change
+ * Each job's share of a month. Sums to 153, under STOP_AT_USD. Each share covers its runs at their per-run caps,
+ * so no job runs out part way through a month. Steps that change
  * what customers see (bank fixes, source updates, exam upkeep, new tests) keep
  * their model and per-run caps; the savings come from schedules, the admin-only
  * daily update and the audit's batched first pass.
  */
 export const JOB_BUDGETS_USD: Readonly<Record<string, number>> = {
-  // Admin page only: Sonnet, numbers only; the web search runs on Mondays.
-  'daily-brief': 4,
-  // Weekly (was Mon, Wed, Fri).
-  'source-triage': 20,
+  // Admin page only: Sonnet, numbers only; the web search runs on Mondays. About 22 runs at well under $0.25.
+  'daily-brief': 6,
+  // Mon, Wed, Fri at up to $8; spend follows the pages that changed.
+  'source-triage': 40,
+  // Daily signals ($2), Monday sweep ($8), fix ($5) and verify ($2) when there are findings.
   // Small-model blind pass, judge on anything less than a sure match, both batched at half price.
-  'question-audit': 45,
-  // Weekly (was Tue, Thu, Sat).
-  'search-gaps': 15,
-  // Weekly.
-  'exam-upkeep': 20,
+  'question-audit': 60,
+  // Weekly (was Tue, Thu, Sat) at up to $8: about 2 test builds a month.
+  'search-gaps': 16,
+  // Weekly, fix $8 and verify $3 in a week with tasks.
+  'exam-upkeep': 22,
   // AI answer check (lib/aiAnswers.ts): 25 questions on Mondays, about $1.70 a run.
   'ai-answers': 9,
 };

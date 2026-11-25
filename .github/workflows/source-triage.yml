@@ -1,6 +1,6 @@
 name: Source triage
 
-# Every morning, after /api/cron/source-watch (04:10 UTC) has re-read a seventh
+# Mon, Wed and Fri mornings, after /api/cron/source-watch (04:10 UTC) has re-read a seventh
 # of the official pages, Claude Code reads each page that changed or keeps
 # failing and decides what it means for Tigertest (scripts/source-triage.ts):
 #   - noise (menus, news, dates, rewording, nothing our questions or facts
@@ -24,7 +24,7 @@ on:
     branches: [main]
     paths: ["audits/sources/**"]
   schedule:
-    - cron: "23 5 * * 1" # Mondays 05:23 UTC (was Mon/Wed/Fri; cut API spend Dec 2026)
+    - cron: "23 5 * * 1,3,5" # Mon, Wed, Fri 05:23 UTC (was daily; cut API spend). Cost follows the pages that changed, not the number of runs.
   workflow_dispatch:
     inputs:
       rebaseline:

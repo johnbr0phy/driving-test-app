@@ -6,7 +6,7 @@ name: Question audit
 # the judge finds right is cleared on /admin; a confirmed problem gets the same
 # fix PR as below.
 #
-# Weekly: Claude re-answers about 1,000 questions blind plus everything reported,
+# Weekly: Claude re-answers up to 1,000 questions blind (as many as the Monday budget reaches) plus everything reported,
 # flagged or due for a dated change (scripts/question-audit.ts), then Claude
 # Code fixes the confirmed findings in the bank sources and opens a PR. The PR
 # carries audits/resolutions/<date>.json, so merging it closes the findings on

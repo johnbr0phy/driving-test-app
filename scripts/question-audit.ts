@@ -12,7 +12,7 @@
  *   3. time-sensitive questions in exams with a dated change due within 60
  *      days (lib/examFreshness.json) or a changed official page (sourceWatch)
  *   4. a random sweep of --sweep questions not audited in the last 90 days
- *      (the Action passes 300 a week)
+ *      (the Action passes 1,000; the Monday budget decides how many are reached)
  * Without FIREBASE_SERVICE_ACCOUNT_KEY only steps 3 (registry part) and 4 run.
  * --signals runs steps 1 and 2 only: the daily run, so a new flag or report is
  * checked the morning after it appears instead of the next Monday.
@@ -349,9 +349,12 @@ const client = new Anthropic();
 // ── API budget (lib/apiBudget.ts) ───────────────────────────────────────────
 // Reports, flags and freshness are queued before the sweep, so they get the budget first.
 const { readSpend, recordSpend } = await import("@/lib/server/apiBudget");
-const RUN_CAP_USD = SIGNALS ? 2 : 6;
-/** The workflow's per-run cap for the fix step (api-budget.ts check question-audit 5). */
+const RUN_CAP_USD = SIGNALS ? 2 : 8;
+/** The workflow's per-run caps for the fix and verify steps (api-budget.ts check question-audit 5, then 2). */
 const FIX_RUN_CAP_USD = 5;
+const VERIFY_RUN_CAP_USD = 2;
+/** Below this a fix run cannot do real work and have it reviewed, so it does not use up an attempt. */
+const FIX_MIN_USD = 3;
 let budgetUsd = 0;
 try {
   // Without Firestore (a local run) the per-run cap is the only limit.
@@ -421,50 +424,108 @@ function render(q: IndexQuestion, withKey: boolean): string {
 const BATCH_DISCOUNT = 0.5;
 /** Estimated cost of one request, batch price, US dollars (sized from past runs, with room to spare). */
 const EST_BLIND_USD = 0.002;
-const EST_JUDGE_USD = 0.06;
+/** Worst case for one judge request at batch price: its prompt (about 4 characters a token) plus 8,000 output and thinking tokens. */
+function estJudgeUsd(system: string, user: string): number {
+  const inputTokens = (system.length + user.length) / 4;
+  return ((inputTokens * PRICES.input + 8000 * PRICES.output) / 1_000_000) * BATCH_DISCOUNT;
+}
+/** Typical judge request, for sizing the queue before the prompts are built. */
+const EST_JUDGE_USD = 0.09;
 const BATCH_POLL_MS = 30_000;
 // Two batches must finish inside the job's 180 minutes, with time left to write the report.
 const BATCH_MAX_WAIT_MS = 60 * 60_000;
 
 interface BatchAsk { id: string; system: string; user: string; schema: object }
 
+/** Per result type, across both batches: written to the report so a broken pass shows. */
+const batchOutcomes: Record<string, number> = {};
+
+/** Retries a batch API call through rate limits, server errors and network blips. */
+async function retrying<T>(what: string, call: () => Promise<T>): Promise<T> {
+  for (let attempt = 0; ; attempt++) {
+    try {
+      return await call();
+    } catch (err) {
+      const transient = err instanceof Anthropic.RateLimitError || err instanceof Anthropic.APIConnectionError || (err instanceof Anthropic.APIError && (err.status ?? 0) >= 500);
+      if (!transient || attempt >= 5) throw err;
+      console.error(`[audit] ${what} failed (${err instanceof Error ? err.message : err}); retrying`);
+      await new Promise((r) => setTimeout(r, 10_000 * (attempt + 1)));
+    }
+  }
+}
+
 async function batchStructured<T>(asks: BatchAsk[], model: string, prices: typeof PRICES, effort: "low" | "medium" | "high"): Promise<Map<string, T>> {
   const out = new Map<string, T>();
   if (!asks.length) return out;
-  const batch = await client.beta.messages.batches.create({
-    requests: asks.map((a) => ({
-      custom_id: a.id,
-      params: {
-        model,
-        max_tokens: 16000,
-        output_config: { effort, format: { type: "json_schema", schema: a.schema } },
-        system: a.system,
-        messages: [{ role: "user", content: a.user }],
-      },
-    })),
-  } as Parameters<typeof client.beta.messages.batches.create>[0]);
+  const batch = await retrying("batch create", () =>
+    client.beta.messages.batches.create({
+      requests: asks.map((a) => ({
+        custom_id: a.id,
+        params: {
+          model,
+          max_tokens: 16000,
+          output_config: { effort, format: { type: "json_schema", schema: a.schema } },
+          system: a.system,
+          messages: [{ role: "user", content: a.user }],
+        },
+      })),
+    } as Parameters<typeof client.beta.messages.batches.create>[0]),
+  );
   console.log(`[audit] batch ${batch.id}: ${asks.length} requests on ${model}`);
   const started = Date.now();
   let status = batch.processing_status;
+  let cancelled = false;
+  // Polls until the batch ends. Past the wait, or when polling keeps failing,
+  // the batch is cancelled once; what already finished is still read (and paid for).
   while (status !== "ended") {
-    if (Date.now() - started > BATCH_MAX_WAIT_MS) {
+    if (!cancelled && Date.now() - started > BATCH_MAX_WAIT_MS) {
       console.error(`[audit] batch ${batch.id} still running after 60 minutes; cancelling, finished requests are kept`);
-      await client.beta.messages.batches.cancel(batch.id).catch(() => undefined);
+      cancelled = true;
+      await retrying("batch cancel", () => client.beta.messages.batches.cancel(batch.id)).catch(() => undefined);
+    }
+    if (Date.now() - started > BATCH_MAX_WAIT_MS + 15 * 60_000) {
+      console.error(`[audit] batch ${batch.id} did not end after cancelling; its results are not read this run`);
+      return out;
     }
     await new Promise((r) => setTimeout(r, BATCH_POLL_MS));
-    status = (await client.beta.messages.batches.retrieve(batch.id)).processing_status;
-  }
-  for await (const row of await client.beta.messages.batches.results(batch.id)) {
-    if (row.result.type !== "succeeded") continue;
-    const message = row.result.message;
-    spentUsd += usageCostUsd(message.usage, prices) * BATCH_DISCOUNT;
-    if (message.stop_reason === "refusal") continue;
-    const text = message.content.flatMap((b) => (b.type === "text" ? [b.text] : [])).join("");
     try {
-      out.set(row.custom_id, JSON.parse(text) as T);
-    } catch {
-      console.error(`[audit] unreadable answer for ${row.custom_id}`);
+      status = (await retrying("batch status", () => client.beta.messages.batches.retrieve(batch.id))).processing_status;
+    } catch (err) {
+      console.error(`[audit] batch ${batch.id} status unavailable (${err instanceof Error ? err.message : err})`);
+      if (!cancelled) {
+        cancelled = true;
+        await client.beta.messages.batches.cancel(batch.id).catch(() => undefined);
+      }
     }
+  }
+  let firstError = "";
+  try {
+    for await (const row of await retrying("batch results", () => client.beta.messages.batches.results(batch.id))) {
+      batchOutcomes[row.result.type] = (batchOutcomes[row.result.type] ?? 0) + 1;
+      if (row.result.type !== "succeeded") {
+        if (!firstError && row.result.type === "errored") firstError = JSON.stringify(row.result.error).slice(0, 300);
+        continue;
+      }
+      const message = row.result.message;
+      spentUsd += usageCostUsd(message.usage, prices) * BATCH_DISCOUNT;
+      if (message.stop_reason === "refusal") {
+        batchOutcomes.refused = (batchOutcomes.refused ?? 0) + 1;
+        continue;
+      }
+      const text = message.content.flatMap((b) => (b.type === "text" ? [b.text] : [])).join("");
+      try {
+        out.set(row.custom_id, JSON.parse(text) as T);
+      } catch {
+        batchOutcomes.unreadable = (batchOutcomes.unreadable ?? 0) + 1;
+      }
+    }
+  } catch (err) {
+    console.error(`[audit] reading batch ${batch.id} results stopped part way (${err instanceof Error ? err.message : err}); keeping what was read`);
+  }
+  console.log(`[audit] batch ${batch.id}: ${out.size}/${asks.length} usable answers${firstError ? `; first error: ${firstError}` : ""}`);
+  if (out.size < asks.length * 0.8) {
+    console.error(`[audit] batch ${batch.id} on ${model}: fewer than 80% usable answers; the step will fail after the report is written`);
+    process.exitCode = 1;
   }
   return out;
 }
@@ -543,13 +604,17 @@ const partial = items.map((item, n) => {
   return { item, n, key, blind, disagreed };
 });
 const judgeAsks: BatchAsk[] = [];
+let judgePlanned = 0;
 for (const p of partial) {
   if (isSweepOnly(p.item) && !p.disagreed) continue;
-  if (spentUsd + (judgeAsks.length + 1) * EST_JUDGE_USD > budgetUsd) {
+  const user = judgeUser(p.item, p.blind, p.disagreed);
+  const cost = estJudgeUsd(JUDGE_SYSTEM, user);
+  if (spentUsd + judgePlanned + cost > budgetUsd) {
     console.log(`[audit] budget stops the judge at ${judgeAsks.length} questions`);
     break;
   }
-  judgeAsks.push({ id: `j${p.n}`, system: JUDGE_SYSTEM, user: judgeUser(p.item, p.blind, p.disagreed), schema: VERDICT_SCHEMA });
+  judgePlanned += cost;
+  judgeAsks.push({ id: `j${p.n}`, system: JUDGE_SYSTEM, user, schema: VERDICT_SCHEMA });
 }
 let verdicts = new Map<string, Verdict>();
 try {
@@ -603,6 +668,7 @@ const summary = {
   at: new Date().toISOString(),
   model: MODEL,
   blindModel: BLIND_MODEL,
+  batchOutcomes,
   checked: results.length,
   blindChecked: results.filter((r) => r.blind).length,
   disagreements: results.filter((r) => r.disagreed).length,
@@ -687,7 +753,8 @@ if (db) {
   // a real finding would be closed "kept as it is" without ever being worked on.
   let fixCanRun = false;
   try {
-    fixCanRun = allowanceUsd(await readSpend(db), "question-audit", FIX_RUN_CAP_USD) > 0;
+    // Enough for a real fix and its second review, not just the $1 a step needs to start.
+    fixCanRun = allowanceUsd(await readSpend(db), "question-audit", FIX_RUN_CAP_USD + VERIFY_RUN_CAP_USD) >= FIX_MIN_USD;
   } catch (err) {
     console.error("[audit] could not read the API budget for the fix step; attempts left as they are:", err);
   }

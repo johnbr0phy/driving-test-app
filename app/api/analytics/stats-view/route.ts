@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { FieldValue } from 'firebase-admin/firestore';
 import { getAdminDb } from '@/lib/firebase-admin';
 import { isBotRequest } from '@/lib/botUserAgent';
-import { STATS_VIEWS_DOC, isStatsSource } from '@/lib/statsViews';
+import { STATS_VIEWS_DOC, isStatsSource } from '@/lib/statsViewsShared';
 
 // One stats page view (lib/statsViews.ts): counted in STATS_VIEWS_DOC overall,
 // by UTC day and source, and by exam. No identity is stored.

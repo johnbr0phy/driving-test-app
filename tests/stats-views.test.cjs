@@ -51,3 +51,13 @@ test('the admin card is on the Growth tab and its route is admin-only and cached
   assert.match(card, /useTopN\(days\)/);
   assert.match(card, /<ShowAllButton/);
 });
+
+test('API routes import the server-safe stats module, never the hook file', () => {
+  // A server route importing lib/statsViews.ts (React hooks) broke the
+  // production build on Nov 25 2026.
+  assert.doesNotMatch(read('lib/statsViewsShared.ts'), /from ["']react["']/);
+  for (const f of ['app/api/admin/stats-views/route.ts', 'app/api/analytics/stats-view/route.ts']) {
+    assert.match(read(f), /@\/lib\/statsViewsShared/);
+    assert.doesNotMatch(read(f), /@\/lib\/statsViews['"]/);
+  }
+});

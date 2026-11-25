@@ -198,8 +198,7 @@ function useTigerTimeLeft(language: string): string | null {
 
 /**
  * Top of every stats page (DMV, v1 and v2 exams): Tiger Time. Today's score
- * and percent, the next goal (the closest percentile step up, or first
- * place), a button back to practice and the rules behind "How it works".
+ * and percent (and a "Right now: 1st place" box in first place), a button back to practice and the rules behind "How it works".
  * No head counts and nobody else's name or position.
  */
 export function DailyRankPanel({
@@ -233,29 +232,10 @@ export function DailyRankPanel({
       ? fill(t("dailyRank.chipTop"), { p: rank.topPercent })
       : null;
   const goal = nextGoal(rank.cutoffs, rank.correct, rank.next, rank.place, rank.placeGoal, rank.enterTop);
-  const reach = (need: number) =>
-    need === 1 ? t("dailyRank.goalPlaceOne") : fill(t("dailyRank.goalPlace"), { need: nf.format(need) });
-  let goalTitle: string | null = null;
-  let goalBody: string | null = null;
-  if (goal?.kind === "tier") {
-    goalTitle = fill(t("dailyRank.chipTop"), { p: goal.p });
-    goalBody = fill(t(goal.need === 1 ? "dailyRank.goalCutoffOne" : "dailyRank.goalCutoff"), { need: nf.format(goal.need), cutoff: nf.format(goal.cutoff) });
-  } else if (goal?.kind === "place") {
-    goalTitle = placeText(t, language, "dailyRank.placeShort", goal.place);
-    goalBody = reach(goal.need);
-  } else if (goal?.kind === "top100") {
-    goalTitle = t("dailyRank.top100");
-    goalBody = reach(goal.need);
-  } else if (goal?.kind === "tiedFirst") {
-    goalTitle = t("dailyRank.firstPlace");
-    goalBody = t("dailyRank.firstPlaceTied");
-  } else if (goal?.kind === "first") {
-    goalTitle = t("dailyRank.firstPlace");
-    goalBody = t("dailyRank.firstPlaceHold");
-  } else if (goal?.kind === "chase") {
-    goalTitle = t("dailyRank.firstPlace");
-    goalBody = goal.need === 1 ? t("dailyRank.nextEveryoneOne") : fill(t("dailyRank.nextEveryone"), { need: nf.format(goal.need) });
-  }
+  // Only first place gets a box ("Right now: 1st place"); the "Next goal"
+  // box for everyone else was dropped (John, Nov 25 2026).
+  const firstPlace = goal?.kind === "first" || goal?.kind === "tiedFirst";
+  const goalBody = goal?.kind === "tiedFirst" ? t("dailyRank.firstPlaceTied") : t("dailyRank.firstPlaceHold");
   const eyebrow = "text-xs font-semibold uppercase tracking-[0.14em] text-gray-500 dark:text-gray-400";
   return (
     <section
@@ -299,18 +279,11 @@ export function DailyRankPanel({
             )}
           </div>
         )}
-        {goalTitle && (
-          <div
-            className={`mt-5 rounded-2xl border px-4 py-3 ${
-              goal?.kind === "first" || goal?.kind === "tiedFirst"
-                ? "border-brand-border-light bg-brand-light"
-                : "border-gray-100 bg-gray-50 dark:border-gray-800 dark:bg-gray-800/60"
-            }`}
-          >
-            {/* In first place there is no next goal: say where they are. */}
-            <p className={eyebrow}>{t(goal?.kind === "first" || goal?.kind === "tiedFirst" ? "dailyRank.rightNow" : "dailyRank.nextGoal")}</p>
-            <p className="mt-1 text-xl font-bold text-gray-900 dark:text-gray-50">{goalTitle}</p>
-            {goalBody && <p className="mt-0.5 text-sm text-gray-600 dark:text-gray-300">{goalBody}</p>}
+        {firstPlace && (
+          <div className="mt-5 rounded-2xl border border-brand-border-light bg-brand-light px-4 py-3">
+            <p className={eyebrow}>{t("dailyRank.rightNow")}</p>
+            <p className="mt-1 text-xl font-bold text-gray-900 dark:text-gray-50">{t("dailyRank.firstPlace")}</p>
+            <p className="mt-0.5 text-sm text-gray-600 dark:text-gray-300">{goalBody}</p>
           </div>
         )}
         {guestSignIn && !user && (

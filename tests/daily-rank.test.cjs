@@ -503,3 +503,10 @@ test('sign-out resets the browser\'s Tiger Time count, so the chip goes (Nov 25 
   // Signed out elsewhere (another tab, expired session): reset too.
   assert.match(authSrc, /localStorage\.removeItem\('driving-test-storage'\);\s*resetRankOnSignOut\(\);\s*\}/);
 });
+
+test('the panel has no "Next goal" box; only first place gets one (Nov 25 2026)', () => {
+  const src = read('components/DailyRank.tsx');
+  assert.doesNotMatch(src, /dailyRank\.nextGoal/);
+  assert.match(src, /const firstPlace = goal\?\.kind === "first" \|\| goal\?\.kind === "tiedFirst";/);
+  assert.match(src, /\{firstPlace && \(/);
+});

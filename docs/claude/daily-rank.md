@@ -73,9 +73,9 @@ No Firestore TTL policy is needed: the winner cron deletes `dailyRank/{day}` (pe
 
 ## Places for everyone
 
-Since Nov 25 2026 (John) every person with 1+ correct sees their place ("235th of all Tigertesters today"), not just the top 100 (`RANK_SHOW_PLACE_MAX` is unbounded). The next goal is the next place up. Under any place but first the panel adds a nudge: "Every correct answer moves you up. Keep prepping!", or in the top 10 (`RANK_NEAR_TOP`) "You're close to the top. Keep going!". A place does reveal roughly how many people practise that day; John accepted that.
+Since Nov 25 2026 (John) every person with 1+ correct sees their place ("235th of all Tigertesters today"), not just the top 100 (`RANK_SHOW_PLACE_MAX` is unbounded). The panel no longer shows a "Next goal" box (removed Nov 25 2026, John); only first place gets a box, "Right now: 1st place". `nextGoal()` still decides first place. Under any place but first the panel adds a nudge: "Every correct answer moves you up. Keep prepping!", or in the top 10 (`RANK_NEAR_TOP`) "You're close to the top. Keep going!". A place does reveal roughly how many people practise that day; John accepted that.
 
 ## End-of-session card
 
-`DailyRankCard` (results, finished sets) is the stats panel (`DailyRankPanel`) with `guestSignIn` and no `#today-rank` anchor: the same header, score, place and nudge, next goal and "How it works", without "Continue practicing" (results pages have their own buttons); guests get "Sign in to keep your rank and win Tiger Time" there instead.
+`DailyRankCard` (results, finished sets) is the stats panel (`DailyRankPanel`) with `guestSignIn` and no `#today-rank` anchor: the same header, score, place and nudge, the first-place box and "How it works", without "Continue practicing" (results pages have their own buttons); guests get "Sign in to keep your rank and win Tiger Time" there instead.
 

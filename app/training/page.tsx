@@ -92,6 +92,15 @@ function TrainingPageContent() {
   const [showSetComplete, setShowSetComplete] = useState(false);
   const [showResetConfirm, setShowResetConfirm] = useState(false);
   const retryButtonRef = useRef<HTMLButtonElement>(null);
+  const resetConfirmRef = useRef<HTMLDivElement>(null);
+
+  // The confirm sits low in a tall card: bring it on screen so Try Again visibly does something.
+  useEffect(() => {
+    if (!showResetConfirm) return;
+    const box = resetConfirmRef.current;
+    box?.scrollIntoView({ block: "center", behavior: "smooth" });
+    box?.querySelector<HTMLButtonElement>("button")?.focus({ preventScroll: true });
+  }, [showResetConfirm]);
   const [earnedCompletion, setEarnedCompletion] = useState(false);
   const pendingCompletion = useRef(false);
 
@@ -324,19 +333,19 @@ function TrainingPageContent() {
                 {!isGuest && <Button asChild variant="ghost"><Link href={DMV_ROUTES.stats}>{t("results.viewStats")}</Link></Button>}
                 <Button ref={retryButtonRef} variant="ghost" onClick={() => setShowResetConfirm(true)}>{t("results.tryAgain")}</Button>
               </div>
-              {!isGuest && (
-                <Link href="/stats?tab=community" onClick={() => trackStatsEntry("training_complete", "community")} className="mt-1 rounded-md px-2 py-2 text-sm font-medium text-green-800 hover:underline dark:text-green-200">
-                  {t("trainingPage.beatMostMissed")} →
-                </Link>
-              )}
               {showResetConfirm && (
-                <div role="group" aria-label={t("trainingPage.resetConfirm")} className="mt-2 rounded-xl border border-gray-200 bg-white p-4 text-left dark:border-gray-700 dark:bg-gray-900">
+                <div ref={resetConfirmRef} role="group" aria-label={t("trainingPage.resetConfirm")} className="mt-2 rounded-xl border border-gray-200 bg-white p-4 text-left dark:border-gray-700 dark:bg-gray-900">
                   <p className="mb-3 text-sm text-gray-600 dark:text-gray-300">{t("trainingPage.resetConfirm")}</p>
                   <div className="flex gap-2">
                     <Button variant="outline" className="flex-1" onClick={handlePracticeAgain}>{t("trainingPage.resetYes")}</Button>
                     <Button variant="ghost" className="flex-1" onClick={() => { setShowResetConfirm(false); retryButtonRef.current?.focus(); }}>{t("common.cancel")}</Button>
                   </div>
                 </div>
+              )}
+              {!isGuest && (
+                <Link href="/stats?tab=community" onClick={() => trackStatsEntry("training_complete", "community")} className="mt-1 rounded-md px-2 py-2 text-sm font-medium text-green-800 hover:underline dark:text-green-200">
+                  {t("trainingPage.beatMostMissed")} →
+                </Link>
               )}
             </AchievementCelebration>
           </div>

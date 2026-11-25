@@ -103,6 +103,15 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
   const [showSetComplete, setShowSetComplete] = useState(false);
   const [showResetConfirm, setShowResetConfirm] = useState(false);
   const retryButtonRef = useRef<HTMLButtonElement>(null);
+  const resetConfirmRef = useRef<HTMLDivElement>(null);
+
+  // The confirm sits low in a tall card: bring it on screen so Try Again visibly does something.
+  useEffect(() => {
+    if (!showResetConfirm) return;
+    const box = resetConfirmRef.current;
+    box?.scrollIntoView({ block: "center", behavior: "smooth" });
+    box?.querySelector<HTMLButtonElement>("button")?.focus({ preventScroll: true });
+  }, [showResetConfirm]);
   const [earnedCompletion, setEarnedCompletion] = useState(false);
   const pendingCompletion = useRef(false);
 
@@ -363,7 +372,7 @@ function ExamTrainingContent({ exam: source }: { exam: ExamConfig }) {
                 <Button ref={retryButtonRef} variant="ghost" onClick={() => setShowResetConfirm(true)}>{t("results.tryAgain")}</Button>
               </div>
               {showResetConfirm && (
-                <div role="group" aria-label={resetMessage} className="mt-2 rounded-xl border border-gray-200 bg-white p-4 text-left dark:border-gray-700 dark:bg-gray-900">
+                <div ref={resetConfirmRef} role="group" aria-label={resetMessage} className="mt-2 rounded-xl border border-gray-200 bg-white p-4 text-left dark:border-gray-700 dark:bg-gray-900">
                   <p className="mb-3 text-sm text-gray-600 dark:text-gray-300">{resetMessage}</p>
                   <div className="flex gap-2">
                     <Button variant="outline" className="flex-1" onClick={handlePracticeAgain}>{t("trainingPage.resetYes")}</Button>

@@ -28,7 +28,7 @@ Q = [
  "Date of entry to the Kingdom", ["Date the licence was issued", "Date the iqama was issued", "Date of the first car hire"],
  "Article 42: a recognised international or foreign licence may be used for one year from the date its holder entered the Kingdom, or until it expires if that comes first."),
 ("A person with special needs applies for a driving licence. Which document does Article 43 call for?",
- "Medical report", ["Driving school report", "Car adaptation report", "Social services report"],
+ "Medical report", ["Disability ID card", "Vehicle adaptation certificate", "Rehabilitation centre letter"],
  "Article 43: a person with special needs may get a driving licence after presenting an approved medical report showing they are able to drive; the regulation sets the details."),
 ("Under Article 48, who may cancel a licence once the holder has lost medical fitness?",
  "Traffic department", ["Ministry of Health", "Holder's own doctor", "Insurance company"],

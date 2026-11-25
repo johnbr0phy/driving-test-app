@@ -26,7 +26,7 @@ Q = [
  "Officer's signal", ["Red traffic light", "Car in front of you", "Road markings"],
  "Failing to obey a traffic officer's hand signals, and not giving them priority over the lights, is listed as a violation."),
 ("Your light is red, with a green arrow pointing right. You want to go straight on. You must:",
- "Wait at the red light", ["Go straight once the arrow shows", "Go straight after a full stop", "Edge forward into the junction"],
+ "Wait at the red light", ["Stop, check, then go straight", "Go straight once the arrow shows", "Go straight slowly behind turners"],
  "A red disc shown with a green arrow means turning that way is allowed but going straight ahead is not."),
 ("At a junction on flashing mode, you face flashing amber and the side road faces flashing red. You are on:",
  "Major road", ["Minor road", "Closed road", "One-way road"],

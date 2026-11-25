@@ -23,7 +23,7 @@ Q = [
  "Do not overtake there", ["Lane change allowed with care", "Slow down only at the hump", "Parking banned beside the line"],
  "Prohibitory line markings are used before speed humps where opposing flows are not separated; on an undivided road the line is yellow."),
 ("Solid white lane lines run for 25 m before a stop line at a junction. They tell you to:",
- "Stay in your lane", ["Change lanes with a signal", "Merge into one lane", "Keep left for turning"],
+ "Not move across them", ["Change lanes with care", "Change lanes after signalling", "Straddle lanes if queuing"],
  "Prohibitory lines at junctions and roundabouts mean drivers may not leave their lane, which stops weaving close to the junction."),
 ("On undivided roads, SHC 602 uses hatched markings between opposing flows above what posted speed?",
  "80 km/h", ["60 km/h", "100 km/h", "120 km/h"],

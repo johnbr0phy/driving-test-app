@@ -2,11 +2,11 @@
 
 import { useState, type ReactNode } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { X } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { useTranslation } from "@/contexts/LanguageContext";
-import { DailyRankChip, useRankChipVisible } from "@/components/DailyRank";
+import { DailyRankChip, rankStatsHref, useRankChipVisible } from "@/components/DailyRank";
 import type { Language } from "@/i18n";
 
 // The leave-a-test question in the languages a test can run in; others read English.
@@ -52,7 +52,10 @@ interface FocusBarProps {
  * is hidden on these pages (isRunnerPath in SiteHeader).
  */
 export function FocusBar({ exitHref, title, subtitle, progress, right, confirmExit, exitLabel, className, rank }: FocusBarProps) {
-  const rankShown = useRankChipVisible() && !!rank;
+  const pathname = usePathname();
+  // The chip only shows where it opens a stats page (not in quizzes), so only
+  // then does it take the right slot's place.
+  const rankShown = useRankChipVisible() && !!rank && !!rankStatsHref(pathname);
   const slot = rankShown && rank === "replace" ? null : right;
   const router = useRouter();
   const { language } = useTranslation();

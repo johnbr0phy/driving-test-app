@@ -228,6 +228,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
   return (
     <StatsPageShell backHref={routes.dashboard} backLabel={t("common.back")}>
           <PaywallModal
+            examId={exam.id}
             open={paywallOpen}
             onOpenChange={(open) => {
               if (open) trackPaywallHit("full_stats", "Full Stats", paywallLocation);

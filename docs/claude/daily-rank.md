@@ -24,11 +24,11 @@ Tells each person where they rank today by correct answers: "41 correct today. T
 
 ## Chip to stats
 
-The chip links to `<base>/stats#today-rank` (the DMV's `/stats`), cutting the runner path at its `test`, `practice`, `drill` or `training` segment, so nested bases like `/real-estate/ca` work. Quizzes have no stats page and keep a plain chip. Stats pages need an account, so a guest who taps the chip lands on sign-up; their count carries over at sign-in.
+The chip links to `<base>/stats#today-rank` (the DMV's `/stats`), cutting the runner path at its `test`, `practice`, `drill` or `training` segment, so nested bases like `/real-estate/ca` work. Quizzes have no stats page, so they show no chip (Nov 25 2026) and keep their right slot. Stats pages need an account, so a guest who taps the chip lands on sign-up; their count carries over at sign-in.
 
 ## In the site header
 
-On every page with the site header except the homepages and `/tests` (`HOME_PATHS`: they belong to no test, so there is no stats page to open; hidden there since Nov 25 2026), meaning dashboards, landings and results but never runners, once the person has 1 correct answer today the chip takes the place of the Your Stats icon and links to the same stats page (`#today-rank`), or is a plain chip where the header shows no stats link (guests on some pages). It is `compact`: on phones just the trophy and the count (`1.2K` past 999), and the TESTS / TEACH gap tightens, so a guest's home header fits at 320px.
+Only where the header has a stats link to give it (since Nov 25 2026 it is never a plain label: not on the homepages, `/tests`, `/teach` or any page with no test, nor for a visitor the page shows no Your Stats link), so on test dashboards, landings and results but never runners, once the person has 1 correct answer today the chip takes the place of the Your Stats icon and links to the same stats page (`#today-rank`), and is hidden where the header has no stats link. It is `compact`: on phones just the trophy and the count (`1.2K` past 999), and the TESTS / TEACH gap tightens, so a guest's home header fits at 320px.
 
 Colours (Nov 25 2026): the chip and the stats-page panel use the test's brand tokens (`bg-brand-light`, `text-brand-dark`, `border-brand-border-light`, `bg-brand` on Continue), not a fixed amber, so they match the test on screen in light and dark mode. v2 headers carry V2Shell's tokens (`v2-shell` class) so the header chip picks up the dark tints too.
 
@@ -73,9 +73,9 @@ No Firestore TTL policy is needed: the winner cron deletes `dailyRank/{day}` (pe
 
 ## Places for everyone
 
-Since Nov 25 2026 (John) every person with 1+ correct sees their place ("235th of all Tigertesters today"), not just the top 100 (`RANK_SHOW_PLACE_MAX` is unbounded). The next goal is the next place up. Under any place but first the panel adds a nudge: "Every correct answer moves you up. Keep prepping!", or in the top 10 (`RANK_NEAR_TOP`) "You're close to the top. Keep going!". A place does reveal roughly how many people practise that day; John accepted that.
+Since Nov 25 2026 (John) every person with 1+ correct sees their place ("235th of all Tigertesters today"), not just the top 100 (`RANK_SHOW_PLACE_MAX` is unbounded). The panel no longer shows a "Next goal" box (removed Nov 25 2026, John); only first place gets a box, "Right now: 1st place". `nextGoal()` still decides first place. Under any place but first the panel adds a nudge: "Every correct answer moves you up. Keep prepping!", or in the top 10 (`RANK_NEAR_TOP`) "You're close to the top. Keep going!". A place does reveal roughly how many people practise that day; John accepted that.
 
 ## End-of-session card
 
-`DailyRankCard` (results, finished sets) is the stats panel (`DailyRankPanel`) with `guestSignIn` and no `#today-rank` anchor: the same header, score, place and nudge, next goal and "How it works", without "Continue practicing" (results pages have their own buttons); guests get "Sign in to keep your rank and win Tiger Time" there instead.
+`DailyRankCard` (results, finished sets) is the stats panel (`DailyRankPanel`) with `guestSignIn` and no `#today-rank` anchor: the same header, score, place and nudge, the first-place box and "How it works", without "Continue practicing" (results pages have their own buttons); guests get "Sign in to keep your rank and win Tiger Time" there instead.
 

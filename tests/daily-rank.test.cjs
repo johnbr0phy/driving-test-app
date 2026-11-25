@@ -441,8 +441,11 @@ test('Tiger Time cleanup: rank days past three are deleted by the cron', () => {
 
 test('site header: the trophy chip takes the stats icon\'s place once there is 1 correct today', () => {
   const header = read('components/SiteHeader.tsx');
-  assert.match(header, /const rankChip = useRankChipVisible\(\);/);
-  assert.match(header, /\{rankChip \? \(\s*<DailyRankChip compact href=\{statsPath \? `\$\{statsPath\}#today-rank` : null\} \/>\s*\) : statsPath && \(/);
+  // Hidden on the homepages, which belong to no test (Nov 25 2026).
+  assert.match(header, /const rankChip = useRankChipVisible\(\) && !HOME_PATHS\.has\(path\);/);
+  assert.match(header, /\{rankChip \? \(\s*<DailyRankChip compact href=\{statsPath\} \/>\s*\) : statsPath && \(/);
+  // The chip adds #today-rank itself; the header passing it too made #today-rank#today-rank.
+  assert.doesNotMatch(header, /#today-rank/);
   // Phones: the header chip is just the trophy and the count (1.2K past 999), so a
   // guest's home header (TESTS, TEACH, chip, Sign In) fits at 320px.
   const chip = read('components/DailyRank.tsx');
@@ -480,4 +483,23 @@ test('the DMV upsell in the test bar wraps on phones instead of crushing the tit
   for (const f of ['app/training/page.tsx', 'app/test/[id]/page.tsx']) {
     assert.match(read(f), /max-w-\[9\.5rem\] text-right text-sm font-medium leading-tight[^"]*sm:max-w-none/, f);
   }
+});
+
+test('Tiger Time wears the test\'s brand colours, not a fixed amber (Nov 25 2026)', () => {
+  const src = read('components/DailyRank.tsx');
+  assert.doesNotMatch(src, /amber-/);
+  assert.match(src, /bg-brand-light/);
+  assert.match(src, /bg-brand px-4 py-3\.5 text-base font-bold text-brand-foreground/);
+  // v2 headers use V2Shell's tokens so the header chip follows the dark tints too.
+  assert.match(read('components/SiteHeader.tsx'), /<div className="v2-shell" style=\{style\}>\{bar\}<\/div>/);
+});
+
+test('sign-out resets the browser\'s Tiger Time count, so the chip goes (Nov 25 2026)', () => {
+  const client = read('lib/dailyRankClient.ts');
+  assert.match(client, /export function resetRankOnSignOut\(\) \{[\s\S]*?commit\(freshState\(today\(\)\)\);/);
+  const authSrc = read('contexts/AuthContext.tsx');
+  // logout(): queued answers reach the account first, then the reset.
+  assert.match(authSrc, /await flushRank\(\);\s*resetRankOnSignOut\(\);\s*\/\/ Clear all store data/);
+  // Signed out elsewhere (another tab, expired session): reset too.
+  assert.match(authSrc, /localStorage\.removeItem\('driving-test-storage'\);\s*resetRankOnSignOut\(\);\s*\}/);
 });

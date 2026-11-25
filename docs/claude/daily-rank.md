@@ -19,7 +19,7 @@ Tells each person where they rank today by correct answers: "41 correct today. T
 | `lib/server/dailyRank.ts` | Firestore: `dailyRank/{day}/people/{id}` and `dailyRank/{day}/shards/{0..9}` (histogram), 15-minute in-memory distribution cache |
 | `app/api/rank/today` | GET status, POST answers then status |
 | `app/api/rank/merge` | At sign-in, moves today's guest day onto the account once |
-| `lib/dailyRankClient.ts` | Browser store: queue, 4-second flush, live view, `useDailyRank()`, `mergeRankOnSignIn()` (called from `AuthContext`) |
+| `lib/dailyRankClient.ts` | Browser store: queue, 4-second flush, live view, `useDailyRank()`, `mergeRankOnSignIn()` and `resetRankOnSignOut()` (both called from `AuthContext`; sign-out sends queued answers, then starts a fresh guest count so the chip goes, Nov 25 2026) |
 | `components/DailyRank.tsx` | `DailyRankChip` (in `FocusBar` where a runner passes `rank`, never on practice tests; links to the test's stats page, `rankStatsHref`), `DailyRankCard` (DMV/v1 results, v1 set complete, v2 results, quiz results) and `DailyRankPanel` (top of every stats page: rank, the "N more" line, how to win, the countdown and one slim bar of how far up the field you are) |
 
 ## Chip to stats
@@ -28,7 +28,9 @@ The chip links to `<base>/stats#today-rank` (the DMV's `/stats`), cutting the ru
 
 ## In the site header
 
-On every page with the site header (home, dashboards, landings, results; never runners), once the person has 1 correct answer today the chip takes the place of the Your Stats icon and links to the same stats page (`#today-rank`), or is a plain chip where the header shows no stats link (guests on some pages). It is `compact`: on phones just the trophy and the count (`1.2K` past 999), and the TESTS / TEACH gap tightens, so a guest's home header fits at 320px.
+On every page with the site header except the homepages and `/tests` (`HOME_PATHS`: they belong to no test, so there is no stats page to open; hidden there since Nov 25 2026), meaning dashboards, landings and results but never runners, once the person has 1 correct answer today the chip takes the place of the Your Stats icon and links to the same stats page (`#today-rank`), or is a plain chip where the header shows no stats link (guests on some pages). It is `compact`: on phones just the trophy and the count (`1.2K` past 999), and the TESTS / TEACH gap tightens, so a guest's home header fits at 320px.
+
+Colours (Nov 25 2026): the chip and the stats-page panel use the test's brand tokens (`bg-brand-light`, `text-brand-dark`, `border-brand-border-light`, `bg-brand` on Continue), not a fixed amber, so they match the test on screen in light and dark mode. v2 headers carry V2Shell's tokens (`v2-shell` class) so the header chip picks up the dark tints too.
 
 ## Tiger Time winner
 

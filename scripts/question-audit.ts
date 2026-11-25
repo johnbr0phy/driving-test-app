@@ -349,7 +349,9 @@ const client = new Anthropic();
 // ── API budget (lib/apiBudget.ts) ───────────────────────────────────────────
 // Reports, flags and freshness are queued before the sweep, so they get the budget first.
 const { readSpend, recordSpend } = await import("@/lib/server/apiBudget");
-const RUN_CAP_USD = SIGNALS ? 1 : 3;
+const RUN_CAP_USD = SIGNALS ? 2 : 6;
+/** The workflow's per-run cap for the fix step (api-budget.ts check question-audit 5). */
+const FIX_RUN_CAP_USD = 5;
 let budgetUsd = 0;
 try {
   // Without Firestore (a local run) the per-run cap is the only limit.
@@ -421,7 +423,8 @@ const BATCH_DISCOUNT = 0.5;
 const EST_BLIND_USD = 0.002;
 const EST_JUDGE_USD = 0.06;
 const BATCH_POLL_MS = 30_000;
-const BATCH_MAX_WAIT_MS = 90 * 60_000;
+// Two batches must finish inside the job's 180 minutes, with time left to write the report.
+const BATCH_MAX_WAIT_MS = 60 * 60_000;
 
 interface BatchAsk { id: string; system: string; user: string; schema: object }
 
@@ -445,7 +448,7 @@ async function batchStructured<T>(asks: BatchAsk[], model: string, prices: typeo
   let status = batch.processing_status;
   while (status !== "ended") {
     if (Date.now() - started > BATCH_MAX_WAIT_MS) {
-      console.error(`[audit] batch ${batch.id} still running after 90 minutes; cancelling, finished requests are kept`);
+      console.error(`[audit] batch ${batch.id} still running after 60 minutes; cancelling, finished requests are kept`);
       await client.beta.messages.batches.cancel(batch.id).catch(() => undefined);
     }
     await new Promise((r) => setTimeout(r, BATCH_POLL_MS));
@@ -507,8 +510,8 @@ function judgeUser(item: QueueItem, blind: Blind | null, disagreed: boolean): st
 const allItems = [...queue.values()];
 const isSweepOnly = (i: QueueItem) => i.trigger.size === 1 && i.trigger.has("sweep");
 // Room for: a blind answer for every item, and a judge for every signal plus
-// an expected 1 in 5 sweep questions that disagree.
-const estimate = (i: QueueItem) => EST_BLIND_USD + (isSweepOnly(i) ? EST_JUDGE_USD / 5 : EST_JUDGE_USD);
+// an expected 1 in 3 sweep questions sent on.
+const estimate = (i: QueueItem) => EST_BLIND_USD + (isSweepOnly(i) ? EST_JUDGE_USD / 3 : EST_JUDGE_USD);
 const items: QueueItem[] = [];
 let planned = 0;
 for (const i of allItems) {
@@ -534,7 +537,9 @@ try {
 const partial = items.map((item, n) => {
   const key = keyOf(item.q);
   const blind = blinds.get(`b${n}`) ?? null;
-  const disagreed = !!blind && (!(blind.answer.length === key.length && blind.answer.every((a) => key.includes(a))) || blind.defensibleOthers.length > 0 || blind.problem.trim().length > 0);
+  // The small model's answer only clears a question when it is sure and matches the key exactly;
+  // anything less goes to the judge, so the cheaper first pass never lets a doubt through.
+  const disagreed = !!blind && (!(blind.answer.length === key.length && blind.answer.every((a) => key.includes(a))) || blind.defensibleOthers.length > 0 || blind.problem.trim().length > 0 || blind.confidence !== "high");
   return { item, n, key, blind, disagreed };
 });
 const judgeAsks: BatchAsk[] = [];
@@ -553,7 +558,19 @@ try {
   console.error(`[audit] judge batch failed: ${err instanceof Error ? err.message : err}`);
 }
 
-const results: Result[] = partial.map(({ item, n, key, blind, disagreed }) => ({
+// A question counts as checked only when every pass it needed came back. One the
+// budget or a failed batch left half done is left out, so it stays in the queue
+// (a report stays open, a sweep question is picked again) instead of being
+// logged as audited with no verdict.
+const complete = partial.filter((p) => {
+  // Reports, flags and freshness always go to the judge, blind answer or not,
+  // so a failed first pass never holds them back.
+  if (!isSweepOnly(p.item)) return verdicts.has(`j${p.n}`);
+  const hadBlind = !blindAsks.some((a) => a.id === `b${p.n}`) || !!p.blind;
+  return hadBlind && (!p.disagreed || verdicts.has(`j${p.n}`));
+});
+if (complete.length < partial.length) console.log(`[audit] ${partial.length - complete.length} questions left for a later run (no verdict this time)`);
+const results: Result[] = complete.map(({ item, n, key, blind, disagreed }) => ({
   examId: item.q.examId,
   questionId: item.q.id,
   file: item.q.file,
@@ -665,8 +682,17 @@ if (db) {
       attempts: 1,
     });
   }
-  // One more fix run is about to see each carried finding.
-  for (const c of carriedFindings) batch.update(db.collection("questionAuditFindings").doc(String(c.id)), { attempts: Number(c.attempts) + 1 });
+  // One more fix run is about to see each carried finding, but only when the
+  // budget lets the fix step run: a skipped fix must not use up an attempt, or
+  // a real finding would be closed "kept as it is" without ever being worked on.
+  let fixCanRun = false;
+  try {
+    fixCanRun = allowanceUsd(await readSpend(db), "question-audit", FIX_RUN_CAP_USD) > 0;
+  } catch (err) {
+    console.error("[audit] could not read the API budget for the fix step; attempts left as they are:", err);
+  }
+  if (fixCanRun) for (const c of carriedFindings) batch.update(db.collection("questionAuditFindings").doc(String(c.id)), { attempts: Number(c.attempts) + 1 });
+  else if (carriedFindings.length) console.log(`[audit] no budget for the fix step: ${carriedFindings.length} carried findings keep their attempt count`);
   const log: Record<string, Record<string, string>> = {};
   for (const r of results) (log[r.examId] ??= {})[r.questionId] = summary.at;
   for (const [examId, entries] of Object.entries(log)) batch.set(db.collection("questionAuditLog").doc(examId), entries, { merge: true });

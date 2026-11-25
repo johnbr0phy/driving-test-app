@@ -84,7 +84,7 @@ jobs:
   audit:
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 180
     steps:
       - uses: actions/checkout@v4
 
@@ -116,7 +116,7 @@ jobs:
           SWEEP_INPUT: ${{ github.event.inputs.sweep }}
           SIGNALS: ${{ inputs.signals || github.event.schedule == '47 4 * * 0,2-6' }}
         run: |
-          sweep="${SWEEP_INPUT:-300}"
+          sweep="${SWEEP_INPUT:-1000}"
           case "$sweep" in ''|*[!0-9]*) echo "sweep must be a whole number"; exit 1 ;; esac
           mode=""
           if [ "$SIGNALS" = "true" ]; then mode="--signals"; fi
@@ -136,7 +136,7 @@ jobs:
         if: ${{ !inputs.export_open }}
         env:
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
-        run: npx tsx scripts/api-budget.ts check question-audit 2
+        run: npx tsx scripts/api-budget.ts check question-audit 5
 
       - name: Count findings
         id: findings
@@ -173,7 +173,7 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           path_to_claude_code_executable: ${{ runner.temp }}/claude
-          claude_args: --model sonnet --max-budget-usd ${{ steps.budget_fix.outputs.cap }} --max-turns 60 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
+          claude_args: --max-budget-usd ${{ steps.budget_fix.outputs.cap }} --max-turns 200 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
           prompt: |
             Read CLAUDE.md and docs/claude/question-quality.md, then the question audit at ${{ steps.findings.outputs.report }}
             (details in ${{ steps.findings.outputs.file }}).
@@ -241,7 +241,7 @@ jobs:
         if: ${{ !inputs.export_open && steps.findings.outputs.count != '0' && steps.fix.outcome == 'success' }}
         env:
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
-        run: npx tsx scripts/api-budget.ts check question-audit 1
+        run: npx tsx scripts/api-budget.ts check question-audit 2
 
       # A second read by a run that did not write the fixes. It may only object:
       # any objection (or no verdict file) leaves the PR for a person.
@@ -254,7 +254,7 @@ jobs:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           path_to_claude_code_executable: ${{ runner.temp }}/claude
           show_full_output: true
-          claude_args: --model sonnet --max-budget-usd ${{ steps.budget_verify.outputs.cap }} --max-turns 40 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Write,Glob,Grep,WebFetch,WebSearch,Bash(git diff:*),Bash(git status:*),Bash(python3:*)"
+          claude_args: --max-budget-usd ${{ steps.budget_verify.outputs.cap }} --max-turns 150 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Write,Glob,Grep,WebFetch,WebSearch,Bash(git diff:*),Bash(git status:*),Bash(python3:*)"
           prompt: |
             You are the second reviewer of an automatic fix to Tigertest's question
             banks. Another run changed questions after an audit; nobody else will read

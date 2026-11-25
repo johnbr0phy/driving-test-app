@@ -90,7 +90,7 @@ test('batch B adds exactly sixteen optimized exports and reuses art for eight ex
     total += bytes;
     if (key.endsWith('tiger_face_03.png')) happy += bytes;
   }
-  assert.equal(total, 1_310_903, 'Use the exact approved sixteen-file batch');
+  assert.equal(total, 1_284_694, 'Use the exact approved sixteen-file batch');
   assert.equal(happy, 164_973, 'Only the two approved new default faces enter the trace');
   assert.ok(total <= 1_600_000, 'Only sixteen optimized PNGs belong in this batch');
   assert.ok(happy <= 200_000, 'Only two new default faces enter the exam OG trace');

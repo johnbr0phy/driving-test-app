@@ -1,3 +1,6 @@
+// Refresh only the exams whose role or family mascot changed.
+const OPERATOR_AND_REMAP_MASCOT_IDS = new Set(["waterop", "wastewaterop", "pesticide", "ccst", "acecpt", "rhia", "series66", "cnor"]);
+
 // Dedicated French civic and nail-care artwork replaces generic or borrowed art.
 const CIVIC_NAIL_MASCOT_IDS = new Set(["frcivique", "nailtech"]);
 
@@ -51,6 +54,7 @@ export function shareImageUrl(id: string, language = "en"): string {
   });
   // Refresh the dedicated skincare mascot without changing other share cards.
   if (id === "esthetician") query.set("v", "esthetics-mascot-1");
+  if (OPERATOR_AND_REMAP_MASCOT_IDS.has(id)) query.set("v", "operator-and-remap-mascots-1");
   if (language !== "en") query.set("lang", language);
   return `/og/${encodeURIComponent(id)}?${query.toString()}`;
 }

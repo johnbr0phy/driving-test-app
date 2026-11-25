@@ -65,10 +65,10 @@ export async function readJobHeartbeats(db: Firestore): Promise<JobHeartbeat[]> 
     },
     {
       id: "ai-answers",
-      title: "AI answer check (Mon and Thu)",
+      title: "AI answer check (Mondays)",
       lastAt: iso(aiAnswers.docs[0]?.data().at),
-      // Thu to Mon is 4 days; six allows a late run.
-      maxAgeHours: 6 * 24,
+      // Weekly; nine days allows one late run.
+      maxAgeHours: 9 * 24,
       hint: "Check the AI answer check workflow in GitHub Actions.",
     },
     {

@@ -3,7 +3,7 @@ import { getAdminDb } from '@/lib/firebase-admin';
 import { requireAdmin } from '@/lib/server/adminAuth';
 import { cachedJson, wantsRefresh } from '@/lib/server/adminCache';
 import { cachedOpportunities } from '@/lib/server/opportunitiesPayload';
-import { latestBrief } from '@/lib/server/dailyBrief';
+import { briefBudgetLeft, latestBrief } from '@/lib/server/dailyBrief';
 
 // Data for the /admin Today tab (lib/server/opportunities), cached by
 // lib/server/opportunitiesPayload (shared with the Tests tab).
@@ -14,11 +14,13 @@ export async function GET(request: NextRequest) {
   if (denied) return denied;
   try {
     // The daily update is read fresh every time, so a new one shows at once.
-    const [brief, { payload, cache, at }] = await Promise.all([
+    // briefPaused: the API budget left no room for today's update (the cron skipped).
+    const [brief, budgetLeft, { payload, cache, at }] = await Promise.all([
       latestBrief(getAdminDb()).catch(() => null),
+      briefBudgetLeft(getAdminDb()).catch(() => true),
       cachedOpportunities(wantsRefresh(request)),
     ]);
-    return cachedJson({ ...payload, brief }, cache, at);
+    return cachedJson({ ...payload, brief, briefPaused: !budgetLeft }, cache, at);
   } catch (error) {
     console.error('[admin/opportunities]', error);
     return NextResponse.json(

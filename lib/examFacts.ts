@@ -7557,6 +7557,25 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     tigertest:
       "Tigertest has two full CUET General Test practice tests of 50 questions in 60 minutes and eight topic drills: three for general knowledge and one each for mental ability, numerical ability, quantitative reasoning, logical reasoning and analytical reasoning. All of it is free with no account required; scores are percent correct, with the +5/-1 marking explained rather than applied.",
   },
+  qudurat: {
+    answer:
+      "Qudurat, the General Aptitude Test (GAT), is the university admission aptitude test of Qiyas, the National Center for Assessment at ETEC (the Education and Training Evaluation Commission) in Saudi Arabia, for secondary school students in their second and third years and for graduates. Under ETEC's Test-Taker's Guide it has 5 sections of 24 multiple-choice questions, 120 in all, in 2 hours and 5 minutes, with no calculator, and it is offered in Arabic and English, on paper and on computer. The verbal section covers verbal analogies (17%), sentence completion (7%), contextual error (10%) and reading comprehension (21%); the quantitative section of the Science Tracks version covers arithmetic (23%), geometry (10%), algebra (4%) and data analysis (8%). There is no pass mark: the score is norm-referenced, and each university decides how much weight to give it.",
+    rows: [
+      { label: "Questions", value: "120 multiple choice, in 5 sections of 24" },
+      { label: "Time", value: "2 hours 5 minutes, a time limit per section, no scheduled breaks" },
+      { label: "Verbal", value: "Analogies 17%, sentence completion 7%, contextual error 10%, reading 21%" },
+      { label: "Quantitative (Science Tracks)", value: "Arithmetic 23%, geometry 10%, algebra 4%, data analysis 8%" },
+      { label: "Calculator", value: "Not allowed" },
+      { label: "Scoring", value: "Norm-referenced, no pass or fail; 65 is average, 81 and above is the top 5%" },
+      { label: "Languages", value: "Arabic and English" },
+      { label: "Attempts and validity", value: "Five attempts; a result is valid for five years" },
+      { label: "Given by", value: "ETEC (Qiyas, the National Center for Assessment)" },
+    ],
+    basedOn: "ETEC's General Aptitude Test page and its English GAT Test-Taker's Guide (checked November 2026)",
+    source: { name: "ETEC", url: "https://etec.gov.sa/en/centers/qiyas" },
+    tigertest:
+      "Tigertest has two full practice tests of the GAT in English, each 120 questions in 2 hours 5 minutes (a verbal section in three timed parts and a quantitative section in two), and eight drills with Basics. Everything is free with no account required. Scores are percent correct; the Arabic GAT and the Humanities Tracks version are not modelled.",
+  },
   reet: {
     answer:
       "REET Level 1 is the Rajasthan Eligibility Examination for Teachers of Classes 1 to 5, conducted by the Board of Secondary Education, Rajasthan. Under the REET 2024 notification (exam held 27 and 28 February 2025), it has 150 one-mark multiple-choice questions in 2 hours 30 minutes, in five parts of 30: Child Development and Pedagogy, Language I, Language II, Mathematics and Environmental Studies. Each question has four options, and the OMR sheet has a fifth bubble, E, for a question the candidate chooses not to answer; a question with no bubble filled loses one-third of a mark, more than 10 percent left with no bubble disqualifies, and no deduction is set for a wrong answer. General candidates qualify with 60 percent and SC, OBC, MBC, EWS and ST candidates with 55 percent, with lower marks for some other groups, and the certificate is valid for life. No new REET notice had been published as of November 2026.",

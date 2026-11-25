@@ -78,6 +78,7 @@ import '@/lib/v2/banks/ccat';
 import '@/lib/v2/banks/iegarda';
 import '@/lib/v2/banks/iimcat';
 import '@/lib/v2/banks/sehp';
+import '@/lib/v2/banks/qudurat';
 import '@/lib/v2/banks/netplus';
 import '@/lib/v2/banks/linuxplus';
 import '@/lib/v2/banks/sfpd1';

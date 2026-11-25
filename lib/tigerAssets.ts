@@ -218,7 +218,7 @@ const BORROWED_SETS: Record<string, string> = {
   mtmoto: "moto", mtcpc: "cdl", mttaxi: "driving", mtguard: "security",
   // Sweden (Nov 2026): motorcycle the motorcycle tiger, jägarexamen the hunter tiger, högskoleprovet the SAT tiger.
   // Swedish citizenship has its own flag and civic-study set above.
-  semoto: "moto", sejakt: "hunter", sehp: "sat",
+  semoto: "moto", sejakt: "hunter", sehp: "sat", qudurat: "sat",
   // Denmark (Nov 2026): motorcycle the motorcycle tiger, hunting the hunter tiger.
   // Citizenship and residence share the reviewed Danish flag and civic-study set.
   dkmoto: "moto", dktruck: "cdl", dkjagt: "hunter", dkmedborger: "dkindfoed",

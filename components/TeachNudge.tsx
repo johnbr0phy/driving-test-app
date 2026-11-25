@@ -96,6 +96,8 @@ const TEACHER_LED = new Set([
   "pttvde", "ptvigil",
   // Sweden: jägarexamen courses, SFI and samhällsorientering classes, högskoleprovet courses
   "sejakt", "semedb", "sehp",
+  // Saudi Arabia: secondary schools and Qudurat (GAT) prep courses
+  "qudurat",
   // Denmark: jagttegnskurser, and language school (sprogcenter) courses for the citizenship and residence tests
   "dkjagt", "dkindfoed", "dkmedborger",
   // Italy: Italian language school courses for CILS and CELI

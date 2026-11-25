@@ -77,14 +77,15 @@ export function SiteHeader() {
   const bar = <HeaderBar path={realPath ?? "/"} themePath={themePath ?? "/"} examId={exam?.id} v2Id={examV2?.id} />;
   if (exam) return <TestThemeProvider theme={exam.id}>{bar}</TestThemeProvider>;
   if (examV2) {
-    // The dark tints ride along for the header's brand-colored controls.
+    // The same tokens as V2Shell (components/v2/v2.css), so the header's
+    // brand-colored controls (the Tiger Time chip) swap to the dark tints too.
     const style = {
-      "--brand": examV2.theme.brand,
-      "--brand-dark": examV2.theme.brandDark,
-      "--brand-light": examV2.theme.brandLight,
+      "--v2-brand-override": examV2.theme.brand,
+      "--v2-brand-dark-override": examV2.theme.brandDark,
+      "--v2-brand-light-override": examV2.theme.brandLight,
       ...v2DarkThemeStyle(examV2.theme),
     } as CSSProperties;
-    return <div style={style}>{bar}</div>;
+    return <div className="v2-shell" style={style}>{bar}</div>;
   }
   return bar;
 }
@@ -163,7 +164,9 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
   if (examV2 && hydrated && (user || v2Progress)) statsPath = v2Routes(examV2).stats;
   // Tiger Time (components/DailyRank.tsx): once there is 1 correct answer
   // today, the trophy chip takes the stats icon's place and links where it did.
-  const rankChip = useRankChipVisible();
+  // Not on the homepages: they belong to no test, so it would have no stats
+  // page to open (Nov 25 2026).
+  const rankChip = useRankChipVisible() && !HOME_PATHS.has(path);
 
   // A signed-out visitor's ask. Each dashboard's own save card (GuestSaveCard)
   // already offers Google, email and sign in, so the header leaves it to them.
@@ -243,7 +246,7 @@ function HeaderBar({ path, themePath, examId, v2Id }: { path: string; themePath:
         <div className="ml-auto flex shrink-0 items-center gap-1">
           {languages}
           {rankChip ? (
-            <DailyRankChip compact href={statsPath ? `${statsPath}#today-rank` : null} />
+            <DailyRankChip compact href={statsPath} />
           ) : statsPath && (
             <Link
               href={statsPath}

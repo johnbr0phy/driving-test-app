@@ -85,7 +85,7 @@ export function rankStatsHref(pathname: string | null): string | null {
 }
 
 const CHIP_CLASS =
-  "inline-flex shrink-0 items-center gap-1 whitespace-nowrap rounded-full border border-amber-200 bg-amber-50 px-2 py-1 text-xs font-semibold text-amber-900 dark:border-amber-800 dark:bg-amber-950 dark:text-amber-200 sm:px-2.5";
+  "inline-flex shrink-0 items-center gap-1 whitespace-nowrap rounded-full border border-brand-border-light bg-brand-light px-2 py-1 text-xs font-semibold text-brand-dark sm:px-2.5";
 
 /**
  * The small chip in the in-test bar (components/FocusBar.tsx). Updates after
@@ -120,7 +120,7 @@ export function DailyRankChip({ href: hrefOverride, compact = false }: {
   // The chip takes the right slot's place in training and drills, so there
   // is room for both. Each part pops when it changes.
   const dot = (
-    <span aria-hidden className="mr-1 text-amber-400 dark:text-amber-600">
+    <span aria-hidden className="mr-1 opacity-50">
       ·
     </span>
   );
@@ -161,7 +161,7 @@ export function DailyRankChip({ href: hrefOverride, compact = false }: {
       onClick={() => noteStatsSource(hrefOverride === undefined ? "bar_chip" : "header_chip")}
       title={t("dailyRank.chipLink")}
       aria-label={`${t("dailyRank.chipLink")}: ${count}${pct ? `, ${pct}` : ""}`}
-      className={`${CHIP_CLASS} hover:border-amber-300 hover:bg-amber-100 dark:hover:bg-amber-900`}
+      className={`${CHIP_CLASS} hover:border-brand-border`}
     >
       {body}
     </Link>
@@ -262,10 +262,10 @@ export function DailyRankPanel({
       id={anchor ? "today-rank" : undefined}
       data-daily-rank-panel
       aria-label={t("dailyRank.label")}
-      className={`mb-4 scroll-mt-20 overflow-hidden rounded-3xl border border-amber-200 bg-white shadow-sm dark:border-amber-900 dark:bg-gray-900 ${className}`}
+      className={`mb-4 scroll-mt-20 overflow-hidden rounded-3xl border border-brand-border-light bg-white shadow-sm dark:bg-gray-900 ${className}`}
     >
-      <div className="flex items-center gap-3 border-b border-amber-100 bg-amber-50 px-4 py-4 dark:border-amber-900 dark:bg-amber-950 sm:px-6">
-        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-amber-400 text-gray-900">
+      <div className="flex items-center gap-3 border-b border-brand-border-light bg-brand-light px-4 py-4 sm:px-6">
+        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand text-brand-foreground">
           <Trophy className="h-5 w-5" aria-hidden />
         </span>
         <div className="min-w-0 flex-1">
@@ -273,7 +273,7 @@ export function DailyRankPanel({
           <p className="truncate text-sm text-gray-600 dark:text-gray-300">{t("dailyRank.dailyChallenge")}</p>
         </div>
         {left && (
-          <span className="inline-flex shrink-0 items-center gap-1 whitespace-nowrap rounded-full border border-amber-200 bg-white px-2.5 py-1 text-xs font-semibold text-amber-900 sm:gap-1.5 sm:px-3 sm:text-sm dark:border-amber-800 dark:bg-gray-900 dark:text-amber-200">
+          <span className="inline-flex shrink-0 items-center gap-1 whitespace-nowrap rounded-full border border-brand-border-light bg-white px-2.5 py-1 text-xs font-semibold text-brand-dark sm:gap-1.5 sm:px-3 sm:text-sm dark:bg-gray-900">
             <Clock className="h-4 w-4" aria-hidden />
             {fill(t("dailyRank.timeLeft"), { time: left })}
           </span>
@@ -286,7 +286,7 @@ export function DailyRankPanel({
             <span className="text-5xl font-black leading-none tracking-tight tabular-nums">{nf.format(rank.correct)}</span>
             <span className="text-xl font-bold">{t("dailyRank.correctWord")}</span>
           </p>
-          {pct && <span className="mb-1 shrink-0 rounded-full bg-amber-100 px-3 py-1 text-base font-bold text-amber-900 dark:bg-amber-900 dark:text-amber-100">{pct}</span>}
+          {pct && <span className="mb-1 shrink-0 rounded-full bg-brand-light px-3 py-1 text-base font-bold text-brand-dark">{pct}</span>}
         </div>
         {rank.place && (
           <div>
@@ -303,7 +303,7 @@ export function DailyRankPanel({
           <div
             className={`mt-5 rounded-2xl border px-4 py-3 ${
               goal?.kind === "first" || goal?.kind === "tiedFirst"
-                ? "border-amber-200 bg-amber-50 dark:border-amber-800 dark:bg-amber-950"
+                ? "border-brand-border-light bg-brand-light"
                 : "border-gray-100 bg-gray-50 dark:border-gray-800 dark:bg-gray-800/60"
             }`}
           >
@@ -324,7 +324,7 @@ export function DailyRankPanel({
         {continueHref && (
           <Link
             href={continueHref}
-            className="mt-5 flex items-center justify-center gap-2 rounded-2xl bg-amber-400 px-4 py-3.5 text-base font-bold text-gray-900 hover:bg-amber-300"
+            className="mt-5 flex items-center justify-center gap-2 rounded-2xl bg-brand px-4 py-3.5 text-base font-bold text-brand-foreground hover:bg-brand-hover"
           >
             {t("dailyRank.continue")}
             <ArrowRight className="h-5 w-5" aria-hidden />

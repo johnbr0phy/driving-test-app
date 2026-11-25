@@ -436,10 +436,10 @@
       "stimulusId": "qd-t1-a",
       "stem": "What is the passage mainly about?",
       "options": [
-        "How date palms are grown from seed",
-        "How machines have replaced farm workers",
+        "How wind and insects pollinate date palms",
+        "Why machines now pollinate most farms",
         "Why growers hand-pollinate date palms",
-        "Why oases are found in deserts"
+        "How date palms are grown from seed"
       ],
       "correct": [
         2
@@ -616,15 +616,15 @@
       "format": "single",
       "stem": "**CONCEAL : HIDE**\n\nWhich pair has the same relationship?",
       "options": [
-        "whisper : shout",
-        "borrow : lend",
+        "finger : hand",
+        "warm : hot",
         "assist : help",
         "gather : scatter"
       ],
       "correct": [
         2
       ],
-      "explanation": "To conceal is to hide, so the two words are synonyms, like assist and help. The other pairs are opposites or near opposites."
+      "explanation": "To conceal is to hide, so the two words are synonyms, like assist and help. Gather and scatter are opposites, a finger is part of a hand, and hot is a stronger degree of warm."
     },
     {
       "id": "QUDURAT-T1-V2-02",
@@ -1056,15 +1056,15 @@
       "stimulusId": "qd-t1-d",
       "stem": "Why does the writer mention that different stages of sleep may do different jobs?",
       "options": [
-        "To show that sleep wastes time",
-        "To explain why people dream",
+        "To suggest that sleep stages can be skipped",
+        "To suggest why some people dream more",
         "To suggest why a full night beats a nap",
-        "To prove that short naps are harmful"
+        "To suggest that short naps harm memory"
       ],
       "correct": [
         2
       ],
-      "explanation": "The writer says this is \"one reason a full night appears to matter more than a short nap\". Nothing in the passage calls naps harmful."
+      "explanation": "The writer says this is \"one reason a full night appears to matter more than a short nap\". The passage does not say naps harm memory, and it says nothing about dreaming or skipping stages."
     },
     {
       "id": "QUDURAT-T1-V2-22",
@@ -1142,15 +1142,15 @@
       "format": "single",
       "stem": "**METICULOUS : CARELESS**\n\nWhich pair has the same relationship?",
       "options": [
-        "timid : shy",
-        "lucid : clear",
+        "glad : ecstatic",
+        "tidy : room",
         "frugal : wasteful",
         "honest : truthful"
       ],
       "correct": [
         2
       ],
-      "explanation": "Meticulous means extremely careful, the opposite of careless, as frugal is the opposite of wasteful. The other three pairs are synonyms."
+      "explanation": "Meticulous means extremely careful, the opposite of careless, as frugal is the opposite of wasteful. Honest and truthful are synonyms, ecstatic is a stronger degree of glad, and a room may be tidy."
     },
     {
       "id": "QUDURAT-T1-V3-04",
@@ -1313,18 +1313,18 @@
       "skill": "Contextual error",
       "difficulty": 1,
       "format": "single",
-      "stem": "The __transparent__ glass __blocked__ the view, so we could not __see__ the __garden__.\n\nWhich underlined word does not fit the meaning of the sentence?",
+      "stem": "Light __passed__ easily through the __clear__ glass, so the room was __dark__ even at __noon__.\n\nWhich underlined word does not fit the meaning of the sentence?",
       "options": [
-        "transparent",
-        "blocked",
-        "see",
-        "garden"
+        "passed",
+        "clear",
+        "dark",
+        "noon"
       ],
       "correct": [
-        0
+        2
       ],
       "lockedOrder": true,
-      "explanation": "Transparent glass lets light and the view through. Glass that blocks the view must be frosted or opaque."
+      "explanation": "Light passing easily through clear glass fills the room, so it would be bright at noon, not dark."
     },
     {
       "id": "QUDURAT-T1-V3-12",
@@ -3013,18 +3013,18 @@
       "skill": "Contextual error",
       "difficulty": 2,
       "format": "single",
-      "stem": "The __museum__ is __open__ every day, so visitors may come on any day __except__ __Friday__.\n\nWhich underlined word does not fit the meaning of the sentence?",
+      "stem": "Since the restaurant was __empty__, we __waited__ an hour for a __table__ __near__ the window.\n\nWhich underlined word does not fit the meaning of the sentence?",
       "options": [
-        "museum",
-        "open",
-        "except",
-        "Friday"
+        "empty",
+        "waited",
+        "table",
+        "near"
       ],
       "correct": [
-        2
+        0
       ],
       "lockedOrder": true,
-      "explanation": "A museum open every day can be visited on any day, Friday included. \"Except\" contradicts \"every day\"."
+      "explanation": "Waiting an hour for a table means the restaurant was crowded. In an empty restaurant every table is free."
     },
     {
       "id": "QUDURAT-T2-V1-13",
@@ -3174,9 +3174,9 @@
       "stimulusId": "qd-t2-b",
       "stem": "What is the passage mainly about?",
       "options": [
-        "Why coasts suffer from storms",
-        "How to plant a mangrove seedling",
-        "Which fish live on coral reefs",
+        "Where mangroves grow and how fishing harms them",
+        "How mangroves take in salt and why it harms them",
+        "Why mangroves are cleared and how to stop it",
         "Why mangroves matter and are being replanted"
       ],
       "correct": [
@@ -3498,9 +3498,9 @@
       "difficulty": 1,
       "format": "single",
       "basics": "causeEffect",
-      "stem": "__Exercise__ strengthens the heart, so doctors __discourage__ it for patients who want to __improve__ their __health__.\n\nWhich underlined word does not fit the meaning of the sentence?",
+      "stem": "Since __exercise__ strengthens the heart, doctors __discourage__ it for patients who want to __improve__ their __health__.\n\nWhich underlined word does not fit the meaning of the sentence?",
       "options": [
-        "Exercise",
+        "exercise",
         "discourage",
         "improve",
         "health"
@@ -3746,7 +3746,7 @@
       "format": "single",
       "stem": "**EYE : SIGHT**\n\nWhich pair has the same relationship?",
       "options": [
-        "hand : glove",
+        "ear : earring",
         "ear : hearing",
         "tongue : mouth",
         "nose : face"
@@ -3754,7 +3754,7 @@
       "correct": [
         1
       ],
-      "explanation": "The eye is the organ of sight, as the ear is the organ of hearing. A nose is part of a face, which is a part-to-whole relationship."
+      "explanation": "The eye is the organ of sight, as the ear is the organ of hearing. An earring is worn on the ear, and a nose is part of a face, which is a part-to-whole relationship."
     },
     {
       "id": "QUDURAT-T2-V3-02",
@@ -3937,15 +3937,15 @@
       "difficulty": 2,
       "format": "single",
       "basics": "causeEffect",
-      "stem": "__Because__ the road was __icy__, the driver __increased__ his speed to stay __safe__.\n\nWhich underlined word does not fit the meaning of the sentence?",
+      "stem": "On the __icy__ road, the driver __increased__ his speed to stay __safe__ and __avoid__ skidding.\n\nWhich underlined word does not fit the meaning of the sentence?",
       "options": [
-        "Because",
         "icy",
         "increased",
-        "safe"
+        "safe",
+        "avoid"
       ],
       "correct": [
-        2
+        1
       ],
       "lockedOrder": true,
       "explanation": "On an icy road a driver slows down to stay safe. \"Increased\" should be \"reduced\"."
@@ -3982,15 +3982,15 @@
       "skill": "Contextual error",
       "difficulty": 1,
       "format": "single",
-      "stem": "__Delighted__ by the bad news, the __family__ __cancelled__ their trip and stayed __home__.\n\nWhich underlined word does not fit the meaning of the sentence?",
+      "stem": "After the bad news, the __family__ felt __delighted__, __cancelled__ their trip and stayed __home__.\n\nWhich underlined word does not fit the meaning of the sentence?",
       "options": [
-        "Delighted",
         "family",
+        "delighted",
         "cancelled",
         "home"
       ],
       "correct": [
-        0
+        1
       ],
       "lockedOrder": true,
       "explanation": "Bad news that makes a family cancel a trip upsets them. \"Delighted\" does not fit."
@@ -4004,18 +4004,18 @@
       "skill": "Contextual error",
       "difficulty": 2,
       "format": "single",
-      "stem": "__Shy__ by nature, Lina __loved__ speaking in front of large __crowds__ and __volunteered__ for every debate.\n\nWhich underlined word does not fit the meaning of the sentence?",
+      "stem": "The __ice__ on the lake was so __thin__ that heavy __trucks__ drove across it __safely__ all winter.\n\nWhich underlined word does not fit the meaning of the sentence?",
       "options": [
-        "Shy",
-        "loved",
-        "crowds",
-        "volunteered"
+        "ice",
+        "thin",
+        "trucks",
+        "safely"
       ],
       "correct": [
-        0
+        1
       ],
       "lockedOrder": true,
-      "explanation": "Someone who loves speaking to crowds and volunteers for every debate is confident, not shy."
+      "explanation": "Only thick ice can carry heavy trucks safely all winter. \"Thin\" should be \"thick\"."
     },
     {
       "id": "QUDURAT-T2-V3-14",
@@ -4167,14 +4167,14 @@
       "stem": "What is the main idea of the passage?",
       "options": [
         "Deserts suit solar power but also hinder it",
-        "Robots are the best way to clean panels",
-        "Solar panels work best when hot",
-        "Deserts have too little land for panels"
+        "Deserts suit solar power but lack cooling water",
+        "Robots clean panels well but cost too much",
+        "Heat helps panels but dust harms them"
       ],
       "correct": [
         0
       ],
-      "explanation": "The passage says deserts seem ideal but then describes dust and heat working against the panels."
+      "explanation": "The passage says deserts seem ideal but then describes dust and heat working against the panels. It never says panels need cooling water or that robots cost too much, and heat lowers output rather than helping."
     },
     {
       "id": "QUDURAT-T2-V3-21",
@@ -5513,13 +5513,13 @@
       "options": [
         "sound ... unworkable",
         "flawed ... useless",
-        "simple ... successful",
-        "risky ... dangerous"
+        "risky ... reliable",
+        "costly ... effective"
       ],
       "correct": [
         0
       ],
-      "explanation": "\"But\" contrasts the plan on paper with the plan in practice, and being dropped shows it failed: it looked sound and proved unworkable. \"Flawed ... useless\" has no contrast."
+      "explanation": "\"But\" contrasts the plan on paper with the plan in practice, and being dropped shows it failed: it looked sound and proved unworkable. \"Risky ... reliable\" and \"costly ... effective\" are contrasts too, but a reliable or effective plan would not be dropped."
     },
     {
       "id": "QUDURAT-D-V-06",
@@ -5531,17 +5531,17 @@
       "difficulty": 1,
       "format": "single",
       "basics": "logicalCompletion",
-      "stem": "Many desert plants have ____ roots that reach deep underground in search of water.\n\nWhich word best completes the sentence?",
+      "stem": "Many desert plants have ____ roots that spread wide and reach deep underground in search of water.\n\nWhich word best completes the sentence?",
       "options": [
-        "shallow",
-        "extensive",
         "decorative",
-        "fragile"
+        "extensive",
+        "fragile",
+        "shallow"
       ],
       "correct": [
         1
       ],
-      "explanation": "Roots that reach deep underground are extensive. Shallow roots stay near the surface, the opposite of what the sentence describes."
+      "explanation": "Roots that spread wide and reach deep cover a large area, which is what extensive means. Shallow roots stay near the surface, the opposite of what the sentence describes."
     },
     {
       "id": "QUDURAT-D-V-07",
@@ -5599,9 +5599,9 @@
       "difficulty": 1,
       "format": "single",
       "basics": "preciseWords",
-      "stem": "__Silent__ crowds __cheered__ the runners __loudly__ as they __crossed__ the finish line.\n\nWhich underlined word does not fit the meaning of the sentence?",
+      "stem": "The __silent__ crowd __cheered__ the runners __loudly__ as they __crossed__ the finish line.\n\nWhich underlined word does not fit the meaning of the sentence?",
       "options": [
-        "Silent",
+        "silent",
         "cheered",
         "loudly",
         "crossed"
@@ -5610,7 +5610,7 @@
         0
       ],
       "lockedOrder": true,
-      "explanation": "Crowds that cheer loudly are not silent. The word should describe a large or excited crowd."
+      "explanation": "A crowd cheering loudly is not silent. The word should be something like \"excited\"."
     },
     {
       "id": "QUDURAT-D-Q-01",

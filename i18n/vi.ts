@@ -4267,6 +4267,7 @@ export const vi: TranslationKeys = {
     noQuestionsAvailable: "Không có câu hỏi nào.",
     moreQuestions: "câu hỏi nữa",
     unlockPremiumStats: "Mở khóa Premium để xem toàn bộ thống kê câu hỏi của bạn",
+    commonMistakesSoon: "Tính năng này sẽ sớm được mở khóa.",
     universal: "Chung",
     specific: "-riêng",
     start: "Bắt đầu",

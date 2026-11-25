@@ -421,6 +421,7 @@ export const pt: TranslationKeys = {
     noQuestionsAvailable: "Não há perguntas disponíveis.",
     moreQuestions: "perguntas a mais",
     unlockPremiumStats: "Desbloqueie o Premium para ver todas as estatísticas",
+    commonMistakesSoon: "Este recurso será desbloqueado em breve.",
     universal: "Comum",
     specific: "-específica",
     start: "Partida",

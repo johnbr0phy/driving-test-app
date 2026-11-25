@@ -33,7 +33,7 @@ import { useLocalizedExam } from "@/hooks/useLocalizedExam";
 import { examPaywallCopy } from "@/lib/examPaywallCopy";
 import { useCommunityAvailable, useExamCommunityStats } from "@/hooks/useCommunityStats";
 import { CommunityWrongQuestionsList } from "@/components/CommunityWrongQuestions";
-import { GatedStatsList, STATS_FREE_ROWS, StatsHeaderCard, StatsPageShell, StatsSortBar, StatsTabs, accuracyChipColor } from "@/components/stats/StatsParts";
+import { CommonMistakesSoon, GatedStatsList, STATS_FREE_ROWS, StatsPageShell, StatsSortBar, StatsTabs, accuracyChipColor } from "@/components/stats/StatsParts";
 import { usePremiumPrice } from "@/hooks/usePremiumPrice";
 
 type SortField = "timesAnswered" | "correct" | "wrong" | "accuracy";
@@ -62,7 +62,7 @@ export function ExamStatsPage({ exam }: { exam: ExamConfig }) {
 
 function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
   const price = usePremiumPrice();
-  const { exam, routes, ui, lang } = useLocalizedExam(source);
+  const { exam, routes, lang } = useLocalizedExam(source);
   const router = useRouter();
   const pathname = usePathname();
   const hydrated = useHydration();
@@ -221,7 +221,6 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
   if (loadFailed && user && !wantsCommunity) return <AccountLoadRetry uid={user.uid} />;
   if (!hydrated || (!wantsCommunity && (!accountReady || !user || isGuest))) return null;
 
-  const answeredCount = questionsWithPerformance.filter((q) => q.timesAnswered > 0).length;
 
   return (
     <StatsPageShell backHref={routes.dashboard} backLabel={t("common.back")}>
@@ -243,14 +242,15 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
           {/* Today's rank, explained (lib/dailyRank.ts). */}
           <DailyRankPanel continueHref={routes.dashboard} />
 
-          {communityOn && (
-            <StatsTabs
-              active={activeTab}
-              onChange={setActiveTab}
-              yoursLabel={t("stats.yourStats")}
-              communityLabel={t("stats.commonMistakes")}
-            />
-          )}
+          <StatsTabs
+            active={activeTab}
+            onChange={setActiveTab}
+            yoursLabel={t("stats.yourStats")}
+            communityLabel={t("stats.commonMistakes")}
+          />
+
+          {/* No Common Mistakes data for this exam yet: say it is coming. */}
+          {!communityOn && activeTab === "community" && <CommonMistakesSoon text={t("stats.commonMistakesSoon")} />}
 
           {showCommunity && (
             <CommunityWrongQuestionsList
@@ -266,14 +266,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
             />
           )}
 
-          {!showCommunity && (<>
-          {/* The tabs already say "Your Stats"; the header card is only for exams without them. */}
-          {!communityOn && (
-            <StatsHeaderCard
-              title={t("stats.yourStats")}
-              subtitle={ui.statsSeen(answeredCount, examQuestions.length, exam.shortName)}
-            />
-          )}
+          {activeTab === "yours" && (<>
 
           <StatsSortBar
             fields={[

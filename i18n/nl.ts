@@ -419,6 +419,7 @@ export const nl: TranslationKeys = {
     noQuestionsAvailable: "Geen vragen beschikbaar.",
     moreQuestions: "vragen meer",
     unlockPremiumStats: "Ontgrendel Premium om al je vraagstatistieken te zien",
+    commonMistakesSoon: "Deze functie wordt binnenkort ontgrendeld.",
     universal: "Algemeen",
     specific: "-specifiek",
     start: "Start",

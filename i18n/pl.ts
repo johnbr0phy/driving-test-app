@@ -419,6 +419,7 @@ export const pl: TranslationKeys = {
     noQuestionsAvailable: "Brak pytań.",
     moreQuestions: "pytań więcej",
     unlockPremiumStats: "Odblokuj Premium, aby zobaczyć wszystkie statystyki pytań",
+    commonMistakesSoon: "Ta funkcja zostanie wkrótce odblokowana.",
     universal: "Wspólne",
     specific: "-specyficzne",
     start: "Start",

@@ -223,3 +223,24 @@ test('catalog snapshot writes use an atomic revision check and load the account 
   const checkOnly = source.slice(source.indexOf('checkUserHasData: async'), source.indexOf('saveToFirestore: () =>'));
   assert.doesNotMatch(checkOnly, /captureMcpProgressRevision/);
 });
+
+test('a page with nothing unsaved can take the account after assistant practice', () => {
+  const uid = 'rebase-user';
+  capture(uid, 'catalog', revisions(3));
+  assert.equal(guard.mcpProgressRevisionChanged(uid, 'catalog', revisions(3)), false);
+  assert.equal(guard.mcpProgressRevisionChanged(uid, 'catalog', revisions(4)), true);
+  // Rebasing forgets the old baseline, so the next load takes revision 4 and saves pass.
+  assert.equal(guard.rebaseMcpProgress(uid, 'catalog'), true);
+  capture(uid, 'catalog', revisions(4));
+  assert.doesNotThrow(() => check(uid, 'catalog', revisions(4)));
+  // Other stores keep their own baselines.
+  assert.equal(guard.mcpProgressRevisionChanged(uid, 'v2', revisions(4, 9)), false);
+});
+
+test('a conflict already shown is never rebased away', () => {
+  const uid = 'rebase-blocked-user';
+  capture(uid, 'v2', revisions(0, 1));
+  assert.throws(() => check(uid, 'v2', revisions(0, 2)), isConflict);
+  assert.equal(guard.rebaseMcpProgress(uid, 'v2'), false);
+  assert.throws(() => check(uid, 'v2', revisions(0, 2)), isConflict);
+});

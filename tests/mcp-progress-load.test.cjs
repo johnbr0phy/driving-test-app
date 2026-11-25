@@ -8,7 +8,7 @@ const emptyQuiz = { progress: {}, recent: [] };
 const emptyV2 = { sessions: {}, results: [], drills: {}, basics: {}, goals: {}, questionStats: {} };
 let scenario;
 let effects;
-const hooks = { useEffect: (callback) => effects.push(callback), useRef: (current) => ({ current }) };
+const hooks = { useEffect: (callback) => effects.push(callback), useRef: (current) => ({ current }), useState: (initial) => [initial, () => {}] };
 const auth = { useAuth: () => ({ user: { uid: scenario.uid }, loading: false }) };
 const quizStore = { EMPTY_QUIZ_DATA: emptyQuiz, useQuizStore: { getState: () => scenario.store, subscribe: () => () => {} } };
 const v2Store = { EMPTY_V2: emptyV2, useV2Store: { getState: () => scenario.store, subscribe: () => () => {} } };
@@ -25,6 +25,9 @@ try {
   Module._load = function(request, parent, isMain) {
     if (request === 'react') return hooks;
     if (request === '@/contexts/AuthContext') return auth;
+    // V2Sync re-reads the account on focus; these tests never fire focus.
+    if (request === 'firebase/firestore') return { doc: () => ({}), getDoc: async () => { throw new Error('Unexpected account read'); } };
+    if (request === '@/lib/firebase') return { db: {} };
     if (request === '@/store/useQuizStore') return quizStore;
     if (request === '@/store/useV2Store') return v2Store;
     if (request === '@/lib/quizSync') return { loadQuizData: load, mergeQuizData: merge, saveQuizData: save };
@@ -43,7 +46,9 @@ async function run({ uid, syncedUid = uid, scope, revision, local, remote }) {
   };
   effects = [];
   const originalDocument = global.document;
+  const originalWindow = global.window;
   global.document = { addEventListener() {}, removeEventListener() {} };
+  global.window = { addEventListener() {}, removeEventListener() {} };
   let cleanup;
   try {
     (scope === 'quiz' ? QuizSync : V2Sync)();
@@ -52,7 +57,7 @@ async function run({ uid, syncedUid = uid, scope, revision, local, remote }) {
     await new Promise((resolve) => setImmediate(resolve));
     assert.equal(scenario.saved.length, 1, 'The initial synchronization completed');
     return scenario;
-  } finally { cleanup?.(); global.document = originalDocument; }
+  } finally { cleanup?.(); global.document = originalDocument; global.window = originalWindow; }
 }
 
 const quizProgress = (ids) => ({ progress: { ABCDEF: { masteredIds: ids, wrongQueue: [], answers: [], tests: [], known: [], lastPlayedAt: '' } }, recent: [] });

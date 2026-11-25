@@ -23,6 +23,7 @@ import { isKoState } from "@/data/koStates";
 import { SITE_URL } from "@/lib/siteUrl";
 import { examOffers } from "@/lib/examSeo";
 import { DmvSampleQuestions } from "@/components/exam/ExamSampleQuestions";
+import { stateMostMissed } from "@/lib/server/stateMostMissed";
 import dmvQuestions from "@/data/questions.json";
 import type { Question } from "@/types";
 
@@ -42,6 +43,9 @@ function parseStateSlug(slug: string): string | null {
 }
 
 export const dynamicParams = false;
+// Re-rendered daily so the most-missed questions (lib/server/stateMostMissed.ts)
+// follow the nightly stats, the same as the /questions/<exam>/most-missed pages.
+export const revalidate = 86400;
 
 export async function generateStaticParams() {
   return states.map((state) => ({
@@ -131,6 +135,9 @@ export default async function StateDMVPracticeTestPage({
   if (!landingInfo) {
     notFound();
   }
+
+  const stateQuestions = (dmvQuestions as Question[]).filter((q) => q.state === state.code);
+  const missed = await stateMostMissed(stateQuestions.map((q) => q.questionId), 6);
 
   const rawPassing = state.passCount;
 
@@ -621,9 +628,11 @@ export default async function StateDMVPracticeTestPage({
         </div>
 
         <DmvSampleQuestions
-          questions={(dmvQuestions as Question[]).filter((q) => q.state === state.code)}
+          questions={stateQuestions}
           stateName={state.name}
           path={`/${state.slug}-dmv-practice-test`}
+          missed={missed.questions}
+          missedUpdatedAt={missed.updatedAt}
         />
 
         {/* FAQ Section */}

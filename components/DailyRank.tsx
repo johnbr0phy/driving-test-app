@@ -245,6 +245,7 @@ export function DailyRankPanel({
     : showPercent(rank.topPercent)
       ? fill(t("dailyRank.chipTop"), { p: rank.topPercent })
       : null;
+  const rankFirst = anchor && pct !== null;
   const goal = nextGoal(rank.cutoffs, rank.correct, rank.next, rank.place, rank.placeGoal, rank.enterTop);
   // Only first place gets a box ("Right now: 1st place"); the "Next goal"
   // box for everyone else was dropped (John, Nov 25 2026).
@@ -258,7 +259,7 @@ export function DailyRankPanel({
       aria-label={t("dailyRank.label")}
       className={`mb-4 scroll-mt-20 overflow-hidden rounded-3xl border border-brand-border-light bg-white shadow-sm dark:bg-gray-900 ${className}`}
     >
-      <div className="flex items-center gap-3 border-b border-brand-border-light bg-brand-light px-4 py-4 sm:px-6">
+      <div className={`items-center gap-x-3 gap-y-2 border-b border-brand-border-light bg-brand-light px-4 py-4 sm:px-6 ${anchor ? "grid grid-cols-[auto_minmax(0,1fr)] min-[420px]:flex" : "flex"}`}>
         {anchor ? (
           <Image
             src="/tiger-time-trophy.webp"
@@ -278,36 +279,53 @@ export function DailyRankPanel({
           <p className="truncate text-sm text-gray-600 dark:text-gray-300">{t("dailyRank.dailyChallenge")}</p>
         </div>
         {left && (
-          <span className="inline-flex shrink-0 items-center gap-1 whitespace-nowrap rounded-full border border-brand-border-light bg-white px-2.5 py-1 text-xs font-semibold text-brand-dark sm:gap-1.5 sm:px-3 sm:text-sm dark:bg-gray-900">
+          <span className={`inline-flex shrink-0 items-center gap-1 whitespace-nowrap rounded-full border border-brand-border-light bg-white px-2.5 py-1 text-xs font-semibold text-brand-dark sm:gap-1.5 sm:px-3 sm:text-sm dark:bg-gray-900 ${anchor ? "col-start-2 justify-self-start" : ""}`}>
             <Clock className="h-4 w-4" aria-hidden />
             {fill(t("dailyRank.timeLeft"), { time: left })}
           </span>
         )}
       </div>
       <div className="px-4 py-5 sm:px-6">
-        <p className={eyebrow}>{t("dailyRank.scoreToday")}</p>
-        <div className="mt-1 flex items-end justify-between gap-3">
-          <p className="flex items-baseline gap-2 text-gray-900 dark:text-gray-50">
-            <span className="text-5xl font-black leading-none tracking-tight tabular-nums">{nf.format(rank.correct)}</span>
-            <span className="text-xl font-bold">{t("dailyRank.correctWord")}</span>
-          </p>
-          {pct && <span className="mb-1 shrink-0 rounded-full bg-brand-light px-3 py-1 text-base font-bold text-brand-dark">{pct}</span>}
-        </div>
-        {rank.place && (
-          <div>
-            <p className="mt-2 text-base font-semibold text-gray-900 dark:text-gray-50">{placeText(t, language, "dailyRank.placeOfAll", rank.place)}</p>
-            {/* A nudge under any place but first (first place has its own box). */}
-            {rank.place > 1 && (
-              <p className="mt-0.5 text-sm text-gray-600 dark:text-gray-300">
-                {t(rank.place <= RANK_NEAR_TOP ? "dailyRank.encourageTop" : "dailyRank.encourage")}
-              </p>
-            )}
+        {rankFirst ? (
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <div className="min-w-0 flex-[1_1_6.5rem]">
+              <p className={eyebrow}>{t("dailyRank.rankToday")}</p>
+              <p className="mt-1 text-4xl font-black leading-tight tracking-tight text-brand-dark tabular-nums sm:text-5xl">{pct}</p>
+              <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">{t("dailyRank.rankScope")}</p>
+            </div>
+            <div className="max-w-[8rem] rounded-2xl border border-brand-border-light bg-brand-light px-3 py-2 text-center sm:px-4">
+              <p className="text-2xl font-black leading-tight text-gray-900 dark:text-gray-50 tabular-nums">{nf.format(rank.correct)}</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300">{t("dailyRank.correctTile")}</p>
+            </div>
           </div>
+        ) : (
+          <>
+            <p className={eyebrow}>{t("dailyRank.scoreToday")}</p>
+            <div className="mt-1 flex items-end justify-between gap-3">
+              <p className="flex items-baseline gap-2 text-gray-900 dark:text-gray-50">
+                <span className="text-5xl font-black leading-none tracking-tight tabular-nums">{nf.format(rank.correct)}</span>
+                <span className="text-xl font-bold">{t("dailyRank.correctWord")}</span>
+              </p>
+              {pct && <span className="mb-1 shrink-0 rounded-full bg-brand-light px-3 py-1 text-base font-bold text-brand-dark">{pct}</span>}
+            </div>
+            {rank.place && (
+              <p className="mt-2 text-base font-semibold text-gray-900 dark:text-gray-50">{placeText(t, language, "dailyRank.placeOfAll", rank.place)}</p>
+            )}
+          </>
+        )}
+        {!!rank.place && rank.place > 1 && (
+          <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+            {t(rank.place <= RANK_NEAR_TOP ? "dailyRank.encourageTop" : "dailyRank.encourage")}
+          </p>
         )}
         {firstPlace && (
           <div className="mt-5 rounded-2xl border border-brand-border-light bg-brand-light px-4 py-3">
-            <p className={eyebrow}>{t("dailyRank.rightNow")}</p>
-            <p className="mt-1 text-xl font-bold text-gray-900 dark:text-gray-50">{t("dailyRank.firstPlace")}</p>
+            {!rankFirst && (
+              <>
+                <p className={eyebrow}>{t("dailyRank.rightNow")}</p>
+                <p className="mt-1 text-xl font-bold text-gray-900 dark:text-gray-50">{t("dailyRank.firstPlace")}</p>
+              </>
+            )}
             <p className="mt-0.5 text-sm text-gray-600 dark:text-gray-300">{goalBody}</p>
           </div>
         )}

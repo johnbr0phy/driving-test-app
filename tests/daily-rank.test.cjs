@@ -514,6 +514,18 @@ test('the Tiger Time stats header uses a decorative tiger in the original icon s
   assert.equal(image.toString('ascii', 8, 12), 'WEBP');
 });
 
+test('the stats panel leads with one rank, while the score remains visible', () => {
+  const src = read('components/DailyRank.tsx');
+  assert.match(src, /const rankFirst = anchor && pct !== null;/);
+  const rankFirst = src.split('{rankFirst ? (')[1].split(') : (')[0];
+  assert.match(rankFirst, /dailyRank\.rankToday/);
+  assert.match(rankFirst, /dailyRank\.rankScope/);
+  assert.equal(rankFirst.split('{pct}').length - 1, 1);
+  assert.match(rankFirst, /nf\.format\(rank\.correct\)/);
+  assert.doesNotMatch(rankFirst, /placeOfAll/);
+  assert.match(src, /!rankFirst && \([\s\S]*?dailyRank\.firstPlace/);
+});
+
 test('the DMV upsell in the test bar wraps on phones instead of crushing the title', () => {
   for (const f of ['app/training/page.tsx', 'app/test/[id]/page.tsx']) {
     assert.match(read(f), /max-w-\[9\.5rem\] text-right text-sm font-medium leading-tight[^"]*sm:max-w-none/, f);

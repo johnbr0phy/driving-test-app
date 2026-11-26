@@ -503,6 +503,29 @@ test('the end-of-session card is the stats panel design, with sign-in for guests
   assert.match(src, /noteStatsSource\(hrefOverride === undefined \? "bar_chip" : "header_chip"\)/);
 });
 
+test('the Tiger Time stats header uses a decorative tiger in the original icon slot', () => {
+  const src = read('components/DailyRank.tsx');
+  const panel = src.slice(src.indexOf('export function DailyRankPanel('));
+  assert.match(panel, /\{anchor \? \(\s*<Image\s+src="\/tiger-time-trophy\.webp"\s+alt=""\s+width=\{44\}\s+height=\{44\}/);
+  assert.match(panel, /h-11 w-11 shrink-0 object-contain/);
+  assert.match(panel, /\) : \(\s*<span[^>]+>\s*<Trophy/);
+  assert.doesNotMatch(src.slice(0, src.indexOf('export function DailyRankPanel(')), /tiger-time-trophy\.webp/);
+  const image = fs.readFileSync(path.join(__dirname, '../public/tiger-time-trophy.webp'));
+  assert.equal(image.toString('ascii', 8, 12), 'WEBP');
+});
+
+test('the stats panel leads with one rank, while the score remains visible', () => {
+  const src = read('components/DailyRank.tsx');
+  assert.match(src, /const rankFirst = anchor && pct !== null;/);
+  const rankFirst = src.split('{rankFirst ? (')[1].split(') : (')[0];
+  assert.match(rankFirst, /dailyRank\.rankToday/);
+  assert.match(rankFirst, /dailyRank\.rankScope/);
+  assert.equal(rankFirst.split('{pct}').length - 1, 1);
+  assert.match(rankFirst, /nf\.format\(rank\.correct\)/);
+  assert.doesNotMatch(rankFirst, /placeOfAll/);
+  assert.match(src, /!rankFirst && \([\s\S]*?dailyRank\.firstPlace/);
+});
+
 test('the DMV upsell in the test bar wraps on phones instead of crushing the title', () => {
   for (const f of ['app/training/page.tsx', 'app/test/[id]/page.tsx']) {
     assert.match(read(f), /max-w-\[9\.5rem\] text-right text-sm font-medium leading-tight[^"]*sm:max-w-none/, f);

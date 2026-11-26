@@ -54,7 +54,7 @@ export const pt: HomeCopy = {
     },
     {
       q: "O Tigertest é grátis?",
-      a: "Todos os testes podem ser começados grátis, sem conta. Uma compra Premium opcional, de pagamento único de 9,99 $ (não é uma subscrição), desbloqueia a segunda metade dos conjuntos de treino e dos testes de treino na maioria dos exames (os dois últimos de cada no DMV) e as estatísticas completas de todos os exames.",
+      a: "Todos os testes podem ser começados grátis, sem conta, e a maioria dos exames tem 100 ou mais perguntas grátis. Uma compra Premium opcional, de pagamento único de 9,99 $ (não é uma subscrição), desbloqueia o resto das perguntas e dos testes de treino (os dois últimos de cada no DMV) e as estatísticas completas de todos os exames.",
     },
     {
       q: "Preciso de uma conta?",
@@ -86,7 +86,7 @@ export const pt: HomeCopy = {
           ? `O Tigertest é um site gratuito de testes de treino. Para ${inName} tem certificações que são iguais em todo o lado, como CompTIA e AWS. Cada pergunta explica a resposta certa.`
           : `O Tigertest é um site gratuito de testes de treino. Para ${inName} tem ${local === 1 ? "um teste de condução escrito a partir das regras oficiais" : `${local} testes de condução escritos a partir dos manuais oficiais`}, mais certificações que são iguais em todo o lado, como CompTIA e AWS. Cada pergunta explica a resposta certa.`,
     },
-    { q: "O Tigertest é grátis?", a: `Todos os testes para ${inName} podem ser começados grátis, sem conta e sem subscrição. Uma compra Premium opcional, de pagamento único, desbloqueia a segunda metade dos conjuntos de treino e dos testes de treino na maioria dos exames, além das estatísticas completas.` },
+    { q: "O Tigertest é grátis?", a: `Todos os testes para ${inName} podem ser começados grátis, sem conta e sem subscrição. Uma compra Premium opcional, de pagamento único, desbloqueia o resto das perguntas e dos testes de treino de cada exame, além das estatísticas completas.` },
     {
       q: "Preciso de uma conta?",
       a: "Não. Pode começar qualquer teste sem se registar. Crie uma conta gratuita se quiser guardar o progresso em todos os seus dispositivos.",

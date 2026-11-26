@@ -53,7 +53,7 @@ export const es: HomeCopy = {
     },
     {
       q: "¿Tigertest es gratis?",
-      a: "Todos los tests se pueden empezar gratis, sin cuenta. Una compra Premium opcional de un solo pago de 9,99 $ (no es una suscripción) desbloquea la segunda mitad de los bloques de entrenamiento y de los tests de práctica en la mayoría de los exámenes (los dos últimos de cada uno en el DMV) y las estadísticas completas de todos los exámenes.",
+      a: "Todos los tests se pueden empezar gratis, sin cuenta, y la mayoría de los exámenes tienen 100 o más preguntas gratis. Una compra Premium opcional de un solo pago de 9,99 $ (no es una suscripción) desbloquea el resto de las preguntas y de los tests de práctica (los dos últimos de cada uno en el DMV) y las estadísticas completas de todos los exámenes.",
     },
     {
       q: "¿Necesito una cuenta?",
@@ -85,7 +85,7 @@ export const es: HomeCopy = {
           ? `Tigertest es una web gratuita de tests de práctica. Para ${inName} tiene certificaciones que son iguales en todas partes, como CompTIA y AWS. Cada pregunta explica la respuesta correcta.`
           : `Tigertest es una web gratuita de tests de práctica. Para ${inName} tiene ${local === 1 ? "un test de conducir basado en las normas oficiales" : `${local} tests de conducir basados en los manuales oficiales`}, además de certificaciones que son iguales en todas partes, como CompTIA y AWS. Cada pregunta explica la respuesta correcta.`,
     },
-    { q: "¿Tigertest es gratis?", a: `Todos los tests para ${inName} se pueden empezar gratis, sin cuenta y sin suscripción. Una compra Premium opcional, de un solo pago, desbloquea la segunda mitad de los bloques de entrenamiento y de los tests de práctica en la mayoría de los exámenes, además de las estadísticas completas.` },
+    { q: "¿Tigertest es gratis?", a: `Todos los tests para ${inName} se pueden empezar gratis, sin cuenta y sin suscripción. Una compra Premium opcional, de un solo pago, desbloquea el resto de las preguntas y de los tests de práctica de cada examen, además de las estadísticas completas.` },
     {
       q: "¿Necesito una cuenta?",
       a: "No. Puedes empezar cualquier test sin registrarte. Crea una cuenta gratis si quieres guardar tu progreso en todos tus dispositivos.",

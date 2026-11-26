@@ -131,7 +131,7 @@ const en: HomeCopy = {
     },
     {
       q: "Is Tigertest free?",
-      a: "Every test is free to start, with no account. An optional one-time $9.99 Premium purchase (not a subscription) unlocks the second half of the training sets and practice tests on most exams (the last two of each on the DMV) and full stats on every exam.",
+      a: "Every test is free to start, with no account, and most exams have 100 or more free questions. An optional one-time $9.99 Premium purchase (not a subscription) unlocks the rest of the questions and practice tests (the last two of each on the DMV) and full stats on every exam.",
     },
     {
       q: "Do I need an account?",
@@ -165,7 +165,7 @@ const en: HomeCopy = {
             ? `Tigertest is a free practice test site. For ${inName} it has ${local === 1 ? "a driving test" : `${local} driving tests`} written from the official ${local === 1 ? "rules" : "handbooks"}, plus certifications that are the same everywhere, such as CompTIA and AWS. Every question explains the right answer.`
             : `Tigertest is a free practice test site. For ${inName} it has ${local + others} practice tests${local > 0 ? `, ${local === 1 ? "one of them a driving test" : `${local} of them driving tests`},` : ""} written from the official handbooks and syllabuses, plus certifications that are the same everywhere, such as CompTIA and AWS. Every question explains the right answer.`,
     },
-    { q: "Is Tigertest free?", a: `Every test for ${inName} is free to start, with no account and no subscription. An optional one-time Premium purchase unlocks the second half of the training sets and practice tests on most exams, and full stats.` },
+    { q: "Is Tigertest free?", a: `Every test for ${inName} is free to start, with no account and no subscription. An optional one-time Premium purchase unlocks the rest of each exam's questions and practice tests, and full stats.` },
     {
       q: "Do I need an account?",
       a: "No. You can start any test without signing up. Make a free account if you want your progress saved across devices.",
@@ -255,7 +255,7 @@ const de: HomeCopy = {
     },
     {
       q: "Ist Tigertest kostenlos?",
-      a: "Jeder Test lässt sich kostenlos starten, ohne Konto. Ein optionaler einmaliger Premium-Kauf für 8,99 € (kein Abo) schaltet bei den meisten Prüfungen die zweite Hälfte der Übungssets und Übungstests frei (beim DMV die letzten zwei von jedem) und volle Statistiken für jede Prüfung.",
+      a: "Jeder Test lässt sich kostenlos starten, ohne Konto, und die meisten Prüfungen haben 100 oder mehr kostenlose Fragen. Ein optionaler einmaliger Premium-Kauf für 8,99 € (kein Abo) schaltet die restlichen Fragen und Übungstests frei (beim DMV die letzten zwei von jedem) und volle Statistiken für jede Prüfung.",
     },
     {
       q: "Brauche ich ein Konto?",
@@ -287,7 +287,7 @@ const de: HomeCopy = {
           ? `Tigertest ist eine kostenlose Seite mit Übungstests. Für ${inName} gibt es bisher Zertifizierungen, die überall gleich sind, etwa CompTIA und AWS. Zu jeder Frage wird die richtige Antwort erklärt.`
           : `Tigertest ist eine kostenlose Seite mit Übungstests. Für ${inName} gibt es ${local === 1 ? "einen Test zur Führerscheinprüfung" : `${local} Tests zur Führerscheinprüfung`}, geschrieben nach den amtlichen Regeln, dazu Zertifizierungen, die überall gleich sind, etwa CompTIA und AWS. Zu jeder Frage wird die richtige Antwort erklärt.`,
     },
-    { q: "Ist Tigertest kostenlos?", a: `Jeder Test für ${inName} lässt sich kostenlos starten, ohne Konto und ohne Abo. Ein optionaler einmaliger Premium-Kauf schaltet bei den meisten Prüfungen die zweite Hälfte der Übungssets und Übungstests frei, dazu die vollständige Statistik.` },
+    { q: "Ist Tigertest kostenlos?", a: `Jeder Test für ${inName} lässt sich kostenlos starten, ohne Konto und ohne Abo. Ein optionaler einmaliger Premium-Kauf schaltet die restlichen Fragen und Übungstests jeder Prüfung frei, dazu die vollständige Statistik.` },
     {
       q: "Brauche ich ein Konto?",
       a: "Nein. Du kannst jeden Test ohne Anmeldung starten. Mit einem kostenlosen Konto wird dein Fortschritt auf all deinen Geräten gespeichert.",

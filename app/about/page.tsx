@@ -125,19 +125,20 @@ export default function AboutPage() {
             </p>
             <ul className={`${p} mt-4 list-disc pl-6 space-y-2`}>
               <li>
-                <strong>Free:</strong> the first two DMV tests and training sets, the first half of the training sets
-                and practice tests on the other licence, certification and driving exams (Practice Test 1 is always free),
-                and all of the SAT, ACT, AP, GED, GCSE and every other school, college-entrance and children&apos;s test.
+                <strong>Free:</strong> the first two DMV tests and training sets (100 questions), the first training sets
+                and practice tests on the other licence, certification and driving exams (100 or more questions on most,
+                and Practice Test 1 is always free), and all of the SAT, ACT, AP, GED, GCSE and every other school,
+                college-entrance and children&apos;s test.
               </li>
               <li>
-                <strong>Premium:</strong> the last two DMV tests and training sets, the second half of the training sets
-                and practice tests on the other licence, certification and driving exams, the full stats pages of every
+                <strong>Premium:</strong> the last two DMV tests and training sets, the rest of the training sets and
+                practice tests on the other licence, certification and driving exams, the full stats pages of every
                 exam, and room for more of your own quizzes.
               </li>
             </ul>
             <p className={`${p} mt-4`}>
               Classes are free for teachers. A student in a teacher&apos;s class gets that test&apos;s full stats
-              without paying, and on every exam but the DMV the Premium half of its training sets and practice tests too.
+              without paying, and on every exam but the DMV its Premium training sets and practice tests too.
             </p>
           </section>
 

@@ -54,7 +54,7 @@ export const it: HomeCopy = {
     },
     {
       q: "Tigertest è gratis?",
-      a: "Ogni test si inizia gratis, senza account. Un acquisto Premium facoltativo e una tantum da 9,99 $ (non un abbonamento) sblocca la seconda metà dei set di allenamento e dei test nella maggior parte degli esami (gli ultimi due di ciascuno per il DMV) e le statistiche complete di ogni esame.",
+      a: "Ogni test si inizia gratis, senza account, e la maggior parte degli esami ha 100 o più domande gratuite. Un acquisto Premium facoltativo e una tantum da 9,99 $ (non un abbonamento) sblocca il resto delle domande e dei test (gli ultimi due di ciascuno per il DMV) e le statistiche complete di ogni esame.",
     },
     {
       q: "Mi serve un account?",
@@ -86,7 +86,7 @@ export const it: HomeCopy = {
           ? `Tigertest è un sito gratuito di test di esercitazione. Per questo Paese (${inName}) ha certificazioni uguali in tutto il mondo, come CompTIA e AWS. Ogni domanda spiega la risposta giusta.`
           : `Tigertest è un sito gratuito di test di esercitazione. Per questo Paese (${inName}) ha ${local === 1 ? "un test di guida" : `${local} test di guida`} scritti dalle ${local === 1 ? "regole" : "guide"} ufficiali, più certificazioni uguali in tutto il mondo, come CompTIA e AWS. Ogni domanda spiega la risposta giusta.`,
     },
-    { q: "Tigertest è gratis?", a: `Ogni test per questo Paese (${inName}) si inizia gratis, senza account e senza abbonamento. Un acquisto Premium facoltativo e una tantum sblocca la seconda metà dei set di allenamento e dei test nella maggior parte degli esami, più le statistiche complete.` },
+    { q: "Tigertest è gratis?", a: `Ogni test per questo Paese (${inName}) si inizia gratis, senza account e senza abbonamento. Un acquisto Premium facoltativo e una tantum sblocca il resto delle domande e dei test di ogni esame, più le statistiche complete.` },
     {
       q: "Mi serve un account?",
       a: "No. Puoi iniziare qualsiasi test senza registrarti. Crea un account gratuito se vuoi salvare i tuoi progressi su tutti i dispositivi.",

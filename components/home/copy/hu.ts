@@ -56,7 +56,7 @@ export const hu: HomeCopy = {
     },
     {
       q: "Ingyenes a Tigertest?",
-      a: "Minden teszt ingyen elkezdhető, fiók nélkül. Egy választható, egyszeri Premium vásárlás (nem előfizetés) a legtöbb vizsgánál megnyitja a gyakorlósorozatok és próbatesztek második felét (a DMV-nél mindkettőből az utolsó kettőt), valamint minden vizsga teljes statisztikáját.",
+      a: "Minden teszt ingyen elkezdhető, fiók nélkül, és a legtöbb vizsgánál legalább 100 kérdés ingyenes. Egy választható, egyszeri Premium vásárlás (nem előfizetés) megnyitja a többi kérdést és próbatesztet (a DMV-nél mindkettőből az utolsó kettőt), valamint minden vizsga teljes statisztikáját.",
     },
     {
       q: "Kell fiók?",
@@ -88,7 +88,7 @@ export const hu: HomeCopy = {
           ? `A Tigertest egy ingyenes gyakorlótesztoldal. Ehhez az országhoz (${inName}) mindenhol egyforma minősítések érhetők el, például a CompTIA és az AWS. Minden kérdésnél elmagyarázzuk a helyes választ.`
           : `A Tigertest egy ingyenes gyakorlótesztoldal. Ehhez az országhoz (${inName}) ${local === 1 ? "egy jogosítványteszt" : `${local} jogosítványteszt`} érhető el, a hivatalos ${local === 1 ? "szabályok" : "kézikönyvek"} alapján írva, valamint mindenhol egyforma minősítések, például a CompTIA és az AWS. Minden kérdésnél elmagyarázzuk a helyes választ.`,
     },
-    { q: "Ingyenes a Tigertest?", a: `Ehhez az országhoz (${inName}) minden teszt ingyen elkezdhető, fiók és előfizetés nélkül. Az opcionális, egyszeri Premium vásárlás a legtöbb vizsgánál megnyitja a gyakorlósorozatok és próbatesztek második felét, valamint a teljes statisztikát.` },
+    { q: "Ingyenes a Tigertest?", a: `Ehhez az országhoz (${inName}) minden teszt ingyen elkezdhető, fiók és előfizetés nélkül. Az opcionális, egyszeri Premium vásárlás megnyitja minden vizsga többi kérdését és próbatesztjét, valamint a teljes statisztikát.` },
     {
       q: "Kell fiók?",
       a: "Nem. Bármelyik tesztet elkezdheted bejelentkezés nélkül. Ha szeretnéd, hogy a haladásod minden eszközödön meglegyen, hozz létre ingyenes fiókot.",

@@ -8,6 +8,7 @@ import type { ExamV2Config } from "./v2/types";
 import { SITE_URL } from "@/lib/siteUrl";
 import { getCatalogEntry } from "./testCatalog";
 import { premiumPriceInCurrency } from "./pricing";
+import { DMV_FREE_COUNTS, examFreeCounts, testsLabel } from "./examFreeCounts";
 
 const siteUrl = SITE_URL;
 
@@ -132,17 +133,28 @@ export function examLandingAlternates(examId: string): Record<string, string> {
  * only "price 0" on a freemium exam misleads the answer engines that quote it.
  */
 export function examOffers(examId: string, currency = "USD") {
-  const free = { "@type": "Offer", name: "Free practice", price: "0", priceCurrency: currency };
   const variant = getExamById(examId);
   const paid = examId === "dmv" || !!getCatalogEntry(variant?.variantOf ?? examId)?.pricing || !!variant?.variantOf;
+  // Exact counts where we have them (lib/examFreeCounts.ts), never a share.
+  const counts = !paid ? null : examId === "dmv" ? DMV_FREE_COUNTS : examFreeCounts(examId);
+  const free = {
+    "@type": "Offer",
+    name: "Free practice",
+    price: "0",
+    priceCurrency: currency,
+    ...(counts ? { description: `${counts.freeQuestions} practice questions and ${testsLabel(counts.freeTests)}, free with no account.` } : {}),
+  };
   if (!paid) return free;
   const premium = premiumPriceInCurrency(currency);
+  const adds = counts
+    ? `the other ${counts.questions - counts.freeQuestions} questions, ${counts.tests - counts.freeTests} more ${counts.tests - counts.freeTests === 1 ? "practice test" : "practice tests"}`
+    : "the remaining training sets and practice tests";
   return [
     free,
     {
       "@type": "Offer",
       name: "Tigertest Premium",
-      description: "One-time purchase, no subscription. Unlocks the last training sets and practice tests and full stats on every exam.",
+      description: `One-time purchase, no subscription. Unlocks ${adds} and full stats on every exam.`,
       price: String(premium.amount),
       priceCurrency: premium.currency.toUpperCase(),
     },

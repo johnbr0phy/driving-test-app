@@ -24,7 +24,7 @@ Tells each person where they rank today by correct answers: "41 correct today. T
 
 ## Chip to stats
 
-The chip links to `<base>/stats#today-rank` (the DMV's `/stats`), cutting the runner path at its `test`, `practice`, `drill` or `training` segment, so nested bases like `/real-estate/ca` work. Quizzes have no stats page, so they show no chip (Nov 25 2026) and keep their right slot. Stats pages need an account, so a guest who taps the chip lands on sign-up; their count carries over at sign-in.
+The chip links to `<base>/stats#today-rank` (the DMV's `/stats`), cutting the runner path at its `test`, `practice`, `drill` or `training` segment, so nested bases like `/real-estate/ca` work. From a runner it adds `?from=<runner path>`, and the stats page's Back link and "Continue practicing" go back there (`useRankReturnHref`, only a runner of that same stats page, else the dashboard), so a tap mid-question returns to that question (Nov 26 2026). Quizzes have no stats page, so they show no chip (Nov 25 2026) and keep their right slot. Stats pages need an account, so a guest who taps the chip lands on sign-up; their count carries over at sign-in.
 
 ## In the site header
 

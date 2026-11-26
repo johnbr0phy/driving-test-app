@@ -292,7 +292,23 @@ test('stats pages: every stats page opens with the rank panel', () => {
   for (const f of ['components/exam/ExamStatsPage.tsx', 'components/v2/StatsV2.tsx', 'app/stats/page.tsx']) {
     assert.match(read(f), /<DailyRankPanel continueHref=/, f);
   }
-  assert.match(read('components/DailyRank.tsx'), /href=\{`\$\{href\}#today-rank`\}/);
+  assert.match(read('components/DailyRank.tsx'), /\?from=\$\{encodeURIComponent\(pathname\)\}`[^}]*\}#today-rank`\}/);
+  for (const f of ['components/exam/ExamStatsPage.tsx', 'components/v2/StatsV2.tsx', 'app/stats/page.tsx']) {
+    assert.match(read(f), /useRankReturnHref\(/, f);
+  }
+});
+
+test('stats page Back: returns to the question the chip was tapped on, only from a runner of that exam', () => {
+  const { rankReturnHref } = require('../components/DailyRank.tsx');
+  const dash = '/bcba/dashboard';
+  assert.equal(rankReturnHref('/bcba/practice/1', '/bcba/stats', dash), '/bcba/practice/1');
+  assert.equal(rankReturnHref('/real-estate/ca/test/2', '/real-estate/ca/stats', '/x'), '/real-estate/ca/test/2');
+  assert.equal(rankReturnHref('/test/1', '/stats', '/dmv/dashboard'), '/test/1');
+  assert.equal(rankReturnHref(null, '/bcba/stats', dash), dash);
+  assert.equal(rankReturnHref('/other/practice/1', '/bcba/stats', dash), dash);
+  assert.equal(rankReturnHref('//evil.com/practice/1', '/bcba/stats', dash), dash);
+  assert.equal(rankReturnHref('https://evil.com/bcba/practice/1', '/bcba/stats', dash), dash);
+  assert.equal(rankReturnHref('/bcba/dashboard', '/bcba/stats', dash), dash);
 });
 
 test('test bar: no rank on practice tests; in training and drills the chip replaces the right slot', () => {

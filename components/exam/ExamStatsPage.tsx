@@ -11,7 +11,7 @@
 
 import { startCheckout } from "@/lib/startCheckout";
 import { useStatsView } from "@/lib/statsViews";
-import { DailyRankPanel } from "@/components/DailyRank";
+import { DailyRankPanel, useRankReturnHref } from "@/components/DailyRank";
 import { Suspense, useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useStore } from "@/store/useStore";
@@ -80,6 +80,8 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
   const [paywallOpen, setPaywallOpen] = useState(false);
   const searchParams = useSearchParams();
   const signupDestination = signupForDestination(pathname ?? routes.stats, searchParams.toString());
+  // From the trophy chip mid-test: back to that question, not the dashboard.
+  const returnHref = useRankReturnHref(routes.dashboard);
   const communityOn = useCommunityAvailable(source.id);
   const [activeTab, setActiveTab] = useState<"yours" | "community">(
     searchParams.get("tab") === "community" ? "community" : "yours"
@@ -226,7 +228,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
 
 
   return (
-    <StatsPageShell backHref={routes.dashboard} backLabel={t("common.back")}>
+    <StatsPageShell backHref={returnHref} backLabel={t("common.back")}>
           <PaywallModal
             examId={exam.id}
             open={paywallOpen}
@@ -244,7 +246,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
           />
 
           {/* Today's rank, explained (lib/dailyRank.ts). */}
-          <DailyRankPanel continueHref={routes.dashboard} />
+          <DailyRankPanel continueHref={returnHref} />
 
           <StatsTabs
             active={activeTab}

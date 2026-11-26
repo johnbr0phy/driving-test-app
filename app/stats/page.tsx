@@ -2,7 +2,7 @@
 
 import { startCheckout } from "@/lib/startCheckout";
 import { useStatsView } from "@/lib/statsViews";
-import { DailyRankPanel } from "@/components/DailyRank";
+import { DailyRankPanel, useRankReturnHref } from "@/components/DailyRank";
 import { useEffect, useState, useMemo, useRef, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { BarChart3, Lock, Users } from "lucide-react";
@@ -67,6 +67,8 @@ function StatsContent() {
 
   const searchParams = useSearchParams();
   const signupDestination = signupForDestination("/stats", searchParams.toString());
+  // From the trophy chip mid-test: back to that question, not the dashboard.
+  const returnHref = useRankReturnHref("/dmv/dashboard");
   const [activeTab, setActiveTab] = useState<"yours" | "community">(
     searchParams.get("tab") === "community" ? "community" : "yours"
   );
@@ -266,7 +268,7 @@ function StatsContent() {
         />
 
         {/* Today's rank, explained (lib/dailyRank.ts). */}
-        <DailyRankPanel continueHref="/dmv/dashboard" />
+        <DailyRankPanel continueHref={returnHref} />
 
         {/* Tab Navigation */}
         <div className="flex gap-1.5 mb-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-1.5 shadow-sm">

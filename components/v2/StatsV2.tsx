@@ -12,7 +12,7 @@
 
 import { Suspense, useMemo, useState } from "react";
 import { useStatsView } from "@/lib/statsViews";
-import { DailyRankPanel } from "@/components/DailyRank";
+import { DailyRankPanel, useRankReturnHref } from "@/components/DailyRank";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ExamV2Config, QuestionV2 } from "@/lib/v2/types";
 import { getBank } from "@/lib/v2/bank";
@@ -64,6 +64,8 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
   const { t: tr } = useTranslation();
   const lang = useV2Language();
   const routes = v2Routes(exam);
+  // From the trophy chip in a drill: back to that question, not the dashboard.
+  const returnHref = useRankReturnHref(routes.dashboard);
   const router = useRouter();
   const hydrated = useHydration();
   usePurchaseReturn();
@@ -152,7 +154,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
 
 
   return (
-    <StatsPageShell backHref={routes.dashboard} backLabel={ui.common.back}>
+    <StatsPageShell backHref={returnHref} backLabel={ui.common.back}>
       <PaywallModal
         examId={exam.id}
         open={upgrade.paywallOpen}
@@ -168,7 +170,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
       />
 
       {/* Today's rank, explained (lib/dailyRank.ts). */}
-      <DailyRankPanel continueHref={routes.dashboard} />
+      <DailyRankPanel continueHref={returnHref} />
 
       <StatsTabs active={tab} onChange={setTab} yoursLabel={t.tabYours} communityLabel={t.tabCommunity} />
 

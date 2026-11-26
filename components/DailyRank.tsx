@@ -4,7 +4,7 @@
 import React, { useEffect, useState } from "react";
 import { noteStatsSource } from "@/lib/statsViews";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { ArrowRight, Clock, Trophy } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
@@ -84,6 +84,25 @@ export function rankStatsHref(pathname: string | null): string | null {
   return `/${[...parts.slice(0, at), "stats"].join("/")}`;
 }
 
+/**
+ * Where "Back" and "Continue practicing" on a stats page go. The chip in a
+ * runner adds ?from=<runner path>, so both return to the question the person
+ * left. Only a runner of this same stats page counts (no open redirects);
+ * otherwise the fallback (the dashboard).
+ */
+export function rankReturnHref(from: string | null, statsPath: string | null, fallback: string): string {
+  if (!from || !from.startsWith("/") || from.startsWith("//") || from.includes("\\")) return fallback;
+  if (!statsPath || rankStatsHref(from) !== statsPath) return fallback;
+  return from;
+}
+
+/** rankReturnHref for the stats page on screen. Needs a Suspense boundary (useSearchParams). */
+export function useRankReturnHref(fallback: string): string {
+  const pathname = usePathname();
+  const from = useSearchParams()?.get("from") ?? null;
+  return rankReturnHref(from, pathname, fallback);
+}
+
 const CHIP_CLASS =
   "inline-flex shrink-0 items-center gap-1 whitespace-nowrap rounded-full border border-brand-border-light bg-brand-light px-2 py-1 text-xs font-semibold text-brand-dark sm:px-2.5";
 
@@ -152,7 +171,8 @@ export function DailyRankChip({ href: hrefOverride, compact = false }: {
   return (
     <Link
       data-daily-rank-chip
-      href={`${href}#today-rank`}
+      // From a runner, the stats page's Back returns to this question (rankReturnHref).
+      href={`${href}${hrefOverride === undefined && pathname ? `?from=${encodeURIComponent(pathname)}` : ""}#today-rank`}
       onClick={() => noteStatsSource(hrefOverride === undefined ? "bar_chip" : "header_chip")}
       title={t("dailyRank.chipLink")}
       aria-label={`${t("dailyRank.chipLink")}: ${count}${pct ? `, ${pct}` : ""}`}

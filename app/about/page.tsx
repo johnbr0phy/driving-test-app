@@ -97,7 +97,7 @@ export default function AboutPage() {
               </li>
               <li>
                 <strong>Official sources are watched.</strong> The official pages behind every exam, about 500 of them,
-                are checked for changes every week. When a DMV, regulator or test maker changes a rule, a handbook or the
+                are checked for changes every week. When a licensing agency, regulator or test maker changes a rule, a handbook or the
                 exam itself, the questions, facts and exam pages that depend on it are updated to match.
               </li>
               <li>

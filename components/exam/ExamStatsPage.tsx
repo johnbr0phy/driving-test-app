@@ -246,7 +246,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
           />
 
           {/* Today's rank, explained (lib/dailyRank.ts). */}
-          <DailyRankPanel continueHref={returnHref} />
+          <DailyRankPanel />
 
           <StatsTabs
             active={activeTab}

@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import { noteStatsSource } from "@/lib/statsViews";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
-import { ArrowRight, Clock, Trophy } from "lucide-react";
+import { Clock, Trophy } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { RANK_NEAR_TOP, RANK_SHOW_TOP_PERCENT_MAX, nextGoal, tigerTimeLeftMs, type RankNext } from "@/lib/dailyRank";
@@ -213,16 +213,15 @@ function useTigerTimeLeft(language: string): string | null {
 
 /**
  * Top of every stats page (DMV, v1 and v2 exams): Tiger Time. Today's score
- * and percent (and a "Right now: 1st place" box in first place), a button back to practice and the rules behind "How it works".
+ * and percent (and a "Right now: 1st place" box in first place).
+ * No "Continue practicing" button or "How it works" link (John, Nov 26 2026).
  * No head counts and nobody else's name or position.
  */
 export function DailyRankPanel({
-  continueHref,
   guestSignIn = false,
   anchor = true,
   className = "",
 }: {
-  continueHref?: string;
   /** Guests get "Sign in to keep your rank and win Tiger Time" (the end-of-session card). */
   guestSignIn?: boolean;
   /** The stats page's #today-rank target (the chip links there); off on results. */
@@ -235,7 +234,6 @@ export function DailyRankPanel({
   const rank = useDailyRank();
   const { t, language } = useTranslation();
   const left = useTigerTimeLeft(language);
-  const [rules, setRules] = useState(false);
   useEffect(() => {
     if (on) void flushRank().then(() => refreshRank(true));
   }, [on]);
@@ -309,30 +307,6 @@ export function DailyRankPanel({
             {t("dailyRank.signIn")}
           </Link>
         )}
-        {continueHref && (
-          <Link
-            href={continueHref}
-            className="mt-5 flex items-center justify-center gap-2 rounded-2xl bg-brand px-4 py-3.5 text-base font-bold text-brand-foreground hover:bg-brand-hover"
-          >
-            {t("dailyRank.continue")}
-            <ArrowRight className="h-5 w-5" aria-hidden />
-          </Link>
-        )}
-        <div className="mt-3 text-center">
-          <button
-            type="button"
-            onClick={() => setRules((v) => !v)}
-            aria-expanded={rules}
-            className="text-sm font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50"
-          >
-            {t("dailyRank.howItWorksLink")}
-          </button>
-          {rules && (
-            <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
-              {t("dailyRank.prize")} {t("dailyRank.howItWorks")}
-            </p>
-          )}
-        </div>
       </div>
     </section>
   );

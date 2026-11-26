@@ -290,12 +290,17 @@ test('chip link: every runner route maps to its own stats page, quizzes to none'
 
 test('stats pages: every stats page opens with the rank panel', () => {
   for (const f of ['components/exam/ExamStatsPage.tsx', 'components/v2/StatsV2.tsx', 'app/stats/page.tsx']) {
-    assert.match(read(f), /<DailyRankPanel continueHref=/, f);
+    assert.match(read(f), /<DailyRankPanel \/>/, f);
   }
   assert.match(read('components/DailyRank.tsx'), /\?from=\$\{encodeURIComponent\(pathname\)\}`[^}]*\}#today-rank`\}/);
-  for (const f of ['components/exam/ExamStatsPage.tsx', 'components/v2/StatsV2.tsx', 'app/stats/page.tsx']) {
+  for (const f of ['components/exam/ExamStatsPage.tsx', 'components/v2/StatsV2.tsx']) {
     assert.match(read(f), /useRankReturnHref\(/, f);
   }
+});
+
+test('stats panel: no Continue practicing button or How it works link', () => {
+  const src = read('components/DailyRank.tsx');
+  assert.doesNotMatch(src, /dailyRank\.continue"|dailyRank\.howItWorksLink/);
 });
 
 test('stats page Back: returns to the question the chip was tapped on, only from a runner of that exam', () => {
@@ -508,7 +513,7 @@ test('Tiger Time wears the test\'s brand colours, not a fixed amber (Nov 25 2026
   const src = read('components/DailyRank.tsx');
   assert.doesNotMatch(src, /amber-/);
   assert.match(src, /bg-brand-light/);
-  assert.match(src, /bg-brand px-4 py-3\.5 text-base font-bold text-brand-foreground/);
+  assert.match(src, /rounded-full bg-brand text-brand-foreground/);
   // v2 headers use V2Shell's tokens so the header chip follows the dark tints too.
   assert.match(read('components/SiteHeader.tsx'), /<div className="v2-shell" style=\{style\}>\{bar\}<\/div>/);
 });

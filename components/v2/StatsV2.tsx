@@ -170,7 +170,7 @@ function StatsV2Content({ exam }: { exam: ExamV2Config }) {
       />
 
       {/* Today's rank, explained (lib/dailyRank.ts). */}
-      <DailyRankPanel continueHref={returnHref} />
+      <DailyRankPanel />
 
       <StatsTabs active={tab} onChange={setTab} yoursLabel={t.tabYours} communityLabel={t.tabCommunity} />
 

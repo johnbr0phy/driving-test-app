@@ -24,19 +24,19 @@ Tells each person where they rank today by correct answers: "41 correct today. T
 
 ## Chip to stats
 
-The chip links to `<base>/stats#today-rank` (the DMV's `/stats`), cutting the runner path at its `test`, `practice`, `drill` or `training` segment, so nested bases like `/real-estate/ca` work. From a runner it adds `?from=<runner path>`, and the stats page's Back link and "Continue practicing" go back there (`useRankReturnHref`, only a runner of that same stats page, else the dashboard), so a tap mid-question returns to that question (Nov 26 2026). Quizzes have no stats page, so they show no chip (Nov 25 2026) and keep their right slot. Stats pages need an account, so a guest who taps the chip lands on sign-up; their count carries over at sign-in.
+The chip links to `<base>/stats#today-rank` (the DMV's `/stats`), cutting the runner path at its `test`, `practice`, `drill` or `training` segment, so nested bases like `/real-estate/ca` work. From a runner it adds `?from=<runner path>`, and the stats page's Back link goes back there (`useRankReturnHref`, only a runner of that same stats page, else the dashboard), so a tap mid-question returns to that question (Nov 26 2026). Quizzes have no stats page, so they show no chip (Nov 25 2026) and keep their right slot. Stats pages need an account, so a guest who taps the chip lands on sign-up; their count carries over at sign-in.
 
 ## In the site header
 
 Only where the header has a stats link to give it (since Nov 25 2026 it is never a plain label: not on the homepages, `/tests`, `/teach` or any page with no test, nor for a visitor the page shows no Your Stats link), so on test dashboards, landings and results but never runners, once the person has 1 correct answer today the chip takes the place of the Your Stats icon and links to the same stats page (`#today-rank`), and is hidden where the header has no stats link. It is `compact`: on phones just the trophy and the count (`1.2K` past 999), and the TESTS / TEACH gap tightens, so a guest's home header fits at 320px.
 
-Colours (Nov 25 2026): the chip and the stats-page panel use the test's brand tokens (`bg-brand-light`, `text-brand-dark`, `border-brand-border-light`, `bg-brand` on Continue), not a fixed amber, so they match the test on screen in light and dark mode. v2 headers carry V2Shell's tokens (`v2-shell` class) so the header chip picks up the dark tints too.
+Colours (Nov 25 2026): the chip and the stats-page panel use the test's brand tokens (`bg-brand-light`, `text-brand-dark`, `border-brand-border-light`), not a fixed amber, so they match the test on screen in light and dark mode. v2 headers carry V2Shell's tokens (`v2-shell` class) so the header chip picks up the dark tints too.
 
 ## Tiger Time winner
 
 - `app/api/cron/tiger-time` (daily 05:15 UTC, just after midnight Eastern) reads the finished day's top 200 counts (`topOfDay`) and writes `tigerTimeWinners/{day}` `{ uid, correct, reachedAt, at, emailed }` once and emails the winner a congratulations (`tigerTimeEmail` in `lib/email-templates.ts`: transactional, from John, no unsubscribe link, like the 1,000,000th-question email; in the account's language (`users/{uid}.language`, copy in `lib/tigerTimeEmailCopy.ts`, English when unset); skipped if the account unsubscribed; sent once, by `emailed` and the Resend idempotency key `tiger-time-<day>`): the signed-in account with the most correct answers, at least `TIGER_TIME_MIN_TO_WIN` (10), ties to whoever reached the count first (`reachedAt` on the person doc); guests cannot win (`pickTigerTimeWinner`); internal accounts can (John, Nov 25 2026). Each run also deletes rank days older than three days (`deleteOldDays`). `?day=` reruns a day: it never replaces a winner and retries an email that did not send. Every run writes `globalStats/tigerTime.updatedAt`, which the watchdog reads (`readJobHeartbeats`, 36 hours).
 - No badge or trophy is shown on the site (decided Nov 25 2026); the email is the prize. Nobody else is told who won. Account deletion removes the winner records.
-- The stats panel shows a live countdown to midnight Eastern ("Ends in 3:07:45") and the prize line.
+- The stats panel shows a live countdown to midnight Eastern ("Ends in 3:07:45"). Its "Continue practicing" button and "How it works" link (with the prize line) were removed (Nov 26 2026).
 - Copy outside English says "New York time", which reads more clearly than "Eastern time" abroad.
 - Guests see "Sign in to keep your rank and win Tiger Time": only accounts can win.
 
@@ -77,5 +77,5 @@ Since Nov 25 2026 (John) every person with 1+ correct sees their place ("235th o
 
 ## End-of-session card
 
-`DailyRankCard` (results, finished sets) is the stats panel (`DailyRankPanel`) with `guestSignIn` and no `#today-rank` anchor: the same header, score, place and nudge, the first-place box and "How it works", without "Continue practicing" (results pages have their own buttons); guests get "Sign in to keep your rank and win Tiger Time" there instead.
+`DailyRankCard` (results, finished sets) is the stats panel (`DailyRankPanel`) with `guestSignIn` and no `#today-rank` anchor: the same header, score, place and nudge, and the first-place box; guests get "Sign in to keep your rank and win Tiger Time" there instead.
 

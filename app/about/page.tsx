@@ -72,14 +72,40 @@ export default function AboutPage() {
           <section>
             <h2 className={h2}>How the questions are written</h2>
             <p className={p}>
-              Every question is original, written to the exam&apos;s published content outline or official handbook, in that
-              country&apos;s own rules, spelling and units. The ham radio test is the exception: it uses the official public
-              question pool. Questions are written with AI, and every one is fact-checked against the exam&apos;s official
-              source, with the source and the date of the check recorded for each exam. Each practice test follows the
-              real exam&apos;s topic weighting where the exam publishes one, and each exam page lists the official source
-              its facts come from (question count, time limit, pass mark) and when they were last checked. Rules change,
-              so check that source before test day.
+              Every question is original, written with AI to the exam&apos;s published content outline or official
+              handbook, in that country&apos;s own rules, spelling and units, and fact-checked against that official
+              source, with the source and the date of the check recorded for each exam. The ham radio test is the
+              exception: it uses the official public question pool. Each practice test follows the real exam&apos;s topic
+              weighting where the exam publishes one, and each exam page lists the official source its facts come from
+              (question count, time limit, pass mark) and when they were last checked. Rules change, so check that source
+              before test day.
             </p>
+          </section>
+
+          <section>
+            <h2 className={h2}>How questions stay up to date</h2>
+            <ul className={`${p} list-disc pl-6 space-y-2`}>
+              <li>
+                <strong>Anyone can flag a question.</strong> Every question in training sets and drills has a
+                &quot;Report this question&quot; link for a wrong answer, two right answers, unclear wording, an out-of-date rule or a typo.
+                Each report is checked against the exam&apos;s official source the next day, a question found wrong is
+                fixed, and if you left an email you hear back what was found.
+              </li>
+              <li>
+                <strong>Answers raise flags too.</strong> When people who know an exam well keep picking a different answer
+                from ours, that question is checked again.
+              </li>
+              <li>
+                <strong>Official sources are watched.</strong> The official pages behind every exam, about 500 of them,
+                are checked for changes every week. When a DMV, regulator or test maker changes a rule, a handbook or the
+                exam itself, the questions, facts and exam pages that depend on it are updated to match.
+              </li>
+              <li>
+                <strong>Known changes are tracked.</strong> Announced changes, such as a new content outline, a new law or
+                a new exam format, are tracked by date and the questions updated when they take effect, and every exam gets
+                a full review at least once a year.
+              </li>
+            </ul>
           </section>
 
           <section>

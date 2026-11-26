@@ -260,13 +260,11 @@ export function DmvSampleQuestions({
   stateName,
   path,
   missed,
-  missedUpdatedAt,
 }: {
   questions: Question[];
   stateName: string;
   path: string;
   missed?: { questionId: string; errorRate: number; total: number }[];
-  missedUpdatedAt?: string | null;
 }) {
   const byId = new Map(questions.map((q) => [q.questionId, q]));
   const missedRows = (missed ?? []).filter((m) => {
@@ -311,7 +309,7 @@ export function DmvSampleQuestions({
         {useMissed ? (
           <>
             The {sample.length} questions on {stateName}&apos;s own laws that Tigertest users get wrong most often, with the
-            answer explained{missedUpdatedAt ? <>. Updated <time dateTime={missedUpdatedAt}>{missedUpdatedAt}</time></> : null}.
+            answer explained.
           </>
         ) : (
           <>{sample.length} of the questions on {stateName}&apos;s own laws, with the answer explained.</>

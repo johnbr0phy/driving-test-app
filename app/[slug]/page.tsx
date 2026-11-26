@@ -632,7 +632,6 @@ export default async function StateDMVPracticeTestPage({
           stateName={state.name}
           path={`/${state.slug}-dmv-practice-test`}
           missed={missed.questions}
-          missedUpdatedAt={missed.updatedAt}
         />
 
         {/* FAQ Section */}

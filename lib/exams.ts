@@ -100,7 +100,7 @@ export interface ExamConfig {
   /** Icon key for the catalog, menus and TestIcon. */
   icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "cpu" | "chef" | "sailboat" | "target" | "lock" | "book" | "medal" | "bandage" | "hardhat" | "forklift" | "wine" | "pencil" | "badge" | "lifebuoy" | "building" | "microscope" | "scissors" | "shield" | "sparkles" | "paw" | "calculator" | "car" | "bus";
   testCount: number;
-  /** Premium as a block of content instead of the last quarter of the
+  /** Premium as a block of content instead of the last half of the
    *  dashboard (lib/examLocks.ts): practice tests from `test` on, training
    *  sets from `set` on and, in every split set, parts from `part` on. Used where an exam's bank was
    *  extended with questions that only Premium opens (RBT, Nov 2026). The

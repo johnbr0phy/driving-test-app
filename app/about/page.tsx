@@ -74,9 +74,11 @@ export default function AboutPage() {
             <p className={p}>
               Every question is original, written to the exam&apos;s published content outline or official handbook, in that
               country&apos;s own rules, spelling and units. The ham radio test is the exception: it uses the official public
-              question pool. Each practice test follows the real exam&apos;s topic weighting where the exam publishes one,
-              and each exam page lists the official source its facts come from (question count, time limit, pass mark) and
-              when they were last checked. Rules change, so check that source before test day.
+              question pool. Questions are written with AI, and every one is fact-checked against the exam&apos;s official
+              source, with the source and the date of the check recorded for each exam. Each practice test follows the
+              real exam&apos;s topic weighting where the exam publishes one, and each exam page lists the official source
+              its facts come from (question count, time limit, pass mark) and when they were last checked. Rules change,
+              so check that source before test day.
             </p>
           </section>
 
@@ -97,19 +99,19 @@ export default function AboutPage() {
             </p>
             <ul className={`${p} mt-4 list-disc pl-6 space-y-2`}>
               <li>
-                <strong>Free:</strong> the first two DMV tests and training sets, every training set and practice test
-                but the last on the other licence, certification and driving exams, and all of the SAT, ACT, AP, GED, GCSE
-                and every other school, college-entrance and children&apos;s test.
+                <strong>Free:</strong> the first two DMV tests and training sets, the first half of the training sets
+                and practice tests on the other licence, certification and driving exams (Practice Test 1 is always free),
+                and all of the SAT, ACT, AP, GED, GCSE and every other school, college-entrance and children&apos;s test.
               </li>
               <li>
-                <strong>Premium:</strong> the last two DMV tests and training sets, the last training sets and
-                practice tests (about a quarter of each) on the other licence, certification and driving exams, the full stats pages of every
+                <strong>Premium:</strong> the last two DMV tests and training sets, the second half of the training sets
+                and practice tests on the other licence, certification and driving exams, the full stats pages of every
                 exam, and room for more of your own quizzes.
               </li>
             </ul>
             <p className={`${p} mt-4`}>
               Classes are free for teachers. A student in a teacher&apos;s class gets that test&apos;s full stats
-              without paying, and on every exam but the DMV the last quarter of its training sets and practice tests too.
+              without paying, and on every exam but the DMV the Premium half of its training sets and practice tests too.
             </p>
           </section>
 

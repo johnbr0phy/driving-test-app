@@ -8,6 +8,7 @@ import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
+import { ScrollToTopOnNavigate } from "@/components/ScrollToTopOnNavigate";
 import { Footer } from "@/components/Footer";
 import { Providers } from "@/components/Providers";
 import { SuperAmazingFireworks } from "@/components/SuperAmazingFireworks";
@@ -131,6 +132,8 @@ export default function RootLayout({
           <Suspense fallback={null}>
             <GuestPurchaseReturn />
           </Suspense>
+          {/* New pages open at the top with the header in view. */}
+          <ScrollToTopOnNavigate />
           <SkipLink />
           <SiteHeader />
           <main id="main-content" tabIndex={-1} className="flex-1 flex flex-col">{children}</main>

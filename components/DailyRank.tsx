@@ -4,8 +4,8 @@
 import React, { useEffect, useState } from "react";
 import { noteStatsSource } from "@/lib/statsViews";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { ArrowRight, Clock, Trophy } from "lucide-react";
+import { usePathname, useSearchParams } from "next/navigation";
+import { Clock, Trophy } from "lucide-react";
 import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { RANK_NEAR_TOP, RANK_SHOW_TOP_PERCENT_MAX, nextGoal, tigerTimeLeftMs, type RankNext } from "@/lib/dailyRank";
@@ -84,6 +84,25 @@ export function rankStatsHref(pathname: string | null): string | null {
   return `/${[...parts.slice(0, at), "stats"].join("/")}`;
 }
 
+/**
+ * Where "Back" and "Continue practicing" on a stats page go. The chip in a
+ * runner adds ?from=<runner path>, so both return to the question the person
+ * left. Only a runner of this same stats page counts (no open redirects);
+ * otherwise the fallback (the dashboard).
+ */
+export function rankReturnHref(from: string | null, statsPath: string | null, fallback: string): string {
+  if (!from || !from.startsWith("/") || from.startsWith("//") || from.includes("\\")) return fallback;
+  if (!statsPath || rankStatsHref(from) !== statsPath) return fallback;
+  return from;
+}
+
+/** rankReturnHref for the stats page on screen. Needs a Suspense boundary (useSearchParams). */
+export function useRankReturnHref(fallback: string): string {
+  const pathname = usePathname();
+  const from = useSearchParams()?.get("from") ?? null;
+  return rankReturnHref(from, pathname, fallback);
+}
+
 const CHIP_CLASS =
   "inline-flex shrink-0 items-center gap-1 whitespace-nowrap rounded-full border border-brand-border-light bg-brand-light px-2 py-1 text-xs font-semibold text-brand-dark sm:px-2.5";
 
@@ -152,7 +171,8 @@ export function DailyRankChip({ href: hrefOverride, compact = false }: {
   return (
     <Link
       data-daily-rank-chip
-      href={`${href}#today-rank`}
+      // From a runner, the stats page's Back returns to this question (rankReturnHref).
+      href={`${href}${hrefOverride === undefined && pathname ? `?from=${encodeURIComponent(pathname)}` : ""}#today-rank`}
       onClick={() => noteStatsSource(hrefOverride === undefined ? "bar_chip" : "header_chip")}
       title={t("dailyRank.chipLink")}
       aria-label={`${t("dailyRank.chipLink")}: ${count}${pct ? `, ${pct}` : ""}`}
@@ -193,16 +213,15 @@ function useTigerTimeLeft(language: string): string | null {
 
 /**
  * Top of every stats page (DMV, v1 and v2 exams): Tiger Time. Today's score
- * and percent (and a "Right now: 1st place" box in first place), a button back to practice and the rules behind "How it works".
+ * and percent (and a "Right now: 1st place" box in first place).
+ * No "Continue practicing" button or "How it works" link (John, Nov 26 2026).
  * No head counts and nobody else's name or position.
  */
 export function DailyRankPanel({
-  continueHref,
   guestSignIn = false,
   anchor = true,
   className = "",
 }: {
-  continueHref?: string;
   /** Guests get "Sign in to keep your rank and win Tiger Time" (the end-of-session card). */
   guestSignIn?: boolean;
   /** The stats page's #today-rank target (the chip links there); off on results. */
@@ -215,7 +234,6 @@ export function DailyRankPanel({
   const rank = useDailyRank();
   const { t, language } = useTranslation();
   const left = useTigerTimeLeft(language);
-  const [rules, setRules] = useState(false);
   useEffect(() => {
     if (on) void flushRank().then(() => refreshRank(true));
   }, [on]);
@@ -289,30 +307,6 @@ export function DailyRankPanel({
             {t("dailyRank.signIn")}
           </Link>
         )}
-        {continueHref && (
-          <Link
-            href={continueHref}
-            className="mt-5 flex items-center justify-center gap-2 rounded-2xl bg-brand px-4 py-3.5 text-base font-bold text-brand-foreground hover:bg-brand-hover"
-          >
-            {t("dailyRank.continue")}
-            <ArrowRight className="h-5 w-5" aria-hidden />
-          </Link>
-        )}
-        <div className="mt-3 text-center">
-          <button
-            type="button"
-            onClick={() => setRules((v) => !v)}
-            aria-expanded={rules}
-            className="text-sm font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-gray-50"
-          >
-            {t("dailyRank.howItWorksLink")}
-          </button>
-          {rules && (
-            <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
-              {t("dailyRank.prize")} {t("dailyRank.howItWorks")}
-            </p>
-          )}
-        </div>
       </div>
     </section>
   );

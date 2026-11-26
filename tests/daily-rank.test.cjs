@@ -290,9 +290,30 @@ test('chip link: every runner route maps to its own stats page, quizzes to none'
 
 test('stats pages: every stats page opens with the rank panel', () => {
   for (const f of ['components/exam/ExamStatsPage.tsx', 'components/v2/StatsV2.tsx', 'app/stats/page.tsx']) {
-    assert.match(read(f), /<DailyRankPanel continueHref=/, f);
+    assert.match(read(f), /<DailyRankPanel \/>/, f);
   }
-  assert.match(read('components/DailyRank.tsx'), /href=\{`\$\{href\}#today-rank`\}/);
+  assert.match(read('components/DailyRank.tsx'), /\?from=\$\{encodeURIComponent\(pathname\)\}`[^}]*\}#today-rank`\}/);
+  for (const f of ['components/exam/ExamStatsPage.tsx', 'components/v2/StatsV2.tsx']) {
+    assert.match(read(f), /useRankReturnHref\(/, f);
+  }
+});
+
+test('stats panel: no Continue practicing button or How it works link', () => {
+  const src = read('components/DailyRank.tsx');
+  assert.doesNotMatch(src, /dailyRank\.continue"|dailyRank\.howItWorksLink/);
+});
+
+test('stats page Back: returns to the question the chip was tapped on, only from a runner of that exam', () => {
+  const { rankReturnHref } = require('../components/DailyRank.tsx');
+  const dash = '/bcba/dashboard';
+  assert.equal(rankReturnHref('/bcba/practice/1', '/bcba/stats', dash), '/bcba/practice/1');
+  assert.equal(rankReturnHref('/real-estate/ca/test/2', '/real-estate/ca/stats', '/x'), '/real-estate/ca/test/2');
+  assert.equal(rankReturnHref('/test/1', '/stats', '/dmv/dashboard'), '/test/1');
+  assert.equal(rankReturnHref(null, '/bcba/stats', dash), dash);
+  assert.equal(rankReturnHref('/other/practice/1', '/bcba/stats', dash), dash);
+  assert.equal(rankReturnHref('//evil.com/practice/1', '/bcba/stats', dash), dash);
+  assert.equal(rankReturnHref('https://evil.com/bcba/practice/1', '/bcba/stats', dash), dash);
+  assert.equal(rankReturnHref('/bcba/dashboard', '/bcba/stats', dash), dash);
 });
 
 test('test bar: no rank on practice tests; in training and drills the chip replaces the right slot', () => {
@@ -492,7 +513,7 @@ test('Tiger Time wears the test\'s brand colours, not a fixed amber (Nov 25 2026
   const src = read('components/DailyRank.tsx');
   assert.doesNotMatch(src, /amber-/);
   assert.match(src, /bg-brand-light/);
-  assert.match(src, /bg-brand px-4 py-3\.5 text-base font-bold text-brand-foreground/);
+  assert.match(src, /rounded-full bg-brand text-brand-foreground/);
   // v2 headers use V2Shell's tokens so the header chip follows the dark tints too.
   assert.match(read('components/SiteHeader.tsx'), /<div className="v2-shell" style=\{style\}>\{bar\}<\/div>/);
 });

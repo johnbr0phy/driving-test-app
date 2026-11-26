@@ -266,7 +266,7 @@ function StatsContent() {
         />
 
         {/* Today's rank, explained (lib/dailyRank.ts). */}
-        <DailyRankPanel continueHref="/dmv/dashboard" />
+        <DailyRankPanel />
 
         {/* Tab Navigation */}
         <div className="flex gap-1.5 mb-6 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-xl p-1.5 shadow-sm">

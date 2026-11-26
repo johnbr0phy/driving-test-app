@@ -79,3 +79,4 @@ Since Nov 25 2026 (John) every person with 1+ correct sees their place ("235th o
 
 `DailyRankCard` (results, finished sets) is the stats panel (`DailyRankPanel`) with `guestSignIn` and no `#today-rank` anchor: the same header, score, place and nudge, and the first-place box; guests get "Sign in to keep your rank and win Tiger Time" there instead.
 
+The stats panel header uses `/tiger-time-trophy.webp`, a decorative crownless tiger holding a trophy. The rank chips and end-of-session card keep their trophy icons.

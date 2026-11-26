@@ -3,6 +3,7 @@
 // React in scope: tests render this file with the classic JSX transform.
 import React, { useEffect, useState } from "react";
 import { noteStatsSource } from "@/lib/statsViews";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { Clock, Trophy } from "lucide-react";
@@ -258,9 +259,20 @@ export function DailyRankPanel({
       className={`mb-4 scroll-mt-20 overflow-hidden rounded-3xl border border-brand-border-light bg-white shadow-sm dark:bg-gray-900 ${className}`}
     >
       <div className="flex items-center gap-3 border-b border-brand-border-light bg-brand-light px-4 py-4 sm:px-6">
-        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand text-brand-foreground">
-          <Trophy className="h-5 w-5" aria-hidden />
-        </span>
+        {anchor ? (
+          <Image
+            src="/tiger-time-trophy.webp"
+            alt=""
+            width={44}
+            height={44}
+            unoptimized
+            className="h-11 w-11 shrink-0 object-contain"
+          />
+        ) : (
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand text-brand-foreground">
+            <Trophy className="h-5 w-5" aria-hidden />
+          </span>
+        )}
         <div className="min-w-0 flex-1">
           <h2 className="text-lg font-bold leading-tight text-gray-900 dark:text-gray-50">{t("dailyRank.label")}</h2>
           <p className="truncate text-sm text-gray-600 dark:text-gray-300">{t("dailyRank.dailyChallenge")}</p>

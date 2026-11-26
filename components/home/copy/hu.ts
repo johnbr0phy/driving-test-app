@@ -56,7 +56,7 @@ export const hu: HomeCopy = {
     },
     {
       q: "Ingyenes a Tigertest?",
-      a: "Igen. Szinte minden teszt teljesen ingyenes. A DMV-hez ingyenes gyakorló tesztek és gyakorlás tartoznak, és van egy választható, egyszeri Premium vásárlás (nem előfizetés), amely még két tesztet és gyakorlósorozatot old fel, valamint minden amerikai vizsga teljes statisztikáját.",
+      a: "Minden teszt ingyen elkezdhető, fiók nélkül. Egy választható, egyszeri Premium vásárlás (nem előfizetés) a legtöbb vizsgánál megnyitja a gyakorlósorozatok és próbatesztek második felét (a DMV-nél mindkettőből az utolsó kettőt), valamint minden vizsga teljes statisztikáját.",
     },
     {
       q: "Kell fiók?",
@@ -88,7 +88,7 @@ export const hu: HomeCopy = {
           ? `A Tigertest egy ingyenes gyakorlótesztoldal. Ehhez az országhoz (${inName}) mindenhol egyforma minősítések érhetők el, például a CompTIA és az AWS. Minden kérdésnél elmagyarázzuk a helyes választ.`
           : `A Tigertest egy ingyenes gyakorlótesztoldal. Ehhez az országhoz (${inName}) ${local === 1 ? "egy jogosítványteszt" : `${local} jogosítványteszt`} érhető el, a hivatalos ${local === 1 ? "szabályok" : "kézikönyvek"} alapján írva, valamint mindenhol egyforma minősítések, például a CompTIA és az AWS. Minden kérdésnél elmagyarázzuk a helyes választ.`,
     },
-    { q: "Ingyenes a Tigertest?", a: `Ehhez az országhoz (${inName}) minden teszt ingyen elkezdhető, fiók és előfizetés nélkül. Az opcionális, egyszeri Premium vásárlás a legtöbb vizsgánál megnyitja az utolsó gyakorlósorozatot és az utolsó próbatesztet, valamint a teljes statisztikát.` },
+    { q: "Ingyenes a Tigertest?", a: `Ehhez az országhoz (${inName}) minden teszt ingyen elkezdhető, fiók és előfizetés nélkül. Az opcionális, egyszeri Premium vásárlás a legtöbb vizsgánál megnyitja a gyakorlósorozatok és próbatesztek második felét, valamint a teljes statisztikát.` },
     {
       q: "Kell fiók?",
       a: "Nem. Bármelyik tesztet elkezdheted bejelentkezés nélkül. Ha szeretnéd, hogy a haladásod minden eszközödön meglegyen, hozz létre ingyenes fiókot.",

@@ -55,7 +55,7 @@ export const da: HomeCopy = {
     },
     {
       q: "Er Tigertest gratis?",
-      a: "Ja. Næsten alle prøver er helt gratis. Til DMV er der gratis øvelsesprøver og træning plus et valgfrit engangskøb af Premium (ikke et abonnement), der låser to prøver og træningssæt mere op og giver fuld statistik for hver amerikansk prøve.",
+      a: "Alle prøver er gratis at begynde på, uden konto. Et valgfrit engangskøb af Premium (ikke et abonnement) låser op for anden halvdel af træningssættene og øvelsesprøverne i de fleste prøver (de sidste to af hver til DMV) og giver fuld statistik for hver prøve.",
     },
     {
       q: "Skal jeg have en konto?",
@@ -87,7 +87,7 @@ export const da: HomeCopy = {
           ? `Tigertest er en gratis side med øvelsesprøver. For dette land (${inName}) er der certificeringer, der er ens overalt, som CompTIA og AWS. Ved hvert spørgsmål bliver det rigtige svar forklaret.`
           : `Tigertest er en gratis side med øvelsesprøver. For dette land (${inName}) er der ${local === 1 ? "en køreprøve" : `${local} køreprøver`} skrevet ud fra de officielle ${local === 1 ? "regler" : "håndbøger"} plus certificeringer, der er ens overalt, som CompTIA og AWS. Ved hvert spørgsmål bliver det rigtige svar forklaret.`,
     },
-    { q: "Er Tigertest gratis?", a: `Alle prøver for dette land (${inName}) er gratis at begynde på, uden konto og uden abonnement. Et valgfrit engangskøb af Premium låser op for det sidste træningssæt og den sidste øvelsesprøve i de fleste prøver samt fuld statistik.` },
+    { q: "Er Tigertest gratis?", a: `Alle prøver for dette land (${inName}) er gratis at begynde på, uden konto og uden abonnement. Et valgfrit engangskøb af Premium låser op for anden halvdel af træningssættene og øvelsesprøverne i de fleste prøver samt fuld statistik.` },
     {
       q: "Skal jeg have en konto?",
       a: "Nej. Du kan starte enhver prøve uden at logge ind. Opret en gratis konto, hvis du vil gemme dit fremskridt på alle dine enheder.",

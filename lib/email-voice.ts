@@ -104,7 +104,7 @@ const andList = (xs: string[]) => (xs.length < 2 ? xs.join("") : `${xs.slice(0, 
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 /**
- * A v1 exam's Premium steps by name (the last quarter of its dashboard),
+ * A v1 exam's Premium steps by name (the last half of its dashboard),
  * plus its full stats. Set names of an exam written in another language are
  * not English, so those exams get a plain description instead.
  */

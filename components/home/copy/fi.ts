@@ -56,7 +56,7 @@ export const fi: HomeCopy = {
     },
     {
       q: "Onko Tigertest ilmainen?",
-      a: "Kyllä. Lähes jokainen koe on täysin ilmainen. DMV-kokeeseen on ilmaiset harjoituskokeet ja harjoittelu sekä vapaaehtoinen kertaostos Premium (ei tilaus), joka avaa kaksi lisäkoetta ja harjoitussarjaa sekä täydet tilastot jokaiseen yhdysvaltalaiseen kokeeseen.",
+      a: "Jokaisen kokeen voi aloittaa ilmaiseksi, ilman tiliä. Vapaaehtoinen kertaostos Premium (ei tilaus) avaa useimmissa kokeissa harjoitussarjojen ja harjoituskokeiden jälkimmäisen puoliskon (DMV-kokeessa kummastakin kaksi viimeistä) sekä täydet tilastot jokaiseen kokeeseen.",
     },
     {
       q: "Tarvitsenko tilin?",
@@ -88,7 +88,7 @@ export const fi: HomeCopy = {
           ? `Tigertest on ilmainen harjoituskoesivusto. Tälle maalle (${inName}) on sertifikaatteja, jotka ovat samat kaikkialla, kuten CompTIA ja AWS. Jokaisessa kysymyksessä oikea vastaus selitetään.`
           : `Tigertest on ilmainen harjoituskoesivusto. Tälle maalle (${inName}) on ${local === 1 ? "ajokortin teoriakoe, joka on kirjoitettu virallisten sääntöjen" : `${local} ajokortin teoriakoetta, jotka on kirjoitettu virallisten käsikirjojen`} pohjalta, sekä sertifikaatteja, jotka ovat samat kaikkialla, kuten CompTIA ja AWS. Jokaisessa kysymyksessä oikea vastaus selitetään.`,
     },
-    { q: "Onko Tigertest ilmainen?", a: `Jokaisen kokeen tälle maalle (${inName}) voi aloittaa ilmaiseksi, ilman tiliä ja ilman tilausta. Valinnainen kertaostona maksettava Premium avaa useimmissa kokeissa viimeisen harjoitussarjan ja viimeisen harjoituskokeen sekä täydet tilastot.` },
+    { q: "Onko Tigertest ilmainen?", a: `Jokaisen kokeen tälle maalle (${inName}) voi aloittaa ilmaiseksi, ilman tiliä ja ilman tilausta. Valinnainen kertaostona maksettava Premium avaa useimmissa kokeissa harjoitussarjojen ja harjoituskokeiden jälkimmäisen puoliskon sekä täydet tilastot.` },
     {
       q: "Tarvitsenko tilin?",
       a: "Et. Voit aloittaa minkä tahansa kokeen kirjautumatta. Luo ilmainen tili, jos haluat tallentaa edistymisesi kaikille laitteillesi.",

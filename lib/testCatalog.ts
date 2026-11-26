@@ -675,7 +675,7 @@ const examEntry = (exam: ExamConfig): TestCatalogEntry => ({
   icon: exam.icon,
   theme: exam.id,
   languages: examLanguages(exam),
-  // The last quarter of the dashboard is Premium (lib/examLocks.ts).
+  // The last half of the dashboard is Premium (lib/examLocks.ts).
   pricing: `${examTestTotal(exam) - lockedTestIds(exam).length} free, ${lockedTestIds(exam).length} premium`,
   ...(examBaseLanguage(exam) !== "en"
     ? { language: examBaseLanguage(exam), nativeName: exam.name, nativeShortName: exam.shortName }

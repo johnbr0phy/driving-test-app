@@ -2693,13 +2693,13 @@
     "questionId": "HKLESFI7-APP-017",
     "category": "hk7Applications",
     "question": "Which reply about an ordinary listed share triggers the suitability requirement in paragraph 5.2 of the SFC Code of Conduct?",
-    "optionA": "I favour this share for your income portfolio",
-    "optionB": "I calculate your commission at the posted rate",
-    "optionC": "I value your holding at today's closing price",
-    "optionD": "I make your dividend entitlement 200 dollars",
+    "optionA": "I suggest buying it for your income portfolio",
+    "optionB": "I can send its most recent dividend announcement",
+    "optionC": "I suggest reading the issuer's latest report",
+    "optionD": "I can show you the current price before you trade",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The intermediary who favours a particular share for the client's portfolio is recommending it. Calculating fees, market value or entitlements provides factual information without recommending a transaction."
+    "explanation": "Proposing that the client buy a particular security is an investment recommendation. Directing the client to public information can help with research without proposing a transaction."
   },
   {
     "type": "HKLESFI7",

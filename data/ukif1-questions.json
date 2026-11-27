@@ -620,14 +620,14 @@
     "state": "ALL",
     "questionId": "UKIF1-MKT-009",
     "category": "ukif1Market",
-    "question": "What can a driver infer solely from a policy ranking first when quotes are sorted by price?",
+    "question": "A comparison site sorts quotes lowest price first. What can a driver infer about the first policy?",
     "optionA": "It is cheapest among the displayed quotes",
     "optionB": "Its excess is lowest among those quoted",
     "optionC": "Its exclusions best suit the driver's needs",
     "optionD": "Its cover is widest among those shown",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "A price ordering compares quoted cost. It does not amount to a personal assessment of cover, excesses or suitability."
+    "explanation": "The first quote has the lowest displayed price. The ranking gives no personal assessment of cover, excesses or suitability."
   },
   {
     "type": "UKIF1",
@@ -1082,14 +1082,14 @@
     "state": "ALL",
     "questionId": "UKIF1-CON-014",
     "category": "ukif1Contract",
-    "question": "An agent proposes to act for two principals whose interests may conflict. What consent addresses the loyalty issue?",
-    "optionA": "Consent from the larger client",
-    "optionB": "Informed consent from both",
-    "optionC": "Approval from a supervising broker",
-    "optionD": "Consent from the first to instruct",
+    "question": "A broker acts for competing principals without their informed consent. Which duty does the dual role breach?",
+    "optionA": "Duty to account for money received",
+    "optionB": "Duty of undivided loyalty",
+    "optionC": "Duty to exercise reasonable skill",
+    "optionD": "Duty to follow lawful instructions",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Undivided loyalty is owed to each principal. Informed consent from just one leaves the duty to the other unresolved."
+    "explanation": "An agent serving principals whose interests may conflict owes undivided loyalty to each. Acting for both requires their informed consent."
   },
   {
     "type": "UKIF1",
@@ -1558,14 +1558,14 @@
     "state": "ALL",
     "questionId": "UKIF1-DIS-016",
     "category": "ukif1Disclosure",
-    "question": "A company spots an inaccurate material statement immediately before agreeing renewal. What can it do under the Insurance Act?",
-    "optionA": "Correct it only after the policy is signed",
-    "optionB": "Wait until the insurer first requests evidence",
-    "optionC": "Use a later claim form to amend the proposal",
-    "optionD": "Correct the representation before agreement",
+    "question": "Under the Insurance Act, which event ends a company's opportunity to correct a representation for renewal?",
+    "optionA": "Completion of the insurer's risk survey",
+    "optionB": "Issue of a renewal quotation",
+    "optionC": "Receipt of the renewal premium",
+    "optionD": "Conclusion of the renewal contract",
     "correctAnswer": "D",
     "correctIndex": 3,
-    "explanation": "A representation can be withdrawn or corrected before the contract is entered into. The continuing presentation must still satisfy the other requirements."
+    "explanation": "A representation may be withdrawn or corrected until the insurance contract is entered into. Pricing the risk or issuing a quotation can come earlier."
   },
   {
     "type": "UKIF1",
@@ -2020,14 +2020,14 @@
     "state": "ALL",
     "questionId": "UKIF1-REG-005",
     "category": "ukif1Regulation",
-    "question": "An employer displays its liability certificate electronically. What determines whether this meets the display requirement?",
-    "optionA": "Staff can reasonably access it",
-    "optionB": "Its insurer hosts the document",
-    "optionC": "It carries a qualified electronic seal",
-    "optionD": "The public can download it",
+    "question": "A warehouse displays its employers' liability certificate electronically. Whose access determines whether the display is sufficient?",
+    "optionA": "Employees of the insured business",
+    "optionB": "Visitors to the insured premises",
+    "optionC": "Suppliers working with the insured",
+    "optionD": "Customers of the insured business",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "An electronic certificate is acceptable if employees can reasonably access it and understand how to do so. Public access is not the test."
+    "explanation": "Employees must know where to find the certificate and have reasonable access to it. Display to customers or other visitors does not establish that employees can find it."
   },
   {
     "type": "UKIF1",
@@ -2370,14 +2370,14 @@
     "state": "ALL",
     "questionId": "UKIF1-REG-030",
     "category": "ukif1Regulation",
-    "question": "An insurer in difficulty provides income protection. Which payment is the PRA particularly concerned to preserve?",
-    "optionA": "Interest on subordinated notes",
-    "optionB": "Benefits meeting living costs",
-    "optionC": "Dividends on preference shares",
-    "optionD": "Bonus awards to senior managers",
+    "question": "An insurer breaches its minimum capital requirement. Which feature of a policyholder payment makes its continuity a particular PRA concern?",
+    "optionA": "Date the claim was first submitted",
+    "optionB": "Reliance on it for essential expenditure",
+    "optionC": "Remaining duration of the insurance contract",
+    "optionD": "Amount of premium the customer has paid",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The PRA seeks continuity of payments policyholders rely on for essentials. Owners and providers of capital have a different interest in the firm's remaining assets."
+    "explanation": "The PRA seeks uninterrupted payments where policyholders need them for basic living costs. The timing of a claim or the amount of premium paid does not establish that need."
   },
   {
     "type": "UKIF1",
@@ -2524,14 +2524,14 @@
     "state": "ALL",
     "questionId": "UKIF1-PRO-009",
     "category": "ukif1Protection",
-    "question": "A life policy benefits a class of future grandchildren. What information should the insurer obtain at designation?",
-    "optionA": "Details sufficient to identify them at payout",
-    "optionB": "The amounts each grandchild will inherit",
-    "optionC": "Individual tax returns for the policyholder",
-    "optionD": "Valuations of assets in the wider estate",
+    "question": "A life policy benefits a class of future grandchildren. What must the insurer establish at designation?",
+    "optionA": "How to identify qualifying members at payout",
+    "optionB": "How to verify current members at inception",
+    "optionC": "How to allocate the benefit among existing members",
+    "optionD": "How to verify representatives at each review",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "For beneficiaries described by class, the insurer must have sufficient information to establish who qualifies when the policy pays out. It need not know the identity of unborn beneficiaries."
+    "explanation": "The class description must give the insurer sufficient information to establish beneficiaries' identities when the proceeds are payable. The current membership of a family may change."
   },
   {
     "type": "UKIF1",

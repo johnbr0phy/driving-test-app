@@ -2692,14 +2692,14 @@
     "state": "ALL",
     "questionId": "HKLESFI7-APP-017",
     "category": "hk7Applications",
-    "question": "Which reply about an ordinary listed share triggers the suitability requirement in paragraph 5.2 of the SFC Code of Conduct?",
-    "optionA": "I suggest buying it for your income portfolio",
-    "optionB": "I can send its most recent dividend announcement",
-    "optionC": "I suggest reading the issuer's latest report",
-    "optionD": "I can show you the current price before you trade",
+    "question": "For ordinary listed shares, which two actions independently trigger suitability under SFC Code paragraph 5.2?",
+    "optionA": "Soliciting an order and recommending a purchase",
+    "optionB": "Soliciting an order and acknowledging a transfer",
+    "optionC": "Reporting an execution and recommending a purchase",
+    "optionD": "Reporting an execution and acknowledging a transfer",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Proposing that the client buy a particular security is an investment recommendation. Directing the client to public information can help with research without proposing a transaction."
+    "explanation": "Both a solicitation and a recommendation engage the suitability rule. Merely acknowledging a transfer or reporting a completed trade does not by itself amount to either action."
   },
   {
     "type": "HKLESFI7",

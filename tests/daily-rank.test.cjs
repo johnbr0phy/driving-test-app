@@ -292,7 +292,12 @@ test('stats pages: every stats page opens with the rank panel', () => {
   for (const f of ['components/exam/ExamStatsPage.tsx', 'components/v2/StatsV2.tsx', 'app/stats/page.tsx']) {
     assert.match(read(f), /<DailyRankPanel \/>/, f);
   }
-  assert.match(read('components/DailyRank.tsx'), /\?from=\$\{encodeURIComponent\(pathname\)\}`[^}]*\}#today-rank`\}/);
+  // The chip opens the stats page at the very top (header in view), not at #today-rank.
+  const chipSrc = read('components/DailyRank.tsx');
+  assert.match(chipSrc, /\?from=\$\{encodeURIComponent\(pathname\)\}`[^}]*\}`\}\s*scroll=\{false\}/);
+  assert.doesNotMatch(chipSrc, /\}#today-rank`/);
+  // Tapped on the stats page itself: back to the top and a fresh rank.
+  assert.match(chipSrc, /if \(pathname === href\) \{\s*window\.scrollTo\(\{ top: 0, left: 0, behavior: "instant" \}\);\s*void flushRank\(\)\.then\(\(\) => refreshRank\(true\)\);/);
   for (const f of ['components/exam/ExamStatsPage.tsx', 'components/v2/StatsV2.tsx']) {
     assert.match(read(f), /useRankReturnHref\(/, f);
   }

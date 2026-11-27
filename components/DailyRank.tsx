@@ -173,8 +173,20 @@ export function DailyRankChip({ href: hrefOverride, compact = false }: {
     <Link
       data-daily-rank-chip
       // From a runner, the stats page's Back returns to this question (rankReturnHref).
-      href={`${href}${hrefOverride === undefined && pathname ? `?from=${encodeURIComponent(pathname)}` : ""}#today-rank`}
-      onClick={() => noteStatsSource(hrefOverride === undefined ? "bar_chip" : "header_chip")}
+      // No #today-rank: the panel is first on every stats page, and the hash
+      // scrolled the site header out of view. The page opens at the very top
+      // (ScrollToTopOnNavigate); scroll={false} stops Next scrolling <main> up instead.
+      href={`${href}${hrefOverride === undefined && pathname ? `?from=${encodeURIComponent(pathname)}` : ""}`}
+      scroll={false}
+      onClick={() => {
+        noteStatsSource(hrefOverride === undefined ? "bar_chip" : "header_chip");
+        // Already on that stats page: no pathname change, so refresh the rank
+        // and go back to the top here.
+        if (pathname === href) {
+          window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+          void flushRank().then(() => refreshRank(true));
+        }
+      }}
       title={t("dailyRank.chipLink")}
       aria-label={`${t("dailyRank.chipLink")}: ${count}${pct ? `, ${pct}` : ""}`}
       className={`${CHIP_CLASS} hover:border-brand-border`}

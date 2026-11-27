@@ -8773,6 +8773,19 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Insurance Council of British Columbia LLQP exam page and Service NL LLQP memo, checked November 2026",
     source: { name: "Insurance Council of BC: Taking the LLQP exam", url: "https://www.insurancecouncilofbc.com/llqp/exam-information-and-registration/about-the-exam/in-person-exams/" },
   },
+  faaama: {
+    answer: "The FAA Aviation Maintenance Technician Airframe knowledge test (AMA) has 100 questions, a two-hour time limit and a passing score of 70%. It covers airframe structures, inspection, flight controls and aircraft systems. The FAA lists General and Powerplant as separate knowledge tests.",
+    rows: [
+      { label: "Exam body", value: "Federal Aviation Administration" },
+      { label: "FAA test code", value: "AMA" },
+      { label: "Official format", value: "100 questions in two hours" },
+      { label: "Passing score", value: "70%" },
+      { label: "Tigertest format", value: "Four 50-question tests with four options per question" },
+      { label: "Access", value: "Free to start. Premium unlocks the remaining locked steps and full statistics." },
+    ],
+    basedOn: "FAA Airman Knowledge Testing Matrix and Aviation Mechanic Airman Certification Standards companion guide, checked November 2026",
+    source: { name: "FAA Airman Knowledge Testing Matrix", url: "https://www.faa.gov/training_testing/testing/testing_matrix" },
+  },
   cemap: {
     answer:
       "CeMAP Module 1 is the first part of the LIBF Certificate in Mortgage Advice and Practice, the qualification that meets the FCA's education standard for mortgage advisers in the UK. Since 30 September 2025 it is the Financial Services, Regulation and Ethics (FSRE) module, which replaced UK Financial Regulation (UKFR). It has two units, FRE1 (Industry, Regulation and Key Parties) and FRE2 (Skills, Principles and Ethical Behaviours). Each is a one-hour online exam with remote invigilation: 25 multiple-choice questions and 3 case studies with 5 linked questions, 40 marks in all, and 70% (28 of 40) is needed to pass each unit.",

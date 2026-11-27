@@ -125,6 +125,7 @@ export function getShareCard(id: string, language = "en"): ShareCard | undefined
 
 // Light-mode exam brand colours, matching globals.css.
 const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
+  "faaama": { color: "hsl(38, 10%, 40%)", tint: "hsl(38, 10%, 95%)" },
   "cloudplus": {
     "color": "hsl(262, 40%, 46%)",
     "tint": "hsl(262, 40%, 96%)"

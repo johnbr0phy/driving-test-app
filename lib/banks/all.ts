@@ -259,6 +259,7 @@ import "./mblex";
 import "./ase";
 import "./aseg1";
 import "./llqp";
+import "./faaama";
 import "./cemap";
 import "./ukcemap2";
 import "./sgftt";

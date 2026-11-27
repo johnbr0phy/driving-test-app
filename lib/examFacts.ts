@@ -8773,6 +8773,19 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Insurance Council of British Columbia LLQP exam page and Service NL LLQP memo, checked November 2026",
     source: { name: "Insurance Council of BC: Taking the LLQP exam", url: "https://www.insurancecouncilofbc.com/llqp/exam-information-and-registration/about-the-exam/in-person-exams/" },
   },
+  ukr01: {
+    answer: "CII R01 is the Financial Services, Regulation and Ethics unit in the Diploma in Regulated Financial Planning. The exam has 87 single-answer questions and 13 multiple-response questions, with two hours to complete them. The CII lists a standard pass mark of 65%.",
+    rows: [
+      { label: "Awarding body", value: "Chartered Insurance Institute (CII)" },
+      { label: "Exam length", value: "100 questions in two hours" },
+      { label: "Standard pass mark", value: "65%" },
+      { label: "Syllabus", value: "1 September 2026 to 31 August 2027" },
+      { label: "Practice format", value: "Four 50-question single-answer tests" },
+      { label: "Access", value: "Free to start. Premium unlocks the remaining locked steps and full statistics." },
+    ],
+    basedOn: "CII R01 examination syllabus 2026/27 and unit assessment information, checked November 2026",
+    source: { name: "Chartered Insurance Institute, R01", url: "https://www.cii.co.uk/learning/qualifications/unit-financial-services-regulation-ethics-r01/" },
+  },
   cemap: {
     answer:
       "CeMAP Module 1 is the first part of the LIBF Certificate in Mortgage Advice and Practice, the qualification that meets the FCA's education standard for mortgage advisers in the UK. Since 30 September 2025 it is the Financial Services, Regulation and Ethics (FSRE) module, which replaced UK Financial Regulation (UKFR). It has two units, FRE1 (Industry, Regulation and Key Parties) and FRE2 (Skills, Principles and Ethical Behaviours). Each is a one-hour online exam with remote invigilation: 25 multiple-choice questions and 3 case studies with 5 linked questions, 40 marks in all, and 70% (28 of 40) is needed to pass each unit.",

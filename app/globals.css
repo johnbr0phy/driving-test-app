@@ -1187,6 +1187,19 @@
     --brand-gradient-to: 297 70% 95%;
   }
 
+  [data-theme="ukr01"] {
+    --brand: 60 4% 38%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 60 4% 95%;
+    --brand-hover: 60 4% 34%;
+    --brand-dark: 60 4% 31%;
+    --brand-darker: 60 4% 25%;
+    --brand-muted: 60 4% 70%;
+    --brand-border: 60 4% 76%;
+    --brand-border-light: 60 4% 88%;
+    --brand-gradient-to: 72 4% 95%;
+  }
+
   /* OSSLT theme: indigo (v2 exam; matches lib/v2/exams/osslt.ts theme) */
   [data-theme="osslt"] {
     --brand: 232 52% 42%;
@@ -9180,6 +9193,18 @@
     --brand-muted: 260 20% 45%;
     --brand-dark: 260 20% 65%;
     --brand-darker: 260 20% 78%;
+  }
+
+  .dark [data-theme="ukr01"] {
+    --brand: 60 4% 44.3%;
+    --brand-hover: 60 4% 36.3%;
+    --brand-light: 60 4% 13%;
+    --brand-gradient-to: 72 4% 11%;
+    --brand-border-light: 60 4% 24%;
+    --brand-border: 60 4% 34%;
+    --brand-muted: 60 4% 45%;
+    --brand-dark: 60 4% 65%;
+    --brand-darker: 60 4% 78%;
   }
 
   .dark [data-theme="osslt"] {

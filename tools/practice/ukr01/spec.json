@@ -1,0 +1,16 @@
+{
+  "stateCode": "UKR01",
+  "prefix": "UKR01",
+  "categories": {
+    "ukr01Markets": ["MKT", 3],
+    "ukr01Needs": ["RET", 6],
+    "ukr01Law": ["LAW", 4],
+    "ukr01Framework": ["FRM", 3],
+    "ukr01Supervision": ["SUP", 15],
+    "ukr01Rules": ["RUL", 5],
+    "ukr01Advice": ["ADV", 6],
+    "ukr01Skills": ["SKL", 2],
+    "ukr01Culture": ["CUL", 3],
+    "ukr01Ethics": ["ETH", 3]
+  }
+}

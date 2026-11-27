@@ -3,6 +3,14 @@
   "reviewAfterDays": 365,
   "events": [
     {
+      "exam": "ukr01",
+      "date": "2027-09-01",
+      "kind": "outline",
+      "what": "The CII R01 2026/27 syllabus ends on 31 August 2027.",
+      "action": "Check the new CII syllabus, update rules and topic weights, and refresh the facts and landing.",
+      "source": "https://www.cii.co.uk/learning/qualifications/unit-financial-services-regulation-ethics-r01/"
+    },
+    {
       "exam": "masterelec",
       "date": "2027-06-01",
       "kind": "review",

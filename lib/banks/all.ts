@@ -259,6 +259,7 @@ import "./mblex";
 import "./ase";
 import "./aseg1";
 import "./llqp";
+import "./faaama";
 import "./ukr01";
 import "./ukif1";
 import "./hklesfi7";

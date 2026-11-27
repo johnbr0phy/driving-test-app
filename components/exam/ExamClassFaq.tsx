@@ -222,6 +222,7 @@ export const TEACHES: Record<string, string> = {
   aafcs: "a family and consumer sciences program",
   cen: "a CEN review course",
   mblex: "at a massage therapy school",
+  faaama: "an aviation maintenance technician course",
   ukr01: "a CII R01 financial planning course",
   ukif1: "a CII Certificate in Insurance course",
   hklesfi7: "an HKSI Paper 7 preparation course",

@@ -317,6 +317,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   kenck: { title: "NCK Licensure Exam", description: "Practice fundamentals, med-surg, midwifery, IMCI, community health and Kenyan nursing law." },
   iedttcv: { title: "Ireland Truck and Bus Theory Test", description: "Review drivers' hours, tachographs, brakes, loads, passengers and heavy vehicle speed limits." },
   ukcemap2: { title: "CeMAP 2 (MORT)", description: "Practise MCOB, affordability, surveys, remortgages, arrears and UK mortgage products." },
+  faaama: { title: "FAA Mechanic Airframe Practice Test", description: "Study airframe structures, inspection and aircraft systems for the FAA Aviation Maintenance Technician Airframe knowledge test." },
   ukr01: { title: "CII R01 Practice Test", description: "Revise UK financial services, FCA and PRA regulation, retail advice and professional ethics." },
   ukif1: { title: "CII IF1 Practice Test", description: "Practise risk, the UK insurance market, insurance contracts, claims, complaints and the CII Code of Ethics for the IF1 unit." },
   hklesfi7: { title: "HKSI LE Paper 7 Practice Test", description: "Study the Hong Kong financial system, equity and debt markets, foreign exchange, derivatives and risk management for HKSI LE Paper 7." },

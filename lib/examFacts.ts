@@ -8773,6 +8773,19 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Insurance Council of British Columbia LLQP exam page and Service NL LLQP memo, checked November 2026",
     source: { name: "Insurance Council of BC: Taking the LLQP exam", url: "https://www.insurancecouncilofbc.com/llqp/exam-information-and-registration/about-the-exam/in-person-exams/" },
   },
+  faaama: {
+    answer: "The FAA Aviation Maintenance Technician Airframe knowledge test (AMA) has 100 questions, a two-hour time limit and a passing score of 70%. It covers airframe structures, inspection, flight controls and aircraft systems. The FAA lists General and Powerplant as separate knowledge tests.",
+    rows: [
+      { label: "Exam body", value: "Federal Aviation Administration" },
+      { label: "FAA test code", value: "AMA" },
+      { label: "Official format", value: "100 questions in two hours" },
+      { label: "Passing score", value: "70%" },
+      { label: "Tigertest format", value: "Four 50-question tests with four options per question" },
+      { label: "Access", value: "Free to start. Premium unlocks the remaining locked steps and full statistics." },
+    ],
+    basedOn: "FAA Airman Knowledge Testing Matrix and Aviation Mechanic Airman Certification Standards companion guide, checked November 2026",
+    source: { name: "FAA Airman Knowledge Testing Matrix", url: "https://www.faa.gov/training_testing/testing/testing_matrix" },
+  },
   ukr01: {
     answer: "CII R01 is the Financial Services, Regulation and Ethics unit in the Diploma in Regulated Financial Planning. The exam has 87 single-answer questions and 13 multiple-response questions, with two hours to complete them. The CII lists a standard pass mark of 65%.",
     rows: [

@@ -1187,6 +1187,19 @@
     --brand-gradient-to: 297 70% 95%;
   }
 
+  [data-theme="faaama"] {
+    --brand: 38 10% 40%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 38 10% 95%;
+    --brand-hover: 38 10% 36%;
+    --brand-dark: 38 10% 33%;
+    --brand-darker: 38 10% 27%;
+    --brand-muted: 38 10% 70%;
+    --brand-border: 38 10% 76%;
+    --brand-border-light: 38 10% 88%;
+    --brand-gradient-to: 50 10% 95%;
+  }
+
   [data-theme="ukr01"] {
     --brand: 60 4% 38%;
     --brand-foreground: 0 0% 100%;
@@ -9232,6 +9245,18 @@
     --brand-muted: 260 20% 45%;
     --brand-dark: 260 20% 65%;
     --brand-darker: 260 20% 78%;
+  }
+
+  .dark [data-theme="faaama"] {
+    --brand: 38 10% 44.3%;
+    --brand-hover: 38 10% 36.3%;
+    --brand-light: 38 10% 13%;
+    --brand-gradient-to: 50 10% 11%;
+    --brand-border-light: 38 10% 24%;
+    --brand-border: 38 10% 34%;
+    --brand-muted: 38 10% 45%;
+    --brand-dark: 38 10% 65%;
+    --brand-darker: 38 10% 78%;
   }
 
   .dark [data-theme="ukr01"] {

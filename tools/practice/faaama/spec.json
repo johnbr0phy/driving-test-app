@@ -1,0 +1,21 @@
+{
+  "stateCode": "FAAAMA",
+  "prefix": "FAAAMA",
+  "categories": {
+    "faaamaMetal": ["MET", 5],
+    "faaamaNonmetal": ["NMT", 4],
+    "faaamaControls": ["CTL", 3],
+    "faaamaInspection": ["INS", 5],
+    "faaamaGear": ["GER", 3],
+    "faaamaHydraulics": ["HYD", 3],
+    "faaamaEnvironment": ["ENV", 3],
+    "faaamaInstruments": ["IST", 3],
+    "faaamaCommunications": ["COM", 3],
+    "faaamaFuel": ["FUL", 3],
+    "faaamaElectrical": ["ELC", 3],
+    "faaamaIce": ["ICE", 3],
+    "faaamaFire": ["FIR", 3],
+    "faaamaRotor": ["ROT", 3],
+    "faaamaWater": ["WTR", 3]
+  }
+}

@@ -319,6 +319,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   ukcemap2: { title: "CeMAP 2 (MORT)", description: "Practise MCOB, affordability, surveys, remortgages, arrears and UK mortgage products." },
   ukr01: { title: "CII R01 Practice Test", description: "Revise UK financial services, FCA and PRA regulation, retail advice and professional ethics." },
   ukif1: { title: "CII IF1 Practice Test", description: "Practise risk, the UK insurance market, insurance contracts, claims, complaints and the CII Code of Ethics for the IF1 unit." },
+  hklesfi7: { title: "HKSI LE Paper 7 Practice Test", description: "Study the Hong Kong financial system, equity and debt markets, foreign exchange, derivatives and risk management for HKSI LE Paper 7." },
   cemap: { title: "CeMAP 1 (FSRE)", description: "Practice UK financial services, the FCA and PRA, Consumer Duty, AML, complaints and ethics." },
   rhit: { title: "Free RHIT Practice Test", description: "200 original questions on the AHIMA RHIT content outline for health information technicians. Free to start." },
   cca: { title: "CCA Exam", description: "Review ICD-10-CM, ICD-10-PCS, CPT, DRGs, claims, compliance and HIPAA for AHIMA's coding exam." },

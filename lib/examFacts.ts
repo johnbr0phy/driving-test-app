@@ -8799,6 +8799,19 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "CII IF1 examination syllabus for 2026 and unit assessment information, checked November 2026",
     source: { name: "Chartered Insurance Institute, IF1", url: "https://www.cii.co.uk/learning/qualifications/certificate-in-insurance-qualification/unit-insurance-legal-and-regulatory-if1/" },
   },
+  hklesfi7: {
+    answer: "Paper 7, Financial Markets, is part of the HKSI Licensing Examination for Securities and Futures Intermediaries. It is a computer-based exam with 60 multiple-choice questions in 90 minutes. The pass mark is 70%.",
+    rows: [
+      { label: "Exam body", value: "Hong Kong Securities and Investment Institute (HKSI Institute)" },
+      { label: "Exam length", value: "60 multiple-choice questions in 90 minutes" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Question languages", value: "English and Traditional Chinese" },
+      { label: "Tigertest format", value: "Four 50-question practice tests in English" },
+      { label: "Access", value: "Free to start. Premium unlocks the remaining locked steps and full statistics." },
+    ],
+    basedOn: "HKSI licensing examination overview and Paper 7 syllabus effective 1 March 2026, checked November 2026",
+    source: { name: "HKSI Institute LE overview", url: "https://www.hksi.org/en/qualification/examinations/licensing-examination-for-securities-and-futures-intermediaries/overview/" },
+  },
   cemap: {
     answer:
       "CeMAP Module 1 is the first part of the LIBF Certificate in Mortgage Advice and Practice, the qualification that meets the FCA's education standard for mortgage advisers in the UK. Since 30 September 2025 it is the Financial Services, Regulation and Ethics (FSRE) module, which replaced UK Financial Regulation (UKFR). It has two units, FRE1 (Industry, Regulation and Key Parties) and FRE2 (Skills, Principles and Ethical Behaviours). Each is a one-hour online exam with remote invigilation: 25 multiple-choice questions and 3 case studies with 5 linked questions, 40 marks in all, and 70% (28 of 40) is needed to pass each unit.",

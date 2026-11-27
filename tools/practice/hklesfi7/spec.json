@@ -1,0 +1,13 @@
+{
+  "stateCode": "HKLESFI7",
+  "prefix": "HKLESFI7",
+  "categories": {
+    "hk7Global": ["GLB", 6],
+    "hk7HongKong": ["HKG", 7],
+    "hk7Equity": ["EQU", 8],
+    "hk7Debt": ["DBT", 8],
+    "hk7Derivatives": ["FXD", 8],
+    "hk7Risk": ["RSK", 7],
+    "hk7Applications": ["APP", 6]
+  }
+}

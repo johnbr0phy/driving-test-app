@@ -1,0 +1,58 @@
+{
+  "stateCode": "UKIF1",
+  "prefix": "UKIF1",
+  "categories": {
+    "ukif1Risk": [
+      "RSK",
+      5
+    ],
+    "ukif1Features": [
+      "FEA",
+      4
+    ],
+    "ukif1Market": [
+      "MKT",
+      7
+    ],
+    "ukif1Contract": [
+      "CON",
+      5
+    ],
+    "ukif1Interest": [
+      "INT",
+      3
+    ],
+    "ukif1Disclosure": [
+      "DIS",
+      5
+    ],
+    "ukif1Cause": [
+      "CAU",
+      1
+    ],
+    "ukif1Indemnity": [
+      "IND",
+      3
+    ],
+    "ukif1Recovery": [
+      "REC",
+      2
+    ],
+    "ukif1Regulation": [
+      "REG",
+      8
+    ],
+    "ukif1Protection": [
+      "PRO",
+      3
+    ],
+    "ukif1Complaints": [
+      "CMP",
+      2
+    ],
+    "ukif1Ethics": [
+      "ETH",
+      2
+    ]
+  }
+}

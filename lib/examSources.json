@@ -1226,6 +1226,16 @@
   "https://www.hksi.org/media/8902/p1-syllabus_eng-v35_clean.pdf",
   "https://www.elegislation.gov.hk/hk/cap571"
  ],
+ "hklesfi7": [
+  "https://www.hksi.org/en/qualification/examinations/licensing-examination-for-securities-and-futures-intermediaries/overview/",
+  "https://www.hksi.org/media/8440/p7-syllabus_eng_v35_clean.pdf",
+  "https://www.hksi.org/en/latest-news/the-study-guide-for-le-paper-2-3-4-7-and-8-are-updated-for-examinations-from-9-december-2026-onwards/"
+ ],
+ "hklesfi8": [
+  "https://www.hksi.org/en/qualification/examinations/licensing-examination-for-securities-and-futures-intermediaries/overview/",
+  "https://www.hksi.org/media/8442/p8-syllabus_eng_v36_clean.pdf",
+  "https://www.hksi.org/en/latest-news/the-study-guide-for-le-paper-2-3-4-7-and-8-are-updated-for-examinations-from-9-december-2026-onwards/"
+ ],
  "hknurse": [
   "https://www.nchk.org.hk/filemanager/en/pdf/Candidates_Handbook_for_Nursing_Council_Licensing_Exam_eng.pdf",
   "https://www.nchk.org.hk/filemanager/en/pdf/Syllabus_for_RN(G",
@@ -2524,6 +2534,11 @@
   "https://aim-qualifications-documents.s3.dualstack.eu-west-1.amazonaws.com/documents/rqf/specifications/60043258.pdf",
   "https://highfieldqualifications.com/products/qualifications/health-and-safety/level-2-workplace"
  ],
+ "ukif1": [
+  "https://www.cii.co.uk/learning/qualifications/certificate-in-insurance-qualification/unit-insurance-legal-and-regulatory-if1/",
+  "https://media.umbraco.io/ciigroup-dxp/hk0akzjb/if1_insurance_legal_and_regulatory_examination_syllabus.pdf",
+  "https://media.umbraco.io/ciigroup-dxp/d5odbmwb/if1-indicative-content-2026.pdf"
+ ],
  "uklgv": [
   "https://www.gov.uk/become-lorry-bus-driver/driver-cpc-part-1-theory-test",
   "https://www.gov.uk/become-lorry-bus-driver/fees",
@@ -2548,6 +2563,11 @@
   "https://www.cityandguilds.com/-/media/productdocuments/building_services_engineering/plumbing/6035/6035_level_2/centre_documents/6035-02-level-2-diploma-in-plumbing-studies_qhb_v5",
   "https://cityandguilds.com/-/media/productdocuments/building_services_engineering/plumbing/6035/6035_level_3/centre_documents/6035-03_l3_diploma_in_plumbing_studies_qualification-handbook_v4-6-pdf.ashx",
   "https://www.gov.uk/government/publications/conservation-of-fuel-and-power-approved-document-l"
+ ],
+ "ukr01": [
+  "https://www.cii.co.uk/learning/qualifications/unit-financial-services-regulation-ethics-r01/",
+  "https://media.umbraco.io/ciigroup-dxp/u52lvkdp/r01_financial_services_regulation_and_ethics_examination_syllabus.pdf",
+  "https://media.umbraco.io/ciigroup-dxp/2n4h0onx/r01-indicative-content-2026-2027.pdf"
  ],
  "ukrbi": [
   "https://www.gov.uk/guidance/register-as-a-building-inspector",

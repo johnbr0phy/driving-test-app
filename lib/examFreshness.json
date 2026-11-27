@@ -3,6 +3,38 @@
   "reviewAfterDays": 365,
   "events": [
     {
+      "exam": "hklesfi8",
+      "date": "2026-12-09",
+      "kind": "review",
+      "what": "HKSI LE Paper 8 starts examining study guide version 3.7.",
+      "action": "Check the Paper 8 guide updates and syllabus, then update the affected questions, facts and landing.",
+      "source": "https://www.hksi.org/en/latest-news/the-study-guide-for-le-paper-2-3-4-7-and-8-are-updated-for-examinations-from-9-december-2026-onwards/"
+    },
+    {
+      "exam": "hklesfi7",
+      "date": "2026-12-09",
+      "kind": "review",
+      "what": "HKSI LE Paper 7 starts examining study guide version 3.7.",
+      "action": "Check the Paper 7 guide updates and syllabus, then revise affected questions and landing copy.",
+      "source": "https://www.hksi.org/en/latest-news/the-study-guide-for-le-paper-2-3-4-7-and-8-are-updated-for-examinations-from-9-december-2026-onwards/"
+    },
+    {
+      "exam": "ukif1",
+      "date": "2027-01-01",
+      "kind": "outline",
+      "what": "The CII IF1 2027 syllabus replaces the calendar 2026 edition.",
+      "action": "Check the new IF1 learning outcomes and assessment weights, then update the bank, landing and sources.",
+      "source": "https://www.cii.co.uk/learning/qualifications/certificate-in-insurance-qualification/unit-insurance-legal-and-regulatory-if1/"
+    },
+    {
+      "exam": "ukr01",
+      "date": "2027-09-01",
+      "kind": "outline",
+      "what": "The CII R01 2026/27 syllabus ends on 31 August 2027.",
+      "action": "Check the new CII syllabus, update rules and topic weights, and refresh the facts and landing.",
+      "source": "https://www.cii.co.uk/learning/qualifications/unit-financial-services-regulation-ethics-r01/"
+    },
+    {
       "exam": "masterelec",
       "date": "2027-06-01",
       "kind": "review",

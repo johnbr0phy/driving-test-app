@@ -8773,6 +8773,58 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "Insurance Council of British Columbia LLQP exam page and Service NL LLQP memo, checked November 2026",
     source: { name: "Insurance Council of BC: Taking the LLQP exam", url: "https://www.insurancecouncilofbc.com/llqp/exam-information-and-registration/about-the-exam/in-person-exams/" },
   },
+  ukr01: {
+    answer: "CII R01 is the Financial Services, Regulation and Ethics unit in the Diploma in Regulated Financial Planning. The exam has 87 single-answer questions and 13 multiple-response questions, with two hours to complete them. The CII lists a standard pass mark of 65%.",
+    rows: [
+      { label: "Awarding body", value: "Chartered Insurance Institute (CII)" },
+      { label: "Exam length", value: "100 questions in two hours" },
+      { label: "Standard pass mark", value: "65%" },
+      { label: "Syllabus", value: "1 September 2026 to 31 August 2027" },
+      { label: "Practice format", value: "Four 50-question single-answer tests" },
+      { label: "Access", value: "Free to start. Premium unlocks the remaining locked steps and full statistics." },
+    ],
+    basedOn: "CII R01 examination syllabus 2026/27 and unit assessment information, checked November 2026",
+    source: { name: "Chartered Insurance Institute, R01", url: "https://www.cii.co.uk/learning/qualifications/unit-financial-services-regulation-ethics-r01/" },
+  },
+  ukif1: {
+    answer: "Insurance, Legal and Regulatory (IF1) is a Chartered Insurance Institute unit covering the principles of insurance and the legal and regulatory framework for insurance business. The real exam has 100 multiple-choice questions in two hours. The CII lists a standard pass mark of 70%.",
+    rows: [
+      { label: "Awarding body", value: "Chartered Insurance Institute" },
+      { label: "Exam length", value: "100 multiple-choice questions in two hours" },
+      { label: "Standard pass mark", value: "70%" },
+      { label: "Syllabus", value: "1 January to 31 December 2026" },
+      { label: "Practice format", value: "Four 50-question tests" },
+      { label: "Access", value: "Free to start. Premium unlocks the remaining locked steps and full statistics." },
+    ],
+    basedOn: "CII IF1 examination syllabus for 2026 and unit assessment information, checked November 2026",
+    source: { name: "Chartered Insurance Institute, IF1", url: "https://www.cii.co.uk/learning/qualifications/certificate-in-insurance-qualification/unit-insurance-legal-and-regulatory-if1/" },
+  },
+  hklesfi7: {
+    answer: "Paper 7, Financial Markets, is part of the HKSI Licensing Examination for Securities and Futures Intermediaries. It is a computer-based exam with 60 multiple-choice questions in 90 minutes. The pass mark is 70%.",
+    rows: [
+      { label: "Exam body", value: "Hong Kong Securities and Investment Institute (HKSI Institute)" },
+      { label: "Exam length", value: "60 multiple-choice questions in 90 minutes" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Question languages", value: "English and Traditional Chinese" },
+      { label: "Tigertest format", value: "Four 50-question practice tests in English" },
+      { label: "Access", value: "Free to start. Premium unlocks the remaining locked steps and full statistics." },
+    ],
+    basedOn: "HKSI licensing examination overview and Paper 7 syllabus effective 1 March 2026, checked November 2026",
+    source: { name: "HKSI Institute LE overview", url: "https://www.hksi.org/en/qualification/examinations/licensing-examination-for-securities-and-futures-intermediaries/overview/" },
+  },
+  hklesfi8: {
+    answer: "Securities is Paper 8 of the HKSI Licensing Examination for Securities and Futures Intermediaries. The computer-based exam contains 40 multiple-choice questions, allows 60 minutes and has a pass mark of 70%.",
+    rows: [
+      { label: "Exam body", value: "Hong Kong Securities and Investment Institute (HKSI Institute)" },
+      { label: "Exam length", value: "40 multiple-choice questions in 60 minutes" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Question languages", value: "English and Traditional Chinese" },
+      { label: "Tigertest format", value: "Four 50-question tests in English" },
+      { label: "Access", value: "Free to start. Premium unlocks the remaining locked steps and full statistics." },
+    ],
+    basedOn: "HKSI Licensing Examination overview and Paper 8 syllabus effective 1 March 2026, checked November 2026",
+    source: { name: "HKSI Institute LE overview", url: "https://www.hksi.org/en/qualification/examinations/licensing-examination-for-securities-and-futures-intermediaries/overview/" },
+  },
   cemap: {
     answer:
       "CeMAP Module 1 is the first part of the LIBF Certificate in Mortgage Advice and Practice, the qualification that meets the FCA's education standard for mortgage advisers in the UK. Since 30 September 2025 it is the Financial Services, Regulation and Ethics (FSRE) module, which replaced UK Financial Regulation (UKFR). It has two units, FRE1 (Industry, Regulation and Key Parties) and FRE2 (Skills, Principles and Ethical Behaviours). Each is a one-hour online exam with remote invigilation: 25 multiple-choice questions and 3 case studies with 5 linked questions, 40 marks in all, and 70% (28 of 40) is needed to pass each unit.",

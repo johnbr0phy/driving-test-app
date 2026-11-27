@@ -10,7 +10,8 @@ repository. They are the same rules Claude Code follows.
 2. **Building or changing a practice test or question bank:** follow
    `.claude/skills/exam-bank/SKILL.md` step by step, and its wiring checklist in
    `.claude/skills/exam-bank/references/wiring.md`. A run that builds several tests also follows
-   `.claude/skills/build-tests/SKILL.md`.
+   `.claude/skills/build-tests/SKILL.md`, and `docs/codex-build-tests.md` says how you run one
+   (own worktree, ids from John, the fresh-session second review).
 3. **Before you open a PR, run `bash scripts/automerge-checks.sh`.** It is the same list of checks
    CI runs. Do not lower a threshold or add your bank to a baseline file to make a check pass.
 

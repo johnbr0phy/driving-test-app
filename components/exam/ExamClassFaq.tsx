@@ -225,6 +225,7 @@ export const TEACHES: Record<string, string> = {
   ukr01: "a CII R01 financial planning course",
   ukif1: "a CII Certificate in Insurance course",
   hklesfi7: "an HKSI Paper 7 preparation course",
+  hklesfi8: "an HKSI Paper 8 securities course",
   cemap: "a CeMAP course",
   ukcemap2: "a CeMAP course",
   aswb: "in an MSW program or run ASWB licensure prep",

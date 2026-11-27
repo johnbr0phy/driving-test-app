@@ -8812,6 +8812,19 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "HKSI licensing examination overview and Paper 7 syllabus effective 1 March 2026, checked November 2026",
     source: { name: "HKSI Institute LE overview", url: "https://www.hksi.org/en/qualification/examinations/licensing-examination-for-securities-and-futures-intermediaries/overview/" },
   },
+  hklesfi8: {
+    answer: "Securities is Paper 8 of the HKSI Licensing Examination for Securities and Futures Intermediaries. The computer-based exam contains 40 multiple-choice questions, allows 60 minutes and has a pass mark of 70%.",
+    rows: [
+      { label: "Exam body", value: "Hong Kong Securities and Investment Institute (HKSI Institute)" },
+      { label: "Exam length", value: "40 multiple-choice questions in 60 minutes" },
+      { label: "Pass mark", value: "70%" },
+      { label: "Question languages", value: "English and Traditional Chinese" },
+      { label: "Tigertest format", value: "Four 50-question tests in English" },
+      { label: "Access", value: "Free to start. Premium unlocks the remaining locked steps and full statistics." },
+    ],
+    basedOn: "HKSI Licensing Examination overview and Paper 8 syllabus effective 1 March 2026, checked November 2026",
+    source: { name: "HKSI Institute LE overview", url: "https://www.hksi.org/en/qualification/examinations/licensing-examination-for-securities-and-futures-intermediaries/overview/" },
+  },
   cemap: {
     answer:
       "CeMAP Module 1 is the first part of the LIBF Certificate in Mortgage Advice and Practice, the qualification that meets the FCA's education standard for mortgage advisers in the UK. Since 30 September 2025 it is the Financial Services, Regulation and Ethics (FSRE) module, which replaced UK Financial Regulation (UKFR). It has two units, FRE1 (Industry, Regulation and Key Parties) and FRE2 (Skills, Principles and Ethical Behaviours). Each is a one-hour online exam with remote invigilation: 25 multiple-choice questions and 3 case studies with 5 linked questions, 40 marks in all, and 70% (28 of 40) is needed to pass each unit.",

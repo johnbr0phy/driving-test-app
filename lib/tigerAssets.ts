@@ -279,6 +279,7 @@ const BORROWED_SETS: Record<string, string> = {
   ukr01: "nmls",
   ukif1: "insurance",
   hklesfi7: "series7",
+  hklesfi8: "series7",
   fladjuster: "pnc", llqp: "insurance", cemap: "nmls", ukcemap2: "nmls",
   // AAFCS HNFS (FCS hospitality, nutrition and food science) borrows the food handler tiger.
   aafcs: "foodhandler",

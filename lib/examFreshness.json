@@ -3,6 +3,14 @@
   "reviewAfterDays": 365,
   "events": [
     {
+      "exam": "hklesfi8",
+      "date": "2026-12-09",
+      "kind": "review",
+      "what": "HKSI LE Paper 8 starts examining study guide version 3.7.",
+      "action": "Check the Paper 8 guide updates and syllabus, then update the affected questions, facts and landing.",
+      "source": "https://www.hksi.org/en/latest-news/the-study-guide-for-le-paper-2-3-4-7-and-8-are-updated-for-examinations-from-9-december-2026-onwards/"
+    },
+    {
       "exam": "hklesfi7",
       "date": "2026-12-09",
       "kind": "review",

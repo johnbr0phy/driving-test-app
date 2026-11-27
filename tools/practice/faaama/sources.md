@@ -95,7 +95,6 @@ All 36 items are original. The scenarios and rotor transmission calculation were
 
 - R1. FAA-H-8083-21B, Helicopter Flying Handbook, chapter 4, Helicopter Components, Sections, and Systems. https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/helicopter_flying_handbook/hfh_ch04.pdf (fetched 2026-11-27).
 - R2. FAA-H-8083-31B, Aviation Maintenance Technician Handbook, Airframe. Chapter 1 covers helicopter structures and the tail rotor. Chapter 2 covers rotary-wing flight controls, helicopter vibration and blade tracking. https://www.faa.gov/sites/faa.gov/files/FAA-H-8083-31B_Aviation_Maintenance_Technician_Handbook.pdf (fetched 2026-11-27).
-- R3. Robinson Helicopter Company, R66 Maintenance Manual, chapter 32, Landing Gear, section 32-00 on printed page 32.1. Accessed from the manufacturer's publications catalog. https://www.robinsonheli.com/publications and https://robinsonstrapistorprod.blob.core.windows.net/uploads/assets/r66_mm_32_57ae46d629.pdf (fetched 2026-11-27).
 
 | Item | Primary text and supported fact |
 | --- | --- |
@@ -110,32 +109,33 @@ All 36 items are original. The scenarios and rotor transmission calculation were
 | FAAAMA-ROT-009 | R2, chapter 1, helicopter tail rotor discussion around figure 1-101. Pedals change the tail blade pitch and resulting thrust. |
 | FAAAMA-ROT-010 | R2, chapter 2, Rotor Blade Tracking and Electronic Blade Tracker, figures 2-51 through 2-54. Tip targets indicate relative tracking. |
 | FAAAMA-ROT-011 | R2, chapter 2, Helicopter Vibration, Low Frequency Vibration and figure 2-50. Unequal blade lift can cause once-per-revolution vertical vibration. |
-| FAAAMA-ROT-012 | R3, section 32-00 and its reference to section 5-65. The center crosstube absorbs impact by yielding during a hard landing. |
+| FAAAMA-ROT-012 | R2, chapter 2, Helicopter Rigging, functional checks after static rigging, item 2, and Governor/Correlator. Verify coordination of the interconnected engine throttle and collective pitch controls. |
 
 ## Water and waste
 
-- W1. EPA, Aircraft Drinking Water Rule, part 1, Introduction. Slides 17, 18, 20, 21 and 22 cover the transfer chain, protection of dispensing equipment and a labeled potable-water schematic. https://www.epa.gov/sites/default/files/2015-10/documents/aircraft_drinking_water_rule_training_part_1_introduction_pdf.pdf (fetched 2026-11-27).
-- W2. EPA, 40 CFR 141.803(b), routine coliform monitoring for aircraft water systems. https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-141/subpart-X/section-141.803 (fetched 2026-11-27).
-- W3. EPA, 40 CFR 141.804(b), aircraft water system operations and maintenance plan, especially self-inspection and transfer of water. https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-141/subpart-X/section-141.804 (fetched 2026-11-27).
-- W4. Airbus, A330-700L Aircraft Characteristics, Airport and Maintenance Planning, December 2025, 5-4-10, Waste Water System. The equipment, fittings and drain destinations in these two questions are specific to this aircraft. https://www.aircraft.airbus.com/sites/default/files/2025-12/AC_A330-700L_20251201.pdf (fetched 2026-11-27).
-- W5. Diehl Aviation, InnoLite Toilet Assembly, page 1, Characteristics. The equipment manufacturer distinguishes pressurized rinse water from differential-pressure waste transport. https://www.diehl.com/cms/files/InnoLite_Online-2018.pdf (fetched 2026-11-27).
+- W1. 40 CFR 141.801, definition of the aircraft water system, including the aircraft service panel, filler neck, tanks, piping and fixtures. https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-141/subpart-X/section-141.801 (fetched 2026-11-27).
+- W2. 40 CFR 141.803(b), routine coliform monitoring for aircraft water systems. https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-141/subpart-X/section-141.803 (fetched 2026-11-27).
+- W3. 21 CFR 1250.42(a), closed potable systems, protected vents and prevention of backflow on land and air conveyances. https://www.ecfr.gov/current/title-21/chapter-I/subchapter-L/part-1250/subpart-C (fetched 2026-11-27).
+- W4. 21 CFR 1250.67(b), watering equipment at servicing areas for land and air conveyances. https://www.ecfr.gov/current/title-21/chapter-I/subchapter-L/part-1250/subpart-D (fetched 2026-11-27).
+- W5. FAA AD 2004-06-18, amendment 39-13544, applicable Boeing 737 lavatory drain systems. The final directive describes the tank dump valve, leakage indications and direction of test pressure. https://www.govinfo.gov/content/pkg/FR-2004-03-25/html/04-6677.htm (fetched 2026-11-27).
 - W6. 14 CFR 25.1455, Draining of fluids subject to freezing. https://www.govinfo.gov/content/pkg/CFR-2025-title14-vol1/xhtml/CFR-2025-title14-vol1-sec25-1455.html (fetched 2026-11-27).
-- W7. Airbus, A220, BD500-3AB48-10400-00, Potable water system - Drain water, Procedure, initial warning. https://mediaassets.airbus.com/pm_38_782_782520-f0gir1dd6h.pdf (fetched 2026-11-27).
+- W7. FAA AD 2026-02-10, amendment 39-23246, affected Boeing 787 lavatory faucet control modules, paragraph (e), unsafe condition. https://public-inspection.federalregister.gov/2026-02096.pdf (fetched 2026-11-27).
+- W8. FAA AD 2024-12-07, amendment 39-22771, affected Boeing 757-200 interior modifications, Related Material Under 1 CFR Part 51 and paragraph (g). https://www.govinfo.gov/content/pkg/FR-2024-06-26/html/2024-13936.htm (fetched 2026-11-27).
 
 | Item | Primary text and supported fact |
 | --- | --- |
-| FAAAMA-WTR-001 | W1, slide 22, distribution piping. The tank supplies the galley and lavatory faucet. |
-| FAAAMA-WTR-002 | W1, slide 22, tank and service-panel schematic. Overflow, fill and drainage use separate connections. |
-| FAAAMA-WTR-003 | W1, slide 20, watering-point inspection. The nozzle disk guards against contact with the ground. |
+| FAAAMA-WTR-001 | W1, definition of aircraft water system. The service panel is the upstream onboard component at a water transfer. |
+| FAAAMA-WTR-002 | W3, paragraph (a). Protected vents are the exception to closure between fill points and faucets. |
+| FAAAMA-WTR-003 | W4, paragraph (b). Nonpotable water outlets require different fittings and permanent warning signs. |
 | FAAAMA-WTR-004 | W2, paragraph (b)(4). The two sampling points on a multi-tap aircraft with a galley and lavatory. |
 | FAAAMA-WTR-005 | W2, paragraph (b)(3), table B-1. Disinfection every four months pairs with routine sampling every six months at minimum. |
-| FAAAMA-WTR-006 | W1, slide 18, contamination pathways, and W3, self-inspections in paragraph (b)(5). Backflow devices address reverse flow and are part of the inspection. |
-| FAAAMA-WTR-007 | W4, 5-4-10, paragraph 1.B. Sink and basin waste drain overboard on the A330-700L, while toilet waste goes to the tank. |
-| FAAAMA-WTR-008 | W4, 5-4-10, paragraph 1.A. The four-inch connection drains the tank and the one-inch connection serves flushing and filling. |
-| FAAAMA-WTR-009 | W5, Characteristics, first step in the assembly's flush cycle. Its rinse water comes from the potable system. |
-| FAAAMA-WTR-010 | W5, Characteristics, next two steps. The open outlet permits a pressure differential to carry waste into the collection system. |
+| FAAAMA-WTR-006 | W3, paragraph (a). Both gravity and pressure type water systems require backflow protection. |
+| FAAAMA-WTR-007 | W5, note 6. Horizontal fluid trails from the service panel are evidence of a leak even when the residue lacks blue coloration. |
+| FAAAMA-WTR-008 | W5, paragraph (a)(2)(i), identification of the in-tank, spring-loaded dump valve operated by the service panel handle. |
+| FAAAMA-WTR-009 | W5, paragraph (a)(5), applicable toilet tank anti-siphon valve. The prescribed differential acts in the normal flight direction. |
+| FAAAMA-WTR-010 | W7, paragraph (e). Washbasin faucet control module leakage reached the electronic equipment bay below the cabin. |
 | FAAAMA-WTR-011 | W6, design and location of drains. Hazardous ice formation applies to overboard drainage in the air and on the ground. |
-| FAAAMA-WTR-012 | W7, Potable water system - Drain water, Procedure. A hot mast presents a personnel burn hazard during servicing. |
+| FAAAMA-WTR-012 | W8, Related Material Under 1 CFR Part 51, paragraph (g). The access pan corners receive detailed visual inspection while certain skin and doubler fastener holes receive eddy current inspection. |
 
 The FAA cancelled AC 120-39 on December 21, 2023. It was checked for status and excluded from the item references. https://www.faa.gov/regulations_policies/advisory_circulars/index.cfm/go/document.information/documentID/22761 (fetched 2026-11-27).
 
@@ -162,7 +162,7 @@ The [FAA Aviation Mechanic General, Airframe, and Powerplant Airman Certificatio
 | --- | --- |
 | NMT-001 to NMT-003 | FAA, [AC 43.13-1B](https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_43.13-1B_CHG_1_Ed_Upd_FAA.pdf), chapter 1, wood defect descriptions under Compression failures and Checks, shakes, and splits, and paragraphs 1-28 and 1-29 on deterioration, moisture, and inspection around damaged finish. |
 | NMT-004 | [FAA-H-8083-31B](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-31B_Aviation_Maintenance_Technician_Handbook.pdf), chapter 1, Wings, Ribs, figure 1-31 and the text comparing continuous and separate gussets. |
-| NMT-005 to NMT-008 | [FAA-H-8083-31B](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-31B_Aviation_Maintenance_Technician_Handbook.pdf), chapter 3, Fabric Terms for 005, Inspection Rings and figure 3-8 for 006, Drain Grommets and figure 3-32 for 007, and Attaching Fabric to the Ribs and the discussion of figure 3-6 for 008. |
+| NMT-005 to NMT-008 | [FAA-H-8083-31B](https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/FAA-H-8083-31B_Aviation_Maintenance_Technician_Handbook.pdf), chapter 3, Fabric Terms for 005, Inspection Rings and figure 3-8 for 006, Drain Grommets and figure 3-32 for 007, and Attaching Fabric to the Ribs and the discussion of figure 3-6 for 008. FAA AC 43.13-1B, paragraph 2-14(b)(1) for grommet placement in 007 and paragraph 2-10(a) for the fastening-method alteration in 008. |
 | NMT-009 to NMT-014 | FAA, [AC 43-214A, Repairs and Alterations to Composite and Bonded Aircraft Structure](https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_43-214A.pdf), paragraph 10.1.2 for tap indications, 9.1 for hidden impact damage and additional NDI, definitions 8 and 9 and section 7 for accumulated out time, section 7 for sealed thawing, 9.3.7 for leak checks, and 9.3.8 for monitoring cure temperatures. |
 | NMT-015 and NMT-016 | FAA, [AC 43.13-1B](https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_43.13-1B_CHG_1_Ed_Upd_FAA.pdf), chapter 3, section 3, paragraphs 3-18 to 3-20 on thermoplastics, storage, forming and fine surface fissures, plus 3-25 on cleaners and crazing. |
 
@@ -229,7 +229,7 @@ Checked 2026-11-27. The [FAA Aviation Mechanic Airman Certification Standards][a
 | --- | --- |
 | IST 001 to 004 | [FAA Airframe Handbook, volume 2][volume2], chapter 10, Altimeters and Altitude, figure 10-28 on air data processing, figures 10-38 to 10-39 on a conventional VSI, and Airspeed Indicators on the pitot and static connections. |
 | IST 005 and 006 | [FAA Airframe Handbook, volume 2][volume2], chapter 10, Bourdon Tube, figures 10-9 and 10-10, and Thermocouple Temperature Indicators, figure 10-71, hot and reference junctions. |
-| IST 007 and 008 | [FAA Airframe Handbook, volume 2][volume2], figures 10-79 and 10-80, compass construction and local magnetic influences, and figure 10-139, deviation correction card after a compass swing. |
+| IST 007 and 008 | [FAA Airframe Handbook, volume 2][volume2], figures 10-79 and 10-80, compass construction and local magnetic influences, and figure 10-139, deviation correction card after a compass swing. FAA AC 43-215, compass correction card and STEER entries, fetched 2026-11-27. https://www.faa.gov/documentlibrary/media/advisory_circular/ac_43-215.pdf |
 | IST 009 and 010 | [FAA Airframe Handbook, volume 2][volume2], figures 10-94 and 10-95 on rigidity and precession, and Vacuum-Driven Attitude Gyros, figures 10-100 to 10-101, airflow through the rotor and filter. |
 | IST 011 | [FAA Powerplant Handbook, chapter 10][power], Manifold Pressure Indicator and figure 10-37, an absolute-pressure indication calibrated in inches of mercury. |
 | IST 012 | [FAA AC 25.1322-1][alerts], visual alert color coding and glossary definition of Caution. Amber or yellow signals a caution, with immediate awareness and a less urgent response than a warning. |
@@ -245,3 +245,5 @@ Checked 2026-11-27. The [FAA Aviation Mechanic Airman Certification Standards][a
 [phak]: https://www.faa.gov/sites/faa.gov/files/09_phak_ch7.pdf
 [power]: https://www.faa.gov/sites/faa.gov/files/12_amtp_ch10_0.pdf
 [alerts]: https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_25.1322-1.pdf
+
+FUL-003 clarification, fetched 2026-11-27. FAA Helicopter Flying Handbook, FAA-H-8083-21B, chapter 4, Fuel Systems, hand primer description and primer nozzle diagram. The manual pump supplies the cylinder intake ports before starting a carbureted piston helicopter. https://www.faa.gov/sites/faa.gov/files/regulations_policies/handbooks_manuals/aviation/helicopter_flying_handbook/hfh_ch04.pdf

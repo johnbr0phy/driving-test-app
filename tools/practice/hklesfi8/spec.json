@@ -1,0 +1,12 @@
+{
+  "stateCode": "HKLESFI8",
+  "prefix": "HKLESFI8",
+  "categories": {
+    "hk8Overview": ["OVR", 6],
+    "hk8Markets": ["MKT", 8],
+    "hk8Participants": ["PAR", 8],
+    "hk8Securities": ["SEC", 12],
+    "hk8Administration": ["ADM", 8],
+    "hk8Analysis": ["ANA", 8]
+  }
+}

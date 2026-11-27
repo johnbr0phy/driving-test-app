@@ -9,6 +9,38 @@
         "findings": 74
       }
     ],
+    "ukr01": [
+      {
+        "date": "2026-11-27",
+        "kind": "blind review at build",
+        "pr": 1067,
+        "findings": 63
+      }
+    ],
+    "ukif1": [
+      {
+        "date": "2026-11-27",
+        "kind": "blind review at build",
+        "pr": 1067,
+        "findings": 6
+      }
+    ],
+    "hklesfi7": [
+      {
+        "date": "2026-11-27",
+        "kind": "blind review at build",
+        "pr": 1067,
+        "findings": 16
+      }
+    ],
+    "hklesfi8": [
+      {
+        "date": "2026-11-27",
+        "kind": "blind review at build",
+        "pr": 1067,
+        "findings": 15
+      }
+    ],
     "carstruck": [
       {
         "date": "2026-11-23",

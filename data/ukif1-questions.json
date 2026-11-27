@@ -2020,14 +2020,14 @@
     "state": "ALL",
     "questionId": "UKIF1-REG-005",
     "category": "ukif1Regulation",
-    "question": "A warehouse displays its employers' liability certificate electronically. Whose access determines whether the display is sufficient?",
-    "optionA": "Employees of the insured business",
-    "optionB": "Visitors to the insured premises",
-    "optionC": "Suppliers working with the insured",
-    "optionD": "Customers of the insured business",
+    "question": "An offshore worker requests the employers' liability certificate. What is the maximum response time?",
+    "optionA": "Ten working days",
+    "optionB": "Seven calendar days",
+    "optionC": "Fourteen working days",
+    "optionD": "One calendar month",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "Employees must know where to find the certificate and have reasonable access to it. Display to customers or other visitors does not establish that employees can find it."
+    "explanation": "The offshore rules allow the employer to supply a copy on request. It must respond as soon as possible, with an outside limit of ten working days."
   },
   {
     "type": "UKIF1",
@@ -2370,14 +2370,14 @@
     "state": "ALL",
     "questionId": "UKIF1-REG-030",
     "category": "ukif1Regulation",
-    "question": "An insurer breaches its minimum capital requirement. Which feature of a policyholder payment makes its continuity a particular PRA concern?",
-    "optionA": "Date the claim was first submitted",
-    "optionB": "Reliance on it for essential expenditure",
-    "optionC": "Remaining duration of the insurance contract",
-    "optionD": "Amount of premium the customer has paid",
+    "question": "An undercapitalised insurer may have to distribute its remaining assets. Which groups does the PRA expressly balance?",
+    "optionA": "Claimants with large losses and those with small losses",
+    "optionB": "Existing claimants and potential future claimants",
+    "optionC": "Policyholders paying annually and those paying monthly",
+    "optionD": "Direct policyholders and those introduced by brokers",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "The PRA seeks uninterrupted payments where policyholders need them for basic living costs. The timing of a claim or the amount of premium paid does not establish that need."
+    "explanation": "A fair distribution considers people who may claim in the future alongside those whose claims have already arisen. Paying all settled claims first could leave insufficient assets for later losses."
   },
   {
     "type": "UKIF1",

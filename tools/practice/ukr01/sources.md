@@ -132,3 +132,5 @@ The questions are original applications of the following primary sources. Item n
 - Financial Services and Markets Act 2000, Schedule 1ZA, paragraph 2(2), fetched 2026-11-27. FRM-002 asks specifically about appointment of the FCA chair. Some members are jointly appointed and others hold seats by virtue of their offices. https://www.legislation.gov.uk/ukpga/2000/8/schedule/1ZA
 
 Additional item locators following blind review, fetched 2026-11-27. In the final bank SKL 5 uses the TEXAS sequence and SKL 7 the recording of support needs in FCA FG21/1 paragraphs 3.18 to 3.20. SKL 6 uses COBS 9.5A.5 on further advice to an insistent client. ETH 7 applies the corporate adequate-procedures defence in section 7(1) and (2) of the Bribery Act 2010. These replace the earlier mappings for those four items. https://www.fca.org.uk/publication/finalised-guidance/fg21-1.pdf and https://www.handbook.fca.org.uk/handbook/COBS/9.pdf and https://www.legislation.gov.uk/ukpga/2010/23/pdfs/ukpga_20100023_en.pdf
+
+For SKL 008, FCA FG21/1 paragraph 4.64(b) covers choosing support and communication channels that meet customers' needs.

@@ -57,6 +57,11 @@ routes, landing, facts, catalog entry, theme, search aliases, `docs/exams/<id>.m
   own worktree or on its own files. Shared files (`lib/exams.ts`, `lib/testCatalog.ts`,
   `app/globals.css`, `types/index.ts`, `i18n/*`, the generated JSON files) are merged
   by you afterwards, one test at a time, and the generated files are regenerated once at the end.
+- **Models (John, 2026-11-27: a 50-test run on the session's own model used most of a week's
+  plan allowance).** Start every builder subagent with `model: "fable"`: Fable has its own weekly
+  allowance, separate from the all-models one. Never leave the model unset, which inherits the
+  coordinator's. If the Fable allowance runs out mid-run, stop starting new builds and tell John;
+  do not fall back to another model without asking.
 - Price follows the standing rule: career, licence and government-job exams are Premium (v1 locks,
   or `PREMIUM_V2_IDS` for v2); school, college-entrance and children's tests are free.
 - A new theme must pass the hue clash rule against every theme on main and in this run.
@@ -71,7 +76,9 @@ settle every disagreement against `sources.md`. Reviewers told to read the bank 
 reported 200 of 200 in Nov 2026, which proves nothing. The options-only pass uses a separate fresh
 reviewer for the same reason: one who has read the full questions cannot unsee them.
 Builders run as subagents cannot start reviewers, so the coordinator starts both after each
-build lands. It also does an options-only
+build lands. The blind reviewer runs with `model: "fable"` (it must know the subject); the options-only
+reviewer runs with `model: "sonnet"`, since it only hunts surface cues and the scripts below
+catch the rest. It also does an options-only
 pass with `tools/options_only.py` (see the exam-bank skill): every pick it makes on a surface
 cue that finds the key is rewritten, and the bank fails while those exceed 3% of items. Picks
 from subject knowledge are not faults (live banks score 64 to 82% this way), and no item may be

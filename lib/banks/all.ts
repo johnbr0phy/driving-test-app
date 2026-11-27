@@ -260,6 +260,7 @@ import "./ase";
 import "./aseg1";
 import "./llqp";
 import "./ukr01";
+import "./ukif1";
 import "./cemap";
 import "./ukcemap2";
 import "./sgftt";

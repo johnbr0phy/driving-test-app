@@ -3,6 +3,14 @@
   "reviewAfterDays": 365,
   "events": [
     {
+      "exam": "ukif1",
+      "date": "2027-01-01",
+      "kind": "outline",
+      "what": "The CII IF1 2027 syllabus replaces the calendar 2026 edition.",
+      "action": "Check the new IF1 learning outcomes and assessment weights, then update the bank, landing and sources.",
+      "source": "https://www.cii.co.uk/learning/qualifications/certificate-in-insurance-qualification/unit-insurance-legal-and-regulatory-if1/"
+    },
+    {
       "exam": "ukr01",
       "date": "2027-09-01",
       "kind": "outline",

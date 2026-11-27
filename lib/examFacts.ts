@@ -8786,6 +8786,19 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "CII R01 examination syllabus 2026/27 and unit assessment information, checked November 2026",
     source: { name: "Chartered Insurance Institute, R01", url: "https://www.cii.co.uk/learning/qualifications/unit-financial-services-regulation-ethics-r01/" },
   },
+  ukif1: {
+    answer: "Insurance, Legal and Regulatory (IF1) is a Chartered Insurance Institute unit covering the principles of insurance and the legal and regulatory framework for insurance business. The real exam has 100 multiple-choice questions in two hours. The CII lists a standard pass mark of 70%.",
+    rows: [
+      { label: "Awarding body", value: "Chartered Insurance Institute" },
+      { label: "Exam length", value: "100 multiple-choice questions in two hours" },
+      { label: "Standard pass mark", value: "70%" },
+      { label: "Syllabus", value: "1 January to 31 December 2026" },
+      { label: "Practice format", value: "Four 50-question tests" },
+      { label: "Access", value: "Free to start. Premium unlocks the remaining locked steps and full statistics." },
+    ],
+    basedOn: "CII IF1 examination syllabus for 2026 and unit assessment information, checked November 2026",
+    source: { name: "Chartered Insurance Institute, IF1", url: "https://www.cii.co.uk/learning/qualifications/certificate-in-insurance-qualification/unit-insurance-legal-and-regulatory-if1/" },
+  },
   cemap: {
     answer:
       "CeMAP Module 1 is the first part of the LIBF Certificate in Mortgage Advice and Practice, the qualification that meets the FCA's education standard for mortgage advisers in the UK. Since 30 September 2025 it is the Financial Services, Regulation and Ethics (FSRE) module, which replaced UK Financial Regulation (UKFR). It has two units, FRE1 (Industry, Regulation and Key Parties) and FRE2 (Skills, Principles and Ethical Behaviours). Each is a one-hour online exam with remote invigilation: 25 multiple-choice questions and 3 case studies with 5 linked questions, 40 marks in all, and 70% (28 of 40) is needed to pass each unit.",

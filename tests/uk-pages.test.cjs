@@ -15,7 +15,7 @@ test("UK page inventory includes every UK exam from both registries", () => {
     .map((e) => e.id)
     .sort();
   assert.deepEqual(m.exams.map((e) => e.id).sort(), expected);
-  assert.equal(m.exams.length, 37);
+  assert.equal(m.exams.length, 39);
   assert.equal(new Set(m.routes.map((r) => r.path)).size, m.routes.length);
 });
 test("every UK exam has a landing, root, dashboard, stats, practice, test and results route", () => {

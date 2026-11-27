@@ -2524,6 +2524,11 @@
   "https://aim-qualifications-documents.s3.dualstack.eu-west-1.amazonaws.com/documents/rqf/specifications/60043258.pdf",
   "https://highfieldqualifications.com/products/qualifications/health-and-safety/level-2-workplace"
  ],
+ "ukif1": [
+  "https://www.cii.co.uk/learning/qualifications/certificate-in-insurance-qualification/unit-insurance-legal-and-regulatory-if1/",
+  "https://media.umbraco.io/ciigroup-dxp/hk0akzjb/if1_insurance_legal_and_regulatory_examination_syllabus.pdf",
+  "https://media.umbraco.io/ciigroup-dxp/d5odbmwb/if1-indicative-content-2026.pdf"
+ ],
  "uklgv": [
   "https://www.gov.uk/become-lorry-bus-driver/driver-cpc-part-1-theory-test",
   "https://www.gov.uk/become-lorry-bus-driver/fees",

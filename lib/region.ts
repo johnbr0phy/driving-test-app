@@ -152,6 +152,8 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   ukif1: "UK",
   hklesfi7: "HK",
   hklesfi8: "HK",
+  txpersonal: "US",
+  ccht: "US",
   uklitu: "UK", uknmc: "UK", ukseru: "UK", ukdrone: "UK", uksqe1: "UK", aatl2: "UK", cemap: "UK", ukcemap2: "UK",
   iedtt: "IE", iedttcv: "IE", iesafepass: "IE", iespsv: "IE", ieqfa: "IE", iepsa: "IE", iegarda: "IE", iehcap: "IE", ieplumbt2: "IE", cabcguard: "CA",
   caon: "CA", caqc: "CA", cabc: "CA", caab: "CA", camb: "CA", osslt: "CA", capal: "CA", caelec: "CA",
@@ -194,6 +196,8 @@ const TEST_REGIONS: Record<string, TestRegion> = {
 
 /** A country's tests that are not driving tests: shown beside the worldwide ones, not in the driving grid. */
 export const NON_DRIVING_TESTS = new Set([
+  "ccht",
+  "txpersonal",
   "faaama",
   "hklesfi8",
   "hklesfi7",

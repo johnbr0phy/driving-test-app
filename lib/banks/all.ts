@@ -264,6 +264,8 @@ import "./ukr01";
 import "./ukif1";
 import "./hklesfi7";
 import "./hklesfi8";
+import "./txpersonal";
+import "./ccht";
 import "./cemap";
 import "./ukcemap2";
 import "./sgftt";

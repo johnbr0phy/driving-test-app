@@ -272,6 +272,8 @@ const STATE_FAMILIES: { id: string; pattern: RegExp }[] = [
 
 /** Which state-sold families the query is about, however long the sentence around it. */
 function familiesIn(q: string): TestCatalogEntry[] {
+  // Texas Personal Lines is a separate license listed directly in the catalog.
+  if (/\bpersonal lines?\b/.test(q) && /\b(texas|tx)\b/.test(q)) return [];
   // "insurance" alone means both lines; "life" or "home" picks one.
   const line = /\b(life|health)\b/.test(q) ? "insurance" : /\b(property|casualty|p ?& ?c|auto|home)\b/.test(q) ? "pnc" : null;
   return STATE_FAMILIES.filter((f) => f.pattern.test(q) && (!line || f.id === line || f.id === "realestate"))

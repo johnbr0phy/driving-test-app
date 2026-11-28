@@ -1,0 +1,22 @@
+{
+  "LH-HPRV-005": {
+    "question": "A claimant submits proof of loss early under an individual health policy. When does the standard three-year suit period begin?",
+    "optionA": "On the date the insurer denies the claim",
+    "optionB": "On the date the medical expense occurs",
+    "optionC": "On the date the insurer receives proof",
+    "optionD": "On the date the policy requires proof",
+    "explanation": "The three-year limit runs from the date written proof was due under the policy. Submitting proof early starts the separate 60-day waiting period before the claimant may sue."
+  },
+  "LHOH-OHLIF-006": {
+    "question": "An unsurrendered Ohio whole life policy still provides extended-term coverage after a premium default. What is the reinstatement deadline?",
+    "explanation": "Ohio Revised Code 3915.05(J) allows reinstatement within three years of default while the extended-term coverage remains in force and the original policy has not been surrendered and canceled. The owner must provide evidence of insurability satisfactory to the insurer and pay overdue premiums with interest.",
+    "optionA": "One year after default",
+    "optionB": "Three years after default",
+    "optionC": "Two years after default",
+    "optionD": "Five years after default"
+  },
+  "LHNJ-NJHLT-003": {
+    "question": "Until which birthday can an eligible adult child continue coverage under a parent's New Jersey group health policy?",
+    "explanation": "New Jersey's dependent continuation option ends on the child's 31st birthday. To qualify, the child must be unmarried, have no children, live in New Jersey or study full-time, and have no other qualifying health coverage or Medicare entitlement."
+  }
+}

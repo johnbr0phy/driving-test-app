@@ -550,13 +550,13 @@
     "state": "MA",
     "questionId": "REMA-MAADD-002",
     "category": "reOwnershipTitle",
-    "question": "After a written request, a condominium association must provide a unit's 6(d) statement of unpaid charges within:",
+    "question": "A Massachusetts condo owner pays the fee and requests a 6(d) statement in writing. When is it due?",
     "optionA": "5 business days",
     "optionB": "10 business days",
     "optionC": "30 business days",
     "optionD": "60 calendar days",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "M.G.L. c. 183A, section 6(d) requires the statement within ten business days after a written request. Recording it discharges the unit from any lien for other sums then unpaid."
+    "explanation": "Under Massachusetts General Laws, chapter 183A, section 6(d), the association has ten business days after receiving the written request. The usual fee is waived for a mortgagee that has notified the association of its intent to foreclose."
   }
 ]

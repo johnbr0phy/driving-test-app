@@ -1,0 +1,28 @@
+{
+  "PCOH-OHMKT-003": {
+    "question": "An Ohio agent represents eight authorized insurers that write this risk. For ordinary surplus lines due diligence, how many must the agent contact?",
+    "optionA": "At least two",
+    "optionB": "At least five",
+    "optionC": "At least three",
+    "optionD": "All eight"
+  },
+  "PCCA-CAPOL-003": {
+    "question": "When must an insurer personally deliver a California homeowners nonrenewal notice?",
+    "explanation": "Insurance Code section 678(c) requires notice at least 75 days before expiration. A mailed notice must also allow the extra time specified by Code of Civil Procedure section 1013(a). The 45-day period for a renewal offer is a different rule."
+  },
+  "PCMI-MIWC-004": {
+    "question": "Before applying the state maximum, how is Michigan's weekly total disability benefit calculated?",
+    "optionA": "66 2/3% of gross average weekly wages",
+    "optionB": "100% of gross average weekly wages",
+    "optionC": "60% of after-tax average weekly wages",
+    "optionD": "80% of after-tax average weekly wages"
+  },
+  "PC-LIA-021": {
+    "question": "Which feature distinguishes a commercial umbrella from an excess policy that follows the underlying form?",
+    "optionA": "Lower deductibles on the underlying policy",
+    "optionB": "Coverage for some losses outside the underlying form",
+    "optionC": "Reinstatement of the underlying aggregate limit",
+    "optionD": "Payment of claims below the underlying retention",
+    "explanation": "An umbrella adds limits and may cover a loss excluded by the underlying form if the umbrella's own terms cover it. A self-insured retention may apply. A follow-form excess policy adds limits using the underlying coverage terms."
+  }
+}

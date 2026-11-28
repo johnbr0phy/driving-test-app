@@ -46,10 +46,10 @@
    "question": "A married couple holds title so that neither spouse alone can sever the tenancy or force a partition, and the survivor takes the entire property. This is:"
   },
   "RE-OWN-021": {
-   "question": "A possessor openly occupies a fenced parcel for 6 years, then sells to a buyer who occupies it for 5 more. New York's statutory period is 10 years. The buyer:",
+   "question": "After six years of adverse possession, a New York seller transfers possession to a buyer who continues it for five years. The buyer:",
    "optionA": "Must restart the 10-year period",
    "optionD": "Has no claim, since 5 years is too short",
-   "explanation": "Successive adverse possessors in privity may tack their periods, so 6 + 5 = 11 years exceeds New York's 10-year period (CPLR 212), assuming the other elements of adverse possession are met. Prescription yields only a right of use, while exclusive occupancy like this supports title by adverse possession."
+   "explanation": "The sale connects the two possessors, so the buyer can add their periods of adverse possession. Together they exceed New York's ten-year requirement under CPLR 212(a)."
   },
   "RE-FIN-003": {
    "question": "In New York, a lien-theory state, a borrower who signs a mortgage to finance a home purchase:",

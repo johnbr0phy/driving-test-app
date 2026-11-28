@@ -294,5 +294,20 @@
   },
   "REPA-VAL-026": {
     "explanation": "A broker price opinion (BPO) is a price estimate a licensee prepares for a lender or other third party, and RELRA section 608.6(e) allows one for a property a lender owns after an unsuccessful foreclosure sale."
+  },
+  "RE-CON-026": {
+    "explanation": "Where dual agency is permitted, the agent needs the informed consent of both buyer and seller. State law governs how and when the relationship must be documented."
+  },
+  "RECA-CON-026": {
+    "explanation": "California requires disclosure to both buyer and seller as soon as practicable and written confirmation in the purchase contract or a separate writing. Both clients must know about and consent to the dual role."
+  },
+  "RENJ-CON-026": {
+    "explanation": "New Jersey requires informed written consent from both the buyer and the seller for disclosed dual agency. Notifying the seller alone leaves the buyer unaware of the divided loyalty."
+  },
+  "RENC-CON-026": {
+    "explanation": "North Carolina requires both clients to authorize dual agency. When a buyer initially consents orally under an oral agency agreement, the authorization must be in writing by the time one party makes an offer to the other."
+  },
+  "REMA-CON-026": {
+    "explanation": "In Massachusetts, M.G.L. c. 112, section 87AAA 3/4(b) and 254 CMR 3.00(13)(b) require informed written consent of buyer and seller on the Board's form. Telling only the seller leaves the buyer unaware of the divided loyalty."
   }
 }

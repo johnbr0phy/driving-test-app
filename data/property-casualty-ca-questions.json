@@ -439,7 +439,7 @@
     "state": "CA",
     "questionId": "PCCA-CAPOL-003",
     "category": "pcPolicy",
-    "question": "When must an insurer personally deliver a California homeowners nonrenewal notice?",
+    "question": "If a California insurer delivers a homeowners nonrenewal notice in person, what minimum notice must it give?",
     "optionA": "45 days before expiration",
     "optionB": "60 days before expiration",
     "optionC": "75 days before expiration",

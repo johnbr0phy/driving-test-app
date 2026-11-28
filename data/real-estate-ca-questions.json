@@ -606,12 +606,12 @@
     "category": "reContractsAgency",
     "question": "A listing agent's own buyer client wants to make an offer on that agent's listing. Before acting as a dual agent where law permits, the agent must:",
     "optionA": "Notify only the seller in writing",
-    "optionB": "Secure written, informed consent from both clients",
+    "optionB": "Obtain both clients' informed consent",
     "optionC": "Refer the buyer to a different brokerage",
     "optionD": "Get the licensing agency's approval",
     "correctAnswer": "B",
     "correctIndex": 1,
-    "explanation": "Dual agency is lawful only with the informed written consent of both principals, and some states prohibit it entirely. Telling only the seller leaves the buyer unaware of the divided loyalty.",
+    "explanation": "California requires disclosure to both buyer and seller as soon as practicable and written confirmation in the purchase contract or a separate writing. Both clients must know about and consent to the dual role.",
     "sourceQuestionId": "RE-CON-026"
   },
   {

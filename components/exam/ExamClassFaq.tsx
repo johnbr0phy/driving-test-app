@@ -229,6 +229,7 @@ export const TEACHES: Record<string, string> = {
   hklesfi8: "an HKSI Paper 8 securities course",
   txpersonal: "a Texas insurance licensing course",
   ccht: "a hemodialysis technician training program",
+  txlifeonly: "a Texas life insurance licensing course",
   cemap: "a CeMAP course",
   ukcemap2: "a CeMAP course",
   aswb: "in an MSW program or run ASWB licensure prep",

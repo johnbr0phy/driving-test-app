@@ -14,11 +14,9 @@ import { examOffers } from "@/lib/examSeo";
 
 const siteUrl = SITE_URL;
 
-const title = "Free CRCST Practice Test 2026 - Sterile Processing";
+const title = "Free CRCST Practice Test 2026 - 50 Questions";
 const metaDescription =
-  "Free CRCST practice tests: 200 questions on the HSPA outline, covering decontamination, packaging, sterilization and storage.";
-const description =
-  "Free HSPA CRCST practice tests with 200 questions weighted to the official exam content outline. Decontamination, preparation and packaging, sterilization, storage, and patient care equipment with instant feedback.";
+  "Try a free 50-question CRCST practice test for the HSPA sterile processing exam. Get answer explanations and three free training sets. Premium adds three more tests.";
 
 export const metadata: Metadata = {
   title,
@@ -48,19 +46,19 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "How many questions are on the CRCST exam?",
-    a: "The HSPA CRCST exam has 150 multiple-choice questions in 3 hours. 140 are scored and 10 are unscored pretest items. A scaled score of 70 out of 100 is passing.",
+    a: "The HSPA CRCST exam gives you three hours for 150 multiple-choice questions. HSPA scores 125 and uses the other 25 to try out new questions. You cannot tell which questions are scored. HSPA reports your result as pass or fail.",
   },
   {
     q: "What topics does the CRCST exam cover?",
-    a: "Per the HSPA content outline revised November 2023: Departmental Considerations (15 percent), Cleaning, Decontamination and Disinfection (21 percent), Preparation and Packaging (21 percent), Sterilization Process (21 percent), Sterile Storage and Inventory Management (9 percent), Patient Care Equipment and Distribution (5 percent), and Professional Development and Human Relations (8 percent).",
+    a: "Cleaning and decontamination, preparation and packaging, and sterilization each make up 21% of the HSPA exam. The other domains are departmental considerations (15%), sterile storage, transport and inventory management (9%), professional development and human relation skills (8%), and patient care equipment and distribution (5%).",
   },
   {
     q: "Does this work for the CBSPD CSPDT exam too?",
     a: "The CBSPD Certified Sterile Processing and Distribution Technician (CSPDT) exam covers much of the same material but has its own outline and weights, set by a different board. Tigertest has a separate CSPDT practice test written to the CBSPD outline.",
   },
   {
-    q: "Is the Tigertest CRCST practice test free?",
-    a: "Yes. Start for free with no account required: every training set and practice test is free except the final one of each, which is part of Tigertest Premium (one payment, no subscription). Create a free account if you want your progress saved across devices.",
+    q: "What does the free CRCST practice test include?",
+    a: "Practice Test 1 has 50 questions across all seven HSPA exam domains. Training Sets 1 to 3 are also free, with explanations and no account required. One Premium payment unlocks Practice Tests 2 to 4 and Training Sets 4 and 5.",
   },
 ];
 
@@ -69,8 +67,8 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "WebApplication",
-      name: "Tigertest - Free CRCST (HSPA) Practice Tests",
-      description,
+      name: "Tigertest CRCST Practice Test",
+      description: metaDescription,
       url: `${siteUrl}/crcst-practice-test`,
       applicationCategory: "EducationalApplication",
       operatingSystem: "Any",
@@ -126,7 +124,7 @@ export default function CRCSTLandingPage() {
           <ExamLandingHero
             dashboardHref="/crcst/dashboard"
             shortName="CRCST"
-            subtitle="200 CRCST questions weighted to the HSPA content outline. Free to start, no account needed."
+            subtitle="Try 50 questions across all seven HSPA exam domains. Free to start, no account needed."
             shots={{ mobile: "/landing/crcst-mobile.png", desktop: "/landing/crcst-desktop.png" }}
           />
         </div>
@@ -147,8 +145,9 @@ export default function CRCSTLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Train, Then Test</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Five training sets, one per topic area, from Departmental &amp; Professional Practice to Storage, Inventory &amp; Patient Equipment. Master a topic, then take a test. Get instant feedback after each
-                answer, and questions you miss come back until you have mastered them.
+                Start with three free sets covering departmental and professional practice, cleaning and
+                decontamination, and preparation and packaging. Each answer comes with an explanation.
+                Questions you miss come back for another try.
               </p>
             </div>
           </div>
@@ -159,8 +158,9 @@ export default function CRCSTLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Practice Tests</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four 50-question tests that mirror the real exam&apos;s weighting. Decontamination,
-                preparation and packaging, and sterilization make up 63 percent of every test.
+                Each of the four practice tests has 50 questions. Practice Test 1 is free. Premium opens
+                the other three tests and the remaining two training sets, covering sterilization,
+                storage, inventory and patient equipment.
               </p>
             </div>
           </div>
@@ -176,8 +176,9 @@ export default function CRCSTLandingPage() {
                 Built on the Official HSPA Content Outline
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-                HSPA publishes the exact weighting of the CRCST exam (content outline revised
-                November 2023). Every practice test here follows it.
+                The <a href="https://myhspa.org/wp-content/uploads/2024/01/HSPA_CRCST_Content_Outline_2023.Revision.pdf" className="text-brand-dark underline">HSPA exam content outline</a> gives
+                each domain a share of the certification exam. Tigertest uses those weights to build
+                its shorter, 50-question practice tests.
               </p>
               <div className="space-y-3">
                 {contentAreas.map((area) => (
@@ -229,9 +230,9 @@ export default function CRCSTLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">1. Know the exam format</h3>
               <p>
-                150 multiple-choice questions in 3 hours: 140 scored plus 10 unscored pretest items.
-                A scaled score of 70 passes. You also need 400 hours of hands-on experience within
-                6 months of passing to receive the credential.
+                Allow three hours for the certification exam. HSPA also requires 400 hours of hands-on
+                experience in a sterile processing department. You can complete the hours before the
+                exam or document them within six months after passing for full certification.
               </p>
             </div>
             <div>
@@ -244,15 +245,16 @@ export default function CRCSTLandingPage() {
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">3. Study from the HSPA manual</h3>
               <p>
-                The exam is written from the HSPA Central Service Technical Manual (9th ed.) and its workbook.
-                Pair it with ANSI/AAMI ST79 for steam sterilization and ST91 for flexible endoscopes.
+                HSPA lists the Sterile Processing Technical Manual (9th edition), ANSI/AAMI ST79 and
+                the AORN Guidelines for Perioperative Practice as references for the exam.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">4. Drill your weak areas</h3>
               <p>
-                Tigertest tracks your accuracy by content area. After each practice test, drill the
-                questions you missed, retrain your weakest topic, and retake until you clear 70 percent.
+                After each practice test, review the questions you missed and revisit the relevant
+                training set. Tigertest uses 70% as a practice target. The <a href="https://myhspa.org/wp-content/uploads/2024/01/2024-Certification-Handbook.pdf" className="text-brand-dark underline">HSPA Certification Handbook</a> explains
+                how the certification exam is scored.
               </p>
             </div>
           </div>
@@ -283,8 +285,8 @@ export default function CRCSTLandingPage() {
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-brand-light to-white dark:to-transparent pointer-events-none" />
         <div className="relative max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Ready to Pass the CRCST Exam?</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Start for free. No account required. 200 questions across all seven sections.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 mb-6">Start your CRCST practice test</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 mb-10">Take the first 50-question test for free. No account required.</p>
           <ExamLandingCTA dashboardHref="/crcst/dashboard" />
         </div>
       </div>

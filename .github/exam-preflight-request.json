@@ -1,16 +1,17 @@
 {
-  "commit": "812af4ebbd188e7c518f46a2af87d63556d140ae",
-  "tree": "55dfdc5c95012d975707f47f1d498ac1cdec6a55",
+  "commit": "218504d801d65923d069f255ee278729642cbb9d",
+  "tree": "3d68ba778fd83cd61bc58a79c0bb40b793599ec4",
   "exams": [
     {
-      "id": "ccht",
+      "id": "txlifeonly",
       "engine": "v1",
       "pools": {
-        "cchtPreparationAccess": 48,
-        "cchtTreatmentMonitoring": 52,
-        "cchtTechnical": 44,
-        "cchtEnvironment": 32,
-        "cchtRole": 24
+        "txloPolicies": 36,
+        "txloProvisions": 36,
+        "txloUnderwriting": 32,
+        "txloOther": 20,
+        "txloCommonLaw": 52,
+        "txloLifeLaw": 24
       }
     }
   ]

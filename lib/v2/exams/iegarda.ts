@@ -65,7 +65,7 @@ export const IEGARDA: ExamV2Config = {
   },
   drills: [
     { key: "tfc", name: "True, False or Cannot Say", section: "verbal", domains: ["gardaVerbalTfc"], blurb: "Judge statements against a passage, using only what it says.", basics: ["findingDetail", "inference", "mustBeTrue", "drawConclusions"] },
-    { key: "pct", name: "Percentages and Change", section: "numerical", domains: ["gardaNumPct"], blurb: "Shares of a total, rates and percentage rises and falls from tables.", basics: ["fsmFdp", "percents", "percentChange", "ratios"] },
+    { key: "pct", name: "Percentages and Change", section: "numerical", domains: ["gardaNumPct"], blurb: "Shares of a total, rates and percentage rises and falls from tables.", basics: ["fsmFdp", "percents", "percentChange", "readingTable"] },
     { key: "meaning", name: "Reading for Meaning", section: "verbal", domains: ["gardaVerbalInfer"], blurb: "Main points, best supported conclusions, assumptions and words in context." },
     { key: "calc", name: "Totals, Averages and Ratios", section: "numerical", domains: ["gardaNumCalc"], blurb: "Totals, differences, averages, rates, ratios and costs from tables." },
   ],

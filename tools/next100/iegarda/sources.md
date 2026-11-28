@@ -82,3 +82,7 @@ on for numerical reasoning, since publicjobs lists a calculator among things a c
 - Every numerical key is computed in `numerical.py`; build.py checks the formatted key appears in its
   explanation, that the five options differ, and sorts and locks them. Key positions after sorting
   are spread over all five slots (16/12/13/14/16).
+
+## Basics lesson links
+
+Checked the official Garda selection flowchart again on 2026-11-28. It identifies verbal and numerical reasoning at the online selection stage. The links from questions to reading and numeracy lessons are Tigertest teaching choices based on the reasoning in those original passages and tables.

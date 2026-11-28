@@ -39,7 +39,7 @@ export type LandingTryQuestion = {
   explanation: string;
   practiceHref: string;
   /** Set on v2 exams: the answer goes to this drill, not a training set. */
-  v2?: { drillKey: string; domain: string; order: number[] };
+  v2?: { drillKey: string; domain: string; order: number[]; carryOver?: { legacyKey: string; questionIds: string[] } };
   /**
    * v2 only: the text carries bank markup (bold, line breaks, KaTeX), so the
    * server hero draws it with RichTextStatic instead of as plain text.
@@ -149,7 +149,13 @@ function pickV2(dashboardHref: string, lang?: Language): LandingTryQuestion | nu
     optionOrder: order.map((i) => LETTERS6[i]).join(""),
     explanation: relabelChoices(q.explanation, order),
     practiceHref: v2Routes(exam).drillQuestions(drill.key),
-    v2: { drillKey: drillKey(exam.id, drill.key), domain: q.domain, order },
+    v2: {
+      drillKey: drillKey(exam.id, drill.key), domain: q.domain, order,
+      ...(drill.legacyKey ? { carryOver: {
+        legacyKey: drillKey(exam.id, drill.legacyKey),
+        questionIds: drillQuestions(bank, drill, exam).map(item => item.id),
+      } } : {}),
+    },
     ...(shape > 0 ? { rich: true } : {}),
     ...(passage ? { passage: { ...(passage.title ? { title: passage.title } : {}), text: passage.text } } : {}),
   };

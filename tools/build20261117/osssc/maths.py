@@ -196,3 +196,11 @@ assert round(1.25 * 0.8 * 1.1, 6) == 1.1
 assert 240 / (120 / 40 + 120 / 60) == 48
 assert 2 * 4 * 450 / 15 == 240
 assert len(ITEMS) == 47
+
+# Question numbers whose solution uses the rule on the named Basics card.
+BASICS = {
+    "percentChange": [1, 3, 4, 24, 39, 40, 45],
+    "ratios": [5, 11, 25, 42, 43, 44, 47],
+    "meanMedian": [6, 37, 38],
+    "rateProblems": [7, 8, 13, 14, 15, 16, 46],
+}

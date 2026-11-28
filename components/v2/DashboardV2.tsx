@@ -81,7 +81,7 @@ export function DashboardV2({ exam }: { exam: ExamV2Config }) {
   const { user, loading: authLoading } = useAuth();
   const signedOut = hydrated && !authLoading && !user;
   // What a signed-out visitor stands to lose: drill answers plus test items.
-  const guestAnswered = useMemo(() => v2GuestAnswered(drills, history, exam.id), [drills, history, exam.id]);
+  const guestAnswered = useMemo(() => v2GuestAnswered(drills, history, exam), [drills, history, exam]);
 
   const fixedGoal = exam.fixedGoal !== undefined;
   const goal = goalFor(exam, savedGoal);

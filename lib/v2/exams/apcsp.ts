@@ -21,7 +21,7 @@ export const APCSP: ExamV2Config = {
   drills: [
     { key: "creative", name: "Creative Development", section: "mcq", domains: ["apcspCreative"], blurb: "User needs, collaboration, input/output, testing and debugging." },
     { key: "data", name: "Data", section: "mcq", domains: ["apcspData"], blurb: "Binary representation, compression, data cleaning and interpretation." },
-    { key: "algorithms", name: "Algorithms and Programming", section: "mcq", domains: ["apcspAlgorithms"], blurb: "Trace original pseudocode, lists, loops, procedures, searches and simulations.", basics: ["csTraceTables", "csTruthTables", "csModDiv", "orderOfOperations"] },
+    { key: "algorithms", name: "Algorithms and Programming", section: "mcq", domains: ["apcspAlgorithms"], blurb: "Trace original pseudocode, lists, loops, procedures, searches and simulations.", basics: ["apcspAssignment", "apcspConditions", "apcspArithmetic", "apcspLoops", "apcspListIndices"] },
     { key: "networks", name: "Computer Systems and Networks", section: "mcq", domains: ["apcspNetworks"], blurb: "Protocols, packets, routing, redundancy and parallel computing." },
     { key: "impact", name: "Impact of Computing", section: "mcq", domains: ["apcspImpact"], blurb: "Access, bias, crowdsourcing, privacy, security and responsible reuse." },
   ],

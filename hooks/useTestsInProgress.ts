@@ -1,11 +1,15 @@
 "use client";
 
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useStore } from "@/store/useStore";
 import { useV2Store } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { examFamilyId, getExamForSetId, getExamForTestId } from "@/lib/exams";
 import { getCatalogEntry, TestCatalogEntry } from "@/lib/testCatalog";
+import { getBank } from "@/lib/v2/bank";
+import { drillTotalsForExam } from "@/lib/v2/drillTotals";
+import { EXAMS_V2 } from "@/lib/v2/registry";
+import type { QuestionV2 } from "@/lib/v2/types";
 
 export interface TestInProgress {
   test: TestCatalogEntry;
@@ -37,6 +41,26 @@ export function useTestsInProgress(): TestInProgress[] {
   const drills = useV2Store((s) => s.drills);
   const results = useV2Store((s) => s.results);
 
+  // Old and new saved drills can both contain the same question. Only load
+  // a bank here when the two records need reconciling, including after a reset.
+  const [splitBanks, setSplitBanks] = useState<Partial<Record<string, QuestionV2[]>>>({});
+  const drillTotals = useMemo(() => {
+    const ids = new Set(Object.keys(drills).map(key => key.split(":")[0]));
+    return EXAMS_V2.filter(exam => ids.has(exam.id)).map(exam => ({
+      exam, totals: drillTotalsForExam(drills, exam, splitBanks[exam.id]),
+    }));
+  }, [drills, splitBanks]);
+  useEffect(() => {
+    let live = true;
+    for (const { exam, totals } of drillTotals) {
+      if (totals) continue;
+      import("@/lib/examAppRoute").then(({ loadExamBank }) => loadExamBank({ kind: "v2", exam })).then(() => {
+        if (live) setSplitBanks(banks => ({ ...banks, [exam.id]: getBank(exam.id).questions }));
+      }).catch(() => { /* Keep the started exam visible if its bank is offline. */ });
+    }
+    return () => { live = false; };
+  }, [drillTotals]);
+
   return useMemo(() => {
     if (!hydrated) return [];
     const by = new Map<string, { mastered: number; testsTaken: number }>();
@@ -57,9 +81,8 @@ export function useTestsInProgress(): TestInProgress[] {
     for (const k of Object.keys(currentTests)) v1Add(getExamForTestId(Number(k)), 0, 0);
     for (const t of completedTests) v1Add(getExamForTestId(t.testNumber), 0, 1);
     for (const s of Object.values(sessions)) add(s.examId, 0, 0);
-    for (const [key, d] of Object.entries(drills)) {
-      const n = d.masteredIds?.length ?? 0;
-      if (n > 0 || d.seen > 0) add(key.split(":")[0], n, 0);
+    for (const { exam, totals } of drillTotals) {
+      if (!totals || totals.mastered > 0 || totals.seen > 0) add(exam.id, totals?.mastered ?? 0, 0);
     }
     for (const r of results) add(r.examId, 0, 1);
 
@@ -67,5 +90,5 @@ export function useTestsInProgress(): TestInProgress[] {
       .map(([id, v]) => ({ test: getCatalogEntry(id), ...v }))
       .filter((x): x is TestInProgress => !!x.test)
       .sort((a, b) => Number(b.test.id === primaryExam) - Number(a.test.id === primaryExam) || b.mastered - a.mastered || b.testsTaken - a.testsTaken);
-  }, [hydrated, primaryExam, selectedState, startedExams, trainingSets, currentTests, completedTests, sessions, drills, results]);
+  }, [hydrated, primaryExam, selectedState, startedExams, trainingSets, currentTests, completedTests, sessions, drillTotals, results]);
 }

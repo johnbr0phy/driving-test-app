@@ -115,3 +115,10 @@ ITEMS = [('Six boxes each hold 4 chalk sticks. How many sticks in all?',
  ('There are 5 red, 8 blue and 3 green balls. How many in all?',
   ['16', '15', '13', '17'],
   '5 plus 8 plus 3 equals 16.')]
+
+BASICS = {
+    "ks2ShortDivision": [3, 31],
+    "decimals": [10, 11],
+    "ks2Time": [13, 14, 15, 16],
+    "areaPerimeter": [23, 24, 25, 26, 27],
+}

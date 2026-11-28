@@ -311,6 +311,8 @@ export interface TestResultV2 {
 }
 
 export interface DrillState {
+  /** Only a question issued before a drill split was answered. The rest of this drill stays locked. */
+  pendingAttemptOnly?: true;
   masteredIds: string[];
   wrongQueue: string[];
   seen: number;

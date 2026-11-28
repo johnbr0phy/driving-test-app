@@ -34,8 +34,8 @@ def P(test, title, text, items):
     return {"test": test, "title": title, "text": text, "items": items}
 
 
-def TF(statement, key, expl):
-    return {"kind": "TF", "statement": statement, "key": key, "explanation": expl}
+def TF(statement, key, expl, *, basics=None):
+    return {"kind": "TF", "statement": statement, "key": key, "explanation": expl, "basics": basics}
 
 
 def MC(skill, stem, opts, expl):
@@ -46,12 +46,12 @@ def T(test, title, header, rows, questions):
     return {"test": test, "title": title, "header": header, "rows": rows, "questions": questions}
 
 
-def N(domain, skill, stem, key, wrongs, fmt, expl):
-    return {"kind": "N", "domain": domain, "skill": skill, "stem": stem, "key": key, "wrongs": wrongs, "fmt": fmt, "explanation": expl}
+def N(domain, skill, stem, key, wrongs, fmt, expl, *, basics=None):
+    return {"kind": "N", "domain": domain, "skill": skill, "stem": stem, "key": key, "wrongs": wrongs, "fmt": fmt, "explanation": expl, "basics": basics}
 
 
-def L(domain, skill, stem, opts, expl):
-    return {"kind": "L", "domain": domain, "skill": skill, "stem": stem, "options": opts, "explanation": expl}
+def L(domain, skill, stem, opts, expl, *, basics=None):
+    return {"kind": "L", "domain": domain, "skill": skill, "stem": stem, "options": opts, "explanation": expl, "basics": basics}
 
 
 def load(name, var):
@@ -153,6 +153,8 @@ def build():
                     q.update({"domain": "gardaVerbalInfer", "skill": it["skill"], "difficulty": 2,
                               "stimulusId": sid, "format": "single", "stem": it["stem"],
                               "options": opts, "correct": [k]})
+                if it.get("basics"):
+                    q["basics"] = it["basics"]
                 q["explanation"] = it["explanation"]
                 warnings += lint([q["stem"], q["explanation"], *q["options"], p["text"]], q["id"])
                 questions.append(q)
@@ -185,6 +187,8 @@ def build():
                     m = re.search(r"\d[\d.,]*", it["options"][0])
                     if m and m.group(0).rstrip(".,") not in it["explanation"]:
                         warnings.append(f"{q['id']}: key number not in explanation")
+                if it.get("basics"):
+                    q["basics"] = it["basics"]
                 q["explanation"] = it["explanation"]
                 warnings += lint([q["stem"], q["explanation"], *q["options"]], q["id"])
                 questions.append(q)

@@ -15,6 +15,7 @@ function mergeDrill(a: DrillState | undefined, b: DrillState | undefined): Drill
   const newer = a.seen >= b.seen ? a : b;
   return {
     masteredIds,
+    ...(a.pendingAttemptOnly && b.pendingAttemptOnly ? { pendingAttemptOnly: true as const } : {}),
     wrongQueue: newer.wrongQueue.filter((id) => !masteredIds.includes(id)),
     seen: Math.max(a.seen, b.seen),
     correct: Math.max(a.correct, b.correct),

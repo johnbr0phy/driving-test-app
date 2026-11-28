@@ -21,7 +21,7 @@ export const JAMBLIT: ExamV2Config = {
   domainLabels: { jamblitDrama: "Drama", jamblitProse: "Prose", jamblitPoetry: "Poetry", jamblitAppreciation: "Literary Appreciation" },
   drills: [
     { key: "drama", name: "Drama", section: "lit", domains: ["jamblitDrama"], blurb: "Dramatic forms, stage techniques, character, conflict and irony." },
-    { key: "prose", name: "Prose", section: "lit", domains: ["jamblitProse"], blurb: "Narrative viewpoints, character, plot, setting and theme.", basics: ["storyTheme", "sequenceEvents", "textStructure", "causeEffect"] },
+    { key: "prose", name: "Prose", section: "lit", domains: ["jamblitProse"], blurb: "Narrative viewpoints, character, plot, setting and theme.", basics: ["storyTheme", "sequenceEvents", "claimSupport", "causeEffect"] },
     { key: "poetry", name: "Poetry", section: "lit", domains: ["jamblitPoetry"], blurb: "Poetic forms, sound patterns, figurative language and the speaking voice." },
     { key: "appreciation", name: "Literary Appreciation", section: "lit", domains: ["jamblitAppreciation"], blurb: "Interpret original short extracts using textual evidence.", basics: ["toneWords", "figurativeLanguage", "inference", "findingDetail"] },
   ],

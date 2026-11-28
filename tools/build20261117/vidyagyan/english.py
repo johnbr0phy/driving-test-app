@@ -149,3 +149,10 @@ ITEMS = [('"The basket is beside the door." What kind of word is "basket"?',
   'bakery. Hari read it while carrying an empty basket. Which place issued the book notice?',
   ['Library', 'Bakery', 'Bookshop', 'Post office'],
   'Borrowing and returning books are services of the library.')]
+
+BASICS = {
+    "ks2WordClasses": [1, 2, 3, 4],
+    "verbTense": [5, 6, 7, 8],
+    "ks2WordMeaning": [26],
+    "ks2Inference": [21, 22, 23, 24, 33, 34, 35, 36, 37, 39, 40],
+}

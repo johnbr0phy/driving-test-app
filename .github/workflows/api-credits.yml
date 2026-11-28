@@ -1,0 +1,52 @@
+name: Register verified API credits
+
+on:
+  workflow_dispatch:
+    inputs:
+      grant_id:
+        description: Verified grant identifier (reuse the same ID when retrying)
+        required: true
+      usd:
+        description: Actual promotional grant amount, at most 200
+        required: true
+      starts_at:
+        description: Verified grant start, ISO timestamp
+        required: true
+      expires_at:
+        description: Verified grant expiry, ISO timestamp (use an earlier time when uncertain)
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: register-api-credits
+  cancel-in-progress: false
+
+jobs:
+  register:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Register grant confirmed in billing
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+          GRANT_ID: ${{ inputs.grant_id }}
+          GRANT_USD: ${{ inputs.usd }}
+          GRANT_START: ${{ inputs.starts_at }}
+          GRANT_EXPIRY: ${{ inputs.expires_at }}
+        run: node --import tsx scripts/register-api-credit.ts "$GRANT_ID" "$GRANT_USD" "$GRANT_START" "$GRANT_EXPIRY"
+      - name: Verify fallback without user data
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_TEXT_MODEL: ${{ vars.OPENAI_TEXT_MODEL }}
+          OPENAI_INPUT_USD_PER_MTOK: ${{ vars.OPENAI_INPUT_USD_PER_MTOK }}
+          OPENAI_OUTPUT_USD_PER_MTOK: ${{ vars.OPENAI_OUTPUT_USD_PER_MTOK }}
+        run: node --import tsx scripts/probe-ai.ts

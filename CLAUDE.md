@@ -86,7 +86,7 @@ One shape for every exam: `/<exam>/dashboard`, `/<exam>/practice/<n>`, `/<exam>/
 - Internal accounts, test browsers (non-tigertest.io hosts, Claude's browser, webdriver), analytics-declined browsers and bots never count in /admin or the anonymous counters.
 - GA is off on children's tests (`CHILD_PATH_PREFIXES` in `lib/privacyRegion.ts`) and for class or quiz members; add a new primary or middle-school exam there. When a feature collects new data or adds a processor, update `/privacy` and its date.
 - Every new admin list uses `useTopN` + `ShowAllButton`; every admin GET route uses `requireAdmin()` and `cachedAdminPayload()`.
-- Claude API spend is capped at $200 a month. Every job that calls the API checks and records its share through `lib/apiBudget.ts` (`docs/claude/question-quality.md`, "API budget"); a new job gets a share in `JOB_BUDGETS_USD`.
+- Claude API spend is capped at $200 a month. OpenAI fallback is limited to a verified, unexpired promotional grant of at most $200, with no automatic renewal assumption or paid top-ups. Text callers use `lib/server/ai.ts`, including maintenance agents via `scripts/ai-cli.ts`. Every job that calls the API checks and records its share through `lib/apiBudget.ts` (`docs/claude/question-quality.md`, "API budget"); a new job gets a share in `JOB_BUDGETS_USD`.
 
 **URLs and email**
 - Build absolute URLs on `SITE_URL` from `lib/siteUrl.ts` (www host). Emails always use full `https://www.tigertest.io/<path>` links. Never put a link in a Gmail draft made through the Gmail connector (it rewrites links); give John paste-ready text instead.
@@ -122,7 +122,11 @@ One shape for every exam: `/<exam>/dashboard`, `/<exam>/practice/<n>`, `/<exam>/
 RESEND_API_KEY                  # Email sending (Resend)
 FIREBASE_SERVICE_ACCOUNT_KEY    # Server-side Firebase admin SDK (JSON)
 NEXT_PUBLIC_SITE_URL            # Site URL for metadata
-ANTHROPIC_API_KEY               # Claude API for the /admin daily update (cron skips when unset or over its budget)
+ANTHROPIC_API_KEY               # Preferred AI provider, under the shared ledger
+OPENAI_API_KEY                  # Fallback AI provider, verified grant required
+OPENAI_TEXT_MODEL               # Selected regular Responses model
+OPENAI_INPUT_USD_PER_MTOK        # Verified standard input token price
+OPENAI_OUTPUT_USD_PER_MTOK       # Verified standard output token price
 CRON_SECRET                     # Bearer token for /api/cron/* and /api/indexnow/ping
 INDEXNOW_KEY                    # 8-128 char hex key for IndexNow (Bing)
 EMAIL_REPLY_TO                  # Reply-To on campaign mail (default john@tigertest.io)

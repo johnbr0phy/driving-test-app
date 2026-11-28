@@ -13,7 +13,9 @@
  */
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import Anthropic from "@anthropic-ai/sdk";
+import { AiSession } from "@/lib/server/ai";
+import { AiUnavailable } from "@/lib/ai/budget";
+import type { Message, Block } from "@/lib/ai/protocol";
 import {
   AI_ANSWERS_JOB,
   AI_ANSWERS_MAX_SEARCHES,
@@ -23,7 +25,7 @@ import {
   summarize,
   type AiAnswerResult,
 } from "@/lib/aiAnswers";
-import { SONNET_PRICES, allowanceUsd, usageCostUsd } from "@/lib/apiBudget";
+
 
 /** About 25 questions at $0.05; the cap leaves room for a slow week of long answers. */
 const RUN_CAP_USD = 2.5;
@@ -43,7 +45,7 @@ const SYSTEM =
   "You are a helpful assistant. Search the web when it helps you give a current, accurate answer. Recommend specific websites by name where that answers the question, and cite your sources.";
 
 async function main() {
-  if (!process.env.ANTHROPIC_API_KEY) throw new Error("ANTHROPIC_API_KEY is not set");
+
   const date = new Date().toISOString().slice(0, 10);
   const questions = AI_QUESTIONS.filter((q) => !only || only.includes(q.id)).slice(0, limit);
 
@@ -52,12 +54,13 @@ async function main() {
     const { getAdminDb } = await import("@/lib/firebase-admin");
     db = getAdminDb();
   }
-  const { readSpend, recordSpend } = await import("@/lib/server/apiBudget");
+  if (!db) throw new Error("FIREBASE_SERVICE_ACCOUNT_KEY is required for the shared API budget");
+  const ai = new AiSession(db, AI_ANSWERS_JOB, RUN_CAP_USD);
 
   let budgetUsd = RUN_CAP_USD;
   if (db) {
     try {
-      budgetUsd = allowanceUsd(await readSpend(db), AI_ANSWERS_JOB, RUN_CAP_USD);
+      budgetUsd = await ai.allowance();
     } catch (error) {
       console.error("[ai-answers] could not read the API budget ledger, skipping:", error);
       budgetUsd = 0;
@@ -74,7 +77,7 @@ async function main() {
     return;
   }
 
-  const client = new Anthropic();
+
   const results: AiAnswerResult[] = [];
   let spentUsd = 0;
   for (const q of questions) {
@@ -84,23 +87,21 @@ async function main() {
     }
     let costUsd = 0;
     try {
-      const messages: Anthropic.Beta.BetaMessageParam[] = [{ role: "user", content: q.text }];
-      const content: Anthropic.Beta.BetaContentBlock[] = [];
+      const messages: Message[] = [{ role: "user", content: q.text }];
+      const content: Block[] = [];
       // A search can pause the server's loop; resume it a couple of times.
       for (let i = 0; i < 3; i++) {
-        const response = await client.beta.messages.create({
+        const response = await ai.create({
           model: AI_ANSWERS_MODEL,
           max_tokens: 4000,
-          betas: ["server-side-fallback-2026-07-01"],
-          fallbacks: "default",
           output_config: { effort: "low" },
           system: SYSTEM,
           tools: [{ type: "web_search_20260209", name: "web_search", max_uses: AI_ANSWERS_MAX_SEARCHES }],
           messages,
-        } as Parameters<typeof client.beta.messages.create>[0]) as Anthropic.Beta.BetaMessage;
-        costUsd += usageCostUsd(response.usage, SONNET_PRICES);
+        });
+        costUsd = budgetUsd - spentUsd - await ai.allowance();
         content.push(...response.content);
-        if (response.stop_reason === "refusal") throw new Error(`declined (${response.stop_details?.category ?? "no category"})`);
+        if (response.stop_reason === "refusal") throw new Error(`declined (${response.stop_reason})`);
         if (response.stop_reason !== "pause_turn") break;
         messages.push({ role: "assistant", content: response.content });
       }
@@ -111,6 +112,7 @@ async function main() {
       );
       for (const said of found.saidAboutUs ?? []) console.log(`[ai-answers]   says: ${said}`);
     } catch (error) {
+      if (error instanceof AiUnavailable) break;
       const message = error instanceof Error ? error.message : String(error);
       console.error(`[ai-answers] ${q.id} failed: ${message}`);
       results.push({
@@ -122,7 +124,7 @@ async function main() {
   }
 
   const summary = summarize(results);
-  const report = { date, model: AI_ANSWERS_MODEL, maxSearches: AI_ANSWERS_MAX_SEARCHES, summary, results };
+  const report = { date, provider: ai.lastProvider, model: ai.lastModel, maxSearches: AI_ANSWERS_MAX_SEARCHES, summary, results };
   mkdirSync(outDir, { recursive: true });
   writeFileSync(join(outDir, `${date}.json`), JSON.stringify(report, null, 2) + "\n");
   console.log(
@@ -131,7 +133,7 @@ async function main() {
   if (summary.foundNotCited.length) console.log(`[ai-answers] found but not cited (make the page answer plainly): ${summary.foundNotCited.join(", ")}`);
 
   if (db) {
-    await recordSpend(db, AI_ANSWERS_JOB, spentUsd);
+    // Each request has already been recorded atomically.
     // Excerpts stay in the JSON file; the doc keeps what the watchdog and a dashboard need.
     await heartbeat({ summary, results: results.map(({ excerpt: _e, ...r }) => r) });
   }

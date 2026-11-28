@@ -17,7 +17,7 @@ export async function GET(request: NextRequest) {
     // briefPaused: the API budget left no room for today's update (the cron skipped).
     const [brief, budgetLeft, { payload, cache, at }] = await Promise.all([
       latestBrief(getAdminDb()).catch(() => null),
-      briefBudgetLeft(getAdminDb()).catch(() => true),
+      briefBudgetLeft(getAdminDb()).catch(() => false),
       cachedOpportunities(wantsRefresh(request)),
     ]);
     return cachedJson({ ...payload, brief, briefPaused: !budgetLeft }, cache, at);

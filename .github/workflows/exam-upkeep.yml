@@ -51,6 +51,12 @@ jobs:
       - name: API budget (fix)
         id: budget_fix
         env:
+          AI_JOB: exam-upkeep
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_TEXT_MODEL: ${{ vars.OPENAI_TEXT_MODEL }}
+          OPENAI_INPUT_USD_PER_MTOK: ${{ vars.OPENAI_INPUT_USD_PER_MTOK }}
+          OPENAI_OUTPUT_USD_PER_MTOK: ${{ vars.OPENAI_OUTPUT_USD_PER_MTOK }}
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
         run: npx tsx scripts/api-budget.ts check exam-upkeep 8
 
@@ -77,7 +83,7 @@ jobs:
         if: steps.pick.outputs.count != '0'
         run: |
           [ -x "$HOME/.local/bin/claude" ] || curl -fsSL https://claude.ai/install.sh | bash
-          printf '#!/bin/sh\nunset CLAUDE_CODE_ENTRYPOINT CLAUDE_CODE_ACTION\nexec "%s" "$@"\n' "$HOME/.local/bin/claude" > "$RUNNER_TEMP/claude"
+          printf '#!/bin/sh\nif [ "$1" = "--version" ]; then exec "%s" "$@"; fi\nexec npx tsx scripts/ai-cli.ts "%s" "$@"\n' "$HOME/.local/bin/claude" "$HOME/.local/bin/claude" > "$RUNNER_TEMP/claude"
           chmod +x "$RUNNER_TEMP/claude"
 
       - name: Do the tasks with Claude Code
@@ -85,8 +91,16 @@ jobs:
         if: steps.pick.outputs.count != '0'
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
+        env:
+          AI_JOB: exam-upkeep
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_TEXT_MODEL: ${{ vars.OPENAI_TEXT_MODEL }}
+          OPENAI_INPUT_USD_PER_MTOK: ${{ vars.OPENAI_INPUT_USD_PER_MTOK }}
+          OPENAI_OUTPUT_USD_PER_MTOK: ${{ vars.OPENAI_OUTPUT_USD_PER_MTOK }}
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY || 'local-budget-gateway' }}
           path_to_claude_code_executable: ${{ runner.temp }}/claude
           show_full_output: true
           claude_args: --max-budget-usd ${{ steps.budget_fix.outputs.cap }} --max-turns 400 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --add-dir ${{ runner.temp }} /tmp --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(curl:*),Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*),Bash(cat:*),Bash(head:*),Bash(tail:*),Bash(wc:*),Bash(grep:*),Bash(ls:*),Bash(pdftotext:*)"
@@ -136,16 +150,16 @@ jobs:
             task: what you checked, the official sources, and what you changed (or why
             nothing needed to change). Do not commit.
 
-      - name: Record API spend (fix)
-        if: always() && (steps.fix.outcome == 'success' || steps.fix.outcome == 'failure')
-        env:
-          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
-        run: npx tsx scripts/api-budget.ts record exam-upkeep --file "${{ steps.fix.outputs.execution_file || format('{0}/claude-execution-output.json', runner.temp) }}"
-
       - name: API budget (verify)
         id: budget_verify
         if: steps.pick.outputs.count != '0' && steps.fix.outcome == 'success'
         env:
+          AI_JOB: exam-upkeep
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_TEXT_MODEL: ${{ vars.OPENAI_TEXT_MODEL }}
+          OPENAI_INPUT_USD_PER_MTOK: ${{ vars.OPENAI_INPUT_USD_PER_MTOK }}
+          OPENAI_OUTPUT_USD_PER_MTOK: ${{ vars.OPENAI_OUTPUT_USD_PER_MTOK }}
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
         run: npx tsx scripts/api-budget.ts check exam-upkeep 3
 
@@ -154,8 +168,16 @@ jobs:
         if: steps.pick.outputs.count != '0' && steps.fix.outcome == 'success' && steps.budget_verify.outputs.ok == 'true'
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
+        env:
+          AI_JOB: exam-upkeep
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_TEXT_MODEL: ${{ vars.OPENAI_TEXT_MODEL }}
+          OPENAI_INPUT_USD_PER_MTOK: ${{ vars.OPENAI_INPUT_USD_PER_MTOK }}
+          OPENAI_OUTPUT_USD_PER_MTOK: ${{ vars.OPENAI_OUTPUT_USD_PER_MTOK }}
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY || 'local-budget-gateway' }}
           path_to_claude_code_executable: ${{ runner.temp }}/claude
           show_full_output: true
           claude_args: --max-budget-usd ${{ steps.budget_verify.outputs.cap }} --max-turns 200 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Write,Glob,Grep,WebFetch,WebSearch,Bash(git diff:*),Bash(git status:*),Bash(python3:*)"
@@ -175,12 +197,6 @@ jobs:
 
             Write ${{ runner.temp }}/verify.json:
             { "ok": true or false, "objections": [ { "what": "...", "why": "one sentence" } ] }
-
-      - name: Record API spend (verify)
-        if: always() && (steps.verify.outcome == 'success' || steps.verify.outcome == 'failure')
-        env:
-          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
-        run: npx tsx scripts/api-budget.ts record exam-upkeep --file "${{ steps.verify.outputs.execution_file || format('{0}/claude-execution-output.json', runner.temp) }}"
 
       - name: Check the work
         id: checks

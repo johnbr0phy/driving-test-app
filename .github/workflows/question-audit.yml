@@ -111,7 +111,12 @@ jobs:
       - name: Audit
         if: ${{ !inputs.export_open }}
         env:
+          AI_JOB: question-audit
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_TEXT_MODEL: ${{ vars.OPENAI_TEXT_MODEL }}
+          OPENAI_INPUT_USD_PER_MTOK: ${{ vars.OPENAI_INPUT_USD_PER_MTOK }}
+          OPENAI_OUTPUT_USD_PER_MTOK: ${{ vars.OPENAI_OUTPUT_USD_PER_MTOK }}
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
           SWEEP_INPUT: ${{ github.event.inputs.sweep }}
           SIGNALS: ${{ inputs.signals || github.event.schedule == '47 4 * * 0,2-6' }}
@@ -123,6 +128,7 @@ jobs:
           npx tsx scripts/question-audit.ts --index "$RUNNER_TEMP/questions.json" --sweep "$sweep" --out audits $mode
 
       # Kept even when a later step fails, so a run's findings are never only in Firestore.
+
       - name: Keep the report
         if: always()
         uses: actions/upload-artifact@v4
@@ -135,6 +141,12 @@ jobs:
         id: budget_fix
         if: ${{ !inputs.export_open }}
         env:
+          AI_JOB: question-audit
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_TEXT_MODEL: ${{ vars.OPENAI_TEXT_MODEL }}
+          OPENAI_INPUT_USD_PER_MTOK: ${{ vars.OPENAI_INPUT_USD_PER_MTOK }}
+          OPENAI_OUTPUT_USD_PER_MTOK: ${{ vars.OPENAI_OUTPUT_USD_PER_MTOK }}
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
         run: npx tsx scripts/api-budget.ts check question-audit 5
 
@@ -160,18 +172,27 @@ jobs:
       - name: Claude Code wrapper (action#1901)
         run: |
           [ -x "$HOME/.local/bin/claude" ] || curl -fsSL https://claude.ai/install.sh | bash
-          printf '#!/bin/sh\nunset CLAUDE_CODE_ENTRYPOINT CLAUDE_CODE_ACTION\nexec "%s" "$@"\n' "$HOME/.local/bin/claude" > "$RUNNER_TEMP/claude"
+          printf '#!/bin/sh\nif [ "$1" = "--version" ]; then exec "%s" "$@"; fi\nexec npx tsx scripts/ai-cli.ts "%s" "$@"\n' "$HOME/.local/bin/claude" "$HOME/.local/bin/claude" > "$RUNNER_TEMP/claude"
           chmod +x "$RUNNER_TEMP/claude"
           "$RUNNER_TEMP/claude" --version
 
       # If Claude Code cannot run, the PR still opens with the report, unfixed.
+
       - name: Fix findings with Claude Code
         id: fix
         if: ${{ !inputs.export_open && steps.findings.outputs.count != '0' }}
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
+        env:
+          AI_JOB: question-audit
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_TEXT_MODEL: ${{ vars.OPENAI_TEXT_MODEL }}
+          OPENAI_INPUT_USD_PER_MTOK: ${{ vars.OPENAI_INPUT_USD_PER_MTOK }}
+          OPENAI_OUTPUT_USD_PER_MTOK: ${{ vars.OPENAI_OUTPUT_USD_PER_MTOK }}
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY || 'local-budget-gateway' }}
           path_to_claude_code_executable: ${{ runner.temp }}/claude
           claude_args: --max-budget-usd ${{ steps.budget_fix.outputs.cap }} --max-turns 200 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Bash(python3:*),Bash(npx tsx:*),Bash(git diff:*),Bash(git status:*)"
           prompt: |
@@ -230,28 +251,37 @@ jobs:
 
             Do not commit; a later step opens the PR.
 
-      - name: Record API spend (fix)
-        if: always() && (steps.fix.outcome == 'success' || steps.fix.outcome == 'failure')
-        env:
-          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
-        run: npx tsx scripts/api-budget.ts record question-audit --file "${{ steps.fix.outputs.execution_file || format('{0}/claude-execution-output.json', runner.temp) }}"
-
       - name: API budget (verify)
         id: budget_verify
         if: ${{ !inputs.export_open && steps.findings.outputs.count != '0' && steps.fix.outcome == 'success' }}
         env:
+          AI_JOB: question-audit
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_TEXT_MODEL: ${{ vars.OPENAI_TEXT_MODEL }}
+          OPENAI_INPUT_USD_PER_MTOK: ${{ vars.OPENAI_INPUT_USD_PER_MTOK }}
+          OPENAI_OUTPUT_USD_PER_MTOK: ${{ vars.OPENAI_OUTPUT_USD_PER_MTOK }}
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
         run: npx tsx scripts/api-budget.ts check question-audit 2
 
       # A second read by a run that did not write the fixes. It may only object:
       # any objection (or no verdict file) leaves the PR for a person.
+
       - name: Verify the fixes independently
         id: verify
         if: ${{ !inputs.export_open && steps.findings.outputs.count != '0' && steps.fix.outcome == 'success' && steps.budget_verify.outputs.ok == 'true' }}
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
+        env:
+          AI_JOB: question-audit
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_TEXT_MODEL: ${{ vars.OPENAI_TEXT_MODEL }}
+          OPENAI_INPUT_USD_PER_MTOK: ${{ vars.OPENAI_INPUT_USD_PER_MTOK }}
+          OPENAI_OUTPUT_USD_PER_MTOK: ${{ vars.OPENAI_OUTPUT_USD_PER_MTOK }}
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY || 'local-budget-gateway' }}
           path_to_claude_code_executable: ${{ runner.temp }}/claude
           show_full_output: true
           claude_args: --max-budget-usd ${{ steps.budget_verify.outputs.cap }} --max-turns 150 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Write,Glob,Grep,WebFetch,WebSearch,Bash(git diff:*),Bash(git status:*),Bash(python3:*)"
@@ -285,14 +315,6 @@ jobs:
             "ok" is true only when you checked every changed question and have no
             objection. If you could not check one, object to it and say why.
 
-      - name: Record API spend (verify)
-        if: always() && (steps.verify.outcome == 'success' || steps.verify.outcome == 'failure')
-        env:
-          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
-        run: npx tsx scripts/api-budget.ts record question-audit --file "${{ steps.verify.outputs.execution_file || format('{0}/claude-execution-output.json', runner.temp) }}"
-
-      # The checks a PR gets, run here because a PR opened with the workflow
-      # token does not trigger them. A failure leaves the PR open.
       - name: Check the fix
         id: checks
         if: ${{ !inputs.export_open && steps.findings.outputs.count != '0' }}

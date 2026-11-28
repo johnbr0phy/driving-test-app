@@ -1,3 +1,4 @@
+import { hasAiKey } from '@/lib/server/ai';
 import { NextRequest, NextResponse } from 'next/server';
 import { getAdminDb } from '@/lib/firebase-admin';
 import { verifyCronSecret } from '@/lib/cron-email';
@@ -18,9 +19,9 @@ export async function GET(request: NextRequest) {
   if (!verifyCronSecret(request)) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
-  if (!process.env.ANTHROPIC_API_KEY) {
-    console.log('[daily-brief] skipped: ANTHROPIC_API_KEY is not set');
-    return NextResponse.json({ skipped: 'ANTHROPIC_API_KEY is not set' });
+  if (!hasAiKey()) {
+    console.log('[daily-brief] skipped: No AI API key is set');
+    return NextResponse.json({ skipped: 'No AI API key is set' });
   }
   try {
     const db = getAdminDb();

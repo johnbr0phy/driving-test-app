@@ -81,7 +81,7 @@ export async function readJobHeartbeats(db: Firestore): Promise<JobHeartbeat[]> 
     },
   ];
   // Weekdays only, and only where the key that writes it is set.
-  if (process.env.ANTHROPIC_API_KEY) {
+  if (process.env.ANTHROPIC_API_KEY || process.env.OPENAI_API_KEY) {
     jobs.push({
       id: "daily-brief",
       title: "Daily update on the /admin Today tab",

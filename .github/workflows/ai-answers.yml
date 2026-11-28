@@ -43,7 +43,12 @@ jobs:
 
       - name: Ask the questions
         env:
+          AI_JOB: ai-answers
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_TEXT_MODEL: ${{ vars.OPENAI_TEXT_MODEL }}
+          OPENAI_INPUT_USD_PER_MTOK: ${{ vars.OPENAI_INPUT_USD_PER_MTOK }}
+          OPENAI_OUTPUT_USD_PER_MTOK: ${{ vars.OPENAI_OUTPUT_USD_PER_MTOK }}
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
           LIMIT: ${{ github.event.inputs.limit }}
         run: |

@@ -9,6 +9,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import { useStore } from "@/store/useStore";
 import { trackFunnelStep } from "@/lib/funnel";
+import { syncLandingResume } from "@/lib/landingResume";
 import { trackSchoolReferral } from "@/lib/schoolReferral";
 
 function PremiumTheme() {
@@ -53,6 +54,11 @@ function SchoolReferral() {
 }
 
 export function Providers({ children }: { children: React.ReactNode }) {
+  useEffect(() => {
+    syncLandingResume(useStore.getState());
+    return useStore.subscribe(syncLandingResume);
+  }, []);
+
   return (
     <ThemeProvider>
       <LanguageProvider>

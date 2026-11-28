@@ -1,13 +1,14 @@
 "use client";
 
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { LandingIntro } from "@/components/exam/LandingIntro";
 import { ThemedScreenshot } from "@/components/ThemedScreenshot";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
-import { useExamStarted } from "@/hooks/useExamStarted";
+import { hasStartedExam, useExamStarted } from "@/hooks/useExamStarted";
+import { LANDING_RESUME_SCRIPT } from "@/lib/landingResume";
 import { getExamByPath } from "@/lib/exams";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { pageEnglishLocale } from "@/lib/pageLanguage";
@@ -182,7 +183,7 @@ function useStartCta(dashboardHref: string, lang?: Language) {
   const baseCopy = COPY[(lang ?? "en") as CopyLang] ?? COPY.en;
   const copy = (!lang || lang === "en") && pageEnglishLocale(dashboardHref) === "en-GB"
     ? { ...baseCopy, start: "Start practising" } : baseCopy;
-  return { hasSession, loading, onStart, copy };
+  return { hasSession, user, loading, onStart, copy };
 }
 
 export function ExamLandingHeroClient({
@@ -204,7 +205,7 @@ export function ExamLandingHeroClient({
   /** Server-drawn rich text for a v2 question with markup or KaTeX. */
   tryRich?: TryRichNodes;
 }) {
-  const { hasSession, loading, onStart, copy } = useStartCta(dashboardHref, lang);
+  const { hasSession, user, loading, onStart, copy } = useStartCta(dashboardHref, lang);
   // Answering the try card starts a guest session, which would turn
   // "Start practicing" into "Go to Dashboard" and shift the page while the
   // visitor reads. Hold the label it had when they answered.
@@ -219,10 +220,13 @@ export function ExamLandingHeroClient({
     const id = getExamByPath(dashboardHref)?.id;
     if (id) markExamStarted(id);
   };
-  const startPill = (
+  const startPill = (offerResume = false) => (
     <Button asChild className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 hover:bg-gray-800 dark:hover:bg-gray-200 px-8 py-6 text-lg rounded-full">
       <Link href={dashboardHref} onClick={onStart}>
-        {label}
+        {offerResume ? <>
+          <span className="landing-start-label">{label}</span>
+          <span className="landing-resume-label">{copy.dashboard}</span>
+        </> : label}
       </Link>
     </Button>
   );
@@ -233,13 +237,22 @@ export function ExamLandingHeroClient({
   // fit this visitor's screen (lib/landingTryTest.ts). Hydration can strip the
   // attribute, and a client-side move runs no inline script.
   const tryExam = tryQuestion?.examId;
+  const marker = useRef<HTMLScriptElement>(null);
   useLayoutEffect(() => {
-    if (tryExam) settleLandingTryLayout();
+    if (!tryExam || returning) return;
+    if (marker.current && !tryQuestion?.v2) {
+      const saved = useStore.getState();
+      const session = user || saved.isGuest || (loading && saved.userId);
+      const resume = !heldLabel && !!session && hasStartedExam(saved, tryExam);
+      marker.current.toggleAttribute("data-resume", resume);
+      if (resume) return;
+    }
+    settleLandingTryLayout();
   });
   // New visitors join the layout test once auth has settled (a returning
   // visitor is never counted), and only where the card fits their screen.
   useEffect(() => {
-    if (tryExam && !loading && !hasSession && landingTryFits()) noteLandingTryEnrolled(tryExam);
+    if (tryExam && !loading && !hasSession && !marker.current?.hasAttribute("data-resume") && landingTryFits()) noteLandingTryEnrolled(tryExam);
   }, [tryExam, loading, hasSession]);
 
   // The layout test (landingTry2, lib/landingTryTest.ts): the inline script
@@ -251,10 +264,15 @@ export function ExamLandingHeroClient({
     return (
       <>
         <script dangerouslySetInnerHTML={{ __html: LANDING_TRY_INIT_SCRIPT }} />
-        {/* Lets globals.css shrink the page's H1 on phones in arm b. */}
-        <span data-try-first hidden />
+        {tryQuestion.v2 ? <span data-try-first hidden /> : <script
+          ref={marker}
+          suppressHydrationWarning
+          data-try-first=""
+          data-exam={tryExam}
+          dangerouslySetInnerHTML={{ __html: LANDING_RESUME_SCRIPT }}
+        />}
         <p className="try-sub text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto">{subtitle}</p>
-        <div className="landing-try-start flex flex-col items-center gap-3">{startPill}</div>
+        <div className="landing-try-start flex flex-col items-center gap-3">{startPill(!tryQuestion.v2)}</div>
         <LandingTryQuestion q={tryQuestion} rich={tryRich} lang={lang} onAnswer={hold} />
         {/* Measures b's layout on this screen before paint; too long falls back to today's layout. */}
         <script dangerouslySetInnerHTML={{ __html: LANDING_TRY_FIT_SCRIPT }} />
@@ -262,10 +280,10 @@ export function ExamLandingHeroClient({
     );
   }
 
-  if (tryQuestion) return <LandingIntro subtitle={subtitle} action={startPill} />;
+  if (tryQuestion) return <LandingIntro subtitle={subtitle} action={startPill()} />;
 
   return (
-    <LandingIntro subtitle={subtitle} action={startPill}>
+    <LandingIntro subtitle={subtitle} action={startPill()}>
       {/* Pages with no question keep the screenshots. */}
       {(
       <div className="mt-16 flex flex-col md:flex-row items-center justify-center gap-8">

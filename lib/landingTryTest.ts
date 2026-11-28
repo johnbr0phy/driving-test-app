@@ -111,7 +111,7 @@ export const LANDING_TRY_FIT_MARGIN_PX = 8;
 
 // A fixed string, kept in step with settleLandingTryLayout() below.
 export const LANDING_TRY_FIT_SCRIPT =
-  '(function(){try{var d=document,h=d.documentElement,a=d.__ltq;if(a!=="a"&&a!=="b")return;h.setAttribute("data-ltq","b");var b=d.querySelectorAll(".try-card .try-badge"),f=true;if(b.length){var n=b[b.length-1].closest("button");if(n)f=n.getBoundingClientRect().bottom+(window.scrollY||0)<=window.innerHeight-8}d.__ltqFit=f;d.__ltqFitPath=location.pathname;h.setAttribute("data-ltq",f?a:"off")}catch(e){}})();';
+  '(function(){try{var d=document,h=d.documentElement,a=d.__ltq;if((a!=="a"&&a!=="b")||d.querySelector("[data-try-first][data-resume]"))return;h.setAttribute("data-ltq","b");var b=d.querySelectorAll(".try-card .try-badge"),f=true;if(b.length){var n=b[b.length-1].closest("button");if(n)f=n.getBoundingClientRect().bottom+(window.scrollY||0)<=window.innerHeight-8}d.__ltqFit=f;d.__ltqFitPath=location.pathname;h.setAttribute("data-ltq",f?a:"off")}catch(e){}})();';
 
 type LtqDocument = Document & { __ltq?: unknown; __ltqFit?: boolean; __ltqFitPath?: string };
 

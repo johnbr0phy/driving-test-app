@@ -82,6 +82,7 @@ test("the fit script keeps the arm when b's last answer fits, else falls back to
     const seen = [];
     const doc = {
       __ltq: arm,
+      querySelector: () => null,
       documentElement: { setAttribute: (k, v) => { attrs[k] = v; seen.push(v); } },
       querySelectorAll: () => [{ closest: () => ({ getBoundingClientRect: () => ({ bottom }) }) }],
     };

@@ -5137,6 +5137,40 @@
       "search": [
         "saudi driving test"
       ]
+    },
+    {
+      "id": "txpersonal",
+      "name": "Texas Personal Lines Property and Casualty Agent",
+      "owner": "Texas Department of Insurance",
+      "region": "US",
+      "engine": "v1",
+      "siblings": [
+        "pnc",
+        "insurance"
+      ],
+      "sells": 1.0,
+      "search": [
+        "texas personal lines",
+        "tx personal lines insurance",
+        "instx-perspc55"
+      ]
+    },
+    {
+      "id": "ccht",
+      "name": "NNCC Certified Clinical Hemodialysis Technician (CCHT)",
+      "owner": "Nephrology Nursing Certification Commission",
+      "region": "US",
+      "engine": "v1",
+      "siblings": [
+        "cpcta",
+        "crcst"
+      ],
+      "sells": 1.0,
+      "search": [
+        "ccht",
+        "hemodialysis technician",
+        "dialysis technician certification"
+      ]
     }
   ]
 }

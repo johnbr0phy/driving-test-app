@@ -604,6 +604,11 @@
   "https://www.criteriacorp.com/assess/cognitive-aptitude/criteria-cognitive-aptitude-test-ccat",
   "https://www.criteriacorp.com/files/Criteria-InfoBrief-CCAT.pdf"
  ],
+ "ccht": [
+  "https://www.nncc-exam.org/sites/default/files/cchtSpecifications_2021_08272021.pdf",
+  "https://www.nncc-exam.org/certification/ccht",
+  "https://www.cms.gov/regulations-and-guidance/guidance/manuals/downloads/som107ap_h_esrd.pdf"
+ ],
  "ccna": [
   "https://learningnetwork.cisco.com/s/ccna-exam-topics",
   "https://learningcontent.cisco.com/documents/marketing/exam-topics/200-301_CCNA_v2.0_Exam_Topics_PDF.pdf",
@@ -2466,6 +2471,11 @@
   "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/124401.pdf",
   "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/124400.pdf",
   "https://www.pearsonvue.com/us/en/tx/insurance.html"
+ ],
+ "txpersonal": [
+  "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/124401.pdf",
+  "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/124400.pdf",
+  "https://www.tdi.texas.gov/agent/personal-property-casualty-apply.html"
  ],
  "ugcnet": [
   "https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2026/10/202610161905649093.pdf",

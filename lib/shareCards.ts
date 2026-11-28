@@ -125,6 +125,8 @@ export function getShareCard(id: string, language = "en"): ShareCard | undefined
 
 // Light-mode exam brand colours, matching globals.css.
 const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
+  "ccht": { color: "hsl(280, 24%, 46%)", tint: "hsl(280, 24%, 95%)" },
+  "txpersonal": { color: "hsl(174, 8%, 30%)", tint: "hsl(174, 8%, 95%)" },
   "faaama": { color: "hsl(38, 10%, 40%)", tint: "hsl(38, 10%, 95%)" },
   "hklesfi8": { color: "hsl(218, 10%, 42%)", tint: "hsl(218, 10%, 95%)" },
   "hklesfi7": { color: "hsl(122, 6%, 32%)", tint: "hsl(122, 6%, 95%)" },

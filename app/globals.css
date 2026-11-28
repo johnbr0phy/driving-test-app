@@ -1252,6 +1252,32 @@
     --brand-gradient-to: 230 10% 95%;
   }
 
+  [data-theme="txpersonal"] {
+    --brand: 174 8% 30%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 174 8% 95%;
+    --brand-hover: 174 8% 26%;
+    --brand-dark: 174 8% 23%;
+    --brand-darker: 174 8% 17%;
+    --brand-muted: 174 8% 70%;
+    --brand-border: 174 8% 76%;
+    --brand-border-light: 174 8% 88%;
+    --brand-gradient-to: 186 8% 95%;
+  }
+
+  [data-theme="ccht"] {
+    --brand: 280 24% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 280 24% 95%;
+    --brand-hover: 280 24% 42%;
+    --brand-dark: 280 24% 39%;
+    --brand-darker: 280 24% 33%;
+    --brand-muted: 280 24% 70%;
+    --brand-border: 280 24% 76%;
+    --brand-border-light: 280 24% 88%;
+    --brand-gradient-to: 292 24% 95%;
+  }
+
   /* OSSLT theme: indigo (v2 exam; matches lib/v2/exams/osslt.ts theme) */
   [data-theme="osslt"] {
     --brand: 232 52% 42%;
@@ -9305,6 +9331,30 @@
     --brand-muted: 218 10% 45%;
     --brand-dark: 218 10% 65%;
     --brand-darker: 218 10% 78%;
+  }
+
+  .dark [data-theme="txpersonal"] {
+    --brand: 174 8% 43.8%;
+    --brand-hover: 174 8% 35.8%;
+    --brand-light: 174 8% 13%;
+    --brand-gradient-to: 186 8% 11%;
+    --brand-border-light: 174 8% 24%;
+    --brand-border: 174 8% 34%;
+    --brand-muted: 174 8% 45%;
+    --brand-dark: 174 8% 65%;
+    --brand-darker: 174 8% 78%;
+  }
+
+  .dark [data-theme="ccht"] {
+    --brand: 280 24% 50%;
+    --brand-hover: 280 24% 42%;
+    --brand-light: 280 24% 13%;
+    --brand-gradient-to: 292 24% 11%;
+    --brand-border-light: 280 24% 24%;
+    --brand-border: 280 24% 34%;
+    --brand-muted: 280 24% 45%;
+    --brand-dark: 280 24% 65%;
+    --brand-darker: 280 24% 78%;
   }
 
   .dark [data-theme="osslt"] {

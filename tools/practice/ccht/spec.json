@@ -1,0 +1,26 @@
+{
+  "stateCode": "CCHT",
+  "prefix": "CCHT",
+  "categories": {
+    "cchtPreparationAccess": [
+      "PRE",
+      12
+    ],
+    "cchtTreatmentMonitoring": [
+      "TRT",
+      13
+    ],
+    "cchtTechnical": [
+      "TEC",
+      11
+    ],
+    "cchtEnvironment": [
+      "ENV",
+      8
+    ],
+    "cchtRole": [
+      "ROL",
+      6
+    ]
+  }
+}

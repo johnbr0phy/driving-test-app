@@ -8838,6 +8838,32 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "HKSI Licensing Examination overview and Paper 8 syllabus effective 1 March 2026, checked November 2026",
     source: { name: "HKSI Institute LE overview", url: "https://www.hksi.org/en/qualification/examinations/licensing-examination-for-securities-and-futures-intermediaries/overview/" },
   },
+  txpersonal: {
+    answer: "The Texas Personal Lines Property and Casualty exam covers personal insurance policies, insurance concepts, contracts and Texas law. Pearson VUE allows two hours and reports a scaled passing score of 70.",
+    rows: [
+      { label: "Licensing authority", value: "Texas Department of Insurance" },
+      { label: "Exam administrator", value: "Pearson VUE" },
+      { label: "Official exam", value: "100 scored questions plus 10 unscored questions in 120 minutes" },
+      { label: "Passing score", value: "70 on the official scaled score" },
+      { label: "Practice format", value: "Four 50-question tests in English, with a practice target of 35 correct" },
+      { label: "Access", value: "Free to start. Premium unlocks the remaining locked steps and full statistics." },
+    ],
+    basedOn: "Texas Insurance Content Outlines effective September 1, 2026, and the Texas Insurance Licensing Candidate Handbook, checked November 2026",
+    source: { name: "Texas Insurance Content Outlines, Personal Lines", url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/124401.pdf" },
+  },
+  ccht: {
+    answer: "The CCHT is the NNCC certification for entry-level hemodialysis technicians. Its 150 questions cover clinical care, equipment, the dialysis environment and professional responsibilities. Candidates have three hours.",
+    rows: [
+      { label: "Credential", value: "Certified Clinical Hemodialysis Technician (CCHT)" },
+      { label: "Certifying body", value: "Nephrology Nursing Certification Commission (NNCC)" },
+      { label: "Official exam", value: "150 questions in three hours, including about 25 unscored questions" },
+      { label: "Official passing score", value: "Standard score of 95, about 74% correct on scored questions" },
+      { label: "Practice format", value: "Four 50-question tests in English, with a target of 37 correct" },
+      { label: "Access", value: "Free to start. Premium unlocks the remaining locked steps and full statistics." },
+    ],
+    basedOn: "NNCC CCHT Test Specifications, exam information and examination development guide, checked November 2026",
+    source: { name: "NNCC CCHT Test Specifications", url: "https://www.nncc-exam.org/sites/default/files/cchtSpecifications_2021_08272021.pdf" },
+  },
   cemap: {
     answer:
       "CeMAP Module 1 is the first part of the LIBF Certificate in Mortgage Advice and Practice, the qualification that meets the FCA's education standard for mortgage advisers in the UK. Since 30 September 2025 it is the Financial Services, Regulation and Ethics (FSRE) module, which replaced UK Financial Regulation (UKFR). It has two units, FRE1 (Industry, Regulation and Key Parties) and FRE2 (Skills, Principles and Ethical Behaviours). Each is a one-hour online exam with remote invigilation: 25 multiple-choice questions and 3 case studies with 5 linked questions, 40 marks in all, and 70% (28 of 40) is needed to pass each unit.",

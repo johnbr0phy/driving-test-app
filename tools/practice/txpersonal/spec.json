@@ -1,0 +1,12 @@
+{
+  "stateCode": "TXPERSONAL",
+  "prefix": "TXPER",
+  "categories": {
+    "txpersonalPropertyPolicies": ["PROP", 5],
+    "txpersonalCasualtyPolicies": ["CAS", 7],
+    "txpersonalConcepts": ["TERM", 14],
+    "txpersonalProvisions": ["PROV", 12],
+    "txpersonalTexasCommon": ["TEXCOM", 7],
+    "txpersonalTexasPersonal": ["TEXPL", 5]
+  }
+}

@@ -91,6 +91,12 @@ jobs:
       - name: API budget
         id: budget
         env:
+          AI_JOB: source-triage
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_TEXT_MODEL: ${{ vars.OPENAI_TEXT_MODEL }}
+          OPENAI_INPUT_USD_PER_MTOK: ${{ vars.OPENAI_INPUT_USD_PER_MTOK }}
+          OPENAI_OUTPUT_USD_PER_MTOK: ${{ vars.OPENAI_OUTPUT_USD_PER_MTOK }}
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
         run: npx tsx scripts/api-budget.ts check source-triage 8
 
@@ -117,7 +123,7 @@ jobs:
       - name: Claude Code wrapper (action#1901)
         run: |
           [ -x "$HOME/.local/bin/claude" ] || curl -fsSL https://claude.ai/install.sh | bash
-          printf '#!/bin/sh\nunset CLAUDE_CODE_ENTRYPOINT CLAUDE_CODE_ACTION\nexec "%s" "$@"\n' "$HOME/.local/bin/claude" > "$RUNNER_TEMP/claude"
+          printf '#!/bin/sh\nif [ "$1" = "--version" ]; then exec "%s" "$@"; fi\nexec npx tsx scripts/ai-cli.ts "%s" "$@"\n' "$HOME/.local/bin/claude" "$HOME/.local/bin/claude" > "$RUNNER_TEMP/claude"
           chmod +x "$RUNNER_TEMP/claude"
           "$RUNNER_TEMP/claude" --version
 
@@ -125,8 +131,16 @@ jobs:
         id: claude
         if: steps.pages.outputs.count != '0'
         uses: anthropics/claude-code-action@v1
+        env:
+          AI_JOB: source-triage
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_TEXT_MODEL: ${{ vars.OPENAI_TEXT_MODEL }}
+          OPENAI_INPUT_USD_PER_MTOK: ${{ vars.OPENAI_INPUT_USD_PER_MTOK }}
+          OPENAI_OUTPUT_USD_PER_MTOK: ${{ vars.OPENAI_OUTPUT_USD_PER_MTOK }}
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY || 'local-budget-gateway' }}
           path_to_claude_code_executable: ${{ runner.temp }}/claude
           # Prints the run, so a failure shows its reason in the log (it was hidden).
           show_full_output: true
@@ -205,12 +219,6 @@ jobs:
             user agent to curl written out in full.
 
             Do not commit.
-
-      - name: Record API spend
-        if: always() && (steps.claude.outcome == 'success' || steps.claude.outcome == 'failure')
-        env:
-          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
-        run: npx tsx scripts/api-budget.ts record source-triage --file "${{ steps.claude.outputs.execution_file || format('{0}/claude-execution-output.json', runner.temp) }}"
 
       - name: Clear noise now
         if: steps.pages.outputs.count != '0'

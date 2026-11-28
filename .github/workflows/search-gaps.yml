@@ -79,24 +79,39 @@ jobs:
       - name: Claude Code wrapper (action#1901)
         run: |
           [ -x "$HOME/.local/bin/claude" ] || curl -fsSL https://claude.ai/install.sh | bash
-          printf '#!/bin/sh\nunset CLAUDE_CODE_ENTRYPOINT CLAUDE_CODE_ACTION\nexec "%s" "$@"\n' "$HOME/.local/bin/claude" > "$RUNNER_TEMP/claude"
+          printf '#!/bin/sh\nif [ "$1" = "--version" ]; then exec "%s" "$@"; fi\nexec npx tsx scripts/ai-cli.ts "%s" "$@"\n' "$HOME/.local/bin/claude" "$HOME/.local/bin/claude" > "$RUNNER_TEMP/claude"
           chmod +x "$RUNNER_TEMP/claude"
           "$RUNNER_TEMP/claude" --version
 
       - name: API budget
         id: budget
         env:
+          AI_JOB: search-gaps
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_TEXT_MODEL: ${{ vars.OPENAI_TEXT_MODEL }}
+          OPENAI_INPUT_USD_PER_MTOK: ${{ vars.OPENAI_INPUT_USD_PER_MTOK }}
+          OPENAI_OUTPUT_USD_PER_MTOK: ${{ vars.OPENAI_OUTPUT_USD_PER_MTOK }}
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
         run: npx tsx scripts/api-budget.ts check search-gaps 8
 
       # If Claude Code cannot finish, whatever it changed still goes to review.
+
       - name: Wire aliases and build with Claude Code
         id: claude
         if: steps.budget.outputs.ok == 'true'
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
+        env:
+          AI_JOB: search-gaps
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_TEXT_MODEL: ${{ vars.OPENAI_TEXT_MODEL }}
+          OPENAI_INPUT_USD_PER_MTOK: ${{ vars.OPENAI_INPUT_USD_PER_MTOK }}
+          OPENAI_OUTPUT_USD_PER_MTOK: ${{ vars.OPENAI_OUTPUT_USD_PER_MTOK }}
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
         with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY || 'local-budget-gateway' }}
           path_to_claude_code_executable: ${{ runner.temp }}/claude
           claude_args: --max-budget-usd ${{ steps.budget.outputs.cap }} --max-turns 500 --disallowedTools "Agent,Task,Workflow,Monitor,ScheduleWakeup,TaskStop,SendMessage" --allowedTools "Read,Edit,Write,Glob,Grep,WebSearch,WebFetch,Bash(npm:*),Bash(npx:*),Bash(node:*),Bash(python3:*),Bash(git diff:*),Bash(git status:*),Bash(ls:*)"
           prompt: |
@@ -163,12 +178,6 @@ jobs:
             sources.md with what it gave you, what could not be confirmed, and the result of
             the 25-question source check) or why none was. Do not commit;
             the next step opens the PR.
-
-      - name: Record API spend
-        if: always() && (steps.claude.outcome == 'success' || steps.claude.outcome == 'failure')
-        env:
-          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
-        run: npx tsx scripts/api-budget.ts record search-gaps --file "${{ steps.claude.outputs.execution_file || format('{0}/claude-execution-output.json', runner.temp) }}"
 
       - name: Mark the built test Planned on /admin
         env:

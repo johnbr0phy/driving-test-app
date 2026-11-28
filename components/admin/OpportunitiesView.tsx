@@ -240,7 +240,7 @@ function BriefCard({ brief, paused, onWrite, writing, error }: {
       <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
         <p className="inline-flex items-center gap-1.5 text-xs font-medium text-gray-500 dark:text-gray-400">
           <Sparkles className="h-3.5 w-3.5" aria-hidden />
-          {written ? `${stale ? "Last update" : "Today's update"} · written by Claude ${written}` : "Today's update"}
+          {written ? `${stale ? "Last update" : "Today's update"} · written ${written}` : "Today's update"}
         </p>
         {onWrite && (
           <button
@@ -254,7 +254,7 @@ function BriefCard({ brief, paused, onWrite, writing, error }: {
       </div>
       {paused && (
         <p className="mb-3 text-xs text-amber-700 dark:text-amber-400">
-          Paused: this month&apos;s Claude API budget is used up (lib/apiBudget.ts), so no new update until the 1st.
+          Paused: neither AI provider has an available budget. Updates resume when credits are available.
         </p>
       )}
       {brief ? (
@@ -272,7 +272,7 @@ function BriefCard({ brief, paused, onWrite, writing, error }: {
         </>
       ) : (
         <p className="text-sm text-gray-600 dark:text-gray-300">
-          No update yet. Claude writes one here every weekday morning once the Claude API key is set up in Vercel.
+          No update yet. An AI update runs every weekday morning when an API key and budget are available.
         </p>
       )}
       {error && <p className="mt-3 text-xs text-red-600 dark:text-red-400">{error}</p>}

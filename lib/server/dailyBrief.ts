@@ -1,4 +1,4 @@
-import Anthropic from '@anthropic-ai/sdk';
+import { AiSession } from '@/lib/server/ai';
 import type { Firestore } from 'firebase-admin/firestore';
 import type { OpportunitiesPayload } from '@/lib/server/opportunities';
 import { buildTeachAdmin, type TeachAdminPayload } from '@/lib/server/teachAdmin';
@@ -6,8 +6,6 @@ import { getInternalUids } from '@/lib/server/internalUsers';
 import { TEST_CATALOG } from '@/lib/testCatalog';
 import { REGIONS } from '@/lib/region';
 import { mergeMentions, searchMentions, type WebMention } from '@/lib/server/webMentions';
-import { SONNET_PRICES, allowanceUsd, usageCostUsd } from '@/lib/apiBudget';
-import { readSpend, recordSpend } from '@/lib/server/apiBudget';
 
 // The daily update at the top of the /admin Today tab: Claude reads the
 // page's numbers (plus the previous update's numbers, to say what changed)
@@ -210,10 +208,8 @@ Rules: use only the numbers given, never estimate or invent one. Round to whole 
 export async function writeBrief(
   numbers: BriefNumbers,
   previous: DailyBrief | null,
-  onUsage?: (usage: Anthropic.Beta.BetaUsage) => void,
+  ai: AiSession,
 ): Promise<{ headline: string; bullets: string[] }> {
-  if (!process.env.ANTHROPIC_API_KEY) throw new Error('ANTHROPIC_API_KEY is not set');
-  const client = new Anthropic();
   const today = briefDate();
   const user = [
     `Today is ${today}.`,
@@ -224,20 +220,17 @@ export async function writeBrief(
       : 'There is no previous update; this is the first one.',
   ].join('\n\n');
 
-  const response = await client.beta.messages.create({
+  const response = await ai.create({
     model: BRIEF_MODEL,
-    max_tokens: 16000,
-    betas: ['server-side-fallback-2026-07-01'],
-    fallbacks: 'default',
+    max_tokens: 4000,
     output_config: { effort: 'low' },
     system: SYSTEM,
     messages: [{ role: 'user', content: user }],
   });
-  onUsage?.(response.usage);
   if (response.stop_reason === 'refusal') {
-    throw new Error(`Claude declined to write the update (${response.stop_details?.category ?? 'no category'})`);
+    throw new Error(`Claude declined to write the update (${response.stop_reason})`);
   }
-  return parseBrief(response.content.flatMap((b) => (b.type === 'text' ? [b.text] : [])).join('\n'));
+  return parseBrief(response.content.flatMap((b) => (b.type === 'text' ? [String(b.text)] : [])).join('\n'));
 }
 
 /** Headline line plus "- " bullet lines; tolerates "•" or "*" bullets and stray markdown bold. */
@@ -261,26 +254,23 @@ export async function latestBrief(db: Firestore, before?: string): Promise<Daily
 }
 
 /** Most one update may cost; the month's share is JOB_BUDGETS_USD['daily-brief'] (lib/apiBudget.ts). */
-export const BRIEF_RUN_CAP_USD = 1;
+export const BRIEF_RUN_CAP_USD = 3;
 
 /** True when this month's API budget still covers an update. */
 export async function briefBudgetLeft(db: Firestore): Promise<boolean> {
-  return allowanceUsd(await readSpend(db), 'daily-brief', BRIEF_RUN_CAP_USD) > 0;
+  return await new AiSession(db, 'daily-brief', BRIEF_RUN_CAP_USD).allowance() > 0;
 }
 
 /** Writes and saves today's update, replacing one already written today. */
 export async function createBrief(db: Firestore, payload: OpportunitiesPayload): Promise<DailyBrief> {
   if (!(await briefBudgetLeft(db))) throw new Error('The API budget for the daily update is used up this month');
   const date = briefDate();
-  let costUsd = 0;
-  const onUsage = (usage: Anthropic.Beta.BetaUsage) => {
-    costUsd += usageCostUsd(usage, SONNET_PRICES);
-  };
+  const ai = new AiSession(db, 'daily-brief', BRIEF_RUN_CAP_USD);
   const previous = await latestBrief(db, date);
   // The web search is the costly part, so it runs on Mondays only (Eastern);
   // other days keep the links already found. Runs while the numbers are gathered.
   const monday = new Date(`${date}T12:00:00Z`).getUTCDay() === 1;
-  const mentionsSearch = (monday ? searchMentions(BRIEF_MODEL, date, onUsage) : Promise.resolve([])).then(
+  const mentionsSearch = (monday ? searchMentions(BRIEF_MODEL, date, ai) : Promise.resolve([])).then(
     (found) => ({ found, error: null as string | null }),
     (error) => {
       console.error('[daily-brief] web mentions unavailable', error);
@@ -306,15 +296,9 @@ export async function createBrief(db: Firestore, payload: OpportunitiesPayload):
   const found = [...(search.found ?? []), ...earlierToday.map(({ isNew: _n, ...m }) => m)];
   const mentions = mergeMentions(found, previous?.mentions ?? []);
   numbers.newWebMentions = mentions.filter((m) => m.isNew).map(({ isNew: _n, ...m }) => m);
-  let written: { headline: string; bullets: string[] };
-  try {
-    written = await writeBrief(numbers, previous, onUsage);
-  } finally {
-    await recordSpend(db, 'daily-brief', costUsd).catch((error) => console.error('[daily-brief] could not record API spend', error));
-  }
-  const { headline, bullets } = written;
+  const { headline, bullets } = await writeBrief(numbers, previous, ai);
   const brief: DailyBrief = {
-    date, headline, bullets, generatedAt: new Date().toISOString(), model: BRIEF_MODEL, numbers, mentions,
+    date, headline, bullets, generatedAt: new Date().toISOString(), model: ai.lastModel, numbers, mentions,
     ...(search.error ? { mentionsError: search.error } : {}),
   };
   await db.doc(`dailyBriefs/${date}`).set(brief);

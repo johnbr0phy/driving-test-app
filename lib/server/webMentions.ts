@@ -1,4 +1,5 @@
-import Anthropic from '@anthropic-ai/sdk';
+import { AiSession } from '@/lib/server/ai';
+import type { Message } from '@/lib/ai/protocol';
 import { MENTIONS_SINCE } from '@/lib/webMentionsSince';
 
 // Web mentions for the daily update (lib/server/dailyBrief): Claude searches
@@ -82,34 +83,29 @@ export function mergeMentions(found: Omit<WebMention, 'isNew'>[], previous: WebM
 export async function searchMentions(
   model: string,
   today: string,
-  onUsage?: (usage: Anthropic.Beta.BetaUsage) => void,
+  ai: AiSession,
 ): Promise<Omit<WebMention, 'isNew'>[]> {
-  if (!process.env.ANTHROPIC_API_KEY) throw new Error('ANTHROPIC_API_KEY is not set');
-  const client = new Anthropic();
-  const messages: Anthropic.Beta.BetaMessageParam[] = [
+  const messages: Message[] = [
     { role: 'user', content: `Today is ${today}. Find everything people have posted about Tigertest since ${MENTIONS_SINCE}.` },
   ];
   // A long search can pause the server's loop; resume it once.
   for (let i = 0; i < 2; i++) {
-    const response = await client.beta.messages.create({
+    const response = await ai.create({
       model,
-      max_tokens: 16000,
-      betas: ['server-side-fallback-2026-07-01'],
-      fallbacks: 'default',
+      max_tokens: 4000,
       output_config: { effort: 'low' },
       system: SYSTEM,
       tools: [{ type: 'web_search_20260209', name: 'web_search', max_uses: 4, blocked_domains: ['tigertest.io'] }],
       messages,
     });
-    onUsage?.(response.usage);
     if (response.stop_reason === 'refusal') {
-      throw new Error(`Claude declined the web search (${response.stop_details?.category ?? 'no category'})`);
+      throw new Error(`Claude declined the web search (${response.stop_reason})`);
     }
     if (response.stop_reason === 'pause_turn') {
       messages.push({ role: 'assistant', content: response.content });
       continue;
     }
-    const text = response.content.flatMap((b) => (b.type === 'text' ? [b.text] : [])).join('');
+    const text = response.content.flatMap((b) => (b.type === 'text' ? [String(b.text)] : [])).join('');
     return parseMentions(text);
   }
   throw new Error('Web search did not finish');

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 // consent and children's pages), app/api/account/delete (what deletion
 // removes), lib/classes.ts and lib/quizzes.ts (what teachers and quiz makers
 // see), lib/funnel.ts and the other anonymous counters.
-const UPDATED = "November 25, 2026";
+const UPDATED = "November 27, 2026";
 const CONTACT = "john@johnbrophy.net";
 
 const h2 = "text-2xl font-semibold mb-4 mt-2";
@@ -135,7 +135,7 @@ export default function PrivacyPage() {
               <li><strong>Google Analytics</strong>: site usage, where allowed (see Cookies).</li>
               <li><strong>Stripe</strong>: payments.</li>
               <li><strong>Resend</strong>: sending email.</li>
-              <li><strong>Anthropic</strong>: writes our internal daily summary from site-wide totals, and checks our questions and answer keys. Question reports are sent without any personal information; no other personal information is sent.</li>
+              <li><strong>Anthropic or OpenAI</strong>: writes our internal daily summary from site-wide totals, and checks our questions and answer keys. Question reports are sent without any personal information; no other personal information is sent.</li>
             </ul>
             <p className={`${p} mt-3`}>
               Other people see your information only where the feature is built for it: a teacher sees the name and

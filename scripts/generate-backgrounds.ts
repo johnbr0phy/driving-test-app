@@ -97,62 +97,10 @@ async function exists(path: string): Promise<boolean> {
   }
 }
 
-async function generateOpenAI(prompt: string): Promise<Buffer> {
-  const apiKey = process.env.OPENAI_API_KEY;
-  if (!apiKey) throw new Error("OPENAI_API_KEY is required");
-
-  const res = await fetch("https://api.openai.com/v1/images/generations", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${apiKey}`,
-    },
-    body: JSON.stringify({
-      model: "gpt-image-1",
-      prompt,
-      size: "1536x1024",
-      quality: "high",
-      n: 1,
-    }),
-  });
-
-  if (!res.ok) {
-    throw new Error(`OpenAI ${res.status}: ${await res.text()}`);
-  }
-
-  const json = (await res.json()) as { data: { b64_json: string }[] };
-  return Buffer.from(json.data[0].b64_json, "base64");
-}
-
-async function generateGoogle(prompt: string): Promise<Buffer> {
-  const apiKey = process.env.GOOGLE_API_KEY;
-  if (!apiKey) throw new Error("GOOGLE_API_KEY is required");
-
-  const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-002:predict?key=${apiKey}`,
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        instances: [{ prompt }],
-        parameters: { sampleCount: 1, aspectRatio: "16:9" },
-      }),
-    },
-  );
-
-  if (!res.ok) {
-    throw new Error(`Google ${res.status}: ${await res.text()}`);
-  }
-
-  const json = (await res.json()) as {
-    predictions: { bytesBase64Encoded: string }[];
-  };
-  return Buffer.from(json.predictions[0].bytesBase64Encoded, "base64");
-}
-
-async function generate(prompt: string): Promise<Buffer> {
-  if (PROVIDER === "google") return generateGoogle(prompt);
-  return generateOpenAI(prompt);
+async function generate(_prompt: string): Promise<Buffer> {
+  // The old one-off generator bypassed the shared ledger and could spend purchased credits.
+  // Image output has no Claude equivalent. Keep it disabled until an image-specific meter exists.
+  throw new Error("Background generation is disabled: unmetered image API spending is not permitted");
 }
 
 async function main() {

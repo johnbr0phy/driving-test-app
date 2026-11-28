@@ -14,7 +14,7 @@
  * Needs FIREBASE_SERVICE_ACCOUNT_KEY.
  */
 import { appendFileSync, existsSync, readFileSync } from "node:fs";
-import { allowanceUsd, claudeCodeRunCostUsd } from "@/lib/apiBudget";
+import { claudeCodeRunCostUsd } from "@/lib/apiBudget";
 
 function output(pairs: Record<string, string>) {
   const lines = Object.entries(pairs).map(([k, v]) => `${k}=${v}`);
@@ -35,7 +35,7 @@ if (!job || (cmd !== "check" && cmd !== "record")) {
 
 async function main() {
   const { getAdminDb } = await import("@/lib/firebase-admin");
-  const { readSpend, recordSpend } = await import("@/lib/server/apiBudget");
+  const { recordSpend } = await import("@/lib/server/apiBudget");
 
   if (cmd === "check") {
     const perRun = Number(rest[0]);
@@ -44,9 +44,8 @@ async function main() {
       process.exit(1);
     }
     try {
-      const spend = await readSpend(getAdminDb());
-      const cap = allowanceUsd(spend, job, perRun);
-      console.log(`[api-budget] month total $${spend.totalUsd.toFixed(2)}, ${job} $${(spend.jobs[job] ?? 0).toFixed(2)}`);
+      const { AiSession } = await import("@/lib/server/ai");
+      const cap = await new AiSession(getAdminDb(), job, perRun).allowance();
       if (cap === 0) console.log(`[api-budget] ${job}: no budget left this month, skipping the Claude steps`);
       output({ ok: String(cap > 0), cap: cap.toFixed(2) });
     } catch (error) {

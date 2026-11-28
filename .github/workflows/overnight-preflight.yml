@@ -1,0 +1,109 @@
+name: Overnight exam preflight
+on:
+  push:
+    branches: [codex/overnight-20261127-ci]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: overnight-exam-preflight
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Read the request at the trigger commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          path: control
+          persist-credentials: false
+          sparse-checkout: /.github/exam-preflight-request.json
+          sparse-checkout-cone-mode: false
+      - name: Validate the target
+        id: target
+        run: |
+          python3 - <<'PY'
+          import json, os, re
+          from pathlib import Path
+          request = json.loads(Path("control/.github/exam-preflight-request.json").read_text())
+          for field in ("commit", "tree"):
+              if not re.fullmatch(r"[0-9a-f]{40}", request.get(field, "")):
+                  raise ValueError(f"Expected a full Git SHA for {field}")
+          exams = request["exams"]
+          if not isinstance(exams, list) or not 1 <= len(exams) <= 4:
+              raise ValueError("Provide one to four exam blueprints")
+          ids = [entry["id"] for entry in exams]
+          if len(set(ids)) != len(ids) or not all(re.fullmatch(r"[a-z0-9-]+", name) for name in ids):
+              raise ValueError("Invalid or duplicate exam ID")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as output:
+              for field in ("commit", "tree"):
+                  print(f"{field}={request[field]}", file=output)
+          print("Requested exams:", ", ".join(ids))
+          PY
+      - name: Check out the candidate
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.target.outputs.commit }}
+          path: candidate
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Verify candidate ${{ steps.target.outputs.commit }} tree ${{ steps.target.outputs.tree }}
+        working-directory: candidate
+        env:
+          EXPECTED_COMMIT: ${{ steps.target.outputs.commit }}
+          EXPECTED_TREE: ${{ steps.target.outputs.tree }}
+        run: |
+          test "$(git rev-parse HEAD)" = "$EXPECTED_COMMIT"
+          test "$(git rev-parse 'HEAD^{tree}')" = "$EXPECTED_TREE"
+          echo "Candidate $EXPECTED_COMMIT ($EXPECTED_TREE)"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: candidate/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        working-directory: candidate
+        run: npm ci --no-audit --no-fund
+      - name: bash scripts/automerge-checks.sh
+        working-directory: candidate
+        run: bash scripts/automerge-checks.sh
+      - name: Validate each exam against its blueprint
+        working-directory: candidate
+        run: |
+          python3 - <<'PY'
+          import json, re, subprocess, sys
+          from pathlib import Path
+          def run(*args):
+              subprocess.run([sys.executable, "-I", *args], check=True)
+          request = json.loads(Path("../control/.github/exam-preflight-request.json").read_text())
+          for exam in request["exams"]:
+              name = exam["id"]
+              print(f"::group::{name}", flush=True)
+              run("tools/check_sources.py", name)
+              if exam["engine"] == "v1":
+                  bank = exam.get("bank", f"data/{name}-questions.json")
+                  path = Path(bank).resolve()
+                  if not path.is_file() or not path.is_relative_to(Path("data").resolve()) or path.suffix != ".json":
+                      raise ValueError(f"{name}: invalid bank path")
+                  pools = exam["pools"]
+                  if not pools or any(not re.fullmatch(r"[A-Za-z0-9_-]+", k) or type(v) is not int or v < 1 for k, v in pools.items()):
+                      raise ValueError(f"{name}: expected positive blueprint counts")
+                  args = [".claude/skills/exam-bank/scripts/validate_bank.py", bank, "--lang", exam.get("lang", "en"), "--rows", str(sum(pools.values()))]
+                  for group, count in pools.items():
+                      args.extend(["--pool", f"{group}={count}"])
+                  run(*args)
+                  for script in ("check_answer_patterns", "check_option_reuse", "check_length_rank", "check_stem_length"):
+                      run(f"tools/{script}.py", bank)
+              elif exam["engine"] == "v2" and exam.get("plan"):
+                  run("tools/validate_v2_bank.py", name, json.dumps(exam["plan"]))
+              else:
+                  raise ValueError(f"{name}: supply the exam engine and its official blueprint")
+              print("::endgroup::", flush=True)
+          PY

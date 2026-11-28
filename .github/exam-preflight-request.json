@@ -1,0 +1,29 @@
+{
+  "commit": "00404f21a078ecdee2a4b2b7f6a24fa604eb49ec",
+  "tree": "5b0fdb71155027671559d9682fd04c54588ca15e",
+  "exams": [
+    {
+      "id": "txpersonal",
+      "engine": "v1",
+      "pools": {
+        "txpersonalPropertyPolicies": 20,
+        "txpersonalCasualtyPolicies": 28,
+        "txpersonalConcepts": 56,
+        "txpersonalProvisions": 48,
+        "txpersonalTexasCommon": 28,
+        "txpersonalTexasPersonal": 20
+      }
+    },
+    {
+      "id": "ccht",
+      "engine": "v1",
+      "pools": {
+        "cchtPreparationAccess": 48,
+        "cchtTreatmentMonitoring": 52,
+        "cchtTechnical": 44,
+        "cchtEnvironment": 32,
+        "cchtRole": 24
+      }
+    }
+  ]
+}

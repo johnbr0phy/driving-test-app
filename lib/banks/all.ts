@@ -266,6 +266,7 @@ import "./hklesfi7";
 import "./hklesfi8";
 import "./txpersonal";
 import "./ccht";
+import "./schoolbus";
 import "./txlifeonly";
 import "./cemap";
 import "./ukcemap2";

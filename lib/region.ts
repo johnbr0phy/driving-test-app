@@ -154,6 +154,7 @@ const TEST_REGIONS: Record<string, TestRegion> = {
   hklesfi8: "HK",
   txpersonal: "US",
   ccht: "US",
+  schoolbus: "US",
   txlifeonly: "US",
   uklitu: "UK", uknmc: "UK", ukseru: "UK", ukdrone: "UK", uksqe1: "UK", aatl2: "UK", cemap: "UK", ukcemap2: "UK",
   iedtt: "IE", iedttcv: "IE", iesafepass: "IE", iespsv: "IE", ieqfa: "IE", iepsa: "IE", iegarda: "IE", iehcap: "IE", ieplumbt2: "IE", cabcguard: "CA",

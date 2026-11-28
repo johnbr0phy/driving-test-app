@@ -1,0 +1,30 @@
+{
+  "stateCode": "SCHOOLBUS",
+  "prefix": "SCBUS",
+  "categories": {
+    "scbusMirrors": [
+      "MIR",
+      8
+    ],
+    "scbusLoading": [
+      "LOAD",
+      12
+    ],
+    "scbusEmergency": [
+      "EMG",
+      8
+    ],
+    "scbusRail": [
+      "RAIL",
+      8
+    ],
+    "scbusStudents": [
+      "STUD",
+      6
+    ],
+    "scbusOperations": [
+      "OPS",
+      8
+    ]
+  }
+}

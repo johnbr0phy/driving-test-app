@@ -1278,6 +1278,19 @@
     --brand-gradient-to: 292 24% 95%;
   }
 
+  [data-theme="schoolbus"] {
+    --brand: 12 14% 46%;
+    --brand-foreground: 0 0% 100%;
+    --brand-light: 12 14% 95%;
+    --brand-hover: 12 14% 42%;
+    --brand-dark: 12 14% 39%;
+    --brand-darker: 12 14% 33%;
+    --brand-muted: 12 14% 70%;
+    --brand-border: 12 14% 76%;
+    --brand-border-light: 12 14% 88%;
+    --brand-gradient-to: 24 14% 95%;
+  }
+
   [data-theme="txlifeonly"] {
     --brand: 238 6% 40%;
     --brand-foreground: 0 0% 100%;
@@ -9368,6 +9381,18 @@
     --brand-muted: 280 24% 45%;
     --brand-dark: 280 24% 65%;
     --brand-darker: 280 24% 78%;
+  }
+
+  .dark [data-theme="schoolbus"] {
+    --brand: 12 14% 47.5%;
+    --brand-hover: 12 14% 42%;
+    --brand-light: 12 14% 13%;
+    --brand-gradient-to: 24 14% 11%;
+    --brand-border-light: 12 14% 24%;
+    --brand-border: 12 14% 34%;
+    --brand-muted: 12 14% 45%;
+    --brand-dark: 12 14% 65%;
+    --brand-darker: 12 14% 78%;
   }
 
   .dark [data-theme="txlifeonly"] {

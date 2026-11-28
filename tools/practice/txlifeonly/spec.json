@@ -1,0 +1,30 @@
+{
+  "stateCode": "TXLIFEONLY",
+  "prefix": "TXLO",
+  "categories": {
+    "txloPolicies": [
+      "POL",
+      9
+    ],
+    "txloProvisions": [
+      "PRO",
+      9
+    ],
+    "txloUnderwriting": [
+      "UND",
+      8
+    ],
+    "txloOther": [
+      "OTH",
+      5
+    ],
+    "txloCommonLaw": [
+      "COM",
+      13
+    ],
+    "txloLifeLaw": [
+      "LAW",
+      6
+    ]
+  }
+}

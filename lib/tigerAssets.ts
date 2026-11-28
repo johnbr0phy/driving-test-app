@@ -12,7 +12,7 @@ export const TIGER_EXAM_IDS = [
   "waterop", "pesticide",
   "driving", // Car-test mascot; original site branding remains at the public root.
   "cdl", "cdlx", "moto", "civics", "part107", "ham", "epa608",
-  "cna", "ptcb", "phleb", "cet", "htl", "cst", "crcst",
+  "cna", "ccht", "ptcb", "phleb", "cet", "htl", "cst", "crcst",
   "ccma", "danb", "emt", "foodmgr", "realestate", "insurance", "notary",
   "teas", "aws", "aplus", "foodhandler", "boating", "hunter", "secplus", "hesi",
   "asvab", "cpr", "osha", "forklift", "alcohol", "accuplacer",
@@ -282,7 +282,6 @@ const BORROWED_SETS: Record<string, string> = {
   hklesfi7: "series7",
   hklesfi8: "series7",
   txpersonal: "pnc",
-  ccht: "cna",
   fladjuster: "pnc", llqp: "insurance", cemap: "nmls", ukcemap2: "nmls",
   // AAFCS HNFS (FCS hospitality, nutrition and food science) borrows the food handler tiger.
   aafcs: "foodhandler",

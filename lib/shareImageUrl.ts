@@ -54,6 +54,7 @@ export function shareImageUrl(id: string, language = "en"): string {
   });
   // Refresh the dedicated skincare mascot without changing other share cards.
   if (id === "esthetician") query.set("v", "esthetics-mascot-1");
+  if (id === "ccht") query.set("v", "dialysis-mascot-1");
   if (OPERATOR_AND_REMAP_MASCOT_IDS.has(id)) query.set("v", "operator-and-remap-mascots-1");
   if (language !== "en") query.set("lang", language);
   return `/og/${encodeURIComponent(id)}?${query.toString()}`;

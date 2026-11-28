@@ -8,6 +8,18 @@ import { percentScale, overallPercent } from "../scales";
 // Services 34%, Billing, Pricing and Support 12% (16/19/22/8 per test).
 const minutes = (n: number) => n * 60;
 
+const identitySkills = [
+  "IAM roles", "Root user", "Service control policies", "IAM groups", "Least privilege",
+  "Access keys", "IAM Identity Center", "Amazon Cognito", "Cross-account roles", "AWS STS",
+  "Password policy", "MFA", "Credential report", "IAM best practices",
+];
+const dataSkills = [
+  "S3 storage classes", "S3 Lifecycle", "S3 Object Lock", "Amazon EBS", "Amazon EFS",
+  "File storage", "Storage Gateway", "AWS Backup", "Amazon Athena", "Amazon Kinesis",
+  "Amazon QuickSight", "Amazon Rekognition", "Amazon Textract", "Amazon Comprehend",
+  "AI language services", "Amazon Bedrock",
+];
+
 export const AWS: ExamV2Config = {
   id: "aws",
   slug: "/aws-cloud-practitioner",
@@ -40,11 +52,14 @@ export const AWS: ExamV2Config = {
     technologyServices: "Cloud Technology and Services",
     billingPricing: "Billing, Pricing and Support",
   },
+  preserveSplitDrillAccess: true,
   drills: [
     { key: "concepts", name: "Cloud Concepts", section: "aws", domains: ["cloudConcepts"], blurb: "Benefits of the cloud, the Well-Architected Framework and migration." },
-    { key: "security", name: "Security and Compliance", section: "aws", domains: ["securityCompliance"], blurb: "Shared responsibility, IAM, security services and compliance." },
-    { key: "technology", name: "Technology and Services", section: "aws", domains: ["technologyServices"], blurb: "Compute, storage, databases, networking and global infrastructure." },
+    { key: "security-controls", legacyKey: "security", name: "Security and Compliance", section: "aws", domains: ["securityCompliance"], skillFilter: { exclude: identitySkills }, blurb: "Shared responsibility, network controls, encryption and audit tools." },
+    { key: "infrastructure", legacyKey: "technology", name: "Infrastructure and Applications", section: "aws", domains: ["technologyServices"], skillFilter: { exclude: dataSkills }, blurb: "Choose compute, networking, deployment and application services." },
     { key: "billing", name: "Billing and Pricing", section: "aws", domains: ["billingPricing"], blurb: "Pricing models, cost tools and support plans." },
+    { key: "identity", legacyKey: "security", name: "Identity and Access", section: "aws", domains: ["securityCompliance"], skillFilter: { include: identitySkills }, blurb: "IAM roles, account permissions, credentials and sign-in security." },
+    { key: "data-services", legacyKey: "technology", name: "Storage, Analytics and AI", section: "aws", domains: ["technologyServices"], skillFilter: { include: dataSkills }, blurb: "Store and protect data, analyze it and choose AWS AI services." },
   ],
   composite: { name: "Percent correct", min: 0, max: 100, combine: overallPercent },
   defaultGoal: 80,

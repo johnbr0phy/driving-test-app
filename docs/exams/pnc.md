@@ -1,1 +1,3 @@
 - **P&C Insurance** (property and casualty producer exam, general portion, `/property-casualty-insurance/*`, landing `/property-casualty-insurance-practice-test`): `data/property-casualty-questions.json` (200 questions: general 28, policy 28, homeowners 36, auto 36, commercial 32, liability 24, other 16), test IDs 3801-3804, sets 3801-3804 (by topic), state `PNC`, 70% pass. 7/7/9/9/8/6/4 per test. Never state law.
+
+State versions use three mixed practice tests followed by the original full-length exam. The short tests divide the reviewed state bank and include general and state-law questions in each. See [state practice tests](../claude/v1-engine.md).

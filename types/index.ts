@@ -4012,6 +4012,8 @@ export interface Question {
   type: QuestionType;
   state: string; // 2-letter code or "ALL"
   questionId: string;
+  /** Original source ID retained when a state bank imports or adapts a question. */
+  sourceQuestionId?: string;
   category: QuestionCategory;
   question: string;
   optionA: string;

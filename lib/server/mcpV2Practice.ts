@@ -2,8 +2,8 @@ import { randomUUID } from 'node:crypto';
 import { FieldValue, type Firestore } from 'firebase-admin/firestore';
 import { getAdminDb } from '@/lib/firebase-admin';
 import { EXAMS_V2, v2Routes } from '@/lib/v2/registry';
-import { getBank, getStimulus } from '@/lib/v2/bank';
-import { drillKey, drillQuestions, drillStateFor, nextDrillQuestion } from '@/lib/v2/training';
+import { getBank, getQuestionIndex, getStimulus } from '@/lib/v2/bank';
+import { drillCoversQuestion, drillKey, drillQuestions, drillStateFor, nextDrillQuestion } from '@/lib/v2/training';
 import { hasDrillProgress, isDrillLocked } from '@/lib/v2/premium';
 import { bowtieStarts, highlightCount, isComplete, isCorrect, relabelChoices } from '@/lib/v2/grading';
 import { optionOrderFor } from '@/lib/v2/session';
@@ -345,6 +345,14 @@ function selectQuestion(data: UserData, exam: ExamV2Config, preferred?: string, 
   return null;
 }
 
+/** Carry an outstanding answer across a drill split using the question it was issued for. */
+function pendingDrill(exam: ExamV2Config, pending: Pending) {
+  const current = exam.drills.find(d => d.key === pending.drill);
+  if (current || !exam.preserveSplitDrillAccess) return current;
+  const q = getQuestionIndex(exam.id).get(pending.questionId);
+  return q && exam.drills.find(d => d.legacyKey === pending.drill && drillCoversQuestion(d, q));
+}
+
 function newPending(drill: DrillDef, question: QuestionV2, targeted: boolean): Pending {
   return { drill: drill.key, questionId: question.id, optionOrder: optionOrderFor(question), attemptId: randomUUID(), servedAt: new Date().toISOString(), targeted };
 }
@@ -376,7 +384,7 @@ export async function nextV2Practice(uid: string, examId: string, db: Firestore 
     if (webSessions.length && !options.practice) return { ok: true, data: { quiz: examId, title: exam.name, mode: 'web', webSessions, url: webSessions[0].url, message: 'Your full test is in progress. Continue it on the website, or explicitly choose separate untimed practice here.' } };
     if (targetedDrill && locked(data, exam, targetedDrill)) return failure('PREMIUM_REQUIRED', 'This drill requires Premium. Existing progress in this drill or its Basics lessons keeps it open.');
     const pending = pendingSnap.data() as Pending | undefined;
-    const priorDrill = pending && exam.drills.find((d) => d.key === pending.drill);
+    const priorDrill = pending && pendingDrill(exam, pending);
     const priorState = priorDrill ? own(data, exam, priorDrill) : undefined;
     const priorQuestion = priorDrill ? drillQuestions(getBank(exam.id).questions, priorDrill, exam).find((q) => q.id === pending?.questionId) : undefined;
     if (pending && priorDrill && priorState && priorQuestion && (!targetedDrill || targetedDrill.key === priorDrill.key) && !locked(data, exam, priorDrill) && !priorState.masteredIds.includes(priorQuestion.id)) {
@@ -406,7 +414,7 @@ export async function answerV2Practice(uid: string, examId: string, questionId: 
     const data = userSnap.data() as UserData;
     const pending = pendingSnap.data() as Pending | undefined;
     if (!pending || pending.questionId !== questionId || pending.attemptId !== attemptId) return failure('STALE_QUESTION', 'That question is not the current unanswered attempt. Fetch the current practice question before answering.');
-    const drill = exam.drills.find((d) => d.key === pending.drill);
+    const drill = pendingDrill(exam, pending);
     if (!drill) return failure('DRILL_NOT_FOUND', 'This drill changed. Fetch a new practice question.');
     if (locked(data, exam, drill)) return failure('PREMIUM_REQUIRED', 'This drill requires Premium.');
     const question = drillQuestions(getBank(exam.id).questions, drill, exam).find((q) => q.id === questionId);

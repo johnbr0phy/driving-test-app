@@ -17,6 +17,7 @@ Rules that hold for the whole run:
   waits for John.
 - **Stop means stop.** If John says stop, finish nothing new: commit what is complete, push, and
   report which tests are done, which are half built (left out of the PR) and which never started.
+- Plan at least eight completable dashboard steps for each candidate and each state version.
 - **Skip, do not guess.** If the exam owner's official outline, handbook or primary law cannot be
   read (blocked site, timeout, no document), mark the candidate failed with the reason and move
   to the next one. Never write a bank from prep sites or memory.

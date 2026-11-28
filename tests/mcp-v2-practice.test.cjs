@@ -207,6 +207,20 @@ test('premium locks, own-progress grandfathering, Basics grandfathering and lega
   assert.deepEqual(learned.user().v2.drills[`${e.id}:${locked.legacyKey}`],legacy[`${e.id}:${locked.legacyKey}`]);
 }));
 
+test('a pending answer from before a topic split still resumes and grades with its issued options', async () => {
+  const e = exam('aws');
+  const target = e.drills.find(d => d.legacyKey === 'security');
+  const db = new FakeDb({subscription: {isPremium: true}});
+  const run = await start(db, e.id, target.key);
+  assert.equal(run.ok, true);
+  db.pending(e.id).drill = target.legacyKey;
+  const resumed = await start(db, e.id);
+  assert.deepEqual(resumed.data.question, run.data.question);
+  const graded = await respond(db, e.id);
+  assert.equal(graded.data.isCorrect, true);
+  assert.deepEqual(db.user().v2.drills[drillKey(e.id, target.key)].masteredIds, [run.data.question.questionId]);
+});
+
 test('pending attempt is stable, shuffled choices grade correctly and concurrent retries count once', async () => {
   const db = new FakeDb();
   const one = await start(db,'aws'); const two = await start(db,'aws');

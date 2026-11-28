@@ -21,7 +21,7 @@ export const APCSP: ExamV2Config = {
   drills: [
     { key: "creative", name: "Creative Development", section: "mcq", domains: ["apcspCreative"], blurb: "User needs, collaboration, input/output, testing and debugging." },
     { key: "data", name: "Data", section: "mcq", domains: ["apcspData"], blurb: "Binary representation, compression, data cleaning and interpretation." },
-    { key: "algorithms", name: "Algorithms and Programming", section: "mcq", domains: ["apcspAlgorithms"], blurb: "Trace original pseudocode, lists, loops, procedures, searches and simulations." },
+    { key: "algorithms", name: "Algorithms and Programming", section: "mcq", domains: ["apcspAlgorithms"], blurb: "Trace original pseudocode, lists, loops, procedures, searches and simulations.", basics: ["csTraceTables", "csTruthTables", "csModDiv", "orderOfOperations"] },
     { key: "networks", name: "Computer Systems and Networks", section: "mcq", domains: ["apcspNetworks"], blurb: "Protocols, packets, routing, redundancy and parallel computing." },
     { key: "impact", name: "Impact of Computing", section: "mcq", domains: ["apcspImpact"], blurb: "Access, bias, crowdsourcing, privacy, security and responsible reuse." },
   ],
@@ -30,7 +30,7 @@ export const APCSP: ExamV2Config = {
   goalNotes: { 50: "Build a foundation", 60: "Strengthen the five big ideas", 70: "A practice target, not an AP cutoff", 80: "Consistent multiple-choice performance", 90: "Strong command of these computing skills" },
   testLength: "120 min",
   copy: {
-    heroSubs: ["Five topic drills and two full-length multiple-choice sections. Prepare Create separately.", "Work through the five big ideas.", "Take the first multiple-choice practice test.", "Use the held-out second test for a fresh check.", "MCQ goal reached. Continue preparing your Create task and written responses."],
+    heroSubs: ["Practise tracing code in Algorithms Basics, then work through the five topics and two tests. Prepare Create separately.", "Work through the five big ideas.", "Take the first multiple-choice practice test.", "Use the held-out second test for a fresh check.", "MCQ goal reached. Continue preparing your Create task and written responses."],
     sourceLine: "200 original questions based on the current College Board CSP framework. AP is a College Board trademark; College Board does not endorse or affiliate with Tigertest.",
     scoreNote: "Percentage of MCQ items fully correct, not an AP score prediction. The real MCQ section contributes 70%; Create and its written responses contribute the other 30% and are not modelled here. No AP 1–5 conversion or official pass threshold is implied. Diagrams are described in text; this is not an executable programming environment.",
   },

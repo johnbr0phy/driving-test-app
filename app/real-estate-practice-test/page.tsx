@@ -11,10 +11,11 @@ import { ExamClassFaq, classFaqJsonLd } from "@/components/exam/ExamClassFaq";
 import { SITE_URL } from "@/lib/siteUrl";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
 import { examOffers } from "@/lib/examSeo";
+import { stateLandingPath, stateVariants } from "@/lib/stateLandings";
 
 const siteUrl = SITE_URL;
 
-const statePractice = [
+const stateSummaries = [
   {
     name: "California",
     href: "/real-estate-practice-test/california",
@@ -99,6 +100,16 @@ const statePractice = [
   // end batch 2
 ];
 
+const statePractice = stateVariants("realestate").map((exam) => {
+  const name = exam.jurisdiction!.name;
+  return stateSummaries.find((summary) => summary.name === name) ?? {
+    name,
+    href: stateLandingPath(exam),
+    body: `${exam.questionsPerTest} practice questions covering national topics and ${name} law.`,
+  };
+});
+const stateCoverage = `Choose from ${statePractice.length} state versions. Each includes three shorter practice tests and a full-length exam covering national topics and state law. Your progress is saved separately for each state. Choose Other state for 200 questions on national topics only.`;
+
 const title = "Free Real Estate Practice Test 2026 - National Exam";
 const metaDescription =
   "Free real estate practice tests: 200 questions on the national salesperson exam outline, from ownership and contracts to financing and real estate math.";
@@ -165,7 +176,7 @@ const jsonLd = {
           name: "Does this cover my state's exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Sixteen states have their own practice with state law: Arizona, California, Florida, Georgia, Illinois, Louisiana, Michigan, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Tennessee, Texas, Virginia and Washington. Each is one full-length exam shaped like that state's, and progress is saved separately per state. For other states, the 200-question bank covers the national portion, which is the same in every Pearson VUE or PSI state; your state law portion is separate and not covered yet.",
+            text: stateCoverage,
           },
         },
         {
@@ -269,7 +280,7 @@ export default function RealestateLandingPage() {
       {/* State practice */}
       <div className="max-w-5xl mx-auto px-6 pb-16 md:pb-24">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-50 text-center mb-4">
-          State Practice: 16 States
+          State Practice: {statePractice.length} States
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-2xl mx-auto mb-10">
           Taking the exam in one of these states? Practice with questions checked against your state&apos;s law, including state-only rules. Progress is saved separately for each state.
@@ -393,7 +404,7 @@ export default function RealestateLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this cover my state&apos;s exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Sixteen states have their own practice with state law: Arizona, California, Florida, Georgia, Illinois, Louisiana, Michigan, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Tennessee, Texas, Virginia and Washington. Each is one full-length exam shaped like that state&apos;s, and progress is saved separately per state. For other states, the 200-question bank covers the national portion, which is the same in every Pearson VUE or PSI state; your state law portion is separate and not covered yet.
+              {stateCoverage}
             </p>
           </div>
           <div>

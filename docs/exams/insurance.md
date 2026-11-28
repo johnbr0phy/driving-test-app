@@ -1,1 +1,3 @@
 - **Life & Health Insurance** (producer exam general portion, `/life-health-insurance/*`, landing `/life-health-insurance-practice-test`): `data/life-health-questions.json` (200 questions across 9 areas: regulation 16, general 20, life basics 20, life types 24, life provisions 32, annuities/tax 20, health basics 20, health provisions 20, health types 28), test IDs 2001-2004, sets 2001-2005 (by topic), state `LIFEHEALTH`, 70% pass. 4/5/5/6/8/5/5/5/7 per test. General portion only, never state rules.
+
+State versions use three mixed practice tests followed by the original full-length exam. The short tests divide the reviewed state bank and include general and state-law questions in each. See [state practice tests](../claude/v1-engine.md).

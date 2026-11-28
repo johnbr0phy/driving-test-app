@@ -58,7 +58,7 @@ const jsonLd = {
       featureList: [
         "200 AWS practice questions",
         "2 full 65-question practice tests in 90 minutes",
-        "4 drills, one per CLF-C02 domain",
+        "6 drills across the four CLF-C02 domains",
         "Choose-two and choose-three multiple-response items",
         "Instant feedback with explanations",
         "Auto-save progress",
@@ -160,7 +160,7 @@ export default function AwsLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Drills by Domain</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four drills, one per exam domain: cloud concepts, security and compliance, cloud technology and services, and billing, pricing and support. Questions you miss come back until you have mastered them.
+                Six drills cover the four exam domains. Practice identity and access in one drill, then work on storage, analytics and AI in another. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>

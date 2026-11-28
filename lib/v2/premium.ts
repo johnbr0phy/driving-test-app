@@ -25,6 +25,8 @@ export function isDrillLocked(exam: ExamV2Config, drillKey: string, isPremium: b
  */
 export function hasDrillProgress(drills: Record<string, DrillState>, basics: Record<string, BasicsSkillState>, exam: ExamV2Config, drill: DrillDef): boolean {
   if (drills[drillKey(exam.id, drill.key)]) return true;
+  // Someone who started the original drill keeps access to its replacement parts.
+  if (exam.preserveSplitDrillAccess && drill.legacyKey && drills[drillKey(exam.id, drill.legacyKey)]) return true;
   return basicsFor(drill).some((s) => basics[basicsKey(exam.id, s.id)]?.done);
 }
 

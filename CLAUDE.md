@@ -73,6 +73,7 @@ One shape for every exam: `/<exam>/dashboard`, `/<exam>/practice/<n>`, `/<exam>/
 - After changing a v1 bank or a set's categories run `npx tsx scripts/build-training-parts.ts` (CI runs `--check`). After a v2 bank change run `tools/validate_v2_bank.py` (it writes `lib/v2/bankSizes.ts`).
 - Bank style checks are blocking and their baselines only shrink: answer patterns, option reuse, stem length, option references by position, house-style validators (see `question-quality.md`).
 - No person reviews questions. Every finding, report, flag, source change and exam update is settled by an automated run that fixes, double-checks and merges, or keeps the question. Never add a step that waits for John to judge a question. Changes to a question need an official source read and recorded, dated, in that exam's `sources.md`.
+- Every exam dashboard, including each state version, needs at least eight completable steps. Count the training, Basics and test rows that contribute to the dashboard progress counter.
 - Every dashboard must stay completable: every training set needs at least its `size` unique questions.
 
 **Premium and money**

@@ -104,7 +104,7 @@ export function ResultsHeroDebrief({
     if (routes.id === "dmv") return true;
     const exam = getExamById(routes.id);
     if (!exam) return false;
-    if (isMockTest(exam, displayTestNumber(testId))) return false;
+    if (isMockTest(exam, displayTestNumber(testId)) || (exam.statePracticeCount && testId === exam.idBase + 1)) return false;
     return testSession.answers.some((a, i) => {
       if (a.isCorrect) return false;
       const q = testSession.questions[i];
@@ -163,6 +163,7 @@ export function ResultsHeroDebrief({
     ? t("results.viewFullStats")
     : nextTestIsLocked
       ? t("results.nextTestUnlockButton")
+      : routes.stateTestLabel ? `Next: ${routes.stateTestLabel(nextTestId)}`
       : t("results.passCta").replace("{{n}}", String(displayTestNumber(nextTestId)));
 
   return (

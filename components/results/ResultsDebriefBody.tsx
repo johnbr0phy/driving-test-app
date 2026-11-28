@@ -57,6 +57,8 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
     planTrainingSet,
   } = results;
 
+  const nextStateLabel = hasNextTest ? routes.stateTestLabel?.(nextTestId) : undefined;
+  const startNextLabel = nextStateLabel ? `Next: ${nextStateLabel}` : undefined;
   const [fixedCount, setFixedCount] = useState(0);
   const [showCorrect, setShowCorrect] = useState(false);
 
@@ -118,7 +120,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
         ? { key: "next", label: t("results.planStep3Locked"), locked: true, onClick: openTest4Paywall }
         : {
             key: "next",
-            label: t("results.planStep3").replace("{{n}}", String(displayTestNumber(nextTestId))),
+            label: startNextLabel ?? t("results.planStep3").replace("{{n}}", String(displayTestNumber(nextTestId))),
             onClick: () => router.push(routes.test(nextTestId)),
           }
       : { key: "next", label: t("results.planStep3AllDone"), onClick: () => router.push(routes.stats) }
@@ -287,6 +289,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
             <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
               {nextTestIsLocked
                 ? t("results.postDrillUpgradeSub")
+                : nextStateLabel ? "Keep practicing national topics and state law."
                 : t("results.postDrillNextSub").replace("{{n}}", String(displayTestNumber(nextTestId)))}
             </p>
             <Button
@@ -297,7 +300,7 @@ export function ResultsDebriefBody({ results, upgrade }: Props) {
             >
               {nextTestIsLocked
                 ? t("results.nextTestUnlockButton")
-                : t("results.nextTestButton").replace("{{n}}", String(displayTestNumber(nextTestId)))}
+                : startNextLabel ?? t("results.nextTestButton").replace("{{n}}", String(displayTestNumber(nextTestId)))}
             </Button>
           </CardContent>
         </Card>

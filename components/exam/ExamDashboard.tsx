@@ -260,6 +260,7 @@ function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
     const bestRaw = stats?.bestScore ?? null;
     const len = testLength(testId);
     const mock = isMockTest(exam, n);
+    const stateLabel = routes.stateTestLabel?.(testId);
     const bestPct = bestRaw !== null ? Math.round((bestRaw / len) * 100) : null;
     const completed = testComplete(testId);
     const current = hydrated ? getCurrentTest(testId) : undefined;
@@ -301,7 +302,7 @@ function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
     return (
       <div id={`test-${n}`} className={`scroll-mt-24 rounded-lg ${highlightedStep === `test-${n}` ? "ring-2 ring-green-500 ring-offset-4 ring-offset-white dark:ring-offset-gray-950" : ""}`}>
         <ProgressCard
-          title={mock ? ui.mockN(n - exam.testCount) : exam.testCount === 1 ? ui.fullLengthExam : ui.testN(n)}
+          title={stateLabel ? `🎯 ${stateLabel}` : mock ? ui.mockN(n - exam.testCount) : exam.testCount === 1 ? ui.fullLengthExam : ui.testN(n)}
           subtitle={subtitle}
           completed={completed}
           stepNumber={stepNumber}
@@ -310,7 +311,7 @@ function ExamDashboardContent({ exam: source }: { exam: ExamConfig }) {
           href={locked || hasAttempts ? undefined : routes.test(testId)}
           onClick={
             locked
-              ? () => paywall.open(`test_${n}`, mock ? `Full-length mock ${n - exam.testCount}` : `Practice Test ${n}`)
+              ? () => paywall.open(`test_${n}`, stateLabel ?? (mock ? `Full-length mock ${n - exam.testCount}` : `Practice Test ${n}`))
               : hasAttempts
                 ? () => setExpandedTest(isExpanded ? null : testId)
                 : undefined

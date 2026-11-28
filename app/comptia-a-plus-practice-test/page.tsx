@@ -58,7 +58,7 @@ const jsonLd = {
       featureList: [
         "200 A+ practice questions",
         "Full practice exam: Core 1 and Core 2, 90 questions each in 90 minutes",
-        "4 drills, two per core",
+        "7 drills across both cores",
         "Choose-two, matching and ordering items",
         "Instant feedback with explanations",
         "Auto-save progress",
@@ -97,7 +97,7 @@ const jsonLd = {
           name: "Should I take Core 1 or Core 2 first?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Most candidates take Core 1 first because hardware and networking are more concrete, but either order works. The drills here are split by core, two each, so you can prepare for one exam at a time.",
+            text: "Most candidates take Core 1 first because hardware and networking are more concrete, but either order works. The four Core 1 drills and three Core 2 drills let you prepare for one exam at a time.",
           },
         },
         {
@@ -165,7 +165,7 @@ export default function AplusLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Drills by Domain</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Four drills, two per core: Core 1 mobile, networking and hardware; Core 1 cloud and hardware troubleshooting; Core 2 operating systems and security; and Core 2 software troubleshooting and operational procedures. Questions you miss come back until you have mastered them.
+                Core 1 has drills on hardware and mobile devices, networking, virtualization and cloud, and troubleshooting. Core 2 has drills on operating systems, security, and software troubleshooting and procedures. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>
@@ -296,7 +296,7 @@ export default function AplusLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Should I take Core 1 or Core 2 first?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Most candidates take Core 1 first because hardware and networking are more concrete, but either order works. The drills here are split by core, two each, so you can prepare for one exam at a time.
+              Most candidates take Core 1 first because hardware and networking are more concrete, but either order works. The four Core 1 drills and three Core 2 drills let you prepare for one exam at a time.
             </p>
           </div>
           <div>

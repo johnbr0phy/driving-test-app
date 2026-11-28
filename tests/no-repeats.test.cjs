@@ -1,7 +1,7 @@
 // Nothing a student practises should come round twice inside one exam:
 //  1. a Basics skill opens at most one drill (a skill is learned once per exam,
 //     so a second drill showing it is a wasted step);
-//  2. no two drills draw from the same domain (the same questions twice);
+//  2. no question belongs to two drills, including subtopics in the same domain;
 //  3. a question's `basics` tag names a skill its own drill opens with (any other
 //     tag can never show its brush-up card);
 //  4. no question appears twice in a bank (same stem, options, rows and blanks on
@@ -18,7 +18,7 @@ const { findRepeats } = require('../scripts/find-repeats.cjs');
 
 const BASELINE = path.join(__dirname, 'no-repeats-baseline.json');
 
-test('no Basics skill, drill domain or question repeats inside an exam', () => {
+test('no Basics skill or question repeats within or across drills', () => {
   const found = findRepeats();
   if (process.env.NO_REPEATS_WRITE_BASELINE) {
     fs.writeFileSync(BASELINE, JSON.stringify(found, null, 2) + '\n');

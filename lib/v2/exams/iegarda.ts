@@ -64,8 +64,8 @@ export const IEGARDA: ExamV2Config = {
     gardaNumCalc: "Totals, Averages and Ratios",
   },
   drills: [
-    { key: "tfc", name: "True, False or Cannot Say", section: "verbal", domains: ["gardaVerbalTfc"], blurb: "Judge statements against a passage, using only what it says." },
-    { key: "pct", name: "Percentages and Change", section: "numerical", domains: ["gardaNumPct"], blurb: "Shares of a total, rates and percentage rises and falls from tables." },
+    { key: "tfc", name: "True, False or Cannot Say", section: "verbal", domains: ["gardaVerbalTfc"], blurb: "Judge statements against a passage, using only what it says.", basics: ["findingDetail", "inference", "mustBeTrue", "drawConclusions"] },
+    { key: "pct", name: "Percentages and Change", section: "numerical", domains: ["gardaNumPct"], blurb: "Shares of a total, rates and percentage rises and falls from tables.", basics: ["fsmFdp", "percents", "percentChange", "ratios"] },
     { key: "meaning", name: "Reading for Meaning", section: "verbal", domains: ["gardaVerbalInfer"], blurb: "Main points, best supported conclusions, assumptions and words in context." },
     { key: "calc", name: "Totals, Averages and Ratios", section: "numerical", domains: ["gardaNumCalc"], blurb: "Totals, differences, averages, rates, ratios and costs from tables." },
   ],
@@ -81,7 +81,7 @@ export const IEGARDA: ExamV2Config = {
   testLength: "50 min",
   copy: {
     heroSubs: [
-      "Four drills and two timed tests. Start with True, False or Cannot Say.",
+      "Start with the Basics for True, False or Cannot Say. Practise the four drills and take both timed tests.",
       "Master each drill first.",
       "Take Practice Test 1 against the clock.",
       "Hit your goal on both practice tests.",

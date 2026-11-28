@@ -1,1 +1,3 @@
 - **Real Estate** (salesperson national exam, `/real-estate/*`, landing `/real-estate-practice-test`): `data/real-estate-questions.json` (200 questions across the 8 Pearson VUE outline areas: property 28, ownership 24, valuation 28, contracts/agency 40, practice 24, disclosures 20, financing 16, math 20), test IDs 1901-1904, sets 1901-1904 (by topic), state `REALESTATE`, 70% pass. 7/6/7/10/6/5/4/5 per test. National portion only, never state law.
+
+State versions use three mixed practice tests followed by the original full-length exam. The short tests divide the reviewed state bank and include general and state-law questions in each. See [state practice tests](../claude/v1-engine.md).

@@ -7,6 +7,14 @@ export function heldOutTests(exam: ExamV2Config): number[] {
   return exam.tests.filter((t) => t.heldOut).map((t) => t.number);
 }
 
+/** Whether this question belongs to a drill's topic, regardless of its test. */
+export function drillCoversQuestion(drill: DrillDef, q: QuestionV2): boolean {
+  if (q.section !== drill.section || !drill.domains.includes(q.domain)) return false;
+  const filter = drill.skillFilter;
+  if (!filter) return true;
+  return "include" in filter ? filter.include.includes(q.skill ?? "") : !filter.exclude.includes(q.skill ?? "");
+}
+
 /**
  * The questions a drill runs: items in its domains, never from a held-out
  * test (so that test stays unseen until the student sits it), sorted easiest
@@ -20,7 +28,7 @@ export function heldOutTests(exam: ExamV2Config): number[] {
 export function drillQuestions(bank: QuestionV2[], drill: DrillDef, exam: ExamV2Config): QuestionV2[] {
   const heldOut = heldOutTests(exam);
   const pool = bank
-    .filter((q) => q.section === drill.section && drill.domains.includes(q.domain) && !heldOut.includes(q.test))
+    .filter((q) => drillCoversQuestion(drill, q) && !heldOut.includes(q.test))
     .sort((a, b) => a.difficulty - b.difficulty || a.id.localeCompare(b.id));
   const size = drill.size ?? exam.drillSize;
   if (!size || pool.length <= size) return pool;

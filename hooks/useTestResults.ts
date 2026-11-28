@@ -87,9 +87,9 @@ export function useTestResults(testId: number, routes: ExamRoutes = DMV_ROUTES) 
   const isNewBest = score === bestScore && !!attemptStats && attemptStats.attemptCount > 1;
   const attemptNumber = attemptStats?.attemptCount ?? 1;
 
-  const testIndex = routes.testIds.indexOf(testId);
-  const hasNextTest = testIndex !== -1 && testIndex < routes.testIds.length - 1;
-  const nextTestId = hasNextTest ? routes.testIds[testIndex + 1] : testId + 1;
+  const testIndex = routes.dashboardTestIds.indexOf(testId);
+  const hasNextTest = testIndex !== -1 && testIndex < routes.dashboardTestIds.length - 1;
+  const nextTestId = hasNextTest ? routes.dashboardTestIds[testIndex + 1] : testId + 1;
   const isPremium = hasPremiumAccess();
   const nextTestIsLocked = hasNextTest && routes.isTestLocked(nextTestId, isPremium);
 

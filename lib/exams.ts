@@ -100,6 +100,8 @@ export interface ExamConfig {
   /** Icon key for the catalog, menus and TestIcon. */
   icon: "truck" | "bike" | "flag" | "plane" | "radio" | "thermometer" | "heart" | "pill" | "syringe" | "stethoscope" | "activity" | "tooth" | "siren" | "utensils" | "house" | "umbrella" | "stamp" | "graduation" | "cloud" | "cpu" | "chef" | "sailboat" | "target" | "lock" | "book" | "medal" | "bandage" | "hardhat" | "forklift" | "wine" | "pencil" | "badge" | "lifebuoy" | "building" | "microscope" | "scissors" | "shield" | "sparkles" | "paw" | "calculator" | "car" | "bus";
   testCount: number;
+  /** Short mixed forms sharing the reviewed state bank with its original full-length test. */
+  statePracticeCount?: number;
   /** Premium as a block of content instead of the last half of the
    *  dashboard (lib/examLocks.ts): practice tests from `test` on, training
    *  sets from `set` on and, in every split set, parts from `part` on. Used where an exam's bank was
@@ -1661,6 +1663,7 @@ const realestate: ExamConfig = {
 const realestateCA: ExamConfig = {
   id: "realestate-ca",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "CA", name: "California" },
   stateCode: "REALESTATE_CA",
   idBase: 3900,
@@ -1713,6 +1716,7 @@ const realestateCA: ExamConfig = {
 const realestateNJ: ExamConfig = {
   id: "realestate-nj",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "NJ", name: "New Jersey" },
   stateCode: "REALESTATE_NJ",
   idBase: 3950,
@@ -1769,6 +1773,7 @@ const realestateNJ: ExamConfig = {
 const realestateTX: ExamConfig = {
   id: "realestate-tx",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "TX", name: "Texas" },
   stateCode: "REALESTATE_TX",
   idBase: 4000,
@@ -1822,6 +1827,7 @@ const realestateTX: ExamConfig = {
 const realestateFL: ExamConfig = {
   id: "realestate-fl",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "FL", name: "Florida" },
   stateCode: "REALESTATE_FL",
   idBase: 4050,
@@ -1875,6 +1881,7 @@ const realestateFL: ExamConfig = {
 const realestateNY: ExamConfig = {
   id: "realestate-ny",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "NY", name: "New York" },
   stateCode: "REALESTATE_NY",
   idBase: 4100,
@@ -12558,6 +12565,7 @@ const crcst: ExamConfig = {
 const insuranceTX: ExamConfig = {
   id: "insurance-tx",
   variantOf: "insurance",
+  statePracticeCount: 3,
   jurisdiction: { code: "TX", name: "Texas" },
   stateCode: "LIFEHEALTH_TX",
   idBase: 4150,
@@ -12612,6 +12620,7 @@ const insuranceTX: ExamConfig = {
 const insuranceFL: ExamConfig = {
   id: "insurance-fl",
   variantOf: "insurance",
+  statePracticeCount: 3,
   jurisdiction: { code: "FL", name: "Florida" },
   stateCode: "LIFEHEALTH_FL",
   idBase: 4200,
@@ -12666,6 +12675,7 @@ const insuranceFL: ExamConfig = {
 const insuranceCA: ExamConfig = {
   id: "insurance-ca",
   variantOf: "insurance",
+  statePracticeCount: 3,
   jurisdiction: { code: "CA", name: "California" },
   stateCode: "LIFEHEALTH_CA",
   idBase: 4250,
@@ -12720,6 +12730,7 @@ const insuranceCA: ExamConfig = {
 const pncTX: ExamConfig = {
   id: "pnc-tx",
   variantOf: "pnc",
+  statePracticeCount: 3,
   jurisdiction: { code: "TX", name: "Texas" },
   stateCode: "PNC_TX",
   idBase: 4300,
@@ -12772,6 +12783,7 @@ const pncTX: ExamConfig = {
 const pncFL: ExamConfig = {
   id: "pnc-fl",
   variantOf: "pnc",
+  statePracticeCount: 3,
   jurisdiction: { code: "FL", name: "Florida" },
   stateCode: "PNC_FL",
   idBase: 4350,
@@ -12824,6 +12836,7 @@ const pncFL: ExamConfig = {
 const pncCA: ExamConfig = {
   id: "pnc-ca",
   variantOf: "pnc",
+  statePracticeCount: 3,
   jurisdiction: { code: "CA", name: "California" },
   stateCode: "PNC_CA",
   idBase: 4400,
@@ -12880,6 +12893,7 @@ const pncCA: ExamConfig = {
 const realestatePA: ExamConfig = {
   id: "realestate-pa",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "PA", name: "Pennsylvania" },
   stateCode: "REALESTATE_PA",
   idBase: 4450,
@@ -12933,6 +12947,7 @@ const realestatePA: ExamConfig = {
 const realestateIL: ExamConfig = {
   id: "realestate-il",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "IL", name: "Illinois" },
   stateCode: "REALESTATE_IL",
   idBase: 4500,
@@ -12986,6 +13001,7 @@ const realestateIL: ExamConfig = {
 const realestateOH: ExamConfig = {
   id: "realestate-oh",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "OH", name: "Ohio" },
   stateCode: "REALESTATE_OH",
   idBase: 4550,
@@ -13039,6 +13055,7 @@ const realestateOH: ExamConfig = {
 const realestateGA: ExamConfig = {
   id: "realestate-ga",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "GA", name: "Georgia" },
   stateCode: "REALESTATE_GA",
   idBase: 4600,
@@ -13092,6 +13109,7 @@ const realestateGA: ExamConfig = {
 const realestateNC: ExamConfig = {
   id: "realestate-nc",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "NC", name: "North Carolina" },
   stateCode: "REALESTATE_NC",
   idBase: 4650,
@@ -13145,6 +13163,7 @@ const realestateNC: ExamConfig = {
 const realestateMI: ExamConfig = {
   id: "realestate-mi",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "MI", name: "Michigan" },
   stateCode: "REALESTATE_MI",
   idBase: 4700,
@@ -13198,6 +13217,7 @@ const realestateMI: ExamConfig = {
 const realestateVA: ExamConfig = {
   id: "realestate-va",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "VA", name: "Virginia" },
   stateCode: "REALESTATE_VA",
   idBase: 4750,
@@ -13251,6 +13271,7 @@ const realestateVA: ExamConfig = {
 const realestateWA: ExamConfig = {
   id: "realestate-wa",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "WA", name: "Washington" },
   stateCode: "REALESTATE_WA",
   idBase: 4800,
@@ -13304,6 +13325,7 @@ const realestateWA: ExamConfig = {
 const realestateAZ: ExamConfig = {
   id: "realestate-az",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "AZ", name: "Arizona" },
   stateCode: "REALESTATE_AZ",
   idBase: 4850,
@@ -13357,6 +13379,7 @@ const realestateAZ: ExamConfig = {
 const realestateTN: ExamConfig = {
   id: "realestate-tn",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "TN", name: "Tennessee" },
   stateCode: "REALESTATE_TN",
   idBase: 4900,
@@ -13410,6 +13433,7 @@ const realestateTN: ExamConfig = {
 const realestateLA: ExamConfig = {
   id: "realestate-la",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "LA", name: "Louisiana" },
   stateCode: "REALESTATE_LA",
   idBase: 5950,
@@ -13465,6 +13489,7 @@ const realestateLA: ExamConfig = {
 const realestateCO: ExamConfig = {
   id: "realestate-co",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "CO", name: "Colorado" },
   stateCode: "REALESTATE_CO",
   idBase: 40200,
@@ -13519,6 +13544,7 @@ const realestateCO: ExamConfig = {
 const realestateMD: ExamConfig = {
   id: "realestate-md",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "MD", name: "Maryland" },
   stateCode: "REALESTATE_MD",
   idBase: 40150,
@@ -13573,6 +13599,7 @@ const realestateMD: ExamConfig = {
 const realestateMA: ExamConfig = {
   id: "realestate-ma",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "MA", name: "Massachusetts" },
   stateCode: "REALESTATE_MA",
   idBase: 40050,
@@ -13627,6 +13654,7 @@ const realestateMA: ExamConfig = {
 const realestateMO: ExamConfig = {
   id: "realestate-mo",
   variantOf: "realestate",
+  statePracticeCount: 3,
   jurisdiction: { code: "MO", name: "Missouri" },
   stateCode: "REALESTATE_MO",
   idBase: 40000,
@@ -13683,6 +13711,7 @@ const realestateMO: ExamConfig = {
 const insuranceNY: ExamConfig = {
   id: "insurance-ny",
   variantOf: "insurance",
+  statePracticeCount: 3,
   jurisdiction: { code: "NY", name: "New York" },
   stateCode: "LIFEHEALTH_NY",
   idBase: 4950,
@@ -13737,6 +13766,7 @@ const insuranceNY: ExamConfig = {
 const insurancePA: ExamConfig = {
   id: "insurance-pa",
   variantOf: "insurance",
+  statePracticeCount: 3,
   jurisdiction: { code: "PA", name: "Pennsylvania" },
   stateCode: "LIFEHEALTH_PA",
   idBase: 5000,
@@ -13791,6 +13821,7 @@ const insurancePA: ExamConfig = {
 const insuranceIL: ExamConfig = {
   id: "insurance-il",
   variantOf: "insurance",
+  statePracticeCount: 3,
   jurisdiction: { code: "IL", name: "Illinois" },
   stateCode: "LIFEHEALTH_IL",
   idBase: 5050,
@@ -13845,6 +13876,7 @@ const insuranceIL: ExamConfig = {
 const insuranceOH: ExamConfig = {
   id: "insurance-oh",
   variantOf: "insurance",
+  statePracticeCount: 3,
   jurisdiction: { code: "OH", name: "Ohio" },
   stateCode: "LIFEHEALTH_OH",
   idBase: 5100,
@@ -13899,6 +13931,7 @@ const insuranceOH: ExamConfig = {
 const insuranceGA: ExamConfig = {
   id: "insurance-ga",
   variantOf: "insurance",
+  statePracticeCount: 3,
   jurisdiction: { code: "GA", name: "Georgia" },
   stateCode: "LIFEHEALTH_GA",
   idBase: 5150,
@@ -13953,6 +13986,7 @@ const insuranceGA: ExamConfig = {
 const insuranceNC: ExamConfig = {
   id: "insurance-nc",
   variantOf: "insurance",
+  statePracticeCount: 3,
   jurisdiction: { code: "NC", name: "North Carolina" },
   stateCode: "LIFEHEALTH_NC",
   idBase: 5200,
@@ -14007,6 +14041,7 @@ const insuranceNC: ExamConfig = {
 const insuranceMI: ExamConfig = {
   id: "insurance-mi",
   variantOf: "insurance",
+  statePracticeCount: 3,
   jurisdiction: { code: "MI", name: "Michigan" },
   stateCode: "LIFEHEALTH_MI",
   idBase: 5250,
@@ -14061,6 +14096,7 @@ const insuranceMI: ExamConfig = {
 const insuranceNJ: ExamConfig = {
   id: "insurance-nj",
   variantOf: "insurance",
+  statePracticeCount: 3,
   jurisdiction: { code: "NJ", name: "New Jersey" },
   stateCode: "LIFEHEALTH_NJ",
   idBase: 5300,
@@ -14115,6 +14151,7 @@ const insuranceNJ: ExamConfig = {
 const insuranceVA: ExamConfig = {
   id: "insurance-va",
   variantOf: "insurance",
+  statePracticeCount: 3,
   jurisdiction: { code: "VA", name: "Virginia" },
   stateCode: "LIFEHEALTH_VA",
   idBase: 5350,
@@ -14169,6 +14206,7 @@ const insuranceVA: ExamConfig = {
 const insuranceWA: ExamConfig = {
   id: "insurance-wa",
   variantOf: "insurance",
+  statePracticeCount: 3,
   jurisdiction: { code: "WA", name: "Washington" },
   stateCode: "LIFEHEALTH_WA",
   idBase: 5400,
@@ -14223,6 +14261,7 @@ const insuranceWA: ExamConfig = {
 const pncNY: ExamConfig = {
   id: "pnc-ny",
   variantOf: "pnc",
+  statePracticeCount: 3,
   jurisdiction: { code: "NY", name: "New York" },
   stateCode: "PNC_NY",
   idBase: 5450,
@@ -14275,6 +14314,7 @@ const pncNY: ExamConfig = {
 const pncPA: ExamConfig = {
   id: "pnc-pa",
   variantOf: "pnc",
+  statePracticeCount: 3,
   jurisdiction: { code: "PA", name: "Pennsylvania" },
   stateCode: "PNC_PA",
   idBase: 5500,
@@ -14327,6 +14367,7 @@ const pncPA: ExamConfig = {
 const pncIL: ExamConfig = {
   id: "pnc-il",
   variantOf: "pnc",
+  statePracticeCount: 3,
   jurisdiction: { code: "IL", name: "Illinois" },
   stateCode: "PNC_IL",
   idBase: 5550,
@@ -14379,6 +14420,7 @@ const pncIL: ExamConfig = {
 const pncOH: ExamConfig = {
   id: "pnc-oh",
   variantOf: "pnc",
+  statePracticeCount: 3,
   jurisdiction: { code: "OH", name: "Ohio" },
   stateCode: "PNC_OH",
   idBase: 5600,
@@ -14431,6 +14473,7 @@ const pncOH: ExamConfig = {
 const pncGA: ExamConfig = {
   id: "pnc-ga",
   variantOf: "pnc",
+  statePracticeCount: 3,
   jurisdiction: { code: "GA", name: "Georgia" },
   stateCode: "PNC_GA",
   idBase: 5650,
@@ -14483,6 +14526,7 @@ const pncGA: ExamConfig = {
 const pncNC: ExamConfig = {
   id: "pnc-nc",
   variantOf: "pnc",
+  statePracticeCount: 3,
   jurisdiction: { code: "NC", name: "North Carolina" },
   stateCode: "PNC_NC",
   idBase: 5700,
@@ -14535,6 +14579,7 @@ const pncNC: ExamConfig = {
 const pncMI: ExamConfig = {
   id: "pnc-mi",
   variantOf: "pnc",
+  statePracticeCount: 3,
   jurisdiction: { code: "MI", name: "Michigan" },
   stateCode: "PNC_MI",
   idBase: 5750,
@@ -14587,6 +14632,7 @@ const pncMI: ExamConfig = {
 const pncNJ: ExamConfig = {
   id: "pnc-nj",
   variantOf: "pnc",
+  statePracticeCount: 3,
   jurisdiction: { code: "NJ", name: "New Jersey" },
   stateCode: "PNC_NJ",
   idBase: 5800,
@@ -14639,6 +14685,7 @@ const pncNJ: ExamConfig = {
 const pncVA: ExamConfig = {
   id: "pnc-va",
   variantOf: "pnc",
+  statePracticeCount: 3,
   jurisdiction: { code: "VA", name: "Virginia" },
   stateCode: "PNC_VA",
   idBase: 5850,
@@ -14691,6 +14738,7 @@ const pncVA: ExamConfig = {
 const pncWA: ExamConfig = {
   id: "pnc-wa",
   variantOf: "pnc",
+  statePracticeCount: 3,
   jurisdiction: { code: "WA", name: "Washington" },
   stateCode: "PNC_WA",
   idBase: 5900,
@@ -31216,20 +31264,31 @@ export const examSetId = (exam: ExamConfig, setNumber: number) => examSetBase(ex
 export const examLandingPath = (exam: ExamConfig) => exam.landingPath ?? exam.slug;
 
 /** Practice tests plus any full-length mocks. */
-export const examTestTotal = (exam: ExamConfig) => exam.testCount + (exam.mockExams?.count ?? 0);
+export const examTestTotal = (exam: ExamConfig) => exam.testCount + (exam.statePracticeCount ?? 0) + (exam.mockExams?.count ?? 0);
 
 export const examTestIds = (exam: ExamConfig) =>
   Array.from({ length: examTestTotal(exam) }, (_, i) => exam.idBase + 1 + i);
+
+/** State learners finish with the original full-length form. Keep the route
+ * and store ID for that form at test 1 so past attempts still resolve. */
+export function examDashboardTestIds(exam: ExamConfig): number[] {
+  const ids = examTestIds(exam);
+  return exam.statePracticeCount ? [...ids.slice(1), ids[0]] : ids;
+}
 
 /** Is test N (1-based, config order) a full-length mock? */
 export const isMockTest = (exam: ExamConfig, testNumber: number) =>
   !!exam.mockExams && testNumber > exam.testCount && testNumber <= examTestTotal(exam);
 
-/** Questions in test N: a mock's own length, else questionsPerTest. */
-export const examTestLength = (exam: ExamConfig, testNumber: number) =>
-  isMockTest(exam, testNumber)
-    ? Object.values(exam.mockExams!.blueprint).reduce((a, b) => a + b, 0)
-    : exam.questionsPerTest;
+/** Questions in the full-length form, short state form, or mock at this URL. */
+export function examTestLength(exam: ExamConfig, testNumber: number): number {
+  if (exam.statePracticeCount && testNumber > exam.testCount) {
+    const index = testNumber - exam.testCount - 1;
+    return Math.floor((exam.questionsPerTest + exam.statePracticeCount - 1 - index) / exam.statePracticeCount);
+  }
+  if (isMockTest(exam, testNumber)) return Object.values(exam.mockExams!.blueprint).reduce((a, b) => a + b, 0);
+  return exam.questionsPerTest;
+}
 
 export function getExamById(id: string): ExamConfig | undefined {
   return ALL_EXAMS.find((e) => e.id === id);

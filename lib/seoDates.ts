@@ -10,7 +10,7 @@ export const HUB_PAGES_UPDATED_AT = "2026-11-27"; // Texas Life Agent, then CCHT
 export const QUIZZES_PAGES_UPDATED_AT = "2026-10-22"; // /quizzes library and /create
 
 // State landings of real estate and insurance (lib/stateLandings.ts).
-export const STATE_EXAM_LANDINGS_UPDATED_AT = "2026-11-10"; // first published
+export const STATE_EXAM_LANDINGS_UPDATED_AT = "2026-11-27"; // added short state practice tests
 // Topic and most-missed question pages (lib/topicPages.ts).
 export const TOPIC_PAGES_UPDATED_AT = "2026-11-14"; // CCRN (Adult) added; v2 exams (ASVAB subtests and AFQT, TEAS, HESI, GED, SAT, ACT, NCLEX, EMT) added; CDL endorsement titles; first published 2026-11-10
 

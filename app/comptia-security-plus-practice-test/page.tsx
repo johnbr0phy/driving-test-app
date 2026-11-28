@@ -58,7 +58,7 @@ const jsonLd = {
       featureList: [
         "200 Security+ practice questions",
         "2 full 90-question practice tests in 90 minutes with flagging and review",
-        "5 drills, one per SY0-701 domain",
+        "6 drills across all five SY0-701 domains",
         "Choose-two and choose-three, matching and ordering items",
         "Instant feedback with explanations",
         "Auto-save progress",
@@ -161,7 +161,7 @@ export default function SecplusLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Drills by Domain</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Five drills, one per domain: general security concepts, threats, vulnerabilities and mitigations, security architecture, security operations, and program management and oversight. Questions you miss come back until you have mastered them.
+                Six drills cover the five Security+ domains, with separate practice in system hardening and incident response. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>

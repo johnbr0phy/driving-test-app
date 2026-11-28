@@ -2,12 +2,12 @@ import { auth } from "@/lib/firebase";
 import { DMV_ANALYTICS_KEY, type ExamAnalyticsKey } from "@/lib/exams";
 import { getBrowserId, trackEnrollment } from "@/lib/enrollment";
 import { trackFunnelStep } from "@/lib/funnel";
-import { noteLandingTryPurchase } from "@/lib/landingTryTest";
 import { isInternalBrowser } from "@/lib/internal";
+import { checkoutMeasurementAllowed } from "@/lib/checkoutEligibility";
+import { checkoutDeviceFor, checkoutExamId, checkoutItemId, type CheckoutBuyer, type CheckoutFailure } from "@/lib/checkoutSteps";
 import { guestPaidEmail } from "@/lib/guestPaidHint";
 import { knownPremiumPrice } from "@/lib/localPrice";
 import { USD_PRICE } from "@/lib/pricing";
-import { checkoutAttribution } from "@/lib/funnel";
 
 declare global {
   interface Window {
@@ -27,25 +27,64 @@ function premiumValue() {
 }
 
 export function trackViewItem(location?: string) {
-  window.gtag?.("event", "view_item", {
-    ...premiumValue(),
-    ...(location && { location }),
-  });
+  try {
+    window.gtag?.("event", "view_item", {
+      ...premiumValue(),
+      ...(location && { location }),
+    });
+  } catch {
+    // The buy button still opens if the analytics script fails.
+  }
 }
 
-export function trackBeginCheckout(location?: string) {
-  window.gtag?.("event", "begin_checkout", {
-    ...premiumValue(),
-    ...(location && { location }),
-  });
+// The same guard applies to GA events and optional Stripe reporting fields.
+// A blocked cookie, storage API, or analytics provider must never prevent payment.
+export function checkoutContext(location: string, itemId?: string, buyer?: CheckoutBuyer) {
+  try {
+    if (!checkoutMeasurementAllowed(window.location.pathname, auth.currentUser?.email)) return undefined;
+    const examId = checkoutExamId(location);
+    if (!examId && location !== "upgrade_page") return undefined;
+    const item = checkoutItemId(itemId, location);
+    return {
+      paywall_location: location,
+      ...(examId && { exam_id: examId }),
+      ...(item && { checkout_item: item, item_id: item }),
+      buyer_state: buyer ?? (auth.currentUser ? "signed_in" : "guest"),
+      checkout_device: checkoutDeviceFor(navigator.userAgent, navigator.maxTouchPoints),
+    };
+  } catch {
+    return undefined;
+  }
 }
 
-export function trackPaywallHit(itemId: string, itemName: string, location = "dashboard") {
-  window.gtag?.("event", "paywall_hit", {
-    item_id: itemId,
-    item_name: itemName,
-    location,
-  });
+export function trackCheckoutStep(
+  event: "checkout_click" | "begin_checkout" | "checkout_error",
+  context: ReturnType<typeof checkoutContext>,
+  feature: string,
+  reason?: CheckoutFailure,
+) {
+  if (!context) return;
+  try {
+    window.gtag?.("event", event, {
+      ...context,
+      location: feature,
+      ...(event === "begin_checkout" && premiumValue()),
+      ...(reason && { error_reason: reason }),
+    });
+  } catch {
+    // Checkout and its error handling work even with a broken analytics script.
+  }
+}
+
+export function trackPaywallHit(itemId: string, itemName: string, location = "dashboard", paywallLocation = location) {
+  const context = checkoutContext(paywallLocation, itemId);
+  if (context) {
+    try {
+      window.gtag?.("event", "paywall_hit", { ...context, item_id: itemId, item_name: itemName, location });
+    } catch {
+      // A tracking script must never keep the paywall from opening.
+    }
+  }
   void recordPaywallHit(itemId, itemName, location);
 }
 
@@ -213,19 +252,14 @@ export function trackDailyQuizAnswer(correct: boolean, kind: string = "community
   window.gtag?.("event", "daily_quiz_answer", { correct, kind });
 }
 
-export function trackPaywallDismissed(location = "dashboard") {
-  window.gtag?.("event", "paywall_dismissed", { location });
-}
-
-export function trackPurchase(transactionId: string) {
-  noteLandingTryPurchase();
-  const first = checkoutAttribution();
-  window.gtag?.("event", "purchase", {
-    transaction_id: transactionId,
-    ...(first.source && { first_source: first.source }),
-    ...(first.landing && { first_landing: first.landing }),
-    ...premiumValue(),
-  });
+export function trackPaywallDismissed(location = "dashboard", itemId?: string, paywallLocation = location) {
+  const context = checkoutContext(paywallLocation, itemId);
+  if (!context) return;
+  try {
+    window.gtag?.("event", "paywall_dismissed", { location, ...context });
+  } catch {
+    // Closing the dialog must always work.
+  }
 }
 
 // The in-training sign-up prompt (components/GuestPromptStep): shown, skipped,

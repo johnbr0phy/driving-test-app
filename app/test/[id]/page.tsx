@@ -17,7 +17,7 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { useDmvTestLanguage } from "@/hooks/useTestLanguage";
 import { en, es, vi, ko, zh } from "@/i18n";
 import { PaywallModal } from "@/components/PaywallModal";
-import { trackPaywallHit, trackStatsEntry, trackViewItem } from "@/lib/analytics";
+import { trackPaywallDismissed, trackPaywallHit, trackStatsEntry, trackViewItem } from "@/lib/analytics";
 import { DMV_EXAM_ID } from "@/lib/classes";
 import { recordClassAnswer, recordClassTest } from "@/lib/classProgress";
 import { DMV_ROUTES } from "@/lib/examRoutes";
@@ -43,7 +43,7 @@ export default function TestPage() {
   const hasPremiumAccess = useStore((state) => state.hasPremiumAccess);
   const isPremium = hydrated ? hasPremiumAccess() : false;
 
-  const handleUpgrade = () => startCheckout({ location: "practice_test_4" });
+  const handleUpgrade = () => startCheckout({ location: "practice_test_4", itemId: "test_header_stats" });
 
   const selectedState = useStore((state) => state.selectedState);
   const getCurrentTest = useStore((state) => state.getCurrentTest);
@@ -276,7 +276,10 @@ export default function TestPage() {
 
       <PaywallModal
         open={paywallOpen}
-        onOpenChange={setPaywallOpen}
+        onOpenChange={(open) => {
+          if (!open && paywallOpen) trackPaywallDismissed("practice_test_4", "test_header_stats");
+          setPaywallOpen(open);
+        }}
         feature="practice_test_4"
         onUpgrade={handleUpgrade}
         isGuest={isGuest}

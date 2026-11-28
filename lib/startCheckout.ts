@@ -1,7 +1,8 @@
 "use client";
 
 import { auth } from "@/lib/firebase";
-import { trackBeginCheckout } from "@/lib/analytics";
+import { checkoutContext, trackCheckoutStep } from "@/lib/analytics";
+import { checkoutHttpFailure, type CheckoutBuyer, type CheckoutFailure } from "@/lib/checkoutSteps";
 import { checkoutAttribution } from "@/lib/funnel";
 import { paywallHitForCheckout, paywallReturnForCheckout, paywallVariantForCheckout } from "@/lib/paywallTest";
 
@@ -19,13 +20,23 @@ export async function startCheckout(opts: {
   returnPath?: string | null;
   /** What GA4 records as the item; defaults to the location. */
   feature?: string;
+  itemId?: string;
 }): Promise<void> {
+  const feature = opts.feature ?? opts.location;
+  let buyer: CheckoutBuyer = "unknown";
+  let failure: CheckoutFailure = "auth_restore";
+  const context = () => checkoutContext(opts.location, opts.itemId, buyer);
   try {
     // Wait for Firebase to restore a session: a signed-in buyer tapping
     // during page load must not go down the guest path.
     await auth.authStateReady();
     const current = auth.currentUser;
+    buyer = current ? "signed_in" : "guest";
+    trackCheckoutStep("checkout_click", context(), feature);
+    failure = "auth_token";
     const idToken = current ? await current.getIdToken() : null;
+    const measurement = context();
+    failure = "network";
     const response = await fetch("/api/stripe/checkout", {
       method: "POST",
       headers: {
@@ -38,25 +49,32 @@ export async function startCheckout(opts: {
         ...checkoutAttribution(),
         ...(opts.returnPath ? { returnPath: opts.returnPath } : {}),
         location: opts.location,
+        ...(measurement && { checkoutDevice: measurement.checkout_device, checkoutItem: measurement.checkout_item }),
         paywallVariant: paywallVariantForCheckout(),
         paywallHit: paywallHitForCheckout(),
         paywallReturn: paywallReturnForCheckout(),
       }),
     });
+    failure = response.ok ? "invalid_response" : checkoutHttpFailure(response.status);
     const data = await response.json();
-    if (data.error) {
-      console.error("Checkout error:", data.error);
-      alert(`Error: ${data.error}`);
+    if (!response.ok || data?.error) {
+      trackCheckoutStep("checkout_error", context(), feature, failure);
+      console.error("Checkout error:", data?.error);
+      alert(data?.error ? `Error: ${data.error}` : "Failed to start checkout. Please try again.");
       return;
     }
-    if (data.checkoutUrl) {
-      trackBeginCheckout(opts.feature ?? opts.location);
+    if (typeof data?.checkoutUrl === "string" && data.checkoutUrl) {
+      trackCheckoutStep("begin_checkout", context(), feature);
+      failure = "redirect";
       window.location.href = data.checkoutUrl;
     } else {
+      trackCheckoutStep("checkout_error", context(), feature, "invalid_response");
       console.error("No checkout URL returned:", data);
       alert("Failed to start checkout. Please try again.");
     }
   } catch (error) {
+    if (failure === "auth_restore") trackCheckoutStep("checkout_click", context(), feature);
+    trackCheckoutStep("checkout_error", context(), feature, failure);
     console.error("Checkout error:", error);
     alert("Failed to start checkout. Please check your connection and try again.");
   }

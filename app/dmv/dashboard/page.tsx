@@ -12,6 +12,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ChevronRight, CheckCircle, Lock } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { noteLandingTryPurchase } from "@/lib/landingTryTest";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
 import { useAuth } from "@/contexts/AuthContext";
@@ -23,7 +24,7 @@ import { ProgressCard, Collapse } from "@/components/dashboard/ProgressCard";
 import { DmvStatePrompt, DmvStateLine, useSuggestedState } from "@/components/dashboard/DmvStatePicker";
 import { useDmvTestLanguage } from "@/hooks/useTestLanguage";
 import { useTranslation } from "@/contexts/LanguageContext";
-import { trackPaywallDismissed, trackPaywallHit, trackPurchase, trackStateSelected, trackViewItem } from "@/lib/analytics";
+import { trackPaywallDismissed, trackPaywallHit, trackStateSelected, trackViewItem } from "@/lib/analytics";
 import { ClassBanner } from "@/components/exam/ClassBanner";
 import { ClassMissRecovery } from "@/components/exam/ClassMissRecovery";
 import { useTrackDashboardView } from "@/hooks/useTrackDashboardView";
@@ -85,6 +86,7 @@ function DashboardContent() {
 
   // Paywall state
   const [paywallOpen, setPaywallOpen] = useState(false);
+  const [paywallItem, setPaywallItem] = useState<string>();
   const [paywallFeature, setPaywallFeature] = useState<"training_set_4" | "practice_test_4" | "full_stats">("training_set_4");
   const [showPurchaseSuccess, setShowPurchaseSuccess] = useState(false);
   const schoolJoinedSlug = searchParams.get("school_joined");
@@ -187,7 +189,7 @@ function DashboardContent() {
         .then((data) => {
           if (!data) return;
           if (data.isPremium) {
-            trackPurchase(sessionId);
+            noteLandingTryPurchase();
             setPremiumStatus({
               isPremium: true,
               purchasedAt: data.purchasedAt || new Date().toISOString(),
@@ -209,7 +211,8 @@ function DashboardContent() {
   // Handle paywall click
   const handlePremiumClick = (feature: "training_set_4" | "practice_test_4", cardId: string, cardLabel: string) => {
     trackViewItem(feature);
-    trackPaywallHit(cardId, cardLabel);
+    trackPaywallHit(cardId, cardLabel, "dashboard", feature);
+    setPaywallItem(cardId);
     setPaywallFeature(feature);
     setPaywallOpen(true);
   };
@@ -229,7 +232,7 @@ function DashboardContent() {
   }, [hydrated, authLoading, user, firestoreLoaded, isPremium]);
 
   // Handle upgrade (redirect to Stripe)
-  const handleUpgrade = () => startCheckout({ location: paywallFeature });
+  const handleUpgrade = () => startCheckout({ location: paywallFeature, itemId: paywallItem });
 
   // Compute completion states
   const trainingSetComplete = (id: number) => {
@@ -326,7 +329,7 @@ function DashboardContent() {
         <PaywallModal
           open={paywallOpen}
           onOpenChange={(open) => {
-            if (!open && paywallOpen) trackPaywallDismissed();
+            if (!open && paywallOpen) trackPaywallDismissed("dashboard", paywallItem, paywallFeature);
             setPaywallOpen(open);
           }}
           feature={paywallFeature}
@@ -620,7 +623,8 @@ function DashboardContent() {
                             onClick={() => {
                               if (drillLocked) {
                                 trackViewItem("full_stats");
-                                trackPaywallHit(`drill_test_${id}`, `Test ${id} Miss Drill`);
+                                trackPaywallHit(`drill_test_${id}`, `Test ${id} Miss Drill`, "dashboard", "full_stats");
+                                setPaywallItem(`drill_test_${id}`);
                                 setPaywallFeature("full_stats");
                                 setPaywallOpen(true);
                               } else {

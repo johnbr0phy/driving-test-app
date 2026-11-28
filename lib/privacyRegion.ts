@@ -93,12 +93,12 @@ export function defaultEmailConsent(): boolean {
 }
 
 /** In a teacher's class or a named quiz on this browser (lib/classProgress.ts storage). */
-export function inClassOnThisBrowser(): boolean {
+export function inClassOnThisBrowser(blockIfUnknown = false): boolean {
   try {
     const list = JSON.parse(localStorage.getItem("tigertest-classes") ?? "[]");
-    return Array.isArray(list) && list.length > 0;
+    return Array.isArray(list) ? list.length > 0 : blockIfUnknown;
   } catch {
-    return false;
+    return blockIfUnknown;
   }
 }
 
@@ -118,10 +118,10 @@ var ok=!kids&&!cls&&ch!=='denied'&&(strict===false||(strict===true&&ch==='grante
 window[k]=!ok;}catch(e){window[k]=true}})();`;
 
 /** Same rule as ANALYTICS_INIT_SCRIPT, for the client component. */
-export function analyticsAllowed(path: string): boolean {
+export function analyticsAllowed(path: string, requireKnownClassState = false): boolean {
   const cc = visitorCountryCookie();
   if (!cc) return false;
-  if (isChildPath(path) || inClassOnThisBrowser()) return false;
+  if (isChildPath(path) || inClassOnThisBrowser(requireKnownClassState)) return false;
   const choice = consentChoice();
   if (choice === "denied") return false;
   return COOKIE_CONSENT_COUNTRIES.includes(cc) ? choice === "granted" : true;

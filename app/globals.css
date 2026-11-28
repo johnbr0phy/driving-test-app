@@ -15421,11 +15421,20 @@ html.sam-on footer:not(main footer) { position: relative; z-index: 1; }
    answer" chip, a tighter subtitle, the card pulled up and, on phones, the
    landing's H1 (written in each page, so styled from here) and top padding
    shrunk so all the options sit above the fold. */
-html[data-ltq="b"] .landing-try-start,
+.landing-resume-label,
+[data-try-first][data-resume] ~ .landing-try-start .landing-start-label,
+[data-try-first][data-resume] ~ .try-card {
+  display: none;
+}
+[data-try-first][data-resume] ~ .landing-try-start .landing-resume-label {
+  display: inline;
+}
+
+html[data-ltq="b"] [data-try-first]:not([data-resume]) ~ .landing-try-start,
 html[data-ltq="b"] .try-hint {
   display: none;
 }
-html[data-ltq="b"] .try-sub {
+html[data-ltq="b"] [data-try-first]:not([data-resume]) ~ .try-sub {
   font-size: 1rem;
   line-height: 1.5rem;
   margin-bottom: 0;
@@ -15434,11 +15443,11 @@ html[data-ltq="b"] .try-card {
   margin-top: 1.5rem;
 }
 @media (min-width: 768px) {
-  html[data-ltq="b"] .try-sub { font-size: 1.125rem; line-height: 1.75rem; }
+  html[data-ltq="b"] [data-try-first]:not([data-resume]) ~ .try-sub { font-size: 1.125rem; line-height: 1.75rem; }
 }
 @media (max-width: 639px) {
-  html[data-ltq="b"] div:has(> [data-try-first]) { padding-top: 1.75rem; }
-  html[data-ltq="b"] div:has(> [data-try-first]) > h1 { font-size: 1.75rem; line-height: 2.15rem; margin-bottom: 0.75rem; }
+  html[data-ltq="b"] div:has(> [data-try-first]:not([data-resume])) { padding-top: 1.75rem; }
+  html[data-ltq="b"] div:has(> [data-try-first]:not([data-resume])) > h1 { font-size: 1.75rem; line-height: 2.15rem; margin-bottom: 0.75rem; }
 }
 
 /* /admin: a table's header row while it is pinned under the tab bar

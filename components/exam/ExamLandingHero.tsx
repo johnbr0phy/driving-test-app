@@ -38,5 +38,5 @@ export function ExamLandingHero({
         ) : undefined,
       }
     : undefined;
-  return <ExamLandingHeroClient {...props} tryQuestion={q} tryRich={rich} />;
+  return <ExamLandingHeroClient key={props.dashboardHref} {...props} tryQuestion={q} tryRich={rich} />;
 }

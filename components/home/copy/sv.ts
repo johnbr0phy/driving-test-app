@@ -55,7 +55,7 @@ export const sv: HomeCopy = {
     },
     {
       q: "Är Tigertest gratis?",
-      a: "Alla prov är gratis att börja med, utan konto. Ett valfritt engångsköp av Premium (ingen prenumeration) låser upp andra halvan av övningsseten och övningsproven i de flesta prov (de två sista av varje för DMV) och fullständig statistik för alla prov.",
+      a: "Alla prov är gratis att börja med, utan konto, och de flesta prov har 100 eller fler gratisfrågor. Ett valfritt engångsköp av Premium (ingen prenumeration) låser upp resten av frågorna och övningsproven (de två sista av varje för DMV) och fullständig statistik för alla prov.",
     },
     {
       q: "Behöver jag ett konto?",
@@ -87,7 +87,7 @@ export const sv: HomeCopy = {
           ? `Tigertest är en gratis sajt med övningsprov. I ${inName} finns certifieringar som är likadana överallt, som CompTIA och AWS. Vid varje fråga förklaras det rätta svaret.`
           : `Tigertest är en gratis sajt med övningsprov. I ${inName} finns ${local === 1 ? "ett körkortsprov" : `${local} körkortsprov`} skrivna utifrån ${local === 1 ? "de officiella reglerna" : "de officiella handböckerna"}, plus certifieringar som är likadana överallt, som CompTIA och AWS. Vid varje fråga förklaras det rätta svaret.`,
     },
-    { q: "Är Tigertest gratis?", a: `Alla prov i ${inName} är gratis att börja med, utan konto och utan prenumeration. Ett valfritt engångsköp av Premium låser upp andra halvan av övningsseten och övningsproven i de flesta prov, samt fullständig statistik.` },
+    { q: "Är Tigertest gratis?", a: `Alla prov i ${inName} är gratis att börja med, utan konto och utan prenumeration. Ett valfritt engångsköp av Premium låser upp resten av varje provs frågor och övningsprov, samt fullständig statistik.` },
     {
       q: "Behöver jag ett konto?",
       a: "Nej. Du kan starta vilket prov som helst utan att logga in. Skapa ett gratis konto om du vill spara dina framsteg på alla dina enheter.",

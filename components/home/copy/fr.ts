@@ -53,7 +53,7 @@ export const fr: HomeCopy = {
     },
     {
       q: "Tigertest est-il gratuit ?",
-      a: "Tous les tests se commencent gratuitement, sans compte. Un achat Premium facultatif et unique de 9,99 $ (pas un abonnement) débloque la seconde moitié des séries d'entraînement et des tests d'entraînement de la plupart des examens (les deux derniers de chaque pour le DMV) et les statistiques complètes de chaque examen.",
+      a: "Tous les tests se commencent gratuitement, sans compte, et la plupart des examens ont 100 questions gratuites ou plus. Un achat Premium facultatif et unique de 9,99 $ (pas un abonnement) débloque le reste des questions et des tests d'entraînement (les deux derniers de chaque pour le DMV) et les statistiques complètes de chaque examen.",
     },
     {
       q: "Faut-il un compte ?",
@@ -85,7 +85,7 @@ export const fr: HomeCopy = {
           ? `Tigertest est un site gratuit de tests d'entraînement. Pour ${inName}, il propose des certifications identiques partout, comme CompTIA et AWS. Chaque question explique la bonne réponse.`
           : `Tigertest est un site gratuit de tests d'entraînement. Pour ${inName}, il propose ${local === 1 ? "un test de code de la route rédigé à partir des règles officielles" : `${local} tests de code de la route rédigés à partir des manuels officiels`}, plus des certifications identiques partout, comme CompTIA et AWS. Chaque question explique la bonne réponse.`,
     },
-    { q: "Tigertest est-il gratuit ?", a: `Tous les tests pour ${inName} se commencent gratuitement, sans compte et sans abonnement. Un achat Premium facultatif et unique débloque la seconde moitié des séries d'entraînement et des tests d'entraînement de la plupart des examens, ainsi que les statistiques complètes.` },
+    { q: "Tigertest est-il gratuit ?", a: `Tous les tests pour ${inName} se commencent gratuitement, sans compte et sans abonnement. Un achat Premium facultatif et unique débloque le reste des questions et des tests d'entraînement de chaque examen, ainsi que les statistiques complètes.` },
     {
       q: "Faut-il un compte ?",
       a: "Non. Vous pouvez commencer n'importe quel test sans vous inscrire. Créez un compte gratuit si vous voulez retrouver votre progression sur tous vos appareils.",

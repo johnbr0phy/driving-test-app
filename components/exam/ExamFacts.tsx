@@ -3,6 +3,7 @@ import { practiceLabel } from "@/lib/practiceLabel";
 import { EXAM_COSTS_CHECKED, EXAM_FACTS, examCostRows } from "@/lib/examFacts";
 import { landingUpdatedAt } from "@/lib/landingDates";
 import { getCatalogEntry } from "@/lib/testCatalog";
+import { examFreeCounts, freeCountsSentence } from "@/lib/examFreeCounts";
 import { ORGANIZATION_ID } from "@/lib/siteSchema";
 import { isRegion, regionInfo, regionOfTest } from "@/lib/region";
 import { SITE_URL } from "@/lib/siteUrl";
@@ -37,11 +38,14 @@ export function ExamFacts({ examId }: { examId: string }) {
   const costRows = examCostRows(examId);
   const url = `${siteUrl}${test.href}`;
   const locale = factsLocale(examId);
-  const tigertest =
+  // A v1 exam with Premium steps says exactly what is free (lib/examFreeCounts.ts).
+  const counts = test.pricing ? examFreeCounts(examId) : null;
+  const base =
     facts.tigertest ??
     `Tigertest has ${test.questions.toLocaleString("en-US")} ${practiceLabel(test.shortName)} practice questions with explanations${
-      test.pricing ? ", free to start with no account required" : ", all free with no account required"
+      counts ? "" : test.pricing ? ", free to start with no account required" : ", all free with no account required"
     }.`;
+  const tigertest = counts ? `${base} ${freeCountsSentence(counts)}` : base;
 
   const jsonLd = {
     "@context": "https://schema.org",

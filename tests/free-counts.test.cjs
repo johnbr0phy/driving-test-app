@@ -6,6 +6,7 @@ const { readFileSync } = require('node:fs');
 require('tsx/cjs');
 
 const { EXAMS } = require('../lib/exams.ts');
+const { lockedTestIds, lockedTrainingParts } = require('../lib/examLocks.ts');
 const { PREMIUM_V2_IDS } = require('../lib/v2/registry.ts');
 const { examFreeCounts, freeCountsSentence, DMV_FREE_COUNTS } = require('../lib/examFreeCounts.ts');
 
@@ -46,4 +47,17 @@ test('the facts sentence says what is free and what Premium adds', () => {
     freeCountsSentence({ questions: 100, freeQuestions: 50, tests: 1, freeTests: 1 }),
     '50 questions and 1 practice test are free with no account; Premium adds the other 50 questions.',
   );
+});
+
+test('the CRCST landing offer matches the dashboard locks', () => {
+  const exam = EXAMS.find((e) => e.id === 'crcst');
+  const landing = readFileSync('app/crcst-practice-test/page.tsx', 'utf8');
+  const paidSets = lockedTrainingParts(exam).map((p) => p.set.setNumber);
+  const paidTests = lockedTestIds(exam).map((id) => id - exam.idBase);
+  const testSize = exam.questionsPerTest;
+  assert.ok(landing.includes(`free ${testSize}-question CRCST practice test`));
+  assert.deepEqual(paidSets, [4, 5]);
+  assert.deepEqual(paidTests, [2, 3, 4]);
+  assert.match(landing, /Training Sets 1 to 3 are also free/);
+  assert.match(landing, /Practice Tests 2 to 4 and Training Sets 4 and 5/);
 });

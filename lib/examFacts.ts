@@ -2830,15 +2830,16 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
   },
   crcst: {
     answer:
-      "The HSPA CRCST exam has 150 multiple-choice questions in 3 hours, 140 scored, and a scaled score of 70 passes. Decontamination, preparation and packaging, and sterilization are 21% each. The CBSPD CSPDT exam covers the same material.",
+      "The HSPA Certified Registered Central Service Technician (CRCST) exam has 150 multiple-choice questions in three hours. HSPA scores 125 questions and uses the other 25 as unscored pretest items. Cleaning and decontamination, preparation and packaging, and sterilization each account for 21% of the exam.",
     rows: [
-      { label: "Questions", value: "150 (140 scored)" },
+      { label: "Questions", value: "150 multiple choice (125 scored, 25 unscored)" },
       { label: "Time", value: "3 hours" },
-      { label: "Passing score", value: "Scaled 70 of 100" },
-      { label: "Given by", value: "HSPA" },
+      { label: "Result", value: "Pass or fail, based on the 125 scored questions" },
+      { label: "Hands-on experience", value: "400 hours for full certification" },
+      { label: "Given by", value: "Healthcare Sterile Processing Association (HSPA)" },
     ],
-    basedOn: "the HSPA CRCST content outline (rev. November 2023)",
-    source: { name: "HSPA", url: "https://myhspa.org" },
+    basedOn: "the HSPA CRCST exam content outline (November 2023)",
+    source: { name: "HSPA", url: "https://myhspa.org/certification/certification-overview/certified-registered-central-service-technician-crcst/" },
   },
   uksia: {
     answer:

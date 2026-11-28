@@ -55,11 +55,17 @@ export const APLUS: ExamV2Config = {
     aplusSwTroubleshooting: "Software Troubleshooting",
     aplusOperational: "Operational Procedures",
   },
+  preserveSplitDrillAccess: true,
   drills: [
-    { key: "c1-devices", name: "Core 1: Mobile, Networking and Hardware", section: "core1", domains: ["aplusMobile", "aplusNetworking", "aplusHardware"], blurb: "Ports, cables, protocols, RAM, storage and mobile devices." },
-    { key: "c1-troubleshooting", name: "Core 1: Cloud and Troubleshooting", section: "core1", domains: ["aplusVirtCloud", "aplusHwTroubleshooting"], blurb: "Virtualization, cloud models and the troubleshooting method." },
-    { key: "c2-os-security", name: "Core 2: Operating Systems and Security", section: "core2", domains: ["aplusOS", "aplusSecurity"], blurb: "Windows, macOS and Linux tools, plus security settings and threats." },
+    // Keep the first four practice URLs on their original topics. Each new
+    // drill inherits only the questions it covers from its former drill.
+    { key: "c1-hardware", legacyKey: "c1-devices", name: "Core 1: Hardware and Mobile Devices", section: "core1", domains: ["aplusMobile", "aplusHardware"], blurb: "Mobile devices, ports, memory, storage and other PC components." },
+    { key: "c1-hw-troubleshooting", legacyKey: "c1-troubleshooting", name: "Core 1: Hardware and Network Troubleshooting", section: "core1", domains: ["aplusHwTroubleshooting"], blurb: "Diagnose hardware faults and connectivity problems." },
+    { key: "c2-os", legacyKey: "c2-os-security", name: "Core 2: Operating Systems", section: "core2", domains: ["aplusOS"], blurb: "Install, configure and manage operating systems." },
     { key: "c2-procedures", name: "Core 2: Software and Procedures", section: "core2", domains: ["aplusSwTroubleshooting", "aplusOperational"], blurb: "Software fixes, malware removal, documentation and safety." },
+    { key: "c1-networking", legacyKey: "c1-devices", name: "Core 1: Networking", section: "core1", domains: ["aplusNetworking"], blurb: "Network hardware, protocols, connections and services." },
+    { key: "c1-cloud", legacyKey: "c1-troubleshooting", name: "Core 1: Virtualization and Cloud", section: "core1", domains: ["aplusVirtCloud"], blurb: "Virtual machines, cloud services and deployment models." },
+    { key: "c2-security", legacyKey: "c2-os-security", name: "Core 2: Security", section: "core2", domains: ["aplusSecurity"], blurb: "Threats, authentication and security controls for devices and networks." },
   ],
   composite: { name: "Percent correct", min: 0, max: 100, combine: overallPercent },
   defaultGoal: 80,

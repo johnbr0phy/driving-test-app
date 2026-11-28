@@ -21,7 +21,7 @@ import {
   getExamByStateCode,
   examFamilyId,
   examSetBase,
-  examTestIds,
+  examDashboardTestIds,
   examTestTotal,
   trainingPartName,
 } from "@/lib/exams";
@@ -113,7 +113,7 @@ function v1PremiumBenefits(exam: ExamConfig): string[] {
   if (exam.premiumBenefits?.length) return exam.premiumBenefits.map(esc);
   const english = !exam.language || exam.language === "en";
   const parts = lockedTrainingParts(exam);
-  const ids = examTestIds(exam);
+  const ids = examDashboardTestIds(exam);
   const tests = lockedTestIds(exam).map((id) => ids.indexOf(id) + 1).filter((n) => n > 0);
   const out: string[] = [];
   if (parts.length > 0) {
@@ -143,7 +143,7 @@ function voiceForExam(exam: ExamConfig): EmailVoice {
     testName: examTestName(exam),
     fullName: exam.fullName,
     questionsPerTest: exam.questionsPerTest,
-    testCount: exam.testCount,
+    testCount: exam.testCount + (exam.statePracticeCount ?? 0),
     stepCount: examTrainingParts(exam).length + examTestTotal(exam),
     passPct: exam.passPct,
     dashboardPath: `${exam.slug}/dashboard`,

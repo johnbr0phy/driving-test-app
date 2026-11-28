@@ -7,6 +7,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useTranslation } from "@/contexts/LanguageContext";
 import { useStore } from "@/store/useStore";
 import { useV2Store } from "@/store/useV2Store";
+import { inheritedDrillState } from "@/lib/v2/training";
 import { useSound } from "@/hooks/useSound";
 import { recordClassAnswer, recordClassAnswerById } from "@/lib/classProgress";
 import type { LandingTryQuestion as TryQuestion } from "@/lib/landingTryQuestion";
@@ -132,7 +133,9 @@ export function LandingTryQuestion({ q, rich, lang, onAnswer }: { q: TryQuestion
     // Lets the hero hold its Start button text, so nothing above the card moves.
     onAnswer?.();
     if (q.v2) {
-      answerDrill(q.v2.drillKey, q.questionId, ok);
+      const carry = q.v2.carryOver;
+      const base = carry && inheritedDrillState(useV2Store.getState().drills[carry.legacyKey], new Set(carry.questionIds));
+      answerDrill(q.v2.drillKey, q.questionId, ok, base);
       recordClassAnswerById(q.examId, q.questionId, q.v2.domain, ok, q.v2.order[i]);
       return;
     }

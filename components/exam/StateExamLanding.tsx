@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import { ExamLandingHero, ExamLandingCTA } from "@/components/exam/ExamLandingHero";
 import { ExamSampleQuestions } from "@/components/exam/ExamSampleQuestions";
-import { ExamConfig, getExamById } from "@/lib/exams";
+import { ExamConfig, examTestLength, getExamById } from "@/lib/exams";
 import { examOffers } from "@/lib/examSeo";
 import { ORGANIZATION_ID } from "@/lib/siteSchema";
 import { STATE_EXAM_LANDINGS_UPDATED_AT } from "@/lib/seoDates";
@@ -33,12 +33,13 @@ function pageCopy(variant: ExamConfig) {
   const terms = FAMILY_TERMS[family];
   const state = variant.jurisdiction!.name;
   const title = `${state} ${terms.title} ${YEAR}`;
-  const lastSet = variant.trainingSets[variant.trainingSets.length - 1];
+  const lengths = Array.from({ length: variant.statePracticeCount ?? 0 }, (_, i) => String(examTestLength(variant, i + 2)));
+  const sizes = new Intl.ListFormat("en-US", { style: "long", type: "conjunction" }).format(lengths);
   const description = `${variant.questionsPerTest} ${state} ${terms.exam} practice questions with explanations, checked against ${state} law and weighted like the state exam. Free to start, no account needed.`;
   const faqs = [
     {
       q: `How many questions are in the ${state} practice exam?`,
-      a: `${variant.questionsPerTest}. They make one full-length practice exam and ${variant.trainingSets.length} training sets by content area. ${variant.copy.testsHeading.replace(/\s*·\s*/g, ": ")}.`,
+      a: `The full-length exam has ${variant.questionsPerTest} questions. The ${lengths.length} shorter practice tests split those questions into groups of ${sizes}. Each mixes national topics with ${state} law.`,
     },
     {
       q: `What score do I need on the ${state} practice exam?`,
@@ -50,7 +51,7 @@ function pageCopy(variant: ExamConfig) {
     },
     {
       q: `Is the ${state} ${terms.exam} practice free?`,
-      a: `It is free to start with no account. The full-length practice exam and most of the training are free; the last part of the training, ending with ${lastSet.name}, is part of Tigertest Premium, a one-time purchase with no subscription that also covers every other exam on Tigertest.`,
+      a: `It is free to start with no account. The first short practice test and the full-length exam are free. Tigertest Premium opens the remaining locked tests and training steps with one payment.`,
     },
     {
       q: `I am testing in another state. What should I use?`,
@@ -150,8 +151,7 @@ export function StateExamLanding({ variant, shots }: { variant: ExamConfig; shot
             The {state} {terms.exam} at a glance
           </h2>
           <p className="text-lg text-gray-700 dark:text-gray-200 mb-6">
-            Tigertest&apos;s {state} practice has {variant.questionsPerTest} questions with explanations: one full-length
-            practice exam and {variant.trainingSets.length} training sets, free to start with no account required.
+            Study national topics and {state} law in {variant.trainingSets.length} topic sets, then test yourself with the same questions.
           </p>
           {facts && (
             <dl className="border-t border-gray-200 dark:border-gray-800">

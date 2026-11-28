@@ -57,7 +57,7 @@ Write a short spec (a scratchpad file is fine) with: exam id, state code, idBase
 from the real exam, and the categories. For each category: key (camelCase, prefixed so it cannot
 collide, e.g. `forkStability`), label, per-test count and ID segment. Per-test counts sum to 50 and
 each category pool is exactly four times its per-test count, so the pool is 200. Group categories
-into 4 to 6 training sets.
+into 4 to 6 training sets. Plan at least eight completable dashboard steps per exam and per state version. Four training sets and four practice tests meet the minimum.
 
 Pick counts from the real exam's published outline (ACS, test plan, content outline). Say which
 outline and revision in a comment on the ExamConfig blueprint. For a bank-only job (a pilot, a

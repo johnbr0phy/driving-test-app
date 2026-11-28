@@ -3,7 +3,7 @@
  * other exams. DMV_ROUTES reproduces the original behaviour exactly; HTL
  * maps the same flow onto its namespaced IDs (201-204) under /htl.
  */
-import { ALL_EXAMS, ExamConfig, examTestIds, getExamById, hasTestSets, localizeExam } from "./exams";
+import { ALL_EXAMS, ExamConfig, examDashboardTestIds, examTestIds, getExamById, hasTestSets, localizeExam } from "./exams";
 import type { Language } from "@/i18n";
 import { isDrillFree as isDmvDrillFree } from "./missedQuestions";
 
@@ -27,10 +27,14 @@ export interface ExamRoutes {
    *  the DMV state picker and auth returns to the exam dashboard. */
   signup: string;
   login: string;
-  /** Store IDs of the practice tests, in order. */
+  /** Store IDs in URL order: element 0 is /test/1. */
   testIds: number[];
+  /** Store IDs in the order learners encounter the tests on the dashboard. */
+  dashboardTestIds: number[];
   /** Human-facing test number (DMV: the ID itself; HTL: ID - 200). */
   displayTestNumber: (testId: number) => number;
+  /** State forms keep legacy URL numbers and have separate learner-facing titles. */
+  stateTestLabel?: (testId: number) => string;
   isTestLocked: (testId: number, isPremium: boolean) => boolean;
   isDrillFree: (testId: number) => boolean;
   /** Pseudo state code sessions are stored under. */
@@ -54,6 +58,7 @@ export const DMV_ROUTES: ExamRoutes = {
   signup: "/signup",
   login: "/login",
   testIds: [1, 2, 3, 4],
+  dashboardTestIds: [1, 2, 3, 4],
   displayTestNumber: (id) => id,
   isTestLocked: (id, isPremium) => id === 4 && !isPremium,
   isDrillFree: isDmvDrillFree,
@@ -79,7 +84,11 @@ export function routesForExam(exam: ExamConfig, lang: Language = "en"): ExamRout
     signup: `/signup?redirect=${base}/dashboard`,
     login: `/login?redirect=${base}/dashboard`,
     testIds: examTestIds(exam),
+    dashboardTestIds: examDashboardTestIds(exam),
     displayTestNumber: (id) => id - exam.idBase,
+    stateTestLabel: exam.statePracticeCount
+      ? (id) => id === exam.idBase + 1 ? "Full-length exam" : `Practice test ${id - exam.idBase - 1}`
+      : undefined,
     isTestLocked: () => false,
     isDrillFree: () => true,
     stateFilter: () => exam.stateCode,

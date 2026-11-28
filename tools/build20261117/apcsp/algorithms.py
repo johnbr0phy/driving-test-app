@@ -151,7 +151,7 @@ ITEMS = [('After x <- 7; y <- x; x <- 12, what is y?',
  ('A minimum-finding procedure must handle any nonempty numeric list, including lists with only negative values. Which initialization '
   'fits?',
   ['First item in the list', 'Zero', 'Large value such as 1000', 'Length of the list'],
-  'Starting with an actual item gives a valid candidate whatever the values are. Zero fails for an all-negative list, and 1000 fails if '
+  'Starting with an actual item gives a valid candidate whatever the values are. With [3, 5], an initial zero would remain zero. An initial 1000 also fails if '
   'every value is larger.'),
  ('A program will add each item to a running sum and must give the correct total for an empty list. Which initialization fits?',
   ['Zero', 'One', 'First list item', 'Number of items'],
@@ -214,3 +214,12 @@ ITEMS = [('After x <- 7; y <- x; x <- 12, what is y?',
   ['3', '8', '9', '15'],
   'Three satisfies the size condition; eight satisfies the nondivisibility condition. Nine and fifteen fail both parts.',
   2)]
+
+# Stable question numbers whose central operation is taught by a Basics lesson.
+BASICS = {
+    "apcspAssignment": [1, 2, 19, 20],
+    "apcspConditions": [5, 6, 7, 8, 9, 22, 23, 24, 25, 41, 61, 62],
+    "apcspArithmetic": [3, 4, 21, 63, 64],
+    "apcspLoops": [10, 11, 12, 13, 26, 27, 28, 29],
+    "apcspListIndices": [14, 30, 59, 60],
+}

@@ -30,10 +30,31 @@ export function generateExamTest(exam: ExamConfig, testNumber: number, language?
   return shuffle(examTestQuestions(exam, testNumber, language));
 }
 
+/** The reviewed CA/NJ real estate handoff uses RE-CA-... / RE-NJ-...
+ * for local law. Other state builders retain the state's own ID for local
+ * items and the national source ID for shared items, including overrides. */
+function stateLawQuestion(q: Question): boolean {
+  return q.sourceQuestionId === q.questionId || !!q.sourceQuestionId?.startsWith(`RE-${q.state}-`);
+}
+
+/** Deal each source and topic across the short forms. Keeping the deal
+ * running across groups balances each form's length and share of state law. */
+function statePracticeQuestions(exam: ExamConfig, index: number, count: number, language?: Language): Question[] {
+  const bank = [...getExamQuestions(exam.id, language)].sort((a, b) =>
+    Number(stateLawQuestion(a)) - Number(stateLawQuestion(b)) ||
+    a.category.localeCompare(b.category) ||
+    a.questionId.localeCompare(b.questionId)
+  );
+  return bank.filter((_, i) => i % count === index);
+}
+
 /** Practice test N's fixed questions, unshuffled (blueprint order). */
 export function examTestQuestions(exam: ExamConfig, testNumber: number, language?: Language): Question[] {
   if (testNumber < 1 || testNumber > examTestTotal(exam)) {
     throw new Error(`Test number must be between 1 and ${examTestTotal(exam)}`);
+  }
+  if (exam.statePracticeCount && testNumber > exam.testCount) {
+    return statePracticeQuestions(exam, testNumber - exam.testCount - 1, exam.statePracticeCount, language);
   }
   if (isMockTest(exam, testNumber)) return mockQuestions(exam, testNumber - exam.testCount, language);
   const questions: Question[] = [];

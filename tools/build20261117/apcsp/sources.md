@@ -31,3 +31,8 @@ August 2025 correction affects AP introductory front matter, not the subject fra
 College Board, CSP Redesign, fetched 2026-11-17.
 https://apcentral.collegeboard.org/courses/ap-computer-science-principles/redesign
 Explicitly says the fall 2027 redesign does not affect 2026–27. Finalized CED due spring 2027. A 2027-04-01 editorial review reminder is recorded in examFreshness; that reminder is not an official effective date.
+
+## Algorithms Basics
+College Board, AP Computer Science Principles Exam Reference Information, fetched 2026-11-28.
+https://apcentral.collegeboard.org/media/pdf/ap-computer-science-principles-exam-reference-sheet.pdf
+The reference sheet supplies assignment, comparisons and Boolean logic, arithmetic and MOD, loop semantics and one-based list operations on pages 1 to 4. The worked examples, walkthroughs and practice questions are original.

@@ -1,10 +1,40 @@
-import { DrillDef, DrillState, ExamV2Config, QuestionV2 } from "./types";
+import { DrillDef, DrillState, ExamV2Config, QuestionV2, TestResultV2 } from "./types";
 
 export const EMPTY_DRILL: DrillState = { masteredIds: [], wrongQueue: [], seen: 0, correct: 0 };
 
 /** Test numbers whose items are kept out of every drill. */
 export function heldOutTests(exam: ExamV2Config): number[] {
   return exam.tests.filter((t) => t.heldOut).map((t) => t.number);
+}
+
+/** Whether this question belongs to a drill's topic, regardless of its test. */
+export function drillCoversQuestion(drill: DrillDef, q: QuestionV2): boolean {
+  if (q.section !== drill.section || !drill.domains.includes(q.domain)) return false;
+  const filter = drill.skillFilter;
+  if (!filter) return true;
+  return "include" in filter ? filter.include.includes(q.skill ?? "") : !filter.exclude.includes(q.skill ?? "");
+}
+
+/** Choose a drill for the weakest domain, using misses to distinguish split topics. */
+export function drillForResultDomain(
+  exam: ExamV2Config,
+  section: string,
+  domain: string,
+  items: TestResultV2["items"],
+  byId: ReadonlyMap<string, QuestionV2>,
+): DrillDef | undefined {
+  const candidates = exam.drills.filter((drill) => drill.section === section && drill.domains.includes(domain));
+  if (candidates.length <= 1) return candidates[0];
+
+  const missed = items.filter((item) => !item.correct && item.section === section && item.domain === domain);
+  const scores = candidates.map((drill) => ({
+    drill,
+    misses: missed.filter((item) => {
+      const question = byId.get(item.id);
+      return question && drillCoversQuestion(drill, question);
+    }).length,
+  }));
+  return scores.filter((score) => score.misses > 0).sort((a, b) => b.misses - a.misses)[0]?.drill;
 }
 
 /**
@@ -20,7 +50,7 @@ export function heldOutTests(exam: ExamV2Config): number[] {
 export function drillQuestions(bank: QuestionV2[], drill: DrillDef, exam: ExamV2Config): QuestionV2[] {
   const heldOut = heldOutTests(exam);
   const pool = bank
-    .filter((q) => q.section === drill.section && drill.domains.includes(q.domain) && !heldOut.includes(q.test))
+    .filter((q) => drillCoversQuestion(drill, q) && !heldOut.includes(q.test))
     .sort((a, b) => a.difficulty - b.difficulty || a.id.localeCompare(b.id));
   const size = drill.size ?? exam.drillSize;
   if (!size || pool.length <= size) return pool;
@@ -62,8 +92,12 @@ export function drillStateFor(
   const own = drills[drillKey(examId, drill.key)];
   if (own || !drill.legacyKey) return own ?? EMPTY_DRILL;
   const legacy = drills[drillKey(examId, drill.legacyKey)];
+  return inheritedDrillState(legacy, new Set(questions.map(q => q.id)));
+}
+
+/** The share of a retired drill that seeds a replacement on its first answer. */
+export function inheritedDrillState(legacy: DrillState | undefined, ids: ReadonlySet<string>): DrillState {
   if (!legacy) return EMPTY_DRILL;
-  const ids = new Set(questions.map((q) => q.id));
   const masteredIds = legacy.masteredIds.filter((id) => ids.has(id));
   const wrongQueue = legacy.wrongQueue.filter((id) => ids.has(id));
   if (masteredIds.length === 0 && wrongQueue.length === 0) return EMPTY_DRILL;

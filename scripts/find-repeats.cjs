@@ -4,6 +4,7 @@ require('tsx/cjs');
 require('../lib/server/mcpV2Practice.ts'); // registers every v2 bank
 const { EXAMS_V2 } = require('../lib/v2/registry.ts');
 const { getBank } = require('../lib/v2/bank.ts');
+const { drillCoversQuestion } = require('../lib/v2/training.ts');
 
 function norm(s) {
   return String(s ?? '').toLowerCase().replace(/[^a-z0-9À-￿]+/g, ' ').trim();
@@ -14,23 +15,16 @@ function findRepeats() {
   for (const exam of EXAMS_V2) {
     const drills = exam.drills ?? [];
     const skillDrills = {};
-    const domainDrills = {};
-    const drillBasics = {};
-    for (const d of drills) {
+    for (const d of drills)
       for (const s of d.basics ?? []) (skillDrills[s] ??= []).push(d.key);
-      for (const dom of d.domains ?? []) {
-        (domainDrills[dom] ??= []).push(d.key);
-        drillBasics[dom] = new Set([...(drillBasics[dom] ?? []), ...(d.basics ?? [])]);
-      }
-    }
     for (const [s, keys] of Object.entries(skillDrills))
       if (keys.length > 1) out.push(`${exam.id}: Basics skill ${s} opens ${keys.join(', ')}`);
-    for (const [dom, keys] of Object.entries(domainDrills))
-      if (keys.length > 1) out.push(`${exam.id}: domain ${dom} is drilled by ${keys.join(', ')}`);
-
     const seen = new Map();
     for (const q of getBank(exam.id).questions) {
-      if (q.basics && drillBasics[q.domain] && !drillBasics[q.domain].has(q.basics))
+      const matches = drills.filter(d => drillCoversQuestion(d, q));
+      if (matches.length > 1)
+        out.push(`${exam.id}: ${q.id} is drilled by ${matches.map(d => d.key).join(', ')}`);
+      if (q.basics && matches.length && !matches.some(d => d.basics?.includes(q.basics)))
         out.push(`${exam.id}: ${q.id} is tagged ${q.basics}, which its drill does not open with`);
       const key = JSON.stringify([
         norm(q.stem), norm(q.passage), q.stimulusId ?? '',

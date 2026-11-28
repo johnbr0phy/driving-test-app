@@ -1,5 +1,6 @@
 """Original engineering scenarios with explicit diagnostic evidence."""
-ITEMS=[
+
+IDENTITY = [
 ('An API rejects a signed, unexpired token with aud=inventory. The requested API expects aud=payroll, and the issuer and signature are trusted. Which correction addresses the rejection?',
  ['Obtain a token whose aud claim names payroll','Refresh the JWKS cache on the payroll API','Extend the token lifetime at the identity provider','Add the inventory scope to the payroll role'],
  'The audience claim must name the API receiving the token, so the client needs a token issued for payroll. Signature and expiry are already fine, and accepting another API\'s token would allow replay across services.'),
@@ -48,6 +49,9 @@ ITEMS=[
 ('Administrators cannot recover a failed identity service because their only administrative login depends on that same service. Which design change breaks the circular dependency?',
  ['Emergency account independent of that service','Second federation trust through the same provider','Longer admin sessions issued by the failed service','Just-in-time admin role from the failed service'],
  'Recovery access must not depend on the failed system, so an emergency account independent of it is needed and must be tightly protected. Every other option still relies on the broken service.'),
+]
+
+PLATFORMS = [
 ('A kiosk must execute only a small approved set of signed applications. The immediate requirement is to prevent other executables from starting. Which endpoint capability fits?',
  ['Allowlist that blocks every other binary','Endpoint detection and response alerting','Host firewall limiting outbound connections','Full disk encryption on the kiosk drive'],
  'An allowlist blocks any executable not approved, which is the requirement. EDR alerts after something runs, and the firewall and disk encryption do not control execution.'),
@@ -180,6 +184,9 @@ ITEMS=[
 ('Automation reports that a correction command returned success. The team must confirm both compliance and continued application operation. Which step completes the control loop?',
  ['Rescan the setting and run application health checks','Close the ticket based on the command exit code','Schedule the same correction for next week','Send the command output to the change board'],
  'Success from the command does not prove the setting is compliant or the application still works, so both must be checked. Closing on the exit code assumes the outcome.'),
+]
+
+CRYPTOGRAPHY = [
 ('A message payload must remain secret and detect unauthorized alteration under an established symmetric key. Which mechanism best addresses both needs?',
  ['AES-GCM authenticated encryption','RSA signature over the payload','HMAC-SHA-256 over the plaintext','AES-CBC encryption without a MAC'],
  'AES-GCM provides confidentiality and integrity in one operation. A signature or HMAC alone leaves the payload readable, and CBC without a MAC does not detect tampering.'),
@@ -229,4 +236,7 @@ ITEMS=[
  ['Cryptographic erase of every copy of the media key','Single overwrite pass of zeros on the drive','Deleting the files and emptying the recycle bin','Rotating the key-encryption key to a new version in the KMS'],
  'Cryptographic erase destroys the key so the ciphertext cannot be decrypted, provided every copy of the key is handled. Rotating the KEK keeps data accessible, and deleting files leaves data recoverable.'),
 ]
-assert len(ITEMS)==76
+
+ITEMS = IDENTITY + PLATFORMS + CRYPTOGRAPHY
+SKILLS = ["identityAccess"] * len(IDENTITY) + ["engineering"] * len(PLATFORMS) + ["cryptography"] * len(CRYPTOGRAPHY)
+assert len(ITEMS) == 76

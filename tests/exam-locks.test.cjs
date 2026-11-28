@@ -1,5 +1,5 @@
 // The Premium locks on v1 exams (lib/examLocks.ts): the last half of the
-// dashboard's steps (since Nov 22 2026, the DMV's shape), with a state version's single test left free, or an
+// dashboard's steps (since Nov 22 2026, the DMV's shape), with a state version's full-length test left free, or an
 // exam's own Premium content block (premiumFrom, RBT).
 const test = require('node:test');
 const assert = require('node:assert/strict');
@@ -48,13 +48,26 @@ test('a longer exam locks more: CDL locks its last ten steps', () => {
   assert.deepEqual(lockedStepNumbers(exam), [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]);
 });
 
-test('a state version locks training steps only: its one test stays free', () => {
+test('state exams preserve the full form URL and keep both it and the first practice test free', () => {
+  const { getExamRoutes, testIdFromParam } = require('../lib/examRoutes.ts');
   for (const exam of EXAM_VARIANTS) {
-    assert.deepEqual(lockedTestIds(exam), [], exam.id);
-    const parts = examTrainingParts(exam);
-    const locked = lockedTrainingParts(exam);
-    assert.ok(locked.length >= 1 && locked.length < parts.length, exam.id);
-    assert.ok(samePart(locked[locked.length - 1], parts[parts.length - 1]), exam.id);
+    const routes = getExamRoutes(exam.id);
+    const [full, first, second, third] = routes.testIds;
+    assert.deepEqual(routes.dashboardTestIds, [first, second, third, full], exam.id);
+    assert.equal(testIdFromParam(routes, '1'), full, exam.id);
+    assert.equal(testIdFromParam(routes, full), full, exam.id);
+    assert.equal(routes.results(full), `${exam.slug}/test/1/results`, exam.id);
+    for (const id of routes.dashboardTestIds) {
+      const routeNumber = routes.test(id).split('/').pop();
+      assert.equal(testIdFromParam(routes, routeNumber), id, exam.id);
+    }
+    const steps = examSteps(exam);
+    assert.deepEqual(steps.filter(s => s.kind === 'test').map(s => s.testId), routes.dashboardTestIds, exam.id);
+    const lockedTests = lockedTestIds(exam);
+    assert.ok(!lockedTests.includes(full) && !lockedTests.includes(first), exam.id);
+    const locked = lockedStepNumbers(exam);
+    assert.ok(!locked.includes(1), exam.id);
+    assert.equal(locked.length, lockedStepCount(steps.length), exam.id);
   }
 });
 

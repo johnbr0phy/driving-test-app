@@ -9,6 +9,15 @@ import { percentScale, overallPercent } from "../scales";
 // Operations 28%, Program Management and Oversight 20% (11/20/16/25/18 per test).
 const minutes = (n: number) => n * 60;
 
+const monitoringSkills = [
+  "Static code analysis", "Credentialed scanning", "Threat intelligence",
+  "False positives", "CVE identifiers", "Vulnerability prioritization",
+  "Compensating controls", "Remediation validation", "Vulnerability management",
+  "SIEM", "Tabletop exercises", "Threat hunting",
+  "Legal hold", "Chain of custody", "Log analysis",
+  "Order of volatility",
+];
+
 export const SECPLUS: ExamV2Config = {
   id: "secplus",
   slug: "/comptia-security-plus",
@@ -42,12 +51,16 @@ export const SECPLUS: ExamV2Config = {
     secOperations: "Security Operations",
     secGovernance: "Program Management and Oversight",
   },
+  preserveSplitDrillAccess: true,
   drills: [
     { key: "concepts", name: "General Security Concepts", section: "secplus", domains: ["secConcepts"], blurb: "Controls, CIA, zero trust, change management and cryptography basics." },
     { key: "threats", name: "Threats and Mitigations", section: "secplus", domains: ["secThreats"], blurb: "Threat actors, attack types, indicators and how to mitigate them." },
     { key: "architecture", name: "Security Architecture", section: "secplus", domains: ["secArchitecture"], blurb: "Cloud, network design, data protection and resilience." },
-    { key: "operations", name: "Security Operations", section: "secplus", domains: ["secOperations"], blurb: "Hardening, IAM, monitoring, incident response and forensics." },
+    { key: "operations-hardening", legacyKey: "operations", name: "System Hardening and Asset Security", section: "secplus", domains: ["secOperations"],
+      skillFilter: { exclude: monitoringSkills }, blurb: "Harden servers, wireless networks, mobile devices and applications." },
     { key: "governance", name: "Program Management", section: "secplus", domains: ["secGovernance"], blurb: "Governance, risk, third parties, compliance and audits." },
+    { key: "operations-monitoring", legacyKey: "operations", name: "Monitoring and Incident Response", section: "secplus", domains: ["secOperations"],
+      skillFilter: { include: monitoringSkills }, blurb: "Vulnerability management, security monitoring, log analysis and forensics." },
   ],
   composite: { name: "Percent correct", min: 0, max: 100, combine: overallPercent },
   defaultGoal: 85,

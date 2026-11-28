@@ -1410,13 +1410,13 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     source: { name: "ServiceNow CSA exam blueprint", url: "https://learning.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0011554" },
   },
   securityx: {
-    answer: "CompTIA SecurityX (CAS-005, formerly CASP+) assesses advanced enterprise security across governance, architecture, engineering and operations. The exam has a maximum of 90 multiple-choice and performance-based questions in 165 minutes. Tigertest provides 240 original conceptual MCQs, four drills and two 90-question tests. Interactive performance tasks are not included.",
+    answer: "CompTIA SecurityX (CAS-005, formerly CASP+) assesses advanced enterprise security across governance, architecture, engineering and operations. The exam has a maximum of 90 multiple-choice and performance-based questions in 165 minutes. Tigertest provides 240 original conceptual MCQs, six drills and two 90-question tests. Interactive performance tasks are not included.",
     rows: [
       { label: "Current outline", value: "CAS-005 V5; objectives document version 7.0" },
       { label: "Official format", value: "Maximum 90 questions; multiple-choice and performance-based" },
       { label: "Official time", value: "165 minutes" },
       { label: "Official result", value: "Pass/fail only; no scaled score" },
-      { label: "Practice coverage", value: "240 original MCQs; four drills and two 90-question tests" },
+      { label: "Practice coverage", value: "240 original MCQs; six drills and two 90-question tests" },
       { label: "Not included", value: "Interactive performance tasks and exhaustive technology coverage" },
       { label: "Practice scoring", value: "Percentage correct; 80% study goal is not an official threshold" },
       { label: "Access", value: "Free to start; later drills and Practice Test 2 require Premium" },

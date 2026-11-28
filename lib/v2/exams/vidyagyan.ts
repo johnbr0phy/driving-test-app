@@ -19,8 +19,8 @@ export const VIDYAGYAN: ExamV2Config = {
   tests: [{ number: 1, name: "Skills Test 1" }, { number: 2, name: "Skills Test 2", heldOut: true }],
   domainLabels: { vidyaEnglish: "English Language", vidyaMaths: "Mathematics", vidyaScience: "Science and General Knowledge", vidyaReasoning: "Text Reasoning" },
   drills: [
-    { key: "english", name: "English Language", section: "skills", domains: ["vidyaEnglish"], blurb: "Words in context, grammar, punctuation and original short passages." },
-    { key: "maths", name: "Mathematics", section: "skills", domains: ["vidyaMaths"], blurb: "Number operations, fractions, measurement, shapes and simple data." },
+    { key: "english", name: "English Language", section: "skills", domains: ["vidyaEnglish"], blurb: "Words in context, grammar, punctuation and original short passages.", basics: ["ks2WordClasses", "ks2WordMeaning", "ks2Inference", "verbTense"] },
+    { key: "maths", name: "Mathematics", section: "skills", domains: ["vidyaMaths"], blurb: "Number operations, fractions, measurement, shapes and simple data.", basics: ["ks2ShortDivision", "decimals", "ks2Time", "areaPerimeter"] },
     { key: "science", name: "Science and General Knowledge", section: "skills", domains: ["vidyaScience"], blurb: "Plants, water, materials, observations and community services." },
     { key: "reasoning", name: "Text Reasoning", section: "skills", domains: ["vidyaReasoning"], blurb: "Directions, order, patterns, classification and relationships in words." },
   ],
@@ -29,7 +29,7 @@ export const VIDYAGYAN: ExamV2Config = {
   goalNotes: { 50: "Build a foundation", 60: "Keep strengthening the four skill areas", 70: "A study target, not an admission cutoff", 80: "Consistent skills practice", 90: "Strong performance on these skills" },
   testLength: "60 min",
   copy: {
-    heroSubs: ["Four free drills and two English-language skills tests. Prepare Hindi separately.", "Practise one skill area at a time.", "Try the first skills test.", "Use the second test for a fresh check.", "Skills goal reached. Continue preparing the other entrance requirements."],
+    heroSubs: ["Start with English and maths Basics, then practise the four subjects and take both skills tests. Prepare Hindi separately.", "Practise one skill area at a time.", "Try the first skills test.", "Use the second test for a fresh check.", "Skills goal reached. Continue preparing the other entrance requirements."],
     sourceLine: "160 original Class 4–5 skills questions informed by VidyaGyan's latest accessible subject notice. Not affiliated with VidyaGyan or the Shiv Nadar Foundation.",
     scoreNote: "Percentage correct on this limited English-language skills practice, not a prediction of selection. VidyaGyan has preliminary and main stages; this does not reproduce either current blueprint. The timer and equal weights are Tigertest choices. Hindi, picture-only reasoning, interviews and eligibility screening are excluded. Check current official guidance with a parent or teacher.",
   },

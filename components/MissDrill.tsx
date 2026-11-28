@@ -45,6 +45,7 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
   const { data: communityData } = useCommunityStats();
 
   const testFilter = testIdFromParam(routes, searchParams.get("test"));
+  const stateTestLabel = testFilter ? routes.stateTestLabel?.(testFilter) : undefined;
   const backHref = routes.dashboard;
 
   const [fixedCount, setFixedCount] = useState(0);
@@ -121,7 +122,7 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
             />
             <div className="flex-1 min-w-0">
               <h1 className="text-lg font-bold text-gray-900 dark:text-gray-50">
-                {testFilter
+                {stateTestLabel ? `Missed questions: ${stateTestLabel}` : testFilter
                   ? t("drill.titleTest").replace("{{n}}", String(routes.displayTestNumber(testFilter)))
                   : t("drill.title")}
               </h1>
@@ -192,7 +193,7 @@ export function MissDrill({ routes }: { routes: ExamRoutes }) {
                     .replace("{{a}}", String(entry.timesMissed))
                     .replace("{{b}}", String(entry.timesSeen));
             const subtitleBits = [
-              testFilter ? null : `${t("testCard.test")} ${routes.displayTestNumber(entry.testNumber)}`,
+              testFilter ? null : routes.stateTestLabel?.(entry.testNumber) ?? `${t("testCard.test")} ${routes.displayTestNumber(entry.testNumber)}`,
               communityQ
                 ? t("results.communityAlsoMissed").replace(
                     "{{pct}}",

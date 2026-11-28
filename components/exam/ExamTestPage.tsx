@@ -31,6 +31,7 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
   const router = useRouter();
   const testId = useExamTestParam(routes, "test");
   const testNumber = routes.displayTestNumber(testId);
+  const title = routes.stateTestLabel?.(testId) ?? ui.examTestN(exam.shortName, testNumber);
   const hydrated = useHydration();
   const initialized = useRef(false);
   const { t } = useTranslation();
@@ -160,7 +161,7 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
         exam={source}
         routes={routes}
         ui={ui}
-        title={ui.examTestN(exam.shortName, testNumber)}
+        title={title}
         where="test"
         itemKey={`test_${testNumber}`}
       />
@@ -230,7 +231,7 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
     <div className="flex-1 bg-gray-50 dark:bg-gray-950">
       <FocusBar
         exitHref={routes.dashboard}
-        title={mock ? ui.mockN(testNumber - exam.testCount) : ui.examTestN(exam.shortName, testNumber)}
+        title={mock ? ui.mockN(testNumber - exam.testCount) : title}
         subtitle={`${t("questionCard.questionOf")} ${currentQuestionIndex + 1} ${t("questionCard.of")} ${questions.length}`}
         progress={Object.keys(answers).length / questions.length}
         confirmExit
@@ -263,7 +264,7 @@ export function ExamTestPage({ exam: source }: { exam: ExamConfig }) {
         {/* Progress Overview - View Only */}
         <div className="mt-8">
           <div className="text-sm font-semibold mb-3">
-            🎯 {t("progressOverviewWithTest").replace("{test}", ui.examTestN(exam.shortName, testNumber))}
+            🎯 {t("progressOverviewWithTest").replace("{test}", title)}
           </div>
           <div className="grid grid-cols-10 gap-1" aria-hidden="true">
             {questions.map((_, index) => (

@@ -17,7 +17,7 @@ export const OSSSC: ExamV2Config = {
   tests: [{ number: 1, name: "Subject Test 1" }, { number: 2, name: "Subject Test 2", heldOut: true }],
   domainLabels: { ossscMaths: "Mathematics", ossscGeneral: "Stable General Studies", ossscEnglish: "English", ossscComputer: "Computer Knowledge", ossscReasoning: "Logical Reasoning" },
   drills: [
-    { key: "maths", name: "Mathematics", section: "written", domains: ["ossscMaths"], blurb: "Percentages, ratios, work, geometry and data." },
+    { key: "maths", name: "Mathematics", section: "written", domains: ["ossscMaths"], blurb: "Percentages, ratios, work, geometry and data.", basics: ["percentChange", "ratios", "meanMedian", "rateProblems"] },
     { key: "general", name: "Stable General Studies", section: "written", domains: ["ossscGeneral"], blurb: "Selected Odisha history and geography, civics and basic science. No current affairs." },
     { key: "english", name: "English", section: "written", domains: ["ossscEnglish"], blurb: "Grammar, vocabulary and original short reading passages." },
     { key: "computer", name: "Computer Knowledge", section: "written", domains: ["ossscComputer"], blurb: "Hardware, documents, spreadsheets and digital security concepts." },
@@ -28,7 +28,7 @@ export const OSSSC: ExamV2Config = {
   goalNotes: { 50: "Build a foundation", 60: "Review weaker subjects", 70: "A study goal, not an official cutoff", 80: "Consistent subject knowledge", 90: "Strong performance on this subset" },
   testLength: "90 min",
   copy: {
-    heroSubs: ["Five subject drills and two tests. Start with Mathematics.", "Practise one subject at a time.", "Try the first subject test.", "Use the second test for a fresh check.", "Study goal reached. Prepare the excluded subjects and practical separately."],
+    heroSubs: ["Start with Mathematics Basics, then work through the five subjects and two tests.", "Practise one subject at a time.", "Try the first subject test.", "Use the second test for a fresh check.", "Study goal reached. Prepare the excluded subjects and practical separately."],
     sourceLine: "200 original questions for selected CRE-2025 written subjects. Not affiliated with OSSSC or the Government of Odisha.",
     scoreNote: "Percentage correct on an 85-question English-language subset. No Odia, current affairs or computer practical. The official full paper has 100 questions and a 0.25-mark wrong-answer penalty; this score applies neither negative marking nor normalization. Study goals are not official qualifying or selection cutoffs. This is OSSSC CRE-2025 practice, not OSSC, Odisha Police or CRE-2025(II).",
   },

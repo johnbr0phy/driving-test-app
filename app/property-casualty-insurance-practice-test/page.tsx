@@ -150,7 +150,7 @@ const jsonLd = {
           name: "Does this cover my state's exam?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Thirteen states have their own full-length practice with state law: California, Florida, Georgia, Illinois, Michigan, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Texas, Virginia and Washington. For other states, the 200-question bank covers the general portion shared by every state's exam; the state portion (license law, cancellation notice periods, minimum auto limits, financial responsibility rules) is separate.",
+            text: "Three shorter tests and a full-length exam cover national topics and state law in these states: California, Florida, Georgia, Illinois, Michigan, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Texas, Virginia and Washington. For other states, the 200-question bank covers the general portion shared by every state's exam; the state portion (license law, cancellation notice periods, minimum auto limits, financial responsibility rules) is separate.",
           },
         },
         {
@@ -256,7 +256,7 @@ export default function PncLandingPage() {
           State Practice: 13 States
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-2xl mx-auto mb-10">
-          Taking the exam in one of these states? Practice a full-length exam with questions checked against your state&apos;s insurance law, including state-only rules. Progress is saved separately for each state.
+          In each state, three shorter tests and a full-length exam cover national topics and state insurance law. Progress is saved separately for each state.
         </p>
         <div className="grid md:grid-cols-3 gap-6">
           {statePractice.map((s) => (
@@ -377,7 +377,7 @@ export default function PncLandingPage() {
           <div>
             <h3 className="font-semibold text-lg text-gray-900 dark:text-gray-50 mb-2">Does this cover my state&apos;s exam?</h3>
             <p className="text-gray-600 dark:text-gray-300">
-              Thirteen states have their own full-length practice with state law: California, Florida, Georgia, Illinois, Michigan, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Texas, Virginia and Washington. For other states, the 200-question bank covers the general portion shared by every state&apos;s exam; the state portion (license law, cancellation notice periods, minimum auto limits, financial responsibility rules) is separate.
+              Three shorter tests and a full-length exam cover national topics and state law in these states: California, Florida, Georgia, Illinois, Michigan, New Jersey, New York, North Carolina, Ohio, Pennsylvania, Texas, Virginia and Washington. For other states, the 200-question bank covers the general portion shared by every state&apos;s exam; the state portion (license law, cancellation notice periods, minimum auto limits, financial responsibility rules) is separate.
             </p>
           </div>
           <div>

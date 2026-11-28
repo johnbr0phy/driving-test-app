@@ -2,7 +2,7 @@ require('tsx/cjs');
 const { test } = require('node:test');
 const assert = require('node:assert/strict');
 const { applyLegacyIdMoves, applyLegacySetMoves } = require('../lib/legacyIdMoves.ts');
-const { ALL_EXAMS, examSetBase, getExamById, getExamForTestId, getExamForSetId } = require('../lib/exams.ts');
+const { ALL_EXAMS, examSetBase, examTestTotal, getExamById, getExamForTestId, getExamForSetId } = require('../lib/exams.ts');
 const { answerCatalogPractice, nextCatalogPractice, catalogProgress } = require('../lib/server/mcpCatalogPractice.ts');
 
 const q = (id) => ({ questionId: id });
@@ -22,7 +22,7 @@ test('no two exams share a test or set id, a question prefix or a state code', (
   for (const kind of ['test', 'set']) {
     const ranges = ALL_EXAMS.map((e) => {
       const base = kind === 'test' ? e.idBase : examSetBase(e);
-      const n = kind === 'test' ? e.testCount : e.trainingSets.length;
+      const n = kind === 'test' ? examTestTotal(e) : e.trainingSets.length;
       return [e.id, base + 1, base + n];
     }).sort((a, b) => a[1] - b[1]);
     for (let i = 1; i < ranges.length; i++) {

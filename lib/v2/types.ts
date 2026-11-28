@@ -153,6 +153,8 @@ export interface DrillDef {
   section: string;
   domains: string[];
   blurb: string;
+  /** Select a subtopic within a domain using the bank's skill labels. */
+  skillFilter?: { include: string[] } | { exclude: string[] };
   /**
    * Basics skill ids (data/v2/basics/skills.json) this drill opens with:
    * short rule cards and one-line questions before the exam-level items.
@@ -166,6 +168,8 @@ export interface DrillDef {
 }
 
 export interface ExamV2Config {
+  /** Keep started legacy drills open after dividing them into smaller dashboard steps. */
+  preserveSplitDrillAccess?: boolean;
   id: string;
   slug: string;
   /** SEO landing page, the only URL of the exam meant to rank. */
@@ -307,6 +311,8 @@ export interface TestResultV2 {
 }
 
 export interface DrillState {
+  /** Only a question issued before a drill split was answered. The rest of this drill stays locked. */
+  pendingAttemptOnly?: true;
   masteredIds: string[];
   wrongQueue: string[];
   seen: number;

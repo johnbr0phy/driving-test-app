@@ -11,8 +11,8 @@
  * one training step always stay free:
  *
  *   Motorcycle     8 steps   Sets 3 and 4, Practice Tests 3 and 4
- *   A state version (one full-length test): its last training steps only, so
- *   its one test stays free.
+ *   A state version: the first short test and the original full-length
+ *   exam stay free. Premium covers the later eligible steps.
  *
  * A step someone already has work in stays open, class students are never
  * locked (hooks/useExamLocks.ts), and gating is client-side like the DMV's.
@@ -25,7 +25,7 @@
  * free, and Premium opens the last four steps: Training Set 4, Practice
  * Test 4, Practice Test 5 (work scenarios) and a full-length timed mock.
  */
-import { ExamConfig, TrainingPart, examTestIds, examTrainingParts } from "./exams";
+import { ExamConfig, TrainingPart, examDashboardTestIds, examTrainingParts } from "./exams";
 
 /** Share of an exam's dashboard steps that need Premium. */
 export const LOCKED_SHARE = 0.5;
@@ -78,7 +78,7 @@ function interleave(parts: TrainingPart[], testIds: number[]): ExamStepGroup[] {
  */
 export function examStepGroups(exam: ExamConfig): ExamStepGroup[] {
   const parts = examTrainingParts(exam);
-  const testIds = examTestIds(exam);
+  const testIds = examDashboardTestIds(exam);
   if (!exam.premiumFrom) return interleave(parts, testIds);
   const premiumPart = (part: TrainingPart) => inPremiumBlock(exam, { kind: "part", part });
   const premiumTest = (testId: number) => inPremiumBlock(exam, { kind: "test", testId });
@@ -100,6 +100,14 @@ export function examSteps(exam: ExamConfig): ExamStep[] {
 function lockedSteps(exam: ExamConfig, share: number): ExamStep[] {
   const steps = examSteps(exam);
   if (exam.premiumFrom) return steps.filter((s) => inPremiumBlock(exam, s));
+  if (exam.statePracticeCount) {
+    const fullLength = exam.idBase + 1;
+    const firstShort = exam.idBase + 2;
+    const eligible = steps.slice(1).filter((step) =>
+      step.kind === "part" || (step.testId !== fullLength && step.testId !== firstShort)
+    );
+    return eligible.slice(-lockedStepCount(steps.length, share));
+  }
   // A one-test exam keeps its test free and locks training steps only.
   if (exam.testCount < 2) {
     const parts = steps.filter((s) => s.kind === "part");

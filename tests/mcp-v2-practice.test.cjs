@@ -207,6 +207,65 @@ test('premium locks, own-progress grandfathering, Basics grandfathering and lega
   assert.deepEqual(learned.user().v2.drills[`${e.id}:${locked.legacyKey}`],legacy[`${e.id}:${locked.legacyKey}`]);
 }));
 
+test('a pending answer from before a topic split still resumes and grades with its issued options', async () => {
+  const e = exam('aws');
+  const target = e.drills.find(d => d.legacyKey === 'security');
+  const db = new FakeDb({subscription: {isPremium: true}});
+  const run = await start(db, e.id, target.key);
+  assert.equal(run.ok, true);
+  db.pending(e.id).drill = target.legacyKey;
+  const resumed = await start(db, e.id);
+  assert.deepEqual(resumed.data.question, run.data.question);
+  const graded = await respond(db, e.id);
+  assert.equal(graded.data.isCorrect, true);
+  assert.deepEqual(db.user().v2.drills[drillKey(e.id, target.key)].masteredIds, [run.data.question.questionId]);
+});
+
+test('a free learner can finish the issued item after a split without opening its Premium drill', async () => {
+  const e = exam('aws');
+  const drill = e.drills.find(d => d.key === 'identity');
+  const question = getBank(e.id).questions.find(q => q.id === 'AWS-D-009');
+  assert.ok(e.premium.lockedDrills.includes(drill.key));
+  const { mergeV2 } = require('../lib/v2/merge.ts');
+  const { hasDrillProgress } = require('../lib/v2/premium.ts');
+  for (const target of [undefined, 'security', 'identity']) {
+    const db = new FakeDb();
+    // The original free Security drill's first question and shuffled choices,
+    // as saved by the server before the learner had answered anything.
+    const issued = { drill: 'security', questionId: question.id, optionOrder: [2, 1, 3, 0],
+      attemptId: 'issued-before-split', servedAt: '2026-11-27T00:00:00.000Z', targeted: true };
+    db.docs.set(`mcpV2Practice/${uid}_aws`, issued);
+    assert.equal((await start(db, e.id, 'data-services')).code, 'PREMIUM_REQUIRED');
+    const resume = await start(db, e.id, target);
+    assert.equal(resume.data.question.attemptId, issued.attemptId);
+    assert.equal(resume.data.question.questionId, question.id);
+    const right = correctResponse(e.id, issued);
+    const wrong = target === 'security';
+    const answer = wrong ? [(right[0] + 1) % question.options.length] : right;
+    const graded = await respond(db, e.id, answer);
+    assert.equal(graded.data.isCorrect, !wrong);
+    assert.equal(graded.data.progress.answered, 1);
+    if (target) {
+      assert.equal(graded.data.next, null);
+      assert.equal(graded.data.complete, false);
+      assert.match(graded.data.message, /Premium/);
+    } else {
+      assert.ok(!e.premium.lockedDrills.includes(graded.data.nextProgress.drill));
+    }
+    const saved = db.user().v2.drills;
+    const key = drillKey(e.id, drill.key);
+    assert.deepEqual(wrong ? saved[key].wrongQueue : saved[key].masteredIds, [question.id]);
+    assert.equal((await answerV2Practice(uid, e.id, question.id, answer, db, issued.attemptId)).code, 'STALE_QUESTION');
+    assert.equal((await start(db, e.id, drill.key)).code, 'PREMIUM_REQUIRED');
+
+    const data = { sessions: {}, results: [], goals: {}, basics: {}, drills: saved };
+    const account = mergeV2(data, structuredClone(data));
+    assert.equal(hasDrillProgress(account.drills, {}, e, drill), false);
+    const started = { ...data, drills: { [key]: state(['other-item']) } };
+    assert.equal(hasDrillProgress(mergeV2(data, started).drills, {}, e, drill), true);
+  }
+});
+
 test('pending attempt is stable, shuffled choices grade correctly and concurrent retries count once', async () => {
   const db = new FakeDb();
   const one = await start(db,'aws'); const two = await start(db,'aws');

@@ -132,7 +132,7 @@ const QUIZ_SECTION = `## Quizzes: a practice test from your own material
 function stateExamSection(): string {
   const blocks = STATE_FAMILIES.map((family) => {
     const lines = stateVariants(family).map(
-      (v) => `- [${v.jurisdiction!.name} ${FAMILY_TERMS[family].title}](${siteUrl}${stateLandingPath(v)}): ${v.questionsPerTest} questions checked against ${v.jurisdiction!.name} law, one full-length practice exam at ${v.passPct}% to pass.`
+      (v) => `- [${v.jurisdiction!.name} ${FAMILY_TERMS[family].title}](${siteUrl}${stateLandingPath(v)}): ${v.questionsPerTest} questions checked against ${v.jurisdiction!.name} law, ${v.statePracticeCount} shorter mixed tests and a full-length practice exam at ${v.passPct}% to pass.`
     );
     return `### ${FAMILY_TERMS[family].title} by state\n\n${lines.join("\n")}`;
   });

@@ -18,7 +18,8 @@
     "correct": [
       0
     ],
-    "explanation": "Basket names an object, so it is a noun."
+    "explanation": "Basket names an object, so it is a noun.",
+    "basics": "ks2WordClasses"
   },
   {
     "id": "VIDYAGYAN-ENGLISH-002",
@@ -39,7 +40,8 @@
     "correct": [
       1
     ],
-    "explanation": "Build expresses an action, so it is a verb."
+    "explanation": "Build expresses an action, so it is a verb.",
+    "basics": "ks2WordClasses"
   },
   {
     "id": "VIDYAGYAN-ENGLISH-003",
@@ -60,7 +62,8 @@
     "correct": [
       2
     ],
-    "explanation": "Narrow describes the bridge, so it is an adjective."
+    "explanation": "Narrow describes the bridge, so it is an adjective.",
+    "basics": "ks2WordClasses"
   },
   {
     "id": "VIDYAGYAN-ENGLISH-004",
@@ -81,7 +84,8 @@
     "correct": [
       3
     ],
-    "explanation": "Quietly describes how the action was done, so it is an adverb."
+    "explanation": "Quietly describes how the action was done, so it is an adverb.",
+    "basics": "ks2WordClasses"
   },
   {
     "id": "VIDYAGYAN-ENGLISH-005",
@@ -102,7 +106,8 @@
     "correct": [
       0
     ],
-    "explanation": "Every morning describes a habit; the singular subject takes walks."
+    "explanation": "Every morning describes a habit; the singular subject takes walks.",
+    "basics": "verbTense"
   },
   {
     "id": "VIDYAGYAN-ENGLISH-006",
@@ -123,7 +128,8 @@
     "correct": [
       1
     ],
-    "explanation": "Yesterday calls for the past-tense form walked."
+    "explanation": "Yesterday calls for the past-tense form walked.",
+    "basics": "verbTense"
   },
   {
     "id": "VIDYAGYAN-ENGLISH-007",
@@ -144,7 +150,8 @@
     "correct": [
       2
     ],
-    "explanation": "Will walk expresses the planned future action."
+    "explanation": "Will walk expresses the planned future action.",
+    "basics": "verbTense"
   },
   {
     "id": "VIDYAGYAN-ENGLISH-008",
@@ -165,7 +172,8 @@
     "correct": [
       3
     ],
-    "explanation": "Is walking describes an action in progress now."
+    "explanation": "Is walking describes an action in progress now.",
+    "basics": "verbTense"
   },
   {
     "id": "VIDYAGYAN-ENGLISH-009",
@@ -438,7 +446,8 @@
     "correct": [
       0
     ],
-    "explanation": "Moving slowly to avoid a spill shows care."
+    "explanation": "Moving slowly to avoid a spill shows care.",
+    "basics": "ks2Inference"
   },
   {
     "id": "VIDYAGYAN-ENGLISH-022",
@@ -459,7 +468,8 @@
     "correct": [
       1
     ],
-    "explanation": "Yawning and wanting rest support tired."
+    "explanation": "Yawning and wanting rest support tired.",
+    "basics": "ks2Inference"
   },
   {
     "id": "VIDYAGYAN-ENGLISH-023",
@@ -480,7 +490,8 @@
     "correct": [
       2
     ],
-    "explanation": "A wide smile at happy news supports delighted."
+    "explanation": "A wide smile at happy news supports delighted.",
+    "basics": "ks2Inference"
   },
   {
     "id": "VIDYAGYAN-ENGLISH-024",
@@ -501,7 +512,8 @@
     "correct": [
       3
     ],
-    "explanation": "Not understanding the instructions supports puzzled."
+    "explanation": "Not understanding the instructions supports puzzled.",
+    "basics": "ks2Inference"
   },
   {
     "id": "VIDYAGYAN-ENGLISH-025",
@@ -543,7 +555,8 @@
     "correct": [
       1
     ],
-    "explanation": "Rough contrasts with smooth."
+    "explanation": "Rough contrasts with smooth.",
+    "basics": "ks2WordMeaning"
   },
   {
     "id": "VIDYAGYAN-ENGLISH-027",
@@ -690,7 +703,8 @@
     "correct": [
       0
     ],
-    "explanation": "Riya prepared several important details before the outing, showing careful planning."
+    "explanation": "Riya prepared several important details before the outing, showing careful planning.",
+    "basics": "ks2Inference"
   },
   {
     "id": "VIDYAGYAN-ENGLISH-034",
@@ -711,7 +725,8 @@
     "correct": [
       1
     ],
-    "explanation": "Changing the storage method solved the problem and made the task easier."
+    "explanation": "Changing the storage method solved the problem and made the task easier.",
+    "basics": "ks2Inference"
   },
   {
     "id": "VIDYAGYAN-ENGLISH-035",
@@ -732,7 +747,8 @@
     "correct": [
       2
     ],
-    "explanation": "Leela reached an incorrect conclusion before learning what had happened."
+    "explanation": "Leela reached an incorrect conclusion before learning what had happened.",
+    "basics": "ks2Inference"
   },
   {
     "id": "VIDYAGYAN-ENGLISH-036",
@@ -753,7 +769,8 @@
     "correct": [
       3
     ],
-    "explanation": "The group divided the work so that several people helped care for the garden."
+    "explanation": "The group divided the work so that several people helped care for the garden.",
+    "basics": "ks2Inference"
   },
   {
     "id": "VIDYAGYAN-ENGLISH-037",
@@ -774,7 +791,8 @@
     "correct": [
       0
     ],
-    "explanation": "She carried the vegetables in her basket, and its broken handle is why she moved them into the cloth bag; the door and the bridge were not things she carried."
+    "explanation": "She carried the vegetables in her basket, and its broken handle is why she moved them into the cloth bag; the door and the bridge were not things she carried.",
+    "basics": "ks2Inference"
   },
   {
     "id": "VIDYAGYAN-ENGLISH-038",
@@ -816,7 +834,8 @@
     "correct": [
       2
     ],
-    "explanation": "A shop making and selling bread is a bakery."
+    "explanation": "A shop making and selling bread is a bakery.",
+    "basics": "ks2Inference"
   },
   {
     "id": "VIDYAGYAN-ENGLISH-040",
@@ -837,7 +856,8 @@
     "correct": [
       3
     ],
-    "explanation": "Borrowing and returning books are services of the library."
+    "explanation": "Borrowing and returning books are services of the library.",
+    "basics": "ks2Inference"
   },
   {
     "id": "VIDYAGYAN-MATHS-001",
@@ -900,7 +920,8 @@
     "correct": [
       2
     ],
-    "explanation": "144 divided by 3 is 48."
+    "explanation": "144 divided by 3 is 48.",
+    "basics": "ks2ShortDivision"
   },
   {
     "id": "VIDYAGYAN-MATHS-004",
@@ -1047,7 +1068,8 @@
     "correct": [
       1
     ],
-    "explanation": "Eight tenths minus three tenths is five tenths, or 0.5."
+    "explanation": "Eight tenths minus three tenths is five tenths, or 0.5.",
+    "basics": "decimals"
   },
   {
     "id": "VIDYAGYAN-MATHS-011",
@@ -1068,7 +1090,8 @@
     "correct": [
       2
     ],
-    "explanation": "0.40 plus 0.35 is 0.75."
+    "explanation": "0.40 plus 0.35 is 0.75.",
+    "basics": "decimals"
   },
   {
     "id": "VIDYAGYAN-MATHS-012",
@@ -1110,7 +1133,8 @@
     "correct": [
       0
     ],
-    "explanation": "There are 15 minutes between the two times."
+    "explanation": "There are 15 minutes between the two times.",
+    "basics": "ks2Time"
   },
   {
     "id": "VIDYAGYAN-MATHS-014",
@@ -1131,7 +1155,8 @@
     "correct": [
       1
     ],
-    "explanation": "Ten minutes to noon and twenty after noon total thirty minutes."
+    "explanation": "Ten minutes to noon and twenty after noon total thirty minutes.",
+    "basics": "ks2Time"
   },
   {
     "id": "VIDYAGYAN-MATHS-015",
@@ -1152,7 +1177,8 @@
     "correct": [
       2
     ],
-    "explanation": "Three quarters of 60 is 45."
+    "explanation": "Three quarters of 60 is 45.",
+    "basics": "ks2Time"
   },
   {
     "id": "VIDYAGYAN-MATHS-016",
@@ -1173,7 +1199,8 @@
     "correct": [
       3
     ],
-    "explanation": "A complete minute-hand turn takes one hour, or 60 minutes."
+    "explanation": "A complete minute-hand turn takes one hour, or 60 minutes.",
+    "basics": "ks2Time"
   },
   {
     "id": "VIDYAGYAN-MATHS-017",
@@ -1320,7 +1347,8 @@
     "correct": [
       2
     ],
-    "explanation": "Perimeter is the boundary length."
+    "explanation": "Perimeter is the boundary length.",
+    "basics": "areaPerimeter"
   },
   {
     "id": "VIDYAGYAN-MATHS-024",
@@ -1341,7 +1369,8 @@
     "correct": [
       3
     ],
-    "explanation": "Area measures enclosed surface."
+    "explanation": "Area measures enclosed surface.",
+    "basics": "areaPerimeter"
   },
   {
     "id": "VIDYAGYAN-MATHS-025",
@@ -1362,7 +1391,8 @@
     "correct": [
       0
     ],
-    "explanation": "Multiply length by width: 6 times 3 is 18."
+    "explanation": "Multiply length by width: 6 times 3 is 18.",
+    "basics": "areaPerimeter"
   },
   {
     "id": "VIDYAGYAN-MATHS-026",
@@ -1383,7 +1413,8 @@
     "correct": [
       1
     ],
-    "explanation": "Four sides of 5 cm total 20 cm."
+    "explanation": "Four sides of 5 cm total 20 cm.",
+    "basics": "areaPerimeter"
   },
   {
     "id": "VIDYAGYAN-MATHS-027",
@@ -1404,7 +1435,8 @@
     "correct": [
       2
     ],
-    "explanation": "Twice the sum of 10 and 4 is 28."
+    "explanation": "Twice the sum of 10 and 4 is 28.",
+    "basics": "areaPerimeter"
   },
   {
     "id": "VIDYAGYAN-MATHS-028",
@@ -1488,7 +1520,8 @@
     "correct": [
       2
     ],
-    "explanation": "Nine complete groups use 45 beads and leave 2."
+    "explanation": "Nine complete groups use 45 beads and leave 2.",
+    "basics": "ks2ShortDivision"
   },
   {
     "id": "VIDYAGYAN-MATHS-032",

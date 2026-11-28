@@ -900,7 +900,8 @@
     "correct": [
       0
     ],
-    "explanation": "The narrative returns to an earlier event through flashback."
+    "explanation": "The narrative returns to an earlier event through flashback.",
+    "basics": "sequenceEvents"
   },
   {
     "id": "JAMBLIT-PROSE-014",
@@ -1152,7 +1153,8 @@
     "correct": [
       3
     ],
-    "explanation": "The underlying concern or idea explored by the work is its theme."
+    "explanation": "The underlying concern or idea explored by the work is its theme.",
+    "basics": "storyTheme"
   },
   {
     "id": "JAMBLIT-PROSE-026",
@@ -1194,7 +1196,8 @@
     "correct": [
       1
     ],
-    "explanation": "The connected sequence of actions and consequences is the plot."
+    "explanation": "The connected sequence of actions and consequences is the plot.",
+    "basics": "causeEffect"
   },
   {
     "id": "JAMBLIT-PROSE-028",
@@ -1257,7 +1260,8 @@
     "correct": [
       0
     ],
-    "explanation": "The conflicting evidence undermines the reliability of his account."
+    "explanation": "The conflicting evidence undermines the reliability of his account.",
+    "basics": "claimSupport"
   },
   {
     "id": "JAMBLIT-POETRY-001",
@@ -1908,7 +1912,8 @@
     "correct": [
       2
     ],
-    "explanation": "The danger appears to pass, and her body relaxes. Those details support quiet relief."
+    "explanation": "The danger appears to pass, and her body relaxes. Those details support quiet relief.",
+    "basics": "inference"
   },
   {
     "id": "JAMBLIT-APPRECIATION-002",
@@ -1950,7 +1955,8 @@
     "correct": [
       1
     ],
-    "explanation": "The loss is accompanied by anger and resentment, making bitter grief the strongest description."
+    "explanation": "The loss is accompanied by anger and resentment, making bitter grief the strongest description.",
+    "basics": "findingDetail"
   },
   {
     "id": "JAMBLIT-APPRECIATION-004",
@@ -1971,7 +1977,8 @@
     "correct": [
       0
     ],
-    "explanation": "His return to planting after recognising new growth shows renewed hope."
+    "explanation": "His return to planting after recognising new growth shows renewed hope.",
+    "basics": "inference"
   },
   {
     "id": "JAMBLIT-APPRECIATION-005",
@@ -1992,7 +1999,8 @@
     "correct": [
       3
     ],
-    "explanation": "Helping an injured stranger at a personal inconvenience demonstrates compassion."
+    "explanation": "Helping an injured stranger at a personal inconvenience demonstrates compassion.",
+    "basics": "inference"
   },
   {
     "id": "JAMBLIT-APPRECIATION-006",
@@ -2034,7 +2042,8 @@
     "correct": [
       2
     ],
-    "explanation": "Maintaining an established bond despite a financial incentive to leave demonstrates loyalty."
+    "explanation": "Maintaining an established bond despite a financial incentive to leave demonstrates loyalty.",
+    "basics": "inference"
   },
   {
     "id": "JAMBLIT-APPRECIATION-008",
@@ -2076,7 +2085,8 @@
     "correct": [
       1
     ],
-    "explanation": "The key evokes the lost home and its voices, representing attachment to memory."
+    "explanation": "The key evokes the lost home and its voices, representing attachment to memory.",
+    "basics": "inference"
   },
   {
     "id": "JAMBLIT-APPRECIATION-010",
@@ -2118,7 +2128,8 @@
     "correct": [
       1
     ],
-    "explanation": "The two destinations embody competing possible futures and an unresolved choice."
+    "explanation": "The two destinations embody competing possible futures and an unresolved choice.",
+    "basics": "inference"
   },
   {
     "id": "JAMBLIT-APPRECIATION-012",
@@ -2139,7 +2150,8 @@
     "correct": [
       1
     ],
-    "explanation": "The clock organises repeated daily activities, representing continuity of routine. It is new and is not linked to recollections of a lost person or place."
+    "explanation": "The clock organises repeated daily activities, representing continuity of routine. It is new and is not linked to recollections of a lost person or place.",
+    "basics": "inference"
   },
   {
     "id": "JAMBLIT-APPRECIATION-013",
@@ -2160,7 +2172,8 @@
     "correct": [
       0
     ],
-    "explanation": "The praise of her precision and the desire to emulate her express admiration."
+    "explanation": "The praise of her precision and the desire to emulate her express admiration.",
+    "basics": "toneWords"
   },
   {
     "id": "JAMBLIT-APPRECIATION-014",
@@ -2202,7 +2215,8 @@
     "correct": [
       1
     ],
-    "explanation": "The concealed smile at the harmless mistake shows amusement."
+    "explanation": "The concealed smile at the harmless mistake shows amusement.",
+    "basics": "toneWords"
   },
   {
     "id": "JAMBLIT-APPRECIATION-016",
@@ -2223,7 +2237,8 @@
     "correct": [
       3
     ],
-    "explanation": "The wish to comfort and the quiet approach show sympathy with her distress."
+    "explanation": "The wish to comfort and the quiet approach show sympathy with her distress.",
+    "basics": "toneWords"
   },
   {
     "id": "JAMBLIT-APPRECIATION-017",
@@ -2244,7 +2259,8 @@
     "correct": [
       2
     ],
-    "explanation": "The disagreement concerns preserving an inherited practice against adopting a new one."
+    "explanation": "The disagreement concerns preserving an inherited practice against adopting a new one.",
+    "basics": "findingDetail"
   },
   {
     "id": "JAMBLIT-APPRECIATION-018",
@@ -2286,7 +2302,8 @@
     "correct": [
       0
     ],
-    "explanation": "Personal loyalty conflicts with the duty to expose wrongdoing and uphold justice."
+    "explanation": "Personal loyalty conflicts with the duty to expose wrongdoing and uphold justice.",
+    "basics": "inference"
   },
   {
     "id": "JAMBLIT-APPRECIATION-020",
@@ -2328,7 +2345,8 @@
     "correct": [
       1
     ],
-    "explanation": "The door only appears usable, suggesting a promise that provides no real access."
+    "explanation": "The door only appears usable, suggesting a promise that provides no real access.",
+    "basics": "figurativeLanguage"
   },
   {
     "id": "JAMBLIT-APPRECIATION-022",
@@ -2370,7 +2388,8 @@
     "correct": [
       3
     ],
-    "explanation": "The weight, discomfort and inability to remove it suggest a burdensome obligation."
+    "explanation": "The weight, discomfort and inability to remove it suggest a burdensome obligation.",
+    "basics": "figurativeLanguage"
   },
   {
     "id": "JAMBLIT-APPRECIATION-024",
@@ -2391,7 +2410,8 @@
     "correct": [
       1
     ],
-    "explanation": "The open door and waiting light convey welcome, suggesting an invitation."
+    "explanation": "The open door and waiting light convey welcome, suggesting an invitation.",
+    "basics": "figurativeLanguage"
   },
   {
     "id": "JAMBLIT-APPRECIATION-025",
@@ -2412,7 +2432,8 @@
     "correct": [
       2
     ],
-    "explanation": "Her reduced participation and increasing distance show withdrawal without explicit hostility."
+    "explanation": "Her reduced participation and increasing distance show withdrawal without explicit hostility.",
+    "basics": "inference"
   },
   {
     "id": "JAMBLIT-APPRECIATION-026",
@@ -2454,7 +2475,8 @@
     "correct": [
       2
     ],
-    "explanation": "The continuing sense of unfairness and interpretation of success as insult show growing resentment."
+    "explanation": "The continuing sense of unfairness and interpretation of success as insult show growing resentment.",
+    "basics": "inference"
   },
   {
     "id": "JAMBLIT-APPRECIATION-028",
@@ -2475,7 +2497,8 @@
     "correct": [
       3
     ],
-    "explanation": "Acknowledgement followed by renewed communication signals reconciliation."
+    "explanation": "Acknowledgement followed by renewed communication signals reconciliation.",
+    "basics": "inference"
   },
   {
     "id": "JAMBLIT-APPRECIATION-029",

@@ -9,6 +9,7 @@ SPECS = [('creative',24,8,1),('data',40,14,2),('algorithms',64,23,3),('networks'
 bank=[]
 for domain,size,per_test,multi_per_test in SPECS:
     source=runpy.run_path(str(HERE/f'{domain}.py'))
+    basics = {n: skill for skill, numbers in source.get('BASICS', {}).items() for n in numbers}
     items=source['ITEMS']
     assert len(items)==size,(domain,len(items),size)
     passages=source.get('PASSAGE_FOR',{})
@@ -36,6 +37,8 @@ for domain,size,per_test,multi_per_test in SPECS:
           correct=sorted(order.index(j) for j in range(count)),explanation=why)
         if count==2:q['select']=2
         if i in passages:q['passage']=source['PASSAGES'][test]
+        if i + 1 in basics:
+            q['basics'] = basics[i + 1]
         bank.append(q)
     assert multi_used=={1:multi_per_test,2:multi_per_test},multi_used
 assert Counter(q['test'] for q in bank)=={1:70,2:70,0:60}
@@ -47,3 +50,6 @@ out=ROOT/'data/v2/apcsp/questions.json'
 out.parent.mkdir(parents=True,exist_ok=True)
 out.write_text(json.dumps(bank,ensure_ascii=False,indent=2)+'\n')
 print(f'Wrote {len(bank)} original CSP questions')
+
+lessons = runpy.run_path(str(HERE / 'basics.py'))['SKILLS']
+(ROOT / 'data/v2/basics/apcsp.json').write_text(json.dumps(lessons, ensure_ascii=False, indent=2) + '\n')

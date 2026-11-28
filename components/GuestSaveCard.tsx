@@ -14,7 +14,9 @@ import { getExamByStateCode, isExamQuestionId } from "@/lib/exams";
 import { defaultEmailConsent } from "@/lib/privacyRegion";
 import { useStore } from "@/store/useStore";
 import type { TestSession } from "@/types";
-import type { DrillState, TestResultV2 } from "@/lib/v2/types";
+import { getBank } from "@/lib/v2/bank";
+import { drillTotalsForExam } from "@/lib/v2/drillTotals";
+import type { DrillState, ExamV2Config, TestResultV2 } from "@/lib/v2/types";
 
 /** Answers and finished tests a signed-out visitor has on this browser for
  *  one v1 exam (a DMV state code or a registry exam's pseudo state code). */
@@ -33,10 +35,10 @@ export function v1GuestCounts(
 
 /** Answers a signed-out visitor has on this browser for one v2 exam: drill
  *  answers plus answered test items. */
-export function v2GuestAnswered(drills: Record<string, DrillState>, results: TestResultV2[], examId: string) {
+export function v2GuestAnswered(drills: Record<string, DrillState>, results: TestResultV2[], exam: ExamV2Config) {
   return (
-    Object.entries(drills).reduce((n, [k, d]) => (k.startsWith(`${examId}:`) ? n + d.seen : n), 0) +
-    results.filter((r) => r.examId === examId).reduce((n, r) => n + r.items.filter((i) => i.answer !== undefined).length, 0)
+    drillTotalsForExam(drills, exam, getBank(exam.id).questions).seen +
+    results.filter((r) => r.examId === exam.id).reduce((n, r) => n + r.items.filter((i) => i.answer !== undefined).length, 0)
   );
 }
 

@@ -1374,7 +1374,8 @@
     "correct": [
       0
     ],
-    "explanation": "Assigning x to y copies the current value 7. Later changing x does not change y."
+    "explanation": "Assigning x to y copies the current value 7. Later changing x does not change y.",
+    "basics": "apcspAssignment"
   },
   {
     "id": "APCSP-ALGORITHMS-002",
@@ -1395,7 +1396,8 @@
     "correct": [
       1
     ],
-    "explanation": "After a becomes 9, assigning a to b copies 9. A temporary variable is needed to preserve the old a for a swap."
+    "explanation": "After a becomes 9, assigning a to b copies 9. A temporary variable is needed to preserve the old a for a swap.",
+    "basics": "apcspAssignment"
   },
   {
     "id": "APCSP-ALGORITHMS-003",
@@ -1416,7 +1418,8 @@
     "correct": [
       2
     ],
-    "explanation": "MOD returns the remainder after integer division. 18 = 3 times 5 plus 3."
+    "explanation": "MOD returns the remainder after integer division. 18 = 3 times 5 plus 3.",
+    "basics": "apcspArithmetic"
   },
   {
     "id": "APCSP-ALGORITHMS-004",
@@ -1437,7 +1440,8 @@
     "correct": [
       3
     ],
-    "explanation": "Multiplication occurs before addition: 3 times 4 is 12, then 5 + 12 is 17."
+    "explanation": "Multiplication occurs before addition: 3 times 4 is 12, then 5 + 12 is 17.",
+    "basics": "apcspArithmetic"
   },
   {
     "id": "APCSP-ALGORITHMS-005",
@@ -1458,7 +1462,8 @@
     "correct": [
       0
     ],
-    "explanation": "Both bounds must hold. Sixteen is within the inclusive interval from 13 through 17."
+    "explanation": "Both bounds must hold. Sixteen is within the inclusive interval from 13 through 17.",
+    "basics": "apcspConditions"
   },
   {
     "id": "APCSP-ALGORITHMS-006",
@@ -1479,7 +1484,8 @@
     "correct": [
       1
     ],
-    "explanation": "false OR true evaluates to true. Negating it gives false, so the ordered pair is (false, true)."
+    "explanation": "false OR true evaluates to true. Negating it gives false, so the ordered pair is (false, true).",
+    "basics": "apcspConditions"
   },
   {
     "id": "APCSP-ALGORITHMS-007",
@@ -1500,7 +1506,8 @@
     "correct": [
       2
     ],
-    "explanation": "Eight exceeds three and three exceeds zero, so both parts of the conjunction hold."
+    "explanation": "Eight exceeds three and three exceeds zero, so both parts of the conjunction hold.",
+    "basics": "apcspConditions"
   },
   {
     "id": "APCSP-ALGORITHMS-008",
@@ -1521,7 +1528,8 @@
     "correct": [
       3
     ],
-    "explanation": "Both independent IF statements execute, subtracting 2 and then 3 from 10."
+    "explanation": "Both independent IF statements execute, subtracting 2 and then 3 from 10.",
+    "basics": "apcspConditions"
   },
   {
     "id": "APCSP-ALGORITHMS-009",
@@ -1542,7 +1550,8 @@
     "correct": [
       0
     ],
-    "explanation": "The condition is true, so only the first branch executes and x becomes 7."
+    "explanation": "The condition is true, so only the first branch executes and x becomes 7.",
+    "basics": "apcspConditions"
   },
   {
     "id": "APCSP-ALGORITHMS-010",
@@ -1563,7 +1572,8 @@
     "correct": [
       1
     ],
-    "explanation": "The successive values are 6, 12 and 24. Repeated doubling is not the same as multiplying the starting value by the iteration count."
+    "explanation": "The successive values are 6, 12 and 24. Repeated doubling is not the same as multiplying the starting value by the iteration count.",
+    "basics": "apcspLoops"
   },
   {
     "id": "APCSP-ALGORITHMS-011",
@@ -1584,7 +1594,8 @@
     "correct": [
       2
     ],
-    "explanation": "The sum is 4 + 1 + 6 = 11. The loop counts neither entries nor products."
+    "explanation": "The sum is 4 + 1 + 6 = 11. The loop counts neither entries nor products.",
+    "basics": "apcspLoops"
   },
   {
     "id": "APCSP-ALGORITHMS-012",
@@ -1605,7 +1616,8 @@
     "correct": [
       3
     ],
-    "explanation": "The values after updates are 3, 5, 7 and 9. At 9 the condition is false, so the loop stops."
+    "explanation": "The values after updates are 3, 5, 7 and 9. At 9 the condition is false, so the loop stops.",
+    "basics": "apcspLoops"
   },
   {
     "id": "APCSP-ALGORITHMS-013",
@@ -1626,7 +1638,8 @@
     "correct": [
       0
     ],
-    "explanation": "Only 5 and 1 are greater than zero. Zero is not positive."
+    "explanation": "Only 5 and 1 are greater than zero. Zero is not positive.",
+    "basics": "apcspLoops"
   },
   {
     "id": "APCSP-ALGORITHMS-014",
@@ -1647,7 +1660,8 @@
     "correct": [
       1
     ],
-    "explanation": "Removing the second item shifts later items left. The original third value, 33, becomes second."
+    "explanation": "Removing the second item shifts later items left. The original third value, 33, becomes second.",
+    "basics": "apcspListIndices"
   },
   {
     "id": "APCSP-ALGORITHMS-015",
@@ -1752,7 +1766,8 @@
     "correct": [
       2
     ],
-    "explanation": "temp preserves the original p, allowing the values to be exchanged."
+    "explanation": "temp preserves the original p, allowing the values to be exchanged.",
+    "basics": "apcspAssignment"
   },
   {
     "id": "APCSP-ALGORITHMS-020",
@@ -1773,7 +1788,8 @@
     "correct": [
       3
     ],
-    "explanation": "y becomes 13, and x then becomes twice y, or 26."
+    "explanation": "y becomes 13, and x then becomes twice y, or 26.",
+    "basics": "apcspAssignment"
   },
   {
     "id": "APCSP-ALGORITHMS-021",
@@ -1794,7 +1810,8 @@
     "correct": [
       0
     ],
-    "explanation": "29 MOD 6 is 5, and adding 2 gives 7."
+    "explanation": "29 MOD 6 is 5, and adding 2 gives 7.",
+    "basics": "apcspArithmetic"
   },
   {
     "id": "APCSP-ALGORITHMS-022",
@@ -1815,7 +1832,8 @@
     "correct": [
       1
     ],
-    "explanation": "OR is false only when both operands are false."
+    "explanation": "OR is false only when both operands are false.",
+    "basics": "apcspConditions"
   },
   {
     "id": "APCSP-ALGORITHMS-023",
@@ -1836,7 +1854,8 @@
     "correct": [
       2
     ],
-    "explanation": "Negating the outside conditions restricts x to the inclusive interval 2 through 9."
+    "explanation": "Negating the outside conditions restricts x to the inclusive interval 2 through 9.",
+    "basics": "apcspConditions"
   },
   {
     "id": "APCSP-ALGORITHMS-024",
@@ -1857,7 +1876,8 @@
     "correct": [
       3
     ],
-    "explanation": "The second IF sees the updated value 4, so it also executes and sets level to 6."
+    "explanation": "The second IF sees the updated value 4, so it also executes and sets level to 6.",
+    "basics": "apcspConditions"
   },
   {
     "id": "APCSP-ALGORITHMS-025",
@@ -1878,7 +1898,8 @@
     "correct": [
       0
     ],
-    "explanation": "The first branch yields 8, and the final multiplication yields 16."
+    "explanation": "The first branch yields 8, and the final multiplication yields 16.",
+    "basics": "apcspConditions"
   },
   {
     "id": "APCSP-ALGORITHMS-026",
@@ -1899,7 +1920,8 @@
     "correct": [
       1
     ],
-    "explanation": "The values added are 1,2,3,4, totaling 10. The final i is 5 but is not added."
+    "explanation": "The values added are 1,2,3,4, totaling 10. The final i is 5 but is not added.",
+    "basics": "apcspLoops"
   },
   {
     "id": "APCSP-ALGORITHMS-027",
@@ -1920,7 +1942,8 @@
     "correct": [
       2
     ],
-    "explanation": "The inner two displays occur during each of three outer iterations: 3 times 2 = 6."
+    "explanation": "The inner two displays occur during each of three outer iterations: 3 times 2 = 6.",
+    "basics": "apcspLoops"
   },
   {
     "id": "APCSP-ALGORITHMS-028",
@@ -1941,7 +1964,8 @@
     "correct": [
       3
     ],
-    "explanation": "The values are 17,14,11,8. Eight is the first value meeting n <= 10."
+    "explanation": "The values are 17,14,11,8. Eight is the first value meeting n <= 10.",
+    "basics": "apcspLoops"
   },
   {
     "id": "APCSP-ALGORITHMS-029",
@@ -1962,7 +1986,8 @@
     "correct": [
       0
     ],
-    "explanation": "This traversal maintains the largest value seen so far, ending at 9."
+    "explanation": "This traversal maintains the largest value seen so far, ending at 9.",
+    "basics": "apcspLoops"
   },
   {
     "id": "APCSP-ALGORITHMS-030",
@@ -1983,7 +2008,8 @@
     "correct": [
       1
     ],
-    "explanation": "Insertion shifts the old second item and later items right. It does not replace the old item."
+    "explanation": "Insertion shifts the old second item and later items right. It does not replace the old item.",
+    "basics": "apcspListIndices"
   },
   {
     "id": "APCSP-ALGORITHMS-031",
@@ -2214,7 +2240,8 @@
     "correct": [
       0
     ],
-    "explanation": "A true/false result is a Boolean value, here built by combining two conditions with AND."
+    "explanation": "A true/false result is a Boolean value, here built by combining two conditions with AND.",
+    "basics": "apcspConditions"
   },
   {
     "id": "APCSP-ALGORITHMS-042",
@@ -2340,7 +2367,7 @@
     "correct": [
       2
     ],
-    "explanation": "Starting with an actual item gives a valid candidate whatever the values are. Zero fails for an all-negative list, and 1000 fails if every value is larger."
+    "explanation": "Starting with an actual item gives a valid candidate whatever the values are. With [3, 5], an initial zero would remain zero. An initial 1000 also fails if every value is larger."
   },
   {
     "id": "APCSP-ALGORITHMS-048",
@@ -2594,7 +2621,8 @@
       3
     ],
     "explanation": "Valid one-based indices run from one through the list length.",
-    "select": 2
+    "select": 2,
+    "basics": "apcspListIndices"
   },
   {
     "id": "APCSP-ALGORITHMS-060",
@@ -2617,7 +2645,8 @@
       3
     ],
     "explanation": "The fourth and fifth positions follow the third.",
-    "select": 2
+    "select": 2,
+    "basics": "apcspListIndices"
   },
   {
     "id": "APCSP-ALGORITHMS-061",
@@ -2640,7 +2669,8 @@
       1
     ],
     "explanation": "At least four includes equality and values above four; it is also the negation of less than four.",
-    "select": 2
+    "select": 2,
+    "basics": "apcspConditions"
   },
   {
     "id": "APCSP-ALGORITHMS-062",
@@ -2663,7 +2693,8 @@
       2
     ],
     "explanation": "At most four includes equality and values below four; it is also the negation of greater than four. NOT (x >= 4) leaves out 4 itself.",
-    "select": 2
+    "select": 2,
+    "basics": "apcspConditions"
   },
   {
     "id": "APCSP-ALGORITHMS-063",
@@ -2686,7 +2717,8 @@
       3
     ],
     "explanation": "Six and twelve satisfy both divisibility by three and the lower bound.",
-    "select": 2
+    "select": 2,
+    "basics": "apcspArithmetic"
   },
   {
     "id": "APCSP-ALGORITHMS-064",
@@ -2709,7 +2741,8 @@
       3
     ],
     "explanation": "Three satisfies the size condition; eight satisfies the nondivisibility condition. Nine and fifteen fail both parts.",
-    "select": 2
+    "select": 2,
+    "basics": "apcspArithmetic"
   },
   {
     "id": "APCSP-NETWORKS-001",

@@ -11,6 +11,14 @@ import { percentScale, overallPercent } from "../scales";
 // Operations 10-14% (13/28/6/15/8 per test).
 const minutes = (n: number) => n * 60;
 
+const resuscitationSkills = [
+  "Airway adjuncts", "Suctioning", "BVM ventilation",
+  "Pediatric ventilation", "Oxygen therapy", "CPAP",
+  "Supraglottic airways", "Stoma ventilation", "Head injury ventilation",
+  "Adult CPR", "Infant CPR", "AED use",
+  "Hypothermic arrest", "Newborn resuscitation",
+];
+
 export const EMT: ExamV2Config = {
   id: "emt",
   slug: "/emt",
@@ -45,12 +53,16 @@ export const EMT: ExamV2Config = {
     treatmentTransport: "Patient Treatment and Transport",
     emsOperations: "Operations",
   },
+  preserveSplitDrillAccess: true,
   drills: [
     { key: "scene", name: "Scene Size-up and Safety", section: "emt", domains: ["sceneSizeUp"], blurb: "Scene safety, mechanism of injury, resources and triage." },
     { key: "primary", name: "Primary Assessment", section: "emt", domains: ["primaryAssessment"], blurb: "Airway, breathing, circulation and the life threats that weigh most." },
     { key: "secondary", name: "Secondary Assessment", section: "emt", domains: ["secondaryAssessment"], blurb: "History, vital signs and the focused and full-body exam." },
-    { key: "treatment", name: "Treatment and Transport", section: "emt", domains: ["treatmentTransport"], blurb: "Interventions, medications EMTs give and transport decisions." },
+    { key: "interventions", legacyKey: "treatment", name: "Patient Treatment and Transport", section: "emt", domains: ["treatmentTransport"],
+      skillFilter: { exclude: resuscitationSkills }, blurb: "Medication, obstetric care, patient handling and handoff decisions." },
     { key: "operations", name: "Operations", section: "emt", domains: ["emsOperations"], blurb: "Documentation, communication, ambulance ops and incident command." },
+    { key: "airway-resuscitation", legacyKey: "treatment", name: "Airway and Resuscitation", section: "emt", domains: ["treatmentTransport"],
+      skillFilter: { include: resuscitationSkills }, blurb: "Ventilation, airway devices, CPR and defibrillation." },
   ],
   composite: { name: "Percent correct", min: 0, max: 100, combine: overallPercent },
   defaultGoal: 75,

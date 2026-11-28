@@ -45,3 +45,7 @@ The second options-only review still failed (98/120 correct). The complete quest
 ## Final review outcome
 
 The third independent review passed: 120/120 answer agreement and 8/30 options-only guesses in every domain (32/120 total). The clock interpretation was sharpened and three possessives repaired after review. See `review.md` and the full `review-v3-audit.md` for protocol, findings and limitations.
+
+## Basics lesson links
+
+Checked the JAMB Literature in English syllabus again on 2026-11-28. Sections 2 and 5 cover narrative technique, theme and interpretation of unseen extracts. The Basics links identify which of the existing lessons can help with each original question.

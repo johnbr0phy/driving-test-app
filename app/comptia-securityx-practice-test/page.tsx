@@ -13,8 +13,8 @@ import { examOffers } from "@/lib/examSeo";
 import { SITE_URL } from "@/lib/siteUrl";
 
 const title = "Free CompTIA SecurityX Practice Test";
-const metaDescription = "240 original SecurityX CAS-005 multiple-choice questions. Four domain drills and two 90-question tests. Free to start; interactive performance tasks are not included.";
-const description = "Free to start CompTIA SecurityX (CAS-005, formerly CASP+) practice with 240 original multiple-choice questions weighted to the CAS-005 V5 objectives: Governance, Risk and Compliance, Security Architecture, Security Engineering and Security Operations. Four domain drills and two 90-question tests in 165 minutes. Interactive performance tasks are not included.";
+const metaDescription = "240 original SecurityX CAS-005 multiple-choice questions. Six topic drills and two 90-question tests. Free to start; interactive performance tasks are not included.";
+const description = "Free to start CompTIA SecurityX (CAS-005, formerly CASP+) practice with 240 original multiple-choice questions weighted to the CAS-005 V5 objectives: Governance, Risk and Compliance, Security Architecture, Security Engineering and Security Operations. Six topic drills and two 90-question tests in 165 minutes. Interactive performance tasks are not included.";
 const url = `${SITE_URL}/comptia-securityx-practice-test`;
 const faqs = [
   { q: "Is SecurityX the same certification as CASP+?", a: "SecurityX is the renamed CompTIA advanced security certification formerly called CASP+. This practice follows CAS-005 V5 objectives document version 7.0, checked on 17 November 2026. It does not claim to reproduce older CAS-004 questions." },
@@ -58,7 +58,7 @@ const jsonLd = {
       offers: examOffers("securityx"),
       featureList: [
         "240 original conceptual MCQs",
-        "Four domain drills",
+        "Six topic drills",
         "Two 90-question tests",
         "Interactive performance tasks not included",
       ],
@@ -107,7 +107,7 @@ export default function SecurityXLandingPage() {
           <ExamLandingHero
             dashboardHref="/comptia-securityx/dashboard"
             shortName="SecurityX"
-            subtitle="240 SecurityX MCQs, four drills and two practice tests. Free to start, no account needed."
+            subtitle="240 SecurityX MCQs, six drills and two practice tests. Free to start, no account needed."
             shots={{ mobile: "/landing/securityx-mobile.png", desktop: "/landing/securityx-desktop.png" }}
           />
         </div>
@@ -126,9 +126,9 @@ export default function SecurityXLandingPage() {
               <Smartphone className="w-7 h-7 text-brand-dark" />
             </div>
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Four Domain Drills</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Six Topic Drills</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Read each scenario, choose an answer and use the explanation to check the distinction. Missed questions return for more practice. The 60 drill questions are separate from both test banks.
+                Read each scenario, choose an answer and use the explanation to check the distinction. Missed questions return for more practice. The drills include the 90 questions from Practice Test 1 and 60 extra questions. Practice Test 2 uses a separate set of 90 questions.
               </p>
             </div>
           </div>

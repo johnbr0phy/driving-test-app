@@ -57,7 +57,7 @@ export function RuleCard({ skill }: { skill: BasicsSkill }) {
             <li key={i} className="flex items-start gap-3 py-2.5">
               <span className={`w-5 shrink-0 text-center text-[17px] font-bold leading-relaxed ${markClass[e.kind]}`}>{marks[e.kind]}</span>
               <div className="min-w-0 text-[17px] leading-relaxed text-gray-900 dark:text-gray-50">
-                {e.text}
+                <span className="whitespace-pre-line">{e.text}</span>
                 {e.note && <div className="text-[15px] leading-snug text-gray-500 dark:text-gray-400">{e.note}</div>}
               </div>
             </li>

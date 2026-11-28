@@ -13,6 +13,8 @@ Test 1): drills train on Test 1 plus the drill-only items. Three exams in Nov 20
 test, so their drills had 12 to 20 questions against tests of 60 to 100
 (`tests/v2-held-out.test.cjs` now fails that).
 
+Every exam and state version must offer at least eight steps in its progress counter. On v1 count training parts and tests. On v2 count drills, their available Basics lessons (one step per group), and full tests. Check both registries with `node --test tests/dashboard-minimum-steps.test.cjs`.
+
 ## 0. Inherit the site, never fork it
 A new exam looks and behaves like every other exam because its pages are thin wrappers around
 shared components. Never copy a shared component into an exam folder to change it; change the

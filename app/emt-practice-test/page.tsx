@@ -59,7 +59,7 @@ const jsonLd = {
       featureList: [
         "200 EMT practice questions",
         "2 full 70-question practice tests in 2 hours, answered in order like the NREMT",
-        "5 drills, one per NREMT domain",
+        "6 drills across all five NREMT domains",
         "Build-list, options-box and select-all items alongside single answer",
         "Instant feedback with explanations",
         "Auto-save progress",
@@ -163,7 +163,7 @@ export default function EmtLandingPage() {
             <div className="bg-gray-50 dark:bg-gray-950 rounded-2xl p-8 pt-12 text-center">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-3">Drills by Domain</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Five drills, one per NREMT domain: scene size-up and safety, primary assessment, secondary assessment, patient treatment and transport, and operations. Questions you miss come back until you have mastered them.
+                Six drills cover the five NREMT domains, with a dedicated airway and resuscitation drill. Questions you miss come back until you have mastered them.
               </p>
             </div>
           </div>

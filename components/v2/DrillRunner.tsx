@@ -83,7 +83,7 @@ export function DrillRunner({ exam, drillKeyParam }: { exam: ExamV2Config; drill
   // Signed-out visitors get the sign-up prompt in place of a question now and then.
   const guestPrompt = useGuestPrompt(!authLoading && !user, "drill");
   // Non-paying people on a roll get John's "tell a friend" ask the same way (v2 drills are English).
-  const examAnswered = v2GuestAnswered(drillsMap, results, exam.id);
+  const examAnswered = v2GuestAnswered(drillsMap, results, exam);
   const sharePrompt = useSharePrompt(premiumReady && !paidAccount, examAnswered, "drill");
 
   // Close goes back to the dashboard, where the exam level was opened from.

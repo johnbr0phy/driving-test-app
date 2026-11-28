@@ -14,7 +14,7 @@ import { applyLegacyIdMoves } from '@/lib/legacyIdMoves';
 import { queueAchievementCelebration } from '@/lib/achievementCelebration';
 import { isLanguage, type Language } from '@/i18n';
 import { languageIsChosen, writeLanguageCookie } from '@/lib/language';
-import { examAnalyticsKey, examFamilyId, examTestIds, getExamById, getExamByStateCode, getExamForQuestionId, getExamForSetId, getExamForTestId, getExamTrainingSetSize, isExamQuestionId } from '@/lib/exams';
+import { examAnalyticsKey, examFamilyId, examTestIds, examTestLength, getExamById, getExamByStateCode, getExamForQuestionId, getExamForSetId, getExamForTestId, getExamTrainingSetSize, isExamQuestionId } from '@/lib/exams';
 
 /**
  * Non-DMV exams share the store but are namespaced by ID range and stored
@@ -960,7 +960,8 @@ export const useStore = create<AppState>()(
         const examAttempts = testAttempts.filter((a) => a.state === exam.stateCode);
 
         // Content-area training sets + practice tests, equally weighted
-        const componentCount = exam.trainingSets.length + exam.testCount;
+        const practiceCount = exam.testCount + (exam.statePracticeCount ?? 0);
+        const componentCount = exam.trainingSets.length + practiceCount;
         const WEIGHT_PER_COMPONENT = 100 / componentCount;
         let totalPassProbability = 0;
 
@@ -972,10 +973,10 @@ export const useStore = create<AppState>()(
           }
         }
 
-        for (let testNum = 1; testNum <= exam.testCount; testNum++) {
+        for (let testNum = 1; testNum <= practiceCount; testNum++) {
           const attempt = examAttempts.find((a) => a.testNumber === exam.idBase + testNum);
           if (attempt) {
-            const testScore = (attempt.bestScore / exam.questionsPerTest) * 100;
+            const testScore = (attempt.bestScore / examTestLength(exam, testNum)) * 100;
             totalPassProbability += testScore * (WEIGHT_PER_COMPONENT / 100);
           }
         }

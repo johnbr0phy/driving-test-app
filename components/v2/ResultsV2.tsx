@@ -13,6 +13,7 @@ import { ExamV2Config, TestResultV2 } from "@/lib/v2/types";
 import { getQuestionIndex, getStimulus } from "@/lib/v2/bank";
 import { getSectionV2, v2Routes } from "@/lib/v2/registry";
 import { scaleFor } from "@/lib/v2/scales";
+import { drillForResultDomain } from "@/lib/v2/training";
 import { useV2Store, resultsForExam } from "@/store/useV2Store";
 import { useHydration } from "@/hooks/useHydration";
 import { getTigerAsset } from "@/lib/tigerAssets";
@@ -62,7 +63,7 @@ export function ResultsV2({ exam, testNumber }: { exam: ExamV2Config; testNumber
     .flatMap((s) => Object.entries(s.byDomain).map(([domain, v]) => ({ domain, section: s.section, pct: v.total ? v.correct / v.total : 1, ...v })))
     .filter((d) => d.total > 0)
     .sort((a, b) => a.pct - b.pct)[0];
-  const weakDrill = weakest ? exam.drills.find((d) => d.domains.includes(weakest.domain)) : undefined;
+  const weakDrill = weakest ? drillForResultDomain(exam, weakest.section, weakest.domain, result.items, byId) : undefined;
 
   // Number each item within its section, in the order it was presented.
   const numbers = new Map<string, number>();

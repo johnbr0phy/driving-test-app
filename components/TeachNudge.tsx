@@ -163,6 +163,7 @@ const TEACHER_LED = new Set([
   "hklesfi8",
   "txpersonal",
   "ccht",
+  "schoolbus",
   "txlifeonly",
   "aswbclin", "ncmhce", "phr", "shrmcp", "aphr", "ccs", "rhia", "rdexam", "cemap",
   // Build run (November 2026)

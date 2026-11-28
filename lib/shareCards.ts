@@ -125,6 +125,7 @@ export function getShareCard(id: string, language = "en"): ShareCard | undefined
 
 // Light-mode exam brand colours, matching globals.css.
 const SHARE_COLORS: Record<string, { color: string; tint: string }> = {
+  "schoolbus": { color: "hsl(12, 14%, 46%)", tint: "hsl(12, 14%, 95%)" },
   "txlifeonly": { color: "hsl(238, 6%, 40%)", tint: "hsl(238, 6%, 95%)" },
   "ccht": { color: "hsl(280, 24%, 46%)", tint: "hsl(280, 24%, 95%)" },
   "txpersonal": { color: "hsl(174, 8%, 30%)", tint: "hsl(174, 8%, 95%)" },

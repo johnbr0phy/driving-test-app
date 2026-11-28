@@ -324,6 +324,7 @@ export const EXAM_SHARE_COPY: Record<string, { title?: string; description: stri
   hklesfi8: { title: "HKSI LE Paper 8 Practice Test", description: "Practise Hong Kong securities questions on listed products, market participants, dealing, settlement and securities analysis for HKSI LE Paper 8." },
   txpersonal: { title: "Texas Personal Lines Insurance Practice Test", description: "Texas personal lines agent exam practice on home and auto policies, insurance contracts and Texas insurance law." },
   ccht: { title: "CCHT Hemodialysis Technician Practice Test", description: "Study for the NNCC CCHT exam with questions on vascular access, dialysis equipment, infection control and patient safety." },
+  schoolbus: { title: "CDL School Bus Endorsement Practice Test", description: "Study for the CDL school bus (S) endorsement with 200 questions on mirrors, loading students, evacuation, railroad crossings and bus operation." },
   txlifeonly: { title: "Texas Life Agent Practice Test", description: "Prepare for the Texas Life Agent license with questions on life insurance, annuities, underwriting and state law." },
   cemap: { title: "CeMAP 1 (FSRE)", description: "Practice UK financial services, the FCA and PRA, Consumer Duty, AML, complaints and ethics." },
   rhit: { title: "Free RHIT Practice Test", description: "200 original questions on the AHIMA RHIT content outline for health information technicians. Free to start." },

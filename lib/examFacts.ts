@@ -8864,6 +8864,20 @@ export const EXAM_FACTS: Record<string, ExamFacts> = {
     basedOn: "NNCC CCHT Test Specifications, exam information and examination development guide, checked November 2026",
     source: { name: "NNCC CCHT Test Specifications", url: "https://www.nncc-exam.org/sites/default/files/cchtSpecifications_2021_08272021.pdf" },
   },
+  schoolbus: {
+    answer: "The S endorsement covers school bus operation, from spotting a student beside the bus to clearing a railroad crossing. State licensing agencies administer the knowledge test under federal standards. The federal passing minimum is 80%.",
+    rows: [
+      { label: "Endorsement", value: "S (school bus), with passenger endorsement knowledge and skills also required" },
+      { label: "Licensing authority", value: "State driver licensing agencies under FMCSA standards" },
+      { label: "Knowledge test", value: "Check your state licensing agency for the question count and time allowed." },
+      { label: "Minimum knowledge score", value: "80% correct under 49 CFR 383.135(a)" },
+      { label: "Tigertest practice", value: "Four 50-question tests in English, with 40 correct to pass each one" },
+      { label: "Skills requirement", value: "A driving skills test in a school bus of the same vehicle group you will drive" },
+      { label: "Access", value: "Free to start. Premium unlocks the remaining locked steps and full statistics." },
+    ],
+    basedOn: "Federal school bus endorsement, test methods and passing standards in 49 CFR 383.123, 383.133 and 383.135, checked November 2026",
+    source: { name: "49 CFR 383.123, Requirements for a school bus endorsement", url: "https://www.ecfr.gov/current/title-49/section-383.123" },
+  },
   txlifeonly: {
     answer: "The Texas Life Agent exam covers life policies, annuities, underwriting and Texas insurance law. The English exam allows 120 minutes for 80 scored questions and 10 unscored questions.",
     rows: [

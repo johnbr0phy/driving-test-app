@@ -1,19 +1,7 @@
 {
-  "commit": "00404f21a078ecdee2a4b2b7f6a24fa604eb49ec",
-  "tree": "5b0fdb71155027671559d9682fd04c54588ca15e",
+  "commit": "812af4ebbd188e7c518f46a2af87d63556d140ae",
+  "tree": "55dfdc5c95012d975707f47f1d498ac1cdec6a55",
   "exams": [
-    {
-      "id": "txpersonal",
-      "engine": "v1",
-      "pools": {
-        "txpersonalPropertyPolicies": 20,
-        "txpersonalCasualtyPolicies": 28,
-        "txpersonalConcepts": 56,
-        "txpersonalProvisions": 48,
-        "txpersonalTexasCommon": 28,
-        "txpersonalTexasPersonal": 20
-      }
-    },
     {
       "id": "ccht",
       "engine": "v1",

@@ -8,6 +8,7 @@ import { purchaseWelcomeHtml } from '@/lib/email-templates';
 import { voiceFor, isKnownExamId } from '@/lib/email-voice';
 import Stripe from 'stripe';
 import { FieldValue } from 'firebase-admin/firestore';
+import { checkoutDimensions } from '@/lib/server/checkoutDimensions';
 import { purchaseExam } from '@/lib/purchaseAttribution';
 import { guestSignInLink, isGuestSession, resolveGuestBuyer, type GuestBuyer } from '@/lib/server/guestCheckout';
 import { SITE_URL } from '@/lib/siteUrl';
@@ -193,6 +194,7 @@ export async function POST(request: NextRequest) {
         // What the buyer paid from, for revenue by exam and paywall on the /admin Today tab.
         location: session.metadata?.location || null,
         exam: checkoutExam,
+        ...checkoutDimensions(session.metadata),
         // The English paywall test's variant (lib/paywallTest.ts), when the buyer saw it.
         paywallVariant: session.metadata?.paywallVariant || null,
         // And which paywall message (1 first visit, 2 second, 3 third on).

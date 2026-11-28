@@ -86,7 +86,8 @@ export default function PrivacyPage() {
                 first page you opened and whether you came from a search engine, an AI assistant, a friend&apos;s link
                 or directly), never your card number. If you buy without being signed in, we use the email you give
                 Stripe to add Premium to your Tigertest account, or to make one for you if you don&apos;t have one;
-                a new account&apos;s receipt carries a sign-in link that works for 7 days.
+                a new account&apos;s receipt carries a sign-in link that works for 7 days. When analytics is allowed,
+                we also record the type of device and which locked practice item you selected, if available.
               </li>
               <li>
                 <strong>AI assistants:</strong> if you connect Claude, ChatGPT or another assistant, the sign-in link
@@ -161,7 +162,10 @@ export default function PrivacyPage() {
                 <strong>Google Analytics</strong> (cookies named _ga): how people use the site. In the EU, EEA, UK and
                 Switzerland it is off until you allow it. Elsewhere it is on until you turn it off. It is always off on
                 our children&apos;s tests and for anyone who has joined a teacher&apos;s class or a named quiz on that
-                device.
+                device. For Premium checkout, we measure taps on the buy button, whether checkout opens, and the
+                type of error if it fails. We match a completed purchase to our payment record by transaction ID and
+                record its amount and currency. These events can include the exam, locked item, device type and
+                whether you checked out as a guest.
               </li>
               <li>
                 <strong>Our own counts:</strong> anonymous totals such as questions answered and signups, using a random

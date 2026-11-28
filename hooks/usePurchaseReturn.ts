@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
 import { auth } from "@/lib/firebase";
+import { noteLandingTryPurchase } from "@/lib/landingTryTest";
 import { useStore } from "@/store/useStore";
-import { trackPurchase } from "@/lib/analytics";
 
 /**
  * Handles the Stripe return on a page other than the DMV dashboard (which
@@ -45,7 +45,7 @@ export function usePurchaseReturn(): { justPurchased: boolean; dismiss: () => vo
         });
         const data = await res.json();
         if (cancelled || !data?.isPremium) return;
-        trackPurchase(sessionId);
+        noteLandingTryPurchase();
         setPremiumStatus({
           isPremium: true,
           purchasedAt: data.purchasedAt || new Date().toISOString(),

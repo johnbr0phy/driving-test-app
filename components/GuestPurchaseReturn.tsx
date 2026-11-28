@@ -4,6 +4,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { signInWithCustomToken } from "firebase/auth";
+import { reportConfirmedPurchase } from "@/lib/confirmedPurchase";
 import { auth } from "@/lib/firebase";
 import { useAuth } from "@/contexts/AuthContext";
 import { useStore } from "@/store/useStore";
@@ -42,6 +43,10 @@ export function GuestPurchaseReturn() {
 
   const sessionId = params.get("session_id");
   const success = params.get("success") === "true";
+
+  useEffect(() => {
+    if (!loading && success && sessionId) void reportConfirmedPurchase(sessionId);
+  }, [loading, success, sessionId, user?.uid]);
 
   // Signed out on return: ask the server who this purchase belongs to.
   useEffect(() => {

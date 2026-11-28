@@ -1,6 +1,6 @@
 "use client";
 
-import { startCheckout } from "@/lib/startCheckout";
+import { useUpgradeFlow } from "@/hooks/useUpgradeFlow";
 import { useStatsView } from "@/lib/statsViews";
 import { DailyRankPanel } from "@/components/DailyRank";
 import { useEffect, useState, useMemo, useRef, Suspense } from "react";
@@ -8,7 +8,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { BarChart3, Lock, Users } from "lucide-react";
 import { useStore } from "@/store/useStore";
 import { useHydration } from "@/hooks/useHydration";
-import { trackDailyQuizAnswer, trackPaywallDismissed, trackPaywallHit, trackViewItem } from "@/lib/analytics";
+import { trackDailyQuizAnswer } from "@/lib/analytics";
 import { useAccountNavigation } from "@/hooks/useAccountNavigation";
 import { signupForDestination } from "@/lib/authDestination";
 import { AccountLoadRetry } from "@/components/AccountLoadRetry";
@@ -84,9 +84,9 @@ function StatsContent() {
 
   const [sortField, setSortField] = useState<SortField>("wrong");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
-  const [paywallOpen, setPaywallOpen] = useState(false);
 
-  const handleUpgrade = () => startCheckout({ location: "stats_page" });
+  const upgrade = useUpgradeFlow("stats_page");
+  const openStatsPaywall = (item: string, label: string) => upgrade.openPaywall("stats_page", item, label);
 
   // Auth and the current account's cloud read must settle before either gate.
   // A fresh browser can have isGuest=false while no user is signed in.
@@ -253,14 +253,10 @@ function StatsContent() {
         <div className="relative container mx-auto px-4 py-6 max-w-3xl">
         {/* Paywall Modal */}
         <PaywallModal
-          open={paywallOpen}
-          onOpenChange={(open) => {
-            if (open) trackPaywallHit("full_stats", "Full Stats", "stats_page");
-            if (!open && paywallOpen) trackPaywallDismissed("stats_page");
-            setPaywallOpen(open);
-          }}
+          open={upgrade.paywallOpen}
+          onOpenChange={(open) => open ? openStatsPaywall("full_stats", "Full Stats") : upgrade.onOpenChange(false)}
           feature="full_stats"
-          onUpgrade={handleUpgrade}
+          onUpgrade={upgrade.handleUpgrade}
           isGuest={isGuest}
           onSignUp={() => router.push(signupDestination)}
         />
@@ -300,7 +296,7 @@ function StatsContent() {
         {activeTab === "community" && (
           <CommunityWrongQuestions
             isPremium={isPremium}
-            onUpgradeClick={() => { trackPaywallHit("community_wrong_questions", "Community Wrong Questions", "stats_page"); trackViewItem("stats_page"); setPaywallOpen(true); }}
+            onUpgradeClick={() => openStatsPaywall("community_wrong_questions", "Community Wrong Questions")}
           />
         )}
 
@@ -397,7 +393,7 @@ function StatsContent() {
                           {t("stats.unlockPremiumStats")}
                         </p>
                         <button
-                          onClick={() => { trackPaywallHit("stats_question_list", "Stats Question List", "stats_page"); trackViewItem("stats_page"); setPaywallOpen(true); }}
+                          onClick={() => openStatsPaywall("stats_question_list", "Stats Question List")}
                           className="inline-flex items-center px-4 py-2 bg-brand text-white text-sm font-medium rounded-full hover:bg-brand-hover transition-colors shadow-lg"
                         >
                           Unlock Premium — {price}

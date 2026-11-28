@@ -15,21 +15,23 @@ export type PaywallFeature = string;
 // verified (/dashboard for the DMV, the exam dashboard for SAT and ACT).
 export function useUpgradeFlow(location: string, returnPath = "/dmv/dashboard") {
   const [paywallOpen, setPaywallOpen] = useState(false);
+  const [paywallItem, setPaywallItem] = useState<string>();
   const [paywallFeature, setPaywallFeature] = useState<PaywallFeature>("practice_test_4");
 
   const openPaywall = (feature: PaywallFeature, itemId: string, itemLabel: string) => {
     trackViewItem(feature);
     trackPaywallHit(itemId, itemLabel, location);
     setPaywallFeature(feature);
+    setPaywallItem(itemId);
     setPaywallOpen(true);
   };
 
   const onOpenChange = (open: boolean) => {
-    if (!open && paywallOpen) trackPaywallDismissed(location);
+    if (!open && paywallOpen) trackPaywallDismissed(location, paywallItem);
     setPaywallOpen(open);
   };
 
-  const handleUpgrade = () => startCheckout({ location, returnPath, feature: paywallFeature });
+  const handleUpgrade = () => startCheckout({ location, returnPath, feature: paywallFeature, itemId: paywallItem });
 
   return { paywallOpen, paywallFeature, openPaywall, onOpenChange, handleUpgrade };
 }

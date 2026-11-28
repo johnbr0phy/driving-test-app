@@ -9,7 +9,7 @@
 // Common Mistakes tab joins it once the exam has enough answers
 // (lib/communityStats.ts); ?tab=community opens it, guests included.
 
-import { startCheckout } from "@/lib/startCheckout";
+import { useUpgradeFlow } from "@/hooks/useUpgradeFlow";
 import { useStatsView } from "@/lib/statsViews";
 import { DailyRankPanel, useRankReturnHref } from "@/components/DailyRank";
 import { Suspense, useEffect, useMemo, useState } from "react";
@@ -20,7 +20,7 @@ import { useTranslation } from "@/contexts/LanguageContext";
 import { useAccountNavigation } from "@/hooks/useAccountNavigation";
 import { signupForDestination } from "@/lib/authDestination";
 import { AccountLoadRetry } from "@/components/AccountLoadRetry";
-import { trackDailyQuizAnswer, trackPaywallDismissed, trackPaywallHit, trackViewItem } from "@/lib/analytics";
+import { trackDailyQuizAnswer } from "@/lib/analytics";
 import { inClassFor, useClassMemberships } from "@/hooks/useClassMemberships";
 import { usePurchaseReturn } from "@/hooks/usePurchaseReturn";
 import { PaywallModal } from "@/components/PaywallModal";
@@ -77,7 +77,6 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
 
   const [sortField, setSortField] = useState<SortField>("wrong");
   const [sortDirection, setSortDirection] = useState<SortDirection>("desc");
-  const [paywallOpen, setPaywallOpen] = useState(false);
   const searchParams = useSearchParams();
   const signupDestination = signupForDestination(pathname ?? routes.stats, searchParams.toString());
   // From the trophy chip mid-test: back to that question, not the dashboard.
@@ -94,7 +93,8 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
   // state version, since the analytics keys allow no hyphens).
   const paywallLocation = `${source.variantOf ?? source.id}_stats`;
 
-  const handleUpgrade = () => startCheckout({ location: paywallLocation, returnPath: activeTab === "community" ? `${pathname}?tab=community` : pathname });
+  const upgrade = useUpgradeFlow(paywallLocation, activeTab === "community" ? `${pathname}?tab=community` : pathname ?? routes.stats);
+  const openStatsPaywall = (item: string, label: string) => upgrade.openPaywall(paywallLocation, item, label);
 
   // Redirect guests to signup (Common Mistakes is open to them)
   const wantsCommunity = activeTab === "community";
@@ -231,14 +231,10 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
     <StatsPageShell backHref={returnHref} backLabel={t("common.back")}>
           <PaywallModal
             examId={exam.id}
-            open={paywallOpen}
-            onOpenChange={(open) => {
-              if (open) trackPaywallHit("full_stats", "Full Stats", paywallLocation);
-              if (!open && paywallOpen) trackPaywallDismissed(paywallLocation);
-              setPaywallOpen(open);
-            }}
+            open={upgrade.paywallOpen}
+            onOpenChange={(open) => open ? openStatsPaywall("full_stats", "Full Stats") : upgrade.onOpenChange(false)}
             feature="full_stats"
-            onUpgrade={handleUpgrade}
+            onUpgrade={upgrade.handleUpgrade}
             benefits={examPaywallCopy(lang).stats(examQuestions.length, exam.shortName)}
             isGuest={isGuest}
             onSignUp={() => router.push(signupDestination)}
@@ -264,11 +260,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
               data={communityData}
               loading={communityLoading}
               analyticsKey={`stats_community_${exam.copy.analyticsKey}`}
-              onUpgradeClick={() => {
-                trackPaywallHit("community_wrong_questions", "Community Wrong Questions", paywallLocation);
-                trackViewItem(paywallLocation);
-                setPaywallOpen(true);
-              }}
+              onUpgradeClick={() => openStatsPaywall("community_wrong_questions", "Community Wrong Questions")}
             />
           )}
 
@@ -296,7 +288,7 @@ function ExamStatsContent({ exam: source }: { exam: ExamConfig }) {
             lockTitle={`${sortedQuestions.length - STATS_FREE_ROWS} ${t("stats.moreQuestions")}`}
             lockSubtitle={t("stats.unlockPremiumStats")}
             lockCta={`Unlock Premium for ${price}`}
-            onUnlock={() => { trackPaywallHit("stats_question_list", "Stats Question List", paywallLocation); trackViewItem(paywallLocation); setPaywallOpen(true); }}
+            onUnlock={() => openStatsPaywall("stats_question_list", "Stats Question List")}
           />
           </>)}
     </StatsPageShell>

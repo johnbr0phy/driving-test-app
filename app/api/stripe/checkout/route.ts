@@ -4,6 +4,7 @@ import { getAdminDb, getAdminAuth } from '@/lib/firebase-admin';
 import { isPaywallHit, isPaywallReturnArm, isPaywallVariant } from '@/lib/paywallTestIds';
 import { isLockArm } from '@/lib/lockTestIds';
 import { premiumPriceFor, stripeUnitAmount } from '@/lib/pricing';
+import { checkoutDimensions, checkoutMeasurementAllowed } from '@/lib/server/checkoutDimensions';
 import { visitorCountry } from '@/lib/server/visitorCountry';
 import { SITE_URL } from '@/lib/siteUrl';
 import { allowGuestCheckout, guestKeyCookie, GUEST_SIGN_IN_WINDOW_MS, newGuestKey } from '@/lib/server/guestCheckout';
@@ -63,9 +64,12 @@ export async function POST(request: NextRequest) {
 
     // Check if user already has premium
     const adminDb = getAdminDb();
+    let classMember = false;
     if (userId) {
       const userDoc = await adminDb.collection('users').doc(userId).get();
-      if (userDoc.data()?.subscription?.isPremium) {
+      const account = userDoc.data();
+      classMember = Array.isArray(account?.classMemberships) && account.classMemberships.length > 0;
+      if (account?.subscription?.isPremium) {
         return NextResponse.json(
           { error: 'User already has premium access' },
           { status: 400 }
@@ -132,6 +136,8 @@ export async function POST(request: NextRequest) {
     // Charge in the buyer's currency, the price the paywall showed them
     // (lib/pricing.ts, both from the IP country). Dollars keep the Stripe price.
     const country = visitorCountry(request);
+    const dimensions = body.checkoutDevice && checkoutMeasurementAllowed(request, returnPath, country, email, classMember)
+      ? checkoutDimensions(body) : {};
     const price = premiumPriceFor(country);
 
     const productId = price.currency === 'usd' ? null : await getPremiumProductId();
@@ -163,6 +169,7 @@ export async function POST(request: NextRequest) {
       metadata: {
         ...(userId && email ? { userId, email } : { guest: '1', guestKey: guestKey!.hash }),
         ...(location && { location }),
+        ...dimensions,
         ...(country && { country }),
         ...(source && { source }),
         ...(landing && { landing }),

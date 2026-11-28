@@ -69,7 +69,7 @@ const jar = new Map(); // one browser's cookies
 const jarHeader = () => [...jar].map(([k, v]) => `${k}=${v}`).join('; ');
 
 const oldLoad = Module._load;
-let checkout, webhook, guestSession, verify;
+let checkout, webhook, guestSession, verify, purchaseReceipt;
 try {
   Module._load = function (request, parent, main) {
     if (request === '@/lib/firebase-admin') return { getAdminDb: () => db, getAdminAuth: () => auth };
@@ -83,6 +83,7 @@ try {
   webhook = require('../app/api/stripe/webhook/route.ts').POST;
   guestSession = require('../app/api/stripe/guest-session/route.ts').POST;
   verify = require('../app/api/stripe/verify-purchase/route.ts').POST;
+  purchaseReceipt = require('../app/api/stripe/purchase-receipt/route.ts').POST;
 } finally { Module._load = oldLoad; }
 
 const { NextRequest } = require('next/server');
@@ -98,7 +99,7 @@ let claim, linkRoute;
     linkRoute = require('../app/api/account/guest-link/route.ts').POST;
   } finally { Module._load = old; }
 }
-const post = (fn, path, body, token, cookieHeader) => fn(new NextRequest(`https://www.tigertest.io${path}`, { method: 'POST', headers: { 'content-type': 'application/json', ...(token ? { authorization: `Bearer ${token}` } : {}), ...(cookieHeader ? { cookie: cookieHeader } : {}) }, body: JSON.stringify(body) }));
+const post = (fn, path, body, token, cookieHeader, headers = {}) => fn(new NextRequest(`https://www.tigertest.io${path}`, { method: 'POST', headers: { 'content-type': 'application/json', ...(token ? { authorization: `Bearer ${token}` } : {}), ...(cookieHeader ? { cookie: cookieHeader } : {}), ...headers }, body: JSON.stringify(body) }));
 const json = async r => ({ status: r.status, body: await r.json() });
 
 async function startGuest(body = {}) {
@@ -373,6 +374,68 @@ test('junk or unknown session ids are refused', async () => {
   assert.equal((await back('cs_test_nope')).status, 500);
 });
 
+// Browser purchase analytics reads the same successful payment as the webhook.
+const readReceipt = (id, token, cookies) =>
+  post(purchaseReceipt, '/api/stripe/purchase-receipt', { sessionId: id }, token, cookies);
+
+test('only a paid and measured guest checkout yields a receipt, to its browser or signed-in owner', async () => {
+  const id = await startGuest({ location: 'rbt_dashboard' });
+  const buyer = addUser('practice@example.com');
+  pay(id, buyer.email);
+  Object.assign(sessions.get(id), { amount_total: 1500, currency: 'jpy' });
+  assert.equal((await readReceipt(id, undefined, jarHeader())).status, 202);
+  await fireWebhook(id);
+  const payment = rows.get(`payments/pi_${id}`);
+  assert.equal(payment.guestCheckout, 'existing_account');
+  // A legacy or ineligible checkout never supplies new GA dimensions.
+  assert.equal((await readReceipt(id, undefined, jarHeader())).status, 202);
+  Object.assign(payment, { checkoutDevice: 'mobile', checkoutItem: 'set_4' });
+  const guest = await json(await readReceipt(id, undefined, jarHeader()));
+  assert.deepEqual(guest, { status: 200, body: {
+    transactionId: id, value: 1500, currency: 'JPY', examId: 'rbt', paywallLocation: 'rbt_dashboard',
+    checkoutDevice: 'mobile', checkoutItem: 'set_4', buyerState: 'guest',
+  } });
+  const owner = await json(await readReceipt(id, `tok-${buyer.uid}`));
+  assert.deepEqual(owner, guest);
+  const other = addUser('someone@example.com');
+  const wrongOwner = await readReceipt(id, `tok-${other.uid}`, jarHeader());
+  const missing = await readReceipt('cs_not_a_payment', `tok-${other.uid}`);
+  assert.equal(wrongOwner.status, missing.status);
+  assert.equal(await wrongOwner.text(), await missing.text());
+  assert.equal((await readReceipt(id, undefined, cookie.split('=')[0] + '=wrong')).status, missing.status);
+  assert.equal((await readReceipt(id)).status, 401);
+  for (const status of ['refunded', 'partially_refunded']) {
+    payment.status = status;
+    assert.equal((await readReceipt(id, `tok-${buyer.uid}`)).status, 202);
+  }
+});
+
+test('a signed-in purchase reports the original currency and matches its payment record', async () => {
+  const u = addUser('return@example.com');
+  await json(await post(checkout, '/api/stripe/checkout', { location: 'stats_page' }, `tok-${u.uid}`));
+  const id = [...sessions.keys()].pop();
+  Object.assign(sessions.get(id), { amount_total: 799, currency: 'gbp' });
+  pay(id, u.email);
+  await fireWebhook(id);
+  const ledger = rows.get(`payments/pi_${id}`);
+  Object.assign(ledger, { checkoutDevice: 'desktop', checkoutItem: 'user@example.com' });
+  const f = await json(await readReceipt(id, `tok-${u.uid}`));
+  assert.equal(f.status, 200);
+  assert.deepEqual(f.body, { transactionId: ledger.stripeSessionId, value: 7.99, currency: 'GBP',
+    examId: 'dmv', paywallLocation: 'stats_page', checkoutDevice: 'desktop', buyerState: 'signed_in' });
+});
+
+test('a refunded duplicate guest payment produces no purchase receipt', async () => {
+  const u = addUser('premium@example.com');
+  rows.set(`users/${u.uid}`, { subscription: { isPremium: true } });
+  const id = await startGuest();
+  pay(id, u.email);
+  await fireWebhook(id);
+  assert.equal(refunds.length, 1);
+  assert.equal((await readReceipt(id, `tok-${u.uid}`)).status, 202);
+  assert.equal((await readReceipt(id, undefined, jarHeader())).status, 202);
+});
+
 // ---- the receipt's one-tap sign-in link --------------------------------
 const linkOf = html => { const m = html.match(/href="https:\/\/www\.tigertest\.io\/login\/link#s=([^&"]+)&amp;t=([^"]+)"/) || html.match(/href="https:\/\/www\.tigertest\.io\/login\/link#s=([^&"]+)&t=([^"]+)"/); return m && { s: decodeURIComponent(m[1]), t: m[2] }; };
 const useLink = async l => json(await post(linkRoute, '/api/account/guest-link', l));
@@ -448,4 +511,55 @@ test('a link stops working once the account changes its email', async () => {
   await fireWebhook(id);
   users.get(rows.get(`guestCheckouts/${id}`).uid).email = 'other@example.com';
   assert.equal((await useLink(linkOf(receipts[0].payload.html))).body.status, 'invalid');
+});
+
+test('eligible checkout dimensions survive delayed settlement and duplicate webhooks', async () => {
+  const location = 'rbt_dashboard';
+  const checkoutItem = 'exam_rbt_set_4';
+  const buyer = addUser('learner@example.com');
+  const res = await post(checkout, '/api/stripe/checkout', {
+    location, returnPath: '/rbt/dashboard', checkoutDevice: 'mobile', checkoutItem,
+  }, `tok-${buyer.uid}`, 'tt-cc=GB; tt-consent=granted', { 'user-agent': 'Mozilla/5.0 (iPhone) Mobile Safari/605.1.15' });
+  assert.equal(res.status, 200);
+  const id = [...sessions.keys()].pop();
+  assert.equal(created[0].metadata.checkoutDevice, 'mobile');
+  assert.equal(created[0].metadata.checkoutItem, checkoutItem);
+  const payment = `payments/pi_${id}`;
+  pay(id, buyer.email, 'unpaid');
+  assert.equal((await fireWebhook(id)).status, 200);
+  assert.equal(rows.has(payment), false);
+  pay(id, buyer.email);
+  assert.equal((await fireWebhook(id, 'checkout.session.async_payment_succeeded')).status, 200);
+  const settled = rows.get(payment);
+  assert.equal(settled.checkoutDevice, 'mobile');
+  assert.equal(settled.checkoutItem, checkoutItem);
+  assert.equal(settled.exam, 'rbt');
+  assert.equal((await fireWebhook(id)).status, 200);
+  assert.deepEqual(rows.get(payment), settled);
+});
+
+test('checkout succeeds without optional dimensions for ineligible or malformed submissions', async () => {
+  const buyer = addUser('learner@example.com');
+  const userAgent = 'Mozilla/5.0 (iPhone) Mobile Safari/605.1.15';
+  const body = { location: 'rbt_dashboard', returnPath: '/rbt/dashboard', checkoutDevice: 'tablet', checkoutItem: 'exam_rbt_set_4' };
+  for (const [cookie, agent, fields, classMember] of [
+    ['tt-cc=US; tt-consent=denied', userAgent, {}, false],
+    ['tt-cc=GB', userAgent, {}, false],
+    ['', userAgent, {}, false],
+    ['tt-cc=US', userAgent, { returnPath: '/cogat/dashboard' }, false],
+    ['tt-cc=US', 'test bot', {}, false],
+    ['tt-cc=US', userAgent, { checkoutDevice: 'arbitrary text' }, false],
+    ['tt-cc=US', userAgent, { checkoutDevice: undefined }, false],
+    ['tt-cc=US', userAgent, {}, true],
+  ]) {
+    rows.set(`users/${buyer.uid}`, { classMemberships: classMember ? [{ code: 'example' }] : [] });
+    assert.equal((await post(checkout, '/api/stripe/checkout', { ...body, ...fields }, `tok-${buyer.uid}`, cookie, { 'user-agent': agent })).status, 200);
+    const meta = created.at(-1).metadata;
+    assert.equal(meta.checkoutDevice, undefined);
+    assert.equal(meta.checkoutItem, undefined);
+  }
+  rows.set(`users/${buyer.uid}`, {});
+  assert.equal((await post(checkout, '/api/stripe/checkout', { ...body, checkoutItem: 'buyer@example.com' }, `tok-${buyer.uid}`, 'tt-cc=US', { 'user-agent': userAgent })).status, 200);
+  assert.equal(created.at(-1).metadata.checkoutDevice, 'tablet');
+  assert.equal(created.at(-1).metadata.checkoutItem, undefined);
 });

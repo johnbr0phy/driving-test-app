@@ -24,7 +24,7 @@ import { useDmvTestLanguage } from "@/hooks/useTestLanguage";
 import { states } from "@/data/states";
 import { en, es, vi, ko, zh } from "@/i18n";
 import { PaywallModal } from "@/components/PaywallModal";
-import { trackPaywallHit, trackStatsEntry, trackViewItem } from "@/lib/analytics";
+import { trackPaywallDismissed, trackPaywallHit, trackStatsEntry, trackViewItem } from "@/lib/analytics";
 import { DMV_EXAM_ID } from "@/lib/classes";
 import { recordClassAnswer } from "@/lib/classProgress";
 import { useClassMissRecovery } from "@/components/exam/ClassMissRecovery";
@@ -58,7 +58,7 @@ function TrainingPageContent() {
   const dmvAnswered = v1GuestCounts(selectedState, completedTests, trainingAnswerHistory).answered;
   const sharePrompt = useSharePrompt(hydrated && premiumReady && !isPremium && language === "en", dmvAnswered, "dmv_training");
 
-  const handleUpgrade = () => startCheckout({ location: "training_set_4" });
+  const handleUpgrade = () => startCheckout({ location: "training_set_4", itemId: "training_header_stats" });
   const training = useStore((state) => state.training);
   const trainingSets = useStore((state) => state.trainingSets);
   const answerTrainingQuestion = useStore((state) => state.answerTrainingQuestion);
@@ -461,7 +461,10 @@ function TrainingPageContent() {
 
       <PaywallModal
         open={paywallOpen}
-        onOpenChange={setPaywallOpen}
+        onOpenChange={(open) => {
+          if (!open && paywallOpen) trackPaywallDismissed("training_set_4", "training_header_stats");
+          setPaywallOpen(open);
+        }}
         feature="training_set_4"
         onUpgrade={handleUpgrade}
         isGuest={isGuest}

@@ -7,11 +7,11 @@ const { maskEmail } = require('../lib/guestPaidHint.ts');
 const read = (p) => fs.readFileSync(p, 'utf8');
 
 test('every DMV page that opens the paywall from its header records a hit', () => {
-  for (const [page, loc] of [['app/test/[id]/page.tsx', 'practice_test_4'], ['app/training/page.tsx', 'training_set_4']]) {
+  for (const [page, loc, item] of [['app/test/[id]/page.tsx', 'practice_test_4', 'test_header_stats'], ['app/training/page.tsx', 'training_set_4', 'training_header_stats']]) {
     const src = read(page);
     // Counted under the location the page's checkout uses, so hits and sales line up.
-    assert.match(src, new RegExp(`trackPaywallHit\\("\\w+", "[^"]+", "${loc}"\\);\\s*trackViewItem\\("${loc}"\\);\\s*setPaywallOpen\\(true\\)`));
-    assert.match(src, new RegExp(`startCheckout\\(\\{ location: "${loc}" \\}\\)`));
+    assert.match(src, new RegExp(`trackPaywallHit\\("${item}", "[^"]+", "${loc}"\\);\\s*trackViewItem\\("${loc}"\\);\\s*setPaywallOpen\\(true\\)`));
+    assert.match(src, new RegExp(`startCheckout\\(\\{ location: "${loc}", itemId: "${item}" \\}\\)`));
   }
 });
 

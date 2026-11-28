@@ -20,6 +20,10 @@ source (the reviewed 2026-10-10 handoff), see tools/build_re_state_banks.py.
 """
 import json, pathlib, sys
 
+# Keep sibling tools importable under python3 -I.
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from apply_bank_corrections import apply_corrections, load_corrections
+
 FIELDS = ["type", "state", "questionId", "category", "question", "optionA", "optionB",
           "optionC", "optionD", "correctAnswer", "correctIndex", "explanation"]
 TEXT = {"question", "optionA", "optionB", "optionC", "optionD", "explanation"}
@@ -69,7 +73,9 @@ for q in json.loads((src / "state_items.json").read_text()):
     out["sourceQuestionId"] = q["questionId"]
     bank.append(out)
 
+corrections = load_corrections(sys.argv[1])
 for q in bank:
+    apply_corrections(q, corrections, spec.get("overrides"))
     assert q["category"] in CATEGORIES, q["questionId"]
     assert "ABCD".index(q["correctAnswer"]) == q["correctIndex"], q["questionId"]
     assert "—" not in json.dumps(q, ensure_ascii=False), ("em-dash", q["questionId"])

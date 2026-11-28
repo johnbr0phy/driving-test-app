@@ -1,5 +1,7 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
+const { spawnSync } = require('node:child_process');
+const path = require('node:path');
 require('tsx/cjs');
 
 require('../lib/banks/realEstateStates.ts');
@@ -45,5 +47,45 @@ test('short state tests cover the approved full-length form exactly once, with a
         assert.ok(spread(counts) <= 1, `${exam.id}: ${category}, local=${local}, counts=${counts}`);
       }
     }
+  }
+});
+
+test('the full state exams and their short forms pass the bank answer-cue limits', () => {
+  const pools = [];
+  for (const exam of EXAM_VARIANTS.filter((e) => e.statePracticeCount)) {
+    for (let n = 1; n <= exam.testCount + exam.statePracticeCount; n++) {
+      const items = examTestQuestions(exam, n).map((q) => [
+        q.questionId, q.category, [q.optionA, q.optionB, q.optionC, q.optionD], q.correctIndex, q.question,
+      ]);
+      pools.push([`${exam.id} /test/${n}`, items]);
+    }
+  }
+  // Use the same scorers as the whole-bank checks, including for the 25-item forms.
+  const check = spawnSync('python3', ['-I', '-c', `
+import json, sys
+sys.path.insert(0, sys.argv[1])
+from check_length_rank import LIMIT, rank_scores
+from check_option_reuse import ECHO_LIMIT, analyse
+failures = []
+for name, items in json.load(sys.stdin):
+    rank = max(rank_scores([(opts, key) for _, _, opts, key, _ in items]))
+    echo = analyse(items)
+    gain = max(echo["echo_gain"], echo["anti_echo_gain"])
+    if rank > LIMIT + 1e-9 or gain >= ECHO_LIMIT - 1e-9:
+        failures.append(f"{name}: best answer-length rank {rank:.2%}, echo gain {gain:.2f} per 50")
+if failures:
+    sys.exit("\\n".join(failures))
+`, path.resolve(__dirname, '../tools')], { input: JSON.stringify(pools), encoding: 'utf8' });
+  if (check.error) throw check.error;
+  assert.equal(check.status, 0, check.stderr);
+});
+
+test('state bank snapshots include the reviewed source corrections', () => {
+  for (const family of ['realestate', 'insurance', 'pnc']) {
+    const check = spawnSync('python3', ['-I', 'tools/apply_bank_corrections.py', family, '--check'], {
+      cwd: path.resolve(__dirname, '..'), encoding: 'utf8',
+    });
+    if (check.error) throw check.error;
+    assert.equal(check.status, 0, `${family}\n${check.stdout}${check.stderr}`);
   }
 });

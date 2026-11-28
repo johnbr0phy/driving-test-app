@@ -15,6 +15,8 @@ test, so their drills had 12 to 20 questions against tests of 60 to 100
 
 Every exam and state version must offer at least eight steps in its progress counter. On v1 count training parts and tests. On v2 count drills, their available Basics lessons (one step per group), and full tests. Check both registries with `node --test tests/dashboard-minimum-steps.test.cjs`.
 
+For a Basics step, use the official exam's notation and scope in every prompt and explanation. Try a missed question whose skill the lesson teaches and verify that results open the right lesson. Each displayed lesson needs a matching question. Leave unrelated misses untagged. On an existing path, exercise saved mastery, an in-progress free question and the original full-exam URL after splitting a drill. Run `node --test tests/basics-min-skills.test.cjs tests/v2-result-drill.test.cjs tests/v2-split-drill-totals.test.cjs` for these changes.
+
 ## 0. Inherit the site, never fork it
 A new exam looks and behaves like every other exam because its pages are thin wrappers around
 shared components. Never copy a shared component into an exam folder to change it; change the

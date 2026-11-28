@@ -10,6 +10,9 @@ the national bank; sourceQuestionId keeps the handoff ID for traceability.
 """
 import hashlib, json, pathlib, sys
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from apply_bank_corrections import apply_corrections, load_corrections
+
 FORMS_SHA256 = "7d01a6fd60afb0409a0efc41b6d66fd0a5fc181bfe87b12df6a044089447c218"
 FIELDS = ["type", "state", "questionId", "category", "question", "optionA", "optionB",
           "optionC", "optionD", "correctAnswer", "correctIndex", "explanation"]
@@ -25,6 +28,7 @@ assert hashlib.sha256(src).hexdigest() == FORMS_SHA256, "forms file is not the r
 root = pathlib.Path(__file__).resolve().parent.parent
 PATCHES = json.loads((root / "tools" / "re_state_patches.json").read_text(encoding="utf-8"))
 
+corrections = load_corrections("realestate")
 for form in json.loads(src)["forms"]:
     code = form["jurisdiction"]
     prefix = f"RE{code}-"
@@ -55,6 +59,8 @@ for form in json.loads(src)["forms"]:
         if "correctAnswer" in p:
             q["correctAnswer"] = p["correctAnswer"]
             q["correctIndex"] = "ABCD".index(p["correctAnswer"])
+    for q in bank:
+        apply_corrections(q, corrections)
     (root / OUT[code]).write_text(json.dumps(bank, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     counts = {}
     for q in bank:

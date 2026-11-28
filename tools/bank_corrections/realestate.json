@@ -1,0 +1,339 @@
+{
+  "RECA-CA-R4-MLO-PROCESSOR-CONTRACTOR-001": {
+    "question": "A California DRE mortgage loan originator hires an independent contractor to process residential loans. Which credential authorizes the work?",
+    "optionA": "Hiring originator's MLO endorsement",
+    "optionB": "Processor's NMLS identifier alone",
+    "optionC": "Processor's own MLO endorsement",
+    "optionD": "Processor's real estate license alone",
+    "explanation": "California Business and Professions Code 10166.03(c) requires an independent contractor who processes residential mortgage loans for an originator to obtain an MLO endorsement. Performing only processing tasks does not qualify the contractor for the employee exemption."
+  },
+  "RENJ-NJ-REBATE-ADVERTISEMENT-TAX-NOTICE-001": {
+    "question": "A New Jersey commission rebate ad advises buyers to consult a tax professional. What else must it disclose?",
+    "optionA": "Broker's estimated after-tax rebate",
+    "optionB": "Buyer's duty to pay any applicable taxes",
+    "optionC": "Buyer's tax year for the rebate",
+    "optionD": "Broker's projected tax withholding",
+    "explanation": "N.J.S.A. 45:15-16b requires the ad to tell buyers they owe any applicable taxes and should consult a tax professional. Both notices must be conspicuous and in type at least as large as the ad text."
+  },
+  "RETX-TXAGY-002": {
+    "explanation": "Texas Occupations Code 1101.558(c) exempts conversations about the property being shown at an open house. The lease exemption applies only to a residential lease shorter than one year when no sale is being considered."
+  },
+  "REGA-GACLS-005": {
+    "explanation": "Georgia Code 44-1-16(a) requires a licensee asked about a death on the property to answer truthfully from personal knowledge. The licensee may withhold the answer if disclosure would violate a federal or state law, rule or regulation, including fair housing law."
+  },
+  "REWA-WAAGY-004": {
+    "explanation": "RCW 18.86.030(1)(f) requires the broker to give a client the pamphlet as soon as reasonably practical and before the client signs a services agreement. An unrepresented party must receive it before signing an offer or as soon as reasonably practical."
+  },
+  "RECA-CA-BUYER-004": {
+    "question": "A California listing agent gives an unrepresented visitor a tour at the seller's open house. What does the tour alone establish?",
+    "optionA": "Limited dual agency",
+    "optionB": "No new representation",
+    "optionC": "Buyer agency limited to that visit",
+    "optionD": "An exclusive buyer-broker agreement",
+    "explanation": "Regulation 2906.2(c) allows a seller's agent to show the property on the seller's behalf. This act alone does not create an agency relationship with the visitor."
+  },
+  "RECA-CA-R4-MLDS-EARLY-OBLIGATION-001": {
+    "question": "A broker receives a completed loan application Monday. The note will bind the borrower Tuesday. When is California's Mortgage Loan Disclosure Statement due?",
+    "optionA": "By the end of Thursday",
+    "optionB": "At the first disbursement",
+    "optionC": "Before signing the note",
+    "optionD": "By the next business day after signing",
+    "explanation": "Business and Professions Code 10240 requires disclosure within three business days of the completed written application or before the borrower becomes obligated, whichever comes first. Here the borrower becomes obligated on Tuesday."
+  },
+  "RECA-CA-R5-ASSIST-AD-PREPUBLICATION-001": {
+    "question": "An unlicensed California assistant designs a listing ad. Whose approval is required before it runs?",
+    "optionA": "Owner or listing coordinator",
+    "optionB": "Assistant's advertising manager",
+    "optionC": "Broker or associate licensee",
+    "optionD": "Publisher's compliance officer",
+    "explanation": "DRE guidelines permit an assistant to design the ad. A broker or associate licensee must review and approve it before publication."
+  },
+  "RECA-CA-R3-DRE-001": {
+    "question": "Someone negotiates California home sales for a fee without a license. What may DRE do after receiving a complaint?",
+    "optionA": "Refer the case to the local trade association only",
+    "optionB": "Investigate the sales activity",
+    "optionC": "Wait for a buyer to obtain a civil judgment",
+    "optionD": "Open a case once the negotiator applies for a license",
+    "explanation": "DRE can investigate anyone performing acts that require a real estate license. Its jurisdiction includes people who never obtained a license."
+  },
+  "RECA-CA-R3-FAIR-002": {
+    "question": "A California landlord charges a higher deposit solely because an applicant uses a housing voucher. The total meets the deposit cap. What rule applies?",
+    "optionA": "Source-of-income discrimination is prohibited",
+    "optionB": "Deposit limits control if the policy is written",
+    "optionC": "Local voucher administrators set the deposit",
+    "optionD": "Equal base rent permits different security deposits",
+    "explanation": "California prohibits different rental terms because of a housing subsidy. Staying under the deposit cap does not justify charging voucher holders more."
+  },
+  "RECA-CA-R3-ASSIST-001": {
+    "question": "A visitor asks an unlicensed California open-house assistant for a private tour and advice on offer terms. What may the assistant do?",
+    "optionA": "Conduct the tour with the owner present",
+    "optionB": "Discuss terms from the listing file",
+    "optionC": "Call a licensee to assist",
+    "optionD": "Show the house without discussing price",
+    "explanation": "DRE permits clerical help at an open house, such as handing out approved information. Showing the property and discussing sale terms require a license."
+  },
+  "RECA-CA-R3-AFFILIATE-001": {
+    "question": "A California salesperson holds a current license without a responsible broker. What must happen before negotiating a neighbor's sale for a fee?",
+    "optionA": "Obtain a signed listing directly from the owner",
+    "optionB": "File notice of the proposed sale with DRE",
+    "optionC": "Affiliate with a broker",
+    "optionD": "Have the neighbor deposit the fee into escrow",
+    "explanation": "A salesperson must work under a responsible broker to perform licensed acts. Holding a current salesperson license alone does not authorize independent brokerage."
+  },
+  "RECA-CA-R3-RECOVERY-002": {
+    "question": "A California buyer holds a qualifying fraud judgment but has made no collection effort. What must precede payment from the Consumer Recovery Account?",
+    "optionA": "New arbitration against the same broker",
+    "optionB": "A second judgment for the unpaid sum",
+    "optionC": "Reasonable efforts to find assets and collect",
+    "optionD": "An order permanently revoking the broker's license",
+    "explanation": "A qualifying judgment establishes the loss. The claimant must also make a reasonable search for assets and pursue collection from liable, collectible parties."
+  },
+  "RECA-CA-R3-DRE-002": {
+    "question": "A California buyer reports a broker's misrepresentation. Which remedy can DRE pursue through its ordinary complaint process?",
+    "optionA": "A refund of the buyer's deposit",
+    "optionB": "Rescission of the purchase contract",
+    "optionC": "License discipline",
+    "optionD": "An award of compensatory damages",
+    "explanation": "DRE investigates licensing violations and can pursue disciplinary action. A buyer seeking damages or rescission must pursue a separate remedy."
+  },
+  "RECA-CA-ADVERT-001": {
+    "question": "In a California real estate team's advertisement, what sets the minimum prominence of the responsible broker's identity?",
+    "optionA": "Size of the property address",
+    "optionB": "Placement of the team leader's license number",
+    "optionC": "Size of the contact telephone number",
+    "optionD": "Prominence of the team name",
+    "explanation": "Business and Professions Code 10159.6(b) requires the broker's identity to appear as prominently and conspicuously as the team name."
+  },
+  "RECA-CA-R4-ADVANCE-MODIFICATION-STAGES-001": {
+    "question": "A California broker promises a homeowner a residential loan modification and bills for the first stage. When may the broker demand compensation?",
+    "optionA": "When the homeowner signs a fee agreement",
+    "optionB": "When the initial file review is complete",
+    "optionC": "After the lender acknowledges the application",
+    "optionD": "After completing all promised services",
+    "explanation": "Business and Professions Code 10085.6(a)(1) requires full performance before compensation can be demanded for covered loan modification services. Billing document review as a separate stage does not change that rule."
+  },
+  "RECA-CA-R4-ADVANCE-COMPLETED-TASK-001": {
+    "question": "A California broker separately markets a stand-alone listing service under a written limited-service contract. How is payment upon completion classified?",
+    "optionA": "Retainer for future services",
+    "optionB": "Client funds held pending escrow",
+    "optionC": "Advance fee for the eventual sale",
+    "optionD": "Earned fee",
+    "explanation": "Business and Professions Code 10026(b)(4) excludes payment for qualifying separately marketed tasks under a written limited-service contract once the task is complete. Splitting one larger service into stages does not qualify."
+  },
+  "RECA-CA-BUYER-003": {
+    "question": "An individual buyer's California representation agreement renews automatically unless the buyer objects. How must a valid renewal be made?",
+    "optionA": "Through a clause initialed at the original signing",
+    "optionB": "By mutual verbal agreement before expiration",
+    "optionC": "By extending the original agreement in an email from the broker",
+    "optionD": "By dated writing signed by both parties",
+    "explanation": "Civil Code 1670.50 bars automatic renewal. Regulation 2906.1 requires the buyer and broker to sign the renewal before the original agreement expires."
+  },
+  "RECA-CA-BUYER-002": {
+    "question": "For an in-person home showing, when does California presume it is practicable for a buyer to sign a representation agreement?",
+    "optionA": "Before the seller accepts the purchase offer",
+    "optionB": "Before the tour",
+    "optionC": "After reviewing the seller's disclosures",
+    "optionD": "When the buyer submits proof of funds",
+    "explanation": "Regulation 2906.2(a) makes this a rebuttable presumption. The agreement must in any event be signed by the time the buyer executes an offer."
+  },
+  "RECA-CA-BUYER-001": {
+    "question": "An individual California buyer signs a representation agreement with no delayed start. How is its maximum three-month term counted?",
+    "optionA": "Three full months from the first day of the following month",
+    "optionB": "Ninety business days starting with the first showing",
+    "optionC": "Ninety calendar days starting the day after the last signature",
+    "optionD": "Three full calendar months from the date of the first offer",
+    "explanation": "Regulation 2906.1 treats three months as 90 calendar days. With no delayed start, day one is the day following the last signature."
+  },
+  "RECA-CA-COMP-001": {
+    "question": "Who may pay a California salesperson for negotiating a sale under the salesperson's current license?",
+    "optionA": "The salesperson's responsible broker",
+    "optionB": "The seller with the listing broker's consent",
+    "optionC": "Either broker named in the purchase contract",
+    "optionD": "The buyer under a separate written fee agreement",
+    "explanation": "Business and Professions Code 10137 permits compensation for licensed activity only from the broker under whom the salesperson is then licensed."
+  },
+  "RENJ-NJ-RG-ENTITY-002": {
+    "question": "A member offers to sign a listing for property held by a New Jersey LLC. What should the broker verify?",
+    "optionA": "Member's ownership percentage",
+    "optionB": "Member's brokerage license",
+    "optionC": "Authority to bind the LLC to the listing",
+    "optionD": "Member's personal loan guarantee",
+    "explanation": "Under N.J.S.A. 42:2C-27, membership by itself does not make a person the LLC's agent. The broker needs evidence that the member can act for the owner."
+  },
+  "RENJ-NJ-RG-TRUST-002": {
+    "question": "One of two New Jersey co-trustees offers to sign a deed. Which detail in the trust certification matters?",
+    "optionA": "Names of the beneficiaries",
+    "optionB": "Order of the trustees' appointments",
+    "optionC": "Identity of the insurance policyholder",
+    "optionD": "Whether either trustee can convey title alone",
+    "explanation": "A trust certification can state whether both trustees must act or whether one may sign. The buyer may also request the trust excerpts establishing the trustee's powers."
+  },
+  "RENJ-NJ-ATTORNEY-REVIEW-EMAIL-001": {
+    "question": "During New Jersey attorney review, all required recipients receive the seller's attorney's emailed disapproval on time. What follows under Conley?",
+    "optionA": "Disapproval is effective upon timely actual notice",
+    "optionB": "Certified mail must follow",
+    "optionC": "Both brokers must acknowledge receipt",
+    "optionD": "The buyer must sign a release",
+    "explanation": "In Conley v. Guerrero, the buyers received actual notice within the review period. The New Jersey Supreme Court recognized email as an acceptable method of transmitting disapproval."
+  },
+  "RENJ-NJ-AGENCY-DISCLOSURE-001": {
+    "question": "A New Jersey broker uses the brokerage services agreement to identify whom the firm represents. Where does that statement belong?",
+    "optionA": "In the compensation schedule",
+    "optionB": "Beneath the client's signature",
+    "optionC": "In the property description addendum",
+    "optionD": "In a separate paragraph titled Agency Disclosure",
+    "explanation": "The agreement must have a separate paragraph titled Agency Disclosure. New Jersey also permits a separate signed writing with that title."
+  },
+  "RENJ-NJ-BRANCH-OFFICE-SUPERVISOR-001": {
+    "question": "A New Jersey broker opens a branch. Which employee qualifies to serve as its direct supervisor?",
+    "optionA": "Licensed broker employed as a broker-salesperson",
+    "optionB": "Broker employed by a cooperating firm",
+    "optionC": "Salesperson appointed managing agent",
+    "optionD": "Licensed broker serving as an outside adviser",
+    "explanation": "N.J.A.C. 11:5-4.5(c) requires a licensed broker employed as a broker-salesperson by the broker maintaining the branch. Sales or management experience alone does not qualify."
+  },
+  "RENJ-NJ-BRANCH-IN-DWELLING-001": {
+    "question": "A broker-salesperson proposes a New Jersey branch in their own dwelling with a separate entrance. What may the Commission approve?",
+    "optionA": "Branch after municipal zoning approval",
+    "optionB": "No branch at that address",
+    "optionC": "Branch if visitors enter by appointment",
+    "optionD": "Branch after an inspection of the separate entrance",
+    "explanation": "N.J.A.C. 11:5-4.5(b) bars a branch in the dwelling premises of a salesperson or broker-salesperson. A separate entrance does not remove that restriction."
+  },
+  "RENJ-NJ-RG-CONDO-001": {
+    "question": "A New Jersey condo buyer has a building permit to alter a wall. What determines whether association approval is also needed?",
+    "optionA": "Municipal permit conditions",
+    "optionB": "Seller's past renovations",
+    "optionC": "Master deed and association rules",
+    "optionD": "Architect's permit drawings",
+    "explanation": "The master deed, bylaws and applicable rules govern alterations affecting the condominium. A municipal permit addresses public requirements and does not settle the association's authority."
+  },
+  "RENJ-NJ-RG-POA-001": {
+    "question": "After a New Jersey owner loses capacity, a durable power authorizes rent collection and payment of property expenses. What can the agent sign?",
+    "optionA": "Deed transferring title",
+    "optionB": "Check for the building's furnace repair",
+    "optionC": "Refinancing agreement",
+    "optionD": "Purchase option for a tenant",
+    "explanation": "Durability keeps the granted authority in effect during incapacity. It does not add power to convey or mortgage the property."
+  },
+  "RENJ-NJ-RG-POA-003": {
+    "question": "Before signing a deed under a New Jersey durable power of attorney, an agent learns the sole owner died. Who should handle the conveyance?",
+    "optionA": "Agent with the buyer's consent",
+    "optionB": "Agent if the power is recorded",
+    "optionC": "Estate representative with authority to sell",
+    "optionD": "Agent under the original power",
+    "explanation": "Durability preserves authority during incapacity. Once the agent knows of the principal's death, the good-faith protection for acting without that knowledge does not apply."
+  },
+  "RENJ-NJ-RG-POA-002": {
+    "question": "A capable New Jersey owner is overseas. An agent's sale authority takes effect on incapacity. What would authorize the agent to sign now?",
+    "optionA": "Recording the existing instrument",
+    "optionB": "Deposit from the buyer",
+    "optionC": "Notarized copy of the same power",
+    "optionD": "New grant effective immediately",
+    "explanation": "The capable owner can give the agent current authority. Travel does not satisfy the incapacity condition in the existing power."
+  },
+  "RENJ-NJ-RG-LAD-001": {
+    "question": "A New Jersey landlord directs a broker to reject a qualified same-sex couple for their sexual orientation. How should the broker evaluate the application?",
+    "optionA": "Apply a higher credit threshold set by the owner",
+    "optionB": "Use the usual rental criteria",
+    "optionC": "Seek an additional guarantor for this tenancy",
+    "optionD": "Give preference to otherwise comparable married applicants",
+    "explanation": "New Jersey's Law Against Discrimination protects sexual orientation in housing. An owner's instruction does not authorize different screening standards."
+  },
+  "RENJ-NJ-RG-LAD-002": {
+    "question": "A New Jersey landlord charges a qualified tenant a higher rent because the tenant is transgender. Which provision applies?",
+    "optionA": "Ban on discriminatory advertising",
+    "optionB": "Right to an apartment showing",
+    "optionC": "Limits on refundable deposits",
+    "optionD": "Protection against discriminatory lease terms",
+    "explanation": "The Law Against Discrimination protects gender identity or expression. Charging a different rent for that reason violates the law even when the landlord offers a lease."
+  },
+  "RENJ-NJ-REFERRAL-LICENSE-SERVICE-LIMIT-001": {
+    "question": "A buyer asks a New Jersey referral-company salesperson for help submitting an offer. What may this salesperson do?",
+    "optionA": "Present the offer to the seller",
+    "optionB": "Draft an offer for review",
+    "optionC": "Refer the buyer through the employing broker",
+    "optionD": "Negotiate the price without a fee",
+    "explanation": "A salesperson licensed with a referral company may send prospects to the broker through whom the salesperson is licensed. That license does not authorize negotiating a purchase."
+  },
+  "RENJ-NJ-BUYER-AGREEMENT-001": {
+    "question": "Which New Jersey purchase is exempt from the statutory requirement for a written buyer brokerage services agreement?",
+    "optionA": "House bought for cash",
+    "optionB": "Four-unit residential building",
+    "optionC": "Office building",
+    "optionD": "Condominium bought to rent out",
+    "explanation": "The buyer-agreement requirement applies to residential transactions. New Jersey exempts commercial transactions and treats a single multifamily property with four or fewer units as residential for this purpose."
+  },
+  "RENJ-NJ-ATTORNEY-REVIEW-PERIOD-001": {
+    "question": "A New Jersey residential sale contract contains the standard attorney-review clause. Without an extension, how long is review?",
+    "optionA": "Three calendar days",
+    "optionB": "Three business days",
+    "optionC": "Five business days after signing",
+    "optionD": "Until the day of the home inspection",
+    "explanation": "The standard period is three business days. Conley v. Guerrero changed the permitted ways to give notice of disapproval and retained the review period."
+  },
+  "RENJ-NJ-AGENCY-TERMINATION-001": {
+    "question": "A New Jersey seller and brokerage mutually agree to end their agency relationship early. What makes the termination effective?",
+    "optionA": "Written confirmation",
+    "optionB": "Return of the listing documents",
+    "optionC": "Removal from the multiple listing service",
+    "optionD": "Verbal acknowledgment by both parties",
+    "explanation": "New Jersey requires written confirmation when the parties end the relationship by mutual agreement. Returning documents or removing a listing does not supply that confirmation."
+  },
+  "RENJ-NJ-REBATE-LENDER-NONDISCLOSURE-001": {
+    "question": "A buyer asks a New Jersey broker to conceal a commission rebate from the mortgage lender. Who must receive disclosure?",
+    "optionA": "Buyer and seller only",
+    "optionB": "Lender and settlement agent only",
+    "optionC": "Buyer and settlement agent only",
+    "optionD": "All transaction parties, including the lender",
+    "explanation": "N.J.S.A. 45:15-16a(a)(3) requires disclosure to every party involved in the transaction, including the mortgage lender. The buyer cannot waive the lender's disclosure."
+  },
+  "RE-VAL-026": {
+    "question": "A bank asks a broker to compare recent sales and estimate a foreclosed home's selling price. Which report does the broker prepare?",
+    "explanation": "A broker price opinion estimates the probable selling price using comparable properties and the broker's judgment. An automated valuation model calculates its estimate from data."
+  },
+  "REPA-VAL-026": {
+    "explanation": "A broker price opinion (BPO) is a price estimate a licensee prepares for a lender or other third party, and RELRA section 608.6(e) allows one for a property a lender owns after an unsuccessful foreclosure sale."
+  },
+  "RE-CON-026": {
+    "explanation": "Where dual agency is permitted, the agent needs the informed consent of both buyer and seller. State law governs how and when the relationship must be documented."
+  },
+  "RECA-CON-026": {
+    "explanation": "California requires disclosure to both buyer and seller as soon as practicable and written confirmation in the purchase contract or a separate writing. Both clients must know about and consent to the dual role."
+  },
+  "RENJ-CON-026": {
+    "explanation": "New Jersey requires informed written consent from both the buyer and the seller for disclosed dual agency. Notifying the seller alone leaves the buyer unaware of the divided loyalty."
+  },
+  "RENC-CON-026": {
+    "explanation": "North Carolina requires both clients to authorize dual agency. When a buyer initially consents orally under an oral agency agreement, the authorization must be in writing by the time one party makes an offer to the other."
+  },
+  "REMA-CON-026": {
+    "explanation": "In Massachusetts, M.G.L. c. 112, section 87AAA 3/4(b) and 254 CMR 3.00(13)(b) require informed written consent of buyer and seller on the Board's form. Telling only the seller leaves the buyer unaware of the divided loyalty."
+  },
+  "RE-DISC-002": {
+    "explanation": "This contract gives the buyer ten calendar days after acceptance. June 2 is the first day and June 11 is the tenth. Federal lead disclosure rules generally provide an inspection opportunity before the buyer is obligated; the contract sets the dates in this example."
+  },
+  "RENJ-DISC-002": {
+    "explanation": "40CFR745.110 requires the seller to permit a 10-day opportunity before the purchaser is obligated. The parties may agree in writing to a different period, and the purchaser may waive the opportunity in writing. An accepted-contract date alone does not define the legal deadline."
+  },
+  "RECA-CA-LAND-COMMERCIAL-001": {
+    "optionA": "No subdivision public report",
+    "optionB": "A preliminary public report",
+    "optionC": "A conditional public report",
+    "optionD": "A final public report"
+  },
+  "RENJ-NJ-MOUNT-LAUREL-INCLUSIONARY-ZONING-001": {
+    "optionA": "Allow more units per acre for providing affordable units",
+    "optionB": "Increase the minimum lot size for affordable units",
+    "optionC": "Require additional parking for each affordable unit",
+    "optionD": "Lower permitted density on the inclusionary site"
+  },
+  "RECA-CA-R4-MLDS-SCOPE-001": {
+    "optionB": "No; section 10240 applies to broker-arranged loans secured by real property, not only dwellings",
+    "explanation": "Section10240 requires the broker disclosure for a covered loan secured by real property. Section10240.1 does not limit section 10240 itself to dwellings."
+  },
+  "RELA-CON-005": {
+    "question": "Two parties orally agree to a Louisiana home sale. The seller refuses to sign or deliver possession. What follows?",
+    "explanation": "Louisiana generally requires a written act for transfer of an immovable. An oral transfer can bind the parties when the property is actually delivered and the transferor recognizes the transfer under oath. Here the seller neither signed nor delivered. Civil Code articles 1839 and 2440 govern."
+  }
+}

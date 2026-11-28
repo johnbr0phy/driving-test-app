@@ -1,0 +1,14 @@
+{
+  "LH-HPRV-002": {
+    "10 days after the reinstatement date": "Day 11",
+    "Immediately on the reinstatement date": "Day 0",
+    "45 days after the reinstatement date": "Day 45",
+    "31 days after the reinstatement date": "Day 31"
+  },
+  "LH-HPRV-001": {
+    "In force, because the grace period is 10 days": "In force during the minimum 10-day grace period"
+  },
+  "LH-ANN-017": {
+    "SIMPLE IRA": "Traditional SIMPLE IRA"
+  }
+}

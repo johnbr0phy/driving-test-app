@@ -37,12 +37,23 @@ function stateLawQuestion(q: Question): boolean {
   return q.sourceQuestionId === q.questionId || !!q.sourceQuestionId?.startsWith(`RE-${q.state}-`);
 }
 
+/** A stable order independent of wording or answer keys. Rewording an option
+ * must not silently move its question to a different numbered practice test. */
+function stateFormOrder(id: string, seed: number): number {
+  let value = seed;
+  for (let i = 0; i < id.length; i++) value = Math.imul(value ^ id.charCodeAt(i), 16777619);
+  value = Math.imul(value ^ (value >>> 16), 0x85ebca6b);
+  return (value ^ (value >>> 13)) >>> 0;
+}
+
 /** Deal each source and topic across the short forms. Keeping the deal
  * running across groups balances each form's length and share of state law. */
 function statePracticeQuestions(exam: ExamConfig, index: number, count: number, language?: Language): Question[] {
+  const seed = exam.statePracticeSeed;
   const bank = [...getExamQuestions(exam.id, language)].sort((a, b) =>
     Number(stateLawQuestion(a)) - Number(stateLawQuestion(b)) ||
     a.category.localeCompare(b.category) ||
+    (seed ? stateFormOrder(a.questionId, seed) - stateFormOrder(b.questionId, seed) : 0) ||
     a.questionId.localeCompare(b.questionId)
   );
   return bank.filter((_, i) => i % count === index);

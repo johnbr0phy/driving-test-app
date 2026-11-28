@@ -1,0 +1,244 @@
+{
+  "LH-TYPE-001": {
+    "Kevin and Lisa have a 30-year, $300,000 mortgage and want coverage that shrinks as the loan balance falls. Which policy fits best?": "Which policy's death benefit falls with Kevin and Lisa's mortgage balance?"
+  },
+  "LH-TYPE-004": {
+    "Tom bought 20-year convertible term at age 30. At 45 he is diagnosed with diabetes and wants lifelong coverage. What can he do?": "Tom develops diabetes while his term conversion window remains open. Which route to lifelong coverage guarantees acceptance?"
+  },
+  "LH-TYPE-008": {
+    "Dr. Chen, 40, wants permanent coverage but wants no premiums due after she retires at 65. Which policy fits?": "Dr. Chen wants permanent coverage with premiums ending at retirement at 65. Which policy fits?"
+  },
+  "LH-PROV-013": {
+    "Tom names his wife primary beneficiary and his two children contingent beneficiaries. His wife dies first, and Tom later dies without changing anything. Proceeds go to:": "Tom's wife, his primary beneficiary, dies before him. Who receives the proceeds if his children are contingent beneficiaries?"
+  },
+  "LH-PROV-019": {
+    "A policyowner stops paying premiums on a whole life policy with cash value, has no automatic premium loan, and never chooses a nonforfeiture option. The insurer applies:": "Whole life premiums stop. With cash value, no automatic premium loan and no nonforfeiture election, what typically applies?"
+  },
+  "LH-ANN-003": {
+    "A 66-year-old retiree deposits a $200,000 lump sum and wants income to start next month. Which annuity best fits her goal?": "A retiree invests $200,000 today and wants payments starting next month. Which annuity fits?"
+  },
+  "LH-HLTH-003": {
+    "An HMO member wants to see a dermatologist for a skin condition. Under a typical HMO, the member must first:": "Under a typical gatekeeper HMO, what must a member do before seeing a dermatologist?"
+  },
+  "LH-HLTH-006": {
+    "Which plan type lets members decide at each visit between gatekeeper network care and out-of-network care at higher cost?": "Which plan offers gatekeeper care or costlier out-of-network care at each visit?"
+  },
+  "LH-HPRV-007": {
+    "An agent agrees in a letter to waive an exclusion on a client's individual health policy. Under the entire contract provision, the waiver is:": "An agent writes to waive a health policy exclusion. Under the entire contract provision, is this effective?"
+  },
+  "LH-HPRV-009": {
+    "A clerk insured under an individual disability policy becomes a commercial roofer without telling the insurer, then is injured on a roof. The insurer will:": "A clerk becomes a roofer without notifying his disability insurer. How does an occupational change provision affect his claim?"
+  },
+  "LH-HPRV-010": {
+    "Paul stated his age as 40, but he was 45. He pays $300 a year; the correct premium at 45 is $400. His $2,000 monthly benefit becomes:": "Paul pays $300 instead of $400 after misstating his age. What does his $2,000 monthly benefit become?"
+  },
+  "LH-HTYP-003": {
+    "After an illness, a sales manager returns to her job full time, but her income is 40% lower. Which benefit pays part of her lost income?": "A sales manager returns full time after illness but earns 40% less. Which disability benefit applies?"
+  },
+  "LH-HTYP-005": {
+    "A dentist who owns her practice becomes disabled. Which coverage pays her office rent, utilities and staff salaries, but not her own income?": "Which disability coverage pays a dentist's office rent and payroll while she cannot work?"
+  },
+  "LH-GEN-016": {
+    "An applicant knows she had a heart attack last year but intentionally withholds that fact from the insurer to obtain coverage. This is:": "An applicant deliberately withholds a past heart attack to obtain coverage. What is this called?"
+  },
+  "LH-GEN-018": {
+    "An applicant pays the first premium with the application and gets a conditional receipt. She dies after the medical exam but before policy issue, and she was insurable. The insurer:": "An applicant pays for coverage effective upon an insurable medical exam. She qualifies but dies before issue. What must the insurer do?"
+  },
+  "LH-LIFE-008": {
+    "A software firm's success depends on its lead engineer. The firm buys a policy on her life to offset lost profits and hiring costs. Who is owner and beneficiary?": "A firm buys life insurance on its lead engineer to cover lost profits. Who owns it and receives proceeds?"
+  },
+  "LH-TYPE-012": {
+    "A self-employed contractor with uneven income wants permanent coverage and the ability to skip or reduce premiums in lean years. Which policy fits best?": "Which permanent policy lets a contractor reduce or skip premiums when cash value can cover charges?"
+  },
+  "LH-PROV-001": {
+    "Months after issue, an insurer wants to rely on a statement the applicant made in a separate letter that was never attached to the policy. Under the entire contract provision:": "Under the entire contract provision, can an insurer use an applicant's unattached letter against her?"
+  },
+  "LH-HPRV-002": {
+    "Jan's lapsed health policy is reinstated on the 45th day after her conditional receipt because the insurer never responded. Coverage for a new sickness begins:": "Counting reinstatement as day zero, when can a new sickness first qualify under the standard individual health provision?"
+  },
+  "LH-HPRV-016": {
+    "Tom's employer has 75 employees. After Tom and his wife divorce, she may continue her coverage under his group health plan through COBRA for up to:": "Tom's 75-person employer covers his wife. After divorce, how long can she generally continue coverage under COBRA?"
+  },
+  "LH-HTYP-009": {
+    "Sam's AD&D policy has a $100,000 principal sum. He loses one hand in a car accident. Under a typical policy, he receives:": "Sam loses one hand in a crash. What does a typical $100,000 principal-sum AD&D policy pay?"
+  },
+  "LH-PROV-009": {
+    "An insured dies with a $100,000 policy. He paid $20 per $1,000, but the correct premium for his true age was $25 per $1,000. The insurer pays:": "A $100,000 policy cost $20 per $1,000 instead of $25 at the insured's true age. What is payable?"
+  },
+  "LH-HLTH-002": {
+    "A carpenter wants a policy that replaces part of his paycheck if an injury or illness keeps him from working. He needs:": "Which coverage replaces part of a carpenter's wages when injury or illness prevents work?"
+  },
+  "LH-HPRV-001": {
+    "Mary pays her individual health premium monthly, due June 1. She is hospitalized June 8 and has not yet paid. Her policy is:": "Mary's individual health policy uses the standard monthly grace period. Is she covered June 8 if her June 1 premium is unpaid?"
+  },
+  "LH-GEN-010": {
+    "A person who has been declared legally insane by a court signs an application for life insurance. Which element of a valid contract is missing?": "A court has declared a life insurance applicant legally incompetent. Which contract requirement is missing?"
+  },
+  "LH-GEN-015": {
+    "Statements an applicant makes on a life insurance application are considered true to the best of the applicant's knowledge and belief. These statements are:": "What are application statements the applicant believes to be true called?"
+  },
+  "LH-GEN-020": {
+    "No premium was paid with an application. The policy is issued on May 1 and delivered on May 10, when the producer collects the premium. Coverage begins:": "Coverage requires delivery, first payment and confirmation of good health. All occur May 10 after May 1 issue. When does coverage begin?"
+  },
+  "LH-TYPE-002": {
+    "A 28-year-old parent with two toddlers needs $1,000,000 of coverage but has a tight budget. Which policy provides the most death benefit per premium dollar?": "A young parent needs $1 million in death protection on a tight budget. Which policy fits best?"
+  },
+  "LH-PROV-008": {
+    "Three years after issue, an insured dies, and the insurer discovers he concealed a heart condition on the application. Premiums were paid. The insurer:": "Premiums are current. Three years after life policy issue, the insured dies and earlier concealment surfaces. What happens?"
+  },
+  "LH-PROV-029": {
+    "An insured with a waiver of premium rider becomes totally disabled. When does the insurer usually begin waiving premiums?": "After total disability begins, when does a waiver of premium rider typically start waiving premiums?"
+  },
+  "LH-HPRV-006": {
+    "Three years after issue, an insurer learns that an applicant made an innocent misstatement on her health application. Under the time limit on certain defenses provision, the insurer:": "A new loss occurs after the health policy's contestability period. Can an innocent application misstatement defeat the claim?",
+    "Four years after issue, an insurer learns that an applicant made an innocent misstatement on her health application. Under the time limit on certain defenses provision, the insurer:": "A Pennsylvania health claim arises four years after issue. Can an innocent application misstatement now defeat it?"
+  },
+  "LH-HTYP-017": {
+    "A new retiree wants a private plan that replaces Original Medicare Parts A and B and often includes drug coverage. She should choose:": "Which private Medicare option provides Part A and B benefits and often includes drug coverage?"
+  },
+  "LH-HTYP-022": {
+    "Two insurers both sell Medicare supplement Plan G, at different premiums. How do the benefits of the two policies compare?": "Two insurers charge different premiums for standardized Medicare Supplement Plan G. How do the benefits compare?"
+  },
+  "LH-GEN-013": {
+    "A policy provision is ambiguous, and a court interprets it in favor of the insured because the insurer wrote the contract. This reflects that the policy is a contract of:": "Courts resolve ambiguous policy terms in the insured's favor because the insurer drafted them. Which contract characteristic explains this?"
+  },
+  "LH-TYPE-019": {
+    "Ana wants cash value growth linked to a stock market index but never wants a negative credit in a down year. Which policy fits?": "Which life policy links cash value to a stock index while protecting against negative index credits?"
+  },
+  "LH-PROV-004": {
+    "A $100,000 policy has a $1,200 annual premium due March 1 that goes unpaid. The insured dies March 20. The insurer will pay:": "A $100,000 life policy deducts unpaid renewal premiums. The insured dies during grace owing $1,200. What is payable?",
+    "A $100,000 policy has a $1,200 annual premium due March 1 that goes unpaid, and the policy charges no interest on late premiums. The insured dies March 20. The insurer will pay:": "Death occurs during grace on a $100,000 policy that deducts the $1,200 overdue renewal premium without interest. What is payable?"
+  },
+  "LH-HLTH-012": {
+    "An insurer raises premiums for an entire class of disability policyholders, but it cannot cancel any individual policy. These policies are:": "An insurer can raise class-wide disability premiums but cannot cancel individual coverage. What renewal provision is this?"
+  },
+  "LH-HLTH-017": {
+    "A child is covered under both parents' group plans. The mother was born March 10, 1985; the father July 2, 1980. Which plan is primary?": "Under the birthday rule, whose plan covers a child first if Mom's birthday is March 10 and Dad's is July 2?"
+  },
+  "LH-HPRV-003": {
+    "Under the uniform provisions, the normal deadlines for notice of claim, the insurer sending claim forms, and the insured filing proof of loss are:": "Under uniform health policy provisions, what deadlines apply respectively to claim notice, claim forms and proof of loss?"
+  },
+  "LH-HPRV-005": {
+    "A claimant submits proof of loss early under an individual health policy. When does the standard three-year suit period begin?": "Proof of loss is filed early. When does the standard three-year deadline for legal action start?"
+  },
+  "LH-HTYP-001": {
+    "Raj earns $6,000 a month. If an insurer limits disability income benefits to 60% of earnings, his maximum monthly benefit is:": "Raj earns $6,000 monthly. At a 60% disability income limit, what monthly benefit can he receive?"
+  },
+  "LH-HTYP-018": {
+    "Ed spends 95 days in the hospital during one Medicare benefit period. Under Part A, days 91 through 95 are paid using:": "Which Medicare Part A days cover days 91 through 95 in one inpatient benefit period?"
+  },
+  "LH-HTYP-019": {
+    "Rose is discharged after a 2-day inpatient hospital stay and moves to a skilled nursing facility. Medicare Part A will:": "Rose enters skilled nursing after two inpatient days. Under the standard Medicare Part A rule, is the stay covered?"
+  },
+  "LH-REG-014": {
+    "An insurer declines a life insurance applicant based partly on information in a consumer report. Under the Fair Credit Reporting Act, the insurer must:": "A consumer report contributes to a life insurance denial. What does the Fair Credit Reporting Act require?"
+  },
+  "LH-HTYP-006": {
+    "A tech company wants funds to replace lost profits and recruit help if its lead engineer becomes disabled. The company should buy:": "Which coverage replaces a company's lost profits if its lead engineer becomes disabled?"
+  },
+  "LH-GEN-012": {
+    "The insurer is legally bound to pay covered claims, but the insured cannot be sued for choosing to stop paying premiums. This makes the policy:": "Only the insurer makes an enforceable promise to pay. Which contract characteristic does this describe?"
+  },
+  "LH-GEN-017": {
+    "For two years an insurer accepted late premiums without objection. When it later tries to lapse the policy over a late payment, a court prevents it. This is:": "An insured reasonably relies on routinely accepted late payments and loses other coverage. What bars the insurer from asserting lapse?"
+  },
+  "LH-LIFE-004": {
+    "A family needs $20,000 for final expenses, $180,000 to pay off the mortgage and $100,000 for education. Existing group life is $50,000. Using the needs approach, how much more coverage?": "Final expenses total $20,000, mortgage $180,000 and education $100,000. With $50,000 coverage, what additional amount is needed?"
+  },
+  "LH-TYPE-021": {
+    "A wealthy married couple wants a policy to pay the estate taxes due after the second spouse dies. Which policy fits best?": "Which single policy pays a death benefit only when the second spouse dies?"
+  },
+  "LH-PROV-006": {
+    "An insured with a $250,000 whole life policy owes a $20,000 policy loan plus $1,000 of accrued interest when he dies. The beneficiary receives:": "A $250,000 whole life policy has a $20,000 loan and $1,000 accrued loan interest. What death benefit remains?"
+  },
+  "LH-ANN-004": {
+    "Which type of annuity requires the selling producer to hold both a life insurance license and a securities registration?": "Selling which annuity requires both life insurance licensing and securities registration?"
+  },
+  "LH-HLTH-020": {
+    "A worker becomes totally disabled and qualifies for Social Security disability benefits. Benefits generally begin after a waiting period of:": "What waiting period generally applies before Social Security disability benefits begin?"
+  },
+  "LH-HPRV-020": {
+    "Kim pays her individual disability income premiums with after-tax dollars, and her employer pays her group medical premiums. Which of her benefits are taxable income?": "Kim pays disability premiums after tax. Her employer funds group medical coverage. Which benefits are taxable?"
+  },
+  "LH-HTYP-004": {
+    "An accountant loses the use of both hands in an accident but returns to work using voice software. Under a presumptive disability provision, he:": "An accountant permanently loses use of both hands but still works. What does presumptive disability coverage pay?"
+  },
+  "LH-HTYP-010": {
+    "Hank suffers a fatal heart attack while driving, and his car then hits a tree. His accidental death and dismemberment policy will:": "Hank dies from a heart attack before his car hits a tree. What does his AD&D policy pay?"
+  },
+  "LH-PROV-007": {
+    "A policyowner misses a premium and the grace period ends. Her whole life policy has enough cash value and an automatic premium loan provision. What happens?": "The grace period expires on whole life coverage with sufficient cash value and automatic premium loans. What happens?"
+  },
+  "LH-HTYP-025": {
+    "Helen's assets exceed her state's Medicaid limit, so she pays her own nursing home bills until her assets fall below it. This process is called:": "Helen pays nursing home bills until her assets meet Medicaid limits. What is this process called?"
+  },
+  "LH-PROV-003": {
+    "Maria owns and pays for a life policy on her adult son, who is the insured. Who may change the beneficiary or take a policy loan?": "Maria owns a policy insuring her adult son. Who can change the beneficiary or borrow against it?"
+  },
+  "LH-HTYP-012": {
+    "Lisa's major medical plan has a $1,000 deductible and 80/20 coinsurance. She incurs $6,000 in covered charges. How much does Lisa pay?": "Lisa owes a $1,000 deductible and 20% coinsurance. What does she pay on $6,000 in covered charges?"
+  },
+  "LH-REG-008": {
+    "A producer persuades a client to drop a whole life policy and buy a new one from a different insurer by misrepresenting the old policy's terms. This is:": "A producer misrepresents an existing policy to induce replacement with another insurer. What is this practice?"
+  },
+  "LH-REG-015": {
+    "Ray was convicted of a felony involving dishonesty years ago and now wants a job at an insurance company. Under federal law (18 USC 1033), he must first:": "Under 18 USC 1033, what must a person convicted of a dishonesty felony obtain before working in insurance?"
+  },
+  "LH-GEN-004": {
+    "An insurer notices that people in poor health are more likely to apply for life insurance than healthy people. This tendency is called:": "People in poorer health are more likely to seek life coverage. What is this tendency called?"
+  },
+  "LH-GEN-019": {
+    "An applicant paid no premium with the application. When the producer delivers the issued policy, the producer should collect the premium and:": "At delivery, a producer collects the first premium. What else should the producer obtain?"
+  },
+  "LH-HPRV-008": {
+    "Which of the following is a mandatory provision under the NAIC Uniform Individual Accident and Sickness Policy Provisions Law?": "Which provision does the NAIC Uniform Individual Accident and Sickness Policy Provisions Law require?"
+  },
+  "LH-HPRV-017": {
+    "Rita is laid off, and her group health premium is $600 a month. Under COBRA, the most her former employer may charge her each month is:": "Rita's group premium was $600 monthly before layoff. What's her usual maximum monthly COBRA charge?"
+  },
+  "LH-HTYP-011": {
+    "A family wants protection against catastrophic bills, with high limits, a deductible and coinsurance, rather than low-limit first-dollar coverage. They should buy:": "Which health coverage combines high limits, a deductible and coinsurance to protect against catastrophic bills?"
+  },
+  "LH-HTYP-013": {
+    "Joe's plan has a $500 deductible, 80/20 coinsurance and a $3,000 out-of-pocket maximum including the deductible. His covered bills total $40,000. Joe pays:": "Joe owes a $500 deductible and 20% coinsurance, capped together at $3,000. What does he pay on $40,000 covered bills?"
+  },
+  "LH-PROV-020": {
+    "A retiree wants to stop paying premiums but keep permanent coverage for life, accepting a smaller face amount. Which nonforfeiture option fits?": "Which nonforfeiture option keeps lifelong coverage at a lower face amount without further premiums?"
+  },
+  "LH-HLTH-004": {
+    "An HMO pays each primary care physician a fixed monthly amount per enrolled member, regardless of services used. This method is called:": "An HMO pays physicians a fixed monthly amount per member regardless of visits. What is this method?"
+  },
+  "LH-HPRV-015": {
+    "A new disability policy has a 15-day probationary period and a 30-day elimination period. The insured falls ill on day 10 of coverage. The illness is:": "With a 15-day probationary period and 30-day elimination period, is illness starting on day 10 covered?"
+  },
+  "LH-ANN-017": {
+    "A 35-year-old expects to be in a higher tax bracket in retirement and wants tax-free income then. Which account best fits?": "Which retirement account offers qualified tax-free withdrawals for someone expecting a higher tax bracket in retirement?"
+  },
+  "LH-GEN-007": {
+    "Sandra receives a dividend check from the insurer that issued her participating whole life policy, and she can vote for its board. The insurer is most likely a:": "Sandra receives policy dividends and votes for the insurer's board. Which insurer structure does this suggest?"
+  },
+  "LH-LIFE-006": {
+    "Hank owns a large farm but has little cash. He worries his heirs would have to sell land to pay estate taxes and debts. Life insurance would provide:": "How could life insurance help Hank's heirs pay estate taxes without selling his farm?"
+  },
+  "LH-ANN-001": {
+    "A father buys an annuity on his daughter's life and names his wife to receive any value left at death. Whose life determines the payments?": "A father buys an annuity on his daughter's life, naming his wife beneficiary. Whose life determines payments?"
+  },
+  "LH-ANN-006": {
+    "An annuitant chose life with 10-year period certain and dies after receiving monthly payments for 4 years. What happens next?": "An annuitant dies four years into a life annuity with ten years certain. What happens next?"
+  },
+  "LH-ANN-009": {
+    "An owner invested $60,000 in a nonqualified annuity with an expected total return of $100,000 and receives $500 monthly. How much of each payment is taxable?": "A nonqualified annuity cost $60,000 and has a $100,000 expected return. How much of each $500 payment is taxable?"
+  },
+  "LH-HTYP-023": {
+    "Maria turned 65 and enrolled in Part B four months ago. She now applies for a Medicare supplement policy. The insurer:": "Maria enrolled in Part B at 65 four months ago. How must a Medicare supplement insurer treat her application?"
+  },
+  "LH-LIFE-014": {
+    "Ellen applies for and owns a policy on her husband's life, with his consent, and names herself beneficiary. Which statement about this arrangement is true?": "Ellen owns insurance on her consenting husband's life and names herself beneficiary. Which statement describes this arrangement?"
+  },
+  "LH-LIFE-016": {
+    "Raj leaves his job, where he had $100,000 of group term life. He has since developed heart disease. To keep coverage, he should:": "Raj leaves a job providing $100,000 group term coverage after developing heart disease. How can he retain coverage?"
+  },
+  "LH-HLTH-018": {
+    "An insurer pays an insured's medical bills after a crash caused by another driver, then sues that driver to recover. This right is:": "An insurer pays its policyholder's crash-related medical bills, then pursues the at-fault driver. What right is this?"
+  }
+}

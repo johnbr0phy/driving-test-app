@@ -1,0 +1,142 @@
+{
+  "RE-PROP-021": {
+    "Escheat to the state": "Escheat"
+  },
+  "RE-VAL-001": {
+    "Price": "Contract price",
+    "Cost": "Construction cost"
+  },
+  "RE-DISC-001": {
+    "Remove all lead-based paint from the apartment": "Remove the lead paint",
+    "Have the unit tested for lead": "Commission a lead inspection",
+    "Obtain a lead-free certificate from HUD": "Get a lead-free certificate"
+  },
+  "RE-FIN-012": {
+    "Seven business days after the loan application": "Seven business days after application",
+    "The day of closing": "At consummation"
+  },
+  "RE-OWN-018": {
+    "The grantor signs it with intent to convey": "The grantor signs the deed",
+    "The deed is delivered and accepted": "The grantor delivers the deed and the grantee accepts it"
+  },
+  "RE-CON-031": {
+    "Ratification; general agent": "General agent appointed by ratification",
+    "Express agreement; special agent": "Special agent by express appointment",
+    "Implied agreement; special agent": "Special agent by implied appointment",
+    "Express agreement; universal agent": "Universal agent by express appointment"
+  },
+  "RE-PRAC-023": {
+    "A tie-in agreement": "Tying arrangement",
+    "A group boycott": "Group boycott"
+  },
+  "RE-CON-004": {
+    "Recording the contract": "Recording",
+    "Consideration": "An exchange of consideration"
+  },
+  "RE-CON-014": {
+    "Compensatory and punitive damages": "Compensatory damages",
+    "Liquidated damages": "Damages fixed by the contract"
+  },
+  "RE-CON-037": {
+    "Disclose the defect to prospective buyers": "Tell buyers about the flooding",
+    "Disclose it only if a buyer asks directly": "Wait until a buyer asks about flooding",
+    "Withdraw without telling anyone about it": "End the listing without disclosing the flooding"
+  },
+  "RE-CON-039": {
+    "Full fiduciary duties, including loyalty and obedience": "Loyalty and obedience",
+    "Confidentiality but no duty of disclosure": "Confidentiality without disclosure",
+    "No duties, since no agency exists": "No duties without an agency agreement"
+  },
+  "RE-DISC-004": {
+    "Install a radon mitigation system": "Mitigate the radon level",
+    "Seal the attic and the roof vents": "Seal the attic vents"
+  },
+  "RE-PROP-017": {
+    "40 acres": "40",
+    "160 acres": "160",
+    "10 acres": "10",
+    "80 acres": "80"
+  },
+  "RE-CON-015": {
+    "Closing may occur within a reasonable time after the date": "A reasonable delay is allowed",
+    "Deadlines must be met exactly or a party is in breach": "Missing a deadline can breach the contract",
+    "The contract expires unless it is recorded promptly": "Late recording voids the contract"
+  },
+  "RE-PRAC-003": {
+    "Conversion": "Conversion of client funds",
+    "Novation": "Premature disbursement"
+  },
+  "RE-PRAC-019": {
+    "May refuse because it permanently alters the unit": "May refuse permanent alterations",
+    "Must permit it at the tenant's expense": "Must allow the tenant to pay for the modification",
+    "May raise the rent to cover it": "May charge additional rent"
+  },
+  "RE-FIN-004": {
+    "Federal Reserve discount market": "Fed discount window"
+  },
+  "RE-CON-005": {
+    "Unenforceable under the Statute of Frauds": "Unenforceable under the writing requirement",
+    "Enforceable because both parties agreed on the price": "Enforceable at the agreed price"
+  },
+  "RE-PRAC-006": {
+    "Only reimbursed expenses": "$0"
+  },
+  "RE-PRAC-014": {
+    "Source of income": "Income source",
+    "Disability": "Physical disability"
+  },
+  "RE-FIN-006": {
+    "Subordination clause": "Subordination",
+    "Due-on-sale clause": "Due-on-sale",
+    "Defeasance clause": "Defeasance",
+    "Prepayment clause": "Prepayment"
+  },
+  "RE-OWN-020": {
+    "Full general warranty deed": "General warranty deed"
+  },
+  "RE-VAL-026": {
+    "Broker price opinion": "Broker price opinion (BPO)",
+    "Certified appraisal": "Appraisal report",
+    "Comparative market analysis": "Automated valuation model"
+  },
+  "RE-CON-020": {
+    "A leasehold estate": "Leasehold title",
+    "A life estate": "Life estate"
+  },
+  "RE-DISC-011": {
+    "An extended-coverage owner's title policy": "Extended title coverage",
+    "A Phase I environmental site assessment": "Phase I environmental site assessment",
+    "A short-term radon test": "Indoor radon test"
+  },
+  "RE-OWN-011": {
+    "Month-to-month periodic tenancy": "Periodic tenancy"
+  },
+  "RE-CON-026": {
+    "Get both parties' informed written consent": "Obtain both clients' informed consent",
+    "Obtain approval from the state licensing agency": "Get the licensing agency's approval"
+  },
+  "RE-DISC-007": {
+    "Urea-formaldehyde foam insulation": "Foam insulation",
+    "Electromagnetic fields from power lines": "Overhead power lines"
+  },
+  "RE-PROP-028": {
+    "An easement by necessity": "Easement of necessity",
+    "A license": "Revocable license",
+    "An encroachment": "Encroachment",
+    "An appurtenance": "Appurtenant right"
+  },
+  "RE-VAL-020": {
+    "Curable physical deterioration": "Physical wear",
+    "Deferred maintenance": "Deferred repairs"
+  },
+  "RE-CON-040": {
+    "Ask him to put his maximum price in writing": "Get his price ceiling in writing",
+    "Disclose that she represents the seller": "Explain that her client is the seller"
+  },
+  "RE-PRAC-016": {
+    "Lawful market commentary": "Market analysis"
+  },
+  "RE-VAL-005": {
+    "Highest and best use": "Conformity"
+  }
+}

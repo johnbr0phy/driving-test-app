@@ -9,6 +9,8 @@ An exact state question ID takes precedence. The regular state builders apply
 the same corrections when regenerating complete banks from their inputs.
 <family>_choices.json can update a national option wherever its original
 text survives a local edit or a shuffle of the answer letters.
+<family>_stems.json rewrites only a matching source ID and stem, so a state
+variant keeps any locally required conditions.
 """
 
 import argparse
@@ -42,11 +44,17 @@ def load_corrections(family):
             raise ValueError(f"{question_id}: missing option replacement text")
         if replacements.keys() & set(replacements.values()):
             raise ValueError(f"{question_id}: cannot replace an option more than once")
-    return changes, choices
+    stems = _read_map(folder / f"{family}_stems.json")
+    for question_id, versions in stems.items():
+        if not versions or versions.keys() & set(versions.values()) or not all(
+            isinstance(v, str) and v.strip() for v in versions.values()
+        ):
+            raise ValueError(f"{question_id}: invalid or chained stem edits")
+    return changes, choices, stems
 
 
 def apply_corrections(question, corrections, overrides=None):
-    changes, choices = corrections
+    changes, choices, stems = corrections
     question_id = question["questionId"]
     source_id = question.get("sourceQuestionId", question_id)
     if source_id != question_id:
@@ -55,6 +63,8 @@ def apply_corrections(question, corrections, overrides=None):
             if field not in localized_fields:
                 question[field] = text
     question.update(changes.get(question_id, {}))
+    versions = stems.get(source_id, {})
+    question["question"] = versions.get(question["question"], question["question"])
     replacements = choices.get(source_id, {})
     if replacements:
         for letter in "ABCD":
@@ -102,7 +112,7 @@ def main():
                 changed = True
         if changed:
             edits[path] = questions
-    if missing := (corrections[0].keys() | corrections[1].keys()) - seen:
+    if missing := (corrections[0].keys() | corrections[1].keys() | corrections[2].keys()) - seen:
         parser.error("unmatched correction IDs: " + ", ".join(sorted(missing)))
     for path, questions in edits.items():
         print(path.relative_to(ROOT))

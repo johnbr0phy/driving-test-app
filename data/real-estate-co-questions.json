@@ -1924,14 +1924,14 @@
     "state": "CO",
     "questionId": "RECO-DISC-002",
     "category": "reDisclosures",
-    "question": "A contract on a 1955 house is accepted June 1, with a 10-calendar-day lead paint inspection period. It expires:",
+    "question": "A home's lead inspection contingency lasts ten calendar days after June 1 acceptance. When does it expire?",
     "optionA": "June 11",
     "optionB": "June 4",
     "optionC": "July 1",
     "optionD": "Ten days after closing",
     "correctAnswer": "A",
     "correctIndex": 0,
-    "explanation": "The federal rule gives buyers of pre-1978 housing a 10-day opportunity to conduct a risk assessment unless waived: June 1 + 10 days = June 11. The period runs from the contract, not from closing, because the assessment must happen before the buyer is obligated.",
+    "explanation": "This contract gives the buyer ten calendar days after acceptance. June 2 is the first day and June 11 is the tenth. Federal lead disclosure rules generally provide an inspection opportunity before the buyer is obligated; the contract sets the dates in this example.",
     "sourceQuestionId": "RE-DISC-002"
   },
   {

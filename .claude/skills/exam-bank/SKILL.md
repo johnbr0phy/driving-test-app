@@ -71,6 +71,8 @@ holder lives by. If the handbook has too few of those, make the category smaller
 
 ## 2. Write the questions
 
+Use [the question review guide](references/question-review.md) when drafting, shortening or localizing items. It gives examples of keeping the decisive fact and checking the final student-facing forms.
+
 Schema, one object per question, exactly these keys in this order:
 
 ```json
@@ -245,7 +247,8 @@ options, duplicate options in a row, duplicate or near-duplicate stems in the ba
 A student who meets the same thing twice in one exam feels the bank is padded, and a held-out
 test that repeats a drill question measures memory, not readiness. So, in every exam:
 
-- **No question twice.** Not across tests, drills, sets, modules or variants, and not reworded
+- **Mixed state paths.** Their short forms partition an existing approved full exam, which learners take again as the full-length recap. Validate this exception with the state form test in the question review guide.
+- **For independently authored forms, no question twice.** Not across tests, drills, sets, modules or variants, and not reworded
   with the same numbers and the same answer. Every item is written for one place only.
 - **No Basics skill in two drills (v2).** A skill is learned once per exam, so a second drill
   opening with it shows a step that is already done. Choose each drill's Basics last, across
@@ -254,7 +257,7 @@ test that repeats a drill question measures memory, not readiness. So, in every 
   without borrowing, write a new skill for it, or give it no Basics; never borrow one another
   drill already opens with. This happened in Nov 2026 (MAP Growth: Main idea opened both
   reading drills, Tone opened Literary and Vocabulary) because each drill was picked alone.
-- **No domain in two drills (v2).** Two drills on one domain serve the same questions twice.
+- **Split v2 drills by skills when they share a domain.** Verify that the resulting question pools are disjoint and together cover the intended domain.
 - **A `basics` tag only names a skill its own drill opens with.** Any other tag can never show
   its brush-up card; drop it in the build (see `DRILL_BASICS` in
   `tools/next100/mapgrowth/build.py`).
@@ -284,8 +287,7 @@ interleaved rows, the official ham pool, CDL's 600, the German 210) are listed w
 `KNOWN_BANKS`, and state versions (`real-estate-tx-questions.json` and the like) are recognised by
 file name: any length, their state code, `sourceQuestionId`, unique rather than sequential ids.
 Add a bank to `KNOWN_BANKS` only for a real design reason, never to hide a quality failure.
-Then have a second pass read every item for factual accuracy and second-defensible-answer
-problems: spawn a reviewer agent with the bank and the source outline and ask for a JSON list of
+Then give an independent reviewer only the keyless shuffled questions from `tools/blind_answers.py make` for their first pass. Collect their answers and ambiguity flags before showing the key, explanation or source notes. Resolve flagged items against the official source and record a JSON list of
 `questionId`, severity (wrong-key, factual, ambiguous, weak), issue, fix. Without an Agent tool,
 do the read yourself in a separate step after a break from writing, recomputing every number and
 asking of each item "could a well-prepared candidate defend a different option?". Apply the fixes

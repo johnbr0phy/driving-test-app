@@ -97,6 +97,8 @@ two tests holds out only Test 2 (`tests/v2-held-out.test.cjs`). Check each findi
 official source, fix real ones in the bank's source files and rebuild. Then fact-check the landing
 and `examFacts` against the owner's pages.
 
+For each pick, use the [question review guide](../exam-bank/references/question-review.md) on the final generated forms. Report the worst individual form and the number of keyless items reviewed; a pooled batch average can hide a weak form. For state variants, verify the national fallback and every affected local version.
+
 Record it in `tools/queue/reviews.json`:
 `"<id>": [{ "date": "YYYY-MM-DD", "kind": "blind review at build", "pr": <number>, "findings": <n> }]`.
 

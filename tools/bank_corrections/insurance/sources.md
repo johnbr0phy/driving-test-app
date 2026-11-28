@@ -22,3 +22,11 @@ In each participating state, submitting an early proof starts the waiting period
 | Texas | Insurance Code 1201.217 permits suit beginning on day 61 after proof is supplied and measures the three-year limit from when proof was required. https://tcss.legis.texas.gov/resources/IN/htm/IN.1201.htm |
 | Virginia | Code 38.2-3503(A)(11). https://law.lis.virginia.gov/vacode/title38.2/chapter35/section38.2-3503/ |
 | Washington | RCW 48.20.142. https://app.leg.wa.gov/RCW/default.aspx?cite=48.20.142 |
+
+## Conditions retained in the copy review
+
+- LH-HPRV-001, LH-HPRV-002 and LH-HPRV-006. [NAIC Uniform Individual Accident and Sickness Policy Provision Law, sections 3(A)(2) through (4)](https://content.naic.org/sites/default/files/model-law-180.pdf). The grace period is a minimum. Sickness must begin more than ten days after reinstatement. The defense restriction depends on when the loss begins. The Pennsylvania item retains its state-specific term.
+- LH-HLTH-017. [NAIC Coordination of Benefits Model Regulation](https://content.naic.org/sites/default/files/model-law-120.pdf). The stem expressly selects the birthday rule.
+- LH-PROV-004. [Michigan Insurance Code, section 500.4012](https://legislature.mi.gov/Laws/MCL?objectName=mcl-500-4012). The calculation specifies a contract that deducts the overdue premium.
+- LH-TYPE-004 and LH-GEN-018/020. [New York DFS, Life Insurance Information for Consumers](https://www.dfs.ny.gov/consumers/life_insurance). The questions give the conversion window, insurability condition or effective-date conditions in the hypothetical contract.
+- LH-ANN-017. [IRS Publication 590-A](https://www.irs.gov/publications/p590a). Specify a traditional SIMPLE IRA in the comparison because SIMPLE contributions can also be Roth.

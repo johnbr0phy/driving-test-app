@@ -309,5 +309,31 @@
   },
   "REMA-CON-026": {
     "explanation": "In Massachusetts, M.G.L. c. 112, section 87AAA 3/4(b) and 254 CMR 3.00(13)(b) require informed written consent of buyer and seller on the Board's form. Telling only the seller leaves the buyer unaware of the divided loyalty."
+  },
+  "RE-DISC-002": {
+    "explanation": "This contract gives the buyer ten calendar days after acceptance. June 2 is the first day and June 11 is the tenth. Federal lead disclosure rules generally provide an inspection opportunity before the buyer is obligated; the contract sets the dates in this example."
+  },
+  "RENJ-DISC-002": {
+    "explanation": "40CFR745.110 requires the seller to permit a 10-day opportunity before the purchaser is obligated. The parties may agree in writing to a different period, and the purchaser may waive the opportunity in writing. An accepted-contract date alone does not define the legal deadline."
+  },
+  "RECA-CA-LAND-COMMERCIAL-001": {
+    "optionA": "No subdivision public report",
+    "optionB": "A preliminary public report",
+    "optionC": "A conditional public report",
+    "optionD": "A final public report"
+  },
+  "RENJ-NJ-MOUNT-LAUREL-INCLUSIONARY-ZONING-001": {
+    "optionA": "Allow more units per acre for providing affordable units",
+    "optionB": "Increase the minimum lot size for affordable units",
+    "optionC": "Require additional parking for each affordable unit",
+    "optionD": "Lower permitted density on the inclusionary site"
+  },
+  "RECA-CA-R4-MLDS-SCOPE-001": {
+    "optionB": "No; section 10240 applies to broker-arranged loans secured by real property, not only dwellings",
+    "explanation": "Section10240 requires the broker disclosure for a covered loan secured by real property. Section10240.1 does not limit section 10240 itself to dwellings."
+  },
+  "RELA-CON-005": {
+    "question": "Two parties orally agree to a Louisiana home sale. The seller refuses to sign or deliver possession. What follows?",
+    "explanation": "Louisiana generally requires a written act for transfer of an immovable. An oral transfer can bind the parties when the property is actually delivered and the transferor recognizes the transfer under oath. Here the seller neither signed nor delivered. Civil Code articles 1839 and 2440 govern."
   }
 }

@@ -18,5 +18,20 @@
   "LHNJ-NJHLT-003": {
     "question": "Until which birthday can an eligible adult child continue coverage under a parent's New Jersey group health policy?",
     "explanation": "New Jersey's dependent continuation option ends on the child's 31st birthday. To qualify, the child must be unmarried, have no children, live in New Jersey or study full-time, and have no other qualifying health coverage or Medicare entitlement."
+  },
+  "LH-HPRV-006": {
+    "explanation": "Once the policy's time limit on defenses has expired, an innocent application misstatement cannot void the policy or defeat a claim for a loss that begins after that period. Fraudulent misstatements are treated separately under this provision."
+  },
+  "LH-GEN-018": {
+    "explanation": "This receipt makes coverage effective on the medical exam date if the applicant is insurable as applied for. She satisfied the condition and died after that date, so the insurer pays the death benefit."
+  },
+  "LH-GEN-020": {
+    "explanation": "The policy makes delivery, first payment and confirmation of good health conditions for coverage. All three were met May 10. The earlier issue date alone did not start coverage."
+  },
+  "LH-PROV-004": {
+    "explanation": "The policy remains in force during the grace period. Its deduction clause reduces the $100,000 face amount by the $1,200 unpaid renewal premium, leaving $98,800."
+  },
+  "LH-GEN-017": {
+    "explanation": "The insured reasonably relied to their detriment on the insurer's course of conduct. Estoppel bars the insurer from taking an inconsistent position. Waiver concerns the insurer's relinquishment of a known right."
   }
 }
